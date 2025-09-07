@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "What is a key advantage of modern software development methodologies over traditional ones?",
+            "option_a": "A. High Cost",
+            "option_b": "B. Less or no iterations",
+            "option_c": "C. Lack of transparency",
+            "option_d": "D. Highest Value",
+            "correct_answer": "D",
+            "explanation": "Modern methodologies focus on delivering the highest value to the customer, ensuring that the software meets their needs effectively and efficiently."
+        },
+        {
+            "question": "Why is Agile widely adopted in software engineering and related domains?",
+            "option_a": "A. Lack of transparency",
+            "option_b": "B. Emphasis on adaptability, teamwork, and iterative development",
+            "correct_answer": "B",
+            "option_c": "C. Less or no iterations",
+            "option_d": "D. High Cost",
+            "explanation": "Agile methodologies are popular because they prioritize adaptability to changing requirements, encourage teamwork, and use iterative development to improve quality and efficiency."
+        },
+        {
+            "question": "What is a characteristic of traditional software development methodologies?",
+            "option_a": "A. Shortest Time",
+            "option_b": "B. Highest Value",
+            "option_c": "C. Changes are not acceptable",
+            "option_d": "D. High Quality",
+            "correct_answer": "C",
+            "explanation": "Traditional methodologies often resist changes once the development process has started, leading to inflexibility and potential issues if requirements evolve."
+        },
+        {
+            "question": "Which aspect of Agile development contributes to its high quality?",
+            "option_a": "A. Less or no iterations",
+            "option_b": "B. Lack of transparency",
+            "option_c": "C. Iterative development",
+            "option_d": "D. High Cost",
+            "correct_answer": "C",
+            "explanation": "Agile's iterative development allows for continuous improvement and refinement of the software, leading to higher quality outcomes."
+        },
+        {
+            "question": "What is a common feature of plan-based development in software engineering?",
+            "option_a": "A. Iterative development",
+            "option_b": "B. Adaptability",
+            "option_c": "C. Requirements specification",
+            "option_d": "D. Teamwork",
+            "correct_answer": "C",
+            "explanation": "Plan-based development involves detailed requirements specification before design and implementation, ensuring that all aspects are considered upfront."
+        },
+        {
+            "question": "What is a primary benefit of Agile methodologies in Computer Science projects?",
+            "option_a": "A. Reduces the need for testing",
+            "option_b": "B. Encourages cooperation and flexibility",
+            "option_c": "C. Limits collaboration among team members",
+            "option_d": "D. Ensures strict adherence to initial plans",
+            "correct_answer": "B",
+            "explanation": "Agile methodologies in Computer Science projects promote cooperation and flexibility, which are essential for system design, research, and algorithm development."
+        },
+        {
+            "question": "Why is Agile considered valuable in Computer Science and Network Engineering (CSNE)?",
+            "option_a": "A. Agile's cost-effectiveness",
+            "option_b": "B. Agile's adaptability",
+            "option_c": "C. Agile's simplicity",
+            "option_d": "D. Agile's rigidity",
+            "correct_answer": "B",
+            "explanation": "Agile's adaptability is crucial for CSNE projects, which often involve complex network infrastructure requiring flexibility in design and implementation."
+        },
+        {
+            "question": "What is Agile Software Development primarily based on?",
+            "option_a": "A. Fixed project timelines",
+            "option_b": "B. Strict coding standards",
+            "option_c": "C. Detailed upfront documentation",
+            "option_d": "D. Values and Principles of the Agile Manifesto",
+            "correct_answer": "D",
+            "explanation": "Agile Software Development is founded on the Values and Principles expressed in the Agile Manifesto, guiding its methods and practices."
+        },
+        {
+            "question": "How does Agile benefit Software Engineering projects?",
+            "option_a": "A. Limitation of iterative processes",
+            "option_b": "B. Focus on long-term planning",
+            "option_c": "C. Reduction in team communication",
+            "option_d": "D. Emphasis on continuous integration and delivery",
+            "correct_answer": "D",
+            "explanation": "Agile benefits Software Engineering projects through its iterative nature and focus on continuous integration and delivery, enhancing adaptability and responsiveness."
+        },
+        {
+            "question": "In what way does Agile support system design in Computer Science?",
+            "option_a": "A. Discourages changes",
+            "option_b": "B. Promotes flexibility",
+            "option_c": "C. Prioritizes documentation over development",
+            "option_d": "D. Enforces strict guidelines",
+            "correct_answer": "B",
+            "explanation": "Agile supports system design in Computer Science by promoting flexibility, allowing for adjustments and improvements throughout the project lifecycle."
+        }
+    ]
+}
