@@ -1,0 +1,204 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes the difference between data and information?",
+            "option_a": "A. Data is digital, while information is analog.",
+            "option_b": "B. Data is stored in databases, while information is stored in files.",
+            "option_c": "C. Data is raw and unprocessed, while information is processed and meaningful.",
+            "option_d": "D. Data is used by machines, while information is used by people.",
+            "option_e": "E. There is no significant difference; the terms are interchangeable.",
+            "correct_answer": "C",
+            "explanation": "Data is raw, unorganized facts, while information is data that has been processed to be meaningful."
+        },
+        {
+            "question": "A Database Management System (DBMS) facilitates all of the following processes EXCEPT:",
+            "option_a": "A. Defining databases",
+            "option_b": "B. Constructing databases",
+            "option_c": "C. Manipulating databases",
+            "option_d": "D. Sharing databases",
+            "option_e": "E. Generating raw data",
+            "correct_answer": "E",
+            "explanation": "A DBMS manages data but does not generate raw data; that is done by users or applications."
+        },
+        {
+            "question": "What does the self-describing nature of a database system refer to?",
+            "option_a": "A. It can write its own documentation.",
+            "option_b": "B. It contains a catalog that describes its own structure.",
+            "option_c": "C. It is understandable without training.",
+            "option_d": "D. It corrects its own errors automatically.",
+            "option_e": "E. It stores the business logic of applications.",
+            "correct_answer": "B",
+            "explanation": "The catalog (data dictionary) describes the structure of the database, making it self-describing."
+        },
+        {
+            "question": "Which major component of the database system environment includes the rules for using the database?",
+            "option_a": "A. Hardware",
+            "option_b": "B. Software",
+            "option_c": "C. People",
+            "option_d": "D. Procedures",
+            "option_e": "E. Data",
+            "correct_answer": "D",
+            "explanation": "Procedures define the rules and guidelines for operating and managing a database system."
+        },
+        {
+            "question": "Which advantage of the database approach ensures that changes in data storage do not impact application programs?",
+            "option_a": "A. Efficient Data Access",
+            "option_b": "B. Data Independence",
+            "option_c": "C. Enforcing Integrity",
+            "option_d": "D. Concurrent Access",
+            "option_e": "E. Providing Backup and Recovery",
+            "correct_answer": "B",
+            "explanation": "Data independence allows changes in physical data storage without altering application logic."
+        },
+        {
+            "question": "In which database design phase is the Entity-Relationship (ER) model created?",
+            "option_a": "A. Requirement Collection and Analysis",
+            "option_b": "B. Conceptual Database Design",
+            "option_c": "C. Logical Database Design",
+            "option_d": "D. Physical Database Design",
+            "option_e": "E. Security Design",
+            "correct_answer": "B",
+            "explanation": "The ER model is created during conceptual design to represent high-level data structures and relationships."
+        },
+        {
+            "question": "What is the primary concern of the Schema Refinement phase in database design?",
+            "option_a": "A. Buying faster hardware",
+            "option_b": "B. Removing redundancies and anomalies",
+            "option_c": "C. Writing training manuals",
+            "option_d": "D. Installing DBMS software",
+            "option_e": "E. Defining user access controls",
+            "correct_answer": "B",
+            "explanation": "Schema refinement focuses on eliminating redundancy and ensuring consistency using normalization."
+        },
+        {
+            "question": "Creating indexes to improve performance is a key activity in which design phase?",
+            "option_a": "A. Logical Database Design",
+            "option_b": "B. Schema Refinement",
+            "option_c": "C. Physical Database Design",
+            "option_d": "D. Security Design",
+            "option_e": "E. Conceptual Database Design",
+            "correct_answer": "C",
+            "explanation": "Physical design optimizes storage and performance through mechanisms like indexing."
+        },
+        {
+            "question": "Which decision is most relevant in the Security Design phase of database development?",
+            "option_a": "A. Choosing a programming language",
+            "option_b": "B. Selecting server hardware",
+            "option_c": "C. Assigning access levels to user groups",
+            "option_d": "D. Designing user interface themes",
+            "option_e": "E. Mapping entity relationships",
+            "correct_answer": "C",
+            "explanation": "Security design is about managing access and ensuring that only authorized users can perform certain actions."
+        },
+        {
+            "question": "Which DBMS feature allows a receptionist to see only appointment times, while a doctor sees full medical records?",
+            "option_a": "A. Data Independence",
+            "option_b": "B. Support for Multiple Views",
+            "option_c": "C. Efficient Data Access",
+            "option_d": "D. Logical Database Design",
+            "option_e": "E. Physical Database Design",
+            "correct_answer": "B",
+            "explanation": "Support for multiple views allows different users to access different subsets of data based on their roles."
+        },
+        {
+            "question": "Which DBMS feature is most critical when a social media platform handles millions of simultaneous actions like likes or comments?",
+            "option_a": "A. Backup and Recovery",
+            "option_b": "B. Query Optimization",
+            "option_c": "C. Concurrency Control",
+            "option_d": "D. Cloud Hosting",
+            "option_e": "E. Requirement Analysis",
+            "correct_answer": "C",
+            "explanation": "Concurrency control ensures data integrity when multiple users access or modify the database simultaneously."
+        },
+        {
+            "question": "An online gaming company expecting rapid growth should opt for which hosting strategy?",
+            "option_a": "A. Buying new on-premise servers",
+            "option_b": "B. Implementing stricter security",
+            "option_c": "C. Migrating to a cloud hosting provider",
+            "option_d": "D. Redesigning conceptual schema",
+            "option_e": "E. Adding indexes",
+            "correct_answer": "C",
+            "explanation": "Cloud hosting provides scalability and flexibility needed for unpredictable, rapid growth in user base."
+        },
+        {
+            "question": "A researcher finds that a single data update requires changes in five tables. This issue should have been addressed in which phase?",
+            "option_a": "A. Requirement Collection and Analysis",
+            "option_b": "B. Conceptual Design",
+            "option_c": "C. Logical Design",
+            "option_d": "D. Schema Refinement",
+            "option_e": "E. Security Design",
+            "correct_answer": "D",
+            "explanation": "Schema refinement reduces redundancy and prevents update anomalies by applying normalization."
+        },
+        {
+            "question": "Which of the following is NOT a logical factor in choosing a database hosting type?",
+            "option_a": "A. CEO’s favorite color",
+            "option_b": "B. Scalability needs",
+            "option_c": "C. Security requirements",
+            "option_d": "D. Cost constraints",
+            "option_e": "E. Performance needs",
+            "correct_answer": "A",
+            "explanation": "Business and technical factors like cost and security are valid; personal preferences like color are irrelevant."
+        },
+        {
+            "question": "Which characteristic of a DBMS enables the application to access account data without knowing how it's stored?",
+            "option_a": "A. Data Integrity",
+            "option_b": "B. Data Independence",
+            "option_c": "C. Multiple Views",
+            "option_d": "D. Concurrent Access",
+            "option_e": "E. Security Provision",
+            "correct_answer": "B",
+            "explanation": "Data independence allows applications to interact with data without depending on physical storage details."
+        },
+        {
+            "question": "A company moves to cloud hosting to reduce capital expenditure. What is the main factor influencing this decision?",
+            "option_a": "A. Performance",
+            "option_b": "B. Scalability",
+            "option_c": "C. Cost",
+            "option_d": "D. Security",
+            "option_e": "E. Data Integrity",
+            "correct_answer": "C",
+            "explanation": "Cloud hosting turns upfront capital costs into ongoing operational expenses, offering cost efficiency."
+        },
+        {
+            "question": "Which type of real-world application would best be classified as data-intensive?",
+            "option_a": "A. Calculator app",
+            "option_b": "B. Text editor like Notepad",
+            "option_c": "C. Video streaming service like Netflix",
+            "option_d": "D. Digital clock",
+            "option_e": "E. Offline single-player mobile game",
+            "correct_answer": "C",
+            "explanation": "Netflix handles massive volumes of data, making it a classic example of a data-intensive application."
+        },
+        {
+            "question": "The process of mapping an ER diagram into a relational schema is done during which phase?",
+            "option_a": "A. Requirement Collection and Analysis",
+            "option_b": "B. Conceptual Database Design",
+            "option_c": "C. Logical Database Design",
+            "option_d": "D. Physical Database Design",
+            "option_e": "E. Schema Refinement",
+            "correct_answer": "C",
+            "explanation": "Logical design converts the high-level conceptual model into a specific data model like relational."
+        },
+        {
+            "question": "Why is a DBMS critical for data-intensive applications? (Select all that apply)",
+            "option_a": "A. Provides efficient data access techniques",
+            "option_b": "B. Manages concurrent user access",
+            "option_c": "C. Automatically writes application code",
+            "option_d": "D. Ensures data integrity and security",
+            "option_e": "E. Offers backup and recovery options",
+            "correct_answer": "A, B, D, E",
+            "explanation": "A DBMS manages data efficiently, supports concurrency, ensures integrity/security, and handles recovery—but does not write application logic."
+        },
+        {
+            "question": "What is the main purpose of enforcing integrity constraints in a DBMS?",
+            "option_a": "A. Physical security from theft",
+            "option_b": "B. Ensuring data accuracy and consistency",
+            "option_c": "C. Speeding up database queries",
+            "option_d": "D. Increasing storage space",
+            "option_e": "E. Simplifying the user interface",
+            "correct_answer": "B",
+            "explanation": "Integrity constraints enforce business rules and prevent invalid or inconsistent data."
+        }
+    ]
+}

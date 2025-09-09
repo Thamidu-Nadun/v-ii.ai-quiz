@@ -1,0 +1,301 @@
+{
+    "questions": [
+        {
+            "question": "According to the logical query processing order in SQL, which clause is evaluated FIRST?",
+            "option_a": "A. SELECT",
+            "option_b": "B. ORDER BY",
+            "option_c": "C. FROM",
+            "option_d": "D. HAVING",
+            "option_e": "E. WHERE",
+            "correct_answer": "C",
+            "explanation": "The FROM clause is processed first to identify source tables before other operations."
+        },
+        {
+            "question": "The WHERE clause is processed logically after the FROM clause but before which of the following?",
+            "option_a": "A. SELECT",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. HAVING",
+            "option_d": "D. ORDER BY",
+            "option_e": "E. All of the above",
+            "correct_answer": "E",
+            "explanation": "The order is FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY."
+        },
+        {
+            "question": "The HAVING clause is designed to filter results based on conditions applied to:",
+            "option_a": "A. Individual rows, before they are grouped.",
+            "option_b": "B. Groups of rows, after the grouping has been performed.",
+            "option_c": "C. The final sorted list of results.",
+            "option_d": "D. The initial set of tables in the FROM clause.",
+            "option_e": "E. The columns selected in the SELECT list.",
+            "correct_answer": "B",
+            "explanation": "HAVING filters groups formed by GROUP BY, unlike WHERE which filters rows."
+        },
+        {
+            "question": "In which logical step are the column aliases defined in the SELECT clause made available to other parts of the query?",
+            "option_a": "A. They are available immediately in the WHERE clause.",
+            "option_b": "B. They are available for use in the GROUP BY clause.",
+            "option_c": "C. They are available for use in the HAVING clause.",
+            "option_d": "D. They are only available in the ORDER BY clause.",
+            "option_e": "E. They are not available to any clause processed before SELECT.",
+            "correct_answer": "D",
+            "explanation": "Aliases in SELECT are available only in ORDER BY since ORDER BY is processed after SELECT."
+        },
+        {
+            "question": "If a query contains both a WHERE clause and a HAVING clause, which one filters the data first?",
+            "option_a": "A. HAVING",
+            "option_b": "B. WHERE",
+            "option_c": "C. They are processed simultaneously.",
+            "option_d": "D. It depends on optimization.",
+            "option_e": "E. GROUP BY",
+            "correct_answer": "B",
+            "explanation": "WHERE filters individual rows before grouping; HAVING filters groups later."
+        },
+        {
+            "question": "The ORDER BY clause is the final step in logical query processing because it:",
+            "option_a": "A. Sorts the final, selected output of the query.",
+            "option_b": "B. Is required for every SQL query.",
+            "option_c": "C. Filters the groups created by GROUP BY.",
+            "option_d": "D. Defines the source tables for the query.",
+            "option_e": "E. Determines which columns are returned.",
+            "correct_answer": "A",
+            "explanation": "ORDER BY is the last step and sorts the final result set."
+        },
+        {
+            "question": "What is the logical order of processing for the clauses: SELECT, FROM, WHERE, and GROUP BY?",
+            "option_a": "A. SELECT, FROM, WHERE, GROUP BY",
+            "option_b": "B. FROM, SELECT, WHERE, GROUP BY",
+            "option_c": "C. FROM, WHERE, GROUP BY, SELECT",
+            "option_d": "D. WHERE, FROM, GROUP BY, SELECT",
+            "option_e": "E. GROUP BY, FROM, WHERE, SELECT",
+            "correct_answer": "C",
+            "explanation": "The order is FROM -> WHERE -> GROUP BY -> SELECT."
+        },
+        {
+            "question": "Which clause cannot be used to filter rows based on the result of an aggregate function like AVG() or COUNT()?",
+            "option_a": "A. WHERE",
+            "option_b": "B. HAVING",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. Both a and c",
+            "option_e": "E. Both b and c",
+            "correct_answer": "A",
+            "explanation": "WHERE cannot use aggregate functions because it executes before grouping."
+        },
+        {
+            "question": "Immediately after the rows have been grouped using the GROUP BY clause, which clause is processed next?",
+            "option_a": "A. SELECT",
+            "option_b": "B. WHERE",
+            "option_c": "C. HAVING",
+            "option_d": "D. FROM",
+            "option_e": "E. ORDER BY",
+            "correct_answer": "C",
+            "explanation": "HAVING filters groups created by GROUP BY."
+        },
+        {
+            "question": "The FROM clause's primary role in logical processing is to:",
+            "option_a": "A. Filter out unwanted rows.",
+            "option_b": "B. Sort the final result set.",
+            "option_c": "C. Perform Cartesian products and joins between tables.",
+            "option_d": "D. Group rows together.",
+            "option_e": "E. Define which columns to return.",
+            "correct_answer": "C",
+            "explanation": "The FROM clause combines tables via joins or Cartesian products."
+        },
+        {
+            "question": "Which of the following is a key reason why the logical processing order is important for a developer to understand?",
+            "option_a": "A. It dictates the physical order that data is stored on the disk.",
+            "option_b": "B. It explains why column aliases from the SELECT clause cannot be used in the WHERE clause.",
+            "option_c": "C. It determines the license cost of the database software.",
+            "option_d": "D. It is used to define primary and foreign keys.",
+            "option_e": "E. It is only relevant for the database administrator, not developers.",
+            "correct_answer": "B",
+            "explanation": "WHERE runs before SELECT, so aliases in SELECT are not recognized in WHERE."
+        },
+        {
+            "question": "In the logical processing sequence, which step is responsible for eliminating rows that do not satisfy a search condition?",
+            "option_a": "A. The HAVING step",
+            "option_b": "B. The SELECT step",
+            "option_c": "C. The WHERE step",
+            "option_d": "D. The GROUP BY step",
+            "option_e": "E. The FROM step",
+            "correct_answer": "C",
+            "explanation": "The WHERE clause filters rows based on conditions before grouping."
+        },
+        {
+            "question": "After the HAVING clause has filtered the groups, what is the next logical step?",
+            "option_a": "A. The WHERE clause filters remaining rows.",
+            "option_b": "B. The GROUP BY clause forms new groups.",
+            "option_c": "C. The SELECT clause determines the final columns and calculations.",
+            "option_d": "D. The FROM clause adds more tables.",
+            "option_e": "E. The ORDER BY clause sorts the results.",
+            "correct_answer": "C",
+            "explanation": "SELECT runs after HAVING to choose columns and compute expressions."
+        },
+        {
+            "question": "Which clause is processed at the very end, just before the result is returned to the user?",
+            "option_a": "A. HAVING",
+            "option_b": "B. SELECT",
+            "option_c": "C. FROM",
+            "option_d": "D. ORDER BY",
+            "option_e": "E. WHERE",
+            "correct_answer": "D",
+            "explanation": "ORDER BY is the final logical step before returning the result set."
+        },
+        {
+            "question": "If a query does not contain a GROUP BY clause, which of the following statements about HAVING is true?",
+            "option_a": "A. The HAVING clause cannot be used.",
+            "option_b": "B. The HAVING clause will treat the entire result set as a single group.",
+            "option_c": "C. The HAVING clause will behave exactly like a WHERE clause.",
+            "option_d": "D. The query will result in a syntax error.",
+            "option_e": "E. The HAVING clause will execute before the FROM clause.",
+            "correct_answer": "B",
+            "explanation": "Without GROUP BY, HAVING applies to the entire result set as one group."
+        },
+        {
+            "question": "The ability to filter groups using HAVING is only possible after which previous step has been completed?",
+            "option_a": "A. SELECT",
+            "option_b": "B. WHERE",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. FROM",
+            "option_e": "E. ORDER BY",
+            "correct_answer": "C",
+            "explanation": "HAVING requires groups to exist, so GROUP BY must come first."
+        },
+        {
+            "question": "Which logical processing step is responsible for calculating aggregate functions like SUM() and COUNT()?",
+            "option_a": "A. The step where the aggregate function is written (e.g., SELECT or HAVING)",
+            "option_b": "B. The WHERE step",
+            "option_c": "C. The GROUP BY step",
+            "option_d": "D. The FROM step",
+            "option_e": "E. The ORDER BY step",
+            "correct_answer": "C",
+            "explanation": "Aggregate functions are computed during the grouping process in GROUP BY."
+        },
+        {
+            "question": "What is the logical order of processing for the following clauses: SELECT, FROM, WHERE, and ORDER BY?",
+            "option_a": "A. FROM, WHERE, SELECT, ORDER BY",
+            "option_b": "B. SELECT, FROM, WHERE, ORDER BY",
+            "option_c": "C. FROM, SELECT, WHERE, ORDER BY",
+            "option_d": "D. WHERE, FROM, SELECT, ORDER BY",
+            "option_e": "E. ORDER BY, FROM, WHERE, SELECT",
+            "correct_answer": "A",
+            "explanation": "For queries without GROUP BY, the order is FROM -> WHERE -> SELECT -> ORDER BY."
+        },
+        {
+            "question": "Which clause would you use to filter out individual employee records with a salary less than 50,000?",
+            "option_a": "A. HAVING Salary < 50000",
+            "option_b": "B. GROUP BY Salary < 50000",
+            "option_c": "C. WHERE Salary < 50000",
+            "option_d": "D. SELECT Salary < 50000",
+            "option_e": "E. ORDER BY Salary < 50000",
+            "correct_answer": "C",
+            "explanation": "WHERE filters rows based on column conditions before grouping."
+        },
+        {
+            "question": "Which clause would you use to filter out departments where the average salary is less than 50,000?",
+            "option_a": "A. HAVING AVG(Salary) < 50000",
+            "option_b": "B. WHERE AVG(Salary) < 50000",
+            "option_c": "C. GROUP BY AVG(Salary) < 50000",
+            "option_d": "D. SELECT AVG(Salary) < 50000",
+            "option_e": "E. ORDER BY AVG(Salary) < 50000",
+            "correct_answer": "A",
+            "explanation": "HAVING filters groups based on aggregate results like AVG."
+        },
+        {
+            "question": "The SELECT clause is processed after which of the following clauses? (Choose all that apply)",
+            "option_a": "A. FROM",
+            "option_b": "B. WHERE",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. HAVING",
+            "option_e": "E. ORDER BY",
+            "correct_answer": "A, B, C, D",
+            "explanation": "SELECT comes after FROM, WHERE, GROUP BY, and HAVING, but before ORDER BY."
+        },
+        {
+            "question": "Which of the following clauses can use column aliases defined in the SELECT clause?",
+            "option_a": "A. WHERE",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. HAVING",
+            "option_d": "D. ORDER BY",
+            "option_e": "E. FROM",
+            "correct_answer": "D",
+            "explanation": "Only ORDER BY can reference SELECT aliases since it runs after SELECT."
+        },
+        {
+            "question": "The initial result set produced by the FROM clause is known as a:",
+            "option_a": "A. Sorted list",
+            "option_b": "B. Conceptual table",
+            "option_c": "C. Grouped set",
+            "option_d": "D. Cartesian product (if multiple tables) or the full table (if one table)",
+            "option_e": "E. Final output",
+            "correct_answer": "D",
+            "explanation": "FROM generates a Cartesian product or full table as the initial result set."
+        },
+        {
+            "question": "True or False: The logical processing order always determines the actual physical execution order of the query by the database engine.",
+            "option_a": "A. True",
+            "option_b": "B. False",
+            "correct_answer": "B",
+            "explanation": "The optimizer can change physical order as long as logical results remain correct."
+        },
+        {
+            "question": "What is the immediate next step after the WHERE clause has finished filtering rows?",
+            "option_a": "A. The HAVING clause filters groups.",
+            "option_b": "B. The SELECT clause chooses columns.",
+            "option_c": "C. The GROUP BY clause forms groups (if it exists).",
+            "option_d": "D. The ORDER BY clause sorts the result.",
+            "option_e": "E. The FROM clause gets more data.",
+            "correct_answer": "C",
+            "explanation": "After WHERE, grouping happens if GROUP BY exists; else SELECT runs."
+        },
+        {
+            "question": "You need to create a table for 'Employees' with a column 'Email' that must contain a unique value for every row and cannot be left empty. Which line of the CREATE TABLE statement is correct?",
+            "option_a": "A. Email VARCHAR(100)",
+            "option_b": "B. Email VARCHAR(100) UNIQUE",
+            "option_c": "C. Email VARCHAR(100) NOT NULL",
+            "option_d": "D. Email VARCHAR(100) NOT NULL UNIQUE",
+            "option_e": "E. Email VARCHAR(100) PRIMARY KEY",
+            "correct_answer": "D",
+            "explanation": "NOT NULL UNIQUE ensures both conditions, whereas PRIMARY KEY is usually for main ID."
+        },
+        {
+            "question": "Examine the SQL: ALTER TABLE Students ADD CONSTRAINT fk_program FOREIGN KEY (ProgID) REFERENCES Programs(ProgID) ON DELETE CASCADE; What happens if a row in Programs is deleted?",
+            "option_a": "A. Deletion is blocked if any student is enrolled in that program.",
+            "option_b": "B. ProgID in Students is set to NULL.",
+            "option_c": "C. All students enrolled in that program are deleted.",
+            "option_d": "D. The database checks if ProgID is unique.",
+            "option_e": "E. A new default program is created automatically.",
+            "correct_answer": "C",
+            "explanation": "ON DELETE CASCADE deletes all referencing child rows when parent is deleted."
+        },
+        {
+            "question": "Which SQL operator is used in a WHERE clause to find values that match a specific pattern, such as names starting with 'Br'?",
+            "option_a": "A. =",
+            "option_b": "B. BETWEEN",
+            "option_c": "C. IN",
+            "option_d": "D. LIKE",
+            "option_e": "E. EXISTS",
+            "correct_answer": "D",
+            "explanation": "LIKE is used with patterns and wildcards for string matching."
+        },
+        {
+            "question": "You want to list all unique program IDs (ProgID) from the Students table, avoiding duplicates. Which keyword should you use?",
+            "option_a": "A. UNIQUE",
+            "option_b": "B. DISTINCT",
+            "option_c": "C. ONLY",
+            "option_d": "D. DIFFERENT",
+            "option_e": "E. ALTER",
+            "correct_answer": "B",
+            "explanation": "DISTINCT removes duplicate rows in SELECT results."
+        },
+        {
+            "question": "You need to find the total number of students in the 'Students' table. Which SQL statement is correct?",
+            "option_a": "A. SELECT TOTAL(*) FROM Students;",
+            "option_b": "B. SELECT SUM(*) FROM Students;",
+            "option_c": "C. SELECT COUNT(*) FROM Students;",
+            "option_d": "D. SELECT NUM(*) FROM Students;",
+            "option_e": "E. SELECT ADD(*) FROM Students;",
+            "correct_answer": "C",
+            "explanation": "COUNT(*) returns the number of rows in a table."
+        }
+    ]
+}

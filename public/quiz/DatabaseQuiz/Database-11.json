@@ -1,0 +1,252 @@
+[
+    {
+        "question": "What is the primary purpose of a JOIN operation in SQL?",
+        "options": {
+            "option_a": "To update data in multiple tables simultaneously.",
+            "option_b": "To combine rows from two or more tables based on a related column.",
+            "option_c": "To delete duplicate records from a single table.",
+            "option_d": "To create a backup of a database table."
+        },
+        "answer": "option_b"
+    },
+    {
+        "question": "Which type of JOIN returns only the rows where there is a match in both joined tables?",
+        "options": {
+            "option_a": "FULL JOIN",
+            "option_b": "LEFT JOIN",
+            "option_c": "RIGHT JOIN",
+            "option_d": "INNER JOIN"
+        },
+        "answer": "option_d"
+    },
+    {
+        "question": "You perform a LEFT OUTER JOIN between Table A and Table B. What does the result set include?",
+        "options": {
+            "option_a": "Only rows where the joined key exists in both Table A and Table B.",
+            "option_b": "All rows from Table B, and the matched rows from Table A.",
+            "option_c": "All rows from Table A, and the matched rows from Table B.",
+            "option_d": "All rows from both Table A and Table B, regardless of a match."
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "You want to list ALL programs, including those that currently have no students enrolled. Which JOIN should you use?",
+        "options": {
+            "option_a": "INNER JOIN Programs ON Students.program_id = Programs.program_id",
+            "option_b": "LEFT JOIN Programs ON Students.program_id = Programs.program_id",
+            "option_c": "RIGHT JOIN Programs ON Students.program_id = Programs.program_id",
+            "option_d": "INNER JOIN Students ON Students.program_id = Programs.program_id"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "In the traditional Oracle join syntax (using commas in the FROM clause), how is the join condition specified?",
+        "options": {
+            "option_a": "Using the JOIN keyword",
+            "option_b": "Using the ON keyword",
+            "option_c": "Using the USING clause",
+            "option_d": "Using the WHERE clause"
+        },
+        "answer": "option_d"
+    },
+    {
+        "question": "What will be displayed for the right table's columns in a LEFT OUTER JOIN if no matching row exists in the right table?",
+        "options": {
+            "option_a": "Zero (0)",
+            "option_b": "A blank space",
+            "option_c": "The word \"NULL\"",
+            "option_d": "The value from the left table"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "You need to find the names of students who are enrolled in a program. Which join is most appropriate?",
+        "options": {
+            "option_a": "A LEFT JOIN to include students with no program.",
+            "option_b": "An INNER JOIN between Students and Programs on program_id.",
+            "option_c": "A RIGHT JOIN to include programs with no students.",
+            "option_d": "A FULL JOIN to include everything."
+        },
+        "answer": "option_b"
+    },
+    {
+        "question": "The condition that specifies which columns are used to link the tables in a modern JOIN (using the JOIN keyword) is provided in which clause?",
+        "options": {
+            "option_a": "WHERE",
+            "option_b": "HAVING",
+            "option_c": "FROM",
+            "option_d": "ON"
+        },
+        "answer": "option_d"
+    },
+    {
+        "question": "Consider the query: SELECT e.name, d.name FROM employees e RIGHT JOIN departments d ON e.dept_id = d.id; What does this query return?",
+        "options": {
+            "option_a": "All employees and their departments.",
+            "option_b": "All employees, including those not assigned to a department.",
+            "option_c": "All departments, and the employees in them.",
+            "option_d": "Only employees who are assigned to a department."
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "Which of the following is a key difference between an INNER JOIN and an OUTER JOIN?",
+        "options": {
+            "option_a": "INNER JOIN uses the ON clause, while OUTER JOIN uses the WHERE clause.",
+            "option_b": "INNER JOIN is faster than OUTER JOIN.",
+            "option_c": "INNER JOIN only returns matching rows, while OUTER JOIN can return non-matching rows filled with NULLs.",
+            "option_d": "OUTER JOIN can only join two tables, while INNER JOIN can join many tables."
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "If you want to retrieve all rows from both tables, combining them when possible and filling in NULLs where no match exists, which join would you use?",
+        "options": {
+            "option_a": "INNER JOIN",
+            "option_b": "LEFT JOIN",
+            "option_c": "RIGHT JOIN",
+            "option_d": "FULL OUTER JOIN"
+        },
+        "answer": "option_d"
+    },
+    {
+        "question": "Look at the following Venn diagram representation of a JOIN. The highlighted section includes only the overlapping area of the two circles. Which JOIN does this represent?",
+        "options": {
+            "option_a": "LEFT JOIN",
+            "option_b": "RIGHT JOIN",
+            "option_c": "INNER JOIN",
+            "option_d": "FULL JOIN"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "You have a Customers table and an Orders table. You need to list all customers, whether they have placed an order or not. Which query is correct?",
+        "options": {
+            "option_a": "SELECT * FROM Customers INNER JOIN Orders ON Customers.id = Orders.cust_id;",
+            "option_b": "SELECT * FROM Customers LEFT JOIN Orders ON Customers.id = Orders.cust_id;",
+            "option_c": "SELECT * FROM Customers RIGHT JOIN Orders ON Customers.id = Orders.cust_id;",
+            "option_d": "SELECT * FROM Customers, Orders WHERE Customers.id = Orders.cust_id;"
+        },
+        "answer": "option_b"
+    },
+    {
+        "question": "In the traditional join syntax, what is the major risk if you forget to specify the join condition in the WHERE clause?",
+        "options": {
+            "option_a": "The query will run slower.",
+            "option_b": "The query will result in an error.",
+            "option_c": "It will create a Cartesian Product.",
+            "option_d": "It will automatically perform an INNER JOIN."
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "The clause ON s.pid = p.progId in a JOIN statement defines the:",
+        "options": {
+            "option_a": "Sort order for the result set.",
+            "option_b": "Columns to be selected in the output.",
+            "option_c": "Join condition between the Student (s) and Program (p) tables.",
+            "option_d": "Filter for which rows to include after the join is complete."
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "The library wants to identify all books that have never been borrowed. Which query will achieve this?",
+        "options": {
+            "option_a": "SELECT * FROM Book WHERE book_id IS NULL;",
+            "option_b": "SELECT b.* FROM Book b INNER JOIN Loan l ON b.book_id = l.book_id WHERE l.loan_id IS NULL;",
+            "option_c": "SELECT b.* FROM Book b LEFT OUTER JOIN Loan l ON b.book_id = l.book_id WHERE l.loan_id IS NULL;",
+            "option_d": "SELECT * FROM Loan WHERE book_id IS NULL;"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "Which query correctly extends the membership of member 'M100' by 30 days from their current membership date?",
+        "options": {
+            "option_a": "UPDATE Member SET membership_date = membership_date + 30 WHERE member_id = 'M100';",
+            "option_b": "UPDATE Member SET membership_date = CURRENT_DATE + 30 WHERE member_id = 'M100';",
+            "option_c": "UPDATE Member SET membership_date = DATE_ADD(membership_date, INTERVAL 30 DAY) WHERE member_id = 'M100';",
+            "option_d": "SELECT membership_date + 30 FROM Member WHERE member_id = 'M100';"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "A librarian needs to find the names of members who borrowed books in the 'Mystery' genre. Which is the correct query?",
+        "options": {
+            "option_a": "SELECT mname FROM Member WHERE genre = 'Mystery';",
+            "option_b": "SELECT m.mname FROM Member m, Book b WHERE b.genre = 'Mystery';",
+            "option_c": "SELECT DISTINCT m.mname FROM Member m INNER JOIN Loan l ON m.member_id = l.member_id INNER JOIN Book b ON l.book_id = b.book_id WHERE b.genre = 'Mystery';",
+            "option_d": "SELECT mname FROM Member WHERE member_id IN (SELECT book_id FROM Book WHERE genre = 'Mystery');"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "Which query calculates the total value of all books in the library?",
+        "options": {
+            "option_a": "SELECT SUM(price) FROM Book;",
+            "option_b": "SELECT COUNT(price) FROM Book;",
+            "option_c": "SELECT TOTAL(price) FROM Book;",
+            "option_d": "SELECT AVG(price) FROM Book;"
+        },
+        "answer": "option_a"
+    },
+    {
+        "question": "You need to delete all loan records that are over 5 years old. Which query is appropriate?",
+        "options": {
+            "option_a": "DELETE FROM Loan WHERE loan_date < (CURRENT_DATE - INTERVAL '5' YEAR);",
+            "option_b": "DROP TABLE Loan WHERE loan_date < CURRENT_DATE;",
+            "option_c": "ALTER TABLE Loan DROP COLUMN loan_date;",
+            "option_d": "DELETE FROM Member WHERE loan_date < CURRENT_DATE;"
+        },
+        "answer": "option_a"
+    },
+    {
+        "question": "Which query finds the author who has written the most books in the library?",
+        "options": {
+            "option_a": "SELECT author, COUNT(*) AS book_count FROM Book ORDER BY book_count;",
+            "option_b": "SELECT author, COUNT(*) AS book_count FROM Book GROUP BY author ORDER BY book_count DESC LIMIT 1;",
+            "option_c": "SELECT author FROM Book WHERE COUNT(*) > 1;",
+            "option_d": "SELECT MAX(author) FROM Book;"
+        },
+        "answer": "option_b"
+    },
+    {
+        "question": "You want to list all members along with the title of the last book they borrowed (assuming the latest loan_date indicates the last book). Which query is a good first step but might need refinement for the \"last\" book?",
+        "options": {
+            "option_a": "SELECT m.mname, b.title FROM Member m INNER JOIN Loan l ON m.member_id = l.member_id INNER JOIN Book b ON l.book_id = b.book_id;",
+            "option_b": "SELECT m.mname, MAX(l.loan_date) FROM Member m LEFT JOIN Loan l ON m.member_id = l.member_id GROUP BY m.mname;",
+            "option_c": "SELECT m.mname, b.title, l.loan_date FROM Member m LEFT JOIN Loan l ON m.member_id = l.member_id LEFT JOIN Book b ON l.book_id = b.book_id ORDER BY m.mname, l.loan_date DESC;",
+            "option_d": "SELECT title FROM Book;"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "Which query adds a new 'email' column of type VARCHAR(100) to the Member table?",
+        "options": {
+            "option_a": "INSERT INTO Member ADD COLUMN email VARCHAR(100);",
+            "option_b": "UPDATE Member SET email = '' WHERE email IS NULL;",
+            "option_c": "ALTER TABLE Member ADD email VARCHAR(100);",
+            "option_d": "CREATE COLUMN email IN Member;"
+        },
+        "answer": "option_c"
+    },
+    {
+        "question": "Which query finds all loans that are currently active (i.e., the book has been borrowed but not yet returned)?",
+        "options": {
+            "option_a": "SELECT * FROM Loan WHERE return_date > CURRENT_DATE;",
+            "option_b": "SELECT * FROM Loan WHERE return_date IS NULL;",
+            "option_c": "SELECT * FROM Loan WHERE loan_date < CURRENT_DATE;",
+            "option_d": "SELECT * FROM Book WHERE book_id NOT IN (SELECT book_id FROM Loan);"
+        },
+        "answer": "option_b"
+    },
+    {
+        "question": "The library introduces a 10% discount on all books. Which query applies this discount to the 'price' column?",
+        "options": {
+            "option_a": "UPDATE Book SET price = price * 0.90;",
+            "option_b": "UPDATE Book SET price = price - 10;",
+            "option_c": "SELECT price * 0.90 FROM Book;",
+            "option_d": "ALTER TABLE Book DISCOUNT price 10%;"
+        },
+        "answer": "option_a"
+    }
+]

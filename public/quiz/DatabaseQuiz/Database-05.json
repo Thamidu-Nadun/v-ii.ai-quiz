@@ -1,0 +1,265 @@
+{
+    "questions": [
+        {
+            "question": "What is the main purpose of conceptual database design?",
+            "option_a": "A. To implement SQL queries directly",
+            "option_b": "B. To create a high-level schema based on user requirements",
+            "option_c": "C. To normalize tables into 3NF",
+            "option_d": "D. To define access rights for users",
+            "correct_answer": "B",
+            "explanation": "Conceptual database design creates a high-level schema (ER model) from user requirements before physical implementation."
+        },
+        {
+            "question": "Which of the following best represents an entity in ER modeling?",
+            "option_a": "A. A relationship between two tables",
+            "option_b": "B. A noun or noun phrase representing a real-world object",
+            "option_c": "C. A derived attribute",
+            "option_d": "D. A primary key of a relation",
+            "correct_answer": "B",
+            "explanation": "Entities represent real-world objects, typically named with nouns or noun phrases such as Student or Employee."
+        },
+        {
+            "question": "Which ER symbol is used to represent a weak entity?",
+            "option_a": "A. Double-lined oval",
+            "option_b": "B. Double-lined rectangle",
+            "option_c": "C. Dotted oval",
+            "option_d": "D. Diamond",
+            "correct_answer": "B",
+            "explanation": "Weak entities are represented by double-lined rectangles in ER diagrams."
+        },
+        {
+            "question": "Which of the following is an example of a composite attribute?",
+            "option_a": "A. Date of Birth",
+            "option_b": "B. GPA",
+            "option_c": "C. Name consisting of First, Middle, and Last name",
+            "option_d": "D. Employee ID",
+            "correct_answer": "C",
+            "explanation": "Composite attributes can be divided into subparts, such as Name into First, Middle, and Last."
+        },
+        {
+            "question": "What type of attribute is represented using a dotted oval in ER diagrams?",
+            "option_a": "A. Key attribute",
+            "option_b": "B. Derived attribute",
+            "option_c": "C. Multivalued attribute",
+            "option_d": "D. Composite attribute",
+            "correct_answer": "B",
+            "explanation": "Derived attributes, such as Age (from DOB), are shown using a dotted oval."
+        },
+        {
+            "question": "Which attribute type allows multiple values for a single entity instance?",
+            "option_a": "A. Composite attribute",
+            "option_b": "B. Derived attribute",
+            "option_c": "C. Multivalued attribute",
+            "option_d": "D. Key attribute",
+            "correct_answer": "C",
+            "explanation": "Multivalued attributes, such as multiple email addresses, allow more than one value for a single entity."
+        },
+        {
+            "question": "What is the minimal set of attributes that uniquely identifies an entity?",
+            "option_a": "A. Super Key",
+            "option_b": "B. Composite Key",
+            "option_c": "C. Candidate Key",
+            "option_d": "D. Foreign Key",
+            "correct_answer": "C",
+            "explanation": "Candidate keys are minimal sets of attributes that uniquely identify an entity."
+        },
+        {
+            "question": "Which key type may consist of multiple attributes together?",
+            "option_a": "A. Primary Key",
+            "option_b": "B. Composite Key",
+            "option_c": "C. Super Key",
+            "option_d": "D. Foreign Key",
+            "correct_answer": "B",
+            "explanation": "Composite keys consist of multiple attributes used together to uniquely identify records."
+        },
+        {
+            "question": "What does a relationship represent in ER modeling?",
+            "option_a": "A. An attribute between two entities",
+            "option_b": "B. An association among two or more entities",
+            "option_c": "C. A key constraint",
+            "option_d": "D. A multivalued attribute",
+            "correct_answer": "B",
+            "explanation": "Relationships capture associations between entities, such as Student–Enrolls–Course."
+        },
+        {
+            "question": "A ternary relationship involves how many entities?",
+            "option_a": "A. One",
+            "option_b": "B. Two",
+            "option_c": "C. Three",
+            "option_d": "D. Four",
+            "correct_answer": "C",
+            "explanation": "A ternary relationship involves exactly three entities."
+        },
+        {
+            "question": "Which cardinality ratio represents many-to-many relationships?",
+            "option_a": "A. 1:1",
+            "option_b": "B. 1:N",
+            "option_c": "C. N:M",
+            "option_d": "D. None of the above",
+            "correct_answer": "C",
+            "explanation": "N:M specifies that many entities in one set relate to many entities in another set."
+        },
+        {
+            "question": "Which relationship type is represented when an employee manages exactly one department and each department has only one manager?",
+            "option_a": "A. 1:1",
+            "option_b": "B. 1:N",
+            "option_c": "C. N:M",
+            "option_d": "D. Recursive",
+            "correct_answer": "A",
+            "explanation": "This is a one-to-one relationship where one employee manages one department."
+        },
+        {
+            "question": "Which type of relationship describes an employee working in one department while a department can have many employees?",
+            "option_a": "A. 1:1",
+            "option_b": "B. 1:N",
+            "option_c": "C. N:M",
+            "option_d": "D. Recursive",
+            "correct_answer": "B",
+            "explanation": "This is a one-to-many relationship: one department can have many employees."
+        },
+        {
+            "question": "Which relationship type represents an employee working on several projects, with projects having multiple employees?",
+            "option_a": "A. 1:1",
+            "option_b": "B. 1:N",
+            "option_c": "C. N:M",
+            "option_d": "D. Recursive",
+            "correct_answer": "C",
+            "explanation": "Many-to-many relationships occur when both sides can have multiple associations."
+        },
+        {
+            "question": "What is a recursive relationship?",
+            "option_a": "A. A relationship involving more than three entities",
+            "option_b": "B. A relationship where an entity is related to itself",
+            "option_c": "C. A relationship involving weak entities",
+            "option_d": "D. A relationship with descriptive attributes",
+            "correct_answer": "B",
+            "explanation": "Recursive relationships occur when the same entity participates more than once in different roles, e.g., Employee supervises Employee."
+        },
+        {
+            "question": "Which type of attribute describes information about a relationship rather than entities?",
+            "option_a": "A. Derived attribute",
+            "option_b": "B. Descriptive attribute",
+            "option_c": "C. Composite attribute",
+            "option_d": "D. Key attribute",
+            "correct_answer": "B",
+            "explanation": "Descriptive attributes store information about relationships, e.g., 'since' in WorksIn(Employee, Department)."
+        },
+        {
+            "question": "What does total participation mean in ER modeling?",
+            "option_a": "A. All entities in one set must participate in the relationship",
+            "option_b": "B. At least one entity must participate in the relationship",
+            "option_c": "C. No entities participate in the relationship",
+            "option_d": "D. Optional participation",
+            "correct_answer": "A",
+            "explanation": "Total participation means every entity in one set must participate in the relationship (double lines)."
+        },
+        {
+            "question": "Which ER construct is represented by double lines between an entity and a relationship?",
+            "option_a": "A. Weak entity",
+            "option_b": "B. Multivalued attribute",
+            "option_c": "C. Total participation",
+            "option_d": "D. Composite attribute",
+            "correct_answer": "C",
+            "explanation": "Double lines from entity to relationship denote total participation."
+        },
+        {
+            "question": "Which of the following is true about weak entities?",
+            "option_a": "A. They have their own primary key independent of other entities",
+            "option_b": "B. They rely on an identifying relationship with a strong entity",
+            "option_c": "C. They cannot have attributes",
+            "option_d": "D. They exist independently",
+            "correct_answer": "B",
+            "explanation": "Weak entities depend on a strong entity for identification and exist through identifying relationships."
+        },
+        {
+            "question": "What is a partial key?",
+            "option_a": "A. A subset of attributes forming part of the key of a weak entity",
+            "option_b": "B. A candidate key that is not minimal",
+            "option_c": "C. A key attribute of a composite key",
+            "option_d": "D. A superkey with redundancy",
+            "correct_answer": "A",
+            "explanation": "Partial keys are attributes of weak entities that combine with the strong entity’s key for unique identification."
+        },
+        {
+            "question": "In ER diagrams, what symbol is used to represent an ISA relationship?",
+            "option_a": "A. Diamond",
+            "option_b": "B. Triangle",
+            "option_c": "C. Double rectangle",
+            "option_d": "D. Dotted oval",
+            "correct_answer": "B",
+            "explanation": "ISA (specialization/generalization) relationships are represented using a triangle."
+        },
+        {
+            "question": "Specialization in ER modeling refers to:",
+            "option_a": "A. Combining entities into a supertype",
+            "option_b": "B. Splitting an entity into subtypes based on distinguishing characteristics",
+            "option_c": "C. Assigning candidate keys",
+            "option_d": "D. Removing multivalued attributes",
+            "correct_answer": "B",
+            "explanation": "Specialization divides an entity into subtypes with additional attributes or relationships."
+        },
+        {
+            "question": "Generalization in ER modeling refers to:",
+            "option_a": "A. Combining multiple entities into a supertype",
+            "option_b": "B. Splitting entities into subtypes",
+            "option_c": "C. Creating a composite key",
+            "option_d": "D. Removing redundant attributes",
+            "correct_answer": "A",
+            "explanation": "Generalization abstracts common features of multiple entities into a supertype."
+        },
+        {
+            "question": "Which constraint ensures that an entity belongs to exactly one of its subclasses?",
+            "option_a": "A. Overlapping",
+            "option_b": "B. Covering",
+            "option_c": "C. Disjoint",
+            "option_d": "D. Total participation",
+            "correct_answer": "C",
+            "explanation": "Disjoint constraint ensures entities cannot belong to more than one subclass simultaneously."
+        },
+        {
+            "question": "If an employee can be both a permanent and contract employee, which subclass constraint applies?",
+            "option_a": "A. Disjoint",
+            "option_b": "B. Overlapping",
+            "option_c": "C. Total specialization",
+            "option_d": "D. Partial specialization",
+            "correct_answer": "B",
+            "explanation": "Overlapping allows an entity to belong to multiple subclasses simultaneously."
+        },
+        {
+            "question": "When every entity of a supertype must belong to at least one of its subtypes, it is called:",
+            "option_a": "A. Partial specialization",
+            "option_b": "B. Total specialization",
+            "option_c": "C. Disjoint constraint",
+            "option_d": "D. Overlapping constraint",
+            "correct_answer": "B",
+            "explanation": "Total specialization (covering constraint) requires all supertype entities to belong to a subtype."
+        },
+        {
+            "question": "If not all supertype entities are required to be in a subtype, what is this called?",
+            "option_a": "A. Total specialization",
+            "option_b": "B. Partial specialization",
+            "option_c": "C. Overlapping constraint",
+            "option_d": "D. Disjoint constraint",
+            "correct_answer": "B",
+            "explanation": "Partial specialization allows some entities of a supertype not to belong to any subtype."
+        },
+        {
+            "question": "Which type of specialization occurs when subclasses collectively cover all entities in the super class?",
+            "option_a": "A. Partial specialization",
+            "option_b": "B. Total specialization",
+            "option_c": "C. Overlapping specialization",
+            "option_d": "D. Disjoint specialization",
+            "correct_answer": "B",
+            "explanation": "Total specialization means all supertype entities are covered by subtypes."
+        },
+        {
+            "question": "Which example illustrates a recursive relationship in a university ER model?",
+            "option_a": "A. Student enrolls in Course",
+            "option_b": "B. Faculty teaches Course",
+            "option_c": "C. Student supervises Student (peer tutoring)",
+            "option_d": "D. Department offers Course",
+            "correct_answer": "C",
+            "explanation": "Recursive relationship occurs when entities of the same type relate, e.g., Student supervises Student."
+        }
+    ]
+}

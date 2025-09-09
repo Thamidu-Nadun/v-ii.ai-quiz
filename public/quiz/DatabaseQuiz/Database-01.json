@@ -1,0 +1,355 @@
+{
+    "questions": [
+        {
+            "question": "What is the main difference between data and information?",
+            "option_a": "A. Data is meaningful, while information is raw facts.",
+            "option_b": "B. Data is raw facts, while information is processed and meaningful.",
+            "option_c": "C. Data is always numerical, information is always textual.",
+            "option_d": "D. Data is stored in DBMS, while information cannot be stored.",
+            "correct_answer": "B",
+            "explanation": "Data refers to raw, unprocessed facts, while information is data that has been processed and given meaning."
+        },
+        {
+            "question": "Which of the following best defines a database?",
+            "option_a": "A. A software that manages files.",
+            "option_b": "B. A collection of unrelated data.",
+            "option_c": "C. A collection of related data organized for easy access.",
+            "option_d": "D. A programming language for data storage.",
+            "correct_answer": "C",
+            "explanation": "A database is a collection of related data organized for efficient access and management."
+        },
+        {
+            "question": "What does DBMS stand for?",
+            "option_a": "A. Database Management System",
+            "option_b": "B. Data Backup Management Software",
+            "option_c": "C. Digital Binary Management Setup",
+            "option_d": "D. Database Modeling Structure",
+            "correct_answer": "A",
+            "explanation": "DBMS stands for Database Management System, which is software used to define, construct, manipulate, and share databases."
+        },
+        {
+            "question": "Which is NOT a component of a database system environment?",
+            "option_a": "A. Hardware",
+            "option_b": "B. Software",
+            "option_c": "C. Procedures",
+            "option_d": "D. Algorithms",
+            "correct_answer": "D",
+            "explanation": "The five components of a database system environment are hardware, software, people, procedures, and data."
+        },
+        {
+            "question": "Which of the following is a key advantage of the database approach compared to the file-processing system?",
+            "option_a": "A. More data redundancy",
+            "option_b": "B. Data independence",
+            "option_c": "C. No need for data integrity",
+            "option_d": "D. Slower access",
+            "correct_answer": "B",
+            "explanation": "A major advantage of the database approach is data independence, where applications are independent of data storage methods."
+        },
+        {
+            "question": "Which of the following is NOT an advantage of DBMS?",
+            "option_a": "A. Enforcing integrity",
+            "option_b": "B. Restricting unauthorized access",
+            "option_c": "C. Providing backup and recovery",
+            "option_d": "D. Increasing data redundancy",
+            "correct_answer": "D",
+            "explanation": "DBMS reduces redundancy; redundancy is actually a problem in file-based systems."
+        },
+        {
+            "question": "Why is database design important?",
+            "option_a": "A. It ensures storage space is used efficiently.",
+            "option_b": "B. It ensures critical reports can be generated.",
+            "option_c": "C. It ensures databases can adapt to user requirements.",
+            "option_d": "D. All of the above.",
+            "correct_answer": "D",
+            "explanation": "Good database design avoids wasted storage, missing data, and inflexibility to user needs."
+        },
+        {
+            "question": "Which of the following is the first phase of the database design process?",
+            "option_a": "A. Logical database design",
+            "option_b": "B. Requirement collection and analysis",
+            "option_c": "C. Schema refinement",
+            "option_d": "D. Security design",
+            "correct_answer": "B",
+            "explanation": "The first phase is requirement collection and analysis, where data and transaction needs are identified."
+        },
+        {
+            "question": "Which method is NOT used to gather information for requirements analysis?",
+            "option_a": "A. Reviewing existing documents",
+            "option_b": "B. Interviews with end users",
+            "option_c": "C. Reviewing automated system documentation",
+            "option_d": "D. Random guessing",
+            "correct_answer": "D",
+            "explanation": "Requirements analysis involves reviewing documents, interviewing users, and reviewing automated systems—not guessing."
+        },
+        {
+            "question": "What is the output of conceptual database design?",
+            "option_a": "A. A security model",
+            "option_b": "B. A logical schema",
+            "option_c": "C. A high-level data description using a conceptual data model",
+            "option_d": "D. A physical storage layout",
+            "correct_answer": "C",
+            "explanation": "Conceptual database design produces a high-level model, like an ER diagram, describing data and relationships."
+        },
+        {
+            "question": "In which step of the database design process is the DBMS chosen?",
+            "option_a": "A. Requirement collection",
+            "option_b": "B. Conceptual design",
+            "option_c": "C. Logical database design",
+            "option_d": "D. Schema refinement",
+            "correct_answer": "C",
+            "explanation": "The DBMS is selected during logical database design, where the conceptual schema is mapped to a chosen data model."
+        },
+        {
+            "question": "Which database design phase refines schema to remove redundancies?",
+            "option_a": "A. Logical database design",
+            "option_b": "B. Schema refinement",
+            "option_c": "C. Conceptual design",
+            "option_d": "D. Security design",
+            "correct_answer": "B",
+            "explanation": "Schema refinement checks for redundancies and inconsistencies in the schema created during logical design."
+        },
+        {
+            "question": "Which design phase considers indexes and performance?",
+            "option_a": "A. Physical database design",
+            "option_b": "B. Conceptual design",
+            "option_c": "C. Requirement analysis",
+            "option_d": "D. Schema refinement",
+            "correct_answer": "A",
+            "explanation": "Physical database design focuses on performance improvements and physical storage, including indexes."
+        },
+        {
+            "question": "Which of the following defines user roles and access rights?",
+            "option_a": "A. Schema refinement",
+            "option_b": "B. Security design",
+            "option_c": "C. Physical design",
+            "option_d": "D. Requirement analysis",
+            "correct_answer": "B",
+            "explanation": "Security design defines different user roles and provides appropriate levels of access."
+        },
+        {
+            "question": "Which is NOT a factor for selecting database hosting type?",
+            "option_a": "A. Scalability",
+            "option_b": "B. Cost",
+            "option_c": "C. Security",
+            "option_d": "D. Programming language",
+            "correct_answer": "D",
+            "explanation": "Scalability, cost, security, and performance are hosting factors; programming language is not."
+        },
+        {
+            "question": "Which hosting type requires organizations to manage hardware themselves?",
+            "option_a": "A. On-premise hosting",
+            "option_b": "B. Cloud hosting",
+            "option_c": "C. Virtual hosting",
+            "option_d": "D. Shared hosting",
+            "correct_answer": "A",
+            "explanation": "On-premise hosting requires organizations to handle their own hardware and infrastructure."
+        },
+        {
+            "question": "Which hosting type provides scalability and reduces hardware costs?",
+            "option_a": "A. On-premise hosting",
+            "option_b": "B. Cloud hosting",
+            "option_c": "C. File hosting",
+            "option_d": "D. Virtual hosting",
+            "correct_answer": "B",
+            "explanation": "Cloud hosting provides flexibility, scalability, and eliminates the need for physical hardware management."
+        },
+        {
+            "question": "Which of the following best defines data-intensive applications?",
+            "option_a": "A. Applications that perform complex calculations.",
+            "option_b": "B. Applications requiring large-scale data storage and retrieval.",
+            "option_c": "C. Applications that do not require databases.",
+            "option_d": "D. Applications that only run offline.",
+            "correct_answer": "B",
+            "explanation": "Data-intensive applications focus on large-scale storage, retrieval, and processing of data."
+        },
+        {
+            "question": "Why must data-intensive applications be scalable?",
+            "option_a": "A. To reduce computation time",
+            "option_b": "B. To handle growing data and users efficiently",
+            "option_c": "C. To reduce system complexity",
+            "option_d": "D. To avoid using cloud services",
+            "correct_answer": "B",
+            "explanation": "Scalability ensures applications can handle increasing data and user loads without performance issues."
+        },
+        {
+            "question": "Which is a common feature of data-intensive applications?",
+            "option_a": "A. Real-time access",
+            "option_b": "B. Heavy reliance on reliable DBMS",
+            "option_c": "C. Multiple concurrent users",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Data-intensive apps often require real-time access, multi-user support, and robust DBMS support."
+        },
+        {
+            "question": "Which is an example of enforcing integrity in a DBMS?",
+            "option_a": "A. Limiting storage space",
+            "option_b": "B. Defining data types for fields",
+            "option_c": "C. Allowing redundant data",
+            "option_d": "D. Disabling access control",
+            "correct_answer": "B",
+            "explanation": "DBMS allows constraints such as ensuring a name field must be stored as a string."
+        },
+        {
+            "question": "What feature of DBMS protects users from system failures?",
+            "option_a": "A. Data independence",
+            "option_b": "B. Backup and recovery",
+            "option_c": "C. Security design",
+            "option_d": "D. Concurrent access",
+            "correct_answer": "B",
+            "explanation": "Backup and recovery mechanisms ensure users can recover data after failures."
+        },
+        {
+            "question": "Which type of access does a bank customer typically have in DBMS security design?",
+            "option_a": "A. Read and update",
+            "option_b": "B. Read only",
+            "option_c": "C. Update only",
+            "option_d": "D. Full control",
+            "correct_answer": "B",
+            "explanation": "Customers are usually granted read-only access to their account information."
+        },
+        {
+            "question": "What is the purpose of schema refinement?",
+            "option_a": "A. Remove redundancies and inconsistencies",
+            "option_b": "B. Define security roles",
+            "option_c": "C. Choose database hosting type",
+            "option_d": "D. Select programming language",
+            "correct_answer": "A",
+            "explanation": "Schema refinement ensures database design is optimized by removing redundancies."
+        },
+        {
+            "question": "Which design step is concerned with administrative and performance constraints?",
+            "option_a": "A. Requirement analysis",
+            "option_b": "B. Schema refinement",
+            "option_c": "C. Physical design",
+            "option_d": "D. Logical design",
+            "correct_answer": "A",
+            "explanation": "Requirement analysis considers performance, integrity, and security constraints from the beginning."
+        },
+        {
+            "question": "Which DBMS feature enables different users to see different views of the same data?",
+            "option_a": "A. Data redundancy",
+            "option_b": "B. Multiple views support",
+            "option_c": "C. File processing system",
+            "option_d": "D. Data deletion",
+            "correct_answer": "B",
+            "explanation": "DBMS supports multiple views so different users can access data relevant to them."
+        },
+        {
+            "question": "Concurrent access in DBMS allows what?",
+            "option_a": "A. Multiple users to access data simultaneously",
+            "option_b": "B. Only one user at a time",
+            "option_c": "C. Access without security",
+            "option_d": "D. Access with redundancy",
+            "correct_answer": "A",
+            "explanation": "Concurrent access enables multiple users to access and modify data simultaneously without conflicts."
+        },
+        {
+            "question": "Which of the following is an example of a conceptual model?",
+            "option_a": "A. ER diagram",
+            "option_b": "B. Relational schema",
+            "option_c": "C. Index design",
+            "option_d": "D. Security matrix",
+            "correct_answer": "A",
+            "explanation": "ER (Entity-Relationship) diagrams are commonly used conceptual models."
+        },
+        {
+            "question": "Logical database design maps the conceptual schema to what?",
+            "option_a": "A. Programming language",
+            "option_b": "B. Security policy",
+            "option_c": "C. A data model like relational model",
+            "option_d": "D. File directory structure",
+            "correct_answer": "C",
+            "explanation": "Logical design converts conceptual schema into a specific data model such as relational."
+        },
+        {
+            "question": "Which design step focuses on creating indexes for better performance?",
+            "option_a": "A. Requirement analysis",
+            "option_b": "B. Schema refinement",
+            "option_c": "C. Physical database design",
+            "option_d": "D. Logical database design",
+            "correct_answer": "C",
+            "explanation": "Physical design improves performance through indexing and storage optimization."
+        },
+        {
+            "question": "Which component of a database system represents people?",
+            "option_a": "A. End users and administrators",
+            "option_b": "B. Only programmers",
+            "option_c": "C. Only customers",
+            "option_d": "D. None of the above",
+            "correct_answer": "A",
+            "explanation": "People include database designers, administrators, and end-users."
+        },
+        {
+            "question": "Which of the following is an advantage of data independence?",
+            "option_a": "A. Data structures can be changed without affecting applications",
+            "option_b": "B. Applications must be rewritten frequently",
+            "option_c": "C. It increases redundancy",
+            "option_d": "D. It prevents concurrent access",
+            "correct_answer": "A",
+            "explanation": "Data independence allows data structures to evolve without affecting applications."
+        },
+        {
+            "question": "Which is a disadvantage of poor database design?",
+            "option_a": "A. Unnecessary storage use",
+            "option_b": "B. Incorrect reports",
+            "option_c": "C. Inflexibility to user needs",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Poor design wastes space, produces wrong results, and fails to adapt to user requirements."
+        },
+        {
+            "question": "Which factor is considered in physical database design?",
+            "option_a": "A. Performance criteria",
+            "option_b": "B. Security roles",
+            "option_c": "C. Data collection",
+            "option_d": "D. Requirement analysis",
+            "correct_answer": "A",
+            "explanation": "Physical database design optimizes performance through storage and indexing."
+        },
+        {
+            "question": "Which of the following is a real-world example of a data-intensive application?",
+            "option_a": "A. Banking system",
+            "option_b": "B. Social media platform",
+            "option_c": "C. Online retail store",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "All these examples require storage and retrieval of large amounts of data."
+        },
+        {
+            "question": "Why is DBMS critical for data-intensive applications?",
+            "option_a": "A. They require fast, consistent, and reliable data access",
+            "option_b": "B. They do not need security",
+            "option_c": "C. They are not scalable",
+            "option_d": "D. They cannot store data",
+            "correct_answer": "A",
+            "explanation": "DBMS ensures fast, reliable, and scalable data management required for such applications."
+        },
+        {
+            "question": "Which is a factor when choosing between cloud and on-premise hosting?",
+            "option_a": "A. Scalability",
+            "option_b": "B. Security",
+            "option_c": "C. Cost",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Scalability, cost, and security are all major factors in selecting hosting type."
+        },
+        {
+            "question": "Which learning outcome of Lecture 01 is correct?",
+            "option_a": "A. Explain what is a database and DBMS",
+            "option_b": "B. Identify situations where databases are useful",
+            "option_c": "C. Explain database design process",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Lecture 01 outcomes include understanding databases, their benefits, and the design process."
+        },
+        {
+            "question": "Which part of DBMS allows only authorized users to access data?",
+            "option_a": "A. Integrity enforcement",
+            "option_b": "B. Security and access control",
+            "option_c": "C. Concurrent access",
+            "option_d": "D. Data independence",
+            "correct_answer": "B",
+            "explanation": "DBMS security features restrict unauthorized access by assigning access levels."
+        }
+    ]
+}

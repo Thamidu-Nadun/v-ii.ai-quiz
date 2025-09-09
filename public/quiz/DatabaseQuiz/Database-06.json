@@ -1,0 +1,265 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes a relation in the relational model?",
+            "option_a": "A. A collection of attributes without tuples",
+            "option_b": "B. A table consisting of rows and columns",
+            "option_c": "C. A single tuple containing all attributes",
+            "option_d": "D. A hierarchical representation of data",
+            "correct_answer": "B",
+            "explanation": "A relation in the relational model is represented as a table consisting of rows (tuples) and columns (attributes)."
+        },
+        {
+            "question": "In the relational model, what does the schema define?",
+            "option_a": "A. The actual data stored in the table",
+            "option_b": "B. The constraints on data instances only",
+            "option_c": "C. The structure of the relation including attribute names and domains",
+            "option_d": "D. The storage mechanism for tuples",
+            "correct_answer": "C",
+            "explanation": "The schema specifies the relation's name, attribute names, and their domains."
+        },
+        {
+            "question": "What is an instance of a relation?",
+            "option_a": "A. The attribute domains",
+            "option_b": "B. The entire database schema",
+            "option_c": "C. A set of tuples present at a specific point in time",
+            "option_d": "D. The mapping rules of an ER diagram",
+            "correct_answer": "C",
+            "explanation": "A relation instance represents the current data (tuples) in a relation at a given time."
+        },
+        {
+            "question": "Which of the following is NOT a valid domain for an attribute in a relational schema?",
+            "option_a": "A. String",
+            "option_b": "B. Integer",
+            "option_c": "C. Real",
+            "option_d": "D. Image file type",
+            "correct_answer": "D",
+            "explanation": "Relational models use simple domains like integers, strings, and real numbers, not complex types like images."
+        },
+        {
+            "question": "Which mapping approach is used for an n-ary relationship?",
+            "option_a": "A. Add foreign keys to one entity only",
+            "option_b": "B. Create a separate relation with foreign keys of all participating entities",
+            "option_c": "C. Merge all entities into a single table",
+            "option_d": "D. Create only primary keys in one entity",
+            "correct_answer": "B",
+            "explanation": "An n-ary relationship is represented as a separate relation with foreign keys referring to all participating entities."
+        },
+        {
+            "question": "When mapping a binary 1:N relationship, the foreign key is added to:",
+            "option_a": "A. The entity on the '1' side",
+            "option_b": "B. The entity on the 'N' side",
+            "option_c": "C. Both entities",
+            "option_d": "D. Neither entity",
+            "correct_answer": "B",
+            "explanation": "For 1:N relationships, the foreign key of the '1' side is added to the relation on the 'N' side."
+        },
+        {
+            "question": "What is the main purpose of ISA relationships in ER models?",
+            "option_a": "A. To merge two unrelated entities",
+            "option_b": "B. To represent specialization and generalization hierarchies",
+            "option_c": "C. To enforce referential integrity",
+            "option_d": "D. To eliminate redundant attributes",
+            "correct_answer": "B",
+            "explanation": "ISA represents superclass-subclass relationships in specialization and generalization."
+        },
+        {
+            "question": "Which ISA mapping option requires the ISA relationship to be total?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "B",
+            "explanation": "Option 2 maps only subclasses and assumes that every superclass entity belongs to some subclass, requiring total participation."
+        },
+        {
+            "question": "Which mapping option uses a single relation with a 'type' attribute?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "C",
+            "explanation": "Option 3 combines superclass and subclasses in one table with a 'type' attribute to indicate the subclass."
+        },
+        {
+            "question": "In ISA mapping Option 4, why are Boolean attributes used?",
+            "option_a": "A. To store primary keys",
+            "option_b": "B. To indicate which subclass a tuple belongs to",
+            "option_c": "C. To enforce disjoint constraints",
+            "option_d": "D. To represent foreign key relationships",
+            "correct_answer": "B",
+            "explanation": "Option 4 uses Boolean flags for each subclass, allowing overlapping subclass membership."
+        },
+        {
+            "question": "Which ISA mapping option is best for overlapping subclasses?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "D",
+            "explanation": "Option 4 supports overlapping by allowing multiple Boolean attributes to be true for a single entity."
+        },
+        {
+            "question": "What happens if you use Option 3 for overlapping subclasses?",
+            "option_a": "A. It works without issues",
+            "option_b": "B. Data redundancy increases",
+            "option_c": "C. It fails because Option 3 assumes disjoint subclasses",
+            "option_d": "D. It violates primary key constraints",
+            "correct_answer": "C",
+            "explanation": "Option 3 requires subclasses to be disjoint since only one 'type' attribute value can be stored."
+        },
+        {
+            "question": "Which statement is TRUE about Option 1 of ISA mapping?",
+            "option_a": "A. It merges all entities into one table",
+            "option_b": "B. It requires total participation",
+            "option_c": "C. It creates separate relations for superclass and subclasses with foreign key links",
+            "option_d": "D. It eliminates redundancy completely",
+            "correct_answer": "C",
+            "explanation": "Option 1 creates separate tables for superclass and subclasses, linked by foreign keys."
+        },
+        {
+            "question": "If an ER model has overlapping and partial ISA constraints, which option is safest?",
+            "option_a": "A. Option 2",
+            "option_b": "B. Option 3",
+            "option_c": "C. Option 4",
+            "option_d": "D. Option 1",
+            "correct_answer": "C",
+            "explanation": "Option 4 supports overlapping and does not require total participation, making it safest for partial and overlapping cases."
+        },
+        {
+            "question": "Which of the following is a valid example of a relational schema?",
+            "option_a": "A. Student(id, name, course[])",
+            "option_b": "B. Student(id: integer, name: string)",
+            "option_c": "C. Student(id: array, name: varchar[])",
+            "option_d": "D. Student(id=integer, name=string)",
+            "correct_answer": "B",
+            "explanation": "The correct syntax for a schema includes the relation name and attributes with their domains."
+        },
+        {
+            "question": "In the relational model, what term refers to each row in a table?",
+            "option_a": "A. Field",
+            "option_b": "B. Attribute",
+            "option_c": "C. Tuple",
+            "option_d": "D. Column",
+            "correct_answer": "C",
+            "explanation": "Each row is called a tuple, representing an instance of the entity."
+        },
+        {
+            "question": "Which constraint ensures that subclass entities must cover all superclass entities?",
+            "option_a": "A. Partial participation",
+            "option_b": "B. Total participation",
+            "option_c": "C. Disjoint constraint",
+            "option_d": "D. Overlapping constraint",
+            "correct_answer": "B",
+            "explanation": "Total participation means every entity in the superclass must appear in some subclass."
+        },
+        {
+            "question": "Which relationship type requires creating a separate relation for the relationship itself during mapping?",
+            "option_a": "A. 1:1 relationship",
+            "option_b": "B. 1:N relationship",
+            "option_c": "C. N:M relationship",
+            "option_d": "D. ISA relationship",
+            "correct_answer": "C",
+            "explanation": "Many-to-many relationships require a separate relation that includes foreign keys from both participating entities."
+        },
+        {
+            "question": "If a binary relationship is 1:1, how can it be mapped efficiently?",
+            "option_a": "A. By adding foreign key to any one entity's relation",
+            "option_b": "B. By creating a new relation always",
+            "option_c": "C. By merging the entities into one relation",
+            "option_d": "D. Both A and C are possible",
+            "correct_answer": "D",
+            "explanation": "For 1:1 relationships, adding a foreign key to either entity or merging them are both acceptable approaches."
+        },
+        {
+            "question": "Why is the relational model widely used today?",
+            "option_a": "A. It supports hierarchical data structures",
+            "option_b": "B. It provides complex data types natively",
+            "option_c": "C. It offers simplicity and clear representation of data",
+            "option_d": "D. It requires minimal normalization",
+            "correct_answer": "C",
+            "explanation": "The relational model is preferred because of its simplicity and straightforward representation using tables."
+        },
+        {
+            "question": "You have an ER model where a 'Project' entity is related to 'Employee' in an N:M relationship. How should you map this to the relational model?",
+            "option_a": "A. Add a foreign key in Employee referencing Project",
+            "option_b": "B. Add a foreign key in Project referencing Employee",
+            "option_c": "C. Create a new relation with foreign keys from both Project and Employee",
+            "option_d": "D. Merge both entities into a single relation",
+            "correct_answer": "C",
+            "explanation": "An N:M relationship requires a new relation with foreign keys referring to both participating entities."
+        },
+        {
+            "question": "If a 'Person' entity has subclasses 'Student' and 'Faculty' with overlapping membership, which ISA mapping option should you choose?",
+            "option_a": "A. Option 2",
+            "option_b": "B. Option 3",
+            "option_c": "C. Option 4",
+            "option_d": "D. Option 1",
+            "correct_answer": "C",
+            "explanation": "Option 4 supports overlapping by using Boolean attributes for each subclass."
+        },
+        {
+            "question": "You are using Option 2 for ISA mapping. How would you store a person who is neither a student nor a faculty member?",
+            "option_a": "A. In the superclass relation",
+            "option_b": "B. In one of the subclass relations",
+            "option_c": "C. In both subclass relations",
+            "option_d": "D. Cannot store because Option 2 assumes total participation",
+            "correct_answer": "D",
+            "explanation": "Option 2 requires total participation, meaning every entity must belong to a subclass."
+        },
+        {
+            "question": "In Option 3, if you need to store a person who is both a student and faculty, what problem occurs?",
+            "option_a": "A. Redundancy",
+            "option_b": "B. It is not possible because Option 3 assumes disjoint subclasses",
+            "option_c": "C. Data inconsistency",
+            "option_d": "D. Null values in multiple attributes",
+            "correct_answer": "B",
+            "explanation": "Option 3 assumes disjoint subclasses, so overlapping is not allowed."
+        },
+        {
+            "question": "Which mapping option minimizes the number of joins for queries involving both superclass and subclass attributes?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "C",
+            "explanation": "Option 3 uses a single relation, so no joins are needed for superclass-subclass queries."
+        },
+        {
+            "question": "If most subclass attributes are sparse, which option should you avoid?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "C",
+            "explanation": "Option 3 combines all attributes in one table, leading to many NULLs when subclass attributes are sparse."
+        },
+        {
+            "question": "In an ER model, an ISA relationship is both total and disjoint. Which option is most efficient?",
+            "option_a": "A. Option 2",
+            "option_b": "B. Option 3",
+            "option_c": "C. Option 4",
+            "option_d": "D. Option 1",
+            "correct_answer": "B",
+            "explanation": "Option 3 works well for disjoint and total participation since one type attribute can represent subclasses."
+        },
+        {
+            "question": "Why does Option 4 allow overlapping subclasses?",
+            "option_a": "A. It uses foreign keys to connect subclasses",
+            "option_b": "B. It uses Boolean flags for each subclass",
+            "option_c": "C. It eliminates type attributes",
+            "option_d": "D. It uses multiple primary keys",
+            "correct_answer": "B",
+            "explanation": "Boolean attributes in Option 4 allow multiple subclass flags to be true for the same entity."
+        },
+        {
+            "question": "You are designing a database for a university where every person is either a student or a faculty member, but never both. Which ISA mapping option is best?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "correct_answer": "C",
+            "explanation": "Option 3 is best for disjoint and total ISA relationships since it uses a single relation with a type attribute."
+        }
+    ]
+}
