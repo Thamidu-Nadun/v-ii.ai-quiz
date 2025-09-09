@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What is the main purpose of an activity diagram?",
+            "option_a": "A. To model the data structure of a system",
+            "option_b": "B. To represent workflows and system behavior",
+            "option_c": "C. To design the user interface layout",
+            "option_d": "D. To describe database schema",
+            "correct_answer": "B",
+            "explanation": "Activity diagrams represent workflows by modeling activities and their dependencies."
+        },
+        {
+            "question": "Which of the following is NOT a common use of activity diagrams?",
+            "option_a": "A. Modeling business processes",
+            "option_b": "B. Clarifying concurrency issues",
+            "option_c": "C. Designing database tables",
+            "option_d": "D. Analyzing individual use cases",
+            "correct_answer": "C",
+            "explanation": "Activity diagrams are not used for database schema design; they focus on workflows and processes."
+        },
+        {
+            "question": "What shape represents the Initial/Start node in an activity diagram?",
+            "option_a": "A. Diamond",
+            "option_b": "B. Rounded rectangle",
+            "option_c": "C. Filled circle",
+            "option_d": "D. Thick bar",
+            "correct_answer": "C",
+            "explanation": "The initial/start node is represented by a filled circle in UML activity diagrams."
+        },
+        {
+            "question": "Which symbol represents the Final Node in an activity diagram?",
+            "option_a": "A. Empty circle",
+            "option_b": "B. Filled circle with another circle around it",
+            "option_c": "C. Diamond",
+            "option_d": "D. Rectangle",
+            "correct_answer": "B",
+            "explanation": "The final node is shown as a filled circle within another circle."
+        },
+        {
+            "question": "Which element is represented by a rounded rectangle in activity diagrams?",
+            "option_a": "A. Decision Node",
+            "option_b": "B. Action Node",
+            "option_c": "C. Transition",
+            "option_d": "D. Swimlane",
+            "correct_answer": "B",
+            "explanation": "Actions are represented as rounded rectangles with a verb phrase inside."
+        },
+        {
+            "question": "What is another name for a transition in activity diagrams?",
+            "option_a": "A. Control flow",
+            "option_b": "B. Merge",
+            "option_c": "C. Guard",
+            "option_d": "D. Swimlane",
+            "correct_answer": "A",
+            "explanation": "Transitions are also called control flows, showing the movement from one action to another."
+        },
+        {
+            "question": "Which UML symbol represents a decision/branch point?",
+            "option_a": "A. Rectangle",
+            "option_b": "B. Thick bar",
+            "option_c": "C. Diamond",
+            "option_d": "D. Circle",
+            "correct_answer": "C",
+            "explanation": "A decision node is represented by a diamond shape with guard conditions."
+        },
+        {
+            "question": "In a decision node, what is required for each branch?",
+            "option_a": "A. A loop",
+            "option_b": "B. A guard condition",
+            "option_c": "C. A synchronization bar",
+            "option_d": "D. A final node",
+            "correct_answer": "B",
+            "explanation": "Each branch of a decision must have a guard condition to determine the flow."
+        },
+        {
+            "question": "What is the purpose of a merge node?",
+            "option_a": "A. To split one flow into multiple flows",
+            "option_b": "B. To join multiple flows into one after branching",
+            "option_c": "C. To mark the end of a process",
+            "option_d": "D. To model concurrency",
+            "correct_answer": "B",
+            "explanation": "Merge nodes combine multiple branches back into a single control flow."
+        },
+        {
+            "question": "Which of the following describes a fork node?",
+            "option_a": "A. Splits control flow into multiple concurrent paths",
+            "option_b": "B. Merges multiple flows into one",
+            "option_c": "C. Represents a conditional flow",
+            "option_d": "D. Ends the process",
+            "correct_answer": "A",
+            "explanation": "A fork splits a single flow into two or more concurrent flows."
+        },
+        {
+            "question": "What must every fork in an activity diagram have?",
+            "option_a": "A. A merge node",
+            "option_b": "B. A final node",
+            "option_c": "C. A join node",
+            "option_d": "D. A decision node",
+            "correct_answer": "C",
+            "explanation": "Every fork should have a corresponding join to synchronize the parallel flows."
+        },
+        {
+            "question": "Which symbol is used to represent a join?",
+            "option_a": "A. Diamond",
+            "option_b": "B. Thick horizontal/vertical bar",
+            "option_c": "C. Circle",
+            "option_d": "D. Rectangle",
+            "correct_answer": "B",
+            "explanation": "A join is shown using a thick bar to indicate synchronization of multiple flows."
+        },
+        {
+            "question": "Which UML notation represents a sub-activity?",
+            "option_a": "A. Action box with rake-style symbol",
+            "option_b": "B. Diamond with guard",
+            "option_c": "C. Final node symbol",
+            "option_d": "D. Iteration asterisk",
+            "correct_answer": "A",
+            "explanation": "Sub-activities are shown with a rake-style symbol inside the action box."
+        },
+        {
+            "question": "What notation indicates an action may need to be repeated?",
+            "option_a": "A. Diamond",
+            "option_b": "B. Guard condition",
+            "option_c": "C. Asterisk (*) inside an action state",
+            "option_d": "D. Thick bar",
+            "correct_answer": "C",
+            "explanation": "An asterisk inside an action state shows iteration in activity diagrams."
+        },
+        {
+            "question": "What is a common mistake with forks in activity diagrams?",
+            "option_a": "A. Thinking control flows down only one path",
+            "option_b": "B. Using them to end a process",
+            "option_c": "C. Forgetting to include guard conditions",
+            "option_d": "D. Confusing them with final nodes",
+            "correct_answer": "A",
+            "explanation": "A fork sends control down all paths, unlike a decision node where only one path is taken."
+        },
+        {
+            "question": "Which concept in activity diagrams is similar to 'ENDIF' in pseudocode?",
+            "option_a": "A. Decision Node",
+            "option_b": "B. Merge Node",
+            "option_c": "C. Join Node",
+            "option_d": "D. Fork Node",
+            "correct_answer": "B",
+            "explanation": "Merge nodes represent the UML equivalent of ENDIF, combining paths back together."
+        },
+        {
+            "question": "Which partitioning technique organizes actions by organizational units?",
+            "option_a": "A. Sub-activity partitioning",
+            "option_b": "B. Swimlanes",
+            "option_c": "C. Decision guards",
+            "option_d": "D. Synchronization bars",
+            "correct_answer": "B",
+            "explanation": "Swimlanes are used to partition activity diagrams by actors or organizational units."
+        },
+        {
+            "question": "In swimlane notation, how are partitions usually drawn?",
+            "option_a": "A. Thick circles",
+            "option_b": "B. Parallel horizontal or vertical lines",
+            "option_c": "C. Diamond-shaped boxes",
+            "option_d": "D. Dotted arrows",
+            "correct_answer": "B",
+            "explanation": "Swimlanes are shown as parallel lines (horizontal or vertical) dividing responsibilities."
+        },
+        {
+            "question": "Which of the following best represents a 'transition'?",
+            "option_a": "A. It indicates the start of an activity diagram.",
+            "option_b": "B. It connects activity nodes showing control flow.",
+            "option_c": "C. It partitions the diagram into swimlanes.",
+            "option_d": "D. It synchronizes concurrent activities.",
+            "correct_answer": "B",
+            "explanation": "Transitions connect actions to show how control flows from one to the next."
+        },
+        {
+            "question": "Which of the following is a correct guard condition example?",
+            "option_a": "A. [valid member]",
+            "option_b": "B. {end}",
+            "option_c": "C. (loop)",
+            "option_d": "D. ->next",
+            "correct_answer": "A",
+            "explanation": "Guards are written in square brackets, such as [valid member]."
+        },
+        {
+            "question": "Which activity example from the lecture involves uploading an ID and payment slip?",
+            "option_a": "A. Flight booking",
+            "option_b": "B. University enrollment",
+            "option_c": "C. Registering for LMS membership",
+            "option_d": "D. Software delivery",
+            "correct_answer": "C",
+            "explanation": "Registering for LMS membership involves uploading ID and payment slip."
+        },
+        {
+            "question": "In the flight booking example, what is the default baggage allowance for Business Class?",
+            "option_a": "A. 20 KG",
+            "option_b": "B. 30 KG",
+            "option_c": "C. 40 KG",
+            "option_d": "D. 50 KG",
+            "correct_answer": "C",
+            "explanation": "Business Class passengers have a default baggage allowance of 40 KG."
+        },
+        {
+            "question": "Which activity example highlights the use of concurrency?",
+            "option_a": "A. Enrolling in University",
+            "option_b": "B. Flight Booking",
+            "option_c": "C. Order Processing System",
+            "option_d": "D. Simple Data Entry",
+            "correct_answer": "C",
+            "explanation": "The Order Processing System involves multiple departments working in parallel, showing concurrency."
+        },
+        {
+            "question": "Which is a correct description of an action node?",
+            "option_a": "A. Represents conditional branching",
+            "option_b": "B. A sequence of activities enclosed in a diamond",
+            "option_c": "C. A task represented in a rounded rectangle with a verb phrase",
+            "option_d": "D. Indicates the end of workflow",
+            "correct_answer": "C",
+            "explanation": "Actions are tasks shown in rounded rectangles, labeled with present-tense verb phrases."
+        },
+        {
+            "question": "Which mistake should be avoided when drawing loops in activity diagrams?",
+            "option_a": "A. Forgetting to use swimlanes",
+            "option_b": "B. Omitting guard conditions",
+            "option_c": "C. Using sub-activities instead of iterations",
+            "option_d": "D. Mixing forks and merges",
+            "correct_answer": "B",
+            "explanation": "Loops must clearly include guard conditions to show termination criteria."
+        }
+    ]
+}

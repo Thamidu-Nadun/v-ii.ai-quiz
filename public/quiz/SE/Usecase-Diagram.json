@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of a use case diagram in software engineering?",
+            "option_a": "A. To specify the exact code implementation.",
+            "option_b": "B. To detail the internal architecture of the system.",
+            "option_c": "C. To graphically represent the proposed functionality of the new system.",
+            "option_d": "D. To outline the project timeline.",
+            "correct_answer": "C",
+            "explanation": "A use case diagram is used to graphically represent the proposed functionality of a new system, capturing its functional requirements and demonstrating high-level behavior to clients."
+        },
+        {
+            "question": "How do use case diagrams support requirements engineering?",
+            "option_a": "A. By providing a complete code structure.",
+            "option_b": "B. By detailing how the system will perform tasks.",
+            "option_c": "C. By outlining the budget requirements.",
+            "option_d": "D. By acting as a means of communicating with stakeholders about what the system is intended to do.",
+            "correct_answer": "D",
+            "explanation": "Use case diagrams support requirements engineering by providing a visual representation that helps communicate the intended functionality of the system to stakeholders, including management and customers."
+        },
+        {
+            "question": "What is a key component of use case diagrams?",
+            "option_a": "A. Detailed code snippets.",
+            "option_b": "B. Graphical Notations.",
+            "option_c": "C. Project timelines.",
+            "option_d": "D. Budget estimates.",
+            "correct_answer": "B",
+            "explanation": "Graphical notations are a key component of use case diagrams, as they visually represent the functional requirements and proposed functionality of a system."
+        },
+        {
+            "question": "In what way do use case models capture system requirements?",
+            "option_a": "A. By detailing the system's internal architecture.",
+            "option_b": "B. By outlining the project timeline.",
+            "option_c": "C. By capturing the functional requirements of a system.",
+            "option_d": "D. By specifying the exact code implementation.",
+            "correct_answer": "C",
+            "explanation": "Use case models capture the functional requirements of a system, helping to demonstrate its high-level behavior and proposed functionality to clients."
+        },
+        {
+            "question": "What aspect of a system do use cases communicate to non-development stakeholders?",
+            "option_a": "A. The budget required for development.",
+            "option_b": "B. HOW a system will perform tasks.",
+            "option_c": "C. WHAT a system will do when it is completed.",
+            "option_d": "D. The timeline for project completion.",
+            "correct_answer": "C",
+            "explanation": "Use cases communicate to non-development stakeholders what a system will do when completed, without detailing how it will perform those tasks."
+        },
+        {
+            "question": "What is the role of actors in a use case diagram?",
+            "option_a": "A. Actors perform functions within the system.",
+            "option_b": "B. Actors define the system boundaries.",
+            "option_c": "C. Actors are high-level activities supported by the system.",
+            "option_d": "D. Actors represent roles that interact directly with the system.",
+            "correct_answer": "D",
+            "explanation": "Actors in a use case diagram are external entities that interact with the system, representing roles such as human users, external hardware, or other systems."
+        },
+        {
+            "question": "What does the system boundary in a use case diagram represent?",
+            "option_a": "A. The roles adopted by participants.",
+            "option_b": "B. The boundary between the physical system and the actors who interact with it.",
+            "option_c": "C. The relationships between actors and use cases.",
+            "option_d": "D. The high-level activities supported by the system.",
+            "correct_answer": "B",
+            "explanation": "The system boundary delineates the limits of the physical system, separating it from the actors that interact with it, ensuring clarity in interactions and dependencies."
+        },
+        {
+            "question": "Which component of a use case diagram describes high-level activities supported by the system?",
+            "option_a": "A. Use Cases",
+            "option_b": "B. System Boundary",
+            "option_c": "C. Actors",
+            "option_d": "D. Relationships/Links",
+            "correct_answer": "A",
+            "explanation": "Use cases in a diagram outline the high-level activities or functionalities that the system is designed to support, providing a clear understanding of its capabilities."
+        },
+        {
+            "question": "What type of interactions do actors have with the system in a use case diagram?",
+            "option_a": "A. Conditional interactions",
+            "option_b": "B. Indirect interactions",
+            "option_c": "C. No interactions",
+            "option_d": "D. Direct interactions",
+            "correct_answer": "D",
+            "explanation": "Actors have direct interactions with the system, meaning they engage with it in a way that influences its operations or receives outputs from it."
+        },
+        {
+            "question": "What is the purpose of relationships/links in a use case diagram?",
+            "option_a": "A. To define system boundaries.",
+            "option_b": "B. To show which actors are involved in which use cases.",
+            "option_c": "C. To perform functions within the system.",
+            "option_d": "D. To represent roles adopted by participants.",
+            "correct_answer": "B",
+            "explanation": "Relationships or links in a use case diagram illustrate how actors are connected to specific use cases, highlighting dependencies, generalizations, and associations."
+        }
+    ]
+}
