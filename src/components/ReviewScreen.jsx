@@ -56,16 +56,21 @@ const ReviewScreen = ({
                 </div>
                 <h2
                   className="text-xl font-medium leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: question.question }}
+                  dangerouslySetInnerHTML={{__html: question.question}}
                 />
               </div>
             </div>
           </div>
 
           <div className="space-y-4 mb-8">
-            {['option_a', 'option_b', 'option_c', 'option_d'].map(optionKey => {
+            {[
+              'option_a',
+              'option_b',
+              'option_c',
+              'option_d',
+            ].map (optionKey => {
               const optionValue = question[optionKey];
-              const optionLetter = optionKey.split('_')[1].toUpperCase();
+              const optionLetter = optionKey.split ('_')[1].toUpperCase ();
               const isUserAnswer = userAnswer === optionLetter;
               const isCorrect = correctAnswer === optionLetter;
 
@@ -92,11 +97,22 @@ const ReviewScreen = ({
                     >
                       {icon}
                     </div>
-                    <span dangerouslySetInnerHTML={{ __html: optionValue }} />
+                    <span dangerouslySetInnerHTML={{__html: optionValue}} />
                   </div>
                 </div>
               );
             })}
+          </div>
+
+          <div className="mb-8">
+            {question.explanation &&
+              <div className="bg-gray-700/50 p-4 rounded-lg border border-gray-600">
+                <h3 className="text-lg font-semibold mb-2">Explanation</h3>
+                <p
+                  className="text-gray-300"
+                  dangerouslySetInnerHTML={{__html: question.explanation}}
+                />
+              </div>}
           </div>
 
           {/* Navigation */}
@@ -104,32 +120,26 @@ const ReviewScreen = ({
             <button
               onClick={prevQuestion}
               disabled={currentQuestion === 0}
-              className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${
-                currentQuestion === 0
-                  ? 'text-gray-500 cursor-not-allowed'
-                  : 'text-gray-300 hover:text-white hover:bg-gray-700'
-              }`}
+              className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${currentQuestion === 0 ? 'text-gray-500 cursor-not-allowed' : 'text-gray-300 hover:text-white hover:bg-gray-700'}`}
             >
               <ChevronLeft className="w-4 h-4 mr-2" />
               Previous
             </button>
 
-            {isLastQuestion ? (
-              <button
-                onClick={goHome}
-                className={`flex items-center px-8 py-3 rounded-lg font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white`}
-              >
-                Back to Home
-              </button>
-            ) : (
-              <button
-                onClick={nextQuestion}
-                className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white`}
-              >
-                Next
-                <ChevronRight className="w-4 h-4 ml-2" />
-              </button>
-            )}
+            {isLastQuestion
+              ? <button
+                  onClick={goHome}
+                  className={`flex items-center px-8 py-3 rounded-lg font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white`}
+                >
+                  Back to Home
+                </button>
+              : <button
+                  onClick={nextQuestion}
+                  className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white`}
+                >
+                  Next
+                  <ChevronRight className="w-4 h-4 ml-2" />
+                </button>}
           </div>
         </div>
       </div>
