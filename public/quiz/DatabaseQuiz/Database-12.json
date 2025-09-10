@@ -6,7 +6,7 @@
             "option_b": "To create a high-level, DBMS-independent schema from user requirements.",
             "option_c": "To write SQL queries for data manipulation.",
             "option_d": "To create indexes for improving query performance.",
-            "correct_answer": "b",
+            "correct_answer": "B",
             "explanation": "Conceptual design focuses on creating a DBMS-independent schema that captures user requirements."
         },
         {
@@ -15,7 +15,7 @@
             "option_b": "Diamond",
             "option_c": "Double-lined oval",
             "option_d": "Rectangle",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "Entities in ER diagrams are represented using rectangles."
         },
         {
@@ -24,7 +24,7 @@
             "option_b": "Multi-valued Attribute",
             "option_c": "Key Attribute",
             "option_d": "Composite Attribute",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "Composite attributes can be divided into subparts, like a full name into first and last names."
         },
         {
@@ -33,7 +33,7 @@
             "option_b": "A student's StudentID",
             "option_c": "An employee's Salary",
             "option_d": "A person's Phone Number",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "A person can have multiple phone numbers, making it a multi-valued attribute."
         },
         {
@@ -42,7 +42,7 @@
             "option_b": "Key Attribute",
             "option_c": "Multi-valued Attribute",
             "option_d": "Derived Attribute",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "Derived attributes are calculated from other attributes, such as age from date of birth."
         },
         {
@@ -51,7 +51,7 @@
             "option_b": "Foreign Key",
             "option_c": "Candidate Key",
             "option_d": "Primary Key",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "A primary key is the selected candidate key that uniquely identifies each entity."
         },
         {
@@ -60,7 +60,7 @@
             "option_b": "1:N",
             "option_c": "M:1",
             "option_d": "N:M",
-            "correct_answer": "d",
+            "correct_answer": "D",
             "explanation": "N:M denotes a many-to-many relationship between two entities."
         },
         {
@@ -69,7 +69,7 @@
             "option_b": "A key attribute",
             "option_c": "Total participation",
             "option_d": "Partial participation",
-            "correct_answer": "c",
+            "correct_answer": "C",
             "explanation": "A double line indicates total participation, where every instance must participate."
         },
         {
@@ -78,7 +78,7 @@
             "option_b": "Associative Entity",
             "option_c": "Weak Entity",
             "option_d": "Super-class Entity",
-            "correct_answer": "c",
+            "correct_answer": "C",
             "explanation": "A weak entity depends on another entity and is represented with a double rectangle."
         },
         {
@@ -87,7 +87,7 @@
             "option_b": "Foreign Key",
             "option_c": "Partial Key",
             "option_d": "Super Key",
-            "correct_answer": "c",
+            "correct_answer": "C",
             "explanation": "Partial keys uniquely identify weak entities when combined with the key of the owner."
         }
     ]
