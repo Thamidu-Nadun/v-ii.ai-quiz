@@ -1,0 +1,193 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following scenarios best illustrates the advantage of data abstraction provided by a DBMS?",
+            "option_a": "A. A user printing reports directly from a database using a form",
+            "option_b": "B. A data backup tool restoring data from a USB drive",
+            "option_c": "C. An application that restricts users from viewing sensitive files in the file system",
+            "option_d": "D. A system where users query data without needing to know how data is physically stored",
+            "option_e": "E. A company that allows multiple users to access the same Excel sheet simultaneously",
+            "correct_answer": "D",
+            "explanation": "Data abstraction in DBMS allows users to query data without needing to understand physical storage details."
+        },
+        {
+            "question": "An e-learning platform handles real-time course materials, grades, user profiles, and interactive tools. Why would using a DBMS be preferable to a file processing system in this case?",
+            "option_a": "A. Because DBMSs require no design and work out-of-the-box",
+            "option_b": "B. Because file systems are always slower than DBMSs",
+            "option_c": "C. Because DBMSs support multiuser access, security, and integrity control",
+            "option_d": "D. Because DBMSs can automatically generate user interfaces",
+            "option_e": "E. Because file processing systems are more secure",
+            "correct_answer": "C",
+            "explanation": "DBMS is preferable because it supports multiple users, ensures data integrity, and enforces security."
+        },
+        {
+            "question": "A retail company is experiencing performance issues as their online store grows. Their current database is on-premise. Which hosting approach and DBMS feature would best support scalability for their growing user and data load?",
+            "option_a": "A. Cloud hosting with query optimization",
+            "option_b": "B. On-premise hosting with backup and recovery",
+            "option_c": "C. File-based system with indexing",
+            "option_d": "D. On-premise system with security control",
+            "option_e": "E. Cloud hosting with concurrency control",
+            "correct_answer": "A",
+            "explanation": "Cloud hosting provides scalability, and query optimization improves performance for large datasets."
+        },
+        {
+            "question": "During the database design process, a design team realizes that one of the tables stores duplicate customer information across multiple rows. Which phase of the design process should be revisited to eliminate this issue?",
+            "option_a": "A. Schema refinement",
+            "option_b": "B. Physical design",
+            "option_c": "C. Requirement analysis",
+            "option_d": "D. Security design",
+            "option_e": "E. Conceptual design",
+            "correct_answer": "A",
+            "explanation": "Schema refinement is used to identify and remove redundancies in the design."
+        },
+        {
+            "question": "A bank uses a DBMS to manage customer data, transactions, and account information. Which DBMS feature is MOST essential to ensure that customers see the correct account balance even when multiple tellers update the system at the same time?",
+            "option_a": "A. Query optimization",
+            "option_b": "B. Indexing",
+            "option_c": "C. Logical schema design",
+            "option_d": "E. Concurrency control",
+            "correct_answer": "D",
+            "explanation": "Concurrency control ensures data consistency when multiple users access and update the database simultaneously."
+        },
+        {
+            "question": "An organization wants to migrate from an Excel-based system to a DBMS. Which of the following advantages will most directly reduce redundancy in stored information?",
+            "option_a": "A. Data abstraction",
+            "option_b": "B. Data independence",
+            "option_c": "C. Integrity enforcement",
+            "option_d": "D. Centralized control of data",
+            "option_e": "E. Multiuser support",
+            "correct_answer": "D",
+            "explanation": "Centralized control of data in DBMS eliminates unnecessary duplication compared to file systems."
+        },
+        {
+            "question": "A hospital stores patient records, doctor schedules, and billing details in a DBMS. Which design phase ensures that access levels differ between doctors, nurses, and administrators?",
+            "option_a": "A. Logical design",
+            "option_b": "B. Schema refinement",
+            "option_c": "C. Security design",
+            "option_d": "D. Requirement analysis",
+            "option_e": "E. Physical design",
+            "correct_answer": "C",
+            "explanation": "Security design phase defines user roles and access permissions to protect sensitive data."
+        },
+        {
+            "question": "Which of the following situations demonstrates the advantage of using a conceptual model such as an ER diagram?",
+            "option_a": "A. When end-users need to understand system transactions",
+            "option_b": "B. When describing the overall structure of data before implementation",
+            "option_c": "C. When refining a schema to eliminate redundancy",
+            "option_d": "D. When setting up indexes for performance",
+            "option_e": "E. When applying access controls",
+            "correct_answer": "B",
+            "explanation": "Conceptual models like ER diagrams give a high-level view of data structures and relationships before implementation."
+        },
+        {
+            "question": "An airline ticketing system must handle thousands of simultaneous bookings. Which DBMS feature is most critical?",
+            "option_a": "A. Backup and recovery",
+            "option_b": "B. Concurrency control",
+            "option_c": "C. Schema refinement",
+            "option_d": "D. Logical database design",
+            "option_e": "E. Physical storage optimization",
+            "correct_answer": "B",
+            "explanation": "Concurrency control ensures correct results when many users perform transactions at the same time."
+        },
+        {
+            "question": "During requirement analysis, a team identifies that system response time is a critical factor. In which design phase will indexing and storage methods be introduced to address this concern?",
+            "option_a": "A. Logical database design",
+            "option_b": "B. Conceptual design",
+            "option_c": "C. Security design",
+            "option_d": "D. Physical database design",
+            "option_e": "E. Schema refinement",
+            "correct_answer": "D",
+            "explanation": "Physical design focuses on performance optimization, including indexes and storage techniques."
+        },
+        {
+            "question": "Which scenario best reflects the role of integrity enforcement in DBMS?",
+            "option_a": "A. Restricting a salary field to numeric values only",
+            "option_b": "B. Limiting access of some users to read-only",
+            "option_c": "C. Ensuring data is available after a crash",
+            "option_d": "D. Allowing multiple users to query data",
+            "option_e": "E. Translating conceptual schema into logical schema",
+            "correct_answer": "A",
+            "explanation": "Integrity enforcement ensures constraints like data types and valid value ranges are respected."
+        },
+        {
+            "question": "A social media platform needs to quickly deliver user feeds in real time. Which DBMS feature ensures efficiency in data retrieval?",
+            "option_a": "A. Data independence",
+            "option_b": "B. Query optimization",
+            "option_c": "C. Backup and recovery",
+            "option_d": "D. Schema refinement",
+            "option_e": "E. Security control",
+            "correct_answer": "B",
+            "explanation": "Query optimization ensures fast data retrieval, essential for real-time feeds."
+        },
+        {
+            "question": "Which of the following situations best highlights the need for database security design?",
+            "option_a": "A. Customers should only be able to view their own data, not others.",
+            "option_b": "B. Multiple users should perform transactions at the same time.",
+            "option_c": "C. The database should automatically remove redundancy.",
+            "option_d": "D. System response time should be reduced.",
+            "option_e": "E. The conceptual model should be easy to understand.",
+            "correct_answer": "A",
+            "explanation": "Security design ensures users only access authorized data, protecting privacy and confidentiality."
+        },
+        {
+            "question": "A logistics company needs to migrate to a system that can handle rapidly increasing delivery records. Which combination best addresses scalability?",
+            "option_a": "A. On-premise hosting with security design",
+            "option_b": "B. Cloud hosting with physical database design",
+            "option_c": "C. File processing system with query optimization",
+            "option_d": "D. Cloud hosting with concurrency control",
+            "option_e": "E. On-premise hosting with schema refinement",
+            "correct_answer": "B",
+            "explanation": "Cloud hosting supports scalability, and physical database design ensures performance at scale."
+        },
+        {
+            "question": "Which scenario would most likely result from poor database design?",
+            "option_a": "A. A system producing inconsistent reports",
+            "option_b": "B. Reduced storage space usage",
+            "option_c": "C. Efficient indexing",
+            "option_d": "D. Seamless security enforcement",
+            "option_e": "E. Clear ER diagrams",
+            "correct_answer": "A",
+            "explanation": "Poorly designed databases often produce incorrect or inconsistent reports."
+        },
+        {
+            "question": "Which real-world application is MOST likely a data-intensive application?",
+            "option_a": "A. A calculator app",
+            "option_b": "B. An airline reservation system",
+            "option_c": "C. A text editor",
+            "option_d": "D. A stopwatch app",
+            "option_e": "E. A file compression tool",
+            "correct_answer": "B",
+            "explanation": "Airline reservation systems handle massive amounts of concurrent transactions and data storage."
+        },
+        {
+            "question": "A university implements a DBMS to manage students, courses, and faculty. Which step ensures identifying relationships among these objects?",
+            "option_a": "A. Requirement collection and analysis",
+            "option_b": "B. Physical design",
+            "option_c": "C. Security design",
+            "option_d": "D. Logical design",
+            "option_e": "E. Schema refinement",
+            "correct_answer": "A",
+            "explanation": "Requirement collection identifies objects and relationships needed for database design."
+        },
+        {
+            "question": "A financial institution requires a disaster recovery plan. Which DBMS feature directly supports this requirement?",
+            "option_a": "A. Backup and recovery",
+            "option_b": "B. Query optimization",
+            "option_c": "C. Concurrency control",
+            "option_d": "D. Integrity enforcement",
+            "option_e": "E. Data abstraction",
+            "correct_answer": "A",
+            "explanation": "Backup and recovery ensure data availability after system failures."
+        },
+        {
+            "question": "Which of the following best explains why data independence is beneficial?",
+            "option_a": "A. It allows changes in storage structures without modifying applications",
+            "option_b": "B. It guarantees no need for schema refinement",
+            "option_c": "C. It ensures no redundancy in data",
+            "option_d": "D. It eliminates the need for conceptual modeling",
+            "option_e": "E. It automatically optimizes queries",
+            "correct_answer": "A",
+            "explanation": "Data independence allows physical storage changes without affecting application logic."
+        }
+    ]
+}

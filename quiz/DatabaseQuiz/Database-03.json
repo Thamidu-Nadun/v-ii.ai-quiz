@@ -1,0 +1,281 @@
+{
+    "questions": [
+        {
+            "question": "Which SQL command is used to create a new table in a relational database?",
+            "option_a": "A. INSERT",
+            "option_b": "B. CREATE TABLE",
+            "option_c": "C. UPDATE",
+            "option_d": "D. ALTER TABLE",
+            "correct_answer": "B",
+            "explanation": "The CREATE TABLE command is part of the Data Definition Language (DDL) and is used to define new relations."
+        },
+        {
+            "question": "In the schema STUDENT(studentId, sName, nic, gpa, progId), which constraint ensures that gpa values do not exceed 4.0?",
+            "option_a": "A. PRIMARY KEY",
+            "option_b": "B. UNIQUE",
+            "option_c": "C. CHECK",
+            "option_d": "D. DEFAULT",
+            "correct_answer": "C",
+            "explanation": "The CHECK constraint allows conditions like gpa <= 4.0 to validate column values."
+        },
+        {
+            "question": "Which SQL clause is used to eliminate duplicate values from a query result?",
+            "option_a": "A. UNIQUE",
+            "option_b": "B. DISTINCT",
+            "option_c": "C. CHECK",
+            "option_d": "D. IS NULL",
+            "correct_answer": "B",
+            "explanation": "DISTINCT removes duplicate rows in the query output."
+        },
+        {
+            "question": "What is the default sort order when using the ORDER BY clause in SQL?",
+            "option_a": "A. Descending (DESC)",
+            "option_b": "B. Random",
+            "option_c": "C. Ascending (ASC)",
+            "option_d": "D. None of the above",
+            "correct_answer": "C",
+            "explanation": "ORDER BY sorts results in ascending order unless DESC is explicitly specified."
+        },
+        {
+            "question": "Which SQL operator is used to match patterns such as names starting with 'A'?",
+            "option_a": "A. IN",
+            "option_b": "B. BETWEEN",
+            "option_c": "C. LIKE",
+            "option_d": "D. EXISTS",
+            "correct_answer": "C",
+            "explanation": "The LIKE operator supports pattern matching with '%' and '_' wildcards."
+        },
+        {
+            "question": "Which SQL aggregate function returns the number of rows?",
+            "option_a": "A. SUM",
+            "option_b": "B. AVG",
+            "option_c": "C. COUNT",
+            "option_d": "D. MAX",
+            "correct_answer": "C",
+            "explanation": "COUNT returns the number of rows or non-NULL values in a column."
+        },
+        {
+            "question": "When modifying a table, which command allows you to add a new column?",
+            "option_a": "A. INSERT INTO",
+            "option_b": "B. ALTER TABLE",
+            "option_c": "C. UPDATE",
+            "option_d": "D. MODIFY",
+            "correct_answer": "B",
+            "explanation": "ALTER TABLE is used to add, remove, or modify columns and constraints."
+        },
+        {
+            "question": "You want to find courses that are followed by more than two students. Which clause should you use?",
+            "option_a": "A. WHERE",
+            "option_b": "B. ORDER BY",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. HAVING",
+            "correct_answer": "D",
+            "explanation": "HAVING applies conditions to grouped results, such as HAVING COUNT(SID) > 2."
+        },
+        {
+            "question": "A university database has STUDENT and PROGRAM tables. If you delete a PROGRAM, the related STUDENT rows should set progId to default. Which constraint behavior achieves this?",
+            "option_a": "A. ON DELETE CASCADE",
+            "option_b": "B. ON DELETE SET NULL",
+            "option_c": "C. ON DELETE SET DEFAULT",
+            "option_d": "D. ON DELETE RESTRICT",
+            "correct_answer": "C",
+            "explanation": "ON DELETE SET DEFAULT changes the foreign key to its default value instead of removing the row."
+        },
+        {
+            "question": "Which of the following is TRUE about the GROUP BY clause?",
+            "option_a": "A. GROUP BY can include columns not in SELECT",
+            "option_b": "B. Every non-aggregated column in SELECT must appear in GROUP BY",
+            "option_c": "C. GROUP BY can only be applied to numeric columns",
+            "option_d": "D. GROUP BY is applied after ORDER BY",
+            "correct_answer": "B",
+            "explanation": "Non-aggregated columns in SELECT must be included in GROUP BY to ensure grouping consistency."
+        },
+        {
+            "question": "Which SQL command removes a table and all its data permanently?",
+            "option_a": "A. DELETE",
+            "option_b": "B. REMOVE",
+            "option_c": "C. DROP TABLE",
+            "option_d": "D. TRUNCATE",
+            "correct_answer": "C",
+            "explanation": "DROP TABLE deletes the table definition and all its rows permanently."
+        },
+        {
+            "question": "Which keyword is used to check for missing values in SQL?",
+            "option_a": "A. IS NULL",
+            "option_b": "B. DEFAULT",
+            "option_c": "C. BLANK",
+            "option_d": "D. EMPTY",
+            "correct_answer": "A",
+            "explanation": "IS NULL checks if a column has a NULL value."
+        },
+        {
+            "question": "Which clause is used to arrange query results in descending order of GPA?",
+            "option_a": "A. ORDER BY gpa ASC",
+            "option_b": "B. SORT BY gpa",
+            "option_c": "C. ORDER BY gpa DESC",
+            "option_d": "D. GROUP BY gpa",
+            "correct_answer": "C",
+            "explanation": "ORDER BY gpa DESC sorts results from highest to lowest GPA."
+        },
+        {
+            "question": "Which DML statement is used to modify existing data in a table?",
+            "option_a": "A. UPDATE",
+            "option_b": "B. ALTER",
+            "option_c": "C. INSERT",
+            "option_d": "D. CREATE",
+            "correct_answer": "A",
+            "explanation": "UPDATE modifies values in existing rows based on conditions."
+        },
+        {
+            "question": "Which DML statement is used to remove rows that meet a condition?",
+            "option_a": "A. DELETE",
+            "option_b": "B. DROP",
+            "option_c": "C. REMOVE",
+            "option_d": "D. CLEAR",
+            "correct_answer": "A",
+            "explanation": "DELETE removes selected rows, while DROP removes entire objects like tables."
+        },
+        {
+            "question": "Which constraint ensures that each value in a column is unique but allows NULLs?",
+            "option_a": "A. PRIMARY KEY",
+            "option_b": "B. UNIQUE",
+            "option_c": "C. CHECK",
+            "option_d": "D. FOREIGN KEY",
+            "correct_answer": "B",
+            "explanation": "UNIQUE enforces uniqueness but unlike PRIMARY KEY, it allows NULL values."
+        },
+        {
+            "question": "Which SQL command allows insertion of only selected attributes while leaving others as default or NULL?",
+            "option_a": "A. INSERT ALL",
+            "option_b": "B. INSERT INTO ... VALUES",
+            "option_c": "C. INSERT INTO with specified columns",
+            "option_d": "D. PARTIAL INSERT",
+            "correct_answer": "C",
+            "explanation": "Specifying column names in INSERT allows inserting only certain attributes."
+        },
+        {
+            "question": "Which SQL operator is used to filter results within a range of values?",
+            "option_a": "A. IN",
+            "option_b": "B. BETWEEN",
+            "option_c": "C. LIKE",
+            "option_d": "D. EXISTS",
+            "correct_answer": "B",
+            "explanation": "BETWEEN checks whether a value lies between two specified bounds."
+        },
+        {
+            "question": "Which SQL statement would find students whose GPA is exactly NULL?",
+            "option_a": "A. SELECT * FROM student WHERE gpa = NULL",
+            "option_b": "B. SELECT * FROM student WHERE gpa IS NULL",
+            "option_c": "C. SELECT * FROM student WHERE gpa == NULL",
+            "option_d": "D. SELECT * FROM student WHERE gpa = 'NULL'",
+            "correct_answer": "B",
+            "explanation": "NULL cannot be compared with '='; the IS NULL operator must be used."
+        },
+        {
+            "question": "In SQL’s logical query processing order, what comes immediately after the FROM clause?",
+            "option_a": "A. HAVING",
+            "option_b": "B. WHERE",
+            "option_c": "C. ORDER BY",
+            "option_d": "D. SELECT",
+            "option_e": "E. GROUP BY",
+            "correct_answer": "B",
+            "explanation": "The logical order is FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY."
+        },
+        {
+            "question": "In a query with both WHERE and HAVING, which one is processed first?",
+            "option_a": "A. Both at the same time",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. HAVING",
+            "option_d": "D. WHERE",
+            "option_e": "E. SELECT",
+            "correct_answer": "D",
+            "explanation": "WHERE filters rows before grouping; HAVING filters groups after aggregation."
+        },
+        {
+            "question": "Given the query: SELECT department, AVG(salary) FROM Employee WHERE salary > 50000 GROUP BY department HAVING AVG(salary) > 60000; What is the correct logical execution order?",
+            "option_a": "A. FROM → WHERE → GROUP BY → HAVING → SELECT",
+            "option_b": "B. SELECT → FROM → WHERE → GROUP BY → HAVING",
+            "option_c": "C. FROM → WHERE → SELECT → GROUP BY → HAVING",
+            "option_d": "D. WHERE → FROM → GROUP BY → SELECT → HAVING",
+            "option_e": "E. FROM → SELECT → WHERE → HAVING → GROUP BY",
+            "correct_answer": "A",
+            "explanation": "SQL is logically processed as FROM → WHERE → GROUP BY → HAVING → SELECT."
+        },
+        {
+            "question": "Which is the first logical step in SQL query execution?",
+            "option_a": "A. HAVING",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. WHERE",
+            "option_d": "D. SELECT",
+            "option_e": "E. FROM",
+            "correct_answer": "E",
+            "explanation": "Execution begins with FROM to identify source tables and joins."
+        },
+        {
+            "question": "Which clause is executed after grouping is done?",
+            "option_a": "A. ORDER BY",
+            "option_b": "B. FROM",
+            "option_c": "C. WHERE",
+            "option_d": "D. SELECT",
+            "option_e": "E. HAVING",
+            "correct_answer": "E",
+            "explanation": "HAVING is applied after GROUP BY to filter aggregated results."
+        },
+        {
+            "question": "Which step is responsible for combining rows from multiple tables?",
+            "option_a": "A. SELECT",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. WHERE",
+            "option_d": "D. HAVING",
+            "option_e": "E. JOIN in FROM stage",
+            "correct_answer": "E",
+            "explanation": "JOIN operations are logically processed in the FROM stage to combine tables."
+        },
+        {
+            "question": "Why can’t aggregate functions (like AVG) normally be used in the WHERE clause?",
+            "option_a": "A. WHERE runs after SELECT",
+            "option_b": "B. WHERE runs before GROUP BY",
+            "option_c": "C. WHERE runs after HAVING",
+            "option_d": "D. WHERE runs after GROUP BY",
+            "option_e": "E. WHERE is skipped when using aggregates",
+            "correct_answer": "B",
+            "explanation": "WHERE is applied before grouping, so aggregates do not yet exist; HAVING handles aggregate conditions."
+        },
+        {
+            "question": "Which SQL keyword ensures that every studentId in the STUDENT table must be unique and not NULL?",
+            "option_a": "A. UNIQUE",
+            "option_b": "B. PRIMARY KEY",
+            "option_c": "C. FOREIGN KEY",
+            "option_d": "D. CHECK",
+            "correct_answer": "B",
+            "explanation": "PRIMARY KEY enforces both uniqueness and non-null values."
+        },
+        {
+            "question": "Which of the following is a valid SQL statement to increase all GPAs by 0.1?",
+            "option_a": "A. UPDATE student SET gpa = gpa + 0.1;",
+            "option_b": "B. ALTER TABLE student SET gpa = gpa + 0.1;",
+            "option_c": "C. MODIFY student gpa = gpa + 0.1;",
+            "option_d": "D. INSERT gpa = gpa + 0.1;",
+            "correct_answer": "A",
+            "explanation": "UPDATE modifies existing rows, so it is correct for increasing values."
+        },
+        {
+            "question": "Which SQL query correctly counts the number of students per program?",
+            "option_a": "A. SELECT progId, COUNT(*) FROM student;",
+            "option_b": "B. SELECT COUNT(progId) FROM student GROUP BY progId;",
+            "option_c": "C. SELECT progId, COUNT(*) FROM student GROUP BY progId;",
+            "option_d": "D. SELECT DISTINCT progId FROM student;",
+            "correct_answer": "C",
+            "explanation": "Grouping by progId and applying COUNT returns student counts per program."
+        },
+        {
+            "question": "Which SQL clause is optional in a SELECT query?",
+            "option_a": "A. FROM",
+            "option_b": "B. WHERE",
+            "option_c": "C. SELECT",
+            "option_d": "D. GROUP BY",
+            "correct_answer": "B",
+            "explanation": "WHERE, GROUP BY, HAVING, and ORDER BY are optional clauses in a SELECT query."
+        }
+    ]
+}

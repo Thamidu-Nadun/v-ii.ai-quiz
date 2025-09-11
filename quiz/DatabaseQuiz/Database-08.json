@@ -1,0 +1,204 @@
+{
+    "questions": [
+        {
+            "question": "Option 1 for mapping ISA relationships is suitable for which constraints?",
+            "option_a": "A. Only disjoint and total",
+            "option_b": "B. Only overlapping and partial",
+            "option_c": "C. All constraints",
+            "option_d": "D. Only total",
+            "option_e": "E. Only disjoint",
+            "correct_answer": "C",
+            "explanation": "Option 1 works for all specialization constraints."
+        },
+        {
+            "question": "Which ISA mapping option creates one table with all attributes?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "option_e": "E. Both 3 and 4",
+            "correct_answer": "E",
+            "explanation": "Options 3 and 4 use a single table for all attributes."
+        },
+        {
+            "question": "Option 2 for ISA requires which constraint?",
+            "option_a": "A. Disjoint",
+            "option_b": "B. Overlapping",
+            "option_c": "C. Partial",
+            "option_d": "D. Total",
+            "option_e": "E. No constraint",
+            "correct_answer": "D",
+            "explanation": "Option 2 needs total specialization as no table exists for the superclass."
+        },
+        {
+            "question": "Disadvantage of single-table ISA mapping with many attributes?",
+            "option_a": "A. Cannot represent disjoint",
+            "option_b": "B. Cannot represent overlapping",
+            "option_c": "C. Many NULL values",
+            "option_d": "D. Complex FK constraints",
+            "option_e": "E. Needs extra tables",
+            "correct_answer": "C",
+            "explanation": "Single-table mapping causes many NULL values."
+        },
+        {
+            "question": "Best mapping option for overlapping specialization with few attributes?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "option_e": "E. Option 5",
+            "correct_answer": "D",
+            "explanation": "Option 4 suits overlapping specializations with minimal attributes."
+        },
+        {
+            "question": "A ternary relationship is mapped by:",
+            "option_a": "A. Adding FKs to all entity tables",
+            "option_b": "B. Creating a new table with FKs from all entities",
+            "option_c": "C. Ignoring one entity",
+            "option_d": "D. Combining two entities first",
+            "option_e": "E. Using recursion",
+            "correct_answer": "B",
+            "explanation": "A new table with FKs from all entities maps ternary relationships."
+        },
+        {
+            "question": "Purpose of a foreign key?",
+            "option_a": "A. Identify a tuple",
+            "option_b": "B. Ensure every attribute has a value",
+            "option_c": "C. Enforce referential integrity",
+            "option_d": "D. Backup primary key",
+            "option_e": "E. Improve retrieval speed",
+            "correct_answer": "C",
+            "explanation": "Foreign keys maintain referential integrity between tables."
+        },
+        {
+            "question": "How is a composite attribute mapped?",
+            "option_a": "A. Separate table",
+            "option_b": "B. Ignore composite nature",
+            "option_c": "C. Column for composite and components",
+            "option_d": "D. Columns for components only",
+            "option_e": "E. Make it PK",
+            "correct_answer": "D",
+            "explanation": "Components of composite attributes become separate columns."
+        },
+        {
+            "question": "How is a relationship with a descriptive attribute mapped?",
+            "option_a": "A. Add attribute to 'one' side",
+            "option_b": "B. Add attribute to 'many' side",
+            "option_c": "C. Add attribute to the junction table",
+            "option_d": "D. Ignore it",
+            "option_e": "E. Create a new entity",
+            "correct_answer": "C",
+            "explanation": "Descriptive attributes go into the relationship table."
+        },
+        {
+            "question": "ISA mapping trade-off is between:",
+            "option_a": "A. Security and performance",
+            "option_b": "B. Redundancy and query simplicity",
+            "option_c": "C. NULL values and joins",
+            "option_d": "D. UI color and DBMS brand",
+            "option_e": "E. Admin age and salary",
+            "correct_answer": "C",
+            "explanation": "Single-table options reduce joins but increase NULL values."
+        },
+        {
+            "question": "Patient entity with multi-valued attribute 'allergy' is mapped as:",
+            "option_a": "A. Allergy column in Patient table",
+            "option_b": "B. Patient_Allergy table with patient_id and allergy",
+            "option_c": "C. Two allergy columns in Patient table",
+            "option_d": "D. Drop the attribute",
+            "option_e": "E. Allergy as PK in Patient table",
+            "correct_answer": "B",
+            "explanation": "Multi-valued attributes use a separate table linked by FK."
+        },
+        {
+            "question": "Primary key of a ternary relationship table is:",
+            "option_a": "A. PK of Supplier",
+            "option_b": "B. Composite of all participating PKs",
+            "option_c": "C. Surrogate key",
+            "option_d": "D. PK of Part",
+            "option_e": "E. Quantity attribute",
+            "correct_answer": "B",
+            "explanation": "Primary key is a composite of all participating entity PKs."
+        },
+        {
+            "question": "Rule 'Every vehicle must be either car or truck, not both' means ISA is:",
+            "option_a": "A. Total and Disjoint",
+            "option_b": "B. Partial and Disjoint",
+            "option_c": "C. Total and Overlapping",
+            "option_d": "D. Partial and Overlapping",
+            "option_e": "E. None",
+            "correct_answer": "A",
+            "explanation": "'Must be' = total; 'not both' = disjoint."
+        },
+        {
+            "question": "Best mapping for previous ISA if subclasses have many attributes?",
+            "option_a": "A. Option 1",
+            "option_b": "B. Option 2",
+            "option_c": "C. Option 3",
+            "option_d": "D. Option 4",
+            "option_e": "E. Only Option 2",
+            "correct_answer": "A",
+            "explanation": "Option 1 avoids NULLs and handles multiple attributes efficiently."
+        },
+        {
+            "question": "1:1 relationship between Employee and CompanyCar with total participation on CompanyCar side is mapped by:",
+            "option_a": "A. Add employee_id as FK to CompanyCar",
+            "option_b": "B. Add car_id as FK to Employee",
+            "option_c": "C. Create junction table",
+            "option_d": "D. Merge tables",
+            "option_e": "E. Either A or B, but A is better",
+            "correct_answer": "A",
+            "explanation": "Placing FK in CompanyCar enforces total participation."
+        },
+        {
+            "question": "Mapping a weak entity, the identifying relationship becomes:",
+            "option_a": "A. Unique constraint",
+            "option_b": "B. Composite key",
+            "option_c": "C. FK constraint from weak entity to owner",
+            "option_d": "D. Separate table",
+            "option_e": "E. Multi-valued attribute",
+            "correct_answer": "C",
+            "explanation": "Weak entity table includes FK to its owner."
+        },
+        {
+            "question": "Derived attribute 'age' based on 'date_of_birth' should be:",
+            "option_a": "A. Column for age and date_of_birth with trigger",
+            "option_b": "B. Only age column",
+            "option_c": "C. Only date_of_birth column",
+            "option_d": "D. Separate table",
+            "option_e": "E. Make age part of PK",
+            "correct_answer": "C",
+            "explanation": "Derived attributes like age are not stored; calculated from base attribute."
+        },
+        {
+            "question": "Primary key of a relation must be:",
+            "option_a": "A. Single attribute",
+            "option_b": "B. First attribute in schema",
+            "option_c": "C. Composite key",
+            "option_d": "D. Unique and minimal candidate key",
+            "option_e": "E. Foreign key",
+            "correct_answer": "D",
+            "explanation": "Primary key is a unique and minimal candidate key."
+        },
+        {
+            "question": "What is a junction table?",
+            "option_a": "A. Table with PK from one table",
+            "option_b": "B. Table for multi-valued attributes",
+            "option_c": "C. Table for M:N or n-ary relationship",
+            "option_d": "D. Table with only FKs and no PK",
+            "option_e": "E. Temporary table",
+            "correct_answer": "C",
+            "explanation": "Junction table maps many-to-many relationships."
+        },
+        {
+            "question": "Which is NOT a valid ER-to-relational mapping step?",
+            "option_a": "A. Map strong entities",
+            "option_b": "B. Map weak entities with owner PK",
+            "option_c": "C. Convert M:N to 1:1",
+            "option_d": "D. Map n-ary relationships",
+            "option_e": "E. Choose ISA strategy",
+            "correct_answer": "C",
+            "explanation": "M:N relationships are mapped to separate tables, not 1:1."
+        }
+    ]
+}

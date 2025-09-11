@@ -1,0 +1,296 @@
+{
+    "questions": [
+        {
+            "question": "Which SQL join is used to combine rows from two or more tables based on a related column such as a primary key–foreign key relationship?",
+            "option_a": "A. FULL OUTER JOIN",
+            "option_b": "B. INNER JOIN",
+            "option_c": "C. CROSS JOIN",
+            "option_d": "D. SELF JOIN",
+            "correct_answer": "B",
+            "explanation": "INNER JOIN returns only rows with matching values in both tables based on the related column."
+        },
+        {
+            "question": "What is the main difference between an INNER JOIN and a LEFT OUTER JOIN?",
+            "option_a": "A. INNER JOIN returns all rows from both tables, LEFT JOIN only matched rows.",
+            "option_b": "B. INNER JOIN includes unmatched rows, LEFT JOIN excludes them.",
+            "option_c": "C. INNER JOIN returns only matched rows, LEFT JOIN returns all rows from the left table plus matched rows from the right.",
+            "option_d": "D. LEFT JOIN always returns fewer rows than INNER JOIN.",
+            "correct_answer": "C",
+            "explanation": "LEFT JOIN preserves all rows from the left table and fills unmatched right table values with NULLs, unlike INNER JOIN which keeps only matched rows."
+        },
+        {
+            "question": "Which SQL statement retrieves all student names along with the offering institute, even if some students are not enrolled in any program?",
+            "option_a": "A. SELECT s.Name, p.offerBy FROM Student s INNER JOIN Program p ON s.pid = p.progId;",
+            "option_b": "B. SELECT s.Name, p.offerBy FROM Student s LEFT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_c": "C. SELECT s.Name, p.offerBy FROM Student s RIGHT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_d": "D. SELECT s.Name FROM Student;",
+            "correct_answer": "B",
+            "explanation": "LEFT OUTER JOIN ensures all students are listed, even if they are not in any program."
+        },
+        {
+            "question": "Suppose you want to display all programs and the names of students following them, including programs with no students enrolled. Which join should you use?",
+            "option_a": "A. LEFT OUTER JOIN",
+            "option_b": "B. INNER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "C",
+            "explanation": "RIGHT OUTER JOIN ensures all rows from Program are included, even if no student is enrolled."
+        },
+        {
+            "question": "Given the schema Student(pid, Name) and Program(progId, OfferBy), which query retrieves the names of students enrolled in programs offered by 'SLIIT'?",
+            "option_a": "A. SELECT s.Name FROM Student s INNER JOIN Program p ON s.pid = p.progId WHERE OfferBy = 'SLIIT';",
+            "option_b": "B. SELECT Name FROM Student WHERE OfferBy = 'SLIIT';",
+            "option_c": "C. SELECT s.Name FROM Student s RIGHT JOIN Program p ON s.pid = p.progId;",
+            "option_d": "D. SELECT p.OfferBy FROM Program p;",
+            "correct_answer": "A",
+            "explanation": "The condition OfferBy = 'SLIIT' must be applied after joining Student and Program using the primary–foreign key relationship."
+        },
+        {
+            "question": "Which join type would you use to ensure that both unmatched students and unmatched programs are included in the result set?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "D",
+            "explanation": "FULL OUTER JOIN returns all rows from both tables, inserting NULLs for non-matching rows."
+        },
+        {
+            "question": "If a query returns student names multiple times when joining with Program, what is the most likely cause?",
+            "option_a": "A. Students having duplicate names in Student table.",
+            "option_b": "B. A one-to-many relationship between Program and Student.",
+            "option_c": "C. A missing primary key in Student table.",
+            "option_d": "D. Use of RIGHT JOIN instead of INNER JOIN.",
+            "correct_answer": "B",
+            "explanation": "When a student is enrolled in multiple programs, a one-to-many relationship produces duplicate names in join results."
+        },
+        {
+            "question": "Which SQL query correctly retrieves the offering institute for each student, even if some programs are not yet assigned?",
+            "option_a": "A. SELECT s.Name, p.OfferBy FROM Student s INNER JOIN Program p ON s.pid = p.progId;",
+            "option_b": "B. SELECT s.Name, p.OfferBy FROM Student s LEFT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_c": "C. SELECT s.Name FROM Student;",
+            "option_d": "D. SELECT p.OfferBy FROM Program;",
+            "correct_answer": "B",
+            "explanation": "LEFT OUTER JOIN includes all students regardless of program enrollment, assigning NULL where no program exists."
+        },
+        {
+            "question": "In the context of joins, what does the ON clause specify?",
+            "option_a": "A. Which table should appear first in the query",
+            "option_b": "B. The join condition that links related columns between tables",
+            "option_c": "C. The filtering condition applied after the join",
+            "option_d": "D. The default sorting order for the results",
+            "correct_answer": "B",
+            "explanation": "The ON clause defines the relationship between columns used to join the two tables."
+        },
+        {
+            "question": "Which SQL join would be most appropriate if you want to analyze data to see which programs have zero students enrolled?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "C",
+            "explanation": "RIGHT OUTER JOIN ensures all programs are listed, including those with no student matches."
+        },
+        {
+            "question": "Which SQL keyword ensures that duplicate rows are removed from a join result?",
+            "option_a": "A. UNIQUE",
+            "option_b": "B. DISTINCT",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. ORDER BY",
+            "correct_answer": "B",
+            "explanation": "DISTINCT eliminates duplicate rows in query results."
+        },
+        {
+            "question": "When joining Student and Program tables, what happens if no ON clause is used?",
+            "option_a": "A. SQL will automatically match primary and foreign keys.",
+            "option_b": "B. A cross join (Cartesian product) will occur.",
+            "option_c": "C. The query will fail with a syntax error.",
+            "option_d": "D. Only the first row of each table will be combined.",
+            "correct_answer": "B",
+            "explanation": "Without an ON clause, SQL performs a Cartesian product between the tables."
+        },
+        {
+            "question": "Which clause is necessary when using aggregate functions like COUNT() with JOINs to group results by columns?",
+            "option_a": "A. HAVING",
+            "option_b": "B. GROUP BY",
+            "option_c": "C. ORDER BY",
+            "option_d": "D. WHERE",
+            "correct_answer": "B",
+            "explanation": "GROUP BY groups rows based on column values, allowing aggregation functions to operate correctly."
+        },
+        {
+            "question": "Which join ensures all rows from the left table and the right table are displayed, regardless of matches?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "D",
+            "explanation": "FULL OUTER JOIN returns all rows from both tables, with NULLs for non-matching values."
+        },
+        {
+            "question": "In a LEFT OUTER JOIN, what value is shown when a match does not exist in the right-hand table?",
+            "option_a": "A. Zero",
+            "option_b": "B. Empty string",
+            "option_c": "C. NULL",
+            "option_d": "D. Default value",
+            "correct_answer": "C",
+            "explanation": "When no match exists in the right table, SQL assigns NULL values."
+        },
+        {
+            "question": "Which join type would return all students and only the programs they are enrolled in?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "A",
+            "explanation": "INNER JOIN only returns rows with matches in both tables."
+        },
+        {
+            "question": "What is the output of an INNER JOIN when no rows match between the two tables?",
+            "option_a": "A. All rows from the left table",
+            "option_b": "B. All rows from the right table",
+            "option_c": "C. An empty result set",
+            "option_d": "D. All rows from both tables",
+            "correct_answer": "C",
+            "explanation": "INNER JOIN returns only matched rows; if no matches exist, the result is empty."
+        },
+        {
+            "question": "Which join should be used to identify students who are not enrolled in any program?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. RIGHT OUTER JOIN",
+            "option_c": "C. LEFT OUTER JOIN with WHERE condition checking NULLs",
+            "option_d": "D. CROSS JOIN",
+            "correct_answer": "C",
+            "explanation": "LEFT OUTER JOIN keeps all students, and filtering NULLs on Program identifies unenrolled students."
+        },
+        {
+            "question": "Which join is most efficient for checking only matched rows in two related tables?",
+            "option_a": "A. INNER JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. RIGHT OUTER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "A",
+            "explanation": "INNER JOIN only includes rows that match in both tables, making it efficient for matched data queries."
+        },
+        {
+            "question": "Which SQL query retrieves all students with the programs they follow, even if some students are not enrolled?",
+            "option_a": "A. SELECT s.Name, p.OfferBy FROM Student s INNER JOIN Program p ON s.pid = p.progId;",
+            "option_b": "B. SELECT s.Name, p.OfferBy FROM Student s LEFT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_c": "C. SELECT s.Name, p.OfferBy FROM Student s RIGHT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_d": "D. SELECT s.Name FROM Student;",
+            "correct_answer": "B",
+            "explanation": "LEFT OUTER JOIN ensures all students are displayed, with NULL where no program is assigned."
+        },
+        {
+            "question": "In SQL, which operator is often used along with JOINs to filter results based on conditions?",
+            "option_a": "A. BETWEEN",
+            "option_b": "B. LIKE",
+            "option_c": "C. WHERE",
+            "option_d": "D. ORDER BY",
+            "correct_answer": "C",
+            "explanation": "The WHERE clause applies conditions after performing the JOIN to filter rows."
+        },
+        {
+            "question": "If you need to find all programs not offered by 'SLIIT', which clause should be added to the JOIN query?",
+            "option_a": "A. WHERE offerBy != 'SLIIT'",
+            "option_b": "B. HAVING offerBy = 'SLIIT'",
+            "option_c": "C. GROUP BY offerBy",
+            "option_d": "D. ORDER BY offerBy",
+            "correct_answer": "A",
+            "explanation": "A WHERE condition ensures only rows where offerBy is not 'SLIIT' are included."
+        },
+        {
+            "question": "Which SQL join produces a Cartesian product of two tables?",
+            "option_a": "A. CROSS JOIN",
+            "option_b": "B. LEFT OUTER JOIN",
+            "option_c": "C. INNER JOIN",
+            "option_d": "D. FULL OUTER JOIN",
+            "correct_answer": "A",
+            "explanation": "CROSS JOIN combines every row of one table with every row of the other."
+        },
+        {
+            "question": "When joining tables with aggregate functions, which clause filters aggregated results?",
+            "option_a": "A. WHERE",
+            "option_b": "B. HAVING",
+            "option_c": "C. GROUP BY",
+            "option_d": "D. ORDER BY",
+            "correct_answer": "B",
+            "explanation": "HAVING filters results after aggregation, while WHERE filters before aggregation."
+        },
+        {
+            "question": "Which SQL clause is required when using COUNT(), AVG(), or SUM() in combination with JOINs for grouped data?",
+            "option_a": "A. GROUP BY",
+            "option_b": "B. ORDER BY",
+            "option_c": "C. HAVING",
+            "option_d": "D. DISTINCT",
+            "correct_answer": "A",
+            "explanation": "GROUP BY ensures aggregation functions are applied to grouped records."
+        },
+        {
+            "question": "Which join retrieves all rows from the right table and matching rows from the left table?",
+            "option_a": "A. LEFT OUTER JOIN",
+            "option_b": "B. RIGHT OUTER JOIN",
+            "option_c": "C. FULL OUTER JOIN",
+            "option_d": "D. INNER JOIN",
+            "correct_answer": "B",
+            "explanation": "RIGHT OUTER JOIN preserves all rows from the right-hand table."
+        },
+        {
+            "question": "Which SQL query retrieves all students and their associated programs where available, while still showing students without programs?",
+            "option_a": "A. SELECT s.Name, p.OfferBy FROM Student s INNER JOIN Program p ON s.pid = p.progId;",
+            "option_b": "B. SELECT s.Name, p.OfferBy FROM Student s LEFT OUTER JOIN Program p ON s.pid = p.progId;",
+            "option_c": "C. SELECT p.OfferBy FROM Program p;",
+            "option_d": "D. SELECT s.Name FROM Student;",
+            "correct_answer": "B",
+            "explanation": "LEFT OUTER JOIN ensures students without programs still appear with NULL for OfferBy."
+        },
+        {
+            "question": "Which SQL query increases the price of books published before 2000 by 15%?",
+            "option_a": "A. UPDATE Book SET price = 1.15 WHERE published_year < 2000;",
+            "option_b": "B. UPDATE Book SET price = price * 1.15 WHERE published_year > 2000;",
+            "option_c": "C. UPDATE Book SET price = price + 15 WHERE published_year < 2000;",
+            "option_d": "D. UPDATE Book SET price = price * 0.85 WHERE published_year < 2000;",
+            "option_e": "E. UPDATE Book SET price = price * 1.15 WHERE published_year < 2000;",
+            "correct_answer": "E",
+            "explanation": "Multiplying price by 1.15 for books with published_year < 2000 correctly increases price by 15%."
+        },
+        {
+            "question": "Which SQL query lists the titles and authors of all Science Fiction books published after 2015?",
+            "option_a": "A. SELECT title, author FROM Book WHERE genre = 'Science Fiction' AND published_year > 2015;",
+            "option_b": "B. SELECT author, title FROM Book WHERE genre = 'Science Fiction';",
+            "option_c": "C. SELECT title, author FROM Book WHERE genre = 'Science Fiction' AND published_year < 2015;",
+            "option_d": "D. SELECT title, author FROM Book WHERE genre = 'Science Fiction' OR published_year > 2015;",
+            "option_e": "E. SELECT title, author FROM Book WHERE genre = 'Fantasy' AND published_year > 2015;",
+            "correct_answer": "A",
+            "explanation": "The condition combines both filters: genre 'Science Fiction' and published after 2015."
+        },
+        {
+            "question": "Which SQL query retrieves all members who have overdue books (return_date < current date)?",
+            "option_a": "A. SELECT * FROM Member WHERE member_id IN (SELECT member_id FROM Loan);",
+            "option_b": "B. SELECT DISTINCT m.member_id, m.mname FROM Member m INNER JOIN Loan l ON m.member_id = l.member_id WHERE l.return_date < CURRENT_DATE;",
+            "option_c": "C. SELECT member_id, mname FROM Member;",
+            "option_d": "D. SELECT mname FROM Member;",
+            "option_e": "E. SELECT m.member_id, m.mname FROM Member m INNER JOIN Loan l ON m.member_id = l.member_id WHERE l.loan_date < CURRENT_DATE;",
+            "correct_answer": "B",
+            "explanation": "Joining Member and Loan with condition return_date < CURRENT_DATE correctly retrieves overdue members."
+        },
+        {
+            "question": "Which SQL query finds the total number of books borrowed by each member?",
+            "option_a": "A. SELECT member_id, COUNT(book_id) FROM Loan;",
+            "option_b": "B. SELECT m.mname, l.loan_id FROM Member m INNER JOIN Loan l ON m.member_id = l.member_id;",
+            "option_c": "D. SELECT COUNT(*) FROM Loan;",
+            "option_d": "E. SELECT m.member_id, m.mname, COUNT(l.loan_id) AS total_borrowed FROM Member m LEFT OUTER JOIN Loan l ON m.member_id = l.member_id GROUP BY m.member_id, m.mname;",
+            "correct_answer": "D",
+            "explanation": "Using GROUP BY ensures aggregation per member, including those with zero loans."
+        },
+        {
+            "question": "Which SQL query lists all books that have never been borrowed?",
+            "option_a": "A. SELECT title, author FROM Book WHERE book_id NOT IN (SELECT book_id FROM Loan);",
+            "option_b": "B. SELECT title, author FROM Book INNER JOIN Loan ON Book.book_id = Loan.book_id;",
+            "option_c": "C. SELECT b.title, b.author FROM Book b LEFT OUTER JOIN Loan l ON b.book_id = l.book_id WHERE l.loan_id IS NULL;",
+            "option_d": "D. SELECT title, author FROM Book WHERE book_id IN Loan;",
+            "option_e": "E. SELECT title, author FROM Book;",
+            "correct_answer": "C",
+            "explanation": "LEFT JOIN with IS NULL ensures only books without matching loans are returned."
+        }
+    ]
+}
