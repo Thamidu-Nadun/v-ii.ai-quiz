@@ -6,7 +6,7 @@
             "option_b": "To create an ER diagram based on business rules.",
             "option_c": "To convert the conceptual design into a schema for the chosen DBMS data model.",
             "option_d": "To install and configure the database server hardware.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "Logical design is the step where the high-level, DBMS-independent conceptual model (like an ER diagram) is transformed into a logical schema (like relational tables) specific to a data model (e.g., the relational model)."
         },
         {
@@ -15,7 +15,7 @@
             "option_b": "Relationship",
             "option_c": "Relation",
             "option_d": "Tuple",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "The core building block of the relational model is the \"relation,\" which is commonly visualized as a table."
         },
         {
@@ -24,7 +24,7 @@
             "option_b": "The name, columns (attributes), and their domains for a relation.",
             "option_c": "The relationships between different tables.",
             "option_d": "The SQL queries that will be run on the database.",
-            "correct_answer": "option_b",
+            "correct_answer": "B",
             "explanation": "A schema is the structure or blueprint of a relation. An instance is the current set of data (rows) that conforms to that schema."
         },
         {
@@ -33,7 +33,7 @@
             "option_b": "It is not mapped; only relationships are mapped.",
             "option_c": "It becomes a table. The entity's attributes become the table's columns, and its primary key becomes the table's primary key.",
             "option_d": "Its attributes are added as columns to the table of a related entity.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "This is the fundamental rule for mapping strong entities. Each strong entity becomes its own relation (table)."
         },
         {
@@ -42,7 +42,7 @@
             "option_b": "Add the primary key of E1 as a foreign key in the table for E2.",
             "option_c": "Add the primary key of E2 as a foreign key in the table for E1.",
             "option_d": "Either b or c, choosing the entity with total participation if it exists.",
-            "correct_answer": "option_d",
+            "correct_answer": "D",
             "explanation": "For a 1:1 relationship, the foreign key can be placed in either table. It is most efficient to place it in the table of the entity that has total participation in the relationship to avoid null values."
         },
         {
@@ -51,7 +51,7 @@
             "option_b": "Add the primary key of the \"1\" side (Department) as a foreign key in the table for the \"N\" side (Employee).",
             "option_c": "Add the primary key of the \"N\" side (Employee) as a foreign key in the table for the \"1\" side (Department).",
             "option_d": "Merge the two entity tables into a single table.",
-            "correct_answer": "option_b",
+            "correct_answer": "B",
             "explanation": "The standard mapping for a 1:N relationship is to place a foreign key on the \"many\" side of the relationship, referencing the \"one\" side."
         },
         {
@@ -60,7 +60,7 @@
             "option_b": "Add the primary key of Course as a foreign key in the Student table.",
             "option_c": "Create a new relation (table) whose primary key is a composite of the primary keys of the participating entities.",
             "option_d": "Ignore the relationship as it is not important.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "An M:N relationship cannot be represented by adding foreign keys to the original tables. A new \"junction\" or \"relationship\" table must be created with foreign keys to both participating entities. Its primary key is often the combination of these foreign keys."
         },
         {
@@ -69,7 +69,7 @@
             "option_b": "It is mapped to a column in the same table as the entity.",
             "option_c": "It is mapped to a separate new table, with the primary key of the original entity included as a foreign key.",
             "option_d": "It is converted into a single-valued attribute.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "Since a single column in a relational table cannot hold multiple values, a multi-valued attribute must be decomposed into a new table linked back to the original entity by a foreign key."
         },
         {
@@ -78,7 +78,7 @@
             "option_b": "Only the primary key of its owner entity.",
             "option_c": "A composite key formed from its partial key and the primary key of its owner entity.",
             "option_d": "A new, surrogate key is created.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "A weak entity is identified by its owner. Therefore, its primary key in the relational model is the combination (composite) of its own discriminator (partial key) and the primary key of the owner entity."
         },
         {
@@ -87,7 +87,7 @@
             "option_b": "Option 2",
             "option_c": "Option 3",
             "option_d": "Option 4",
-            "correct_answer": "option_a",
+            "correct_answer": "A",
             "explanation": "Option 1 creates a table for the superclass (e.g., Person) and a table for each subclass (e.g., Student, Faculty). The subclass tables have the superclass's PK as both their PK and a FK back to the superclass table."
         },
         {
@@ -96,7 +96,7 @@
             "option_b": "Only for overlapping and partial constraints.",
             "option_c": "It works for all constraints (disjoint/overlapping, total/partial).",
             "option_d": "Only for total constraints.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "A key advantage of Option 1 is its flexibility. It can handle all possible specialization constraints."
         },
         {
@@ -114,7 +114,7 @@
             "option_b": "It must be overlapping.",
             "option_c": "It must be partial.",
             "option_d": "It must be total (covering).",
-            "correct_answer": "option_d",
+            "correct_answer": "D",
             "explanation": "Option 2 creates tables only for the subclasses. If the specialization is partial (not covering), an entity that is only in the superclass would have nowhere to be stored, losing information."
         },
         {
@@ -123,7 +123,7 @@
             "option_b": "It cannot represent overlapping constraints.",
             "option_c": "It leads to many NULL values in the table.",
             "option_d": "The foreign key constraints become too complex.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "If you put all attributes from all subclasses into one table, a tuple that belongs to only one subclass will have NULL values for all the attributes belonging to the other subclasses, wasting space."
         },
         {
@@ -132,7 +132,7 @@
             "option_b": "Option 2",
             "option_c": "Option 3",
             "option_d": "Option 4",
-            "correct_answer": "option_d",
+            "correct_answer": "D",
             "explanation": "Option 4 (single table with Boolean flags) is well-suited for overlapping specializations. The few attributes minimize the problem of NULL values."
         },
         {
@@ -141,7 +141,7 @@
             "option_b": "Creating a new relationship relation that includes the primary keys of all participating entities as foreign keys.",
             "option_c": "Ignoring one of the entities.",
             "option_d": "Combining two of the entities into one table first.",
-            "correct_answer": "option_b",
+            "correct_answer": "B",
             "explanation": "Similar to an M:N binary relationship, an n-ary relationship (involving more than two entities) requires a separate table whose primary key is typically a composite of the foreign keys pointing to the participating entities."
         },
         {
@@ -150,7 +150,7 @@
             "option_b": "To ensure that every attribute has a value.",
             "option_c": "To enforce referential integrity by linking a tuple to a tuple in another relation.",
             "option_d": "To create a backup of the primary key.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "A foreign key in one table references the primary key in another table, ensuring that the value exists in the referenced table and maintaining the link between related data."
         },
         {
@@ -159,7 +159,7 @@
             "option_b": "Ignore the composite nature and map it as a simple attribute.",
             "option_c": "Create a column for the composite attribute and a column for each of its component attributes.",
             "option_d": "Create a column for each of its component attributes, but not for the composite attribute itself.",
-            "correct_answer": "option_d",
+            "correct_answer": "D",
             "explanation": "The relational model flattens composite attributes. The composite attribute (e.g., 'Name') is not created as a column; instead, its simple components (e.g., 'first_name', 'last_name') become columns."
         },
         {
@@ -168,7 +168,7 @@
             "option_b": "The descriptive attribute is added to the table of the entity on the \"many\" side.",
             "option_c": "The descriptive attribute is added to the junction table created for the relationship.",
             "option_d": "The descriptive attribute is ignored as it cannot be mapped.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "Whether it's an M:N relationship or an n-ary relationship with its own attributes, the descriptive attributes are included as columns in the separate relationship table that is created."
         },
         {
@@ -177,7 +177,7 @@
             "option_b": "Data redundancy and query simplicity.",
             "option_c": "The number of NULL values and the number of joins required for queries.",
             "option_d": "The color of the database UI and the brand of the DBMS.",
-            "correct_answer": "option_c",
+            "correct_answer": "C",
             "explanation": "Single-table options (3 & 4) reduce joins (simpler queries) but can lead to many NULLs. Multi-table options (1 & 2) avoid NULLs but require joins to get complete information (more complex queries)."
         },
         {
@@ -186,7 +186,7 @@
             "option_b": "A new table Patient_Allergy with columns patient_id (FK to Patient) and allergy.",
             "option_c": "Two columns in the Patient table: allergy1 and allergy2.",
             "option_d": "Ignore allergy as it is multi-valued.",
-            "correct_answer": "option_b",
+            "correct_answer": "B",
             "explanation": "Multi-valued attributes require a separate table to hold multiple values per entity instance."
         }
     ]
