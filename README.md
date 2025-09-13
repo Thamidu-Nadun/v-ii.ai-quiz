@@ -2,6 +2,8 @@
 
 An interactive web-based quiz application that lets you create, take, and share exciting quizzes on various topics! 🚀
 
+**Live Link**: <a href="https://thamidu-nadun.github.io/v-ii.ai-quiz/">Visit ↗</a>
+
 <div align="center">
   <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Quiz Time!" width="300px">
 </div>
