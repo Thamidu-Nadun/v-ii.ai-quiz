@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What was the primary significance of ENIAC in the context of AI's evolution?",
+            "option_a": "A. It was the first computer to use machine learning",
+            "option_b": "B. It was the first computer to beat a human at chess",
+            "option_c": "C. It paved the way for programmable machines by performing complex computations",
+            "option_d": "D. It was developed by Alan Turing specifically for code-breaking",
+            "correct_answer": "C",
+            "explanation": "ENIAC was not an AI system but demonstrated the feasibility of machines performing complex computations, laying groundwork for AI."
+        },
+        {
+            "question": "The term 'Artificial Intelligence' was formally introduced at which historic event?",
+            "option_a": "A. The ENIAC unveiling",
+            "option_b": "B. The 1956 Dartmouth Workshop",
+            "option_c": "C. The release of the ELIZA program",
+            "option_d": "D. The first AlphaGo match",
+            "correct_answer": "B",
+            "explanation": "The 1956 Dartmouth Workshop, organized by John McCarthy and others, officially coined the term 'Artificial Intelligence'."
+        },
+        {
+            "question": "Which of the following was NOT a founding attendee of the 1956 Dartmouth Conference?",
+            "option_a": "A. John McCarthy",
+            "option_b": "B. Marvin Minsky",
+            "option_c": "C. Alan Turing",
+            "option_d": "D. Claude Shannon",
+            "correct_answer": "C",
+            "explanation": "Alan Turing contributed foundational theories but was not present at the 1956 Dartmouth Conference."
+        },
+        {
+            "question": "In which decade did Expert Systems like MYCIN and DENDRAL rise to prominence?",
+            "option_a": "A. 1960s",
+            "option_b": "B. 1970s",
+            "option_c": "C. 1980s",
+            "option_d": "D. 1990s",
+            "correct_answer": "C",
+            "explanation": "The 1980s are noted for the rise of Expert Systems such as MYCIN and DENDRAL."
+        },
+        {
+            "question": "What key breakthrough defined the 2010s in AI?",
+            "option_a": "A. The invention of the transistor",
+            "option_b": "B. The rise of symbolic AI",
+            "option_c": "C. Deep Learning breakthroughs",
+            "option_d": "D. The creation of ELIZA",
+            "correct_answer": "C",
+            "explanation": "The 2010s were marked by Deep Learning breakthroughs, particularly in neural networks for vision and speech."
+        },
+        {
+            "question": "Which event is cited as a notable moment for AI in the 2010s?",
+            "option_a": "A. ChatGPT’s release",
+            "option_b": "B. Deep Blue defeating Garry Kasparov",
+            "option_c": "C. AlphaGo defeating the world Go champion",
+            "option_d": "D. The Dartmouth Workshop",
+            "correct_answer": "C",
+            "explanation": "AlphaGo's victory in 2016 is recognized as a landmark AI achievement in the 2010s."
+        },
+        {
+            "question": "Generative AI models like GPT and DALL-E are primarily built on which architecture?",
+            "option_a": "A. Convolutional Neural Networks (CNNs)",
+            "option_b": "B. Recurrent Neural Networks (RNNs)",
+            "option_c": "C. Expert Systems",
+            "option_d": "D. Transformer architectures",
+            "correct_answer": "D",
+            "explanation": "Transformer architectures power large-scale generative models such as GPT and DALL-E."
+        },
+        {
+            "question": "Which field is the broadest in simulating human intelligence?",
+            "option_a": "A. Machine Learning",
+            "option_b": "B. Deep Learning",
+            "option_c": "C. Generative AI",
+            "option_d": "D. Artificial Intelligence",
+            "correct_answer": "D",
+            "explanation": "Artificial Intelligence is the broad field under which ML, DL, and Generative AI fall."
+        },
+        {
+            "question": "Machine Learning is best defined as a:",
+            "option_a": "A. Type of computer vision",
+            "option_b": "B. Subset of Deep Learning",
+            "option_c": "C. Subset of Artificial Intelligence",
+            "option_d": "D. Rule-based paradigm",
+            "correct_answer": "C",
+            "explanation": "Machine Learning is a subset of AI focused on learning patterns from data."
+        },
+        {
+            "question": "Which capability is part of AI?",
+            "option_a": "A. Reasoning",
+            "option_b": "B. Learning",
+            "option_c": "C. Perception",
+            "option_d": "D. Language understanding",
+            "correct_answer": "A",
+            "explanation": "AI systems can reason, learn, perceive, and understand language."
+        },
+        {
+            "question": "What is the key idea behind Machine Learning?",
+            "option_a": "A. Operates on predefined rules",
+            "option_b": "B. Requires human intervention for every decision",
+            "option_c": "C. Learns patterns and rules from examples",
+            "option_d": "D. Cannot improve over time",
+            "correct_answer": "C",
+            "explanation": "Machine Learning allows systems to learn from examples rather than hand-coded rules."
+        },
+        {
+            "question": "Deep Learning is characterized by:",
+            "option_a": "A. Linear regression",
+            "option_b": "B. Multi-layered neural networks",
+            "option_c": "C. Decision trees",
+            "option_d": "D. Knowledge bases",
+            "correct_answer": "B",
+            "explanation": "Deep Learning utilizes multi-layered neural networks for complex learning tasks."
+        },
+        {
+            "question": "Which architecture is most associated with image processing?",
+            "option_a": "A. RNN",
+            "option_b": "B. Transformer",
+            "option_c": "C. GAN",
+            "option_d": "D. CNN",
+            "correct_answer": "D",
+            "explanation": "Convolutional Neural Networks (CNNs) are designed for computer vision tasks."
+        },
+        {
+            "question": "Which architecture is designed for sequential data like text or time series?",
+            "option_a": "A. CNN",
+            "option_b": "B. RNN",
+            "option_c": "C. GPT",
+            "option_d": "D. GAN",
+            "correct_answer": "B",
+            "explanation": "RNNs are specialized for handling sequential data like text or speech."
+        },
+        {
+            "question": "The self-attention mechanism is the key innovation of which architecture?",
+            "option_a": "A. CNNs",
+            "option_b": "B. RNNs",
+            "option_c": "C. Transformers",
+            "option_d": "D. GANs",
+            "correct_answer": "C",
+            "explanation": "Transformers introduced self-attention, enabling powerful sequence modeling."
+        },
+        {
+            "question": "What is the primary function of Generative AI?",
+            "option_a": "A. To classify images into categories",
+            "option_b": "B. To predict numerical values",
+            "option_c": "C. To create new, original content",
+            "option_d": "D. To optimize traffic signals",
+            "correct_answer": "C",
+            "explanation": "Generative AI focuses on creating new content such as text, images, and audio."
+        },
+        {
+            "question": "Which of the following are examples of Generative AI tools?",
+            "option_a": "A. ChatGPT, DALL-E, GitHub Copilot",
+            "option_b": "B. A calculator program",
+            "option_c": "C. A hand-coded spam filter",
+            "option_d": "D. None of the above",
+            "correct_answer": "A",
+            "explanation": "ChatGPT, DALL-E, and GitHub Copilot are Generative AI applications."
+        },
+        {
+            "question": "According to the summary slide, what is the category of Generative AI?",
+            "option_a": "A. Subfield of AI",
+            "option_b": "B. Subfield of ML",
+            "option_c": "C. Subfield of DL/AI",
+            "option_d": "D. Traditional programming approach",
+            "correct_answer": "C",
+            "explanation": "Generative AI is categorized as a subfield of DL/AI."
+        },
+        {
+            "question": "In Traditional Programming, the logic source is:",
+            "option_a": "A. Learned from data",
+            "option_b": "B. Inferred from patterns",
+            "option_c": "C. Written by human developers",
+            "option_d": "D. Generated by neural networks",
+            "correct_answer": "C",
+            "explanation": "Traditional programming relies on rules explicitly written by humans."
+        },
+        {
+            "question": "How does an AI/ML system acquire its logic?",
+            "option_a": "A. Explicit rules from programmers",
+            "option_b": "B. Through compilers interpreting code",
+            "option_c": "C. By learning patterns from data",
+            "option_d": "D. By updating source code for each case",
+            "correct_answer": "C",
+            "explanation": "ML systems learn logic patterns from data using algorithms."
+        },
+        {
+            "question": "What is the input/output relation in the AI/ML approach?",
+            "option_a": "A. Input + Rules → Output",
+            "option_b": "B. Input + Output → Learn Rules",
+            "option_c": "C. Output + Rules → Learn Input",
+            "option_d": "D. Rules → Input + Output",
+            "correct_answer": "B",
+            "explanation": "The AI/ML approach learns rules from input-output pairs."
+        },
+        {
+            "question": "Debugging in AI/ML is primarily done through:",
+            "option_a": "A. Step-by-step tracing",
+            "option_b": "B. Performance metrics like accuracy and loss",
+            "option_c": "C. Compiler error messages",
+            "option_d": "D. Rewriting all rules",
+            "correct_answer": "B",
+            "explanation": "Debugging in ML is based on evaluating model performance metrics."
+        },
+        {
+            "question": "Which characteristic is TRUE for Traditional Programming but FALSE for AI/ML?",
+            "option_a": "A. It improves with more data",
+            "option_b": "B. It has high predictability",
+            "option_c": "C. Its logic is learned from data",
+            "option_d": "D. It adapts flexibly to new data",
+            "correct_answer": "B",
+            "explanation": "Traditional Programming provides high predictability, unlike AI/ML."
+        },
+        {
+            "question": "In which type of learning is the algorithm provided with a labeled dataset?",
+            "option_a": "A. Unsupervised Learning",
+            "option_b": "B. Supervised Learning",
+            "option_c": "C. Reinforcement Learning",
+            "option_d": "D. Generative Learning",
+            "correct_answer": "B",
+            "explanation": "Supervised Learning relies on labeled input-output pairs."
+        },
+        {
+            "question": "Predicting whether a loan application is 'low' or 'high' risk is an example of:",
+            "option_a": "A. Regression",
+            "option_b": "B. Clustering",
+            "option_c": "C. Classification",
+            "option_d": "D. Reinforcement Learning",
+            "correct_answer": "C",
+            "explanation": "Classification assigns categories such as 'low risk' or 'high risk'."
+        },
+        {
+            "question": "Customer segmentation based on behavior without labels is an example of:",
+            "option_a": "A. Supervised Learning",
+            "option_b": "B. Unsupervised Learning",
+            "option_c": "C. Reinforcement Learning",
+            "option_d": "D. Deep Learning",
+            "correct_answer": "B",
+            "explanation": "Unsupervised Learning groups data without predefined labels."
+        },
+        {
+            "question": "Which technique is commonly used in Unsupervised Learning for dimensionality reduction?",
+            "option_a": "A. K-Nearest Neighbors",
+            "option_b": "B. Support Vector Machines",
+            "option_c": "C. Principal Component Analysis (PCA)",
+            "option_d": "D. Linear Regression",
+            "correct_answer": "C",
+            "explanation": "PCA is widely used to reduce input dimensions in datasets."
+        },
+        {
+            "question": "An AI that learns to play a game by receiving rewards and penalties is using:",
+            "option_a": "A. Supervised Learning",
+            "option_b": "B. Unsupervised Learning",
+            "option_c": "C. Reinforcement Learning",
+            "option_d": "D. Generative Learning",
+            "correct_answer": "C",
+            "explanation": "Reinforcement Learning relies on rewards and penalties as feedback."
+        },
+        {
+            "question": "In Reinforcement Learning, the strategy an agent uses to choose its actions is called:",
+            "option_a": "A. Environment",
+            "option_b": "B. Reward",
+            "option_c": "C. Policy",
+            "option_d": "D. Kernel",
+            "correct_answer": "C",
+            "explanation": "A policy defines how the agent selects actions in RL."
+        },
+        {
+            "question": "Which of the following are key concepts in Reinforcement Learning?",
+            "option_a": "A. Agent, Environment, Reward, Policy",
+            "option_b": "B. Input, Output, Rules, Dataset",
+            "option_c": "C. Classifier, Regression, Cluster, Feature",
+            "option_d": "D. Generator, Discriminator, Noise, Data",
+            "correct_answer": "A",
+            "explanation": "Agent, Environment, Reward, and Policy are fundamental to RL."
+        },
+        {
+            "question": "A Generative Adversarial Network (GAN) consists of two networks that:",
+            "option_a": "A. Cooperate to clean data",
+            "option_b": "B. Work independently",
+            "option_c": "C. Compete against each other",
+            "option_d": "D. Are identical copies",
+            "correct_answer": "C",
+            "explanation": "GANs involve a Generator and Discriminator competing with each other."
+        },
+        {
+            "question": "Which component of a GAN is responsible for creating fake data?",
+            "option_a": "A. The Discriminator",
+            "option_b": "B. The Generator",
+            "option_c": "C. The Convolutional Layer",
+            "option_d": "D. The Policy Network",
+            "correct_answer": "B",
+            "explanation": "The Generator creates synthetic data samples in GANs."
+        },
+        {
+            "question": "Diffusion models generate images by:",
+            "option_a": "A. Classifying existing images",
+            "option_b": "B. Adding noise to data and learning to reverse it",
+            "option_c": "C. Using a knowledge base of rules",
+            "option_d": "D. Applying filters",
+            "correct_answer": "B",
+            "explanation": "Diffusion models progressively add and remove noise to learn generation."
+        },
+        {
+            "question": "What is a 'prompt' in the context of Generative AI?",
+            "option_a": "A. The speed at which a model trains",
+            "option_b": "B. The message or question given to an AI tool",
+            "option_c": "C. The final output generated by the model",
+            "option_d": "D. The activation function",
+            "correct_answer": "B",
+            "explanation": "A prompt is the input instruction provided to an AI system."
+        },
+        {
+            "question": "The skill of writing clear and effective prompts to get useful results from AI is called:",
+            "option_a": "A. Data Engineering",
+            "option_b": "B. Prompt Engineering",
+            "option_c": "C. Model Deployment",
+            "option_d": "D. Program Synthesis",
+            "correct_answer": "B",
+            "explanation": "Prompt Engineering is the practice of crafting effective AI queries."
+        },
+        {
+            "question": "Why is Prompt Engineering important?",
+            "option_a": "A. It reduces training time",
+            "option_b": "B. The quality of the output depends on the prompt",
+            "option_c": "C. It reduces network size",
+            "option_d": "D. It replaces training data",
+            "correct_answer": "B",
+            "explanation": "AI output quality is highly dependent on prompt clarity and specificity."
+        },
+        {
+            "question": "Which of the following are tips for writing effective prompts?",
+            "option_a": "A. Be clear, specific, and provide examples",
+            "option_b": "B. Be vague to allow freedom",
+            "option_c": "C. Use as much technical jargon as possible",
+            "option_d": "D. Avoid mentioning tone or format",
+            "correct_answer": "A",
+            "explanation": "Effective prompts are clear, specific, and may include examples and tone guidance."
+        },
+        {
+            "question": "Which of the following is an example of an Expert System from the 1980s?",
+            "option_a": "A. ELIZA",
+            "option_b": "B. MYCIN",
+            "option_c": "C. AlphaGo",
+            "option_d": "D. ChatGPT",
+            "correct_answer": "B",
+            "explanation": "MYCIN was a medical expert system developed in the 1980s."
+        },
+        {
+            "question": "Facial recognition on smartphones is a common application of:",
+            "option_a": "A. Expert Systems",
+            "option_b": "B. Reinforcement Learning",
+            "option_c": "C. Convolutional Neural Networks",
+            "option_d": "D. Unsupervised Clustering",
+            "correct_answer": "C",
+            "explanation": "CNNs are widely used for facial recognition and image processing."
+        },
+        {
+            "question": "An AI that optimizes traffic light timing would most likely use:",
+            "option_a": "A. Supervised Learning",
+            "option_b": "B. CNN for visual input",
+            "option_c": "C. Reinforcement Learning",
+            "option_d": "D. Generative AI",
+            "correct_answer": "C",
+            "explanation": "Reinforcement Learning can optimize traffic signals through reward feedback."
+        }
+    ]
+}

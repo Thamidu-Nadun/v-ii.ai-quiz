@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary function of an Expert System?",
+            "option_a": "A. To process large datasets using statistical models",
+            "option_b": "B. To simulate the decision-making ability of a human expert in a specific domain",
+            "option_c": "C. To generate new artistic content like images and music",
+            "option_d": "D. To provide general-purpose computing for everyday tasks",
+            "correct_answer": "B",
+            "explanation": "Expert Systems are designed to mimic the decision-making ability of human experts using stored knowledge and rules."
+        },
+        {
+            "question": "In the hierarchy of Data, Information, and Knowledge, which level represents 'meaningful insights'?",
+            "option_a": "A. Data",
+            "option_b": "B. Information",
+            "option_c": "C. Knowledge",
+            "option_d": "D. Wisdom",
+            "correct_answer": "C",
+            "explanation": "Knowledge is the meaningful insight derived from information, enabling decision-making."
+        },
+        {
+            "question": "Which of the following is a key differentiating factor between a Conventional Computer System and an Expert System?",
+            "option_a": "A. An Expert System uses a faster processor",
+            "option_b": "B. An Expert System can explain how a conclusion was drawn",
+            "option_c": "C. A Conventional System is always more accurate",
+            "option_d": "D. A Conventional System uses knowledge to control processing",
+            "correct_answer": "B",
+            "explanation": "Expert Systems provide explanations for their reasoning, unlike conventional systems."
+        },
+        {
+            "question": "The 'brain' of an expert system, which stores facts and rules, is called the:",
+            "option_a": "A. Inference Engine",
+            "option_b": "B. User Interface",
+            "option_c": "C. Knowledge Base",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "The Knowledge Base is the central repository of facts and rules in an expert system."
+        },
+        {
+            "question": "Which component of an expert system is described as 'the thinker' that applies rules to facts?",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. Inference Engine",
+            "option_c": "C. User Interface",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "B",
+            "explanation": "The Inference Engine applies logical rules to stored facts to derive conclusions."
+        },
+        {
+            "question": "The component that acts as a communication bridge, allowing users to input information, is the:",
+            "option_a": "A. Knowledge Acquisition Module",
+            "option_b": "B. Inference Engine",
+            "option_c": "C. User Interface",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "The User Interface enables communication between the user and the expert system."
+        },
+        {
+            "question": "Which part of an expert system is crucial for building user trust by justifying its reasoning?",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. Inference Engine",
+            "option_c": "C. Working Memory",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "D",
+            "explanation": "The Explanation Facility explains how and why conclusions were reached, building trust."
+        },
+        {
+            "question": "The temporary memory that stores current facts during a reasoning session is known as:",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. Long-Term Memory",
+            "option_c": "C. Working Memory / Fact Base",
+            "option_d": "D. Cache",
+            "correct_answer": "C",
+            "explanation": "Working Memory stores temporary facts used during reasoning sessions."
+        },
+        {
+            "question": "Which interface is used by experts and engineers to input and update knowledge into the system?",
+            "option_a": "A. User Interface",
+            "option_b": "B. Knowledge Acquisition Module",
+            "option_c": "C. Explanation Facility",
+            "option_d": "D. Inference Engine API",
+            "correct_answer": "B",
+            "explanation": "The Knowledge Acquisition Module allows experts to add or update knowledge."
+        },
+        {
+            "question": "Which of the following are core components of an Expert System?",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. Inference Engine",
+            "option_c": "C. User Interface",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "A",
+            "explanation": "The core components are Knowledge Base, Inference Engine, User Interface, and Explanation Facility."
+        },
+        {
+            "question": "What is the process of drawing conclusions from known facts and rules in an expert system called?",
+            "option_a": "A. Compilation",
+            "option_b": "B. Reasoning",
+            "option_c": "C. Execution",
+            "option_d": "D. Storage",
+            "correct_answer": "B",
+            "explanation": "Reasoning refers to applying rules to known facts to derive conclusions."
+        },
+        {
+            "question": "A diagnostic system that starts with a patient's symptoms and applies rules to find a possible disease is using:",
+            "option_a": "A. Backward Chaining",
+            "option_b": "B. Forward Chaining",
+            "option_c": "C. Deep Learning",
+            "option_d": "D. Random Search",
+            "correct_answer": "B",
+            "explanation": "Forward Chaining starts from known facts (symptoms) and moves toward conclusions (disease)."
+        },
+        {
+            "question": "An advisory system that starts with a hypothesized conclusion and asks questions to confirm it is using:",
+            "option_a": "A. Forward Chaining",
+            "option_b": "B. Backward Chaining",
+            "option_c": "C. Linear Regression",
+            "option_d": "D. Data Mining",
+            "correct_answer": "B",
+            "explanation": "Backward Chaining begins with a hypothesis and works backward to find supporting evidence."
+        },
+        {
+            "question": "Which reasoning method is described as 'Data-Driven'?",
+            "option_a": "A. Backward Chaining",
+            "option_b": "B. Forward Chaining",
+            "option_c": "C. Goal-Driven Reasoning",
+            "option_d": "D. Hypothesis Testing",
+            "correct_answer": "B",
+            "explanation": "Forward Chaining is also known as data-driven reasoning."
+        },
+        {
+            "question": "Which reasoning method is described as 'Goal-Driven'?",
+            "option_a": "A. Forward Chaining",
+            "option_b": "B. Backward Chaining",
+            "option_c": "C. Data-Driven Reasoning",
+            "option_d": "D. Inductive Reasoning",
+            "correct_answer": "B",
+            "explanation": "Backward Chaining is also known as goal-driven reasoning."
+        },
+        {
+            "question": "According to the comparison table, which system commonly uses Forward Chaining?",
+            "option_a": "A. Diagnostic systems",
+            "option_b": "B. Expert advice systems",
+            "option_c": "C. Monitoring and control systems",
+            "option_d": "D. Legal recommendation systems",
+            "correct_answer": "C",
+            "explanation": "Monitoring and control systems typically use Forward Chaining."
+        },
+        {
+            "question": "According to the comparison table, which system commonly uses Backward Chaining?",
+            "option_a": "A. Real-time sensor networks",
+            "option_b": "B. Industrial control systems",
+            "option_c": "C. Diagnostic and expert advice systems",
+            "option_d": "D. Financial trading algorithms",
+            "correct_answer": "C",
+            "explanation": "Backward Chaining is commonly applied in diagnostic and expert advice systems."
+        },
+        {
+            "question": "Which of the following statements accurately describe the differences between Forward and Backward Chaining?",
+            "option_a": "A. Forward Chaining starts from data; Backward Chaining starts from a goal",
+            "option_b": "B. Backward Chaining is always faster than Forward Chaining",
+            "option_c": "C. Forward Chaining moves toward a goal; Backward Chaining moves toward supporting data",
+            "option_d": "D. They are both types of machine learning algorithms",
+            "correct_answer": "A",
+            "explanation": "Forward Chaining starts from facts; Backward Chaining starts from a goal and validates it with data."
+        },
+        {
+            "question": "The MYCIN expert system was developed for which domain?",
+            "option_a": "A. Configuring computer systems",
+            "option_b": "B. Diagnosing blood infections",
+            "option_c": "C. Predicting molecular structures",
+            "option_d": "D. Voice recognition",
+            "correct_answer": "B",
+            "explanation": "MYCIN was developed to diagnose blood infections in healthcare."
+        },
+        {
+            "question": "The XCON (eXpert CONfigurer) system was famous for:",
+            "option_a": "A. Creating deepfake videos",
+            "option_b": "B. Automating the configuration of computer systems for DEC",
+            "option_c": "C. Beating the world champion in Chess",
+            "option_d": "D. Translating languages in real-time",
+            "correct_answer": "B",
+            "explanation": "XCON automated computer system configuration, saving millions for DEC."
+        },
+        {
+            "question": "A major limitation of traditional Expert Systems is that they:",
+            "option_a": "A. Require too much processing power",
+            "option_b": "B. Are built entirely using manual rules and cannot learn from data",
+            "option_c": "C. Are only accessible via command-line interfaces",
+            "option_d": "D. Use too much storage for their knowledge bases",
+            "correct_answer": "B",
+            "explanation": "Traditional expert systems are rigid and cannot learn automatically from data."
+        },
+        {
+            "question": "Why are Expert Systems considered 'rigid'?",
+            "option_a": "A. They are made of metal and plastic",
+            "option_b": "B. They break easily with incomplete or conflicting rules and are hard to update",
+            "option_c": "C. They cannot be used on mobile devices",
+            "option_d": "D. They only work with numerical data",
+            "correct_answer": "B",
+            "explanation": "Expert systems become brittle when rules are incomplete or inconsistent."
+        },
+        {
+            "question": "Which of the following are cited as limitations of Expert Systems?",
+            "option_a": "A. Cannot learn from data",
+            "option_b": "B. Breaks easily with incomplete rules",
+            "option_c": "C. Not scalable to complex problems like vision or natural language",
+            "option_d": "D. Require manual updates as domains evolve",
+            "correct_answer": "A",
+            "explanation": "Limitations include lack of learning, brittleness, lack of scalability, and manual updates."
+        },
+        {
+            "question": "What is an ontology in the context of AI and knowledge representation?",
+            "option_a": "A. A philosophy book about existence",
+            "option_b": "B. A large dataset of unlabeled images",
+            "option_c": "C. A structured way to represent knowledge with concepts, properties, and relationships",
+            "option_d": "D. A type of neural network architecture",
+            "correct_answer": "C",
+            "explanation": "An ontology represents structured knowledge including concepts, properties, and relationships."
+        },
+        {
+            "question": "According to Gruber's definition, an ontology must be which of the following?",
+            "option_a": "A. Formal",
+            "option_b": "B. Explicit",
+            "option_c": "C. Shared",
+            "option_d": "D. A conceptualization",
+            "correct_answer": "A",
+            "explanation": "Gruber defines ontologies as formal, explicit, shared conceptualizations."
+        },
+        {
+            "question": "A library's classification system (e.g., Dewey Decimal System) is used as a real-world analogy for an ontology because it:",
+            "option_a": "A. Organizes knowledge into categories with defined relationships for easy retrieval",
+            "option_b": "B. Contains only fictional stories",
+            "option_c": "C. Is used exclusively by librarians",
+            "option_d": "D. Is based on machine learning algorithms",
+            "correct_answer": "A",
+            "explanation": "Library classification organizes knowledge into structured categories, similar to ontologies."
+        },
+        {
+            "question": "In the 'Family Tree' analogy for an ontology, the relationship 'isParentOf' is an example of a:",
+            "option_a": "A. Class",
+            "option_b": "B. Instance",
+            "option_c": "C. Property",
+            "option_d": "D. Axiom",
+            "correct_answer": "C",
+            "explanation": "'isParentOf' is a relationship, which is represented as a property in ontology."
+        },
+        {
+            "question": "In a university ontology, 'CS101' would be an example of an:",
+            "option_a": "A. Class",
+            "option_b": "B. Instance",
+            "option_c": "C. Property",
+            "option_d": "D. Restriction",
+            "correct_answer": "B",
+            "explanation": "CS101 is a specific member of the 'Course' class, making it an instance."
+        },
+        {
+            "question": "In a university ontology, the logical rule 'A course must have at least 1 instructor' is an example of a(n):",
+            "option_a": "A. Class",
+            "option_b": "B. Instance",
+            "option_c": "C. Property",
+            "option_d": "D. Axiom",
+            "correct_answer": "D",
+            "explanation": "Logical rules that must always hold true in ontology are called axioms."
+        },
+        {
+            "question": "The constraint 'Students must enroll in ≤ 5 courses' is an example of a(n):",
+            "option_a": "A. Class",
+            "option_b": "B. Instance",
+            "option_c": "C. Property",
+            "option_d": "D. Restriction",
+            "correct_answer": "D",
+            "explanation": "Restrictions limit properties or relationships, like course enrollment limits."
+        },
+        {
+            "question": "What is a primary reason for using ontologies in AI?",
+            "option_a": "A. To increase the clock speed of the CPU",
+            "option_b": "B. To give meaning to data by defining relationships and structure",
+            "option_c": "C. To compress large video files",
+            "option_d": "D. To replace all human experts",
+            "correct_answer": "B",
+            "explanation": "Ontologies provide semantics by giving structure and meaning to data."
+        },
+        {
+            "question": "The SNOMED CT system in healthcare is an example of an ontology used for:",
+            "option_a": "A. Standardizing medical terms across different systems",
+            "option_b": "B. Processing medical images with CNNs",
+            "option_c": "C. Generating synthetic patient data",
+            "option_d": "D. Controlling surgical robots",
+            "correct_answer": "A",
+            "explanation": "SNOMED CT standardizes medical terminology for interoperability."
+        },
+        {
+            "question": "Google's Knowledge Graph, which provides smart answers to search queries, relies on:",
+            "option_a": "A. Ontological structures to understand entities and their relationships",
+            "option_b": "B. Pure statistical word frequency analysis",
+            "option_c": "C. A single massive database table",
+            "option_d": "D. Manually written answers for every query",
+            "correct_answer": "A",
+            "explanation": "Knowledge Graph uses ontologies to link entities and relationships."
+        },
+        {
+            "question": "Which of the following are challenges associated with building and using ontologies?",
+            "option_a": "A. They require domain experts to build and maintain",
+            "option_b": "B. They are not suitable for unstructured data like text or images",
+            "option_c": "C. They are best for well-structured knowledge domains",
+            "option_d": "D. They can easily capture probabilistic relationships",
+            "correct_answer": "A",
+            "explanation": "Ontologies are expert-intensive, not suited for unstructured data, and best for structured domains."
+        },
+        {
+            "question": "A major reason for moving beyond traditional Expert Systems and Ontologies to modern AI is that they:",
+            "option_a": "A. Lack learning capability and struggle with unstructured, real-world data",
+            "option_b": "B. Were too cheap to develop and maintain",
+            "option_c": "C. Were only used in academic research",
+            "option_d": "D. Could not perform basic arithmetic",
+            "correct_answer": "A",
+            "explanation": "They cannot learn automatically and fail with unstructured or noisy data."
+        },
+        {
+            "question": "Which modern AI technique learns patterns from data automatically without the need for manual rule creation?",
+            "option_a": "A. Expert Systems",
+            "option_b": "B. Ontologies",
+            "option_c": "C. Machine Learning (ML)",
+            "option_d": "D. The Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "Machine Learning automates learning from data without explicit rule writing."
+        },
+        {
+            "question": "Which modern AI technique is particularly adept at handling complex unstructured data like images and speech?",
+            "option_a": "A. Ontologies",
+            "option_b": "B. Deep Learning (DL)",
+            "option_c": "C. Backward Chaining",
+            "option_d": "D. Rule-based systems",
+            "correct_answer": "B",
+            "explanation": "Deep Learning excels at unstructured data such as images, audio, and text."
+        },
+        {
+            "question": "A system that learns optimal decisions through trial and error by interacting with an environment is using:",
+            "option_a": "A. Supervised Learning",
+            "option_b": "B. Reinforcement Learning (RL)",
+            "option_c": "C. Unsupervised Learning",
+            "option_d": "D. Ontology Reasoning",
+            "correct_answer": "B",
+            "explanation": "Reinforcement Learning trains agents through trial and error with rewards."
+        },
+        {
+            "question": "Modern systems that combine symbolic reasoning (like from ontologies) with data-driven learning (from ML) are called:",
+            "option_a": "A. Pure Expert Systems",
+            "option_b": "B. Hybrid AI Systems",
+            "option_c": "C. Conventional Computer Systems",
+            "option_d": "D. Isolated AI Models",
+            "correct_answer": "B",
+            "explanation": "Hybrid AI combines symbolic reasoning with statistical learning for balance."
+        },
+        {
+            "question": "What is a key benefit of Hybrid AI Systems?",
+            "option_a": "A. They enhance explainability and adaptability",
+            "option_b": "B. They are the simplest type of AI to implement",
+            "option_c": "C. They do not require any data",
+            "option_d": "D. They operate without any rules or knowledge",
+            "correct_answer": "A",
+            "explanation": "Hybrid AI improves adaptability while maintaining explainability through rules."
+        }
+    ]
+}

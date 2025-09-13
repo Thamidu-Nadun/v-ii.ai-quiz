@@ -1,0 +1,445 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following tasks is best suited for AI/ML applications?",
+            "option_a": "A. Calculating grades in a school examination",
+            "option_b": "B. Predicting next week’s vegetable prices",
+            "option_c": "C. Calculating the salary of an employee",
+            "option_d": "D. Launching rockets",
+            "correct_answer": "B",
+            "explanation": "AI/ML excels at prediction problems such as forecasting prices based on historical data."
+        },
+        {
+            "question": "What distinguishes Generative AI from Predictive AI?",
+            "option_a": "A. Generative AI creates brand new content",
+            "option_b": "B. Predictive AI only generates images",
+            "option_c": "C. Generative AI always requires labeled data",
+            "option_d": "D. Predictive AI cannot be used for classification tasks",
+            "correct_answer": "A",
+            "explanation": "Generative AI focuses on producing new content, while predictive AI focuses on predicting outcomes from input data."
+        },
+        {
+            "question": "Which architecture introduced by Google in 2017 powers modern LLMs?",
+            "option_a": "A. Recurrent Neural Networks",
+            "option_b": "B. Convolutional Neural Networks",
+            "option_c": "C. Transformer",
+            "option_d": "D. Autoencoder",
+            "correct_answer": "C",
+            "explanation": "The Transformer architecture, introduced in 'Attention is All You Need' (2017), is the backbone of modern LLMs."
+        },
+        {
+            "question": "ChatGPT is an example of which type of model?",
+            "option_a": "A. Autoencoding model",
+            "option_b": "B. Autoregressive model",
+            "option_c": "C. Multimodal model",
+            "option_d": "D. Distilled model",
+            "correct_answer": "B",
+            "explanation": "ChatGPT is an autoregressive language model that generates text sequentially based on prior tokens."
+        },
+        {
+            "question": "Which of the following is NOT a common use case of Generative AI?",
+            "option_a": "A. Generating music",
+            "option_b": "B. Creating art",
+            "option_c": "C. Predicting exam grades",
+            "option_d": "D. Producing text summaries",
+            "correct_answer": "C",
+            "explanation": "Predicting exam grades is more suited to predictive models, not generative AI."
+        },
+        {
+            "question": "Reasoning models such as OpenAI o1 and Grok 3 are designed primarily for?",
+            "option_a": "A. Simple text classification",
+            "option_b": "B. Reinforcement learning with complex reasoning",
+            "option_c": "C. Image compression",
+            "option_d": "D. Generating low-resolution images",
+            "correct_answer": "B",
+            "explanation": "Reasoning models are trained with reinforcement learning to solve complex reasoning and planning tasks."
+        },
+        {
+            "question": "Which of the following is a closed AI model?",
+            "option_a": "A. LLaMA",
+            "option_b": "B. Mistral",
+            "option_c": "C. GPT-4",
+            "option_d": "D. Falcon",
+            "correct_answer": "C",
+            "explanation": "GPT-4 is a closed-source model with proprietary access, unlike LLaMA, Mistral, and Falcon."
+        },
+        {
+            "question": "What is the primary advantage of open AI models like LLaMA?",
+            "option_a": "A. Proprietary datasets",
+            "option_b": "B. Transparent and customizable",
+            "option_c": "C. Closed community access",
+            "option_d": "D. Higher inference speed than all models",
+            "correct_answer": "B",
+            "explanation": "Open models are community-driven, customizable, and transparent due to public availability of code and weights."
+        },
+        {
+            "question": "Which platform provides access to pre-trained models, datasets, and tools like the Transformers library?",
+            "option_a": "A. TensorFlow Hub",
+            "option_b": "B. Hugging Face",
+            "option_c": "C. PyTorch Lightning",
+            "option_d": "D. OpenCV",
+            "correct_answer": "B",
+            "explanation": "Hugging Face provides a hub of pre-trained models, datasets, and libraries like Transformers."
+        },
+        {
+            "question": "What are parameters in a machine learning model?",
+            "option_a": "A. Rules defined by programmers",
+            "option_b": "B. Learned components that capture patterns",
+            "option_c": "C. User input during inference",
+            "option_d": "D. Tokens fed into the model",
+            "correct_answer": "B",
+            "explanation": "Parameters are the learned internal values that allow the model to represent knowledge and patterns."
+        },
+        {
+            "question": "GPT-3 has approximately how many parameters?",
+            "option_a": "A. 1 million",
+            "option_b": "B. 10 million",
+            "option_c": "C. 175 billion",
+            "option_d": "D. 1 trillion",
+            "correct_answer": "C",
+            "explanation": "GPT-3 is widely known to have 175 billion parameters, making it a large-scale language model."
+        },
+        {
+            "question": "What does the context window of a language model represent?",
+            "option_a": "A. The number of parameters in the model",
+            "option_b": "B. The maximum input size the model can process",
+            "option_c": "C. The accuracy of the model",
+            "option_d": "D. The time taken for training",
+            "correct_answer": "B",
+            "explanation": "The context window is the maximum amount of text (tokens) a model can consider at once."
+        },
+        {
+            "question": "Which LLM has the largest context window as per the lecture?",
+            "option_a": "A. GPT-3.5",
+            "option_b": "B. GPT-4 Turbo",
+            "option_c": "C. Gemini 1.5",
+            "option_d": "D. LLaMA 4",
+            "correct_answer": "D",
+            "explanation": "LLaMA 4 sets a benchmark with a context window of about 10 million tokens."
+        },
+        {
+            "question": "Training a model requires which of the following resources?",
+            "option_a": "A. Small datasets and CPU processing",
+            "option_b": "B. Massive datasets and GPU/TPU hardware",
+            "option_c": "C. Only pretrained embeddings",
+            "option_d": "D. Low memory and short computation time",
+            "correct_answer": "B",
+            "explanation": "Training requires large datasets and powerful hardware like GPUs/TPUs, often over long durations."
+        },
+        {
+            "question": "Inference in machine learning refers to:",
+            "option_a": "A. Training the model with new data",
+            "option_b": "B. Compressing the model for faster use",
+            "option_c": "C. Using a trained model to make predictions",
+            "option_d": "D. Evaluating model accuracy after training",
+            "correct_answer": "C",
+            "explanation": "Inference is the process of applying a trained model to generate predictions from new input data."
+        },
+        {
+            "question": "Fine-tuning a model refers to:",
+            "option_a": "A. Training a model from scratch on large datasets",
+            "option_b": "B. Customizing a pre-trained model on domain-specific tasks",
+            "option_c": "C. Compressing a model for deployment",
+            "option_d": "D. Evaluating model bias",
+            "correct_answer": "B",
+            "explanation": "Fine-tuning adjusts a pre-trained model for domain-specific performance and customization."
+        },
+        {
+            "question": "Model distillation involves:",
+            "option_a": "A. Expanding a model with more parameters",
+            "option_b": "B. Compressing a large model into a smaller one",
+            "option_c": "C. Adding noise to training data",
+            "option_d": "D. Reducing token size during inference",
+            "correct_answer": "B",
+            "explanation": "Distillation transfers knowledge from a large teacher model to a smaller student model for efficiency."
+        },
+        {
+            "question": "Which of the following is an example of a Small Language Model (SLM)?",
+            "option_a": "A. GPT-4",
+            "option_b": "B. Gemini 1.5",
+            "option_c": "C. TinyLLaMA",
+            "option_d": "D. Claude 3",
+            "correct_answer": "C",
+            "explanation": "TinyLLaMA is a lightweight SLM designed for efficiency in low-resource environments."
+        },
+        {
+            "question": "Why are SLMs useful?",
+            "option_a": "A. They provide better reasoning than larger models",
+            "option_b": "B. They are optimized for fast inference and resource efficiency",
+            "option_c": "C. They always outperform larger LLMs",
+            "option_d": "D. They have infinite context windows",
+            "correct_answer": "B",
+            "explanation": "SLMs are efficient, faster, and suitable for low-resource environments, unlike larger LLMs."
+        },
+        {
+            "question": "Which Hugging Face feature allows instant cloud-based model execution?",
+            "option_a": "A. Transformers Library",
+            "option_b": "B. Inference API",
+            "option_c": "C. Model Hub",
+            "option_d": "D. Spaces",
+            "correct_answer": "B",
+            "explanation": "The Hugging Face Inference API allows immediate execution of models in the cloud without local setup."
+        },
+        {
+            "question": "What is the main role of the Transformers library in Hugging Face?",
+            "option_a": "A. Hosting datasets",
+            "option_b": "B. Running top AI models across tasks",
+            "option_c": "C. Providing cloud storage",
+            "option_d": "D. Tokenizing text only",
+            "correct_answer": "B",
+            "explanation": "The Transformers library enables access and use of state-of-the-art AI models across tasks like text, images, and audio."
+        },
+        {
+            "question": "Which of the following is an example of a foundation model?",
+            "option_a": "A. GPT",
+            "option_b": "B. BERT",
+            "option_c": "C. PaLM",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Foundation models like GPT, BERT, and PaLM are large pre-trained models built for general-purpose AI tasks."
+        },
+        {
+            "question": "What is the purpose of a context window?",
+            "option_a": "A. Defines the training time of a model",
+            "option_b": "B. Determines the size of the dataset",
+            "option_c": "C. Defines how much prior input the model can consider",
+            "option_d": "D. Measures inference speed",
+            "correct_answer": "C",
+            "explanation": "The context window controls how much prior text the model can use when generating output."
+        },
+        {
+            "question": "Which of these models is known as multimodal?",
+            "option_a": "A. Claude 2",
+            "option_b": "B. GPT-4o",
+            "option_c": "C. Gemini 1.5",
+            "option_d": "D. Both B and C",
+            "correct_answer": "D",
+            "explanation": "Models like GPT-4o and Gemini are multimodal, handling multiple data types such as text, images, and audio."
+        },
+        {
+            "question": "Which best describes the difference between training and inference?",
+            "option_a": "A. Training uses small datasets while inference uses big datasets",
+            "option_b": "B. Training is expensive and slow, inference is fast and lightweight",
+            "option_c": "C. Training occurs on mobile, inference on GPUs",
+            "option_d": "D. Training is optional, inference is mandatory",
+            "correct_answer": "B",
+            "explanation": "Training requires large resources and is slow, while inference is optimized for fast predictions."
+        },
+        {
+            "question": "Which Hugging Face tool allows hosting ML apps using frameworks like Gradio?",
+            "option_a": "A. Transformers",
+            "option_b": "B. Model Hub",
+            "option_c": "C. Spaces",
+            "option_d": "D. Datasets",
+            "correct_answer": "C",
+            "explanation": "Hugging Face Spaces enables users to host ML apps using frameworks like Gradio and Streamlit."
+        },
+        {
+            "question": "Which of the following best explains why parameters are important?",
+            "option_a": "A. They define input tokenization",
+            "option_b": "B. They determine a model’s ability to learn and store patterns",
+            "option_c": "C. They only control inference speed",
+            "option_d": "D. They are fixed by developers manually",
+            "correct_answer": "B",
+            "explanation": "Parameters allow a model to store knowledge and recognize complex patterns from training data."
+        },
+        {
+            "question": "Which programming library call in Hugging Face is used for text summarization?",
+            "option_a": "A. pipeline('translation')",
+            "option_b": "B. pipeline('summarization')",
+            "option_c": "C. pipeline('classification')",
+            "option_d": "D. pipeline('embedding')",
+            "correct_answer": "B",
+            "explanation": "The 'summarization' pipeline in Hugging Face is designed for text summarization tasks."
+        },
+        {
+            "question": "Why should students avoid using ChatGPT only to get answers?",
+            "option_a": "A. It produces incorrect answers",
+            "option_b": "B. It reduces brain activity and learning",
+            "option_c": "C. It is slower than searching the web",
+            "option_d": "D. It is banned in all universities",
+            "correct_answer": "B",
+            "explanation": "Using AI solely for answers reduces active brain engagement and hinders genuine understanding."
+        },
+        {
+            "question": "Which of these is NOT listed as a use of Generative AI in education?",
+            "option_a": "A. Generating FAQs",
+            "option_b": "B. Personalized learning assistants",
+            "option_c": "C. Calculating payrolls",
+            "option_d": "D. Brainstorming ideas",
+            "correct_answer": "C",
+            "explanation": "Payroll calculation is not an educational use case for Generative AI."
+        },
+        {
+            "question": "Which of the following is an example of prompt engineering?",
+            "option_a": "A. Compressing models into smaller versions",
+            "option_b": "B. Designing better input instructions for LLMs",
+            "option_c": "C. Adjusting hyperparameters during training",
+            "option_d": "D. Tokenizing datasets",
+            "correct_answer": "B",
+            "explanation": "Prompt engineering refers to designing precise prompts that guide model output effectively."
+        },
+        {
+            "question": "What is the output of inference when asking 'What is the capital of France?'",
+            "option_a": "A. London",
+            "option_b": "B. Berlin",
+            "option_c": "C. Paris",
+            "option_d": "D. Madrid",
+            "correct_answer": "C",
+            "explanation": "The model predicts 'Paris' as the capital of France."
+        },
+        {
+            "question": "Why is fine-tuning often applied to pre-trained models?",
+            "option_a": "A. To reduce the model size",
+            "option_b": "B. To adapt models to specific domains",
+            "option_c": "C. To improve tokenization speed",
+            "option_d": "D. To increase the number of parameters",
+            "correct_answer": "B",
+            "explanation": "Fine-tuning adapts general-purpose models to perform better on domain-specific data."
+        },
+        {
+            "question": "Which type of AI focuses on predicting outcomes rather than generating new content?",
+            "option_a": "A. Generative AI",
+            "option_b": "B. Discriminative AI",
+            "option_c": "C. Reinforcement AI",
+            "option_d": "D. Multimodal AI",
+            "correct_answer": "B",
+            "explanation": "Discriminative or Predictive AI is focused on predicting outcomes based on input data."
+        },
+        {
+            "question": "Which is an advantage of Hugging Face’s pre-built models?",
+            "option_a": "A. No need to train models from scratch",
+            "option_b": "B. Eliminates GPU usage",
+            "option_c": "C. Guarantees perfect accuracy",
+            "option_d": "D. Works only for images",
+            "correct_answer": "A",
+            "explanation": "Pre-built models save time by avoiding training from scratch and allow quick deployment."
+        },
+        {
+            "question": "Which company developed the Transformer architecture?",
+            "option_a": "A. OpenAI",
+            "option_b": "B. Google",
+            "option_c": "C. Meta",
+            "option_d": "D. DeepMind",
+            "correct_answer": "B",
+            "explanation": "The Transformer architecture was introduced by Google researchers in 2017."
+        },
+        {
+            "question": "What is the primary reason training models is costly?",
+            "option_a": "A. Requires manual coding",
+            "option_b": "B. Needs massive datasets and high computation",
+            "option_c": "C. Uses small CPUs",
+            "option_d": "D. Consumes few resources",
+            "correct_answer": "B",
+            "explanation": "Training is costly because it requires vast datasets and high-performance hardware for weeks or months."
+        },
+        {
+            "question": "Which model is an example of a distilled version of a large transformer?",
+            "option_a": "A. DistilBERT",
+            "option_b": "B. GPT-4",
+            "option_c": "C. Gemini",
+            "option_d": "D. Claude 3",
+            "correct_answer": "A",
+            "explanation": "DistilBERT is a smaller, faster version of BERT created through model distillation."
+        },
+        {
+            "question": "Why do reasoning models like DeepSeek DeepThink R1 excel at complex problem solving?",
+            "option_a": "A. They ignore past inputs",
+            "option_b": "B. They produce a chain of thought before answering",
+            "option_c": "C. They reduce context windows",
+            "option_d": "D. They are trained only on images",
+            "correct_answer": "B",
+            "explanation": "Reasoning models generate internal chains of thought before answering, improving problem-solving accuracy."
+        },
+        {
+            "question": "Which of the following is an example of an API call in GenAI applications?",
+            "option_a": "A. openai.ChatCompletion.create()",
+            "option_b": "B. tensorflow.train()",
+            "option_c": "C. numpy.array()",
+            "option_d": "D. pandas.read_csv()",
+            "correct_answer": "A",
+            "explanation": "openai.ChatCompletion.create() is used to call LLMs in GenAI-based applications."
+        },
+        {
+            "question": "Which Hugging Face feature provides thousands of ready-to-use models?",
+            "option_a": "A. Model Hub",
+            "option_b": "B. Transformers",
+            "option_c": "C. Datasets",
+            "option_d": "D. Spaces",
+            "correct_answer": "A",
+            "explanation": "Model Hub is Hugging Face’s repository of thousands of pre-trained models."
+        },
+        {
+            "question": "Which model family is designed for handling multiple modalities such as text, image, and video?",
+            "option_a": "A. Foundation Models",
+            "option_b": "B. Large Language Models",
+            "option_c": "C. Multimodal Models",
+            "option_d": "D. Distilled Models",
+            "correct_answer": "C",
+            "explanation": "Multimodal models can process multiple types of input like text, image, audio, and video."
+        },
+        {
+            "question": "Which of the following statements about inference is TRUE?",
+            "option_a": "A. Inference is slower than training",
+            "option_b": "B. Inference predicts outputs using a trained model",
+            "option_c": "C. Inference increases the number of parameters",
+            "option_d": "D. Inference modifies the model weights",
+            "correct_answer": "B",
+            "explanation": "Inference applies a trained model to new inputs for predictions, much faster than training."
+        },
+        {
+            "question": "Which tool from Hugging Face is used for sharing and running ML demos?",
+            "option_a": "A. Transformers",
+            "option_b": "B. Spaces",
+            "option_c": "C. Model Hub",
+            "option_d": "D. Inference API",
+            "correct_answer": "B",
+            "explanation": "Spaces allows deployment and sharing of ML demos using frameworks like Gradio and Streamlit."
+        },
+        {
+            "question": "Which LLM was highlighted in the lecture for achieving 1 million token context windows?",
+            "option_a": "A. GPT-3.5",
+            "option_b": "B. Gemini 1.5",
+            "option_c": "C. Claude 3",
+            "option_d": "D. Falcon",
+            "correct_answer": "B",
+            "explanation": "Gemini 1.5 was noted for achieving context windows up to 1 million tokens."
+        },
+        {
+            "question": "Which of these statements about foundation models is FALSE?",
+            "option_a": "A. They are pre-trained on broad datasets",
+            "option_b": "B. They can be fine-tuned for specific tasks",
+            "option_c": "C. They are designed for narrow, single-purpose use only",
+            "option_d": "D. Examples include GPT and PaLM",
+            "correct_answer": "C",
+            "explanation": "Foundation models are general-purpose and broad, not narrow single-task models."
+        },
+        {
+            "question": "Which company provides Claude 2/3 as a closed model?",
+            "option_a": "A. Anthropic",
+            "option_b": "B. OpenAI",
+            "option_c": "C. Meta",
+            "option_d": "D. Google",
+            "correct_answer": "A",
+            "explanation": "Claude models are developed by Anthropic and are closed-source."
+        },
+        {
+            "question": "What is the main educational benefit of using GenAI tools in learning?",
+            "option_a": "A. Copying answers directly",
+            "option_b": "B. Supporting brainstorming and content generation",
+            "option_c": "C. Reducing active learning",
+            "option_d": "D. Avoiding exams",
+            "correct_answer": "B",
+            "explanation": "GenAI helps in brainstorming, summarizing, and creating FAQs to support learning."
+        },
+        {
+            "question": "What does 'Attention is All You Need' introduce?",
+            "option_a": "A. CNNs",
+            "option_b": "B. Transformers",
+            "option_c": "C. RNNs",
+            "option_d": "D. Distillation",
+            "correct_answer": "B",
+            "explanation": "The 2017 paper 'Attention is All You Need' introduced the Transformer model."
+        }
+    ]
+}

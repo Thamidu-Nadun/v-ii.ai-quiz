@@ -1,0 +1,436 @@
+{
+    "questions": [
+        {
+            "question": "What is the key idea of supervised learning?",
+            "option_a": "A. Learning without labeled data",
+            "option_b": "B. Learning from labeled data with input-output pairs",
+            "option_c": "C. Clustering data based on similarities",
+            "option_d": "D. Generating features automatically without data",
+            "correct_answer": "B",
+            "explanation": "Supervised learning uses labeled datasets where inputs are paired with the correct outputs."
+        },
+        {
+            "question": "Which algorithm assumes a linear relationship between input and output?",
+            "option_a": "A. KNN",
+            "option_b": "B. Decision Trees",
+            "option_c": "C. Linear Regression",
+            "option_d": "D. Logistic Regression",
+            "correct_answer": "C",
+            "explanation": "Linear regression models assume that outputs can be expressed as a linear combination of inputs."
+        },
+        {
+            "question": "What is the formula for simple linear regression?",
+            "option_a": "A. y = β0 + β1x + ε",
+            "option_b": "B. y = β0 + β1x1 + β2x2 + ε",
+            "option_c": "C. log(p/(1−p)) = β0 + β1x",
+            "option_d": "D. P = 1/(1 + e−(β0+β1x))",
+            "correct_answer": "A",
+            "explanation": "Simple linear regression is represented as y = β0 + β1x + ε, with one predictor variable."
+        },
+        {
+            "question": "When there are multiple predictors in linear regression, the method is called?",
+            "option_a": "A. Logistic Regression",
+            "option_b": "B. Simple Linear Regression",
+            "option_c": "C. Multiple Linear Regression",
+            "option_d": "D. Polynomial Regression",
+            "correct_answer": "C",
+            "explanation": "When more than one independent variable is used, the method is called Multiple Linear Regression."
+        },
+        {
+            "question": "Which method is commonly used to estimate parameters in linear regression?",
+            "option_a": "A. Maximum Likelihood Estimation",
+            "option_b": "B. Gradient Boosting",
+            "option_c": "C. Ordinary Least Squares",
+            "option_d": "D. K-Nearest Neighbors",
+            "correct_answer": "C",
+            "explanation": "Ordinary Least Squares minimizes the sum of squared errors to estimate regression parameters."
+        },
+        {
+            "question": "What does the coefficient of determination (R²) measure?",
+            "option_a": "A. The slope of the regression line",
+            "option_b": "B. The fraction of variation explained by the model",
+            "option_c": "C. The average prediction error",
+            "option_d": "D. The probability of misclassification",
+            "correct_answer": "B",
+            "explanation": "R² measures how much variation in the dependent variable is explained by the model."
+        },
+        {
+            "question": "Why can’t we use linear regression directly when the response variable is categorical?",
+            "option_a": "A. Predictions may fall outside the range [0,1]",
+            "option_b": "B. The model becomes computationally unstable",
+            "option_c": "C. It cannot handle more than one variable",
+            "option_d": "D. Linear regression always overfits categorical data",
+            "correct_answer": "A",
+            "explanation": "For categorical outcomes, linear regression predictions may be invalid probabilities outside [0,1]."
+        },
+        {
+            "question": "What function is applied in logistic regression to constrain outputs between 0 and 1?",
+            "option_a": "A. ReLU function",
+            "option_b": "B. Sigmoid function",
+            "option_c": "C. Step function",
+            "option_d": "D. Hyperbolic tangent",
+            "correct_answer": "B",
+            "explanation": "The sigmoid function transforms outputs into probabilities in the range [0,1]."
+        },
+        {
+            "question": "The logit in logistic regression is defined as:",
+            "option_a": "A. log(P)",
+            "option_b": "B. log(P/(1−P))",
+            "option_c": "C. log(1−P)",
+            "option_d": "D. log(P²)",
+            "correct_answer": "B",
+            "explanation": "The logit is the natural log of the odds: log(P/(1−P))."
+        },
+        {
+            "question": "What is the default cutoff probability used in logistic regression classification?",
+            "option_a": "A. 0.2",
+            "option_b": "B. 0.5",
+            "option_c": "C. 0.75",
+            "option_d": "D. 1.0",
+            "correct_answer": "B",
+            "explanation": "By default, logistic regression uses a cutoff of 0.5 for class assignment."
+        },
+        {
+            "question": "In KNN, which metric is commonly used to measure the distance between points?",
+            "option_a": "A. Cosine Similarity",
+            "option_b": "B. Euclidean Distance",
+            "option_c": "C. Manhattan Distance",
+            "option_d": "D. Jaccard Index",
+            "correct_answer": "B",
+            "explanation": "Euclidean distance is the most commonly used distance metric in KNN."
+        },
+        {
+            "question": "What happens in KNN regression when k=3 and neighbors have values 77, 72, 60?",
+            "option_a": "A. Prediction = 72",
+            "option_b": "B. Prediction = 77",
+            "option_c": "C. Prediction = 69.66",
+            "option_d": "D. Prediction = 60",
+            "correct_answer": "C",
+            "explanation": "The prediction is the average of nearest neighbors: (77+72+60)/3 = 69.66."
+        },
+        {
+            "question": "In KNN classification, how is the class of a new point decided?",
+            "option_a": "A. By averaging labels",
+            "option_b": "B. By selecting the nearest single neighbor",
+            "option_c": "C. By majority vote among k neighbors",
+            "option_d": "D. By regression line slope",
+            "correct_answer": "C",
+            "explanation": "In classification, KNN assigns the class most frequent among the k nearest neighbors."
+        },
+        {
+            "question": "What does the parameter k in KNN represent?",
+            "option_a": "A. Number of clusters",
+            "option_b": "B. Number of nearest neighbors considered",
+            "option_c": "C. Number of decision boundaries",
+            "option_d": "D. Number of attributes",
+            "correct_answer": "B",
+            "explanation": "The parameter k determines how many neighbors influence the classification or regression."
+        },
+        {
+            "question": "What type of learning technique is a Decision Tree?",
+            "option_a": "A. Parametric",
+            "option_b": "B. Non-parametric",
+            "option_c": "C. Unsupervised",
+            "option_d": "D. Reinforcement",
+            "correct_answer": "B",
+            "explanation": "Decision Trees are non-parametric, as they do not assume any distribution of the data."
+        },
+        {
+            "question": "Which of the following is a component of a Decision Tree?",
+            "option_a": "A. Hyperplane",
+            "option_b": "B. Root Node",
+            "option_c": "C. Support Vector",
+            "option_d": "D. Kernel",
+            "correct_answer": "B",
+            "explanation": "The root node is the starting point of a Decision Tree."
+        },
+        {
+            "question": "Which measure is used in CART to decide splits?",
+            "option_a": "A. Information Gain",
+            "option_b": "B. Gain Ratio",
+            "option_c": "C. Gini Index",
+            "option_d": "D. Variance Inflation",
+            "correct_answer": "C",
+            "explanation": "CART uses the Gini Index to measure impurity and decide splits."
+        },
+        {
+            "question": "What is the Gini impurity of a dataset with p(Yes)=0.3 and p(No)=0.7?",
+            "option_a": "A. 0.21",
+            "option_b": "B. 0.42",
+            "option_c": "C. 0.49",
+            "option_d": "D. 0.58",
+            "correct_answer": "B",
+            "explanation": "Gini impurity = 1 − (0.3² + 0.7²) = 0.42."
+        },
+        {
+            "question": "Which feature had the lowest Gini impurity in the Buys_Insurance example?",
+            "option_a": "A. Gender",
+            "option_b": "B. Age",
+            "option_c": "C. Income",
+            "option_d": "D. Credit Score",
+            "correct_answer": "D",
+            "explanation": "Credit Score had a Gini impurity of 0, making it the purest feature."
+        },
+        {
+            "question": "What is the best threshold for splitting Age in the Buys_Insurance dataset?",
+            "option_a": "A. 22.5",
+            "option_b": "B. 27.5",
+            "option_c": "C. 37.5",
+            "option_d": "D. 42.5",
+            "correct_answer": "C",
+            "explanation": "The lowest impurity was found at Age threshold 37.5."
+        },
+        {
+            "question": "What is the role of a hyperplane in SVM?",
+            "option_a": "A. It splits the dataset into pure groups",
+            "option_b": "B. It calculates regression slopes",
+            "option_c": "C. It acts as a decision boundary separating classes",
+            "option_d": "D. It computes distance between neighbors",
+            "correct_answer": "C",
+            "explanation": "In SVM, the hyperplane serves as the decision boundary separating different classes."
+        },
+        {
+            "question": "What does SVM maximize when finding the optimal hyperplane?",
+            "option_a": "A. Misclassification error",
+            "option_b": "B. Margin between classes",
+            "option_c": "C. Gini Index",
+            "option_d": "D. Probability of class",
+            "correct_answer": "B",
+            "explanation": "SVM maximizes the margin, the minimum distance between data points and the separating hyperplane."
+        },
+        {
+            "question": "What is a margin in SVM?",
+            "option_a": "A. The slope of the regression line",
+            "option_b": "B. The smallest distance between data points and the hyperplane",
+            "option_c": "C. The distance between two classes' centroids",
+            "option_d": "D. The variance of prediction errors",
+            "correct_answer": "B",
+            "explanation": "Margin is defined as the smallest perpendicular distance from any data point to the hyperplane."
+        },
+        {
+            "question": "What concept does SVM introduce to handle non-linearly separable data?",
+            "option_a": "A. Gradient Descent",
+            "option_b": "B. Random Forests",
+            "option_c": "C. Soft Margin and Kernel Trick",
+            "option_d": "D. PCA and LDA",
+            "correct_answer": "C",
+            "explanation": "SVM uses Soft Margin and the Kernel Trick to manage non-linearly separable datasets."
+        },
+        {
+            "question": "What does the kernel trick achieve in SVM?",
+            "option_a": "A. Reduces dimensionality",
+            "option_b": "B. Transforms features to find nonlinear decision boundaries",
+            "option_c": "C. Normalizes data",
+            "option_d": "D. Minimizes squared errors",
+            "correct_answer": "B",
+            "explanation": "The kernel trick maps data into higher-dimensional spaces to make nonlinear separation possible."
+        },
+        {
+            "question": "Which estimation method is used in logistic regression to determine parameters?",
+            "option_a": "A. Ordinary Least Squares",
+            "option_b": "B. Gradient Boosting",
+            "option_c": "C. Maximum Likelihood Estimation",
+            "option_d": "D. K-Means Optimization",
+            "correct_answer": "C",
+            "explanation": "Logistic regression uses Maximum Likelihood Estimation (MLE) for parameter estimation."
+        },
+        {
+            "question": "In Decision Trees, what happens when a node reaches complete homogeneity?",
+            "option_a": "A. It becomes a root node",
+            "option_b": "B. It becomes a leaf node",
+            "option_c": "C. It is discarded",
+            "option_d": "D. It triggers random splitting",
+            "correct_answer": "B",
+            "explanation": "A node with complete homogeneity becomes a leaf node, representing a final decision."
+        },
+        {
+            "question": "Which algorithm uses Information Gain for attribute selection?",
+            "option_a": "A. CART",
+            "option_b": "B. ID3",
+            "option_c": "C. C4.5",
+            "option_d": "D. SVM",
+            "correct_answer": "B",
+            "explanation": "ID3 selects attributes using Information Gain."
+        },
+        {
+            "question": "Which algorithm refines ID3 using Gain Ratio?",
+            "option_a": "A. CART",
+            "option_b": "B. C4.5",
+            "option_c": "C. KNN",
+            "option_d": "D. SVM",
+            "correct_answer": "B",
+            "explanation": "C4.5 uses Gain Ratio, an improvement over ID3’s Information Gain."
+        },
+        {
+            "question": "What method is used for splitting in Regression Trees?",
+            "option_a": "A. Reduction in Variance",
+            "option_b": "B. Information Gain",
+            "option_c": "C. Gini Index",
+            "option_d": "D. Cross Entropy",
+            "correct_answer": "A",
+            "explanation": "Regression Trees use Reduction in Variance to decide splits."
+        },
+        {
+            "question": "Which of the following is TRUE about KNN?",
+            "option_a": "A. It assumes linear relationships",
+            "option_b": "B. It requires a training phase with coefficients",
+            "option_c": "C. It is a lazy learning algorithm",
+            "option_d": "D. It always outperforms regression",
+            "correct_answer": "C",
+            "explanation": "KNN is considered a lazy learner as it does not build an explicit model."
+        },
+        {
+            "question": "Which type of variable is suitable as the response in Logistic Regression?",
+            "option_a": "A. Continuous numerical variable",
+            "option_b": "B. Binary categorical variable",
+            "option_c": "C. Time series variable",
+            "option_d": "D. Any unlabeled data",
+            "correct_answer": "B",
+            "explanation": "Logistic regression is designed for binary categorical response variables."
+        },
+        {
+            "question": "What is the risk of choosing a very small k in KNN?",
+            "option_a": "A. Over-smoothing",
+            "option_b": "B. Overfitting to noise",
+            "option_c": "C. Underfitting",
+            "option_d": "D. No effect",
+            "correct_answer": "B",
+            "explanation": "A small k can cause overfitting, as predictions may rely on noisy or irrelevant points."
+        },
+        {
+            "question": "What does R² equal if a regression model explains none of the variance?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. −1",
+            "option_d": "D. Infinite",
+            "correct_answer": "A",
+            "explanation": "If the model explains no variance, R² = 0."
+        },
+        {
+            "question": "What does R² equal if a regression model explains all variance perfectly?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. Negative",
+            "option_d": "D. Undefined",
+            "correct_answer": "B",
+            "explanation": "A perfect model that explains all variation has R² = 1."
+        },
+        {
+            "question": "In SVM, what is a 'Soft Margin'?",
+            "option_a": "A. A method to calculate regression coefficients",
+            "option_b": "B. Allowing some misclassifications to maximize margin",
+            "option_c": "C. A method to shrink coefficients to zero",
+            "option_d": "D. Splitting trees into purer nodes",
+            "correct_answer": "B",
+            "explanation": "Soft Margin allows limited misclassifications while maximizing the decision boundary margin."
+        },
+        {
+            "question": "What is the effect of using too large k in KNN?",
+            "option_a": "A. The model becomes too complex",
+            "option_b": "B. Predictions become biased and underfit",
+            "option_c": "C. Predictions remain unaffected",
+            "option_d": "D. It converts into a regression tree",
+            "correct_answer": "B",
+            "explanation": "A large k smooths out predictions too much, leading to underfitting."
+        },
+        {
+            "question": "Which algorithm is considered highly interpretable due to rule-based structure?",
+            "option_a": "A. Decision Trees",
+            "option_b": "B. KNN",
+            "option_c": "C. Logistic Regression",
+            "option_d": "D. SVM",
+            "correct_answer": "A",
+            "explanation": "Decision Trees are highly interpretable as they consist of simple if-then rules."
+        },
+        {
+            "question": "What is the probability cutoff often used to classify spam in logistic regression models?",
+            "option_a": "A. 0.5",
+            "option_b": "B. 0.05",
+            "option_c": "C. 0.95",
+            "option_d": "D. 0.1",
+            "correct_answer": "A",
+            "explanation": "By default, a probability cutoff of 0.5 is commonly used in classification tasks."
+        },
+        {
+            "question": "Which supervised algorithm is the base component of Random Forests?",
+            "option_a": "A. Logistic Regression",
+            "option_b": "B. Decision Trees",
+            "option_c": "C. KNN",
+            "option_d": "D. SVM",
+            "correct_answer": "B",
+            "explanation": "Random Forests are ensembles of Decision Trees."
+        },
+        {
+            "question": "If logistic regression outputs P=0.8 and cutoff=0.5, which class is assigned?",
+            "option_a": "A. Class 0",
+            "option_b": "B. Class 1",
+            "option_c": "C. Random assignment",
+            "option_d": "D. Cannot decide",
+            "correct_answer": "B",
+            "explanation": "Since 0.8 ≥ 0.5, the observation is assigned to Class 1."
+        },
+        {
+            "question": "Which supervised algorithm is most sensitive to irrelevant features due to distance calculations?",
+            "option_a": "A. Logistic Regression",
+            "option_b": "B. KNN",
+            "option_c": "C. Decision Tree",
+            "option_d": "D. SVM",
+            "correct_answer": "B",
+            "explanation": "KNN can be heavily affected by irrelevant or scaled features as it relies on distance measures."
+        },
+        {
+            "question": "Which supervised algorithm explicitly minimizes Sum of Squared Errors (SSE)?",
+            "option_a": "A. Logistic Regression",
+            "option_b": "B. Linear Regression",
+            "option_c": "C. Decision Tree",
+            "option_d": "D. SVM",
+            "correct_answer": "B",
+            "explanation": "Linear Regression minimizes SSE using Ordinary Least Squares."
+        },
+        {
+            "question": "Which supervised model would you use to predict 'Pass/Fail' from test scores?",
+            "option_a": "A. Linear Regression",
+            "option_b": "B. Logistic Regression",
+            "option_c": "C. KNN Regression",
+            "option_d": "D. PCA",
+            "correct_answer": "B",
+            "explanation": "Pass/Fail is a binary outcome, best modeled with Logistic Regression."
+        },
+        {
+            "question": "What does a Gini Impurity of 0 indicate?",
+            "option_a": "A. Complete randomness",
+            "option_b": "B. Complete purity (all samples in one class)",
+            "option_c": "C. Equal distribution across classes",
+            "option_d": "D. Maximum disorder",
+            "correct_answer": "B",
+            "explanation": "Gini = 0 indicates a pure node where all samples belong to one class."
+        },
+        {
+            "question": "Which algorithm transforms input space using kernels for better separation?",
+            "option_a": "A. Decision Tree",
+            "option_b": "B. KNN",
+            "option_c": "C. SVM",
+            "option_d": "D. Logistic Regression",
+            "correct_answer": "C",
+            "explanation": "SVM applies kernel tricks to map data into higher-dimensional spaces for separation."
+        },
+        {
+            "question": "Which supervised algorithm is most prone to overfitting without pruning?",
+            "option_a": "A. Logistic Regression",
+            "option_b": "B. Decision Trees",
+            "option_c": "C. KNN",
+            "option_d": "D. Linear Regression",
+            "correct_answer": "B",
+            "explanation": "Decision Trees tend to overfit if not pruned or regularized."
+        },
+        {
+            "question": "What type of data does Euclidean distance best handle?",
+            "option_a": "A. Categorical variables",
+            "option_b": "B. Ordinal variables",
+            "option_c": "C. Continuous numerical variables",
+            "option_d": "D. Boolean variables",
+            "correct_answer": "C",
+            "explanation": "Euclidean distance is best suited for continuous numerical features."
+        }
+    ]
+}

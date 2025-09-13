@@ -1,0 +1,365 @@
+{
+    "title": "AI & ML: Machine Learning Pipelines and Model Development – 40 MCQs",
+    "questions": [
+        {
+            "question": "What is the primary purpose of a Machine Learning Pipeline?",
+            "option_a": "A. To write code in a linear fashion",
+            "option_b": "B. To automate and streamline the flow from raw data to deployed predictions",
+            "option_c": "C. To replace the need for data scientists",
+            "option_d": "D. To exclusively handle big data",
+            "correct_answer": "B",
+            "explanation": "An ML pipeline automates and streamlines the process from data collection to deployment."
+        },
+        {
+            "question": "Which of the following is the FIRST key stage in a standard ML pipeline?",
+            "option_a": "A. Model Selection",
+            "option_b": "B. Data Preprocessing",
+            "option_c": "C. Data Collection",
+            "option_d": "D. Feature Engineering",
+            "correct_answer": "C",
+            "explanation": "The first step of a pipeline is data collection from various sources."
+        },
+        {
+            "question": "The stage of 'Problem Definition' primarily involves:",
+            "option_a": "A. Understanding the domain and business objective",
+            "option_b": "B. Writing the final production code",
+            "option_c": "C. Determining the type of ML task (e.g., classification, regression)",
+            "option_d": "D. Tuning the model's hyperparameters",
+            "correct_answer": "A",
+            "explanation": "Problem Definition includes domain understanding, identifying business objectives, and task type."
+        },
+        {
+            "question": "Data stored in a CSV file with clear rows and columns is an example of:",
+            "option_a": "A. Unstructured Data",
+            "option_b": "B. Semi-structured Data",
+            "option_c": "C. Structured Data",
+            "option_d": "D. Raw Data",
+            "correct_answer": "C",
+            "explanation": "Structured data is in tabular format, e.g., CSV files."
+        },
+        {
+            "question": "Which of the following is a common technique for handling missing numerical data?",
+            "option_a": "A. One-Hot Encoding",
+            "option_b": "B. Filling with the mean value",
+            "option_c": "C. Label Encoding",
+            "option_d": "D. Applying PCA",
+            "correct_answer": "B",
+            "explanation": "Filling with the mean is a standard way of handling missing numerical data."
+        },
+        {
+            "question": "The process of converting categorical text labels into numerical values is known as:",
+            "option_a": "A. Scaling",
+            "option_b": "B. Imputation",
+            "option_c": "C. Encoding",
+            "option_d": "D. Reduction",
+            "correct_answer": "C",
+            "explanation": "Encoding converts categorical variables into numeric form."
+        },
+        {
+            "question": "You have a categorical feature 'Size' with values 'Small', 'Medium', 'Large'. Which encoding is most appropriate?",
+            "option_a": "A. One-Hot Encoding",
+            "option_b": "B. Target Encoding",
+            "option_c": "C. Label Encoding",
+            "option_d": "D. Hash Encoding",
+            "correct_answer": "C",
+            "explanation": "Label Encoding works best for ordinal features with a meaningful order."
+        },
+        {
+            "question": "You have a categorical feature 'Country' with over 100 unique values. Which encoding method is suitable?",
+            "option_a": "A. Label Encoding",
+            "option_b": "B. One-Hot Encoding",
+            "option_c": "C. Min-Max Scaling",
+            "option_d": "D. Target Encoding",
+            "correct_answer": "D",
+            "explanation": "Target Encoding is efficient for high-cardinality features."
+        },
+        {
+            "question": "Why is feature scaling important?",
+            "option_a": "A. To remove all missing values",
+            "option_b": "B. To ensure all features are treated equally by the model",
+            "option_c": "C. To convert text categories into numbers",
+            "option_d": "D. To select the most important features",
+            "correct_answer": "B",
+            "explanation": "Scaling ensures that features with large values don’t dominate model training."
+        },
+        {
+            "question": "Which of the following are characteristics of dirty data?",
+            "option_a": "A. Incomplete",
+            "option_b": "B. Noisy",
+            "option_c": "C. Inconsistent",
+            "option_d": "D. Perfectly clean",
+            "correct_answer": "A",
+            "explanation": "Dirty data is incomplete, noisy, or inconsistent."
+        },
+        {
+            "question": "What is the primary goal of Feature Engineering?",
+            "option_a": "A. To collect more data",
+            "option_b": "B. To transform raw data into meaningful features that improve model performance",
+            "option_c": "C. To select the final model",
+            "option_d": "D. To debug collection code",
+            "correct_answer": "B",
+            "explanation": "Feature Engineering makes raw data useful for ML models."
+        },
+        {
+            "question": "In a student dataset, the 'Result' column (Pass/Fail) is known as:",
+            "option_a": "A. Feature",
+            "option_b": "B. Target",
+            "option_c": "C. Hyperparameter",
+            "option_d": "D. Metric",
+            "correct_answer": "B",
+            "explanation": "The variable to be predicted is called the target."
+        },
+        {
+            "question": "The Variance Threshold feature selection method removes features based on:",
+            "option_a": "A. High correlation with target",
+            "option_b": "B. Low variance across samples",
+            "option_c": "C. High mutual information",
+            "option_d": "D. Random Forest importance",
+            "correct_answer": "B",
+            "explanation": "Low variance features carry little information."
+        },
+        {
+            "question": "Why is Mutual Information preferred over correlation?",
+            "option_a": "A. Faster to compute",
+            "option_b": "B. Captures any dependency, not just linear",
+            "option_c": "C. Only works with numbers",
+            "option_d": "D. Requires trained models",
+            "correct_answer": "B",
+            "explanation": "Mutual Information captures linear and non-linear dependencies."
+        },
+        {
+            "question": "The SelectKBest method:",
+            "option_a": "A. Uses a model to determine importance",
+            "option_b": "B. Selects top K features using statistical tests",
+            "option_c": "C. Removes low variance features",
+            "option_d": "D. Requires normal distribution",
+            "correct_answer": "B",
+            "explanation": "SelectKBest ranks features based on univariate statistical tests."
+        },
+        {
+            "question": "Which feature selection method uses .feature_importances_ from trained models?",
+            "option_a": "A. Variance Threshold",
+            "option_b": "B. Mutual Information",
+            "option_c": "C. SelectKBest",
+            "option_d": "D. Model-Based Selection",
+            "correct_answer": "D",
+            "explanation": "Tree-based models can rank features by importance."
+        },
+        {
+            "question": "Wrapper methods are feature selection methods that:",
+            "option_a": "A. Use correlation scores",
+            "option_b": "B. Evaluate subsets with predictive models",
+            "option_c": "C. Are embedded in models",
+            "option_d": "D. Reduce dimensions",
+            "correct_answer": "B",
+            "explanation": "Wrapper methods test subsets using model performance."
+        },
+        {
+            "question": "Lasso Regression (L1) is an example of:",
+            "option_a": "A. Filter Method",
+            "option_b": "B. Wrapper Method",
+            "option_c": "C. Embedded Method",
+            "option_d": "D. Dimensionality Reduction",
+            "correct_answer": "C",
+            "explanation": "Lasso integrates feature selection into training."
+        },
+        {
+            "question": "The primary goal of Dimensionality Reduction is to:",
+            "option_a": "A. Select original features",
+            "option_b": "B. Create combined features that reduce complexity",
+            "option_c": "C. Handle missing values",
+            "option_d": "D. Encode categories",
+            "correct_answer": "B",
+            "explanation": "PCA combines features into fewer dimensions."
+        },
+        {
+            "question": "Feature Selection vs Dimensionality Reduction: which statement is correct?",
+            "option_a": "A. Feature Selection creates new features",
+            "option_b": "B. Feature Selection retains original names; Dimensionality Reduction transforms features",
+            "option_c": "C. Dimensionality Reduction only for classification",
+            "option_d": "D. They are the same",
+            "correct_answer": "B",
+            "explanation": "Feature Selection keeps original features; Dimensionality Reduction produces new combinations."
+        },
+        {
+            "question": "The typical split for training data is:",
+            "option_a": "A. 20%",
+            "option_b": "B. 50%",
+            "option_c": "C. 80%",
+            "option_d": "D. 100%",
+            "correct_answer": "C",
+            "explanation": "80% training and 20% testing is common."
+        },
+        {
+            "question": "A setting defined before training and not learned from data is called:",
+            "option_a": "A. Parameter",
+            "option_b": "B. Hyperparameter",
+            "option_c": "C. Feature",
+            "option_d": "D. Metric",
+            "correct_answer": "B",
+            "explanation": "Hyperparameters are set before training, unlike parameters."
+        },
+        {
+            "question": "Which is a hyperparameter for Decision Trees?",
+            "option_a": "A. Split points",
+            "option_b": "B. max_depth",
+            "option_c": "C. Predictions",
+            "option_d": "D. Feature importances",
+            "correct_answer": "B",
+            "explanation": "max_depth controls tree size and is set before training."
+        },
+        {
+            "question": "Grid Search tuning method:",
+            "option_a": "A. Manual tuning",
+            "option_b": "B. Tries all combinations of values",
+            "option_c": "C. Random combinations",
+            "option_d": "D. Bayesian optimization",
+            "correct_answer": "B",
+            "explanation": "Grid Search exhaustively tests all parameter combinations."
+        },
+        {
+            "question": "The purpose of K-Fold Cross-Validation is:",
+            "option_a": "A. To select best features",
+            "option_b": "B. Provide reliable performance estimates",
+            "option_c": "C. Deploy model",
+            "option_d": "D. Encode data",
+            "correct_answer": "B",
+            "explanation": "K-Fold tests model performance across multiple data splits."
+        },
+        {
+            "question": "A model that performs well on training but poorly on test data is:",
+            "option_a": "A. Well-generalized",
+            "option_b": "B. Underfit",
+            "option_c": "C. Overfit",
+            "option_d": "D. Perfectly tuned",
+            "correct_answer": "C",
+            "explanation": "Overfitting occurs when a model memorizes training data."
+        },
+        {
+            "question": "A model that performs poorly on both training and test data is:",
+            "option_a": "A. Well-generalized",
+            "option_b": "B. Underfit",
+            "option_c": "C. Overfit",
+            "option_d": "D. Perfectly tuned",
+            "correct_answer": "B",
+            "explanation": "Underfitting indicates the model is too simple to learn patterns."
+        },
+        {
+            "question": "Which can help fix overfitting?",
+            "option_a": "A. Use simpler model",
+            "option_b": "B. Add more features",
+            "option_c": "C. Apply regularization",
+            "option_d": "D. Get more data",
+            "correct_answer": "A",
+            "explanation": "Simpler models, regularization, and more data reduce overfitting."
+        },
+        {
+            "question": "Which can help fix underfitting?",
+            "option_a": "A. Use complex model",
+            "option_b": "B. Add features",
+            "option_c": "C. Reduce regularization",
+            "option_d": "D. Train longer",
+            "correct_answer": "A",
+            "explanation": "Complex models and reducing regularization improve underfitting."
+        },
+        {
+            "question": "Which metric is most appropriate for regression models?",
+            "option_a": "A. Accuracy",
+            "option_b": "B. Precision",
+            "option_c": "C. Recall",
+            "option_d": "D. Mean Absolute Error (MAE)",
+            "correct_answer": "D",
+            "explanation": "MAE measures prediction error for regression tasks."
+        },
+        {
+            "question": "The final step of the ML pipeline is:",
+            "option_a": "A. Data Collection",
+            "option_b": "B. Model Evaluation",
+            "option_c": "C. Model Deployment",
+            "option_d": "D. Feature Engineering",
+            "correct_answer": "C",
+            "explanation": "Deployment makes the model usable in real-world scenarios."
+        },
+        {
+            "question": "A common file format for saving a trained model is:",
+            "option_a": "A. .csv",
+            "option_b": "B. .txt",
+            "option_c": "C. .pkl or .joblib",
+            "option_d": "D. .jpg",
+            "correct_answer": "C",
+            "explanation": "Models are saved using formats like .pkl, .joblib, or .h5."
+        },
+        {
+            "question": "After deployment, it is crucial to:",
+            "option_a": "A. Forget about the model",
+            "option_b": "B. Monitor and retrain with new data",
+            "option_c": "C. Delete training data",
+            "option_d": "D. Change hyperparameters daily",
+            "correct_answer": "B",
+            "explanation": "Continuous monitoring ensures model reliability in production."
+        },
+        {
+            "question": "Which CV technique is useful for imbalanced datasets?",
+            "option_a": "A. K-Fold",
+            "option_b": "B. Stratified K-Fold",
+            "option_c": "C. Leave-One-Out",
+            "option_d": "D. Hold-Out",
+            "correct_answer": "B",
+            "explanation": "Stratified K-Fold preserves class distribution in folds."
+        },
+        {
+            "question": "The problem of a model learning noise from training data is:",
+            "option_a": "A. Underfitting",
+            "option_b": "B. Overfitting",
+            "option_c": "C. Deployment",
+            "option_d": "D. Encoding",
+            "correct_answer": "B",
+            "explanation": "Overfitting means memorizing noise instead of generalizing."
+        },
+        {
+            "question": "Which is a common metric for binary classification?",
+            "option_a": "A. R² Score",
+            "option_b": "B. MAE",
+            "option_c": "C. Accuracy",
+            "option_d": "D. MSE",
+            "correct_answer": "C",
+            "explanation": "Accuracy is widely used for binary classification tasks."
+        },
+        {
+            "question": "The process of applying a penalty to prevent overfitting is called:",
+            "option_a": "A. Encoding",
+            "option_b": "B. Scaling",
+            "option_c": "C. Regularization",
+            "option_d": "D. Imputation",
+            "correct_answer": "C",
+            "explanation": "Regularization penalizes large weights, reducing overfitting."
+        },
+        {
+            "question": "The main purpose of splitting into train/test sets is:",
+            "option_a": "A. Increase dataset size",
+            "option_b": "B. Evaluate model on unseen data",
+            "option_c": "C. Select best features",
+            "option_d": "D. Tune hyperparameters",
+            "correct_answer": "B",
+            "explanation": "Test sets simulate unseen data performance."
+        },
+        {
+            "question": "Which stage involves creating new input features?",
+            "option_a": "A. Data Collection",
+            "option_b": "B. Preprocessing",
+            "option_c": "C. Feature Engineering",
+            "option_d": "D. Model Selection",
+            "correct_answer": "C",
+            "explanation": "Feature Engineering creates new features to improve learning."
+        },
+        {
+            "question": "A predictive model classifying emails as spam/not spam is:",
+            "option_a": "A. Regression",
+            "option_b": "B. Clustering",
+            "option_c": "C. Classification",
+            "option_d": "D. Dimensionality Reduction",
+            "correct_answer": "C",
+            "explanation": "Spam detection is a binary classification problem."
+        }
+    ]
+}
