@@ -3,6 +3,7 @@
 An interactive web-based quiz application that lets you create, take, and share exciting quizzes on various topics! 🚀
 
 **Live Link**: [Visit ↗](https://thamidu-nadun.github.io/v-ii.ai-quiz/)
+
 **Quiz-App v1**: [Quiz-App-v.1.0 ↗](https://thamidu-nadun.github.io/ai-quiz/)
 
 <div align="center">
