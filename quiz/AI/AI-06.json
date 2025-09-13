@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of an Expert System?",
+            "option_a": "A. To perform complex mathematical calculations",
+            "option_b": "B. To simulate the decision-making ability of a human expert in a specific domain",
+            "option_c": "C. To store large amounts of raw data",
+            "option_d": "D. To generate random facts and rules",
+            "correct_answer": "B",
+            "explanation": "An Expert System mimics a human expert's reasoning in a specific domain using rules and knowledge."
+        },
+        {
+            "question": "Which component of an Expert System is described as 'the brain – stores facts and rules'?",
+            "option_a": "A. Inference Engine",
+            "option_b": "B. User Interface",
+            "option_c": "C. Knowledge Base",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "The Knowledge Base is the repository of facts and rules for decision-making."
+        },
+        {
+            "question": "In a medical expert system, if the system uses the rule 'IF fever AND sore throat THEN possible flu,' what type of knowledge is this?",
+            "option_a": "A. Declarative knowledge",
+            "option_b": "B. Procedural knowledge",
+            "option_c": "C. Factual knowledge",
+            "option_d": "D. Information knowledge",
+            "correct_answer": "B",
+            "explanation": "This is procedural knowledge since it describes how to reach a conclusion based on conditions."
+        },
+        {
+            "question": "The logical processing unit that applies reasoning to the knowledge base to derive conclusions is known as:",
+            "option_a": "A. User Interface",
+            "option_b": "B. Knowledge Base",
+            "option_c": "C. Inference Engine",
+            "option_d": "D. Developer Interface",
+            "correct_answer": "C",
+            "explanation": "The Inference Engine applies rules to facts to generate conclusions."
+        },
+        {
+            "question": "A patient enters symptoms like 'fever,' 'headache,' and 'runny nose' into a medical system, which then infers 'possible flu.' This is an example of:",
+            "option_a": "A. Backward Chaining",
+            "option_b": "B. Goal-Driven Reasoning",
+            "option_c": "C. Forward Chaining",
+            "option_d": "D. Hypothetical Reasoning",
+            "correct_answer": "C",
+            "explanation": "Forward Chaining begins with facts and applies rules to reach a conclusion."
+        },
+        {
+            "question": "Which type of chaining starts with a goal and looks for rules that support it, asking questions to verify conditions?",
+            "option_a": "A. Forward Chaining",
+            "option_b": "B. Data-Driven Reasoning",
+            "option_c": "C. Backward Chaining",
+            "option_d": "D. Conclusion-Driven Reasoning",
+            "correct_answer": "C",
+            "explanation": "Backward Chaining begins with a goal and works backward to verify evidence."
+        },
+        {
+            "question": "The component that allows humans to interact with an expert system, such as inputting information and receiving decisions, is:",
+            "option_a": "A. Knowledge Acquisition Module",
+            "option_b": "B. User Interface",
+            "option_c": "C. Developer Interface",
+            "option_d": "D. External Interface",
+            "correct_answer": "B",
+            "explanation": "The User Interface acts as the communication bridge between the system and user."
+        },
+        {
+            "question": "What is the primary function of the Explanation Facility in an expert system?",
+            "option_a": "A. To update or improve the system's knowledge",
+            "option_b": "B. To store temporary facts during a reasoning session",
+            "option_c": "C. To explain how and why a certain conclusion was reached",
+            "option_d": "D. To link to external databases",
+            "correct_answer": "C",
+            "explanation": "The Explanation Facility justifies conclusions to improve transparency and trust."
+        },
+        {
+            "question": "In a financial expert system that retrieves real-time stock prices, which optional component facilitates this?",
+            "option_a": "A. Working Memory",
+            "option_b": "B. External Interfaces",
+            "option_c": "C. Developer Interface",
+            "option_d": "D. User Interface",
+            "correct_answer": "B",
+            "explanation": "External Interfaces connect the system to real-time data sources."
+        },
+        {
+            "question": "Which of the following is NOT a key component of Expert Systems?",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. Inference Engine",
+            "option_c": "C. Emotional Processor",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "The standard components exclude emotional processors, which are not part of expert systems."
+        },
+        {
+            "question": "What is the term for 'raw facts' in the context of data, information, and knowledge?",
+            "option_a": "A. Knowledge",
+            "option_b": "B. Information",
+            "option_c": "C. Data",
+            "option_d": "D. Insights",
+            "correct_answer": "C",
+            "explanation": "Data represents raw facts without processed meaning."
+        },
+        {
+            "question": "'98.6°F is a normal body temperature' represents which concept?",
+            "option_a": "A. Data",
+            "option_b": "B. Information",
+            "option_c": "C. Knowledge",
+            "option_d": "D. Raw fact",
+            "correct_answer": "C",
+            "explanation": "It is knowledge since it gives context and meaning to raw data."
+        },
+        {
+            "question": "Which historical expert system diagnosed blood infections?",
+            "option_a": "A. DENDRAL",
+            "option_b": "B. XCON",
+            "option_c": "C. HEARSAY",
+            "option_d": "D. MYCIN",
+            "correct_answer": "D",
+            "explanation": "MYCIN was a medical expert system developed to diagnose blood infections."
+        },
+        {
+            "question": "A limitation of expert systems is that they are built using manual rules and struggle to stay updated. This implies they:",
+            "option_a": "A. Are highly scalable",
+            "option_b": "B. Can learn from data",
+            "option_c": "C. Lack learning capability",
+            "option_d": "D. Are robust with incomplete rules",
+            "correct_answer": "C",
+            "explanation": "Expert systems are rigid and cannot learn automatically from data."
+        },
+        {
+            "question": "Which expert system automated the configuration of computer systems for DEC?",
+            "option_a": "A. MYCIN",
+            "option_b": "B. DENDRAL",
+            "option_c": "C. XCON",
+            "option_d": "D. HEARSAY",
+            "correct_answer": "C",
+            "explanation": "XCON saved millions by automating computer configurations."
+        },
+        {
+            "question": "If an expert system determines a possible disease based on reported symptoms, it primarily uses:",
+            "option_a": "A. Backward Chaining",
+            "option_b": "B. Forward Chaining",
+            "option_c": "C. Goal-Driven Reasoning",
+            "option_d": "D. Hypothetical reasoning",
+            "correct_answer": "B",
+            "explanation": "Forward Chaining uses known facts (symptoms) to infer diagnoses."
+        },
+        {
+            "question": "The backstage control panel where experts add or remove rules is:",
+            "option_a": "A. User Interface",
+            "option_b": "B. Explanation Facility",
+            "option_c": "C. Knowledge Acquisition Module",
+            "option_d": "D. Inference Engine",
+            "correct_answer": "C",
+            "explanation": "The Knowledge Acquisition Module allows experts to maintain the knowledge base."
+        },
+        {
+            "question": "What is the primary role of the Working Memory (Fact Base)?",
+            "option_a": "A. Permanently store all facts",
+            "option_b": "B. Explain the reasoning process",
+            "option_c": "C. Temporarily store current facts",
+            "option_d": "D. Allow experts to update the system",
+            "correct_answer": "C",
+            "explanation": "Working Memory stores temporary facts for the reasoning session."
+        },
+        {
+            "question": "A rule like 'Fever is body temp ≥ 100.4°F' is an example of:",
+            "option_a": "A. Procedural knowledge",
+            "option_b": "B. Inferential knowledge",
+            "option_c": "C. Declarative knowledge",
+            "option_d": "D. Experiential knowledge",
+            "correct_answer": "C",
+            "explanation": "It declares a fact, making it declarative knowledge."
+        },
+        {
+            "question": "One key distinction between conventional computer systems and expert systems is:",
+            "option_a": "A. Faster processing speed",
+            "option_b": "B. Larger data storage",
+            "option_c": "C. Knowledge Base and Inference Engine",
+            "option_d": "D. User-friendly interface",
+            "correct_answer": "C",
+            "explanation": "Expert systems rely on knowledge bases and inference engines unlike conventional systems."
+        },
+        {
+            "question": "The concept of 'Data-Driven Reasoning' is synonymous with which type of chaining?",
+            "option_a": "A. Backward Chaining",
+            "option_b": "B. Forward Chaining",
+            "option_c": "C. Hypothetical Chaining",
+            "option_d": "D. Iterative Chaining",
+            "correct_answer": "B",
+            "explanation": "Forward Chaining is also called data-driven reasoning."
+        },
+        {
+            "question": "An expert system heavily reliant on 'IF-THEN' rules but unable to adapt to new situations demonstrates which limitation?",
+            "option_a": "A. Inability to link to external databases",
+            "option_b": "B. Struggle with unstructured data",
+            "option_c": "C. Reliance on manual rules and lack of learning capability",
+            "option_d": "D. Slow processing speed",
+            "correct_answer": "C",
+            "explanation": "Manual rule dependency prevents learning and adaptability."
+        },
+        {
+            "question": "Which expert system was known for predicting molecular structures using spectra data?",
+            "option_a": "A. MYCIN",
+            "option_b": "B. DENDRAL",
+            "option_c": "C. XCON",
+            "option_d": "D. HEARSAY",
+            "correct_answer": "B",
+            "explanation": "DENDRAL analyzed chemical spectra to predict molecular structures."
+        },
+        {
+            "question": "In WebMD's symptom checker, which component of an expert system does the checker represent?",
+            "option_a": "A. Inference Engine",
+            "option_b": "B. Explanation Facility",
+            "option_c": "C. User Interface",
+            "option_d": "D. Knowledge Base",
+            "correct_answer": "C",
+            "explanation": "It allows user interaction, matching the User Interface role."
+        },
+        {
+            "question": "Reasoning in expert systems typically involves which two types?",
+            "option_a": "A. Inductive and Deductive",
+            "option_b": "B. Qualitative and Quantitative",
+            "option_c": "C. Forward and Backward Chaining",
+            "option_d": "D. Analytical and Intuitive",
+            "correct_answer": "C",
+            "explanation": "Expert systems use forward and backward chaining reasoning."
+        },
+        {
+            "question": "A legal expert system that justifies its advice by citing laws and facts demonstrates the use of:",
+            "option_a": "A. Knowledge Base",
+            "option_b": "B. User Interface",
+            "option_c": "C. Explanation Facility",
+            "option_d": "D. Working Memory",
+            "correct_answer": "C",
+            "explanation": "The Explanation Facility increases transparency and trust."
+        },
+        {
+            "question": "Expert systems are not scalable to complex problems such as:",
+            "option_a": "A. Diagnosing blood infections",
+            "option_b": "B. Configuring computer systems",
+            "option_c": "C. Vision, language, or natural speech",
+            "option_d": "D. Predicting molecular structures",
+            "correct_answer": "C",
+            "explanation": "Expert systems cannot handle highly complex, unstructured tasks."
+        },
+        {
+            "question": "What is the 'Concept' for Backward Chaining?",
+            "option_a": "A. Start with known facts until a goal is reached",
+            "option_b": "B. Start with a goal and look for rules supporting it",
+            "option_c": "C. Begin with external data and update knowledge",
+            "option_d": "D. Prioritize procedural knowledge over declarative",
+            "correct_answer": "B",
+            "explanation": "Backward Chaining begins from a goal and works backward to verify conditions."
+        },
+        {
+            "question": "A characteristic that differentiates an Expert System is its ability to simulate:",
+            "option_a": "A. Data storage capacity",
+            "option_b": "B. Human expert decision-making",
+            "option_c": "C. Graphical user interface design",
+            "option_d": "D. Real-time data processing",
+            "correct_answer": "B",
+            "explanation": "Expert systems mimic expert-level reasoning and decision-making."
+        },
+        {
+            "question": "During forward chaining, what happens when a rule's conditions are all true?",
+            "option_a": "A. The rule is disregarded",
+            "option_b": "B. The user is asked for more info",
+            "option_c": "C. The rule fires and its conclusion is added to facts",
+            "option_d": "D. The engine switches to backward chaining",
+            "correct_answer": "C",
+            "explanation": "In forward chaining, satisfied rules fire and new facts are added."
+        },
+        {
+            "question": "Which characteristic is NOT explicitly part of an ontology's definition?",
+            "option_a": "A. Formal",
+            "option_b": "B. Explicit",
+            "option_c": "C. Shared",
+            "option_d": "D. Flexible",
+            "correct_answer": "D",
+            "explanation": "Ontologies are formal, explicit, and shared conceptualizations."
+        },
+        {
+            "question": "What does it mean for an ontology to be 'Explicit'?",
+            "option_a": "A. It can be easily updated",
+            "option_b": "B. All terms and relationships are clearly defined",
+            "option_c": "C. It allows flexible interpretations",
+            "option_d": "D. It only contains undefined terms",
+            "correct_answer": "B",
+            "explanation": "Explicit ontologies clearly define terms and relationships."
+        },
+        {
+            "question": "In the library catalog analogy, categories like 'Science' and 'History' represent:",
+            "option_a": "A. Instances of knowledge",
+            "option_b": "B. Relationships",
+            "option_c": "C. Structured concepts or classes",
+            "option_d": "D. Explicit search rules",
+            "correct_answer": "C",
+            "explanation": "Ontology classes are analogous to categories like Science or History."
+        },
+        {
+            "question": "What does 'Conceptualization' refer to in ontology?",
+            "option_a": "A. Sharing data across systems",
+            "option_b": "B. Viewing a specific part of the world",
+            "option_c": "C. Automatically inferring facts",
+            "option_d": "D. Formal rules of an ontology",
+            "correct_answer": "B",
+            "explanation": "Conceptualization reflects how we model a domain of the world."
+        },
+        {
+            "question": "In a family tree analogy, 'Parent,' 'Child,' and 'Sibling' represent:",
+            "option_a": "A. Instances",
+            "option_b": "B. Properties",
+            "option_c": "C. Classes",
+            "option_d": "D. Data points",
+            "correct_answer": "C",
+            "explanation": "They are general categories, which correspond to classes in ontologies."
+        },
+        {
+            "question": "Why did AI move beyond Expert Systems and Ontologies?",
+            "option_a": "A. They were too expensive",
+            "option_b": "B. They struggled with unstructured or noisy data",
+            "option_c": "C. They required too much computational power",
+            "option_d": "D. They were too flexible",
+            "correct_answer": "B",
+            "explanation": "They lack learning ability and cannot handle unstructured real-world data."
+        },
+        {
+            "question": "Which modern AI technique learns patterns from data automatically without manual rule creation?",
+            "option_a": "A. Expert Systems",
+            "option_b": "B. Ontologies",
+            "option_c": "C. Machine Learning",
+            "option_d": "D. Explanation Facility",
+            "correct_answer": "C",
+            "explanation": "Machine Learning identifies patterns directly from data."
+        },
+        {
+            "question": "Which modern AI technique excels at handling images and speech?",
+            "option_a": "A. Ontologies",
+            "option_b": "B. Deep Learning",
+            "option_c": "C. Backward Chaining",
+            "option_d": "D. Rule-based systems",
+            "correct_answer": "B",
+            "explanation": "Deep Learning is suited to unstructured data such as images and speech."
+        },
+        {
+            "question": "A system that learns through trial and error by interacting with an environment uses:",
+            "option_a": "A. Supervised Learning",
+            "option_b": "B. Reinforcement Learning",
+            "option_c": "C. Unsupervised Learning",
+            "option_d": "D. Ontology Reasoning",
+            "correct_answer": "B",
+            "explanation": "Reinforcement Learning optimizes actions via rewards from interaction."
+        },
+        {
+            "question": "Modern systems that combine symbolic reasoning with machine learning are called:",
+            "option_a": "A. Pure Expert Systems",
+            "option_b": "B. Hybrid AI Systems",
+            "option_c": "C. Conventional Systems",
+            "option_d": "D. Isolated AI Models",
+            "correct_answer": "B",
+            "explanation": "Hybrid AI merges symbolic and statistical reasoning."
+        },
+        {
+            "question": "What is a key benefit of Hybrid AI Systems?",
+            "option_a": "A. They enhance explainability and adaptability",
+            "option_b": "B. They are the simplest type of AI",
+            "option_c": "C. They do not require any data",
+            "option_d": "D. They work without rules",
+            "correct_answer": "A",
+            "explanation": "Hybrid AI balances adaptability with transparent reasoning."
+        }
+    ]
+}

@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What is the key difference between Feature Selection and Dimensionality Reduction?",
+            "option_a": "A. Feature Selection keeps original features; Dimensionality Reduction creates new ones",
+            "option_b": "B. They are exactly the same",
+            "option_c": "C. Feature Selection is always better",
+            "option_d": "D. Dimensionality Reduction is only for images",
+            "correct_answer": "A",
+            "explanation": "Feature selection keeps a subset of the existing features, while dimensionality reduction transforms them into new features."
+        },
+        {
+            "question": "Which scenario would benefit most from dimensionality reduction?",
+            "option_a": "A. A dataset with 3 features",
+            "option_b": "B. A dataset with highly correlated features and hundreds of dimensions",
+            "option_c": "C. A dataset with all categorical features",
+            "option_d": "D. A dataset with no correlation between features",
+            "correct_answer": "B",
+            "explanation": "Dimensionality reduction is most useful when there are many correlated features in a high-dimensional dataset."
+        },
+        {
+            "question": "In the context of feature engineering, what does 'feature creation' mean?",
+            "option_a": "A. Randomly generating new data points",
+            "option_b": "B. Combining or transforming existing features to create new meaningful features",
+            "option_c": "C. Collecting more data samples",
+            "option_d": "D. Removing existing features",
+            "correct_answer": "B",
+            "explanation": "Feature creation involves deriving new features from existing ones to improve model performance."
+        },
+        {
+            "question": "Which statement about Mutual Information scores is correct?",
+            "option_a": "A. Scores range from -1 to 1",
+            "option_b": "B. A score of 0 indicates perfect information",
+            "option_c": "C. Scores range from 0 to 1, where 0 means no information",
+            "option_d": "D. Negative scores indicate inverse relationships",
+            "correct_answer": "C",
+            "explanation": "Mutual Information scores are always non-negative, ranging from 0 (no information) to higher values."
+        },
+        {
+            "question": "What is a potential drawback of aggressive feature selection?",
+            "option_a": "A. Increased model complexity",
+            "option_b": "B. Loss of potentially important information",
+            "option_c": "C. Increased training time",
+            "option_d": "D. Higher memory usage",
+            "correct_answer": "B",
+            "explanation": "Over-reducing features may discard useful information, harming model accuracy."
+        },
+        {
+            "question": "What is a machine learning model fundamentally?",
+            "option_a": "A. A database of examples",
+            "option_b": "B. A learned function that maps inputs to outputs",
+            "option_c": "C. A visualization tool",
+            "option_d": "D. A data storage system",
+            "correct_answer": "B",
+            "explanation": "ML models are functions learned from data that map input features to target outputs."
+        },
+        {
+            "question": "Which factor should NOT primarily influence model selection?",
+            "option_a": "A. Problem type (classification/regression)",
+            "option_b": "B. Dataset size",
+            "option_c": "C. Need for interpretability",
+            "option_d": "D. The popularity of the algorithm",
+            "correct_answer": "D",
+            "explanation": "Model selection should be based on problem characteristics, not popularity."
+        },
+        {
+            "question": "What distinguishes a hyperparameter from a parameter?",
+            "option_a": "A. Hyperparameters are learned from data",
+            "option_b": "B. Parameters are set before training",
+            "option_c": "C. Hyperparameters are settings defined before training",
+            "option_d": "D. They are the same thing",
+            "correct_answer": "C",
+            "explanation": "Hyperparameters are external configurations set before training, while parameters are learned."
+        },
+        {
+            "question": "Which is an example of a hyperparameter in a decision tree?",
+            "option_a": "A. The split points at each node",
+            "option_b": "B. Maximum depth of the tree",
+            "option_c": "C. The predicted values in leaves",
+            "option_d": "D. The feature importance scores",
+            "correct_answer": "B",
+            "explanation": "Tree depth is a user-defined hyperparameter that affects model complexity."
+        },
+        {
+            "question": "What is the typical train-test split ratio mentioned in the lecture?",
+            "option_a": "A. 50–50",
+            "option_b": "B. 60–40",
+            "option_c": "C. 70–30",
+            "option_d": "D. 80–20",
+            "correct_answer": "D",
+            "explanation": "An 80–20 split is common, using most data for training and some for evaluation."
+        },
+        {
+            "question": "Why is hyperparameter tuning important?",
+            "option_a": "A. It guarantees perfect accuracy",
+            "option_b": "B. It can significantly improve model performance without changing the algorithm",
+            "option_c": "C. It eliminates the need for more data",
+            "option_d": "D. It makes models train faster automatically",
+            "correct_answer": "B",
+            "explanation": "Adjusting hyperparameters can improve results even with the same model."
+        },
+        {
+            "question": "What is Grid Search in hyperparameter tuning?",
+            "option_a": "A. A method that tries random combinations",
+            "option_b": "B. A method that exhaustively searches through a specified parameter grid",
+            "option_c": "C. A method that uses gradients to optimize",
+            "option_d": "D. A method that requires no computation",
+            "correct_answer": "B",
+            "explanation": "Grid Search systematically tests all possible combinations in a defined parameter grid."
+        },
+        {
+            "question": "How does Random Search differ from Grid Search?",
+            "option_a": "A. Random Search is always better",
+            "option_b": "B. Random Search samples random combinations rather than trying all",
+            "option_c": "C. Random Search is deterministic",
+            "option_d": "D. Random Search requires more computation",
+            "correct_answer": "B",
+            "explanation": "Random Search evaluates a subset of hyperparameter space by sampling combinations."
+        },
+        {
+            "question": "In K-Fold Cross-Validation with K=5, how many times is the model trained?",
+            "option_a": "A. 1",
+            "option_b": "B. 2",
+            "option_c": "C. 4",
+            "option_d": "D. 5",
+            "correct_answer": "D",
+            "explanation": "With 5 folds, the model trains 5 times, each with different validation splits."
+        },
+        {
+            "question": "What percentage of data is used for training in each fold of 5-fold cross-validation?",
+            "option_a": "A. 20%",
+            "option_b": "B. 50%",
+            "option_c": "C. 60%",
+            "option_d": "D. 80%",
+            "correct_answer": "D",
+            "explanation": "In 5-fold CV, 4 folds (80%) are used for training, 1 fold (20%) for validation."
+        },
+        {
+            "question": "What is the main advantage of cross-validation over a single train-test split?",
+            "option_a": "A. It requires less data",
+            "option_b": "B. It provides a more reliable performance estimate",
+            "option_c": "C. It trains faster",
+            "option_d": "D. It uses less memory",
+            "correct_answer": "B",
+            "explanation": "Cross-validation averages results across folds for more robust performance evaluation."
+        },
+        {
+            "question": "Which cross-validation technique ensures class balance in each fold?",
+            "option_a": "A. K-Fold",
+            "option_b": "B. Stratified K-Fold",
+            "option_c": "C. Leave-One-Out",
+            "option_d": "D. Time Series Split",
+            "correct_answer": "B",
+            "explanation": "Stratified K-Fold maintains the same class distribution in each fold."
+        },
+        {
+            "question": "When would Leave-One-Out Cross-Validation be most appropriate?",
+            "option_a": "A. With very large datasets",
+            "option_b": "B. With very small datasets",
+            "option_c": "C. With streaming data",
+            "option_d": "D. With unlabeled data",
+            "correct_answer": "B",
+            "explanation": "LOOCV is practical for small datasets since each instance serves once as validation."
+        },
+        {
+            "question": "What happens during the model training process?",
+            "option_a": "A. The model memorizes all training examples",
+            "option_b": "B. The model learns patterns between features and targets",
+            "option_c": "C. The model generates new data",
+            "option_d": "D. The model selects features automatically",
+            "correct_answer": "B",
+            "explanation": "Training involves finding patterns in data to map inputs to outputs."
+        },
+        {
+            "question": "Which statement about hyperparameters is FALSE?",
+            "option_a": "A. They control the learning process",
+            "option_b": "B. They must be set before training begins",
+            "option_c": "C. They are automatically learned from the data",
+            "option_d": "D. They influence model performance",
+            "correct_answer": "C",
+            "explanation": "Parameters are learned from data, but hyperparameters must be set beforehand."
+        },
+        {
+            "question": "Why do we evaluate models on test data rather than training data?",
+            "option_a": "A. Test data is always larger",
+            "option_b": "B. To assess how well the model generalizes to unseen data",
+            "option_c": "C. Training data is corrupted",
+            "option_d": "D. Test data is easier to process",
+            "correct_answer": "B",
+            "explanation": "Testing on unseen data ensures the model generalizes beyond its training set."
+        },
+        {
+            "question": "What characterizes an overfitted model?",
+            "option_a": "A. Poor performance on both training and test data",
+            "option_b": "B. Good performance on both training and test data",
+            "option_c": "C. Excellent training performance but poor test performance",
+            "option_d": "D. Poor training performance but good test performance",
+            "correct_answer": "C",
+            "explanation": "Overfitting occurs when a model memorizes training data but fails on new data."
+        },
+        {
+            "question": "Which is a sign of underfitting?",
+            "option_a": "A. Training accuracy is 99%, test accuracy is 60%",
+            "option_b": "B. Training accuracy is 60%, test accuracy is 59%",
+            "option_c": "C. Training accuracy is 95%, test accuracy is 94%",
+            "option_d": "D. Model complexity is too high",
+            "correct_answer": "B",
+            "explanation": "Underfitting happens when both training and test accuracy are low due to oversimplified models."
+        },
+        {
+            "question": "Which technique can help prevent overfitting?",
+            "option_a": "A. Adding more complex features",
+            "option_b": "B. Increasing model complexity",
+            "option_c": "C. Regularization",
+            "option_d": "D. Removing validation data",
+            "correct_answer": "C",
+            "explanation": "Regularization penalizes complexity, helping reduce overfitting."
+        },
+        {
+            "question": "How can underfitting be addressed?",
+            "option_a": "A. Reducing model complexity",
+            "option_b": "B. Removing features",
+            "option_c": "C. Decreasing training time",
+            "option_d": "D. Adding more relevant features or increasing model complexity",
+            "correct_answer": "D",
+            "explanation": "More relevant features or complexity can help the model capture patterns better."
+        },
+        {
+            "question": "What does 'high bias' indicate in a model?",
+            "option_a": "A. Overfitting",
+            "option_b": "B. Underfitting",
+            "option_c": "C. Perfect fitting",
+            "option_d": "D. High variance",
+            "correct_answer": "B",
+            "explanation": "High bias reflects oversimplification, leading to underfitting."
+        },
+        {
+            "question": "What does 'high variance' indicate in a model?",
+            "option_a": "A. Underfitting",
+            "option_b": "B. Low complexity",
+            "option_c": "C. Overfitting",
+            "option_d": "D. High bias",
+            "correct_answer": "C",
+            "explanation": "High variance models overfit the training data and fail to generalize."
+        },
+        {
+            "question": "Which evaluation metric is NOT mentioned in the context of model evaluation?",
+            "option_a": "A. Accuracy",
+            "option_b": "B. Precision",
+            "option_c": "C. Recall",
+            "option_d": "D. P-value",
+            "correct_answer": "D",
+            "explanation": "P-value is a statistical significance test, not a standard ML evaluation metric."
+        },
+        {
+            "question": "When would a model with 100% training accuracy be concerning?",
+            "option_a": "A. Never, this is ideal",
+            "option_b": "B. When test accuracy is significantly lower",
+            "option_c": "C. When using cross-validation",
+            "option_d": "D. When the dataset is large",
+            "correct_answer": "B",
+            "explanation": "A large gap between training and test accuracy indicates overfitting."
+        },
+        {
+            "question": "What is the relationship between model complexity and overfitting?",
+            "option_a": "A. Higher complexity always reduces overfitting",
+            "option_b": "B. Lower complexity always causes overfitting",
+            "option_c": "C. Higher complexity increases the risk of overfitting",
+            "option_d": "D. Complexity and overfitting are unrelated",
+            "correct_answer": "C",
+            "explanation": "Complex models capture noise in data, increasing overfitting risk."
+        },
+        {
+            "question": "What is model deployment?",
+            "option_a": "A. Training a model for the first time",
+            "option_b": "B. Making a trained model available for real-world use",
+            "option_c": "C. Collecting deployment data",
+            "option_d": "D. Evaluating model performance",
+            "correct_answer": "B",
+            "explanation": "Deployment involves integrating the trained model into production systems."
+        },
+        {
+            "question": "Which is NOT a typical component of model deployment?",
+            "option_a": "A. API endpoints",
+            "option_b": "B. Model serving infrastructure",
+            "option_c": "C. Data collection scripts",
+            "option_d": "D. Model training loops",
+            "correct_answer": "D",
+            "explanation": "Training loops are part of development, not deployment."
+        },
+        {
+            "question": "Why is model monitoring important post-deployment?",
+            "option_a": "A. To retrain the model continuously",
+            "option_b": "B. To detect performance degradation over time",
+            "option_c": "C. To collect more training data",
+            "option_d": "D. To reduce server costs",
+            "correct_answer": "B",
+            "explanation": "Monitoring ensures models maintain expected performance in production."
+        },
+        {
+            "question": "What phenomenon occurs when model performance decreases over time in production?",
+            "option_a": "A. Overfitting",
+            "option_b": "B. Underfitting",
+            "option_c": "C. Model drift",
+            "option_d": "D. Regularization",
+            "correct_answer": "C",
+            "explanation": "Model drift happens when data distributions change over time, reducing accuracy."
+        },
+        {
+            "question": "Which deployment consideration is most critical for real-time applications?",
+            "option_a": "A. Model accuracy only",
+            "option_b": "B. Inference latency",
+            "option_c": "C. Training time",
+            "option_d": "D. Dataset size",
+            "correct_answer": "B",
+            "explanation": "Low latency is essential for real-time predictions in applications like finance or healthcare."
+        },
+        {
+            "question": "What should be included in a model deployment pipeline?",
+            "option_a": "A. Only the trained model",
+            "option_b": "B. Model, preprocessing steps, and post-processing steps",
+            "option_c": "C. Training data only",
+            "option_d": "D. Hyperparameter search space",
+            "correct_answer": "B",
+            "explanation": "Deployment pipelines must include preprocessing and post-processing to ensure correct outputs."
+        },
+        {
+            "question": "When should a deployed model be retrained?",
+            "option_a": "A. Every day regardless of performance",
+            "option_b": "B. Never, once deployed",
+            "option_c": "C. When performance metrics drop below acceptable thresholds",
+            "option_d": "D. Only when new algorithms are invented",
+            "correct_answer": "C",
+            "explanation": "Retraining is triggered when model accuracy or other metrics degrade below acceptable limits."
+        },
+        {
+            "question": "What is A/B testing in the context of model deployment?",
+            "option_a": "A. Testing two different datasets",
+            "option_b": "B. Comparing performance of two models in production",
+            "option_c": "C. Training models twice",
+            "option_d": "D. Using two different programming languages",
+            "correct_answer": "B",
+            "explanation": "A/B testing runs multiple models in production to compare effectiveness."
+        },
+        {
+            "question": "Which factor does NOT typically trigger model retraining?",
+            "option_a": "A. Significant performance degradation",
+            "option_b": "B. Changes in data distribution",
+            "option_c": "C. New feature availability",
+            "option_d": "D. Server hardware upgrades",
+            "correct_answer": "D",
+            "explanation": "Hardware upgrades don’t affect model logic and do not require retraining."
+        },
+        {
+            "question": "What is the purpose of maintaining model versioning in deployment?",
+            "option_a": "A. To increase storage costs",
+            "option_b": "B. To track changes and enable rollback if needed",
+            "option_c": "C. To confuse users",
+            "option_d": "D. To prevent model updates",
+            "correct_answer": "B",
+            "explanation": "Versioning ensures reproducibility and allows safe rollbacks in case of issues."
+        }
+    ]
+}
