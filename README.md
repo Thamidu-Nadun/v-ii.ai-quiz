@@ -6,6 +6,8 @@ An interactive web-based quiz application that lets you create, take, and share 
 
 **Quiz-App v1**: [Quiz-App-v.1.0 ↗](https://thamidu-nadun.github.io/ai-quiz/)
 
+---
+
 <div align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk4NWFhMGllOXVmdWh4NXhnZ3pqeWdteTN6aWkybTZwMjBoYzZnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nFclMml89Z3YloDaCe/giphy.gif" alt="Quiz Time!" width="300px">
 </div>
@@ -58,12 +60,12 @@ We love your input! Here's how you can contribute:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the ISC License - see the LICENSE file for details.
 
 ---
 
 <div align="center">
-  Made with ❤️ by the Quiz App Team
-  
-  <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Happy Learning!" width="200px">
+  Made with ❤️ by the Quiz App Team @nadun
+  <br/>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk4NWFhMGllOXVmdWh4NXhnZ3pqeWdteTN6aWkybTZwMjBoYzZnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nFclMml89Z3YloDaCe/giphy.gif" alt="Happy Learning!" width="200px">
 </div>
