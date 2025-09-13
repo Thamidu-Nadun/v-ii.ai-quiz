@@ -7,43 +7,43 @@ export default [
     },
     {
         title: 'ML Fundamentals',
-        path: 'quiz/AI-01.json',
+        path: 'quiz/AI/AI-01.json',
         description: 'Assess your understanding of machine learning concepts, algorithms, and applications.',
         isAvailable: true
     },
     {
         title: 'GenAI Fundamentals',
-        path: 'quiz/AI-02.json',
+        path: 'quiz/AI/AI-02.json',
         description: 'Evaluate your knowledge of generative AI, including models, techniques, and use cases.',
         isAvailable: true
     },
     {
         title: 'Expert Systems - I',
-        path: 'quiz/AI-03.json',
+        path: 'quiz/AI/AI-03.json',
         description: 'Evaluate your knowledge of expert systems, their components, and real-world applications.',
         isAvailable: true
     },
     {
         title: 'Expert Systems - II',
-        path: 'quiz/AI-06.json',
+        path: 'quiz/AI/AI-06.json',
         description: 'Evaluate your knowledge of expert systems, their components, and real-world applications.',
         isAvailable: true
     },
     {
         title: 'ML Pipelines - I',
-        path: 'quiz/AI-04.json',
+        path: 'quiz/AI/AI-04.json',
         description: 'Evaluate your skills in designing and implementing machine learning pipelines.',
         isAvailable: true
     },
     {
         title: 'ML Pipelines - II',
-        path: 'quiz/AI-05.json',
+        path: 'quiz/AI/AI-05.json',
         description: 'Evaluate your skills in designing and implementing machine learning pipelines.',
         isAvailable: true
     },
     {
         title: 'Supervised Learning',
-        path: 'quiz/AI-07.json',
+        path: 'quiz/AI/AI-07.json',
         description: 'Test your understanding of supervised learning algorithms, techniques, and applications.',
         isAvailable: true
     },
