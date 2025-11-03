@@ -115,6 +115,72 @@ export default [
         description: 'Further evaluate your understanding of software engineering concepts, focusing on advanced topics and applications.',
         isAvailable: true
     },
+    {
+        title: 'SE - LEC - 1',
+        path: 'quiz/SE/SE-LEC-1.json',
+        description: 'Test your knowledge of software engineering lecture topics, including methodologies and best practices.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 2',
+        path: 'quiz/SE/SE-LEC-2.json',
+        description: 'Further assess your understanding of software engineering lecture topics, focusing on advanced concepts and applications.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 3',
+        path: 'quiz/SE/SE-LEC-3.json',
+        description: 'Evaluate your knowledge of software engineering lecture topics, including design patterns and support processes.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 4',
+        path: 'quiz/SE/SE-LEC-4.json',
+        description: 'Test your understanding of software engineering lecture topics, focusing on testing methodologies and Agile practices.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 5',
+        path: 'quiz/SE/SE-LEC-5.json',
+        description: 'Further evaluate your knowledge of software engineering lecture topics, including UML diagrams and software lifecycle.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 6',
+        path: 'quiz/SE/SE-LEC-6.json',
+        description: 'Assess your understanding of software engineering lecture topics, focusing on project management and quality assurance.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 7',
+        path: 'quiz/SE/SE-LEC-7.json',
+        description: 'Evaluate your knowledge of software engineering lecture topics, including development methodologies and best practices.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 8',
+        path: 'quiz/SE/SE-LEC-8.json',
+        description: 'Test your understanding of software engineering lecture topics, focusing on emerging trends and technologies in the field.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 9',
+        path: 'quiz/SE/SE-LEC-9.json',
+        description: 'Further assess your knowledge of software engineering lecture topics, including case studies and real-world applications.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 10',
+        path: 'quiz/SE/SE-LEC-10.json',
+        description: 'Evaluate your understanding of software engineering lecture topics, focusing on advanced concepts and industry practices.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - LEC - 11',
+        path: 'quiz/SE/SE-LEC-11.json',
+        description: 'Assess your knowledge of software engineering lecture topics, including software architecture and design principles.',
+        isAvailable: true
+    },
     // Database Management System Quizzes
     {
         title: 'DBMS - 01',

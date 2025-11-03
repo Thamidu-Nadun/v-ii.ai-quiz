@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best defines a State Machine Diagram?",
+            "option_a": "A. Models the behavior of a single object through its life cycle",
+            "option_b": "B. Represents the interaction between multiple systems",
+            "option_c": "C. Shows the sequence of events causing state changes",
+            "option_d": "D. Models static class structure",
+            "correct_answer": "A",
+            "explanation": "A State Machine Diagram captures the dynamic behavior of a single object over time by modeling how it transitions between states in response to events."
+        },
+        {
+            "question": "Which classes typically require State Machine Diagrams?",
+            "option_a": "A. Classes with significant dynamic behavior",
+            "option_b": "B. Classes representing physical entities only",
+            "option_c": "C. Classes that respond to multiple events",
+            "option_d": "D. Static utility classes",
+            "correct_answer": "A",
+            "explanation": "State Machine Diagrams are most useful for classes that exhibit complex behavior driven by events and state changes, not for simple or static classes."
+        },
+        {
+            "question": "What are the main elements of a State Machine Diagram?",
+            "option_a": "A. States",
+            "option_b": "B. Transitions",
+            "option_c": "C. Activities",
+            "option_d": "D. Associations",
+            "correct_answer": "A",
+            "explanation": "The core components of a State Machine Diagram are states (conditions), transitions (changes between states), and events that trigger those transitions."
+        },
+        {
+            "question": "Which statement correctly describes a State in UML?",
+            "option_a": "A. Represents condition of an object at a specific time",
+            "option_b": "B. Indicates data storage location",
+            "option_c": "C. Represented using rounded rectangles",
+            "option_d": "D. May include internal behaviors like entry/do/exit actions",
+            "correct_answer": "A",
+            "explanation": "A state captures a stable condition an object is in between events, often depicted as a rounded rectangle and may define internal behaviors."
+        },
+        {
+            "question": "What are the two special states in UML state diagrams?",
+            "option_a": "A. Initial",
+            "option_b": "B. Intermediate",
+            "option_c": "C. Final",
+            "option_d": "D. Composite",
+            "correct_answer": "A",
+            "explanation": "The Initial state (solid circle) marks where the object begins, and the Final state (circle with inner solid circle) indicates termination of the state machine."
+        },
+        {
+            "question": "Which statements describe a Simple State?",
+            "option_a": "A. Does not have sub-states",
+            "option_b": "B. Represented by rounded rectangle with name",
+            "option_c": "C. May include compartments",
+            "option_d": "D. Always includes an internal behavior",
+            "correct_answer": "A",
+            "explanation": "A Simple State is atomic—it has no nested states—and is shown as a rounded rectangle that may optionally include internal behavior compartments."
+        },
+        {
+            "question": "What is true about Composite States?",
+            "option_a": "A. Have nested states inside",
+            "option_b": "B. Represented with decomposition compartment",
+            "option_c": "C. Can include entry and exit points",
+            "option_d": "D. Represent conditional logic",
+            "correct_answer": "A",
+            "explanation": "Composite states contain substates and are used to model hierarchical behavior, often with regions, entry/exit points, and internal transitions."
+        },
+        {
+            "question": "What are the basic compartments of a subdivided State in UML?",
+            "option_a": "A. Name compartment",
+            "option_b": "B. Internal behavior compartment",
+            "option_c": "C. Transition list",
+            "option_d": "D. Data compartment",
+            "correct_answer": "A",
+            "explanation": "A subdivided state typically includes a name compartment and an internal behavior compartment (for entry/do/exit actions), but not a transition list or data compartment."
+        },
+        {
+            "question": "Which are valid internal behavior labels in a State?",
+            "option_a": "A. entry",
+            "option_b": "B. exit",
+            "option_c": "C. do",
+            "option_d": "D. when",
+            "correct_answer": "A",
+            "explanation": "Valid internal behaviors in a UML state are 'entry', 'do', and 'exit', which define actions performed on entering, during, and on exiting the state."
+        },
+        {
+            "question": "What is the purpose of an Entry behavior in a state?",
+            "option_a": "A. Executed immediately upon entering a state",
+            "option_b": "B. Defines ongoing actions within a state",
+            "option_c": "C. Triggered when exiting the state",
+            "option_d": "D. Initializes attributes or conditions",
+            "correct_answer": "A",
+            "explanation": "The entry behavior runs exactly once when the state is entered and is often used for initialization or setup tasks."
+        },
+        {
+            "question": "What is true about the Do activity of a state?",
+            "option_a": "A. Represents ongoing work while in a state",
+            "option_b": "B. Starts after entry action finishes",
+            "option_c": "C. Automatically terminates when the state is exited",
+            "option_d": "D. Can change the object’s state directly",
+            "correct_answer": "A",
+            "explanation": "The 'do' activity is an ongoing behavior that runs while the object remains in the state and stops when the state is exited, possibly due to interruption."
+        },
+        {
+            "question": "What is a Transition in UML State Diagrams?",
+            "option_a": "A. Movement from one state to another",
+            "option_b": "B. Triggered by an event",
+            "option_c": "C. Represented by an arrow with trigger/guard/effect",
+            "option_d": "D. Defines class inheritance",
+            "correct_answer": "A",
+            "explanation": "A transition is a directed relationship between two states, initiated by an event, and may include a guard condition and effect."
+        },
+        {
+            "question": "Which elements make up a Transition?",
+            "option_a": "A. Source State",
+            "option_b": "B. Target State",
+            "option_c": "C. Trigger",
+            "option_d": "D. Guard Condition",
+            "correct_answer": "A",
+            "explanation": "A complete transition includes a source state, target state, optional trigger (event), optional guard condition (in brackets), and optional effect."
+        },
+        {
+            "question": "Which statements describe Self-Transitions?",
+            "option_a": "A. Start and end in the same state",
+            "option_b": "B. Exit and re-enter the same state",
+            "option_c": "C. Commonly used to restart a state’s behavior",
+            "option_d": "D. Skip entry and exit actions",
+            "correct_answer": "A",
+            "explanation": "In a self-transition, the object exits the state (executing exit actions), then re-enters it (executing entry actions), effectively restarting internal behavior."
+        },
+        {
+            "question": "What are the main types of Triggers in UML State Diagrams?",
+            "option_a": "A. Call Event",
+            "option_b": "B. Change Event",
+            "option_c": "C. Time Event",
+            "option_d": "D. Guard Event",
+            "correct_answer": "A",
+            "explanation": "UML defines three primary trigger types: call events (method invocations), change events (condition-based), and time events (timers or delays)."
+        },
+        {
+            "question": "Which statements describe a Call Event?",
+            "option_a": "A. Triggered by message or method call",
+            "option_b": "B. Can include parameters",
+            "option_c": "C. Denoted by functionName()",
+            "option_d": "D. Must be asynchronous",
+            "correct_answer": "A",
+            "explanation": "A call event is triggered by an operation call, written as opName(parameters), and can be synchronous or asynchronous depending on context."
+        },
+        {
+            "question": "What is true about Change Events?",
+            "option_a": "A. Triggered when a condition becomes true",
+            "option_b": "B. Denoted by ‘when(condition)’",
+            "option_c": "C. Used for temperature or threshold changes",
+            "option_d": "D. Only valid in composite states",
+            "correct_answer": "A",
+            "explanation": "Change events use 'when()' syntax and fire when a specified Boolean condition becomes true, making them ideal for monitoring thresholds or state changes."
+        },
+        {
+            "question": "Which describe Time Events correctly?",
+            "option_a": "A. Represent transitions triggered by time passage",
+            "option_b": "B. Denoted as after(timePeriod)",
+            "option_c": "C. Can use any time unit",
+            "option_d": "D. Cannot coexist with other triggers",
+            "correct_answer": "A",
+            "explanation": "Time events use 'after(d)' syntax and are used to model timeouts or scheduled behaviors; they can be combined with other event types in practice."
+        },
+        {
+            "question": "What are Guard Conditions?",
+            "option_a": "A. Boolean expressions that control transition flow",
+            "option_b": "B. Optional constraints on triggers",
+            "option_c": "C. Shown inside square brackets",
+            "option_d": "D. Must always be true for transition to occur",
+            "correct_answer": "A",
+            "explanation": "Guard conditions are Boolean expressions in square brackets that must evaluate to true for a transition to fire when its trigger occurs."
+        },
+        {
+            "question": "Which of the following are considered modeling issues in State Machine Diagrams?",
+            "option_a": "A. Black-hole states",
+            "option_b": "B. Miracle states",
+            "option_c": "C. Missing transitions",
+            "option_d": "D. Overlapping triggers",
+            "correct_answer": "A",
+            "explanation": "Common flaws include black-hole states (no outgoing transitions), miracle states (no incoming transitions), and missing transitions, all of which hinder correctness and completeness."
+        }
+    ]
+}

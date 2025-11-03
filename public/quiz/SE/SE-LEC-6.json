@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes the primary purpose of a Sequence Diagram in UML?",
+            "option_a": "A. To depict the static structure of classes and their relationships",
+            "option_b": "B. To model the flow of control between actors using decision nodes",
+            "option_c": "C. To illustrate time-ordered interactions among objects in response to a specific scenario",
+            "option_d": "D. To represent data flow between system components",
+            "correct_answer": "C",
+            "explanation": "Sequence Diagrams are behavioral UML diagrams that show how objects interact in a time-ordered sequence to carry out a specific functionality or use case."
+        },
+        {
+            "question": "In a Sequence Diagram, what does an Activation Bar (or Execution Occurrence) represent?",
+            "option_a": "A. The lifetime of an object from creation to destruction",
+            "option_b": "B. A condition that must be true for a message to be sent",
+            "option_c": "C. The period during which an object is performing an action or processing a message",
+            "option_d": "D. The return path of a message from a receiver to a sender",
+            "correct_answer": "C",
+            "explanation": "An Activation Bar is a thin vertical rectangle on a lifeline that indicates when an object is active—i.e., executing a method or handling a message."
+        },
+        {
+            "question": "Which types of messages are valid in UML Sequence Diagrams?",
+            "option_a": "A. Synchronous, asynchronous, return, and self messages",
+            "option_b": "B. Broadcast, multicast, unicast, and return messages",
+            "option_c": "C. Request, response, acknowledgment, and error messages",
+            "option_d": "D. Signal, event, trigger, and callback messages",
+            "correct_answer": "A",
+            "explanation": "UML Sequence Diagrams support synchronous (solid arrow with filled head), asynchronous (solid arrow with open head), return (dashed arrow), and self messages (looped to the same lifeline)."
+        },
+        {
+            "question": "In a Sequence Diagram using the Boundary-Controller-Entity (BCE) architectural pattern, which of the following interactions is NOT allowed?",
+            "option_a": "A. Actor → Boundary",
+            "option_b": "B. Boundary → Controller",
+            "option_c": "C. Controller → Entity",
+            "option_d": "D. Actor → Entity",
+            "correct_answer": "D",
+            "explanation": "According to BCE rules, actors must interact only with Boundary objects; direct interaction between an Actor and an Entity violates the separation of concerns in this pattern."
+        },
+        {
+            "question": "What does an ALT fragment represent in a UML Sequence Diagram?",
+            "option_a": "A. A set of messages that execute repeatedly based on a condition",
+            "option_b": "B. An optional interaction that occurs only if a guard condition is true",
+            "option_c": "C. A choice between mutually exclusive interaction paths, each with its own guard condition",
+            "option_d": "D. A reference to another complete sequence diagram",
+            "correct_answer": "C",
+            "explanation": "An ALT fragment models conditional logic (like if-else or switch statements), where exactly one operand (path) executes based on which guard condition evaluates to true."
+        },
+        {
+            "question": "Which of the following is a key characteristic of asynchronous messages in Sequence Diagrams?",
+            "option_a": "A. They require the sender to wait for a response before proceeding",
+            "option_b": "B. They are depicted with dashed arrows and open arrowheads",
+            "option_c": "C. They allow the sender to continue execution without waiting for a reply",
+            "option_d": "D. They can only be sent between Boundary and Controller objects",
+            "correct_answer": "C",
+            "explanation": "Asynchronous messages do not block the sender; the sender continues its execution immediately after sending the message, making them suitable for concurrent or event-driven systems."
+        },
+        {
+            "question": "In a Sequence Diagram, lifelines are used to:",
+            "option_a": "A. Represent the inheritance hierarchy among classes",
+            "option_b": "B. Show the duration and timing of object existence and activity over time",
+            "option_c": "C. Model database tables and their foreign key relationships",
+            "option_d": "D. Indicate the physical location of system components",
+            "correct_answer": "B",
+            "explanation": "A lifeline is a vertical dashed line extending downward from an object or actor symbol, representing its existence and participation in the interaction over time."
+        },
+        {
+            "question": "Which UML diagram types are classified as Interaction Diagrams?",
+            "option_a": "A. Class Diagram and Object Diagram",
+            "option_b": "B. Sequence Diagram and Communication Diagram",
+            "option_c": "C. Activity Diagram and State Machine Diagram",
+            "option_d": "D. Component Diagram and Deployment Diagram",
+            "correct_answer": "B",
+            "explanation": "UML Interaction Diagrams include Sequence Diagrams (emphasizing time ordering) and Communication Diagrams (emphasizing object relationships), both modeling dynamic behavior."
+        },
+        {
+            "question": "Consider a Loop fragment in a Sequence Diagram labeled 'loop [i = 1 to 5]'. What does this indicate?",
+            "option_a": "A. The enclosed messages execute exactly 5 times",
+            "option_b": "B. The loop runs until a boolean condition becomes false",
+            "option_c": "C. Five parallel threads execute the same messages simultaneously",
+            "option_d": "D. The system will crash if i exceeds 5",
+            "correct_answer": "A",
+            "explanation": "A Loop fragment with 'i = 1 to 5' specifies a definite iteration count—here, the interaction occurs exactly five times, analogous to a for-loop in programming."
+        },
+        {
+            "question": "What is the purpose of a REF fragment in a Sequence Diagram?",
+            "option_a": "A. To define a recursive call within the same object",
+            "option_b": "B. To reference an interaction defined in another diagram for modularity",
+            "option_c": "C. To indicate a failed message delivery",
+            "option_d": "D. To show alternative execution paths based on runtime data",
+            "correct_answer": "B",
+            "explanation": "A REF (Reference) fragment allows a sequence diagram to refer to a reusable interaction defined elsewhere, promoting clarity and reducing redundancy in complex models."
+        },
+        {
+            "question": "Which of the following is a common error when constructing Sequence Diagrams?",
+            "option_a": "A. Using solid arrows for return messages",
+            "option_b": "B. Placing activation bars above the lifeline",
+            "option_c": "C. Omitting messages that are essential to the scenario flow",
+            "option_d": "D. Labeling actors with lowercase names",
+            "correct_answer": "C",
+            "explanation": "Missing critical messages breaks the logic of the interaction and misrepresents system behavior, making it a frequent and significant modeling error."
+        },
+        {
+            "question": "In the context of Sequence Diagrams, what does a self message typically represent?",
+            "option_a": "A. A message sent from one actor to another",
+            "option_b": "B. An internal method call or recursive operation within the same object",
+            "option_c": "C. A response from a database entity to a controller",
+            "option_d": "D. A broadcast to all active objects in the system",
+            "correct_answer": "B",
+            "explanation": "A self message is a call that an object makes to itself, often representing internal processing, helper method invocation, or recursion."
+        },
+        {
+            "question": "Which statement about the OPT fragment is correct?",
+            "option_a": "A. It executes multiple alternative paths in parallel",
+            "option_b": "B. It represents an optional interaction that occurs only if its guard condition is true",
+            "option_c": "C. It must always include an 'else' clause",
+            "option_d": "D. It replaces the need for all other combined fragments",
+            "correct_answer": "B",
+            "explanation": "An OPT fragment models a single optional sequence of messages that executes only when its guard condition is satisfied—equivalent to a simple 'if' statement without an 'else'."
+        },
+        {
+            "question": "According to BCE (Boundary-Controller-Entity) rules in Sequence Diagrams, which of the following is a valid communication path?",
+            "option_a": "A. Entity → Boundary",
+            "option_b": "B. Controller → Actor",
+            "option_c": "C. Entity → Controller",
+            "option_d": "D. Boundary → Entity",
+            "correct_answer": "C",
+            "explanation": "While the primary flow is Actor → Boundary → Controller → Entity, responses can flow back, so Entity → Controller is valid during return paths or callbacks."
+        },
+        {
+            "question": "Which of the following is NOT a key component of a Sequence Diagram?",
+            "option_a": "A. Lifeline",
+            "option_b": "B. Activation Bar",
+            "option_c": "C. Class Attributes",
+            "option_d": "D. Actor",
+            "correct_answer": "C",
+            "explanation": "Class attributes are part of Class Diagrams, not Sequence Diagrams, which focus on runtime interactions rather than static structure."
+        },
+        {
+            "question": "In a Sequence Diagram, how is a synchronous message visually distinguished from an asynchronous one?",
+            "option_a": "A. Synchronous: dashed arrow; Asynchronous: solid arrow",
+            "option_b": "B. Synchronous: solid arrow with filled arrowhead; Asynchronous: solid arrow with open arrowhead",
+            "option_c": "C. Synchronous: labeled with 'async'; Asynchronous: labeled with 'sync'",
+            "option_d": "D. Synchronous: horizontal line; Asynchronous: diagonal line",
+            "correct_answer": "B",
+            "explanation": "Synchronous messages use a solid arrow with a filled (closed) arrowhead, indicating the sender waits; asynchronous messages use an open arrowhead, indicating non-blocking behavior."
+        },
+        {
+            "question": "Which evaluation criterion is essential for a high-quality Sequence Diagram?",
+            "option_a": "A. Inclusion of every possible system object",
+            "option_b": "B. Realistic and logically ordered flow of events",
+            "option_c": "C. Use of at least five different combined fragments",
+            "option_d": "D. Color-coding of message types",
+            "correct_answer": "B",
+            "explanation": "A valid Sequence Diagram must reflect a realistic, coherent sequence of interactions that align with system requirements and use case logic."
+        },
+        {
+            "question": "What is a key limitation of overusing stereotypes like <<Boundary>> or <<Entity>> in Sequence Diagrams?",
+            "option_a": "A. It increases execution time of the modeled system",
+            "option_b": "B. It can obscure the actual interaction logic with unnecessary notation",
+            "option_c": "C. It violates UML syntax rules",
+            "option_d": "D. It prevents the use of activation bars",
+            "correct_answer": "B",
+            "explanation": "While stereotypes add clarity when used appropriately, excessive or inconsistent use can clutter the diagram and distract from the core message flow."
+        },
+        {
+            "question": "Which statement correctly describes the role of an Actor in a Sequence Diagram?",
+            "option_a": "A. It represents an internal system component that processes data",
+            "option_b": "B. It must always be a human user",
+            "option_c": "C. It exists outside the system boundary and initiates or receives messages",
+            "option_d": "D. It can directly modify Entity objects without a Controller",
+            "correct_answer": "C",
+            "explanation": "An Actor in UML is external to the system (could be a person, another system, or hardware) and interacts with the system by sending or receiving messages."
+        },
+        {
+            "question": "In a Sequence Diagram, what does a dashed arrow with an open arrowhead typically represent?",
+            "option_a": "A. A synchronous call",
+            "option_b": "B. An asynchronous call",
+            "option_c": "C. A return message",
+            "option_d": "D. A self-call",
+            "correct_answer": "C",
+            "explanation": "Return messages—whether explicit or implied—are conventionally shown as dashed arrows with open arrowheads, indicating the flow of control or data back to the sender."
+        }
+    ]
+}
