@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes the primary purpose of an Activity Diagram?",
+            "option_a": "A. Models only the static structure of a system",
+            "option_b": "B. Represents workflows and control flow between activities",
+            "option_c": "C. Describes detailed data schema relationships",
+            "option_d": "D. Shows inheritance hierarchies between classes",
+            "correct_answer": "B",
+            "explanation": "Activity diagrams primarily represent workflows and control flow between activities in a system, showing the dynamic behavior rather than static structure."
+        },
+        {
+            "question": "When are Activity Diagrams MOST commonly used in software engineering?",
+            "option_a": "A. Designing database schemas",
+            "option_b": "B. Modeling business processes and workflows",
+            "option_c": "C. Creating class inheritance diagrams",
+            "option_d": "D. Defining network protocols",
+            "correct_answer": "B",
+            "explanation": "Activity diagrams are typically used for modeling business processes, workflows, and analyzing use cases in detail."
+        },
+        {
+            "question": "Which symbol represents a Decision Node in an Activity Diagram?",
+            "option_a": "A. Diamond",
+            "option_b": "B. Circle",
+            "option_c": "C. Rectangle",
+            "option_d": "D. Thick bar",
+            "correct_answer": "A",
+            "explanation": "A diamond symbol represents a Decision Node in UML activity diagrams, used for conditional branching in workflows."
+        },
+        {
+            "question": "What does an Initial Node represent in an Activity Diagram?",
+            "option_a": "A. The end point of a workflow",
+            "option_b": "B. A synchronization point for parallel activities",
+            "option_c": "C. The starting point of control flow",
+            "option_d": "D. A conditional branching point",
+            "correct_answer": "C",
+            "explanation": "The Initial Node represents the starting point of control flow in an activity diagram, marking where the workflow begins."
+        },
+        {
+            "question": "Which of the following accurately describes Action Nodes?",
+            "option_a": "A. They represent inheritance relationships",
+            "option_b": "B. They are depicted as diamonds with guard conditions",
+            "option_c": "C. They represent tasks or steps performed in a process",
+            "option_d": "D. They are used only for exception handling",
+            "correct_answer": "C",
+            "explanation": "Action nodes represent tasks or steps performed in a process and are typically shown as rounded rectangles with verb phrases."
+        },
+        {
+            "question": "What is the primary purpose of Swimlanes in Activity Diagrams?",
+            "option_a": "A. To represent data storage elements",
+            "option_b": "B. To show inheritance relationships",
+            "option_c": "C. To separate activities based on roles or responsibility",
+            "option_d": "D. To indicate exception handling paths",
+            "correct_answer": "C",
+            "explanation": "Swimlanes divide activities based on roles, departments, or responsibility areas, helping to clarify who performs which activities."
+        },
+        {
+            "question": "Which statement about Fork and Join nodes is CORRECT?",
+            "option_a": "A. They are represented by diamond symbols",
+            "option_b": "B. They handle sequential execution only",
+            "option_c": "C. They use thick bars to represent synchronization",
+            "option_d": "D. They are used for conditional branching",
+            "correct_answer": "C",
+            "explanation": "Fork and Join nodes use thick horizontal or vertical bars to represent the splitting and synchronization of concurrent control flows."
+        },
+        {
+            "question": "What does a Merge Node represent in an Activity Diagram?",
+            "option_a": "A. The start of parallel execution",
+            "option_b": "B. The combining of multiple conditional paths",
+            "option_c": "C. The end of the entire workflow",
+            "option_d": "D. A synchronization point for concurrent activities",
+            "correct_answer": "B",
+            "explanation": "A Merge Node represents the combining of multiple branch paths back into a single flow, equivalent to ENDIF logic."
+        },
+        {
+            "question": "In Activity Diagrams, what does the asterisk (*) symbol typically represent?",
+            "option_a": "A. Exception handling",
+            "option_b": "B. Iteration or repetition of an action",
+            "option_c": "C. Concurrent execution",
+            "option_d": "D. Data storage",
+            "correct_answer": "B",
+            "explanation": "The asterisk symbol indicates iteration or repetition of an action within an activity diagram."
+        },
+        {
+            "question": "Why might a Decision Node be preferred over an asterisk for representing iteration?",
+            "option_a": "A. It reduces diagram clarity",
+            "option_b": "B. It hides termination conditions",
+            "option_c": "C. It clearly shows loop conditions and termination logic",
+            "option_d": "D. It is simpler to draw",
+            "correct_answer": "C",
+            "explanation": "Decision Nodes explicitly show loop conditions and termination logic, improving readability and clarity compared to the asterisk notation."
+        },
+        {
+            "question": "Which of the following is a COMMON modeling mistake in Activity Diagrams?",
+            "option_a": "A. Using swimlanes to show responsibilities",
+            "option_b": "B. Including guard conditions on decision branches",
+            "option_c": "C. Using fork nodes when conditional branching is needed",
+            "option_d": "D. Connecting actions with transitions",
+            "correct_answer": "C",
+            "explanation": "Using fork nodes for conditional branching is incorrect; fork nodes are for parallel execution, while decision nodes should be used for conditional branching."
+        },
+        {
+            "question": "What is the key difference between a Fork Node and a Decision Node?",
+            "option_a": "A. Fork Nodes use diamonds, Decision Nodes use bars",
+            "option_b": "B. Fork Nodes create sequential flows, Decision Nodes create parallel flows",
+            "option_c": "C. Fork Nodes create parallel flows, Decision Nodes create conditional flows",
+            "option_d": "D. There is no significant difference between them",
+            "correct_answer": "C",
+            "explanation": "Fork Nodes split control into multiple parallel flows that execute concurrently, while Decision Nodes create conditional branches where only one path is taken."
+        },
+        {
+            "question": "In a complex enrollment system, which Activity Diagram element would BEST represent the division between Student, Advisor, and Registrar responsibilities?",
+            "option_a": "A. Decision Nodes",
+            "option_b": "B. Action Nodes",
+            "option_c": "C. Swimlanes",
+            "option_d": "D. Initial Nodes",
+            "correct_answer": "C",
+            "explanation": "Swimlanes are ideal for dividing activities based on roles or responsibilities, such as separating Student, Advisor, and Registrar actions in an enrollment system."
+        },
+        {
+            "question": "When modeling a parallel approval process where multiple departments must review a document simultaneously, which nodes should be used?",
+            "option_a": "A. Decision and Merge nodes only",
+            "option_b": "B. Fork and Join nodes",
+            "option_c": "C. Initial and Final nodes",
+            "option_d": "D. Action nodes with transitions",
+            "correct_answer": "B",
+            "explanation": "Fork nodes split the flow into parallel paths for simultaneous department reviews, and Join nodes synchronize these parallel flows before continuing."
+        },
+        {
+            "question": "What is the PRIMARY purpose of guard conditions in Activity Diagrams?",
+            "option_a": "A. To define data storage formats",
+            "option_b": "B. To specify when transition paths should be taken",
+            "option_c": "C. To indicate actor responsibilities",
+            "option_d": "D. To show parallel execution",
+            "correct_answer": "B",
+            "explanation": "Guard conditions specify Boolean expressions that determine when particular transition paths from decision nodes should be taken."
+        },
+        {
+            "question": "Which real-world system would be LEAST appropriate to model with an Activity Diagram?",
+            "option_a": "A. Order processing workflow",
+            "option_b": "B. University enrollment process",
+            "option_c": "C. Class inheritance hierarchy",
+            "option_d": "D. Library book borrowing system",
+            "correct_answer": "C",
+            "explanation": "Class inheritance hierarchy is a static structural relationship better represented using Class Diagrams, not dynamic workflow-oriented Activity Diagrams."
+        },
+        {
+            "question": "In Activity Diagram notation, what is the relationship between a Fork node and its corresponding Join node?",
+            "option_a": "A. Every Fork must have exactly one matching Join",
+            "option_b": "B. Forks and Joins are independent and don't correspond",
+            "option_c": "C. Multiple Forks can connect to a single Join",
+            "option_d": "D. Joins must always precede Forks in the flow",
+            "correct_answer": "A",
+            "explanation": "Typically, every Fork node that splits control into parallel flows should have a corresponding Join node that synchronizes those flows back together."
+        },
+        {
+            "question": "What distinguishes an Activity Diagram from a Flowchart in traditional programming?",
+            "option_a": "A. Activity Diagrams don't show control flow",
+            "option_b": "B. Activity Diagrams can represent parallel/concurrent activities",
+            "option_c": "C. Flowcharts are more detailed than Activity Diagrams",
+            "option_d": "D. There are no significant differences",
+            "correct_answer": "B",
+            "explanation": "A key distinction is that Activity Diagrams can represent parallel and concurrent activities using fork/join nodes, while traditional flowcharts typically represent sequential execution only."
+        },
+        {
+            "question": "In a loan approval system, where different approval paths exist based on loan amount, which node type is MOST appropriate?",
+            "option_a": "A. Fork Node",
+            "option_b": "B. Join Node",
+            "option_c": "C. Decision Node",
+            "option_d": "D. Final Node",
+            "correct_answer": "C",
+            "explanation": "A Decision Node is appropriate for conditional branching based on loan amount, with different approval paths for different amount ranges."
+        },
+        {
+            "question": "What is the main advantage of using Sub-Partitioning in Swimlanes?",
+            "option_a": "A. To reduce the number of nodes in the diagram",
+            "option_b": "B. To represent hierarchical responsibility within departments",
+            "option_c": "C. To eliminate the need for decision nodes",
+            "option_d": "D. To show data flow between activities",
+            "correct_answer": "B",
+            "explanation": "Sub-partitioning allows modeling of hierarchical responsibility within departments or roles, providing more detailed responsibility assignment in complex processes."
+        }
+    ]
+}
