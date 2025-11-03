@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best defines the primary goal of Software Testing?",
+            "option_a": "A. Process of evaluating software to ensure it meets requirements and behaves as intended",
+            "option_b": "B. A debugging process performed exclusively by end users",
+            "option_c": "C. Confirms hardware configurations are properly set up",
+            "option_d": "D. Automates the deployment pipeline for software releases",
+            "correct_answer": "A",
+            "explanation": "Software testing is fundamentally about evaluating software against requirements to ensure it behaves as intended and detects defects before release."
+        },
+        {
+            "question": "What is the main purpose of conducting software testing in the development lifecycle?",
+            "option_a": "A. To reduce code duplication and improve modularity",
+            "option_b": "B. To ensure reliability, detect defects early, and improve user satisfaction",
+            "option_c": "C. To automate the deployment and release processes",
+            "option_d": "D. To replace the need for code reviews and documentation",
+            "correct_answer": "B",
+            "explanation": "The primary purposes of testing include ensuring reliability and safety, detecting defects early in development, and improving software usability and user satisfaction."
+        },
+        {
+            "question": "According to Myers (1979) and Dijkstra (1972), which statement correctly represents the philosophy of software testing?",
+            "option_a": "A. Testing proves the complete absence of bugs in software",
+            "option_b": "B. Testing is primarily about verifying algorithms and data structures",
+            "option_c": "C. Testing is executing a program to find errors and can show presence, not absence, of bugs",
+            "option_d": "D. Testing eliminates the need for formal verification methods",
+            "correct_answer": "C",
+            "explanation": "Myers defined testing as executing a program with intent to find errors, and Dijkstra famously stated that testing can show the presence of bugs, not their absence."
+        },
+        {
+            "question": "What is the key difference between Verification and Validation in software testing?",
+            "option_a": "A. Verification is dynamic and involves execution; Validation is static",
+            "option_b": "B. Verification checks if we are building the product right; Validation ensures we are building the right product",
+            "option_c": "C. Verification focuses on user acceptance; Validation focuses on code quality",
+            "option_d": "D. Both terms are interchangeable in modern testing practices",
+            "correct_answer": "B",
+            "explanation": "Verification asks 'Are we building the product right?' (static, no execution), while Validation asks 'Are we building the right product?' (dynamic, involves execution)."
+        },
+        {
+            "question": "Which activities are classified under Verification in the software testing process?",
+            "option_a": "A. Code execution, system testing, and integration testing",
+            "option_b": "B. Reviews, walkthroughs, and inspections",
+            "option_c": "C. User acceptance testing and performance testing",
+            "option_d": "D. Prototyping and deployment activities",
+            "correct_answer": "B",
+            "explanation": "Verification is static and does not involve code execution. It includes reviews, walkthroughs, and inspections to check specifications and design."
+        },
+        {
+            "question": "Which activities fall under Validation in software testing?",
+            "option_a": "A. Code walkthroughs and design reviews",
+            "option_b": "B. Actual testing including user acceptance, system, and integration testing",
+            "option_c": "C. Static analysis and code inspections only",
+            "option_d": "D. Documentation review and specification verification",
+            "correct_answer": "B",
+            "explanation": "Validation is dynamic and involves executing the software. It includes actual testing, user acceptance testing, system testing, and integration testing."
+        },
+        {
+            "question": "What are the essential steps in the Software Testing Process?",
+            "option_a": "A. Design test cases, prepare test data, execute tests, compare results, and generate reports",
+            "option_b": "B. Write code, compile, debug, and deploy to production",
+            "option_c": "C. Gather requirements, design architecture, and implement features",
+            "option_d": "D. Conduct user interviews, create prototypes, and release software",
+            "correct_answer": "A",
+            "explanation": "The testing process systematically involves designing test cases, preparing test data, executing tests, comparing actual vs expected results, and generating test reports."
+        },
+        {
+            "question": "Which components are typically included in a comprehensive test case document?",
+            "option_a": "A. Source code, compiler flags, and deployment scripts",
+            "option_b": "B. Test ID, description, preconditions, test data, and expected output",
+            "option_c": "C. User stories, acceptance criteria, and business requirements only",
+            "option_d": "D. Hardware specifications and network configurations",
+            "correct_answer": "B",
+            "explanation": "A test case document includes Test ID, description, preconditions, test data, and expected output to ensure comprehensive and repeatable testing."
+        },
+        {
+            "question": "What characterizes Black-Box Testing methodology?",
+            "option_a": "A. Requires detailed source code understanding and programming expertise",
+            "option_b": "B. Focuses on input-output behavior while ignoring internal code structure",
+            "option_c": "C. Primarily tests internal algorithms and code coverage metrics",
+            "option_d": "D. Can only be performed by developers with access to source code",
+            "correct_answer": "B",
+            "explanation": "Black-box testing focuses on input and output behavior without considering internal code structure, and can be conducted without programming knowledge by users or testers."
+        },
+        {
+            "question": "What distinguishes White-Box Testing from other testing approaches?",
+            "option_a": "A. Tests only the graphical user interface responsiveness",
+            "option_b": "B. Focuses on internal code structure using coverage metrics like statement and branch coverage",
+            "option_c": "C. Does not require any programming knowledge or code access",
+            "option_d": "D. Exclusively tests user acceptance criteria and business logic",
+            "correct_answer": "B",
+            "explanation": "White-box testing examines internal code structure, requires programming knowledge, and uses code coverage metrics including statement and branch coverage."
+        },
+        {
+            "question": "What is the primary principle behind Equivalence Partitioning?",
+            "option_a": "A. Testing every possible input value to ensure complete coverage",
+            "option_b": "B. Dividing input domain into classes where each partition behaves similarly, testing one value per class",
+            "option_c": "C. Always combining with usability testing for comprehensive results",
+            "option_d": "D. Testing only the midpoint values of input ranges",
+            "correct_answer": "B",
+            "explanation": "Equivalence partitioning divides inputs into valid and invalid classes where each partition behaves the same way, allowing testing of one representative value per class to reduce test cases."
+        },
+        {
+            "question": "For a valid month range of 1-12, which approach correctly applies Equivalence Partitioning?",
+            "option_a": "A. Test all 12 months individually to ensure complete coverage",
+            "option_b": "B. Test one valid value (e.g., 5) and two invalid values (e.g., 0 and 13)",
+            "option_c": "C. Test only the boundary values 1 and 12",
+            "option_d": "D. Test random values without considering valid/invalid partitions",
+            "correct_answer": "B",
+            "explanation": "Equivalence partitioning requires testing one representative value from the valid partition (e.g., 5) and one from each invalid partition (e.g., 0 for below range, 13 for above range)."
+        },
+        {
+            "question": "What is the focus of Boundary Value Analysis in software testing?",
+            "option_a": "A. Testing midpoint data values to ensure general functionality",
+            "option_b": "B. Testing values at the edges of valid and invalid partitions to detect errors around limits",
+            "option_c": "C. Ensuring user interface boundaries are aesthetically defined",
+            "option_d": "D. Testing only internal flow logic without considering input ranges",
+            "correct_answer": "B",
+            "explanation": "Boundary Value Analysis focuses on testing values at the edges of valid and invalid partitions, as errors commonly occur around input limits and boundaries."
+        },
+        {
+            "question": "For an input range of 1-12, which values should be tested using Boundary Value Analysis?",
+            "option_a": "A. Only the midpoint value of 6",
+            "option_b": "B. Values 0, 1, 12, and 13 to cover boundaries and adjacent values",
+            "option_c": "C. Random values throughout the range for statistical sampling",
+            "option_d": "D. Only the GUI layout elements and visual boundaries",
+            "correct_answer": "B",
+            "explanation": "Boundary Value Analysis tests values at and just outside valid limits: 0 (just below), 1 (lower boundary), 12 (upper boundary), and 13 (just above)."
+        },
+        {
+            "question": "What does Statement Coverage measure in White-Box Testing?",
+            "option_a": "A. The percentage of executed statements, ensuring every line of code executes at least once",
+            "option_b": "B. The number of conditional branches tested in the code",
+            "option_c": "C. The quality of user interface elements and their responsiveness",
+            "option_d": "D. The number of test cases required for functional testing",
+            "correct_answer": "A",
+            "explanation": "Statement Coverage ensures every line of code executes at least once and is measured as (Executed statements / Total statements) * 100%."
+        },
+        {
+            "question": "What distinguishes Branch Coverage from Statement Coverage?",
+            "option_a": "A. Branch coverage requires fewer test cases than statement coverage",
+            "option_b": "B. Branch coverage ensures each decision outcome executes once, covering all true/false branches",
+            "option_c": "C. Branch coverage only tests the main function execution paths",
+            "option_d": "D. Branch coverage focuses on user acceptance criteria",
+            "correct_answer": "B",
+            "explanation": "Branch Coverage ensures each decision outcome (true/false) executes at least once, covering all branches of conditions, and is expressed as (Executed branches / Total branches) * 100%."
+        },
+        {
+            "question": "How can you achieve 100% Branch Coverage in a program with conditional statements?",
+            "option_a": "A. Execute only the main functions without testing conditions",
+            "option_b": "B. Include test cases covering all paths in if/else statements and all boolean outcomes",
+            "option_c": "C. Test only positive values and ignore negative scenarios",
+            "option_d": "D. Focus exclusively on performance metrics and response times",
+            "correct_answer": "B",
+            "explanation": "Achieving 100% Branch Coverage requires test cases that cover all paths in if/else statements, including positive, negative, and zero results, and all boolean outcomes using control flow graphs."
+        },
+        {
+            "question": "Which testing types are classified as Functional Testing?",
+            "option_a": "A. Performance Testing, Security Testing, and Usability Testing",
+            "option_b": "B. Unit Testing, Integration Testing, System Testing, and Acceptance Testing",
+            "option_c": "C. Volume Testing, Compatibility Testing, and Stress Testing",
+            "option_d": "D. Load Testing, Recovery Testing, and Scalability Testing",
+            "correct_answer": "B",
+            "explanation": "Functional Testing types include Unit Testing, Integration Testing, System Testing, and Acceptance Testing, which verify that the system functions correctly according to requirements."
+        },
+        {
+            "question": "Which testing types fall under Non-Functional Testing?",
+            "option_a": "A. Unit Testing, Integration Testing, and System Testing",
+            "option_b": "B. Performance, Security, Volume, Compatibility, and Usability Testing",
+            "option_c": "C. Acceptance Testing and User Acceptance Testing only",
+            "option_d": "D. Black-box Testing and White-box Testing methodologies",
+            "correct_answer": "B",
+            "explanation": "Non-Functional Testing includes Performance, Security, Volume, Compatibility, and Usability Testing, which assess quality attributes rather than specific behaviors."
+        },
+        {
+            "question": "How do Functional and Non-Functional Testing complement each other in ensuring software quality?",
+            "option_a": "A. Functional testing is sufficient; non-functional testing is optional",
+            "option_b": "B. Functional ensures correct behavior while non-functional ensures quality attributes; both are critical",
+            "option_c": "C. Non-functional testing replaces the need for functional testing",
+            "option_d": "D. They test identical aspects using different methodologies",
+            "correct_answer": "B",
+            "explanation": "Functional testing covers what the system does (correct behavior), while non-functional testing covers how well it performs (quality attributes). Both are equally critical for overall software quality."
+        }
+    ]
+}

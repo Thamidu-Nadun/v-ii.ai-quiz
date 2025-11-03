@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best describes a Design Pattern?",
+            "option_a": "A reusable block of code that can be copied directly into any project.",
+            "option_b": "A proven solution to a common problem in a specific context.",
+            "option_c": "A strict implementation that must be followed exactly.",
+            "option_d": "A model used only for performance optimization.",
+            "correct_answer": "B",
+            "explanation": "Design patterns provide proven solutions to recurring software design problems."
+        },
+        {
+            "question": "Why are design patterns useful to study and apply?",
+            "option_a": "They automatically refactor existing code.",
+            "option_b": "They prevent reinventing the wheel by offering tested solutions.",
+            "option_c": "They guarantee optimal runtime performance.",
+            "option_d": "They remove the need for documentation.",
+            "correct_answer": "B",
+            "explanation": "Design patterns give reusable solutions that save time and reduce rework."
+        },
+        {
+            "question": "What does the 'Consequences' section of a design pattern describe?",
+            "option_a": "Required programming language syntax.",
+            "option_b": "Benefits, trade-offs, and impacts of using the pattern.",
+            "option_c": "All existing systems that use the pattern.",
+            "option_d": "A list of code examples.",
+            "correct_answer": "B",
+            "explanation": "The Consequences section explains the advantages and disadvantages of applying the pattern."
+        },
+        {
+            "question": "Behavioral design patterns focus primarily on:",
+            "option_a": "Object creation mechanisms.",
+            "option_b": "Communication and responsibility assignment among objects.",
+            "option_c": "Combining classes into structural hierarchies.",
+            "option_d": "Enhancing code performance.",
+            "correct_answer": "B",
+            "explanation": "Behavioral patterns define how objects communicate and coordinate responsibility."
+        },
+        {
+            "question": "Which requirement is essential for implementing the Singleton pattern?",
+            "option_a": "The constructor must be publicly accessible.",
+            "option_b": "The class must ensure only one instance exists.",
+            "option_c": "Clients must create new instances freely.",
+            "option_d": "Instances must be cloned at runtime.",
+            "correct_answer": "B",
+            "explanation": "Singleton restricts the instantiation to a single instance for the program."
+        },
+        {
+            "question": "Which is a disadvantage of the Singleton pattern?",
+            "option_a": "It always causes memory leaks.",
+            "option_b": "It can lead to tight coupling and difficulties in unit testing.",
+            "option_c": "It forces observers to register manually.",
+            "option_d": "It violates inheritance rules.",
+            "correct_answer": "B",
+            "explanation": "Singleton introduces global state, leading to tight coupling and testing challenges."
+        },
+        {
+            "question": "Which responsibility belongs to the Subject in the Observer pattern?",
+            "option_a": "To implement the reaction behavior when notified.",
+            "option_b": "To maintain and notify a list of observers when its state changes.",
+            "option_c": "To determine which observer should react first.",
+            "option_d": "To fetch data on behalf of the observers.",
+            "correct_answer": "B",
+            "explanation": "The Subject manages observer registration and notifies them of state changes."
+        },
+        {
+            "question": "Which of the following patterns is classified as Creational?",
+            "option_a": "Adapter",
+            "option_b": "Singleton",
+            "option_c": "Observer",
+            "option_d": "Strategy",
+            "correct_answer": "B",
+            "explanation": "Singleton is a Creational pattern because it controls object creation."
+        },
+        {
+            "question": "What type of relationship does the Observer pattern establish?",
+            "option_a": "One-to-one dependency",
+            "option_b": "One-to-many dependency",
+            "option_c": "Many-to-one dependency",
+            "option_d": "Many-to-many dependency",
+            "correct_answer": "B",
+            "explanation": "Observer defines a one-to-many dependency between subject and observers."
+        },
+        {
+            "question": "Which is an advantage of the Observer pattern?",
+            "option_a": "It guarantees observer notification order.",
+            "option_b": "It allows multiple objects to be updated automatically without modifying their classes.",
+            "option_c": "It tightly couples observers to the subject.",
+            "option_d": "It removes the need for state management in the subject.",
+            "correct_answer": "B",
+            "explanation": "Observer promotes loose coupling and automatic update propagation."
+        },
+        {
+            "question": "Where did the concept of design patterns originate before being adopted into software engineering?",
+            "option_a": "The Gang of Four invented it from scratch.",
+            "option_b": "It came from architectural design theory.",
+            "option_c": "It originated in database normalization techniques.",
+            "option_d": "It was created by UNIX developers.",
+            "correct_answer": "B",
+            "explanation": "Design patterns were inspired by architect Christopher Alexander’s work."
+        },
+        {
+            "question": "What is the main role of the 'Name' component in a design pattern?",
+            "option_a": "To describe programming code details.",
+            "option_b": "To provide a shared term that aids developer communication.",
+            "option_c": "To show UML diagram usage.",
+            "option_d": "To list required libraries.",
+            "correct_answer": "B",
+            "explanation": "The Name allows developers to reference the pattern easily during discussions."
+        },
+        {
+            "question": "Structural patterns primarily focus on:",
+            "option_a": "Object creation techniques.",
+            "option_b": "Object communication rules.",
+            "option_c": "Class and object composition into larger structures.",
+            "option_d": "Memory optimization.",
+            "correct_answer": "C",
+            "explanation": "Structural patterns describe how objects combine to form larger structures."
+        },
+        {
+            "question": "What is a key characteristic of a Singleton class's instance retrieval method?",
+            "option_a": "It creates new instances every time.",
+            "option_b": "It must be private.",
+            "option_c": "It returns the same instance each time.",
+            "option_d": "It requires passing an existing instance.",
+            "correct_answer": "C",
+            "explanation": "Singleton ensures every call retrieves the same global instance."
+        },
+        {
+            "question": "What is the core problem the Singleton pattern solves?",
+            "option_a": "Communicating updates to multiple objects.",
+            "option_b": "Ensuring only one instance of a class exists.",
+            "option_c": "Allowing interchangeable algorithms at runtime.",
+            "option_d": "Converting an interface to another interface.",
+            "correct_answer": "B",
+            "explanation": "Singleton ensures controlled, one-instance-only access."
+        },
+        {
+            "question": "How do observers receive updates from the subject?",
+            "option_a": "By polling the subject repeatedly.",
+            "option_b": "Through a callback method defined in the observer interface.",
+            "option_c": "By reading private internal state directly.",
+            "option_d": "By sharing the same memory pointer.",
+            "correct_answer": "B",
+            "explanation": "Observers implement an update() callback method invoked by the subject."
+        },
+        {
+            "question": "Why is the Gang of Four book significant?",
+            "option_a": "It introduced object-oriented programming.",
+            "option_b": "It formalized widely-known software design patterns.",
+            "option_c": "It defined UML notation.",
+            "option_d": "It created programming languages for design.",
+            "correct_answer": "B",
+            "explanation": "The GoF cataloged and standardized design pattern terminology and structure."
+        },
+        {
+            "question": "Which part of a pattern describes how its components interact?",
+            "option_a": "Name",
+            "option_b": "Problem",
+            "option_c": "Solution",
+            "option_d": "Consequences",
+            "correct_answer": "C",
+            "explanation": "The Solution explains the structure and relationships between pattern components."
+        },
+        {
+            "question": "Which pattern best applies to managing a shared printer spooler?",
+            "option_a": "Observer Pattern",
+            "option_b": "Strategy Pattern",
+            "option_c": "Singleton Pattern",
+            "option_d": "Adapter Pattern",
+            "correct_answer": "C",
+            "explanation": "Singleton provides a single shared access point to manage shared resources."
+        },
+        {
+            "question": "A subscriber receiving automatic newsletter updates without the publisher knowing its details demonstrates:",
+            "option_a": "Global access behavior of Singleton.",
+            "option_b": "Loose coupling from the Observer pattern.",
+            "option_c": "Factory abstraction of object creation.",
+            "option_d": "Encapsulation of Strategy selection.",
+            "correct_answer": "B",
+            "explanation": "Observer decouples subjects from the concrete details of observers."
+        },
+        {
+            "question": "Which is a documented drawback of the Observer pattern?",
+            "option_a": "It prevents extending the system.",
+            "option_b": "It can make notification ordering unpredictable.",
+            "option_c": "It disables dependency inversion.",
+            "option_d": "It forces all observers to react identically.",
+            "correct_answer": "B",
+            "explanation": "Observer does not define or guarantee notification order."
+        },
+        {
+            "question": "The 'Problem' section of a design pattern describes:",
+            "option_a": "How to code the solution.",
+            "option_b": "When and why the pattern should be applied.",
+            "option_c": "The performance of the pattern.",
+            "option_d": "Example system implementations.",
+            "correct_answer": "B",
+            "explanation": "The Problem explains the context and motivation for applying the pattern."
+        },
+        {
+            "question": "Which pattern category focuses on object creation?",
+            "option_a": "Behavioral",
+            "option_b": "Structural",
+            "option_c": "Creational",
+            "option_d": "Concurrency",
+            "correct_answer": "C",
+            "explanation": "Creational patterns deal with how objects are instantiated."
+        },
+        {
+            "question": "The idea that a pattern can be reused indefinitely without repeating the same implementation highlights that patterns are:",
+            "option_a": "Exact reusable code blocks.",
+            "option_b": "Rigid specifications.",
+            "option_c": "Reusable design templates.",
+            "option_d": "Optimization techniques.",
+            "correct_answer": "C",
+            "explanation": "Patterns are flexible templates that guide design decisions."
+        },
+        {
+            "question": "What does notifyObservers() do in the Observer pattern?",
+            "option_a": "Updates the subject's internal state.",
+            "option_b": "Registers a new observer.",
+            "option_c": "Calls update() on each registered observer.",
+            "option_d": "Removes all observers.",
+            "correct_answer": "C",
+            "explanation": "notifyObservers() loops through observers and invokes their update method."
+        }
+    ]
+}

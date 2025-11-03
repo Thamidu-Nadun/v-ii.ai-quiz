@@ -1,0 +1,193 @@
+{
+    "questions": [
+        {
+            "question": "In the SDLC, which phase follows the Feasibility Study and creates a document that serves as a contract between client and development team?",
+            "option_a": "A. System Design",
+            "option_b": "B. Implementation",
+            "option_c": "C. Requirements Gathering & Analysis",
+            "option_d": "D. Testing",
+            "correct_answer": "C",
+            "explanation": "The Requirements Gathering & Analysis phase produces the Software Requirements Specification (SRS) that formalizes client-developer agreements."
+        },
+        {
+            "question": "Which of the following factors should be considered during a feasibility study for a new software project?",
+            "option_a": "A. Technical Feasibility: Assessing team capability",
+            "option_b": "B. Economic Feasibility: Evaluating costs and benefits",
+            "option_c": "C. System Design: Creating UI mockups",
+            "option_d": "D. Legal Feasibility: Ensuring compliance with regulations",
+            "correct_answer": "A",
+            "explanation": "Feasibility studies assess technical, economic, and legal feasibility before proceeding with the project."
+        },
+        {
+            "question": "A stakeholder says: 'The system must allow a librarian to search for a book by its ISBN in less than 2 seconds.' How is this requirement classified?",
+            "option_a": "A. Functional Requirement",
+            "option_b": "B. Non-Functional Requirement",
+            "option_c": "C. Constraint",
+            "option_d": "D. Use Case",
+            "correct_answer": "B",
+            "explanation": "It specifies how the system should perform (speed), which makes it a non-functional requirement."
+        },
+        {
+            "question": "Which are advantages of Agile over the traditional Waterfall model?",
+            "option_a": "A. Adaptable to changing requirements",
+            "option_b": "B. Delivers working software after each iteration",
+            "option_c": "C. Requires fixed, unchanging requirements",
+            "option_d": "D. Emphasizes continuous customer collaboration",
+            "correct_answer": "A",
+            "explanation": "Agile focuses on adaptability, iteration, and collaboration, unlike Waterfall which assumes fixed requirements."
+        },
+        {
+            "question": "Who is primarily responsible for defining product features and prioritizing the Product Backlog in Scrum?",
+            "option_a": "A. Scrum Master",
+            "option_b": "B. Development Team",
+            "option_c": "C. Product Owner",
+            "option_d": "D. Stakeholder",
+            "correct_answer": "C",
+            "explanation": "The Product Owner defines and prioritizes features to maximize product value."
+        },
+        {
+            "question": "Which of the following are artifacts used in Scrum?",
+            "option_a": "A. Product Backlog",
+            "option_b": "B. Sprint Backlog",
+            "option_c": "C. Gantt Chart",
+            "option_d": "D. Burn Down Chart",
+            "correct_answer": "A",
+            "explanation": "Scrum uses Product Backlog, Sprint Backlog, and Burn Down Chart as artifacts."
+        },
+        {
+            "question": "In a Use Case Diagram, 'Checkout' always requires 'Validate User Account.' What relationship connects them?",
+            "option_a": "A. Extend",
+            "option_b": "B. Generalization",
+            "option_c": "C. Include",
+            "option_d": "D. Association",
+            "correct_answer": "C",
+            "explanation": "Include is used when one use case mandatorily incorporates another's behavior."
+        },
+        {
+            "question": "In a UML State Machine for a vending machine, which of the following are valid states?",
+            "option_a": "A. Idle",
+            "option_b": "B. Waiting for Selection",
+            "option_c": "C. Dispensing Item",
+            "option_d": "D. Out of Service",
+            "correct_answer": "A",
+            "explanation": "Idle, Waiting, Dispensing, and Out of Service represent valid machine states."
+        },
+        {
+            "question": "In an Activity Diagram, which notation represents concurrent flows starting from a single flow?",
+            "option_a": "A. Decision Node",
+            "option_b": "B. Merge Node",
+            "option_c": "C. Fork Node",
+            "option_d": "D. Join Node",
+            "correct_answer": "C",
+            "explanation": "A Fork Node splits a single flow into multiple concurrent activities."
+        },
+        {
+            "question": "In a Sequence Diagram for 'User Login', which can be shown as lifelines?",
+            "option_a": "A. :LoginPage",
+            "option_b": "B. :AuthService",
+            "option_c": "C. User (as Actor)",
+            "option_d": "D. :Database",
+            "correct_answer": "A",
+            "explanation": "Actors and system components such as pages, services, and databases can be lifelines."
+        },
+        {
+            "question": "In a Sequence Diagram, if an object waits for a response before continuing, the message type is:",
+            "option_a": "A. Asynchronous Message",
+            "option_b": "B. Synchronous Message",
+            "option_c": "C. Return Message",
+            "option_d": "D. Create Message",
+            "correct_answer": "B",
+            "explanation": "A synchronous message requires the sender to wait until the receiver responds."
+        },
+        {
+            "question": "Which of the following are primary activities of Configuration Management?",
+            "option_a": "A. Configuration Identification",
+            "option_b": "B. Configuration Control",
+            "option_c": "C. Configuration Status Accounting",
+            "option_d": "D. Configuration Auditing",
+            "correct_answer": "A",
+            "explanation": "Configuration Management focuses on identification, control, and status accounting."
+        },
+        {
+            "question": "The process ensuring controlled, low-risk changes to a software system is called:",
+            "option_a": "A. Risk Management",
+            "option_b": "B. Change Management",
+            "option_c": "C. Version Controlling",
+            "option_d": "D. Process Improvement",
+            "correct_answer": "B",
+            "explanation": "Change Management ensures controlled, traceable, and low-risk system modifications."
+        },
+        {
+            "question": "Which of the following are direct benefits of using Git (a Distributed Version Control System)?",
+            "option_a": "A. Offline work with full repository copy",
+            "option_b": "B. Branching and merging for parallel development",
+            "option_c": "C. Requires constant internet connection",
+            "option_d": "D. Complete history for rollback",
+            "correct_answer": "A",
+            "explanation": "DVCS systems like Git allow full offline access, branching, and history tracking."
+        },
+        {
+            "question": "The unexpected resignation of a lead developer is an example of which risk type?",
+            "option_a": "A. Technical Risk",
+            "option_b": "B. Schedule Risk",
+            "option_c": "C. Resource Risk",
+            "option_d": "D. Operational Risk",
+            "correct_answer": "C",
+            "explanation": "Loss of key personnel is categorized as a Resource Risk."
+        },
+        {
+            "question": "The primary goal of a Sprint Review is to:",
+            "option_a": "A. Plan the next sprint",
+            "option_b": "B. Inspect the increment and adapt the Product Backlog",
+            "option_c": "C. Conduct retrospectives",
+            "option_d": "D. Assign tasks",
+            "correct_answer": "B",
+            "explanation": "Sprint Review focuses on product inspection and backlog adaptation based on feedback."
+        },
+        {
+            "question": "Which statements describe the purpose and outcome of software testing?",
+            "option_a": "A. Testing proves absence of defects",
+            "option_b": "B. Testing finds errors through execution",
+            "option_c": "C. Ensures the software meets requirements",
+            "option_d": "D. Testing improves reliability and satisfaction",
+            "correct_answer": "B",
+            "explanation": "Testing identifies defects, validates requirements, and enhances reliability."
+        },
+        {
+            "question": "For an age field accepting values 18–65, which Boundary Value test set is appropriate?",
+            "option_a": "A. 0, 18, 50, 65, 100",
+            "option_b": "B. 17, 18, 19, 64, 65, 66",
+            "option_c": "C. 18, 65",
+            "option_d": "D. 10, 20, 30, 40",
+            "correct_answer": "B",
+            "explanation": "Boundary Value Analysis includes limits and just-inside/outside values."
+        },
+        {
+            "question": "Which of the following describe Black-Box Testing characteristics?",
+            "option_a": "A. Tests internal code structure",
+            "option_b": "B. Based on functionality",
+            "option_c": "C. No need to know internals",
+            "option_d": "D. Uses Equivalence Partitioning",
+            "correct_answer": "B",
+            "explanation": "Black-box testing focuses on input/output behavior without internal knowledge."
+        },
+        {
+            "question": "For 42 executed out of 50 statements, what is the Statement Coverage?",
+            "option_a": "A. 42%",
+            "option_b": "B. 50%",
+            "option_c": "C. 84%",
+            "option_d": "D. 92%",
+            "correct_answer": "C",
+            "explanation": "Coverage = (42/50) × 100 = 84%."
+        },
+        {
+            "question": "The Singleton Design Pattern is used to:",
+            "option_a": "A. Define interchangeable algorithms",
+            "option_b": "B. Notify multiple objects on state changes",
+            "option_c": "C. Ensure a class has only one instance",
+            "option_d": "D. Separate construction from representation",
+            "correct_answer": "C",
+            "explanation": "Singleton restricts class instantiation to a single shared instance."
+        }
+    ]
+}

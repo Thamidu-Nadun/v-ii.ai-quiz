@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best defines a design pattern?",
+            "option_a": "A. A proven solution to a common software design problem in a given context",
+            "option_b": "B. A ready-made algorithm for solving any coding issue",
+            "option_c": "C. A reusable template for recurring design challenges",
+            "option_d": "D. A detailed implementation for all problems",
+            "correct_answer": "A",
+            "explanation": "Design patterns are standardized, reusable solutions to common design problems that occur in software architecture within a specific context—not full implementations or universal algorithms."
+        },
+        {
+            "question": "Why are design patterns important in software development?",
+            "option_a": "A. They provide proven, reusable solutions",
+            "option_b": "B. They reduce design complexity",
+            "option_c": "C. They eliminate the need for design thinking",
+            "option_d": "D. They enhance communication among developers",
+            "correct_answer": "A",
+            "explanation": "Design patterns improve code quality by offering tested approaches, reduce complexity through abstraction, and serve as a shared vocabulary among developers—but they do not replace design thinking."
+        },
+        {
+            "question": "Who introduced the concept of design patterns to software engineering?",
+            "option_a": "A. Christopher Alexander",
+            "option_b": "B. Alan Turing",
+            "option_c": "C. The Gang of Four (GoF)",
+            "option_d": "D. James Gosling",
+            "correct_answer": "A",
+            "explanation": "Christopher Alexander pioneered the pattern concept in architecture; the Gang of Four (Gamma, Helm, Johnson, Vlissides) adapted it to software engineering in their seminal 1994 book."
+        },
+        {
+            "question": "Which of the following are key components of a design pattern?",
+            "option_a": "A. Name",
+            "option_b": "B. Problem",
+            "option_c": "C. Solution",
+            "option_d": "D. Consequences",
+            "correct_answer": "A",
+            "explanation": "A design pattern is typically described using four elements: Name (for identification), Problem (when to apply), Solution (structure/relationships), and Consequences (trade-offs)."
+        },
+        {
+            "question": "What does the ‘Name’ component of a design pattern represent?",
+            "option_a": "A. Identifies the pattern and helps communication",
+            "option_b": "B. Specifies the code implementation",
+            "option_c": "C. Describes the problem scenario",
+            "option_d": "D. Explains how to reuse the pattern",
+            "correct_answer": "A",
+            "explanation": "The name provides a shared vocabulary that allows developers to quickly refer to and discuss recurring solutions without explaining the entire structure each time."
+        },
+        {
+            "question": "Which statement best describes the ‘Problem’ component of a design pattern?",
+            "option_a": "A. Explains when to apply the pattern",
+            "option_b": "B. Specifies what issue the pattern solves",
+            "option_c": "C. Defines the relationships among classes",
+            "option_d": "D. Lists code dependencies",
+            "correct_answer": "A",
+            "explanation": "The Problem section describes the specific design challenge and contextual conditions under which the pattern is applicable."
+        },
+        {
+            "question": "Which classification deals with object creation?",
+            "option_a": "A. Creational",
+            "option_b": "B. Structural",
+            "option_c": "C. Behavioral",
+            "option_d": "D. Functional",
+            "correct_answer": "A",
+            "explanation": "Creational patterns (e.g., Singleton, Factory) focus on mechanisms for creating objects while increasing flexibility and reuse."
+        },
+        {
+            "question": "Which classification deals with how classes and objects are composed?",
+            "option_a": "A. Creational",
+            "option_b": "B. Structural",
+            "option_c": "C. Behavioral",
+            "option_d": "D. Sequential",
+            "correct_answer": "B",
+            "explanation": "Structural patterns (e.g., Adapter, Composite) concern the composition of classes or objects to form larger structures while maintaining flexibility and efficiency."
+        },
+        {
+            "question": "Which classification deals with communication among objects?",
+            "option_a": "A. Behavioral",
+            "option_b": "B. Structural",
+            "option_c": "C. Creational",
+            "option_d": "D. Logical",
+            "correct_answer": "A",
+            "explanation": "Behavioral patterns (e.g., Observer, Strategy) focus on how objects interact, distribute responsibility, and communicate."
+        },
+        {
+            "question": "Which of the following are Creational design patterns?",
+            "option_a": "A. Singleton",
+            "option_b": "B. Factory Method",
+            "option_c": "C. Builder",
+            "option_d": "D. Observer",
+            "correct_answer": "A",
+            "explanation": "Singleton, Factory Method, Builder, and Abstract Factory are all Creational patterns; Observer is a Behavioral pattern."
+        },
+        {
+            "question": "Which statement defines the Singleton Design Pattern?",
+            "option_a": "A. Ensures a class has only one instance",
+            "option_b": "B. Provides a global access point to that instance",
+            "option_c": "C. Allows multiple instances for performance",
+            "option_d": "D. Guarantees thread safety by default",
+            "correct_answer": "A",
+            "explanation": "The Singleton pattern restricts instantiation to one object and provides a global point of access to it, but thread safety must be explicitly implemented."
+        },
+        {
+            "question": "How is Singleton implemented in Java?",
+            "option_a": "A. Private constructor",
+            "option_b": "B. Static instance variable",
+            "option_c": "C. Public static getInstance() method",
+            "option_d": "D. Public constructors",
+            "correct_answer": "A",
+            "explanation": "A Java Singleton uses a private constructor to prevent external instantiation, a static variable to hold the single instance, and a static accessor method (e.g., getInstance())."
+        },
+        {
+            "question": "Which real-world scenarios represent Singleton?",
+            "option_a": "A. The President of a country",
+            "option_b": "B. Database connection pool",
+            "option_c": "C. File system manager",
+            "option_d": "D. Print spooler",
+            "correct_answer": "A",
+            "explanation": "Singletons model entities that must be unique in a system—e.g., a country has one president, a system typically has one file manager or print spooler."
+        },
+        {
+            "question": "Which are advantages of using the Singleton pattern?",
+            "option_a": "A. Saves memory by reusing a single instance",
+            "option_b": "B. Ensures centralized control of shared resources",
+            "option_c": "C. Simplifies testing",
+            "option_d": "D. Provides global access point",
+            "correct_answer": "A",
+            "explanation": "Singletons conserve resources and offer global access, but they often complicate testing due to global state and tight coupling."
+        },
+        {
+            "question": "Which are disadvantages of Singleton?",
+            "option_a": "A. Difficult to test due to global state",
+            "option_b": "B. Can lead to tight coupling",
+            "option_c": "C. Limits flexibility in large systems",
+            "option_d": "D. May lead to excessive use and poor design",
+            "correct_answer": "A",
+            "explanation": "Singletons introduce global state, reduce modularity, and can mask poor architectural choices if overused; thread safety is also a common pitfall."
+        },
+        {
+            "question": "Which statement defines the Observer Pattern?",
+            "option_a": "A. Defines one-to-many dependency between objects",
+            "option_b": "B. When one object changes state, dependents are notified automatically",
+            "option_c": "C. Defines how objects are instantiated",
+            "option_d": "D. Enables direct inheritance between objects",
+            "correct_answer": "A",
+            "explanation": "The Observer pattern establishes a subscription mechanism to notify multiple objects (observers) about state changes in a subject without tight coupling."
+        },
+        {
+            "question": "Which are core components of the Observer pattern?",
+            "option_a": "A. Subject",
+            "option_b": "B. Observer",
+            "option_c": "C. ConcreteSubject",
+            "option_d": "D. ConcreteObserver",
+            "correct_answer": "A",
+            "explanation": "The Observer pattern includes an abstract Subject (manages observers), Observer interface (defines update method), and their concrete implementations."
+        },
+        {
+            "question": "Which statements describe the Subject class in Observer pattern?",
+            "option_a": "A. Maintains a list of observers",
+            "option_b": "B. Provides methods to add/remove observers",
+            "option_c": "C. Notifies observers on state change",
+            "option_d": "D. Implements observer interface",
+            "correct_answer": "A",
+            "explanation": "The Subject manages observer registration and notifies them upon state changes; it does not implement the Observer interface—that’s the role of ConcreteObserver."
+        },
+        {
+            "question": "Which real-world system demonstrates the Observer pattern?",
+            "option_a": "A. Social media follower notifications",
+            "option_b": "B. Stock market updates",
+            "option_c": "C. Tsunami warning system",
+            "option_d": "D. Centralized logging system",
+            "correct_answer": "A",
+            "explanation": "In social media, users (observers) subscribe to posts or updates from accounts (subjects)—a classic one-to-many notification model matching the Observer pattern."
+        },
+        {
+            "question": "Which are advantages of the Observer pattern?",
+            "option_a": "A. Promotes loose coupling between objects",
+            "option_b": "B. Enables dynamic subscription and unsubscription",
+            "option_c": "C. Simplifies one-to-many communication",
+            "option_d": "D. Guarantees sequential update order",
+            "correct_answer": "A",
+            "explanation": "Observer decouples subjects from observers, supports runtime subscription changes, and streamlines broadcast communication—but does not guarantee update order."
+        }
+    ]
+}

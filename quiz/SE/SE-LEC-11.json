@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best defines Supportive Processes in Software Engineering?",
+            "option_a": "A. Processes performed only during the testing phase of development",
+            "option_b": "B. Processes that help maintain and improve core engineering activities to enhance efficiency and reliability",
+            "option_c": "C. Independent processes focused exclusively on hardware configuration",
+            "option_d": "D. Processes that replace the need for core development activities",
+            "correct_answer": "B",
+            "explanation": "Supportive Processes help maintain and improve core engineering activities, include configuration, change, and risk management, and aim to enhance efficiency and reliability throughout the software lifecycle."
+        },
+        {
+            "question": "According to ISO/IEC 12207, which are considered major Supportive Processes?",
+            "option_a": "A. Only Configuration Management and Quality Assurance",
+            "option_b": "B. Configuration Management, Quality Assurance, Verification and Validation, Documentation, and Risk Management",
+            "option_c": "C. Exclusively coding and testing activities",
+            "option_d": "D. Only deployment and maintenance processes",
+            "correct_answer": "B",
+            "explanation": "ISO/IEC 12207 defines Configuration Management, Quality Assurance, Verification and Validation, Documentation, and Risk Management as the major Supportive Processes."
+        },
+        {
+            "question": "What is the primary purpose of Configuration Management (CM)?",
+            "option_a": "A. Managing user access and authentication systems only",
+            "option_b": "B. Controlling and documenting changes while maintaining software artifacts and ensuring consistency throughout the lifecycle",
+            "option_c": "C. Focusing exclusively on source code compilation",
+            "option_d": "D. Automating deployment without documentation",
+            "correct_answer": "B",
+            "explanation": "Configuration Management involves controlling and documenting changes, identifying and organizing software artifacts, and ensuring product consistency throughout the entire lifecycle."
+        },
+        {
+            "question": "Which activities are fundamental to Configuration Management?",
+            "option_a": "A. Only test automation and deployment",
+            "option_b": "B. Configuration Identification, Control, Status Accounting, and Configuration Audits",
+            "option_c": "C. Exclusively user interface design and prototyping",
+            "option_d": "D. Only source code compilation and linking",
+            "correct_answer": "B",
+            "explanation": "The key activities in Configuration Management are Configuration Identification, Configuration Control, Status Accounting, and Configuration Audits, which ensure systematic management of software artifacts."
+        },
+        {
+            "question": "Which items are typically managed as Configuration Items (CIs)?",
+            "option_a": "A. Only executable binary files and compiled code",
+            "option_b": "B. Source code files, design documents, test plans, and project reports",
+            "option_c": "C. Exclusively deployment servers and hardware components",
+            "option_d": "D. Only user manuals and marketing materials",
+            "correct_answer": "B",
+            "explanation": "Configuration Items include source code files, design documents, test plans, and project reports—essentially any significant artifacts that need to be controlled and tracked throughout the project."
+        },
+        {
+            "question": "Which tools are commonly used for Configuration Management?",
+            "option_a": "A. Only integrated development environments (IDEs)",
+            "option_b": "B. Git, SVN (Subversion), Jira, and CVS",
+            "option_c": "C. Exclusively word processors and spreadsheet software",
+            "option_d": "D. Only database management systems",
+            "correct_answer": "B",
+            "explanation": "Git, SVN (Subversion), Jira, and CVS are widely used Configuration Management tools that help track changes, manage versions, and coordinate team collaboration."
+        },
+        {
+            "question": "What is the primary purpose of Configuration Control?",
+            "option_a": "A. To create new configurations automatically without human oversight",
+            "option_b": "B. To evaluate and approve changes, ensure only authorized modifications are implemented, and maintain baseline consistency",
+            "option_c": "C. To eliminate all documentation requirements",
+            "option_d": "D. To allow unrestricted access to all configuration items",
+            "correct_answer": "B",
+            "explanation": "Configuration Control evaluates and approves or rejects changes, ensures only authorized changes are implemented, maintains baseline consistency, and records every configuration item change."
+        },
+        {
+            "question": "What best defines Change Management in Software Engineering?",
+            "option_a": "A. An approach that applies only to hardware systems after deployment",
+            "option_b": "B. A systematic approach to handling modifications that records, assesses, and implements change requests while minimizing negative impact",
+            "option_c": "C. A process that occurs exclusively after system maintenance",
+            "option_d": "D. An informal process for making quick fixes without documentation",
+            "correct_answer": "B",
+            "explanation": "Change Management is a systematic approach to handling software modifications that focuses on minimizing negative impact and involves recording, assessing, and implementing change requests throughout the lifecycle."
+        },
+        {
+            "question": "What are the complete stages of the Change Management process?",
+            "option_a": "A. Only Change Request and Implementation",
+            "option_b": "B. Change Request, Impact Analysis, Approval and Planning, Implementation and Verification, and Closure and Documentation",
+            "option_c": "C. Only Testing and Deployment stages",
+            "option_d": "D. Exclusively Design and Coding phases",
+            "correct_answer": "B",
+            "explanation": "The complete Change Management process includes Change Request, Impact Analysis, Approval and Planning, Implementation and Verification, and finally Closure and Documentation."
+        },
+        {
+            "question": "What is the role of a Change Control Board (CCB)?",
+            "option_a": "A. To execute changes directly and update source code automatically",
+            "option_b": "B. To review and approve change requests, evaluate impact, and ensure alignment with project goals",
+            "option_c": "C. To write new code and develop features independently",
+            "option_d": "D. To replace project managers in decision-making",
+            "correct_answer": "B",
+            "explanation": "The Change Control Board (CCB) reviews and approves change requests, evaluates the impact of proposed changes, and ensures alignment with project goals, but does not execute changes directly."
+        },
+        {
+            "question": "Which types of Version Control Systems (VCS) exist?",
+            "option_a": "A. Only Centralized VCS",
+            "option_b": "B. Local VCS, Centralized VCS, and Distributed VCS",
+            "option_c": "C. Hierarchical VCS and Modular VCS only",
+            "option_d": "D. Exclusively cloud-based VCS",
+            "correct_answer": "B",
+            "explanation": "Version Control Systems are categorized into three types: Local VCS (stored locally), Centralized VCS (single server repository), and Distributed VCS (full repository copies on each client)."
+        },
+        {
+            "question": "What characterizes effective Risk Management in software projects?",
+            "option_a": "A. It applies only after system testing is completed",
+            "option_b": "B. It identifies potential threats early, analyzes and prioritizes risks, develops mitigation plans, and ensures proactive management of uncertainties",
+            "option_c": "C. It eliminates all documentation requirements",
+            "option_d": "D. It focuses exclusively on financial risks",
+            "correct_answer": "B",
+            "explanation": "Effective Risk Management identifies potential threats early, analyzes and prioritizes risks, develops mitigation and contingency plans, and ensures proactive management of uncertainties throughout the project."
+        },
+        {
+            "question": "Which categories of risks are typically identified in software projects?",
+            "option_a": "A. Only technical risks related to coding",
+            "option_b": "B. Technical risks, organizational risks, external risks, and project management risks",
+            "option_c": "C. Exclusively hardware-related risks",
+            "option_d": "D. Only risks related to user interface design",
+            "correct_answer": "B",
+            "explanation": "Software projects face multiple risk categories including technical risks, organizational risks, external risks, and project management risks, all of which need to be addressed systematically."
+        },
+        {
+            "question": "What activities constitute the Risk Management process?",
+            "option_a": "A. Only Risk Identification and documentation",
+            "option_b": "B. Risk Identification, Risk Analysis, Risk Mitigation, and Risk Monitoring",
+            "option_c": "C. Exclusively Risk Auditing activities",
+            "option_d": "D. Only post-deployment risk assessment",
+            "correct_answer": "B",
+            "explanation": "The Risk Management process includes Risk Identification, Risk Analysis, Risk Mitigation, and Risk Monitoring to systematically address potential threats throughout the project lifecycle."
+        },
+        {
+            "question": "What are the realistic benefits of effective Risk Management?",
+            "option_a": "A. It guarantees zero risks and eliminates all uncertainties",
+            "option_b": "B. It reduces uncertainty, improves decision-making, minimizes delays, and ensures resource optimization",
+            "option_c": "C. It eliminates the need for project planning",
+            "option_d": "D. It focuses only on cost reduction without quality considerations",
+            "correct_answer": "B",
+            "explanation": "Effective Risk Management reduces uncertainty, improves decision-making, minimizes project delays, and ensures resource optimization, but cannot guarantee zero risks as uncertainties are inherent in projects."
+        },
+        {
+            "question": "What defines Process Improvement in Software Engineering?",
+            "option_a": "A. A one-time activity performed only after development is complete",
+            "option_b": "B. Continuous enhancement of processes for better performance by identifying, analyzing, and implementing improvements to increase quality and productivity",
+            "option_c": "C. An approach based solely on testing outcomes",
+            "option_d": "D. A process that eliminates all documentation needs",
+            "correct_answer": "B",
+            "explanation": "Process Improvement is the continuous enhancement of processes for better performance, involving identification, analysis, and implementation of improvements aimed at increasing quality and productivity."
+        },
+        {
+            "question": "Which models and frameworks support Process Improvement initiatives?",
+            "option_a": "A. Only UML modeling language",
+            "option_b": "B. CMMI, ISO 9001, Agile Process Improvement, and Six Sigma",
+            "option_c": "C. Exclusively waterfall development models",
+            "option_d": "D. Only programming language frameworks",
+            "correct_answer": "B",
+            "explanation": "Process Improvement is supported by various models and frameworks including CMMI (Capability Maturity Model Integration), ISO 9001, Agile Process Improvement, and Six Sigma methodologies."
+        },
+        {
+            "question": "What are the primary benefits of implementing Process Improvement?",
+            "option_a": "A. It eliminates all documentation needs and reduces team communication",
+            "option_b": "B. It increases efficiency, improves customer satisfaction, reduces cost and time, and enhances product quality",
+            "option_c": "C. It focuses exclusively on reducing development time",
+            "option_d": "D. It replaces the need for testing activities",
+            "correct_answer": "B",
+            "explanation": "Process Improvement increases efficiency, improves customer satisfaction, reduces cost and time, and enhances product quality, though it does not eliminate the need for proper documentation."
+        },
+        {
+            "question": "What are the objectives of Training and Knowledge Transfer in software organizations?",
+            "option_a": "A. To limit team collaboration and reduce communication",
+            "option_b": "B. To improve employee competence, ensure continuity of expertise, facilitate new technology adoption, and support organizational learning",
+            "option_c": "C. To replace documentation with informal knowledge sharing",
+            "option_d": "D. To eliminate the need for process improvement",
+            "correct_answer": "B",
+            "explanation": "Training and Knowledge Transfer aim to improve employee competence, ensure continuity of expertise, facilitate new technology adoption, and support organizational learning across teams."
+        },
+        {
+            "question": "Which techniques are effective for Knowledge Transfer in software teams?",
+            "option_a": "A. Only version control automation without human interaction",
+            "option_b": "B. Documentation, mentorship, workshops and seminars, and pair programming",
+            "option_c": "C. Exclusively automated testing frameworks",
+            "option_d": "D. Only formal examinations and certifications",
+            "correct_answer": "B",
+            "explanation": "Effective Knowledge Transfer techniques include documentation, mentorship, workshops and seminars, and pair programming, which facilitate both explicit and tacit knowledge sharing among team members."
+        }
+    ]
+}

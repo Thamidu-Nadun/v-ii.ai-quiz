@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best describes the Strategy Pattern?",
+            "option_a": "A. Defines a family of algorithms and makes them interchangeable",
+            "option_b": "B. Allows algorithms to vary independently from clients that use them",
+            "option_c": "C. Used only for object creation",
+            "option_d": "D. Eliminates need for conditional statements",
+            "correct_answer": "A",
+            "explanation": "The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable, allowing the algorithm to vary independently from clients that use it. It also helps reduce conditional logic."
+        },
+        {
+            "question": "Which are key components of the Strategy Pattern?",
+            "option_a": "A. Context",
+            "option_b": "B. Strategy Interface",
+            "option_c": "C. Concrete Strategy",
+            "option_d": "D. Client",
+            "correct_answer": "A",
+            "explanation": "The Strategy Pattern consists of a Context that uses a Strategy interface, one or more Concrete Strategies that implement the interface, and a Client that configures the Context with a specific strategy."
+        },
+        {
+            "question": "What does the Context class in a Strategy Pattern do?",
+            "option_a": "A. Interacts with the client",
+            "option_b": "B. Holds a reference to a Strategy object",
+            "option_c": "C. Executes methods defined by the strategy",
+            "option_d": "D. Chooses which algorithm to run at runtime",
+            "correct_answer": "A",
+            "explanation": "The Context maintains a reference to a Strategy object, delegates algorithm execution to it, and serves as the interface between the client and the selected strategy."
+        },
+        {
+            "question": "Which is an example of the Strategy Pattern in real life?",
+            "option_a": "A. Payment methods in E-commerce",
+            "option_b": "B. Sorting algorithms",
+            "option_c": "C. Compression techniques",
+            "option_d": "D. Notification systems",
+            "correct_answer": "A",
+            "explanation": "E-commerce systems often use the Strategy Pattern to support multiple payment methods (e.g., credit card, PayPal), where each method is a concrete strategy that can be swapped at runtime."
+        },
+        {
+            "question": "What are the advantages of the Strategy Pattern?",
+            "option_a": "A. Eliminates large if–else statements",
+            "option_b": "B. Improves runtime flexibility",
+            "option_c": "C. Supports Open/Closed Principle",
+            "option_d": "D. Enhances code reusability",
+            "correct_answer": "A",
+            "explanation": "The Strategy Pattern reduces conditional complexity, allows behavior to be changed at runtime, adheres to the Open/Closed Principle, and promotes reusable, modular code."
+        },
+        {
+            "question": "Which are disadvantages of the Strategy Pattern?",
+            "option_a": "A. Increases number of classes",
+            "option_b": "B. Requires client awareness",
+            "option_c": "C. Adds runtime overhead",
+            "option_d": "D. Makes maintenance harder for small systems",
+            "correct_answer": "A",
+            "explanation": "The Strategy Pattern can lead to class proliferation and requires the client to understand which strategy to use, adding complexity that may not be justified in simple systems."
+        },
+        {
+            "question": "What does the Factory Pattern mainly focus on?",
+            "option_a": "A. Object creation",
+            "option_b": "B. Encapsulation of creation logic",
+            "option_c": "C. Simplifying object instantiation",
+            "option_d": "D. Managing object lifecycles",
+            "correct_answer": "A",
+            "explanation": "The Factory Pattern abstracts the process of object creation by encapsulating instantiation logic, allowing clients to create objects without specifying their exact classes."
+        },
+        {
+            "question": "Which statement best defines the Factory Pattern?",
+            "option_a": "A. Provides an interface for creating objects",
+            "option_b": "B. Lets subclasses decide which class to instantiate",
+            "option_c": "C. Centralizes object creation logic",
+            "option_d": "D. Allows runtime selection of object types",
+            "correct_answer": "A",
+            "explanation": "The Factory Pattern defines an interface for object creation but lets subclasses determine which class to instantiate, centralizing and abstracting the creation process."
+        },
+        {
+            "question": "Which are examples of Factory Pattern applications?",
+            "option_a": "A. Database connections (JDBC)",
+            "option_b": "B. GUI frameworks (Swing/Android)",
+            "option_c": "C. File parsers for different formats",
+            "option_d": "D. Game object creation",
+            "correct_answer": "A",
+            "explanation": "The Factory Pattern is commonly used in JDBC for database driver instantiation, GUI toolkits for widget creation, and game engines for spawning enemies or items dynamically."
+        },
+        {
+            "question": "What are the benefits of using the Factory Pattern?",
+            "option_a": "A. Hides object creation details",
+            "option_b": "B. Makes code more reusable",
+            "option_c": "C. Improves encapsulation",
+            "option_d": "D. Promotes loose coupling",
+            "correct_answer": "A",
+            "explanation": "By encapsulating instantiation logic, the Factory Pattern decouples client code from concrete classes, enhancing flexibility, maintainability, and reusability."
+        },
+        {
+            "question": "Which are disadvantages of the Factory Pattern?",
+            "option_a": "A. Adds extra classes",
+            "option_b": "B. May increase design complexity",
+            "option_c": "C. May cause 'factory explosion'",
+            "option_d": "D. Requires subclassing for every object",
+            "correct_answer": "A",
+            "explanation": "Overusing factories can lead to excessive abstraction, class clutter, and maintenance overhead, especially when many similar factories are needed."
+        },
+        {
+            "question": "What is the Decorator Pattern primarily used for?",
+            "option_a": "A. Attaching new behavior to objects at runtime",
+            "option_b": "B. Wrapping objects dynamically without altering base class",
+            "option_c": "C. Replacing inheritance with composition",
+            "option_d": "D. Centralizing object creation",
+            "correct_answer": "A",
+            "explanation": "The Decorator Pattern dynamically adds responsibilities to an object by wrapping it with decorator classes that implement the same interface, favoring composition over inheritance."
+        },
+        {
+            "question": "Which statements define the Decorator Pattern structure?",
+            "option_a": "A. Uses component and decorator interfaces",
+            "option_b": "B. Decorators implement the same interface as the component",
+            "option_c": "C. Multiple decorators can be combined",
+            "option_d": "D. Decorators extend a base decorator class",
+            "correct_answer": "A",
+            "explanation": "The Decorator Pattern relies on a shared interface between the base component and decorators, allowing decorators to wrap components or other decorators recursively."
+        },
+        {
+            "question": "Which real-world scenario represents the Decorator Pattern?",
+            "option_a": "A. Coffee ordering with add-ons (milk, sugar, cream)",
+            "option_b": "B. Text editor adding features like spell check or grammar check",
+            "option_c": "C. GUI elements adding scrollbars and borders",
+            "option_d": "D. Adding armor to a game character dynamically",
+            "correct_answer": "A",
+            "explanation": "In each case, functionality is added incrementally by wrapping a base object (e.g., coffee, editor window, character) with layers of decorators, demonstrating runtime extensibility."
+        },
+        {
+            "question": "What are the main advantages of the Decorator Pattern?",
+            "option_a": "A. Adds behavior dynamically at runtime",
+            "option_b": "B. Avoids subclass explosion",
+            "option_c": "C. Enhances flexibility and reusability",
+            "option_d": "D. Supports combining multiple decorators",
+            "correct_answer": "A",
+            "explanation": "Instead of creating a subclass for every feature combination, the Decorator Pattern combines behaviors at runtime, offering greater flexibility and reduced code duplication."
+        },
+        {
+            "question": "Which are disadvantages of the Decorator Pattern?",
+            "option_a": "A. Increases number of objects and classes",
+            "option_b": "B. Makes debugging difficult",
+            "option_c": "C. May overcomplicate simple designs",
+            "option_d": "D. May cause performance overhead",
+            "correct_answer": "A",
+            "explanation": "The indirection introduced by multiple wrapper layers can obscure object identity, complicate debugging, and affect performance in resource-constrained environments."
+        },
+        {
+            "question": "Which UML elements are common across Strategy, Factory, and Decorator patterns?",
+            "option_a": "A. Interfaces",
+            "option_b": "B. Concrete Classes",
+            "option_c": "C. Client",
+            "option_d": "D. Inheritance relationships",
+            "correct_answer": "A",
+            "explanation": "All three patterns rely on interfaces (or abstract classes), concrete implementations, client interaction, and inheritance/composition to achieve polymorphism and decoupling."
+        },
+        {
+            "question": "How do Strategy and Decorator patterns differ?",
+            "option_a": "A. Strategy changes behavior by switching algorithms",
+            "option_b": "B. Decorator changes behavior by wrapping objects",
+            "option_c": "C. Decorator adds behavior while maintaining interface consistency",
+            "option_d": "D. Strategy replaces entire algorithm logic",
+            "correct_answer": "A",
+            "explanation": "Strategy swaps out whole algorithms via polymorphism, while Decorator incrementally augments an object’s behavior through layered composition, preserving the same interface."
+        },
+        {
+            "question": "What design principle do all these patterns support?",
+            "option_a": "A. Open/Closed Principle",
+            "option_b": "B. Single Responsibility Principle",
+            "option_c": "C. Encapsulation",
+            "option_d": "D. Composition over inheritance",
+            "correct_answer": "A",
+            "explanation": "All three patterns enable systems to be open for extension (new strategies, factories, or decorators) but closed for modification of existing client code."
+        },
+        {
+            "question": "Which patterns from this lecture are Creational, Structural, and Behavioral respectively?",
+            "option_a": "A. Factory – Creational",
+            "option_b": "B. Decorator – Structural",
+            "option_c": "C. Strategy – Behavioral",
+            "option_d": "D. Adapter – Creational",
+            "correct_answer": "A",
+            "explanation": "Factory is a Creational pattern (object creation), Decorator is Structural (composing objects), and Strategy is Behavioral (managing algorithms and responsibilities)."
+        }
+    ]
+}

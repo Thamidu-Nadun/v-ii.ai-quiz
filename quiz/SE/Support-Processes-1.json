@@ -1,0 +1,220 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of Support Processes in software engineering?",
+            "option_a": "To directly produce the final software product.",
+            "option_b": "To support, control, and improve main development activities.",
+            "option_c": "To replace the need for quality assurance teams.",
+            "option_d": "To automate customer communication.",
+            "correct_answer": "B",
+            "explanation": "Support processes improve the development workflow and ensure consistency and quality."
+        },
+        {
+            "question": "Which standard is commonly used to define software support processes?",
+            "option_a": "IEEE 802.11",
+            "option_b": "ISO/IEC 12207",
+            "option_c": "PCI-DSS",
+            "option_d": "TCP/IP",
+            "correct_answer": "B",
+            "explanation": "ISO/IEC 12207 defines software life cycle processes including support processes."
+        },
+        {
+            "question": "Configuration Management primarily focuses on:",
+            "option_a": "Designing new user interfaces.",
+            "option_b": "Controlling and tracking changes to software artifacts.",
+            "option_c": "Implementing encryption systems.",
+            "option_d": "Managing customer support tickets.",
+            "correct_answer": "B",
+            "explanation": "CM is about controlling and recording changes in code and related artifacts."
+        },
+        {
+            "question": "Which activity ensures that the software product matches approved change records?",
+            "option_a": "Configuration Identification",
+            "option_b": "Configuration Control",
+            "option_c": "Configuration Audit",
+            "option_d": "Status Accounting",
+            "correct_answer": "C",
+            "explanation": "Configuration audits verify that the final product reflects approved and documented changes."
+        },
+        {
+            "question": "In Configuration Management, Status Accounting is responsible for:",
+            "option_a": "Analyzing system performance.",
+            "option_b": "Recording changes, versions, and modification history.",
+            "option_c": "Approving change requests.",
+            "option_d": "Writing code documentation.",
+            "correct_answer": "B",
+            "explanation": "Status accounting maintains change records and version logs."
+        },
+        {
+            "question": "What is the first step in Change Management?",
+            "option_a": "Approval by the CCB",
+            "option_b": "Impact Analysis",
+            "option_c": "Initiation through a Change Request",
+            "option_d": "Verification",
+            "correct_answer": "C",
+            "explanation": "Change Management begins when a stakeholder submits a Change Request."
+        },
+        {
+            "question": "During Impact Analysis in Change Management, teams evaluate:",
+            "option_a": "Only the testing scope.",
+            "option_b": "The visual design of the interface.",
+            "option_c": "Cost, schedule, and risk implications.",
+            "option_d": "Deployment procedures only.",
+            "correct_answer": "C",
+            "explanation": "Impact analysis determines how the change will affect resources and schedule."
+        },
+        {
+            "question": "Who typically has the authority to approve or reject changes?",
+            "option_a": "The customer only",
+            "option_b": "The system architect",
+            "option_c": "The Change Control Board (CCB)",
+            "option_d": "Any developer",
+            "correct_answer": "C",
+            "explanation": "The CCB reviews and approves change requests based on feasibility and priority."
+        },
+        {
+            "question": "Which tool is commonly used for tracking change requests?",
+            "option_a": "Adobe Photoshop",
+            "option_b": "Jira",
+            "option_c": "Blender",
+            "option_d": "Wireshark",
+            "correct_answer": "B",
+            "explanation": "Jira is widely used for issue and change tracking."
+        },
+        {
+            "question": "Version Control allows developers to:",
+            "option_a": "Automatically optimize performance.",
+            "option_b": "Store and manage changes to files over time.",
+            "option_c": "Remove the need for testing.",
+            "option_d": "Avoid documentation.",
+            "correct_answer": "B",
+            "explanation": "Version Control tracks and manages updates to digital files."
+        },
+        {
+            "question": "Which version control model gives every user a full copy of the repository?",
+            "option_a": "Local",
+            "option_b": "Centralized",
+            "option_c": "Distributed",
+            "option_d": "Hybrid",
+            "correct_answer": "C",
+            "explanation": "Distributed systems like Git provide full repository copies to each user."
+        },
+        {
+            "question": "In Git, the Staging Area represents:",
+            "option_a": "Files permanently stored in the repository.",
+            "option_b": "Files selected and prepared for the next commit.",
+            "option_c": "Files deleted from the project.",
+            "option_d": "Files sent to the remote server.",
+            "correct_answer": "B",
+            "explanation": "The Staging Area holds files ready to be committed."
+        },
+        {
+            "question": "Which Git command records changes permanently into the repository?",
+            "option_a": "git init",
+            "option_b": "git add",
+            "option_c": "git commit",
+            "option_d": "git status",
+            "correct_answer": "C",
+            "explanation": "git commit stores staged changes into the repository history."
+        },
+        {
+            "question": "Risk Management is important because:",
+            "option_a": "It guarantees zero defects.",
+            "option_b": "It identifies and reduces project uncertainties.",
+            "option_c": "It completely replaces testing.",
+            "option_d": "It avoids version control entirely.",
+            "correct_answer": "B",
+            "explanation": "Risk Management anticipates and mitigates problems before they impact success."
+        },
+        {
+            "question": "Which is an example of a Schedule Risk?",
+            "option_a": "Developer resigns unexpectedly",
+            "option_b": "New framework becomes incompatible",
+            "option_c": "Testing time was underestimated",
+            "option_d": "No encryption used in login system",
+            "correct_answer": "C",
+            "explanation": "Underestimating testing duration causes timeline delays, which is a schedule risk."
+        },
+        {
+            "question": "Scope Creep refers to:",
+            "option_a": "Reducing project requirements for cost-saving.",
+            "option_b": "Client adding features beyond the agreed scope.",
+            "option_c": "Developers reducing code complexity.",
+            "option_d": "Team members leaving the project.",
+            "correct_answer": "B",
+            "explanation": "Scope creep occurs when new requirements are added without timeline/cost adjustments."
+        },
+        {
+            "question": "Which model is widely used for structured process improvement?",
+            "option_a": "Agile Standup Model",
+            "option_b": "CMMI",
+            "option_c": "Kanban Board",
+            "option_d": "OSPF Model",
+            "correct_answer": "B",
+            "explanation": "CMMI provides maturity levels to guide structured process improvement."
+        },
+        {
+            "question": "Process Improvement helps organizations achieve:",
+            "option_a": "More defects and faster release cycles.",
+            "option_b": "Higher quality and reduced rework over time.",
+            "option_c": "Elimination of documentation requirements.",
+            "option_d": "Removal of testing activities.",
+            "correct_answer": "B",
+            "explanation": "Improving processes leads to better quality and efficiency."
+        },
+        {
+            "question": "Training focuses on:",
+            "option_a": "Sharing only existing knowledge.",
+            "option_b": "Building new skills or competencies.",
+            "option_c": "Recording configuration changes.",
+            "option_d": "Closing change requests.",
+            "correct_answer": "B",
+            "explanation": "Training aims to build new abilities in team members."
+        },
+        {
+            "question": "Knowledge Transfer focuses on:",
+            "option_a": "Developing brand new skills.",
+            "option_b": "Sharing existing system or project knowledge.",
+            "option_c": "Testing changes before release.",
+            "option_d": "Reducing documentation.",
+            "correct_answer": "B",
+            "explanation": "KT shares knowledge already known by experienced team members."
+        },
+        {
+            "question": "Which method allows a new team member to observe an experienced one?",
+            "option_a": "Documentation Review",
+            "option_b": "Shadowing",
+            "option_c": "Reverse Shadowing",
+            "option_d": "Repository Cloning",
+            "correct_answer": "B",
+            "explanation": "Shadowing means observing a skilled team member perform tasks."
+        },
+        {
+            "question": "Reverse Shadowing means:",
+            "option_a": "Expert does the work while trainee observes.",
+            "option_b": "Trainee performs tasks under expert supervision.",
+            "option_c": "A manager reviews code commits.",
+            "option_d": "Developers exchange branch histories.",
+            "correct_answer": "B",
+            "explanation": "In reverse shadowing, the trainee performs tasks while the expert observes."
+        },
+        {
+            "question": "Which is a benefit of effective Knowledge Transfer?",
+            "option_a": "Loss of critical system knowledge.",
+            "option_b": "Higher dependency on single individuals.",
+            "option_c": "Smoother onboarding and continuity.",
+            "option_d": "Increased project risk.",
+            "correct_answer": "C",
+            "explanation": "KT ensures continuity by spreading knowledge across team members."
+        },
+        {
+            "question": "Which support process helps prevent project failure by planning for uncertain events?",
+            "option_a": "Training",
+            "option_b": "Version Control",
+            "option_c": "Risk Management",
+            "option_d": "Status Accounting",
+            "correct_answer": "C",
+            "explanation": "Risk Management prepares for threats before they disrupt the project."
+        }
+    ]
+}

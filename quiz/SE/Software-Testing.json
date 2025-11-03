@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What is one core purpose of software testing, as explained in the lecture?",
+            "option_a": "To prove that the software has no defects.",
+            "option_b": "To evaluate the software against its requirements and user needs.",
+            "option_c": "To greatly increase development speed.",
+            "option_d": "To eliminate all errors permanently.",
+            "correct_answer": "B",
+            "explanation": "Testing evaluates whether software meets requirements and user needs; it does not prove the absence of bugs."
+        },
+        {
+            "question": "Which activity is considered Verification?",
+            "option_a": "User acceptance testing to check suitability.",
+            "option_b": "Reviewing a design document against specifications.",
+            "option_c": "Running software to ensure user-friendliness.",
+            "option_d": "Executing a feature to check behavior.",
+            "correct_answer": "B",
+            "explanation": "Verification checks documents and designs without running the software."
+        },
+        {
+            "question": "Which is an example of Non-Functional Testing?",
+            "option_a": "Checking if an item can be added to the cart.",
+            "option_b": "Testing performance under 10,000 simultaneous checkouts.",
+            "option_c": "Checking coupon discount logic.",
+            "option_d": "Verifying item category filters.",
+            "correct_answer": "B",
+            "explanation": "Performance testing is non-functional because it evaluates system behavior under load."
+        },
+        {
+            "question": "Black-box testing focuses primarily on:",
+            "option_a": "Internal code logic.",
+            "option_b": "Inputs and expected outputs.",
+            "option_c": "Branch coverage.",
+            "option_d": "Execution paths.",
+            "correct_answer": "B",
+            "explanation": "Black-box testing is based on observable input/output behavior without seeing internal code."
+        },
+        {
+            "question": "What is the main idea of Equivalence Partitioning?",
+            "option_a": "Testing every possible input.",
+            "option_b": "Grouping inputs that should be treated the same by the system.",
+            "option_c": "Measuring execution performance.",
+            "option_d": "Tracing branch coverage.",
+            "correct_answer": "B",
+            "explanation": "Equivalence Partitioning reduces test cases by grouping similar expected behaviors."
+        },
+        {
+            "question": "Which is a White-Box testing technique?",
+            "option_a": "Boundary Value Analysis",
+            "option_b": "Statement Coverage",
+            "option_c": "Usability Testing",
+            "option_d": "Compatibility Testing",
+            "correct_answer": "B",
+            "explanation": "Statement coverage tests whether each statement in the code is executed at least once."
+        },
+        {
+            "question": "Which element must be included in a test case?",
+            "option_a": "Developer's name",
+            "option_b": "Test steps to be followed",
+            "option_c": "Project budget",
+            "option_d": "Marketing approval",
+            "correct_answer": "B",
+            "explanation": "Test steps are required so the test can be executed consistently."
+        },
+        {
+            "question": "Which test type focuses on system performance and response time?",
+            "option_a": "System Testing",
+            "option_b": "Functional Testing",
+            "option_c": "Non-Functional Testing",
+            "option_d": "Unit Testing",
+            "correct_answer": "C",
+            "explanation": "Performance evaluation falls under Non-Functional testing."
+        },
+        {
+            "question": "What does the quote by Dijkstra imply about testing?",
+            "option_a": "Testing proves software is bug-free.",
+            "option_b": "Testing is unnecessary for reliable systems.",
+            "option_c": "Testing can reveal bugs but cannot prove their absence.",
+            "option_d": "Testing guarantees correct software operation.",
+            "correct_answer": "C",
+            "explanation": "Testing finds bugs, but it cannot ensure none exist."
+        },
+        {
+            "question": "Which is part of the Testing Process?",
+            "option_a": "Writing project contracts",
+            "option_b": "Designing test cases",
+            "option_c": "Creating advertisements",
+            "option_d": "Writing system manuals",
+            "correct_answer": "B",
+            "explanation": "Test case design is a core testing phase."
+        },
+        {
+            "question": "Validation seeks to answer which question?",
+            "option_a": "\"Are we building the product right?\"",
+            "option_b": "\"Does the product meet user needs?\"",
+            "option_c": "\"Does the code conform to standards?\"",
+            "option_d": "\"Was the architecture followed?\"",
+            "correct_answer": "B",
+            "explanation": "Validation ensures the product is appropriate for user needs."
+        },
+        {
+            "question": "For a valid age range of 21 to 65, which values are used in Boundary Value Analysis?",
+            "option_a": "30 only",
+            "option_b": "20, 21, 22 and 64, 65, 66",
+            "option_c": "All ages between 0 and 100",
+            "option_d": "Only 21 and 65",
+            "correct_answer": "B",
+            "explanation": "Boundary testing evaluates values just below, at, and just above limits."
+        },
+        {
+            "question": "Which is a Functional Testing level?",
+            "option_a": "Performance Testing",
+            "option_b": "Unit Testing",
+            "option_c": "Security Testing",
+            "option_d": "Load Testing",
+            "correct_answer": "B",
+            "explanation": "Unit testing is a functional testing level focusing on components."
+        },
+        {
+            "question": "100% Statement Coverage means:",
+            "option_a": "All bugs are removed.",
+            "option_b": "All possible execution paths are tested.",
+            "option_c": "Every line of code has been executed at least once.",
+            "option_d": "Both true and false branches have been taken.",
+            "correct_answer": "C",
+            "explanation": "Statement coverage ensures all statements executed once, not all paths."
+        },
+        {
+            "question": "In SDLC, testing is shown as:",
+            "option_a": "Part of development only",
+            "option_b": "A standalone phase after development",
+            "option_c": "Optional",
+            "option_d": "Performed only during maintenance",
+            "correct_answer": "B",
+            "explanation": "Testing appears as a distinct phase after development."
+        },
+        {
+            "question": "The Heathrow Terminal 5 failure occurred because the system was not tested under:",
+            "option_a": "Multiple languages",
+            "option_b": "Real operational load",
+            "option_c": "Low battery conditions",
+            "option_d": "Different input forms",
+            "correct_answer": "B",
+            "explanation": "The system failed under real-world load conditions."
+        },
+        {
+            "question": "White-Box testing focuses on:",
+            "option_a": "User workflows",
+            "option_b": "Code structure and internal logic",
+            "option_c": "Overall system behavior",
+            "option_d": "External requirements only",
+            "correct_answer": "B",
+            "explanation": "White-box testing examines logic inside the code."
+        },
+        {
+            "question": "Which testing level focuses on component interaction?",
+            "option_a": "Unit Testing",
+            "option_b": "Integration Testing",
+            "option_c": "System Testing",
+            "option_d": "Acceptance Testing",
+            "correct_answer": "B",
+            "explanation": "Integration testing ensures components work together."
+        },
+        {
+            "question": "Branch Coverage aims to:",
+            "option_a": "Execute all statements",
+            "option_b": "Execute each decision outcome at least once",
+            "option_c": "Test every data input value",
+            "option_d": "Ensure maximum GUI stability",
+            "correct_answer": "B",
+            "explanation": "Branch coverage tests true and false outcomes of decisions."
+        },
+        {
+            "question": "Which is a static method that does not run the program?",
+            "option_a": "Validation",
+            "option_b": "Performance Testing",
+            "option_c": "Verification",
+            "option_d": "System Testing",
+            "correct_answer": "C",
+            "explanation": "Verification checks work products without executing code."
+        },
+        {
+            "question": "Testing how easy a system is to learn and use is called:",
+            "option_a": "Security Testing",
+            "option_b": "Compatibility Testing",
+            "option_c": "Usability Testing",
+            "option_d": "Volume Testing",
+            "correct_answer": "C",
+            "explanation": "Usability testing measures ease of use."
+        },
+        {
+            "question": "The definition of software testing as 'executing a program to find errors' is attributed to:",
+            "option_a": "Dijkstra",
+            "option_b": "Myers",
+            "option_c": "IEEE",
+            "option_d": "NIST",
+            "correct_answer": "B",
+            "explanation": "Myers (1979) defined testing as running software to find errors."
+        },
+        {
+            "question": "Which testing determines if a system is ready for customer use?",
+            "option_a": "Unit Testing",
+            "option_b": "Integration Testing",
+            "option_c": "System Testing",
+            "option_d": "Acceptance Testing",
+            "correct_answer": "D",
+            "explanation": "Acceptance testing ensures system readiness for users."
+        },
+        {
+            "question": "The purpose of Equivalence Partitioning is to:",
+            "option_a": "Verify UI layout",
+            "option_b": "Reduce the number of test cases",
+            "option_c": "Maximize performance",
+            "option_d": "Ensure 100% coverage",
+            "correct_answer": "B",
+            "explanation": "EP minimizes testing effort by grouping similar inputs."
+        },
+        {
+            "question": "In testing, 'Test Data' refers to:",
+            "option_a": "Expected outcomes",
+            "option_b": "Conditions required",
+            "option_c": "The input values used in the test",
+            "option_d": "Execution steps",
+            "correct_answer": "C",
+            "explanation": "Test Data consists of the actual input values used."
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following are valid types of maintenance activities in the SDLC maintenance phase?",
+            "option_a": "A. Corrective Maintenance - fixing bugs found after deployment",
+            "option_b": "B. Adaptive Maintenance - updating software to work in new environments",
+            "option_c": "C. Perfective Maintenance - adding new features or enhancing performance",
+            "option_d": "D. Preventive Maintenance - refactoring code to prevent future issues",
+            "correct_answer": "A",
+            "explanation": "Corrective, Adaptive, and Perfective maintenance are classic SDLC maintenance categories."
+        },
+        {
+            "question": "In UML State Machine Diagrams, which statements correctly describe transitions and their elements?",
+            "option_a": "A. A transition must have a source state and a target state",
+            "option_b": "B. Self-transitions cause the state to be exited and re-entered, executing exit and entry actions",
+            "option_c": "C. Guard conditions on transitions are mandatory elements",
+            "option_d": "D. A trigger is the event that causes the transition to occur",
+            "correct_answer": "D",
+            "explanation": "Transitions have source/target, optional guards, and triggers that cause transitions."
+        },
+        {
+            "question": "According to the Gang of Four design patterns classification, which patterns belong to the Creational category?",
+            "option_a": "A. Singleton Pattern",
+            "option_b": "B. Observer Pattern",
+            "option_c": "C. Factory Pattern",
+            "option_d": "D. Decorator Pattern",
+            "correct_answer": "A",
+            "explanation": "Singleton and Factory are creational; Observer and Decorator belong to other pattern types."
+        },
+        {
+            "question": "In Scrum methodology, which activities are part of the Sprint cycle?",
+            "option_a": "A. Sprint Planning - defining sprint goals and selecting backlog items",
+            "option_b": "B. Daily Scrum - 15-minute stand-up to discuss progress and obstacles",
+            "option_c": "C. Sprint Review - demonstrating completed work to stakeholders",
+            "option_d": "D. Sprint Retrospective - reflecting on process improvements",
+            "correct_answer": "A",
+            "explanation": "Core Scrum events include planning, daily scrum, review, and retrospective."
+        },
+        {
+            "question": "Which of the following are valid stereotypes for objects in UML Sequence Diagrams?",
+            "option_a": "A. Boundary Objects - objects at the system boundary that actors interact with",
+            "option_b": "B. Control Objects - objects that control and coordinate other objects",
+            "option_c": "C. Entity Objects - objects representing information and behavior in the application domain",
+            "option_d": "D. Service Objects - objects exposing web services",
+            "correct_answer": "A",
+            "explanation": "Boundary, Control, and Entity are standard UML stereotypes used in analysis and design."
+        },
+        {
+            "question": "In software testing using Boundary Value Analysis, which test values should be selected for an input field accepting numbers from 10 to 100?",
+            "option_a": "A. 9 (just below lower boundary)",
+            "option_b": "B. 10 (lower boundary)",
+            "option_c": "C. 55 (middle value)",
+            "option_d": "D. 100 (upper boundary)",
+            "correct_answer": "A",
+            "explanation": "Boundary Value Analysis includes values just below and above the boundaries."
+        },
+        {
+            "question": "Which of the following are recognized drawbacks of the Waterfall Model?",
+            "option_a": "A. No working software is produced until late in the cycle",
+            "option_b": "B. Changes are difficult and costly once a phase is completed",
+            "option_c": "C. Testing occurs late, making early defect detection difficult",
+            "option_d": "D. Customer sees the product only after full development",
+            "correct_answer": "A",
+            "explanation": "The Waterfall model’s main drawbacks are rigidity and late validation."
+        },
+        {
+            "question": "In Use Case Diagrams, which relationships are correctly matched with their descriptions?",
+            "option_a": "A. Association - indicates an actor participates in a use case",
+            "option_b": "B. Include - base use case explicitly incorporates another use case's behavior",
+            "option_c": "C. Extend - adds optional behavior at extension points",
+            "option_d": "D. Generalization - child inherits behavior from parent",
+            "correct_answer": "A",
+            "explanation": "Association, Include, Extend, and Generalization are valid use case relationships."
+        },
+        {
+            "question": "Which statements correctly describe characteristics of the Observer Design Pattern?",
+            "option_a": "A. It defines a one-to-many dependency between objects",
+            "option_b": "B. When the subject changes state, all observers are notified",
+            "option_c": "C. Observers can subscribe and unsubscribe at runtime",
+            "option_d": "D. The subject maintains a list of registered observers",
+            "correct_answer": "A",
+            "explanation": "Observer defines one-to-many relationships, enabling updates to observers automatically."
+        },
+        {
+            "question": "In Activity Diagrams, which statements about control flow elements are accurate?",
+            "option_a": "A. A fork creates multiple concurrent flows from one",
+            "option_b": "B. A join synchronizes multiple flows back into one",
+            "option_c": "C. Decision nodes require guard conditions for each branch",
+            "option_d": "D. Merge nodes combine flows from decision branches",
+            "correct_answer": "A",
+            "explanation": "Forks, joins, and decisions structure control flow in activity diagrams."
+        },
+        {
+            "question": "In the requirements gathering phase, which technique involves observing users performing their daily work?",
+            "option_a": "A. Interviews",
+            "option_b": "B. Questionnaires",
+            "option_c": "C. Document Analysis",
+            "option_d": "D. Observations",
+            "correct_answer": "D",
+            "explanation": "Observation reveals user challenges by studying real-world task performance."
+        },
+        {
+            "question": "What is the primary purpose of a feasibility study before starting a project?",
+            "option_a": "A. To write detailed technical specifications",
+            "option_b": "B. To determine if the project should proceed based on technical, economic, and legal factors",
+            "option_c": "C. To create the project schedule",
+            "option_d": "D. To recruit the development team",
+            "correct_answer": "B",
+            "explanation": "Feasibility studies assess whether the project is viable in all critical aspects."
+        },
+        {
+            "question": "In the V-Model, what testing corresponds to the Requirements phase?",
+            "option_a": "A. Unit Testing",
+            "option_b": "B. Integration Testing",
+            "option_c": "C. System Testing",
+            "option_d": "D. Acceptance Testing",
+            "correct_answer": "D",
+            "explanation": "Acceptance testing verifies requirements from the customer’s perspective."
+        },
+        {
+            "question": "What distinguishes the Iterative Waterfall Model from the traditional one?",
+            "option_a": "A. It eliminates the testing phase",
+            "option_b": "B. It allows feedback and revisions between phases",
+            "option_c": "C. It uses sprints instead of phases",
+            "option_d": "D. It completes all phases simultaneously",
+            "correct_answer": "B",
+            "explanation": "Iterative Waterfall permits backward movement between phases for refinement."
+        },
+        {
+            "question": "In Agile User Stories, what does the 'So that' clause represent?",
+            "option_a": "A. The user role requesting the feature",
+            "option_b": "B. The specific action or goal",
+            "option_c": "C. The benefit or value delivered to the user",
+            "option_d": "D. The acceptance criteria for the story",
+            "correct_answer": "C",
+            "explanation": "The 'So that' clause expresses the business value or user benefit."
+        },
+        {
+            "question": "What is the main difference between functional and non-functional requirements?",
+            "option_a": "A. Functional defines what the system does; non-functional defines how it performs",
+            "option_b": "B. Functional are always more important",
+            "option_c": "C. Non-functional only deals with interface design",
+            "option_d": "D. Functional cannot be tested",
+            "correct_answer": "A",
+            "explanation": "Functional describes system behavior; non-functional covers performance and constraints."
+        },
+        {
+            "question": "In UML Sequence Diagrams, what does the REF fragment represent?",
+            "option_a": "A. A loop fragment",
+            "option_b": "B. A conditional alternative flow",
+            "option_c": "C. A reference to another diagram to manage complexity",
+            "option_d": "D. A parallel execution fragment",
+            "correct_answer": "C",
+            "explanation": "REF fragments reference other interactions for modular and simpler diagrams."
+        },
+        {
+            "question": "What is the purpose of the guard condition in a LOOP fragment of a Sequence Diagram?",
+            "option_a": "A. To define when the loop should terminate",
+            "option_b": "B. To specify involved actors",
+            "option_c": "C. To prevent unauthorized access",
+            "option_d": "D. To set execution priority",
+            "correct_answer": "A",
+            "explanation": "Guard conditions define loop continuation or termination criteria."
+        },
+        {
+            "question": "In State Machine Diagrams, what symbol represents the initial state?",
+            "option_a": "A. A circle with a dot inside",
+            "option_b": "B. A filled black circle",
+            "option_c": "C. A rounded rectangle",
+            "option_d": "D. A diamond shape",
+            "correct_answer": "B",
+            "explanation": "The filled black circle marks the initial state in UML state diagrams."
+        },
+        {
+            "question": "Which of the following best describes a 'miracle state' in State Machine Diagrams?",
+            "option_a": "A. A state with outgoing transitions but none incoming",
+            "option_b": "B. A state with complex internal behavior",
+            "option_c": "C. A state that resolves errors automatically",
+            "option_d": "D. A state that processes data extremely fast",
+            "correct_answer": "A",
+            "explanation": "A miracle state is unreachable except from start and has only outgoing transitions."
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best describes the Strategy design pattern?",
+            "option_a": "It is a creational pattern used for object construction.",
+            "option_b": "It defines a family of algorithms and allows them to be interchangeable.",
+            "option_c": "It is used to dynamically attach responsibilities to objects.",
+            "option_d": "It centralizes object creation logic for clients.",
+            "correct_answer": "B",
+            "explanation": "The Strategy pattern defines a family of algorithms and allows switching them without modifying client code."
+        },
+        {
+            "question": "Which component is part of the Strategy pattern?",
+            "option_a": "Factory Class",
+            "option_b": "Context Class",
+            "option_c": "Decorator Class",
+            "option_d": "Adapter Class",
+            "correct_answer": "B",
+            "explanation": "The Context stores a reference to a Strategy and calls it when needed."
+        },
+        {
+            "question": "Which is an advantage of the Strategy pattern?",
+            "option_a": "It hides object construction from the client.",
+            "option_b": "It makes adding new algorithm variations easy by creating new strategy classes.",
+            "option_c": "It dynamically adds responsibilities to objects.",
+            "option_d": "It reduces the number of classes in a system.",
+            "correct_answer": "B",
+            "explanation": "Strategy allows extending behavior by adding new strategy classes without modifying existing code."
+        },
+        {
+            "question": "What problem does the Factory pattern mainly solve?",
+            "option_a": "Choosing algorithms at runtime.",
+            "option_b": "Dynamically adding behavior to objects.",
+            "option_c": "Hiding object creation logic from the client.",
+            "option_d": "Reducing if-else conditionals in method calls.",
+            "correct_answer": "C",
+            "explanation": "The Factory pattern encapsulates object creation so the client doesn't directly instantiate concrete classes."
+        },
+        {
+            "question": "What is a key characteristic of the Decorator pattern?",
+            "option_a": "It replaces existing classes entirely.",
+            "option_b": "It attaches additional behavior to objects dynamically.",
+            "option_c": "It selects algorithms dynamically.",
+            "option_d": "It centralizes object creation.",
+            "correct_answer": "B",
+            "explanation": "Decorator adds new behavior to objects at runtime by wrapping them."
+        },
+        {
+            "question": "Which is a disadvantage of the Strategy pattern?",
+            "option_a": "It requires modifying the original class.",
+            "option_b": "Clients must know and choose which strategy to use.",
+            "option_c": "It prevents behavior from changing at runtime.",
+            "option_d": "It eliminates the need for interfaces.",
+            "correct_answer": "B",
+            "explanation": "Clients must be aware of available strategies to pick the appropriate one."
+        },
+        {
+            "question": "Which component is part of the Factory pattern?",
+            "option_a": "Decorator Class",
+            "option_b": "Strategy Interface",
+            "option_c": "Product Interface",
+            "option_d": "Context Class",
+            "correct_answer": "C",
+            "explanation": "The Factory pattern relies on a common product interface implemented by concrete products."
+        },
+        {
+            "question": "When is the Decorator pattern most useful?",
+            "option_a": "When selecting between multiple interchangeable algorithms.",
+            "option_b": "When adding features to objects without using subclassing.",
+            "option_c": "When creating complex objects with many parameters.",
+            "option_d": "When preventing object modification at runtime.",
+            "correct_answer": "B",
+            "explanation": "Decorator lets you add behavior to objects without altering their base classes."
+        },
+        {
+            "question": "Which is an advantage of the Factory pattern?",
+            "option_a": "It allows algorithm changes at runtime.",
+            "option_b": "It hides complex object creation details from the client.",
+            "option_c": "It dynamically attaches behavior to objects.",
+            "option_d": "It ensures only one instance of a class exists.",
+            "correct_answer": "B",
+            "explanation": "Factory centralizes and hides object creation from the client."
+        },
+        {
+            "question": "What design problem does the Strategy pattern address?",
+            "option_a": "Dynamic object wrapping for additional features.",
+            "option_b": "Selecting behavior using long conditional logic.",
+            "option_c": "Creating families of related objects.",
+            "option_d": "Sharing global state between objects.",
+            "correct_answer": "B",
+            "explanation": "Strategy replaces long if-else chains by selecting behaviors via interchangeable strategy classes."
+        },
+        {
+            "question": "Which is a required step in implementing a Factory pattern?",
+            "option_a": "Define a Strategy interface.",
+            "option_b": "Create concrete classes implementing the product interface.",
+            "option_c": "Wrap the original object in a decorator.",
+            "option_d": "Select behaviors at runtime.",
+            "correct_answer": "B",
+            "explanation": "Concrete products must implement the product interface for the factory to return them."
+        },
+        {
+            "question": "Which is a real-world use case of the Decorator pattern?",
+            "option_a": "Selecting payment methods at runtime.",
+            "option_b": "Adding scrollbars to a window UI component.",
+            "option_c": "Deciding which class to instantiate based on input.",
+            "option_d": "Choosing sorting strategies.",
+            "correct_answer": "B",
+            "explanation": "UI frameworks use decorators to wrap visual components with extra features like scrollbars or borders."
+        },
+        {
+            "question": "A disadvantage of the Decorator pattern is:",
+            "option_a": "It prevents dynamic behavior changes.",
+            "option_b": "It can result in many small wrapper classes.",
+            "option_c": "It requires rewriting the original class.",
+            "option_d": "It forces the client to construct strategy objects.",
+            "correct_answer": "B",
+            "explanation": "Decorators often result in many small classes, making design more complex."
+        },
+        {
+            "question": "In the Strategy pattern, the Context is responsible for:",
+            "option_a": "Implementing the algorithm.",
+            "option_b": "Selecting which algorithm to run.",
+            "option_c": "Holding a reference to the strategy and delegating calls.",
+            "option_d": "Creating product objects.",
+            "correct_answer": "C",
+            "explanation": "The Context stores the Strategy and forwards requests to it."
+        },
+        {
+            "question": "What is the main intent of the Strategy pattern?",
+            "option_a": "Attach responsibilities to an object dynamically.",
+            "option_b": "Define and interchange a family of algorithms.",
+            "option_c": "Centralize object construction logic.",
+            "option_d": "Share data across all instances.",
+            "correct_answer": "B",
+            "explanation": "Strategy encapsulates related algorithms and allows them to be swapped easily."
+        },
+        {
+            "question": "Which component does the client interact with in the Factory pattern?",
+            "option_a": "Concrete Product",
+            "option_b": "Factory Class",
+            "option_c": "Decorator Class",
+            "option_d": "Context Class",
+            "correct_answer": "B",
+            "explanation": "The client requests objects from the factory rather than creating them directly."
+        },
+        {
+            "question": "How does the Decorator add new behavior?",
+            "option_a": "By modifying the original class.",
+            "option_b": "By creating subclasses for every feature combination.",
+            "option_c": "By wrapping an object and delegating to it.",
+            "option_d": "By replacing the algorithm at runtime.",
+            "correct_answer": "C",
+            "explanation": "Decorator wraps objects and delegates calls, adding behavior before or after."
+        },
+        {
+            "question": "A key advantage of the Strategy pattern is:",
+            "option_a": "Runtime swapping of algorithms.",
+            "option_b": "Centralizing object creation.",
+            "option_c": "Removing the need for interfaces.",
+            "option_d": "Reducing the total class count.",
+            "correct_answer": "A",
+            "explanation": "Strategy supports changing behavior dynamically at runtime."
+        },
+        {
+            "question": "Which is a disadvantage of the Factory pattern?",
+            "option_a": "It creates many small decorator classes.",
+            "option_b": "It requires clients to choose algorithms manually.",
+            "option_c": "It may result in many factory classes if not managed carefully.",
+            "option_d": "It prevents subclassing.",
+            "correct_answer": "C",
+            "explanation": "\"Factory explosion\" can occur when many types require separate factory logic."
+        },
+        {
+            "question": "The Decorator pattern belongs to which category?",
+            "option_a": "Creational",
+            "option_b": "Structural",
+            "option_c": "Behavioral",
+            "option_d": "Concurrency",
+            "correct_answer": "B",
+            "explanation": "Decorator modifies object structure by wrapping objects."
+        },
+        {
+            "question": "The Factory pattern strongly supports which SOLID principle?",
+            "option_a": "Single Responsibility Principle",
+            "option_b": "Open/Closed Principle",
+            "option_c": "Dependency Inversion Principle",
+            "option_d": "Interface Segregation Principle",
+            "correct_answer": "B",
+            "explanation": "Factory allows extending product types without modifying existing client code."
+        },
+        {
+            "question": "In the Strategy pattern, the interface common to all algorithms is called:",
+            "option_a": "Context",
+            "option_b": "Factory",
+            "option_c": "Strategy",
+            "option_d": "Decorator",
+            "correct_answer": "C",
+            "explanation": "All concrete strategies implement the Strategy interface."
+        },
+        {
+            "question": "Which pattern should be used to choose between ZIP, RAR, or TAR compression algorithms at runtime?",
+            "option_a": "Factory Pattern",
+            "option_b": "Strategy Pattern",
+            "option_c": "Decorator Pattern",
+            "option_d": "Adapter Pattern",
+            "correct_answer": "B",
+            "explanation": "Selecting an algorithm at runtime is the essence of Strategy."
+        },
+        {
+            "question": "In the coffee example, what is the role of the CoffeeDecorator?",
+            "option_a": "The base coffee implementation.",
+            "option_b": "The interface for all coffee objects.",
+            "option_c": "An abstract decorator holding a reference to the wrapped object.",
+            "option_d": "The client code assembling beverages.",
+            "correct_answer": "C",
+            "explanation": "The CoffeeDecorator wraps a Coffee object and extends behavior."
+        },
+        {
+            "question": "The Factory pattern promotes loose coupling by:",
+            "option_a": "Notifying objects of changes automatically.",
+            "option_b": "Ensuring only one instance exists.",
+            "option_c": "Allowing subclasses to alter object creation.",
+            "option_d": "Making client code depend on interfaces rather than concrete classes.",
+            "correct_answer": "D",
+            "explanation": "Factory hides concrete classes from the client, depending only on interfaces."
+        }
+    ]
+}
