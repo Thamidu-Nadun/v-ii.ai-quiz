@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes a Use Case Diagram?",
+            "option_a": "A. Graphical representation of system functionality",
+            "option_b": "B. Captures non-functional requirements",
+            "option_c": "C. Shows interaction between system and external entities",
+            "option_d": "D. Used only in coding phase",
+            "correct_answer": "A",
+            "explanation": "A Use Case Diagram graphically represents system functionality and interactions between the system and external actors."
+        },
+        {
+            "question": "What are the four basic components of a Use Case Diagram?",
+            "option_a": "A. System",
+            "option_b": "B. Actors",
+            "option_c": "C. Use Cases",
+            "option_d": "D. Relationships",
+            "correct_answer": "A",
+            "explanation": "A Use Case Diagram consists of the system boundary, actors, use cases, and the relationships between them."
+        },
+        {
+            "question": "Which statement correctly defines a System Boundary?",
+            "option_a": "A. Separates system from external environment",
+            "option_b": "B. Includes only external users",
+            "option_c": "C. Defines hardware configuration",
+            "option_d": "D. Represents the scope of the system",
+            "correct_answer": "A",
+            "explanation": "The system boundary distinguishes what is inside the system (use cases) from what lies outside (actors)."
+        },
+        {
+            "question": "What do Actors represent in Use Case Diagrams?",
+            "option_a": "A. Roles interacting with the system",
+            "option_b": "B. External hardware or systems",
+            "option_c": "C. Developers of the system",
+            "option_d": "D. Human users or other systems",
+            "correct_answer": "A",
+            "explanation": "Actors represent roles such as users or external systems that interact with the system being modeled."
+        },
+        {
+            "question": "Which are valid examples of actors in a Hotel Management System?",
+            "option_a": "A. Guest",
+            "option_b": "B. Receptionist",
+            "option_c": "C. Manager",
+            "option_d": "D. Housekeeping Staff",
+            "correct_answer": "A",
+            "explanation": "Guests, receptionists, managers, and housekeeping staff are all roles that interact with the hotel system as actors."
+        },
+        {
+            "question": "What does an Association relationship indicate in Use Case Diagrams?",
+            "option_a": "A. Actor participates in a use case",
+            "option_b": "B. One actor inherits behavior from another",
+            "option_c": "C. One use case includes another",
+            "option_d": "D. Communication link between actor and use case",
+            "correct_answer": "D",
+            "explanation": "An association shows the communication link between an actor and a use case in UML."
+        },
+        {
+            "question": "What is true about Actor Generalization?",
+            "option_a": "A. A child actor inherits parent behavior",
+            "option_b": "B. Child actor can add or override parent behavior",
+            "option_c": "C. It defines associations between actors",
+            "option_d": "D. Used to represent multiple similar roles",
+            "correct_answer": "A",
+            "explanation": "Actor generalization allows a child actor to inherit all the interactions of its parent actor."
+        },
+        {
+            "question": "Which of the following are true for Include relationships?",
+            "option_a": "A. Common behavior is reused across use cases",
+            "option_b": "B. Included use case cannot exist independently",
+            "option_c": "C. Include adds optional behavior",
+            "option_d": "D. Represented by <<include>>",
+            "correct_answer": "A",
+            "explanation": "Include relationships capture reusable functionality that can be invoked by multiple use cases."
+        },
+        {
+            "question": "Which of the following describe Extend relationships?",
+            "option_a": "A. Optional behavior added to base use case",
+            "option_b": "B. Extension occurs under certain conditions",
+            "option_c": "C. The base use case cannot stand alone",
+            "option_d": "D. Represented by <<extend>>",
+            "correct_answer": "A",
+            "explanation": "Extend relationships add optional or conditional behavior that extends a base use case when certain conditions are met."
+        },
+        {
+            "question": "Which statement is true about Use Case Generalization?",
+            "option_a": "A. Child use case inherits parent behavior",
+            "option_b": "B. Parent defines common functionality",
+            "option_c": "C. Used when multiple use cases share a base logic",
+            "option_d": "D. Represented using inheritance arrow",
+            "correct_answer": "A",
+            "explanation": "In use case generalization, a child use case inherits and specializes the behavior of a parent use case."
+        },
+        {
+            "question": "Which statements correctly describe a Use Case Scenario?",
+            "option_a": "A. Describes sequence of interactions for a use case instance",
+            "option_b": "B. Includes main and alternate flows",
+            "option_c": "C. Defines specific event flow between actors and system",
+            "option_d": "D. Excludes exceptional cases",
+            "correct_answer": "A",
+            "explanation": "A use case scenario narratively describes the step-by-step interaction sequence for one instance of a use case."
+        },
+        {
+            "question": "What information is part of a Use Case Template?",
+            "option_a": "A. Use case ID and name",
+            "option_b": "B. Goal in context",
+            "option_c": "C. Pre-conditions",
+            "option_d": "D. Primary and Secondary Actors",
+            "correct_answer": "A",
+            "explanation": "A typical use case template includes an ID, name, goal, preconditions, and involved actors."
+        },
+        {
+            "question": "What are the common sections of a Use Case Specification?",
+            "option_a": "A. Summary",
+            "option_b": "B. Preconditions",
+            "option_c": "C. Main scenario steps",
+            "option_d": "D. Extensions (alternative paths)",
+            "correct_answer": "A",
+            "explanation": "Use case specifications often include summary, preconditions, main and alternate flows, and postconditions."
+        },
+        {
+            "question": "Which of the following describe a Main Scenario flow?",
+            "option_a": "A. Steps executed when everything goes right",
+            "option_b": "B. Describes success path",
+            "option_c": "C. Includes errors and exceptions",
+            "option_d": "D. Sequential system-user actions",
+            "correct_answer": "A",
+            "explanation": "A main scenario flow represents the primary success path of interaction between actor and system."
+        },
+        {
+            "question": "Which are true about Extensions in a Use Case Scenario?",
+            "option_a": "A. Describe alternative flows",
+            "option_b": "B. Represent exceptional conditions",
+            "option_c": "C. Triggered by external or internal conditions",
+            "option_d": "D. Replace main flow permanently",
+            "correct_answer": "A",
+            "explanation": "Extensions define alternative or exceptional flows that occur under specific conditions."
+        },
+        {
+            "question": "Which of the following are benefits of using Use Case Diagrams in Requirements Engineering?",
+            "option_a": "A. Easy communication with stakeholders",
+            "option_b": "B. Represents what the system will do",
+            "option_c": "C. Avoids technical jargon",
+            "option_d": "D. Captures functional requirements visually",
+            "correct_answer": "A",
+            "explanation": "Use case diagrams facilitate communication between stakeholders by visually capturing system functionality."
+        },
+        {
+            "question": "Which is a correct example of an Include relationship?",
+            "option_a": "A. Validate user in Withdraw Money use case",
+            "option_b": "B. Check account balance in Transfer Funds",
+            "option_c": "C. Print receipt in Deposit Money",
+            "option_d": "D. User registration in Attend Workshop",
+            "correct_answer": "A",
+            "explanation": "‘Validate user’ is a common functionality reused by multiple banking use cases, representing an include relationship."
+        },
+        {
+            "question": "Which is an example of an Extend relationship?",
+            "option_a": "A. Perform visa check if student is foreign",
+            "option_b": "B. Suggest add item if not found in library search",
+            "option_c": "C. Validate member when borrowing book",
+            "option_d": "D. Calculate fine if overdue",
+            "correct_answer": "A",
+            "explanation": "Optional behavior such as performing a visa check applies only under specific conditions, representing an extend relationship."
+        },
+        {
+            "question": "Which of the following are examples of Use Case Generalization?",
+            "option_a": "A. Make Payment → Pay via PayPal",
+            "option_b": "B. Make Payment → Pay via Credit Card",
+            "option_c": "C. Make Payment → Pay via EFT",
+            "option_d": "D. Calculate Bill → Generate Report",
+            "correct_answer": "A",
+            "explanation": "Different payment methods inherit the base functionality of the 'Make Payment' use case, indicating generalization."
+        },
+        {
+            "question": "Which questions help identify use cases for an actor?",
+            "option_a": "A. What tasks does the actor perform?",
+            "option_b": "B. Does the actor modify data in the system?",
+            "option_c": "C. What functions can the actor access?",
+            "option_d": "D. What UI layout is used?",
+            "correct_answer": "A",
+            "explanation": "To identify use cases, analysts focus on the tasks and goals the actor performs within the system context."
+        }
+    ]
+}

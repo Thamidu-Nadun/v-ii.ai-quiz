@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following is a key characteristic of software engineering?",
+            "option_a": "A. Reliability",
+            "option_b": "B. Ad hoc coding",
+            "option_c": "C. Manual deployment",
+            "option_d": "D. Lack of structure",
+            "correct_answer": "A",
+            "explanation": "Reliability ensures that the software performs its intended function consistently, which is a key goal of software engineering."
+        },
+        {
+            "question": "Which of the following best explains the main reason behind the Software Crisis?",
+            "option_a": "A. Lack of proper engineering practices",
+            "option_b": "B. Excellent planning",
+            "option_c": "C. Use of reusable code",
+            "option_d": "D. Manual testing only",
+            "correct_answer": "A",
+            "explanation": "The software crisis was caused by the absence of systematic engineering practices, leading to poor-quality and delayed projects."
+        },
+        {
+            "question": "Which of the following is a major phase of the Software Development Life Cycle (SDLC)?",
+            "option_a": "A. Debugging",
+            "option_b": "B. System design",
+            "option_c": "C. Random testing",
+            "option_d": "D. Code reuse",
+            "correct_answer": "B",
+            "explanation": "System design defines the architecture and structure of a software solution, making it a core SDLC phase."
+        },
+        {
+            "question": "Why is SDLC important for software projects?",
+            "option_a": "A. It helps meet user needs and reduces risks.",
+            "option_b": "B. It avoids planning and documentation.",
+            "option_c": "C. It focuses only on coding.",
+            "option_d": "D. It removes testing needs.",
+            "correct_answer": "A",
+            "explanation": "SDLC provides structure, ensuring user needs are met while reducing risks, costs, and time."
+        },
+        {
+            "question": "Which type of feasibility checks if the system can be developed with available technology?",
+            "option_a": "A. Economic feasibility",
+            "option_b": "B. Operational feasibility",
+            "option_c": "C. Technical feasibility",
+            "option_d": "D. Schedule feasibility",
+            "correct_answer": "C",
+            "explanation": "Technical feasibility assesses whether the current technology and resources can support the project."
+        },
+        {
+            "question": "Which question is answered by a feasibility study?",
+            "option_a": "A. Is it technically possible?",
+            "option_b": "B. Who should design the system?",
+            "option_c": "C. What is the best algorithm?",
+            "option_d": "D. Which programming language is most popular?",
+            "correct_answer": "A",
+            "explanation": "Feasibility studies determine if a system is technically, financially, and operationally possible before development begins."
+        },
+        {
+            "question": "Which of the following is a functional requirement?",
+            "option_a": "A. User login system",
+            "option_b": "B. Performance speed",
+            "option_c": "C. Security level",
+            "option_d": "D. Maintainability",
+            "correct_answer": "A",
+            "explanation": "A user login system defines what the software should do, making it a functional requirement."
+        },
+        {
+            "question": "Which of the following is a non-functional requirement?",
+            "option_a": "A. Security",
+            "option_b": "B. User registration",
+            "option_c": "C. Payment processing",
+            "option_d": "D. Attendance marking",
+            "correct_answer": "A",
+            "explanation": "Security is a non-functional requirement that describes system quality rather than specific behavior."
+        },
+        {
+            "question": "Who among the following is considered a stakeholder in a school management system?",
+            "option_a": "A. Teachers",
+            "option_b": "B. Hackers",
+            "option_c": "C. Competitors",
+            "option_d": "D. Testers",
+            "correct_answer": "A",
+            "explanation": "Teachers directly use or are affected by the system, making them key stakeholders."
+        },
+        {
+            "question": "Which is a common technique for requirement gathering?",
+            "option_a": "A. Interviews",
+            "option_b": "B. Code reviews",
+            "option_c": "C. Random sampling",
+            "option_d": "D. Security testing",
+            "correct_answer": "A",
+            "explanation": "Interviews help analysts directly collect detailed user needs and expectations."
+        },
+        {
+            "question": "Which is considered a best practice in requirements gathering?",
+            "option_a": "A. Validate requirements with stakeholders",
+            "option_b": "B. Ignore non-functional needs",
+            "option_c": "C. Use ambiguous terms",
+            "option_d": "D. Avoid traceability",
+            "correct_answer": "A",
+            "explanation": "Validating requirements ensures accuracy and stakeholder agreement before design and implementation."
+        },
+        {
+            "question": "Which of the following is a common mistake during requirement gathering?",
+            "option_a": "A. Guessing stakeholder needs",
+            "option_b": "B. Conducting walkthroughs",
+            "option_c": "C. Prioritizing requirements",
+            "option_d": "D. Using clear language",
+            "correct_answer": "A",
+            "explanation": "Assuming or guessing stakeholder needs often leads to incorrect or incomplete requirements."
+        },
+        {
+            "question": "Which activity typically occurs during system design?",
+            "option_a": "A. Creating UI layouts",
+            "option_b": "B. Writing code",
+            "option_c": "C. Performing unit testing",
+            "option_d": "D. User training",
+            "correct_answer": "A",
+            "explanation": "UI layout design is part of system design, which defines how the system will look and behave."
+        },
+        {
+            "question": "Which practice is correct during the implementation phase?",
+            "option_a": "A. Follow coding standards",
+            "option_b": "B. Write all code without testing",
+            "option_c": "C. Avoid documentation",
+            "option_d": "D. Skip integration",
+            "correct_answer": "A",
+            "explanation": "Following coding standards ensures code quality, readability, and maintainability."
+        },
+        {
+            "question": "Which type of testing verifies that individual components work correctly?",
+            "option_a": "A. System testing",
+            "option_b": "B. Unit testing",
+            "option_c": "C. Regression testing",
+            "option_d": "D. Acceptance testing",
+            "correct_answer": "B",
+            "explanation": "Unit testing checks the smallest units of code to ensure they function as intended before integration."
+        },
+        {
+            "question": "Which is a key activity in the deployment phase?",
+            "option_a": "A. Installing software in production",
+            "option_b": "B. Writing source code",
+            "option_c": "C. Debugging local modules",
+            "option_d": "D. Conducting interviews",
+            "correct_answer": "A",
+            "explanation": "Deployment involves installing the software into the live environment for user access."
+        },
+        {
+            "question": "Which of the following is a valid type of software maintenance?",
+            "option_a": "A. Corrective",
+            "option_b": "B. Destructive",
+            "option_c": "C. Manual",
+            "option_d": "D. Random",
+            "correct_answer": "A",
+            "explanation": "Corrective maintenance involves fixing defects discovered after software deployment."
+        },
+        {
+            "question": "Which principle is emphasized in software engineering ethics?",
+            "option_a": "A. Fairness",
+            "option_b": "B. Profit maximization",
+            "option_c": "C. Self-interest",
+            "option_d": "D. Marketing focus",
+            "correct_answer": "A",
+            "explanation": "Fairness ensures software engineers act responsibly and justly toward clients and users."
+        },
+        {
+            "question": "Which organization provides a code of ethics for software engineers?",
+            "option_a": "A. IEEE",
+            "option_b": "B. WHO",
+            "option_c": "C. UNESCO",
+            "option_d": "D. FDA",
+            "correct_answer": "A",
+            "explanation": "The IEEE, along with ACM, provides ethical guidelines for professional software engineers."
+        },
+        {
+            "question": "In an ethical dilemma where management asks to release buggy software, what should you do?",
+            "option_a": "A. Ensure public interest and safety",
+            "option_b": "B. Release the software anyway",
+            "option_c": "C. Ignore the issue",
+            "option_d": "D. Prioritize company deadlines over ethics",
+            "correct_answer": "A",
+            "explanation": "Software engineers must prioritize public safety and ethical standards over management pressure."
+        }
+    ]
+}

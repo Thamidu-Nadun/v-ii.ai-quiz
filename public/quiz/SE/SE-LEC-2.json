@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes a Software Process Model?",
+            "option_a": "A. A method defining how SDLC phases are executed",
+            "option_b": "B. A tool for automatic coding",
+            "option_c": "C. A guideline for project budgeting",
+            "option_d": "D. A testing automation framework",
+            "correct_answer": "A",
+            "explanation": "A software process model defines how SDLC phases are organized and executed to build a software product."
+        },
+        {
+            "question": "What differentiates SDLC from Software Process Models?",
+            "option_a": "A. SDLC defines what phases to follow",
+            "option_b": "B. Process models define how to execute those phases",
+            "option_c": "C. SDLC is used only for agile projects",
+            "option_d": "D. They are identical concepts",
+            "correct_answer": "B",
+            "explanation": "SDLC defines the phases of development, while process models describe how those phases are performed."
+        },
+        {
+            "question": "Which of the following is a traditional software process model?",
+            "option_a": "A. Waterfall",
+            "option_b": "B. Agile",
+            "option_c": "C. Prototype",
+            "option_d": "D. DevOps",
+            "correct_answer": "A",
+            "explanation": "The Waterfall model is a traditional, linear software process model used before modern agile methods."
+        },
+        {
+            "question": "Which is a key feature of the Waterfall Model?",
+            "option_a": "A. Linear step-by-step process",
+            "option_b": "B. Allows frequent feedback",
+            "option_c": "C. Highly flexible to changes",
+            "option_d": "D. Uses incremental delivery",
+            "correct_answer": "A",
+            "explanation": "The Waterfall model follows a linear sequence where each phase must be completed before the next begins."
+        },
+        {
+            "question": "Which scenario is most suitable for using the Waterfall Model?",
+            "option_a": "A. Payroll system with fixed requirements",
+            "option_b": "B. Rapidly changing e-commerce system",
+            "option_c": "C. Research prototype with uncertain needs",
+            "option_d": "D. Experimental AI model",
+            "correct_answer": "A",
+            "explanation": "The Waterfall model is suitable when requirements are clear, stable, and unlikely to change."
+        },
+        {
+            "question": "What improvement does the Iterative Waterfall Model bring over the classic one?",
+            "option_a": "A. Allows returning to previous phases",
+            "option_b": "B. Uses sprints like Agile",
+            "option_c": "C. Adds automation testing",
+            "option_d": "D. Removes feedback loops",
+            "correct_answer": "A",
+            "explanation": "The iterative Waterfall model introduces feedback by allowing teams to revisit earlier phases when necessary."
+        },
+        {
+            "question": "When should the Iterative Waterfall Model be used?",
+            "option_a": "A. When minor changes are expected",
+            "option_b": "B. When feedback is available after each phase",
+            "option_c": "C. For highly dynamic projects",
+            "option_d": "D. For quick prototypes only",
+            "correct_answer": "A",
+            "explanation": "The iterative Waterfall model works best when requirements are mostly stable but may need minor revisions."
+        },
+        {
+            "question": "Which statement is true about the V-Model?",
+            "option_a": "A. Testing is planned parallel to development phases",
+            "option_b": "B. It removes verification steps",
+            "option_c": "C. It delays testing until after implementation",
+            "option_d": "D. It ignores validation activities",
+            "correct_answer": "A",
+            "explanation": "In the V-Model, testing activities are planned alongside development phases for better validation and verification."
+        },
+        {
+            "question": "Which of the following systems is most suitable for the V-Model?",
+            "option_a": "A. Medical devices",
+            "option_b": "B. Game applications",
+            "option_c": "C. Small calculators",
+            "option_d": "D. Social media apps",
+            "correct_answer": "A",
+            "explanation": "The V-Model is ideal for safety-critical systems like medical or aerospace software where testing rigor is essential."
+        },
+        {
+            "question": "Which is a key benefit of the Prototyping Model?",
+            "option_a": "A. Helps clarify user requirements through feedback",
+            "option_b": "B. Avoids all requirement changes",
+            "option_c": "C. Eliminates need for documentation",
+            "option_d": "D. Works best for rigid specifications",
+            "correct_answer": "A",
+            "explanation": "Prototyping helps identify user needs early by showing a preliminary version of the system for feedback."
+        },
+        {
+            "question": "Which step comes first in the Prototyping Model?",
+            "option_a": "A. Gather requirements",
+            "option_b": "B. Build final system",
+            "option_c": "C. Collect feedback",
+            "option_d": "D. Prepare testing plan",
+            "correct_answer": "A",
+            "explanation": "Requirement gathering initiates the prototyping process to understand user expectations before building mock-ups."
+        },
+        {
+            "question": "Which statement correctly describes the Incremental Model?",
+            "option_a": "A. The system is built in parts (increments)",
+            "option_b": "B. All features are released at once",
+            "option_c": "C. It focuses only on design",
+            "option_d": "D. It eliminates user feedback",
+            "correct_answer": "A",
+            "explanation": "The Incremental Model divides the system into smaller builds, delivering working parts incrementally."
+        },
+        {
+            "question": "Which is an advantage of the Incremental Model?",
+            "option_a": "A. Early delivery of working software",
+            "option_b": "B. Delayed user feedback",
+            "option_c": "C. Risk concentration in one phase",
+            "option_d": "D. Single-stage development",
+            "correct_answer": "A",
+            "explanation": "The model allows early releases that users can test and provide feedback on, accelerating value delivery."
+        },
+        {
+            "question": "Which project best fits the Spiral Model?",
+            "option_a": "A. High-risk, complex aerospace system",
+            "option_b": "B. Small calculator app",
+            "option_c": "C. Basic school attendance system",
+            "option_d": "D. Simple blog website",
+            "correct_answer": "A",
+            "explanation": "The Spiral Model is suitable for large, high-risk, and evolving projects that need continuous risk assessment."
+        },
+        {
+            "question": "Which of the following is a phase in each loop of the Spiral Model?",
+            "option_a": "A. Planning",
+            "option_b": "B. Testing only",
+            "option_c": "C. Deployment",
+            "option_d": "D. Release packaging",
+            "correct_answer": "A",
+            "explanation": "Each spiral iteration includes planning, risk analysis, engineering, and evaluation stages."
+        },
+        {
+            "question": "Which is a principle of the Agile Model?",
+            "option_a": "A. Customer collaboration",
+            "option_b": "B. Following rigid documentation",
+            "option_c": "C. Avoiding user interaction",
+            "option_d": "D. Ignoring change requests",
+            "correct_answer": "A",
+            "explanation": "Agile emphasizes close customer collaboration over strict adherence to documentation."
+        },
+        {
+            "question": "Which of the following is a common Agile framework?",
+            "option_a": "A. Scrum",
+            "option_b": "B. Kanban",
+            "option_c": "C. Waterfall",
+            "option_d": "D. DevOps",
+            "correct_answer": "A",
+            "explanation": "Scrum is a widely used Agile framework based on iterative development and sprint planning."
+        },
+        {
+            "question": "Which is a defining characteristic of Scrum?",
+            "option_a": "A. Sprint-based development cycles",
+            "option_b": "B. No defined roles",
+            "option_c": "C. Continuous flow without iteration",
+            "option_d": "D. Absence of meetings",
+            "correct_answer": "A",
+            "explanation": "Scrum uses fixed-length sprints and defined roles such as Product Owner and Scrum Master."
+        },
+        {
+            "question": "How do Scrum and Kanban differ?",
+            "option_a": "A. Scrum uses fixed-length sprints, Kanban uses continuous flow",
+            "option_b": "B. Kanban requires strict roles and meetings",
+            "option_c": "C. Scrum avoids task boards",
+            "option_d": "D. Kanban forbids iteration",
+            "correct_answer": "A",
+            "explanation": "Scrum works in time-boxed sprints, while Kanban maintains a continuous, flow-based process."
+        },
+        {
+            "question": "Which factor should be considered when choosing a software process model?",
+            "option_a": "A. Project size and complexity",
+            "option_b": "B. Requirement stability",
+            "option_c": "C. Risk level",
+            "option_d": "D. Team flexibility",
+            "correct_answer": "A",
+            "explanation": "Project size and complexity significantly influence the suitability of a process model for a given project."
+        }
+    ]
+}
