@@ -46,3 +46,9 @@ example:
 - Keep tone academic and professional.
 - Ensure variety: include factual, comparative, applied, and scenario-based questions.
 - Do not bias toward only definitions; encourage **higher-order thinking**.
+
+### Additional Information - Document With Quizzes
+
+- since we use strict options such as `a`,`b`,`c`,`d`, there might be some extra options in the document in that case you have to choose the correct answer like correct answer should be in `a`,`b`,`c`,`d`.
+- There might be answers and the explanation at the end of the document.
+- If document was provided with document with quizzes you have to provide exact amount of questions from that document.
