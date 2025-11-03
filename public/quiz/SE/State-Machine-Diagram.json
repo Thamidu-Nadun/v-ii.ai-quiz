@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best describes the purpose of a UML State Machine Diagram?",
+            "option_a": "It models the sequence of interactions between multiple collaborating objects.",
+            "option_b": "It is drawn for classes that exhibit significant dynamic behavior.",
+            "option_c": "There can be multiple state machine diagrams for a single class.",
+            "option_d": "It models the behavior of a single object as it responds to events.",
+            "correct_answer": "D",
+            "explanation": "A state machine diagram models the lifecycle of a single object and how it transitions between states based on events."
+        },
+        {
+            "question": "Which state represents the beginning of an object's lifecycle in a state machine diagram?",
+            "option_a": "Composite State",
+            "option_b": "Initial State",
+            "option_c": "Simple State",
+            "option_d": "Final State",
+            "correct_answer": "B",
+            "explanation": "The initial state marks the starting point of the object."
+        },
+        {
+            "question": "Which state represents the end of an object's lifecycle in a state machine diagram?",
+            "option_a": "Initial State",
+            "option_b": "Composite State",
+            "option_c": "Final State",
+            "option_d": "Simple State",
+            "correct_answer": "C",
+            "explanation": "The final state indicates the destruction or termination of the object."
+        },
+        {
+            "question": "Which of the following is an internal behavior performed while the object is in that state?",
+            "option_a": "entry",
+            "option_b": "do",
+            "option_c": "exit",
+            "option_d": "trigger",
+            "correct_answer": "B",
+            "explanation": "The ‘do’ activity is ongoing work performed while the object remains in the state."
+        },
+        {
+            "question": "Which internal behavior is executed immediately when transitioning into a state?",
+            "option_a": "entry",
+            "option_b": "do",
+            "option_c": "exit",
+            "option_d": "change",
+            "correct_answer": "A",
+            "explanation": "Entry behavior occurs automatically when the state is entered."
+        },
+        {
+            "question": "Which internal behavior is performed when transitioning away from a state?",
+            "option_a": "entry",
+            "option_b": "change",
+            "option_c": "exit",
+            "option_d": "trigger",
+            "correct_answer": "C",
+            "explanation": "The exit behavior is executed when leaving the state."
+        },
+        {
+            "question": "Which element is required in every state transition?",
+            "option_a": "Guard Condition",
+            "option_b": "Internal Activity",
+            "option_c": "Trigger Event",
+            "option_d": "Self-Transition",
+            "correct_answer": "C",
+            "explanation": "Transitions require a trigger event; guard conditions are optional."
+        },
+        {
+            "question": "A transition where the source and target are the same state is known as:",
+            "option_a": "Cross-State Transition",
+            "option_b": "Self-Transition",
+            "option_c": "Composite Transition",
+            "option_d": "Silent Transition",
+            "correct_answer": "B",
+            "explanation": "A self-transition re-enters the same state, causing exit and entry behaviors to run."
+        },
+        {
+            "question": "Which event trigger represents an incoming message call?",
+            "option_a": "Time Event",
+            "option_b": "Call Event",
+            "option_c": "Change Event",
+            "option_d": "Exit Event",
+            "correct_answer": "B",
+            "explanation": "Call events occur when an operation is invoked on an object."
+        },
+        {
+            "question": "Which event trigger uses the keyword 'when' followed by a condition?",
+            "option_a": "Change Event",
+            "option_b": "Call Event",
+            "option_c": "Time Event",
+            "option_d": "Entry Event",
+            "correct_answer": "A",
+            "explanation": "Change events occur when a specified condition becomes true."
+        },
+        {
+            "question": "Which event trigger is denoted using 'after(time)'?",
+            "option_a": "Call Event",
+            "option_b": "Time Event",
+            "option_c": "Exit Event",
+            "option_d": "Change Event",
+            "correct_answer": "B",
+            "explanation": "Time events activate transitions after a specified duration."
+        },
+        {
+            "question": "Which type of state contains sub-states within it?",
+            "option_a": "Simple State",
+            "option_b": "Composite State",
+            "option_c": "Final State",
+            "option_d": "Entry State",
+            "correct_answer": "B",
+            "explanation": "Composite states decompose into smaller internal states."
+        },
+        {
+            "question": "What is the main characteristic of a simple state?",
+            "option_a": "It contains multiple sub-states.",
+            "option_b": "It has no sub-states.",
+            "option_c": "It must have a do activity.",
+            "option_d": "It must be the initial state.",
+            "correct_answer": "B",
+            "explanation": "Simple states do not contain nested states."
+        },
+        {
+            "question": "Which diagram issue should be reviewed because it has transitions entering but none exiting?",
+            "option_a": "Miracle State",
+            "option_b": "Black-Hole State",
+            "option_c": "Composite State",
+            "option_d": "Initial State",
+            "correct_answer": "B",
+            "explanation": "Black-hole states trap control because there is no way out."
+        },
+        {
+            "question": "Which diagram issue has transitions exiting but none entering?",
+            "option_a": "Miracle State",
+            "option_b": "Black-Hole State",
+            "option_c": "Composite State",
+            "option_d": "Final State",
+            "correct_answer": "A",
+            "explanation": "Miracle states allow transitions to occur without any logical entry point."
+        },
+        {
+            "question": "What does the final state in a state machine represent?",
+            "option_a": "The object is paused.",
+            "option_b": "The object is being constructed.",
+            "option_c": "The object is actively processing.",
+            "option_d": "The object is being destructed.",
+            "correct_answer": "D",
+            "explanation": "The final state signifies object termination."
+        },
+        {
+            "question": "In a vending machine state diagram, the trigger for transitioning from 'Waiting for Selection' is:",
+            "option_a": "The guard condition",
+            "option_b": "Pressing the selection button",
+            "option_c": "The item being dispensed",
+            "option_d": "The machine’s power being turned on",
+            "correct_answer": "B",
+            "explanation": "The event triggering the transition is the button press."
+        },
+        {
+            "question": "Which graphical symbol represents a simple state?",
+            "option_a": "Filled black circle",
+            "option_b": "Circle with a dot inside",
+            "option_c": "Rounded rectangle",
+            "option_d": "Diamond",
+            "correct_answer": "C",
+            "explanation": "Rounded rectangles are used to draw states."
+        },
+        {
+            "question": "Which event trigger is appropriate for a transition after 30 seconds of inactivity?",
+            "option_a": "Call Event",
+            "option_b": "Time Event",
+            "option_c": "Change Event",
+            "option_d": "Exit Event",
+            "correct_answer": "B",
+            "explanation": "This is a duration-based time event."
+        },
+        {
+            "question": "Which internal behavior is executed upon exiting a state?",
+            "option_a": "entry",
+            "option_b": "do",
+            "option_c": "exit",
+            "option_d": "when",
+            "correct_answer": "C",
+            "explanation": "The exit action runs when leaving a state."
+        },
+        {
+            "question": "What type of state allows the model to group multiple sub-states under a higher-level behavioral abstraction?",
+            "option_a": "Simple State",
+            "option_b": "Composite State",
+            "option_c": "Initial State",
+            "option_d": "Final State",
+            "correct_answer": "B",
+            "explanation": "Composite states organize multiple nested states."
+        },
+        {
+            "question": "A change event is triggered when:",
+            "option_a": "A message is received",
+            "option_b": "A condition becomes true",
+            "option_c": "A timer expires",
+            "option_d": "The system is initialized",
+            "correct_answer": "B",
+            "explanation": "Change events use a Boolean condition becoming true."
+        },
+        {
+            "question": "The purpose of a guard condition is to:",
+            "option_a": "Define state entry behavior",
+            "option_b": "Define ongoing work in the state",
+            "option_c": "Allow a transition only when a Boolean expression is true",
+            "option_d": "Trigger a state transition",
+            "correct_answer": "C",
+            "explanation": "Guard conditions make transitions conditional."
+        },
+        {
+            "question": "An object's state represents:",
+            "option_a": "Its class type",
+            "option_b": "Its memory address",
+            "option_c": "A specific condition it is in at a given time",
+            "option_d": "The number of operations it can perform",
+            "correct_answer": "C",
+            "explanation": "A state reflects the object's situation at a specific moment."
+        },
+        {
+            "question": "When is the exit action of a composite state executed?",
+            "option_a": "Only when leaving the outer state",
+            "option_b": "Only when a self-transition occurs",
+            "option_c": "When exiting any of its sub-states",
+            "option_d": "It is always running",
+            "correct_answer": "C",
+            "explanation": "Leaving a sub-state means leaving the composite state, so the exit action runs."
+        }
+    ]
+}

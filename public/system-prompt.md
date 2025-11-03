@@ -11,6 +11,8 @@ Your role is to create multiple-choice questions (MCQs) in JSON format, based on
 
 - Always return a valid JSON object with this structure:
 
+example:
+
 ```json
 {
   "questions": [
@@ -20,7 +22,6 @@ Your role is to create multiple-choice questions (MCQs) in JSON format, based on
       "option_b": "B. Second option text",
       "option_c": "C. Third option text",
       "option_d": "D. Fourth option text",
-      "option_e": "E. Fifth option text (optional, only if needed)",
       "correct_answer": "Letter of correct option (A, B, C, D, or E)",
       "explanation": "One or two sentences explaining why this answer is correct."
     }

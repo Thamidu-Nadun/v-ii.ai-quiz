@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of Supportive Processes in software engineering?",
+            "option_a": "A. To directly write the source code for the application.",
+            "option_b": "B. To support, control, and improve the main development processes.",
+            "option_c": "C. To replace the need for a project manager.",
+            "option_d": "D. To ensure smooth and efficient development.",
+            "correct_answer": "B",
+            "explanation": "Supportive processes help maintain control and continuous improvement across development activities."
+        },
+        {
+            "question": "Which of the following is NOT an activity of Configuration Management?",
+            "option_a": "A. Configuration Control",
+            "option_b": "B. Configuration Identification",
+            "option_c": "C. Conducting Training Sessions",
+            "option_d": "D. Configuration Status Accounting",
+            "correct_answer": "C",
+            "explanation": "Training sessions are part of knowledge transfer, not configuration management."
+        },
+        {
+            "question": "The Change Management process ensures that changes are made in which manner?",
+            "option_a": "A. As quickly as possible to meet deadlines.",
+            "option_b": "B. In a controlled and traceable manner.",
+            "option_c": "C. With minimal formal approval to encourage innovation.",
+            "option_d": "D. In a low-risk manner.",
+            "correct_answer": "B",
+            "explanation": "Change Management focuses on control and traceability to ensure quality and minimize risk."
+        },
+        {
+            "question": "Which step comes first in the Change Management process?",
+            "option_a": "A. Approval/Review by a Change Control Board",
+            "option_b": "B. Implementation and Verification",
+            "option_c": "C. Impact Analysis",
+            "option_d": "D. Initiation (Change Request Submission)",
+            "correct_answer": "D",
+            "explanation": "Change Management starts with submitting a change request before analysis and approval."
+        },
+        {
+            "question": "Which of the following is a key benefit of using a Version Control System (VCS)?",
+            "option_a": "A. Automatic code optimization",
+            "option_b": "B. Tracks history of changes",
+            "option_c": "C. Eliminates need for testing",
+            "option_d": "D. Simplifies debugging through AI tools",
+            "correct_answer": "B",
+            "explanation": "VCS tools maintain version history to enable traceability and collaboration among developers."
+        },
+        {
+            "question": "Which of the following is a type of Version Control System described in the lecture?",
+            "option_a": "A. Local Version Control System",
+            "option_b": "B. Cloud Version Control System",
+            "option_c": "C. Centralized Version Control System",
+            "option_d": "D. Hybrid Version Control System",
+            "correct_answer": "C",
+            "explanation": "Centralized systems like SVN manage code from a single repository."
+        },
+        {
+            "question": "Which category does 'Scope Creep' primarily fall under?",
+            "option_a": "A. Technical Risk",
+            "option_b": "B. Project Management Risk",
+            "option_c": "C. Resource Risk",
+            "option_d": "D. Operational Risk",
+            "correct_answer": "B",
+            "explanation": "Scope Creep arises from uncontrolled project changes and is a project management risk."
+        },
+        {
+            "question": "Which of the following is a benefit of effective Risk Management?",
+            "option_a": "A. It guarantees that no risks will occur.",
+            "option_b": "B. It reduces the chance of project failure.",
+            "option_c": "C. It minimizes financial loss.",
+            "option_d": "D. It ensures customer satisfaction.",
+            "correct_answer": "B",
+            "explanation": "Risk management mitigates potential issues, reducing chances of project failure."
+        },
+        {
+            "question": "Which process improvement model provides maturity levels from 'Initial' to 'Optimizing'?",
+            "option_a": "A. ISO 9001",
+            "option_b": "B. Agile Process Improvement",
+            "option_c": "C. Capability Maturity Model Integration (CMMI)",
+            "option_d": "D. Six Sigma",
+            "correct_answer": "C",
+            "explanation": "CMMI defines maturity levels that represent increasing process capability."
+        },
+        {
+            "question": "What is the role of a Change Control Board (CCB) in Change Management?",
+            "option_a": "A. To develop software requirements.",
+            "option_b": "B. To approve or reject change requests.",
+            "option_c": "C. To maintain the project schedule.",
+            "option_d": "D. To test implemented changes.",
+            "correct_answer": "B",
+            "explanation": "The CCB reviews and authorizes proposed changes to maintain project stability."
+        },
+        {
+            "question": "Which of the following is an example of a Distributed Version Control System (DVCS)?",
+            "option_a": "A. Git",
+            "option_b": "B. SVN",
+            "option_c": "C. CVS",
+            "option_d": "D. ClearCase",
+            "correct_answer": "A",
+            "explanation": "Git is a distributed VCS where each user holds a full repository copy."
+        },
+        {
+            "question": "Which Configuration Management activity ensures the product matches its specifications?",
+            "option_a": "A. Configuration Control",
+            "option_b": "B. Configuration Identification",
+            "option_c": "C. Configuration Audits",
+            "option_d": "D. Configuration Status Accounting",
+            "correct_answer": "C",
+            "explanation": "Configuration Audits verify that the system conforms to approved changes and specifications."
+        },
+        {
+            "question": "What is the main purpose of Process Improvement?",
+            "option_a": "A. To reduce employee salaries.",
+            "option_b": "B. To deliver higher quality software with fewer defects.",
+            "option_c": "C. To replace version control systems.",
+            "option_d": "D. To extend project duration.",
+            "correct_answer": "B",
+            "explanation": "Process Improvement aims to enhance quality, efficiency, and predictability of software projects."
+        },
+        {
+            "question": "Which of the following is NOT considered a key Supportive Process?",
+            "option_a": "A. Risk Management",
+            "option_b": "B. Process Improvement",
+            "option_c": "C. Sales and Marketing",
+            "option_d": "D. Configuration Management",
+            "correct_answer": "C",
+            "explanation": "Sales and Marketing are outside the scope of supportive processes in software engineering."
+        },
+        {
+            "question": "The main purpose of Supportive Processes can best be described as:",
+            "option_a": "A. Directly contributing to coding and implementation.",
+            "option_b": "B. Ensuring quality and efficiency indirectly.",
+            "option_c": "C. Replacing core development activities.",
+            "option_d": "D. Handling project financial management.",
+            "correct_answer": "B",
+            "explanation": "Supportive processes improve development quality and efficiency without directly producing code."
+        },
+        {
+            "question": "Which training activity focuses on new members performing tasks while experts observe?",
+            "option_a": "A. Shadowing",
+            "option_b": "B. Reverse Shadowing",
+            "option_c": "C. KT Sessions",
+            "option_d": "D. Peer Review",
+            "correct_answer": "B",
+            "explanation": "Reverse Shadowing involves a trainee performing tasks while an experienced member supervises."
+        },
+        {
+            "question": "Which standard guides supportive processes in software engineering?",
+            "option_a": "A. IEEE 802.11",
+            "option_b": "B. ISO/IEC 12207",
+            "option_c": "C. GDPR",
+            "option_d": "D. ISO 27001",
+            "correct_answer": "B",
+            "explanation": "ISO/IEC 12207 defines processes and life cycle standards relevant to software engineering."
+        },
+        {
+            "question": "Which of the following is a core benefit of effective Training & Knowledge Transfer?",
+            "option_a": "A. Prevents knowledge loss when key employees leave.",
+            "option_b": "B. Reduces the need for configuration management.",
+            "option_c": "C. Eliminates all project risks.",
+            "option_d": "D. Removes dependency on process documentation.",
+            "correct_answer": "A",
+            "explanation": "Knowledge transfer ensures continuity when experienced personnel leave the project."
+        },
+        {
+            "question": "Which of the following is a technique for Knowledge Transfer?",
+            "option_a": "A. Impact Analysis",
+            "option_b": "B. Shadowing and Reverse Shadowing",
+            "option_c": "C. Configuration Control",
+            "option_d": "D. Risk Auditing",
+            "correct_answer": "B",
+            "explanation": "Shadowing techniques help transfer practical knowledge through observation and practice."
+        },
+        {
+            "question": "What is the primary goal of Configuration Management?",
+            "option_a": "A. To manage the project budget and resources.",
+            "option_b": "B. To systematically control and track changes to software artifacts.",
+            "option_c": "C. To conduct employee training programs.",
+            "option_d": "D. To identify potential project risks.",
+            "correct_answer": "B",
+            "explanation": "Configuration Management ensures organized tracking of changes and versions in software projects."
+        },
+        {
+            "question": "Which area in a Git workflow marks files ready for committing?",
+            "option_a": "A. Working Directory",
+            "option_b": "B. Staging Area",
+            "option_c": "C. Cloud Server",
+            "option_d": "D. Remote Repository",
+            "correct_answer": "B",
+            "explanation": "The staging area holds files prepared for committing to the repository’s history."
+        },
+        {
+            "question": "Which of the following best describes Process Improvement?",
+            "option_a": "A. A focus on cost reduction through layoffs.",
+            "option_b": "B. Continuous refinement of processes for efficiency and quality.",
+            "option_c": "C. A temporary phase after project completion.",
+            "option_d": "D. A manual effort with no measurement metrics.",
+            "correct_answer": "B",
+            "explanation": "Process Improvement aims for systematic, measurable enhancement of processes and outcomes."
+        },
+        {
+            "question": "Which standard model focuses on quality management and certification?",
+            "option_a": "A. ISO 9001",
+            "option_b": "B. CMMI",
+            "option_c": "C. Agile Manifesto",
+            "option_d": "D. Scrum Guide",
+            "correct_answer": "A",
+            "explanation": "ISO 9001 defines quality management principles for consistent process improvement."
+        },
+        {
+            "question": "Which of the following is NOT a benefit of effective Risk Management?",
+            "option_a": "A. Minimizing financial loss",
+            "option_b": "B. Ensuring customer satisfaction",
+            "option_c": "C. Guaranteeing no risks occur",
+            "option_d": "D. Reducing project failure probability",
+            "correct_answer": "C",
+            "explanation": "Risk Management mitigates risks but cannot completely eliminate them."
+        },
+        {
+            "question": "Which of the following is NOT classified as a type of Version Control System (VCS)?",
+            "option_a": "A. Local Version Control System",
+            "option_b": "B. Cloud Version Control System",
+            "option_c": "C. Centralized Version Control System",
+            "option_d": "D. Distributed Version Control System",
+            "correct_answer": "B",
+            "explanation": "Cloud storage tools like Google Drive are not true version control systems."
+        }
+    ]
+}

@@ -3,8 +3,9 @@ export default [
         title: 'Python Fundamentals',
         path: 'quiz/python-fundamentals.json',
         description: 'Test your knowledge of Python basics, including syntax, data types, and control structures.',
-        isAvailable: true
+        isAvailable: false
     },
+    // AI Quizzes
     {
         title: 'ML Fundamentals',
         path: 'quiz/AI/AI-01.json',
@@ -47,6 +48,7 @@ export default [
         description: 'Test your understanding of supervised learning algorithms, techniques, and applications.',
         isAvailable: true
     },
+    // Software Engineering Quizzes
     {
         title: 'Agile Development',
         path: 'quiz/SE/Agile-Development.json',
@@ -65,6 +67,55 @@ export default [
         description: 'Test your ability to design and analyze activity diagrams for various processes.',
         isAvailable: true
     },
+    {
+        title: 'State Machine Diagrams',
+        path: 'quiz/SE/State-Machine-Diagram.json',
+        description: 'Test your ability to design and analyze state machine diagrams for various systems.',
+        isAvailable: true
+    },
+    {
+        title: 'Software Testing',
+        path: 'quiz/SE/Software-Testing.json',
+        description: 'Assess your knowledge of software testing methodologies, techniques, and best practices.',
+        isAvailable: true
+    },
+    {
+        title: 'Design Patterns I',
+        path: 'quiz/SE/Design-Patterns-1.json',
+        description: 'Evaluate your understanding of common design patterns and their applications in software development.',
+        isAvailable: true
+    },
+    {
+        title: 'Design Patterns II',
+        path: 'quiz/SE/Design-Patterns-2.json',
+        description: 'Further assess your knowledge of advanced design patterns and their use cases in software engineering.',
+        isAvailable: true
+    },
+    {
+        title: 'Support Processes - I',
+        path: 'quiz/SE/Support-Processes-1.json',
+        description: 'Test your understanding of support processes in software engineering, including maintenance and documentation.',
+        isAvailable: true
+    },
+    {
+        title: 'Support Processes - II',
+        path: 'quiz/SE/Support-Processes-2.json',
+        description: 'Further evaluate your knowledge of support processes in software engineering, focusing on best practices and tools.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - I',
+        path: 'quiz/SE/SE-1.json',
+        description: 'Assess your foundational knowledge of software engineering principles, methodologies, and practices.',
+        isAvailable: true
+    },
+    {
+        title: 'SE - II',
+        path: 'quiz/SE/SE-2.json',
+        description: 'Further evaluate your understanding of software engineering concepts, focusing on advanced topics and applications.',
+        isAvailable: true
+    },
+    // Database Management System Quizzes
     {
         title: 'DBMS - 01',
         path: 'quiz/DatabaseQuiz/Database-01.json',
