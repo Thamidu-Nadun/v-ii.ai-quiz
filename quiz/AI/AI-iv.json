@@ -1,0 +1,472 @@
+{
+    "questions": [
+        {
+            "question": "Deep learning is primarily inspired by which biological system?",
+            "option_a": "The human digestive system",
+            "option_b": "The human brain",
+            "option_c": "The human skeletal system",
+            "option_d": "The human respiratory system",
+            "correct_answer": "B",
+            "explanation": "Deep learning models are inspired by how neurons in the human brain process information."
+        },
+        {
+            "question": "Which of the following best describes a neural network?",
+            "option_a": "A rule-based expert system",
+            "option_b": "A computational model composed of interconnected nodes",
+            "option_c": "A database system with stored queries",
+            "option_d": "A single decision tree",
+            "correct_answer": "B",
+            "explanation": "A neural network consists of interconnected neurons organized in layers."
+        },
+        {
+            "question": "What is the role of the input layer in a neural network?",
+            "option_a": "To compute gradients",
+            "option_b": "To store training data",
+            "option_c": "To receive raw data features",
+            "option_d": "To perform classification directly",
+            "correct_answer": "C",
+            "explanation": "The input layer receives raw data that the network will process."
+        },
+        {
+            "question": "Which component adjusts the output of a neuron upward or downward?",
+            "option_a": "Activation function",
+            "option_b": "Weight",
+            "option_c": "Bias",
+            "option_d": "Loss function",
+            "correct_answer": "C",
+            "explanation": "Bias shifts the neuron’s output allowing flexibility in decision boundaries."
+        },
+        {
+            "question": "What is the mathematical operation performed by a perceptron before activation?",
+            "option_a": "Logical OR",
+            "option_b": "Weighted sum",
+            "option_c": "Image convolution",
+            "option_d": "Bitwise XOR",
+            "correct_answer": "B",
+            "explanation": "A perceptron computes a weighted sum of inputs before applying the activation function."
+        },
+        {
+            "question": "Which activation function outputs values between 0 and 1?",
+            "option_a": "ReLU",
+            "option_b": "Tanh",
+            "option_c": "Sigmoid",
+            "option_d": "Leaky ReLU",
+            "correct_answer": "C",
+            "explanation": "Sigmoid maps inputs into a range between 0 and 1."
+        },
+        {
+            "question": "The perceptron can only classify data that is:",
+            "option_a": "Statically normalized",
+            "option_b": "Linearly separable",
+            "option_c": "Categorical only",
+            "option_d": "Clustered into more than two groups",
+            "correct_answer": "B",
+            "explanation": "The perceptron fails when the classes are not linearly separable."
+        },
+        {
+            "question": "Which problem demonstrates a limitation of the perceptron?",
+            "option_a": "Addition of numbers",
+            "option_b": "XOR classification",
+            "option_c": "Sorting algorithms",
+            "option_d": "Linear regression",
+            "correct_answer": "B",
+            "explanation": "The XOR problem is not linearly separable, so a perceptron cannot solve it."
+        },
+        {
+            "question": "What does backpropagation compute?",
+            "option_a": "Final output values",
+            "option_b": "Error gradients",
+            "option_c": "Initial weight values",
+            "option_d": "Activation thresholds",
+            "correct_answer": "B",
+            "explanation": "Backpropagation calculates gradients used for weight updates."
+        },
+        {
+            "question": "The learning rate controls:",
+            "option_a": "Activation function type",
+            "option_b": "Speed of weight updates",
+            "option_c": "Number of neurons in each layer",
+            "option_d": "Number of output classes",
+            "correct_answer": "B",
+            "explanation": "Learning rate determines how quickly weights are adjusted during training."
+        },
+        {
+            "question": "Which layer in a neural network is responsible for feature abstraction?",
+            "option_a": "Input layer",
+            "option_b": "Hidden layer(s)",
+            "option_c": "Output layer",
+            "option_d": "Bias layer",
+            "correct_answer": "B",
+            "explanation": "Hidden layers transform and extract deeper patterns in data."
+        },
+        {
+            "question": "The perceptron convergence theorem guarantees convergence only if the classes are:",
+            "option_a": "Nonlinear",
+            "option_b": "Linearly separable",
+            "option_c": "Clustered equally",
+            "option_d": "Normalized",
+            "correct_answer": "B",
+            "explanation": "The theorem applies only when training data is linearly separable."
+        },
+        {
+            "question": "Which function introduces non-linearity in neural networks?",
+            "option_a": "Bias",
+            "option_b": "Weight initialization",
+            "option_c": "Activation function",
+            "option_d": "Loss computation",
+            "correct_answer": "C",
+            "explanation": "Activation functions allow networks to learn non-linear relationships."
+        },
+        {
+            "question": "ReLU outputs:",
+            "option_a": "Only negative values",
+            "option_b": "Values between -1 and 1",
+            "option_c": "Zero for negative inputs and x for positive",
+            "option_d": "A binary value",
+            "correct_answer": "C",
+            "explanation": "ReLU outputs 0 for negative inputs and a linear value for positive inputs."
+        },
+        {
+            "question": "Multi-Layer Perceptrons (MLPs) can solve the XOR problem because:",
+            "option_a": "They do not require activation functions",
+            "option_b": "They include multiple neurons and hidden layers",
+            "option_c": "They use only linear transformations",
+            "option_d": "They ignore input weights",
+            "correct_answer": "B",
+            "explanation": "MLPs introduce non-linearity through multiple layers, enabling complex decision boundaries."
+        },
+        {
+            "question": "Which neural network type is best suited for image recognition?",
+            "option_a": "Feedforward Neural Network",
+            "option_b": "Recurrent Neural Network",
+            "option_c": "Convolutional Neural Network",
+            "option_d": "Self-Organizing Map",
+            "correct_answer": "C",
+            "explanation": "CNNs process spatial data using convolution filters, ideal for image tasks."
+        },
+        {
+            "question": "RNNs are particularly useful for tasks where:",
+            "option_a": "Order of data matters",
+            "option_b": "Data is always numeric",
+            "option_c": "Data has fixed dimensions",
+            "option_d": "Features are independent",
+            "correct_answer": "A",
+            "explanation": "RNNs handle sequential data by retaining past information."
+        },
+        {
+            "question": "GANs involve two networks known as:",
+            "option_a": "Encoder and Decoder",
+            "option_b": "Classifier and Predictor",
+            "option_c": "Generator and Discriminator",
+            "option_d": "Trainer and Tester",
+            "correct_answer": "C",
+            "explanation": "GANs consist of a generator that creates samples and a discriminator that evaluates them."
+        },
+        {
+            "question": "What is the main purpose of dropout?",
+            "option_a": "To increase model complexity",
+            "option_b": "To reduce overfitting",
+            "option_c": "To increase learning rate",
+            "option_d": "To remove entire layers",
+            "correct_answer": "B",
+            "explanation": "Dropout randomly disables neurons during training to prevent overfitting."
+        },
+        {
+            "question": "Early stopping prevents overfitting by:",
+            "option_a": "Adding noise to the inputs",
+            "option_b": "Stopping training when validation loss stops improving",
+            "option_c": "Removing neurons permanently",
+            "option_d": "Reducing the dataset",
+            "correct_answer": "B",
+            "explanation": "Early stopping halts training when performance on validation data declines."
+        },
+        {
+            "question": "Forward propagation mainly computes:",
+            "option_a": "Weighted activations through layers",
+            "option_b": "Gradient updates for weights",
+            "option_c": "Learning rate values",
+            "option_d": "Dropout masks",
+            "correct_answer": "A",
+            "explanation": "Forward propagation calculates neuron activations layer by layer."
+        },
+        {
+            "question": "The cost function is used to:",
+            "option_a": "Initialize weights",
+            "option_b": "Measure prediction error",
+            "option_c": "Scale learning rate",
+            "option_d": "Determine the number of layers",
+            "correct_answer": "B",
+            "explanation": "Cost function quantifies how far predictions are from actual outputs."
+        },
+        {
+            "question": "Gradient descent updates weights in the direction:",
+            "option_a": "Of maximum gradient increase",
+            "option_b": "Opposite to the gradient",
+            "option_c": "Perpendicular to the gradient",
+            "option_d": "Randomly selected",
+            "correct_answer": "B",
+            "explanation": "Weights move in the opposite direction of error gradient to minimize loss."
+        },
+        {
+            "question": "Mini-batch training is beneficial because it:",
+            "option_a": "Uses the full dataset at once",
+            "option_b": "Reduces computation per update and stabilizes gradients",
+            "option_c": "Eliminates the need for backpropagation",
+            "option_d": "Does not require tuning hyperparameters",
+            "correct_answer": "B",
+            "explanation": "Mini-batches balance accuracy and efficiency during training."
+        },
+        {
+            "question": "Which activation function outputs values between -1 and 1?",
+            "option_a": "Sigmoid",
+            "option_b": "ReLU",
+            "option_c": "Tanh",
+            "option_d": "Leaky ReLU",
+            "correct_answer": "C",
+            "explanation": "Tanh maps values to a range between -1 and 1."
+        },
+        {
+            "question": "LSTMs improve on RNNs by:",
+            "option_a": "Removing all memory components",
+            "option_b": "Using memory cells to store long-term dependencies",
+            "option_c": "Increasing weight randomness",
+            "option_d": "Fixing the learning rate",
+            "correct_answer": "B",
+            "explanation": "LSTMs maintain long-range memory using gated structures."
+        },
+        {
+            "question": "Self-Organizing Maps are primarily used for:",
+            "option_a": "Regression tasks",
+            "option_b": "Dimension reduction and visualization",
+            "option_c": "Image convolution",
+            "option_d": "Time series prediction",
+            "correct_answer": "B",
+            "explanation": "SOMs map high-dimensional data to lower dimensions for visualization."
+        },
+        {
+            "question": "Modular Neural Networks solve complex problems by:",
+            "option_a": "Using a single deep network",
+            "option_b": "Dividing tasks into smaller independent networks",
+            "option_c": "Removing non-linearity",
+            "option_d": "Using no training process",
+            "correct_answer": "B",
+            "explanation": "MNNs divide tasks into modules and combine final outputs."
+        },
+        {
+            "question": "The batch perceptron algorithm updates weights based on:",
+            "option_a": "One sample at a time",
+            "option_b": "The sum of all misclassified samples",
+            "option_c": "Random weight changes",
+            "option_d": "Validation data only",
+            "correct_answer": "B",
+            "explanation": "Batch perceptron applies adjustments after evaluating all misclassified samples."
+        },
+        {
+            "question": "Loss optimization includes minimizing the cost function to:",
+            "option_a": "Increase misclassification",
+            "option_b": "Improve model accuracy",
+            "option_c": "Eliminate activation functions",
+            "option_d": "Reduce network size",
+            "correct_answer": "B",
+            "explanation": "Reducing the cost function improves prediction accuracy."
+        },
+        {
+            "question": "Which of the following describes feedforward neural networks (FNNs)?",
+            "option_a": "They contain loops for memory",
+            "option_b": "Data flows strictly forward from input to output",
+            "option_c": "They require convolution filters",
+            "option_d": "They always use recurrent connections",
+            "correct_answer": "B",
+            "explanation": "In FNNs, information moves forward without feedback loops."
+        },
+        {
+            "question": "The role of weights in neural networks is to:",
+            "option_a": "Store labels",
+            "option_b": "Control the strength of input influence",
+            "option_c": "Determine model output directly without training",
+            "option_d": "Act as activation functions",
+            "correct_answer": "B",
+            "explanation": "Weights determine how much influence each input contributes to the neuron."
+        },
+        {
+            "question": "A deep neural network is characterized by:",
+            "option_a": "Having no hidden layers",
+            "option_b": "Having multiple hidden layers",
+            "option_c": "Use of only linear transformations",
+            "option_d": "No activation functions",
+            "correct_answer": "B",
+            "explanation": "Deep networks include several hidden layers to capture complex representations."
+        },
+        {
+            "question": "Forward propagation uses which mathematical operation to transform activations?",
+            "option_a": "a(l) = z(l) + f",
+            "option_b": "z(l) = W(l)a(l-1) + b(l)",
+            "option_c": "W(l) = z(l) - b(l)",
+            "option_d": "a(l) = W(l) - b(l)",
+            "correct_answer": "B",
+            "explanation": "Forward propagation computes z(l) using weighted sums and bias."
+        },
+        {
+            "question": "During backpropagation, gradients are computed with respect to:",
+            "option_a": "Input values only",
+            "option_b": "Weights and biases",
+            "option_c": "Activation functions only",
+            "option_d": "Output labels",
+            "correct_answer": "B",
+            "explanation": "Backpropagation updates weights and biases by computing gradients."
+        },
+        {
+            "question": "Which network is best suited for sequential text processing?",
+            "option_a": "CNN",
+            "option_b": "RNN",
+            "option_c": "SOM",
+            "option_d": "GAN",
+            "correct_answer": "B",
+            "explanation": "RNNs maintain sequence information, making them suitable for text."
+        },
+        {
+            "question": "Which issue occurs when a model fits training data too well but performs poorly on new data?",
+            "option_a": "Underfitting",
+            "option_b": "Overfitting",
+            "option_c": "Gradient explosion",
+            "option_d": "Initialization failure",
+            "correct_answer": "B",
+            "explanation": "Overfitting happens when the model memorizes training data patterns."
+        },
+        {
+            "question": "The steepest descent method updates weights in proportion to:",
+            "option_a": "The gradient magnitude",
+            "option_b": "Random noise values",
+            "option_c": "Fixed constant step sizes only",
+            "option_d": "Activation outputs",
+            "correct_answer": "A",
+            "explanation": "Steepest descent uses gradient magnitude to scale updates."
+        },
+        {
+            "question": "Which type of network employs filters to detect local spatial features?",
+            "option_a": "RNN",
+            "option_b": "CNN",
+            "option_c": "MLP",
+            "option_d": "GAN",
+            "correct_answer": "B",
+            "explanation": "CNNs apply convolution filters to detect spatial patterns."
+        },
+        {
+            "question": "Leaky ReLU addresses which limitation of standard ReLU?",
+            "option_a": "Vanishing gradients for negative inputs",
+            "option_b": "Excessive slope for positive values",
+            "option_c": "Slow computation",
+            "option_d": "Nonlinearity removal",
+            "correct_answer": "A",
+            "explanation": "Leaky ReLU allows negative values to pass with a small slope."
+        },
+        {
+            "question": "Which of the following best describes gradient descent?",
+            "option_a": "Searching for the maximum loss",
+            "option_b": "Iteratively minimizing the loss function",
+            "option_c": "Randomly assigning weights repeatedly",
+            "option_d": "Stopping training after one iteration",
+            "correct_answer": "B",
+            "explanation": "Gradient descent iteratively adjusts weights to minimize loss."
+        },
+        {
+            "question": "Which technique adjusts learning rate automatically during training?",
+            "option_a": "Batch normalization",
+            "option_b": "Adaptive optimizers such as Adam",
+            "option_c": "Dropout",
+            "option_d": "Pooling",
+            "correct_answer": "B",
+            "explanation": "Adam and similar optimizers adjust learning rates adaptively."
+        },
+        {
+            "question": "Which network architecture is designed to generate realistic synthetic data?",
+            "option_a": "CNN",
+            "option_b": "GAN",
+            "option_c": "RNN",
+            "option_d": "MLP",
+            "correct_answer": "B",
+            "explanation": "GANs generate synthetic data via adversarial training between generator and discriminator."
+        },
+        {
+            "question": "Which part of a neuron model applies non-linearity?",
+            "option_a": "Weighted input",
+            "option_b": "Bias",
+            "option_c": "Activation function",
+            "option_d": "Gradient computation",
+            "correct_answer": "C",
+            "explanation": "Activation function introduces non-linearity in neuron output."
+        },
+        {
+            "question": "Which training problem occurs if learning rate is too high?",
+            "option_a": "Slow convergence",
+            "option_b": "Weights remain unchanged",
+            "option_c": "Model oscillates without converging",
+            "option_d": "Over-regularization",
+            "correct_answer": "C",
+            "explanation": "High learning rate can cause overshooting and oscillation."
+        },
+        {
+            "question": "Which training problem occurs if learning rate is too low?",
+            "option_a": "Model stops updating",
+            "option_b": "Training becomes extremely slow",
+            "option_c": "Model diverges",
+            "option_d": "Model memorizes data",
+            "correct_answer": "B",
+            "explanation": "Small learning rates cause very slow convergence."
+        },
+        {
+            "question": "Which network type has no feedback connections?",
+            "option_a": "RNN",
+            "option_b": "LSTM",
+            "option_c": "Feedforward Neural Network",
+            "option_d": "GAN",
+            "correct_answer": "C",
+            "explanation": "FNNs pass information in one direction with no loops."
+        },
+        {
+            "question": "What feature allows LSTMs to retain information over long sequences?",
+            "option_a": "Activation function changes",
+            "option_b": "Memory cells with gating",
+            "option_c": "Dropout layers",
+            "option_d": "Convolution filters",
+            "correct_answer": "B",
+            "explanation": "Memory cells help LSTMs store long-term dependencies."
+        },
+        {
+            "question": "In backpropagation, which principle is applied to compute gradients layer-by-layer?",
+            "option_a": "Chain rule",
+            "option_b": "Logarithmic rule",
+            "option_c": "Trigonometric rule",
+            "option_d": "Matrix inversion",
+            "correct_answer": "A",
+            "explanation": "Backpropagation applies the chain rule to compute gradients."
+        },
+        {
+            "question": "Which factor increases risk of overfitting?",
+            "option_a": "Small model capacity",
+            "option_b": "Large number of parameters",
+            "option_c": "High dropout rate",
+            "option_d": "Early stopping",
+            "correct_answer": "B",
+            "explanation": "Larger models can memorize training data, causing overfitting."
+        },
+        {
+            "question": "Which learning technique helps reduce variance during training?",
+            "option_a": "Mini-batch training",
+            "option_b": "Full batch only",
+            "option_c": "Removing bias terms",
+            "option_d": "Disabling activation functions",
+            "correct_answer": "A",
+            "explanation": "Mini-batches stabilize updates and reduce noise."
+        },
+        {
+            "question": "Which neural network type is most suitable for time-series forecasting?",
+            "option_a": "CNN",
+            "option_b": "MLP",
+            "option_c": "RNN/LSTM",
+            "option_d": "GAN",
+            "correct_answer": "C",
+            "explanation": "RNNs and LSTMs model sequential dependencies in time-series data."
+        }
+    ]
+}

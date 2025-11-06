@@ -1,0 +1,445 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary goal of supervised learning?",
+            "option_a": "A. To discover hidden patterns in unlabeled data",
+            "option_b": "B. To learn the mapping between inputs and known outputs from labeled data",
+            "option_c": "C. To reduce the dimensionality of input features",
+            "option_d": "D. To cluster similar data points together",
+            "correct_answer": "B",
+            "explanation": "Supervised learning trains models on labeled datasets where inputs are paired with correct outputs to enable prediction on new data."
+        },
+        {
+            "question": "In simple linear regression, how many input variables are used?",
+            "option_a": "A. Zero",
+            "option_b": "B. One",
+            "option_c": "C. Two",
+            "option_d": "D. Any number",
+            "correct_answer": "B",
+            "explanation": "Simple linear regression models the relationship between a single predictor (independent) variable and a quantitative response variable."
+        },
+        {
+            "question": "Which method is commonly used to estimate parameters in linear regression?",
+            "option_a": "A. Maximum Likelihood Estimation",
+            "option_b": "B. Gradient Descent",
+            "option_c": "C. Ordinary Least Squares",
+            "option_d": "D. K-Fold Cross Validation",
+            "correct_answer": "C",
+            "explanation": "Ordinary Least Squares (OLS) minimizes the sum of squared errors between observed and predicted values to estimate regression coefficients."
+        },
+        {
+            "question": "What does the R² (coefficient of determination) represent?",
+            "option_a": "A. The total error of the model",
+            "option_b": "B. The proportion of variance in the target explained by the model",
+            "option_c": "C. The correlation between two input features",
+            "option_d": "D. The number of outliers in the dataset",
+            "correct_answer": "B",
+            "explanation": "R² measures how well the regression predictions approximate real data points, expressed as the fraction of total variance explained."
+        },
+        {
+            "question": "Why is logistic regression preferred over linear regression for binary classification?",
+            "option_a": "A. It runs faster on large datasets",
+            "option_b": "B. It outputs probabilities constrained between 0 and 1",
+            "option_c": "C. It requires fewer features",
+            "option_d": "D. It uses Euclidean distance for prediction",
+            "correct_answer": "B",
+            "explanation": "Logistic regression uses the sigmoid function to ensure predicted probabilities lie between 0 and 1, which linear regression cannot guarantee."
+        },
+        {
+            "question": "What is the role of the logit function in logistic regression?",
+            "option_a": "A. It computes Euclidean distance",
+            "option_b": "B. It transforms probabilities into log-odds for linear modeling",
+            "option_c": "C. It normalizes input features",
+            "option_d": "D. It calculates the Gini impurity",
+            "correct_answer": "B",
+            "explanation": "The logit, log(P/(1−P)), maps probabilities (0–1) to real numbers, enabling linear modeling of binary outcomes."
+        },
+        {
+            "question": "In K-Nearest Neighbors (KNN), how is a prediction made for regression?",
+            "option_a": "A. By selecting the most frequent class among neighbors",
+            "option_b": "B. By computing the median of neighbor labels",
+            "option_c": "C. By averaging the target values of the K nearest neighbors",
+            "option_d": "D. By fitting a local linear model",
+            "correct_answer": "C",
+            "explanation": "For regression, KNN predicts the average of the target values of the K closest training instances."
+        },
+        {
+            "question": "What distance metric is typically used in KNN for continuous features?",
+            "option_a": "A. Manhattan distance",
+            "option_b": "B. Cosine similarity",
+            "option_c": "C. Euclidean distance",
+            "option_d": "D. Hamming distance",
+            "correct_answer": "C",
+            "explanation": "Euclidean distance is the standard metric in KNN for measuring straight-line distance between points in continuous feature space."
+        },
+        {
+            "question": "Which criterion is used by the CART algorithm to select the best split in a classification tree?",
+            "option_a": "A. Information Gain",
+            "option_b": "B. Gain Ratio",
+            "option_c": "C. Gini Index",
+            "option_d": "D. Variance Reduction",
+            "correct_answer": "C",
+            "explanation": "CART uses the Gini Index to measure impurity and selects the split that minimizes the weighted Gini impurity of child nodes."
+        },
+        {
+            "question": "What does a Gini Index of 0 indicate about a dataset?",
+            "option_a": "A. Maximum impurity",
+            "option_b": "B. Equal class distribution",
+            "option_c": "C. Complete purity (all samples belong to one class)",
+            "option_d": "D. Random noise",
+            "correct_answer": "C",
+            "explanation": "A Gini Index of 0 means all samples in the node belong to the same class, indicating perfect homogeneity."
+        },
+        {
+            "question": "In decision trees, what is 'recursive partitioning'?",
+            "option_a": "A. Repeating the same split on all features",
+            "option_b": "B. Iteratively splitting nodes into sub-nodes based on feature thresholds",
+            "option_c": "C. Merging leaf nodes to reduce depth",
+            "option_d": "D. Randomly selecting features at each level",
+            "correct_answer": "B",
+            "explanation": "Recursive partitioning is the process of repeatedly dividing the dataset into subsets based on optimal feature splits until stopping criteria are met."
+        },
+        {
+            "question": "For regression trees, which method is commonly used to evaluate the quality of a split?",
+            "option_a": "A. Gini Index",
+            "option_b": "B. Information Gain",
+            "option_c": "C. Reduction in Variance",
+            "option_d": "D. Silhouette Score",
+            "correct_answer": "C",
+            "explanation": "Regression trees use reduction in variance (i.e., decrease in mean squared error) to determine the best split."
+        },
+        {
+            "question": "What is the main objective of a Support Vector Machine (SVM) in linearly separable cases?",
+            "option_a": "A. Minimize training error",
+            "option_b": "B. Maximize the margin between classes",
+            "option_c": "C. Minimize the number of support vectors",
+            "option_d": "D. Maximize model complexity",
+            "correct_answer": "B",
+            "explanation": "SVM seeks the hyperplane that maximizes the margin (distance to nearest points of each class) to improve generalization."
+        },
+        {
+            "question": "What is a support vector in SVM?",
+            "option_a": "A. Any training sample used for prediction",
+            "option_b": "B. The centroid of each class",
+            "option_c": "C. Data points closest to the decision boundary that influence its position",
+            "option_d": "D. Features with the highest weight",
+            "correct_answer": "C",
+            "explanation": "Support vectors are the critical training instances that lie on or within the margin and define the optimal hyperplane."
+        },
+        {
+            "question": "What does the 'soft margin' in SVM allow?",
+            "option_a": "A. Use of non-Euclidean distance metrics",
+            "option_b": "B. Introduction of kernel functions",
+            "option_c": "C. Some misclassifications to improve generalization on noisy data",
+            "option_d": "D. Reduction in feature dimensionality",
+            "correct_answer": "C",
+            "explanation": "Soft margin permits a few misclassified points to avoid overfitting, especially when data is not perfectly linearly separable."
+        },
+        {
+            "question": "Which technique enables SVM to handle non-linear decision boundaries?",
+            "option_a": "A. Gradient boosting",
+            "option_b": "B. Dropout regularization",
+            "option_c": "C. Kernel trick",
+            "option_d": "D. Principal Component Analysis",
+            "correct_answer": "C",
+            "explanation": "The kernel trick implicitly maps input features into a higher-dimensional space where a linear separator can represent a non-linear boundary in the original space."
+        },
+        {
+            "question": "In logistic regression, what is the typical cutoff probability for binary classification?",
+            "option_a": "A. 0.25",
+            "option_b": "B. 0.5",
+            "option_c": "C. 0.75",
+            "option_d": "D. 1.0",
+            "correct_answer": "B",
+            "explanation": "A probability ≥ 0.5 usually assigns the instance to the positive class, though this threshold can be adjusted based on context."
+        },
+        {
+            "question": "Which of the following best describes the equation y = β₀ + β₁x + ε?",
+            "option_a": "A. Multiple linear regression model",
+            "option_b": "B. Logistic regression model",
+            "option_c": "C. Simple linear regression model",
+            "option_d": "D. KNN regression formula",
+            "correct_answer": "C",
+            "explanation": "This is the population equation for simple linear regression with one predictor variable x, intercept β₀, slope β₁, and error term ε."
+        },
+        {
+            "question": "What is the key difference between classification and regression trees?",
+            "option_a": "A. Only regression trees use Gini Index",
+            "option_b": "B. Classification trees predict categories; regression trees predict continuous values",
+            "option_c": "C. Classification trees cannot handle numeric features",
+            "option_d": "D. Regression trees always have deeper depth",
+            "correct_answer": "B",
+            "explanation": "Classification trees output class labels, while regression trees output numerical predictions, leading to different split evaluation criteria."
+        },
+        {
+            "question": "If a node in a decision tree has 8 samples of class A and 2 of class B, what can be said about its purity?",
+            "option_a": "A. It is completely impure",
+            "option_b": "B. It has low homogeneity",
+            "option_c": "C. It has high homogeneity",
+            "option_d": "D. It must be a root node",
+            "correct_answer": "C",
+            "explanation": "With 80% of samples from one class, the node is relatively pure (high homogeneity), making it a good candidate for a leaf."
+        },
+        {
+            "question": "Which of the following is NOT a valid reason to prefer a lower Gini Index when splitting nodes?",
+            "option_a": "A. It indicates better class separation",
+            "option_b": "B. It reduces the chance of misclassification",
+            "option_c": "C. It increases model interpretability",
+            "option_d": "D. It maximizes training accuracy immediately",
+            "correct_answer": "D",
+            "explanation": "While lower Gini improves local purity, maximizing immediate training accuracy can lead to overfitting; trees use purity as a proxy for generalization."
+        },
+        {
+            "question": "In the equation for R² = (TSS − SSE) / TSS, what does SSE represent?",
+            "option_a": "A. Total variation in the target",
+            "option_b": "B. Explained variation by the model",
+            "option_c": "C. Unexplained variation (sum of squared residuals)",
+            "option_d": "D. Variance of predicted values",
+            "correct_answer": "C",
+            "explanation": "SSE (Sum of Squares Error) is the sum of squared differences between actual and predicted values, representing unexplained variance."
+        },
+        {
+            "question": "What assumption does linear regression make about the relationship between input and output?",
+            "option_a": "A. It is polynomial",
+            "option_b": "B. It is linear",
+            "option_c": "C. It is logarithmic",
+            "option_d": "D. It is stochastic",
+            "correct_answer": "B",
+            "explanation": "Linear regression assumes the output can be expressed as a linear combination of the inputs plus noise."
+        },
+        {
+            "question": "Which scenario would most likely require the use of logistic regression instead of linear regression?",
+            "option_a": "A. Predicting house prices",
+            "option_b": "B. Estimating age from facial features",
+            "option_c": "C. Classifying emails as spam or not spam",
+            "option_d": "D. Forecasting stock volume",
+            "correct_answer": "C",
+            "explanation": "Logistic regression is designed for binary (or categorical) outcomes, such as spam classification, where output must be a probability of class membership."
+        },
+        {
+            "question": "What is the purpose of the sigmoid function in logistic regression?",
+            "option_a": "A. To compute distances between points",
+            "option_b": "B. To transform linear output into a probability between 0 and 1",
+            "option_c": "C. To regularize model weights",
+            "option_d": "D. To encode categorical variables",
+            "correct_answer": "B",
+            "explanation": "The sigmoid function maps any real-valued number to a value between 0 and 1, suitable for modeling probabilities."
+        },
+        {
+            "question": "In KNN, what is a likely consequence of choosing a very small value of k (e.g., k=1)?",
+            "option_a": "A. High bias and smooth decision boundary",
+            "option_b": "B. Low variance and generalization",
+            "option_c": "C. Overfitting and sensitivity to noise",
+            "option_d": "D. Faster training time",
+            "correct_answer": "C",
+            "explanation": "k=1 leads to high model complexity, memorizing training data and being highly sensitive to outliers or noise."
+        },
+        {
+            "question": "How does increasing k in KNN generally affect bias and variance?",
+            "option_a": "A. Increases both bias and variance",
+            "option_b": "B. Decreases both bias and variance",
+            "option_c": "C. Increases bias and decreases variance",
+            "option_d": "D. Decreases bias and increases variance",
+            "correct_answer": "C",
+            "explanation": "Larger k smooths predictions, increasing bias but reducing variance, thus improving robustness to noise."
+        },
+        {
+            "question": "Which of the following is TRUE about the margin in SVM?",
+            "option_a": "A. It is the distance between the two farthest support vectors",
+            "option_b": "B. It is the perpendicular distance from the hyperplane to the nearest data points",
+            "option_c": "C. It is minimized to improve accuracy",
+            "option_d": "D. It only exists in non-linear SVMs",
+            "correct_answer": "B",
+            "explanation": "The margin is defined as the perpendicular distance from the separating hyperplane to the closest data points (support vectors)."
+        },
+        {
+            "question": "In a 3-dimensional feature space, what is the dimensionality of the separating hyperplane in SVM?",
+            "option_a": "A. 1",
+            "option_b": "B. 2",
+            "option_c": "C. 3",
+            "option_d": "D. 4",
+            "correct_answer": "B",
+            "explanation": "A hyperplane in an n-dimensional space has dimension n−1; thus, in 3D, it is a 2D plane."
+        },
+        {
+            "question": "Which splitting criterion would be used for a regression tree predicting student exam scores?",
+            "option_a": "A. Gini Index",
+            "option_b": "B. Entropy",
+            "option_c": "C. Reduction in Variance",
+            "option_d": "D. Information Gain",
+            "correct_answer": "C",
+            "explanation": "Regression trees use variance reduction (or MSE reduction) to evaluate splits since the target is continuous."
+        },
+        {
+            "question": "Given a dataset where 'Credit Score' yields a weighted Gini impurity of 0, what can be inferred?",
+            "option_a": "A. Credit Score is irrelevant",
+            "option_b": "B. All splits on Credit Score result in pure child nodes",
+            "option_c": "C. Credit Score has missing values",
+            "option_d": "D. The feature is numeric and uninformative",
+            "correct_answer": "B",
+            "explanation": "A Gini impurity of 0 after splitting means each resulting subset contains only one class—i.e., the splits are perfectly pure."
+        },
+        {
+            "question": "Why might SVM with a linear kernel underperform on a dataset that is not linearly separable?",
+            "option_a": "A. It cannot handle more than two classes",
+            "option_b": "B. It lacks support vectors",
+            "option_c": "C. It cannot create non-linear decision boundaries without a kernel trick",
+            "option_d": "D. It always overfits",
+            "correct_answer": "C",
+            "explanation": "A linear kernel restricts SVM to linear boundaries; non-linear separability requires non-linear kernels (e.g., RBF) via the kernel trick."
+        },
+        {
+            "question": "In logistic regression, how are parameters typically estimated?",
+            "option_a": "A. Ordinary Least Squares",
+            "option_b": "B. Gradient Descent only",
+            "option_c": "C. Maximum Likelihood Estimation",
+            "option_d": "D. Gini minimization",
+            "correct_answer": "C",
+            "explanation": "Parameters in logistic regression are estimated by maximizing the likelihood of observing the given class labels."
+        },
+        {
+            "question": "What is the mathematical form of the sigmoid function?",
+            "option_a": "A. S(x) = e^x / (1 + e^x)",
+            "option_b": "B. S(x) = 1 / (1 + e^(-x))",
+            "option_c": "C. S(x) = log(1 + e^x)",
+            "option_d": "D. S(x) = tanh(x)",
+            "correct_answer": "B",
+            "explanation": "The sigmoid function is defined as S(x) = 1 / (1 + e^(−x)), mapping real numbers to (0,1)."
+        },
+        {
+            "question": "Which of the following best describes the 'best fit line' in linear regression?",
+            "option_a": "A. The line that passes through the most points",
+            "option_b": "B. The line that minimizes the total prediction error (sum of squared residuals)",
+            "option_c": "C. The line with the steepest slope",
+            "option_d": "D. The line that maximizes R² regardless of overfitting",
+            "correct_answer": "B",
+            "explanation": "The best fit line minimizes the sum of squared vertical distances (residuals) between observed and predicted values."
+        },
+        {
+            "question": "In a decision tree, what determines the threshold for a numeric feature split?",
+            "option_a": "A. Random selection",
+            "option_b": "B. Midpoints between consecutive sorted values that minimize impurity",
+            "option_c": "C. Mean of the feature",
+            "option_d": "D. Standard deviation cutoff",
+            "correct_answer": "B",
+            "explanation": "For numeric features, candidate thresholds are midpoints between sorted values, and the one yielding lowest impurity is chosen."
+        },
+        {
+            "question": "Which statement about support vectors is FALSE?",
+            "option_a": "A. They lie on or within the margin",
+            "option_b": "B. Removing non-support vectors does not change the model",
+            "option_c": "C. All training points are support vectors in separable cases",
+            "option_d": "D. They are critical for defining the decision boundary",
+            "correct_answer": "C",
+            "explanation": "Only the closest points to the margin are support vectors; most training points are not support vectors."
+        },
+        {
+            "question": "What is the main advantage of using a soft margin in SVM?",
+            "option_a": "A. It guarantees 100% training accuracy",
+            "option_b": "B. It allows perfect separation in all cases",
+            "option_c": "C. It improves robustness to outliers and noise",
+            "option_d": "D. It eliminates the need for kernels",
+            "correct_answer": "C",
+            "explanation": "Soft margin tolerates some misclassifications, preventing overfitting to outliers and improving generalization."
+        },
+        {
+            "question": "For a binary logistic regression model, which activation/output function is used?",
+            "option_a": "A. ReLU",
+            "option_b": "B. Softmax",
+            "option_c": "C. Sigmoid",
+            "option_d": "D. Tanh",
+            "correct_answer": "C",
+            "explanation": "Sigmoid is used in binary logistic regression to output a probability between 0 and 1 for the positive class."
+        },
+        {
+            "question": "In KNN classification with k=3, if the three nearest neighbors are [A, A, B], what is the predicted class?",
+            "option_a": "A. A",
+            "option_b": "B. B",
+            "option_c": "C. Tie — no prediction",
+            "option_d": "D. Average of A and B",
+            "correct_answer": "A",
+            "explanation": "KNN classification uses majority vote; class A appears twice, so it is predicted."
+        },
+        {
+            "question": "Which evaluation metric is most appropriate for assessing a linear regression model?",
+            "option_a": "A. Accuracy",
+            "option_b": "B. F1-score",
+            "option_c": "C. R²",
+            "option_d": "D. Precision",
+            "correct_answer": "C",
+            "explanation": "R² measures the proportion of variance explained by the model, making it suitable for regression tasks."
+        },
+        {
+            "question": "What is the primary limitation of KNN as dataset size grows?",
+            "option_a": "A. It cannot handle categorical features",
+            "option_b": "B. Training time increases exponentially",
+            "option_c": "C. Prediction becomes slow due to distance computations",
+            "option_d": "D. It requires feature scaling always",
+            "correct_answer": "C",
+            "explanation": "KNN is a lazy learner; during prediction, it computes distances to all training points, which becomes costly with large datasets."
+        },
+        {
+            "question": "In SVM, what happens if the regularization parameter C is very large?",
+            "option_a": "A. The margin becomes wider",
+            "option_b": "B. The model tolerates more misclassifications",
+            "option_c": "C. The model aims for zero training error (hard margin behavior)",
+            "option_d": "D. It switches to a linear kernel",
+            "correct_answer": "C",
+            "explanation": "A large C penalizes misclassifications heavily, forcing the model to behave like a hard-margin SVM, which may overfit."
+        },
+        {
+            "question": "Which of the following is a key strength of decision trees?",
+            "option_a": "A. Guaranteed global optimum",
+            "option_b": "B. High computational efficiency during training",
+            "option_c": "C. Interpretability and no need for feature scaling",
+            "option_d": "D. Superior performance on all datasets",
+            "correct_answer": "C",
+            "explanation": "Decision trees are easy to interpret, handle mixed data types, and do not require feature normalization or scaling."
+        },
+        {
+            "question": "What does the term 'hyperplane' refer to in SVM?",
+            "option_a": "A. A point in feature space",
+            "option_b": "B. An (n−1)-dimensional decision boundary in n-dimensional space",
+            "option_c": "C. A cluster centroid",
+            "option_d": "D. The margin itself",
+            "correct_answer": "B",
+            "explanation": "A hyperplane is the decision boundary; in 2D it's a line, in 3D a plane, and so on."
+        },
+        {
+            "question": "In logistic regression, what does log(P/(1−P)) represent?",
+            "option_a": "A. Odds ratio",
+            "option_b": "B. Log-odds or logit",
+            "option_c": "C. Probability density",
+            "option_d": "D. Entropy",
+            "correct_answer": "B",
+            "explanation": "The logit function transforms probability P into log-odds, which is modeled as a linear combination of features."
+        },
+        {
+            "question": "Which of the following datasets would be best modeled using simple linear regression?",
+            "option_a": "A. Predicting species of iris flower from petal measurements",
+            "option_b": "B. Classifying sentiment from movie reviews",
+            "option_c": "C. Estimating salary based on years of experience",
+            "option_d": "D. Grouping customers by purchasing behavior",
+            "correct_answer": "C",
+            "explanation": "Simple linear regression is appropriate for predicting a continuous outcome (salary) from a single numeric predictor (experience)."
+        },
+        {
+            "question": "In the context of decision trees, what is 'impurity'?",
+            "option_a": "A. The presence of missing values",
+            "option_b": "B. The degree to which a node contains mixed class labels",
+            "option_c": "C. The depth of the tree",
+            "option_d": "D. The number of features used",
+            "correct_answer": "B",
+            "explanation": "Impurity measures how mixed the class distribution is in a node; lower impurity means more homogeneous class membership."
+        },
+        {
+            "question": "Which kernel is NOT typically used in SVM?",
+            "option_a": "A. Linear",
+            "option_b": "B. RBF",
+            "option_c": "C. Polynomial",
+            "option_d": "D. Sigmoid (as a neural activation only)",
+            "correct_answer": "D",
+            "explanation": "While 'sigmoid kernel' exists, it's rarely used; common kernels are linear, polynomial, and RBF. The distractor refers to neural nets, not SVM kernels."
+        }
+    ]
+}

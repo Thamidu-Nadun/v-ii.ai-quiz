@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "What is the main limitation of traditional programming approaches?",
+            "option_a": "A. They are too slow to execute",
+            "option_b": "B. They require expensive hardware",
+            "option_c": "C. They struggle with complex tasks where rules are hard to define",
+            "option_d": "D. They cannot handle numerical data",
+            "correct_answer": "C",
+            "explanation": "Traditional programming relies on explicit rule definition, making it unsuitable for problems where patterns or rules are ambiguous or too complex to code manually."
+        },
+        {
+            "question": "Which Python library is specifically used for creating machine learning models like Logistic Regression?",
+            "option_a": "A. numpy",
+            "option_b": "B. matplotlib",
+            "option_c": "C. pandas",
+            "option_d": "D. scikit-learn",
+            "correct_answer": "D",
+            "explanation": "Scikit-learn is a machine learning library in Python that provides simple and efficient tools for data mining and data analysis, including Logistic Regression."
+        },
+        {
+            "question": "In prompt engineering, which factor does NOT affect the quality of AI-generated responses?",
+            "option_a": "A. Clarity",
+            "option_b": "B. Specificity",
+            "option_c": "C. Computer RAM",
+            "option_d": "D. Tone",
+            "correct_answer": "C",
+            "explanation": "Computer RAM is a hardware resource and does not influence the linguistic or structural quality of prompts or AI responses."
+        },
+        {
+            "question": "What does the pd.read_csv() function return in pandas?",
+            "option_a": "A. A list",
+            "option_b": "B. A dictionary",
+            "option_c": "C. A DataFrame",
+            "option_d": "D. An array",
+            "correct_answer": "C",
+            "explanation": "The pd.read_csv() function reads a CSV file and returns a pandas DataFrame, which is a 2D labeled data structure."
+        },
+        {
+            "question": "Which method is used to detect outliers in the car dataset lab?",
+            "option_a": "A. Standard Deviation method",
+            "option_b": "B. Z-score method",
+            "option_c": "C. Interquartile Range (IQR) method",
+            "option_d": "D. Mean absolute deviation",
+            "correct_answer": "C",
+            "explanation": "The IQR method identifies outliers by calculating the range between the first (Q1) and third (Q3) quartiles and flagging values outside 1.5×IQR."
+        },
+        {
+            "question": "What is the purpose of MinMaxScaler in data preprocessing?",
+            "option_a": "A. To remove missing values",
+            "option_b": "B. To normalize numeric data between 0 and 1",
+            "option_c": "C. To encode categorical variables",
+            "option_d": "D. To detect outliers",
+            "correct_answer": "B",
+            "explanation": "MinMaxScaler transforms features by scaling each feature to a given range, typically [0, 1], which is useful for algorithms sensitive to feature magnitudes."
+        },
+        {
+            "question": "What does df.isnull().sum() do?",
+            "option_a": "A. Removes null values from the DataFrame",
+            "option_b": "B. Counts the number of missing values in each column",
+            "option_c": "C. Fills missing values with mean",
+            "option_d": "D. Checks if DataFrame is empty",
+            "correct_answer": "B",
+            "explanation": "This method returns the count of missing (null) values for each column in the DataFrame, aiding in data quality assessment."
+        },
+        {
+            "question": "In the student performance dataset, what ratio is used for train-test split?",
+            "option_a": "A. 70-30",
+            "option_b": "B. 80-20",
+            "option_c": "C. 90-10",
+            "option_d": "D. 60-40",
+            "correct_answer": "B",
+            "explanation": "An 80-20 split is commonly used in machine learning to allocate 80% of data for training and 20% for testing model performance."
+        },
+        {
+            "question": "What does random_state=42 ensure in train_test_split?",
+            "option_a": "A. Better accuracy",
+            "option_b": "B. Faster execution",
+            "option_c": "C. Reproducibility of results",
+            "option_d": "D. Smaller test size",
+            "correct_answer": "C",
+            "explanation": "Setting random_state ensures that the data split is the same every time the code is run, enabling reproducible experiments."
+        },
+        {
+            "question": "What does R² (coefficient of determination) measure?",
+            "option_a": "A. The average error in predictions",
+            "option_b": "B. The proportion of variance explained by the model",
+            "option_c": "C. The correlation between two features",
+            "option_d": "D. The number of outliers",
+            "correct_answer": "B",
+            "explanation": "R² indicates how well the regression model explains the variability of the target variable around its mean, ranging from 0 to 1."
+        }
+    ]
+}
