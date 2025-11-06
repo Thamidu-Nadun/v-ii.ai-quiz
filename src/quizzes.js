@@ -48,6 +48,36 @@ export default [
         description: 'Test your understanding of supervised learning algorithms, techniques, and applications.',
         isAvailable: true
     },
+    {
+        title: 'AI - I',
+        path: 'quiz/AI/AI-i.json',
+        description: 'Assess your foundational knowledge of artificial intelligence concepts and methodologies.',
+        isAvailable: true
+    },
+    {
+        title: 'AI - II',
+        path: 'quiz/AI/AI-ii.json',
+        description: 'Further evaluate your understanding of advanced artificial intelligence topics and applications.',
+        isAvailable: true
+    },
+    {
+        title: 'AI - III',
+        path: 'quiz/AI/AI-iii.json',
+        description: 'Test your knowledge of cutting-edge artificial intelligence research and real-world implementations.',
+        isAvailable: true
+    },
+    {
+        title: 'AI - IV',
+        path: 'quiz/AI/AI-iv.json',
+        description: 'Assess your expertise in specialized areas of artificial intelligence, including ethics and future trends.',
+        isAvailable: true
+    },
+    {
+        title: 'AI - V',
+        path: 'quiz/AI/AI-v.json',
+        description: 'Evaluate your comprehensive understanding of artificial intelligence principles, techniques, and applications.',
+        isAvailable: true
+    },
     // Software Engineering Quizzes
     {
         title: 'Agile Development',

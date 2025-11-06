@@ -1,0 +1,454 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary characteristic that distinguishes unsupervised learning from supervised learning?",
+            "option_a": "A. Unsupervised learning requires more computational power",
+            "option_b": "B. Unsupervised learning works with unlabeled data without predefined outputs",
+            "option_c": "C. Unsupervised learning can only be used for clustering tasks",
+            "option_d": "D. Unsupervised learning always produces more accurate results",
+            "correct_answer": "B",
+            "explanation": "Unsupervised learning is defined by its use of unlabeled data where the algorithm discovers hidden patterns without predefined outputs or categories, unlike supervised learning which uses labeled data."
+        },
+        {
+            "question": "In K-means clustering, what does the 'K' represent?",
+            "option_a": "A. The number of iterations required",
+            "option_b": "B. The number of clusters",
+            "option_c": "C. The number of dimensions in the data",
+            "option_d": "D. The number of data points",
+            "correct_answer": "B",
+            "explanation": "K represents the number of clusters that the algorithm will partition the data into, which must be specified before running the algorithm."
+        },
+        {
+            "question": "What is the first step in the K-means clustering algorithm?",
+            "option_a": "A. Calculate distances between all data points",
+            "option_b": "B. Assign each data point to the nearest centroid",
+            "option_c": "C. Select K initial centroids randomly",
+            "option_d": "D. Update the centroid positions",
+            "correct_answer": "C",
+            "explanation": "The initialization step involves randomly selecting K initial centroids from the data points, which serves as the starting point for the iterative clustering process."
+        },
+        {
+            "question": "Which distance metric is commonly used in K-means clustering to assign data points to the nearest centroid?",
+            "option_a": "A. Manhattan distance",
+            "option_b": "B. Euclidean distance",
+            "option_c": "C. Cosine similarity",
+            "option_d": "D. Hamming distance",
+            "correct_answer": "B",
+            "explanation": "K-means clustering uses Euclidean distance to calculate the distance between each data point and each centroid to determine cluster assignments."
+        },
+        {
+            "question": "How are new centroids calculated in the update step of K-means clustering?",
+            "option_a": "A. By selecting the data point farthest from the current centroid",
+            "option_b": "B. By taking the mean of all data points assigned to that cluster",
+            "option_c": "C. By randomly selecting a new point from the cluster",
+            "option_d": "D. By finding the median of all data points in the cluster",
+            "correct_answer": "B",
+            "explanation": "New centroids are calculated by taking the mean (average) of all data points assigned to each cluster, which represents the updated cluster center."
+        },
+        {
+            "question": "Which of the following is NOT a valid stopping criterion for the K-means algorithm?",
+            "option_a": "A. Centroids of newly formed clusters do not change",
+            "option_b": "B. Points remain in the same cluster",
+            "option_c": "C. Maximum number of iterations are reached",
+            "option_d": "D. All clusters have equal number of points",
+            "correct_answer": "D",
+            "explanation": "Equal distribution of points across clusters is not a stopping criterion; K-means stops when centroids stabilize, points don't change clusters, or maximum iterations are reached."
+        },
+        {
+            "question": "Given points A(2,3) and B(6,1), what is the Euclidean distance between them (rounded to 2 decimal places)?",
+            "option_a": "A. 3.16",
+            "option_b": "B. 4.47",
+            "option_c": "C. 5.10",
+            "option_d": "D. 6.00",
+            "correct_answer": "B",
+            "explanation": "The Euclidean distance is calculated as sqrt((6-2)² + (1-3)²) = sqrt(16 + 4) = sqrt(20) ≈ 4.47."
+        },
+        {
+            "question": "What does the Inertia metric measure in clustering evaluation?",
+            "option_a": "A. The distance between different clusters",
+            "option_b": "B. The sum of distances of all points within a cluster from the centroid",
+            "option_c": "C. The number of iterations required for convergence",
+            "option_d": "D. The ratio of inter-cluster to intra-cluster distance",
+            "correct_answer": "B",
+            "explanation": "Inertia measures cluster cohesion by calculating the sum of distances of all points within a cluster from that cluster's centroid."
+        },
+        {
+            "question": "What does the Dunn Index take into account when evaluating clustering quality?",
+            "option_a": "A. Only the distances within clusters",
+            "option_b": "B. The distance between two clusters",
+            "option_c": "C. The number of clusters formed",
+            "option_d": "D. The variance of the entire dataset",
+            "correct_answer": "B",
+            "explanation": "The Dunn Index considers the distance between clusters (inter-cluster distance) in addition to intra-cluster distances to evaluate clustering quality."
+        },
+        {
+            "question": "What is the 'elbow point' used for in K-means clustering?",
+            "option_a": "A. Determining when to stop iterations",
+            "option_b": "B. Selecting the optimal value of K",
+            "option_c": "C. Identifying outliers in the data",
+            "option_d": "D. Calculating the centroid positions",
+            "correct_answer": "B",
+            "explanation": "The elbow point in a plot of inertia values versus K helps identify the optimal number of clusters by showing where adding more clusters provides diminishing returns."
+        },
+        {
+            "question": "What is the primary purpose of hierarchical clustering?",
+            "option_a": "A. To partition data into exactly K clusters",
+            "option_b": "B. To organize data objects into a tree-like structure based on similarity",
+            "option_c": "C. To identify outliers in the dataset",
+            "option_d": "D. To reduce the dimensionality of the data",
+            "correct_answer": "B",
+            "explanation": "Hierarchical clustering creates a tree-like structure (dendrogram) that organizes data based on similarity, revealing hierarchical relationships within the data."
+        },
+        {
+            "question": "Which type of hierarchical clustering follows a bottom-up approach?",
+            "option_a": "A. Divisive hierarchical clustering",
+            "option_b": "B. Agglomerative hierarchical clustering",
+            "option_c": "C. K-means clustering",
+            "option_d": "D. Centroid-based clustering",
+            "correct_answer": "B",
+            "explanation": "Agglomerative hierarchical clustering uses a bottom-up approach, starting with individual points and progressively merging them into larger clusters."
+        },
+        {
+            "question": "In divisive hierarchical clustering, what is the starting point?",
+            "option_a": "A. Individual data points as separate clusters",
+            "option_b": "B. All data points in a single cluster",
+            "option_c": "C. Randomly selected K centroids",
+            "option_d": "D. The median of the dataset",
+            "correct_answer": "B",
+            "explanation": "Divisive hierarchical clustering follows a top-down approach, starting with all data points in one cluster and recursively splitting them into smaller clusters."
+        },
+        {
+            "question": "In single linkage for hierarchical clustering, how is the distance between two clusters calculated?",
+            "option_a": "A. Maximum distance between any two points in the clusters",
+            "option_b": "B. Smallest distance between any two points in the clusters",
+            "option_c": "C. Average distance between all pairs of points",
+            "option_d": "D. Distance between the centroids of the clusters",
+            "correct_answer": "B",
+            "explanation": "Single linkage calculates cluster distance as the minimum (smallest) distance between any two points from the two clusters being compared."
+        },
+        {
+            "question": "What does complete linkage use to determine the distance between two clusters?",
+            "option_a": "A. Smallest distance between points",
+            "option_b": "B. Average of all distances",
+            "option_c": "C. Largest distance between points",
+            "option_d": "D. Median distance between points",
+            "correct_answer": "C",
+            "explanation": "Complete linkage uses the maximum (largest) distance between any two points from different clusters as the distance between those clusters."
+        },
+        {
+            "question": "What is a dendrogram used for in hierarchical clustering?",
+            "option_a": "A. Calculating the optimal number of clusters",
+            "option_b": "B. Visualizing the hierarchical relationship between clusters",
+            "option_c": "C. Measuring the accuracy of the clustering",
+            "option_d": "D. Initializing the cluster centroids",
+            "correct_answer": "B",
+            "explanation": "A dendrogram is a tree-like diagram that visualizes the hierarchical structure and relationships between clusters formed during the clustering process."
+        },
+        {
+            "question": "In the agglomerative hierarchical clustering example, which two points were grouped first?",
+            "option_a": "A. A and B",
+            "option_b": "B. C and F",
+            "option_c": "C. D and E",
+            "option_d": "D. B and E",
+            "correct_answer": "B",
+            "explanation": "Points C and F were grouped first because they had the minimum distance (0.11) in the initial distance matrix."
+        },
+        {
+            "question": "What is the key advantage of DBSCAN over K-means clustering?",
+            "option_a": "A. DBSCAN requires fewer computational resources",
+            "option_b": "B. DBSCAN can find arbitrarily shaped clusters and identify outliers",
+            "option_c": "C. DBSCAN always produces exactly K clusters",
+            "option_d": "D. DBSCAN works only with labeled data",
+            "correct_answer": "B",
+            "explanation": "DBSCAN is density-based and can discover clusters of arbitrary shapes while also identifying noise points (outliers), unlike K-means which assumes spherical clusters."
+        },
+        {
+            "question": "What does DBSCAN stand for?",
+            "option_a": "A. Distance-Based Spatial Clustering of Applications with Noise",
+            "option_b": "B. Density-Based Spatial Clustering of Applications with Noise",
+            "option_c": "C. Data-Based Sequential Clustering of Applications with Noise",
+            "option_d": "D. Dynamic-Based Spatial Clustering of Applications with Noise",
+            "correct_answer": "B",
+            "explanation": "DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise, emphasizing its density-based approach to clustering."
+        },
+        {
+            "question": "What is OPTICS in the context of clustering?",
+            "option_a": "A. A visualization tool for clusters",
+            "option_b": "B. An extension of DBSCAN that handles varying density better",
+            "option_c": "C. A metric for evaluating cluster quality",
+            "option_d": "D. A preprocessing technique for clustering",
+            "correct_answer": "B",
+            "explanation": "OPTICS (Ordering Points To Identify the Clustering Structure) is an extension of DBSCAN that better handles clusters of varying density by building a cluster ordering."
+        },
+        {
+            "question": "What is a key characteristic of Mean Shift Clustering?",
+            "option_a": "A. It requires the number of clusters to be specified in advance",
+            "option_b": "B. It finds high-density regions (peaks) in data without needing the number of clusters",
+            "option_c": "C. It only works with two-dimensional data",
+            "option_d": "D. It is faster than K-means for large datasets",
+            "correct_answer": "B",
+            "explanation": "Mean Shift Clustering identifies peaks (high-density regions) in the data and does not require specifying the number of clusters beforehand."
+        },
+        {
+            "question": "What type of clustering does Gaussian Mixture Models (GMMs) provide?",
+            "option_a": "A. Hard clustering only",
+            "option_b": "B. Soft clustering where points can belong partly to multiple clusters",
+            "option_c": "C. Hierarchical clustering",
+            "option_d": "D. Density-based clustering",
+            "correct_answer": "B",
+            "explanation": "GMMs provide soft clustering (probabilistic clustering) where each data point has a probability of belonging to each cluster rather than being assigned to exactly one cluster."
+        },
+        {
+            "question": "What mathematical concept does Spectral Clustering primarily use?",
+            "option_a": "A. Linear regression and correlation",
+            "option_b": "B. Graph theory and eigenvalues of similarity matrices",
+            "option_c": "C. Probability distributions and Bayesian inference",
+            "option_d": "D. Distance metrics and centroids",
+            "correct_answer": "B",
+            "explanation": "Spectral Clustering uses graph theory and eigenvalues of similarity matrices to perform clustering, making it particularly powerful for non-convex clusters."
+        },
+        {
+            "question": "What is the main advantage of BIRCH clustering algorithm?",
+            "option_a": "A. It provides the most accurate clusters",
+            "option_b": "B. It handles large datasets efficiently using a tree structure",
+            "option_c": "C. It requires no parameters",
+            "option_d": "D. It works only with categorical data",
+            "correct_answer": "B",
+            "explanation": "BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies) is designed to handle large datasets efficiently by building a CF tree and clustering data incrementally."
+        },
+        {
+            "question": "In a K-means clustering scenario with K=3 and 100 data points, if after 5 iterations the centroids remain unchanged, what should happen next?",
+            "option_a": "A. Increase K to 4 and restart",
+            "option_b": "B. The algorithm should stop as a stopping criterion is met",
+            "option_c": "C. Continue for at least 10 more iterations",
+            "option_d": "D. Randomly reassign all points to different clusters",
+            "correct_answer": "B",
+            "explanation": "When centroids no longer change, one of the stopping criteria is met, and the algorithm should terminate as convergence has been achieved."
+        },
+        {
+            "question": "Why is it important to consider multiple values of K when performing K-means clustering?",
+            "option_a": "A. To increase computational complexity",
+            "option_b": "B. To find the optimal number of clusters using methods like the elbow method",
+            "option_c": "C. To ensure all data points are classified",
+            "option_d": "D. To reduce the number of iterations required",
+            "correct_answer": "B",
+            "explanation": "Testing multiple K values and examining their inertia helps identify the optimal number of clusters, often using the elbow method to find where additional clusters provide diminishing returns."
+        },
+        {
+            "question": "In the given example with points A(2,3), B(6,1), C(1,2), D(3,1), E(6,4), if A and B are initial centroids (K=2), which points would be assigned to cluster with centroid A?",
+            "option_a": "A. A, B, E",
+            "option_b": "B. A, C",
+            "option_c": "C. A, C, D",
+            "option_d": "D. A, D, E",
+            "correct_answer": "C",
+            "explanation": "Based on Euclidean distances, points A, C, and D are closer to centroid A, while points B and E are closer to centroid B, forming two clusters."
+        },
+        {
+            "question": "After the first iteration in the example, what are the coordinates of Centroid 1?",
+            "option_a": "A. (1, 2)",
+            "option_b": "B. (2, 2)",
+            "option_c": "C. (2, 3)",
+            "option_d": "D. (3, 2)",
+            "correct_answer": "B",
+            "explanation": "Centroid 1 is calculated as the mean of its cluster points (A, C, D): X1 = (2+1+3)/3 = 2, X2 = (3+2+1)/3 = 2, giving coordinates (2, 2)."
+        },
+        {
+            "question": "What happens if K-means clustering is run multiple times on the same dataset with random initialization?",
+            "option_a": "A. It will always produce identical results",
+            "option_b": "B. It may produce different results due to different initial centroids",
+            "option_c": "C. It will fail to converge",
+            "option_d": "D. It will automatically determine the optimal K",
+            "correct_answer": "B",
+            "explanation": "Random initialization of centroids can lead to different final clusterings, which is why K-means is often run multiple times with different initializations to find the best solution."
+        },
+        {
+            "question": "In hierarchical clustering with average linkage, how would the distance between clusters {A, B} and {C} be calculated?",
+            "option_a": "A. Min(d[A,C], d[B,C])",
+            "option_b": "B. Max(d[A,C], d[B,C])",
+            "option_c": "C. Average of d[A,C] and d[B,C]",
+            "option_d": "D. Sum of d[A,C] and d[B,C]",
+            "correct_answer": "C",
+            "explanation": "Average linkage calculates the cluster distance as the average of all pairwise distances between points in the two clusters, so Avg(d[A,C], d[B,C])."
+        },
+        {
+            "question": "A company wants to segment customers for targeted marketing but doesn't know how many segments exist. Which approach would be most appropriate?",
+            "option_a": "A. K-means with K=5 as a standard practice",
+            "option_b": "B. Hierarchical clustering with a dendrogram to explore different segment counts",
+            "option_c": "C. DBSCAN with fixed density parameters",
+            "option_d": "D. Simple random sampling into groups",
+            "correct_answer": "B",
+            "explanation": "Hierarchical clustering with dendrogram visualization allows exploring different numbers of customer segments without pre-specifying K, providing flexibility in determining natural groupings."
+        },
+        {
+            "question": "In the distance matrix for hierarchical clustering, if all remaining distances are equal, which criterion would be used to decide which clusters to merge?",
+            "option_a": "A. Merge clusters with the most data points",
+            "option_b": "B. The choice is arbitrary; any can be selected",
+            "option_c": "C. Always merge the first two clusters in the matrix",
+            "option_d": "D. Merge clusters with the least data points",
+            "correct_answer": "B",
+            "explanation": "When distances are equal, the choice of which clusters to merge is arbitrary and typically the first pair encountered in the matrix order is selected."
+        },
+        {
+            "question": "Which clustering algorithm would be most suitable for identifying anomalous network traffic patterns?",
+            "option_a": "A. K-means because it's the fastest",
+            "option_b": "B. DBSCAN because it can identify outliers as noise",
+            "option_c": "C. Hierarchical clustering because it creates a tree structure",
+            "option_d": "D. GMM because it uses probability",
+            "correct_answer": "B",
+            "explanation": "DBSCAN's ability to identify outliers (noise points) makes it particularly suitable for anomaly detection tasks like identifying unusual network traffic patterns."
+        },
+        {
+            "question": "For image segmentation where the number of segments is unknown and regions have complex shapes, which algorithm would be most appropriate?",
+            "option_a": "A. K-means with K=10",
+            "option_b": "B. Mean Shift Clustering",
+            "option_c": "C. Agglomerative hierarchical clustering with complete linkage",
+            "option_d": "D. BIRCH",
+            "correct_answer": "B",
+            "explanation": "Mean Shift Clustering is particularly useful for image segmentation as it can find peaks in feature space without requiring the number of clusters and handles complex shapes well."
+        },
+        {
+            "question": "A researcher wants to analyze social network communities where some users belong to multiple overlapping groups. Which clustering approach is most suitable?",
+            "option_a": "A. K-means for clear separation",
+            "option_b": "B. Gaussian Mixture Models for soft clustering",
+            "option_c": "C. DBSCAN for density-based separation",
+            "option_d": "D. BIRCH for efficient processing",
+            "correct_answer": "B",
+            "explanation": "GMMs provide soft clustering where points can have partial membership in multiple clusters, making it ideal for overlapping community structures in social networks."
+        },
+        {
+            "question": "In the hierarchical clustering example, after grouping C and F, what would be the distance between cluster {C,F} and point D using single linkage?",
+            "option_a": "A. 0.22",
+            "option_b": "B. 0.15",
+            "option_c": "C. 0.185",
+            "option_d": "D. 0.11",
+            "correct_answer": "B",
+            "explanation": "Using single linkage, the distance is Min(d[C,D], d[F,D]) = Min(0.15, 0.22) = 0.15, taking the smallest distance between any points in the two clusters."
+        },
+        {
+            "question": "When comparing K-means and hierarchical clustering, which statement is most accurate?",
+            "option_a": "A. K-means always produces better clusters than hierarchical methods",
+            "option_b": "B. K-means requires specifying K beforehand while hierarchical clustering does not",
+            "option_c": "C. Hierarchical clustering is always faster for large datasets",
+            "option_d": "D. K-means can only work with numerical data while hierarchical works with any data type",
+            "correct_answer": "B",
+            "explanation": "K-means requires pre-specifying the number of clusters (K), while hierarchical clustering builds a complete hierarchy allowing exploration of different cluster numbers after the fact."
+        },
+        {
+            "question": "If a dataset has clusters with varying densities (some dense, some sparse), which algorithm would handle this best?",
+            "option_a": "A. Standard K-means",
+            "option_b": "B. OPTICS",
+            "option_c": "C. Single linkage hierarchical clustering",
+            "option_d": "D. BIRCH",
+            "correct_answer": "B",
+            "explanation": "OPTICS is specifically designed to handle clusters of varying density better than DBSCAN by building a cluster ordering that captures density variations."
+        },
+        {
+            "question": "What is the computational complexity characteristic of agglomerative hierarchical clustering compared to K-means?",
+            "option_a": "A. Hierarchical clustering is generally more computationally expensive",
+            "option_b": "B. K-means is always slower regardless of dataset size",
+            "option_c": "C. Both have identical computational complexity",
+            "option_d": "D. Hierarchical clustering is faster for all dataset sizes",
+            "correct_answer": "A",
+            "explanation": "Agglomerative hierarchical clustering typically has higher computational complexity (O(n² log n) or O(n³)) compared to K-means (O(nkd) per iteration), making it more expensive especially for large datasets."
+        },
+        {
+            "question": "In the context of evaluating clustering quality, why might low inertia not always indicate the best clustering?",
+            "option_a": "A. Low inertia always indicates perfect clustering",
+            "option_b": "B. Very low inertia might indicate overfitting with too many clusters",
+            "option_c": "C. Inertia cannot be calculated for most datasets",
+            "option_d": "D. Low inertia means the clusters are too large",
+            "correct_answer": "B",
+            "explanation": "While low inertia indicates tight clusters, extremely low values might result from having too many clusters (approaching one cluster per point), which overfits and isn't meaningful for data interpretation."
+        },
+        {
+            "question": "A dataset contains text documents that need to be grouped by topic. The topics may have hierarchical relationships (e.g., 'Sports' contains 'Football' and 'Basketball'). Which approach is most suitable?",
+            "option_a": "A. K-means with K=2",
+            "option_b": "B. Hierarchical clustering to capture topic hierarchy",
+            "option_c": "C. DBSCAN for density-based grouping",
+            "option_d": "D. Mean Shift for peak detection",
+            "correct_answer": "B",
+            "explanation": "Hierarchical clustering naturally captures hierarchical relationships in the data through its tree structure, making it ideal for discovering nested topic structures in document collections."
+        },
+        {
+            "question": "In K-means, if one cluster ends up with zero points after an iteration, what is the typical solution?",
+            "option_a": "A. Continue with fewer clusters",
+            "option_b": "B. Reinitialize that centroid, often at the point farthest from existing centroids",
+            "option_c": "C. Stop the algorithm immediately",
+            "option_d": "D. Merge it with the largest cluster",
+            "correct_answer": "B",
+            "explanation": "When a cluster becomes empty, the typical solution is to reinitialize its centroid, often by placing it at the point farthest from all existing centroids to improve cluster distribution."
+        },
+        {
+            "question": "For a real-time fraud detection system processing millions of transactions, which clustering characteristic would be most critical?",
+            "option_a": "A. Ability to create visually appealing dendrograms",
+            "option_b": "B. Computational efficiency and scalability",
+            "option_c": "C. Creating exactly 10 clusters",
+            "option_d": "D. Using complete linkage for distance calculation",
+            "correct_answer": "B",
+            "explanation": "For real-time systems with large data volumes, computational efficiency and scalability are critical; algorithms like BIRCH or incremental K-means would be more suitable than computationally expensive methods."
+        },
+        {
+            "question": "Why might complete linkage in hierarchical clustering be preferred over single linkage for compact, well-separated clusters?",
+            "option_a": "A. It always runs faster",
+            "option_b": "B. It avoids the chaining effect where clusters elongate through bridging points",
+            "option_c": "C. It requires less memory",
+            "option_d": "D. It produces more clusters",
+            "correct_answer": "B",
+            "explanation": "Complete linkage prevents the chaining effect (where clusters form long chains through single connecting points) that single linkage is susceptible to, resulting in more compact, globular clusters."
+        },
+        {
+            "question": "In the provided hierarchical clustering example, what is the final structure represented by the dendrogram?",
+            "option_a": "A. Six separate clusters",
+            "option_b": "B. All points merged into a single hierarchical structure",
+            "option_c": "C. Three equal-sized clusters",
+            "option_d": "D. Only two main clusters",
+            "correct_answer": "B",
+            "explanation": "The dendrogram represents the complete hierarchical merging process from individual points to a single cluster containing all points, showing the full hierarchical structure."
+        },
+        {
+            "question": "A biologist studying species classification wants to create a taxonomy tree. Which clustering method would be most natural for this task?",
+            "option_a": "A. K-means with predetermined number of species groups",
+            "option_b": "B. Agglomerative hierarchical clustering to build a taxonomy tree",
+            "option_c": "C. DBSCAN to identify species outliers",
+            "option_d": "D. GMM for probabilistic species assignment",
+            "correct_answer": "B",
+            "explanation": "Agglomerative hierarchical clustering naturally creates a tree structure (dendrogram) that mirrors biological taxonomy trees, showing relationships from species to genus to family and beyond."
+        },
+        {
+            "question": "If a K-means algorithm converges after only 2 iterations, what does this most likely indicate?",
+            "option_a": "A. The algorithm failed",
+            "option_b": "B. The initial centroids were already well-positioned or the data has very clear clusters",
+            "option_c": "C. The value of K is incorrect",
+            "option_d": "D. There are no clusters in the data",
+            "correct_answer": "B",
+            "explanation": "Quick convergence typically indicates that the initial centroids were fortunately placed near optimal positions or that the data has very distinct, well-separated clusters."
+        },
+        {
+            "question": "For speaker recognition in audio processing, which clustering approach would be most appropriate?",
+            "option_a": "A. K-means for its simplicity",
+            "option_b": "B. Gaussian Mixture Models for modeling voice characteristics probabilistically",
+            "option_c": "C. Single linkage hierarchical clustering",
+            "option_d": "D. BIRCH for large audio files",
+            "correct_answer": "B",
+            "explanation": "GMMs are particularly suitable for speaker recognition as they can model the probabilistic distribution of voice features and handle the natural variability in speech patterns."
+        },
+        {
+            "question": "When would average linkage be preferred over single and complete linkage in hierarchical clustering?",
+            "option_a": "A. When computational speed is the only concern",
+            "option_b": "B. When seeking a balance between single linkage's chaining and complete linkage's crowding",
+            "option_c": "C. When working with categorical data only",
+            "option_d": "D. When the dataset has no outliers",
+            "correct_answer": "B",
+            "explanation": "Average linkage provides a compromise between single linkage (susceptible to chaining) and complete linkage (susceptible to crowding), often producing more balanced clusters."
+        },
+        {
+            "question": "In a scenario where data arrives continuously and clustering needs to be updated incrementally, which algorithm would be most suitable?",
+            "option_a": "A. Standard agglomerative hierarchical clustering",
+            "option_b": "B. BIRCH for incremental clustering",
+            "option_c": "C. K-means requiring complete retraining",
+            "option_d": "D. Divisive hierarchical clustering",
+            "correct_answer": "B",
+            "explanation": "BIRCH is specifically designed for incremental clustering, building a CF tree that can be updated as new data arrives without requiring complete reprocessing of all data."
+        }
+    ]
+}

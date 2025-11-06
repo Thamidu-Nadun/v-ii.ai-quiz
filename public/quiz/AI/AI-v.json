@@ -1,0 +1,436 @@
+{
+    "questions": [
+        {
+            "question": "What does 'bias' in Artificial Intelligence primarily refer to?",
+            "option_a": "A. Random errors caused by hardware failures",
+            "option_b": "B. Systematic unfairness in data or algorithms",
+            "option_c": "C. Lack of sufficient data for training",
+            "option_d": "D. Delay in processing AI decisions",
+            "correct_answer": "B",
+            "explanation": "Bias in AI refers to systematic unfairness in data or algorithms that results in discriminatory outcomes."
+        },
+        {
+            "question": "Which of the following is an example of data bias?",
+            "option_a": "A. Model overfitting due to too much data",
+            "option_b": "B. Using historical data that underrepresents women in technology roles",
+            "option_c": "C. A random selection of diverse training samples",
+            "option_d": "D. Algorithm performing equally well on all populations",
+            "correct_answer": "B",
+            "explanation": "Data bias occurs when historical data reflects social prejudices, such as underrepresentation of certain groups."
+        },
+        {
+            "question": "Sampling bias occurs when:",
+            "option_a": "A. The training data does not represent the diversity of the population",
+            "option_b": "B. The data is too large to process efficiently",
+            "option_c": "C. Labels are assigned randomly by human annotators",
+            "option_d": "D. The algorithm ignores rare data points intentionally",
+            "correct_answer": "A",
+            "explanation": "Sampling bias arises when the dataset lacks diversity and fails to represent all population groups."
+        },
+        {
+            "question": "Labeling bias is introduced primarily by:",
+            "option_a": "A. Random errors in model training",
+            "option_b": "B. Subjective human annotation of data",
+            "option_c": "C. Automated label generation tools",
+            "option_d": "D. Incorrect mathematical formulas",
+            "correct_answer": "B",
+            "explanation": "Labeling bias occurs when human annotators apply subjective judgment or stereotypes during data labeling."
+        },
+        {
+            "question": "Which of the following describes algorithmic bias?",
+            "option_a": "A. Errors caused by sensor malfunctions",
+            "option_b": "B. Inherent prejudices in data labels",
+            "option_c": "C. Model design choices that favor certain groups unintentionally",
+            "option_d": "D. Random fluctuations in output",
+            "correct_answer": "C",
+            "explanation": "Algorithmic bias arises from design or optimization choices that inadvertently favor majority or dominant groups."
+        },
+        {
+            "question": "What is an example of interaction bias in AI systems?",
+            "option_a": "A. AI models improving through diverse user interactions",
+            "option_b": "B. Search engines amplifying harmful content based on user clicks",
+            "option_c": "C. Random feedback loops in model training",
+            "option_d": "D. Manual removal of user-generated data",
+            "correct_answer": "B",
+            "explanation": "Interaction bias happens when user feedback reinforces stereotypes, as seen in biased search recommendations."
+        },
+        {
+            "question": "Which of the following is a consequence of bias in AI?",
+            "option_a": "A. Increased system accuracy",
+            "option_b": "B. Improved user satisfaction",
+            "option_c": "C. Denial of opportunities such as jobs or loans",
+            "option_d": "D. Faster training times",
+            "correct_answer": "C",
+            "explanation": "Bias in AI can lead to unfair treatment of individuals, such as being denied jobs or loans due to discriminatory models."
+        },
+        {
+            "question": "Which ethical principle ensures that AI systems treat individuals equitably?",
+            "option_a": "A. Fairness",
+            "option_b": "B. Privacy",
+            "option_c": "C. Accountability",
+            "option_d": "D. Security",
+            "correct_answer": "A",
+            "explanation": "Fairness requires AI systems to treat all individuals and groups equitably without discrimination."
+        },
+        {
+            "question": "Transparency and explainability in AI primarily aim to:",
+            "option_a": "A. Improve computational efficiency",
+            "option_b": "B. Help users understand AI decision processes",
+            "option_c": "C. Reduce data collection costs",
+            "option_d": "D. Hide proprietary algorithms",
+            "correct_answer": "B",
+            "explanation": "Transparency and explainability ensure that users understand how and why AI systems make certain decisions."
+        },
+        {
+            "question": "The principle of accountability in AI means that:",
+            "option_a": "A. Only users are responsible for system misuse",
+            "option_b": "B. Responsibility is clearly defined for AI-related harm",
+            "option_c": "C. AI systems can self-regulate without oversight",
+            "option_d": "D. Developers have no ethical obligations",
+            "correct_answer": "B",
+            "explanation": "Accountability ensures that developers and organizations take responsibility if AI systems cause harm."
+        },
+        {
+            "question": "Privacy and data protection in AI are often regulated under frameworks such as:",
+            "option_a": "A. TCP/IP",
+            "option_b": "B. GDPR",
+            "option_c": "C. DNS",
+            "option_d": "D. ISO 9001",
+            "correct_answer": "B",
+            "explanation": "Privacy protection in AI must comply with legal frameworks like the EU’s General Data Protection Regulation (GDPR)."
+        },
+        {
+            "question": "Human oversight in AI is crucial because:",
+            "option_a": "A. AI systems always make ethical choices",
+            "option_b": "B. Humans must control critical systems like healthcare or military AI",
+            "option_c": "C. It slows down decision-making intentionally",
+            "option_d": "D. It reduces the need for testing",
+            "correct_answer": "B",
+            "explanation": "Human oversight ensures humans remain in control of high-stakes decisions where ethical judgment is essential."
+        },
+        {
+            "question": "What do the principles of beneficence and non-maleficence in AI emphasize?",
+            "option_a": "A. Maximizing efficiency and profitability",
+            "option_b": "B. Promoting well-being and avoiding harm",
+            "option_c": "C. Minimizing training time",
+            "option_d": "D. Reducing model complexity",
+            "correct_answer": "B",
+            "explanation": "These ethical principles ensure AI promotes well-being and prevents harm to individuals and society."
+        },
+        {
+            "question": "Which statement best captures the intersection of bias and ethics in AI?",
+            "option_a": "A. Bias is unrelated to ethics in AI systems",
+            "option_b": "B. A biased model can still be fully ethical",
+            "option_c": "C. Bias directly undermines ethical principles such as fairness and justice",
+            "option_d": "D. Ethical AI ignores bias detection",
+            "correct_answer": "C",
+            "explanation": "Bias and ethics intersect because biased AI systems inherently violate fairness and justice principles."
+        },
+        {
+            "question": "Which example demonstrates both algorithmic bias and ethical failure?",
+            "option_a": "A. A music recommendation app suggesting random songs",
+            "option_b": "B. A loan approval system rejecting minority applicants disproportionately",
+            "option_c": "C. A photo filter changing image color tones",
+            "option_d": "D. A chatbot forgetting previous messages",
+            "correct_answer": "B",
+            "explanation": "Such a system fails ethically by reinforcing discrimination through biased algorithms."
+        },
+        {
+            "question": "The COMPAS algorithm used in U.S. courts was criticized because it:",
+            "option_a": "A. Produced accurate predictions for all groups",
+            "option_b": "B. Predicted higher recidivism rates for Black defendants",
+            "option_c": "C. Reduced the overall prison population",
+            "option_d": "D. Enhanced transparency in the justice system",
+            "correct_answer": "B",
+            "explanation": "COMPAS was found to unfairly predict higher reoffense risk for Black defendants, demonstrating racial bias."
+        },
+        {
+            "question": "Which technical strategy helps mitigate bias in AI systems?",
+            "option_a": "A. Using black-box models",
+            "option_b": "B. Fairness-aware algorithms",
+            "option_c": "C. Ignoring outliers during training",
+            "option_d": "D. Using only historical datasets",
+            "correct_answer": "B",
+            "explanation": "Fairness-aware algorithms modify models to respect fairness constraints and reduce discriminatory behavior."
+        },
+        {
+            "question": "Explainable AI (XAI) contributes to ethics by:",
+            "option_a": "A. Concealing internal model mechanisms",
+            "option_b": "B. Providing interpretable outputs to expose unfair outcomes",
+            "option_c": "C. Increasing computational load unnecessarily",
+            "option_d": "D. Removing human decision-making entirely",
+            "correct_answer": "B",
+            "explanation": "XAI ensures results are understandable, enabling detection of unfair or biased behavior in AI models."
+        },
+        {
+            "question": "Which organizational approach enhances AI transparency?",
+            "option_a": "A. Model Cards or Datasheets for Datasets",
+            "option_b": "B. Hiding algorithmic details from auditors",
+            "option_c": "C. Relying solely on user feedback",
+            "option_d": "D. Random dataset generation",
+            "correct_answer": "A",
+            "explanation": "Model Cards and Datasheets document model and dataset details, promoting transparency and accountability."
+        },
+        {
+            "question": "What was the main ethical issue with Amazon’s recruitment AI system?",
+            "option_a": "A. It ignored candidate resumes entirely",
+            "option_b": "B. It penalized female applicants due to biased training data",
+            "option_c": "C. It selected only high-paying jobs",
+            "option_d": "D. It was too slow to process applications",
+            "correct_answer": "B",
+            "explanation": "Amazon’s recruitment AI discriminated against women because it was trained on male-dominated historical data."
+        },
+        {
+            "question": "Which international frameworks promote ethical AI?",
+            "option_a": "A. OECD and UNESCO Trustworthy AI guidelines",
+            "option_b": "B. TCP/IP and DNS protocols",
+            "option_c": "C. GDPR and HTTP standards",
+            "option_d": "D. Only national privacy acts",
+            "correct_answer": "A",
+            "explanation": "Organizations like OECD and UNESCO provide standards for trustworthy and ethical AI practices."
+        },
+        {
+            "question": "Why is ethics in AI considered a societal responsibility?",
+            "option_a": "A. Because only engineers can prevent bias",
+            "option_b": "B. Because governments, industries, and communities must collaborate for fairness",
+            "option_c": "C. Because it only affects technical performance",
+            "option_d": "D. Because users must avoid using AI systems",
+            "correct_answer": "B",
+            "explanation": "Ethical AI requires joint efforts from governments, industries, and communities to ensure fairness and accountability."
+        },
+        {
+            "question": "A fairness-aware model that still causes harm violates which ethical principle?",
+            "option_a": "A. Beneficence",
+            "option_b": "B. Transparency",
+            "option_c": "C. Accountability",
+            "option_d": "D. Efficiency",
+            "correct_answer": "A",
+            "explanation": "Even if fair, a system violating beneficence fails to promote well-being or avoid harm."
+        },
+        {
+            "question": "Loss of trust in AI systems often results from:",
+            "option_a": "A. High transparency",
+            "option_b": "B. Perceived unfairness or bias",
+            "option_c": "C. Frequent updates",
+            "option_d": "D. Strong human oversight",
+            "correct_answer": "B",
+            "explanation": "When users perceive AI systems as biased or unfair, they lose trust in adopting the technology."
+        },
+        {
+            "question": "Which strategy ensures diversity and representation in training datasets?",
+            "option_a": "A. Balanced datasets",
+            "option_b": "B. Model compression",
+            "option_c": "C. Feature scaling",
+            "option_d": "D. Cross-validation",
+            "correct_answer": "A",
+            "explanation": "Balanced datasets include diverse and representative samples, reducing data and sampling bias."
+        },
+        {
+            "question": "AI Ethics Boards within organizations are responsible for:",
+            "option_a": "A. Increasing marketing visibility",
+            "option_b": "B. Oversight of ethical AI deployment and governance",
+            "option_c": "C. Reducing computational costs",
+            "option_d": "D. Designing faster algorithms",
+            "correct_answer": "B",
+            "explanation": "AI Ethics Boards monitor ethical compliance, fairness, and governance of AI projects."
+        },
+        {
+            "question": "Which ethical risk arises from 'black-box' AI models?",
+            "option_a": "A. Excessive transparency",
+            "option_b": "B. Lack of accountability and explainability",
+            "option_c": "C. Overrepresentation of minorities",
+            "option_d": "D. Enhanced fairness constraints",
+            "correct_answer": "B",
+            "explanation": "Black-box models obscure decision logic, leading to accountability and transparency gaps."
+        },
+        {
+            "question": "An AI model performing poorly on minority groups demonstrates:",
+            "option_a": "A. Algorithmic or data bias",
+            "option_b": "B. Proper model generalization",
+            "option_c": "C. Random variance",
+            "option_d": "D. Perfect fairness",
+            "correct_answer": "A",
+            "explanation": "Unequal performance across groups indicates bias in data or algorithmic design."
+        },
+        {
+            "question": "The ultimate goal of ethical AI is to:",
+            "option_a": "A. Replace human judgment entirely",
+            "option_b": "B. Ensure AI benefits humanity fairly and responsibly",
+            "option_c": "C. Reduce development costs",
+            "option_d": "D. Increase automation speed",
+            "correct_answer": "B",
+            "explanation": "Ethical AI aims to ensure fairness, accountability, and human-centered benefits."
+        },
+        {
+            "question": "Bias detection tools are used to:",
+            "option_a": "A. Increase model accuracy only",
+            "option_b": "B. Identify hidden discrimination in models",
+            "option_c": "C. Remove outliers from data",
+            "option_d": "D. Compress large datasets",
+            "correct_answer": "B",
+            "explanation": "Bias detection tools help audit and uncover hidden discriminatory patterns in AI models."
+        },
+        {
+            "question": "Why is historical bias particularly challenging to address in AI?",
+            "option_a": "A. It is introduced by the algorithm itself",
+            "option_b": "B. It reflects societal inequalities embedded in data",
+            "option_c": "C. It results only from random sampling errors",
+            "option_d": "D. It can be easily removed with feature scaling",
+            "correct_answer": "B",
+            "explanation": "Historical bias arises because datasets mirror existing societal inequalities and stereotypes."
+        },
+        {
+            "question": "What is the primary danger of not addressing AI bias?",
+            "option_a": "A. Increased model interpretability",
+            "option_b": "B. Reinforcement of social inequalities",
+            "option_c": "C. Reduction in computational costs",
+            "option_d": "D. Slower decision-making",
+            "correct_answer": "B",
+            "explanation": "Unchecked AI bias amplifies social inequalities and reinforces unfair stereotypes."
+        },
+        {
+            "question": "A healthcare AI trained only on Western patient data likely suffers from:",
+            "option_a": "A. Labeling bias",
+            "option_b": "B. Sampling bias",
+            "option_c": "C. Algorithmic bias",
+            "option_d": "D. Measurement error",
+            "correct_answer": "B",
+            "explanation": "Such a model lacks population diversity, making it biased toward Western demographics."
+        },
+        {
+            "question": "Which ethical principle emphasizes that AI should be robust and safe?",
+            "option_a": "A. Safety and security",
+            "option_b": "B. Beneficence",
+            "option_c": "C. Transparency",
+            "option_d": "D. Privacy",
+            "correct_answer": "A",
+            "explanation": "Safety and security ensure AI systems are resilient against misuse, errors, and attacks."
+        },
+        {
+            "question": "In the context of AI fairness, indirect discrimination refers to:",
+            "option_a": "A. Explicitly excluding individuals",
+            "option_b": "B. Neutral policies that still cause unequal outcomes",
+            "option_c": "C. Random assignment of labels",
+            "option_d": "D. Balanced representation in datasets",
+            "correct_answer": "B",
+            "explanation": "Indirect discrimination occurs when seemingly neutral models yield unequal impacts on different groups."
+        },
+        {
+            "question": "Ethical AI design requires interdisciplinary collaboration between:",
+            "option_a": "A. Only engineers and data scientists",
+            "option_b": "B. Ethicists, domain experts, and end-users",
+            "option_c": "C. Marketing and finance teams",
+            "option_d": "D. Only policymakers",
+            "correct_answer": "B",
+            "explanation": "Interdisciplinary collaboration ensures diverse perspectives for balanced ethical design."
+        },
+        {
+            "question": "The principle ensuring responsibility for AI harm is known as:",
+            "option_a": "A. Accountability",
+            "option_b": "B. Fairness",
+            "option_c": "C. Explainability",
+            "option_d": "D. Security",
+            "correct_answer": "A",
+            "explanation": "Accountability ensures that those responsible for AI creation or use can be held answerable for harm."
+        },
+        {
+            "question": "Bias in AI differs from random error because it:",
+            "option_a": "A. Occurs randomly and inconsistently",
+            "option_b": "B. Is systematic and consistent across outcomes",
+            "option_c": "C. Always improves model accuracy",
+            "option_d": "D. Has no impact on fairness",
+            "correct_answer": "B",
+            "explanation": "Unlike random error, bias produces consistent, unfair results that affect entire groups."
+        },
+        {
+            "question": "The concept of 'Trustworthy AI' promoted by the EU emphasizes:",
+            "option_a": "A. Speed over safety",
+            "option_b": "B. Transparency, fairness, and accountability",
+            "option_c": "C. Reduced regulatory compliance",
+            "option_d": "D. Purely technical performance metrics",
+            "correct_answer": "B",
+            "explanation": "EU’s Trustworthy AI standards highlight transparency, fairness, and accountability as key pillars."
+        },
+        {
+            "question": "When AI systems reinforce stereotypes through user interactions, this is called:",
+            "option_a": "A. Algorithmic drift",
+            "option_b": "B. Interaction bias",
+            "option_c": "C. Feature leakage",
+            "option_d": "D. Training regularization",
+            "correct_answer": "B",
+            "explanation": "Interaction bias occurs when user feedback loops cause AI systems to amplify existing stereotypes."
+        },
+        {
+            "question": "Why must AI ethics include human oversight?",
+            "option_a": "A. To allow AI to self-regulate",
+            "option_b": "B. To ensure critical decisions remain under human control",
+            "option_c": "C. To speed up data labeling",
+            "option_d": "D. To reduce hardware costs",
+            "correct_answer": "B",
+            "explanation": "Human oversight ensures that AI does not make unchecked critical or ethical decisions autonomously."
+        },
+        {
+            "question": "Which of the following is NOT a type of bias in AI?",
+            "option_a": "A. Sampling bias",
+            "option_b": "B. Data bias",
+            "option_c": "C. Labeling bias",
+            "option_d": "D. Optimization bias",
+            "correct_answer": "D",
+            "explanation": "The main types include data, sampling, labeling, algorithmic, and interaction bias; optimization bias is not recognized."
+        },
+        {
+            "question": "An AI system violating user privacy is failing which ethical principle?",
+            "option_a": "A. Transparency",
+            "option_b": "B. Data protection",
+            "option_c": "C. Fairness",
+            "option_d": "D. Beneficence",
+            "correct_answer": "B",
+            "explanation": "Privacy and data protection ensure secure and lawful handling of personal information."
+        },
+        {
+            "question": "Legal risks for companies deploying biased AI include:",
+            "option_a": "A. Reduced computation speed",
+            "option_b": "B. Lawsuits and regulatory penalties",
+            "option_c": "C. Increased innovation funding",
+            "option_d": "D. Faster product releases",
+            "correct_answer": "B",
+            "explanation": "Unfair AI systems can lead to legal consequences such as lawsuits or fines for discrimination."
+        },
+        {
+            "question": "Ethical AI development balances which two main objectives?",
+            "option_a": "A. Efficiency and accuracy",
+            "option_b": "B. Innovation and responsibility",
+            "option_c": "C. Automation and secrecy",
+            "option_d": "D. Privacy and marketing",
+            "correct_answer": "B",
+            "explanation": "Ethical AI requires combining innovation with responsibility to ensure fairness and societal benefit."
+        },
+        {
+            "question": "Bias mitigation and fairness-aware design are essential because:",
+            "option_a": "A. They reduce algorithmic transparency",
+            "option_b": "B. They align AI with human ethical standards",
+            "option_c": "C. They improve advertising accuracy",
+            "option_d": "D. They make models less interpretable",
+            "correct_answer": "B",
+            "explanation": "Fairness-aware design ensures AI operates ethically, aligning with human values and rights."
+        },
+        {
+            "question": "The most effective approach to ethical AI requires integration of:",
+            "option_a": "A. Technical fairness, ethical design, and governance",
+            "option_b": "B. Cost reduction, data minimization, and secrecy",
+            "option_c": "C. Speed optimization and automation",
+            "option_d": "D. Randomized modeling techniques",
+            "correct_answer": "A",
+            "explanation": "Responsible AI depends on technical, ethical, and governance frameworks working together."
+        },
+        {
+            "question": "Which of the following best summarizes the role of ethics in AI?",
+            "option_a": "A. It defines the technical parameters of machine learning models",
+            "option_b": "B. It provides moral and philosophical guidance for AI design and deployment",
+            "option_c": "C. It focuses only on performance optimization",
+            "option_d": "D. It prevents AI from using data entirely",
+            "correct_answer": "B",
+            "explanation": "Ethics in AI provides the moral framework ensuring AI systems act responsibly and fairly."
+        }
+    ]
+}
