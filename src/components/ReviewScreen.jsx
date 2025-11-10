@@ -20,6 +20,29 @@ const ReviewScreen = ({
   const correctAnswer = question.correct_answer;
   const isLastQuestion = currentQuestion === quizData.questions.length - 1;
 
+  // ctrl+arrow > -> next question
+  // ctrl+arrow < -> previous question
+  React.useEffect (
+    () => {
+      const handleKeyDown = e => {
+        if (e.ctrlKey && e.key === 'ArrowRight') {
+          if (!isLastQuestion) {
+            nextQuestion ();
+          }
+        } else if (e.ctrlKey && e.key === 'ArrowLeft') {
+          if (currentQuestion > 0) {
+            prevQuestion ();
+          }
+        }
+      };
+
+      window.addEventListener ('keydown', handleKeyDown);
+      return () => {
+        window.removeEventListener ('keydown', handleKeyDown);
+      };
+    },
+    [currentQuestion, isLastQuestion, nextQuestion, prevQuestion]
+  );
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
