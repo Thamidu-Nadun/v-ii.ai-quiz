@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best defines relational algebra?",
+            "option_a": "A. A procedural query language used to define data structures",
+            "option_b": "B. A non-procedural language for describing data constraints",
+            "option_c": "C. A set of operations for manipulating relations in a database",
+            "option_d": "D. A language used for defining data models in ER diagrams",
+            "correct_answer": "C",
+            "explanation": "Relational algebra defines a set of operations on relations to manipulate and retrieve data from relational databases."
+        },
+        {
+            "question": "The project operator (π) in relational algebra is used to:",
+            "option_a": "A. Select specific rows based on a condition",
+            "option_b": "B. Select specific columns from a relation",
+            "option_c": "C. Rename a relation or its attributes",
+            "option_d": "D. Combine two relations based on a condition",
+            "correct_answer": "B",
+            "explanation": "The project operator selects specific columns (attributes) from a relation, removing duplicates."
+        },
+        {
+            "question": "In relational algebra, the select operator (σ) filters:",
+            "option_a": "A. Columns of a relation based on conditions",
+            "option_b": "B. Tuples of a relation based on conditions",
+            "option_c": "C. Both columns and tuples",
+            "option_d": "D. Relations based on schema structure",
+            "correct_answer": "B",
+            "explanation": "The select operator (σ) chooses specific tuples (rows) from a relation that satisfy a given condition."
+        },
+        {
+            "question": "Which of the following conditions make two relations union-compatible?",
+            "option_a": "A. They have the same number of tuples",
+            "option_b": "B. They have identical primary keys",
+            "option_c": "C. They have the same degree and attribute domains",
+            "option_d": "D. They have foreign key relationships",
+            "correct_answer": "C",
+            "explanation": "Two relations are union-compatible if they have the same number of attributes (degree) and matching domains."
+        },
+        {
+            "question": "The result of R ∪ S in relational algebra contains:",
+            "option_a": "A. Only tuples present in both R and S",
+            "option_b": "B. Tuples only from R",
+            "option_c": "C. Tuples from R or S or both",
+            "option_d": "D. Tuples from R minus S",
+            "correct_answer": "C",
+            "explanation": "Union returns all tuples that are in R, S, or both, removing duplicates."
+        },
+        {
+            "question": "The intersection (R ∩ S) of two relations produces:",
+            "option_a": "A. Tuples that appear only in R",
+            "option_b": "B. Tuples that appear only in S",
+            "option_c": "C. Tuples common to both R and S",
+            "option_d": "D. All tuples from R and S combined",
+            "correct_answer": "C",
+            "explanation": "Intersection returns only the tuples that are common to both relations."
+        },
+        {
+            "question": "In the expression R – S, the result includes:",
+            "option_a": "A. All tuples in S not in R",
+            "option_b": "B. All tuples in both R and S",
+            "option_c": "C. Tuples in R but not in S",
+            "option_d": "D. Tuples common to R and S",
+            "correct_answer": "C",
+            "explanation": "Set difference removes tuples of S from R, keeping only those unique to R."
+        },
+        {
+            "question": "The Cartesian product operation (×) between two relations results in:",
+            "option_a": "A. A relation that includes only matching tuples",
+            "option_b": "B. A relation with all combinations of tuples from both relations",
+            "option_c": "C. A relation that joins attributes based on key values",
+            "option_d": "D. A relation containing distinct attributes only",
+            "correct_answer": "B",
+            "explanation": "Cartesian product combines every tuple of one relation with every tuple of another."
+        },
+        {
+            "question": "In an equi join, the comparison operator used is:",
+            "option_a": "A. <",
+            "option_b": "B. >",
+            "option_c": "C. =",
+            "option_d": "D. ≠",
+            "correct_answer": "C",
+            "explanation": "Equi join uses the equality operator (=) to join two relations based on matching attribute values."
+        },
+        {
+            "question": "Natural join differs from equi join because it:",
+            "option_a": "A. Retains both join attributes",
+            "option_b": "B. Eliminates duplicate join attributes",
+            "option_c": "C. Uses inequalities for comparison",
+            "option_d": "D. Does not require attribute name matching",
+            "correct_answer": "B",
+            "explanation": "Natural join automatically removes duplicate columns with the same attribute name in the joined result."
+        },
+        {
+            "question": "Which operator allows renaming of relations or attributes?",
+            "option_a": "A. σ (Select)",
+            "option_b": "B. π (Project)",
+            "option_c": "C. ρ (Rename)",
+            "option_d": "D. × (Cartesian Product)",
+            "correct_answer": "C",
+            "explanation": "The rename operator (ρ) assigns new names to relations or attributes for intermediate results."
+        },
+        {
+            "question": "In relational algebra, duplicate rows are automatically eliminated in:",
+            "option_a": "A. Select operator",
+            "option_b": "B. Project operator",
+            "option_c": "C. Join operator",
+            "option_d": "D. Cartesian product",
+            "correct_answer": "B",
+            "explanation": "Project removes duplicate rows by default when selecting columns."
+        },
+        {
+            "question": "Left outer join ensures that:",
+            "option_a": "A. Only matching tuples are kept",
+            "option_b": "B. All tuples from the left relation appear in the result",
+            "option_c": "C. All tuples from the right relation appear in the result",
+            "option_d": "D. Only non-matching tuples are kept",
+            "correct_answer": "B",
+            "explanation": "Left outer join keeps all tuples from the left relation and fills nulls for non-matching right tuples."
+        },
+        {
+            "question": "Right outer join differs from left outer join because it:",
+            "option_a": "A. Keeps all tuples from the right relation",
+            "option_b": "B. Keeps only matching tuples",
+            "option_c": "C. Eliminates null values",
+            "option_d": "D. Produces duplicate tuples",
+            "correct_answer": "A",
+            "explanation": "Right outer join includes all tuples from the right relation and nulls for missing matches from the left."
+        },
+        {
+            "question": "Full outer join combines the results of:",
+            "option_a": "A. Left and equi join",
+            "option_b": "B. Left and right outer join",
+            "option_c": "C. Natural and cross join",
+            "option_d": "D. Inner and self join",
+            "correct_answer": "B",
+            "explanation": "Full outer join includes all tuples from both relations, filling nulls where matches don’t exist."
+        },
+        {
+            "question": "The symbol used for the project operation is:",
+            "option_a": "A. σ",
+            "option_b": "B. π",
+            "option_c": "C. ρ",
+            "option_d": "D. ×",
+            "correct_answer": "B",
+            "explanation": "π (pi) is used to denote the project operator in relational algebra."
+        },
+        {
+            "question": "Which of the following aggregate functions counts the number of tuples?",
+            "option_a": "A. SUM",
+            "option_b": "B. COUNT",
+            "option_c": "C. AVERAGE",
+            "option_d": "D. MAXIMUM",
+            "correct_answer": "B",
+            "explanation": "COUNT is used to find the number of tuples satisfying a query."
+        },
+        {
+            "question": "In the grouping operation, aggregate functions are applied:",
+            "option_a": "A. To the entire relation as a whole",
+            "option_b": "B. Independently to each group of tuples",
+            "option_c": "C. To individual attributes only",
+            "option_d": "D. To non-key attributes only",
+            "correct_answer": "B",
+            "explanation": "Grouping applies aggregate functions to subsets of tuples grouped by specified attributes."
+        },
+        {
+            "question": "Which of the following expressions filters employees in department 5?",
+            "option_a": "A. π Dno=5 (EMP)",
+            "option_b": "B. σ Dno=5 (EMP)",
+            "option_c": "C. ρ Dno=5 (EMP)",
+            "option_d": "D. EMP × Dno=5",
+            "correct_answer": "B",
+            "explanation": "σ Dno=5 (EMP) selects only those employees belonging to department 5."
+        },
+        {
+            "question": "Given EMP(Name, Salary), π Name, Salary (EMP) will:",
+            "option_a": "A. Display all columns in EMP",
+            "option_b": "B. Display only the names and salaries",
+            "option_c": "C. Remove all rows from EMP",
+            "option_d": "D. Rename EMP to NameSalary",
+            "correct_answer": "B",
+            "explanation": "Projecting Name and Salary shows only those columns from the EMP relation."
+        },
+        {
+            "question": "Which of the following is true for equi join results?",
+            "option_a": "A. They exclude tuples without matching keys",
+            "option_b": "B. They may contain duplicate join attributes",
+            "option_c": "C. They always remove redundant columns",
+            "option_d": "D. They contain only primary key columns",
+            "correct_answer": "B",
+            "explanation": "Equi join produces results where both join columns appear, potentially duplicating attribute data."
+        },
+        {
+            "question": "Which operator is used to rename a relation as ‘Dep5_emp’ in σ Dno=5 (EMP)?",
+            "option_a": "A. π",
+            "option_b": "B. σ",
+            "option_c": "C. ρ",
+            "option_d": "D. ×",
+            "correct_answer": "C",
+            "explanation": "ρ Dep5_emp(σ Dno=5 (EMP)) renames the intermediate result as ‘Dep5_emp’."
+        },
+        {
+            "question": "Union operation requires two relations to have:",
+            "option_a": "A. Identical number of tuples",
+            "option_b": "B. Same primary keys",
+            "option_c": "C. Equal degree and compatible domains",
+            "option_d": "D. Equal foreign key constraints",
+            "correct_answer": "C",
+            "explanation": "Union compatibility requires same degree and matching data types for corresponding attributes."
+        },
+        {
+            "question": "Which operation returns unmatched tuples along with matched tuples?",
+            "option_a": "A. Inner join",
+            "option_b": "B. Natural join",
+            "option_c": "C. Outer join",
+            "option_d": "D. Cartesian product",
+            "correct_answer": "C",
+            "explanation": "Outer joins include non-matching tuples, unlike inner joins that return only matches."
+        },
+        {
+            "question": "The aggregate operator syntax  function list (R) represents:",
+            "option_a": "A. A join condition between R and another table",
+            "option_b": "B. A grouping by R",
+            "option_c": "C. An operation that summarizes data in R",
+            "option_d": "D. A rename operation for R",
+            "correct_answer": "C",
+            "explanation": " applies aggregate functions like SUM, COUNT, or AVERAGE to summarize relation data."
+        },
+        {
+            "question": "Which of the following statements about Cartesian product is true?",
+            "option_a": "A. It requires matching attribute names",
+            "option_b": "B. It combines all tuples from both relations",
+            "option_c": "C. It only returns matching tuples",
+            "option_d": "D. It eliminates duplicates automatically",
+            "correct_answer": "B",
+            "explanation": "Cartesian product combines every tuple of one relation with every tuple of another."
+        },
+        {
+            "question": "What will the result of EMP × DEPT contain if EMP has 3 tuples and DEPT has 2 tuples?",
+            "option_a": "A. 3 tuples",
+            "option_b": "B. 2 tuples",
+            "option_c": "C. 6 tuples",
+            "option_d": "D. 5 tuples",
+            "correct_answer": "C",
+            "explanation": "Cartesian product multiplies tuple counts: 3 × 2 = 6."
+        },
+        {
+            "question": "In outer joins, tuples with no matching values have:",
+            "option_a": "A. Default values",
+            "option_b": "B. Null values",
+            "option_c": "C. Zero values",
+            "option_d": "D. Empty strings",
+            "correct_answer": "B",
+            "explanation": "Outer joins assign NULLs to missing attribute values for non-matching tuples."
+        },
+        {
+            "question": "Which join produces all possible combinations of tuples from two relations?",
+            "option_a": "A. Equi join",
+            "option_b": "B. Natural join",
+            "option_c": "C. Cartesian product",
+            "option_d": "D. Outer join",
+            "correct_answer": "C",
+            "explanation": "Cartesian product generates all combinations regardless of attribute matching."
+        },
+        {
+            "question": "In grouping, the clause 'Dno  Count ID, Average Salary (EMP)' means:",
+            "option_a": "A. Group employees by salary level",
+            "option_b": "B. Group employees by department number",
+            "option_c": "C. Aggregate data by job title",
+            "option_d": "D. Summarize all records globally",
+            "correct_answer": "B",
+            "explanation": "This groups tuples by department number (Dno) and computes aggregates per department."
+        },
+        {
+            "question": "Which relational algebra operation most closely resembles SQL’s SELECT clause?",
+            "option_a": "A. σ",
+            "option_b": "B. π",
+            "option_c": "C. ρ",
+            "option_d": "D. ×",
+            "correct_answer": "B",
+            "explanation": "π corresponds to SQL’s SELECT clause, as it projects chosen columns."
+        },
+        {
+            "question": "Which relational algebra operation corresponds to SQL’s WHERE clause?",
+            "option_a": "A. π",
+            "option_b": "B. σ",
+            "option_c": "C. ρ",
+            "option_d": "D. ×",
+            "correct_answer": "B",
+            "explanation": "σ filters rows using conditions, similar to SQL’s WHERE clause."
+        },
+        {
+            "question": "The result of R ∩ S will always be a subset of:",
+            "option_a": "A. R only",
+            "option_b": "B. S only",
+            "option_c": "C. Both R and S",
+            "option_d": "D. Either R or S, depending on conditions",
+            "correct_answer": "C",
+            "explanation": "Intersection returns tuples common to both relations, hence a subset of both."
+        },
+        {
+            "question": "Which of the following correctly represents a rename operation?",
+            "option_a": "A. ρTemp(σ Dno=5 (EMP))",
+            "option_b": "B. σTemp(Dno=5 (EMP))",
+            "option_c": "C. πTemp(Dno=5 (EMP))",
+            "option_d": "D. Temp(Dno=5 (EMP))",
+            "correct_answer": "A",
+            "explanation": "ρTemp assigns the name ‘Temp’ to the result of σ Dno=5 (EMP)."
+        },
+        {
+            "question": "The aggregate function AVERAGE in relational algebra is used to:",
+            "option_a": "A. Find the largest value",
+            "option_b": "B. Find the mean of attribute values",
+            "option_c": "C. Count all tuples",
+            "option_d": "D. Find the sum of attribute values",
+            "correct_answer": "B",
+            "explanation": "AVERAGE calculates the mean of numeric attribute values."
+        },
+        {
+            "question": "Which operator symbol is used for selection?",
+            "option_a": "A. π",
+            "option_b": "B. σ",
+            "option_c": "C. ρ",
+            "option_d": "D. ×",
+            "correct_answer": "B",
+            "explanation": "σ (sigma) denotes selection in relational algebra."
+        },
+        {
+            "question": "Which of the following operations may produce duplicate attribute names?",
+            "option_a": "A. Natural join",
+            "option_b": "B. Cartesian product",
+            "option_c": "C. Equi join",
+            "option_d": "D. Outer join",
+            "correct_answer": "C",
+            "explanation": "Equi join retains both join attributes, possibly duplicating their names."
+        },
+        {
+            "question": "Which join eliminates redundancy in join attributes automatically?",
+            "option_a": "A. Equi join",
+            "option_b": "B. Natural join",
+            "option_c": "C. Outer join",
+            "option_d": "D. Cartesian product",
+            "correct_answer": "B",
+            "explanation": "Natural join removes one of the duplicate join columns, simplifying the result."
+        },
+        {
+            "question": "Relational algebra serves as the theoretical foundation for:",
+            "option_a": "A. NoSQL databases",
+            "option_b": "B. Structured Query Language (SQL)",
+            "option_c": "C. Object-Oriented Programming",
+            "option_d": "D. File management systems",
+            "correct_answer": "B",
+            "explanation": "Relational algebra concepts form the theoretical basis for SQL operations."
+        },
+        {
+            "question": "The output of the operation σ Salary>=40000 (EMP) will contain:",
+            "option_a": "A. Employees earning less than 40000",
+            "option_b": "B. Employees earning exactly 40000",
+            "option_c": "C. Employees earning 40000 or more",
+            "option_d": "D. All employees regardless of salary",
+            "correct_answer": "C",
+            "explanation": "The selection condition filters all tuples where Salary is greater than or equal to 40000."
+        }
+    ]
+}

@@ -1,4 +1,107 @@
 export default [
+    // Database Management System Quizzes
+    {
+        title: 'DBMS - 01',
+        path: 'quiz/DatabaseQuiz/Database-01.json',
+        description: 'Challenge your knowledge of database management systems, including concepts and SQL.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 02',
+        path: 'quiz/DatabaseQuiz/Database-02.json',
+        description: 'Further test your understanding of advanced database topics and practices.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 03',
+        path: 'quiz/DatabaseQuiz/Database-03.json',
+        description: 'A comprehensive quiz covering various aspects of database management systems.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 04',
+        path: 'quiz/DatabaseQuiz/Database-04.json',
+        description: 'Assess your proficiency in database concepts, design, and implementation.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 05',
+        path: 'quiz/DatabaseQuiz/Database-05.json',
+        description: 'Test your knowledge of database systems with a focus on practical applications and SQL queries.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 06',
+        path: 'quiz/DatabaseQuiz/Database-06.json',
+        description: 'Evaluate your understanding of database management systems and their functionalities.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 07',
+        path: 'quiz/DatabaseQuiz/Database-07.json',
+        description: 'A quiz designed to test your knowledge of various database management system concepts and practices.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 08',
+        path: 'quiz/DatabaseQuiz/Database-08.json',
+        description: 'Challenge your understanding of database systems, including design, queries, and management.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 09',
+        path: 'quiz/DatabaseQuiz/Database-09.json',
+        description: 'Test your skills in database management systems with a focus on advanced topics and SQL.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 10',
+        path: 'quiz/DatabaseQuiz/Database-10.json',
+        description: 'A comprehensive quiz covering various aspects of database management systems and their applications.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 11',
+        path: 'quiz/DatabaseQuiz/Database-11.json',
+        description: 'Assess your proficiency in database concepts, design, and implementation with this quiz.',
+        isAvailable: false
+    },
+    {
+        title: 'DBMS - 12',
+        path: 'quiz/DatabaseQuiz/Database-12.json',
+        description: 'Evaluate your understanding of database management systems and their functionalities with this quiz.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 13',
+        path: 'quiz/DatabaseQuiz/Database-13.json',
+        description: 'A quiz designed to test your knowledge of various database management system concepts and practices.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 14',
+        path: 'quiz/DatabaseQuiz/Database-14.json',
+        description: 'Challenge your understanding of database systems, including design, queries, and management.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 15',
+        path: 'quiz/DatabaseQuiz/Database-15.json',
+        description: 'Test your skills in database management systems with a focus on advanced topics and SQL.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 16',
+        path: 'quiz/DatabaseQuiz/Database-16.json',
+        description: 'A comprehensive quiz covering various aspects of database management systems and their applications.',
+        isAvailable: true
+    },
+    {
+        title: 'DBMS - 17',
+        path: 'quiz/DatabaseQuiz/Database-17.json',
+        description: 'Assess your proficiency in database concepts, design, and implementation with this quiz.',
+        isAvailable: true
+    },
     {
         title: 'Python Fundamentals',
         path: 'quiz/python-fundamentals.json',
@@ -211,77 +314,4 @@ export default [
         description: 'Assess your knowledge of software engineering lecture topics, including software architecture and design principles.',
         isAvailable: true
     },
-    // Database Management System Quizzes
-    {
-        title: 'DBMS - 01',
-        path: 'quiz/DatabaseQuiz/Database-01.json',
-        description: 'Challenge your knowledge of database management systems, including concepts and SQL.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 02',
-        path: 'quiz/DatabaseQuiz/Database-02.json',
-        description: 'Further test your understanding of advanced database topics and practices.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 03',
-        path: 'quiz/DatabaseQuiz/Database-03.json',
-        description: 'A comprehensive quiz covering various aspects of database management systems.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 04',
-        path: 'quiz/DatabaseQuiz/Database-04.json',
-        description: 'Assess your proficiency in database concepts, design, and implementation.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 05',
-        path: 'quiz/DatabaseQuiz/Database-05.json',
-        description: 'Test your knowledge of database systems with a focus on practical applications and SQL queries.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 06',
-        path: 'quiz/DatabaseQuiz/Database-06.json',
-        description: 'Evaluate your understanding of database management systems and their functionalities.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 07',
-        path: 'quiz/DatabaseQuiz/Database-07.json',
-        description: 'A quiz designed to test your knowledge of various database management system concepts and practices.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 08',
-        path: 'quiz/DatabaseQuiz/Database-08.json',
-        description: 'Challenge your understanding of database systems, including design, queries, and management.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 09',
-        path: 'quiz/DatabaseQuiz/Database-09.json',
-        description: 'Test your skills in database management systems with a focus on advanced topics and SQL.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 10',
-        path: 'quiz/DatabaseQuiz/Database-10.json',
-        description: 'A comprehensive quiz covering various aspects of database management systems and their applications.',
-        isAvailable: true
-    },
-    {
-        title: 'DBMS - 11',
-        path: 'quiz/DatabaseQuiz/Database-11.json',
-        description: 'Assess your proficiency in database concepts, design, and implementation with this quiz.',
-        isAvailable: false
-    },
-    {
-        title: 'DBMS - 12',
-        path: 'quiz/DatabaseQuiz/Database-12.json',
-        description: 'Evaluate your understanding of database management systems and their functionalities with this quiz.',
-        isAvailable: true
-    }
 ];
