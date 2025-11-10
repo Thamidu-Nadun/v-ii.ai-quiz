@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following is a key reason for the emergence of NoSQL databases?",
+            "option_a": "A. To replace SQL completely",
+            "option_b": "B. To handle unstructured, large-scale, and fast-moving data",
+            "option_c": "C. To improve relational normalization",
+            "option_d": "D. To reduce the need for database administrators",
+            "correct_answer": "B",
+            "explanation": "NoSQL databases were developed to efficiently handle large-scale, unstructured, and high-velocity data that traditional RDBMS systems struggle with."
+        },
+        {
+            "question": "Which of the following is NOT a characteristic of NoSQL databases?",
+            "option_a": "A. Schema-free design",
+            "option_b": "B. Support for horizontal scalability",
+            "option_c": "C. Strict adherence to ACID transactions",
+            "option_d": "D. Distributed storage architecture",
+            "correct_answer": "C",
+            "explanation": "Most NoSQL databases relax ACID guarantees in favor of scalability and flexibility, often following BASE principles instead."
+        },
+        {
+            "question": "The term 'NoSQL' was first used in which context?",
+            "option_a": "A. In a 1990s academic publication on non-relational data",
+            "option_b": "B. At a 2009 San Francisco meetup featuring systems like Cassandra and MongoDB",
+            "option_c": "C. By IBM to describe new SQL extensions",
+            "option_d": "D. As part of Oracle’s marketing campaign",
+            "correct_answer": "B",
+            "explanation": "The term 'NoSQL' originated from a 2009 San Francisco meetup that featured technologies like Cassandra, Voldemort, and MongoDB."
+        },
+        {
+            "question": "In the CAP theorem, 'Partition Tolerance' refers to:",
+            "option_a": "A. The ability to maintain data consistency at all times",
+            "option_b": "B. The database continuing to function despite unreliable network communication",
+            "option_c": "C. The division of databases into partitions for performance optimization",
+            "option_d": "D. The capability to recover from data corruption",
+            "correct_answer": "B",
+            "explanation": "Partition tolerance means that the system continues operating even when communication between parts of the system is disrupted."
+        },
+        {
+            "question": "Which of the following correctly contrasts BASE and ACID principles?",
+            "option_a": "A. BASE ensures strict consistency; ACID allows eventual consistency",
+            "option_b": "B. BASE prioritizes availability and scalability, while ACID prioritizes consistency",
+            "option_c": "C. Both BASE and ACID guarantee transactional isolation",
+            "option_d": "D. ACID is more suitable for web-scale systems than BASE",
+            "correct_answer": "B",
+            "explanation": "BASE favors availability and scalability with eventual consistency, while ACID ensures strict transactional consistency."
+        },
+        {
+            "question": "Which of the following is an example of a key-value store?",
+            "option_a": "A. Cassandra",
+            "option_b": "B. Redis",
+            "option_c": "C. MongoDB",
+            "option_d": "D. Neo4j",
+            "correct_answer": "B",
+            "explanation": "Redis is a widely used key-value store known for its in-memory performance."
+        },
+        {
+            "question": "Which statement about document databases is TRUE?",
+            "option_a": "A. They store data in key-value pairs only",
+            "option_b": "B. They are ideal for graph traversal queries",
+            "option_c": "C. They use flexible, JSON-like documents to store data",
+            "option_d": "D. They require rigid schema definitions",
+            "correct_answer": "C",
+            "explanation": "Document databases, such as MongoDB, store data as JSON-like documents that support flexible schemas."
+        },
+        {
+            "question": "Graph databases are particularly suitable for which type of problem?",
+            "option_a": "A. Financial ledger storage",
+            "option_b": "B. Social network relationship mapping",
+            "option_c": "C. Time-series data processing",
+            "option_d": "D. Product inventory tracking",
+            "correct_answer": "B",
+            "explanation": "Graph databases efficiently represent and traverse connected data, such as relationships in social networks."
+        },
+        {
+            "question": "Which of the following statements is TRUE about relational databases?",
+            "option_a": "A. They are schema-free and support eventual consistency",
+            "option_b": "B. They store unstructured data by default",
+            "option_c": "C. They are schema-centric and use SQL for queries",
+            "option_d": "D. They do not support joins between tables",
+            "correct_answer": "C",
+            "explanation": "Relational databases rely on predefined schemas and use SQL for structured queries and joins."
+        },
+        {
+            "question": "Which property is typically sacrificed in NoSQL systems to achieve scalability and availability?",
+            "option_a": "A. Availability",
+            "option_b": "B. Consistency",
+            "option_c": "C. Partition tolerance",
+            "option_d": "D. Redundancy",
+            "correct_answer": "B",
+            "explanation": "Many NoSQL databases relax immediate consistency to maintain availability and partition tolerance as per the CAP theorem."
+        },
+        {
+            "question": "In the context of NoSQL, what does 'horizontal scalability' mean?",
+            "option_a": "A. Increasing the processing power of existing servers",
+            "option_b": "B. Adding more servers to distribute data and load",
+            "option_c": "C. Partitioning data vertically by column",
+            "option_d": "D. Reducing redundancy in the data model",
+            "correct_answer": "B",
+            "explanation": "Horizontal scalability allows systems to handle growth by adding more machines rather than upgrading existing ones."
+        },
+        {
+            "question": "Which of the following is NOT a commonly used type of NoSQL database?",
+            "option_a": "A. Document database",
+            "option_b": "B. Key-value store",
+            "option_c": "C. Hierarchical database",
+            "option_d": "D. Column-family store",
+            "correct_answer": "C",
+            "explanation": "Hierarchical databases are older models, not commonly classified under NoSQL types."
+        },
+        {
+            "question": "What is the main data organization unit in a column-family store?",
+            "option_a": "A. Table",
+            "option_b": "B. Column family",
+            "option_c": "C. Key-value pair",
+            "option_d": "D. Document",
+            "correct_answer": "B",
+            "explanation": "Column-family databases group columns into families, enabling efficient access to related data."
+        },
+        {
+            "question": "Which component of the CAP theorem guarantees that every request receives a response?",
+            "option_a": "A. Consistency",
+            "option_b": "B. Availability",
+            "option_c": "C. Partition tolerance",
+            "option_d": "D. Atomicity",
+            "correct_answer": "B",
+            "explanation": "Availability ensures that the system continues to provide responses to requests, even under failures."
+        },
+        {
+            "question": "Which of the following scenarios best fits a key-value database?",
+            "option_a": "A. Real-time social graph traversal",
+            "option_b": "B. User session storage in a web application",
+            "option_c": "C. Complex joins between data entities",
+            "option_d": "D. Content recommendation",
+            "correct_answer": "B",
+            "explanation": "Key-value databases are ideal for storing session or cache data where quick access to simple key-based lookups is required."
+        },
+        {
+            "question": "What does 'Soft State' mean in the BASE concept?",
+            "option_a": "A. Data never changes once stored",
+            "option_b": "B. The system is always consistent",
+            "option_c": "C. The system’s state may change over time without input",
+            "option_d": "D. The system rejects inconsistent data",
+            "correct_answer": "C",
+            "explanation": "Soft state means the system’s state can change due to eventual consistency or background updates."
+        },
+        {
+            "question": "Which feature distinguishes NoSQL databases from RDBMS most clearly?",
+            "option_a": "A. Support for SQL joins",
+            "option_b": "B. Schema-free data model",
+            "option_c": "C. Enforcement of foreign keys",
+            "option_d": "D. Centralized architecture",
+            "correct_answer": "B",
+            "explanation": "NoSQL databases typically allow flexible schemas, making them adaptable to changing data structures."
+        },
+        {
+            "question": "Which trend combines both SQL and NoSQL systems for different components of an application?",
+            "option_a": "A. Polyglot persistence",
+            "option_b": "B. Hybrid consistency",
+            "option_c": "C. Serverless integration",
+            "option_d": "D. Cross-model indexing",
+            "correct_answer": "A",
+            "explanation": "Polyglot persistence uses multiple database technologies (SQL and NoSQL) within one system to suit various needs."
+        },
+        {
+            "question": "Which of the following is a challenge in non-relational data modeling?",
+            "option_a": "A. Excessive normalization",
+            "option_b": "B. Lack of standard query languages",
+            "option_c": "C. Inflexible schemas",
+            "option_d": "D. Limited scalability",
+            "correct_answer": "B",
+            "explanation": "Non-relational systems lack universal query standards like SQL, making interoperability challenging."
+        },
+        {
+            "question": "Which of these is a common use case for column-family databases?",
+            "option_a": "A. Real-time analytics with heavy write operations",
+            "option_b": "B. Social network graph traversal",
+            "option_c": "C. Relational table joins",
+            "option_d": "D. Fixed-schema storage",
+            "correct_answer": "A",
+            "explanation": "Column-family stores are efficient for heavy write workloads and analytical processing, such as in content management."
+        },
+        {
+            "question": "In NoSQL systems, which term describes the system eventually reaching a consistent state?",
+            "option_a": "A. Eventual consistency",
+            "option_b": "B. Immediate consistency",
+            "option_c": "C. Synchronous replication",
+            "option_d": "D. Deterministic state",
+            "correct_answer": "A",
+            "explanation": "Eventual consistency means that all nodes in the system will eventually reflect the same data state."
+        },
+        {
+            "question": "Which characteristic is most associated with NoSQL databases?",
+            "option_a": "A. Strict data relationships",
+            "option_b": "B. Developer-centric design",
+            "option_c": "C. Database-centric operations",
+            "option_d": "D. Enforced foreign key constraints",
+            "correct_answer": "B",
+            "explanation": "NoSQL databases prioritize flexibility and are often designed around developer needs and application logic."
+        },
+        {
+            "question": "Which of the following statements about RDBMS and NoSQL is correct?",
+            "option_a": "A. RDBMS uses schema-free models; NoSQL uses rigid schemas",
+            "option_b": "B. RDBMS separates data and relationships; NoSQL stores data in distributed clusters",
+            "option_c": "C. RDBMS avoids joins; NoSQL requires them",
+            "option_d": "D. RDBMS supports eventual consistency; NoSQL supports strict ACID",
+            "correct_answer": "B",
+            "explanation": "RDBMS stores data and relationships separately, while NoSQL distributes data across clusters for scalability."
+        },
+        {
+            "question": "Which of these best describes a document database use case?",
+            "option_a": "A. Maintaining counters or metrics",
+            "option_b": "B. Managing content and blog data",
+            "option_c": "C. Real-time routing optimization",
+            "option_d": "D. Maintaining ledger balances",
+            "correct_answer": "B",
+            "explanation": "Document databases are ideal for content management and dynamic web data like blogs or articles."
+        },
+        {
+            "question": "Which aspect of the CAP theorem is often relaxed in NoSQL to achieve availability and partition tolerance?",
+            "option_a": "A. Consistency",
+            "option_b": "B. Partition tolerance",
+            "option_c": "C. Availability",
+            "option_d": "D. Durability",
+            "correct_answer": "A",
+            "explanation": "NoSQL systems frequently trade off strict consistency to remain available and partition-tolerant."
+        },
+        {
+            "question": "Which of the following best describes 'Basically Available' in BASE?",
+            "option_a": "A. The system is never available",
+            "option_b": "B. The system operates most of the time, even with partial failures",
+            "option_c": "C. The system guarantees strict consistency",
+            "option_d": "D. The system avoids replication",
+            "correct_answer": "B",
+            "explanation": "Basically Available means the system continues operating, even if some features are temporarily degraded."
+        },
+        {
+            "question": "Which NoSQL type is best suited for recommendation engines?",
+            "option_a": "A. Key-value store",
+            "option_b": "B. Column-family store",
+            "option_c": "C. Graph database",
+            "option_d": "D. Document database",
+            "correct_answer": "C",
+            "explanation": "Graph databases excel at modeling connected data, making them ideal for recommendation systems."
+        },
+        {
+            "question": "Which of the following best defines 'Polyglot Persistence'?",
+            "option_a": "A. Using one database for all data types",
+            "option_b": "B. Combining multiple database technologies to meet system requirements",
+            "option_c": "C. Using SQL and NoSQL interchangeably in queries",
+            "option_d": "D. Automatically switching databases at runtime",
+            "correct_answer": "B",
+            "explanation": "Polyglot persistence refers to using multiple database systems within one application to suit diverse data needs."
+        },
+        {
+            "question": "What is one major challenge of migrating from RDBMS to NoSQL?",
+            "option_a": "A. Lack of structured data support",
+            "option_b": "B. Need to redesign schema logic for denormalized models",
+            "option_c": "C. High cost of hardware",
+            "option_d": "D. Inability to scale horizontally",
+            "correct_answer": "B",
+            "explanation": "Migrating to NoSQL often requires rethinking schemas, as denormalization and different modeling logic are needed."
+        },
+        {
+            "question": "Which of these is an example of a serverless NoSQL database?",
+            "option_a": "A. Firebase",
+            "option_b": "B. Oracle",
+            "option_c": "C. PostgreSQL",
+            "option_d": "D. DB2",
+            "correct_answer": "A",
+            "explanation": "Firebase is a cloud-based, serverless NoSQL database that auto-scales and supports real-time synchronization."
+        },
+        {
+            "question": "Which of these represents a 'Multi-Model Database'?",
+            "option_a": "A. ArangoDB",
+            "option_b": "B. Cassandra",
+            "option_c": "C. MongoDB",
+            "option_d": "D. Redis",
+            "correct_answer": "A",
+            "explanation": "ArangoDB is a multi-model database supporting document, graph, and key-value data models."
+        },
+        {
+            "question": "Which concept in NoSQL supports replication and fault tolerance?",
+            "option_a": "A. Easy replication support",
+            "option_b": "B. Normalization",
+            "option_c": "C. Referential integrity",
+            "option_d": "D. Transaction isolation",
+            "correct_answer": "A",
+            "explanation": "Replication ensures data redundancy and availability across distributed nodes, improving fault tolerance."
+        },
+        {
+            "question": "Which NoSQL type is most useful for storing shopping cart data?",
+            "option_a": "A. Key-value database",
+            "option_b": "B. Graph database",
+            "option_c": "C. Document database",
+            "option_d": "D. Column-family store",
+            "correct_answer": "A",
+            "explanation": "Key-value databases efficiently store session and cart data where quick lookups by key are required."
+        },
+        {
+            "question": "Which of the following trends integrates AI with NoSQL systems?",
+            "option_a": "A. Real-time data pipelines for analytics",
+            "option_b": "B. Manual data sharding",
+            "option_c": "C. Single-node replication",
+            "option_d": "D. Fixed data schema enforcement",
+            "correct_answer": "A",
+            "explanation": "Modern NoSQL databases increasingly integrate with AI pipelines for real-time analytics and decision-making."
+        },
+        {
+            "question": "Which of the following is a limitation of many NoSQL systems?",
+            "option_a": "A. Poor horizontal scalability",
+            "option_b": "B. Lack of standard query language support",
+            "option_c": "C. Dependence on fixed schema",
+            "option_d": "D. Inability to replicate data",
+            "correct_answer": "B",
+            "explanation": "NoSQL databases often lack standardized query languages, complicating interoperability across platforms."
+        },
+        {
+            "question": "What is one of the primary reasons organizations adopt NoSQL databases?",
+            "option_a": "A. To increase developer productivity and performance",
+            "option_b": "B. To eliminate data redundancy",
+            "option_c": "C. To simplify normalization",
+            "option_d": "D. To enforce relational integrity",
+            "correct_answer": "A",
+            "explanation": "NoSQL databases align with application needs, improving performance and developer productivity."
+        },
+        {
+            "question": "Which component of the CAP theorem ensures that all clients see the same data after updates?",
+            "option_a": "A. Availability",
+            "option_b": "B. Consistency",
+            "option_c": "C. Partition tolerance",
+            "option_d": "D. Durability",
+            "correct_answer": "B",
+            "explanation": "Consistency ensures that once data is updated, all clients have the same view of it across the system."
+        },
+        {
+            "question": "Which characteristic is typically NOT true of NoSQL databases?",
+            "option_a": "A. Open-source development",
+            "option_b": "B. Horizontal scalability",
+            "option_c": "C. Strict ACID compliance",
+            "option_d": "D. Flexible schema design",
+            "correct_answer": "C",
+            "explanation": "NoSQL databases generally prioritize scalability over strict ACID compliance."
+        },
+        {
+            "question": "Which type of NoSQL database is best for storing routing information and spatial data?",
+            "option_a": "A. Graph database",
+            "option_b": "B. Column-family store",
+            "option_c": "C. Document database",
+            "option_d": "D. Key-value store",
+            "correct_answer": "A",
+            "explanation": "Graph databases are optimized for storing and traversing connected or spatial data like routes or networks."
+        },
+        {
+            "question": "Which of the following trends focuses on managing both structured and unstructured data in hybrid systems?",
+            "option_a": "A. Polyglot persistence",
+            "option_b": "B. Multi-model databases",
+            "option_c": "C. Serverless databases",
+            "option_d": "D. BASE consistency",
+            "correct_answer": "A",
+            "explanation": "Polyglot persistence combines SQL and NoSQL systems to manage diverse data needs within one ecosystem."
+        }
+    ]
+}

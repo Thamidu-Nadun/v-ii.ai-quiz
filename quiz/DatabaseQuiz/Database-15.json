@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What is a view in the context of relational databases?",
+            "option_a": "A. A physical table that stores data permanently on disk",
+            "option_b": "B. A virtual table derived from other tables that does not necessarily exist in physical form",
+            "option_c": "C. A backup copy of a database table",
+            "option_d": "D. A constraint that enforces data integrity",
+            "correct_answer": "B",
+            "explanation": "A view is a virtual table derived from base tables or defining tables and does not necessarily exist in physical form, unlike actual tables that store data physically."
+        },
+        {
+            "question": "Which SQL statement is used to define a view?",
+            "option_a": "A. INSERT VIEW",
+            "option_b": "B. CREATE VIEW",
+            "option_c": "C. DEFINE VIEW",
+            "option_d": "D. ALTER VIEW",
+            "correct_answer": "B",
+            "explanation": "The CREATE VIEW statement is used to define views in SQL, specifying the query that forms the virtual table."
+        },
+        {
+            "question": "Given tables emp(eid, ename, age, salary) and dept(did, dname, budget, managerId), which statement correctly creates a view showing department name, budget, and manager name?",
+            "option_a": "A. CREATE VIEW dept_info AS SELECT dname, budget, ename FROM dept",
+            "option_b": "B. CREATE VIEW dept_info(dname, budget, manager) AS SELECT d.dname, d.budget, e.ename FROM emp e, dept d WHERE e.eid=d.managerId",
+            "option_c": "C. CREATE TABLE dept_info AS SELECT dname, budget FROM dept",
+            "option_d": "D. CREATE VIEW dept_info AS SELECT * FROM dept, emp",
+            "correct_answer": "B",
+            "explanation": "This statement correctly creates a view by joining emp and dept tables on the managerId foreign key, selecting the required columns with appropriate aliases."
+        },
+        {
+            "question": "How do you query data from a view named dept_info?",
+            "option_a": "A. GET * FROM dept_info",
+            "option_b": "B. SELECT * FROM dept_info",
+            "option_c": "C. QUERY dept_info",
+            "option_d": "D. FETCH * FROM dept_info",
+            "correct_answer": "B",
+            "explanation": "Views are queried using the same SELECT statement syntax as regular tables, making them transparent to users."
+        },
+        {
+            "question": "Which statement is used to remove a view from the database?",
+            "option_a": "A. DELETE VIEW dept_info",
+            "option_b": "B. REMOVE VIEW dept_info",
+            "option_c": "C. DROP VIEW dept_info",
+            "option_d": "D. DESTROY VIEW dept_info",
+            "correct_answer": "C",
+            "explanation": "The DROP VIEW statement is used to remove a view definition from the database schema."
+        },
+        {
+            "question": "Why are views containing aggregate functions typically not updateable?",
+            "option_a": "A. Aggregate functions are too slow to process updates",
+            "option_b": "B. Updating aggregated data is ambiguous as it's unclear how to modify underlying base table rows",
+            "option_c": "C. Aggregate functions require special database privileges",
+            "option_d": "D. Views with aggregate functions are read-only by SQL standard definition",
+            "correct_answer": "B",
+            "explanation": "When a view contains aggregate functions like SUM or COUNT, it's unclear which underlying rows should be modified to achieve a desired aggregate value, making updates ambiguous."
+        },
+        {
+            "question": "In most DBMSs, under what condition are views generally updateable?",
+            "option_a": "A. When they contain JOIN operations",
+            "option_b": "B. When they are defined on a single base table",
+            "option_c": "C. When they include GROUP BY clauses",
+            "option_d": "D. When they have aggregate functions",
+            "correct_answer": "B",
+            "explanation": "Views are typically updateable only when defined on a single base table, as this eliminates ambiguity about which underlying table should be modified."
+        },
+        {
+            "question": "What is a key security advantage of using views?",
+            "option_a": "A. Views encrypt all data automatically",
+            "option_b": "B. Views allow users to access only specific data they are authorized to see, restricting access to stored data",
+            "option_c": "C. Views prevent SQL injection attacks",
+            "option_d": "D. Views create automatic backups of sensitive data",
+            "correct_answer": "B",
+            "explanation": "Views provide security by allowing administrators to grant users access only to specific data through carefully designed views, rather than giving direct access to base tables."
+        },
+        {
+            "question": "What is a performance disadvantage of views?",
+            "option_a": "A. Views consume more disk space than tables",
+            "option_b": "B. Views must be translated into queries against underlying source tables, which can be time-consuming for complex views",
+            "option_c": "C. Views cannot use indexes",
+            "option_d": "D. Views require more memory than regular tables",
+            "correct_answer": "B",
+            "explanation": "The DBMS must translate queries against views into queries against underlying tables, and if the view is defined by a complex multi-table query, even simple view queries may take considerable time."
+        },
+        {
+            "question": "How do views provide query simplicity?",
+            "option_a": "A. By executing queries faster than direct table access",
+            "option_b": "B. By drawing data from multiple tables and presenting it as a single table, turning multi-table queries into single-table queries",
+            "option_c": "C. By automatically optimizing all SQL queries",
+            "option_d": "D. By reducing the number of rows returned",
+            "correct_answer": "B",
+            "explanation": "Views can combine data from several tables into a single virtual table, allowing users to write simpler queries against the view instead of complex multi-table joins."
+        },
+        {
+            "question": "What is T-SQL?",
+            "option_a": "A. A type of database table",
+            "option_b": "B. SQL extensions that allow programming of server-side logic similar to a programming language",
+            "option_c": "C. A database management system",
+            "option_d": "D. A type of database trigger",
+            "correct_answer": "B",
+            "explanation": "T-SQL (Transact-SQL) consists of extensions to SQL that add programming capabilities like variables, conditional statements, and loops for server-side logic."
+        },
+        {
+            "question": "Which statement is used to initialize a T-SQL variable?",
+            "option_a": "A. CREATE",
+            "option_b": "B. DECLARE",
+            "option_c": "C. DEFINE",
+            "option_d": "D. INITIALIZE",
+            "correct_answer": "B",
+            "explanation": "The DECLARE statement is used to initialize Transact-SQL variables, specifying the variable name and data type."
+        },
+        {
+            "question": "What is the correct syntax to declare a variable named DName of type VARCHAR(20) in T-SQL?",
+            "option_a": "A. DECLARE DName VARCHAR(20)",
+            "option_b": "B. DECLARE @DName VARCHAR(20)",
+            "option_c": "C. VAR @DName VARCHAR(20)",
+            "option_d": "D. CREATE @DName VARCHAR(20)",
+            "correct_answer": "B",
+            "explanation": "T-SQL variables must be prefixed with @ symbol and declared using DECLARE statement with the data type."
+        },
+        {
+            "question": "Which statement is used to assign a value to a T-SQL variable?",
+            "option_a": "A. ASSIGN",
+            "option_b": "B. SET",
+            "option_c": "C. LET",
+            "option_d": "D. UPDATE",
+            "correct_answer": "B",
+            "explanation": "The SET statement is used to assign values to T-SQL variables after they have been declared."
+        },
+        {
+            "question": "What is the initial value of a variable after it is declared in T-SQL?",
+            "option_a": "A. Zero",
+            "option_b": "B. Empty string",
+            "option_c": "C. NULL",
+            "option_d": "D. Default value of the data type",
+            "correct_answer": "C",
+            "explanation": "After declaration, T-SQL variables hold a NULL value until explicitly assigned a different value using SET or SELECT."
+        },
+        {
+            "question": "What is a typical use case for variables in T-SQL scripts?",
+            "option_a": "A. To permanently store data in the database",
+            "option_b": "B. As counters to control loop iterations or to hold data values for testing in control-of-flow statements",
+            "option_c": "C. To replace database tables",
+            "option_d": "D. To create backup copies of data",
+            "correct_answer": "B",
+            "explanation": "Variables in T-SQL are typically used as counters for loops, to hold temporary data values for testing conditions, or to store values returned by stored procedures."
+        },
+        {
+            "question": "Which keywords can be used to control execution inside a WHILE loop in T-SQL?",
+            "option_a": "A. STOP and SKIP",
+            "option_b": "B. BREAK and CONTINUE",
+            "option_c": "C. EXIT and NEXT",
+            "option_d": "D. HALT and RESUME",
+            "correct_answer": "B",
+            "explanation": "BREAK exits the innermost WHILE loop, while CONTINUE restarts the loop, ignoring statements after the CONTINUE keyword."
+        },
+        {
+            "question": "What does the BREAK keyword do in a T-SQL WHILE loop?",
+            "option_a": "A. Pauses the loop temporarily",
+            "option_b": "B. Causes an exit from the innermost WHILE loop",
+            "option_c": "C. Restarts the loop from the beginning",
+            "option_d": "D. Terminates the entire script",
+            "correct_answer": "B",
+            "explanation": "BREAK causes an immediate exit from the innermost WHILE loop, and execution continues with statements after the END keyword marking the loop's end."
+        },
+        {
+            "question": "What does the CONTINUE keyword do in a T-SQL WHILE loop?",
+            "option_a": "A. Exits the loop completely",
+            "option_b": "B. Causes the WHILE loop to restart, ignoring statements after CONTINUE",
+            "option_c": "C. Pauses the loop execution",
+            "option_d": "D. Continues to the next outer loop",
+            "correct_answer": "B",
+            "explanation": "CONTINUE causes the WHILE loop to restart from the beginning, skipping any statements that appear after the CONTINUE keyword in the current iteration."
+        },
+        {
+            "question": "What is the main purpose of maintaining business logic in the database tier using stored procedures and functions?",
+            "option_a": "A. To improve user interface design",
+            "option_b": "B. To handle data-intensive operations efficiently at the database level",
+            "option_c": "C. To reduce database storage requirements",
+            "option_d": "D. To eliminate the need for application code",
+            "correct_answer": "B",
+            "explanation": "Business logic is maintained in the database tier for data-intensive operations to improve efficiency by processing data close to where it's stored, reducing network overhead."
+        },
+        {
+            "question": "What is the key difference in parameter modes between stored procedures and functions in T-SQL?",
+            "option_a": "A. Functions support both IN and OUT parameters, procedures only support IN",
+            "option_b": "B. Functions only support IN parameters, procedures support both IN and OUT parameters",
+            "option_c": "C. Both support the same parameter modes",
+            "option_d": "D. Functions don't accept any parameters",
+            "correct_answer": "B",
+            "explanation": "Functions can only have IN parameters to pass values into them, while procedures can have both IN parameters (to receive values) and OUT parameters (to return values to calling code)."
+        },
+        {
+            "question": "What is the default parameter mode for stored procedures in T-SQL?",
+            "option_a": "A. OUT",
+            "option_b": "B. IN",
+            "option_c": "C. INOUT",
+            "option_d": "D. RETURN",
+            "correct_answer": "B",
+            "explanation": "IN is the default parameter mode for stored procedures, allowing calling code to pass values into the procedure."
+        },
+        {
+            "question": "In the function definition 'CREATE FUNCTION getEmpCount (@did char(12)) RETURNS int', what does RETURNS specify?",
+            "option_a": "A. The input parameter type",
+            "option_b": "B. The data type of the value returned by the function",
+            "option_c": "C. The number of return values",
+            "option_d": "D. The execution mode of the function",
+            "correct_answer": "B",
+            "explanation": "The RETURNS clause specifies the data type of the value that the function will return to the calling code."
+        },
+        {
+            "question": "How do you call a stored function in T-SQL and capture its return value?",
+            "option_a": "A. CALL function_name",
+            "option_b": "B. RUN function_name",
+            "option_c": "C. EXEC @variable = function_name parameters",
+            "option_d": "D. EXECUTE function_name INTO @variable",
+            "correct_answer": "C",
+            "explanation": "Functions are called using EXEC (or EXECUTE) with the syntax 'EXEC @variable = function_name parameters' to capture the return value in a variable."
+        },
+        {
+            "question": "How do you call a stored procedure in T-SQL?",
+            "option_a": "A. CALL procedure_name parameters",
+            "option_b": "B. RUN procedure_name parameters",
+            "option_c": "C. EXEC procedure_name parameters",
+            "option_d": "D. INVOKE procedure_name parameters",
+            "correct_answer": "C",
+            "explanation": "Stored procedures are called using the EXEC (or EXECUTE) statement followed by the procedure name and required parameters."
+        },
+        {
+            "question": "In a stored procedure definition, what does the OUTPUT keyword indicate for a parameter?",
+            "option_a": "A. The parameter is optional",
+            "option_b": "B. The parameter allows the procedure to pass values back to the calling code",
+            "option_c": "C. The parameter is displayed on screen",
+            "option_d": "D. The parameter is written to a log file",
+            "correct_answer": "B",
+            "explanation": "The OUTPUT keyword (or OUT) indicates that the parameter is an output parameter, allowing the procedure to return values to the calling code through that parameter."
+        },
+        {
+            "question": "What are triggers primarily useful for in database systems?",
+            "option_a": "A. Improving query performance",
+            "option_b": "B. Enforcing business rules and data integrity",
+            "option_c": "C. Creating backup copies of data",
+            "option_d": "D. Generating reports",
+            "correct_answer": "B",
+            "explanation": "Triggers are primarily useful for enforcing business rules and data integrity, and they are more powerful than general constraints for complex rules."
+        },
+        {
+            "question": "What is a trigger in database systems?",
+            "option_a": "A. A scheduled task that runs periodically",
+            "option_b": "B. A special type of stored procedure that automatically executes when data in a specified table is modified",
+            "option_c": "C. A type of database index",
+            "option_d": "D. A backup mechanism",
+            "correct_answer": "B",
+            "explanation": "A trigger is a special stored procedure that automatically executes in response to certain events, specifically when data modification occurs on a table or view."
+        },
+        {
+            "question": "Which types of SQL statements can invoke DML triggers?",
+            "option_a": "A. Only SELECT statements",
+            "option_b": "B. INSERT, UPDATE, or DELETE statements",
+            "option_c": "C. CREATE, ALTER, DROP statements",
+            "option_d": "D. GRANT and REVOKE statements",
+            "correct_answer": "B",
+            "explanation": "DML triggers are invoked in response to Data Manipulation Language statements: INSERT, UPDATE, or DELETE operations on tables or views."
+        },
+        {
+            "question": "What is the difference between AFTER and INSTEAD OF triggers?",
+            "option_a": "A. AFTER triggers execute before the operation, INSTEAD OF after",
+            "option_b": "B. AFTER triggers execute after the triggering statement completes successfully, INSTEAD OF triggers override the triggering statement",
+            "option_c": "C. AFTER triggers are faster than INSTEAD OF triggers",
+            "option_d": "D. There is no difference, they are synonyms",
+            "correct_answer": "B",
+            "explanation": "AFTER triggers fire after all operations in the triggering SQL statement complete successfully, while INSTEAD OF triggers execute in place of the triggering statement, overriding its actions."
+        },
+        {
+            "question": "Can AFTER triggers be defined on views?",
+            "option_a": "A. Yes, on all types of views",
+            "option_b": "B. No, AFTER triggers cannot be defined on views",
+            "option_c": "C. Only on updatable views",
+            "option_d": "D. Only on simple views without joins",
+            "correct_answer": "B",
+            "explanation": "AFTER triggers cannot be defined on views according to T-SQL specifications; they can only be defined on tables."
+        },
+        {
+            "question": "What are the two virtual tables created when a trigger executes?",
+            "option_a": "A. BEFORE and AFTER",
+            "option_b": "B. INSERTED and DELETED",
+            "option_c": "C. OLD and NEW",
+            "option_d": "D. TEMP and VIRTUAL",
+            "correct_answer": "B",
+            "explanation": "SQL Server creates two virtual tables named INSERTED and DELETED when a trigger executes to store copies of affected rows."
+        },
+        {
+            "question": "What does the DELETED virtual table store during trigger execution?",
+            "option_a": "A. Only rows affected by DELETE statements",
+            "option_b": "B. Copies of affected rows during DELETE and UPDATE statements",
+            "option_c": "C. Rows that will be deleted in the future",
+            "option_d": "D. Backup copies of all table data",
+            "correct_answer": "B",
+            "explanation": "The DELETED table stores copies of the affected rows during both DELETE operations (the deleted rows) and UPDATE operations (the old values before update)."
+        },
+        {
+            "question": "What does the INSERTED virtual table store during trigger execution?",
+            "option_a": "A. Only rows affected by INSERT statements",
+            "option_b": "B. Copies of affected rows during INSERT and UPDATE statements",
+            "option_c": "C. All rows in the base table",
+            "option_d": "D. Rows pending insertion",
+            "correct_answer": "B",
+            "explanation": "The INSERTED table stores copies of affected rows during both INSERT operations (the new rows) and UPDATE operations (the new values after update)."
+        },
+        {
+            "question": "Consider a scenario where you need to create a view emp_info(eid, name, salary, tot_pct) from tables emp(eid, ename, age, salary) and works(eid, did, pct_time). What would prevent the statement 'UPDATE emp_info SET tot_pct=90 WHERE eid=1000' from executing?",
+            "option_a": "A. The view contains data from multiple tables",
+            "option_b": "B. The tot_pct column is derived from an aggregate function SUM(pct_time), making the view non-updateable",
+            "option_c": "C. The WHERE clause is incorrect",
+            "option_d": "D. Views cannot be updated at all",
+            "correct_answer": "B",
+            "explanation": "Since tot_pct is calculated using an aggregate function (SUM of pct_time), the view becomes non-updateable because it's ambiguous how to modify underlying rows to achieve a specific aggregate value."
+        },
+        {
+            "question": "A bank needs to track all balance changes in Account(accountNo, custId, branch, balance) by logging them to AccountAudit(accountNo, balance, date). What type of trigger should be created?",
+            "option_a": "A. A DELETE trigger only",
+            "option_b": "B. An INSERT and UPDATE trigger on the Account table",
+            "option_c": "C. A SELECT trigger",
+            "option_d": "D. An INSTEAD OF trigger",
+            "correct_answer": "B",
+            "explanation": "To track inserts and updates to the balance field, an INSERT and UPDATE trigger should be created that fires after these operations and logs the changes to AccountAudit."
+        },
+        {
+            "question": "Given tables Emp(eid, ename, age, salary), Works(eid, did, pct_time), and Dept(did, budget, managerId), you need to ensure an employee doesn't work in more than 2 departments. Which approach is most suitable?",
+            "option_a": "A. Create a CHECK constraint on the Works table",
+            "option_b": "B. Create an INSERT trigger on the Works table that counts existing entries and prevents insertion if count >= 2",
+            "option_c": "C. Create a view that filters departments",
+            "option_d": "D. Create a stored procedure to manually check before each insert",
+            "correct_answer": "B",
+            "explanation": "A trigger on the Works table that fires on INSERT can check the count of existing department associations for that employee and prevent insertion if the employee already works in 2 or more departments, enforcing this business rule automatically."
+        },
+        {
+            "question": "For a Transaction(tid, accountNo, type, amount, date) table where type is 'credit' or 'debit', you need to ensure no customer withdraws more than 40,000 per day. What should the trigger check?",
+            "option_a": "A. Only the current transaction amount",
+            "option_b": "B. The sum of all debit transactions for that accountNo on the current date plus the new debit amount",
+            "option_c": "C. The account balance",
+            "option_d": "D. The type field only",
+            "correct_answer": "B",
+            "explanation": "The trigger must sum all existing debit transactions for the account on the current date and add the new transaction amount to verify the total doesn't exceed 40,000, enforcing the daily withdrawal limit."
+        },
+        {
+            "question": "Given Employee(nic, name, salary, dno) and Dept(dno, dname, mgrNic), you need to ensure no employee has a salary greater than their manager. What type of trigger is needed?",
+            "option_a": "A. A SELECT trigger on Employee",
+            "option_b": "B. An INSERT and UPDATE trigger on Employee that compares employee salary with their manager's salary",
+            "option_c": "C. A DELETE trigger on Dept",
+            "option_d": "D. An AFTER trigger on both tables",
+            "correct_answer": "B",
+            "explanation": "An INSERT and UPDATE trigger on the Employee table should check if the employee's salary exceeds their manager's salary (found by joining Employee with Dept on mgrNic) and prevent the operation if it violates this business rule."
+        },
+        {
+            "question": "A company uses a stored procedure increaseSalary(@pct float) that updates all employee salaries by a given percentage. If called with 'exec increaseSalary 10', what happens?",
+            "option_a": "A. All salaries are reduced by 10%",
+            "option_b": "B. All salaries are increased by 10% of their current value",
+            "option_c": "C. Only salaries above a threshold are updated",
+            "option_d": "D. The procedure returns an error",
+            "correct_answer": "B",
+            "explanation": "The procedure calculates salary + salary * (pct/100), which for pct=10 increases each salary by 10% of its current value (e.g., 1000 becomes 1100)."
+        }
+    ]
+}
