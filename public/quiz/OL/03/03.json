@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "දශම සංඛ්‍යාවක ඉහළම වටිනාකම ඇති ඉලක්කම හඳුන්වන්නේ කෙසේද?",
+            "option_a": "A. MSD (Most Significant Digit)",
+            "option_b": "B. LSD (Least Significant Digit)",
+            "option_c": "C. MSB (Most Significant Bit)",
+            "option_d": "D. LSB (Least Significant Bit)",
+            "correct_answer": "A",
+            "explanation": "MSD යනු Most Significant Digit යන්නෙහි සෙම්බුහු වන අතර, දශම සංඛ්‍යාවක ඉහළම වටිනාකම ඇති ඉලක්කම නිරූපණය කරයි."
+        },
+        {
+            "question": "දශම සංඛ්‍යාවක පහළම වටිනාකම ඇති ඉලක්කම හඳුන්වන්නේ කෙසේද?",
+            "option_a": "A. MSD",
+            "option_b": "B. LSD",
+            "option_c": "C. MSB",
+            "option_d": "D. LSB",
+            "correct_answer": "B",
+            "explanation": "LSD යනු Least Significant Digit යන්නෙහි සෙම්බුහු වන අතර, දශම සංඛ්‍යාවක පහළම වටිනාකම ඇති ඉලක්කම නිරූපණය කරයි."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාවක ඉහළම වටිනාකම ඇති බිට් එක හඳුන්වන්නේ කෙසේද?",
+            "option_a": "A. MSD",
+            "option_b": "B. LSD",
+            "option_c": "C. MSB",
+            "option_d": "D. LSB",
+            "correct_answer": "C",
+            "explanation": "MSB යනු Most Significant Bit යන්නෙහි සෙම්බුහු වන අතර, ද්විමය සංඛ්‍යාවක ඉහළම වටිනාකම ඇති බිට් එක නිරූපණය කරයි."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාවක පහළම වටිනාකම ඇති බිට් එක හඳුන්වන්නේ කෙසේද?",
+            "option_a": "A. MSD",
+            "option_b": "B. LSD",
+            "option_c": "C. MSB",
+            "option_d": "D. LSB",
+            "correct_answer": "D",
+            "explanation": "LSB යනු Least Significant Bit යන්නෙහි සෙම්බුහු වන අතර, ද්විමය සංඛ්‍යාවක පහළම වටිනාකම ඇති බිට් එක නිරූපණය කරයි."
+        },
+        {
+            "question": "සංඛ්‍යාව 7492 හි MSD (Most Significant Digit) කුමක්ද?",
+            "option_a": "A. 2",
+            "option_b": "B. 9",
+            "option_c": "C. 4",
+            "option_d": "D. 7",
+            "correct_answer": "D",
+            "explanation": "MSD යනු වම් පස ඇති ඉලක්කම වන අතර, 7492 හි එය 7 ය."
+        },
+        {
+            "question": "සංඛ්‍යාව 503.8 හි LSD (Least Significant Digit) කුමකද?",
+            "option_a": "A. 5",
+            "option_b": "B. 0",
+            "option_c": "C. 3",
+            "option_d": "D. 8",
+            "correct_answer": "D",
+            "explanation": "LSD යනු දශම සංඛ්‍යාවේ දකුණු පස ඇති ඉලක්කම වන අතර, මෙහි එය 8 ය."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාව 110101₂ හි MSB කුමක්ද?",
+            "option_a": "A. 1 (වම් පස)",
+            "option_b": "B. 1 (දකුණු පස)",
+            "option_c": "C. 0",
+            "option_d": "D. 1 (මැද)",
+            "correct_answer": "A",
+            "explanation": "MSB යනු සංඛ්‍යාවේ වම් පස ඇති බිට් එක වන අතර, මෙහි එය 1 ය."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාව 101.110₂ හි LSB කුමක්ද?",
+            "option_a": "A. 1 (වම් පස)",
+            "option_b": "B. 0 (දකුණු පස)",
+            "option_c": "C. 1 (මැද)",
+            "option_d": "D. 1 (දශම ලකුණට පසු)",
+            "correct_answer": "B",
+            "explanation": "LSB යනු ද්විමය සංඛ්‍යාවේ දකුණු පස ඇති බිට් එක වන අතර, මෙහි එය 0 ය."
+        },
+        {
+            "question": "සංඛ්‍යාව 0.0045 හි MSD කුමක්ද?",
+            "option_a": "A. 0",
+            "option_b": "B. 4",
+            "option_c": "C. 5",
+            "option_d": "D. නිශ්චිතව නොපවසා",
+            "correct_answer": "B",
+            "explanation": "0.0045 වැනි දශම සංඛ්‍යාවක MSD යනු පළමු නොනැති ඉලක්කම වන අතර, මෙහි එය 4 ය."
+        },
+        {
+            "question": "329 හි LSD කුමක්ද?",
+            "option_a": "A. 3",
+            "option_b": "B. 2",
+            "option_c": "C. 9",
+            "option_d": "D. 0",
+            "correct_answer": "C",
+            "explanation": "LSD යනු දකුණු පස ඇති ඉලක්කම වන අතර, 329 හි එය 9 ය."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාව 1000110₂ හි LSB සහ MSB පිළිවෙලින් කුමක්ද?",
+            "option_a": "A. 0, 1",
+            "option_b": "B. 1, 0",
+            "option_c": "C. 1, 1",
+            "option_d": "D. 0, 0",
+            "correct_answer": "A",
+            "explanation": "MSB = වම් පස ඇති 1, LSB = දකුණු පස ඇති 0."
+        },
+        {
+            "question": "154.011₀ හි MSD කුමක්ද?",
+            "option_a": "A. 1",
+            "option_b": "B. 5",
+            "option_c": "C. 4",
+            "option_d": "D. 0",
+            "correct_answer": "A",
+            "explanation": "MSD යනු සංඛ්‍යාවේ වම් පස ඇති ඉලක්කම වන අතර, මෙහි එය 1 ය."
+        },
+        {
+            "question": "AD239₁₆ හි MSD කුමක්ද?",
+            "option_a": "A. 9",
+            "option_b": "B. D",
+            "option_c": "C. A",
+            "option_d": "D. 2",
+            "correct_answer": "C",
+            "explanation": "හෙක්සාඩෙසිමල් සංඛ්‍යාවක MSD යනු වම් පස ඇති ඉලක්කම හෝ අක්ෂරය වන අතර, මෙහි එය A ය."
+        },
+        {
+            "question": "0.00110₂ හි LSB කුමක්ද?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. 0.001",
+            "option_d": "D. 1 (පළමු)",
+            "correct_answer": "A",
+            "explanation": "LSB යනු ද්විමය සංඛ්‍යාවේ දකුණු පස ඇති බිට් එක වන අතර, මෙහි එය 0 ය."
+        },
+        {
+            "question": "MSD සහ MSB අතර වෙනස කුමක්ද?",
+            "option_a": "A. MSD යනු බිට් සඳහා, MSB යනු ඉලක්කම් සඳහා",
+            "option_b": "B. MSD යනු දශම/හෙක්සාඩෙසිමල් සඳහා, MSB යනු ද්විමය සඳහා",
+            "option_c": "C. ඒවා එකම දෙයකි",
+            "option_d": "D. MSB යනු දශම සඳහා, MSD යනු ද්විමය සඳහා",
+            "correct_answer": "B",
+            "explanation": "MSD (Most Significant Digit) යනු දශම, අෂ්ටක, හෙක්සාඩෙසිමල් වැනි සංඛ්‍යා පද්ධති සඳහා යොදා ගන්නා අතර, MSB (Most Significant Bit) යනු ද්විමය සඳහා යොදා ගනී."
+        },
+        {
+            "question": "23.0808 හි LSD කුමක්ද?",
+            "option_a": "A. 2",
+            "option_b": "B. 3",
+            "option_c": "C. 0",
+            "option_d": "D. 8",
+            "correct_answer": "D",
+            "explanation": "LSD යනු දකුණු පස ඇති නොනැති ඉලක්කම වන අතර, 23.0808 හි එය 8 ය."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාවක MSB සාමාන්‍යයෙන් නිරූපණය කරන්නේ කොහෙද?",
+            "option_a": "A. දකුණු පස",
+            "option_b": "B. වම් පස",
+            "option_c": "C. මැද",
+            "option_d": "D. දශම ලකුණට පසු",
+            "correct_answer": "B",
+            "explanation": "MSB යනු සංඛ්‍යාවේ වම් පස ඇති බිට් එක වන අතර, එය ඉහළම වටිනාකම දරයි."
+        },
+        {
+            "question": "0.4 හි MSD සහ LSD කුමක්ද?",
+            "option_a": "A. 0, 4",
+            "option_b": "B. 4, 0",
+            "option_c": "C. 4, 4",
+            "option_d": "D. 0, 0",
+            "correct_answer": "C",
+            "explanation": "0.4 වැනි සංඛ්‍යාවක MSD සහ LSD දෙකම 4 වේ, මන්ද එය එකම ඉලක්කම පමණක් දශම ලකුණට පසු ඇති නිසාය."
+        },
+        {
+            "question": "ද්විමය සංඛ්‍යාව 011101₂ හි MSB කුමක්ද?",
+            "option_a": "A. 0",
+            "option_b": "B. 1 (දෙවන)",
+            "option_c": "C. 1 (දකුණු පස)",
+            "option_d": "D. 1 (අවසානයට පෙර)",
+            "correct_answer": "A",
+            "explanation": "MSB යනු වම් පස ඇති බිට් එක වන අතර, 011101 හි එය 0 ය."
+        },
+        {
+            "question": "සංඛ්‍යාව 58.32 හි MSD සහ LSD පිළිවෙලින් කුමක්ද?",
+            "option_a": "A. 5, 2",
+            "option_b": "B. 2, 5",
+            "option_c": "C. 8, 3",
+            "option_d": "D. 3, 8",
+            "correct_answer": "A",
+            "explanation": "MSD = වම් පස ඇති 5, LSD = දකුණු පස ඇති 2."
+        }
+    ]
+}

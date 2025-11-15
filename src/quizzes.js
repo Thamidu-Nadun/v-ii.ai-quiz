@@ -1,4 +1,29 @@
 export default [
+    // OL -3 Quizzes - Number System
+    {
+        title: 'Number System - 01',
+        path: 'quiz/OL/03/01.json',
+        description: 'Test your understanding of different number systems, including binary, decimal, and hexadecimal.',
+        isAvailable: true
+    },
+    {
+        title: 'Number System - 02',
+        path: 'quiz/OL/03/02.json',
+        description: 'Further evaluate your knowledge of number system conversions and arithmetic operations.',
+        isAvailable: true
+    },
+    {
+        title: 'Number System - 03',
+        path: 'quiz/OL/03/03.json',
+        description: 'A comprehensive quiz covering various aspects of number systems and their applications.',
+        isAvailable: true
+    },
+    {
+        title: 'Number System - 04',
+        path: 'quiz/OL/03/04.json',
+        description: 'Assess your proficiency in number system concepts, conversions, and calculations.',
+        isAvailable: true
+    },
     // Database Management System Quizzes
     {
         title: 'DBMS - 01',
