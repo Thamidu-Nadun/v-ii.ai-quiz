@@ -1,0 +1,346 @@
+{
+    "questions": [
+        {
+            "question": "අංක පද්ධතියක් (Number System) කියන්නේ මොනවද?",
+            "option_a": "A. Computer එකේ files ගබඩා කරන විධිය",
+            "option_b": "B. සංඛ්‍යා පදනම් සහ සංකේත භාවිතා කර නිරූපණය කරන ක්‍රමය",
+            "option_c": "C. Screen එකේ numbers type කරන graphical interface එක",
+            "option_d": "D. Hardware device එකක්",
+            "correct_answer": "B",
+            "explanation": "Number system එකක් කියන්නේ සංඛ්‍යා නිරූපණය කරන්න base එකක් සහ digits භාවිතා කරන ක්‍රමයක්."
+        },
+        {
+            "question": "Radix (Base) කියන්නේ මොනවද?",
+            "option_a": "A. අදාළ පද්ධතියේ භාවිතා කරන digit ගණන",
+            "option_b": "B. Number එකේ memory size එක",
+            "option_c": "C. Number එකේ total digits count එක",
+            "option_d": "D. Arithmetic rules ටික",
+            "correct_answer": "A",
+            "explanation": "Base/Radix කියන්නේ number system එකකට තියෙන සම්පූර්ණ digit ගණන."
+        },
+        {
+            "question": "Decimal අංක පද්ධතියේ digits කොපමණද?",
+            "option_a": "A. 2",
+            "option_b": "B. 8",
+            "option_c": "C. 10",
+            "option_d": "D. 16",
+            "correct_answer": "C",
+            "explanation": "Decimal system එක digit 0–9 භාවිතා කරන නිසා digits 10ක් ඇත."
+        },
+        {
+            "question": "Binary number system ගැන නිවැරදි ප්‍රකාශය මොකක්ද?",
+            "option_a": "A. 0–9 digits භාවිතා කරයි",
+            "option_b": "B. Base 8 system එකක්",
+            "option_c": "C. Computers internally binary භාවිතා කරයි",
+            "option_d": "D. A–F letters භාවිතා කරයි",
+            "correct_answer": "C",
+            "explanation": "Computers digital circuits දෙකම states (0/1) නිසා binary භාවිතා කරයි."
+        },
+        {
+            "question": "Octal number system එකේ digit set එක කුමක්ද?",
+            "option_a": "A. 0–1",
+            "option_b": "B. 0–7",
+            "option_c": "C. 0–9",
+            "option_d": "D. 0–F",
+            "correct_answer": "B",
+            "explanation": "Octal system එක digit 0–7 භාවිතා කරයි."
+        },
+        {
+            "question": "Hexadecimal පද්ධතිය භාවිතා කරන අක්ෂර/අංක කුමක්ද?",
+            "option_a": "A. 0–9 විතරයි",
+            "option_b": "B. 0–7 විතරයි",
+            "option_c": "C. 0–9 සහ A–F",
+            "option_d": "D. A–Z",
+            "correct_answer": "C",
+            "explanation": "Hexadecimal system එක 0–9 digits සහ A–F letters භාවිතා කරයි."
+        },
+        {
+            "question": "Digit (ඉලක්කම) කියන්නේ මොනවද?",
+            "option_a": "A. Number එකේ සම්පූර්ණ අගය",
+            "option_b": "B. Number represent කරන්න භාවිතා කරන single symbol එකක්",
+            "option_c": "C. Letters වල එකතුවක්",
+            "option_d": "D. Memory unit එකක්",
+            "correct_answer": "B",
+            "explanation": "Digit කියන්නේ number එකක් represent කරන්න භාවිතා කරන symbol එකක්."
+        },
+        {
+            "question": "Base 16 system එක කුමක්ද?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Binary",
+            "option_c": "C. Octal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "D",
+            "explanation": "Hexadecimal system එක base 16."
+        },
+        {
+            "question": "Computers binary භාවිතා කරන්න හේතුව මොකක්ද?",
+            "option_a": "A. ඉතා human-friendly නිසා",
+            "option_b": "B. Electrical ON/OFF states binary වලට ගැලපෙන නිසා",
+            "option_c": "C. Memory usage අඩු නිසා",
+            "option_d": "D. Decimal convert කරන්න সহজ නිසා",
+            "correct_answer": "B",
+            "explanation": "Binary 0/1 states hardware logic gates වල ON/OFF states වලට හොඳට ගැලපේ."
+        },
+        {
+            "question": "16 symbols භාවිතා කරන අංක පද්ධතිය කුමක්ද?",
+            "option_a": "A. Binary",
+            "option_b": "B. Octal",
+            "option_c": "C. Decimal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "D",
+            "explanation": "Hexadecimal system එකේ symbols 16ක් ඇත."
+        },
+        {
+            "question": "Positional number system එකක් කියන්නේ කුමක්ද?",
+            "option_a": "A. Digit shape එකෙන් value වෙනස් වෙන system එක",
+            "option_b": "B. Digit position එක සහ base එකකින් value තීරණය වෙන system එක",
+            "option_c": "C. Letters අවශ්‍යවන system එක",
+            "option_d": "D. Digit repeat කරන්න බැරිය system එක",
+            "correct_answer": "B",
+            "explanation": "Positional system වල digit value එක position එකට අදාළව වෙනස් වේ."
+        },
+        {
+            "question": "දෛනික ජීවිතයේ මිනිසුන් වැඩියෙන් භාවිතා කරන්නේ මොන number system එකද?",
+            "option_a": "A. Binary",
+            "option_b": "B. Octal",
+            "option_c": "C. Decimal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "C",
+            "explanation": "දෛනික ජීවිතයේ decimal (base 10) පද්ධති භාවිතා කරයි."
+        },
+        {
+            "question": "Hexadecimal system එකේ valid digit එක කුමක්ද?",
+            "option_a": "A. H",
+            "option_b": "B. G",
+            "option_c": "C. A",
+            "option_d": "D. 10",
+            "correct_answer": "C",
+            "explanation": "Hexadecimal digits 0–9 සහ A–F."
+        },
+        {
+            "question": "අඩුම digits ගණන තියෙන number system එක කුමක්ද?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Hexadecimal",
+            "option_c": "C. Octal",
+            "option_d": "D. Binary",
+            "correct_answer": "D",
+            "explanation": "Binary system එකේ digits 2ක් (0,1) පමණයි."
+        },
+        {
+            "question": "Decimal digit set එක කුමක්ද?",
+            "option_a": "A. 0–1",
+            "option_b": "B. 0–7",
+            "option_c": "C. 0–9",
+            "option_d": "D. 0–F",
+            "correct_answer": "C",
+            "explanation": "Decimal system එක digits 0–9 භාවිතා කරයි."
+        },
+        {
+            "question": "Binary system එකේ base value එක කීයද?",
+            "option_a": "A. 2",
+            "option_b": "B. 10",
+            "option_c": "C. 8",
+            "option_d": "D. 16",
+            "correct_answer": "A",
+            "explanation": "Binary system base 2."
+        },
+        {
+            "question": "Hexadecimal එකේ invalid digit එක කුමක්ද?",
+            "option_a": "A. 9",
+            "option_b": "B. A",
+            "option_c": "C. F",
+            "option_d": "D. G",
+            "correct_answer": "D",
+            "explanation": "Hexadecimal digits 0–9, A–F පමණයි."
+        },
+        {
+            "question": "Positional systems එකේ digit value එක වෙනස් වන්නේ?",
+            "option_a": "A. Shape එක මත",
+            "option_b": "B. Position එක සහ base එක මත",
+            "option_c": "C. Color එක මත",
+            "option_d": "D. Memory location එක මත",
+            "correct_answer": "B",
+            "explanation": "Digit value position සහ base මත පදනම් වෙයි."
+        },
+        {
+            "question": "Octal system එකේ වැඩිම digit value එක කුමක්ද?",
+            "option_a": "A. 9",
+            "option_b": "B. 7",
+            "option_c": "C. 8",
+            "option_d": "D. F",
+            "correct_answer": "B",
+            "explanation": "Octal digits 0–7."
+        },
+        {
+            "question": "දෙගුණ binary values compact form එකට represent කරන්න උපයෝගී system එක කුමක්ද?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Octal",
+            "option_c": "C. Hexadecimal",
+            "option_d": "D. Binary",
+            "correct_answer": "C",
+            "explanation": "Hexadecimal binary values compact ලෙස නිරූපණය කරයි."
+        },
+        {
+            "question": "Radix එකෙන් අර්ථ දැක්වෙන්නේ?",
+            "option_a": "A. Memory allocation",
+            "option_b": "B. භාවිතා කරන දත්ත සංකේත සංඛ්‍යාව",
+            "option_c": "C. ඉලක්කම් ගණන",
+            "option_d": "D. Arithmetic operations",
+            "correct_answer": "B",
+            "explanation": "Radix කියන්නේ digit symbols ගණන."
+        },
+        {
+            "question": "Non-positional system එකක් ලෙස හදුන්වන්නේ?",
+            "option_a": "A. Binary",
+            "option_b": "B. Decimal",
+            "option_c": "C. Roman numerals",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "C",
+            "explanation": "Roman numerals positional නෙවෙයි."
+        },
+        {
+            "question": "Base-10 system එක හැඳින්වෙන්නේ?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Binary",
+            "option_c": "C. Octal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "A",
+            "explanation": "Base 10 කියන්නේ decimal."
+        },
+        {
+            "question": "එකම symbols දෙකක් භාවිතා කරන අංක පද්ධතිය කුමක්ද?",
+            "option_a": "A. Octal",
+            "option_b": "B. Hexadecimal",
+            "option_c": "C. Binary",
+            "option_d": "D. Decimal",
+            "correct_answer": "C",
+            "explanation": "Binary symbols 0 සහ 1."
+        },
+        {
+            "question": "Hexadecimal computing වල භාවිතා වීමට හේතුව?",
+            "option_a": "A. Binary වලට වඩා human-friendly නිසා",
+            "option_b": "B. CPU power අඩු නිසා",
+            "option_c": "C. Decimal එකට සමාන නිසා",
+            "option_d": "D. Positional නෙවෙයි",
+            "correct_answer": "A",
+            "explanation": "Hexadecimal binary values human-readable කරනවා."
+        },
+        {
+            "question": "Positional systems වල අනිවාර්ය ගුණාංගයක් මොකක්ද?",
+            "option_a": "A. Letters use විය යුතුයි",
+            "option_b": "B. Digit value position මත වෙනස් වේ",
+            "option_c": "C. Base > 10 විය යුතුයි",
+            "option_d": "D. Value 10 powers මත පදනම්",
+            "correct_answer": "B",
+            "explanation": "Positional systems digit value position මත පදනම් වෙයි."
+        },
+        {
+            "question": "Hardware-level representation එකට වඩාත් සුදුසු number system එක කුමක්ද?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Binary",
+            "option_c": "C. Octal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "B",
+            "explanation": "Hardware-level logic 0/1 states binary."
+        },
+        {
+            "question": "8 symbols තියෙන system එකේ base එක කීයද?",
+            "option_a": "A. 2",
+            "option_b": "B. 8",
+            "option_c": "C. 10",
+            "option_d": "D. 16",
+            "correct_answer": "B",
+            "explanation": "8 symbols → base 8 → octal."
+        },
+        {
+            "question": "Hexadecimal එකේ 'F' digit එකෙන් අදහස් වන්නේ?",
+            "option_a": "A. 10",
+            "option_b": "B. 12",
+            "option_c": "C. 14",
+            "option_d": "D. 15",
+            "correct_answer": "D",
+            "explanation": "F = 15 in hexadecimal."
+        },
+        {
+            "question": "Powers of 2 භාවිතා කරන number system එක කුමක්ද?",
+            "option_a": "A. Binary",
+            "option_b": "B. Decimal",
+            "option_c": "C. Octal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "A",
+            "explanation": "Binary place values powers of 2."
+        },
+        {
+            "question": "Powers of 8 භාවිතා කරන number system එක කුමක්ද?",
+            "option_a": "A. Decimal",
+            "option_b": "B. Hexadecimal",
+            "option_c": "C. Octal",
+            "option_d": "D. Binary",
+            "correct_answer": "C",
+            "explanation": "Octal → powers of 8."
+        },
+        {
+            "question": "Valid decimal digit set එක කුමක්ද?",
+            "option_a": "A. {0, 5, 9}",
+            "option_b": "B. {0, 4, A}",
+            "option_c": "C. {1, 7, F}",
+            "option_d": "D. {3, 8, G}",
+            "correct_answer": "A",
+            "explanation": "Decimal digits 0–9."
+        },
+        {
+            "question": "Positional number system එකකට තිබිය යුතු අවම base value එක කීයද?",
+            "option_a": "A. 1",
+            "option_b": "B. 2",
+            "option_c": "C. 3",
+            "option_d": "D. 5",
+            "correct_answer": "B",
+            "explanation": "Base 2 positional system සඳහා අවම base එක."
+        },
+        {
+            "question": "Powers of 16 use කරන system එක කුමක්ද?",
+            "option_a": "A. Octal",
+            "option_b": "B. Binary",
+            "option_c": "C. Decimal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "D",
+            "explanation": "Hexadecimal uses powers of 16."
+        },
+        {
+            "question": "Digit කියන්නේ?",
+            "option_a": "A. සම්පූර්ණ number එක",
+            "option_b": "B. Number represent කරන symbol එක",
+            "option_c": "C. Alphabet letter එක",
+            "option_d": "D. Value 10 ට වැඩි අගයක්",
+            "correct_answer": "B",
+            "explanation": "Digit = number represent කරන symbol එක."
+        },
+        {
+            "question": "විවිධ number systems තිබෙන්නේ මක්නිසාද?",
+            "option_a": "A. People confuse කරන්න",
+            "option_b": "B. Computing tasks වලට වෙනස් abstraction levels එකක් අවශ්‍ය නිසා",
+            "option_c": "C. Decimal එක redundant නිසා",
+            "option_d": "D. Hexadecimal obsolete නිසා",
+            "correct_answer": "B",
+            "explanation": "Binary hardware-level, decimal human-level, hex compact—වෙනස් tasks සඳහා systems වෙනස්යි."
+        },
+        {
+            "question": "0–7 digits භාවිතා කරන system එක කුමක්ද?",
+            "option_a": "A. Binary",
+            "option_b": "B. Octal",
+            "option_c": "C. Decimal",
+            "option_d": "D. Hexadecimal",
+            "correct_answer": "B",
+            "explanation": "0–7 → Octal."
+        },
+        {
+            "question": "Decimal system එකේ invalid digit එක කුමක්ද?",
+            "option_a": "A. 8",
+            "option_b": "B. 4",
+            "option_c": "C. 9",
+            "option_d": "D. A",
+            "correct_answer": "D",
+            "explanation": "Decimal digits 0–9 පමණයි."
+        }
+    ]
+}
