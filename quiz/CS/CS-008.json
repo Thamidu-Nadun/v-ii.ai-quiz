@@ -1,0 +1,238 @@
+{
+    "questions": [
+        {
+            "question": "Data loss or data exfiltration is best defined as:",
+            "option_a": "A. The accidental deletion of files from a local hard drive only",
+            "option_b": "B. When data is intentionally or unintentionally lost, stolen, or leaked to the outside world",
+            "option_c": "C. The authorised transfer of data between two trusted systems",
+            "option_d": "D. The corruption of data caused solely by hardware failures",
+            "correct_answer": "B",
+            "explanation": "Data loss or data exfiltration occurs when data is lost, stolen, or leaked to unauthorised parties, whether intentionally or accidentally."
+        },
+        {
+            "question": "Which of the following is considered an example of organisational data that could be lost or stolen?",
+            "option_a": "A. Employee personal social media posts",
+            "option_b": "B. Publicly available news articles",
+            "option_c": "C. Research and development data",
+            "option_d": "D. Marketing billboards and public advertisements",
+            "correct_answer": "C",
+            "explanation": "Organisational data includes R&D data, sales, financial, HR, legal, employee, contractor, and customer data — representing valuable organisational assets."
+        },
+        {
+            "question": "Which of the following is a consequence of data loss for an organisation?",
+            "option_a": "A. Increased employee productivity",
+            "option_b": "B. Improved customer loyalty and trust",
+            "option_c": "C. Reduced operating costs",
+            "option_d": "D. Litigation and legal action resulting in fines and civil penalties",
+            "correct_answer": "D",
+            "explanation": "Data loss can lead to brand damage, loss of competitive advantage, customer loss, revenue loss, and legal action with fines and civil penalties."
+        },
+        {
+            "question": "Which of the following is NOT listed as a vector of data loss?",
+            "option_a": "A. Unencrypted devices",
+            "option_b": "B. Removable media",
+            "option_c": "C. Hard copy documents",
+            "option_d": "D. Intrusion detection systems",
+            "correct_answer": "D",
+            "explanation": "Vectors of data loss include unencrypted devices, cloud storage, removable media, hard copy, improper access control, email, and social networking. Intrusion detection systems are security controls."
+        },
+        {
+            "question": "Improper Access Control is listed as a vector of data loss. What does this mean?",
+            "option_a": "A. Employees accessing the internet during work hours for personal use",
+            "option_b": "B. Sensitive data being accessible to people who should not have permission to view it",
+            "option_c": "C. The use of personal email accounts for work communications",
+            "option_d": "D. The failure to update antivirus software regularly",
+            "correct_answer": "B",
+            "explanation": "Improper access control means sensitive organisational data may be accessed by unauthorised individuals due to weak or misconfigured access mechanisms."
+        },
+        {
+            "question": "BYOD stands for:",
+            "option_a": "A. Bring Your Own Data",
+            "option_b": "B. Build Your Own Device",
+            "option_c": "C. Bring Your Own Device",
+            "option_d": "D. Business Yield on Demand",
+            "correct_answer": "C",
+            "explanation": "BYOD stands for Bring Your Own Device, referring to employees using personal devices to access organisational networks for work."
+        },
+        {
+            "question": "Which of the following best describes the BYOD concept?",
+            "option_a": "A. A policy that prohibits employees from using any personal devices at work",
+            "option_b": "B. A business model where the company provides employees with company-owned mobile devices",
+            "option_c": "C. The trend of employees using personal devices to remotely access organisational networks for work",
+            "option_d": "D. A cloud computing strategy for storing corporate data on employee-owned servers",
+            "correct_answer": "C",
+            "explanation": "BYOD allows employees to use personal devices like smartphones, tablets, and laptops to access organisational networks remotely for work purposes."
+        },
+        {
+            "question": "Which of the following is a benefit of BYOD?",
+            "option_a": "A. It eliminates all security risks associated with mobile devices",
+            "option_b": "B. It transfers full responsibility for IT support to employees",
+            "option_c": "C. It boosts productivity as employees can access work on their personal devices anytime",
+            "option_d": "D. It gives the IT department complete control over all personal devices",
+            "correct_answer": "C",
+            "explanation": "BYOD boosts productivity because employees can access work anytime on their personal devices, using devices they are comfortable with."
+        },
+        {
+            "question": "Which of the following is a financial benefit of BYOD, particularly for small and medium businesses (SMBs)?",
+            "option_a": "A. SMBs receive government subsidies for implementing BYOD",
+            "option_b": "B. BYOD eliminates the need for any IT department in SMBs",
+            "option_c": "C. The money saved on buying hardware and software can be utilised for other things",
+            "option_d": "D. SMBs can charge employees for using the company network on personal devices",
+            "correct_answer": "C",
+            "explanation": "BYOD saves money on purchasing hardware and software, allowing SMBs to invest in other areas instead."
+        },
+        {
+            "question": "Which of the following is a drawback of BYOD in an organisation?",
+            "option_a": "A. Employees become less productive when using their own devices",
+            "option_b": "B. Companies cannot legally access company data on personal devices",
+            "option_c": "C. BYOD devices may get stolen or lost, causing data breaches",
+            "option_d": "D. BYOD always leads to higher hardware procurement costs for companies",
+            "correct_answer": "C",
+            "explanation": "BYOD devices can be lost or stolen, potentially causing data breaches and increasing IT security management challenges."
+        },
+        {
+            "question": "What is the main security threat arising from BYOD?",
+            "option_a": "A. Employees deliberately leaking data via personal emails only",
+            "option_b": "B. Malware entering the corporate network through improperly secured personal devices",
+            "option_c": "C. Personal devices automatically syncing all corporate data to public clouds",
+            "option_d": "D. The inability to install antivirus software on personal devices",
+            "correct_answer": "B",
+            "explanation": "The main BYOD security threat is malware entering the corporate network via personal devices that are not properly secured."
+        },
+        {
+            "question": "COPE stands for:",
+            "option_a": "A. Corporate-Owned, Personally Enabled",
+            "option_b": "B. Company-Operated, Personally Employed",
+            "option_c": "C. Corporate-Only, Privately Encrypted",
+            "option_d": "D. Centrally Operated, Personally Equipped",
+            "correct_answer": "A",
+            "explanation": "COPE stands for Corporate-Owned, Personally Enabled, allowing employees to use company-provided devices as if they were personal."
+        },
+        {
+            "question": "How does the COPE model differ from BYOD?",
+            "option_a": "A. In COPE, employees purchase their own devices and get reimbursed by the company",
+            "option_b": "B. In COPE, the organisation provides the devices to employees but allows personal use, giving the company greater control",
+            "option_c": "C. In COPE, employees are not allowed to use devices for any personal activity",
+            "option_d": "D. COPE and BYOD are identical models with different names",
+            "correct_answer": "B",
+            "explanation": "COPE provides company devices for employees with personal use allowed, giving the organisation more control over data and security."
+        },
+        {
+            "question": "Which of the following is a benefit of COPE over BYOD?",
+            "option_a": "A. Employees can install any software they wish without restriction",
+            "option_b": "B. The organisation can remotely wipe corporate data if an employee loses their device or leaves the organisation",
+            "option_c": "C. The company bears no responsibility for data breaches on COPE devices",
+            "option_d": "D. COPE devices are cheaper to procure than BYOD devices",
+            "correct_answer": "B",
+            "explanation": "COPE allows organisations to remotely wipe corporate data if devices are lost or employees leave, enhancing security control."
+        },
+        {
+            "question": "What does MDM stand for in the context of BYOD/COPE security?",
+            "option_a": "A. Mobile Data Monitoring",
+            "option_b": "B. Managed Device Model",
+            "option_c": "C. Mobile Device Management",
+            "option_d": "D. Multi-Device Mechanism",
+            "correct_answer": "C",
+            "explanation": "MDM stands for Mobile Device Management, which is used to secure, monitor, and manage mobile devices in corporate environments."
+        },
+        {
+            "question": "Which of the following is a Mobile Device Management (MDM) security feature?",
+            "option_a": "A. Allowing employees to install any app without approval",
+            "option_b": "B. Disabling all network access for personal devices",
+            "option_c": "C. Jailbreak and root detection on managed devices",
+            "option_d": "D. Automatically transferring corporate data to personal cloud accounts",
+            "correct_answer": "C",
+            "explanation": "MDM security features include data encryption, PIN enforcement, remote data wipe, and jailbreak/root detection to secure devices."
+        },
+        {
+            "question": "An employee's corporate-issued phone is stolen. Which MDM feature would BEST protect the organisation's data on that device?",
+            "option_a": "A. PIN enforcement",
+            "option_b": "B. Jailbreak detection",
+            "option_c": "C. Remote data wipe of the stolen device",
+            "option_d": "D. Data Loss Prevention options",
+            "correct_answer": "C",
+            "explanation": "Remote data wipe allows an organisation to erase all corporate data from a lost or stolen device, preventing unauthorised access."
+        },
+        {
+            "question": "Which of the following is NOT one of the definitions of a 'hacker' as described in the lecture?",
+            "option_a": "A. A clever programmer capable of developing new programs to make them more efficient",
+            "option_b": "B. A network professional who uses sophisticated skills to ensure networks are not vulnerable",
+            "option_c": "C. A government employee who legally monitors network traffic for national security",
+            "option_d": "D. A person who tries to gain unauthorized access to devices on the Internet",
+            "correct_answer": "C",
+            "explanation": "A government employee monitoring traffic legally is not considered a hacker. Hacker definitions include clever programmers, network security professionals, unauthorised access seekers, and those running disruptive programs."
+        },
+        {
+            "question": "White Hat Hackers are best described as:",
+            "option_a": "A. Criminals who hack for financial gain using any means necessary",
+            "option_b": "B. Government-sponsored attackers who steal intelligence and sabotage systems",
+            "option_c": "C. Ethical hackers who use their skills for good, legal purposes and report vulnerabilities to developers",
+            "option_d": "D. Inexperienced hackers who run pre-built scripts made by others",
+            "correct_answer": "C",
+            "explanation": "White Hat Hackers are ethical hackers who identify and report vulnerabilities to improve security legally and responsibly."
+        },
+        {
+            "question": "A security researcher discovers a critical vulnerability in a widely-used application without permission, and then publicly announces it before the developer can patch it. This person is best categorised as a:",
+            "option_a": "A. White Hat Hacker",
+            "option_b": "B. Gray Hat Hacker",
+            "option_c": "C. Black Hat Hacker",
+            "option_d": "D. Script Kiddie",
+            "correct_answer": "B",
+            "explanation": "Gray Hat Hackers exploit systems without permission but not for personal gain or to cause damage, sometimes publicly disclosing vulnerabilities."
+        },
+        {
+            "question": "Black Hat Hackers are distinguished from other hacker types primarily by:",
+            "option_a": "A. Their focus on improving network security through legal means",
+            "option_b": "B. Their tendency to report vulnerabilities to vendors for rewards",
+            "option_c": "C. Their use of only pre-existing tools and scripts written by others",
+            "option_d": "D. Being unethical criminals who violate security for personal gain or malicious reasons",
+            "correct_answer": "D",
+            "explanation": "Black Hat Hackers violate security laws and exploit vulnerabilities for personal gain or malicious purposes."
+        },
+        {
+            "question": "Script Kiddies are best described as:",
+            "option_a": "A. Highly skilled hackers who develop advanced zero-day exploits for profit",
+            "option_b": "B. Government-funded hackers who create custom attack tools to steal intelligence",
+            "option_c": "C. Inexperienced hackers who run existing scripts and exploits developed by others, typically not for profit",
+            "option_d": "D. Ethical hackers who perform security assessments for organisations",
+            "correct_answer": "C",
+            "explanation": "Script Kiddies are inexperienced hackers who use existing scripts and tools to cause harm, often for recognition rather than profit."
+        },
+        {
+            "question": "Vulnerability Brokers are typically associated with which type of hacker?",
+            "option_a": "A. Black Hat Hackers — they sell exploits on the dark web to the highest bidder",
+            "option_b": "B. White Hat Hackers — they are employed by companies to find and fix vulnerabilities",
+            "option_c": "C. Gray Hat Hackers — they discover exploits and report them to vendors, sometimes for a reward",
+            "option_d": "D. State-Sponsored Hackers — they trade exploits between intelligence agencies",
+            "correct_answer": "C",
+            "explanation": "Vulnerability Brokers are usually gray hat hackers who discover vulnerabilities and report them for a reward, aiming to improve security."
+        },
+        {
+            "question": "Cyber Criminals operate in an underground economy. Which of the following items would they typically buy, sell, or trade?",
+            "option_a": "A. Cybersecurity certifications and training courses",
+            "option_b": "B. Attack toolkits, zero-day exploit code, botnet services, banking Trojans, and keyloggers",
+            "option_c": "C. Legitimate software licences and antivirus subscriptions",
+            "option_d": "D. Government cybersecurity policy documents",
+            "correct_answer": "B",
+            "explanation": "Cyber Criminals trade malicious tools, exploits, and stolen information in an underground economy."
+        },
+        {
+            "question": "Hacktivists differ from Cyber Criminals primarily because:",
+            "option_a": "A. Hacktivists only target government systems while cyber criminals target businesses",
+            "option_b": "B. Hacktivists use more sophisticated tools than cyber criminals",
+            "option_c": "C. Hacktivists hack for attention and to protest social/political ideas, not for financial profit",
+            "option_d": "D. Hacktivists always act within the law while cyber criminals do not",
+            "correct_answer": "C",
+            "explanation": "Hacktivists attack systems to protest or raise awareness, not for financial gain, unlike cyber criminals."
+        },
+        {
+            "question": "The Stuxnet malware, which was created to damage Iran's nuclear enrichment capabilities, is an example of an attack by which type of threat actor?",
+            "option_a": "A. Script Kiddies",
+            "option_b": "B. Cyber Criminals",
+            "option_c": "C. Hacktivists",
+            "option_d": "D. State-Sponsored Hackers",
+            "correct_answer": "D",
+            "explanation": "Stuxnet is a State-Sponsored attack, created by government-funded hackers targeting critical infrastructure with custom malware."
+        }
+    ]
+}

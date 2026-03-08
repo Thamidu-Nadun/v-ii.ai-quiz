@@ -1,0 +1,292 @@
+{
+    "questions": [
+        {
+            "question": "What is meant by data loss or data exfiltration in cybersecurity?",
+            "option_a": "A. The process of compressing data for storage",
+            "option_b": "B. The intentional or unintentional loss, theft, or leakage of data to the outside world",
+            "option_c": "C. The encryption of sensitive organizational data",
+            "option_d": "D. The duplication of organizational databases",
+            "correct_answer": "B",
+            "explanation": "Data loss or data exfiltration refers to situations where sensitive data is lost, stolen, or leaked outside the organization either intentionally or unintentionally."
+        },
+        {
+            "question": "Which of the following is considered an example of organizational data?",
+            "option_a": "A. Research and development data",
+            "option_b": "B. Customer data",
+            "option_c": "C. Financial data",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Organizational data includes research, financial, customer, employee, and other operational data which are valuable assets."
+        },
+        {
+            "question": "Which of the following is a possible consequence of data loss for an organization?",
+            "option_a": "A. Improved system performance",
+            "option_b": "B. Brand damage and loss of reputation",
+            "option_c": "C. Increased employee productivity",
+            "option_d": "D. Reduced operational costs",
+            "correct_answer": "B",
+            "explanation": "Data loss can damage an organization’s reputation and brand trust, leading to serious financial and operational consequences."
+        },
+        {
+            "question": "Which of the following is NOT listed as a result of data loss?",
+            "option_a": "A. Loss of customers",
+            "option_b": "B. Loss of revenue",
+            "option_c": "C. Automatic system upgrades",
+            "option_d": "D. Legal action and penalties",
+            "correct_answer": "C",
+            "explanation": "Automatic system upgrades are unrelated to data loss consequences, while the other options are real impacts."
+        },
+        {
+            "question": "Which of the following is a vector of data loss?",
+            "option_a": "A. Encrypted backup storage",
+            "option_b": "B. Unencrypted devices",
+            "option_c": "C. Hardware redundancy",
+            "option_d": "D. Network segmentation",
+            "correct_answer": "B",
+            "explanation": "Unencrypted devices can expose sensitive information if stolen or accessed by unauthorized users."
+        },
+        {
+            "question": "Which data loss vector involves physical printed information being exposed?",
+            "option_a": "A. Social networking",
+            "option_b": "B. Hard copy",
+            "option_c": "C. Cloud storage",
+            "option_d": "D. Email",
+            "correct_answer": "B",
+            "explanation": "Hard copies refer to printed documents that can be lost, stolen, or improperly disposed of."
+        },
+        {
+            "question": "What does BYOD stand for?",
+            "option_a": "A. Bring Your Own Data",
+            "option_b": "B. Build Your Own Device",
+            "option_c": "C. Bring Your Own Device",
+            "option_d": "D. Backup Your Organizational Data",
+            "correct_answer": "C",
+            "explanation": "BYOD stands for Bring Your Own Device, where employees use personal devices for work-related tasks."
+        },
+        {
+            "question": "Which device type is commonly used in a BYOD environment?",
+            "option_a": "A. Personal smartphones",
+            "option_b": "B. Tablets",
+            "option_c": "C. Laptops",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "BYOD environments commonly include smartphones, tablets, and laptops used by employees."
+        },
+        {
+            "question": "Which of the following is a key benefit of BYOD?",
+            "option_a": "A. Reduced productivity",
+            "option_b": "B. Increased employee comfort with devices",
+            "option_c": "C. Elimination of cybersecurity risks",
+            "option_d": "D. Removal of IT department responsibilities",
+            "correct_answer": "B",
+            "explanation": "Employees are more comfortable using their own devices, which can improve productivity and satisfaction."
+        },
+        {
+            "question": "How can BYOD help small and medium businesses (SMBs)?",
+            "option_a": "A. By eliminating cybersecurity threats",
+            "option_b": "B. By reducing the need to purchase hardware",
+            "option_c": "C. By preventing remote access",
+            "option_d": "D. By restricting employee flexibility",
+            "correct_answer": "B",
+            "explanation": "BYOD allows employees to use personal devices, reducing hardware investment for organizations."
+        },
+        {
+            "question": "Which of the following is a major drawback of BYOD?",
+            "option_a": "A. Increased employee satisfaction",
+            "option_b": "B. Increased risk of malware entering corporate networks",
+            "option_c": "C. Reduced productivity",
+            "option_d": "D. Elimination of remote access",
+            "correct_answer": "B",
+            "explanation": "Personal devices may not be properly secured and could introduce malware into corporate networks."
+        },
+        {
+            "question": "What risk occurs if a BYOD device is stolen?",
+            "option_a": "A. Increased bandwidth",
+            "option_b": "B. Data breach due to exposed company data",
+            "option_c": "C. Improved encryption",
+            "option_d": "D. Reduced IT workload",
+            "correct_answer": "B",
+            "explanation": "If a personal device with corporate data is stolen, sensitive information may be compromised."
+        },
+        {
+            "question": "What does COPE stand for in enterprise device management?",
+            "option_a": "A. Corporate-Owned, Personally Enabled",
+            "option_b": "B. Corporate Online Protection Environment",
+            "option_c": "C. Centralized Organizational Protection Equipment",
+            "option_d": "D. Company Operated Personal Equipment",
+            "correct_answer": "A",
+            "explanation": "COPE refers to corporate-owned devices that employees are allowed to use for personal tasks."
+        },
+        {
+            "question": "Which advantage does COPE provide organizations compared to BYOD?",
+            "option_a": "A. Less control over devices",
+            "option_b": "B. Greater control over corporate data and security",
+            "option_c": "C. No need for IT management",
+            "option_d": "D. Elimination of device policies",
+            "correct_answer": "B",
+            "explanation": "Since the devices are company-owned, organizations can enforce stricter security policies."
+        },
+        {
+            "question": "Which capability allows organizations to erase corporate data from a lost device?",
+            "option_a": "A. Data compression",
+            "option_b": "B. Remote data wipe",
+            "option_c": "C. Data mirroring",
+            "option_d": "D. Packet filtering",
+            "correct_answer": "B",
+            "explanation": "Remote data wipe allows administrators to remove sensitive information from lost or stolen devices."
+        },
+        {
+            "question": "Which technology is used to manage and monitor mobile devices in organizations?",
+            "option_a": "A. VPN",
+            "option_b": "B. MDM",
+            "option_c": "C. DNS",
+            "option_d": "D. RAID",
+            "correct_answer": "B",
+            "explanation": "Mobile Device Management (MDM) is used to secure, monitor, and manage mobile devices."
+        },
+        {
+            "question": "Which security measure protects data from unauthorized access by encoding it?",
+            "option_a": "A. Encryption",
+            "option_b": "B. Virtualization",
+            "option_c": "C. Routing",
+            "option_d": "D. Compression",
+            "correct_answer": "A",
+            "explanation": "Encryption converts data into a coded format to prevent unauthorized access."
+        },
+        {
+            "question": "What is the role of PIN enforcement in mobile device security?",
+            "option_a": "A. Compress files",
+            "option_b": "B. Restrict device access through authentication",
+            "option_c": "C. Increase battery life",
+            "option_d": "D. Disable applications",
+            "correct_answer": "B",
+            "explanation": "PIN enforcement ensures only authorized users can unlock and access the device."
+        },
+        {
+            "question": "In cybersecurity terminology, what is a hacker?",
+            "option_a": "A. Only a criminal attacker",
+            "option_b": "B. A person who programs games",
+            "option_c": "C. Someone who attempts to gain unauthorized access or uses advanced programming skills",
+            "option_d": "D. A hardware technician",
+            "correct_answer": "C",
+            "explanation": "The term hacker can refer to skilled programmers or individuals attempting unauthorized access."
+        },
+        {
+            "question": "What type of hacker performs penetration testing to identify vulnerabilities?",
+            "option_a": "A. White hat hacker",
+            "option_b": "B. Black hat hacker",
+            "option_c": "C. Script kiddie",
+            "option_d": "D. Cyber criminal",
+            "correct_answer": "A",
+            "explanation": "White hat hackers ethically test systems to identify and fix vulnerabilities."
+        },
+        {
+            "question": "Which hacker type violates systems primarily for malicious purposes or personal gain?",
+            "option_a": "A. Gray hat",
+            "option_b": "B. White hat",
+            "option_c": "C. Black hat",
+            "option_d": "D. Vulnerability broker",
+            "correct_answer": "C",
+            "explanation": "Black hat hackers exploit vulnerabilities for malicious intent or financial gain."
+        },
+        {
+            "question": "A hacker who breaks into a system without permission and publicly discloses the vulnerability is most likely:",
+            "option_a": "A. White hat",
+            "option_b": "B. Gray hat",
+            "option_c": "C. Black hat",
+            "option_d": "D. Cyber criminal",
+            "correct_answer": "B",
+            "explanation": "Gray hat hackers may violate rules but do not necessarily act with malicious intent."
+        },
+        {
+            "question": "Which modern hacker category refers to inexperienced individuals using pre-written scripts?",
+            "option_a": "A. Script kiddies",
+            "option_b": "B. Hacktivists",
+            "option_c": "C. Cyber criminals",
+            "option_d": "D. State-sponsored hackers",
+            "correct_answer": "A",
+            "explanation": "Script kiddies rely on tools created by skilled hackers rather than developing their own."
+        },
+        {
+            "question": "What motivates many script kiddies?",
+            "option_a": "A. Financial profit",
+            "option_b": "B. National security",
+            "option_c": "C. Impressing peers or gaining recognition",
+            "option_d": "D. Academic research",
+            "correct_answer": "C",
+            "explanation": "Script kiddies often seek attention or reputation in online communities."
+        },
+        {
+            "question": "Which group discovers vulnerabilities and may report them to vendors for rewards?",
+            "option_a": "A. Script kiddies",
+            "option_b": "B. Vulnerability brokers",
+            "option_c": "C. Cyber criminals",
+            "option_d": "D. Hacktivists",
+            "correct_answer": "B",
+            "explanation": "Vulnerability brokers identify security flaws and often report or sell them for rewards."
+        },
+        {
+            "question": "Cyber criminals primarily conduct attacks for:",
+            "option_a": "A. Academic research",
+            "option_b": "B. Political protest",
+            "option_c": "C. Financial gain",
+            "option_d": "D. Network testing",
+            "correct_answer": "C",
+            "explanation": "Cyber criminals use hacking techniques to generate profit through fraud or data theft."
+        },
+        {
+            "question": "Cyber criminals often participate in which type of underground economy?",
+            "option_a": "A. Hardware manufacturing",
+            "option_b": "B. Trading attack toolkits and stolen data",
+            "option_c": "C. Government contracting",
+            "option_d": "D. Software licensing",
+            "correct_answer": "B",
+            "explanation": "Cyber criminals trade exploit kits, malware, stolen data, and hacking services."
+        },
+        {
+            "question": "Which hacker group primarily attacks organizations to promote political or social causes?",
+            "option_a": "A. Cyber criminals",
+            "option_b": "B. Hacktivists",
+            "option_c": "C. Script kiddies",
+            "option_d": "D. Vulnerability brokers",
+            "correct_answer": "B",
+            "explanation": "Hacktivists use hacking as a method of protest or activism."
+        },
+        {
+            "question": "Which activity is commonly associated with hacktivists?",
+            "option_a": "A. Selling malware tools",
+            "option_b": "B. Performing distributed denial of service attacks as protests",
+            "option_c": "C. Manufacturing hardware devices",
+            "option_d": "D. Building operating systems",
+            "correct_answer": "B",
+            "explanation": "Hacktivists often conduct DDoS attacks or leak information to support political messages."
+        },
+        {
+            "question": "State-sponsored hackers are typically funded by:",
+            "option_a": "A. Universities",
+            "option_b": "B. Private software companies",
+            "option_c": "C. Governments",
+            "option_d": "D. Non-profit organizations",
+            "correct_answer": "C",
+            "explanation": "State-sponsored hackers operate with government support to achieve national objectives."
+        },
+        {
+            "question": "Which is a primary target of state-sponsored hackers?",
+            "option_a": "A. Only gaming websites",
+            "option_b": "B. Foreign governments and corporations",
+            "option_c": "C. Personal blogs",
+            "option_d": "D. Educational forums",
+            "correct_answer": "B",
+            "explanation": "State-sponsored attackers target strategic assets such as governments, corporations, and infrastructure."
+        },
+        {
+            "question": "The Stuxnet malware is an example of:",
+            "option_a": "A. Script kiddie attack",
+            "option_b": "B. Hacktivist malware",
+            "option_c": "C. State-sponsored cyber weapon",
+            "option_d": "D. Social media malware",
+            "correct_answer": "C",
+            "explanation": "Stuxnet is widely considered a state-sponsored cyber weapon designed to damage Iran’s nuclear program."
+        }
+    ]
+}
