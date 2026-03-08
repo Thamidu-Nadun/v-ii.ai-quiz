@@ -6,15 +6,6 @@ const HomeScreen = ({startQuiz}) => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="w-full text-right mb-2">
-          <a
-            href="https://thamidu-nadun.github.io/ai-quiz"
-            target="_blank"
-            className="border border-purple-400 px-2 py-1 rounded-xl text-sm text-purple-400 hover:bg-purple-400 hover:text-gray-900 transition-colors duration-300"
-          >
-            Quiz v.1 ↗
-          </a>
-        </div>
         <div className="text-center mb-12">
           <div className="flex justify-center items-center mb-4">
             <BookOpen className="w-12 h-12 text-blue-400 mr-3" />
@@ -24,6 +15,16 @@ const HomeScreen = ({startQuiz}) => {
           </div>
           <p className="text-gray-400 text-lg">
             Test your knowledge and track your progress
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            View old quizzes on{' '}
+            <a
+              href="https://thamidu-nadun.github.io/ai-quiz"
+              target="_blank"
+              className="text-purple-400 hover:underline"
+            >
+              Quiz v.1
+            </a>
           </p>
         </div>
 
