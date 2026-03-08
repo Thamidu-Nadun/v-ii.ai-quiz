@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "Secure communications necessitate which three primary objectives mentioned in the lecture?",
+            "option_a": "A. Authentication, Integrity, Confidentiality",
+            "option_b": "B. Confidentiality, Availability, Accounting",
+            "option_c": "C. Authorization, Auditing, Availability",
+            "option_d": "D. Privacy, Safety, Reliability",
+            "correct_answer": "A",
+            "explanation": "Secure communication primarily requires authentication, integrity, and confidentiality to ensure trusted and protected data exchange."
+        },
+        {
+            "question": "Authentication guarantees that a message:",
+            "option_a": "A. Cannot be captured",
+            "option_b": "B. Is not a forgery and comes from who it claims",
+            "option_c": "C. Is always encrypted with AES",
+            "option_d": "D. Has no routing delays",
+            "correct_answer": "B",
+            "explanation": "Authentication verifies the identity of the sender and ensures the message truly comes from the claimed source."
+        },
+        {
+            "question": "In the lecture, authentication is compared to:",
+            "option_a": "A. A checksum in Ethernet frames",
+            "option_b": "B. A secure PIN for banking at an ATM",
+            "option_c": "C. A firewall rule set",
+            "option_d": "D. A RAID parity block",
+            "correct_answer": "B",
+            "explanation": "An ATM PIN verifies a user's identity, similar to how authentication verifies the sender of a message."
+        },
+        {
+            "question": "The ATM PIN example illustrates authentication as a:",
+            "option_a": "A. Public key",
+            "option_b": "B. Shared secret known only to the user and financial institution",
+            "option_c": "C. Hash digest",
+            "option_d": "D. One-time pad tape",
+            "correct_answer": "B",
+            "explanation": "A PIN is a shared secret between the user and the bank used to verify identity."
+        },
+        {
+            "question": "Integrity guarantees that:",
+            "option_a": "A. Captured messages cannot be deciphered",
+            "option_b": "B. No one intercepted and altered the message",
+            "option_c": "C. Keys are never reused",
+            "option_d": "D. Only the sender can read the message",
+            "correct_answer": "B",
+            "explanation": "Integrity ensures that data has not been modified during transmission."
+        },
+        {
+            "question": "Integrity is described as being similar to which mechanism in a frame?",
+            "option_a": "A. MAC address",
+            "option_b": "B. Checksum function",
+            "option_c": "C. MTU discovery",
+            "option_d": "D. ARP cache",
+            "correct_answer": "B",
+            "explanation": "A checksum detects whether data has changed, similar to integrity checks in cryptography."
+        },
+        {
+            "question": "Confidentiality guarantees that if the message is captured:",
+            "option_a": "A. It can be read by anyone",
+            "option_b": "B. It cannot be deciphered",
+            "option_c": "C. It will be deleted automatically",
+            "option_d": "D. It is still authenticated",
+            "correct_answer": "B",
+            "explanation": "Confidentiality ensures that unauthorized parties cannot read the captured message."
+        },
+        {
+            "question": "Data nonrepudiation allows:",
+            "option_a": "A. Receivers to remain anonymous",
+            "option_b": "B. Senders to be uniquely identified so they cannot deny sending",
+            "option_c": "C. Messages to be compressed",
+            "option_d": "D. Keys to be shared openly",
+            "correct_answer": "B",
+            "explanation": "Nonrepudiation ensures that a sender cannot deny having sent a message."
+        },
+        {
+            "question": "Nonrepudiation means a sender/device cannot:",
+            "option_a": "A. Encrypt the message",
+            "option_b": "B. Repudiate the validity of a message sent",
+            "option_c": "C. Use a cipher",
+            "option_d": "D. Verify integrity",
+            "correct_answer": "B",
+            "explanation": "Nonrepudiation prevents a sender from denying responsibility for sending a message."
+        },
+        {
+            "question": "Encryption is the process of:",
+            "option_a": "A. Rearranging letters without replacing them",
+            "option_b": "B. Scrambling data so unauthorized parties cannot read it",
+            "option_c": "C. Deleting data securely",
+            "option_d": "D. Compressing data to save space",
+            "correct_answer": "B",
+            "explanation": "Encryption transforms readable data into unreadable form to protect confidentiality."
+        },
+        {
+            "question": "Readable data before encryption is called:",
+            "option_a": "A. Ciphertext",
+            "option_b": "B. Plaintext (cleartext)",
+            "option_c": "C. Keyspace",
+            "option_d": "D. Digest",
+            "correct_answer": "B",
+            "explanation": "Plaintext is the original readable form of the data before encryption."
+        },
+        {
+            "question": "Encrypted data is called:",
+            "option_a": "A. Plaintext",
+            "option_b": "B. Ciphertext",
+            "option_c": "C. Salt",
+            "option_d": "D. Signature",
+            "correct_answer": "B",
+            "explanation": "Ciphertext is the encrypted version of plaintext."
+        },
+        {
+            "question": "A key is required to:",
+            "option_a": "A. Only decrypt",
+            "option_b": "B. Encrypt and decrypt a message",
+            "option_c": "C. Only hash",
+            "option_d": "D. Only authenticate users",
+            "correct_answer": "B",
+            "explanation": "Keys control the encryption and decryption processes."
+        },
+        {
+            "question": "In the lecture, the key is described as:",
+            "option_a": "A. A checksum",
+            "option_b": "B. The link between plaintext and ciphertext",
+            "option_c": "C. A network route",
+            "option_d": "D. A compression dictionary",
+            "correct_answer": "B",
+            "explanation": "A key defines the transformation between plaintext and ciphertext."
+        },
+        {
+            "question": "Cryptography is defined as:",
+            "option_a": "A. The study of network routing",
+            "option_b": "B. Both the practice and the study of hiding information",
+            "option_c": "C. The process of patching systems",
+            "option_d": "D. The science of building firewalls",
+            "correct_answer": "B",
+            "explanation": "Cryptography involves both implementing and studying methods of securing information."
+        },
+        {
+            "question": "A cipher is:",
+            "option_a": "A. A key storage device",
+            "option_b": "B. A series of well-defined steps (algorithm) to encrypt/decrypt messages",
+            "option_c": "C. A digital certificate",
+            "option_d": "D. A password policy",
+            "correct_answer": "B",
+            "explanation": "A cipher is an algorithm used to perform encryption or decryption."
+        },
+        {
+            "question": "Which of the following is NOT listed as a method of creating ciphertext in the lecture?",
+            "option_a": "A. Transposition",
+            "option_b": "B. Substitution",
+            "option_c": "C. One-time pad",
+            "option_d": "D. Steganography",
+            "correct_answer": "D",
+            "explanation": "Steganography hides information within other data but is not a traditional cipher method."
+        },
+        {
+            "question": "Cryptography is used to protect data when that data might be exposed to:",
+            "option_a": "A. Trusted parties only",
+            "option_b": "B. Untrusted parties",
+            "option_c": "C. Only internal users",
+            "option_d": "D. Only offline attackers",
+            "correct_answer": "B",
+            "explanation": "Cryptography protects data from unauthorized or untrusted parties."
+        },
+        {
+            "question": "The earliest cryptography method used by Spartans in ancient Greece was:",
+            "option_a": "A. Caesar cipher",
+            "option_b": "B. Scytale",
+            "option_c": "C. Enigma",
+            "option_d": "D. Jefferson disk",
+            "correct_answer": "B",
+            "explanation": "The Scytale was an ancient transposition device used by Spartans."
+        },
+        {
+            "question": "Scytale is best described as:",
+            "option_a": "A. A substitution table",
+            "option_b": "B. A rod used as an aid for a transposition cipher",
+            "option_c": "C. A public key algorithm",
+            "option_d": "D. A hashing function",
+            "correct_answer": "B",
+            "explanation": "Scytale used a rod to rearrange letters, implementing a transposition cipher."
+        }
+    ]
+}

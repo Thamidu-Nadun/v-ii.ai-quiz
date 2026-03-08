@@ -1,6 +1,30 @@
 export default [
     // Introduction to Cyber Security Quizzes
     {
+        title: 'Cyber Security - 15',
+        path: 'quiz/CS/CS-015.json',
+        description: 'Test your knowledge of cyber security governance, including policies, standards, and compliance frameworks.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 14',
+        path: 'quiz/CS/CS-014.json',
+        description: 'Evaluate your knowledge of cyber security risk management, including risk assessment and mitigation strategies.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 13',
+        path: 'quiz/CS/CS-013.json',
+        description: 'Evaluate your knowledge of cyber security incident response, including detection, containment, and recovery strategies.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 12',
+        path: 'quiz/CS/CS-012.json',
+        description: 'Test your knowledge of cyber security trends, emerging threats, and future challenges in the field.',
+        isAvailable: true
+    },
+    {
         title: 'Cyber Security - 11',
         path: 'quiz/CS/CS-011.json',
         description: 'Evaluate your understanding of cyber security policies, regulations, and ethical considerations.',
