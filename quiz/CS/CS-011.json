@@ -1,0 +1,751 @@
+{
+    "questions": [
+        {
+            "question": "According to the NIST Computer Security Handbook definition, computer security protects an automated information system to preserve which three objectives?",
+            "option_a": "A. Confidentiality, Integrity, Availability",
+            "option_b": "B. Authentication, Authorization, Accounting",
+            "option_c": "C. Privacy, Safety, Reliability",
+            "option_d": "D. Anonymity, Integrity, Nonrepudiation",
+            "correct_answer": "A",
+            "explanation": "Computer security aims to preserve the CIA triad: confidentiality, integrity, and availability."
+        },
+        {
+            "question": "In the definition of computer security, the term 'information system resources' refers to which components?",
+            "option_a": "A. Only software and data",
+            "option_b": "B. Hardware, software, firmware, information/data, and telecommunications",
+            "option_c": "C. Only networks and routers",
+            "option_d": "D. Only cloud services",
+            "correct_answer": "B",
+            "explanation": "Information system resources include all technological components such as hardware, software, firmware, data, and communication systems."
+        },
+        {
+            "question": "Information Security (InfoSec) focuses on protecting information systems to ensure which three primary objectives?",
+            "option_a": "A. Confidentiality only",
+            "option_b": "B. Integrity only",
+            "option_c": "C. Availability only",
+            "option_d": "D. Confidentiality, Integrity, and Availability",
+            "correct_answer": "D",
+            "explanation": "InfoSec aims to maintain the CIA triad: confidentiality, integrity, and availability."
+        },
+        {
+            "question": "Cybersecurity is primarily the practice of protecting what from cyber attacks?",
+            "option_a": "A. Only cryptographic keys",
+            "option_b": "B. Systems, networks, and programs",
+            "option_c": "C. Only physical servers from theft",
+            "option_d": "D. Only passwords",
+            "correct_answer": "B",
+            "explanation": "Cybersecurity focuses on protecting digital systems, networks, and software from cyber threats and attacks."
+        },
+        {
+            "question": "Cyberattacks are usually aimed at which of the following objectives?",
+            "option_a": "A. Increasing system performance",
+            "option_b": "B. Accessing, changing, or destroying sensitive information or interrupting business processes",
+            "option_c": "C. Reducing bandwidth usage",
+            "option_d": "D. Upgrading firmware automatically",
+            "correct_answer": "B",
+            "explanation": "Most cyberattacks target sensitive data, financial gain, or disruption of business operations."
+        },
+        {
+            "question": "Confidentiality in information security covers which two related concepts?",
+            "option_a": "A. Encryption and key exchange",
+            "option_b": "B. Data confidentiality and privacy",
+            "option_c": "C. System integrity and data integrity",
+            "option_d": "D. Availability and accountability",
+            "correct_answer": "B",
+            "explanation": "Confidentiality includes protecting data from unauthorized disclosure and ensuring privacy of personal information."
+        },
+        {
+            "question": "Data confidentiality ensures that:",
+            "option_a": "A. Systems work promptly",
+            "option_b": "B. Information is not disclosed to unauthorized individuals",
+            "option_c": "C. Attackers cannot deny actions",
+            "option_d": "D. Traffic patterns are hidden",
+            "correct_answer": "B",
+            "explanation": "Data confidentiality ensures only authorized users can access sensitive information."
+        },
+        {
+            "question": "Privacy in information security ensures that owners control:",
+            "option_a": "A. Only encryption algorithms",
+            "option_b": "B. What information may be collected, stored, and shared",
+            "option_c": "C. Only backup availability",
+            "option_d": "D. Only access speed",
+            "correct_answer": "B",
+            "explanation": "Privacy focuses on giving individuals control over how their personal information is collected and used."
+        },
+        {
+            "question": "Loss of confidentiality occurs when:",
+            "option_a": "A. Information is modified",
+            "option_b": "B. Information is disclosed to unauthorized parties",
+            "option_c": "C. Services become unavailable",
+            "option_d": "D. Encryption keys are revoked",
+            "correct_answer": "B",
+            "explanation": "Confidentiality is compromised when sensitive information is revealed without authorization."
+        },
+        {
+            "question": "Integrity in cybersecurity includes which two concepts?",
+            "option_a": "A. Data integrity and system integrity",
+            "option_b": "B. Confidentiality and privacy",
+            "option_c": "C. Availability and throughput",
+            "option_d": "D. Authentication and encryption",
+            "correct_answer": "A",
+            "explanation": "Integrity ensures both data accuracy and correct functioning of systems."
+        },
+        {
+            "question": "Data integrity means that information is changed:",
+            "option_a": "A. Only in an unauthorized manner",
+            "option_b": "B. Only in a specified and authorized manner",
+            "option_c": "C. Randomly to confuse attackers",
+            "option_d": "D. Only when the network fails",
+            "correct_answer": "B",
+            "explanation": "Integrity ensures data modifications occur only through authorized and intended actions."
+        },
+        {
+            "question": "System integrity ensures that a system:",
+            "option_a": "A. Performs its intended function without unauthorized manipulation",
+            "option_b": "B. Works only under administrator supervision",
+            "option_c": "C. Operates only with encryption",
+            "option_d": "D. Requires strong passwords",
+            "correct_answer": "A",
+            "explanation": "System integrity ensures the system functions correctly and is protected from unauthorized modification."
+        },
+        {
+            "question": "Loss of integrity refers to:",
+            "option_a": "A. Unauthorized modification or destruction of information",
+            "option_b": "B. Unauthorized disclosure of data",
+            "option_c": "C. Timely access to information",
+            "option_d": "D. Successful authentication",
+            "correct_answer": "A",
+            "explanation": "Integrity violations occur when data is altered or destroyed without authorization."
+        },
+        {
+            "question": "Availability in cybersecurity means:",
+            "option_a": "A. Data is hidden from users",
+            "option_b": "B. Systems work promptly and services are accessible to authorized users",
+            "option_c": "C. Data is always encrypted",
+            "option_d": "D. Remote access is disabled",
+            "correct_answer": "B",
+            "explanation": "Availability ensures systems and data are accessible when needed by authorized users."
+        },
+        {
+            "question": "Loss of availability occurs when:",
+            "option_a": "A. Authorized users cannot access information or services",
+            "option_b": "B. Data is disclosed",
+            "option_c": "C. Valid data is replaced",
+            "option_d": "D. Authentication occurs",
+            "correct_answer": "A",
+            "explanation": "Availability loss happens when systems or services become inaccessible to legitimate users."
+        },
+        {
+            "question": "Which objective verifies that users are who they claim to be and that data originates from trusted sources?",
+            "option_a": "A. Availability",
+            "option_b": "B. Authenticity",
+            "option_c": "C. Keyspace",
+            "option_d": "D. Repudiation",
+            "correct_answer": "B",
+            "explanation": "Authenticity confirms the identity of users and the origin of information."
+        },
+        {
+            "question": "Accountability in cybersecurity refers to the ability to:",
+            "option_a": "A. Encrypt all messages",
+            "option_b": "B. Trace actions performed by an entity back to that entity",
+            "option_c": "C. Guarantee confidentiality",
+            "option_d": "D. Eliminate vulnerabilities",
+            "correct_answer": "B",
+            "explanation": "Accountability ensures that actions can be traced to responsible users."
+        },
+        {
+            "question": "Accountability supports all of the following EXCEPT:",
+            "option_a": "A. Nonrepudiation",
+            "option_b": "B. Deterrence",
+            "option_c": "C. Fault isolation",
+            "option_d": "D. Confidentiality by itself without controls",
+            "correct_answer": "D",
+            "explanation": "Confidentiality requires additional mechanisms and is not ensured solely by accountability."
+        },
+        {
+            "question": "In the computer security model, a system resource needing protection may include:",
+            "option_a": "A. Hardware, software, data, and communication facilities",
+            "option_b": "B. Only data",
+            "option_c": "C. Only software",
+            "option_d": "D. Only passwords",
+            "correct_answer": "A",
+            "explanation": "Assets in cybersecurity include all critical system resources like hardware, software, data, and networks."
+        },
+        {
+            "question": "A vulnerability is best described as:",
+            "option_a": "A. A guaranteed attack",
+            "option_b": "B. A weakness that could be exploited to violate a security policy",
+            "option_c": "C. A security mechanism",
+            "option_d": "D. A type of encryption",
+            "correct_answer": "B",
+            "explanation": "A vulnerability is a flaw that attackers can exploit to compromise system security."
+        },
+        {
+            "question": "A 'leaky' system resource primarily violates which objective?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Availability",
+            "option_d": "D. Accountability",
+            "correct_answer": "B",
+            "explanation": "A leaky resource allows unauthorized disclosure of information, violating confidentiality."
+        },
+        {
+            "question": "A threat in cybersecurity is defined as:",
+            "option_a": "A. A possible danger that might exploit a vulnerability",
+            "option_b": "B. Always an executed attack",
+            "option_c": "C. A countermeasure",
+            "option_d": "D. A fixed policy",
+            "correct_answer": "A",
+            "explanation": "A threat represents the potential for harm if a vulnerability is exploited."
+        },
+        {
+            "question": "An attack is defined as:",
+            "option_a": "A. A threat that is carried out",
+            "option_b": "B. A system resource",
+            "option_c": "C. A weak encryption key",
+            "option_d": "D. A protocol layer",
+            "correct_answer": "A",
+            "explanation": "An attack occurs when a threat is actively executed against a system."
+        },
+        {
+            "question": "Which statement correctly describes active and passive attacks?",
+            "option_a": "A. Active attacks only observe information",
+            "option_b": "B. Active attacks affect system resources while passive attacks only observe information",
+            "option_c": "C. Active attacks cannot be detected",
+            "option_d": "D. Passive attacks occur only internally",
+            "correct_answer": "B",
+            "explanation": "Active attacks alter or disrupt systems, while passive attacks only monitor information."
+        },
+        {
+            "question": "An inside attack is performed by:",
+            "option_a": "A. An external entity",
+            "option_b": "B. An entity within the security perimeter",
+            "option_c": "C. Only automated bots",
+            "option_d": "D. Only internet service providers",
+            "correct_answer": "B",
+            "explanation": "Inside attacks originate from individuals who already have authorized access."
+        },
+        {
+            "question": "An adversary is:",
+            "option_a": "A. A backup system",
+            "option_b": "B. An entity that carries out an attack",
+            "option_c": "C. A firewall rule",
+            "option_d": "D. A security policy document",
+            "correct_answer": "B",
+            "explanation": "An adversary is an attacker or threat agent responsible for malicious actions."
+        },
+        {
+            "question": "A countermeasure refers to:",
+            "option_a": "A. Encrypting data only",
+            "option_b": "B. Measures taken to prevent, detect, or recover from attacks",
+            "option_c": "C. Increasing keyspace",
+            "option_d": "D. Hiding network topology",
+            "correct_answer": "B",
+            "explanation": "Countermeasures include any actions designed to defend systems from threats."
+        },
+        {
+            "question": "Risk in cybersecurity is defined as:",
+            "option_a": "A. Number of vulnerabilities",
+            "option_b": "B. Expected loss due to a specific attack",
+            "option_c": "C. Speed of encryption",
+            "option_d": "D. Size of keyspace",
+            "correct_answer": "B",
+            "explanation": "Risk represents the potential damage caused by a successful attack."
+        },
+        {
+            "question": "An exploit is:",
+            "option_a": "A. A policy statement",
+            "option_b": "B. Software or commands that take advantage of vulnerabilities",
+            "option_c": "C. A cryptographic digest",
+            "option_d": "D. A certificate authority",
+            "correct_answer": "B",
+            "explanation": "An exploit leverages vulnerabilities to cause unintended or malicious behavior."
+        },
+        {
+            "question": "Exploit behavior can include all of the following EXCEPT:",
+            "option_a": "A. Gaining control of a system",
+            "option_b": "B. Privilege escalation",
+            "option_c": "C. Denial-of-service",
+            "option_d": "D. Guaranteed confidentiality improvement",
+            "correct_answer": "D",
+            "explanation": "Exploits typically harm systems; they do not improve confidentiality."
+        },
+        {
+            "question": "A vulnerability assessment involves:",
+            "option_a": "A. Encrypting all data",
+            "option_b": "B. Identifying and prioritizing vulnerabilities",
+            "option_c": "C. Running phishing simulations only",
+            "option_d": "D. Destroying compromised keys",
+            "correct_answer": "B",
+            "explanation": "Vulnerability assessment systematically identifies and evaluates system weaknesses."
+        },
+        {
+            "question": "Penetration testing is performed to:",
+            "option_a": "A. Increase bandwidth",
+            "option_b": "B. Find vulnerabilities attackers could exploit",
+            "option_c": "C. Replace all passwords",
+            "option_d": "D. Reduce logs",
+            "correct_answer": "B",
+            "explanation": "Penetration testing simulates attacks to discover security weaknesses."
+        },
+        {
+            "question": "Typical penetration testing involves:",
+            "option_a": "A. Gathering information, finding entry points, attempting access, and reporting results",
+            "option_b": "B. Installing antivirus only",
+            "option_c": "C. Changing firewall rules",
+            "option_d": "D. Creating backups",
+            "correct_answer": "A",
+            "explanation": "Penetration testing follows structured phases including reconnaissance, exploitation, and reporting."
+        },
+        {
+            "question": "Penetration testing can be performed using which approach?",
+            "option_a": "A. Only manual",
+            "option_b": "B. Only automated",
+            "option_c": "C. Automated or manual",
+            "option_d": "D. Neither automated nor manual",
+            "correct_answer": "C",
+            "explanation": "Penetration testing may use automated tools, manual analysis, or both."
+        },
+        {
+            "question": "Which is NOT a goal of penetration testing?",
+            "option_a": "A. Identify weak spots",
+            "option_b": "B. Measure security policy compliance",
+            "option_c": "C. Test staff awareness",
+            "option_d": "D. Eliminate all future threats permanently",
+            "correct_answer": "D",
+            "explanation": "Penetration testing identifies weaknesses but cannot guarantee complete elimination of threats."
+        },
+        {
+            "question": "Unauthorized disclosure is primarily a threat to:",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Integrity",
+            "option_c": "C. Availability",
+            "option_d": "D. Keyspace",
+            "correct_answer": "A",
+            "explanation": "Disclosure of sensitive data violates confidentiality."
+        },
+        {
+            "question": "Exposure refers to a situation where an attacker:",
+            "option_a": "A. Destroys hardware",
+            "option_b": "B. Obtains unauthorized knowledge of sensitive information",
+            "option_c": "C. Overloads communication links",
+            "option_d": "D. Denies sending data",
+            "correct_answer": "B",
+            "explanation": "Exposure occurs when sensitive data becomes visible to unauthorized parties."
+        },
+        {
+            "question": "Interception refers to:",
+            "option_a": "A. Accessing data during transmission",
+            "option_b": "B. Destroying hardware",
+            "option_c": "C. Creating false information",
+            "option_d": "D. Disabling security systems",
+            "correct_answer": "A",
+            "explanation": "Interception involves unauthorized access to communication channels."
+        },
+        {
+            "question": "An inference attack involves:",
+            "option_a": "A. Analyzing network traffic patterns to gain information",
+            "option_b": "B. Physically stealing servers",
+            "option_c": "C. Changing system code",
+            "option_d": "D. Signing messages",
+            "correct_answer": "A",
+            "explanation": "Inference attacks deduce sensitive information by analyzing indirect data such as traffic patterns."
+        },
+        {
+            "question": "Intrusion in the context of unauthorized disclosure means:",
+            "option_a": "A. Unauthorized access to protected data",
+            "option_b": "B. Altering legitimate data",
+            "option_c": "C. Overloading communication links",
+            "option_d": "D. Backing up a database",
+            "correct_answer": "A",
+            "explanation": "Intrusion occurs when attackers bypass access controls to obtain data."
+        },
+        {
+            "question": "Deception attacks primarily threaten:",
+            "option_a": "A. Availability",
+            "option_b": "B. Integrity",
+            "option_c": "C. Confidentiality",
+            "option_d": "D. Performance",
+            "correct_answer": "B",
+            "explanation": "Deception alters or falsifies data, compromising integrity."
+        },
+        {
+            "question": "Masquerade occurs when:",
+            "option_a": "A. An attacker pretends to be an authorized user",
+            "option_b": "B. Hardware is destroyed",
+            "option_c": "C. Network traffic is only observed",
+            "option_d": "D. Files are encrypted for safety",
+            "correct_answer": "A",
+            "explanation": "Masquerade attacks involve impersonating legitimate users."
+        },
+        {
+            "question": "Falsification involves:",
+            "option_a": "A. Modifying or generating false data",
+            "option_b": "B. Only eavesdropping",
+            "option_c": "C. Only denying service",
+            "option_d": "D. Only performing backups",
+            "correct_answer": "A",
+            "explanation": "Falsification manipulates legitimate data or introduces fake information."
+        },
+        {
+            "question": "Repudiation refers to an attacker:",
+            "option_a": "A. Denying having performed an action",
+            "option_b": "B. Accessing networks",
+            "option_c": "C. Using encryption",
+            "option_d": "D. Owning a device",
+            "correct_answer": "A",
+            "explanation": "Repudiation occurs when a party denies sending or receiving information."
+        },
+        {
+            "question": "Disruption is primarily a threat to:",
+            "option_a": "A. Availability and integrity",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Privacy",
+            "option_d": "D. Key exchange",
+            "correct_answer": "A",
+            "explanation": "Disruption affects system functionality and availability of resources."
+        },
+        {
+            "question": "Incapacitation is an attack on availability involving:",
+            "option_a": "A. Traffic analysis",
+            "option_b": "B. Destruction or damage of resources",
+            "option_c": "C. Generating false data",
+            "option_d": "D. User impersonation",
+            "correct_answer": "B",
+            "explanation": "Incapacitation disables systems by damaging hardware or services."
+        },
+        {
+            "question": "Corruption is an integrity attack where systems operate:",
+            "option_a": "A. Normally",
+            "option_b": "B. In an unintended manner",
+            "option_c": "C. Faster than usual",
+            "option_d": "D. Offline only",
+            "correct_answer": "B",
+            "explanation": "Corruption alters system behavior through unauthorized modifications."
+        },
+        {
+            "question": "Obstruction attacks involve:",
+            "option_a": "A. Interfering with or overloading communication functions",
+            "option_b": "B. Hashing passwords",
+            "option_c": "C. Creating digital signatures",
+            "option_d": "D. Using TLS",
+            "correct_answer": "A",
+            "explanation": "Obstruction prevents communication by interfering with network operations."
+        },
+        {
+            "question": "Usurpation primarily threatens:",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability only",
+            "option_c": "C. Confidentiality only",
+            "option_d": "D. Nonrepudiation only",
+            "correct_answer": "A",
+            "explanation": "Usurpation occurs when attackers take control of system resources, compromising integrity."
+        },
+        {
+            "question": "Misappropriation occurs when:",
+            "option_a": "A. Authorized software uses system resources",
+            "option_b": "B. Unauthorized software uses system resources",
+            "option_c": "C. A user denies sending data",
+            "option_d": "D. Routers drop packets accidentally",
+            "correct_answer": "B",
+            "explanation": "Misappropriation refers to unauthorized use of system resources."
+        },
+        {
+            "question": "Misuse includes:",
+            "option_a": "A. Disabling security functions via malicious logic",
+            "option_b": "B. Only monitoring data transmission",
+            "option_c": "C. Only encrypting data",
+            "option_d": "D. Only verifying keys",
+            "correct_answer": "A",
+            "explanation": "Misuse occurs when attackers exploit systems to disable or bypass security mechanisms."
+        },
+        {
+            "question": "Threats to hardware primarily affect which security objective?",
+            "option_a": "A. Availability",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Integrity",
+            "option_d": "D. Nonrepudiation",
+            "correct_answer": "A",
+            "explanation": "Hardware attacks such as theft or damage typically impact system availability."
+        },
+        {
+            "question": "Threats to software may include:",
+            "option_a": "A. Deleting or modifying software to impact availability and integrity",
+            "option_b": "B. Only encrypting files",
+            "option_c": "C. Only monitoring traffic",
+            "option_d": "D. Only increasing key length",
+            "correct_answer": "A",
+            "explanation": "Software threats include modification or deletion that disrupts system functionality."
+        },
+        {
+            "question": "Threats to data may affect:",
+            "option_a": "A. Availability, integrity, and confidentiality",
+            "option_b": "B. Only availability",
+            "option_c": "C. Only confidentiality",
+            "option_d": "D. Only integrity",
+            "correct_answer": "A",
+            "explanation": "Data threats may expose, alter, or delete information."
+        },
+        {
+            "question": "Passive attacks on communication networks are typically performed by:",
+            "option_a": "A. Monitoring or eavesdropping on transmissions",
+            "option_b": "B. Destroying routers",
+            "option_c": "C. Changing access control lists",
+            "option_d": "D. Encrypting traffic",
+            "correct_answer": "A",
+            "explanation": "Passive attacks observe communications without modifying them."
+        },
+        {
+            "question": "A key characteristic of passive attacks is that they are:",
+            "option_a": "A. Easy to detect",
+            "option_b": "B. Hard to detect because data is not modified",
+            "option_c": "C. Always prevented",
+            "option_d": "D. Only internal",
+            "correct_answer": "B",
+            "explanation": "Passive attacks do not alter data, making them difficult to detect."
+        },
+        {
+            "question": "Passive attacks are best handled by:",
+            "option_a": "A. Prevention techniques such as encryption",
+            "option_b": "B. Post-attack forensics only",
+            "option_c": "C. Ignoring them",
+            "option_d": "D. Disabling encryption",
+            "correct_answer": "A",
+            "explanation": "Encryption and strong protocols help prevent passive eavesdropping attacks."
+        },
+        {
+            "question": "Which are the two common passive attack types?",
+            "option_a": "A. Replay and masquerade",
+            "option_b": "B. Release of message contents and traffic analysis",
+            "option_c": "C. Data modification and DoS",
+            "option_d": "D. Corruption and obstruction",
+            "correct_answer": "B",
+            "explanation": "Passive attacks involve either reading message contents or analyzing traffic patterns."
+        },
+        {
+            "question": "Active attacks are characterized by:",
+            "option_a": "A. No effect on resources",
+            "option_b": "B. Altering system resources or affecting operations",
+            "option_c": "C. Being impossible to detect",
+            "option_d": "D. Only reading encrypted data",
+            "correct_answer": "B",
+            "explanation": "Active attacks modify data or disrupt operations."
+        },
+        {
+            "question": "Active attacks are generally:",
+            "option_a": "A. Easy to prevent but hard to detect",
+            "option_b": "B. Difficult to prevent but easier to detect",
+            "option_c": "C. Easy to prevent and detect",
+            "option_d": "D. Impossible to detect",
+            "correct_answer": "B",
+            "explanation": "Active attacks typically cause observable changes, making detection easier."
+        },
+        {
+            "question": "A replay attack involves:",
+            "option_a": "A. Altering data in transit",
+            "option_b": "B. Capturing and retransmitting data to produce unauthorized effects",
+            "option_c": "C. Traffic analysis",
+            "option_d": "D. Stealing hardware",
+            "correct_answer": "B",
+            "explanation": "Replay attacks resend captured messages to gain unauthorized access."
+        },
+        {
+            "question": "A data modification attack involves:",
+            "option_a": "A. Altering or reordering legitimate data",
+            "option_b": "B. Only sending encrypted data",
+            "option_c": "C. Only deleting logs",
+            "option_d": "D. Only scanning ports",
+            "correct_answer": "A",
+            "explanation": "Attackers manipulate data transmissions to produce unauthorized outcomes."
+        },
+        {
+            "question": "Denial-of-Service (DoS) attacks aim to:",
+            "option_a": "A. Prevent legitimate use of services",
+            "option_b": "B. Guarantee confidentiality",
+            "option_c": "C. Provide nonrepudiation",
+            "option_d": "D. Improve performance",
+            "correct_answer": "A",
+            "explanation": "DoS attacks overwhelm systems, preventing legitimate users from accessing services."
+        },
+        {
+            "question": "FIPS PUB 200 lists how many security-related areas?",
+            "option_a": "A. 7",
+            "option_b": "B. 10",
+            "option_c": "C. 17",
+            "option_d": "D. 25",
+            "correct_answer": "C",
+            "explanation": "FIPS PUB 200 defines 17 minimum security control areas."
+        },
+        {
+            "question": "Countermeasures in cybersecurity are divided into:",
+            "option_a": "A. Hardware vs software",
+            "option_b": "B. Technical measures vs management issues",
+            "option_c": "C. Internal vs external",
+            "option_d": "D. Encryption vs hashing",
+            "correct_answer": "B",
+            "explanation": "Security controls are often categorized as technical or managerial measures."
+        },
+        {
+            "question": "Which of the following is a technical security measure?",
+            "option_a": "A. Awareness and training",
+            "option_b": "B. Audit and accountability",
+            "option_c": "C. Access control",
+            "option_d": "D. Accreditation",
+            "correct_answer": "C",
+            "explanation": "Access control mechanisms restrict system usage to authorized users."
+        },
+        {
+            "question": "Which option is fundamentally considered a management security issue?",
+            "option_a": "A. System protection",
+            "option_b": "B. Identification and authentication",
+            "option_c": "C. System integrity",
+            "option_d": "D. Awareness and training",
+            "correct_answer": "D",
+            "explanation": "Security awareness programs are typically managed at the organizational level."
+        },
+        {
+            "question": "The OSI Security Architecture (X.800) is designed to:",
+            "option_a": "A. Encrypt emails",
+            "option_b": "B. Provide a framework for evaluating and implementing security services",
+            "option_c": "C. Replace routers",
+            "option_d": "D. Eliminate vulnerabilities automatically",
+            "correct_answer": "B",
+            "explanation": "X.800 provides a structured framework for understanding and implementing network security."
+        },
+        {
+            "question": "In X.800 terminology, a security attack is:",
+            "option_a": "A. Any action that compromises security information",
+            "option_b": "B. A backup procedure",
+            "option_c": "C. A password policy",
+            "option_d": "D. A network service",
+            "correct_answer": "A",
+            "explanation": "Security attacks are actions that violate security policies."
+        },
+        {
+            "question": "A security mechanism in X.800 refers to:",
+            "option_a": "A. A process that detects or prevents security attacks",
+            "option_b": "B. A financial control",
+            "option_c": "C. A user account",
+            "option_d": "D. Malware",
+            "correct_answer": "A",
+            "explanation": "Security mechanisms are tools or techniques used to enforce security services."
+        },
+        {
+            "question": "A security service in X.800 is defined as:",
+            "option_a": "A. A service that enhances security of information transfer",
+            "option_b": "B. A cloud subscription",
+            "option_c": "C. A QoS router feature",
+            "option_d": "D. A backup storage system",
+            "correct_answer": "A",
+            "explanation": "Security services use mechanisms to protect communication and data."
+        },
+        {
+            "question": "X.800 divides security services into how many categories?",
+            "option_a": "A. 3",
+            "option_b": "B. 5",
+            "option_c": "C. 6",
+            "option_d": "D. 10",
+            "correct_answer": "C",
+            "explanation": "X.800 defines six major categories of security services."
+        },
+        {
+            "question": "Which of the following is NOT an X.800 security service category?",
+            "option_a": "A. Authentication",
+            "option_b": "B. Access control",
+            "option_c": "C. Data confidentiality",
+            "option_d": "D. Key management",
+            "correct_answer": "D",
+            "explanation": "Key management supports security but is not one of the six X.800 service categories."
+        },
+        {
+            "question": "Nonrepudiation ensures that:",
+            "option_a": "A. Neither sender nor receiver can deny the transmission",
+            "option_b": "B. Throughput increases",
+            "option_c": "C. Traffic patterns are hidden",
+            "option_d": "D. Authentication is disabled",
+            "correct_answer": "A",
+            "explanation": "Nonrepudiation prevents participants from denying their actions."
+        },
+        {
+            "question": "The CSI survey mentioned in the lecture reported increasing incidents of:",
+            "option_a": "A. Physical theft only",
+            "option_b": "B. Malware infections",
+            "option_c": "C. Cryptographic failures only",
+            "option_d": "D. Insider threats only",
+            "correct_answer": "B",
+            "explanation": "The survey reported increasing malware incidents across organizations."
+        },
+        {
+            "question": "Most organizations reported using which security tools?",
+            "option_a": "A. Only biometrics",
+            "option_b": "B. Antivirus software and firewalls",
+            "option_c": "C. Only PKI systems",
+            "option_d": "D. Only smart cards",
+            "correct_answer": "B",
+            "explanation": "Antivirus software and firewalls remain widely used defensive tools."
+        },
+        {
+            "question": "Lampson’s security strategy includes which three aspects?",
+            "option_a": "A. Policy/specification, implementation/mechanisms, assurance/correctness",
+            "option_b": "B. Encryption, hashing, signing",
+            "option_c": "C. Prevention, detection, response",
+            "option_d": "D. Risk, threat, vulnerability",
+            "correct_answer": "A",
+            "explanation": "Lampson’s model focuses on defining policy, implementing mechanisms, and ensuring correctness."
+        },
+        {
+            "question": "Which factor is NOT relevant when defining a security policy?",
+            "option_a": "A. Value of assets",
+            "option_b": "B. System vulnerabilities",
+            "option_c": "C. Potential threats",
+            "option_d": "D. Screen resolution of user devices",
+            "correct_answer": "D",
+            "explanation": "Security policies depend on assets, vulnerabilities, and threats, not UI factors."
+        },
+        {
+            "question": "Security policies often involve a tradeoff between:",
+            "option_a": "A. Ease of use and security",
+            "option_b": "B. Color and cost",
+            "option_c": "C. Bandwidth and hashing",
+            "option_d": "D. Backups and encryption",
+            "correct_answer": "A",
+            "explanation": "Higher security often reduces system usability."
+        },
+        {
+            "question": "Security implementation involves which four complementary actions?",
+            "option_a": "A. Prevention, detection, response, recovery",
+            "option_b": "B. Encrypt, decrypt, hash, sign",
+            "option_c": "C. Patch, reboot, reinstall, format",
+            "option_d": "D. Scan, spoof, spam, sniff",
+            "correct_answer": "A",
+            "explanation": "Effective security requires preventing, detecting, responding to, and recovering from attacks."
+        },
+        {
+            "question": "If prevention is not possible, organizations should focus on:",
+            "option_a": "A. Detection mechanisms such as intrusion detection systems",
+            "option_b": "B. Ignoring the attack",
+            "option_c": "C. Disabling services",
+            "option_d": "D. Increasing key length only",
+            "correct_answer": "A",
+            "explanation": "Detection allows organizations to identify attacks quickly and respond effectively."
+        },
+        {
+            "question": "According to NIST, assurance refers to:",
+            "option_a": "A. Encryption speed",
+            "option_b": "B. Confidence that security measures function correctly",
+            "option_c": "C. Number of firewalls installed",
+            "option_d": "D. Malware detection type",
+            "correct_answer": "B",
+            "explanation": "Assurance measures the confidence that implemented security controls work as intended."
+        },
+        {
+            "question": "Evaluation in security refers to:",
+            "option_a": "A. Training users",
+            "option_b": "B. Testing and analyzing systems against security criteria",
+            "option_c": "C. Buying new hardware",
+            "option_d": "D. Writing policies",
+            "correct_answer": "B",
+            "explanation": "Evaluation involves systematic testing and analysis of systems to ensure security requirements are met."
+        }
+    ]
+}
