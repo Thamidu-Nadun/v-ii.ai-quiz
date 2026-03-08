@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "Data loss (or data exfiltration) is defined in the lecture as when data is:",
+            "option_a": "A. Compressed to save storage space.",
+            "option_b": "B. Intentionally or unintentionally lost, stolen, or leaked to the outside world.",
+            "option_c": "C. Encrypted with a strong cipher algorithm.",
+            "option_d": "D. Backed up to an internal server."
+        },
+        {
+            "question": "According to the lecture, data is considered to be an organization's:",
+            "option_a": "A. Least important asset.",
+            "option_b": "B. Most valuable asset.",
+            "option_c": "C. Only physical asset.",
+            "option_d": "D. Only temporary asset."
+        },
+        {
+            "question": "Which of the following is explicitly listed as an example of organizational data?",
+            "option_a": "A. Only marketing slogans.",
+            "option_b": "B. Research and development data.",
+            "option_c": "C. Only public press releases.",
+            "option_d": "D. Only website themes."
+        },
+        {
+            "question": "Which item is NOT listed as organizational data in the lecture?",
+            "option_a": "A. Sales data.",
+            "option_b": "B. Financial data.",
+            "option_c": "C. Customer data.",
+            "option_d": "D. Weather data."
+        },
+        {
+            "question": "A potential consequence of data loss mentioned in the lecture is:",
+            "option_a": "A. Guaranteed increase in revenue.",
+            "option_b": "B. Brand damage and loss of reputation.",
+            "option_c": "C. Automatic removal of malware.",
+            "option_d": "D. Faster network throughput."
+        },
+        {
+            "question": "Data loss can result in loss of competitive advantage and also:",
+            "option_a": "A. Loss of customers.",
+            "option_b": "B. More encryption keys.",
+            "option_c": "C. Better system uptime.",
+            "option_d": "D. Fewer legal obligations."
+        },
+        {
+            "question": "Which of the following is mentioned as a possible impact of a breach related to data loss?",
+            "option_a": "A. Litigation/legal action resulting in fines and civil penalties.",
+            "option_b": "B. Free security upgrades from vendors.",
+            "option_c": "C. Automatic insurance payouts always.",
+            "option_d": "D. No need to notify anyone."
+        },
+        {
+            "question": "The lecture notes that data loss can involve significant cost and effort to:",
+            "option_a": "A. Notify affected parties and recover from the breach.",
+            "option_b": "B. Rewrite all software from scratch.",
+            "option_c": "C. Upgrade all laptops annually.",
+            "option_d": "D. Eliminate all risks permanently."
+        },
+        {
+            "question": "Which of the following is listed as a vector of data loss?",
+            "option_a": "A. Unencrypted devices.",
+            "option_b": "B. Quantum computers.",
+            "option_c": "C. Satellite TV signals.",
+            "option_d": "D. Offline printers only."
+        },
+        {
+            "question": "Which set contains only vectors of data loss listed in the lecture?",
+            "option_a": "A. Email, social networking, removable media.",
+            "option_b": "B. VPN, PKI, biometrics.",
+            "option_c": "C. Firewalls, IDS, IPS.",
+            "option_d": "D. RAID, SAN, NAS."
+        },
+        {
+            "question": "“Improper access control” is categorized in the lecture as a:",
+            "option_a": "A. Benefit of BYOD.",
+            "option_b": "B. Vector of data loss.",
+            "option_c": "C. Type of hacker.",
+            "option_d": "D. MDM feature."
+        },
+        {
+            "question": "What does the acronym BYOD stand for?",
+            "option_a": "A. Bring Your Own Data.",
+            "option_b": "B. Bring Your Own Device.",
+            "option_c": "C. Build Your Own Defense.",
+            "option_d": "D. Buy Your Own Domain."
+        },
+        {
+            "question": "BYOD is described as employees using their personal devices to:",
+            "option_a": "A. Replace all company servers.",
+            "option_b": "B. Remotely access organizational networks for office work.",
+            "option_c": "C. Eliminate authentication.",
+            "option_d": "D. Perform only offline tasks."
+        },
+        {
+            "question": "Which of the following is an example activity enabled by BYOD mentioned in the lecture?",
+            "option_a": "A. Access official email on a smartphone.",
+            "option_b": "B. Disable encryption permanently.",
+            "option_c": "C. Avoid all conferences.",
+            "option_d": "D. Use only desktop computers at the office."
+        },
+        {
+            "question": "A benefit of BYOD mentioned in the lecture is that it:",
+            "option_a": "A. Reduces productivity.",
+            "option_b": "B. Boosts productivity because employees can work anytime.",
+            "option_c": "C. Guarantees zero malware.",
+            "option_d": "D. Eliminates support needs."
+        },
+        {
+            "question": "BYOD may make employees happier because they:",
+            "option_a": "A. Must use unfamiliar devices.",
+            "option_b": "B. Use devices they are comfortable with.",
+            "option_c": "C. Have no access to email.",
+            "option_d": "D. Are prevented from traveling."
+        },
+        {
+            "question": "A financial benefit of BYOD stated in the lecture is:",
+            "option_a": "A. Companies invest more in buying hardware.",
+            "option_b": "B. Reduced investment in buying hardware/software since employees use their own devices.",
+            "option_c": "C. Mandatory purchase of new tablets for all staff.",
+            "option_d": "D. Increased fines and penalties."
+        },
+        {
+            "question": "BYOD helps companies stay abreast of changing technology because:",
+            "option_a": "A. Employees’ personal devices tend to stay up-to-date.",
+            "option_b": "B. It prevents any device upgrades.",
+            "option_c": "C. It forces everyone to use old devices.",
+            "option_d": "D. It bans mobile devices."
+        },
+        {
+            "question": "A major drawback of BYOD is that security threats arise due to:",
+            "option_a": "A. Fewer users accessing data.",
+            "option_b": "B. More devices accessing company data and possible malware entry from unsecured devices.",
+            "option_c": "C. Only physical theft.",
+            "option_d": "D. Only cloud encryption."
+        },
+        {
+            "question": "Another risk of BYOD described in the lecture is that company data could:",
+            "option_a": "A. Never be accessed by employees.",
+            "option_b": "B. End up in wrong hands and be seen or stolen by outsiders.",
+            "option_c": "C. Be automatically deleted daily.",
+            "option_d": "D. Become immune to exfiltration."
+        },
+        {
+            "question": "BYOD devices being stolen or lost can lead to:",
+            "option_a": "A. Higher bandwidth.",
+            "option_b": "B. Data breaches.",
+            "option_c": "C. Automatic backups.",
+            "option_d": "D. Reduced IT workload."
+        },
+        {
+            "question": "The lecture notes IT departments face tremendous pressure in BYOD environments for:",
+            "option_a": "A. Support, managing, and securing all BYOD devices.",
+            "option_b": "B. Avoiding policies entirely.",
+            "option_c": "C. Removing all authentication.",
+            "option_d": "D. Building nuclear facilities."
+        },
+        {
+            "question": "What does the acronym COPE stand for?",
+            "option_a": "A. Corporate-Owned, Personally Enabled.",
+            "option_b": "B. Company-Owned, Publicly Encrypted.",
+            "option_c": "C. Corporate Online Protection Engine.",
+            "option_d": "D. Certified Operational Privacy Environment."
+        },
+        {
+            "question": "COPE is a business model in which an organization:",
+            "option_a": "A. Bans all mobile devices.",
+            "option_b": "B. Provides employees with mobile devices and allows personal-style use.",
+            "option_c": "C. Uses only employee-owned devices.",
+            "option_d": "D. Only uses paper records."
+        },
+        {
+            "question": "Compared to BYOD, COPE provides the organization with greater power to protect data:",
+            "option_a": "A. Technically and legally.",
+            "option_b": "B. Only socially.",
+            "option_c": "C. Only by luck.",
+            "option_d": "D. Only by using older devices."
+        },
+        {
+            "question": "A listed benefit of COPE is the ability to actively manage and control:",
+            "option_a": "A. Only printer toner.",
+            "option_b": "B. If/when a device can access particular apps, sites, services, networks, and solutions.",
+            "option_c": "C. Only employee salaries.",
+            "option_d": "D. Only physical locks."
+        },
+        {
+            "question": "COPE policies offer the opportunity to ______ a device of corporate data when an employee loses it.",
+            "option_a": "A. Clone.",
+            "option_b": "B. Wipe.",
+            "option_c": "C. Compress.",
+            "option_d": "D. Rename."
+        },
+        {
+            "question": "COPE can incorporate controls that determine:",
+            "option_a": "A. How applications/networks/IT systems can be used remotely and whether information can be retrieved in certain scenarios.",
+            "option_b": "B. Only the color theme of apps.",
+            "option_c": "C. Only gaming performance.",
+            "option_d": "D. Only the screen brightness."
+        },
+        {
+            "question": "Mobile Device Management (MDM) is described as providing features to:",
+            "option_a": "A. Secure, monitor, and manage mobile devices.",
+            "option_b": "B. Replace encryption with plain text.",
+            "option_c": "C. Disable monitoring entirely.",
+            "option_d": "D. Increase malware infection rates."
+        },
+        {
+            "question": "Which of the following is listed as an MDM security measure for COPE/BYOD?",
+            "option_a": "A. Data encryption.",
+            "option_b": "B. Disabling PINs.",
+            "option_c": "C. Sharing passwords publicly.",
+            "option_d": "D. Removing all audits."
+        },
+        {
+            "question": "PIN enforcement and strong authentication mechanisms are mentioned as:",
+            "option_a": "A. MDM features.",
+            "option_b": "B. Examples of hackers.",
+            "option_c": "C. Vectors of data loss only.",
+            "option_d": "D. Only physical controls."
+        },
+        {
+            "question": "Remote data wipe helps address which scenario?",
+            "option_a": "A. Printing too many documents.",
+            "option_b": "B. Stolen or misplaced devices.",
+            "option_c": "C. Slow internet at home.",
+            "option_d": "D. Updating presentation fonts."
+        },
+        {
+            "question": "DLP options in MDM are intended to support:",
+            "option_a": "A. Data Loss Prevention.",
+            "option_b": "B. Device Learning Protocol.",
+            "option_c": "C. Disk Layout Planning.",
+            "option_d": "D. Data Linking Performance."
+        },
+        {
+            "question": "Jailbreak/root detection is included in the lecture as part of:",
+            "option_a": "A. BYOD benefits.",
+            "option_b": "B. MDM security measures.",
+            "option_c": "C. Hacktivist tactics.",
+            "option_d": "D. Legal penalties."
+        },
+        {
+            "question": "Which is also listed as an MDM capability?",
+            "option_a": "A. Remotely locating devices.",
+            "option_b": "B. Generating SHA-512 digests for routers.",
+            "option_c": "C. Replacing IDS with antivirus.",
+            "option_d": "D. Blocking all social networks globally."
+        },
+        {
+            "question": "Security assessments listed for COPE/BYOD include:",
+            "option_a": "A. Vulnerability assessments, penetration testing, audits.",
+            "option_b": "B. Only backups.",
+            "option_c": "C. Only password resets.",
+            "option_d": "D. Only physical security guards."
+        },
+        {
+            "question": "In the lecture, the term “hacker” can mean all EXCEPT:",
+            "option_a": "A. A clever programmer improving programs.",
+            "option_b": "B. A network professional strengthening networks.",
+            "option_c": "C. A person who always follows all laws and never touches computers.",
+            "option_d": "D. A person trying to gain unauthorized access to devices on the Internet."
+        },
+        {
+            "question": "One meaning of “hacker” in the lecture is:",
+            "option_a": "A. A network attacker (common usage).",
+            "option_b": "B. A printer technician.",
+            "option_c": "C. A database normalization rule.",
+            "option_d": "D. A backup schedule."
+        },
+        {
+            "question": "The lecture includes hackers as individuals who run programs to:",
+            "option_a": "A. Prevent or slow network access to many users, or corrupt/wipe data on servers.",
+            "option_b": "B. Increase CPU speed safely.",
+            "option_c": "C. Encrypt every website automatically.",
+            "option_d": "D. Improve battery life."
+        },
+        {
+            "question": "White hat hackers are best described as:",
+            "option_a": "A. Unethical criminals.",
+            "option_b": "B. Ethical hackers using skills for good, ethical, and legal purposes.",
+            "option_c": "C. Inexperienced tool users only.",
+            "option_d": "D. Government-funded attackers."
+        },
+        {
+            "question": "White hat hackers may perform which activities?",
+            "option_a": "A. Security assessments such as vulnerability assessment and penetration tests.",
+            "option_b": "B. Only DDoS attacks for attention.",
+            "option_c": "C. Only data exfiltration for money.",
+            "option_d": "D. Only physical break-ins."
+        },
+        {
+            "question": "White hats typically report discovered vulnerabilities to:",
+            "option_a": "A. Attack marketplaces.",
+            "option_b": "B. Developers so they can be fixed before exploitation.",
+            "option_c": "C. Random social media accounts only.",
+            "option_d": "D. Nobody."
+        },
+        {
+            "question": "Some organizations may award white hat hackers:",
+            "option_a": "A. Prizes or bounties for reported vulnerabilities.",
+            "option_b": "B. Permanent immunity from law.",
+            "option_c": "C. Unlimited access to servers.",
+            "option_d": "D. Free malware kits."
+        },
+        {
+            "question": "Gray hat hackers (as defined in the lecture) typically:",
+            "option_a": "A. Commit crimes/unethical acts but not for personal gain or serious damage.",
+            "option_b": "B. Always work for government agencies.",
+            "option_c": "C. Never break any rules.",
+            "option_d": "D. Only write antivirus software."
+        },
+        {
+            "question": "A gray hat example in the lecture is someone who:",
+            "option_a": "A. Compromises a system without permission then publicly discloses the vulnerability.",
+            "option_b": "B. Encrypts files with user consent.",
+            "option_c": "C. Conducts a paid audit with a contract.",
+            "option_d": "D. Never reveals any vulnerabilities."
+        },
+        {
+            "question": "A risk of publicizing a vulnerability (gray hat behavior) is that it may:",
+            "option_a": "A. Reduce attacks immediately.",
+            "option_b": "B. Give other hackers the opportunity to exploit it.",
+            "option_c": "C. Automatically patch all systems.",
+            "option_d": "D. Eliminate all data loss vectors."
+        },
+        {
+            "question": "Black hat hackers are:",
+            "option_a": "A. Ethical and legal defenders.",
+            "option_b": "B. Unethical criminals who violate security for personal gain or malicious reasons.",
+            "option_c": "C. Only academic researchers.",
+            "option_d": "D. Only device manufacturers."
+        },
+        {
+            "question": "Black hat hackers typically:",
+            "option_a": "A. Exploit vulnerabilities to compromise systems.",
+            "option_b": "B. Only report vulnerabilities responsibly.",
+            "option_c": "C. Only improve code efficiency.",
+            "option_d": "D. Only monitor logs for compliance."
+        },
+        {
+            "question": "Which of the following is listed as a modern hacking title in the lecture?",
+            "option_a": "A. Script kiddies.",
+            "option_b": "B. Database administrators.",
+            "option_c": "C. Network architects.",
+            "option_d": "D. Software testers."
+        },
+        {
+            "question": "Script kiddies are described as:",
+            "option_a": "A. Highly experienced exploit developers.",
+            "option_b": "B. Inexperienced hackers running existing tools/exploits developed by others.",
+            "option_c": "C. Corporate legal advisors.",
+            "option_d": "D. Government intelligence analysts only."
+        },
+        {
+            "question": "The objective of many script kiddies is to:",
+            "option_a": "A. Impress friends or gain credit in enthusiast communities.",
+            "option_b": "B. Perform lawful audits only.",
+            "option_c": "C. Protect critical infrastructure.",
+            "option_d": "D. Write new cryptographic standards."
+        },
+        {
+            "question": "The term “script kiddie” does NOT relate to the actual:",
+            "option_a": "A. Skill level.",
+            "option_b": "B. Age of the participant.",
+            "option_c": "C. Use of existing scripts.",
+            "option_d": "D. Desire to impress."
+        },
+        {
+            "question": "Vulnerability brokers are usually:",
+            "option_a": "A. White hat hackers only.",
+            "option_b": "B. Gray hat hackers who discover exploits and report them to vendors, sometimes for rewards.",
+            "option_c": "C. Only state-sponsored attackers.",
+            "option_d": "D. Only system administrators."
+        },
+        {
+            "question": "Cyber criminals are best described in the lecture as:",
+            "option_a": "A. Black hat hackers motivated to make money using any means necessary.",
+            "option_b": "B. Ethical hackers reporting bugs.",
+            "option_c": "C. Students practicing in labs only.",
+            "option_d": "D. People who never trade tools."
+        },
+        {
+            "question": "Cyber criminals often operate in an underground economy buying/selling:",
+            "option_a": "A. Attack toolkits, zero-day exploit code, botnet services, banking Trojans, keyloggers.",
+            "option_b": "B. Only legal software licenses.",
+            "option_c": "C. Only textbooks.",
+            "option_d": "D. Only network cables."
+        },
+        {
+            "question": "Cyber criminals target:",
+            "option_a": "A. Only governments.",
+            "option_b": "B. Small businesses and consumers as well as large enterprises and industry verticals.",
+            "option_c": "C. Only universities.",
+            "option_d": "D. Only one industry."
+        },
+        {
+            "question": "Hacktivists are described as:",
+            "option_a": "A. Gray hat hackers who protest social/political ideas.",
+            "option_b": "B. Only profit-driven criminals.",
+            "option_c": "C. Only corporate auditors.",
+            "option_d": "D. Only malware analysts."
+        },
+        {
+            "question": "Hacktivists primarily hack for:",
+            "option_a": "A. Profit.",
+            "option_b": "B. Attention.",
+            "option_c": "C. Hardware upgrades.",
+            "option_d": "D. Faster Wi-Fi."
+        },
+        {
+            "question": "Hacktivist activities mentioned include leaking sensitive information and performing:",
+            "option_a": "A. Distributed denial of service (DDoS) attacks.",
+            "option_b": "B. Only data encryption at rest.",
+            "option_c": "C. Only key management.",
+            "option_d": "D. Only physical theft."
+        },
+        {
+            "question": "Which group is listed as an example of hacktivists?",
+            "option_a": "A. Anonymous Hackers.",
+            "option_b": "B. NIST.",
+            "option_c": "C. Cisco.",
+            "option_d": "D. ITU-T."
+        },
+        {
+            "question": "State-sponsored hackers are described as:",
+            "option_a": "A. Government-funded and guided attackers.",
+            "option_b": "B. Inexperienced teenagers only.",
+            "option_c": "C. Only ethical testers.",
+            "option_d": "D. Only internal employees."
+        },
+        {
+            "question": "State-sponsored hackers often use:",
+            "option_a": "A. Previously undiscovered software vulnerabilities.",
+            "option_b": "B. Only outdated tools.",
+            "option_c": "C. Only physical locks.",
+            "option_d": "D. Only password hints."
+        },
+        {
+            "question": "State-sponsored hacking targets can include:",
+            "option_a": "A. Foreign governments, terrorist groups, and corporations.",
+            "option_b": "B. Only local schools.",
+            "option_c": "C. Only home users.",
+            "option_d": "D. Only printers."
+        },
+        {
+            "question": "The lecture gives which example of state-sponsored malware created to damage Iran’s nuclear enrichment capabilities?",
+            "option_a": "A. ILOVEYOU.",
+            "option_b": "B. Stuxnet.",
+            "option_c": "C. Conficker.",
+            "option_d": "D. WannaCry."
+        }
+    ]
+}
