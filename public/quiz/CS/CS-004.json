@@ -1,0 +1,382 @@
+{
+    "questions": [
+        {
+            "question": "Which cryptographic service ensures that a message actually comes from the claimed sender?",
+            "option_a": "A. Authentication",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Availability",
+            "option_d": "D. Encryption",
+            "correct_answer": "A",
+            "explanation": "Authentication verifies the identity of the sender and ensures the message is not forged."
+        },
+        {
+            "question": "Which property ensures that data has not been modified during transmission?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Authentication",
+            "option_c": "C. Integrity",
+            "option_d": "D. Non-repudiation",
+            "correct_answer": "C",
+            "explanation": "Integrity guarantees that the message received is identical to the message sent."
+        },
+        {
+            "question": "Which term describes readable data before encryption?",
+            "option_a": "A. Ciphertext",
+            "option_b": "B. Plaintext",
+            "option_c": "C. Hash",
+            "option_d": "D. Token",
+            "correct_answer": "B",
+            "explanation": "Plaintext refers to the original readable data before it is encrypted."
+        },
+        {
+            "question": "Encrypted data that cannot be read without a key is known as:",
+            "option_a": "A. Cleartext",
+            "option_b": "B. Ciphertext",
+            "option_c": "C. Metadata",
+            "option_d": "D. Hash value",
+            "correct_answer": "B",
+            "explanation": "Ciphertext is the scrambled output of encryption that hides the original message."
+        },
+        {
+            "question": "What is a cipher?",
+            "option_a": "A. A hardware device for encryption",
+            "option_b": "B. A mathematical proof",
+            "option_c": "C. A series of well-defined steps used for encryption and decryption",
+            "option_d": "D. A type of digital certificate",
+            "correct_answer": "C",
+            "explanation": "A cipher is an algorithm or procedure used to transform plaintext into ciphertext and vice versa."
+        },
+        {
+            "question": "Which ancient cryptographic device used a rod to wrap a message for encryption?",
+            "option_a": "A. Enigma",
+            "option_b": "B. Scytale",
+            "option_c": "C. Cipher disk",
+            "option_d": "D. Rotor machine",
+            "correct_answer": "B",
+            "explanation": "The Scytale was used by Spartans to perform a transposition cipher using a rod."
+        },
+        {
+            "question": "Which cipher replaced each letter with another letter shifted by a fixed number of positions?",
+            "option_a": "A. Vigenère Cipher",
+            "option_b": "B. Rail Fence Cipher",
+            "option_c": "C. Caesar Cipher",
+            "option_d": "D. One-Time Pad",
+            "correct_answer": "C",
+            "explanation": "The Caesar Cipher shifts each letter in the alphabet by a fixed number of positions."
+        },
+        {
+            "question": "Which cipher uses multiple alphabet shifts controlled by a keyword?",
+            "option_a": "A. Caesar Cipher",
+            "option_b": "B. Vigenère Cipher",
+            "option_c": "C. Rail Fence Cipher",
+            "option_d": "D. XOR Cipher",
+            "correct_answer": "B",
+            "explanation": "The Vigenère cipher is a polyalphabetic cipher that uses a multi-letter key."
+        },
+        {
+            "question": "Who described the polyalphabetic encryption system known as the Vigenère Cipher?",
+            "option_a": "A. Charles Babbage",
+            "option_b": "B. Blaise de Vigenère",
+            "option_c": "C. Julius Caesar",
+            "option_d": "D. Thomas Jefferson",
+            "correct_answer": "B",
+            "explanation": "Blaise de Vigenère described the polyalphabetic encryption method in 1586."
+        },
+        {
+            "question": "Which historical machine was used by Germany during World War II for encryption?",
+            "option_a": "A. Difference Engine",
+            "option_b": "B. Enigma Machine",
+            "option_c": "C. Analytical Engine",
+            "option_d": "D. Jefferson Wheel",
+            "correct_answer": "B",
+            "explanation": "The Enigma machine was used by Germany during World War II to encrypt military communications."
+        },
+        {
+            "question": "In a transposition cipher, what happens to the letters?",
+            "option_a": "A. They are replaced with symbols",
+            "option_b": "B. They are rearranged",
+            "option_c": "C. They are removed",
+            "option_d": "D. They are hashed",
+            "correct_answer": "B",
+            "explanation": "Transposition ciphers keep the letters but rearrange their positions."
+        },
+        {
+            "question": "Which cipher is an example of a transposition cipher?",
+            "option_a": "A. Vigenère Cipher",
+            "option_b": "B. Caesar Cipher",
+            "option_c": "C. Rail Fence Cipher",
+            "option_d": "D. AES",
+            "correct_answer": "C",
+            "explanation": "The Rail Fence cipher rearranges characters across multiple rows."
+        },
+        {
+            "question": "Which type of cipher replaces letters with other letters?",
+            "option_a": "A. Substitution cipher",
+            "option_b": "B. Transposition cipher",
+            "option_c": "C. Permutation cipher",
+            "option_d": "D. Stream cipher",
+            "correct_answer": "A",
+            "explanation": "Substitution ciphers replace one symbol with another symbol."
+        },
+        {
+            "question": "Which characteristic best describes symmetric encryption?",
+            "option_a": "A. Uses different keys for encryption and decryption",
+            "option_b": "B. Uses a shared secret key",
+            "option_c": "C. Does not require a key",
+            "option_d": "D. Uses only public keys",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption uses the same shared secret key for both encryption and decryption."
+        },
+        {
+            "question": "Which characteristic describes asymmetric encryption?",
+            "option_a": "A. Uses shared secret keys",
+            "option_b": "B. Uses identical encryption and decryption algorithms",
+            "option_c": "C. Uses public and private key pairs",
+            "option_d": "D. Uses only symmetric algorithms",
+            "correct_answer": "C",
+            "explanation": "Asymmetric encryption uses a pair of keys: one public and one private."
+        },
+        {
+            "question": "Who invented the one-time pad cipher concept?",
+            "option_a": "A. Gilbert Vernam",
+            "option_b": "B. Blaise de Vigenère",
+            "option_c": "C. Charles Babbage",
+            "option_d": "D. Arthur Scherbius",
+            "correct_answer": "A",
+            "explanation": "Gilbert Vernam proposed the one-time pad cipher in 1917."
+        },
+        {
+            "question": "Why is the one-time pad considered theoretically unbreakable?",
+            "option_a": "A. It uses very long keys",
+            "option_b": "B. The key never repeats and is random",
+            "option_c": "C. It uses public key cryptography",
+            "option_d": "D. It uses symmetric encryption",
+            "correct_answer": "B",
+            "explanation": "A truly random non-repeating key makes ciphertext patterns impossible to analyze."
+        },
+        {
+            "question": "What is cryptanalysis?",
+            "option_a": "A. Designing encryption algorithms",
+            "option_b": "B. Breaking encrypted messages without keys",
+            "option_c": "C. Managing cryptographic hardware",
+            "option_d": "D. Generating keys",
+            "correct_answer": "B",
+            "explanation": "Cryptanalysis focuses on breaking encryption to reveal the original message."
+        },
+        {
+            "question": "What is cryptology?",
+            "option_a": "A. Only cryptography",
+            "option_b": "B. Only cryptanalysis",
+            "option_c": "C. Study of encryption hardware",
+            "option_d": "D. Combination of cryptography and cryptanalysis",
+            "correct_answer": "D",
+            "explanation": "Cryptology includes both the creation and breaking of cryptographic systems."
+        },
+        {
+            "question": "Which attack method involves trying every possible key until one works?",
+            "option_a": "A. Frequency attack",
+            "option_b": "B. Brute-force attack",
+            "option_c": "C. Differential attack",
+            "option_d": "D. Replay attack",
+            "correct_answer": "B",
+            "explanation": "A brute-force attack systematically tests all possible keys."
+        },
+        {
+            "question": "Why is the Caesar cipher easily broken using brute-force attacks?",
+            "option_a": "A. It uses symmetric encryption",
+            "option_b": "B. It has a very small keyspace",
+            "option_c": "C. It uses public keys",
+            "option_d": "D. It generates random ciphertext",
+            "correct_answer": "B",
+            "explanation": "The Caesar cipher only has 25 possible shifts, making brute-force attacks trivial."
+        },
+        {
+            "question": "In a ciphertext-only attack, what information does the attacker have?",
+            "option_a": "A. Both plaintext and key",
+            "option_b": "B. Ciphertext only",
+            "option_c": "C. Plaintext only",
+            "option_d": "D. Encryption algorithm and key",
+            "correct_answer": "B",
+            "explanation": "The attacker only has encrypted data and must infer patterns."
+        },
+        {
+            "question": "In a known-plaintext attack, the attacker has access to:",
+            "option_a": "A. Ciphertext and some corresponding plaintext",
+            "option_b": "B. Only ciphertext",
+            "option_c": "C. Only encryption keys",
+            "option_d": "D. Only plaintext",
+            "correct_answer": "A",
+            "explanation": "Known plaintext allows attackers to deduce keys by comparing plaintext and ciphertext."
+        },
+        {
+            "question": "Which attack allows an attacker to choose input data to observe the encrypted result?",
+            "option_a": "A. Chosen-ciphertext attack",
+            "option_b": "B. Brute-force attack",
+            "option_c": "C. Chosen-plaintext attack",
+            "option_d": "D. Replay attack",
+            "correct_answer": "C",
+            "explanation": "In chosen-plaintext attacks, attackers submit plaintext and observe resulting ciphertext."
+        },
+        {
+            "question": "Which attack involves decrypting chosen ciphertext to analyze resulting plaintext?",
+            "option_a": "A. Chosen-ciphertext attack",
+            "option_b": "B. Ciphertext-only attack",
+            "option_c": "C. Known-plaintext attack",
+            "option_d": "D. Dictionary attack",
+            "correct_answer": "A",
+            "explanation": "Attackers analyze how chosen ciphertext decrypts to discover keys."
+        },
+        {
+            "question": "Which attack is a variation of the known-plaintext attack and compares encryption and decryption results?",
+            "option_a": "A. Brute force",
+            "option_b": "B. Meet-in-the-middle",
+            "option_c": "C. Frequency attack",
+            "option_d": "D. Replay attack",
+            "correct_answer": "B",
+            "explanation": "Meet-in-the-middle attacks store encrypted results and compare them with decrypted values."
+        },
+        {
+            "question": "Why is frequency analysis effective against simple substitution ciphers?",
+            "option_a": "A. They remove letters",
+            "option_b": "B. Letter frequency remains similar to the original language",
+            "option_c": "C. They generate random output",
+            "option_d": "D. They change key lengths",
+            "correct_answer": "B",
+            "explanation": "Substitution ciphers preserve letter frequencies, allowing statistical analysis."
+        },
+        {
+            "question": "Which letters appear most frequently in English text according to frequency analysis?",
+            "option_a": "A. J, Q, X",
+            "option_b": "B. E, T, A",
+            "option_c": "C. Z, X, Q",
+            "option_d": "D. L, M, N",
+            "correct_answer": "B",
+            "explanation": "E, T, and A are among the most common letters in English."
+        },
+        {
+            "question": "Which principle states that encryption security should depend on keys rather than algorithm secrecy?",
+            "option_a": "A. Shannon principle",
+            "option_b": "B. Kerckhoffs's principle",
+            "option_c": "C. Diffie principle",
+            "option_d": "D. Euler principle",
+            "correct_answer": "B",
+            "explanation": "Kerckhoffs's principle states that system security should rely on key secrecy."
+        },
+        {
+            "question": "Why are modern cryptographic algorithms usually public?",
+            "option_a": "A. They are impossible to reverse engineer",
+            "option_b": "B. Security depends on the key rather than secrecy of the algorithm",
+            "option_c": "C. Governments require publication",
+            "option_d": "D. They cannot be patented",
+            "correct_answer": "B",
+            "explanation": "Modern security relies on secret keys rather than hiding algorithms."
+        },
+        {
+            "question": "Which algorithm is considered stronger than DES?",
+            "option_a": "A. AES",
+            "option_b": "B. MD5",
+            "option_c": "C. RC4",
+            "option_d": "D. SHA-1",
+            "correct_answer": "A",
+            "explanation": "AES provides stronger encryption and larger key sizes compared to DES."
+        },
+        {
+            "question": "Which algorithm is mainly used for integrity verification rather than encryption?",
+            "option_a": "A. AES",
+            "option_b": "B. DES",
+            "option_c": "C. MD5",
+            "option_d": "D. RSA",
+            "correct_answer": "C",
+            "explanation": "MD5 is a hashing algorithm used to verify data integrity."
+        },
+        {
+            "question": "Which cryptographic algorithms are commonly used for authentication?",
+            "option_a": "A. RSA and DSA",
+            "option_b": "B. AES and DES",
+            "option_c": "C. MD5 and SHA",
+            "option_d": "D. RC4 and DES",
+            "correct_answer": "A",
+            "explanation": "RSA and DSA are widely used for authentication and digital signatures."
+        },
+        {
+            "question": "Why is generating truly random keys difficult for computers?",
+            "option_a": "A. Computers rely on deterministic mathematical processes",
+            "option_b": "B. Computers cannot generate numbers",
+            "option_c": "C. Encryption algorithms forbid randomness",
+            "option_d": "D. Hardware prevents randomness",
+            "correct_answer": "A",
+            "explanation": "Computers produce pseudorandom values because their operations follow deterministic mathematics."
+        },
+        {
+            "question": "Which system used Native American languages to create secure military communication?",
+            "option_a": "A. Navajo Code Talkers",
+            "option_b": "B. Enigma Machine",
+            "option_c": "C. Caesar Cipher",
+            "option_d": "D. Jefferson Disk",
+            "correct_answer": "A",
+            "explanation": "Navajo code talkers used their language to encode messages during World War II."
+        },
+        {
+            "question": "Which cryptographic device was invented by Thomas Jefferson?",
+            "option_a": "A. Jefferson encryption device",
+            "option_b": "B. Rotor cipher",
+            "option_c": "C. Analytical engine",
+            "option_d": "D. Cipher disk",
+            "correct_answer": "A",
+            "explanation": "Thomas Jefferson created an encryption wheel system for encoding messages."
+        },
+        {
+            "question": "Why are modern cryptographic algorithms resistant to ciphertext-only attacks?",
+            "option_a": "A. They hide the algorithm",
+            "option_b": "B. They produce pseudorandom outputs",
+            "option_c": "C. They remove ciphertext patterns",
+            "option_d": "D. They encrypt keys",
+            "correct_answer": "B",
+            "explanation": "Modern encryption produces pseudorandom ciphertext that resists statistical analysis."
+        },
+        {
+            "question": "What is the main challenge in implementing one-time pad systems?",
+            "option_a": "A. Encryption speed",
+            "option_b": "B. Key distribution and generating random keys",
+            "option_c": "C. Ciphertext size",
+            "option_d": "D. Decryption complexity",
+            "correct_answer": "B",
+            "explanation": "One-time pads require secure distribution of large, truly random keys."
+        },
+        {
+            "question": "Why does using the same one-time pad key multiple times weaken security?",
+            "option_a": "A. It increases ciphertext length",
+            "option_b": "B. It introduces patterns that attackers can analyze",
+            "option_c": "C. It removes encryption",
+            "option_d": "D. It reduces encryption speed",
+            "correct_answer": "B",
+            "explanation": "Reusing keys allows attackers to compare ciphertexts and discover patterns."
+        },
+        {
+            "question": "Which concept describes the set of all possible keys?",
+            "option_a": "A. Cipher domain",
+            "option_b": "B. Keyspace",
+            "option_c": "C. Encryption pool",
+            "option_d": "D. Cipher range",
+            "correct_answer": "B",
+            "explanation": "Keyspace refers to the total number of possible keys for an encryption algorithm."
+        },
+        {
+            "question": "Why do modern encryption systems use large keyspaces?",
+            "option_a": "A. To reduce encryption time",
+            "option_b": "B. To prevent brute-force attacks",
+            "option_c": "C. To simplify algorithms",
+            "option_d": "D. To compress data",
+            "correct_answer": "B",
+            "explanation": "Large keyspaces make brute-force attacks computationally infeasible."
+        },
+        {
+            "question": "Why can encryption algorithms never be proven completely secure?",
+            "option_a": "A. Keys always leak",
+            "option_b": "B. New cryptanalytic techniques may be discovered",
+            "option_c": "C. Encryption is random",
+            "option_d": "D. Algorithms expire",
+            "correct_answer": "B",
+            "explanation": "Security can only be evaluated against known attacks; future vulnerabilities may appear."
+        }
+    ]
+}

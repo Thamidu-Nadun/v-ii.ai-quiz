@@ -1,27 +1,63 @@
 export default [
-    // OL -3 Quizzes - Number System
+    // Introduction to Cyber Security Quizzes
     {
-        title: 'Number System - 01',
-        path: 'quiz/OL/03/01.json',
-        description: 'Test your understanding of different number systems, including binary, decimal, and hexadecimal.',
+        title: 'Cyber Security - 10',
+        path: 'quiz/CS/CS-010.json',
+        description: 'Test your knowledge of cyber security technologies, including firewalls, encryption, and intrusion detection systems.',
         isAvailable: true
     },
     {
-        title: 'Number System - 02',
-        path: 'quiz/OL/03/02.json',
-        description: 'Further evaluate your knowledge of number system conversions and arithmetic operations.',
+        title: 'Cyber Security - 09',
+        path: 'quiz/CS/CS-009.json',
+        description: 'Evaluate your knowledge of cyber security principles, including risk management and incident response.',
         isAvailable: true
     },
     {
-        title: 'Number System - 03',
-        path: 'quiz/OL/03/03.json',
-        description: 'A comprehensive quiz covering various aspects of number systems and their applications.',
+        title: 'Cyber Security - 08',
+        path: 'quiz/CS/CS-008.json',
+        description: 'Test your knowledge of cyber security governance, including policies, standards, and compliance frameworks.',
         isAvailable: true
     },
     {
-        title: 'Number System - 04',
-        path: 'quiz/OL/03/04.json',
-        description: 'Assess your proficiency in number system concepts, conversions, and calculations.',
+        title: 'Cyber Security - 07',
+        path: 'quiz/CS/CS-007.json',
+        description: 'Evaluate your knowledge of cyber security risk management, including risk assessment and mitigation strategies.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 06',
+        path: 'quiz/CS/CS-006.json',
+        description: 'Test your knowledge of cyber security incident response, including detection, containment, and recovery strategies.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 05',
+        path: 'quiz/CS/CS-005.json',
+        description: 'Evaluate your knowledge of cyber security trends, emerging threats, and future challenges in the field.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 04',
+        path: 'quiz/CS/CS-004.json',
+        description: 'Test your understanding of cyber security policies, regulations, and ethical considerations.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 03',
+        path: 'quiz/CS/CS-003.json',
+        description: 'Assess your knowledge of cyber security technologies, including firewalls, encryption, and intrusion detection systems.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 02',
+        path: 'quiz/CS/CS-002.json',
+        description: 'Evaluate your understanding of cyber security principles, including risk management and incident response.',
+        isAvailable: true
+    },
+    {
+        title: 'Cyber Security - 01',
+        path: 'quiz/CS/CS-001.json',
+        description: 'Test your knowledge of basic cyber security concepts, including threats, vulnerabilities, and best practices.',
         isAvailable: true
     },
     // Database Management System Quizzes

@@ -1,0 +1,454 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of a cryptographic hash function?",
+            "option_a": "A. To convert plaintext into ciphertext",
+            "option_b": "B. To generate a condensed representation of input data",
+            "option_c": "C. To encrypt data using a secret key",
+            "option_d": "D. To compress files for storage",
+            "correct_answer": "B",
+            "explanation": "A cryptographic hash function takes input data and produces a fixed-length condensed output called a hash or message digest."
+        },
+        {
+            "question": "Which term is commonly used as another name for a hash value?",
+            "option_a": "A. Encryption key",
+            "option_b": "B. Ciphertext",
+            "option_c": "C. Message digest",
+            "option_d": "D. Secret token",
+            "correct_answer": "C",
+            "explanation": "Hash values are also known as message digests or digital fingerprints."
+        },
+        {
+            "question": "Which property of a hash function ensures it is difficult to retrieve the original input from the hash output?",
+            "option_a": "A. Reversibility",
+            "option_b": "B. One-way property",
+            "option_c": "C. Compression property",
+            "option_d": "D. Randomization property",
+            "correct_answer": "B",
+            "explanation": "A cryptographic hash function is designed to be one-way, meaning it is easy to compute but difficult to reverse."
+        },
+        {
+            "question": "Which of the following is a common application of cryptographic hash functions?",
+            "option_a": "A. Verifying data integrity",
+            "option_b": "B. Encrypting data for confidentiality",
+            "option_c": "C. Increasing network bandwidth",
+            "option_d": "D. Compressing multimedia files",
+            "correct_answer": "A",
+            "explanation": "Hash functions are widely used to verify that data has not been altered."
+        },
+        {
+            "question": "Which of the following algorithms produces a 128-bit message digest?",
+            "option_a": "A. SHA-256",
+            "option_b": "B. SHA-1",
+            "option_c": "C. MD5",
+            "option_d": "D. AES",
+            "correct_answer": "C",
+            "explanation": "MD5 produces a 128-bit hash value."
+        },
+        {
+            "question": "Which hash function produces a 160-bit message digest?",
+            "option_a": "A. SHA-1",
+            "option_b": "B. MD5",
+            "option_c": "C. SHA-256",
+            "option_d": "D. DES",
+            "correct_answer": "A",
+            "explanation": "SHA-1 generates a 160-bit message digest."
+        },
+        {
+            "question": "Who developed the MD5 hashing algorithm?",
+            "option_a": "A. Whitfield Diffie",
+            "option_b": "B. Ron Rivest",
+            "option_c": "C. Alan Turing",
+            "option_d": "D. Bruce Schneier",
+            "correct_answer": "B",
+            "explanation": "MD5 was developed by Ron Rivest and became widely used in Internet applications."
+        },
+        {
+            "question": "Which organization developed the Secure Hash Algorithm (SHA)?",
+            "option_a": "A. Microsoft",
+            "option_b": "B. Cisco",
+            "option_c": "C. NIST",
+            "option_d": "D. IEEE",
+            "correct_answer": "C",
+            "explanation": "The Secure Hash Algorithm was developed by the U.S. National Institute of Standards and Technology (NIST)."
+        },
+        {
+            "question": "Which SHA family member produces a 256-bit message digest?",
+            "option_a": "A. SHA-224",
+            "option_b": "B. SHA-256",
+            "option_c": "C. SHA-1",
+            "option_d": "D. MD5",
+            "correct_answer": "B",
+            "explanation": "SHA-256 generates a 256-bit hash value."
+        },
+        {
+            "question": "Which of the following is considered stronger than MD5 for hashing?",
+            "option_a": "A. SHA-1",
+            "option_b": "B. ROT13",
+            "option_c": "C. DES",
+            "option_d": "D. Caesar cipher",
+            "correct_answer": "A",
+            "explanation": "SHA-1 has a larger digest size and is generally considered stronger than MD5."
+        },
+        {
+            "question": "What is the output of a hash function commonly called?",
+            "option_a": "A. Cipher block",
+            "option_b": "B. Message digest",
+            "option_c": "C. Keyspace",
+            "option_d": "D. Digital key",
+            "correct_answer": "B",
+            "explanation": "The output of a cryptographic hash function is called a message digest."
+        },
+        {
+            "question": "Which property allows hash functions to accept input data of arbitrary length?",
+            "option_a": "A. Deterministic processing",
+            "option_b": "B. Variable input size",
+            "option_c": "C. Symmetric encryption",
+            "option_d": "D. Random key generation",
+            "correct_answer": "B",
+            "explanation": "Hash functions can process input messages of arbitrary length and produce fixed-length outputs."
+        },
+        {
+            "question": "What is the main weakness of basic hashing without additional mechanisms?",
+            "option_a": "A. It cannot detect accidental errors",
+            "option_b": "B. It cannot prevent deliberate modification",
+            "option_c": "C. It increases network latency",
+            "option_d": "D. It produces variable output length",
+            "correct_answer": "B",
+            "explanation": "Anyone can recompute a hash after modifying data, so basic hashing alone cannot prevent intentional changes."
+        },
+        {
+            "question": "Which attack is basic hashing particularly vulnerable to?",
+            "option_a": "A. Brute force encryption attack",
+            "option_b": "B. Man-in-the-middle attack",
+            "option_c": "C. SQL injection",
+            "option_d": "D. Phishing attack",
+            "correct_answer": "B",
+            "explanation": "Since hashing does not include sender authentication, it can be exploited by man-in-the-middle attacks."
+        },
+        {
+            "question": "What does HMAC stand for?",
+            "option_a": "A. Hash Message Authentication Code",
+            "option_b": "B. Hybrid Message Access Control",
+            "option_c": "C. High-level Message Algorithm Code",
+            "option_d": "D. Host Managed Access Control",
+            "correct_answer": "A",
+            "explanation": "HMAC stands for Hash-based Message Authentication Code."
+        },
+        {
+            "question": "What additional element does HMAC use besides a hash function?",
+            "option_a": "A. A secret key",
+            "option_b": "B. A public certificate",
+            "option_c": "C. A digital signature",
+            "option_d": "D. A compression algorithm",
+            "correct_answer": "A",
+            "explanation": "HMAC combines a cryptographic hash function with a secret key."
+        },
+        {
+            "question": "Why does HMAC provide authentication?",
+            "option_a": "A. Because it encrypts the data",
+            "option_b": "B. Because it compresses the data",
+            "option_c": "C. Because only parties with the secret key can generate the correct hash",
+            "option_d": "D. Because it changes the message length",
+            "correct_answer": "C",
+            "explanation": "Only the sender and receiver know the secret key, allowing them to verify authenticity."
+        },
+        {
+            "question": "Which of the following HMAC implementations is based on the MD5 hashing algorithm?",
+            "option_a": "A. HMAC-SHA1",
+            "option_b": "B. HMAC-MD5",
+            "option_c": "C. HMAC-DES",
+            "option_d": "D. HMAC-AES",
+            "correct_answer": "B",
+            "explanation": "HMAC-MD5 uses the MD5 hashing algorithm as its underlying hash function."
+        },
+        {
+            "question": "What is verified when the calculated HMAC matches the received HMAC?",
+            "option_a": "A. Encryption strength",
+            "option_b": "B. Network latency",
+            "option_c": "C. Data integrity and authenticity",
+            "option_d": "D. File compression",
+            "correct_answer": "C",
+            "explanation": "Matching HMAC values confirm that the message is authentic and has not been altered."
+        },
+        {
+            "question": "Which factor influences the cryptographic strength of an HMAC?",
+            "option_a": "A. Screen resolution",
+            "option_b": "B. Hash function strength",
+            "option_c": "C. File size",
+            "option_d": "D. Operating system version",
+            "correct_answer": "B",
+            "explanation": "The strength of HMAC partly depends on the strength of the underlying hash function."
+        },
+        {
+            "question": "Which of the following is NOT a key management characteristic?",
+            "option_a": "A. Key generation",
+            "option_b": "B. Key exchange",
+            "option_c": "C. Key verification",
+            "option_d": "D. Key encryption algorithm design",
+            "correct_answer": "D",
+            "explanation": "Key management includes generation, storage, exchange, verification, and revocation, not algorithm design."
+        },
+        {
+            "question": "What does key generation refer to in cryptography?",
+            "option_a": "A. Deleting keys",
+            "option_b": "B. Creating cryptographic keys",
+            "option_c": "C. Encrypting messages",
+            "option_d": "D. Compressing data",
+            "correct_answer": "B",
+            "explanation": "Key generation is the process of creating cryptographic keys used in algorithms."
+        },
+        {
+            "question": "Why is key verification important?",
+            "option_a": "A. To ensure weak keys are not used",
+            "option_b": "B. To compress the key",
+            "option_c": "C. To encrypt the key",
+            "option_d": "D. To shorten the key length",
+            "correct_answer": "A",
+            "explanation": "Key verification ensures weak or insecure keys are detected and regenerated."
+        },
+        {
+            "question": "What does key revocation mean?",
+            "option_a": "A. Creating a new key",
+            "option_b": "B. Notifying that a key has been compromised",
+            "option_c": "C. Encrypting a key",
+            "option_d": "D. Compressing a key",
+            "correct_answer": "B",
+            "explanation": "Key revocation informs parties that a compromised key should no longer be used."
+        },
+        {
+            "question": "What is key destruction?",
+            "option_a": "A. Safely erasing old keys",
+            "option_b": "B. Encrypting keys",
+            "option_c": "C. Backing up keys",
+            "option_d": "D. Storing keys",
+            "correct_answer": "A",
+            "explanation": "Key destruction ensures that old keys cannot be recovered by attackers."
+        },
+        {
+            "question": "What does key size measure?",
+            "option_a": "A. Number of users",
+            "option_b": "B. Length of the key in bits",
+            "option_c": "C. Size of encrypted data",
+            "option_d": "D. File compression ratio",
+            "correct_answer": "B",
+            "explanation": "Key size refers to the length of the key measured in bits."
+        },
+        {
+            "question": "What is keyspace?",
+            "option_a": "A. Memory used for encryption",
+            "option_b": "B. Number of possible keys",
+            "option_c": "C. Encryption algorithm speed",
+            "option_d": "D. Hash output size",
+            "correct_answer": "B",
+            "explanation": "Keyspace refers to the total number of possible keys that can be generated."
+        },
+        {
+            "question": "What happens to the keyspace when one bit is added to a key?",
+            "option_a": "A. It remains the same",
+            "option_b": "B. It doubles",
+            "option_c": "C. It halves",
+            "option_d": "D. It triples",
+            "correct_answer": "B",
+            "explanation": "Each additional bit doubles the keyspace."
+        },
+        {
+            "question": "What is the keyspace for a 2^4 key?",
+            "option_a": "A. 4",
+            "option_b": "B. 8",
+            "option_c": "C. 16",
+            "option_d": "D. 32",
+            "correct_answer": "C",
+            "explanation": "2^4 equals 16 possible keys."
+        },
+        {
+            "question": "Which type of cryptographic key is commonly used between two routers in a VPN?",
+            "option_a": "A. Asymmetric key",
+            "option_b": "B. Symmetric key",
+            "option_c": "C. Hash key",
+            "option_d": "D. Public certificate",
+            "correct_answer": "B",
+            "explanation": "VPNs often use symmetric keys shared between routers."
+        },
+        {
+            "question": "Which type of cryptographic keys are typically used in HTTPS?",
+            "option_a": "A. Symmetric keys",
+            "option_b": "B. Asymmetric keys",
+            "option_c": "C. Hash-only keys",
+            "option_d": "D. Temporary session keys",
+            "correct_answer": "B",
+            "explanation": "HTTPS commonly uses asymmetric cryptography for secure communication."
+        },
+        {
+            "question": "Why are longer keys generally considered more secure?",
+            "option_a": "A. They reduce encryption time",
+            "option_b": "B. They increase keyspace exponentially",
+            "option_c": "C. They compress data better",
+            "option_d": "D. They simplify hashing",
+            "correct_answer": "B",
+            "explanation": "Longer keys produce larger keyspaces, making brute-force attacks more difficult."
+        },
+        {
+            "question": "Why might extremely long keys affect system performance?",
+            "option_a": "A. They increase network traffic",
+            "option_b": "B. They require more computational resources",
+            "option_c": "C. They reduce encryption accuracy",
+            "option_d": "D. They decrease hash output",
+            "correct_answer": "B",
+            "explanation": "Longer keys require more processing power, which can affect performance."
+        },
+        {
+            "question": "Which scenario best illustrates data integrity verification using hashing?",
+            "option_a": "A. Encrypting passwords in a database",
+            "option_b": "B. Comparing a downloaded file's hash with the published hash",
+            "option_c": "C. Compressing a file before sending",
+            "option_d": "D. Encrypting an email with RSA",
+            "correct_answer": "B",
+            "explanation": "Comparing hashes ensures the downloaded file has not been altered."
+        },
+        {
+            "question": "If an attacker modifies a message and recomputes the hash before forwarding it, what weakness of hashing is being exploited?",
+            "option_a": "A. Lack of authentication",
+            "option_b": "B. Lack of compression",
+            "option_c": "C. Slow performance",
+            "option_d": "D. Limited keyspace",
+            "correct_answer": "A",
+            "explanation": "Hashing alone does not authenticate the sender, allowing attackers to recompute hashes."
+        },
+        {
+            "question": "A security engineer needs both data integrity and authentication. Which mechanism should be used?",
+            "option_a": "A. Basic hash function",
+            "option_b": "B. HMAC",
+            "option_c": "C. Data compression",
+            "option_d": "D. Firewall filtering",
+            "correct_answer": "B",
+            "explanation": "HMAC provides both integrity and authentication using a secret key."
+        },
+        {
+            "question": "Which factor would most significantly increase the difficulty of brute-force attacks on a cryptographic key?",
+            "option_a": "A. Decreasing key length",
+            "option_b": "B. Increasing key length",
+            "option_c": "C. Reducing hash output",
+            "option_d": "D. Removing secret keys",
+            "correct_answer": "B",
+            "explanation": "Increasing key length expands keyspace, making brute-force attacks more difficult."
+        },
+        {
+            "question": "During a secure message exchange, the sender and receiver both compute an HMAC using the same secret key. What ensures message authenticity?",
+            "option_a": "A. The use of encryption",
+            "option_b": "B. The secrecy of the shared key",
+            "option_c": "C. The message size",
+            "option_d": "D. The hash length",
+            "correct_answer": "B",
+            "explanation": "Authenticity is guaranteed because only the sender and receiver know the shared secret key."
+        },
+        {
+            "question": "Which situation demonstrates proper key revocation?",
+            "option_a": "A. Increasing the key length",
+            "option_b": "B. Informing all parties that a compromised key should not be used",
+            "option_c": "C. Encrypting the key again",
+            "option_d": "D. Compressing the key file",
+            "correct_answer": "B",
+            "explanation": "Key revocation notifies parties that a key has been compromised."
+        },
+        {
+            "question": "If a cryptographic system uses a 56-bit key and increases it to 57 bits, what happens to the keyspace?",
+            "option_a": "A. It doubles",
+            "option_b": "B. It halves",
+            "option_c": "C. It remains unchanged",
+            "option_d": "D. It triples",
+            "correct_answer": "A",
+            "explanation": "Each additional bit doubles the number of possible keys."
+        },
+        {
+            "question": "Why might an administrator choose a shorter cryptographic key despite reduced security?",
+            "option_a": "A. To increase encryption complexity",
+            "option_b": "B. To improve system performance",
+            "option_c": "C. To reduce authentication accuracy",
+            "option_d": "D. To decrease keyspace",
+            "correct_answer": "B",
+            "explanation": "Shorter keys require fewer computational resources and improve performance."
+        },
+        {
+            "question": "Which characteristic of HMAC prevents man-in-the-middle attacks?",
+            "option_a": "A. Fixed output length",
+            "option_b": "B. Secret key usage",
+            "option_c": "C. Data compression",
+            "option_d": "D. Hash randomness",
+            "correct_answer": "B",
+            "explanation": "The use of a secret key ensures attackers cannot generate valid HMAC values."
+        },
+        {
+            "question": "Why is hashing suitable for verifying downloaded software files?",
+            "option_a": "A. It encrypts the files",
+            "option_b": "B. It ensures file authenticity",
+            "option_c": "C. It allows comparison of file integrity",
+            "option_d": "D. It compresses files",
+            "correct_answer": "C",
+            "explanation": "Hashes allow users to verify that downloaded files have not been altered."
+        },
+        {
+            "question": "What would happen if the secret key used in HMAC were leaked?",
+            "option_a": "A. Authentication would be compromised",
+            "option_b": "B. Hash functions would stop working",
+            "option_c": "C. Data would become encrypted",
+            "option_d": "D. Keyspace would increase",
+            "correct_answer": "A",
+            "explanation": "If the secret key is leaked, attackers could generate valid HMACs."
+        },
+        {
+            "question": "Which design challenge is often considered the most difficult part of building a cryptosystem?",
+            "option_a": "A. Data compression",
+            "option_b": "B. Key management",
+            "option_c": "C. Network configuration",
+            "option_d": "D. File encryption",
+            "correct_answer": "B",
+            "explanation": "Key management is widely regarded as the most complex aspect of cryptosystem design."
+        },
+        {
+            "question": "Which of the following best describes the relationship between key length and keyspace?",
+            "option_a": "A. Keyspace increases linearly",
+            "option_b": "B. Keyspace increases exponentially",
+            "option_c": "C. Keyspace remains constant",
+            "option_d": "D. Keyspace decreases exponentially",
+            "correct_answer": "B",
+            "explanation": "Keyspace grows exponentially as key length increases."
+        },
+        {
+            "question": "A system administrator wants both strong security and good performance when choosing key length. What must they balance?",
+            "option_a": "A. Encryption speed and protection strength",
+            "option_b": "B. File size and compression ratio",
+            "option_c": "C. Hash length and network latency",
+            "option_d": "D. Authentication and bandwidth",
+            "correct_answer": "A",
+            "explanation": "Administrators must balance performance and security when selecting key length."
+        },
+        {
+            "question": "Which hash algorithm processes 64 computation steps compared to SHA-1’s 80 steps?",
+            "option_a": "A. SHA-256",
+            "option_b": "B. MD5",
+            "option_c": "C. SHA-512",
+            "option_d": "D. AES",
+            "correct_answer": "B",
+            "explanation": "MD5 uses 64 computation steps while SHA-1 uses 80."
+        },
+        {
+            "question": "Which scenario best demonstrates the use of HMAC in practice?",
+            "option_a": "A. Compressing files before upload",
+            "option_b": "B. Authenticating routing protocols using a shared secret",
+            "option_c": "C. Increasing network speed",
+            "option_d": "D. Encrypting a database",
+            "correct_answer": "B",
+            "explanation": "HMAC is often used in routing protocols and IPsec authentication."
+        },
+        {
+            "question": "Why is SHA generally considered stronger than MD5?",
+            "option_a": "A. It uses symmetric encryption",
+            "option_b": "B. It has a larger message digest size",
+            "option_c": "C. It compresses data better",
+            "option_d": "D. It uses shorter computation steps",
+            "correct_answer": "B",
+            "explanation": "Larger digest sizes make collision and brute-force attacks harder."
+        }
+    ]
+}

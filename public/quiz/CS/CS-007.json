@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "Computer/information security controls are divided into how many distinct categories?",
+            "option_a": "A. Two — Physical and Technical",
+            "option_b": "B. Three — Physical, Technical/Logical, and Administrative",
+            "option_c": "C. Four — Physical, Technical, Administrative, and Compensating",
+            "option_d": "D. Five — Preventive, Detective, Deterrent, Corrective, and Recovery",
+            "correct_answer": "B",
+            "explanation": "Security controls are divided into three distinct categories: Physical, Technical/Logical, and Administrative."
+        },
+        {
+            "question": "Which of the following BEST defines a Physical security control?",
+            "option_a": "A. Using encryption and access control lists to protect data on a network",
+            "option_b": "B. Implementing security policies and training programs for staff",
+            "option_c": "C. Implementation of security measures in a defined structure to deter or prevent unauthorized access to sensitive material",
+            "option_d": "D. Using software to monitor and log system events for irregularities",
+            "correct_answer": "C",
+            "explanation": "Physical controls involve implementing security measures in a physical structure to deter or prevent unauthorized access to sensitive material."
+        },
+        {
+            "question": "Which of the following is an example of a Physical security control?",
+            "option_a": "A. Access Control Lists (ACLs)",
+            "option_b": "B. File integrity auditing software",
+            "option_c": "C. Security awareness training",
+            "option_d": "D. Motion or thermal alarm systems",
+            "correct_answer": "D",
+            "explanation": "Motion or thermal alarm systems are physical controls used to detect movement or temperature changes in protected areas."
+        },
+        {
+            "question": "Network segregation and work area separation are classified under which type of security control?",
+            "option_a": "A. Technical/Logical controls",
+            "option_b": "B. Administrative controls",
+            "option_c": "C. Physical controls",
+            "option_d": "D. Compensating controls",
+            "correct_answer": "C",
+            "explanation": "Network segregation and work area separation are physical controls because they restrict access through physical or structural design."
+        },
+        {
+            "question": "Technical/Logical controls use technology to control access and usage of sensitive data. Which of the following is a Technical control?",
+            "option_a": "A. Security guards at building entrances",
+            "option_b": "B. Separation of duties policies",
+            "option_c": "C. Personnel recruitment strategies",
+            "option_d": "D. Encryption and smart cards",
+            "correct_answer": "D",
+            "explanation": "Encryption and smart cards are technical controls because they use technology to control access to sensitive information."
+        },
+        {
+            "question": "Access Control Lists (ACLs) and file integrity auditing software belong to which category of security control?",
+            "option_a": "A. Physical controls",
+            "option_b": "B. Administrative controls",
+            "option_c": "C. Compensating controls",
+            "option_d": "D. Technical/Logical controls",
+            "correct_answer": "D",
+            "explanation": "ACLs and file integrity auditing software are technical or logical controls because they rely on software and system mechanisms."
+        },
+        {
+            "question": "Administrative controls are best described as:",
+            "option_a": "A. Technology-based mechanisms that restrict access to data on a network",
+            "option_b": "B. Physical barriers installed to prevent unauthorized entry to secure areas",
+            "option_c": "C. Controls that define the human factors of security and determine access at all personnel levels",
+            "option_d": "D. Backup systems deployed after a security violation occurs",
+            "correct_answer": "C",
+            "explanation": "Administrative controls define human aspects of security such as policies, procedures, and personnel management."
+        },
+        {
+            "question": "Which of the following is an example of an Administrative security control?",
+            "option_a": "A. Surveillance cameras",
+            "option_b": "B. Encryption algorithms",
+            "option_c": "C. Network authentication",
+            "option_d": "D. Disaster preparedness and recovery plans",
+            "correct_answer": "D",
+            "explanation": "Disaster preparedness and recovery plans are administrative controls because they involve organizational policies and planning."
+        },
+        {
+            "question": "Which of the following correctly lists all the functional categories of security controls?",
+            "option_a": "A. Physical, Technical, Administrative, and Compensating",
+            "option_b": "B. Preventive, Detective, Corrective, and Recovery",
+            "option_c": "C. Preventive, Detective, Deterrent, Corrective, Recovery, and Compensating",
+            "option_d": "D. Proactive, Reactive, Restorative, and Alternative",
+            "correct_answer": "C",
+            "explanation": "Functional security control categories include Preventive, Detective, Deterrent, Corrective, Recovery, and Compensating."
+        },
+        {
+            "question": "Preventive controls are best described as:",
+            "option_a": "A. Controls designed to detect and report security violations after they occur",
+            "option_b": "B. Controls that fix the situation after a security violation has happened",
+            "option_c": "C. Proactive controls designed to discourage errors or irregularities from occurring",
+            "option_d": "D. Alternative controls used when primary controls cannot be used",
+            "correct_answer": "C",
+            "explanation": "Preventive controls are proactive measures that stop errors or security incidents before they occur."
+        },
+        {
+            "question": "Which of the following is an example of a Preventive control?",
+            "option_a": "A. Log reviews",
+            "option_b": "B. Monitoring systems",
+            "option_c": "C. Disaster recovery mechanisms",
+            "option_d": "D. Separation of duties",
+            "correct_answer": "D",
+            "explanation": "Separation of duties prevents fraud or errors by ensuring no single person controls all parts of a critical process."
+        },
+        {
+            "question": "Detective controls are specifically designed to:",
+            "option_a": "A. Stop security violations before they happen",
+            "option_b": "B. Discourage attackers from attempting an intrusion",
+            "option_c": "C. Find errors or irregularities after they have occurred",
+            "option_d": "D. Restore systems to their normal state after an attack",
+            "correct_answer": "C",
+            "explanation": "Detective controls identify and report errors or irregularities after they occur."
+        },
+        {
+            "question": "Security reviews, audits, and log reviews are examples of which type of control?",
+            "option_a": "A. Preventive controls",
+            "option_b": "B. Corrective controls",
+            "option_c": "C. Compensating controls",
+            "option_d": "D. Detective controls",
+            "correct_answer": "D",
+            "explanation": "Audits and log reviews detect irregularities and security incidents after they occur."
+        },
+        {
+            "question": "Deterrent controls are intended to:",
+            "option_a": "A. Automatically block unauthorized access attempts using technology",
+            "option_b": "B. Restore normal operations after a serious security incident",
+            "option_c": "C. Discourage potential attackers by signalling that attacks will be detected and defended",
+            "option_d": "D. Identify vulnerabilities in systems before attackers do",
+            "correct_answer": "C",
+            "explanation": "Deterrent controls discourage attackers by signaling strong monitoring and security practices."
+        },
+        {
+            "question": "A security team updates firewall rules immediately after detecting an attacker's IP address. This is an example of which control?",
+            "option_a": "A. Preventive control",
+            "option_b": "B. Detective control",
+            "option_c": "C. Deterrent control",
+            "option_d": "D. Corrective control",
+            "correct_answer": "D",
+            "explanation": "Corrective controls address and fix issues after a security incident occurs."
+        },
+        {
+            "question": "Recovery controls differ from Corrective controls in that they:",
+            "option_a": "A. Focus on preventing security violations before they happen",
+            "option_b": "B. Are applied in more serious situations to restore information and processing resources",
+            "option_c": "C. Are used only when all other controls have been bypassed",
+            "option_d": "D. Focus on deterring attackers rather than fixing damage",
+            "correct_answer": "B",
+            "explanation": "Recovery controls restore systems and data after serious security incidents."
+        },
+        {
+            "question": "Compensating controls are best described as:",
+            "option_a": "A. Controls that prevent unauthorized physical access to a building",
+            "option_b": "B. Controls specifically designed to detect irregularities in real-time",
+            "option_c": "C. Alternative arrangements for other controls when original controls have failed or cannot be used",
+            "option_d": "D. Controls that punish employees who breach security policies",
+            "correct_answer": "C",
+            "explanation": "Compensating controls provide alternative protections when primary controls cannot be implemented."
+        },
+        {
+            "question": "Information Risk Management (IRM) is defined as:",
+            "option_a": "A. The elimination of all risks within an organisation's IT infrastructure",
+            "option_b": "B. The process of identifying and assessing risk, reducing it to an acceptable level, and implementing mechanisms to maintain that level",
+            "option_c": "C. A regulatory framework that mandates specific security controls for all industries",
+            "option_d": "D. The transfer of all risk responsibilities to a third-party provider",
+            "correct_answer": "B",
+            "explanation": "IRM involves identifying risks, reducing them to acceptable levels, and maintaining those levels through controls."
+        },
+        {
+            "question": "In risk management terminology, a Vulnerability is defined as:",
+            "option_a": "A. The likelihood of a threat agent exploiting a weakness",
+            "option_b": "B. The potential financial loss resulting from a security incident",
+            "option_c": "C. A system, network, or device weakness",
+            "option_d": "D. The entity that identifies and exploits a weakness to attack a victim",
+            "correct_answer": "C",
+            "explanation": "A vulnerability is a weakness in a system, network, or device that can be exploited."
+        },
+        {
+            "question": "What is a Threat Agent in the context of risk management?",
+            "option_a": "A. A software tool that scans for vulnerabilities in systems",
+            "option_b": "B. The potential danger posed by a weakness in a system or device",
+            "option_c": "C. A countermeasure put in place to mitigate potential risk",
+            "option_d": "D. The entity that identifies a vulnerability and uses it to attack the victim",
+            "correct_answer": "D",
+            "explanation": "A threat agent is the entity that exploits vulnerabilities to carry out attacks."
+        },
+        {
+            "question": "An organisation decides to purchase cyber insurance to shift the financial responsibility of a risk to a third party. Which risk management strategy is this?",
+            "option_a": "A. Accept",
+            "option_b": "B. Mitigate",
+            "option_c": "C. Avoid",
+            "option_d": "D. Transfer",
+            "correct_answer": "D",
+            "explanation": "Risk transfer shifts financial responsibility to another party such as an insurance provider."
+        },
+        {
+            "question": "A company decides to shut down an outdated system that poses a high security risk rather than investing in securing it. Which risk management approach is this?",
+            "option_a": "A. Transfer",
+            "option_b": "B. Accept",
+            "option_c": "C. Mitigate",
+            "option_d": "D. Avoid",
+            "correct_answer": "D",
+            "explanation": "Risk avoidance eliminates exposure to the risk by removing the vulnerable asset or activity."
+        },
+        {
+            "question": "In Quantitative Risk Analysis, what does SLE (Single Loss Expectancy) represent?",
+            "option_a": "A. The annual cost of implementing a security safeguard",
+            "option_b": "B. The frequency with which a threat is expected to occur within a year",
+            "option_c": "C. The percentage of asset value that would be lost in a single incident",
+            "option_d": "D. The financial loss expected from a single occurrence of a threat (Asset Value × Exposure Factor)",
+            "correct_answer": "D",
+            "explanation": "SLE equals Asset Value multiplied by Exposure Factor and represents the loss from one incident."
+        },
+        {
+            "question": "A server is valued at Rs. 200,000. A flood is estimated to cause 40% damage and is expected to occur once every 5 years (ARO = 0.2). What is the Annualized Loss Expectancy (ALE)?",
+            "option_a": "A. Rs. 80,000",
+            "option_b": "B. Rs. 40,000",
+            "option_c": "C. Rs. 16,000",
+            "option_d": "D. Rs. 200,000",
+            "correct_answer": "C",
+            "explanation": "First compute SLE: 200,000 × 0.40 = 80,000. Then ALE = 80,000 × 0.2 = 16,000."
+        },
+        {
+            "question": "The Safeguard Cost/Benefit formula in Quantitative Risk Analysis is:",
+            "option_a": "A. ALE before Safeguard + ALE after Safeguard + Annual Cost of Safeguard",
+            "option_b": "B. ALE before Safeguard − ALE after Safeguard − Annual Cost of Safeguard",
+            "option_c": "C. SLE × ARO − Annual Cost of Safeguard",
+            "option_d": "D. Asset Value × Exposure Factor − Annual Cost of Safeguard",
+            "correct_answer": "B",
+            "explanation": "Safeguard Cost/Benefit equals ALE before safeguard minus ALE after safeguard minus the annual cost of the safeguard."
+        }
+    ]
+}

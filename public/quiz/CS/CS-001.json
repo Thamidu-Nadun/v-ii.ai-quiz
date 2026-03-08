@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "According to the NIST Computer Security Handbook, what is the primary goal of computer security?",
+            "option_a": "A. To increase system processing speed",
+            "option_b": "B. To protect an automated information system by preserving confidentiality, integrity, and availability",
+            "option_c": "C. To ensure all systems are connected to the internet",
+            "option_d": "D. To eliminate all software bugs",
+            "correct_answer": "B",
+            "explanation": "NIST defines computer security as protecting an automated information system to preserve confidentiality, integrity, and availability of system resources."
+        },
+        {
+            "question": "Which of the following best describes Information Security (InfoSec)?",
+            "option_a": "A. Protection of information systems from unauthorized access, use, disclosure, disruption, modification, or destruction",
+            "option_b": "B. Protecting only computer hardware from damage",
+            "option_c": "C. Ensuring that operating systems run efficiently",
+            "option_d": "D. Monitoring internet traffic for faster connectivity",
+            "correct_answer": "A",
+            "explanation": "Information Security focuses on protecting information and information systems from unauthorized actions that could compromise confidentiality, integrity, and availability."
+        },
+        {
+            "question": "Which of the following is NOT part of the CIA triad?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Integrity",
+            "option_c": "C. Availability",
+            "option_d": "D. Authentication",
+            "correct_answer": "D",
+            "explanation": "The CIA triad consists of Confidentiality, Integrity, and Availability. Authentication is an additional security objective but not part of the CIA triad."
+        },
+        {
+            "question": "What does confidentiality ensure in a computer security system?",
+            "option_a": "A. Information is modified only by authorized users",
+            "option_b": "B. Information is always available to everyone",
+            "option_c": "C. Information is not disclosed to unauthorized individuals",
+            "option_d": "D. Systems run without hardware failures",
+            "correct_answer": "C",
+            "explanation": "Confidentiality ensures that sensitive information is accessible only to authorized individuals."
+        },
+        {
+            "question": "Which concept ensures that information and programs are changed only in an authorized manner?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Integrity",
+            "option_c": "C. Availability",
+            "option_d": "D. Accountability",
+            "correct_answer": "B",
+            "explanation": "Integrity ensures that data and programs are modified only by authorized users in authorized ways."
+        },
+        {
+            "question": "What does availability mean in the context of computer security?",
+            "option_a": "A. Ensuring authorized users have timely access to systems and data",
+            "option_b": "B. Encrypting all system data",
+            "option_c": "C. Preventing users from accessing systems",
+            "option_d": "D. Allowing unlimited access to the system",
+            "correct_answer": "A",
+            "explanation": "Availability ensures that systems and information are accessible to authorized users when needed."
+        },
+        {
+            "question": "Which security objective allows verification that users are who they claim to be?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability",
+            "option_c": "C. Authenticity",
+            "option_d": "D. Confidentiality",
+            "correct_answer": "C",
+            "explanation": "Authenticity ensures that entities such as users or systems are verified as genuine."
+        },
+        {
+            "question": "What is the purpose of accountability in computer security?",
+            "option_a": "A. Prevent hardware failure",
+            "option_b": "B. Trace actions performed by an entity back to that entity",
+            "option_c": "C. Encrypt all communication",
+            "option_d": "D. Prevent software bugs",
+            "correct_answer": "B",
+            "explanation": "Accountability ensures that actions performed within a system can be traced back to the responsible entity."
+        },
+        {
+            "question": "In the computer security model, what is a vulnerability?",
+            "option_a": "A. A feature that increases system performance",
+            "option_b": "B. A weakness in system design or implementation that can be exploited",
+            "option_c": "C. A type of malware",
+            "option_d": "D. A backup mechanism",
+            "correct_answer": "B",
+            "explanation": "A vulnerability is a flaw or weakness that can be exploited to violate a system’s security policy."
+        },
+        {
+            "question": "What is a threat in computer security?",
+            "option_a": "A. A confirmed system breach",
+            "option_b": "B. A possible danger that could exploit a vulnerability",
+            "option_c": "C. A system update",
+            "option_d": "D. A type of firewall rule",
+            "correct_answer": "B",
+            "explanation": "A threat is a potential danger that may exploit vulnerabilities and cause harm."
+        },
+        {
+            "question": "What is an attack in the computer security model?",
+            "option_a": "A. A theoretical vulnerability",
+            "option_b": "B. A threat that has been carried out",
+            "option_c": "C. A security policy",
+            "option_d": "D. A backup procedure",
+            "correct_answer": "B",
+            "explanation": "An attack occurs when a threat is executed to exploit a vulnerability."
+        },
+        {
+            "question": "Which type of attack attempts to gain information without affecting system resources?",
+            "option_a": "A. Active attack",
+            "option_b": "B. Passive attack",
+            "option_c": "C. Internal attack",
+            "option_d": "D. Malware attack",
+            "correct_answer": "B",
+            "explanation": "Passive attacks aim to obtain information without altering system resources."
+        },
+        {
+            "question": "Which of the following is an example of an active attack?",
+            "option_a": "A. Traffic analysis",
+            "option_b": "B. Eavesdropping",
+            "option_c": "C. Data modification",
+            "option_d": "D. Monitoring communication",
+            "correct_answer": "C",
+            "explanation": "Active attacks involve modifying data or affecting system operations."
+        },
+        {
+            "question": "What is an exploit?",
+            "option_a": "A. A backup file",
+            "option_b": "B. A tool used to scan networks",
+            "option_c": "C. A method or code that takes advantage of a vulnerability",
+            "option_d": "D. A type of firewall",
+            "correct_answer": "C",
+            "explanation": "An exploit is software or commands used to take advantage of a vulnerability."
+        },
+        {
+            "question": "What is the primary purpose of vulnerability assessment?",
+            "option_a": "A. Destroy system vulnerabilities",
+            "option_b": "B. Identify and prioritize vulnerabilities in systems",
+            "option_c": "C. Replace system hardware",
+            "option_d": "D. Monitor employee performance",
+            "correct_answer": "B",
+            "explanation": "Vulnerability assessment identifies, classifies, and prioritizes vulnerabilities."
+        },
+        {
+            "question": "What is penetration testing?",
+            "option_a": "A. A legal process of attacking a system to identify vulnerabilities",
+            "option_b": "B. Installing antivirus software",
+            "option_c": "C. Encrypting system files",
+            "option_d": "D. Backing up databases",
+            "correct_answer": "A",
+            "explanation": "Penetration testing simulates attacks to find vulnerabilities that attackers could exploit."
+        },
+        {
+            "question": "Which threat category involves unauthorized access to sensitive information?",
+            "option_a": "A. Disruption",
+            "option_b": "B. Unauthorized disclosure",
+            "option_c": "C. Usurpation",
+            "option_d": "D. Deception",
+            "correct_answer": "B",
+            "explanation": "Unauthorized disclosure threatens confidentiality by exposing sensitive data."
+        },
+        {
+            "question": "Which attack type occurs when an attacker pretends to be an authorized user?",
+            "option_a": "A. Replay",
+            "option_b": "B. Masquerade",
+            "option_c": "C. Traffic analysis",
+            "option_d": "D. Obstruction",
+            "correct_answer": "B",
+            "explanation": "Masquerade attacks involve impersonating an authorized user."
+        },
+        {
+            "question": "Which threat category affects system availability and integrity?",
+            "option_a": "A. Deception",
+            "option_b": "B. Disruption",
+            "option_c": "C. Unauthorized disclosure",
+            "option_d": "D. Inference",
+            "correct_answer": "B",
+            "explanation": "Disruption attacks target system availability and sometimes integrity."
+        },
+        {
+            "question": "Which type of passive attack analyzes patterns of communication rather than the actual content?",
+            "option_a": "A. Replay",
+            "option_b": "B. Traffic analysis",
+            "option_c": "C. Masquerade",
+            "option_d": "D. Corruption",
+            "correct_answer": "B",
+            "explanation": "Traffic analysis studies communication patterns even if the data is encrypted."
+        },
+        {
+            "question": "Which of the following is a goal of penetration testing?",
+            "option_a": "A. Increase system speed",
+            "option_b": "B. Identify weak spots in security",
+            "option_c": "C. Remove all user accounts",
+            "option_d": "D. Replace system hardware",
+            "correct_answer": "B",
+            "explanation": "Penetration testing aims to identify security weaknesses."
+        },
+        {
+            "question": "Which attack prevents legitimate users from accessing system resources?",
+            "option_a": "A. Replay attack",
+            "option_b": "B. Denial of Service",
+            "option_c": "C. Traffic analysis",
+            "option_d": "D. Inference",
+            "correct_answer": "B",
+            "explanation": "Denial of Service attacks disrupt system availability."
+        },
+        {
+            "question": "In the OSI Security Architecture, what is a security mechanism?",
+            "option_a": "A. A type of malware",
+            "option_b": "B. A process used to detect, prevent, or recover from attacks",
+            "option_c": "C. A system vulnerability",
+            "option_d": "D. A network protocol",
+            "correct_answer": "B",
+            "explanation": "Security mechanisms implement methods to detect, prevent, or recover from attacks."
+        },
+        {
+            "question": "Which OSI security service ensures that a sender or receiver cannot deny a transmitted message?",
+            "option_a": "A. Authentication",
+            "option_b": "B. Data integrity",
+            "option_c": "C. Nonrepudiation",
+            "option_d": "D. Access control",
+            "correct_answer": "C",
+            "explanation": "Nonrepudiation ensures that the sender or receiver cannot deny sending or receiving data."
+        },
+        {
+            "question": "Which OSI security service restricts unauthorized access to system resources?",
+            "option_a": "A. Authentication",
+            "option_b": "B. Access control",
+            "option_c": "C. Confidentiality",
+            "option_d": "D. Availability",
+            "correct_answer": "B",
+            "explanation": "Access control limits system access to authorized users."
+        },
+        {
+            "question": "Which security strategy component defines what security measures should achieve?",
+            "option_a": "A. Policy",
+            "option_b": "B. Mechanism",
+            "option_c": "C. Assurance",
+            "option_d": "D. Evaluation",
+            "correct_answer": "A",
+            "explanation": "Policy specifies what security goals should be achieved."
+        },
+        {
+            "question": "Which security strategy aspect determines whether the security system works as intended?",
+            "option_a": "A. Implementation",
+            "option_b": "B. Policy",
+            "option_c": "C. Assurance",
+            "option_d": "D. Authentication",
+            "correct_answer": "C",
+            "explanation": "Assurance measures confidence that security mechanisms function correctly."
+        },
+        {
+            "question": "Which security implementation action focuses on identifying attacks when prevention fails?",
+            "option_a": "A. Detection",
+            "option_b": "B. Prevention",
+            "option_c": "C. Recovery",
+            "option_d": "D. Response",
+            "correct_answer": "A",
+            "explanation": "Detection identifies security incidents when prevention measures fail."
+        },
+        {
+            "question": "Which implementation action stops an attack once it has been detected?",
+            "option_a": "A. Prevention",
+            "option_b": "B. Recovery",
+            "option_c": "C. Response",
+            "option_d": "D. Evaluation",
+            "correct_answer": "C",
+            "explanation": "Response actions halt attacks and limit damage."
+        },
+        {
+            "question": "Which implementation action restores systems after a successful attack?",
+            "option_a": "A. Prevention",
+            "option_b": "B. Recovery",
+            "option_c": "C. Response",
+            "option_d": "D. Assurance",
+            "correct_answer": "B",
+            "explanation": "Recovery restores systems using backups or other methods."
+        },
+        {
+            "question": "An attacker captures encrypted traffic and studies communication patterns without altering data. Which attack is this?",
+            "option_a": "A. Replay",
+            "option_b": "B. Traffic analysis",
+            "option_c": "C. Masquerade",
+            "option_d": "D. Data modification",
+            "correct_answer": "B",
+            "explanation": "Traffic analysis is a passive attack that examines communication patterns."
+        },
+        {
+            "question": "An attacker records a legitimate login request and retransmits it later to gain access. Which attack is this?",
+            "option_a": "A. Replay attack",
+            "option_b": "B. Masquerade attack",
+            "option_c": "C. Denial of Service",
+            "option_d": "D. Corruption",
+            "correct_answer": "A",
+            "explanation": "Replay attacks involve capturing and retransmitting valid data to gain unauthorized access."
+        },
+        {
+            "question": "If an attacker modifies a database record without authorization, which security objective is violated?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Integrity",
+            "option_c": "C. Availability",
+            "option_d": "D. Authenticity",
+            "correct_answer": "B",
+            "explanation": "Unauthorized modification of data violates integrity."
+        },
+        {
+            "question": "If a company’s server becomes inaccessible due to a network flood attack, which objective is compromised?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Integrity",
+            "option_c": "C. Availability",
+            "option_d": "D. Accountability",
+            "correct_answer": "C",
+            "explanation": "Denial of service attacks affect availability."
+        },
+        {
+            "question": "Which entity is responsible for carrying out an attack in the security model?",
+            "option_a": "A. Vulnerability",
+            "option_b": "B. Adversary",
+            "option_c": "C. Countermeasure",
+            "option_d": "D. Asset",
+            "correct_answer": "B",
+            "explanation": "An adversary or attacker is the entity performing the attack."
+        },
+        {
+            "question": "What does risk represent in computer security?",
+            "option_a": "A. Number of vulnerabilities",
+            "option_b": "B. Expected loss due to a particular attack",
+            "option_c": "C. System uptime percentage",
+            "option_d": "D. Number of firewalls installed",
+            "correct_answer": "B",
+            "explanation": "Risk refers to the expected loss resulting from an attack exploiting vulnerabilities."
+        },
+        {
+            "question": "Which attack category involves modifying or replacing valid data with false data?",
+            "option_a": "A. Deception",
+            "option_b": "B. Unauthorized disclosure",
+            "option_c": "C. Disruption",
+            "option_d": "D. Usurpation",
+            "correct_answer": "A",
+            "explanation": "Deception attacks involve falsification or masquerade."
+        },
+        {
+            "question": "Which threat type includes attacks like misappropriation and misuse?",
+            "option_a": "A. Unauthorized disclosure",
+            "option_b": "B. Disruption",
+            "option_c": "C. Usurpation",
+            "option_d": "D. Deception",
+            "correct_answer": "C",
+            "explanation": "Usurpation threats involve unauthorized control of system resources."
+        },
+        {
+            "question": "What is the primary function of evaluation in computer security?",
+            "option_a": "A. Prevent vulnerabilities",
+            "option_b": "B. Examine systems through testing and analysis",
+            "option_c": "C. Replace software components",
+            "option_d": "D. Increase network bandwidth",
+            "correct_answer": "B",
+            "explanation": "Evaluation involves testing and analysis to assess security effectiveness."
+        },
+        {
+            "question": "Which factor must be considered when designing a security policy?",
+            "option_a": "A. Only the number of employees",
+            "option_b": "B. Only network speed",
+            "option_c": "C. Value of assets, vulnerabilities, threats, and cost trade-offs",
+            "option_d": "D. Only software updates",
+            "correct_answer": "C",
+            "explanation": "Security policy must consider asset value, vulnerabilities, threats, and cost-benefit trade-offs."
+        },
+        {
+            "question": "Which type of attack damages hardware or system resources to make them unusable?",
+            "option_a": "A. Incapacitation",
+            "option_b": "B. Traffic analysis",
+            "option_c": "C. Replay",
+            "option_d": "D. Inference",
+            "correct_answer": "A",
+            "explanation": "Incapacitation attacks damage system resources affecting availability."
+        }
+    ]
+}

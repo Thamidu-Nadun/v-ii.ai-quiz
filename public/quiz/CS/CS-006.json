@@ -1,0 +1,247 @@
+{
+    "questions": [
+        {
+            "question": "What is the NIST Computer Security Handbook definition of Computer Security?",
+            "option_a": "A. The process of encrypting data to prevent unauthorized access by external parties",
+            "option_b": "B. The protection afforded to an automated information system to preserve integrity, availability, and confidentiality of its resources",
+            "option_c": "C. The practice of monitoring network traffic to detect and block malicious activity",
+            "option_d": "D. A set of policies and procedures used to govern employee access to company systems",
+            "correct_answer": "B",
+            "explanation": "Computer Security is defined as the protection of an automated information system to preserve integrity, availability, and confidentiality of its resources."
+        },
+        {
+            "question": "Which three letters represent the key objectives of Computer Security, often referred to as the 'CIA Triad'?",
+            "option_a": "A. Communication, Identification, Authentication",
+            "option_b": "B. Confidentiality, Integrity, Availability",
+            "option_c": "C. Control, Inspection, Assurance",
+            "option_d": "D. Cryptography, Intrusion detection, Access control",
+            "correct_answer": "B",
+            "explanation": "The three key objectives are Confidentiality (C), Integrity (I), and Availability (A), commonly known as the CIA Triad."
+        },
+        {
+            "question": "Information Security (InfoSec) is defined as the protection of information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide:",
+            "option_a": "A. Authentication, Authorization, and Auditing",
+            "option_b": "B. Prevention, Detection, and Recovery",
+            "option_c": "C. Confidentiality, Integrity, and Availability",
+            "option_d": "D. Encryption, Firewall, and Antivirus protection",
+            "correct_answer": "C",
+            "explanation": "Information Security aims to protect information and systems to provide Confidentiality, Integrity, and Availability."
+        },
+        {
+            "question": "Cybersecurity is also referred to as:",
+            "option_a": "A. Network administration",
+            "option_b": "B. Digital forensics",
+            "option_c": "C. Information technology security",
+            "option_d": "D. Data governance",
+            "correct_answer": "C",
+            "explanation": "Cybersecurity is also called information technology security and focuses on protecting networks, devices, and data from unauthorized access."
+        },
+        {
+            "question": "What does 'loss of Confidentiality' mean in the context of computer security?",
+            "option_a": "A. Unauthorized modification of stored data",
+            "option_b": "B. Disruption of service to authorized users",
+            "option_c": "C. Unauthorized disclosure of information",
+            "option_d": "D. Failure of a system to perform its intended function",
+            "correct_answer": "C",
+            "explanation": "Loss of Confidentiality refers to the unauthorized disclosure of information to parties who should not have access."
+        },
+        {
+            "question": "The 'Privacy' component of Confidentiality assures that owners have control over:",
+            "option_a": "A. How their system is patched and updated by IT administrators",
+            "option_b": "B. What information related to them may be collected, stored, and to whom it may be disclosed",
+            "option_c": "C. Which encryption algorithm is used to protect their data",
+            "option_d": "D. Who is allowed to physically access the data centre",
+            "correct_answer": "B",
+            "explanation": "Privacy ensures owners control what personal information is collected, stored, and disclosed."
+        },
+        {
+            "question": "Which of the following best describes 'Data Integrity'?",
+            "option_a": "A. Data is accessible at all times to authorized users without disruption",
+            "option_b": "B. Data is encrypted using a government-approved algorithm",
+            "option_c": "C. Information and programs are changed only in a specified and authorized manner",
+            "option_d": "D. Data is stored in a redundant system to prevent loss during hardware failure",
+            "correct_answer": "C",
+            "explanation": "Data Integrity ensures that information and programs are modified only in an authorized manner."
+        },
+        {
+            "question": "What does 'loss of Integrity' mean?",
+            "option_a": "A. Authorized users are denied access to system services",
+            "option_b": "B. Sensitive data is disclosed to unauthorized parties",
+            "option_c": "C. Unauthorized modification or destruction of information",
+            "option_d": "D. A system fails to authenticate users correctly",
+            "correct_answer": "C",
+            "explanation": "Loss of Integrity occurs when information is modified or destroyed without authorization."
+        },
+        {
+            "question": "NIST's requirement for Availability is:",
+            "option_a": "A. Preserving authorized restrictions on information access and disclosure",
+            "option_b": "B. Guarding against improper information modification or destruction",
+            "option_c": "C. Ensuring timely and reliable access and use of information",
+            "option_d": "D. Verifying that users are who they claim to be",
+            "correct_answer": "C",
+            "explanation": "Availability ensures that information and resources are accessible to authorized users when needed."
+        },
+        {
+            "question": "Authenticity as a security objective means:",
+            "option_a": "A. The ability to trace actions back to the entity that performed them",
+            "option_b": "B. Ensuring data is not modified during transmission",
+            "option_c": "C. Being able to verify that users are who they claim to be and that data comes from a trusted source",
+            "option_d": "D. Preventing unauthorized users from accessing system resources",
+            "correct_answer": "C",
+            "explanation": "Authenticity ensures that users are verified and that data originates from trusted sources."
+        },
+        {
+            "question": "Accountability in computer security supports which of the following?",
+            "option_a": "A. Encryption of data at rest and in transit",
+            "option_b": "B. Nonrepudiation, deterrence, fault isolation, intrusion detection and prevention, after-action recovery, and legal action",
+            "option_c": "C. Password complexity and multi-factor authentication enforcement",
+            "option_d": "D. Real-time monitoring of all network packets for malicious content",
+            "correct_answer": "B",
+            "explanation": "Accountability allows tracing actions back to the responsible entity, supporting nonrepudiation and security recovery measures."
+        },
+        {
+            "question": "In the Computer Security Model (RFC 2828), a 'Vulnerability' is defined as:",
+            "option_a": "A. A confirmed attack that has successfully compromised a system",
+            "option_b": "B. A flaw or weakness in a system's design, implementation, or operation that could be exploited to violate its security policy",
+            "option_c": "C. The expected financial loss due to a successful cyberattack",
+            "option_d": "D. An entity that carries out an attack against a system",
+            "correct_answer": "B",
+            "explanation": "A Vulnerability is a flaw or weakness in a system that could be exploited to violate security policy."
+        },
+        {
+            "question": "What is the difference between a 'Threat' and an 'Attack' in the security model?",
+            "option_a": "A. A threat is carried out by insiders; an attack is always from outside",
+            "option_b": "B. A threat is a possible danger that might exploit a vulnerability; an attack is a threat that is actually carried out",
+            "option_c": "C. A threat is a technical weakness; an attack is a management oversight",
+            "option_d": "D. A threat targets hardware; an attack targets software or data",
+            "correct_answer": "B",
+            "explanation": "A threat is a potential danger, whereas an attack is when the threat is executed against the system."
+        },
+        {
+            "question": "A 'Countermeasure' is defined as any means taken to:",
+            "option_a": "A. Identify vulnerabilities before they can be exploited by an attacker",
+            "option_b": "B. Address, prevent, detect, or recover from a security attack",
+            "option_c": "C. Classify and label information according to its sensitivity",
+            "option_d": "D. Monitor employees for signs of malicious insider activity",
+            "correct_answer": "B",
+            "explanation": "Countermeasures are actions taken to prevent, detect, or recover from attacks."
+        },
+        {
+            "question": "In the RFC 2828 model, 'Risk' is defined as:",
+            "option_a": "A. The probability that a vulnerability will be discovered by an attacker",
+            "option_b": "B. The number of known vulnerabilities present in a system at any given time",
+            "option_c": "C. The expected loss due to a particular attack",
+            "option_d": "D. The severity rating assigned to a vulnerability by a security team",
+            "correct_answer": "C",
+            "explanation": "Risk is the expected loss from a specific attack and informs the need for countermeasures."
+        },
+        {
+            "question": "An 'Inference' attack under Unauthorized Disclosure involves:",
+            "option_a": "A. The attacker directly accessing a database by breaking into the system",
+            "option_b": "B. The attacker intercepting data while it is being transmitted across a network",
+            "option_c": "C. The attacker gaining information by analysing patterns of network traffic",
+            "option_d": "D. The attacker obtaining login credentials through social engineering",
+            "correct_answer": "C",
+            "explanation": "An Inference attack gains information from patterns of traffic without direct access to the data."
+        },
+        {
+            "question": "A 'Masquerade' attack under Deception involves:",
+            "option_a": "A. The attacker overloading a system to deny service to legitimate users",
+            "option_b": "B. The attacker modifying data during transmission to alter its content",
+            "option_c": "C. The attacker accessing the system while pretending to be an authorized user",
+            "option_d": "D. The attacker analysing network traffic patterns to extract sensitive data",
+            "correct_answer": "C",
+            "explanation": "A Masquerade attack occurs when an attacker pretends to be an authorized user."
+        },
+        {
+            "question": "Which of the following is correct about a Passive Attack?",
+            "option_a": "A. It alters system resources and is easy to detect but hard to prevent",
+            "option_b": "B. It involves overloading communication channels to deny service",
+            "option_c": "C. It involves only learning or using information without affecting system resources, making it hard to detect",
+            "option_d": "D. It modifies or replaces valid data to produce false results",
+            "correct_answer": "C",
+            "explanation": "A Passive Attack only observes or uses information without changing resources, making detection difficult."
+        },
+        {
+            "question": "Which of the following is a category of Active Attack on communication networks?",
+            "option_a": "A. Traffic analysis",
+            "option_b": "B. Release of message contents",
+            "option_c": "C. Eavesdropping",
+            "option_d": "D. Denial of Service",
+            "correct_answer": "D",
+            "explanation": "Active Attacks modify system resources; Denial of Service is one category, while traffic analysis and eavesdropping are passive."
+        },
+        {
+            "question": "The 'Disruption' threat category threatens which CIA properties?",
+            "option_a": "A. Confidentiality only",
+            "option_b": "B. Integrity only",
+            "option_c": "C. Availability and Integrity",
+            "option_d": "D. Confidentiality and Availability",
+            "correct_answer": "C",
+            "explanation": "Disruption affects system Availability and Integrity, e.g., through incapacitation or corruption."
+        },
+        {
+            "question": "A 'Replay' active attack involves:",
+            "option_a": "A. An entity pretending to be a different authorized user to gain access",
+            "option_b": "B. Overloading a server until it stops responding to legitimate users",
+            "option_c": "C. Capturing a valid data transmission and retransmitting it to produce an unauthorized effect",
+            "option_d": "D. Inserting malicious code into a legitimate software application",
+            "correct_answer": "C",
+            "explanation": "Replay attacks capture and retransmit data to produce unauthorized effects."
+        },
+        {
+            "question": "An 'Exploit' in cybersecurity is best described as:",
+            "option_a": "A. A security policy document outlining acceptable system usage",
+            "option_b": "B. A piece of software, data, or sequence of commands that takes advantage of a bug or vulnerability to cause unintended behaviour",
+            "option_c": "C. A type of firewall rule that blocks known attack patterns",
+            "option_d": "D. A legitimate penetration testing technique used by ethical hackers",
+            "correct_answer": "B",
+            "explanation": "An Exploit leverages a bug or vulnerability to cause unintended system behavior."
+        },
+        {
+            "question": "Penetration Testing (pen testing) is also called:",
+            "option_a": "A. Vulnerability scanning",
+            "option_b": "B. Ethical hacking",
+            "option_c": "C. Risk assessment",
+            "option_d": "D. Security auditing",
+            "correct_answer": "B",
+            "explanation": "Penetration testing, also known as ethical hacking, tests systems for vulnerabilities."
+        },
+        {
+            "question": "Which of the following is NOT listed as a goal of Penetration Testing?",
+            "option_a": "A. Identify weak spots in an organization's security posture",
+            "option_b": "B. Measure compliance with its security policy",
+            "option_c": "C. Test staff awareness of security issues",
+            "option_d": "D. Install new security software across the organization",
+            "correct_answer": "D",
+            "explanation": "Installing new software is not a goal of pen testing; the goal is to identify vulnerabilities and test preparedness."
+        },
+        {
+            "question": "The OSI Security Architecture (ITU-T X.800) focuses on three key concepts. Which option lists all three correctly?",
+            "option_a": "A. Encryption, Firewall, and Intrusion Detection",
+            "option_b": "B. Authentication, Authorization, and Accounting",
+            "option_c": "C. Security Attack, Security Mechanism, and Security Service",
+            "option_d": "D. Confidentiality, Integrity, and Availability",
+            "correct_answer": "C",
+            "explanation": "X.800 focuses on Security Attack, Security Mechanism, and Security Service."
+        },
+        {
+            "question": "In X.800, the 'Nonrepudiation' security service is defined as:",
+            "option_a": "A. Limiting and controlling access to host systems through communication channels",
+            "option_b": "B. Ensuring that data received is exactly what was sent by an authorized entity",
+            "option_c": "C. Preventing the sender or receiver from denying a transmitted message",
+            "option_d": "D. Making sure that a communication is authentic and from a trusted source",
+            "correct_answer": "C",
+            "explanation": "Nonrepudiation prevents either party from denying the transmission or reception of a message."
+        },
+        {
+            "question": "Lampson's security strategy consists of three aspects. Which option lists them correctly?",
+            "option_a": "A. Prevention, Detection, and Recovery",
+            "option_b": "B. Specification/Policy, Implementation/Mechanisms, and Correctness/Assurance",
+            "option_c": "C. Authentication, Authorization, and Accountability",
+            "option_d": "D. Confidentiality, Integrity, and Availability",
+            "correct_answer": "B",
+            "explanation": "Lampson's strategy includes Specification/Policy, Implementation/Mechanisms, and Correctness/Assurance."
+        }
+    ]
+}

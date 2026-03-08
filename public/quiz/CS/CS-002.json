@@ -1,0 +1,436 @@
+{
+    "questions": [
+        {
+            "question": "Which category of security controls involves implementing measures within a physical structure to prevent unauthorized access to sensitive materials?",
+            "option_a": "A. Administrative controls",
+            "option_b": "B. Physical controls",
+            "option_c": "C. Technical controls",
+            "option_d": "D. Logical controls",
+            "correct_answer": "B",
+            "explanation": "Physical controls are security measures implemented within a physical environment to prevent unauthorized access to facilities or materials."
+        },
+        {
+            "question": "Which of the following is an example of a physical security control?",
+            "option_a": "A. Encryption",
+            "option_b": "B. Access control lists",
+            "option_c": "C. Surveillance cameras",
+            "option_d": "D. File integrity auditing software",
+            "correct_answer": "C",
+            "explanation": "Surveillance cameras are physical security mechanisms used to monitor and deter unauthorized physical access."
+        },
+        {
+            "question": "Which type of control uses technology to regulate access to data and systems over networks?",
+            "option_a": "A. Administrative control",
+            "option_b": "B. Preventive control",
+            "option_c": "C. Technical control",
+            "option_d": "D. Compensating control",
+            "correct_answer": "C",
+            "explanation": "Technical controls rely on technological mechanisms such as encryption, authentication, and access control systems."
+        },
+        {
+            "question": "Which of the following is an example of a technical security control?",
+            "option_a": "A. Security guards",
+            "option_b": "B. Smart cards",
+            "option_c": "C. Personnel training",
+            "option_d": "D. Disaster recovery plan",
+            "correct_answer": "B",
+            "explanation": "Smart cards are technological tools used to control system or facility access, making them technical controls."
+        },
+        {
+            "question": "Administrative controls mainly focus on which aspect of organizational security?",
+            "option_a": "A. Hardware security",
+            "option_b": "B. Network architecture",
+            "option_c": "C. Human factors and policies",
+            "option_d": "D. Encryption algorithms",
+            "correct_answer": "C",
+            "explanation": "Administrative controls define policies, procedures, and human resource practices that influence organizational security."
+        },
+        {
+            "question": "Which of the following belongs to administrative controls?",
+            "option_a": "A. Network authentication",
+            "option_b": "B. Training and awareness programs",
+            "option_c": "C. Motion detection systems",
+            "option_d": "D. Access control lists",
+            "correct_answer": "B",
+            "explanation": "Training and awareness programs are administrative controls that educate employees about security practices."
+        },
+        {
+            "question": "Controls designed to discourage errors or irregularities from occurring are known as:",
+            "option_a": "A. Preventive controls",
+            "option_b": "B. Detective controls",
+            "option_c": "C. Recovery controls",
+            "option_d": "D. Corrective controls",
+            "correct_answer": "A",
+            "explanation": "Preventive controls are proactive measures implemented to prevent security incidents before they occur."
+        },
+        {
+            "question": "Which of the following is an example of a preventive control?",
+            "option_a": "A. Log review",
+            "option_b": "B. Separation of duties",
+            "option_c": "C. Bugler alarm",
+            "option_d": "D. Security audit",
+            "correct_answer": "B",
+            "explanation": "Separation of duties reduces the risk of fraud or error by distributing responsibilities among different individuals."
+        },
+        {
+            "question": "Detective controls are primarily designed to:",
+            "option_a": "A. Prevent security incidents",
+            "option_b": "B. Restore systems after incidents",
+            "option_c": "C. Identify errors after they occur",
+            "option_d": "D. Replace failed security controls",
+            "correct_answer": "C",
+            "explanation": "Detective controls identify and detect errors or irregularities after they have occurred."
+        },
+        {
+            "question": "Which of the following is an example of a detective control?",
+            "option_a": "A. Log reviews",
+            "option_b": "B. Encryption",
+            "option_c": "C. Disaster recovery planning",
+            "option_d": "D. Employee training",
+            "correct_answer": "A",
+            "explanation": "Log reviews analyze system logs to identify suspicious activities after they occur."
+        },
+        {
+            "question": "Which type of control aims to discourage attackers by indicating that systems are monitored?",
+            "option_a": "A. Preventive controls",
+            "option_b": "B. Detective controls",
+            "option_c": "C. Deterrent controls",
+            "option_d": "D. Recovery controls",
+            "correct_answer": "C",
+            "explanation": "Deterrent controls discourage attacks by warning potential attackers that monitoring and defenses are in place."
+        },
+        {
+            "question": "A notice indicating that user activities are monitored is an example of:",
+            "option_a": "A. Corrective control",
+            "option_b": "B. Preventive control",
+            "option_c": "C. Deterrent control",
+            "option_d": "D. Recovery control",
+            "correct_answer": "C",
+            "explanation": "Monitoring notices discourage malicious actions by alerting potential attackers that surveillance is active."
+        },
+        {
+            "question": "Which type of control attempts to fix issues after a security violation has occurred?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Corrective",
+            "option_c": "C. Detective",
+            "option_d": "D. Deterrent",
+            "correct_answer": "B",
+            "explanation": "Corrective controls address and correct problems after security incidents occur."
+        },
+        {
+            "question": "Updating firewall rules to block an attacking IP address is an example of:",
+            "option_a": "A. Preventive control",
+            "option_b": "B. Corrective control",
+            "option_c": "C. Detective control",
+            "option_d": "D. Administrative control",
+            "correct_answer": "B",
+            "explanation": "Corrective controls modify security mechanisms to stop ongoing or repeated attacks."
+        },
+        {
+            "question": "Controls designed to restore systems after serious security incidents are known as:",
+            "option_a": "A. Recovery controls",
+            "option_b": "B. Preventive controls",
+            "option_c": "C. Detective controls",
+            "option_d": "D. Deterrent controls",
+            "correct_answer": "A",
+            "explanation": "Recovery controls help restore systems and data after major security incidents."
+        },
+        {
+            "question": "Which of the following is an example of a recovery control?",
+            "option_a": "A. Log analysis",
+            "option_b": "B. Backup systems",
+            "option_c": "C. Security guards",
+            "option_d": "D. Separation of duties",
+            "correct_answer": "B",
+            "explanation": "Backup systems enable organizations to restore data and operations after incidents."
+        },
+        {
+            "question": "Compensating controls are implemented when:",
+            "option_a": "A. Preventive controls are sufficient",
+            "option_b": "B. The original control cannot be implemented",
+            "option_c": "C. Systems are fully secure",
+            "option_d": "D. Threats are eliminated",
+            "correct_answer": "B",
+            "explanation": "Compensating controls provide alternative security mechanisms when primary controls cannot be used."
+        },
+        {
+            "question": "Risk in information security refers to:",
+            "option_a": "A. Guaranteed system failure",
+            "option_b": "B. Possibility of damage and its consequences",
+            "option_c": "C. A hardware malfunction",
+            "option_d": "D. Encryption weakness",
+            "correct_answer": "B",
+            "explanation": "Risk represents the likelihood of damage occurring and the resulting consequences."
+        },
+        {
+            "question": "Information Risk Management (IRM) is defined as:",
+            "option_a": "A. Eliminating all risks from an organization",
+            "option_b": "B. Ignoring minor threats",
+            "option_c": "C. Identifying, assessing, and reducing risks to acceptable levels",
+            "option_d": "D. Only detecting cyber attacks",
+            "correct_answer": "C",
+            "explanation": "IRM involves identifying risks, assessing them, and implementing measures to reduce them to acceptable levels."
+        },
+        {
+            "question": "Which term refers to a weakness in a system that can be exploited?",
+            "option_a": "A. Threat",
+            "option_b": "B. Vulnerability",
+            "option_c": "C. Countermeasure",
+            "option_d": "D. Exposure",
+            "correct_answer": "B",
+            "explanation": "A vulnerability is a weakness that can be exploited by attackers."
+        },
+        {
+            "question": "A potential danger that exploits a vulnerability is known as:",
+            "option_a": "A. Risk",
+            "option_b": "B. Exposure",
+            "option_c": "C. Threat",
+            "option_d": "D. Safeguard",
+            "correct_answer": "C",
+            "explanation": "A threat is a potential danger that can exploit vulnerabilities."
+        },
+        {
+            "question": "Which entity exploits vulnerabilities to perform an attack?",
+            "option_a": "A. Threat agent",
+            "option_b": "B. Countermeasure",
+            "option_c": "C. Exposure",
+            "option_d": "D. Asset owner",
+            "correct_answer": "A",
+            "explanation": "A threat agent is the entity that identifies and exploits vulnerabilities."
+        },
+        {
+            "question": "Exposure refers to:",
+            "option_a": "A. Eliminating vulnerabilities",
+            "option_b": "B. Potential to experience loss",
+            "option_c": "C. The cost of safeguards",
+            "option_d": "D. Backup procedures",
+            "correct_answer": "B",
+            "explanation": "Exposure describes the potential for losses due to threats."
+        },
+        {
+            "question": "Which measure is implemented to reduce risk?",
+            "option_a": "A. Threat",
+            "option_b": "B. Vulnerability",
+            "option_c": "C. Countermeasure",
+            "option_d": "D. Exposure",
+            "correct_answer": "C",
+            "explanation": "Countermeasures are safeguards implemented to mitigate risk."
+        },
+        {
+            "question": "Exposure Factor (EF) represents:",
+            "option_a": "A. Frequency of attacks",
+            "option_b": "B. Percentage of asset loss caused by a threat",
+            "option_c": "C. Total cost of an asset",
+            "option_d": "D. Number of vulnerabilities",
+            "correct_answer": "B",
+            "explanation": "Exposure Factor indicates the percentage of asset loss if a threat occurs."
+        },
+        {
+            "question": "Single Loss Expectancy (SLE) is calculated using:",
+            "option_a": "A. Asset Value × Exposure Factor",
+            "option_b": "B. Exposure Factor × ARO",
+            "option_c": "C. Asset Value × ARO",
+            "option_d": "D. Risk × Exposure",
+            "correct_answer": "A",
+            "explanation": "SLE is the expected loss from a single occurrence and is calculated by multiplying asset value by exposure factor."
+        },
+        {
+            "question": "Annualized Rate of Occurrence (ARO) represents:",
+            "option_a": "A. Percentage of asset loss",
+            "option_b": "B. Expected frequency of a threat per year",
+            "option_c": "C. Total asset value",
+            "option_d": "D. Security budget",
+            "correct_answer": "B",
+            "explanation": "ARO estimates how often a threat is expected to occur within a year."
+        },
+        {
+            "question": "Annualized Loss Expectancy (ALE) is calculated as:",
+            "option_a": "A. EF × ARO",
+            "option_b": "B. SLE × ARO",
+            "option_c": "C. Asset Value × EF × ARO",
+            "option_d": "D. SLE ÷ ARO",
+            "correct_answer": "B",
+            "explanation": "ALE represents the expected annual financial loss and is calculated by multiplying SLE by ARO."
+        },
+        {
+            "question": "An asset valued at Rs. 50,000 has an exposure factor of 20%. What is the Single Loss Expectancy?",
+            "option_a": "A. Rs. 5,000",
+            "option_b": "B. Rs. 8,000",
+            "option_c": "C. Rs. 10,000",
+            "option_d": "D. Rs. 20,000",
+            "correct_answer": "C",
+            "explanation": "SLE = Asset Value × EF = 50,000 × 0.20 = Rs. 10,000."
+        },
+        {
+            "question": "If SLE is Rs. 10,000 and ARO is 3, what is the ALE?",
+            "option_a": "A. Rs. 3,000",
+            "option_b": "B. Rs. 13,000",
+            "option_c": "C. Rs. 30,000",
+            "option_d": "D. Rs. 7,000",
+            "correct_answer": "C",
+            "explanation": "ALE = SLE × ARO = 10,000 × 3 = Rs. 30,000."
+        },
+        {
+            "question": "Which formula represents safeguard cost-benefit analysis?",
+            "option_a": "A. ALE before safeguard − ALE after safeguard − Annual safeguard cost",
+            "option_b": "B. SLE − EF",
+            "option_c": "C. Asset Value × Risk",
+            "option_d": "D. Risk × Exposure",
+            "correct_answer": "A",
+            "explanation": "Safeguard cost-benefit evaluates financial benefit after implementing a safeguard."
+        },
+        {
+            "question": "A company installs cameras and warning signs stating that monitoring is active. What type of control is mainly represented?",
+            "option_a": "A. Corrective control",
+            "option_b": "B. Deterrent control",
+            "option_c": "C. Recovery control",
+            "option_d": "D. Administrative control",
+            "correct_answer": "B",
+            "explanation": "Warning signs discourage attackers by indicating monitoring, which is a deterrent control."
+        },
+        {
+            "question": "An organization conducts regular log reviews to identify suspicious system activities. Which control type is this?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Detective",
+            "option_c": "C. Recovery",
+            "option_d": "D. Administrative",
+            "correct_answer": "B",
+            "explanation": "Log reviews detect irregularities after they occur, making them detective controls."
+        },
+        {
+            "question": "A system administrator cleans a virus from an infected computer. Which control category does this represent?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Corrective",
+            "option_c": "C. Detective",
+            "option_d": "D. Deterrent",
+            "correct_answer": "B",
+            "explanation": "Corrective controls attempt to fix problems after security incidents occur."
+        },
+        {
+            "question": "An organization restores data from backups after a ransomware attack. Which control type is demonstrated?",
+            "option_a": "A. Corrective",
+            "option_b": "B. Recovery",
+            "option_c": "C. Preventive",
+            "option_d": "D. Deterrent",
+            "correct_answer": "B",
+            "explanation": "Recovery controls restore systems and data after major incidents."
+        },
+        {
+            "question": "Which statement best describes the relationship between threat, vulnerability, and risk?",
+            "option_a": "A. Risk occurs when a vulnerability is exploited by a threat",
+            "option_b": "B. Threat eliminates vulnerabilities",
+            "option_c": "C. Vulnerability removes risk",
+            "option_d": "D. Risk prevents threats",
+            "correct_answer": "A",
+            "explanation": "Risk arises when a threat exploits a vulnerability, potentially causing harm."
+        },
+        {
+            "question": "If a company cannot implement biometric authentication but introduces stricter password policies instead, what type of control is this?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Compensating",
+            "option_c": "C. Detective",
+            "option_d": "D. Recovery",
+            "correct_answer": "B",
+            "explanation": "Compensating controls are alternative mechanisms used when original controls cannot be implemented."
+        },
+        {
+            "question": "Which control type combines proactive measures with detection capabilities to ensure departmental objectives?",
+            "option_a": "A. Preventive controls",
+            "option_b": "B. Recovery controls",
+            "option_c": "C. Compensating controls",
+            "option_d": "D. Corrective controls",
+            "correct_answer": "A",
+            "explanation": "Preventive controls discourage errors before they occur and help ensure objectives are met."
+        },
+        {
+            "question": "Which security control type primarily focuses on human resource policies and procedures?",
+            "option_a": "A. Physical controls",
+            "option_b": "B. Technical controls",
+            "option_c": "C. Administrative controls",
+            "option_d": "D. Detective controls",
+            "correct_answer": "C",
+            "explanation": "Administrative controls involve policies, procedures, and personnel management practices."
+        },
+        {
+            "question": "Which element in risk management directly mitigates threats and vulnerabilities?",
+            "option_a": "A. Exposure",
+            "option_b": "B. Countermeasure",
+            "option_c": "C. Threat agent",
+            "option_d": "D. Risk",
+            "correct_answer": "B",
+            "explanation": "Countermeasures are safeguards that reduce or mitigate risk."
+        },
+        {
+            "question": "Which statement about risk in commercial environments is correct?",
+            "option_a": "A. Risk can always be eliminated completely",
+            "option_b": "B. Risk should always be ignored",
+            "option_c": "C. Risk can be mitigated but rarely eliminated",
+            "option_d": "D. Risk is unrelated to profits",
+            "correct_answer": "C",
+            "explanation": "Organizations typically manage and mitigate risks rather than eliminate them entirely."
+        },
+        {
+            "question": "A security guard locking a door that an employee forgot to secure represents which control type?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Corrective",
+            "option_c": "C. Detective",
+            "option_d": "D. Deterrent",
+            "correct_answer": "B",
+            "explanation": "Corrective controls address problems after they are discovered."
+        },
+        {
+            "question": "If ALE before safeguard is Rs. 40,000, ALE after safeguard is Rs. 15,000, and safeguard cost is Rs. 5,000, what is the safeguard benefit?",
+            "option_a": "A. Rs. 20,000",
+            "option_b": "B. Rs. 15,000",
+            "option_c": "C. Rs. 25,000",
+            "option_d": "D. Rs. 30,000",
+            "correct_answer": "A",
+            "explanation": "Benefit = 40,000 − 15,000 − 5,000 = Rs. 20,000."
+        },
+        {
+            "question": "Which control type is most closely associated with disaster recovery planning?",
+            "option_a": "A. Preventive",
+            "option_b": "B. Detective",
+            "option_c": "C. Recovery",
+            "option_d": "D. Deterrent",
+            "correct_answer": "C",
+            "explanation": "Disaster recovery planning focuses on restoring operations after major incidents."
+        },
+        {
+            "question": "Network authentication mechanisms are classified as:",
+            "option_a": "A. Physical controls",
+            "option_b": "B. Technical controls",
+            "option_c": "C. Administrative controls",
+            "option_d": "D. Deterrent controls",
+            "correct_answer": "B",
+            "explanation": "Network authentication uses technology to control system access."
+        },
+        {
+            "question": "Which example represents a vulnerability in an information system?",
+            "option_a": "A. A hacker attempting to access a server",
+            "option_b": "B. A system with outdated security patches",
+            "option_c": "C. Installing antivirus software",
+            "option_d": "D. Monitoring system logs",
+            "correct_answer": "B",
+            "explanation": "Outdated patches create weaknesses that attackers can exploit."
+        },
+        {
+            "question": "In risk analysis, what is the primary purpose of calculating ALE?",
+            "option_a": "A. To estimate annual financial loss from threats",
+            "option_b": "B. To identify vulnerabilities",
+            "option_c": "C. To prevent all cyber attacks",
+            "option_d": "D. To eliminate threats completely",
+            "correct_answer": "A",
+            "explanation": "ALE estimates expected yearly financial loss caused by security threats."
+        },
+        {
+            "question": "Which control classification is primarily reactive rather than proactive?",
+            "option_a": "A. Preventive controls",
+            "option_b": "B. Corrective controls",
+            "option_c": "C. Deterrent controls",
+            "option_d": "D. Administrative controls",
+            "correct_answer": "B",
+            "explanation": "Corrective controls respond to incidents after they occur."
+        }
+    ]
+}

@@ -1,0 +1,283 @@
+{
+    "questions": [
+        {
+            "question": "A hash function takes binary data and produces a condensed representation. What are the common names for this output?",
+            "option_a": "A. Secret key, Public key, or Private key",
+            "option_b": "B. Ciphertext, Plaintext, or Digest",
+            "option_c": "C. Hash value, Message digest, or Digital fingerprint",
+            "option_d": "D. Salt, Pepper, or Token",
+            "correct_answer": "C",
+            "explanation": "The output of a hash function is commonly called a hash value, message digest, or digital fingerprint, referring to the fixed-length representation of input data."
+        },
+        {
+            "question": "Hashing is based on a one-way mathematical function. What does 'one-way' mean in this context?",
+            "option_a": "A. The hash can only be computed once per message",
+            "option_b": "B. It is relatively easy to compute, but significantly harder to reverse",
+            "option_c": "C. Only one party can compute the hash at a time",
+            "option_d": "D. The function can only process data in one direction per session",
+            "correct_answer": "B",
+            "explanation": "A one-way hash function is easy to compute but very difficult to reverse, meaning the original input cannot feasibly be derived from the hash value."
+        },
+        {
+            "question": "Hashing is designed to verify and ensure which two security services?",
+            "option_a": "A. Confidentiality and Non-repudiation",
+            "option_b": "B. Availability and Accountability",
+            "option_c": "C. Data integrity and Authentication",
+            "option_d": "D. Encryption and Decryption",
+            "correct_answer": "C",
+            "explanation": "Hashing ensures data integrity by detecting modifications and can support authentication when combined with secret keys."
+        },
+        {
+            "question": "Which of the following is NOT a valid application of cryptographic hash functions?",
+            "option_a": "A. Providing proof of authenticity when used with IPsec or routing protocol authentication",
+            "option_b": "B. Generating one-time and one-way responses to challenges in PPP CHAP",
+            "option_c": "C. Encrypting sensitive data so only the intended recipient can read it",
+            "option_d": "D. Providing a message integrity check proof when accessing a secure website",
+            "correct_answer": "C",
+            "explanation": "Hash functions are used for integrity and authentication, not confidentiality. Encryption is required to keep data secret."
+        },
+        {
+            "question": "What is a key limitation of hash functions that makes them vulnerable to man-in-the-middle attacks?",
+            "option_a": "A. They produce variable-length digests that are hard to compare",
+            "option_b": "B. They are too slow for real-time network use",
+            "option_c": "C. There is no unique identifying information from the sender — anyone with the hash function can compute a hash for any data",
+            "option_d": "D. They require a public key infrastructure to operate correctly",
+            "correct_answer": "C",
+            "explanation": "Plain hash functions lack sender authentication because anyone can generate a hash for any message."
+        },
+        {
+            "question": "A cryptographic hash function always produces output of what characteristic?",
+            "option_a": "A. Variable length, depending on the size of the input",
+            "option_b": "B. Fixed length, regardless of the size of the input",
+            "option_c": "C. Length equal to the input divided by a constant",
+            "option_d": "D. Length that doubles with each additional byte of input",
+            "correct_answer": "B",
+            "explanation": "Hash functions always generate a fixed-length digest regardless of the size of the input message."
+        },
+        {
+            "question": "Who developed the MD5 hashing algorithm?",
+            "option_a": "A. Bruce Schneier",
+            "option_b": "B. Whitfield Diffie",
+            "option_c": "C. Ron Rivest",
+            "option_d": "D. NIST",
+            "correct_answer": "C",
+            "explanation": "MD5 was developed by Ron Rivest and produces a 128-bit message digest."
+        },
+        {
+            "question": "What is the size of the message digest produced by the MD5 algorithm?",
+            "option_a": "A. 64 bits",
+            "option_b": "B. 128 bits",
+            "option_c": "C. 160 bits",
+            "option_d": "D. 256 bits",
+            "correct_answer": "B",
+            "explanation": "MD5 generates a 128-bit message digest regardless of input size."
+        },
+        {
+            "question": "How many computation steps does the MD5 algorithm involve?",
+            "option_a": "A. 32 steps",
+            "option_b": "B. 48 steps",
+            "option_c": "C. 64 steps",
+            "option_d": "D. 80 steps",
+            "correct_answer": "C",
+            "explanation": "MD5 uses 64 computation steps during its hashing process."
+        },
+        {
+            "question": "Which of the following correctly compares MD5 and SHA-1?",
+            "option_a": "A. MD5 is slower and more secure; SHA-1 is faster and less secure",
+            "option_b": "B. Both MD5 and SHA-1 use a 160-bit buffer",
+            "option_c": "C. MD5 uses a 128-bit buffer and 64 steps; SHA-1 uses a 160-bit buffer and 80 steps",
+            "option_d": "D. MD5 is based on SHA-2; SHA-1 is based on MD4",
+            "correct_answer": "C",
+            "explanation": "MD5 uses a 128-bit buffer and 64 steps, while SHA-1 uses a 160-bit buffer and 80 steps."
+        },
+        {
+            "question": "Which organization developed SHA and published the Secure Hash Standard (SHS)?",
+            "option_a": "A. IEEE",
+            "option_b": "B. MIT Lincoln Laboratory",
+            "option_c": "C. U.S. National Institute of Standards and Technology (NIST)",
+            "option_d": "D. IETF",
+            "correct_answer": "C",
+            "explanation": "NIST developed SHA and published it as part of the Secure Hash Standard."
+        },
+        {
+            "question": "SHA-1 was published in 1994. What was the reason for releasing SHA-1?",
+            "option_a": "A. To replace MD5 entirely with a faster algorithm",
+            "option_b": "B. To correct an unpublished flaw in the original SHA",
+            "option_c": "C. To meet government mandates for 256-bit security",
+            "option_d": "D. To add symmetric key support to hash functions",
+            "correct_answer": "B",
+            "explanation": "SHA-1 was introduced to correct an unpublished flaw found in the original SHA algorithm."
+        },
+        {
+            "question": "What is the maximum message length that SHA-1 can process?",
+            "option_a": "A. Less than 2^32 bits",
+            "option_b": "B. Less than 2^48 bits",
+            "option_c": "C. Less than 2^64 bits",
+            "option_d": "D. Less than 2^128 bits",
+            "correct_answer": "C",
+            "explanation": "SHA-1 can process messages up to less than 2^64 bits in length."
+        },
+        {
+            "question": "NIST published four additional hash functions in the SHA family beyond SHA-1. Which of the following correctly lists all four?",
+            "option_a": "A. SHA-128, SHA-192, SHA-256, SHA-384",
+            "option_b": "B. SHA-160, SHA-224, SHA-256, SHA-512",
+            "option_c": "C. SHA-224, SHA-256, SHA-384, SHA-512",
+            "option_d": "D. SHA-256, SHA-384, SHA-512, SHA-1024",
+            "correct_answer": "C",
+            "explanation": "The SHA-2 family includes SHA-224, SHA-256, SHA-384, and SHA-512."
+        },
+        {
+            "question": "Why is SHA-1 considered more secure than MD5 even though it is slower?",
+            "option_a": "A. SHA-1 uses a private key while MD5 does not",
+            "option_b": "B. SHA-1 can process encrypted input directly",
+            "option_c": "C. SHA-1's larger 160-bit message digest makes it more resistant to brute-force attacks",
+            "option_d": "D. SHA-1 was developed by a government agency",
+            "correct_answer": "C",
+            "explanation": "SHA-1 generates a larger 160-bit digest compared to MD5's 128-bit digest, making brute-force attacks more difficult."
+        },
+        {
+            "question": "What does HMAC stand for, and what makes it different from a plain hash function?",
+            "option_a": "A. Hashed Message Authentication Code; it uses asymmetric keys",
+            "option_b": "B. Hybrid Message Authentication Code; it combines two hash algorithms",
+            "option_c": "C. Keyed-Hash Message Authentication Code; it uses a secret key as input",
+            "option_d": "D. Hash-based MAC; it replaces the hash function entirely",
+            "correct_answer": "C",
+            "explanation": "HMAC uses a secret key together with a hash function to provide both integrity and authentication."
+        },
+        {
+            "question": "Why does HMAC guarantee authenticity in a way that a plain hash function cannot?",
+            "option_a": "A. HMAC uses a longer digest length",
+            "option_b": "B. HMAC is based on asymmetric cryptography",
+            "option_c": "C. Only the sender and receiver know the secret key used to compute the HMAC",
+            "option_d": "D. HMAC timestamps every message",
+            "correct_answer": "C",
+            "explanation": "Because the secret key is shared only by sender and receiver, attackers cannot generate a valid HMAC."
+        },
+        {
+            "question": "On what three factors does the cryptographic strength of an HMAC depend?",
+            "option_a": "A. Hash algorithm version, message length, and network protocol",
+            "option_b": "B. Strength of the hash function, key size and quality, and output size",
+            "option_c": "C. Number of iterations, block size, and initialization vector",
+            "option_d": "D. Key expiry time, certificate chain, and cipher suite",
+            "correct_answer": "B",
+            "explanation": "HMAC security depends on the strength of the underlying hash function, the key size and quality, and the size of the hash output."
+        },
+        {
+            "question": "Cisco technologies use two well-known HMAC functions. Which correctly names them?",
+            "option_a": "A. HMAC-AES and HMAC-3DES",
+            "option_b": "B. HMAC-RSA and HMAC-DSA",
+            "option_c": "C. HMAC-MD5 and HMAC-SHA-1",
+            "option_d": "D. HMAC-SHA-256 and HMAC-SHA-512",
+            "correct_answer": "C",
+            "explanation": "Cisco technologies commonly use HMAC-MD5 and HMAC-SHA-1 for authentication and integrity verification."
+        },
+        {
+            "question": "In HMAC verification, what does it mean if the generated HMAC matches the received HMAC?",
+            "option_a": "A. The message was encrypted using AES",
+            "option_b": "B. The message was compressed before transmission",
+            "option_c": "C. Both integrity and authenticity of the message are verified",
+            "option_d": "D. The message was digitally signed with a public key",
+            "correct_answer": "C",
+            "explanation": "Matching HMAC values confirm the message was not altered and was generated by someone with the shared secret key."
+        },
+        {
+            "question": "How does HMAC defeat man-in-the-middle attacks compared to a plain hash function?",
+            "option_a": "A. HMAC encrypts the message payload",
+            "option_b": "B. HMAC uses public-key infrastructure",
+            "option_c": "C. HMAC requires a shared secret key that attackers do not know",
+            "option_d": "D. HMAC embeds the sender's IP address in the digest",
+            "correct_answer": "C",
+            "explanation": "An attacker cannot recompute a valid HMAC without knowing the shared secret key."
+        },
+        {
+            "question": "Key management is considered the most difficult part of designing a cryptosystem. Which list correctly shows the five key management characteristics?",
+            "option_a": "A. Key creation, backup, deployment, update, logging",
+            "option_b": "B. Key generation, verification, storage, exchange, revocation and destruction",
+            "option_c": "C. Key issuing, hashing, signing, rotation, archiving",
+            "option_d": "D. Key provisioning, escrow, wrapping, splitting, shredding",
+            "correct_answer": "B",
+            "explanation": "Key management includes generation, verification, storage, exchange, and revocation or destruction of keys."
+        },
+        {
+            "question": "What is the purpose of key verification in cryptographic systems?",
+            "option_a": "A. To confirm both parties received the same key",
+            "option_b": "B. To encrypt the key before storing it",
+            "option_c": "C. To detect and regenerate weak keys that should not be used",
+            "option_d": "D. To digitally sign the key with a certificate authority",
+            "correct_answer": "C",
+            "explanation": "Key verification identifies weak or insecure keys and ensures stronger keys are used."
+        },
+        {
+            "question": "What is the difference between key revocation and key destruction?",
+            "option_a": "A. Revocation backs up the key while destruction archives it",
+            "option_b": "B. Revocation notifies parties a key is compromised; destruction permanently erases it",
+            "option_c": "C. Revocation generates a new key; destruction deletes expired keys",
+            "option_d": "D. They are the same process with different names",
+            "correct_answer": "B",
+            "explanation": "Revocation informs systems a key should no longer be used, while destruction permanently removes it."
+        },
+        {
+            "question": "What is the relationship between key length and keyspace?",
+            "option_a": "A. Keyspace increases linearly with key length",
+            "option_b": "B. Keyspace decreases as key length increases",
+            "option_c": "C. Keyspace increases exponentially; each additional bit doubles the keyspace",
+            "option_d": "D. Keyspace and key length are unrelated",
+            "correct_answer": "C",
+            "explanation": "Keyspace equals 2 raised to the key length, meaning each additional bit doubles possible keys."
+        },
+        {
+            "question": "If a 56-bit key has about 72 quadrillion possible keys, how many does a 57-bit key have?",
+            "option_a": "A. 72 quadrillion",
+            "option_b": "B. 108 quadrillion",
+            "option_c": "C. 144 quadrillion",
+            "option_d": "D. 216 quadrillion",
+            "correct_answer": "C",
+            "explanation": "Adding one bit doubles the keyspace, so 57 bits gives approximately 144 quadrillion possibilities."
+        },
+        {
+            "question": "What tradeoff must administrators consider when choosing a cryptographic key length?",
+            "option_a": "A. Longer keys are easier to remember",
+            "option_b": "B. Shorter keys require more storage",
+            "option_c": "C. Longer keys are more secure but require more processing resources",
+            "option_d": "D. Key length only affects asymmetric algorithms",
+            "correct_answer": "C",
+            "explanation": "Longer keys increase security but also increase computational cost and may reduce system performance."
+        },
+        {
+            "question": "What are the four types of cryptographic keys described in the lecture?",
+            "option_a": "A. Session, Master, Ephemeral, Pre-shared keys",
+            "option_b": "B. Symmetric keys, Asymmetric keys, Digital signatures, Hash keys",
+            "option_c": "C. Public keys, Private keys, Group keys, Broadcast keys",
+            "option_d": "D. Encryption keys, Decryption keys, Signing keys, Verification keys",
+            "correct_answer": "B",
+            "explanation": "The lecture identifies symmetric keys, asymmetric keys, digital signatures, and hash keys as key categories."
+        },
+        {
+            "question": "According to the cryptographic algorithm table, which algorithms are used for data integrity?",
+            "option_a": "A. DES and AES",
+            "option_b": "B. HMAC-MD5 and HMAC-SHA-1",
+            "option_c": "C. RSA and DSA",
+            "option_d": "D. MD5 and SHA",
+            "correct_answer": "D",
+            "explanation": "MD5 and SHA are hashing algorithms used to verify data integrity."
+        },
+        {
+            "question": "A security policy requires strong authentication. Which combination of algorithms is most appropriate?",
+            "option_a": "A. DES and 3DES",
+            "option_b": "B. MD5 and SHA",
+            "option_c": "C. HMAC-MD5, HMAC-SHA-1, RSA, and DSA",
+            "option_d": "D. AES-128 and AES-256",
+            "correct_answer": "C",
+            "explanation": "HMAC-MD5, HMAC-SHA-1, RSA, and DSA are commonly used algorithms for authentication."
+        },
+        {
+            "question": "Which key sizes are recommended for protection up to 10 years across different key types?",
+            "option_a": "A. Symmetric 80-bit, Asymmetric 1248-bit, Digital Signature 160-bit, Hash 160-bit",
+            "option_b": "B. Symmetric 96-bit, Asymmetric 1776-bit, Digital Signature 192-bit, Hash 192-bit",
+            "option_c": "C. Symmetric 128-bit, Asymmetric 3248-bit, Digital Signature 256-bit, Hash 256-bit",
+            "option_d": "D. Symmetric 256-bit, Asymmetric 15424-bit, Digital Signature 512-bit, Hash 512-bit",
+            "correct_answer": "B",
+            "explanation": "For about 10 years of protection, recommended sizes are Symmetric 96-bit, Asymmetric 1776-bit, Digital Signature 192-bit, and Hash 192-bit."
+        }
+    ]
+}

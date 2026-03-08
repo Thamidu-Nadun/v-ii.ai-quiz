@@ -1,0 +1,247 @@
+{
+    "questions": [
+        {
+            "question": "Which three primary objectives must secure communications guarantee?",
+            "option_a": "A. Availability, Integrity, and Non-repudiation",
+            "option_b": "B. Authentication, Integrity, and Confidentiality",
+            "option_c": "C. Encryption, Decryption, and Hashing",
+            "option_d": "D. Privacy, Authenticity, and Compression",
+            "correct_answer": "B",
+            "explanation": "Authentication verifies the sender, integrity ensures the message was not altered, and confidentiality ensures only the intended receiver can read the message."
+        },
+        {
+            "question": "What does Authentication in cryptographic services guarantee?",
+            "option_a": "A. The message cannot be deciphered if captured",
+            "option_b": "B. No one intercepted and altered the message",
+            "option_c": "C. The message is not a forgery and comes from who it claims",
+            "option_d": "D. The message is compressed for faster transmission",
+            "correct_answer": "C",
+            "explanation": "Authentication ensures that the message genuinely comes from the claimed sender and is not a forgery."
+        },
+        {
+            "question": "What is data nonrepudiation?",
+            "option_a": "A. A method of encrypting messages using a public key",
+            "option_b": "B. A service that allows the sender of a message to be uniquely identified and prevents denial of sending",
+            "option_c": "C. A technique to compress data for secure transmission",
+            "option_d": "D. The process of verifying a receiver's identity",
+            "correct_answer": "B",
+            "explanation": "Nonrepudiation ensures a sender cannot deny having sent a particular message."
+        },
+        {
+            "question": "Data integrity in cryptography ensures that:",
+            "option_a": "A. Messages are encrypted with a strong algorithm",
+            "option_b": "B. The sender's identity is verified before transmission",
+            "option_c": "C. Messages are not altered in transit and the receiver can verify this",
+            "option_d": "D. Data is compressed to prevent eavesdropping",
+            "correct_answer": "C",
+            "explanation": "Integrity ensures that a message has not been modified during transmission."
+        },
+        {
+            "question": "In cryptography, what is plaintext (cleartext)?",
+            "option_a": "A. Data that has been encrypted with a key",
+            "option_b": "B. The key used to encrypt a message",
+            "option_c": "C. Scrambled data that cannot be read without decryption",
+            "option_d": "D. Readable, unencrypted data before encryption",
+            "correct_answer": "D",
+            "explanation": "Plaintext refers to the original readable message before encryption."
+        },
+        {
+            "question": "What is the role of a key in encryption?",
+            "option_a": "A. It compresses the message to reduce size",
+            "option_b": "B. It verifies the digital signature of the sender",
+            "option_c": "C. It serves as the link between the plaintext and the ciphertext",
+            "option_d": "D. It stores the message securely on a server",
+            "correct_answer": "C",
+            "explanation": "The encryption key transforms plaintext into ciphertext and is required to decrypt the message."
+        },
+        {
+            "question": "Cryptography is best defined as:",
+            "option_a": "A. The science of building firewalls and intrusion detection systems",
+            "option_b": "B. The practice and study of hiding information",
+            "option_c": "C. A method of compressing data for faster transmission",
+            "option_d": "D. The process of verifying network packets",
+            "correct_answer": "B",
+            "explanation": "Cryptography is the study and practice of protecting information by transforming it into secure forms."
+        },
+        {
+            "question": "Which of the following correctly lists the three methods of creating ciphertext covered in the lecture?",
+            "option_a": "A. Hashing, Salting, and Padding",
+            "option_b": "B. Compression, Encoding, and Obfuscation",
+            "option_c": "C. Transposition, Substitution, and One-time pad",
+            "option_d": "D. Symmetric, Asymmetric, and Hybrid",
+            "correct_answer": "C",
+            "explanation": "The lecture describes three ciphertext creation methods: transposition, substitution, and the one-time pad."
+        },
+        {
+            "question": "A cipher in cryptography is defined as:",
+            "option_a": "A. A random key used once to encrypt a message",
+            "option_b": "B. A series of well-defined steps followed as a procedure when encrypting and decrypting messages",
+            "option_c": "C. A digital certificate issued by a trusted authority",
+            "option_d": "D. A compressed version of the plaintext message",
+            "correct_answer": "B",
+            "explanation": "A cipher is an algorithm or procedure used to encrypt and decrypt information."
+        },
+        {
+            "question": "The Scytale, the earliest known cryptography method, was used by which ancient civilization?",
+            "option_a": "A. The Romans during the conquest of Gaul",
+            "option_b": "B. The Egyptians to protect pharaoh's scrolls",
+            "option_c": "C. The Spartans in ancient Greece",
+            "option_d": "D. The Chinese during the Han dynasty",
+            "correct_answer": "C",
+            "explanation": "The scytale was used by Spartans in ancient Greece as an early transposition cipher."
+        },
+        {
+            "question": "How does the Caesar Cipher work?",
+            "option_a": "A. Letters are rearranged in a zigzag pattern",
+            "option_b": "B. Each letter is replaced using a multi-letter key",
+            "option_c": "C. Every letter is replaced by shifting it a fixed number of positions in the alphabet",
+            "option_d": "D. Letters are combined with a random key",
+            "correct_answer": "C",
+            "explanation": "The Caesar cipher shifts each letter in the alphabet by a fixed number of positions."
+        },
+        {
+            "question": "The Vigenere Cipher is best characterized as:",
+            "option_a": "A. A transposition cipher using rail fences",
+            "option_b": "B. A polyalphabetic substitution cipher using a multi-letter key",
+            "option_c": "C. A one-time pad cipher using random keys",
+            "option_d": "D. A symmetric cipher using identical keys",
+            "correct_answer": "B",
+            "explanation": "The Vigenere cipher uses multiple Caesar shifts determined by a shared keyword."
+        },
+        {
+            "question": "Who broke the Vigenere Cipher after approximately 300 years?",
+            "option_a": "A. Alan Turing",
+            "option_b": "B. Thomas Jefferson",
+            "option_c": "C. Arthur Scherbius",
+            "option_d": "D. Charles Babbage",
+            "correct_answer": "D",
+            "explanation": "Charles Babbage successfully analyzed and broke the Vigenere cipher."
+        },
+        {
+            "question": "Arthur Scherbius is best known for:",
+            "option_a": "A. Inventing the Enigma machine",
+            "option_b": "B. Breaking the Vigenere cipher",
+            "option_c": "C. Developing the Caesar cipher",
+            "option_d": "D. Creating the one-time pad",
+            "correct_answer": "A",
+            "explanation": "Arthur Scherbius invented the Enigma encryption machine used by Germany during WWII."
+        },
+        {
+            "question": "Why were Navajo Code Talkers effective during WWII?",
+            "option_a": "A. Their language structure matched Enigma encryption",
+            "option_b": "B. The Navajo language was unwritten and rarely spoken outside the community",
+            "option_c": "C. Japan could not obtain dictionaries",
+            "option_d": "D. The language used natural substitution encryption",
+            "correct_answer": "B",
+            "explanation": "Navajo was unwritten and extremely rare outside its community, making interception and decoding very difficult."
+        },
+        {
+            "question": "What distinguishes a transposition cipher from a substitution cipher?",
+            "option_a": "A. Transposition replaces letters with numbers",
+            "option_b": "B. Transposition rearranges letters while substitution replaces them",
+            "option_c": "C. Transposition uses public keys",
+            "option_d": "D. Transposition works only with numbers",
+            "correct_answer": "B",
+            "explanation": "Transposition ciphers rearrange characters while substitution ciphers replace characters."
+        },
+        {
+            "question": "A key weakness of simple substitution ciphers is that:",
+            "option_a": "A. They require extremely long keys",
+            "option_b": "B. They cannot encrypt long messages",
+            "option_c": "C. They retain the original letter frequency, enabling frequency analysis",
+            "option_d": "D. They only support uppercase letters",
+            "correct_answer": "C",
+            "explanation": "Simple substitution ciphers maintain letter frequency patterns, allowing attackers to analyze them statistically."
+        },
+        {
+            "question": "In English frequency analysis, which letters appear most frequently?",
+            "option_a": "A. A, B, C",
+            "option_b": "B. S, T, R",
+            "option_c": "C. E, T, A",
+            "option_d": "D. I, O, U",
+            "correct_answer": "C",
+            "explanation": "E, T, and A are among the most frequently used letters in English text."
+        },
+        {
+            "question": "Which statement best describes symmetric encryption?",
+            "option_a": "A. Two different keys are used",
+            "option_b": "B. The same secret key is shared between sender and receiver",
+            "option_c": "C. A public key encrypts and private key decrypts",
+            "option_d": "D. Only hashing algorithms are used",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption uses a single shared key for both encryption and decryption."
+        },
+        {
+            "question": "What distinguishes asymmetric encryption from symmetric encryption?",
+            "option_a": "A. It uses one shared key",
+            "option_b": "B. It uses two separate keys: a public key and a private key",
+            "option_c": "C. It always encrypts faster",
+            "option_d": "D. It requires physical key exchange",
+            "correct_answer": "B",
+            "explanation": "Asymmetric encryption uses a key pair consisting of a public key and a private key."
+        },
+        {
+            "question": "Which algorithm is considered the weakest for confidentiality among common encryption algorithms?",
+            "option_a": "A. AES",
+            "option_b": "B. 3DES",
+            "option_c": "C. RSA",
+            "option_d": "D. DES",
+            "correct_answer": "D",
+            "explanation": "DES uses a 56-bit key which is vulnerable to brute-force attacks."
+        },
+        {
+            "question": "Who invented the stream cipher and co-invented the one-time pad in 1917?",
+            "option_a": "A. Charles Babbage",
+            "option_b": "B. Arthur Scherbius",
+            "option_c": "C. Gilbert Vernam",
+            "option_d": "D. Blaise de Vigenere",
+            "correct_answer": "C",
+            "explanation": "Gilbert Vernam invented the stream cipher and later co-developed the one-time pad."
+        },
+        {
+            "question": "Why is a one-time pad theoretically unbreakable when used correctly?",
+            "option_a": "A. The key is extremely short",
+            "option_b": "B. The key is random and used only once",
+            "option_c": "C. The ciphertext is compressed",
+            "option_d": "D. The algorithm is secret",
+            "correct_answer": "B",
+            "explanation": "A one-time pad uses a truly random key that is never reused, making cryptanalysis impossible."
+        },
+        {
+            "question": "Cryptanalysis is defined as:",
+            "option_a": "A. Designing encryption algorithms",
+            "option_b": "B. Determining the meaning of encrypted information without access to the key",
+            "option_c": "C. Generating random numbers",
+            "option_d": "D. Managing encryption certificates",
+            "correct_answer": "B",
+            "explanation": "Cryptanalysis focuses on breaking encrypted messages and discovering hidden information."
+        },
+        {
+            "question": "In a brute-force attack, when does success occur on average?",
+            "option_a": "A. Within the first 1% of the keyspace",
+            "option_b": "B. At exactly 25% of the keyspace",
+            "option_c": "C. Around 50% of the keyspace",
+            "option_d": "D. Only after 100% of the keyspace",
+            "correct_answer": "C",
+            "explanation": "On average, brute-force attacks succeed halfway through the possible key combinations."
+        },
+        {
+            "question": "Cryptology refers to:",
+            "option_a": "A. Only the development of encryption algorithms",
+            "option_b": "B. Only the breaking of secret codes",
+            "option_c": "C. The science of making and breaking secret codes",
+            "option_d": "D. The legal control of encryption",
+            "correct_answer": "C",
+            "explanation": "Cryptology combines both cryptography and cryptanalysis."
+        },
+        {
+            "question": "Where does the true security of modern encryption lie?",
+            "option_a": "A. In keeping algorithms secret",
+            "option_b": "B. In proprietary encryption systems",
+            "option_c": "C. In the secrecy of encryption keys",
+            "option_d": "D. In compressing ciphertext",
+            "correct_answer": "C",
+            "explanation": "Modern cryptography relies on keeping the keys secret rather than hiding the algorithm."
+        }
+    ]
+}
