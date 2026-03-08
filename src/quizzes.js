@@ -1,6 +1,12 @@
 export default [
     // Introduction to Cyber Security Quizzes
     {
+        title: 'Cyber Security - 11',
+        path: 'quiz/CS/CS-011.json',
+        description: 'Evaluate your understanding of cyber security policies, regulations, and ethical considerations.',
+        isAvailable: true
+    },
+    {
         title: 'Cyber Security - 10',
         path: 'quiz/CS/CS-010.json',
         description: 'Test your knowledge of cyber security technologies, including firewalls, encryption, and intrusion detection systems.',
