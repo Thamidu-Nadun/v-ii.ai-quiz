@@ -1,0 +1,211 @@
+{
+    "questions": [
+        {
+            "question": "What is the main concern in CPU scheduling according to the lecture?",
+            "option_a": "A. I/O burst distribution",
+            "option_b": "B. Memory allocation patterns",
+            "option_c": "C. CPU burst distribution",
+            "option_d": "D. Process priority levels",
+            "correct_answer": "C",
+            "explanation": "CPU burst distribution is the main concern in CPU scheduling, as it directly affects the scheduling decisions and performance."
+        },
+        {
+            "question": "In which type of scheduling can a process execution be suspended at any point?",
+            "option_a": "A. Non-preemptive scheduling",
+            "option_b": "B. Batch scheduling",
+            "option_c": "C. Preemptive scheduling",
+            "option_d": "D. FIFO scheduling",
+            "correct_answer": "C",
+            "explanation": "Preemptive scheduling allows the operating system to suspend a running process at any time, typically to allocate the CPU to another process."
+        },
+        {
+            "question": "When a process is in the CPU and execution cannot be suspended until it completes the entire execution, this is called:",
+            "option_a": "A. Preemptive scheduling",
+            "option_b": "B. Non-preemptive scheduling",
+            "option_c": "C. Round Robin scheduling",
+            "option_d": "D. Priority scheduling",
+            "correct_answer": "B",
+            "explanation": "In non-preemptive scheduling, a process runs to completion once it gets the CPU; it cannot be suspended mid-execution."
+        },
+        {
+            "question": "What is the dispatcher?",
+            "option_a": "A. A scheduling algorithm",
+            "option_b": "B. A module that transfers control of the CPU from one process to another",
+            "option_c": "C. A type of process queue",
+            "option_d": "D. A memory management unit",
+            "correct_answer": "B",
+            "explanation": "The dispatcher is a module responsible for giving control of the CPU to the process selected by the short-term scheduler."
+        },
+        {
+            "question": "What is dispatch latency?",
+            "option_a": "A. The time it takes for a process to complete execution",
+            "option_b": "B. The time a process spends waiting in the ready queue",
+            "option_c": "C. The time it takes for the dispatcher to stop one process and start another to run",
+            "option_d": "D. The time between process creation and termination",
+            "correct_answer": "C",
+            "explanation": "Dispatch latency is the time required for the dispatcher to switch from one process to another, including context switch overhead."
+        },
+        {
+            "question": "Which scheduling criterion refers to the number of processes that complete their execution per time unit?",
+            "option_a": "A. CPU utilization",
+            "option_b": "B. Turnaround time",
+            "option_c": "C. Waiting time",
+            "option_d": "D. Throughput",
+            "correct_answer": "D",
+            "explanation": "Throughput measures how many processes are completed per unit time, indicating the system's efficiency."
+        },
+        {
+            "question": "The amount of time it takes from when a request was submitted until the first response is produced is called:",
+            "option_a": "A. Turnaround time",
+            "option_b": "B. Waiting time",
+            "option_c": "C. Response time",
+            "option_d": "D. Dispatch latency",
+            "correct_answer": "C",
+            "explanation": "Response time is the interval from submission of a request until the first response begins, important for interactive systems."
+        },
+        {
+            "question": "In the FCFS example with processes P1 (24ms), P2 (3ms), and P3 (3ms) arriving in the order P1, P2, P3, what is the average waiting time?",
+            "option_a": "A. 3ms",
+            "option_b": "B. 17ms",
+            "option_c": "C. 27ms",
+            "option_d": "D. 13ms",
+            "correct_answer": "B",
+            "explanation": "Average waiting time is (0 + 24 + 27) / 3 = 17ms, as P1 waits 0, P2 waits 24, and P3 waits 27ms."
+        },
+        {
+            "question": "What is the convoy effect in FCFS scheduling?",
+            "option_a": "A. When all processes arrive at the same time",
+            "option_b": "B. When shorter processes are forced to wait behind longer processes, leading to inefficient execution",
+            "option_c": "C. When processes are executed in order of priority",
+            "option_d": "D. When the CPU is idle most of the time",
+            "correct_answer": "B",
+            "explanation": "The convoy effect occurs when short processes wait behind a long process, reducing CPU and device utilization."
+        },
+        {
+            "question": "Which scheduling algorithm is considered optimal for giving the minimum average waiting time?",
+            "option_a": "A. FCFS",
+            "option_b": "B. Round Robin",
+            "option_c": "C. Priority Scheduling",
+            "option_d": "D. Shortest-Job-First (SJF)",
+            "correct_answer": "D",
+            "explanation": "SJF is optimal in terms of minimizing average waiting time for a given set of processes, assuming CPU bursts are known."
+        },
+        {
+            "question": "What is the main practical limitation of SJF scheduling?",
+            "option_a": "A. It causes starvation of long processes",
+            "option_b": "B. It requires too much memory",
+            "option_c": "C. It is difficult to know the length of the next/future CPU request",
+            "option_d": "D. It only works with preemptive scheduling",
+            "correct_answer": "C",
+            "explanation": "In practice, the length of the next CPU burst is hard to predict, making pure SJF infeasible."
+        },
+        {
+            "question": "In the non-preemptive SJF example with processes P1(6), P2(8), P3(7), P4(3) arriving at the same time, what is the average waiting time?",
+            "option_a": "A. 3ms",
+            "option_b": "B. 7ms",
+            "option_c": "C. 13ms",
+            "option_d": "D. 16ms",
+            "correct_answer": "B",
+            "explanation": "With order P4, P1, P3, P2, waiting times are 0, 3, 9, 16, averaging (0+3+9+16)/4 = 7ms."
+        },
+        {
+            "question": "Preemptive SJF is also known as:",
+            "option_a": "A. Longest-job-first scheduling",
+            "option_b": "B. Priority scheduling",
+            "option_c": "C. Shortest-remaining-time-first scheduling",
+            "option_d": "D. Round Robin scheduling",
+            "correct_answer": "C",
+            "explanation": "Preemptive SJF, where a new shorter job can preempt the current one, is called Shortest-Remaining-Time-First."
+        },
+        {
+            "question": "What problem can occur in priority scheduling where low priority processes may never execute?",
+            "option_a": "A. Deadlock",
+            "option_b": "B. Aging",
+            "option_c": "C. Starvation",
+            "option_d": "D. Convoy effect",
+            "correct_answer": "C",
+            "explanation": "Starvation happens when lower-priority processes are indefinitely delayed due to continuous arrival of higher-priority processes."
+        },
+        {
+            "question": "What is the solution to the starvation problem in priority scheduling?",
+            "option_a": "A. Using FCFS instead",
+            "option_b": "B. Decreasing the time quantum",
+            "option_c": "C. Aging - where priority increases with time",
+            "option_d": "D. Using non-preemptive mode only",
+            "correct_answer": "C",
+            "explanation": "Aging gradually increases the priority of waiting processes, ensuring they eventually get CPU time."
+        },
+        {
+            "question": "In priority scheduling, if smaller integers represent higher priority, what priority value would have the highest priority?",
+            "option_a": "A. 10",
+            "option_b": "B. 5",
+            "option_c": "C. 3",
+            "option_d": "D. 1",
+            "correct_answer": "D",
+            "explanation": "With the convention that smaller integer means higher priority, the smallest value (1) has the highest priority."
+        },
+        {
+            "question": "In the priority scheduling example on Slide 17, what is the waiting time for process P5?",
+            "option_a": "A. 0ms",
+            "option_b": "B. 1ms",
+            "option_c": "C. 6ms",
+            "option_d": "D. 16ms",
+            "correct_answer": "B",
+            "explanation": "According to the slide, P5 has a waiting time of 1ms, based on the given calculation."
+        },
+        {
+            "question": "In Round Robin scheduling, what is a time quantum (q)?",
+            "option_a": "A. The total execution time of a process",
+            "option_b": "B. The time a process spends waiting in the ready queue",
+            "option_c": "C. A small unit of CPU time given to each process, typically 10-100 ms",
+            "option_d": "D. The context switch time",
+            "correct_answer": "C",
+            "explanation": "The time quantum is the fixed slice of CPU time allocated to each process in Round Robin scheduling."
+        },
+        {
+            "question": "In Round Robin scheduling, what happens when the time quantum (q) is very large?",
+            "option_a": "A. It becomes like SJF scheduling",
+            "option_b": "B. It becomes like FCFS (FIFO) scheduling",
+            "option_c": "C. It causes too much overhead",
+            "option_d": "D. It eliminates context switching completely",
+            "correct_answer": "B",
+            "explanation": "A very large time quantum makes Round Robin effectively FCFS, as each process runs to completion before the next starts."
+        },
+        {
+            "question": "In Multilevel Queue scheduling, what problem can occur with fixed priority scheduling between queues?",
+            "option_a": "A. Deadlock",
+            "option_b": "B. Thrashing",
+            "option_c": "C. Starvation",
+            "option_d": "D. Convoy effect",
+            "correct_answer": "C",
+            "explanation": "If a higher-priority queue always has processes, lower-priority queues may starve when fixed priorities are used."
+        },
+        {
+            "question": "In the Multilevel Queue example, what percentage of CPU time might be given to the foreground queue using Round Robin?",
+            "option_a": "A. 20%",
+            "option_b": "B. 50%",
+            "option_c": "C. 80%",
+            "option_d": "D. 100%",
+            "correct_answer": "C",
+            "explanation": "An example allocation gives 80% CPU time to the foreground (interactive) queue and 20% to background."
+        },
+        {
+            "question": "Which of the following is NOT listed as an evaluation method for CPU scheduling algorithms?",
+            "option_a": "A. Deterministic evaluation",
+            "option_b": "B. Queueing Models",
+            "option_c": "C. Simulations",
+            "option_d": "D. Theoretical analysis only",
+            "correct_answer": "D",
+            "explanation": "The lecture lists deterministic evaluation, queueing models, simulations, and implementation; theoretical analysis alone is not a listed method."
+        },
+        {
+            "question": "According to Little's Law (n = λ × W), if on average 7 processes arrive per second and normally 14 processes are in the queue, what is the average wait time per process?",
+            "option_a": "A. 0.5 seconds",
+            "option_b": "B. 2 seconds",
+            "option_c": "C. 7 seconds",
+            "option_d": "D. 14 seconds",
+            "correct_answer": "B",
+            "explanation": "Using n = λ × W, 14 = 7 × W gives W = 2 seconds, the average waiting time per process."
+        }
+    ]
+}

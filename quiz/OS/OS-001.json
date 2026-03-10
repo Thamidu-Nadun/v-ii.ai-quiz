@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following best describes the role of an operating system in a computer system?",
+            "option_a": "A. It directly replaces computer hardware",
+            "option_b": "B. It acts as an interface between users and computer hardware",
+            "option_c": "C. It only runs application programs",
+            "option_d": "D. It is used only to manage files",
+            "correct_answer": "B",
+            "explanation": "An operating system acts as an intermediary between users and the computer hardware, managing resources and providing services to applications."
+        },
+        {
+            "question": "Which component of a computer system provides the basic computing resources such as CPU and memory?",
+            "option_a": "A. Operating System",
+            "option_b": "B. Application Programs",
+            "option_c": "C. Hardware",
+            "option_d": "D. Users",
+            "correct_answer": "C",
+            "explanation": "Hardware provides fundamental computing resources such as CPU, memory, and I/O devices."
+        },
+        {
+            "question": "Which of the following is NOT one of the four components of a computer system?",
+            "option_a": "A. Hardware",
+            "option_b": "B. Operating System",
+            "option_c": "C. Application Programs",
+            "option_d": "D. Network Protocol",
+            "correct_answer": "D",
+            "explanation": "The four main components are hardware, operating system, application programs, and users."
+        },
+        {
+            "question": "Which goal of an operating system focuses on making the computer system easy for users to work with?",
+            "option_a": "A. Efficient hardware utilization",
+            "option_b": "B. Convenience for users",
+            "option_c": "C. Device independence",
+            "option_d": "D. Interrupt management",
+            "correct_answer": "B",
+            "explanation": "One of the OS goals is to make the computer system convenient and easy for users."
+        },
+        {
+            "question": "Which of the following is an example of an application program?",
+            "option_a": "A. Compiler",
+            "option_b": "B. Web browser",
+            "option_c": "C. CPU",
+            "option_d": "D. Hard disk controller",
+            "correct_answer": "B",
+            "explanation": "Web browsers are application programs that allow users to perform tasks using system resources."
+        },
+        {
+            "question": "Which of the following is a purpose of using an operating system?",
+            "option_a": "A. Replacing hardware components",
+            "option_b": "B. Managing computer resources",
+            "option_c": "C. Building processors",
+            "option_d": "D. Creating network cables",
+            "correct_answer": "B",
+            "explanation": "Operating systems manage resources such as CPU, memory, and I/O devices."
+        },
+        {
+            "question": "Which type of operating system allows users to freely download and modify its source code?",
+            "option_a": "A. Closed-source OS",
+            "option_b": "B. Open-source OS",
+            "option_c": "C. Proprietary OS",
+            "option_d": "D. Embedded OS",
+            "correct_answer": "B",
+            "explanation": "Open-source operating systems provide access to source code for modification and distribution."
+        },
+        {
+            "question": "Which type of operating system requires purchasing a license because its source code is restricted?",
+            "option_a": "A. Open-source OS",
+            "option_b": "B. Closed-source OS",
+            "option_c": "C. Distributed OS",
+            "option_d": "D. Network OS",
+            "correct_answer": "B",
+            "explanation": "Closed-source operating systems have restricted source code and usually require purchase."
+        },
+        {
+            "question": "What is the primary function of a user interface in an operating system?",
+            "option_a": "A. Managing CPU scheduling",
+            "option_b": "B. Allowing users to interact with hardware and software",
+            "option_c": "C. Controlling memory allocation",
+            "option_d": "D. Handling interrupts",
+            "correct_answer": "B",
+            "explanation": "The user interface enables users to interact with the computer system."
+        },
+        {
+            "question": "Which of the following is a characteristic of a Command Line Interface (CLI)?",
+            "option_a": "A. Uses icons and menus",
+            "option_b": "B. Requires remembering commands",
+            "option_c": "C. Requires more resources than GUI",
+            "option_d": "D. Operates only with a mouse",
+            "correct_answer": "B",
+            "explanation": "CLI requires users to remember and type commands."
+        },
+        {
+            "question": "Which component is mainly responsible for managing processes in an operating system?",
+            "option_a": "A. Process management",
+            "option_b": "B. File management",
+            "option_c": "C. Networking",
+            "option_d": "D. Secondary storage management",
+            "correct_answer": "A",
+            "explanation": "Process management handles process creation, scheduling, and termination."
+        },
+        {
+            "question": "Which OS component manages the allocation and deallocation of main memory?",
+            "option_a": "A. Process management",
+            "option_b": "B. Main-memory management",
+            "option_c": "C. File management",
+            "option_d": "D. Protection system",
+            "correct_answer": "B",
+            "explanation": "Main-memory management is responsible for memory allocation and protection."
+        },
+        {
+            "question": "Which service allows an operating system to detect hardware or program errors and take corrective action?",
+            "option_a": "A. Error detection",
+            "option_b": "B. Resource allocation",
+            "option_c": "C. Accounting",
+            "option_d": "D. File management",
+            "correct_answer": "A",
+            "explanation": "Error detection services identify hardware and software faults and respond appropriately."
+        },
+        {
+            "question": "Which OS service enables programs to read, write, create, and delete files?",
+            "option_a": "A. File-system manipulation",
+            "option_b": "B. Resource allocation",
+            "option_c": "C. Interrupt handling",
+            "option_d": "D. CPU protection",
+            "correct_answer": "A",
+            "explanation": "File-system manipulation provides capabilities for file and directory operations."
+        },
+        {
+            "question": "What is a system call?",
+            "option_a": "A. A hardware instruction executed by the CPU",
+            "option_b": "B. A user interface to operating system services",
+            "option_c": "C. A type of hardware interrupt",
+            "option_d": "D. A file system operation",
+            "correct_answer": "B",
+            "explanation": "System calls provide a mechanism for user programs to request services from the operating system."
+        },
+        {
+            "question": "Which of the following describes normal termination of a system call?",
+            "option_a": "A. Program crashes immediately",
+            "option_b": "B. Program exits or returns successfully",
+            "option_c": "C. CPU resets",
+            "option_d": "D. Hardware restarts",
+            "correct_answer": "B",
+            "explanation": "Normal termination occurs when a program completes execution and exits properly."
+        },
+        {
+            "question": "Which of the following utilities is used to create and modify files?",
+            "option_a": "A. Compiler",
+            "option_b": "B. Text editor",
+            "option_c": "C. Loader",
+            "option_d": "D. Network manager",
+            "correct_answer": "B",
+            "explanation": "Text editors allow users to create and edit files."
+        },
+        {
+            "question": "Which of the following is an example of a system program used for status information?",
+            "option_a": "A. Date and time display",
+            "option_b": "B. Text editing",
+            "option_c": "C. File copying",
+            "option_d": "D. Network simulation",
+            "correct_answer": "A",
+            "explanation": "System programs provide information such as date, time, memory usage, and disk space."
+        },
+        {
+            "question": "In dual-mode operation, which mode is used by the operating system core?",
+            "option_a": "A. User mode",
+            "option_b": "B. Monitor mode",
+            "option_c": "C. Application mode",
+            "option_d": "D. Virtual mode",
+            "correct_answer": "B",
+            "explanation": "Monitor mode (also called supervisor or privileged mode) is used by the operating system."
+        },
+        {
+            "question": "Which hardware mechanism indicates whether the CPU is operating in user mode or monitor mode?",
+            "option_a": "A. Interrupt register",
+            "option_b": "B. Mode bit",
+            "option_c": "C. Stack pointer",
+            "option_d": "D. Base register",
+            "correct_answer": "B",
+            "explanation": "The mode bit identifies the current execution mode of the CPU."
+        },
+        {
+            "question": "Which instructions can only be executed in monitor mode?",
+            "option_a": "A. Arithmetic instructions",
+            "option_b": "B. Privileged instructions",
+            "option_c": "C. Logical instructions",
+            "option_d": "D. Branch instructions",
+            "correct_answer": "B",
+            "explanation": "Privileged instructions are restricted to monitor mode to protect system resources."
+        },
+        {
+            "question": "What happens when an interrupt or fault occurs in the system?",
+            "option_a": "A. The CPU stops permanently",
+            "option_b": "B. Hardware switches to monitor mode",
+            "option_c": "C. The program continues normally",
+            "option_d": "D. The system restarts",
+            "correct_answer": "B",
+            "explanation": "When interrupts occur, hardware switches the CPU to monitor mode to allow OS handling."
+        },
+        {
+            "question": "Why are user programs required to use system calls for I/O operations?",
+            "option_a": "A. To improve graphics performance",
+            "option_b": "B. Because direct I/O operations are restricted",
+            "option_c": "C. To increase CPU speed",
+            "option_d": "D. To simplify memory allocation",
+            "correct_answer": "B",
+            "explanation": "Direct I/O operations are privileged instructions, so user programs must request them via system calls."
+        },
+        {
+            "question": "Which registers are used to enforce memory protection in an operating system?",
+            "option_a": "A. Stack and program counter registers",
+            "option_b": "B. Base and limit registers",
+            "option_c": "C. Interrupt and timer registers",
+            "option_d": "D. Control and index registers",
+            "correct_answer": "B",
+            "explanation": "Base and limit registers define the legal memory address range for a program."
+        },
+        {
+            "question": "What is the role of the base register in memory protection?",
+            "option_a": "A. Stores the highest memory address",
+            "option_b": "B. Holds the smallest legal physical memory address",
+            "option_c": "C. Stores interrupt vectors",
+            "option_d": "D. Controls CPU speed",
+            "correct_answer": "B",
+            "explanation": "The base register contains the lowest valid memory address accessible to the program."
+        },
+        {
+            "question": "What mechanism prevents a single user from monopolizing the CPU?",
+            "option_a": "A. Interrupt vector",
+            "option_b": "B. Timer interrupt",
+            "option_c": "C. Base register",
+            "option_d": "D. Stack management",
+            "correct_answer": "B",
+            "explanation": "A timer interrupt ensures the OS regains control periodically to manage CPU usage."
+        },
+        {
+            "question": "When the timer reaches zero, what event occurs?",
+            "option_a": "A. Program termination",
+            "option_b": "B. Interrupt is generated",
+            "option_c": "C. Memory reset",
+            "option_d": "D. Disk read operation",
+            "correct_answer": "B",
+            "explanation": "When the timer expires, an interrupt is triggered to transfer control to the OS."
+        },
+        {
+            "question": "Which type of interrupt is generated by external hardware devices?",
+            "option_a": "A. Software interrupt",
+            "option_b": "B. Trap",
+            "option_c": "C. Hardware interrupt",
+            "option_d": "D. System interrupt",
+            "correct_answer": "C",
+            "explanation": "Hardware interrupts are generated by external devices such as I/O controllers."
+        },
+        {
+            "question": "Which interrupt type occurs when a program requests an OS service?",
+            "option_a": "A. Hardware interrupt",
+            "option_b": "B. Software interrupt",
+            "option_c": "C. Timer interrupt",
+            "option_d": "D. Memory interrupt",
+            "correct_answer": "B",
+            "explanation": "Software interrupts occur when programs request OS services via system calls."
+        },
+        {
+            "question": "What is a trap in operating systems?",
+            "option_a": "A. An interrupt generated by hardware devices",
+            "option_b": "B. An interrupt generated by the CPU due to errors or conditions",
+            "option_c": "C. A user command",
+            "option_d": "D. A file system request",
+            "correct_answer": "B",
+            "explanation": "Traps are CPU-generated interrupts that signal errors or exceptional conditions."
+        },
+        {
+            "question": "What happens to the running program when an interrupt occurs?",
+            "option_a": "A. It continues running normally",
+            "option_b": "B. Its execution is suspended",
+            "option_c": "C. It is permanently deleted",
+            "option_d": "D. It is transferred to disk",
+            "correct_answer": "B",
+            "explanation": "Interrupts suspend the current program so the OS can handle the event."
+        },
+        {
+            "question": "Where are the addresses of interrupt service routines stored?",
+            "option_a": "A. Base register",
+            "option_b": "B. Interrupt vector",
+            "option_c": "C. Stack pointer",
+            "option_d": "D. Limit register",
+            "correct_answer": "B",
+            "explanation": "The interrupt vector contains addresses of interrupt service routines."
+        },
+        {
+            "question": "What does ISR stand for in operating systems?",
+            "option_a": "A. Internal System Register",
+            "option_b": "B. Interrupt Service Routine",
+            "option_c": "C. Integrated System Resource",
+            "option_d": "D. Interrupt System Reset",
+            "correct_answer": "B",
+            "explanation": "ISR stands for Interrupt Service Routine, which handles interrupts."
+        },
+        {
+            "question": "What is the primary purpose of resource allocation in an operating system?",
+            "option_a": "A. Increasing hardware cost",
+            "option_b": "B. Assigning system resources to multiple users or jobs",
+            "option_c": "C. Removing hardware components",
+            "option_d": "D. Preventing user interaction",
+            "correct_answer": "B",
+            "explanation": "Resource allocation ensures fair and efficient distribution of resources."
+        },
+        {
+            "question": "Which OS service keeps track of how much computing resources each user consumes?",
+            "option_a": "A. Accounting",
+            "option_b": "B. Resource allocation",
+            "option_c": "C. Error detection",
+            "option_d": "D. File manipulation",
+            "correct_answer": "A",
+            "explanation": "Accounting tracks resource usage for billing or statistics."
+        },
+        {
+            "question": "Which OS service ensures that access to system resources is controlled?",
+            "option_a": "A. Protection and security",
+            "option_b": "B. Resource allocation",
+            "option_c": "C. Interrupt handling",
+            "option_d": "D. Program execution",
+            "correct_answer": "A",
+            "explanation": "Protection and security mechanisms control access permissions."
+        },
+        {
+            "question": "Which design goal focuses on making an operating system easy to use and reliable for users?",
+            "option_a": "A. System goals",
+            "option_b": "B. User goals",
+            "option_c": "C. Hardware goals",
+            "option_d": "D. Network goals",
+            "correct_answer": "B",
+            "explanation": "User goals emphasize usability, safety, and reliability for users."
+        },
+        {
+            "question": "Which OS design goal focuses on making the system easy to implement and maintain?",
+            "option_a": "A. System goals",
+            "option_b": "B. User goals",
+            "option_c": "C. Application goals",
+            "option_d": "D. Hardware goals",
+            "correct_answer": "A",
+            "explanation": "System goals focus on implementation efficiency, flexibility, and reliability."
+        },
+        {
+            "question": "In operating system design, what does a mechanism define?",
+            "option_a": "A. What tasks should be performed",
+            "option_b": "B. How something is done",
+            "option_c": "C. When users log in",
+            "option_d": "D. Which hardware devices are used",
+            "correct_answer": "B",
+            "explanation": "Mechanisms define how tasks are performed in the system."
+        },
+        {
+            "question": "What does policy determine in operating system design?",
+            "option_a": "A. The hardware configuration",
+            "option_b": "B. What actions should be taken",
+            "option_c": "C. The memory size",
+            "option_d": "D. The number of interrupts",
+            "correct_answer": "B",
+            "explanation": "Policy determines what decisions should be made in the system."
+        }
+    ]
+}

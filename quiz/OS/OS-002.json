@@ -1,0 +1,355 @@
+{
+    "questions": [
+        {
+            "question": "What does the acronym SPOOL stand for in operating system development?",
+            "option_a": "A. Simultaneous Peripheral Operation OnLine",
+            "option_b": "B. Sequential Program Operation OnLine",
+            "option_c": "C. Shared Peripheral Output Operation Link",
+            "option_d": "D. System Program Operation Logic",
+            "correct_answer": "A",
+            "explanation": "SPOOL stands for Simultaneous Peripheral Operation OnLine and is used to keep both the CPU and I/O devices busy by buffering jobs on disk."
+        },
+        {
+            "question": "In a SPOOL system, what device is typically used as a large buffer for input and output data?",
+            "option_a": "A. Main memory",
+            "option_b": "B. Cache",
+            "option_c": "C. Faster disk",
+            "option_d": "D. CPU registers",
+            "correct_answer": "C",
+            "explanation": "A fast disk is used as a large buffer in SPOOL systems to temporarily store input and output data."
+        },
+        {
+            "question": "What is the purpose of a job pool in a SPOOL-based operating system?",
+            "option_a": "A. To store all system calls",
+            "option_b": "B. To keep track of user passwords",
+            "option_c": "C. To allow the OS to select the next job to run",
+            "option_d": "D. To allocate CPU registers",
+            "correct_answer": "C",
+            "explanation": "A job pool is a data structure that stores jobs waiting to be executed so that the OS scheduler can choose the next job."
+        },
+        {
+            "question": "Multiprogramming operating systems keep several programs in memory primarily to:",
+            "option_a": "A. Increase memory size",
+            "option_b": "B. Increase CPU utilization",
+            "option_c": "C. Reduce disk usage",
+            "option_d": "D. Increase cache speed",
+            "correct_answer": "B",
+            "explanation": "Multiprogramming allows multiple jobs in memory so the CPU can switch to another job when one is waiting for I/O."
+        },
+        {
+            "question": "Which OS function selects jobs from the job pool and loads them into memory?",
+            "option_a": "A. CPU scheduling",
+            "option_b": "B. Memory management",
+            "option_c": "C. Job scheduling",
+            "option_d": "D. Process synchronization",
+            "correct_answer": "C",
+            "explanation": "Job scheduling is responsible for selecting jobs from the job pool and placing them into memory for execution."
+        },
+        {
+            "question": "Which operating system component allocates memory to different jobs in a multiprogramming environment?",
+            "option_a": "A. CPU scheduler",
+            "option_b": "B. Memory management",
+            "option_c": "C. Device driver",
+            "option_d": "D. Kernel module",
+            "correct_answer": "B",
+            "explanation": "Memory management allocates and manages memory for jobs in multiprogramming systems."
+        },
+        {
+            "question": "Which service decides which process among those in memory will run next on the CPU?",
+            "option_a": "A. Job scheduling",
+            "option_b": "B. CPU scheduling",
+            "option_c": "C. Disk scheduling",
+            "option_d": "D. Memory swapping",
+            "correct_answer": "B",
+            "explanation": "CPU scheduling selects one of the ready processes in memory to execute next."
+        },
+        {
+            "question": "What is the primary goal of a multitasking or time-sharing operating system?",
+            "option_a": "A. Reduce power consumption",
+            "option_b": "B. Share CPU time among multiple users or programs",
+            "option_c": "C. Increase disk storage capacity",
+            "option_d": "D. Eliminate scheduling",
+            "correct_answer": "B",
+            "explanation": "Time-sharing systems divide CPU time among several programs to allow interactive use."
+        },
+        {
+            "question": "In a time-sharing system, CPU time is multiplexed among jobs:",
+            "option_a": "A. Very infrequently",
+            "option_b": "B. Only once during execution",
+            "option_c": "C. Frequently so users can interact with programs",
+            "option_d": "D. Only when the system reboots",
+            "correct_answer": "C",
+            "explanation": "Time-sharing systems switch the CPU frequently among jobs so users can interact with their programs."
+        },
+        {
+            "question": "Which type of operating system is designed for applications with strict timing constraints?",
+            "option_a": "A. Batch OS",
+            "option_b": "B. Time-sharing OS",
+            "option_c": "C. Real-time OS",
+            "option_d": "D. Distributed OS",
+            "correct_answer": "C",
+            "explanation": "Real-time operating systems are designed for applications where results must be produced within strict time limits."
+        },
+        {
+            "question": "In a hard real-time system, missing a deadline will:",
+            "option_a": "A. Cause no noticeable issue",
+            "option_b": "B. Cause significant damage or failure",
+            "option_c": "C. Improve system performance",
+            "option_d": "D. Restart the system automatically",
+            "correct_answer": "B",
+            "explanation": "Hard real-time systems require strict deadlines; missing them can lead to serious consequences."
+        },
+        {
+            "question": "Which of the following is an example application of a hard real-time system?",
+            "option_a": "A. Social media application",
+            "option_b": "B. Medical imaging system",
+            "option_c": "C. Word processor",
+            "option_d": "D. File backup system",
+            "correct_answer": "B",
+            "explanation": "Hard real-time systems are used in applications such as medical imaging where timing is critical."
+        },
+        {
+            "question": "In a soft real-time system, if a deadline is missed:",
+            "option_a": "A. The system shuts down immediately",
+            "option_b": "B. No output is produced",
+            "option_c": "C. The damage is less severe compared to hard real-time systems",
+            "option_d": "D. The CPU stops functioning",
+            "correct_answer": "C",
+            "explanation": "Soft real-time systems tolerate occasional deadline misses with less severe consequences."
+        },
+        {
+            "question": "Which factor is NOT used to organize storage systems in a hierarchy?",
+            "option_a": "A. Speed",
+            "option_b": "B. Cost",
+            "option_c": "C. Volatility",
+            "option_d": "D. Network bandwidth",
+            "correct_answer": "D",
+            "explanation": "Storage hierarchy is typically based on speed, cost, volatility, and capacity."
+        },
+        {
+            "question": "What is the process of loading the operating system when the computer is powered on called?",
+            "option_a": "A. Scheduling",
+            "option_b": "B. Booting",
+            "option_c": "C. Compilation",
+            "option_d": "D. Swapping",
+            "correct_answer": "B",
+            "explanation": "Booting is the process that loads the operating system when a computer is powered on."
+        },
+        {
+            "question": "Where is the bootstrap program typically stored?",
+            "option_a": "A. RAM",
+            "option_b": "B. Cache",
+            "option_c": "C. ROM or EPROM",
+            "option_d": "D. Hard disk sector",
+            "correct_answer": "C",
+            "explanation": "Bootstrap programs are stored in ROM or EPROM as firmware."
+        },
+        {
+            "question": "What is the primary function of the bootstrap program?",
+            "option_a": "A. Manage memory allocation",
+            "option_b": "B. Load the operating system kernel and start execution",
+            "option_c": "C. Compile system programs",
+            "option_d": "D. Allocate user accounts",
+            "correct_answer": "B",
+            "explanation": "The bootstrap program initializes the system and loads the OS kernel."
+        },
+        {
+            "question": "A computer system containing only one CPU to execute instructions is known as:",
+            "option_a": "A. Distributed system",
+            "option_b": "B. Multiprocessor system",
+            "option_c": "C. Single-processor system",
+            "option_d": "D. Clustered system",
+            "correct_answer": "C",
+            "explanation": "Single-processor systems have only one CPU handling all general-purpose instructions."
+        },
+        {
+            "question": "Multiprocessor systems are also commonly referred to as:",
+            "option_a": "A. Embedded systems",
+            "option_b": "B. Parallel or multicore systems",
+            "option_c": "C. Real-time systems",
+            "option_d": "D. Distributed networks",
+            "correct_answer": "B",
+            "explanation": "Multiprocessor systems may also be called parallel or multicore systems."
+        },
+        {
+            "question": "Which of the following is an advantage of multiprocessor systems?",
+            "option_a": "A. Reduced CPU speed",
+            "option_b": "B. Increased throughput",
+            "option_c": "C. Limited memory sharing",
+            "option_d": "D. Decreased reliability",
+            "correct_answer": "B",
+            "explanation": "Multiprocessor systems improve throughput by allowing multiple processors to perform tasks simultaneously."
+        },
+        {
+            "question": "Economy of scale in multiprocessor systems refers to:",
+            "option_a": "A. Faster clock speeds",
+            "option_b": "B. Sharing resources like memory and I/O devices",
+            "option_c": "C. Using fewer processors",
+            "option_d": "D. Increasing system downtime",
+            "correct_answer": "B",
+            "explanation": "Multiprocessor systems share resources such as memory and power supplies, reducing cost."
+        },
+        {
+            "question": "Which multiprocessor architecture uses a master processor to control other processors?",
+            "option_a": "A. Symmetric multiprocessing",
+            "option_b": "B. Distributed multiprocessing",
+            "option_c": "C. Asymmetric multiprocessing",
+            "option_d": "D. Parallel multitasking",
+            "correct_answer": "C",
+            "explanation": "Asymmetric multiprocessing uses a master-slave approach where the master controls other processors."
+        },
+        {
+            "question": "In symmetric multiprocessing (SMP), processors:",
+            "option_a": "A. Have different operating systems",
+            "option_b": "B. Share the same memory and run identical OS copies",
+            "option_c": "C. Only execute predefined tasks",
+            "option_d": "D. Operate without memory",
+            "correct_answer": "B",
+            "explanation": "In SMP systems each processor runs an identical OS and shares the same memory."
+        },
+        {
+            "question": "Which feature is necessary in SMP systems to ensure efficient performance?",
+            "option_a": "A. Load balancing",
+            "option_b": "B. Memory isolation",
+            "option_c": "C. Disk mirroring",
+            "option_d": "D. Power throttling",
+            "correct_answer": "A",
+            "explanation": "Load balancing distributes tasks among processors to maximize system performance."
+        },
+        {
+            "question": "Clustered systems differ from multiprocessor systems because they:",
+            "option_a": "A. Use only one processor",
+            "option_b": "B. Consist of multiple independent nodes",
+            "option_c": "C. Cannot share storage",
+            "option_d": "D. Run without an OS",
+            "correct_answer": "B",
+            "explanation": "Clustered systems consist of multiple independent computers (nodes) that communicate and share storage."
+        },
+        {
+            "question": "What is a primary benefit of clustered systems?",
+            "option_a": "A. Lower CPU speed",
+            "option_b": "B. High availability",
+            "option_c": "C. Reduced disk capacity",
+            "option_d": "D. Eliminated networking",
+            "correct_answer": "B",
+            "explanation": "Clustered systems provide high availability because if one node fails others can continue operating."
+        },
+        {
+            "question": "Which operating system structure is known for providing maximum functionality in minimal space but lacks modular design?",
+            "option_a": "A. Layered structure",
+            "option_b": "B. Simple structure",
+            "option_c": "C. Microkernel",
+            "option_d": "D. Modular kernel",
+            "correct_answer": "B",
+            "explanation": "Simple structures like MS-DOS offer functionality but lack well-defined modular separation."
+        },
+        {
+            "question": "Which operating system is commonly associated with the simple structure model?",
+            "option_a": "A. Linux",
+            "option_b": "B. UNIX",
+            "option_c": "C. MS-DOS",
+            "option_d": "D. Solaris",
+            "correct_answer": "C",
+            "explanation": "MS-DOS is a classic example of an OS with a simple structure."
+        },
+        {
+            "question": "In the traditional UNIX architecture, which two main parts form the operating system?",
+            "option_a": "A. Kernel and system programs",
+            "option_b": "B. Compiler and interpreter",
+            "option_c": "C. Memory and disk manager",
+            "option_d": "D. Hardware and applications",
+            "correct_answer": "A",
+            "explanation": "UNIX consists mainly of the kernel and system programs."
+        },
+        {
+            "question": "The UNIX kernel is located:",
+            "option_a": "A. Above the system-call interface",
+            "option_b": "B. Between the system-call interface and hardware",
+            "option_c": "C. Only inside user applications",
+            "option_d": "D. Outside the operating system",
+            "correct_answer": "B",
+            "explanation": "The UNIX kernel exists between the system-call interface and the hardware."
+        },
+        {
+            "question": "In the layered operating system architecture, what does the bottom layer represent?",
+            "option_a": "A. Application software",
+            "option_b": "B. Kernel modules",
+            "option_c": "C. Hardware",
+            "option_d": "D. User interface",
+            "correct_answer": "C",
+            "explanation": "The lowest layer (Layer 0) in layered architecture is the hardware."
+        },
+        {
+            "question": "What is the main idea behind the layered approach in OS design?",
+            "option_a": "A. All layers communicate freely",
+            "option_b": "B. Each layer uses services only from lower layers",
+            "option_c": "C. Only the top layer interacts with hardware",
+            "option_d": "D. Layers operate independently without interaction",
+            "correct_answer": "B",
+            "explanation": "In layered architecture, each layer only interacts with the layers directly below it."
+        },
+        {
+            "question": "Which OS architecture moves most services from the kernel to user space?",
+            "option_a": "A. Monolithic kernel",
+            "option_b": "B. Layered system",
+            "option_c": "C. Microkernel",
+            "option_d": "D. Hybrid kernel",
+            "correct_answer": "C",
+            "explanation": "Microkernel architecture minimizes the kernel by moving services to user space."
+        },
+        {
+            "question": "In microkernel systems, communication between user modules occurs through:",
+            "option_a": "A. Direct memory access",
+            "option_b": "B. Shared registers",
+            "option_c": "C. Message passing",
+            "option_d": "D. Interrupt polling",
+            "correct_answer": "C",
+            "explanation": "Microkernel systems rely on message passing between components."
+        },
+        {
+            "question": "Which of the following is a key advantage of microkernel architecture?",
+            "option_a": "A. Reduced memory protection",
+            "option_b": "B. Easier portability to new architectures",
+            "option_c": "C. Lower CPU utilization",
+            "option_d": "D. Increased kernel complexity",
+            "correct_answer": "B",
+            "explanation": "Microkernels are easier to port because fewer hardware-dependent components exist in the kernel."
+        },
+        {
+            "question": "A major disadvantage of microkernel systems is:",
+            "option_a": "A. Lack of reliability",
+            "option_b": "B. Poor security",
+            "option_c": "C. Communication overhead between user and kernel space",
+            "option_d": "D. Inability to run applications",
+            "correct_answer": "C",
+            "explanation": "Microkernels introduce performance overhead due to frequent message passing between kernel and user space."
+        },
+        {
+            "question": "Modern operating systems often implement which feature to dynamically extend kernel functionality?",
+            "option_a": "A. Kernel swapping",
+            "option_b": "B. Loadable kernel modules",
+            "option_c": "C. Hardware virtualization",
+            "option_d": "D. Interrupt stacking",
+            "correct_answer": "B",
+            "explanation": "Loadable kernel modules allow OS components to be loaded or removed dynamically."
+        },
+        {
+            "question": "Loadable kernel modules follow which programming design principle?",
+            "option_a": "A. Procedural programming",
+            "option_b": "B. Functional programming",
+            "option_c": "C. Object-oriented approach",
+            "option_d": "D. Assembly-level design",
+            "correct_answer": "C",
+            "explanation": "Kernel modules are designed using object-oriented principles with well-defined interfaces."
+        },
+        {
+            "question": "Which operating systems commonly use modular kernel design?",
+            "option_a": "A. Linux and Solaris",
+            "option_b": "B. MS-DOS and CP/M",
+            "option_c": "C. BASIC OS and COBOL OS",
+            "option_d": "D. Embedded calculators",
+            "correct_answer": "A",
+            "explanation": "Linux and Solaris implement modular kernel architectures with loadable modules."
+        }
+    ]
+}

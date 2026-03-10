@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What does the acronym SPOOL stand for?",
+            "option_a": "A. System Performance Optimization Online",
+            "option_b": "B. Simultaneous Peripheral Operation Online",
+            "option_c": "C. Standard Processing of Output Logs",
+            "option_d": "D. Shared Program Object Orientation Layer",
+            "correct_answer": "B",
+            "explanation": "SPOOL is an acronym for Simultaneous Peripheral Operation Online, as stated in the lecture."
+        },
+        {
+            "question": "What is the primary purpose of using SPOOL?",
+            "option_a": "A. To increase the size of main memory",
+            "option_b": "B. To keep both I/O and CPU busy all the time",
+            "option_c": "C. To provide a graphical user interface",
+            "option_d": "D. To secure the system from viruses",
+            "correct_answer": "B",
+            "explanation": "SPOOLing allows I/O and CPU to operate concurrently, keeping both busy and improving overall system utilization."
+        },
+        {
+            "question": "In a multiprogramming environment, what data structure allows the OS to select the job that runs next?",
+            "option_a": "A. The cache memory",
+            "option_b": "B. The interrupt vector",
+            "option_c": "C. The job pool",
+            "option_d": "D. The system call table",
+            "correct_answer": "C",
+            "explanation": "The job pool is a data structure that holds multiple jobs, enabling the OS to choose which one to execute next."
+        },
+        {
+            "question": "Which of the following is NOT a service the operating system must consider to support multiprogramming?",
+            "option_a": "A. Job scheduling",
+            "option_b": "B. Memory management",
+            "option_c": "C. CPU scheduling",
+            "option_d": "D. SPOOLing management",
+            "correct_answer": "D",
+            "explanation": "SPOOLing is a technique, not a core service like job scheduling, memory management, CPU scheduling, or I/O allocation."
+        },
+        {
+            "question": "How does multiprogramming increase CPU utilization?",
+            "option_a": "A. By keeping only one program in memory at a time",
+            "option_b": "B. By keeping several programs in memory and multiplexing the CPU among them",
+            "option_c": "C. By increasing the clock speed of the CPU",
+            "option_d": "D. By using a faster hard disk",
+            "correct_answer": "B",
+            "explanation": "Multiprogramming keeps multiple programs in memory; while one waits for I/O, the CPU switches to another, keeping the CPU busy."
+        },
+        {
+            "question": "What is a key characteristic of a time-sharing system?",
+            "option_a": "A. It is only used for batch processing",
+            "option_b": "B. It provides interactive use of the computer system at a reasonable cost",
+            "option_c": "C. It does not require memory management",
+            "option_d": "D. It runs only one program at a time",
+            "correct_answer": "B",
+            "explanation": "Time-sharing systems enable multiple users to interact with the system simultaneously, providing interactive computing at reasonable cost."
+        },
+        {
+            "question": "In a hard real-time system, what is the consequence if a response is not generated within the allocated time?",
+            "option_a": "A. There will be a smaller, manageable amount of damage",
+            "option_b": "B. The system simply slows down",
+            "option_c": "C. There will be a larger amount of damage created",
+            "option_d": "D. The user is prompted to try again",
+            "correct_answer": "C",
+            "explanation": "Missing a deadline in a hard real-time system can lead to catastrophic system failure or significant damage."
+        },
+        {
+            "question": "Which type of real-time system is commonly used in controlling scientific experiments and medical imaging systems?",
+            "option_a": "A. Soft real-time system",
+            "option_b": "B. Time-sharing system",
+            "option_c": "C. Batch system",
+            "option_d": "D. Hard real-time system",
+            "correct_answer": "D",
+            "explanation": "Hard real-time systems are used in applications like scientific experiments and medical imaging where timing constraints are critical."
+        },
+        {
+            "question": "Storage systems are organized in a hierarchy based on which criteria?",
+            "option_a": "A. Color and manufacturer",
+            "option_b": "B. Speed, cost, volatility, and size/capacity",
+            "option_c": "C. Age and version",
+            "option_d": "D. Number of users and applications",
+            "correct_answer": "B",
+            "explanation": "The storage hierarchy is organized by trade-offs in speed, cost, volatility, and capacity."
+        },
+        {
+            "question": "What is the bootstrap program?",
+            "option_a": "A. A type of application software",
+            "option_b": "B. A program loaded at power-up or reboot that initializes the system",
+            "option_c": "C. A user interface for managing files",
+            "option_d": "D. A hardware component for cooling the CPU",
+            "correct_answer": "B",
+            "explanation": "The bootstrap program is the first code executed when a computer starts; it initializes the system and loads the OS kernel."
+        },
+        {
+            "question": "Where is the bootstrap program typically stored?",
+            "option_a": "A. On the hard disk",
+            "option_b": "B. In RAM",
+            "option_c": "C. In ROM or EPROM (firmware)",
+            "option_d": "D. In the CPU cache",
+            "correct_answer": "C",
+            "explanation": "The bootstrap program resides in non-volatile memory such as ROM or EPROM, often called firmware."
+        },
+        {
+            "question": "A system that contains only one CPU to execute general-purpose instructions is called a:",
+            "option_a": "A. Multiprocessor system",
+            "option_b": "B. Clustered system",
+            "option_c": "C. Single-processor system",
+            "option_d": "D. Multicore system",
+            "correct_answer": "C",
+            "explanation": "A single-processor system has exactly one general-purpose CPU."
+        },
+        {
+            "question": "Which of the following is NOT listed as an advantage of a multiprocessor system?",
+            "option_a": "A. Increased throughput",
+            "option_b": "B. Economy of scale",
+            "option_c": "C. Increased reliability",
+            "option_d": "D. Reduced power consumption",
+            "correct_answer": "D",
+            "explanation": "Advantages include increased throughput, economy of scale, and increased reliability; reduced power consumption is not a primary advantage."
+        },
+        {
+            "question": "In Asymmetric Multiprocessing (AMP), how are the processors organized?",
+            "option_a": "A. All processors are equal and share the workload",
+            "option_b": "B. With a master-slave approach",
+            "option_c": "C. Each processor runs its own independent OS",
+            "option_d": "D. They are connected via a slow network",
+            "correct_answer": "B",
+            "explanation": "Asymmetric multiprocessing uses a master-slave relationship: a master processor controls and schedules work for the slave processors."
+        },
+        {
+            "question": "A key characteristic of Symmetric Multiprocessing (SMP) is:",
+            "option_a": "A. It uses a master processor to control others",
+            "option_b": "B. It has no master-slave model and each processor runs an identical copy of the OS",
+            "option_c": "C. It is only used in extremely large systems",
+            "option_d": "D. Each processor has its own separate memory not shared with others",
+            "correct_answer": "B",
+            "explanation": "In SMP, all processors are peers; each runs an identical copy of the OS and shares memory."
+        },
+        {
+            "question": "What is the main difference between a clustered system and a multiprocessor system?",
+            "option_a": "A. A clustered system consists of individual systems or nodes connected via LAN",
+            "option_b": "B. A clustered system has only one CPU",
+            "option_c": "C. A multiprocessor system cannot share storage",
+            "option_d": "D. A clustered system does not offer high-availability",
+            "correct_answer": "A",
+            "explanation": "Clustered systems are loosely coupled, composed of independent nodes connected via a local area network, unlike tightly coupled multiprocessors."
+        },
+        {
+            "question": "According to the lecture, which operating system is an example of a simple structure?",
+            "option_a": "A. UNIX",
+            "option_b": "B. Linux",
+            "option_c": "C. Mac OS",
+            "option_d": "D. MS-DOS",
+            "correct_answer": "D",
+            "explanation": "MS-DOS is cited as an example of a simple operating system structure with little separation between components."
+        },
+        {
+            "question": "Which operating system is given as an example of a layered structure?",
+            "option_a": "A. MS-DOS",
+            "option_b": "B. UNIX",
+            "option_c": "C. An abstraction (layered)",
+            "option_d": "D. Solaris",
+            "correct_answer": "C",
+            "explanation": "A layered operating system is an abstraction where the system is divided into hierarchical layers, each using services of lower layers."
+        },
+        {
+            "question": "According to the lecture, what is a key characteristic of the MS-DOS structure?",
+            "option_a": "A. It is divided into many well-separated modules",
+            "option_b": "B. Its interfaces and levels of functionality are not well separated",
+            "option_c": "C. It is based on a microkernel",
+            "option_d": "D. It is designed for multiprocessor systems",
+            "correct_answer": "B",
+            "explanation": "MS-DOS has a simple structure where interfaces and functionality levels are not clearly separated, leading to minimal modularity."
+        },
+        {
+            "question": "In the traditional UNIX structure, what does the kernel consist of?",
+            "option_a": "A. Only the user interface",
+            "option_b": "B. Everything below the system-call interface and above the physical hardware",
+            "option_c": "C. Only the hardware drivers",
+            "option_d": "D. The system libraries",
+            "correct_answer": "B",
+            "explanation": "The UNIX kernel includes all system components between the system-call interface and the hardware."
+        },
+        {
+            "question": "In a layered operating system structure, how do the layers interact?",
+            "option_a": "A. Each layer can use functions from any other layer",
+            "option_b": "B. Each layer uses functions and services of only lower-level layers",
+            "option_c": "C. The top layer communicates directly with the hardware",
+            "option_d": "D. Layers operate completely independently",
+            "correct_answer": "B",
+            "explanation": "Layered design enforces that each layer can only use services provided by lower layers, promoting modularity and abstraction."
+        },
+        {
+            "question": "What is a primary benefit of a microkernel structure?",
+            "option_a": "A. It has a large amount of code running in kernel mode",
+            "option_b": "B. It is more reliable because less code is running in kernel mode",
+            "option_c": "C. It provides the most functionality in the least space",
+            "option_d": "D. It has no performance overhead",
+            "correct_answer": "B",
+            "explanation": "A microkernel minimizes kernel-mode code, reducing the chance of system crashes and improving reliability."
+        },
+        {
+            "question": "What is a detriment or disadvantage of the microkernel approach?",
+            "option_a": "A. It is difficult to extend",
+            "option_b": "B. It is hard to port to new architectures",
+            "option_c": "C. Performance overhead of user space to kernel space communication",
+            "option_d": "D. It cannot use message passing",
+            "correct_answer": "C",
+            "explanation": "The frequent communication between user-mode modules and the microkernel via message passing introduces performance overhead."
+        },
+        {
+            "question": "How do modules communicate in a microkernel-based system?",
+            "option_a": "A. By directly accessing each other's memory",
+            "option_b": "B. By using system calls only",
+            "option_c": "C. Using message passing",
+            "option_d": "D. Through a shared global variable",
+            "correct_answer": "C",
+            "explanation": "Microkernel architectures use message passing as the primary communication mechanism between user-space modules and the kernel."
+        },
+        {
+            "question": "Modern operating systems like Linux and Solaris implement which type of structure?",
+            "option_a": "A. Simple structure",
+            "option_b": "B. Layered structure only",
+            "option_c": "C. Microkernel structure only",
+            "option_d": "D. Loadable kernel modules",
+            "correct_answer": "D",
+            "explanation": "Linux, Solaris, and many modern OSes use loadable kernel modules to dynamically add functionality, combining modularity with performance."
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What is a thread?",
+            "option_a": "A. A complete program that runs independently of any process",
+            "option_b": "B. A single, independent stream of execution within a process",
+            "option_c": "C. A hardware component that manages CPU scheduling",
+            "option_d": "D. A type of system call for I/O operations",
+            "correct_answer": "B",
+            "explanation": "Slide 4 defines a thread as a single, independent stream of execution within a process or application."
+        },
+        {
+            "question": "How does thread creation compare to process creation?",
+            "option_a": "A. Thread creation is heavier than process creation",
+            "option_b": "B. Thread creation and process creation require the same resources",
+            "option_c": "C. Thread creation is lighter than process creation",
+            "option_d": "D. They are completely unrelated concepts",
+            "correct_answer": "C",
+            "explanation": "Process creation is heavyweight because many resources must be allocated; thread creation is lightweight because threads share resources."
+        },
+        {
+            "question": "According to the lecture, what is the basic unit of CPU utilization?",
+            "option_a": "A. Process",
+            "option_b": "B. Program",
+            "option_c": "C. Thread",
+            "option_d": "D. Kernel",
+            "correct_answer": "C",
+            "explanation": "Slide 5 explicitly states that a thread is the basic unit of CPU utilization."
+        },
+        {
+            "question": "In a uniprocessor system, how many threads can run at a time?",
+            "option_a": "A. Multiple threads can run simultaneously",
+            "option_b": "B. Only one thread at a time",
+            "option_c": "C. It depends on the operating system",
+            "option_d": "D. All threads in the ready queue",
+            "correct_answer": "B",
+            "explanation": "Slide 6 explains that in a uniprocessor system, only one thread can be running at any given time."
+        },
+        {
+            "question": "What components does each thread have its own?",
+            "option_a": "A. Data section and heap section",
+            "option_b": "B. Program Counter and Stack",
+            "option_c": "C. Text section and file descriptors",
+            "option_d": "D. Global variables and I/O buffers",
+            "correct_answer": "B",
+            "explanation": "Each thread has its own Program Counter (PC) and stack, as stated on Slide 6."
+        },
+        {
+            "question": "What is true about protection between threads within the same process?",
+            "option_a": "A. There is strong protection between threads",
+            "option_b": "B. Threads cannot access each other's stacks",
+            "option_c": "C. There is no protection between threads",
+            "option_d": "D. Each thread has its own protected memory space",
+            "correct_answer": "C",
+            "explanation": "Slide 6 explicitly states that there is no protection between threads within a process."
+        },
+        {
+            "question": "Which of the following is NOT listed as a benefit of threads?",
+            "option_a": "A. Responsiveness",
+            "option_b": "B. Resource Sharing",
+            "option_c": "C. Economy",
+            "option_d": "D. Security",
+            "correct_answer": "D",
+            "explanation": "Slide 9 lists responsiveness, resource sharing, economy, and scalability as benefits; security is not mentioned."
+        },
+        {
+            "question": "What does the 'Economy' benefit of threads refer to?",
+            "option_a": "A. Threads save money on hardware",
+            "option_b": "B. Threads consume less power",
+            "option_c": "C. Threads are cheaper than process creation and thread switching has lower overhead than context switching",
+            "option_d": "D. Threads eliminate the need for memory",
+            "correct_answer": "C",
+            "explanation": "Slide 9 defines economy as cheaper than process creation and thread switching having lower overhead than context switching."
+        },
+        {
+            "question": "Which of the following is a primary user-level thread library mentioned in the lecture?",
+            "option_a": "A. Linux Threads",
+            "option_b": "B. Solaris Threads",
+            "option_c": "C. POSIX Threads (Pthreads)",
+            "option_d": "D. Windows Kernel",
+            "correct_answer": "C",
+            "explanation": "POSIX Threads (Pthreads) is a standard user-level thread library mentioned in the lecture."
+        },
+        {
+            "question": "Kernel threads are supported by which of the following?",
+            "option_a": "A. User-level libraries only",
+            "option_b": "B. The Kernel",
+            "option_c": "C. Application programs",
+            "option_d": "D. The hardware directly",
+            "correct_answer": "B",
+            "explanation": "Slide 10 states that kernel threads are supported by the kernel."
+        },
+        {
+            "question": "Which multithreading model maps many user-level threads to a single kernel thread?",
+            "option_a": "A. One-to-One model",
+            "option_b": "B. Many-to-Many model",
+            "option_c": "C. Many-to-One model",
+            "option_d": "D. One-to-Many model",
+            "correct_answer": "C",
+            "explanation": "The Many-to-One model maps many user-level threads to a single kernel thread, as described on Slide 12."
+        },
+        {
+            "question": "What is a disadvantage of the Many-to-One model?",
+            "option_a": "A. It requires too many kernel threads",
+            "option_b": "B. One thread blocking causes all threads to block",
+            "option_c": "C. It cannot run on multicore systems at all",
+            "option_d": "D. It has high memory overhead",
+            "correct_answer": "B",
+            "explanation": "Slide 12 notes that a disadvantage of the Many-to-One model is that if one thread blocks, all threads in the process block."
+        },
+        {
+            "question": "Which operating systems are examples of the One-to-One model?",
+            "option_a": "A. Solaris Green Threads and GNU Portable Threads",
+            "option_b": "B. Windows and Linux",
+            "option_c": "C. Mac OS X only",
+            "option_d": "D. Solaris prior to version 9",
+            "correct_answer": "B",
+            "explanation": "Slide 13 lists Windows, Linux, and Solaris 9 and later as examples of the One-to-One model."
+        },
+        {
+            "question": "Which multithreading model allows many user-level threads to be mapped to many kernel threads?",
+            "option_a": "A. Many-to-One",
+            "option_b": "B. One-to-One",
+            "option_c": "C. Many-to-Many",
+            "option_d": "D. One-to-Many",
+            "correct_answer": "C",
+            "explanation": "The Many-to-Many model allows many user-level threads to be mapped to many kernel threads, as per Slide 14."
+        },
+        {
+            "question": "What does a thread library provide to a programmer?",
+            "option_a": "A. Hardware access",
+            "option_b": "B. API for creating and managing threads",
+            "option_c": "C. Memory allocation functions",
+            "option_d": "D. Network protocols",
+            "correct_answer": "B",
+            "explanation": "Slide 15 defines a thread library as providing an API for creating and managing threads."
+        },
+        {
+            "question": "What are the two primary ways of implementing a thread library?",
+            "option_a": "A. Kernel space only and user space only",
+            "option_b": "B. Library entirely in user space and kernel-level library supported by the OS",
+            "option_c": "C. Hardware-based and software-based",
+            "option_d": "D. Static and dynamic",
+            "correct_answer": "B",
+            "explanation": "Slide 15 lists the two primary ways as library entirely in user space and kernel-level library supported by the OS."
+        },
+        {
+            "question": "What is a thread pool?",
+            "option_a": "A. A group of threads waiting for termination",
+            "option_b": "B. A collection of dead threads",
+            "option_c": "C. A number of threads created in a pool where they await work",
+            "option_d": "D. A scheduling algorithm for threads",
+            "correct_answer": "C",
+            "explanation": "Slide 16 defines a thread pool as a number of threads created in a pool where they await work."
+        },
+        {
+            "question": "Which of the following is an advantage of using a thread pool?",
+            "option_a": "A. It consumes more memory",
+            "option_b": "B. It allows the number of threads to be bound to the size of the pool",
+            "option_c": "C. It requires creating new threads for each request",
+            "option_d": "D. It prevents task separation",
+            "correct_answer": "B",
+            "explanation": "Slide 16 states that a thread pool allows the number of threads to be bound to the size of the pool, improving resource management."
+        },
+        {
+            "question": "When delivering a signal to a multithreaded process, which of the following is NOT mentioned as an option?",
+            "option_a": "A. Deliver the signal to the thread to which the signal applies",
+            "option_b": "B. Deliver the signal to every thread in the process",
+            "option_c": "C. Deliver the signal to certain threads in the process",
+            "option_d": "D. Ignore all signals completely",
+            "correct_answer": "D",
+            "explanation": "Slide 18 lists four signal delivery options; ignoring all signals is not among them."
+        },
+        {
+            "question": "What is thread cancellation?",
+            "option_a": "A. Creating a new thread",
+            "option_b": "B. Terminating a thread before it has finished",
+            "option_c": "C. Pausing a thread temporarily",
+            "option_d": "D. Moving a thread to another process",
+            "correct_answer": "B",
+            "explanation": "Slide 19 defines thread cancellation as terminating a thread before it has finished."
+        },
+        {
+            "question": "In thread cancellation, what is the thread to be canceled called?",
+            "option_a": "A. Source thread",
+            "option_b": "B. Parent thread",
+            "option_c": "C. Target thread",
+            "option_d": "D. Child thread",
+            "correct_answer": "C",
+            "explanation": "The thread to be canceled is referred to as the target thread."
+        },
+        {
+            "question": "Which cancellation approach terminates the target thread immediately?",
+            "option_a": "A. Deferred cancellation",
+            "option_b": "B. Asynchronous cancellation",
+            "option_c": "C. Synchronous cancellation",
+            "option_d": "D. Gradual cancellation",
+            "correct_answer": "B",
+            "explanation": "Asynchronous cancellation terminates the target thread immediately, as defined on Slide 19."
+        },
+        {
+            "question": "In deferred cancellation, what does the target thread do?",
+            "option_a": "A. Immediately terminates when requested",
+            "option_b": "B. Ignores the cancellation request",
+            "option_c": "C. Periodically checks if it should be cancelled",
+            "option_d": "D. Notifies the user before terminating",
+            "correct_answer": "C",
+            "explanation": "Deferred cancellation allows the target thread to periodically check if it should be cancelled, per Slide 19."
+        },
+        {
+            "question": "In the POSIX thread example code, what is the purpose of pthread_join()?",
+            "option_a": "A. To create a new thread",
+            "option_b": "B. To terminate a thread",
+            "option_c": "C. To ensure the main program waits for all threads to finish",
+            "option_d": "D. To detach a thread",
+            "correct_answer": "C",
+            "explanation": "pthread_join() ensures the main program waits for all threads to finish, as explained on Slide 20."
+        },
+        {
+            "question": "In the POSIX thread example, what function is executed by each thread?",
+            "option_a": "A. main()",
+            "option_b": "B. pthread_create()",
+            "option_c": "C. hello()",
+            "option_d": "D. pthread_join()",
+            "correct_answer": "C",
+            "explanation": "Slide 20 states that the hello() function is executed by each thread."
+        }
+    ]
+}
