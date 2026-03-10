@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "What is the key difference between a program and a process?",
+            "option_a": "A. A program is an active entity, while a process is a passive entity",
+            "option_b": "B. A program is a passive entity, while a process is an active entity",
+            "option_c": "C. A program runs in kernel memory, while a process runs in user memory",
+            "option_d": "D. There is no difference; they are the same",
+            "correct_answer": "B",
+            "explanation": "A program is a passive entity (a set of instructions), while a process is an active entity when the program is loaded and running."
+        },
+        {
+            "question": "According to the lecture, what does the Operating System refer to a process as?",
+            "option_a": "A. Programs or scripts",
+            "option_b": "B. Jobs or tasks",
+            "option_c": "C. Threads or routines",
+            "option_d": "D. Applications or software",
+            "correct_answer": "B",
+            "explanation": "The operating system refers to a process as a job or task, as mentioned in the lecture."
+        },
+        {
+            "question": "Which CPU register specifies the next instruction to execute in a process?",
+            "option_a": "A. Accumulator",
+            "option_b": "B. Stack pointer",
+            "option_c": "C. Program Counter",
+            "option_d": "D. Base register",
+            "correct_answer": "C",
+            "explanation": "The Program Counter (PC) is a CPU register that holds the address of the next instruction to be executed."
+        },
+        {
+            "question": "Which part of a process contains temporary data such as function parameters, return addresses, and local variables?",
+            "option_a": "A. Text Section",
+            "option_b": "B. Data Section",
+            "option_c": "C. Heap Section",
+            "option_d": "D. Stack Section",
+            "correct_answer": "D",
+            "explanation": "The stack section stores temporary data like function parameters, return addresses, and local variables."
+        },
+        {
+            "question": "When a process is waiting to be assigned to a processor, what state is it in?",
+            "option_a": "A. New",
+            "option_b": "B. Running",
+            "option_c": "C. Waiting",
+            "option_d": "D. Ready",
+            "correct_answer": "D",
+            "explanation": "The ready state means the process is waiting to be assigned to a processor."
+        },
+        {
+            "question": "Where does the Process Control Block (PCB) get its memory from when a program loads into RAM?",
+            "option_a": "A. User memory area",
+            "option_b": "B. Hard disk",
+            "option_c": "C. Kernel memory area",
+            "option_d": "D. Cache memory",
+            "correct_answer": "C",
+            "explanation": "The program uses user memory, while the PCB is allocated from kernel memory."
+        },
+        {
+            "question": "Which of the following information is NOT typically stored in a Process Control Block (PCB)?",
+            "option_a": "A. Process state",
+            "option_b": "B. Program counter",
+            "option_c": "C. CPU scheduling information",
+            "option_d": "D. The actual program code (text section)",
+            "correct_answer": "D",
+            "explanation": "The PCB contains process metadata like state and PC, but the actual program code is stored separately in the text section."
+        },
+        {
+            "question": "What is the primary function of the short-term scheduler (CPU scheduler)?",
+            "option_a": "A. To select which processes should be brought into the ready queue from disk",
+            "option_b": "B. To control the degree of multiprogramming",
+            "option_c": "C. To select which process should be executed next and allocate the CPU",
+            "option_d": "D. To manage I/O device queues",
+            "correct_answer": "C",
+            "explanation": "The short-term scheduler selects the next process to run and allocates the CPU."
+        },
+        {
+            "question": "What does the long-term scheduler (job scheduler) control?",
+            "option_a": "A. The execution order of processes on the CPU",
+            "option_b": "B. The degree of multiprogramming",
+            "option_c": "C. The context switching time",
+            "option_d": "D. The allocation of I/O devices",
+            "correct_answer": "B",
+            "explanation": "The long-term scheduler controls the degree of multiprogramming, i.e., the number of processes in memory."
+        },
+        {
+            "question": "A process that spends more time doing I/O than computations, with many short CPU bursts, is called:",
+            "option_a": "A. CPU-bound process",
+            "option_b": "B. I/O-bound process",
+            "option_c": "C. Long-term process",
+            "option_d": "D. Terminated process",
+            "correct_answer": "B",
+            "explanation": "An I/O-bound process performs more I/O operations and has short CPU bursts."
+        },
+        {
+            "question": "What is the purpose of a medium-term scheduler?",
+            "option_a": "A. To increase the degree of multiprogramming",
+            "option_b": "B. To select which process runs next on the CPU",
+            "option_c": "C. To decrease the degree of multiprogramming",
+            "option_d": "D. To create new processes",
+            "correct_answer": "C",
+            "explanation": "The medium-term scheduler can reduce the degree of multiprogramming by temporarily removing processes from memory."
+        },
+        {
+            "question": "Which queue contains all processes residing in main memory that are ready and waiting to execute?",
+            "option_a": "A. Job queue",
+            "option_b": "B. Ready queue",
+            "option_c": "C. Device queue",
+            "option_d": "D. Waiting queue",
+            "correct_answer": "B",
+            "explanation": "The ready queue holds all processes in main memory that are ready to run."
+        },
+        {
+            "question": "What is a context switch?",
+            "option_a": "A. Changing the priority of a process",
+            "option_b": "B. Saving the state of the old process and loading the saved state for the new process",
+            "option_c": "C. Switching from user mode to kernel mode",
+            "option_d": "D. Moving a process from the ready queue to the device queue",
+            "correct_answer": "B",
+            "explanation": "A context switch occurs when the CPU switches from one process to another, saving and loading process states."
+        },
+        {
+            "question": "What is true about context-switch time?",
+            "option_a": "A. It is time during which the system does useful work",
+            "option_b": "B. It is overhead where the system does no useful work",
+            "option_c": "C. It is always zero in modern systems",
+            "option_d": "D. It is determined by the user",
+            "correct_answer": "B",
+            "explanation": "Context-switch time is overhead because the system performs no useful work during the switch."
+        },
+        {
+            "question": "What system call is used to create a new child process by duplicating the parent process's address space?",
+            "option_a": "A. exec()",
+            "option_b": "B. wait()",
+            "option_c": "C. exit()",
+            "option_d": "D. fork()",
+            "correct_answer": "D",
+            "explanation": "fork() creates a new child process by duplicating the parent's address space."
+        },
+        {
+            "question": "What is the purpose of the exec() system call?",
+            "option_a": "A. To create a new process",
+            "option_b": "B. To terminate a process",
+            "option_c": "C. To replace the process's memory space with a new program",
+            "option_d": "D. To make a process wait for its child",
+            "correct_answer": "C",
+            "explanation": "exec() replaces the current process's memory space with a new program."
+        },
+        {
+            "question": "How does a process terminate itself?",
+            "option_a": "A. By calling fork()",
+            "option_b": "B. By calling exec()",
+            "option_c": "C. By calling exit()",
+            "option_d": "D. By calling wait()",
+            "correct_answer": "C",
+            "explanation": "A process terminates by calling the exit() system call to ask the OS to delete it."
+        },
+        {
+            "question": "Which system call does a parent process use to obtain the state value from its terminated child?",
+            "option_a": "A. exit()",
+            "option_b": "B. fork()",
+            "option_c": "C. exec()",
+            "option_d": "D. wait()",
+            "correct_answer": "D",
+            "explanation": "wait() is used by a parent to retrieve the exit status of a terminated child."
+        },
+        {
+            "question": "What are the three main models of Inter Process Communication (IPC) mentioned in the lecture?",
+            "option_a": "A. Pipes, signals, and sockets",
+            "option_b": "B. Shared memory, message passing, and pipe",
+            "option_c": "C. Message queues, semaphores, and monitors",
+            "option_d": "D. fork(), exec(), and wait()",
+            "correct_answer": "B",
+            "explanation": "The lecture lists shared memory, message passing, and pipes as the three IPC models."
+        },
+        {
+            "question": "Which IPC method enables asynchronous communication where messages are stored in a queue until retrieved?",
+            "option_a": "A. Shared memory",
+            "option_b": "B. Pipes",
+            "option_c": "C. Message passing (message queues)",
+            "option_d": "D. Sockets",
+            "correct_answer": "C",
+            "explanation": "Message queues allow asynchronous communication by storing messages until the receiver retrieves them."
+        },
+        {
+            "question": "Which system call is used to send a message in message queue communication?",
+            "option_a": "A. msgget()",
+            "option_b": "B. msgnd()",
+            "option_c": "C. msgrcv()",
+            "option_d": "D. msgctl()",
+            "correct_answer": "B",
+            "explanation": "According to the lecture, msgnd() (likely a typo for msgsnd()) is used to send a message."
+        },
+        {
+            "question": "What is the fastest IPC method according to the lecture?",
+            "option_a": "A. Message passing",
+            "option_b": "B. Pipes",
+            "option_c": "C. Sockets",
+            "option_d": "D. Shared memory",
+            "correct_answer": "D",
+            "explanation": "Shared memory is the fastest IPC because it avoids kernel involvement once mapped."
+        },
+        {
+            "question": "Once shared memory is mapped, what is no longer required?",
+            "option_a": "A. CPU involvement",
+            "option_b": "B. Process synchronization",
+            "option_c": "C. Kernel memory involvement",
+            "option_d": "D. System calls",
+            "correct_answer": "C",
+            "explanation": "After mapping shared memory, kernel involvement is no longer needed for data access."
+        },
+        {
+            "question": "What system call is used to attach a shared memory segment to the address space of the calling process?",
+            "option_a": "A. shmget()",
+            "option_b": "B. shmat()",
+            "option_c": "C. shmdt()",
+            "option_d": "D. shmctl()",
+            "correct_answer": "B",
+            "explanation": "shmat() attaches a shared memory segment to the process's address space."
+        },
+        {
+            "question": "Which type of pipe can be used for communication between unrelated processes?",
+            "option_a": "A. Anonymous pipes",
+            "option_b": "B. Unnamed pipes",
+            "option_c": "C. Named pipes (FIFOs)",
+            "option_d": "D. Standard pipes",
+            "correct_answer": "C",
+            "explanation": "Named pipes (FIFOs) allow communication between unrelated processes, unlike anonymous pipes."
+        }
+    ]
+}

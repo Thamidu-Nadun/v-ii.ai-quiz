@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "What is a thread in the context of operating systems?",
+            "option_a": "A. A separate program running independently",
+            "option_b": "B. A single, independent stream of execution within a process",
+            "option_c": "C. The main memory allocation unit",
+            "option_d": "D. A system-level protection mechanism",
+            "correct_answer": "B",
+            "explanation": "A thread represents a single, independent stream of execution within a process/application, allowing multiple tasks to run concurrently within the same process."
+        },
+        {
+            "question": "Which of the following correctly describes the visibility of threads?",
+            "option_a": "A. Threads are always visible to all system processes",
+            "option_b": "B. Threads are generally invisible from outside the processes they run within",
+            "option_c": "C. Threads are visible only to the kernel",
+            "option_d": "D. Threads are visible only to other threads in different processes",
+            "correct_answer": "B",
+            "explanation": "Threads run within processes and are generally invisible from outside the processes, making them lightweight execution units contained within their parent process."
+        },
+        {
+            "question": "Which statement about process creation versus thread creation is TRUE?",
+            "option_a": "A. Process creation is lightweight, thread creation is heavyweight",
+            "option_b": "B. Both process and thread creation require equal resources",
+            "option_c": "C. Process creation is heavyweight, thread creation is lightweight",
+            "option_d": "D. Thread creation requires more resources than process creation",
+            "correct_answer": "C",
+            "explanation": "Process creation is heavyweight because many resources need to be allocated, while thread creation is lightweight as threads share resources of the parent process."
+        },
+        {
+            "question": "In a multithreaded process, which of the following is TRUE about thread stacks?",
+            "option_a": "A. All threads share a single stack",
+            "option_b": "B. Each thread has its own stack, but threads cannot access each other's stacks",
+            "option_c": "C. Each thread has its own stack, and threads can read or write any other thread's stack",
+            "option_d": "D. Stacks are managed entirely by the hardware",
+            "correct_answer": "C",
+            "explanation": "Each thread has its own Program Counter (PC) and Stack, but all threads can access every address in the process, including reading or writing any other thread's stack."
+        },
+        {
+            "question": "Which of the following is NOT a benefit of multithreading according to the lecture?",
+            "option_a": "A. Responsiveness - continued execution if part of process is blocked",
+            "option_b": "B. Resource Sharing - threads share resources of the process",
+            "option_c": "C. Economy - cheaper than process creation",
+            "option_d": "D. Security - complete isolation between threads",
+            "correct_answer": "D",
+            "explanation": "There is no protection between threads within a process - threads can access each other's memory, which is actually a potential security concern, not a benefit."
+        },
+        {
+            "question": "What is the basic unit of CPU utilization?",
+            "option_a": "A. Process",
+            "option_b": "B. Program",
+            "option_c": "C. Thread",
+            "option_d": "D. Kernel",
+            "correct_answer": "C",
+            "explanation": "Thread is the basic unit of CPU utilization, as it represents a single stream of execution that can be scheduled to run on a processor."
+        },
+        {
+            "question": "In a uniprocessor system, how many threads can be running at the same time?",
+            "option_a": "A. Multiple threads, one per process",
+            "option_b": "B. Only one thread at a time",
+            "option_c": "C. All threads in the system",
+            "option_d": "D. All threads in the running process",
+            "correct_answer": "B",
+            "explanation": "In a uniprocessor system, only one thread at a time can be running, while on a multiprocessor, different threads may execute on different processors simultaneously."
+        },
+        {
+            "question": "What happens if one thread is blocked in a multithreaded process?",
+            "option_a": "A. All threads in the process are blocked",
+            "option_b": "B. The entire process is terminated",
+            "option_c": "C. Another thread can run",
+            "option_d": "D. The system must be rebooted",
+            "correct_answer": "C",
+            "explanation": "Threads within a process are independent - if one thread is blocked, another thread can continue running, providing responsiveness."
+        },
+        {
+            "question": "Which of the following best describes user threads?",
+            "option_a": "A. Threads managed entirely by the operating system kernel",
+            "option_b": "B. Threads whose management is done by user-level threads library",
+            "option_c": "C. Threads that can only run in user mode",
+            "option_d": "D. Threads that have no kernel counterpart",
+            "correct_answer": "B",
+            "explanation": "User threads are managed by user-level threads libraries, not by the kernel, allowing thread management without operating system intervention."
+        },
+        {
+            "question": "Which of the following is an example of a user-level thread library?",
+            "option_a": "A. Windows Kernel",
+            "option_b": "B. Solaris Kernel Threads",
+            "option_c": "C. POSIX Pthreads",
+            "option_d": "D. Linux Scheduler",
+            "correct_answer": "C",
+            "explanation": "POSIX Pthreads is a user-level thread library, along with Windows threads and Java threads, which are mentioned as primary thread libraries."
+        },
+        {
+            "question": "In the Many-to-One threading model, what happens when one thread makes a blocking system call?",
+            "option_a": "A. Only that thread blocks, others continue",
+            "option_b": "B. All threads in the process block",
+            "option_c": "C. The kernel creates a new thread",
+            "option_d": "D. The process terminates automatically",
+            "correct_answer": "B",
+            "explanation": "In the Many-to-One model, multiple user-level threads are mapped to a single kernel thread, so if one thread blocks, all threads in the process are blocked."
+        },
+        {
+            "question": "Which threading model maps each user-level thread to a kernel thread?",
+            "option_a": "A. Many-to-One Model",
+            "option_b": "B. One-to-One Model",
+            "option_c": "C. Many-to-Many Model",
+            "option_d": "D. One-to-Many Model",
+            "correct_answer": "B",
+            "explanation": "The One-to-One model maps each user-level thread to a corresponding kernel thread, providing more concurrency than the Many-to-One model."
+        },
+        {
+            "question": "Which operating systems use the One-to-One threading model?",
+            "option_a": "A. Windows and Linux",
+            "option_b": "B. Solaris Green Threads only",
+            "option_c": "C. GNU Portable Threads only",
+            "option_d": "D. Mac OS 9 only",
+            "correct_answer": "A",
+            "explanation": "Windows and Linux, along with Solaris 9 and later, use the One-to-One threading model where each user thread maps to a kernel thread."
+        },
+        {
+            "question": "What is a limitation of the One-to-One threading model?",
+            "option_a": "A. No concurrency support",
+            "option_b": "B. Number of threads per process may be restricted due to overhead",
+            "option_c": "C. Cannot run on multiprocessor systems",
+            "option_d": "D. Threads cannot be created dynamically",
+            "correct_answer": "B",
+            "explanation": "In the One-to-One model, the number of threads per process may be restricted due to the overhead of creating a kernel thread for each user thread."
+        },
+        {
+            "question": "Which threading model allows many user-level threads to be mapped to many kernel threads?",
+            "option_a": "A. Many-to-One Model",
+            "option_b": "B. One-to-One Model",
+            "option_c": "C. Many-to-Many Model",
+            "option_d": "D. Single-to-Single Model",
+            "correct_answer": "C",
+            "explanation": "The Many-to-Many model allows many user-level threads to be mapped to many kernel threads, providing flexibility and concurrency."
+        },
+        {
+            "question": "What is the primary purpose of a thread pool?",
+            "option_a": "A. To store terminated threads for debugging",
+            "option_b": "B. To create a number of threads in a pool where they await work",
+            "option_c": "C. To limit the total number of threads in the system",
+            "option_d": "D. To provide a backup for failed threads",
+            "correct_answer": "B",
+            "explanation": "A thread pool creates a number of threads in a pool where they await work, allowing faster service of requests with existing threads rather than creating new ones."
+        },
+        {
+            "question": "Which of the following is an advantage of using thread pools?",
+            "option_a": "A. Threads in the pool cannot be reused",
+            "option_b": "B. Usually slightly faster to service a request with an existing thread than create a new thread",
+            "option_c": "C. Thread pools require more memory than individual threads",
+            "option_d": "D. Thread pools automatically delete threads after use",
+            "correct_answer": "B",
+            "explanation": "Thread pools are advantageous because it's usually faster to service a request with an existing thread than to create a new thread, and they allow binding the number of threads to the pool size."
+        },
+        {
+            "question": "In the context of signal handling in multithreaded processes, which approach is mentioned in the lecture?",
+            "option_a": "A. Always deliver signals to the main thread only",
+            "option_b": "B. Deliver the signal to the thread to which the signal applies",
+            "option_c": "C. Never deliver signals to threads",
+            "option_d": "D. Queue all signals for later processing",
+            "correct_answer": "B",
+            "explanation": "One approach mentioned is to deliver the signal to the thread to which the signal applies, along with other options like delivering to every thread or assigning a specific thread to receive all signals."
+        },
+        {
+            "question": "What is thread cancellation?",
+            "option_a": "A. Creating a new thread",
+            "option_b": "B. Terminating a thread before it has finished",
+            "option_c": "C. Suspending a thread temporarily",
+            "option_d": "D. Moving a thread to another process",
+            "correct_answer": "B",
+            "explanation": "Thread cancellation is the process of terminating a thread before it has finished its execution."
+        },
+        {
+            "question": "What is asynchronous cancellation in thread termination?",
+            "option_a": "A. The thread is notified and can clean up resources",
+            "option_b": "B. The thread continues execution until completion",
+            "option_c": "C. The target thread is terminated immediately",
+            "option_d": "D. The thread is moved to another processor",
+            "correct_answer": "C",
+            "explanation": "Asynchronous cancellation terminates the target thread immediately, without giving it a chance to perform cleanup operations."
+        },
+        {
+            "question": "What is deferred cancellation in thread termination?",
+            "option_a": "A. The thread is terminated immediately",
+            "option_b": "B. The thread continues running indefinitely",
+            "option_c": "C. The target thread periodically checks if it should be cancelled",
+            "option_d": "D. The thread is never terminated",
+            "correct_answer": "C",
+            "explanation": "Deferred cancellation allows the target thread to periodically check if it should be cancelled, giving it the opportunity to perform cleanup operations."
+        },
+        {
+            "question": "In the Pthreads example code provided, what is the purpose of pthread_join()?",
+            "option_a": "A. To create a new thread",
+            "option_b": "B. To terminate a thread immediately",
+            "option_c": "C. To ensure the main program waits for all threads to finish",
+            "option_d": "D. To detach a thread from the process",
+            "correct_answer": "C",
+            "explanation": "pthread_join() ensures the main program waits for all threads to finish before continuing execution, allowing proper synchronization."
+        },
+        {
+            "question": "In the Pthreads example, what function is executed by each created thread?",
+            "option_a": "A. main()",
+            "option_b": "B. pthread_create()",
+            "option_c": "C. hello()",
+            "option_d": "D. pthread_join()",
+            "correct_answer": "C",
+            "explanation": "In the example, each thread executes the hello() function, which prints 'Hello Thread' and returns."
+        },
+        {
+            "question": "What does the POSIX standard (IEEE 1003.1c) specify?",
+            "option_a": "A. The implementation details of thread libraries",
+            "option_b": "B. The API for thread creation and synchronization",
+            "option_c": "C. The hardware requirements for threading",
+            "option_d": "D. The scheduling algorithm for threads",
+            "correct_answer": "B",
+            "explanation": "The POSIX standard (IEEE 1003.1c) specifies the API for thread creation and synchronization, with the implementation left to the library developers."
+        },
+        {
+            "question": "Which of the following is TRUE about the relationship between processes and threads?",
+            "option_a": "A. Processes run within threads",
+            "option_b": "B. Threads run within processes",
+            "option_c": "C. Processes and threads are independent entities",
+            "option_d": "D. Threads cannot exist within processes",
+            "correct_answer": "B",
+            "explanation": "Threads run within processes, representing independent streams of execution within the process/application."
+        },
+        {
+            "question": "What is a key characteristic of kernel threads?",
+            "option_a": "A. They are managed by user-level libraries",
+            "option_b": "B. They are supported by the Kernel",
+            "option_c": "C. They cannot run on multiprocessor systems",
+            "option_d": "D. They are always created in pairs",
+            "correct_answer": "B",
+            "explanation": "Kernel threads are supported by the Kernel and are found in virtually all general-purpose operating systems including Windows, Linux, and Solaris."
+        },
+        {
+            "question": "According to the lecture, which operating systems use kernel threads?",
+            "option_a": "A. Windows only",
+            "option_b": "B. Linux only",
+            "option_c": "C. Windows, Solaris, Linux, Mac OS X",
+            "option_d": "D. Solaris Green Threads only",
+            "correct_answer": "C",
+            "explanation": "Kernel threads are used in virtually all general-purpose operating systems, including Windows, Solaris, Linux, Tru64 UNIX, and Mac OS X."
+        },
+        {
+            "question": "What is an example of the Many-to-One threading model?",
+            "option_a": "A. Windows threads",
+            "option_b": "B. Linux threads",
+            "option_c": "C. Solaris Green Threads",
+            "option_d": "D. Mac OS X threads",
+            "correct_answer": "C",
+            "explanation": "Solaris Green Threads and GNU Portable Threads are examples of the Many-to-One threading model, where many user threads map to a single kernel thread."
+        },
+        {
+            "question": "In a multiprocessor system, how can threads execute?",
+            "option_a": "A. Only one thread can execute at a time",
+            "option_b": "B. Different threads may execute on different processors",
+            "option_c": "C. Threads must all execute on the same processor",
+            "option_d": "D. Threads cannot execute on multiprocessor systems",
+            "correct_answer": "B",
+            "explanation": "On a multiprocessor system, different threads may execute on different processors simultaneously, enabling true parallel execution."
+        },
+        {
+            "question": "Which statement about thread states is correct according to the lecture?",
+            "option_a": "A. Threads can only be in running or terminated states",
+            "option_b": "B. Threads can be in ready, blocked, running, or terminated states",
+            "option_c": "C. Threads have no states",
+            "option_d": "D. Thread states are determined by the user program",
+            "correct_answer": "B",
+            "explanation": "Threads can be in one of several states: ready, blocked, running, or terminated, similar to process states but at a more granular level."
+        },
+        {
+            "question": "What is the main difference between user threads and kernel threads?",
+            "option_a": "A. User threads are faster than kernel threads",
+            "option_b": "B. User threads are managed without kernel intervention, kernel threads are managed by the OS",
+            "option_c": "C. Kernel threads cannot be created",
+            "option_d": "D. User threads require more memory",
+            "correct_answer": "B",
+            "explanation": "User threads are managed by user-level threads libraries without kernel intervention, while kernel threads are supported and managed by the operating system kernel."
+        },
+        {
+            "question": "What does the Pthreads header file include statement look like?",
+            "option_a": "A. #include <threads.h>",
+            "option_b": "B. #include <pthread.h>",
+            "option_c": "C. #include <posix.h>",
+            "option_d": "D. #include <multithread.h>",
+            "correct_answer": "B",
+            "explanation": "The Pthreads library is included using #include <pthread.h> to create and manage POSIX threads, as shown in the example code."
+        },
+        {
+            "question": "In the context of thread pools, what does 'separating task to be performed from mechanics of creating task' allow?",
+            "option_a": "A. Tasks must be created immediately",
+            "option_b": "B. Different strategies for running tasks, such as periodic scheduling",
+            "option_c": "C. Tasks cannot be modified after creation",
+            "option_d": "D. All tasks must run immediately",
+            "correct_answer": "B",
+            "explanation": "Separating the task from the mechanics of creating it allows different strategies for running tasks, such as scheduling tasks to run periodically."
+        },
+        {
+            "question": "Which threading model is used by Solaris prior to version 9?",
+            "option_a": "A. Many-to-One",
+            "option_b": "B. One-to-One",
+            "option_c": "C. Many-to-Many",
+            "option_d": "D. One-to-Many",
+            "correct_answer": "C",
+            "explanation": "Solaris prior to version 9 used the Many-to-Many model, which allows many user-level threads to be mapped to many kernel threads."
+        },
+        {
+            "question": "What is a potential drawback of the Many-to-One threading model on multicore systems?",
+            "option_a": "A. Multiple threads may not run in parallel because only one may be in kernel at a time",
+            "option_b": "B. Threads run too fast",
+            "option_c": "C. Too many threads can be created",
+            "option_d": "D. Threads cannot communicate with each other",
+            "correct_answer": "A",
+            "explanation": "In the Many-to-One model, multiple threads may not run in parallel on multicore systems because only one thread can be in the kernel at a time due to the single kernel thread mapping."
+        },
+        {
+            "question": "What type of tasks can be implemented by separate threads in a multithreaded application?",
+            "option_a": "A. Only mathematical calculations",
+            "option_b": "B. Update display, fetch data, spell checking, answer network requests",
+            "option_c": "C. Only I/O operations",
+            "option_d": "D. Only system calls",
+            "correct_answer": "B",
+            "explanation": "Multiple tasks within an application can be implemented by separate threads, including updating display, fetching data, spell checking, and answering network requests."
+        },
+        {
+            "question": "What is the purpose of the NUM_THREADS macro in the Pthreads example?",
+            "option_a": "A. To limit the total threads in the system",
+            "option_b": "B. To set the number of threads the program will create",
+            "option_c": "C. To specify thread priority",
+            "option_d": "D. To allocate memory for threads",
+            "correct_answer": "B",
+            "explanation": "The NUM_THREADS macro (set to 4 in the example) determines the number of threads the program will create and manage."
+        },
+        {
+            "question": "According to the lecture, what is the relationship between threads and protection?",
+            "option_a": "A. There is strong protection between threads",
+            "option_b": "B. There is no protection between threads within a process",
+            "option_c": "C. Threads are completely isolated from each other",
+            "option_d": "D. Protection is enforced by hardware",
+            "correct_answer": "B",
+            "explanation": "There is no protection between threads within a process - threads can access each other's memory, including reading or writing any other thread's stack."
+        },
+        {
+            "question": "What does the scalability benefit of threads refer to?",
+            "option_a": "A. Threads can scale to use more memory",
+            "option_b": "B. The process can take advantage of multiprocessor architectures",
+            "option_c": "C. Threads can create unlimited child threads",
+            "option_d": "D. Threads can run on any operating system",
+            "correct_answer": "B",
+            "explanation": "Scalability in threading refers to the process's ability to take advantage of multiprocessor architectures by running different threads on different processors."
+        },
+        {
+            "question": "Which of the following is NOT a valid approach to signal delivery in multithreaded processes as mentioned in the lecture?",
+            "option_a": "A. Deliver the signal to the thread to which the signal applies",
+            "option_b": "B. Deliver the signal to every thread in the process",
+            "option_c": "C. Ignore all signals in multithreaded processes",
+            "option_d": "D. Assign a specific thread to receive all signals for the process",
+            "correct_answer": "C",
+            "explanation": "Ignoring all signals is not mentioned as an approach. The lecture mentions delivering to specific threads, to every thread, to certain threads, or assigning a specific thread to receive all signals."
+        },
+        {
+            "question": "What happens when pthread_create() is called in the example code?",
+            "option_a": "A. The main thread terminates",
+            "option_b": "B. A new thread is created",
+            "option_c": "C. All threads are joined",
+            "option_d": "D. The program exits",
+            "correct_answer": "B",
+            "explanation": "pthread_create() creates a new thread, as shown in the loop where it's called for each thread ID in the array, creating multiple threads."
+        }
+    ]
+}

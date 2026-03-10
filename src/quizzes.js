@@ -1,4 +1,71 @@
 export default [
+    // Operating System Quizzes
+    {
+        title: 'Operating System - 11',
+        path: 'quiz/OS/OS-011.json',
+        description: 'Test your knowledge of operating system security, including access control, authentication, and encryption.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 10',
+        path: 'quiz/OS/OS-010.json',
+        description: 'Evaluate your understanding of operating system performance optimization techniques and tools.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 09',
+        path: 'quiz/OS/OS-009.json',
+        description: 'Test your knowledge of operating system virtualization, including hypervisors and containerization.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 08',
+        path: 'quiz/OS/OS-008.json',
+        description: 'Evaluate your understanding of operating system file systems, including types, structures, and management.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 07',
+        path: 'quiz/OS/OS-007.json',
+        description: 'Test your knowledge of operating system memory management, including virtual memory and paging.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 06',
+        path: 'quiz/OS/OS-006.json',
+        description: 'Evaluate your understanding of operating system process management, including scheduling and synchronization.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 05',
+        path: 'quiz/OS/OS-005.json',
+        description: 'Test your knowledge of operating system input/output management, including device drivers and buffering.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 04',
+        path: 'quiz/OS/OS-004.json',
+        description: 'Evaluate your understanding of operating system architecture, including kernel and user modes.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 03',
+        path: 'quiz/OS/OS-003.json',
+        description: 'Test your knowledge of operating system types, including batch, time-sharing, and real-time systems.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 02',
+        path: 'quiz/OS/OS-002.json',
+        description: 'Evaluate your understanding of operating system functions, including process management, memory management, and file systems.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 01',
+        path: 'quiz/OS/OS-001.json',
+        description: 'Test your knowledge of basic operating system concepts, including types, functions, and architecture.',
+        isAvailable: true
+    },
     // Introduction to Cyber Security Quizzes
     {
         title: 'Cyber Security - 15',
