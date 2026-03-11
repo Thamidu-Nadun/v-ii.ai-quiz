@@ -281,10 +281,10 @@
         },
         {
             "question": "What does the Pthreads header file include statement look like?",
-            "option_a": "A. #include <threads.h>",
-            "option_b": "B. #include <pthread.h>",
-            "option_c": "C. #include <posix.h>",
-            "option_d": "D. #include <multithread.h>",
+            "option_a": "A. #include &lt;threads.h&gt;",
+            "option_b": "B. #include &lt;pthread.h&gt;",
+            "option_c": "C. #include &lt;posix.h&gt;",
+            "option_d": "D. #include &lt;multithread.h&gt;",
             "correct_answer": "B",
             "explanation": "The Pthreads library is included using #include <pthread.h> to create and manage POSIX threads, as shown in the example code."
         },
