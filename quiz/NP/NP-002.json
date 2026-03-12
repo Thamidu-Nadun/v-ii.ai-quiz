@@ -1,0 +1,400 @@
+{
+    "questions": [
+        {
+            "question": "Which member of the sockaddr_in structure must be set to the address family AF_INET?",
+            "option_a": "A. sin_port",
+            "option_b": "B. sin_addr",
+            "option_c": "C. sin_family",
+            "option_d": "D. sin_len",
+            "correct_answer": "C",
+            "explanation": "sin_family is the field that holds the address family constant, such as AF_INET."
+        },
+        {
+            "question": "What is the purpose of the sin_zero field in struct sockaddr_in?",
+            "option_a": "A. To store the scope ID for IPv6",
+            "option_b": "B. To indicate the length of the structure",
+            "option_c": "C. To pad the structure to the size of struct sockaddr",
+            "option_d": "D. To hold the protocol number",
+            "correct_answer": "C",
+            "explanation": "sin_zero is unused padding that makes the total size of sockaddr_in equal to the generic sockaddr (16 bytes). It must always be set to 0."
+        },
+        {
+            "question": "Which of the following datatypes is used for an IPv4 address in network byte order?",
+            "option_a": "A. in_port_t",
+            "option_b": "B. sa_family_t",
+            "option_c": "C. in_addr_t",
+            "option_d": "D. socklen_t",
+            "correct_answer": "C",
+            "explanation": "in_addr_t is the datatype for an IPv4 address, typically a 32-bit unsigned integer. It is used in the sin_addr.s_addr member."
+        },
+        {
+            "question": "Given: struct sockaddr_in serv; Which of the following correctly accesses the 32-bit binary IPv4 address?",
+            "option_a": "A. serv.sin_addr",
+            "option_b": "B. serv.sin_addr.s_addr",
+            "option_c": "C. serv.sin_addr.s_addr[0]",
+            "option_d": "D. serv.sin_family",
+            "correct_answer": "B",
+            "explanation": "serv.sin_addr is an in_addr structure; the actual 32-bit address is serv.sin_addr.s_addr. serv.sin_addr itself is a structure, not the integer."
+        },
+        {
+            "question": "What is the difference between AF_xxx and PF_xxx constants?",
+            "option_a": "A. AF stands for Address Family, PF for Protocol Family; they are often interchangeable but can differ on some systems.",
+            "option_b": "B. AF is used in socket address structures, PF is used in the socket() function exclusively.",
+            "option_c": "C. AF is for IPv4, PF for IPv6.",
+            "option_d": "D. AF and PF are always different values and cannot be used interchangeably.",
+            "correct_answer": "A",
+            "explanation": "Historically, AF_ (address family) and PF_ (protocol family) could differ, but on most systems they are the same value. AF_xxx is used in socket address structures, PF_xxx in socket() creation, but they can be used interchangeably."
+        },
+        {
+            "question": "When you create a socket with socket(AF_INET, SOCK_STREAM, 0), which header provides the definition of AF_INET?",
+            "option_a": "A. <netinet/in.h>",
+            "option_b": "B. <sys/socket.h>",
+            "option_c": "C. <arpa/inet.h>",
+            "option_d": "D. <netdb.h>",
+            "correct_answer": "B",
+            "explanation": "The address family constants like AF_INET are defined in <sys/socket.h>. <netinet/in.h> defines the sockaddr_in structure."
+        },
+        {
+            "question": "Why is the generic socket address structure struct sockaddr used in function prototypes like bind()?",
+            "option_a": "A. To allow the same function to handle multiple protocol families.",
+            "option_b": "B. Because it is more efficient than protocol-specific structures.",
+            "option_c": "C. To enforce type safety in C.",
+            "option_d": "D. Because it contains all possible address fields.",
+            "correct_answer": "A",
+            "explanation": "The generic sockaddr allows bind(), connect(), etc., to accept pointers to any protocol-specific address structure by casting, enabling the same function to work with different protocols."
+        },
+        {
+            "question": "What happens if you omit the cast (struct sockaddr *) when passing a struct sockaddr_in to bind()?",
+            "option_a": "A. The program will crash immediately.",
+            "option_b": "B. The compiler will generate a warning about incompatible pointer types.",
+            "option_c": "C. The bind() call will automatically handle the conversion.",
+            "option_d": "D. The code will not compile on any system.",
+            "correct_answer": "B",
+            "explanation": "Since bind() expects a struct sockaddr *, passing a struct sockaddr_in * without a cast causes a type mismatch, and the compiler issues a warning (though it may still compile on some systems)."
+        },
+        {
+            "question": "On a little-endian system, the 16-bit value 0x1234 is stored in memory as:",
+            "option_a": "A. 0x12 at address A, 0x34 at address A+1",
+            "option_b": "B. 0x34 at address A, 0x12 at address A+1",
+            "option_c": "C. 0x12 at address A, 0x12 at address A+1",
+            "option_d": "D. 0x34 at address A, 0x34 at address A+1",
+            "correct_answer": "B",
+            "explanation": "Little-endian stores the least significant byte at the lower address. So 0x34 (low byte) goes to address A, and 0x12 (high byte) goes to address A+1."
+        },
+        {
+            "question": "Which function converts a 32-bit integer from host byte order to network byte order?",
+            "option_a": "A. htons()",
+            "option_b": "B. ntohl()",
+            "option_c": "C. htonl()",
+            "option_d": "D. ntohs()",
+            "correct_answer": "C",
+            "explanation": "htonl() stands for host to network long (32-bit). htons() is for short (16-bit) values."
+        },
+        {
+            "question": "Given a variable uint16_t port = 80; which call correctly sets the sin_port field in network byte order?",
+            "option_a": "A. servaddr.sin_port = port;",
+            "option_b": "B. servaddr.sin_port = htonl(port);",
+            "option_c": "C. servaddr.sin_port = htons(port);",
+            "option_d": "D. servaddr.sin_port = ntohs(port);",
+            "correct_answer": "C",
+            "explanation": "sin_port is a 16-bit field, so htons() (host to network short) must be used to convert the port number to network byte order."
+        },
+        {
+            "question": "On a big-endian system, what do htons() and htonl() typically do?",
+            "option_a": "A. They swap the byte order.",
+            "option_b": "B. They return the input unchanged.",
+            "option_c": "C. They reverse the bits, not bytes.",
+            "option_d": "D. They convert to little-endian.",
+            "correct_answer": "B",
+            "explanation": "On big-endian systems, host byte order matches network byte order, so these functions are often defined as no-op macros that return the argument unchanged."
+        },
+        {
+            "question": "What is the correct way to print a port number that was received in network byte order (e.g., from accept())?",
+            "option_a": "A. printf(\"%d\", servaddr.sin_port);",
+            "option_b": "B. printf(\"%d\", htons(servaddr.sin_port));",
+            "option_c": "C. printf(\"%d\", ntohs(servaddr.sin_port));",
+            "option_d": "D. printf(\"%d\", ntohl(servaddr.sin_port));",
+            "correct_answer": "C",
+            "explanation": "The sin_port is stored in network byte order; to print it in host order, use ntohs() (network to host short)."
+        },
+        {
+            "question": "Which byte manipulation function is considered more portable according to the lecture?",
+            "option_a": "A. bzero()",
+            "option_b": "B. bcopy()",
+            "option_c": "C. memset()",
+            "option_d": "D. bcmp()",
+            "correct_answer": "C",
+            "explanation": "The lecture states that memset(), memcpy(), and memcmp() are from the ANSI C standard and are better for portability than the b- functions from 4.2BSD."
+        },
+        {
+            "question": "What is the effect of bzero(&servaddr, sizeof(servaddr))?",
+            "option_a": "A. It sets only the sin_zero field to 0.",
+            "option_b": "B. It sets the entire servaddr structure to 0.",
+            "option_c": "C. It initializes the address to INADDR_ANY.",
+            "option_d": "D. It copies zeros into the sin_port field only.",
+            "correct_answer": "B",
+            "explanation": "bzero() sets the specified number of bytes to 0 in the destination. Passing &servaddr and sizeof(servaddr) zeros the entire structure, which is a common practice."
+        },
+        {
+            "question": "Which function would you use to compare two socket address structures for equality?",
+            "option_a": "A. bzero()",
+            "option_b": "B. bcopy()",
+            "option_c": "C. memcmp()",
+            "option_d": "D. strcmp()",
+            "correct_answer": "C",
+            "explanation": "memcmp() compares two blocks of memory byte by byte. bcmp() is also available, but memcmp() is ANSI C and more portable. strcmp() would stop at a null byte."
+        },
+        {
+            "question": "The function inet_aton() returns:",
+            "option_a": "A. the binary address as a 32-bit integer.",
+            "option_b": "B. 1 if the string was valid, 0 on error.",
+            "option_c": "C. a pointer to a dotted-decimal string.",
+            "option_d": "D. INADDR_NONE on error.",
+            "correct_answer": "B",
+            "explanation": "inet_aton() returns 1 on success, 0 on failure. It stores the binary result in the struct in_addr pointed to by the second argument."
+        },
+        {
+            "question": "Why is inet_addr() considered deprecated?",
+            "option_a": "A. It cannot handle IPv6 addresses.",
+            "option_b": "B. It returns INADDR_NONE for the address 255.255.255.255, which is a valid address.",
+            "option_c": "C. It uses a static buffer that can be overwritten.",
+            "option_d": "D. It requires the string to be null-terminated.",
+            "correct_answer": "B",
+            "explanation": "inet_addr() returns INADDR_NONE (typically 0xFFFFFFFF) on error, but that is also the binary representation of 255.255.255.255, making it ambiguous. inet_aton() avoids this by using a separate return value."
+        },
+        {
+            "question": "Which function can convert both IPv4 and IPv6 addresses from presentation to numeric form?",
+            "option_a": "A. inet_aton()",
+            "option_b": "B. inet_addr()",
+            "option_c": "C. inet_pton()",
+            "option_d": "D. inet_ntoa()",
+            "correct_answer": "C",
+            "explanation": "inet_pton() (presentation to numeric) supports both AF_INET and AF_INET6, unlike the older IPv4-only functions."
+        },
+        {
+            "question": "What does inet_ntop() require to prevent buffer overflow?",
+            "option_a": "A. A statically allocated buffer.",
+            "option_b": "B. The length of the destination buffer as an argument.",
+            "option_c": "C. The address family to be specified twice.",
+            "option_d": "D. The binary address in host byte order.",
+            "correct_answer": "B",
+            "explanation": "inet_ntop() takes a length argument (len) to specify the size of the destination buffer, ensuring it does not overflow. It returns NULL if the buffer is too small."
+        },
+        {
+            "question": "Given char *ip = \"192.168.1.1\"; struct in_addr addr; Which call correctly converts ip to binary?",
+            "option_a": "A. inet_pton(AF_INET, ip, &addr);",
+            "option_b": "B. inet_pton(AF_INET, ip, addr.s_addr);",
+            "option_c": "C. inet_ntop(AF_INET, ip, &addr, sizeof(addr));",
+            "option_d": "D. inet_aton(ip, addr);",
+            "correct_answer": "A",
+            "explanation": "inet_pton() takes the address family, the presentation string, and a pointer to the binary structure (struct in_addr *). The correct third argument is &addr, not addr.s_addr."
+        },
+        {
+            "question": "What is a potential pitfall of inet_ntoa()?",
+            "option_a": "A. It returns a pointer to a statically allocated buffer that may be overwritten by subsequent calls.",
+            "option_b": "B. It cannot handle IPv4 addresses.",
+            "option_c": "C. It requires the address in host byte order.",
+            "option_d": "D. It returns an integer, not a string.",
+            "correct_answer": "A",
+            "explanation": "inet_ntoa() returns a pointer to a static buffer, so subsequent calls will overwrite the previous string. This makes it unsafe in multi-threaded or repeated-use contexts."
+        },
+        {
+            "question": "In the value-result argument pattern used by accept(), why is the length argument passed as a pointer?",
+            "option_a": "A. To allow the kernel to return the actual size of the address stored.",
+            "option_b": "B. To save memory by reusing the same variable.",
+            "option_c": "C. Because the kernel needs to modify the address structure.",
+            "option_d": "D. To comply with ANSI C standards.",
+            "correct_answer": "A",
+            "explanation": "The pointer to the length allows the kernel to update it with the exact number of bytes placed in the socket address structure, acting as both an input (maximum buffer size) and output (actual size)."
+        },
+        {
+            "question": "Which socket function does NOT use a value-result argument for the address length?",
+            "option_a": "A. accept()",
+            "option_b": "B. recvfrom()",
+            "option_c": "C. connect()",
+            "option_d": "D. getsockname()",
+            "correct_answer": "C",
+            "explanation": "connect() passes the address length by value (process to kernel). accept(), recvfrom(), and getsockname() use value-result arguments because they return the address to the process."
+        },
+        {
+            "question": "When reading from a TCP socket, why might read() return fewer bytes than requested?",
+            "option_a": "A. Because the socket is non-blocking.",
+            "option_b": "B. Because of buffer limits in the kernel or network delays.",
+            "option_c": "C. Because the peer has closed the connection.",
+            "option_d": "D. Because the application buffer is too small.",
+            "correct_answer": "B",
+            "explanation": "For a stream socket, read() may return less than requested if the kernel's socket buffer doesn't have enough data or due to flow control. This is not an error and requires the caller to read again."
+        },
+        {
+            "question": "The functions readn(), writen(), and readline() are designed to:",
+            "option_a": "A. handle partial reads and writes automatically.",
+            "option_b": "B. work only with UDP sockets.",
+            "option_c": "C. replace the standard I/O library.",
+            "option_d": "D. convert between host and network byte order.",
+            "correct_answer": "A",
+            "explanation": "These wrapper functions ensure that exactly n bytes are read or written, looping as needed to handle partial transfers. readline() reads a line, also handling partial data."
+        },
+        {
+            "question": "In the provided readline() implementation (Version 1), why is it inefficient?",
+            "option_a": "A. It uses a large buffer that wastes memory.",
+            "option_b": "B. It calls read() for every byte of data.",
+            "option_c": "C. It does not handle EOF correctly.",
+            "option_d": "D. It uses recursion.",
+            "correct_answer": "B",
+            "explanation": "Version 1 calls the system's read() once per byte, resulting in many system calls. Version 2 reads chunks (e.g., MAXLINE) and processes them in user space, reducing system calls."
+        },
+        {
+            "question": "The my_read() function in the lecture buffers data to:",
+            "option_a": "A. convert between byte orders.",
+            "option_b": "B. reduce the number of system calls.",
+            "option_c": "C. validate the IP address.",
+            "option_d": "D. handle signal interrupts automatically.",
+            "correct_answer": "B",
+            "explanation": "my_read() reads up to MAXLINE bytes at once and then returns them one at a time to the caller, reducing the number of read() system calls."
+        },
+        {
+            "question": "What does the readline() function return when the peer closes the connection?",
+            "option_a": "A. -1",
+            "option_b": "B. 0",
+            "option_c": "C. The number of bytes read, which could be 0",
+            "option_d": "D. It blocks indefinitely",
+            "correct_answer": "C",
+            "explanation": "readline() returns 0 when read() returns 0, indicating EOF. It may also return the number of bytes read if a partial line is received before EOF."
+        },
+        {
+            "question": "In the daytime client code, why is recvline[n] set to 0 after reading?",
+            "option_a": "A. To null-terminate the string for printing with fputs().",
+            "option_b": "B. To clear any previous data.",
+            "option_c": "C. To convert to network byte order.",
+            "option_d": "D. To mark the end of the buffer for security.",
+            "correct_answer": "A",
+            "explanation": "The read data is not null-terminated. Setting recvline[n] = 0 ensures it becomes a valid C string that fputs() can safely print."
+        },
+        {
+            "question": "In the daytime server, why is INADDR_ANY used?",
+            "option_a": "A. To bind to all available network interfaces on the host.",
+            "option_b": "B. To accept connections only from the localhost.",
+            "option_c": "C. To specify the default route.",
+            "option_d": "D. To use an ephemeral port.",
+            "correct_answer": "A",
+            "explanation": "INADDR_ANY (typically 0.0.0.0) tells the server to accept connections on any IP address assigned to the host, i.e., all interfaces."
+        },
+        {
+            "question": "What is the purpose of the listen() function in the daytime server?",
+            "option_a": "A. To wait for incoming connection requests.",
+            "option_b": "B. To send data to the client.",
+            "option_c": "C. To bind the socket to a port.",
+            "option_d": "D. To set the socket as non-blocking.",
+            "correct_answer": "A",
+            "explanation": "listen() marks the socket as passive, indicating it will accept incoming connection requests. It also sets the backlog queue size."
+        },
+        {
+            "question": "In the server code, why is the port set to 13 using htons(13)?",
+            "option_a": "A. Because 13 is the well-known port for the daytime service.",
+            "option_b": "B. Because the server must use a privileged port.",
+            "option_c": "C. To convert the port to host byte order.",
+            "option_d": "D. To ensure the port is above 1024.",
+            "correct_answer": "A",
+            "explanation": "Port 13 is the standard port for the daytime protocol. htons() converts it to network byte order."
+        },
+        {
+            "question": "What would happen if the daytime server omitted the call to close(connfd) after write()?",
+            "option_a": "A. The connection would remain open, and the client might wait indefinitely.",
+            "option_b": "B. The server would crash on the next accept().",
+            "option_c": "C. The port would be immediately reusable.",
+            "option_d": "D. Nothing; the kernel automatically closes the connection.",
+            "correct_answer": "A",
+            "explanation": "If close() is not called, the file descriptor remains open, consuming resources, and the client may not receive an EOF. The connection will eventually be closed when the server exits, but it's poor practice."
+        },
+        {
+            "question": "In the client code, why is readn() used instead of a simple read() in a loop?",
+            "option_a": "A. To ensure the entire response is read, even if it arrives in multiple packets.",
+            "option_b": "B. To convert the data to network byte order.",
+            "option_c": "C. To handle errors more efficiently.",
+            "option_d": "D. To avoid blocking.",
+            "correct_answer": "A",
+            "explanation": "readn() loops until exactly MAXLINE bytes are read or an error occurs. The daytime server may send a response that could be fragmented; readn() ensures all data is received."
+        },
+        {
+            "question": "What is the significance of the MAXLINE constant in the client code?",
+            "option_a": "A. It defines the maximum number of lines the client can receive.",
+            "option_b": "B. It is the size of the buffer used to store the server's response.",
+            "option_c": "C. It is the maximum number of connections allowed.",
+            "option_d": "D. It sets the socket's send buffer size.",
+            "correct_answer": "B",
+            "explanation": "MAXLINE defines the size of the recvline buffer, limiting how much data can be read at once. The lecture uses it to prevent buffer overflow."
+        },
+        {
+            "question": "Which of the following is a hard requirement for using inet_pton() with AF_INET?",
+            "option_a": "A. The destination pointer must point to a struct in_addr.",
+            "option_b": "B. The address string must include a port number.",
+            "option_c": "C. The function returns the binary address directly.",
+            "option_d": "D. The buffer length must be provided.",
+            "correct_answer": "A",
+            "explanation": "For AF_INET, the addrptr must point to a struct in_addr (or an in_addr_t variable). The function does not take a length argument; that's for inet_ntop."
+        },
+        {
+            "question": "A programmer writes: servaddr.sin_port = 80; without using htons(). On a little-endian machine, what will be the actual port number in network order?",
+            "option_a": "A. 80",
+            "option_b": "B. 20480 (0x5000)",
+            "option_c": "C. 0",
+            "option_d": "D. The program will crash.",
+            "correct_answer": "B",
+            "explanation": "On little-endian, 80 (0x0050) is stored in memory as 0x50 0x00. When interpreted as network byte order (big-endian), that becomes 0x5000 = 20480, which is not the intended port."
+        },
+        {
+            "question": "Which statement about void pointers in C, as mentioned in the lecture, is correct?",
+            "option_a": "A. They can be dereferenced directly.",
+            "option_b": "B. They store the address of any data type, but the compiler does not know the type.",
+            "option_c": "C. They are used only for socket addresses.",
+            "option_d": "D. They must be cast to char* before arithmetic.",
+            "correct_answer": "B",
+            "explanation": "A void pointer is a generic pointer that can hold any address, but the compiler has no type information, so it must be cast before dereferencing or pointer arithmetic."
+        },
+        {
+            "question": "In the context of socket programming, why is it important to check the return value of every function call?",
+            "option_a": "A. Because functions like connect() may fail due to network issues.",
+            "option_b": "B. To ensure the program compiles correctly.",
+            "option_c": "C. To convert between byte orders.",
+            "option_d": "D. To free allocated memory.",
+            "correct_answer": "A",
+            "explanation": "Network functions can fail for many reasons (unreachable host, permission denied, etc.). Checking return values allows the program to handle errors gracefully and avoid undefined behavior."
+        },
+        {
+            "question": "What does the err_sys() function in the example code typically do?",
+            "option_a": "A. It prints an error message and terminates the program.",
+            "option_b": "B. It converts the error number to a string.",
+            "option_c": "C. It sets errno to the appropriate value.",
+            "option_d": "D. It retries the failed system call.",
+            "correct_answer": "A",
+            "explanation": "err_sys() is a wrapper that prints the error message corresponding to errno and then exits, often used for fatal errors."
+        },
+        {
+            "question": "If a server uses INADDR_ANY and binds to port 13, which IP address will appear in the client's connected socket?",
+            "option_a": "A. 127.0.0.1",
+            "option_b": "B. The IP address of the interface through which the connection arrived.",
+            "option_c": "C. 0.0.0.0",
+            "option_d": "D. The server's primary IP address.",
+            "correct_answer": "B",
+            "explanation": "When a connection is accepted, the server's address in the connected socket is set to the IP address of the interface that received the connection, not INADDR_ANY."
+        },
+        {
+            "question": "In the daytime server, what would happen if the bind() call failed but was not checked?",
+            "option_a": "A. The server would bind to an ephemeral port automatically.",
+            "option_b": "B. The listen() call would fail later, possibly causing confusion.",
+            "option_c": "C. The server would still work correctly.",
+            "option_d": "D. The program would crash immediately.",
+            "correct_answer": "B",
+            "explanation": "If bind() fails and the return value is not checked, the socket may not be bound. Subsequent listen() will likely fail with an error (e.g., socket not bound). Checking return values helps diagnose such issues."
+        },
+        {
+            "question": "Why does the readline() function in the lecture use static variables?",
+            "option_a": "A. To make the function thread-safe.",
+            "option_b": "B. To maintain a buffer between calls for the same file descriptor.",
+            "option_c": "C. To share data across different file descriptors.",
+            "option_d": "D. To avoid using global variables.",
+            "correct_answer": "B",
+            "explanation": "The static variables (read_cnt, read_ptr, read_buf) preserve state between calls to readline() for the same file descriptor, allowing buffered reading. However, this makes it unsafe for multiple descriptors without reentrancy."
+        }
+    ]
+}

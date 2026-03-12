@@ -1,0 +1,374 @@
+{
+    "questions": [
+        {
+            "question": "What are the two phases of an input operation according to the lecture?",
+            "option_a": "A. Network transmission and application processing",
+            "option_b": "B. Waiting for data to arrive and copying data from kernel buffer to application buffer",
+            "option_c": "C. System call initiation and system call completion",
+            "option_d": "D. Data arrival and data validation",
+            "correct_answer": "B",
+            "explanation": "The two phases are: (1) Waiting for the data to arrive on the network and copying it into a kernel buffer, and (2) Copying this data from the kernel's buffer into the application buffer."
+        },
+        {
+            "question": "Which of the following is NOT one of the five I/O models available in Unix?",
+            "option_a": "A. Blocking I/O",
+            "option_b": "B. Nonblocking I/O",
+            "option_c": "C. I/O Multiplexing",
+            "option_d": "D. Synchronous I/O with threading",
+            "correct_answer": "D",
+            "explanation": "The five I/O models are: Blocking I/O, Nonblocking I/O, I/O Multiplexing, Signal driven I/O (SIGIO), and Asynchronous I/O (Posix.1). Synchronous I/O with threading is not one of the five models."
+        },
+        {
+            "question": "In the blocking I/O model, when does an application block during a recvfrom() call?",
+            "option_a": "A. Only when an error occurs",
+            "option_b": "B. From when it calls recvfrom() until the datagram arrives and is copied into the application buffer",
+            "option_c": "C. Only during the copying phase from kernel to application buffer",
+            "option_d": "D. It never blocks; it always returns immediately",
+            "correct_answer": "B",
+            "explanation": "In blocking I/O, the application is blocked the entire time from when it calls recvfrom() until it returns, which happens only after the datagram arrives and is copied into the application buffer."
+        },
+        {
+            "question": "What error does the kernel return in nonblocking I/O when a requested I/O operation cannot be completed?",
+            "option_a": "A. EAGAIN",
+            "option_b": "B. EBADF",
+            "option_c": "C. EWOULDBLOCK",
+            "option_d": "D. Both A and C",
+            "correct_answer": "C",
+            "explanation": "In nonblocking I/O, when an operation cannot be completed, the kernel returns an EWOULDBLOCK error. Some systems also use EAGAIN for the same purpose."
+        },
+        {
+            "question": "Which system call is used to set the O_NONBLOCK flag on a file descriptor?",
+            "option_a": "A. setnonblock()",
+            "option_b": "B. fcntl()",
+            "option_c": "C. ioctl()",
+            "option_d": "D. setsockopt()",
+            "correct_answer": "B",
+            "explanation": "The fcntl() system call is used to set the O_NONBLOCK flag on a file descriptor to enable nonblocking I/O."
+        },
+        {
+            "question": "What is the main disadvantage of nonblocking I/O when used in a polling loop?",
+            "option_a": "A. It blocks the process unnecessarily",
+            "option_b": "B. It can be a waste of CPU time",
+            "option_c": "C. It cannot handle multiple descriptors",
+            "option_d": "D. It requires signal handlers",
+            "correct_answer": "B",
+            "explanation": "Nonblocking I/O with polling runs a loop constantly calling recvfrom(), which can waste CPU time as the process continuously checks for data availability."
+        },
+        {
+            "question": "In I/O multiplexing, what does the process block on instead of blocking on the actual I/O system call?",
+            "option_a": "A. A signal handler",
+            "option_b": "B. select(), pselect(), or poll()",
+            "option_c": "C. A mutex lock",
+            "option_d": "D. The kernel's scheduler",
+            "correct_answer": "B",
+            "explanation": "In I/O multiplexing, the process blocks on select(), pselect(), or poll() calls, which wait for I/O to become available from any of a set of file descriptors."
+        },
+        {
+            "question": "What is the disadvantage of I/O multiplexing compared to blocking I/O?",
+            "option_a": "A. It cannot handle multiple descriptors",
+            "option_b": "B. It requires two system calls instead of one",
+            "option_c": "C. It always blocks indefinitely",
+            "option_d": "D. It doesn't work with sockets",
+            "correct_answer": "B",
+            "explanation": "I/O multiplexing requires two system calls: one to select()/poll() and then the actual I/O call, whereas blocking I/O uses just one system call."
+        },
+        {
+            "question": "In signal-driven I/O, which signal is generated when a descriptor is ready?",
+            "option_a": "A. SIGINT",
+            "option_b": "B. SIGTERM",
+            "option_c": "C. SIGIO",
+            "option_d": "D. SIGUSR1",
+            "correct_answer": "C",
+            "explanation": "In signal-driven I/O, the SIGIO signal is generated by the kernel when the descriptor is ready for I/O operations."
+        },
+        {
+            "question": "What is the key difference between signal-driven I/O and asynchronous I/O?",
+            "option_a": "A. Asynchronous I/O is older than signal-driven I/O",
+            "option_b": "B. Signal-driven I/O tells us when an I/O operation can be initiated, while asynchronous I/O tells us when it is complete",
+            "option_c": "C. Asynchronous I/O uses signals while signal-driven I/O does not",
+            "option_d": "D. There is no difference; they are the same model",
+            "correct_answer": "B",
+            "explanation": "Signal-driven I/O notifies when an I/O operation can be initiated (data ready to read), while asynchronous I/O notifies when the entire operation, including copying to application buffer, is complete."
+        },
+        {
+            "question": "According to Posix.1 definitions, which of the following is NOT a synchronous I/O model?",
+            "option_a": "A. Blocking I/O",
+            "option_b": "B. Nonblocking I/O",
+            "option_c": "C. I/O multiplexing",
+            "option_d": "D. Asynchronous I/O",
+            "correct_answer": "D",
+            "explanation": "Asynchronous I/O is the only model that does not block the requesting process during I/O operations. The other four models (blocking, nonblocking, I/O multiplexing, signal-driven I/O) are all synchronous."
+        },
+        {
+            "question": "What does the select() function return when the timer expires before any descriptors are ready?",
+            "option_a": "A. -1",
+            "option_b": "B. The number of ready descriptors",
+            "option_c": "C. 0",
+            "option_d": "D. 1",
+            "correct_answer": "C",
+            "explanation": "select() returns 0 if the timer value expires before any of the descriptors become ready."
+        },
+        {
+            "question": "What does the maxfd1 parameter in select() represent?",
+            "option_a": "A. The maximum number of file descriptors to test",
+            "option_b": "B. The maximum file descriptor number to test plus one",
+            "option_c": "C. The total number of file descriptors in all sets",
+            "option_d": "D. The maximum time to wait",
+            "correct_answer": "B",
+            "explanation": "maxfd1 specifies the number of descriptors to be tested - its value is the maximum descriptor number to be tested, plus one. Descriptors 0 through maxfd1-1 are tested."
+        },
+        {
+            "question": "Which macro is used to test if a descriptor is set in an fd_set after select() returns?",
+            "option_a": "A. FD_SET()",
+            "option_b": "B. FD_ZERO()",
+            "option_c": "C. FD_ISSET()",
+            "option_d": "D. FD_CLR()",
+            "correct_answer": "C",
+            "explanation": "FD_ISSET() is used to test whether a particular descriptor is set in an fd_set after select() returns, indicating that the descriptor is ready."
+        },
+        {
+            "question": "What is the purpose of low-water marks in socket I/O?",
+            "option_a": "A. To limit the amount of data that can be sent",
+            "option_b": "B. To give application control over how much data must be available for reading and writing",
+            "option_c": "C. To set the maximum buffer size",
+            "option_d": "D. To determine socket priority",
+            "correct_answer": "B",
+            "explanation": "The receive and send low-water marks give the application control over how much data must be available for reading and writing before a socket is considered readable or writable."
+        },
+        {
+            "question": "When is a listening socket considered ready for reading in select()?",
+            "option_a": "A. When any data arrives",
+            "option_b": "B. When the number of completed connections becomes nonzero",
+            "option_c": "C. When the socket is bound to an address",
+            "option_d": "D. When the socket is closed",
+            "correct_answer": "B",
+            "explanation": "A listening socket is ready for reading when the number of completed connections (pending accepts) becomes nonzero, meaning accept() can be called without blocking."
+        },
+        {
+            "question": "What happens when a socket has a pending error according to select() conditions?",
+            "option_a": "A. It is only considered readable",
+            "option_b": "B. It is only considered writable",
+            "option_c": "C. It is considered both readable and writable",
+            "option_d": "D. It is considered neither readable nor writable",
+            "correct_answer": "C",
+            "explanation": "A socket error is pending makes the socket both readable and writable according to the select() conditions table."
+        },
+        {
+            "question": "What does the shutdown() function with SHUT_WR argument do?",
+            "option_a": "A. Closes both reading and writing on the socket",
+            "option_b": "B. Closes only the read-half of the connection",
+            "option_c": "C. Closes the write-half of the connection and sends a FIN",
+            "option_d": "D. Shuts down the entire socket immediately",
+            "correct_answer": "C",
+            "explanation": "SHUT_WR closes the write-half of the connection, causing a FIN to be sent, but data can still be read from the socket."
+        },
+        {
+            "question": "What is the key advantage of shutdown() over close() for TCP connections?",
+            "option_a": "A. shutdown() is faster than close()",
+            "option_b": "B. shutdown() can close one direction of communication regardless of reference count",
+            "option_c": "C. shutdown() always terminates the connection immediately",
+            "option_d": "D. shutdown() doesn't require a file descriptor",
+            "correct_answer": "B",
+            "explanation": "shutdown() can initiate connection termination regardless of the descriptor's reference count and can close only one direction (half-close), unlike close() which requires reference count to reach 0 and terminates both directions."
+        },
+        {
+            "question": "In the str_cli() function using select(), what condition causes the program to return normally?",
+            "option_a": "A. When the socket becomes unreadable",
+            "option_b": "B. When readline() returns 0 on the socket and stdinof is 1",
+            "option_c": "C. When fgets() returns NULL on stdin",
+            "option_d": "D. When select() times out",
+            "correct_answer": "B",
+            "explanation": "Normal termination occurs when readline() returns 0 on the socket (indicating EOF from server) and stdinof is 1 (indicating we've already sent our FIN), meaning both sides have finished."
+        },
+        {
+            "question": "What is a denial of service attack in the context of concurrent servers?",
+            "option_a": "A. When the server crashes due to memory overflow",
+            "option_b": "B. When a client does something that prevents the server from servicing other legitimate clients",
+            "option_c": "C. When multiple clients connect simultaneously",
+            "option_d": "D. When the network connection is slow",
+            "correct_answer": "B",
+            "explanation": "A denial of service attack occurs when a client does something to a server that prevents it from servicing other legitimate clients, such as sending partial data and sleeping to block the server."
+        },
+        {
+            "question": "Which of the following is NOT a solution to prevent denial of service attacks mentioned in the lecture?",
+            "option_a": "A. Use nonblocking I/O",
+            "option_b": "B. Have each client serviced by a separate thread of control",
+            "option_c": "C. Increase the server's buffer size",
+            "option_d": "D. Place a timeout on I/O operations",
+            "correct_answer": "C",
+            "explanation": "Increasing buffer size is not mentioned as a solution. The solutions include nonblocking I/O, separate threads per client, I/O timeouts, parent monitoring children, and limiting connections per host."
+        },
+        {
+            "question": "What does the poll() function return on timeout?",
+            "option_a": "A. -1",
+            "option_b": "B. 0",
+            "option_c": "C. The number of ready descriptors",
+            "option_d": "D. The timeout value",
+            "correct_answer": "B",
+            "explanation": "poll() returns 0 on timeout, similar to select(). It returns the count of ready descriptors on success and -1 on error."
+        },
+        {
+            "question": "In the pollfd structure, what does the revents field contain?",
+            "option_a": "A. The events we are interested in monitoring",
+            "option_b": "B. The events that actually occurred on the descriptor",
+            "option_c": "C. The file descriptor number",
+            "option_d": "D. The timeout value for the descriptor",
+            "correct_answer": "B",
+            "explanation": "The revents field in the pollfd structure contains the events that actually occurred on the descriptor, set by the kernel when poll() returns."
+        },
+        {
+            "question": "In a scenario where a client has sent a FIN but the server is blocked in fgets() reading from standard input, what problem occurs?",
+            "option_a": "A. The server crashes immediately",
+            "option_b": "B. The server never reads the FIN because it's blocked in fgets()",
+            "option_c": "C. The FIN is automatically processed by the kernel",
+            "option_d": "D. The client resends the FIN",
+            "correct_answer": "B",
+            "explanation": "When the server is blocked in fgets() on standard input, it cannot read the FIN from the socket. I/O multiplexing with select() solves this by blocking on select() instead of the actual I/O call."
+        },
+        {
+            "question": "In a TCP echo server using select(), what data structure is used to keep track of connected socket descriptors?",
+            "option_a": "A. A linked list",
+            "option_b": "B. An array of integers initialized to -1",
+            "option_c": "C. A hash table",
+            "option_d": "D. A stack of socket descriptors",
+            "correct_answer": "B",
+            "option_e": "",
+            "explanation": "The server maintains an array of integers (client[]) where each entry stores a connected socket descriptor, with -1 indicating an available entry."
+        },
+        {
+            "question": "What is the purpose of the variable 'maxi' in the TCP echo server using select()?",
+            "option_a": "A. To store the maximum file descriptor number",
+            "option_b": "B. To store the maximum index in the client[] array that is currently in use",
+            "option_c": "C. To store the maximum number of clients allowed",
+            "option_d": "D. To store the timeout value for select()",
+            "correct_answer": "B",
+            "explanation": "maxi stores the maximum index in the client[] array that is currently in use, allowing the server to only loop through active entries up to that index."
+        },
+        {
+            "question": "Why is it necessary to use shutdown() instead of close() in the improved str_cli() function?",
+            "option_a": "A. Because close() is not available on some systems",
+            "option_b": "B. To send a FIN while keeping the socket open for reading responses",
+            "option_c": "C. Because close() is slower than shutdown()",
+            "option_d": "D. To prevent memory leaks",
+            "correct_answer": "B",
+            "explanation": "shutdown() with SHUT_WR sends a FIN to tell the server we're done sending, but leaves the socket open for reading, allowing us to receive any remaining responses from the server."
+        },
+        {
+            "question": "What condition makes a UDP socket always writable according to the lecture?",
+            "option_a": "A. When it has data to send",
+            "option_b": "B. When it is bound to an address",
+            "option_c": "C. When the send low-water mark is less than the send buffer size",
+            "option_d": "D. When the socket is connected",
+            "correct_answer": "C",
+            "explanation": "As long as the send low-water mark for a UDP socket is less than the send buffer size (which should always be the default relationship), the UDP socket is always writable since a connection is not required."
+        },
+        {
+            "question": "In the poll() TCP echo server, what events are set for the listening socket?",
+            "option_a": "A. POLLIN",
+            "option_b": "B. POLLOUT",
+            "option_c": "C. POLLRDNORM",
+            "option_d": "D. POLLPRI",
+            "correct_answer": "C",
+            "explanation": "The listening socket (client[0]) has its events set to POLLRDNORM, which indicates normal data can be read - in this case, new connections."
+        },
+        {
+            "question": "What is the difference between the timeout behavior of select() and pselect()?",
+            "option_a": "A. select() never modifies the timeout, pselect() does",
+            "option_b": "B. select() may modify the timeout to reflect time not slept, pselect() does not modify timeout",
+            "option_c": "C. Both modify the timeout equally",
+            "option_d": "D. pselect() ignores the timeout completely",
+            "correct_answer": "B",
+            "explanation": "On Linux, select() may modify the timeout to reflect the amount of time not slept, while pselect() does not change the timeout when it returns, making it more portable."
+        },
+        {
+            "question": "Consider a malicious client that connects to a single-threaded echo server and sends exactly 1 byte of data (not a newline) then sleeps. According to the lecture, what is the impact on the server?",
+            "option_a": "A. The server times out and disconnects the client",
+            "option_b": "B. The server continues serving other clients normally",
+            "option_c": "C. The server blocks on read() waiting for more data and cannot serve other clients",
+            "option_d": "D. The server automatically forks a new process for this client",
+            "correct_answer": "C",
+            "explanation": "The server will be blocked in the next call to read() waiting for more data (like a newline) from this client, and will not serve any other clients until this client sends a newline or terminates."
+        },
+        {
+            "question": "If a TCP socket receives an RST (due to peer host crash and reboot), what return value will read() produce and how does select() indicate this?",
+            "option_a": "A. read() returns 0, select() indicates socket as readable",
+            "option_b": "B. read() returns -1 with error code, select() indicates socket as readable due to pending error",
+            "option_c": "C. read() returns the RST as data, select() indicates exception",
+            "option_d": "D. read() blocks indefinitely, select() times out",
+            "correct_answer": "B",
+            "explanation": "When an RST is received, the socket becomes readable (due to pending error), and read() returns -1 with an appropriate error code in errno (like ECONNRESET)."
+        },
+        {
+            "question": "In the improved str_cli() function using select() and shutdown(), what does the variable 'stdinof' track?",
+            "option_a": "A. The number of bytes read from stdin",
+            "option_b": "B. Whether EOF has been encountered on standard input",
+            "option_c": "C. The file descriptor for stdin",
+            "option_d": "D. The timeout value for select()",
+            "correct_answer": "B",
+            "explanation": "stdinof tracks whether EOF has been encountered on standard input (when fgets() returns NULL). When set to 1, the client has sent a FIN and no longer monitors stdin with select()."
+        },
+        {
+            "question": "What is the maximum number of clients that can be handled by the select()-based TCP echo server example?",
+            "option_a": "A. Unlimited",
+            "option_b": "B. Limited by OPEN_MAX",
+            "option_c": "C. Limited by FD_SETSIZE",
+            "option_d": "D. Limited by the number of ports",
+            "correct_answer": "C",
+            "explanation": "The server is limited by FD_SETSIZE, which defines the maximum number of descriptors that can be stored in an fd_set. The client array is declared as client[FD_SETSIZE]."
+        },
+        {
+            "question": "In the poll() TCP echo server, why is OPEN_MAX used for the client array size?",
+            "option_a": "A. Because OPEN_MAX is always smaller than FD_SETSIZE",
+            "option_b": "B. To allow handling up to the system's maximum open file descriptor limit",
+            "option_c": "C. Because poll() requires OPEN_MAX to be specified",
+            "option_d": "D. To ensure compatibility with select()",
+            "correct_answer": "B",
+            "explanation": "OPEN_MAX represents the maximum number of open files per process on the system, allowing the server to potentially handle up to that many clients, unlike select() which is limited by FD_SETSIZE."
+        },
+        {
+            "question": "When a client connection is reset (ECONNRESET) in the poll() server, how is this condition detected?",
+            "option_a": "A. By checking if revents has POLLHUP",
+            "option_b": "B. By checking if revents has POLLRDNORM | POLLERR and readline() returns error with ECONNRESET",
+            "option_c": "C. By checking if revents has POLLNVAL",
+            "option_d": "D. By checking if revents has POLLOUT",
+            "correct_answer": "B",
+            "explanation": "The server checks if revents has POLLRDNORM or POLLERR, then calls readline(). If readline() returns an error and errno is ECONNRESET, it handles the connection reset by closing the socket."
+        },
+        {
+            "question": "What is the fundamental difference between how select() and poll() handle file descriptor sets?",
+            "option_a": "A. select() uses bit masks, poll() uses an array of structures",
+            "option_b": "B. select() is faster than poll()",
+            "option_c": "C. poll() cannot handle sockets, only streams",
+            "option_d": "D. select() works only on Unix, poll() works on all OS",
+            "correct_answer": "A",
+            "explanation": "select() uses fd_set bit masks manipulated with macros (FD_SET, FD_ISSET), while poll() uses an array of pollfd structures with explicit events and revents fields."
+        },
+        {
+            "question": "In the context of TCP echo server using select(), what happens when a client closes its connection normally?",
+            "option_a": "A. readline() returns -1",
+            "option_b": "B. readline() returns 0, socket is closed, FD_CLR is called, and client[i] is set to -1",
+            "option_c": "C. select() returns an error",
+            "option_d": "D. The server crashes",
+            "correct_answer": "B",
+            "explanation": "When a client closes normally, readline() returns 0 (EOF), the server closes the socket, clears it from the fd_set with FD_CLR, and marks the client array entry as available by setting it to -1."
+        },
+        {
+            "question": "Why does the lecture state that asynchronous I/O is not yet widespread for sockets?",
+            "option_a": "A. Because it's too slow",
+            "option_b": "B. Because it was new with the 1993 Posix.1 realtime extensions and not all implementations comply",
+            "option_c": "C. Because it only works with files, not sockets",
+            "option_d": "D. Because it requires special hardware",
+            "correct_answer": "B",
+            "explanation": "Asynchronous I/O was introduced with the 1993 Posix.1 realtime extensions and is not yet widespread; the lecture notes mention uncertainty about whether Linux implementations of aio_read()/aio_write() comply with Posix.1 for sockets."
+        },
+        {
+            "question": "What is the significance of the '--nready' variable in the TCP echo server loop?",
+            "option_a": "A. It counts the total number of clients",
+            "option_b": "B. It tracks remaining ready descriptors to process, allowing early loop exit for efficiency",
+            "option_c": "C. It measures the timeout remaining",
+            "option_d": "D. It indicates the number of bytes ready to read",
+            "correct_answer": "B",
+            "explanation": "nready is decremented each time a descriptor is processed; when it reaches 0, the loops break early since no more ready descriptors need processing, improving efficiency."
+        }
+    ]
+}

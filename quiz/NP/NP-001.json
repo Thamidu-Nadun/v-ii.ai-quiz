@@ -1,0 +1,346 @@
+{
+    "questions": [
+        {
+            "question": "Which protocol is responsible for reliable, connection-oriented communication?",
+            "option_a": "A. UDP",
+            "option_b": "B. TCP",
+            "option_c": "C. IP",
+            "option_d": "D. ICMP",
+            "correct_answer": "B",
+            "explanation": "TCP is a connection-oriented protocol that ensures reliable and ordered delivery of data."
+        },
+        {
+            "question": "Which protocol provides connectionless communication suitable for fast transmission?",
+            "option_a": "A. TCP",
+            "option_b": "B. UDP",
+            "option_c": "C. HTTP",
+            "option_d": "D. FTP",
+            "correct_answer": "B",
+            "explanation": "UDP is a connectionless protocol designed for situations where speed is more important than reliability."
+        },
+        {
+            "question": "In the client-server paradigm, what is the primary role of the server?",
+            "option_a": "A. To request services from clients",
+            "option_b": "B. To offer services and wait for requests from clients",
+            "option_c": "C. To only store local data",
+            "option_d": "D. To terminate connections immediately",
+            "correct_answer": "B",
+            "explanation": "In the client-server model, the server provides services and passively waits for client requests."
+        },
+        {
+            "question": "What is the main role of a client in the client-server model?",
+            "option_a": "A. To store all application data",
+            "option_b": "B. To manage network routing",
+            "option_c": "C. To actively request services from a server",
+            "option_d": "D. To replace the server during failures",
+            "correct_answer": "C",
+            "explanation": "Clients actively connect to servers to consume services."
+        },
+        {
+            "question": "Which of the following best describes a Peer-to-Peer (P2P) network?",
+            "option_a": "A. All nodes rely on a single central server",
+            "option_b": "B. Nodes can act as both service providers and consumers",
+            "option_c": "C. Only servers communicate with other servers",
+            "option_d": "D. Communication occurs only through routers",
+            "correct_answer": "B",
+            "explanation": "In P2P networks, nodes can function both as providers and consumers of services."
+        },
+        {
+            "question": "Which of the following is an example of a Peer-to-Peer application?",
+            "option_a": "A. Gmail",
+            "option_b": "B. FTP server",
+            "option_c": "C. Napster",
+            "option_d": "D. Apache Web Server",
+            "correct_answer": "C",
+            "explanation": "Napster is a classic example of a peer-to-peer file sharing application."
+        },
+        {
+            "question": "Which of the following communication services is commonly provided over networks?",
+            "option_a": "A. Email",
+            "option_b": "B. Web browsing",
+            "option_c": "C. Instant messaging",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Networked applications include email, web browsing, instant messaging, and many other communication services."
+        },
+        {
+            "question": "Which property describes UDP communication?",
+            "option_a": "A. Guarantees delivery",
+            "option_b": "B. Ensures ordered message arrival",
+            "option_c": "C. Connectionless communication",
+            "option_d": "D. Requires handshake before sending data",
+            "correct_answer": "C",
+            "explanation": "UDP operates without establishing a connection, making it connectionless."
+        },
+        {
+            "question": "Which property describes TCP communication?",
+            "option_a": "A. Messages arrive randomly",
+            "option_b": "B. No connection required",
+            "option_c": "C. Connection-oriented communication",
+            "option_d": "D. No reliability mechanisms",
+            "correct_answer": "C",
+            "explanation": "TCP requires a connection to be established before data transmission begins."
+        },
+        {
+            "question": "What is a socket in network programming?",
+            "option_a": "A. A physical networking cable",
+            "option_b": "B. An abstraction used as a communication endpoint",
+            "option_c": "C. A hardware network card",
+            "option_d": "D. A DNS mapping tool",
+            "correct_answer": "B",
+            "explanation": "A socket is a software abstraction that represents an endpoint for network communication."
+        },
+        {
+            "question": "Which two components form the network address of a socket?",
+            "option_a": "A. MAC address and gateway",
+            "option_b": "B. IP address and port number",
+            "option_c": "C. Hostname and subnet mask",
+            "option_d": "D. Router and switch",
+            "correct_answer": "B",
+            "explanation": "Each socket is identified by an IP address and a port number."
+        },
+        {
+            "question": "Which type of socket provides reliable two-way communication streams?",
+            "option_a": "A. Datagram socket",
+            "option_b": "B. Stream socket",
+            "option_c": "C. Raw socket",
+            "option_d": "D. Multicast socket",
+            "correct_answer": "B",
+            "explanation": "Stream sockets typically use TCP and provide reliable two-way communication."
+        },
+        {
+            "question": "Which socket type is typically associated with UDP?",
+            "option_a": "A. Stream socket",
+            "option_b": "B. Datagram socket",
+            "option_c": "C. Raw socket",
+            "option_d": "D. Sequential socket",
+            "correct_answer": "B",
+            "explanation": "Datagram sockets are used for UDP communication."
+        },
+        {
+            "question": "Which layer of the Internet protocol stack includes protocols such as TCP and UDP?",
+            "option_a": "A. Application layer",
+            "option_b": "B. Transport layer",
+            "option_c": "C. Network layer",
+            "option_d": "D. Link layer",
+            "correct_answer": "B",
+            "explanation": "TCP and UDP are transport layer protocols responsible for process-to-process communication."
+        },
+        {
+            "question": "Which protocol operates at the network layer of the Internet architecture?",
+            "option_a": "A. TCP",
+            "option_b": "B. UDP",
+            "option_c": "C. IP",
+            "option_d": "D. HTTP",
+            "correct_answer": "C",
+            "explanation": "The IP protocol is responsible for addressing and routing at the network layer."
+        },
+        {
+            "question": "What is encapsulation in networking?",
+            "option_a": "A. Compressing data for faster transmission",
+            "option_b": "B. Adding protocol headers as data moves down the protocol stack",
+            "option_c": "C. Encrypting data before sending",
+            "option_d": "D. Deleting duplicate packets",
+            "correct_answer": "B",
+            "explanation": "Encapsulation occurs when each protocol layer adds its own header to the data."
+        },
+        {
+            "question": "What is the unit of data passed from TCP to IP called?",
+            "option_a": "A. Frame",
+            "option_b": "B. Datagram",
+            "option_c": "C. Segment",
+            "option_d": "D. Packet",
+            "correct_answer": "C",
+            "explanation": "The data unit passed from TCP to IP is known as a TCP segment."
+        },
+        {
+            "question": "What is the unit of data transmitted by the IP layer?",
+            "option_a": "A. Frame",
+            "option_b": "B. Datagram",
+            "option_c": "C. Segment",
+            "option_d": "D. Stream",
+            "correct_answer": "B",
+            "explanation": "IP sends data in the form of datagrams."
+        },
+        {
+            "question": "What is the unit of data transmitted across the Ethernet link layer?",
+            "option_a": "A. Segment",
+            "option_b": "B. Frame",
+            "option_c": "C. Datagram",
+            "option_d": "D. Packet",
+            "correct_answer": "B",
+            "explanation": "Ethernet transmits data as frames."
+        },
+        {
+            "question": "Which statement correctly describes IPv4 communication?",
+            "option_a": "A. It guarantees reliable delivery",
+            "option_b": "B. It provides connection-oriented services",
+            "option_c": "C. It is connectionless and unreliable",
+            "option_d": "D. It requires a persistent session",
+            "correct_answer": "C",
+            "explanation": "IPv4 provides connectionless and unreliable datagram delivery."
+        },
+        {
+            "question": "Why is UDP considered unreliable?",
+            "option_a": "A. It does not support encryption",
+            "option_b": "B. It lacks sequencing, acknowledgments, and flow control",
+            "option_c": "C. It cannot transmit large messages",
+            "option_d": "D. It requires authentication",
+            "correct_answer": "B",
+            "explanation": "UDP does not provide reliability mechanisms such as acknowledgments or sequencing."
+        },
+        {
+            "question": "Which feature allows TCP to reorder out-of-order segments?",
+            "option_a": "A. Checksum",
+            "option_b": "B. Sequence numbers",
+            "option_c": "C. Port numbers",
+            "option_d": "D. Routing tables",
+            "correct_answer": "B",
+            "explanation": "TCP uses sequence numbers to ensure proper ordering of data segments."
+        },
+        {
+            "question": "What mechanism does TCP use to confirm successful delivery of data?",
+            "option_a": "A. ACK messages",
+            "option_b": "B. DNS queries",
+            "option_c": "C. Routing updates",
+            "option_d": "D. Firewall rules",
+            "correct_answer": "A",
+            "explanation": "TCP uses acknowledgments (ACKs) to confirm that data has been successfully received."
+        },
+        {
+            "question": "What happens if TCP does not receive an acknowledgment within the round-trip time?",
+            "option_a": "A. The connection immediately terminates",
+            "option_b": "B. The data is retransmitted",
+            "option_c": "C. The server shuts down",
+            "option_d": "D. The packet is discarded permanently",
+            "correct_answer": "B",
+            "explanation": "TCP retransmits data if an acknowledgment is not received within the expected time."
+        },
+        {
+            "question": "What is the purpose of TCP flow control?",
+            "option_a": "A. To control routing paths",
+            "option_b": "B. To prevent a fast sender from overwhelming a slow receiver",
+            "option_c": "C. To encrypt network traffic",
+            "option_d": "D. To convert datagrams into frames",
+            "correct_answer": "B",
+            "explanation": "TCP flow control ensures the sender does not send more data than the receiver can handle."
+        },
+        {
+            "question": "Which port range is known as well-known ports?",
+            "option_a": "A. 0–1023",
+            "option_b": "B. 1024–49151",
+            "option_c": "C. 49152–65535",
+            "option_d": "D. 60000–65535",
+            "correct_answer": "A",
+            "explanation": "Ports 0 through 1023 are known as well-known ports controlled by IANA."
+        },
+        {
+            "question": "Which port number is typically used by HTTP web servers?",
+            "option_a": "A. 21",
+            "option_b": "B. 23",
+            "option_c": "C. 80",
+            "option_d": "D. 69",
+            "correct_answer": "C",
+            "explanation": "Port 80 is commonly used by HTTP web servers."
+        },
+        {
+            "question": "Which ports are typically assigned dynamically to clients?",
+            "option_a": "A. Well-known ports",
+            "option_b": "B. Reserved ports",
+            "option_c": "C. Ephemeral ports",
+            "option_d": "D. Static ports",
+            "correct_answer": "C",
+            "explanation": "Clients are typically assigned ephemeral ports dynamically."
+        },
+        {
+            "question": "What is the port range for dynamic or private ports?",
+            "option_a": "A. 0–1023",
+            "option_b": "B. 1024–49151",
+            "option_c": "C. 49152–65535",
+            "option_d": "D. 2000–4000",
+            "correct_answer": "C",
+            "explanation": "Dynamic or private ports range from 49152 to 65535."
+        },
+        {
+            "question": "Which server type processes one request at a time before moving to the next?",
+            "option_a": "A. Concurrent server",
+            "option_b": "B. Iterative server",
+            "option_c": "C. Distributed server",
+            "option_d": "D. Peer server",
+            "correct_answer": "B",
+            "explanation": "An iterative server processes one client request at a time sequentially."
+        },
+        {
+            "question": "Which server type spawns a new process or thread for each client request?",
+            "option_a": "A. Iterative server",
+            "option_b": "B. Concurrent server",
+            "option_c": "C. Static server",
+            "option_d": "D. Passive server",
+            "correct_answer": "B",
+            "explanation": "Concurrent servers create a new process or thread to handle each client request."
+        },
+        {
+            "question": "In TCP communication, what does full-duplex mean?",
+            "option_a": "A. Only one device can send data at a time",
+            "option_b": "B. Data can be transmitted only after encryption",
+            "option_c": "C. Data can be sent and received simultaneously",
+            "option_d": "D. Communication is limited to one direction",
+            "correct_answer": "C",
+            "explanation": "Full-duplex communication allows simultaneous sending and receiving of data."
+        },
+        {
+            "question": "Why might an application choose UDP instead of TCP?",
+            "option_a": "A. UDP guarantees reliability",
+            "option_b": "B. UDP requires less overhead and provides faster delivery",
+            "option_c": "C. UDP encrypts data automatically",
+            "option_d": "D. UDP maintains connection state",
+            "correct_answer": "B",
+            "explanation": "UDP is often used where speed is more important than reliability."
+        },
+        {
+            "question": "What happens during demultiplexing at the receiving host?",
+            "option_a": "A. Data is encrypted before delivery",
+            "option_b": "B. Headers are removed as data moves up the protocol stack",
+            "option_c": "C. Data is duplicated across network interfaces",
+            "option_d": "D. Routers assign new IP addresses",
+            "correct_answer": "B",
+            "explanation": "During demultiplexing, headers added during encapsulation are removed as data moves up the stack."
+        },
+        {
+            "question": "Which of the following best describes a TCP byte stream service?",
+            "option_a": "A. Data is transferred in fixed-size packets",
+            "option_b": "B. Data is exchanged as a continuous stream of bytes",
+            "option_c": "C. Each message boundary is preserved",
+            "option_d": "D. Data is always encrypted",
+            "correct_answer": "B",
+            "explanation": "TCP provides a continuous byte stream without preserving message boundaries."
+        },
+        {
+            "question": "Which networking architecture layer interacts directly with hardware?",
+            "option_a": "A. Application layer",
+            "option_b": "B. Transport layer",
+            "option_c": "C. Network layer",
+            "option_d": "D. Link layer",
+            "correct_answer": "D",
+            "explanation": "The link layer interacts with hardware such as network interface cards and device drivers."
+        },
+        {
+            "question": "Which feature helps TCP avoid overwhelming a receiving system?",
+            "option_a": "A. Window size advertisement",
+            "option_b": "B. Packet duplication",
+            "option_c": "C. DNS resolution",
+            "option_d": "D. Frame segmentation",
+            "correct_answer": "A",
+            "explanation": "TCP uses an advertised window size to control the amount of data sent."
+        },
+        {
+            "question": "Which statement correctly differentiates TCP and UDP?",
+            "option_a": "A. TCP is connectionless and UDP is connection-oriented",
+            "option_b": "B. TCP ensures ordered and reliable delivery while UDP does not",
+            "option_c": "C. UDP guarantees delivery and TCP does not",
+            "option_d": "D. UDP maintains session state while TCP does not",
+            "correct_answer": "B",
+            "explanation": "TCP ensures reliable and ordered delivery, while UDP provides best-effort delivery without guarantees."
+        }
+    ]
+}
