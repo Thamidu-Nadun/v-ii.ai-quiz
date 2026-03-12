@@ -35,7 +35,7 @@ example:
 1. The **questions must be directly derived** from the provided module content.
 2. Use a **mix of difficulty**:
    - ~60% should be **easy–intermediate** (definitions, concepts, basic applications, direct schema/ER-based questions).
-   - ~40% should be **hard** (scenario-based, real-world case studies, problem-solving requiring reasoning).
+   - ~40% should be **hard** (scenario-based, real-world case studies, problem-solving requiring reasoning). **MAKE SURE TO BE CHALLENGING SOME OF THE QUIZZES**
 3. If schemas or ER diagrams are provided, integrate them into questions (e.g., `emp(id, name)` can appear in both concept checks and scenarios).
 4. Avoid trivial “copy–paste” definitions; ensure distractors are **plausible but incorrect**.
 5. Explanations must be **concise, accurate, and educational**.
@@ -52,3 +52,7 @@ example:
 - since we use strict options such as `a`,`b`,`c`,`d`, there might be some extra options in the document in that case you have to choose the correct answer like correct answer should be in `a`,`b`,`c`,`d`.
 - There might be answers and the explanation at the end of the document.
 - If document was provided with document with quizzes you have to provide exact amount of questions from that document.
+
+YOU can add questions outside the scope to make sure students are well prepared for the exam and the real world. MOSTLY it will be exam. BUT HAVING QUIZZES FROM OUT OF SCOPE CAN GIVE A LITTLE CHALLENGE.
+
+BEFORE generating question tell me how should we generate quizzes to cover whole/every concepts. minimum questions 40. The is quiz for fully/master prepare students for the exam.

@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What information must an application specify after creating a socket before it can communicate over a network?",
+            "option_a": "A. Only the protocol type",
+            "option_b": "B. The IP address and port number",
+            "option_c": "C. Only the hostname",
+            "option_d": "D. The MAC address",
+            "correct_answer": "B",
+            "explanation": "A socket initially has no IP address or port. The application must specify both to identify the endpoint of communication."
+        },
+        {
+            "question": "Which header file defines the IPv4 socket address structure sockaddr_in?",
+            "option_a": "A. <arpa/inet.h>",
+            "option_b": "B. <netinet/in.h>",
+            "option_c": "C. <sys/types.h>",
+            "option_d": "D. <string.h>",
+            "correct_answer": "B",
+            "explanation": "The sockaddr_in structure used for IPv4 addresses is defined in the <netinet/in.h> header."
+        },
+        {
+            "question": "What does the field sin_family represent in the sockaddr_in structure?",
+            "option_a": "A. The socket buffer size",
+            "option_b": "B. The address family such as AF_INET",
+            "option_c": "C. The network interface",
+            "option_d": "D. The socket descriptor",
+            "correct_answer": "B",
+            "explanation": "sin_family identifies the address family of the socket, such as AF_INET for IPv4."
+        },
+        {
+            "question": "Which field in sockaddr_in stores the TCP or UDP port number?",
+            "option_a": "A. sin_family",
+            "option_b": "B. sin_len",
+            "option_c": "C. sin_port",
+            "option_d": "D. sin_zero",
+            "correct_answer": "C",
+            "explanation": "sin_port is a 16-bit field storing the TCP or UDP port number in network byte order."
+        },
+        {
+            "question": "What is the size of the IPv4 address stored in struct in_addr?",
+            "option_a": "A. 8 bits",
+            "option_b": "B. 16 bits",
+            "option_c": "C. 32 bits",
+            "option_d": "D. 64 bits",
+            "correct_answer": "C",
+            "explanation": "The IPv4 address stored in s_addr is a 32-bit value."
+        },
+        {
+            "question": "Why is the entire sockaddr_in structure usually set to zero before being used?",
+            "option_a": "A. To ensure unused fields are cleared",
+            "option_b": "B. To increase performance",
+            "option_c": "C. To reduce memory allocation",
+            "option_d": "D. To encrypt the address",
+            "correct_answer": "A",
+            "explanation": "Zeroing ensures all unused fields such as sin_zero contain predictable values."
+        },
+        {
+            "question": "Which POSIX data type represents the length of a socket address structure?",
+            "option_a": "A. socklen_t",
+            "option_b": "B. sa_family_t",
+            "option_c": "C. in_port_t",
+            "option_d": "D. int32_t",
+            "correct_answer": "A",
+            "explanation": "socklen_t is used to represent the size of a socket address structure."
+        },
+        {
+            "question": "What is the purpose of the generic sockaddr structure?",
+            "option_a": "A. To replace IPv4 addresses",
+            "option_b": "B. To allow socket functions to accept addresses of different protocol families",
+            "option_c": "C. To store routing tables",
+            "option_d": "D. To optimize kernel caching",
+            "correct_answer": "B",
+            "explanation": "The generic sockaddr allows socket APIs to work with multiple protocol-specific address structures."
+        },
+        {
+            "question": "Why must a sockaddr_in pointer often be cast to (struct sockaddr *) in socket functions?",
+            "option_a": "A. Because socket functions accept generic socket address pointers",
+            "option_b": "B. Because sockaddr_in cannot be passed by reference",
+            "option_c": "C. Because the kernel requires IPv6 format",
+            "option_d": "D. Because memory alignment must change",
+            "correct_answer": "A",
+            "explanation": "Socket APIs are defined to accept pointers to the generic sockaddr structure."
+        },
+        {
+            "question": "Which functions pass socket address structures from the process to the kernel?",
+            "option_a": "A. bind(), connect(), sendto()",
+            "option_b": "B. accept(), recvfrom(), getpeername()",
+            "option_c": "C. listen(), close(), read()",
+            "option_d": "D. socket(), fork(), exec()",
+            "correct_answer": "A",
+            "explanation": "These functions send address information from user process to the kernel."
+        },
+        {
+            "question": "Which functions return socket address structures from the kernel to the process?",
+            "option_a": "A. socket(), bind(), connect()",
+            "option_b": "B. accept(), recvfrom(), getsockname(), getpeername()",
+            "option_c": "C. write(), close(), shutdown()",
+            "option_d": "D. select(), poll(), epoll()",
+            "correct_answer": "B",
+            "explanation": "These functions return address information from kernel to user space."
+        },
+        {
+            "question": "What does 'network byte order' refer to?",
+            "option_a": "A. A protocol-specific binary format",
+            "option_b": "B. Big-endian byte ordering used by Internet protocols",
+            "option_c": "C. Little-endian ordering used by Intel CPUs",
+            "option_d": "D. ASCII representation of numbers",
+            "correct_answer": "B",
+            "explanation": "Internet protocols use big-endian format known as network byte order."
+        },
+        {
+            "question": "Which function converts a 16-bit value from host byte order to network byte order?",
+            "option_a": "A. ntohl()",
+            "option_b": "B. htons()",
+            "option_c": "C. htonl()",
+            "option_d": "D. ntohs()",
+            "correct_answer": "B",
+            "explanation": "htons() converts a host 16-bit short to network byte order."
+        },
+        {
+            "question": "Which function converts a 32-bit value from network byte order to host byte order?",
+            "option_a": "A. ntohl()",
+            "option_b": "B. htonl()",
+            "option_c": "C. htons()",
+            "option_d": "D. inet_ntoa()",
+            "correct_answer": "A",
+            "explanation": "ntohl() converts a 32-bit integer from network to host order."
+        },
+        {
+            "question": "Why are byte-order conversion functions necessary in network programming?",
+            "option_a": "A. Different systems may store bytes differently",
+            "option_b": "B. To encrypt network packets",
+            "option_c": "C. To reduce packet size",
+            "option_d": "D. To improve routing efficiency",
+            "correct_answer": "A",
+            "explanation": "Different architectures use different byte orders, requiring conversion."
+        },
+        {
+            "question": "Which function initializes a block of memory to zero in BSD systems?",
+            "option_a": "A. memcpy()",
+            "option_b": "B. memset()",
+            "option_c": "C. bzero()",
+            "option_d": "D. memcmp()",
+            "correct_answer": "C",
+            "explanation": "bzero() sets the specified memory region to zero."
+        },
+        {
+            "question": "Which ANSI C function is equivalent to bzero()?",
+            "option_a": "A. memset()",
+            "option_b": "B. memcpy()",
+            "option_c": "C. memcmp()",
+            "option_d": "D. strcpy()",
+            "correct_answer": "A",
+            "explanation": "memset() can set memory to zero and is the ANSI C portable alternative."
+        },
+        {
+            "question": "What does memcpy() do?",
+            "option_a": "A. Compares two memory blocks",
+            "option_b": "B. Copies bytes from source to destination",
+            "option_c": "C. Initializes memory to zero",
+            "option_d": "D. Allocates dynamic memory",
+            "correct_answer": "B",
+            "explanation": "memcpy() copies a specified number of bytes from one location to another."
+        },
+        {
+            "question": "Which function converts a dotted-decimal IPv4 string into a binary address stored in struct in_addr?",
+            "option_a": "A. inet_ntoa()",
+            "option_b": "B. inet_aton()",
+            "option_c": "C. ntohl()",
+            "option_d": "D. inet_ntop()",
+            "correct_answer": "B",
+            "explanation": "inet_aton() converts an IPv4 string to its binary representation."
+        },
+        {
+            "question": "Why is inet_addr() considered deprecated?",
+            "option_a": "A. It does not support IPv6",
+            "option_b": "B. It cannot correctly represent 255.255.255.255",
+            "option_c": "C. It requires manual memory allocation",
+            "option_d": "D. It returns a pointer instead of integer",
+            "correct_answer": "B",
+            "explanation": "inet_addr() cannot distinguish errors from the valid address 255.255.255.255."
+        },
+        {
+            "question": "Which function converts a binary IPv4 address into a dotted-decimal string?",
+            "option_a": "A. inet_ntoa()",
+            "option_b": "B. inet_aton()",
+            "option_c": "C. inet_pton()",
+            "option_d": "D. ntohl()",
+            "correct_answer": "A",
+            "explanation": "inet_ntoa() converts binary IPv4 addresses to human-readable form."
+        },
+        {
+            "question": "Which function supports both IPv4 and IPv6 address conversion?",
+            "option_a": "A. inet_ntoa()",
+            "option_b": "B. inet_addr()",
+            "option_c": "C. inet_pton()",
+            "option_d": "D. inet_aton()",
+            "correct_answer": "C",
+            "explanation": "inet_pton() supports both IPv4 and IPv6 conversions."
+        },
+        {
+            "question": "What does a void pointer represent in C?",
+            "option_a": "A. A pointer to an integer",
+            "option_b": "B. A generic pointer without a defined type",
+            "option_c": "C. A pointer to null memory",
+            "option_d": "D. A pointer used only for arrays",
+            "correct_answer": "B",
+            "explanation": "A void pointer can point to any type but requires casting before dereferencing."
+        },
+        {
+            "question": "Why might read() return fewer bytes than requested when reading from a TCP socket?",
+            "option_a": "A. Network packets are encrypted",
+            "option_b": "B. Kernel buffer limits may be reached",
+            "option_c": "C. The socket automatically truncates data",
+            "option_d": "D. TCP requires fixed-length packets",
+            "correct_answer": "B",
+            "explanation": "Kernel buffers may not contain the full requested amount, so partial reads occur."
+        },
+        {
+            "question": "Which wrapper function ensures that exactly n bytes are read from a descriptor?",
+            "option_a": "A. read()",
+            "option_b": "B. readn()",
+            "option_c": "C. readline()",
+            "option_d": "D. recv()",
+            "correct_answer": "B",
+            "explanation": "readn() repeatedly calls read() until the requested number of bytes are obtained."
+        },
+        {
+            "question": "Which wrapper function guarantees writing all requested bytes to a descriptor?",
+            "option_a": "A. write()",
+            "option_b": "B. send()",
+            "option_c": "C. writen()",
+            "option_d": "D. fwrite()",
+            "correct_answer": "C",
+            "explanation": "writen() repeatedly calls write() until all bytes are transmitted."
+        },
+        {
+            "question": "What is the purpose of readline() in socket programming?",
+            "option_a": "A. To read a fixed number of bytes",
+            "option_b": "B. To read a line of text ending with newline",
+            "option_c": "C. To read binary data only",
+            "option_d": "D. To read encrypted packets",
+            "correct_answer": "B",
+            "explanation": "readline() reads data until a newline character is encountered."
+        },
+        {
+            "question": "Why is the second version of readline() faster than the first?",
+            "option_a": "A. It uses fewer system calls",
+            "option_b": "B. It compresses network packets",
+            "option_c": "C. It avoids buffer usage",
+            "option_d": "D. It uses hardware acceleration",
+            "correct_answer": "A",
+            "explanation": "Version 2 reads larger chunks into a buffer and reduces system calls."
+        },
+        {
+            "question": "Which function creates a socket in a client-server program?",
+            "option_a": "A. bind()",
+            "option_b": "B. socket()",
+            "option_c": "C. connect()",
+            "option_d": "D. accept()",
+            "correct_answer": "B",
+            "explanation": "socket() creates a new communication endpoint."
+        },
+        {
+            "question": "Which function associates a socket with a local address?",
+            "option_a": "A. listen()",
+            "option_b": "B. accept()",
+            "option_c": "C. bind()",
+            "option_d": "D. connect()",
+            "correct_answer": "C",
+            "explanation": "bind() assigns an IP address and port to a socket."
+        },
+        {
+            "question": "Which function puts a server socket into passive listening mode?",
+            "option_a": "A. connect()",
+            "option_b": "B. accept()",
+            "option_c": "C. listen()",
+            "option_d": "D. write()",
+            "correct_answer": "C",
+            "explanation": "listen() prepares a socket to accept incoming connections."
+        },
+        {
+            "question": "Which function accepts a new client connection?",
+            "option_a": "A. accept()",
+            "option_b": "B. connect()",
+            "option_c": "C. bind()",
+            "option_d": "D. send()",
+            "correct_answer": "A",
+            "explanation": "accept() extracts the first connection request from the queue."
+        },
+        {
+            "question": "In the daytime server example, why is the server placed inside an infinite loop?",
+            "option_a": "A. To continuously accept new client connections",
+            "option_b": "B. To prevent socket closure",
+            "option_c": "C. To reduce CPU usage",
+            "option_d": "D. To encrypt time messages",
+            "correct_answer": "A",
+            "explanation": "Servers typically loop indefinitely to handle multiple client connections."
+        },
+        {
+            "question": "Why must buffers be carefully managed in network programming?",
+            "option_a": "A. To prevent memory leaks",
+            "option_b": "B. To avoid buffer overflow vulnerabilities",
+            "option_c": "C. To improve CPU speed",
+            "option_d": "D. To reduce packet size",
+            "correct_answer": "B",
+            "explanation": "Improper buffer handling may cause overflow vulnerabilities and security risks."
+        },
+        {
+            "question": "A programmer forgets to use htons() when assigning a port number to sin_port. What is the most likely result?",
+            "option_a": "A. The program fails to compile",
+            "option_b": "B. The server listens on an incorrect port",
+            "option_c": "C. The socket closes automatically",
+            "option_d": "D. The port becomes encrypted",
+            "correct_answer": "B",
+            "explanation": "Without conversion to network byte order, the port number may be interpreted incorrectly."
+        },
+        {
+            "question": "If a system uses little-endian byte order but communicates using network protocols, what must occur before sending integers?",
+            "option_a": "A. Compression",
+            "option_b": "B. Encryption",
+            "option_c": "C. Byte order conversion",
+            "option_d": "D. Checksum removal",
+            "correct_answer": "C",
+            "explanation": "Integers must be converted to network byte order (big-endian)."
+        },
+        {
+            "question": "A developer uses inet_ntoa() multiple times without copying the returned string. What problem may occur?",
+            "option_a": "A. Memory leak",
+            "option_b": "B. Overwritten string values",
+            "option_c": "C. Segmentation fault",
+            "option_d": "D. Kernel panic",
+            "correct_answer": "B",
+            "explanation": "inet_ntoa() returns a pointer to a static buffer reused by subsequent calls."
+        },
+        {
+            "question": "Which function is most portable for converting IPv4 and IPv6 presentation addresses to binary form?",
+            "option_a": "A. inet_addr()",
+            "option_b": "B. inet_aton()",
+            "option_c": "C. inet_pton()",
+            "option_d": "D. inet_ntoa()",
+            "correct_answer": "C",
+            "explanation": "inet_pton() supports both IPv4 and IPv6 and is recommended for portability."
+        },
+        {
+            "question": "If read() returns 0 while reading from a socket, what does it indicate?",
+            "option_a": "A. Buffer overflow",
+            "option_b": "B. End of file (connection closed)",
+            "option_c": "C. Kernel error",
+            "option_d": "D. Packet corruption",
+            "correct_answer": "B",
+            "explanation": "A return value of 0 indicates that the peer has closed the connection."
+        },
+        {
+            "question": "What is the primary advantage of wrapper functions like Readn() and Writen()?",
+            "option_a": "A. They encrypt socket communication",
+            "option_b": "B. They simplify error handling and reliability",
+            "option_c": "C. They remove the need for buffers",
+            "option_d": "D. They eliminate system calls",
+            "correct_answer": "B",
+            "explanation": "Wrapper functions simplify error handling and ensure reliable data transfer."
+        }
+    ]
+}

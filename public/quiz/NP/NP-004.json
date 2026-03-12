@@ -1,0 +1,409 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary characteristic that determines whether a server should be implemented as iterative or concurrent?",
+            "option_a": "A. The number of clients expected to connect simultaneously",
+            "option_b": "B. Whether the time to service a request depends on the request itself",
+            "option_c": "C. The operating system being used",
+            "option_d": "D. The port number being used",
+            "correct_answer": "B",
+            "explanation": "When the amount of time to service a request depends on the request itself (unknown ahead of time), the server should handle it concurrently; otherwise, the server may be tied up with one client while others wait."
+        },
+        {
+            "question": "What value does fork() return in the child process?",
+            "option_a": "A. The process ID of the child",
+            "option_b": "B. The process ID of the parent",
+            "option_c": "C. 0",
+            "option_d": "D. -1 on success",
+            "correct_answer": "C",
+            "explanation": "fork() returns 0 in the child process, the process ID of the child in the parent, and -1 on error."
+        },
+        {
+            "question": "In a typical concurrent server using fork(), which socket does the child process close immediately after fork() returns?",
+            "option_a": "A. The connected socket (connfd)",
+            "option_b": "B. The listening socket (listenfd)",
+            "option_c": "C. Both listening and connected sockets",
+            "option_d": "D. Neither socket",
+            "correct_answer": "B",
+            "explanation": "The child process closes the listening socket immediately because it only needs the connected socket to communicate with the client."
+        },
+        {
+            "question": "What happens to file descriptor reference counts after fork() is called?",
+            "option_a": "A. They remain the same as before fork()",
+            "option_b": "B. They are reset to 1 for all descriptors",
+            "option_c": "C. They are incremented by 1 for each shared descriptor",
+            "option_d": "D. They are decremented by 1 for each shared descriptor",
+            "correct_answer": "C",
+            "explanation": "When fork() returns, all open descriptors in the parent are duplicated in the child, causing the reference count for each descriptor to be incremented by 1."
+        },
+        {
+            "question": "What is the purpose of the INADDR_ANY constant in the bind() call?",
+            "option_a": "A. To bind to a specific IP address",
+            "option_b": "B. To bind to the loopback interface only",
+            "option_c": "C. To accept connections destined for any local interface on a multihomed system",
+            "option_d": "D. To disable binding altogether",
+            "correct_answer": "C",
+            "explanation": "INADDR_ANY tells the system to accept connections destined for any local interface, which is useful when the system has multiple network interfaces."
+        },
+        {
+            "question": "What does the readline() function return when it receives a FIN from the client?",
+            "option_a": "A. -1",
+            "option_b": "B. The number of bytes read",
+            "option_c": "C. 0",
+            "option_d": "D. The FIN flag is set in the return value",
+            "correct_answer": "C",
+            "explanation": "readline() returns 0 when it receives a FIN, indicating end-of-file (the connection was closed by the other end)."
+        },
+        {
+            "question": "What is a zombie process?",
+            "option_a": "A. A process that is currently running",
+            "option_b": "B. A process that has terminated but whose parent has not yet fetched its termination status",
+            "option_c": "C. A process that has been stopped by a signal",
+            "option_d": "D. A process that has no parent",
+            "correct_answer": "B",
+            "explanation": "A zombie process is one that has terminated but still has an entry in the process table because its parent hasn't called wait() to fetch its termination status."
+        },
+        {
+            "question": "What signal is sent to a parent process when one of its child processes terminates?",
+            "option_a": "A. SIGTERM",
+            "option_b": "B. SIGINT",
+            "option_c": "C. SIGCHLD",
+            "option_d": "D. SIGKILL",
+            "correct_answer": "C",
+            "explanation": "SIGCHLD is sent by the kernel to the parent process whenever one of its child processes terminates."
+        },
+        {
+            "question": "Which two signals cannot be caught or ignored?",
+            "option_a": "A. SIGTERM and SIGINT",
+            "option_b": "B. SIGCHLD and SIGPIPE",
+            "option_c": "C. SIGKILL and SIGSTOP",
+            "option_d": "D. SIGHUP and SIGQUIT",
+            "correct_answer": "C",
+            "explanation": "SIGKILL and SIGSTOP cannot be caught, blocked, or ignored. They always perform their default action."
+        },
+        {
+            "question": "What error does accept() return when interrupted by a signal handler?",
+            "option_a": "A. EAGAIN",
+            "option_b": "B. EINTR",
+            "option_c": "C. ECONNABORTED",
+            "option_d": "D. EWOULDBLOCK",
+            "correct_answer": "B",
+            "explanation": "When a process is blocked in a slow system call like accept() and a signal handler returns, the system call can return the EINTR error (interrupted system call)."
+        },
+        {
+            "question": "What happens to a process that writes to a socket that has received an RST?",
+            "option_a": "A. The write operation succeeds normally",
+            "option_b": "B. The write operation blocks indefinitely",
+            "option_c": "C. The SIGPIPE signal is sent to the process",
+            "option_d": "D. The socket is automatically reconnected",
+            "correct_answer": "C",
+            "explanation": "When a process writes to a socket that has received an RST, the SIGPIPE signal is sent to the process. The default action of SIGPIPE is to terminate the process."
+        },
+        {
+            "question": "What is the main difference between wait() and waitpid() with the WNOHANG option?",
+            "option_a": "A. wait() can specify which child to wait for, waitpid() cannot",
+            "option_b": "B. wait() blocks if there are running children, while waitpid() with WNOHANG returns 0 if no terminated child",
+            "option_c": "C. wait() returns immediately, waitpid() always blocks",
+            "option_d": "D. There is no difference",
+            "correct_answer": "B",
+            "explanation": "wait() blocks the calling process when there are running children, while waitpid() with the WNOHANG option returns 0 immediately if there are no terminated children."
+        },
+        {
+            "question": "Why is wait() insufficient for handling multiple simultaneous SIGCHLD signals?",
+            "option_a": "A. wait() cannot handle child termination at all",
+            "option_b": "B. wait() blocks the parent process",
+            "option_c": "C. UNIX signals are normally not queued, so multiple signals may be delivered as only one",
+            "option_d": "D. wait() can only be called once",
+            "correct_answer": "C",
+            "explanation": "UNIX signals are normally not queued. If multiple SIGCHLD signals are generated before the signal handler executes, they may be delivered as only one signal, causing wait() to only handle one child."
+        },
+        {
+            "question": "What error does connect() return when the server host is not running?",
+            "option_a": "A. ETIMEDOUT",
+            "option_b": "B. ECONNREFUSED",
+            "option_c": "C. EHOSTUNREACH",
+            "option_d": "D. ENETUNREACH",
+            "correct_answer": "B",
+            "explanation": "When the server is not running, the server TCP responds to the client's SYN with an RST, causing the client's connect() to return ECONNREFUSED."
+        },
+        {
+            "question": "What is the purpose of the SA_RESTART flag in sigaction()?",
+            "option_a": "A. To restart the process after it terminates",
+            "option_b": "B. To automatically restart interrupted system calls after signal handler returns",
+            "option_c": "C. To restart the signal handler",
+            "option_d": "D. To prevent signals from being delivered",
+            "correct_answer": "B",
+            "explanation": "The SA_RESTART flag causes certain system calls interrupted by a signal to be automatically restarted by the kernel after the signal handler returns."
+        },
+        {
+            "question": "In the TCP echo server example, what function does the child process call to handle client requests?",
+            "option_a": "A. str_cli()",
+            "option_b": "B. str_echo()",
+            "option_c": "C. echo_line()",
+            "option_d": "D. process_client()",
+            "correct_answer": "B",
+            "explanation": "The child process calls str_echo() to read lines from the client and echo them back. This function reads from the socket and writes back the same data."
+        },
+        {
+            "question": "What happens when a client connects to a server but never sends a request in an iterative server?",
+            "option_a": "A. The server automatically times out and closes the connection",
+            "option_b": "B. The server continues to handle other clients normally",
+            "option_c": "C. The server deadlocks, unable to handle other clients",
+            "option_d": "D. The client is forced to send data",
+            "correct_answer": "C",
+            "explanation": "In an iterative server, if a client connects but never sends a request, the server deadlocks because it's blocked waiting for input from that client and cannot accept new connections."
+        },
+        {
+            "question": "What is the correct way to handle accept() returning EINTR?",
+            "option_a": "A. Exit the program",
+            "option_b": "B. Ignore the error and continue",
+            "option_c": "C. Call accept() again in a loop with continue",
+            "option_d": "D. Close the socket and create a new one",
+            "correct_answer": "C",
+            "explanation": "When accept() returns EINTR due to an interrupted system call, the correct handling is to continue the loop and call accept() again, as shown in the example: if (errno == EINTR) continue;"
+        },
+        {
+            "question": "What is the state of a connection after the server process crashes but before the client sends more data?",
+            "option_a": "A. The connection is immediately terminated",
+            "option_b": "B. The client's TCP connection remains half-open",
+            "option_c": "C. The connection is automatically reset",
+            "option_d": "D. The server's TCP sends a FIN immediately",
+            "correct_answer": "B",
+            "explanation": "When a server process crashes, the kernel closes all descriptors, sending FIN to the client. The client's connection becomes half-open, still able to send data but not receive, until it attempts to write."
+        },
+        {
+            "question": "What error does readline() return when it receives an RST before reading?",
+            "option_a": "A. ETIMEDOUT",
+            "option_b": "B. ECONNRESET",
+            "option_c": "C. EPIPE",
+            "option_d": "D. EINTR",
+            "correct_answer": "B",
+            "explanation": "If an RST arrives before readline() reads data, the call returns the ECONNRESET error, which means 'Connection reset by peer'."
+        },
+        {
+            "question": "Why is passing binary data structures directly over sockets problematic across different architectures?",
+            "option_a": "A. Binary data cannot be transmitted over TCP",
+            "option_b": "B. Different byte orders and sizes of data types between hosts",
+            "option_c": "C. Sockets only support text data",
+            "option_d": "D. Binary data is slower to transmit",
+            "correct_answer": "B",
+            "explanation": "Passing binary data directly can fail when hosts have different byte orders (big-endian vs little-endian) or different sizes for data types like long integers."
+        },
+        {
+            "question": "What is the recommended solution for handling different data representations across hosts?",
+            "option_a": "A. Always use binary data for efficiency",
+            "option_b": "B. Pass all numeric data as text strings or define explicit binary formats",
+            "option_c": "C. Use the same architecture for all hosts",
+            "option_d": "D. Compress all data before transmission",
+            "correct_answer": "B",
+            "explanation": "To ensure interoperability, either pass all numeric data as text strings or explicitly define binary formats (bit counts, endianness) for all exchanged data."
+        },
+        {
+            "question": "What does the sig_chld signal handler in the lecture use to prevent zombies when multiple children terminate simultaneously?",
+            "option_a": "A. A single call to wait()",
+            "option_b": "B. A loop with waitpid() and the WNOHANG option",
+            "option_c": "C. Ignoring SIGCHLD",
+            "option_d": "D. Terminating the parent process",
+            "correct_answer": "B",
+            "explanation": "The correct signal handler uses a while loop with waitpid(-1, &stat, WNOHANG) to reap all terminated children without blocking, preventing zombies even when multiple children terminate at once."
+        },
+        {
+            "question": "What is the purpose of the listen() function in a TCP server?",
+            "option_a": "A. To establish a connection with a client",
+            "option_b": "B. To mark the socket as passive to accept incoming connection requests",
+            "option_c": "C. To bind the socket to an address",
+            "option_d": "D. To receive data from clients",
+            "correct_answer": "B",
+            "explanation": "listen() marks the socket referred to by the file descriptor as a passive socket that will be used to accept incoming connection requests using accept()."
+        },
+        {
+            "question": "What is the return value of fork() in the parent process on success?",
+            "option_a": "A. 0",
+            "option_b": "B. The process ID of the parent",
+            "option_c": "C. The process ID of the child",
+            "option_d": "D. 1",
+            "correct_answer": "C",
+            "explanation": "On success, fork() returns the process ID of the child process in the parent, and returns 0 in the child."
+        },
+        {
+            "question": "What happens to a process's open file descriptors after a call to exec()?",
+            "option_a": "A. All descriptors are closed",
+            "option_b": "B. The process ID changes",
+            "option_c": "C. The new program inherits copies of the open descriptors",
+            "option_d": "D. Only standard input/output are preserved",
+            "correct_answer": "C",
+            "explanation": "exec() replaces the current process image with a new program, but the process ID does not change, and the new program inherits copies of the open file descriptors."
+        },
+        {
+            "question": "In the concurrent server example, what happens if the parent fails to close the connected socket (connfd)?",
+            "option_a": "A. The connection is automatically closed after a timeout",
+            "option_b": "B. The parent may run out of descriptors and client connections won't terminate properly",
+            "option_c": "C. The child process closes it automatically",
+            "option_d": "D. Nothing, it's not necessary to close it",
+            "correct_answer": "B",
+            "explanation": "If the parent doesn't close the connected socket, reference counts never reach 0, preventing proper connection termination, and the parent may eventually run out of file descriptors."
+        },
+        {
+            "question": "What does the bzero() function do in the TCP server example?",
+            "option_a": "A. It binds the socket to an address",
+            "option_b": "B. It zeros out the entire socket address structure",
+            "option_c": "C. It creates a new socket",
+            "option_d": "D. It listens for connections",
+            "correct_answer": "B",
+            "explanation": "bzero() is used to set the entire servaddr socket address structure object to zero before filling in the address family, IP address, and port number."
+        },
+        {
+            "question": "What is a 'slow system call'?",
+            "option_a": "A. Any system call that takes more than 1 second to execute",
+            "option_b": "B. System calls that can block forever, such as accept(), read(), and write()",
+            "option_c": "C. System calls that are deprecated",
+            "option_d": "D. System calls that require root privileges",
+            "correct_answer": "B",
+            "explanation": "Slow system calls are those that can block forever, such as accept(), read(), write(), and select(). These calls are particularly affected by signal interruptions."
+        },
+        {
+            "question": "What error occurs when a client's connect() call times out due to no network connectivity?",
+            "option_a": "A. ECONNREFUSED",
+            "option_b": "B. EHOSTUNREACH",
+            "option_c": "C. ETIMEDOUT",
+            "option_d": "D. ENETRESET",
+            "correct_answer": "C",
+            "explanation": "If there is no network connectivity and no ICMP error is returned, connect() will eventually return ETIMEDOUT after the system's timeout period (typically 75 seconds)."
+        },
+        {
+            "question": "What is the default disposition for most signals that terminate a process?",
+            "option_a": "A. SIG_IGN",
+            "option_b": "B. SIG_DFL",
+            "option_c": "C. SIG_TERM",
+            "option_d": "D. SIG_CATCH",
+            "correct_answer": "B",
+            "explanation": "SIG_DFL sets the default disposition for a signal, which for most signals is to terminate the process upon receipt."
+        },
+        {
+            "question": "In the str_cli function that writes two separate writes with a sleep in between, why does the second write generate SIGPIPE?",
+            "option_a": "A. Because the socket buffer is full",
+            "option_b": "B. Because the client's TCP has received an RST from the server during the sleep interval",
+            "option_c": "C. Because the server closed the connection normally",
+            "option_d": "D. Because the sleep() function interrupts the write",
+            "correct_answer": "B",
+            "explanation": "When the server child is killed, it sends a FIN, and the client's write of the first byte may elicit an RST. During the sleep interval, this RST is received, making the second write attempt to a socket that has received an RST, generating SIGPIPE."
+        },
+        {
+            "question": "What is the correct way to handle connect() if it returns EINTR?",
+            "option_a": "A. Call connect() again on the same socket",
+            "option_b": "B. Close the socket and create a new socket before calling connect() again",
+            "option_c": "C. Ignore the error and continue",
+            "option_d": "D. Call accept() instead",
+            "correct_answer": "B",
+            "explanation": "Unlike accept(), once connect() returns an error (including EINTR), you cannot call it again on the same socket. You must close the socket and create a new one before attempting to connect again."
+        },
+        {
+            "question": "What happens to the data written by a client when the server host crashes after the write but before the data is acknowledged?",
+            "option_a": "A. The data is delivered when the server reboots",
+            "option_b": "B. The client's TCP buffers the data and retransmits until timeout",
+            "option_c": "C. The data is immediately discarded",
+            "option_d": "D. The client receives an immediate error",
+            "correct_answer": "B",
+            "explanation": "When the server host crashes, the client's TCP buffers the data and continues retransmitting it, eventually timing out after multiple retransmissions (typically 9 minutes with 12 retries)."
+        },
+        {
+            "question": "What error does the client receive when the server host crashes and reboots before the client sends data?",
+            "option_a": "A. ETIMEDOUT",
+            "option_b": "B. ECONNRESET",
+            "option_c": "C. EHOSTUNREACH",
+            "option_d": "D. EPIPE",
+            "correct_answer": "B",
+            "explanation": "When a crashed server reboots, its TCP loses all information about previous connections. When the client sends data, the server TCP responds with an RST, causing the client's readline() to return ECONNRESET."
+        },
+        {
+            "question": "During an orderly server host shutdown, what signals are sent to processes by the init process?",
+            "option_a": "A. SIGTERM followed by SIGKILL after a delay",
+            "option_b": "B. SIGKILL only",
+            "option_c": "C. SIGINT only",
+            "option_d": "D. SIGHUP followed by SIGTERM",
+            "correct_answer": "A",
+            "explanation": "During shutdown, init sends SIGTERM (catchable) to all processes, waits several seconds for cleanup, then sends SIGKILL (not catchable) to any remaining processes."
+        },
+        {
+            "question": "What happens when a process writes to a socket after ignoring SIGPIPE?",
+            "option_a": "A. The write succeeds normally",
+            "option_b": "B. The write returns the EPIPE error",
+            "option_c": "C. The process is still terminated",
+            "option_d": "D. The socket is automatically reconnected",
+            "correct_answer": "B",
+            "explanation": "If a process catches or ignores SIGPIPE, the write() operation returns EPIPE instead of generating the signal, allowing the application to handle the error gracefully."
+        },
+        {
+            "question": "In the binary addition client-server example, why does the output '16777314' appear instead of the expected sum?",
+            "option_a": "A. Because of integer overflow",
+            "option_b": "B. Because of byte ordering differences between little-endian and big-endian systems",
+            "option_c": "C. Because of network congestion",
+            "option_d": "D. Because of packet loss",
+            "correct_answer": "B",
+            "explanation": "When passing binary structures between little-endian (Intel) and big-endian (SPARC) systems, the bytes are interpreted in opposite order, resulting in garbled values like 16777314 instead of the expected sum."
+        },
+        {
+            "question": "What is the significance of the SO_KEEPALIVE socket option in detecting server host crashes?",
+            "option_a": "A. It keeps the connection alive indefinitely",
+            "option_b": "B. It periodically probes the connection to detect if the peer has crashed",
+            "option_c": "C. It prevents the socket from timing out",
+            "option_d": "D. It automatically reconnects broken connections",
+            "correct_answer": "B",
+            "explanation": "SO_KEEPALIVE enables periodic probes to verify that the peer is still reachable, allowing detection of server host crashes even when the client is idle and blocked on input."
+        },
+        {
+            "question": "What is the problem with using wait() in a SIGCHLD handler when multiple children terminate simultaneously?",
+            "option_a": "A. wait() cannot be called from a signal handler",
+            "option_b": "B. wait() only reaps one child per signal, but signals may not be queued",
+            "option_c": "C. wait() blocks indefinitely in signal handlers",
+            "option_d": "D. wait() causes deadlock",
+            "correct_answer": "B",
+            "explanation": "Since UNIX signals are not queued, multiple simultaneous SIGCHLD signals may be merged into one. If wait() is called only once, it will reap only one child, leaving the others as zombies."
+        },
+        {
+            "question": "When a server child process terminates, what TCP segments are exchanged?",
+            "option_a": "A. The child sends a RST to the client",
+            "option_b": "B. The kernel closes the descriptors, sending FIN to the client, which responds with ACK",
+            "option_c": "C. The parent sends a FIN on behalf of the child",
+            "option_d": "D. No segments are exchanged",
+            "correct_answer": "B",
+            "explanation": "When a child process terminates, the kernel automatically closes all its open descriptors, including the connected socket. This initiates TCP's connection termination with a FIN from the server, acknowledged by the client."
+        },
+        {
+            "question": "Why must the parent process in a concurrent server call accept() in a loop that handles EINTR?",
+            "option_a": "A. To prevent infinite loops",
+            "option_b": "B. Because accept() might return EINTR when a SIGCHLD signal is caught during the blocking call",
+            "option_c": "C. To improve performance",
+            "option_d": "D. To handle multiple connections simultaneously",
+            "correct_answer": "B",
+            "explanation": "When the parent is blocked in accept() and a SIGCHLD signal is delivered and caught, accept() may return EINTR. The loop with EINTR handling ensures the server continues accepting connections after signal handling."
+        },
+        {
+            "question": "What is the correct sequence of system calls for a concurrent TCP server?",
+            "option_a": "A. socket(), bind(), connect(), accept()",
+            "option_b": "B. socket(), bind(), listen(), accept(), fork()",
+            "option_c": "C. socket(), listen(), bind(), accept()",
+            "option_d": "D. socket(), connect(), bind(), listen()",
+            "correct_answer": "B",
+            "explanation": "The correct sequence is: socket() to create endpoint, bind() to assign address, listen() to mark as passive, accept() to accept connection, then fork() to create child process for each client."
+        },
+        {
+            "question": "What does the sigemptyset() function do in the signal handler setup?",
+            "option_a": "A. It empties the set of signals that will be blocked during signal handler execution",
+            "option_b": "B. It terminates all signals",
+            "option_c": "C. It resets the signal disposition",
+            "option_d": "D. It blocks all signals",
+            "correct_answer": "A",
+            "explanation": "sigemptyset() initializes the signal set to be empty, meaning no additional signals will be blocked while the signal handler is running (sa_mask is set to an empty set)."
+        },
+        {
+            "question": "Why is using text strings for numeric data exchange recommended over binary formats?",
+            "option_a": "A. Text strings are more efficient",
+            "option_b": "B. Text strings avoid byte ordering and data size issues between different architectures",
+            "option_c": "C. Binary formats are not supported by TCP",
+            "option_d": "D. Text strings are required by the socket API",
+            "correct_answer": "B",
+            "explanation": "Text strings eliminate problems with different byte orders (endianness) and varying sizes of data types across architectures, ensuring interoperability as long as both hosts use the same character set."
+        }
+    ]
+}

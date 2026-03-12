@@ -1,0 +1,40 @@
+{
+    "questions": [
+        {
+            "question": "How does multiplexing and demultiplexing helps to manage multiple connections in network programming?",
+            "option_a": "It helps to detect errors",
+            "option_b": "It helps to encrypt data",
+            "option_c": "It helps to manage multiple connections efficiently",
+            "option_d": "It helps to compress data",
+            "correct_answer": "C",
+            "explanation": "Multiplexing allows multiple connections to share a single communication channel, while demultiplexing ensures that data is directed to the correct destination. This helps to manage multiple connections efficiently in network programming."
+        },
+        {
+            "question": "When user use browser to access a website, which range of port number is used for the client side?",
+            "option_a": "0-1023",
+            "option_b": "1024-49151",
+            "option_c": "49152-65535",
+            "option_d": "All of the above",
+            "correct_answer": "C",
+            "explanation": "The range of port numbers used for the client side is typically from 49152 to 65535, which are known as dynamic or private ports. These ports are used for temporary connections initiated by the client."
+        },
+        {
+            "question": "If a data size is 6000 bytes, and the MTU(Maximum Transmission Unit) is 1500 bytes, how many fragments will be generated?",
+            "option_a": "3",
+            "option_b": "4",
+            "option_c": "5",
+            "option_d": "6",
+            "correct_answer": "C",
+            "explanation": "6000-20=5980bytes\n1480 offest=0 mf=1\n1480 offest=185 mf=1\n1480 offest=370 mf=1\n1480 offest=555 mf=1\n60bytes offest=740 mf=0"
+        },
+        {
+            "question": "If a data size is 6000 bytes, and the MTU(Maximum Transmission Unit) is 1500 bytes, how what is the offset value and the data size of the last fragment?",
+            "option_a": "Offset: 375, Data size: 1480 bytes",
+            "option_b": "Offset: 555, Data size: 2500 bytes",
+            "option_c": "Offset: 740, Data size: 60 bytes",
+            "option_d": "Offset: 740, Data size: 160 bytes",
+            "correct_answer": "C",
+            "explanation": "6000-20=5980bytes\n1480 offest=0 mf=1\n1480 offest=185 mf=1\n1480 offest=370 mf=1\n1480 offest=555 mf=1\n60bytes offest=740 mf=0"
+        }
+    ]
+}

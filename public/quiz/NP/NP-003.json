@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of the socket() function in network programming?",
+            "option_a": "A. To create an endpoint for communication",
+            "option_b": "B. To send data to a remote server",
+            "option_c": "C. To terminate a connection",
+            "option_d": "D. To assign a port to a remote host",
+            "correct_answer": "A",
+            "explanation": "The socket() function creates an endpoint for communication and returns a socket descriptor if successful."
+        },
+        {
+            "question": "In the client-server model, communication between the client and server occurs as which type of interaction?",
+            "option_a": "A. Host-to-host interaction",
+            "option_b": "B. Process-to-process interaction",
+            "option_c": "C. Device-to-device interaction",
+            "option_d": "D. Thread-to-thread interaction",
+            "correct_answer": "B",
+            "explanation": "Client-server communication is a process-to-process interaction where two processes exchange data over a network."
+        },
+        {
+            "question": "What combination uniquely identifies a socket address?",
+            "option_a": "A. MAC address and port",
+            "option_b": "B. Hostname and protocol",
+            "option_c": "C. IP address and port number",
+            "option_d": "D. Network ID and subnet mask",
+            "correct_answer": "C",
+            "explanation": "A socket address is defined as the combination of an IP address and a port number."
+        },
+        {
+            "question": "Which socket type provides reliable, connection-oriented communication?",
+            "option_a": "A. SOCK_DGRAM",
+            "option_b": "B. SOCK_STREAM",
+            "option_c": "C. SOCK_RAW",
+            "option_d": "D. SOCK_PACKET",
+            "correct_answer": "B",
+            "explanation": "SOCK_STREAM sockets provide reliable, connection-oriented byte streams and are typically used with TCP."
+        },
+        {
+            "question": "Which protocol family is commonly used for IPv4 Internet communication?",
+            "option_a": "A. AF_INET",
+            "option_b": "B. AF_UNIX",
+            "option_c": "C. AF_ROUTE",
+            "option_d": "D. AF_PACKET",
+            "correct_answer": "A",
+            "explanation": "AF_INET is the address family used for IPv4 Internet protocols."
+        },
+        {
+            "question": "Which function assigns a local protocol address to a socket?",
+            "option_a": "A. listen()",
+            "option_b": "B. accept()",
+            "option_c": "C. bind()",
+            "option_d": "D. connect()",
+            "correct_answer": "C",
+            "explanation": "bind() associates a socket with a specific local IP address and port number."
+        },
+        {
+            "question": "Which function is used by a TCP server to wait for incoming connection requests?",
+            "option_a": "A. bind()",
+            "option_b": "B. listen()",
+            "option_c": "C. connect()",
+            "option_d": "D. close()",
+            "correct_answer": "B",
+            "explanation": "listen() marks the socket as a passive socket that waits for incoming client connections."
+        },
+        {
+            "question": "Which function is used by a server to accept a new incoming connection?",
+            "option_a": "A. accept()",
+            "option_b": "B. bind()",
+            "option_c": "C. connect()",
+            "option_d": "D. recv()",
+            "correct_answer": "A",
+            "explanation": "accept() extracts the first connection request from the queue and creates a new socket for communication."
+        },
+        {
+            "question": "Which function is used by a TCP client to initiate a connection with a server?",
+            "option_a": "A. listen()",
+            "option_b": "B. bind()",
+            "option_c": "C. connect()",
+            "option_d": "D. recv()",
+            "correct_answer": "C",
+            "explanation": "connect() is used by a client to establish a connection with a server socket."
+        },
+        {
+            "question": "Which function sends data through a socket in TCP communication?",
+            "option_a": "A. write()",
+            "option_b": "B. send()",
+            "option_c": "C. transmit()",
+            "option_d": "D. push()",
+            "correct_answer": "B",
+            "explanation": "send() transmits data to the connected peer through the socket."
+        },
+        {
+            "question": "Which function receives data from a connected socket?",
+            "option_a": "A. receive()",
+            "option_b": "B. recv()",
+            "option_c": "C. input()",
+            "option_d": "D. read_socket()",
+            "correct_answer": "B",
+            "explanation": "recv() reads incoming data from a socket."
+        },
+        {
+            "question": "What does the backlog parameter in listen() specify?",
+            "option_a": "A. Maximum data size per packet",
+            "option_b": "B. Maximum number of queued pending connections",
+            "option_c": "C. Maximum port numbers allowed",
+            "option_d": "D. Maximum number of clients allowed permanently",
+            "correct_answer": "B",
+            "explanation": "The backlog specifies the maximum length of the queue of pending connections waiting to be accepted."
+        },
+        {
+            "question": "What does the socket() function return on failure?",
+            "option_a": "A. 1",
+            "option_b": "B. 0",
+            "option_c": "C. -1",
+            "option_d": "D. NULL",
+            "correct_answer": "C",
+            "explanation": "socket() returns -1 (or INVALID_SOCKET in some systems) if the socket creation fails."
+        },
+        {
+            "question": "Which of the following socket types provides unreliable, connectionless communication?",
+            "option_a": "A. SOCK_STREAM",
+            "option_b": "B. SOCK_RAW",
+            "option_c": "C. SOCK_DGRAM",
+            "option_d": "D. SOCK_PACKET",
+            "correct_answer": "C",
+            "explanation": "SOCK_DGRAM provides connectionless datagram-based communication typically used with UDP."
+        },
+        {
+            "question": "Which parameter in socket() specifies the protocol family?",
+            "option_a": "A. family",
+            "option_b": "B. type",
+            "option_c": "C. protocol",
+            "option_d": "D. address",
+            "correct_answer": "A",
+            "explanation": "The family parameter defines the protocol/address family such as AF_INET."
+        },
+        {
+            "question": "Which parameter of socket() defines the communication semantics such as stream or datagram?",
+            "option_a": "A. family",
+            "option_b": "B. type",
+            "option_c": "C. protocol",
+            "option_d": "D. port",
+            "correct_answer": "B",
+            "explanation": "The type parameter determines the type of socket such as SOCK_STREAM or SOCK_DGRAM."
+        },
+        {
+            "question": "Why do most TCP clients not explicitly call bind()?",
+            "option_a": "A. Because TCP automatically assigns IP addresses",
+            "option_b": "B. Because the OS automatically assigns an ephemeral port",
+            "option_c": "C. Because bind() is only valid for UDP",
+            "option_d": "D. Because clients do not require ports",
+            "correct_answer": "B",
+            "explanation": "The operating system automatically assigns an ephemeral port when a client connects."
+        },
+        {
+            "question": "What does INADDR_ANY represent in a server bind operation?",
+            "option_a": "A. Bind only to localhost",
+            "option_b": "B. Bind to all available network interfaces",
+            "option_c": "C. Bind only to IPv6 addresses",
+            "option_d": "D. Bind to a random remote host",
+            "correct_answer": "B",
+            "explanation": "INADDR_ANY allows the server to accept connections from any network interface."
+        },
+        {
+            "question": "Which file typically contains mappings of well-known services to port numbers in Unix-like systems?",
+            "option_a": "A. /etc/network",
+            "option_b": "B. /etc/services",
+            "option_c": "C. /etc/ports",
+            "option_d": "D. /etc/protocols",
+            "correct_answer": "B",
+            "explanation": "The /etc/services file lists standard port numbers assigned to well-known services."
+        },
+        {
+            "question": "Which port is commonly associated with SSH?",
+            "option_a": "A. 21",
+            "option_b": "B. 22",
+            "option_c": "C. 23",
+            "option_d": "D. 25",
+            "correct_answer": "B",
+            "explanation": "SSH typically operates on port 22."
+        },
+        {
+            "question": "Which of the following correctly describes the order of operations for a TCP server?",
+            "option_a": "A. socket → listen → bind → accept",
+            "option_b": "B. socket → bind → listen → accept",
+            "option_c": "C. bind → socket → listen → accept",
+            "option_d": "D. socket → accept → listen → bind",
+            "correct_answer": "B",
+            "explanation": "The correct server sequence is socket(), bind(), listen(), and then accept()."
+        },
+        {
+            "question": "Which sequence correctly represents the TCP client workflow?",
+            "option_a": "A. socket → connect → communicate → close",
+            "option_b": "B. socket → bind → connect → close",
+            "option_c": "C. socket → accept → communicate → close",
+            "option_d": "D. bind → connect → send → close",
+            "correct_answer": "A",
+            "explanation": "A TCP client creates a socket, connects to the server, communicates, and closes the connection."
+        },
+        {
+            "question": "A server application repeatedly calls accept() inside a loop. What is the purpose of this design?",
+            "option_a": "A. To repeatedly create new sockets",
+            "option_b": "B. To allow multiple clients to connect sequentially",
+            "option_c": "C. To reconnect the server to itself",
+            "option_d": "D. To restart the operating system network stack",
+            "correct_answer": "B",
+            "explanation": "Using accept() in a loop allows the server to handle multiple client connections sequentially."
+        },
+        {
+            "question": "What happens if accept() is called before listen()?",
+            "option_a": "A. The server automatically calls listen()",
+            "option_b": "B. The program may fail because the socket is not listening",
+            "option_c": "C. The server will still accept connections normally",
+            "option_d": "D. The connection becomes UDP instead of TCP",
+            "correct_answer": "B",
+            "explanation": "accept() requires a listening socket, so calling it before listen() results in an error."
+        },
+        {
+            "question": "Why is a new socket descriptor returned by accept() instead of reusing the listening socket?",
+            "option_a": "A. To allow the server to continue listening for new connections",
+            "option_b": "B. To reduce network latency",
+            "option_c": "C. To switch protocols dynamically",
+            "option_d": "D. To encrypt the connection",
+            "correct_answer": "A",
+            "explanation": "accept() returns a new socket so the server can keep the listening socket open for other clients."
+        },
+        {
+            "question": "If recv() returns 0 in a TCP connection, what does it indicate?",
+            "option_a": "A. The connection is encrypted",
+            "option_b": "B. The client has closed the connection",
+            "option_c": "C. The server must restart",
+            "option_d": "D. The network cable is unplugged",
+            "correct_answer": "B",
+            "explanation": "A return value of 0 from recv() indicates that the peer has closed the connection."
+        },
+        {
+            "question": "A server application sets backlog to 2 in listen(). What is the effect?",
+            "option_a": "A. Only two clients can ever connect",
+            "option_b": "B. Only two pending connection requests can wait in the queue",
+            "option_c": "C. The server can only send two packets",
+            "option_d": "D. The server will close after two connections",
+            "correct_answer": "B",
+            "explanation": "Backlog specifies the number of pending connections allowed in the queue before accept() processes them."
+        },
+        {
+            "question": "Which of the following best describes SOCK_RAW sockets?",
+            "option_a": "A. They provide reliable TCP communication",
+            "option_b": "B. They allow direct access to lower-level network protocols",
+            "option_c": "C. They are used exclusively for HTTP traffic",
+            "option_d": "D. They automatically encrypt data",
+            "correct_answer": "B",
+            "explanation": "SOCK_RAW sockets provide access to low-level network protocols and are often used for diagnostics or custom protocols."
+        },
+        {
+            "question": "Why do servers often use well-known ports?",
+            "option_a": "A. To allow clients to easily locate the service",
+            "option_b": "B. To increase encryption strength",
+            "option_c": "C. To reduce packet size",
+            "option_d": "D. To avoid using IP addresses",
+            "correct_answer": "A",
+            "explanation": "Well-known ports allow clients to identify and connect to standard services."
+        },
+        {
+            "question": "Which function is typically used to close a socket connection?",
+            "option_a": "A. shutdown()",
+            "option_b": "B. disconnect()",
+            "option_c": "C. close()",
+            "option_d": "D. terminate()",
+            "correct_answer": "C",
+            "explanation": "close() releases the socket descriptor and terminates the connection."
+        },
+        {
+            "question": "Which protocol is most commonly used with SOCK_STREAM?",
+            "option_a": "A. TCP",
+            "option_b": "B. UDP",
+            "option_c": "C. ICMP",
+            "option_d": "D. ARP",
+            "correct_answer": "A",
+            "explanation": "SOCK_STREAM sockets are typically used with TCP to provide reliable communication."
+        },
+        {
+            "question": "Which protocol is most commonly used with SOCK_DGRAM?",
+            "option_a": "A. TCP",
+            "option_b": "B. UDP",
+            "option_c": "C. FTP",
+            "option_d": "D. HTTP",
+            "correct_answer": "B",
+            "explanation": "SOCK_DGRAM sockets use UDP to provide connectionless datagram communication."
+        },
+        {
+            "question": "Why might a server bind to port 0?",
+            "option_a": "A. To disable networking",
+            "option_b": "B. To allow the OS to choose an ephemeral port",
+            "option_c": "C. To use a broadcast address",
+            "option_d": "D. To connect to localhost only",
+            "correct_answer": "B",
+            "explanation": "Binding to port 0 allows the OS to automatically assign an available ephemeral port."
+        },
+        {
+            "question": "Which scenario would most likely cause bind() to fail?",
+            "option_a": "A. The socket descriptor is negative",
+            "option_b": "B. Another process is already using the same port",
+            "option_c": "C. The client sends too much data",
+            "option_d": "D. The server receives multiple requests",
+            "correct_answer": "B",
+            "explanation": "bind() fails if another process already occupies the same port and address combination."
+        },
+        {
+            "question": "Why does a server often run accept() inside an infinite loop?",
+            "option_a": "A. To repeatedly restart the server",
+            "option_b": "B. To continuously accept new client connections",
+            "option_c": "C. To block network traffic",
+            "option_d": "D. To reinitialize the socket descriptor",
+            "correct_answer": "B",
+            "explanation": "The loop allows the server to keep accepting new connections from multiple clients."
+        },
+        {
+            "question": "Which situation would require using UDP instead of TCP?",
+            "option_a": "A. Reliable file transfer",
+            "option_b": "B. Real-time video streaming",
+            "option_c": "C. Secure web browsing",
+            "option_d": "D. Email transmission",
+            "correct_answer": "B",
+            "explanation": "Real-time streaming applications often use UDP to reduce latency even if some packets are lost."
+        },
+        {
+            "question": "What role does the operating system play when a client calls connect() without bind()?",
+            "option_a": "A. It disables the socket",
+            "option_b": "B. It automatically assigns an ephemeral port",
+            "option_c": "C. It converts the connection to UDP",
+            "option_d": "D. It blocks the connection",
+            "correct_answer": "B",
+            "explanation": "The OS assigns an ephemeral port for the client when bind() is not explicitly called."
+        },
+        {
+            "question": "What happens if send() transmits fewer bytes than expected?",
+            "option_a": "A. The program should check and resend the remaining data",
+            "option_b": "B. The connection automatically closes",
+            "option_c": "C. The kernel retransmits automatically",
+            "option_d": "D. The client switches to UDP",
+            "correct_answer": "A",
+            "explanation": "Applications should verify the number of bytes sent and resend if necessary."
+        },
+        {
+            "question": "Which component maintains the queue of pending TCP connections?",
+            "option_a": "A. Application process",
+            "option_b": "B. Kernel networking stack",
+            "option_c": "C. Router",
+            "option_d": "D. DNS server",
+            "correct_answer": "B",
+            "explanation": "The operating system kernel maintains the connection queue specified by the listen backlog."
+        },
+        {
+            "question": "Why might a server spawn threads or processes after accept()?",
+            "option_a": "A. To handle multiple clients concurrently",
+            "option_b": "B. To reduce socket creation time",
+            "option_c": "C. To eliminate network packets",
+            "option_d": "D. To avoid calling recv()",
+            "correct_answer": "A",
+            "explanation": "Concurrency allows servers to handle multiple clients simultaneously."
+        },
+        {
+            "question": "What does the socket descriptor represent?",
+            "option_a": "A. A hardware device",
+            "option_b": "B. A file-like identifier for a socket",
+            "option_c": "C. A network router",
+            "option_d": "D. An encryption key",
+            "correct_answer": "B",
+            "explanation": "A socket descriptor is a file-like integer identifier used by the OS to reference a socket."
+        }
+    ]
+}
