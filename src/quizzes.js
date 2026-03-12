@@ -1,12 +1,6 @@
 export default [
     // Network Programming Quizzes
     {
-        title: 'Network Programming - 08',
-        path: 'quiz/NP/NP-008.json',
-        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
-        isAvailable: true
-    },
-    {
         title: 'Network Programming - 07',
         path: 'quiz/NP/NP-007.json',
         description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',

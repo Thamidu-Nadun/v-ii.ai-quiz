@@ -47,12 +47,12 @@
         },
         {
             "question": "When you create a socket with socket(AF_INET, SOCK_STREAM, 0), which header provides the definition of AF_INET?",
-            "option_a": "A. <netinet/in.h>",
-            "option_b": "B. <sys/socket.h>",
-            "option_c": "C. <arpa/inet.h>",
-            "option_d": "D. <netdb.h>",
+            "option_a": "A. &lt;netinet/in.h&gt;",
+            "option_b": "B. &lt;sys/socket.h&gt;",
+            "option_c": "C. &lt;arpa/inet.h&gt;",
+            "option_d": "D. &lt;netdb.h&gt;",
             "correct_answer": "B",
-            "explanation": "The address family constants like AF_INET are defined in <sys/socket.h>. <netinet/in.h> defines the sockaddr_in structure."
+            "explanation": "The address family constants like AF_INET are defined in &lt;sys/socket.h&gt;. &lt;netinet/in.h&gt; defines the sockaddr_in structure."
         },
         {
             "question": "Why is the generic socket address structure struct sockaddr used in function prototypes like bind()?",
