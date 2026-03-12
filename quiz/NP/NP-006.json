@@ -11,12 +11,12 @@
         },
         {
             "question": "Which header file defines the IPv4 socket address structure sockaddr_in?",
-            "option_a": "A. <arpa/inet.h>",
-            "option_b": "B. <netinet/in.h>",
-            "option_c": "C. <sys/types.h>",
-            "option_d": "D. <string.h>",
+            "option_a": "A. &lt;arpa/inet.h&gt;",
+            "option_b": "B. &lt;netinet/in.h&gt;",
+            "option_c": "C. &lt;sys/types.h&gt;",
+            "option_d": "D. &lt;string.h&gt;",
             "correct_answer": "B",
-            "explanation": "The sockaddr_in structure used for IPv4 addresses is defined in the <netinet/in.h> header."
+            "explanation": "The sockaddr_in structure used for IPv4 addresses is defined in the &lt;netinet/in.h&gt; header."
         },
         {
             "question": "What does the field sin_family represent in the sockaddr_in structure?",

@@ -35,6 +35,204 @@
             "option_d": "Offset: 740, Data size: 160 bytes",
             "correct_answer": "C",
             "explanation": "6000-20=5980bytes\n1480 offest=0 mf=1\n1480 offest=185 mf=1\n1480 offest=370 mf=1\n1480 offest=555 mf=1\n60bytes offest=740 mf=0"
+        },
+        {
+            "question": "In TCP how it find whether the host is reachable or not?",
+            "option_a": "By sending a ICMP echo request",
+            "option_b": "By sending a TCP SYN packet",
+            "option_c": "By sending a UDP packet",
+            "option_d": "By sending a ARP request",
+            "correct_answer": "B",
+            "explanation": "TCP uses a three-way handshake to establish a connection. When a client wants to connect to a server, it sends a TCP SYN packet. If the server is reachable and willing to accept the connection, it responds with a SYN-ACK packet. If the client receives the SYN-ACK, it knows that the server is reachable and can proceed with the connection."
+        },
+        {
+            "question": "In a established TCP connection, if the sender does not receive an acknowledgment for a sent packet within a certain time frame, what action does it typically take?",
+            "option_a": "It ignores the packet and continues sending new packets",
+            "option_b": "It assumes the packet was lost and retransmits it",
+            "option_c": "It closes the connection immediately",
+            "option_d": "It sends an error message to the receiver",
+            "correct_answer": "B",
+            "explanation": "In a established TCP connection, if the sender does not receive an acknowledgment for a sent packet within a certain time frame, it typically assumes that the packet was lost and retransmits it. This is part of TCP's reliability mechanism to ensure that data is delivered correctly."
+        },
+        {
+            "question": "In TCP retransmission, how many times the sender will retransmit a packet before giving up and closing the connection?",
+            "option_a": "3",
+            "option_b": "12",
+            "option_c": "5",
+            "option_d": "7",
+            "correct_answer": "B",
+            "explanation": "In TCP, the sender will typically retransmit a packet up to 12 times before giving up and closing the connection. This is part of TCP's reliability mechanism to ensure that data is delivered correctly, but it also has a limit to prevent infinite retransmissions in case of persistent network issues."
+        },
+        {
+            "question": "What is the main purpose of the TCP congestion control mechanism?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent network congestion and ensure fair bandwidth distribution",
+            "option_c": "To encrypt data for secure transmission",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "B",
+            "explanation": "The main purpose of the TCP congestion control mechanism is to prevent network congestion and ensure fair bandwidth distribution among multiple connections. It adjusts the rate of data transmission based on network conditions to avoid overwhelming the network and to maintain efficient data flow."
+        },
+        {
+            "question": "What is the main difference between ascii and presentation functions (e.g., inet_ntoa() and inet_aton(), inet_pton() and inet_ntop()) in network programming?",
+            "option_a": "Ascii functions are used for converting between binary and text representations of IP addresses, while presentation functions are used for converting between different formats of IP addresses.",
+            "option_b": "Ascii functions are used for converting between different formats of IP addresses, while presentation functions are used for converting between binary and text representations of IP addresses.",
+            "option_c": "Ascii functions are used for converting between binary and text representations of IP addresses, while presentation functions are used for converting between different formats of IP addresses and also support both IPv4 and IPv6.",
+            "option_d": "Ascii functions are used for converting between different formats of IP addresses, while presentation functions are used for converting between binary and text representations of IP addresses and also support both IPv4 and IPv6.",
+            "correct_answer": "C",
+            "explanation": "Ascii functions like inet_ntoa() and inet_aton() are used for converting between binary and text representations of IPv4 addresses. Presentation functions like inet_pton() and inet_ntop() are used for converting between different formats of IP addresses (both IPv4 and IPv6) and also support both binary and text representations."
+        },
+        {
+            "question": "What file descriptor is closed when a client handle by a child process in a concurrent server?",
+            "option_a": "The file descriptor for the listening socket",
+            "option_b": "The file descriptor for the client socket",
+            "option_c": "Both the file descriptor for the listening socket and the client socket",
+            "option_d": "Neither the file descriptor for the listening socket nor the client socket",
+            "correct_answer": "A",
+            "explanation": "In a concurrent server, when a client is handled by a child process, the file descriptor for the listening socket is typically closed in the child process. This is because the child process does not need to accept new connections; it only needs to handle the client connection. The file descriptor for the client socket remains open in the child process to allow communication with the client."
+        },
+        {
+            "question": "What are the ways of implementing a concurrent server?",
+            "option_a": "Using multiple processes (e.g., fork())",
+            "option_b": "Using multiple threads (e.g., pthreads)",
+            "option_c": "Using non-blocking I/O and multiplexing (e.g., select(), poll(), epoll())",
+            "option_d": "All of the above",
+            "correct_answer": "D",
+            "explanation": "There are several ways to implement a concurrent server, including using multiple processes (e.g., fork()), using multiple threads (e.g., pthreads), and using non-blocking I/O and multiplexing (e.g., select(), poll(), epoll()). Each approach has its own advantages and trade-offs in terms of performance, resource usage, and complexity."
+        },
+        {
+            "question": "What is the usage of gethostbyname() function in network programming?",
+            "option_a": "To convert an IP address from binary to text format",
+            "option_b": "To convert an IP address from text to binary format",
+            "option_c": "To retrieve host information corresponding to a hostname",
+            "option_d": "To retrieve host information corresponding to an IP address",
+            "correct_answer": "C",
+            "explanation": "The gethostbyname() function is used in network programming to retrieve host information corresponding to a hostname. It takes a hostname as input and returns a pointer to a hostent structure that contains information about the host, such as its IP address(es) and aliases."
+        },
+        {
+            "question": "What does MSL (Maximum Segment Lifetime) represent in TCP networking?",
+            "option_a": "The maximum time a TCP connection can remain open",
+            "option_b": "The maximum time a TCP segment can exist in the network before being discarded",
+            "option_c": "The maximum size of a TCP segment transmitted over the network",
+            "option_d": "The maximum delay allowed between TCP retransmissions",
+            "correct_answer": "B",
+            "explanation": "MSL (Maximum Segment Lifetime) represents the maximum amount of time a TCP segment can remain in the network before it is considered lost. It ensures that delayed or duplicate packets expire before a new TCP connection with the same socket pair is established, helping prevent confusion with old segments."
+        },
+        {
+            "question": "What is the purpose of SO_BROADCAST socket option in network programming?",
+            "option_a": "To allow a socket to send broadcast messages",
+            "option_b": "To allow a socket to receive broadcast messages",
+            "option_c": "To allow a socket to send and receive broadcast messages",
+            "option_d": "To prevent a socket from sending broadcast messages",
+            "correct_answer": "A",
+            "explanation": "The SO_BROADCAST socket option is used in network programming to allow a socket to send broadcast messages. When this option is enabled, the socket can send messages to the broadcast address, which allows it to reach all hosts on the local network segment."
+        },
+        {
+            "question": "What is the correct code snippet to set a socket option as SO_BROADCAST in C?",
+            "option_a": "<pre>setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcast, sizeof(broadcast));</pre>",
+            "option_b": "<pre>setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, broadcast, sizeof(broadcast));</pre>",
+            "option_c": "<pre>setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcast);</pre>",
+            "option_d": "<pre>setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, broadcast);</pre>",
+            "correct_answer": "A",
+            "explanation": "The correct code snippet to set a socket option as SO_BROADCAST in C is: setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcast, sizeof(broadcast));. This function call sets the SO_BROADCAST option on the socket identified by sockfd, allowing it to send broadcast messages. The &broadcast argument is a pointer to the value that enables the option, and sizeof(broadcast) specifies the size of that value."
+        },
+        {
+            "question": "Does IP protocol provide reliability and flow control mechanisms?",
+            "option_a": "Yes, IP protocol provides both reliability and flow control mechanisms",
+            "option_b": "No, IP protocol does not provide reliability and flow control mechanisms",
+            "option_c": "IP protocol provides reliability but not flow control mechanisms",
+            "option_d": "IP protocol provides flow control but not reliability mechanisms",
+            "correct_answer": "B",
+            "explanation": "No, the IP protocol does not provide reliability and flow control mechanisms. IP (Internet Protocol) is a connectionless protocol that is responsible for routing packets across networks. It does not guarantee the delivery of packets, nor does it manage the flow of data. Reliability and flow control are typically handled by higher-level protocols such as TCP (Transmission Control Protocol)."
+        },
+        {
+            "question": "What is the main purpose of using SSL/TLS in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent network congestion and ensure fair bandwidth distribution",
+            "option_c": "To encrypt data for secure transmission",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "C",
+            "explanation": "The main purpose of using SSL/TLS in network programming is to encrypt data for secure transmission. SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a computer network. They help to protect data from eavesdropping, tampering, and forgery."
+        },
+        {
+            "question": "How buffer overflow happens in your network programming code?",
+            "option_a": "When a program writes more data to a buffer than it can hold, which can overwrite adjacent memory and potentially allow an attacker to execute arbitrary code or crash the program.",
+            "option_b": "When a program writes less data to a buffer than it can hold, which can lead to data loss and potential security vulnerabilities.",
+            "option_c": "When a program writes data to a buffer without checking its size, which can lead to memory leaks and potential security vulnerabilities.",
+            "option_d": "When a program writes data to a buffer without checking its size, which can lead to buffer underflow and potential security vulnerabilities.",
+            "correct_answer": "A",
+            "explanation": "Buffer overflow happens when a program writes more data to a buffer than it can hold, which can overwrite adjacent memory and potentially allow an attacker to execute arbitrary code or crash the program. This is a common vulnerability in network programming that can lead to security breaches and Denial of Service (DoS) attacks."
+        },
+        {
+            "question": "How attacker can exploit a buffer overflow vulnerability in network programming?",
+            "option_a": "By sending a specially crafted input that exceeds the buffer size, which can overwrite adjacent memory and potentially allow the attacker to execute arbitrary code or crash the program.",
+            "option_b": "By sending a specially crafted input that is smaller than the buffer size, which can lead to data loss and potential security vulnerabilities.",
+            "option_c": "By sending a specially crafted input that does not check the buffer size, which can lead to memory leaks and potential security vulnerabilities.",
+            "option_d": "By sending a specially crafted input that does not check the buffer size, which can lead to buffer underflow and potential security vulnerabilities.",
+            "correct_answer": "A",
+            "explanation": "An attacker can exploit a buffer overflow vulnerability in network programming by sending a specially crafted input that exceeds the buffer size. This can overwrite adjacent memory and potentially allow the attacker to execute arbitrary code or crash the program, leading to security breaches and Denial of Service (DoS) attacks."
+        },
+        {
+            "question": "Select code snippet that can lead to a buffer overflow vulnerability in network programming.",
+            "option_a": "<pre>char buffer[10];\nstrcpy(buffer, \"This is a long string that exceeds the buffer size\");</pre>",
+            "option_b": "<pre>char buffer[10];\nstrncpy(buffer, \"This is a long string that exceeds the buffer size\", sizeof(buffer) - 1);\nbuffer[sizeof(buffer) - 1] = '\\0';</pre>",
+            "option_c": "<pre>char buffer[10];\nsnprintf(buffer, sizeof(buffer), \"%s\", \"This is a long string that exceeds the buffer size\");</pre>",
+            "option_d": "<pre>char buffer[10];\nstrlcpy(buffer, \"This is a long string that exceeds the buffer size\", sizeof(buffer));</pre>",
+            "correct_answer": "A",
+            "explanation": "The code snippet that can lead to a buffer overflow vulnerability in network programming is: char buffer[10]; strcpy(buffer, \"This is a long string that exceeds the buffer size\");. This code does not check the size of the input string and can write more data than the buffer can hold, leading to a buffer overflow."
+        },
+        {
+            "question": "What is a common vulnerability in network programming that can lead to a Denial of Service (DoS) attack?",
+            "option_a": "Buffer overflow",
+            "option_b": "SQL injection",
+            "option_c": "Cross-site scripting (XSS)",
+            "option_d": "Man-in-the-middle (MITM) attack",
+            "correct_answer": "A",
+            "explanation": "A common vulnerability in network programming that can lead to a Denial of Service (DoS) attack is a buffer overflow. This occurs when a program writes more data to a buffer than it can hold, which can overwrite adjacent memory and potentially allow an attacker to execute arbitrary code or crash the program, leading to a DoS attack."
+        },
+        {
+            "question": "What is the main purpose of using firewalls in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent unauthorized access to or from a private network",
+            "option_c": "To encrypt data for secure transmission",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "B",
+            "explanation": "The main purpose of using firewalls in network programming is to prevent unauthorized access to or from a private network. Firewalls can be hardware-based, software-based, or a combination of both, and they work by filtering incoming and outgoing network traffic based on predetermined security rules."
+        },
+        {
+            "question": "What is the main purpose of using a Virtual Private Network (VPN) in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent network congestion and ensure fair bandwidth distribution",
+            "option_c": "To encrypt data for secure transmission and provide remote access to a private network",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "C",
+            "explanation": "The main purpose of using a Virtual Private Network (VPN) in network programming is to encrypt data for secure transmission and provide remote access to a private network. A VPN creates a secure tunnel between the user's device and the VPN server, allowing users to access resources on the private network as if they were directly connected to it, while also protecting their data from eavesdropping and interception."
+        },
+        {
+            "question": "What is the main purpose of using intrusion detection systems (IDS) in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent unauthorized access to or from a private network",
+            "option_c": "To detect and respond to potential security threats in a network",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "C",
+            "explanation": "The main purpose of using intrusion detection systems (IDS) in network programming is to detect and respond to potential security threats in a network. IDS can monitor network traffic for suspicious activity, analyze logs for signs of attacks, and alert administrators to potential security breaches."
+        },
+        {
+            "question": "What is the main purpose of using penetration testing in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent unauthorized access to or from a private network",
+            "option_c": "To identify and exploit vulnerabilities in a network to improve security",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "C",
+            "explanation": "The main purpose of using penetration testing in network programming is to identify and exploit vulnerabilities in a network to improve security. Penetration testing, also known as ethical hacking, involves simulating cyberattacks on a system to evaluate its security and identify weaknesses that could be exploited by malicious attackers."
+        },
+        {
+            "question": "What is the main purpose of using a honeypot in network programming?",
+            "option_a": "To increase the speed of data transmission",
+            "option_b": "To prevent unauthorized access to or from a private network",
+            "option_c": "To attract and analyze potential attackers in a controlled environment",
+            "option_d": "To compress data for faster transmission",
+            "correct_answer": "C",
+            "explanation": "The main purpose of using a honeypot in network programming is to attract and analyze potential attackers in a controlled environment. A honeypot is a decoy system or network that is designed to appear vulnerable and enticing to attackers. It allows security professionals to study attack techniques, gather intelligence, and improve defenses without risking real assets."
         }
     ]
 }
