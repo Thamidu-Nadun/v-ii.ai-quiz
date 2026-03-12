@@ -7,13 +7,13 @@ export default [
         isAvailable: true
     },
     {
-        title: 'Network Programming - 06 (optional)',
+        title: 'Network Programming - 06',
         path: 'quiz/NP/NP-006.json',
         description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
         isAvailable: true
     },
     {
-        title: 'Network Programming - 05',
+        title: 'Network Programming - 05 (optional)',
         path: 'quiz/NP/NP-005.json',
         description: 'Test your knowledge of network programming protocols, including TCP/IP, HTTP, and FTP.',
         isAvailable: true
