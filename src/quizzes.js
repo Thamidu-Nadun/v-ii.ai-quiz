@@ -7,7 +7,7 @@ export default [
         isAvailable: true
     },
     {
-        title: 'Network Programming - 06',
+        title: 'Network Programming - 06 (optional)',
         path: 'quiz/NP/NP-006.json',
         description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
         isAvailable: true
