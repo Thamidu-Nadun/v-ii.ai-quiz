@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "question": "According to the lecture, what is the definition of motivation?",
+            "option_a": "A. The desire to earn more money than colleagues",
+            "option_b": "B. A process that starts with a physiological or psychological deficiency or need that activates a behavior or a drive aimed at a goal or incentive",
+            "option_c": "C. The result of setting SMART goals",
+            "option_d": "D. The outcome of good leadership",
+            "correct_answer": "B",
+            "explanation": "The lecture slides define motivation exactly as a process that begins with a deficiency or need, which then activates a behavior or drive aimed at a goal or incentive."
+        },
+        {
+            "question": "What is time management, as defined in the lecture?",
+            "option_a": "A. Working as many hours as possible each day",
+            "option_b": "B. Paying attention to how you are spending your most valuable resource (time) and devising a plan to use it more effectively",
+            "option_c": "C. Completing all tasks as quickly as possible",
+            "option_d": "D. Sleeping fewer hours to get more work done",
+            "correct_answer": "B",
+            "explanation": "The lecture defines time management as actively monitoring your time usage and creating a plan to use it more effectively."
+        },
+        {
+            "question": "In the motivation process, what are drives (motives)?",
+            "option_a": "A. The ultimate goals we want to achieve",
+            "option_b": "B. The physiological or psychological deficiencies",
+            "option_c": "C. The hunger and thirst drives that result from needs",
+            "option_d": "D. The external rewards we receive",
+            "correct_answer": "C",
+            "explanation": "The lecture explains that drives, such as hunger and thirst, are the result of physiological or psychological needs and they activate behavior."
+        },
+        {
+            "question": "All of the following are levels in Maslow's Hierarchy of Needs EXCEPT:",
+            "option_a": "A. Basic Needs",
+            "option_b": "B. Security Needs",
+            "option_c": "C. Esteem Needs",
+            "option_d": "D. Achievement Needs",
+            "correct_answer": "D",
+            "explanation": "Maslow's Hierarchy includes Basic, Security, Social, Esteem, and Self-Actualization needs. 'Achievement Needs' is not one of these levels."
+        },
+        {
+            "question": "According to Herzberg's Two-Factor Theory, which of the following is NOT a characteristic of Hygiene Factors?",
+            "option_a": "A. Related to dissatisfaction caused by discomfort or pain",
+            "option_b": "B. Contributes to employee's feeling not dissatisfied",
+            "option_c": "C. Leads to superior performance and effort",
+            "option_d": "D. Maintenance factor",
+            "correct_answer": "C",
+            "explanation": "Hygiene factors prevent dissatisfaction, but it is the Motivation Factors that lead to superior performance and effort."
+        },
+        {
+            "question": "All of the following are characteristics of SMART goals EXCEPT:",
+            "option_a": "A. Specific",
+            "option_b": "B. Measurable",
+            "option_c": "C. Achievable",
+            "option_d": "D. Rapid",
+            "correct_answer": "D",
+            "explanation": "SMART goals are Specific, Measurable, Achievable, Result-based, and Time-specific. 'Rapid' is not a criterion in the SMART framework."
+        },
+        {
+            "question": "In the motivation process, a physiological or psychological deficiency creates a ______ that activates behavior aimed at an incentive.",
+            "option_a": "A. goal",
+            "option_b": "B. need",
+            "option_c": "C. drive",
+            "option_d": "D. reward",
+            "correct_answer": "B",
+            "explanation": "The process starts with a 'need' (the deficiency), which then creates a drive that motivates behavior towards an incentive."
+        },
+        {
+            "question": "In Maslow's Hierarchy of Needs, the highest level of need is ______.",
+            "option_a": "A. Esteem Needs",
+            "option_b": "B. Social Needs",
+            "option_c": "C. Self-Actualization",
+            "option_d": "D. Basic Needs",
+            "correct_answer": "C",
+            "explanation": "Self-actualization, which involves personal growth and realizing one's potential, is at the top of Maslow's Hierarchy."
+        },
+        {
+            "question": "According to Stephen R. Covey's 'The 7 Habits of Highly Effective People,' Habit #2 is 'Begin with the ______ in Mind.'",
+            "option_a": "A. Goal",
+            "option_b": "B. Plan",
+            "option_c": "C. End",
+            "option_d": "D. Vision",
+            "correct_answer": "C",
+            "explanation": "The lecture quotes Covey's second habit as 'Begin with the End in Mind,' which means starting with a clear vision of the desired outcome."
+        },
+        {
+            "question": "An employee has a comfortable salary, good health insurance, and job security, but still feels unmotivated at work. According to Herzberg's Two-Factor Theory, what is likely missing?",
+            "option_a": "A. Hygiene Factors",
+            "option_b": "B. Motivation Factors",
+            "option_c": "C. Basic Needs",
+            "option_d": "D. Security Needs",
+            "correct_answer": "B",
+            "explanation": "The employee has good Hygiene Factors (salary, benefits, security), which prevent dissatisfaction but don't create motivation. They are missing Motivation Factors, such as recognition or interesting work."
+        },
+        {
+            "question": "A recent graduate is focused on finding a job that pays enough to afford food, rent, and basic utilities. According to Maslow's Hierarchy, which level of needs is this graduate primarily trying to satisfy?",
+            "option_a": "A. Self-Actualization",
+            "option_b": "B. Esteem Needs",
+            "option_c": "C. Social Needs",
+            "option_d": "D. Basic Needs",
+            "correct_answer": "D",
+            "explanation": "The focus on paying for food, rent, and utilities directly corresponds to the most fundamental level in the hierarchy: Basic Needs."
+        },
+        {
+            "question": "A manager notices that employees are not complaining about their work conditions, salaries, or job security, but they are also not putting in extra effort or showing passion for their work. According to Herzberg's Two-Factor Theory, what is the situation?",
+            "option_a": "A. High Motivation, High Hygiene",
+            "option_b": "B. High Motivation, Low Hygiene",
+            "option_c": "C. Low Motivation, High Hygiene",
+            "option_d": "D. Low Motivation, Low Hygiene",
+            "correct_answer": "C",
+            "explanation": "No complaints indicates High Hygiene, while no extra effort or passion indicates Low Motivation. This combination leads to a lack of dissatisfaction but also a lack of positive motivation."
+        },
+        {
+            "question": "A student sets a goal: 'I will get an A+ in my programming course by studying for 2 hours every day, completing all assignments on time, and practicing coding problems weekly, and I will achieve this by the end of this semester.' Which SMART goal characteristic is demonstrated by specifying 'by the end of this semester'?",
+            "option_a": "A. Specific",
+            "option_b": "B. Measurable",
+            "option_c": "C. Achievable",
+            "option_d": "D. Time-specific",
+            "correct_answer": "D",
+            "explanation": "The phrase 'by the end of this semester' provides a clear deadline, which fulfills the 'Time-specific' criterion of a SMART goal."
+        },
+        {
+            "question": "What is the difference between Hygiene Factors and Motivation Factors in Herzberg's Two-Factor Theory?",
+            "option_a": "A. Hygiene Factors relate to pay; Motivation Factors relate to promotions",
+            "option_b": "B. Hygiene Factors prevent dissatisfaction; Motivation Factors lead to superior performance and effort",
+            "option_c": "C. Hygiene Factors are external; Motivation Factors are internal",
+            "option_d": "D. There is no difference",
+            "correct_answer": "B",
+            "explanation": "The core distinction is that Hygiene Factors are maintenance factors that prevent dissatisfaction, while Motivation Factors are psychological growth factors that actively drive superior performance and satisfaction."
+        },
+        {
+            "question": "What is the difference between Basic Needs and Esteem Needs in Maslow's Hierarchy?",
+            "option_a": "A. Basic Needs are psychological; Esteem Needs are physiological",
+            "option_b": "B. Basic Needs must be satisfied before Esteem Needs become motivating",
+            "option_c": "C. Basic Needs are for individuals; Esteem Needs are for groups",
+            "option_d": "D. There is no difference",
+            "correct_answer": "B",
+            "explanation": "Maslow's theory posits a hierarchy where lower-level needs (like Basic Needs) must be substantially met before higher-level needs (like Esteem) become the primary motivators."
+        },
+        {
+            "question": "Priya works as a software developer. She has excellent pay, good benefits, and a safe work environment. However, she feels her work is boring and she never gets recognition for her contributions. She is considering leaving her job. According to Herzberg's Two-Factor Theory, what is the issue?",
+            "option_a": "A. Poor Hygiene Factors",
+            "option_b": "B. Poor Motivation Factors",
+            "option_c": "C. Basic Needs are unmet",
+            "option_d": "D. Security Needs are unmet",
+            "correct_answer": "B",
+            "explanation": "Priya's issue stems from poor Motivation Factors (boring work, lack of recognition) despite having good Hygiene Factors (pay, benefits, safety). This lack of Motivation Factors can lead to dissatisfaction and a desire to leave."
+        },
+        {
+            "question": "A student wants to improve their grades. They set this goal: 'I will study harder this semester.' According to SMART goal criteria, what is the main problem with this goal?",
+            "option_a": "A. It is not Specific or Measurable",
+            "option_b": "B. It is not Achievable",
+            "option_c": "C. It is not Time-specific",
+            "option_d": "D. It is too ambitious",
+            "correct_answer": "A",
+            "explanation": "'Study harder' is vague and lacks concrete actions (not Specific) and a way to track progress (not Measurable), which are fundamental flaws according to the SMART criteria."
+        },
+        {
+            "question": "After completing the time tracking exercise, a student calculates their total committed hours per week as 140 hours. What is the number of remaining hours they have available for studying, personal projects, and other activities?",
+            "option_a": "A. 168 hours",
+            "option_b": "B. 28 hours",
+            "option_c": "C. 24 hours",
+            "option_d": "D. 7 hours",
+            "correct_answer": "B",
+            "explanation": "There are 168 hours in a week (24 hours x 7 days). Subtracting the 140 committed hours leaves 28 hours available for other activities."
+        },
+        {
+            "question": "A manager wants to create a work environment where employees are not just satisfied but also highly motivated to perform at their best. Based on Herzberg's Two-Factor Theory, what combination should the manager aim for?",
+            "option_a": "A. High Hygiene, Low Motivation",
+            "option_b": "B. Low Hygiene, High Motivation",
+            "option_c": "C. High Hygiene, High Motivation",
+            "option_d": "D. Low Hygiene, Low Motivation",
+            "correct_answer": "C",
+            "explanation": "The ideal state for both employee satisfaction and high performance is a combination of High Hygiene (to prevent dissatisfaction) and High Motivation (to drive superior effort)."
+        },
+        {
+            "question": "According to the lecture, the Locke and Latham model shows the relationship between goals, performance, and ______.",
+            "option_a": "A. motivation",
+            "option_b": "B. satisfaction",
+            "option_c": "C. needs",
+            "option_d": "D. hygiene",
+            "correct_answer": "B",
+            "explanation": "The lecture slide titles the model as 'Motivation Model for Relating Goals to Performance and Satisfaction (Locke and Latham model)', indicating it relates goals to both performance and satisfaction."
+        }
+    ]
+}

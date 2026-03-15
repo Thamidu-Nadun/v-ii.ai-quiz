@@ -1,0 +1,454 @@
+{
+    "questions": [
+        {
+            "question": "What is reflective practice?",
+            "option_a": "A. Ignoring past events",
+            "option_b": "B. Revisiting experiences to learn from them",
+            "option_c": "C. Memorizing information only",
+            "option_d": "D. Completing tasks quickly",
+            "correct_answer": "B",
+            "explanation": "Reflective practice means reviewing experiences to extract learning."
+        },
+        {
+            "question": "Reflection mainly helps individuals to:",
+            "option_a": "A. Avoid responsibility",
+            "option_b": "B. Improve future performance",
+            "option_c": "C. Forget mistakes",
+            "option_d": "D. Reduce learning",
+            "correct_answer": "B",
+            "explanation": "Reflection improves future actions by learning from experiences."
+        },
+        {
+            "question": "Which learning approach focuses on memorization?",
+            "option_a": "A. Deep learning",
+            "option_b": "B. Reflective learning",
+            "option_c": "C. Surface learning",
+            "option_d": "D. Experiential learning",
+            "correct_answer": "C",
+            "explanation": "Surface learning focuses mainly on memorizing information."
+        },
+        {
+            "question": "Deep learning focuses on:",
+            "option_a": "A. Understanding concepts",
+            "option_b": "B. Memorizing facts",
+            "option_c": "C. Ignoring context",
+            "option_d": "D. Avoiding questions",
+            "correct_answer": "A",
+            "explanation": "Deep learning emphasizes understanding meaning and relationships."
+        },
+        {
+            "question": "Which stage comes after novice in expertise development?",
+            "option_a": "A. Expert",
+            "option_b": "B. Advanced beginner",
+            "option_c": "C. Professional",
+            "option_d": "D. Master",
+            "correct_answer": "B",
+            "explanation": "Advanced beginner follows the novice stage."
+        },
+        {
+            "question": "Which stage represents the highest level of expertise?",
+            "option_a": "A. Competent",
+            "option_b": "B. Advanced beginner",
+            "option_c": "C. Expert",
+            "option_d": "D. Novice",
+            "correct_answer": "C",
+            "explanation": "Experts demonstrate deep intuitive understanding."
+        },
+        {
+            "question": "What does the 'D' in the DATA model stand for?",
+            "option_a": "A. Decide",
+            "option_b": "B. Describe",
+            "option_c": "C. Develop",
+            "option_d": "D. Define",
+            "correct_answer": "B",
+            "explanation": "The first step of DATA is describing the situation."
+        },
+        {
+            "question": "Which DATA stage examines causes of a problem?",
+            "option_a": "A. Describe",
+            "option_b": "B. Analyse",
+            "option_c": "C. Theorise",
+            "option_d": "D. Act",
+            "correct_answer": "B",
+            "explanation": "Analyse investigates contributing factors."
+        },
+        {
+            "question": "Which DATA step suggests possible solutions?",
+            "option_a": "A. Describe",
+            "option_b": "B. Analyse",
+            "option_c": "C. Theorise",
+            "option_d": "D. Act",
+            "correct_answer": "C",
+            "explanation": "Theorise proposes improvements."
+        },
+        {
+            "question": "Which DATA stage implements improvements?",
+            "option_a": "A. Act",
+            "option_b": "B. Analyse",
+            "option_c": "C. Describe",
+            "option_d": "D. Theorise",
+            "correct_answer": "A",
+            "explanation": "Act tests or applies solutions."
+        },
+        {
+            "question": "SWOT analysis is used for:",
+            "option_a": "A. Programming",
+            "option_b": "B. Self-assessment and planning",
+            "option_c": "C. Networking",
+            "option_d": "D. Data storage",
+            "correct_answer": "B",
+            "explanation": "SWOT helps evaluate personal and professional factors."
+        },
+        {
+            "question": "Which are internal factors in SWOT?",
+            "option_a": "A. Strengths and Weaknesses",
+            "option_b": "B. Opportunities and Threats",
+            "option_c": "C. Goals and Plans",
+            "option_d": "D. Risks and Rewards",
+            "correct_answer": "A",
+            "explanation": "Strengths and weaknesses are internal."
+        },
+        {
+            "question": "External positive conditions are:",
+            "option_a": "A. Weaknesses",
+            "option_b": "B. Strengths",
+            "option_c": "C. Opportunities",
+            "option_d": "D. Threats",
+            "correct_answer": "C",
+            "explanation": "Opportunities are beneficial external conditions."
+        },
+        {
+            "question": "External risks in SWOT are called:",
+            "option_a": "A. Strengths",
+            "option_b": "B. Threats",
+            "option_c": "C. Weaknesses",
+            "option_d": "D. Goals",
+            "correct_answer": "B",
+            "explanation": "Threats represent external risks."
+        },
+        {
+            "question": "Values represent:",
+            "option_a": "A. Skills",
+            "option_b": "B. Personal principles",
+            "option_c": "C. Technical tools",
+            "option_d": "D. Work schedules",
+            "correct_answer": "B",
+            "explanation": "Values guide judgments of right and wrong."
+        },
+        {
+            "question": "Integrity means:",
+            "option_a": "A. Acting honestly",
+            "option_b": "B. Ignoring ethics",
+            "option_c": "C. Competing with others",
+            "option_d": "D. Avoiding work",
+            "correct_answer": "A",
+            "explanation": "Integrity involves honesty and strong moral principles."
+        },
+        {
+            "question": "Beliefs are:",
+            "option_a": "A. Ideas accepted as true",
+            "option_b": "B. Technical processes",
+            "option_c": "C. Random thoughts",
+            "option_d": "D. Emotional reactions",
+            "correct_answer": "A",
+            "explanation": "Beliefs are ideas individuals consider true."
+        },
+        {
+            "question": "Attitude refers to:",
+            "option_a": "A. A mindset affecting behavior",
+            "option_b": "B. A programming language",
+            "option_c": "C. A document",
+            "option_d": "D. A computer process",
+            "correct_answer": "A",
+            "explanation": "Attitude influences how people respond to situations."
+        },
+        {
+            "question": "Which attitude component relates to emotions?",
+            "option_a": "A. Behavioral",
+            "option_b": "B. Cognitive",
+            "option_c": "C. Affective",
+            "option_d": "D. Logical",
+            "correct_answer": "C",
+            "explanation": "The affective component represents feelings."
+        },
+        {
+            "question": "Which attitude component represents thoughts?",
+            "option_a": "A. Affective",
+            "option_b": "B. Cognitive",
+            "option_c": "C. Behavioral",
+            "option_d": "D. Emotional",
+            "correct_answer": "B",
+            "explanation": "Cognitive refers to beliefs and thoughts."
+        },
+        {
+            "question": "Behavioral attitude component relates to:",
+            "option_a": "A. Feelings",
+            "option_b": "B. Thoughts",
+            "option_c": "C. Actions",
+            "option_d": "D. Ideas",
+            "correct_answer": "C",
+            "explanation": "Behavioral components are observable actions."
+        },
+        {
+            "question": "Positive attitude often leads to:",
+            "option_a": "A. Problem avoidance",
+            "option_b": "B. Opportunity seeking",
+            "option_c": "C. Ignoring work",
+            "option_d": "D. Complaining",
+            "correct_answer": "B",
+            "explanation": "Positive attitudes focus on solutions and opportunities."
+        },
+        {
+            "question": "Negative attitude focuses on:",
+            "option_a": "A. Solutions",
+            "option_b": "B. Possibilities",
+            "option_c": "C. Limitations",
+            "option_d": "D. Achievements",
+            "correct_answer": "C",
+            "explanation": "Negative attitudes emphasize problems."
+        },
+        {
+            "question": "Character is best described as:",
+            "option_a": "A. Personality qualities",
+            "option_b": "B. Computer code",
+            "option_c": "C. A training method",
+            "option_d": "D. A testing process",
+            "correct_answer": "A",
+            "explanation": "Character reflects personal qualities."
+        },
+        {
+            "question": "Values influence:",
+            "option_a": "A. Beliefs",
+            "option_b": "B. Hardware",
+            "option_c": "C. Software",
+            "option_d": "D. Networks",
+            "correct_answer": "A",
+            "explanation": "Values shape beliefs."
+        },
+        {
+            "question": "Beliefs influence:",
+            "option_a": "A. Attitudes",
+            "option_b": "B. Hardware",
+            "option_c": "C. Servers",
+            "option_d": "D. Routers",
+            "correct_answer": "A",
+            "explanation": "Beliefs shape attitudes."
+        },
+        {
+            "question": "Habits develop from repeated:",
+            "option_a": "A. Thoughts",
+            "option_b": "B. Behaviors",
+            "option_c": "C. Rules",
+            "option_d": "D. Skills",
+            "correct_answer": "B",
+            "explanation": "Repeated behaviors become habits."
+        },
+        {
+            "question": "Empathy refers to:",
+            "option_a": "A. Understanding others' feelings",
+            "option_b": "B. Ignoring people",
+            "option_c": "C. Avoiding teamwork",
+            "option_d": "D. Competing constantly",
+            "correct_answer": "A",
+            "explanation": "Empathy means understanding others’ emotions."
+        },
+        {
+            "question": "Self-awareness tools help people:",
+            "option_a": "A. Understand themselves better",
+            "option_b": "B. Write code faster",
+            "option_c": "C. Manage databases",
+            "option_d": "D. Build networks",
+            "correct_answer": "A",
+            "explanation": "They improve personal understanding."
+        },
+        {
+            "question": "Which model improves interpersonal awareness?",
+            "option_a": "A. Johari Window",
+            "option_b": "B. SWOT",
+            "option_c": "C. DATA",
+            "option_d": "D. PDP",
+            "correct_answer": "A",
+            "explanation": "Johari Window improves self-awareness and relationships."
+        },
+        {
+            "question": "Personal Development Planning mainly helps:",
+            "option_a": "A. Career growth",
+            "option_b": "B. Gaming",
+            "option_c": "C. Programming speed",
+            "option_d": "D. Internet browsing",
+            "correct_answer": "A",
+            "explanation": "PDP helps plan future development."
+        },
+        {
+            "question": "Setting career goals is part of:",
+            "option_a": "A. PDP",
+            "option_b": "B. Networking",
+            "option_c": "C. Hardware design",
+            "option_d": "D. Testing",
+            "correct_answer": "A",
+            "explanation": "Goal setting is central to PDP."
+        },
+        {
+            "question": "Identifying skill gaps is called:",
+            "option_a": "A. Gap analysis",
+            "option_b": "B. Reflection",
+            "option_c": "C. Testing",
+            "option_d": "D. Coding",
+            "correct_answer": "A",
+            "explanation": "Gap analysis identifies missing skills."
+        },
+        {
+            "question": "Which behavior reflects deep learning?",
+            "option_a": "A. Memorizing answers",
+            "option_b": "B. Understanding concepts",
+            "option_c": "C. Skipping lessons",
+            "option_d": "D. Copying notes",
+            "correct_answer": "B",
+            "explanation": "Deep learning focuses on understanding."
+        },
+        {
+            "question": "Helping colleagues demonstrates:",
+            "option_a": "A. Generosity",
+            "option_b": "B. Competition",
+            "option_c": "C. Isolation",
+            "option_d": "D. Pride",
+            "correct_answer": "A",
+            "explanation": "Helping others shows generosity."
+        },
+        {
+            "question": "Facing challenges bravely shows:",
+            "option_a": "A. Courage",
+            "option_b": "B. Laziness",
+            "option_c": "C. Fear",
+            "option_d": "D. Avoidance",
+            "correct_answer": "A",
+            "explanation": "Courage involves confronting challenges."
+        },
+        {
+            "question": "Which value relates to fairness and equality?",
+            "option_a": "A. Justice",
+            "option_b": "B. Freedom",
+            "option_c": "C. Adventure",
+            "option_d": "D. Wealth",
+            "correct_answer": "A",
+            "explanation": "Justice refers to fairness."
+        },
+        {
+            "question": "A person who always seeks improvement shows:",
+            "option_a": "A. Growth mindset",
+            "option_b": "B. Laziness",
+            "option_c": "C. Fear",
+            "option_d": "D. Ignorance",
+            "correct_answer": "A",
+            "explanation": "A growth mindset focuses on improvement."
+        },
+        {
+            "question": "Reflection usually occurs:",
+            "option_a": "A. Before learning",
+            "option_b": "B. After experiences",
+            "option_c": "C. During sleep",
+            "option_d": "D. Before exams only",
+            "correct_answer": "B",
+            "explanation": "Reflection reviews past experiences."
+        },
+        {
+            "question": "Professional growth requires:",
+            "option_a": "A. Continuous learning",
+            "option_b": "B. Avoiding challenges",
+            "option_c": "C. Ignoring feedback",
+            "option_d": "D. Repeating mistakes",
+            "correct_answer": "A",
+            "explanation": "Continuous learning supports professional development."
+        },
+        {
+            "question": "Which skill improves teamwork?",
+            "option_a": "A. Communication",
+            "option_b": "B. Isolation",
+            "option_c": "C. Silence",
+            "option_d": "D. Avoidance",
+            "correct_answer": "A",
+            "explanation": "Communication improves collaboration."
+        },
+        {
+            "question": "Listening carefully demonstrates:",
+            "option_a": "A. Respect",
+            "option_b": "B. Ignorance",
+            "option_c": "C. Fear",
+            "option_d": "D. Weakness",
+            "correct_answer": "A",
+            "explanation": "Listening shows respect for others."
+        },
+        {
+            "question": "Receiving feedback helps:",
+            "option_a": "A. Personal growth",
+            "option_b": "B. Avoid work",
+            "option_c": "C. Delay tasks",
+            "option_d": "D. Reduce effort",
+            "correct_answer": "A",
+            "explanation": "Feedback helps improve performance."
+        },
+        {
+            "question": "Learning from mistakes is part of:",
+            "option_a": "A. Reflection",
+            "option_b": "B. Avoidance",
+            "option_c": "C. Forgetting",
+            "option_d": "D. Ignoring",
+            "correct_answer": "A",
+            "explanation": "Reflection turns mistakes into lessons."
+        },
+        {
+            "question": "Developing skills over time leads to:",
+            "option_a": "A. Expertise",
+            "option_b": "B. Laziness",
+            "option_c": "C. Confusion",
+            "option_d": "D. Failure",
+            "correct_answer": "A",
+            "explanation": "Consistent learning leads to expertise."
+        },
+        {
+            "question": "Career success often requires:",
+            "option_a": "A. Good values and skills",
+            "option_b": "B. Luck only",
+            "option_c": "C. Ignoring people",
+            "option_d": "D. Avoiding challenges",
+            "correct_answer": "A",
+            "explanation": "Both skills and values contribute to success."
+        },
+        {
+            "question": "Reflective learners usually:",
+            "option_a": "A. Think critically",
+            "option_b": "B. Avoid thinking",
+            "option_c": "C. Ignore experiences",
+            "option_d": "D. Copy others",
+            "correct_answer": "A",
+            "explanation": "Reflection encourages critical thinking."
+        },
+        {
+            "question": "A professional with integrity:",
+            "option_a": "A. Acts ethically",
+            "option_b": "B. Cheats",
+            "option_c": "C. Lies",
+            "option_d": "D. Avoids responsibility",
+            "correct_answer": "A",
+            "explanation": "Integrity means ethical behavior."
+        },
+        {
+            "question": "Continuous self-evaluation improves:",
+            "option_a": "A. Personal development",
+            "option_b": "B. Laziness",
+            "option_c": "C. Confusion",
+            "option_d": "D. Fear",
+            "correct_answer": "A",
+            "explanation": "Evaluating oneself supports improvement."
+        },
+        {
+            "question": "The ultimate goal of reflective practice is:",
+            "option_a": "A. Personal and professional growth",
+            "option_b": "B. Avoiding learning",
+            "option_c": "C. Memorizing answers",
+            "option_d": "D. Ignoring experiences",
+            "correct_answer": "A",
+            "explanation": "Reflection helps individuals continuously improve."
+        }
+    ]
+}

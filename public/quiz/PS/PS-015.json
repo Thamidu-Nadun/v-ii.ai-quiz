@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "According to Professor Leigh Thompson, what is the key characteristic that defines a team, as opposed to a simple group of people?",
+            "option_a": "A. They report to the same manager.",
+            "option_b": "B. They are interdependent and combine efforts to achieve a common goal.",
+            "option_c": "C. They work in the same department or organization.",
+            "option_d": "D. They have known each other for a long time.",
+            "correct_answer": "B",
+            "explanation": "Professor Thompson's definition states a team is 'a group of people who are interdependent... and who seek to combine their efforts to achieve a common goal.'"
+        },
+        {
+            "question": "In the context of teams, what is the definition of a 'team role' according to Dr. Meredith Belbin?",
+            "option_a": "A. The formal job title assigned by the organization.",
+            "option_b": "B. A tendency to behave, contribute, and interrelate with others in a particular way.",
+            "option_c": "C. The specific set of technical skills a person brings to the team.",
+            "option_d": "D. A person's seniority level within the team hierarchy.",
+            "correct_answer": "B",
+            "explanation": "The lecture defines a Team Role as 'A tendency to behave, contribute and interrelate with others in a particular way,' as defined by Dr. Meredith Belbin."
+        },
+        {
+            "question": "Which of the following is NOT one of the stages in Tuckman's model of team development?",
+            "option_a": "A. Norming",
+            "option_b": "B. Storming",
+            "option_c": "C. Performing",
+            "option_d": "D. Reforming",
+            "correct_answer": "D",
+            "explanation": "Tuckman's five stages are Forming, Storming, Norming, Performing, and Adjourning. 'Reforming' is not part of his model."
+        },
+        {
+            "question": "According to Belbin's Team Role Theory, which of the following is NOT one of the three main role categories?",
+            "option_a": "A. Thought Focused Roles",
+            "option_b": "B. People Focused Roles",
+            "option_c": "C. Action Focused Roles",
+            "option_d": "D. Process Focused Roles",
+            "correct_answer": "D",
+            "explanation": "Belbin's three categories are Action Focused, People Focused, and Thought Focused roles. 'Process Focused' is not one of these categories."
+        },
+        {
+            "question": "When a team member is given a vague responsibility without clear expectations, leading to confusion and withdrawal, which role problem are they most likely experiencing?",
+            "option_a": "A. Role Overload",
+            "option_b": "B. Role Conflict",
+            "option_c": "C. Role Ambiguity",
+            "option_d": "D. Territoriality",
+            "correct_answer": "C",
+            "explanation": "Role Ambiguity is defined as occurring 'when a role is left too vague or undefined, and the individual does not know what is expected of them by the group.'"
+        },
+        {
+            "question": "According to Tuckman's model, a new team that is being polite and hesitant while getting to know each other and understanding the project requirements is in which stage?",
+            "option_a": "A. Forming",
+            "option_b": "B. Storming",
+            "option_c": "C. Norming",
+            "option_d": "D. Adjourning",
+            "correct_answer": "A",
+            "explanation": "The Forming stage is the initial phase where team members come together, are polite, and focus on understanding the task and each other."
+        },
+        {
+            "question": "A team member who consistently challenges the status quo, pushes others to take action, and courageously overcomes obstacles is fulfilling which of Belbin's role categories?",
+            "option_a": "A. Action Focused Role",
+            "option_b": "B. People Focused Role",
+            "option_c": "C. Thought Focused Role",
+            "option_d": "D. Support Focused Role",
+            "correct_answer": "A",
+            "explanation": "Action Focused roles, such as the Shaper, are described as those who 'see obstacles as challenges, [are] courageous to push things, [are] extroverted and stimulate others.'"
+        },
+        {
+            "question": "What is the primary difference between a working group and a team, according to the lecture?",
+            "option_a": "A. Groups are larger and more permanent than teams.",
+            "option_b": "B. A group's performance is the sum of individual results, while a team's performance includes collective work products.",
+            "option_c": "C. Groups are found in business, while teams are only found in sports.",
+            "option_d": "D. Groups have a leader, while teams are self-managed.",
+            "correct_answer": "B",
+            "explanation": "The lecture states: 'A working group's performance is a function of what its members do as individuals. A Team's performance includes both individual results and what we call \"collective work products.\"'"
+        },
+        {
+            "question": "A team leader feels torn between two team members who have completely different expectations of her role; one expects her to make all decisions, the other wants her to facilitate consensus. This leader is experiencing which role problem?",
+            "option_a": "A. Role Overload",
+            "option_b": "B. Role Conflict",
+            "option_c": "C. Role Ambiguity",
+            "option_d": "D. Role Rigidity",
+            "correct_answer": "B",
+            "explanation": "Role Conflict occurs when group members have different expectations of another's responsibilities, causing that person to feel torn."
+        },
+        {
+            "question": "A team member who refuses to let others contribute to 'his' part of the project, guarding his responsibilities and rejecting help, is demonstrating which role problem?",
+            "option_a": "A. Role Abdication",
+            "option_b": "B. Role Overload",
+            "option_c": "C. Role Ambiguity",
+            "option_d": "D. Territoriality",
+            "correct_answer": "D",
+            "explanation": "Territoriality is defined as a 'reluctance to get contribution from others to the role assigned to someone' and guarding their personal space or responsibilities."
+        }
+    ]
+}

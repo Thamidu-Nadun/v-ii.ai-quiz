@@ -1,0 +1,229 @@
+{
+    "questions": [
+        {
+            "question": "According to the lecture, what is the definition of cognitive style?",
+            "option_a": "A. The emotional responses individuals have to different situations",
+            "option_b": "B. The way individuals think, perceive, and remember information",
+            "option_c": "C. The physical structure of the brain and its neural connections",
+            "option_d": "D. The social relationships people form with others",
+            "correct_answer": "B",
+            "explanation": "Slide 4 of the lecture defines cognitive style as 'the way individuals think, perceive, and remember information.'"
+        },
+        {
+            "question": "What is the Latin origin of the word 'cognition' and what does it mean?",
+            "option_a": "A. Cognitus, meaning to remember",
+            "option_b": "B. Cognoscere, meaning to know completely",
+            "option_c": "C. Cognito, meaning to apprehend or understand",
+            "option_d": "D. Cogitare, meaning to plan",
+            "correct_answer": "C",
+            "explanation": "According to Slide 5, 'cognition' comes from the Latin 'cognito,' which means 'to apprehend or understand.'"
+        },
+        {
+            "question": "According to the lecture, what is perception?",
+            "option_a": "A. The process of making decisions based on logic alone",
+            "option_b": "B. The innate ability to understand complex mathematics",
+            "option_c": "C. The emotional reaction to external stimuli",
+            "option_d": "D. The process by which people select, organize, interpret, retrieve, and respond to information",
+            "correct_answer": "D",
+            "explanation": "Slide 17 defines perception as 'the process by which people select, organize, interpret, retrieve, and respond to information.'"
+        },
+        {
+            "question": "All of the following are listed as the three cognitive styles in the Cognitive Style Indicator (CoSI) EXCEPT:",
+            "option_a": "A. Knowing",
+            "option_b": "B. Planning",
+            "option_c": "C. Creating",
+            "option_d": "D. Analyzing",
+            "correct_answer": "D",
+            "explanation": "The three cognitive styles in CoSI are Knowing, Planning, and Creating. Analyzing is not one of them."
+        },
+        {
+            "question": "Which of the following is NOT mentioned as one of the four types of capital in the Positive Psychological Capital framework?",
+            "option_a": "A. Traditional Economic Capital",
+            "option_b": "B. Human Capital",
+            "option_c": "C. Social Capital",
+            "option_d": "D. Cultural Capital",
+            "correct_answer": "D",
+            "explanation": "The four types of capital are Traditional Economic, Human, Social, and Positive Psychological Capital. Cultural Capital is not mentioned."
+        },
+        {
+            "question": "According to the lecture, all of the following are positive psychology states EXCEPT:",
+            "option_a": "A. Optimism",
+            "option_b": "B. Resilience",
+            "option_c": "C. Pessimism",
+            "option_d": "D. Hope",
+            "correct_answer": "C",
+            "explanation": "Positive psychology states listed include Optimism, Resilience, Hope, and Confidence. Pessimism is the opposite of a positive state."
+        },
+        {
+            "question": "According to the lecture, the three components of cognitive style are Knowing, Planning, and __________.",
+            "option_a": "A. Thinking",
+            "option_b": "B. Creating",
+            "option_c": "C. Analyzing",
+            "option_d": "D. Evaluating",
+            "correct_answer": "B",
+            "explanation": "Based on Cools & Van den Broeck (2007) from Slide 7, the three cognitive styles are Knowing, Planning, and Creating."
+        },
+        {
+            "question": "The two components of hope, according to the lecture, are Agentic Capacity ('will power') and __________ Thinking ('way power').",
+            "option_a": "A. Pathways",
+            "option_b": "B. Critical",
+            "option_c": "C. Positive",
+            "option_d": "D. Creative",
+            "correct_answer": "A",
+            "explanation": "Slide 40 defines the two components of hope as Agentic Capacity (will power) and Pathways Thinking (way power)."
+        },
+        {
+            "question": "According to the lecture, the four types of capital are Traditional Economic Capital, Human Capital, Social Capital, and __________ Capital.",
+            "option_a": "A. Financial",
+            "option_b": "B. Cultural",
+            "option_c": "C. Positive Psychological",
+            "option_d": "D. Intellectual",
+            "correct_answer": "C",
+            "explanation": "Slides 52-55 identify Positive Psychological Capital as the fourth type of capital in the framework."
+        },
+        {
+            "question": "A student prefers to focus on facts, details, and precision. They like to solve problems correctly and present data based on evidence. According to the Cognitive Style Indicator, which cognitive style best describes this student?",
+            "option_a": "A. Knowing",
+            "option_b": "B. Planning",
+            "option_c": "C. Creating",
+            "option_d": "D. Analyzing",
+            "correct_answer": "A",
+            "explanation": "Slide 8 describes the Knowing style as focusing on facts, details, precision, and presenting data based on evidence."
+        },
+        {
+            "question": "A team member always wants to create detailed plans, organize material logically, and establish rules and routines before starting any project. Which cognitive style does this team member exhibit?",
+            "option_a": "A. Knowing",
+            "option_b": "B. Planning",
+            "option_c": "C. Creating",
+            "option_d": "D. Perceiving",
+            "correct_answer": "B",
+            "explanation": "Slide 9 describes the Planning style as liking careful preparation, planning, structure, and logical organization."
+        },
+        {
+            "question": "During a brainstorming session, a student generates many creative ideas, enjoys experimentation, is comfortable with uncertainty, and is willing to take risks. Which cognitive style best describes this student?",
+            "option_a": "A. Knowing",
+            "option_b": "B. Planning",
+            "option_c": "C. Creating",
+            "option_d": "D. Conforming",
+            "correct_answer": "C",
+            "explanation": "Slide 10 describes the Creating style as liking experimentation, brainstorming, uncertainty, and risk-taking."
+        },
+        {
+            "question": "After failing a test, a student thinks, 'I failed because the test was unfair and the questions were confusing.' According to attribution theory, what type of attribution is this student making?",
+            "option_a": "A. Internal attribution",
+            "option_b": "B. External attribution",
+            "option_c": "C. Fundamental attribution error",
+            "option_d": "D. Stable attribution",
+            "correct_answer": "B",
+            "explanation": "Slide 20 defines external attribution as attributing behavior to external, situational causes, such as blaming the test and questions."
+        },
+        {
+            "question": "When Sarah's team wins a competition, she thinks, 'We won because I worked so hard and my leadership made the difference.' When the team loses, she thinks, 'We lost because the other team got lucky.' Which attribution bias is Sarah demonstrating?",
+            "option_a": "A. Fundamental Attribution Error",
+            "option_b": "B. Self-serving Bias",
+            "option_c": "C. Confirmation Bias",
+            "option_d": "D. Hindsight Bias",
+            "correct_answer": "B",
+            "explanation": "Slide 23 defines Self-serving Bias as the tendency to attribute successes to internal causes and failures to external causes."
+        },
+        {
+            "question": "John observes a colleague arriving late to a meeting and thinks, 'He's so irresponsible and disorganized.' John doesn't consider that the colleague might have had a family emergency. Which attribution bias is John demonstrating?",
+            "option_a": "A. Self-serving Bias",
+            "option_b": "B. Fundamental Attribution Error",
+            "option_c": "C. Confirmation Bias",
+            "option_d": "D. Halo Effect",
+            "correct_answer": "B",
+            "explanation": "Slide 23 defines Fundamental Attribution Error as the tendency to attribute someone else's behavior to internal causes, ignoring external factors."
+        },
+        {
+            "question": "What is the difference between Knowing and Planning cognitive styles according to the lecture?",
+            "option_a": "A. Knowing is analytical, Planning is creative",
+            "option_b": "B. Knowing focuses on facts and details, while Planning focuses on structure, preparation, and logical organization",
+            "option_c": "C. There is no difference; they are the same",
+            "option_d": "D. Knowing is for individuals, Planning is for teams",
+            "correct_answer": "B",
+            "explanation": "Slide 8 describes Knowing as fact/detail-oriented, while Slide 9 describes Planning as focused on structure and logical organization."
+        },
+        {
+            "question": "What is the difference between internal and external locus of control?",
+            "option_a": "A. Internal locus means you believe outcomes result from your own actions; external locus means you believe outcomes result from outside forces",
+            "option_b": "B. Internal locus is good; external locus is bad",
+            "option_c": "C. Internal locus relates to work; external locus relates to personal life",
+            "option_d": "D. Internal locus means you control others; external locus means others control you",
+            "correct_answer": "A",
+            "explanation": "Slide 29 shows that internal locus of control is the belief in controlling one's own destiny, while external locus is the belief that outside forces determine outcomes."
+        },
+        {
+            "question": "Rashid believes that his success in the programming assignment was due to his hard work, but when he failed the networking exam, he blamed the difficult questions. Which concept does this behavior illustrate?",
+            "option_a": "A. Fundamental Attribution Error",
+            "option_b": "B. Self-serving Bias",
+            "option_c": "C. External Locus of Control",
+            "option_d": "D. Internal Locus of Control",
+            "correct_answer": "B",
+            "explanation": "This illustrates Self-serving Bias, where success is attributed internally (hard work) and failure is attributed externally (difficult questions)."
+        },
+        {
+            "question": "A project manager faces a complex problem. One team member wants to gather more data (Knowing), another wants a step-by-step plan (Planning), and a third wants to brainstorm unconventional solutions (Creating). The manager is frustrated with the slow progress. What concept explains why each member approaches the problem differently?",
+            "option_a": "A. Different personality types from the Big Five",
+            "option_b": "B. Different cognitive styles - their preferred ways of thinking and processing information",
+            "option_c": "C. Different levels of emotional intelligence",
+            "option_d": "D. Different attribution biases",
+            "correct_answer": "B",
+            "explanation": "Slide 12 explains that people use their preferred cognitive style regardless of the problem, which matches this scenario."
+        },
+        {
+            "question": "A manager tells an employee: 'You need to work on recognizing your own emotional reactions and understanding how your emotions affect your team. You also need to get better at reading others' feelings.' Which concept is the manager addressing?",
+            "option_a": "A. Cognitive Style",
+            "option_b": "B. Locus of Control",
+            "option_c": "C. Emotional Intelligence",
+            "option_d": "D. Self-Esteem",
+            "correct_answer": "C",
+            "explanation": "Slide 47 defines Emotional Intelligence as recognizing one's own feelings and those of others and managing emotions in relationships."
+        },
+        {
+            "question": "A student who failed a course thinks, 'I failed this time because I didn't study enough, but this is just one course and I can do better next semester.' According to Seligman's framework, which attribution pattern is this?",
+            "option_a": "A. Internal, stable, global attributions",
+            "option_b": "B. External, unstable, specific attributions",
+            "option_c": "C. Internal, unstable, specific attributions",
+            "option_d": "D. External, stable, global attributions",
+            "correct_answer": "C",
+            "explanation": "The student's attribution is internal ('didn't study enough'), unstable ('this time'), and specific ('this one course')."
+        },
+        {
+            "question": "According to the lecture, which of the following is one of the five core aspects of self-awareness?",
+            "option_a": "A. Physical fitness",
+            "option_b": "B. Financial status",
+            "option_c": "C. Emotional Intelligence",
+            "option_d": "D. Educational qualifications",
+            "correct_answer": "C",
+            "explanation": "Slide 6 lists Emotional Intelligence as one of the five core aspects of self-awareness, along with Core Self-evaluation and Values."
+        },
+        {
+            "question": "According to the lecture, which of the following is NOT one of the sources of self-efficacy?",
+            "option_a": "A. Prior experiences and prior success",
+            "option_b": "B. Behavior models (observing success)",
+            "option_c": "C. Persuasion",
+            "option_d": "D. Financial wealth",
+            "correct_answer": "D",
+            "explanation": "Slide 32 lists prior experiences, behavior models, persuasion, and assessment of capabilities as sources of self-efficacy, but not financial wealth."
+        },
+        {
+            "question": "All of the following are potential problems associated with the Creating cognitive style EXCEPT:",
+            "option_a": "A. Resistant to structure",
+            "option_b": "B. Wants to break rules",
+            "option_c": "C. Slow decision making",
+            "option_d": "D. Can ignore data and facts",
+            "correct_answer": "C",
+            "explanation": "Slide 13 lists problems for Creating as resistant to structure, wanting to break rules, making mistakes, and ignoring data. Slow decision making is a problem for the Knowing style."
+        },
+        {
+            "question": "The story of the two shoe scouts sent to Africa illustrates the concept of __________, where one sees hopelessness and the other sees opportunity.",
+            "option_a": "A. cognitive style",
+            "option_b": "B. positive psychology",
+            "option_c": "C. emotional intelligence",
+            "option_d": "D. attribution bias",
+            "correct_answer": "B",
+            "explanation": "Slide 34 uses the story to illustrate positive psychology and 'The Art of Possibility,' focusing on strengths and perspective."
+        }
+    ]
+}

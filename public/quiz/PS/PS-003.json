@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What does the term 'cognitive style' primarily refer to?",
+            "option_a": "A. The way individuals think, perceive, and remember information",
+            "option_b": "B. The intelligence level of a person",
+            "option_c": "C. The emotional reactions individuals have to stress",
+            "option_d": "D. The biological structure of the brain",
+            "correct_answer": "A",
+            "explanation": "Cognitive style refers to the unique way individuals think, perceive, and process information."
+        },
+        {
+            "question": "Which cognitive style emphasizes facts, details, and evidence-based decision making?",
+            "option_a": "A. Planning",
+            "option_b": "B. Creating",
+            "option_c": "C. Knowing",
+            "option_d": "D. Emotional",
+            "correct_answer": "C",
+            "explanation": "The knowing style focuses on facts, details, data accuracy, and evidence-based reasoning."
+        },
+        {
+            "question": "Which cognitive style prefers structure, rules, preparation, and logical organization?",
+            "option_a": "A. Creating",
+            "option_b": "B. Planning",
+            "option_c": "C. Knowing",
+            "option_d": "D. Reflective",
+            "correct_answer": "B",
+            "explanation": "The planning style emphasizes organization, structure, logical processes, and preparation."
+        },
+        {
+            "question": "Which cognitive style is most associated with experimentation, imagination, and risk-taking?",
+            "option_a": "A. Creating",
+            "option_b": "B. Knowing",
+            "option_c": "C. Planning",
+            "option_d": "D. Analytical",
+            "correct_answer": "A",
+            "explanation": "The creating style focuses on creativity, experimentation, brainstorming, and innovative thinking."
+        },
+        {
+            "question": "Which of the following is a possible problem associated with the 'Knowing' cognitive style?",
+            "option_a": "A. Ignoring facts and data",
+            "option_b": "B. Slow decision-making and resistance to innovation",
+            "option_c": "C. Excessive creativity",
+            "option_d": "D. Preference for ambiguity",
+            "correct_answer": "B",
+            "explanation": "People with the knowing style may overanalyze information and resist innovation."
+        },
+        {
+            "question": "Which of the following best describes cognition?",
+            "option_a": "A. A biological reflex of the nervous system",
+            "option_b": "B. A general term for mental processes used to understand the world",
+            "option_c": "C. A personality trait",
+            "option_d": "D. Emotional reaction to external stimuli",
+            "correct_answer": "B",
+            "explanation": "Cognition refers to mental processes involved in gaining knowledge and understanding."
+        },
+        {
+            "question": "Which cognitive process involves selecting, organizing, and interpreting information?",
+            "option_a": "A. Attribution",
+            "option_b": "B. Perception",
+            "option_c": "C. Motivation",
+            "option_d": "D. Personality",
+            "correct_answer": "B",
+            "explanation": "Perception involves selecting, organizing, interpreting, retrieving, and responding to information."
+        },
+        {
+            "question": "Which of the following senses contributes to perceptual information gathering?",
+            "option_a": "A. Sight",
+            "option_b": "B. Hearing",
+            "option_c": "C. Touch",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Perception gathers information from sight, hearing, touch, taste, and smell."
+        },
+        {
+            "question": "What does the term 'attribution' refer to?",
+            "option_a": "A. The process of remembering information",
+            "option_b": "B. The way people explain causes of behavior",
+            "option_c": "C. The emotional reaction to events",
+            "option_d": "D. A form of sensory perception",
+            "correct_answer": "B",
+            "explanation": "Attribution explains how individuals interpret the causes of their own or others' behaviors."
+        },
+        {
+            "question": "Attributing someone else's mistake to their personality rather than circumstances is known as:",
+            "option_a": "A. Self-serving bias",
+            "option_b": "B. Fundamental attribution error",
+            "option_c": "C. Cognitive dissonance",
+            "option_d": "D. Motivational bias",
+            "correct_answer": "B",
+            "explanation": "Fundamental attribution error occurs when we attribute others' behavior to internal traits rather than situational factors."
+        },
+        {
+            "question": "Which bias occurs when people attribute their successes to internal factors but blame failures on external factors?",
+            "option_a": "A. Cognitive bias",
+            "option_b": "B. Confirmation bias",
+            "option_c": "C. Self-serving bias",
+            "option_d": "D. Attribution bias",
+            "correct_answer": "C",
+            "explanation": "Self-serving bias allows individuals to maintain self-esteem by crediting success internally and blaming failure externally."
+        },
+        {
+            "question": "Personality is best defined as:",
+            "option_a": "A. The emotional state of an individual",
+            "option_b": "B. The unique qualities that influence how a person understands themselves and others",
+            "option_c": "C. The biological composition of the brain",
+            "option_d": "D. A temporary mood pattern",
+            "correct_answer": "B",
+            "explanation": "Personality refers to enduring characteristics that shape how individuals perceive and interact with the world."
+        },
+        {
+            "question": "What does high self-esteem generally lead to?",
+            "option_a": "A. Negative attitudes and dissatisfaction",
+            "option_b": "B. Positive attitudes and satisfaction",
+            "option_c": "C. Emotional instability",
+            "option_d": "D. Increased anxiety",
+            "correct_answer": "B",
+            "explanation": "High self-esteem is associated with positive attitudes, confidence, and satisfaction."
+        },
+        {
+            "question": "Which concept describes the belief that one controls their own destiny?",
+            "option_a": "A. External locus of control",
+            "option_b": "B. Internal locus of control",
+            "option_c": "C. Emotional intelligence",
+            "option_d": "D. Cognitive awareness",
+            "correct_answer": "B",
+            "explanation": "People with an internal locus of control believe they influence their own outcomes."
+        },
+        {
+            "question": "Generalized self-efficacy refers to:",
+            "option_a": "A. The ability to influence others emotionally",
+            "option_b": "B. Belief in one's ability to successfully perform tasks",
+            "option_c": "C. Control over environmental factors",
+            "option_d": "D. Emotional reactions to success",
+            "correct_answer": "B",
+            "explanation": "Self-efficacy represents belief in one's ability to accomplish tasks successfully."
+        },
+        {
+            "question": "Which component of the attitude model refers to beliefs and knowledge?",
+            "option_a": "A. Affective",
+            "option_b": "B. Behavioral",
+            "option_c": "C. Cognitive",
+            "option_d": "D. Emotional",
+            "correct_answer": "C",
+            "explanation": "The cognitive component of attitude refers to beliefs or knowledge about something."
+        },
+        {
+            "question": "Which component of the attitude model refers to emotions or feelings?",
+            "option_a": "A. Behavioral",
+            "option_b": "B. Affective",
+            "option_c": "C. Cognitive",
+            "option_d": "D. Rational",
+            "correct_answer": "B",
+            "explanation": "The affective component of attitude represents emotional responses."
+        },
+        {
+            "question": "Motivation begins with:",
+            "option_a": "A. A psychological or physiological need",
+            "option_b": "B. An external reward",
+            "option_c": "C. Social pressure",
+            "option_d": "D. Emotional intelligence",
+            "correct_answer": "A",
+            "explanation": "Motivation begins with a need or deficiency that drives behavior toward a goal."
+        },
+        {
+            "question": "In the motivation process, hunger is an example of:",
+            "option_a": "A. Incentive",
+            "option_b": "B. Need",
+            "option_c": "C. Drive",
+            "option_d": "D. Reward",
+            "correct_answer": "C",
+            "explanation": "Hunger is a drive that motivates behavior to satisfy a need."
+        },
+        {
+            "question": "Positive psychology focuses primarily on:",
+            "option_a": "A. Treating mental illness",
+            "option_b": "B. Strengths and factors that help individuals flourish",
+            "option_c": "C. Neurological brain damage",
+            "option_d": "D. Eliminating negative emotions",
+            "correct_answer": "B",
+            "explanation": "Positive psychology studies strengths and conditions that enable individuals to thrive."
+        },
+        {
+            "question": "Which of the following is considered a positive psychology state?",
+            "option_a": "A. Optimism",
+            "option_b": "B. Resilience",
+            "option_c": "C. Hope",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Optimism, resilience, and hope are key psychological states studied in positive psychology."
+        },
+        {
+            "question": "Resilience refers to:",
+            "option_a": "A. The ability to avoid all problems",
+            "option_b": "B. The ability to bounce back from adversity",
+            "option_c": "C. The ability to suppress emotions",
+            "option_d": "D. The ability to control others",
+            "correct_answer": "B",
+            "explanation": "Resilience is the capacity to recover and adapt positively after adversity."
+        },
+        {
+            "question": "Which positive psychology concept describes having both willpower and pathways toward goals?",
+            "option_a": "A. Optimism",
+            "option_b": "B. Hope",
+            "option_c": "C. Resilience",
+            "option_d": "D. Self-esteem",
+            "correct_answer": "B",
+            "explanation": "Hope consists of agency (willpower) and pathways (strategies) to achieve goals."
+        },
+        {
+            "question": "Optimistic individuals tend to attribute failures to:",
+            "option_a": "A. Internal, stable, global causes",
+            "option_b": "B. External, temporary, specific causes",
+            "option_c": "C. Permanent personal traits",
+            "option_d": "D. Genetic limitations",
+            "correct_answer": "B",
+            "explanation": "Optimists see failures as temporary and situation-specific rather than permanent."
+        },
+        {
+            "question": "Emotional intelligence refers to:",
+            "option_a": "A. The ability to solve mathematical problems quickly",
+            "option_b": "B. The ability to memorize information",
+            "option_c": "C. The ability to recognize and manage emotions in oneself and others",
+            "option_d": "D. The ability to manipulate people",
+            "correct_answer": "C",
+            "explanation": "Emotional intelligence involves recognizing, understanding, and managing emotions."
+        },
+        {
+            "question": "Which of the following is a positive primary emotion?",
+            "option_a": "A. Anger",
+            "option_b": "B. Sadness",
+            "option_c": "C. Love",
+            "option_d": "D. Shame",
+            "correct_answer": "C",
+            "explanation": "Love is categorized as a positive primary emotion."
+        },
+        {
+            "question": "Which intelligence involves understanding others and empathizing with them?",
+            "option_a": "A. Interpersonal intelligence",
+            "option_b": "B. Logical intelligence",
+            "option_c": "C. Spatial intelligence",
+            "option_d": "D. Musical intelligence",
+            "correct_answer": "A",
+            "explanation": "Interpersonal intelligence focuses on understanding and interacting effectively with others."
+        },
+        {
+            "question": "Economic capital refers to:",
+            "option_a": "A. Knowledge and skills acquired through education",
+            "option_b": "B. Personal relationships and networks",
+            "option_c": "C. Physical and financial resources supporting learning",
+            "option_d": "D. Emotional strengths of individuals",
+            "correct_answer": "C",
+            "explanation": "Economic capital includes resources such as infrastructure, equipment, and financial support."
+        },
+        {
+            "question": "Human capital primarily represents:",
+            "option_a": "A. The relationships people build",
+            "option_b": "B. Knowledge, skills, and abilities developed through learning",
+            "option_c": "C. Financial wealth",
+            "option_d": "D. Psychological traits",
+            "correct_answer": "B",
+            "explanation": "Human capital consists of knowledge and competencies gained through education and experience."
+        },
+        {
+            "question": "Social capital refers to:",
+            "option_a": "A. Emotional stability",
+            "option_b": "B. Financial resources",
+            "option_c": "C. Networks and relationships with others",
+            "option_d": "D. Personal knowledge",
+            "correct_answer": "C",
+            "explanation": "Social capital is built through relationships and networks."
+        },
+        {
+            "question": "Psychological capital includes which four elements?",
+            "option_a": "A. Intelligence, memory, learning, perception",
+            "option_b": "B. Confidence, hope, optimism, resilience",
+            "option_c": "C. Motivation, emotion, cognition, learning",
+            "option_d": "D. Knowledge, skill, experience, education",
+            "correct_answer": "B",
+            "explanation": "Psychological capital consists of confidence, hope, optimism, and resilience."
+        },
+        {
+            "question": "A student who believes their exam failure occurred because the exam was unfair is demonstrating:",
+            "option_a": "A. Internal attribution",
+            "option_b": "B. External attribution",
+            "option_c": "C. Cognitive bias",
+            "option_d": "D. Emotional reasoning",
+            "correct_answer": "B",
+            "explanation": "Blaming external factors for outcomes is an external attribution."
+        },
+        {
+            "question": "A manager praises their own leadership for team success but blames poor market conditions for failure. Which bias is illustrated?",
+            "option_a": "A. Fundamental attribution error",
+            "option_b": "B. Self-serving bias",
+            "option_c": "C. Confirmation bias",
+            "option_d": "D. Perceptual distortion",
+            "correct_answer": "B",
+            "explanation": "Self-serving bias attributes success internally and failures externally."
+        },
+        {
+            "question": "A software engineer who constantly seeks new experimental solutions rather than following structured plans most likely exhibits which cognitive style?",
+            "option_a": "A. Planning",
+            "option_b": "B. Knowing",
+            "option_c": "C. Creating",
+            "option_d": "D. Analytical",
+            "correct_answer": "C",
+            "explanation": "The creating style favors experimentation, innovation, and creativity."
+        },
+        {
+            "question": "A project manager who carefully organizes tasks, prepares schedules, and follows strict procedures most likely demonstrates which cognitive style?",
+            "option_a": "A. Planning",
+            "option_b": "B. Knowing",
+            "option_c": "C. Creating",
+            "option_d": "D. Emotional",
+            "correct_answer": "A",
+            "explanation": "The planning style emphasizes structure, organization, and logical planning."
+        },
+        {
+            "question": "Which component of psychological capital represents belief in one's abilities?",
+            "option_a": "A. Resilience",
+            "option_b": "B. Optimism",
+            "option_c": "C. Confidence",
+            "option_d": "D. Hope",
+            "correct_answer": "C",
+            "explanation": "Confidence reflects belief in one's capability to perform tasks successfully."
+        },
+        {
+            "question": "Which psychological concept explains why two individuals may perceive the same event differently?",
+            "option_a": "A. Perceptual filtering",
+            "option_b": "B. Emotional reasoning",
+            "option_c": "C. Neural adaptation",
+            "option_d": "D. Sensory overload",
+            "correct_answer": "A",
+            "explanation": "Perceptual filters influence how individuals interpret sensory information."
+        },
+        {
+            "question": "Which form of intelligence involves self-reflection and understanding one's own emotions?",
+            "option_a": "A. Interpersonal intelligence",
+            "option_b": "B. Intrapersonal intelligence",
+            "option_c": "C. Linguistic intelligence",
+            "option_d": "D. Logical intelligence",
+            "correct_answer": "B",
+            "explanation": "Intrapersonal intelligence relates to self-awareness and internal reflection."
+        },
+        {
+            "question": "A student continues working hard after failing several exams and eventually improves significantly. Which positive psychology concept is demonstrated?",
+            "option_a": "A. Resilience",
+            "option_b": "B. Cognitive bias",
+            "option_c": "C. Perceptual selectivity",
+            "option_d": "D. Attribution error",
+            "correct_answer": "A",
+            "explanation": "Resilience involves bouncing back and adapting positively after adversity."
+        },
+        {
+            "question": "Which type of capital represents 'Who you know'?",
+            "option_a": "A. Economic capital",
+            "option_b": "B. Human capital",
+            "option_c": "C. Social capital",
+            "option_d": "D. Psychological capital",
+            "correct_answer": "C",
+            "explanation": "Social capital refers to networks and relationships with others."
+        }
+    ]
+}

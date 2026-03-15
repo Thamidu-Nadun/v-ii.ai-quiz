@@ -1,0 +1,382 @@
+{
+    "questions": [
+        {
+            "question": "According to Professor Leigh Thompson, which of the following elements is NOT part of the definition of a team?",
+            "option_a": "A. People who are interdependent with respect to information and resources",
+            "option_b": "B. People who seek to combine their efforts to achieve a common goal",
+            "option_c": "C. People who work independently but report to the same manager",
+            "option_d": "D. People who share knowledge and skills to achieve collective results",
+            "correct_answer": "C",
+            "explanation": "Thompson's definition emphasizes interdependence, not independent work. Teams require members to be interdependent with respect to information, resources, knowledge, and skills while working toward a common goal."
+        },
+        {
+            "question": "What is the fundamental difference between a working group and a team according to the lecture?",
+            "option_a": "A. Groups are larger than teams",
+            "option_b": "B. A group's performance is based on individual results, while a team's performance includes both individual results and collective work products",
+            "option_c": "C. Teams exist only in corporate settings, while groups exist everywhere",
+            "option_d": "D. Groups have leaders, while teams are leaderless",
+            "correct_answer": "B",
+            "explanation": "The key distinction is that a working group's performance depends on individual contributions, while a team's performance combines individual results with collective work products that require collaboration."
+        },
+        {
+            "question": "According to the lecture, what is the typical size range for a 'small team'?",
+            "option_a": "A. 2-5 members",
+            "option_b": "B. 5-10 members",
+            "option_c": "C. 10-15 members",
+            "option_d": "D. 15-20 members",
+            "correct_answer": "A",
+            "explanation": "The lecture specifies that small teams typically have 2-5 members, with examples including Board of Directors and Surgeons during surgery."
+        },
+        {
+            "question": "Which of the following is an example of a long-term team mentioned in the lecture?",
+            "option_a": "A. Event committee",
+            "option_b": "B. Parliamentary standing committee for Public Relations",
+            "option_c": "C. Project task force",
+            "option_d": "D. Wedding planning committee",
+            "correct_answer": "B",
+            "explanation": "The lecture specifically mentions the Parliamentary standing committee for Public Relations as an example of a long-term team, while event committees are cited as short-term examples."
+        },
+        {
+            "question": "Who developed the five stages of team development model?",
+            "option_a": "A. Dr. Meredith Belbin",
+            "option_b": "B. Dr. Bruce Tuckman",
+            "option_c": "C. Professor Leigh Thompson",
+            "option_d": "D. Andrew Carnegie",
+            "correct_answer": "B",
+            "explanation": "Dr. Bruce Tuckman developed the five stages of team development in 1965: Forming, Storming, Norming, Performing, and Adjourning."
+        },
+        {
+            "question": "Arrange Tuckman's team development stages in the correct chronological order.",
+            "option_a": "A. Storming, Forming, Norming, Performing, Adjourning",
+            "option_b": "B. Forming, Norming, Storming, Performing, Adjourning",
+            "option_c": "C. Forming, Storming, Norming, Performing, Adjourning",
+            "option_d": "D. Norming, Forming, Storming, Adjourning, Performing",
+            "correct_answer": "C",
+            "explanation": "The correct sequence is Forming (initial assembly), Storming (conflict resolution), Norming (establishing norms), Performing (productive work), and Adjourning (wrapping up)."
+        },
+        {
+            "question": "According to Dr. Meredith Belbin, how is a 'Team Role' defined?",
+            "option_a": "A. A job title assigned by management",
+            "option_b": "B. A tendency to behave, contribute, and interrelate with others in a particular way",
+            "option_c": "C. A position in the organizational hierarchy",
+            "option_d": "D. A fixed set of responsibilities regardless of context",
+            "correct_answer": "B",
+            "explanation": "Belbin defines a team role as 'a tendency to behave, contribute and interrelate with others in a particular way,' emphasizing behavioral patterns rather than formal positions."
+        },
+        {
+            "question": "How many team roles did Dr. Meredith Belbin identify in his research?",
+            "option_a": "A. 5",
+            "option_b": "B. 7",
+            "option_c": "C. 9",
+            "option_d": "D. 12",
+            "correct_answer": "C",
+            "explanation": "Dr. Meredith Belbin, a British researcher, identified 9 distinct team roles that contribute to effective team performance."
+        },
+        {
+            "question": "Which of the following is NOT one of Belbin's Action-Oriented roles?",
+            "option_a": "A. Shaper",
+            "option_b": "B. Implementer",
+            "option_c": "C. Completer-Finisher",
+            "option_d": "D. Coordinator",
+            "correct_answer": "D",
+            "explanation": "Coordinator is a People-Oriented role, not Action-Oriented. The Action-Oriented roles are Shaper, Implementer, and Completer-Finisher."
+        },
+        {
+            "question": "A team member who brings new ideas and concepts, is innovative and knowledgeable, but tends to be introverted and a poor communicator would best fit which Belbin role?",
+            "option_a": "A. Resource Investigator",
+            "option_b": "B. Teamworker",
+            "option_c": "C. Plant",
+            "option_d": "D. Shaper",
+            "correct_answer": "C",
+            "explanation": "The Plant role is characterized by bringing new ideas and concepts, being innovative and knowledgeable, but also tends to be introverted, impractical, and a poor communicator."
+        },
+        {
+            "question": "Which role is described as seeing obstacles as challenges, being courageous, extroverted, and stimulating others?",
+            "option_a": "A. Coordinator",
+            "option_b": "B. Implementer",
+            "option_c": "C. Completer-Finisher",
+            "option_d": "D. Shaper",
+            "correct_answer": "D",
+            "explanation": "The Shaper role sees obstacles as challenges, is courageous, extroverted, and stimulates others, though they may sometimes be perceived as provocative."
+        },
+        {
+            "question": "A team member who carefully weighs pros and cons, is a critical thinker, and remains unemotional when evaluating options best fits which role?",
+            "option_a": "A. Plant",
+            "option_b": "B. Monitor Evaluator",
+            "option_c": "C. Resource Investigator",
+            "option_d": "D. Teamworker",
+            "correct_answer": "B",
+            "explanation": "The Monitor Evaluator carefully weighs pros and cons, is a critical thinker, and remains unemotional when making judgments, making them valuable for objective analysis."
+        },
+        {
+            "question": "Which of the following is a People-Oriented role according to Belbin's classification?",
+            "option_a": "A. Plant",
+            "option_b": "B. Specialist",
+            "option_c": "C. Resource Investigator",
+            "option_d": "D. Implementer",
+            "correct_answer": "C",
+            "explanation": "Resource Investigator is a People-Oriented role, along with Coordinator and Teamworker. These roles focus on interpersonal relationships and communication."
+        },
+        {
+            "question": "What is the key weakness of the Resource Investigator role according to the lecture?",
+            "option_a": "A. Introverted and impractical",
+            "option_b": "B. Poor at making difficult decisions and loses enthusiasm quickly",
+            "option_c": "C. Inflexible and reluctant to delegate",
+            "option_d": "D. Unemotional and critical of others",
+            "correct_answer": "B",
+            "explanation": "The Resource Investigator is described as extroverted and overly optimistic but poor at making difficult decisions and may lose enthusiasm quickly."
+        },
+        {
+            "question": "What distinguishes a Formal Role from an Informal Role in a team?",
+            "option_a": "A. Formal roles are paid, informal roles are voluntary",
+            "option_b": "B. Formal roles are dictated by organizational structure, while informal roles evolve from group dynamics",
+            "option_c": "C. Formal roles are permanent, informal roles are temporary",
+            "option_d": "D. Formal roles are for managers, informal roles are for employees",
+            "correct_answer": "B",
+            "explanation": "Formal roles are dictated by the structure of the organization (like coach or team captain), while informal roles evolve naturally from the group's dynamics and interactions."
+        },
+        {
+            "question": "When a team member experiences 'Role Overload,' what is the likely outcome?",
+            "option_a": "A. Increased productivity due to challenge",
+            "option_b": "B. Better time management skills development",
+            "option_c": "C. Exhaustion, stress buildup, falling productivity, and possible isolation",
+            "option_d": "D. Improved communication with team members",
+            "correct_answer": "C",
+            "explanation": "Role Overload leaves the member exhausted, builds stress, reduces productivity, and can lead to personal defeat, isolation, and shattered communication."
+        },
+        {
+            "question": "What occurs during 'Role Conflict' in a team?",
+            "option_a": "A. One person holds multiple roles simultaneously",
+            "option_b": "B. Members have different expectations of another's responsibilities",
+            "option_c": "C. A role is left too vague or undefined",
+            "option_d": "D. A member refuses to perform their assigned duties",
+            "correct_answer": "B",
+            "explanation": "Role Conflict occurs when group members have different expectations of another's responsibilities, causing that person to feel torn and unable to come to terms with group identity."
+        },
+        {
+            "question": "The example of Maithripala Sirisena simultaneously serving as President of Sri Lanka and Chairman of the SLFP (Opposition) in 2005 illustrates which role problem?",
+            "option_a": "A. Role Overload",
+            "option_b": "B. Role Rigidity",
+            "option_c": "C. Inter-role conflict (a type of Role Ambiguity)",
+            "option_d": "D. Territoriality",
+            "correct_answer": "C",
+            "explanation": "This example illustrates inter-role conflict, which results from differing requirements of two or more roles that must be played simultaneously, creating role ambiguity."
+        },
+        {
+            "question": "What is 'Role Ambiguity' and how does it affect team members?",
+            "option_a": "A. When a role is too clearly defined, causing boredom",
+            "option_b": "B. When a role is left too vague, causing self-confidence to drop and efficiency to slow",
+            "option_c": "C. When multiple people try to perform the same role",
+            "option_d": "D. When a role changes frequently due to organizational restructuring",
+            "correct_answer": "B",
+            "explanation": "Role Ambiguity occurs when a role is left too vague or undefined, causing the individual's self-confidence to drop and efficiency to slow. They often isolate from other group members."
+        },
+        {
+            "question": "Which role problem describes a team member's reluctance to get contributions from others to their assigned role, guarding their personal space?",
+            "option_a": "A. Role Rigidity",
+            "option_b": "B. Abdication",
+            "option_c": "C. Territoriality",
+            "option_d": "D. Human Nature",
+            "correct_answer": "C",
+            "explanation": "Territoriality is the reluctance to accept contributions from others to the role assigned to someone, essentially guarding their role or personal space from others."
+        },
+        {
+            "question": "What does 'Abdication' mean in the context of team role problems?",
+            "option_a": "A. Taking on too many roles simultaneously",
+            "option_b": "B. Relinquishing the duties of a role, creating a gap in teamwork",
+            "option_c": "C. Defending one's role territory aggressively",
+            "option_d": "D. Being too rigid in role performance",
+            "correct_answer": "B",
+            "explanation": "Abdication means relinquishing the duties of a role, creating a gap in teamwork. It also includes avoiding contribution within another's role just because it's someone else's responsibility."
+        },
+        {
+            "question": "According to the lecture, how should role problems typically be handled?",
+            "option_a": "A. Through formal disciplinary action",
+            "option_b": "B. Through solid, unemotional discussion and role re-delegation",
+            "option_c": "C. By immediately replacing team members",
+            "option_d": "D. By ignoring the problems until they resolve themselves",
+            "correct_answer": "B",
+            "explanation": "The lecture recommends handling role problems through solid, unemotional discussion and role re-delegation until responsibilities settle comfortably on the correct person."
+        },
+        {
+            "question": "What alternative approach to the role concept is mentioned in the lecture?",
+            "option_a": "A. Strict hierarchical structuring",
+            "option_b": "B. Empowering and focusing on multiskilling people (all-rounders)",
+            "option_c": "C. Eliminating all formal roles",
+            "option_d": "D. Rotating leadership daily",
+            "correct_answer": "B",
+            "explanation": "The lecture mentions empowering and focusing on multiskilling people (all-rounders) as an alternative to the rigid role concept."
+        },
+        {
+            "question": "According to Andrew Carnegie's quote, what is teamwork described as?",
+            "option_a": "A. A management technique",
+            "option_b": "B. The fuel that allows common people to attain uncommon results",
+            "option_c": "C. A structural organization method",
+            "option_d": "D. A performance evaluation tool",
+            "correct_answer": "B",
+            "explanation": "Andrew Carnegie defined teamwork as 'the ability to work together toward a common vision. It is the fuel that allows common people to attain uncommon results.'"
+        },
+        {
+            "question": "Which of the following is NOT listed as a characteristic of a successful team?",
+            "option_a": "A. Working together toward common goals",
+            "option_b": "B. Perceiving relevance of group tasks",
+            "option_c": "C. Having identical skills and experience",
+            "option_d": "D. Mutual respect for members",
+            "correct_answer": "C",
+            "explanation": "Successful teams are characterized by diversity of member skills and experience, not identical skills. Homogeneity would limit the team's capabilities."
+        },
+        {
+            "question": "What is the first symptom of Groupthink according to the lecture?",
+            "option_a": "A. Self-censorship of deviation",
+            "option_b": "B. Direct pressure on members who question",
+            "option_c": "C. Illusion of invulnerability with excessive optimism and risk-taking",
+            "option_d": "D. Stereotyping opponents as evil or stupid",
+            "correct_answer": "C",
+            "explanation": "The first symptom of Groupthink is the illusion of invulnerability, characterized by excessive optimism and risk-taking, where the group believes nothing can go wrong."
+        },
+        {
+            "question": "In Groupthink, what are 'self-appointed mindguards'?",
+            "option_a": "A. Official team leaders who make final decisions",
+            "option_b": "B. Members who protect the group from adverse information",
+            "option_c": "C. External consultants hired to evaluate the team",
+            "option_d": "D. Security personnel at team meetings",
+            "correct_answer": "B",
+            "explanation": "Self-appointed mindguards are members who protect the group from adverse information that might challenge the group's consensus or question its decisions."
+        },
+        {
+            "question": "When a team experiences the illusion of unanimity in Groupthink, what do they interpret silence as?",
+            "option_a": "A. Disagreement",
+            "option_b": "B. Indifference",
+            "option_c": "C. Consent",
+            "option_d": "D. Confusion",
+            "correct_answer": "C",
+            "explanation": "In Groupthink, the illusion of unanimity leads members to interpret silence as consent, when in reality silent members may have concerns they're not expressing."
+        },
+        {
+            "question": "A team member who puts ideas and concepts into practical actions, works systematically and efficiently, but may be inflexible and reluctant to delegate best fits which Belbin role?",
+            "option_a": "A. Plant",
+            "option_b": "B. Implementer",
+            "option_c": "C. Coordinator",
+            "option_d": "D. Resource Investigator",
+            "correct_answer": "B",
+            "explanation": "The Implementer puts ideas into practical actions, works systematically and efficiently, but may be inflexible, reluctant to delegate, and may sometimes insult others' feelings."
+        },
+        {
+            "question": "Which Thinking-Oriented role tends to be single-minded and professional according to the lecture?",
+            "option_a": "A. Plant",
+            "option_b": "B. Monitor Evaluator",
+            "option_c": "C. Specialist",
+            "option_d": "D. All of the above",
+            "correct_answer": "C",
+            "explanation": "The Specialist role is specifically described as tending to be single-minded and professional, focusing deeply on their area of expertise."
+        },
+        {
+            "question": "What is the relationship between teamwork and team success according to the lecture?",
+            "option_a": "A. Teams can succeed without teamwork if members are skilled",
+            "option_b": "B. Teams don't work without teamwork - it's the energy that keeps a team together",
+            "option_c": "C. Teamwork is only necessary for creative projects",
+            "option_d": "D. Teamwork becomes important only after the forming stage",
+            "correct_answer": "B",
+            "explanation": "The lecture states that 'Teams don't work without teamwork. It is that energy which keeps a team together and makes the teamwork.' Unless players have teamwork skills, they cannot perform better."
+        },
+        {
+            "question": "A Completer-Finisher would most likely struggle with which aspect of teamwork?",
+            "option_a": "A. Generating innovative ideas",
+            "option_b": "B. Delegating tasks to others",
+            "option_c": "C. Meeting deadlines",
+            "option_d": "D. Paying attention to details",
+            "correct_answer": "B",
+            "explanation": "Completer-Finishers are perfectionists who work systematically but may be inflexible and reluctant to delegate, making delegation their primary struggle."
+        },
+        {
+            "question": "A team consisting of all Plants would likely experience which problem?",
+            "option_a": "A. Too many ideas but difficulty implementing them",
+            "option_b": "B. Efficient execution but lack of creativity",
+            "option_c": "C. Strong people skills but poor task focus",
+            "option_d": "D. Excellent attention to detail but slow progress",
+            "correct_answer": "A",
+            "explanation": "Plants are innovators who bring new ideas but tend to be impractical and poor communicators. A team of only Plants would generate many ideas but lack the Action-Oriented roles needed for implementation."
+        },
+        {
+            "question": "What happens when 'Rigidity' in roles becomes a problem?",
+            "option_a": "A. Roles become too flexible and undefined",
+            "option_b": "B. It prevents flexibility and exploring other potentials",
+            "option_c": "C. Team members refuse to accept any roles",
+            "option_d": "D. Communication improves due to clear boundaries",
+            "correct_answer": "B",
+            "explanation": "Rigidity in roles sometimes prevents flexibility and blocks the exploration of other potentials, limiting both individual growth and team adaptability."
+        },
+        {
+            "question": "In the context of role problems, what does 'Human Nature' refer to?",
+            "option_a": "A. The natural tendency to cooperate",
+            "option_b": "B. The annoying habit of being unpredictable and straying from expected roles",
+            "option_c": "C. The instinct to protect territory",
+            "option_d": "D. The desire for clear role definitions",
+            "correct_answer": "B",
+            "explanation": "Human nature, as a role problem, refers to the annoying habit of being unpredictable, straying from expected roles, and inconsistency in the same role across different individuals."
+        },
+        {
+            "question": "According to the lecture, what role do personality testing and self-evaluation serve in teams?",
+            "option_a": "A. They determine salary levels",
+            "option_b": "B. They aid in correct role placement and determination",
+            "option_c": "C. They replace the need for team discussions",
+            "option_d": "D. They are only useful for hiring decisions",
+            "correct_answer": "B",
+            "explanation": "Self-evaluation and personality testing can aid in correct role placement and determination, helping match individuals with appropriate team roles."
+        },
+        {
+            "question": "Which symptom of Groupthink involves discounting warnings through rationalization?",
+            "option_a": "A. Illusion of invulnerability",
+            "option_b": "B. Rationalizations by members to discount warnings",
+            "option_c": "C. Stereotyping opponents",
+            "option_d": "D. Self-censorship",
+            "correct_answer": "B",
+            "explanation": "The second symptom of Groupthink is when members of the group create rationalizations to discount warnings or negative information that might challenge their assumptions."
+        },
+        {
+            "question": "What is the relationship between the five stages of team development and Belbin's team roles?",
+            "option_a": "A. They are competing theories that cannot be used together",
+            "option_b": "B. Different roles may become more or less important during different stages",
+            "option_c": "C. Roles only matter in the Performing stage",
+            "option_d": "D. Stages determine which roles exist in a team",
+            "correct_answer": "B",
+            "explanation": "Different Belbin roles may become more or less important during different stages - for example, Plants might be crucial during Forming for idea generation, while Completer-Finishers become vital during Performing and Adjourning for final deliverables."
+        },
+        {
+            "question": "A multinational corporation forms a crisis management team to handle a PR disaster. The team includes: a decisive leader who pushes for immediate action (Shaper), a detail-oriented member who tracks all communications (Completer-Finisher), and a creative thinker who proposes innovative solutions (Plant). During the first meeting, the Shaper wants to act immediately, the Plant keeps generating new options, and the Completer-Finisher insists on documenting everything before proceeding. This situation best illustrates which team dynamic?",
+            "option_a": "A. Role Ambiguity",
+            "option_b": "B. The Storming stage of team development",
+            "option_c": "C. Groupthink",
+            "option_d": "D. Role Overload",
+            "correct_answer": "B",
+            "explanation": "This scenario exemplifies the Storming stage, where team members with different approaches (Action-Oriented, Thinking-Oriented) conflict over priorities and methods as they establish working relationships."
+        },
+        {
+            "question": "A software development team has been working together for six months. Recently, they've noticed that meetings have become eerily quiet, with members quickly agreeing to proposed solutions without discussion. When a junior developer privately expresses concerns about a technical approach to the team lead, they're told 'everyone else is on board, so you should be too.' The team is most likely experiencing:",
+            "option_a": "A. Healthy consensus building",
+            "option_b": "B. Multiple symptoms of Groupthink including self-censorship and direct pressure",
+            "option_c": "C. Effective storming stage resolution",
+            "option_d": "D. Role overload among team members",
+            "correct_answer": "B",
+            "explanation": "This scenario shows multiple Groupthink symptoms: self-censorship (quiet meetings, not expressing concerns), illusion of unanimity (silence interpreted as consent), and direct pressure on members who question the group's direction."
+        },
+        {
+            "question": "A research team consists of: Dr. Chen (excellent at finding funding opportunities and external contacts), Prof. Rodriguez (deep subject matter expertise in the specific research area), and Dr. Kumar (skilled at organizing data and creating structured reports). According to Belbin's roles, which roles are represented in this team?",
+            "option_a": "A. Resource Investigator, Specialist, and Implementer respectively",
+            "option_b": "B. Coordinator, Plant, and Completer-Finisher respectively",
+            "option_c": "C. Shaper, Monitor Evaluator, and Teamworker respectively",
+            "option_d": "D. Plant, Resource Investigator, and Specialist respectively",
+            "correct_answer": "A",
+            "explanation": "Dr. Chen demonstrates Resource Investigator traits (external contacts, opportunities), Prof. Rodriguez shows Specialist characteristics (deep expertise), and Dr. Kumar exhibits Implementer qualities (organizing, creating structured outputs)."
+        },
+        {
+            "question": "A hospital surgical team has a strict hierarchy where the lead surgeon makes all decisions, nurses must anticipate needs without asking questions, and any deviation from protocol is discouraged. When a rare complication arises during surgery that isn't in the protocol, the team struggles because members are afraid to suggest alternative approaches. This situation exemplifies which role problems?",
+            "option_a": "A. Role Overload and Role Conflict only",
+            "option_b": "B. Role Rigidity and Territoriality, leading to inability to adapt",
+            "option_c": "C. Role Ambiguity and Abdication",
+            "option_d": "D. Human Nature and Groupthink",
+            "correct_answer": "B",
+            "explanation": "The strict hierarchy demonstrates Role Rigidity (preventing flexibility) and Territoriality (guarding decision-making authority), which together prevent the team from adapting when unexpected situations arise."
+        }
+    ]
+}

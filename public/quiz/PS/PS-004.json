@@ -1,0 +1,391 @@
+{
+    "questions": [
+        {
+            "question": "According to the definition provided in the module, motivation begins with which of the following?",
+            "option_a": "A. A specific goal or incentive that attracts behavior",
+            "option_b": "B. A physiological or psychological deficiency or need",
+            "option_c": "C. A learned behavior from environmental conditioning",
+            "option_d": "D. An external reward system implemented by others",
+            "correct_answer": "B",
+            "explanation": "The module defines motivation as starting with a physiological or psychological deficiency or need, which then activates a behavior or drive aimed at a goal or incentive."
+        },
+        {
+            "question": "In the needs-drives-incentives model presented, what is the correct sequence?",
+            "option_a": "A. Incentives → Drives → Needs",
+            "option_b": "B. Drives → Needs → Incentives",
+            "option_c": "C. Needs → Drives → Incentives",
+            "option_d": "D. Incentives → Needs → Drives",
+            "correct_answer": "C",
+            "explanation": "The module shows: Needs (e.g., body deprived of food) → Drives (e.g., hunger) → Incentives (e.g., eating food)."
+        },
+        {
+            "question": "Which of the following represents a drive in the motivation process?",
+            "option_a": "A. Needing water after exercise",
+            "option_b": "B. Feeling thirsty",
+            "option_c": "C. Drinking a glass of water",
+            "option_d": "D. Having access to clean water",
+            "correct_answer": "B",
+            "explanation": "A drive is the internal feeling or motive (like hunger or thirst) that results from a need and directs behavior toward an incentive."
+        },
+        {
+            "question": "What role do TV commercials play in the motivation process according to the module?",
+            "option_a": "A. They create physiological needs",
+            "option_b": "B. They function as drives",
+            "option_c": "C. They serve as incentives or triggers",
+            "option_d": "D. They replace the need-drive cycle",
+            "correct_answer": "C",
+            "explanation": "The module references TV commercials as examples of incentives that can trigger motivation by creating desire for products or experiences."
+        },
+        {
+            "question": "A student feels hungry and decides to eat lunch. In this scenario, the hunger represents:",
+            "option_a": "A. The need",
+            "option_b": "B. The drive",
+            "option_c": "C. The incentive",
+            "option_d": "D. The outcome",
+            "correct_answer": "B",
+            "explanation": "Hunger is the internal drive state that motivates behavior. The need is food deprivation, and eating lunch is the incentive."
+        },
+        {
+            "question": "In Maslow's Hierarchy of Needs, which level must be substantially satisfied before an individual can focus on esteem needs?",
+            "option_a": "A. Physiological and Safety needs only",
+            "option_b": "B. Belongingness and Love needs",
+            "option_c": "C. Self-actualization needs",
+            "option_d": "D. All lower needs (physiological, safety, and belongingness)",
+            "correct_answer": "D",
+            "explanation": "Maslow's hierarchy is typically represented as a pyramid where physiological needs form the base, followed by safety, then belongingness, then esteem, with self-actualization at the top. Each level generally requires substantial satisfaction before the next level becomes motivating."
+        },
+        {
+            "question": "An employee who consistently seeks challenging projects, personal growth, and wants to reach their full potential is primarily motivated by which level of Maslow's hierarchy?",
+            "option_a": "A. Esteem needs",
+            "option_b": "B. Safety needs",
+            "option_c": "C. Self-actualization",
+            "option_d": "D. Belongingness needs",
+            "correct_answer": "C",
+            "explanation": "Self-actualization represents the desire to become the most that one can be, focusing on personal growth and fulfilling one's potential."
+        },
+        {
+            "question": "A company provides free meals, comfortable break rooms, and ensures physical comfort for employees. Which level of Maslow's hierarchy are they primarily addressing?",
+            "option_a": "A. Safety needs",
+            "option_b": "B. Esteem needs",
+            "option_c": "C. Physiological needs",
+            "option_d": "D. Belongingness needs",
+            "correct_answer": "C",
+            "explanation": "Free meals address hunger (physiological need), and comfortable break rooms address basic physical comfort, which falls under physiological needs in Maslow's hierarchy."
+        },
+        {
+            "question": "A new employee is most concerned about job security, health insurance, and a safe work environment. According to Maslow, this employee is focused on:",
+            "option_a": "A. Physiological needs",
+            "option_b": "B. Safety needs",
+            "option_c": "C. Belongingness needs",
+            "option_d": "D. Esteem needs",
+            "correct_answer": "B",
+            "explanation": "Safety needs include job security, health insurance, safe work environments, and protection from harm - exactly what this employee is concerned about."
+        },
+        {
+            "question": "According to Maslow's theory, what happens when a lower-level need becomes significantly threatened after having been satisfied?",
+            "option_a": "A. The individual continues focusing on higher needs",
+            "option_b": "B. The individual regresses to focus on the threatened lower need",
+            "option_c": "C. The individual loses all motivation permanently",
+            "option_d": "D. The individual automatically moves to self-actualization",
+            "correct_answer": "B",
+            "explanation": "Maslow proposed that if a lower need that was previously satisfied becomes threatened again, the individual's focus will return to that lower need until it is resecured."
+        },
+        {
+            "question": "Which of the following scenarios best illustrates a person operating at the belongingness and love level of Maslow's hierarchy?",
+            "option_a": "A. A person fasting for a religious ritual",
+            "option_b": "B. A person installing a home security system",
+            "option_c": "C. A person joining a professional networking group",
+            "option_d": "D. A person practicing a musical instrument alone for hours",
+            "correct_answer": "C",
+            "explanation": "Joining a networking group addresses the need for social connection, friendship, and belonging - the core of the belongingness and love level."
+        },
+        {
+            "question": "In Herzberg's Two-Factor Theory, what are hygiene factors primarily related to?",
+            "option_a": "A. Psychological growth and achievement",
+            "option_b": "B. Work conditions and dissatisfaction prevention",
+            "option_c": "C. Performance bonuses and incentives",
+            "option_d": "D. Career advancement opportunities",
+            "correct_answer": "B",
+            "explanation": "Herzberg's hygiene factors are work conditions related to dissatisfaction caused by discomfort or pain. They contribute to employees feeling 'not dissatisfied' and prevent complaints."
+        },
+        {
+            "question": "According to Herzberg, which of the following is a motivation factor rather than a hygiene factor?",
+            "option_a": "A. Company policies",
+            "option_b": "B. Salary",
+            "option_c": "C. Recognition for achievements",
+            "option_d": "D. Working conditions",
+            "correct_answer": "C",
+            "explanation": "Recognition is a motivation factor related to psychological growth. Salary, company policies, and working conditions are all hygiene factors."
+        },
+        {
+            "question": "An employee has excellent salary, good working conditions, and fair company policies but feels unchallenged and uninterested in their work. According to Herzberg:",
+            "option_a": "A. The employee will be highly motivated due to good hygiene factors",
+            "option_b": "B. The employee will be dissatisfied despite good hygiene factors",
+            "option_c": "C. The employee will be 'not dissatisfied' but also not motivated",
+            "option_d": "D. The employee will automatically seek a new job",
+            "correct_answer": "C",
+            "explanation": "Good hygiene factors prevent dissatisfaction but don't create motivation. Without motivation factors, the employee will be in a neutral 'not dissatisfied' state."
+        },
+        {
+            "question": "What does Herzberg call factors that contribute to an employee feeling 'not dissatisfied'?",
+            "option_a": "A. Motivation factors",
+            "option_b": "B. Growth factors",
+            "option_c": "C. Achievement factors",
+            "option_d": "D. Maintenance factors",
+            "correct_answer": "D",
+            "explanation": "The module states that maintenance factors (hygiene factors) contribute to employees feeling 'not dissatisfied' and contribute to the absence of complaints."
+        },
+        {
+            "question": "According to the Motivation-Hygiene Combinations table, which combination results in 'high motivation many complaints'?",
+            "option_a": "A. High Motivation, High Hygiene",
+            "option_b": "B. High Motivation, Low Hygiene",
+            "option_c": "C. Low Motivation, High Hygiene",
+            "option_d": "D. Low Motivation, Low Hygiene",
+            "correct_answer": "B",
+            "explanation": "The table shows: High M + Low H = 'high motivation many complaints' - employees are motivated by the work itself but complain about poor working conditions."
+        },
+        {
+            "question": "A company with excellent facilities, fair policies, and good pay but boring, repetitive work would fall into which quadrant of the Motivation-Hygiene Combinations?",
+            "option_a": "A. High M, High H",
+            "option_b": "B. High M, Low H",
+            "option_c": "C. Low M, High H",
+            "option_d": "D. Low M, Low H",
+            "correct_answer": "C",
+            "explanation": "This describes Low Motivation (boring work) and High Hygiene (good facilities, policies, pay) = 'low motivation few complaints' according to the table."
+        },
+        {
+            "question": "What is the primary purpose of job enrichment according to Herzberg's theory?",
+            "option_a": "A. To improve hygiene factors",
+            "option_b": "B. To lead to superior performance and effort",
+            "option_c": "C. To reduce employee complaints",
+            "option_d": "D. To simplify work tasks",
+            "correct_answer": "B",
+            "explanation": "The module states that job enrichment (related to motivation factors) 'leads to superior performance & effort.'"
+        },
+        {
+            "question": "A software developer has interesting, challenging projects but must work in a cramped office with outdated equipment. According to Herzberg, this developer will likely experience:",
+            "option_a": "A. Low motivation and high satisfaction",
+            "option_b": "B. High motivation and no complaints",
+            "option_c": "C. High motivation with many complaints",
+            "option_d": "D. Low motivation with many complaints",
+            "correct_answer": "C",
+            "explanation": "This is the High M (interesting projects) + Low H (poor physical conditions) combination = 'high motivation many complaints'."
+        },
+        {
+            "question": "Which of the following best describes the relationship between hygiene factors and motivation factors?",
+            "option_a": "A. They are the same thing measured differently",
+            "option_b": "B. They operate on separate continuums - one prevents dissatisfaction, the other creates satisfaction",
+            "option_c": "C. They operate on a single continuum from dissatisfied to satisfied",
+            "option_d": "D. Hygiene factors are more important than motivation factors",
+            "correct_answer": "B",
+            "explanation": "Herzberg proposed that satisfaction and dissatisfaction are not opposites but separate dimensions - hygiene factors affect dissatisfaction, motivation factors affect satisfaction."
+        },
+        {
+            "question": "An organization implements flexible working hours and remote work options. According to Herzberg's classification, these would most likely be considered:",
+            "option_a": "A. Motivation factors",
+            "option_b": "B. Growth factors",
+            "option_c": "C. Achievement factors",
+            "option_d": "D. Hygiene factors",
+            "correct_answer": "D",
+            "explanation": "Working conditions and policies, including flexible hours, are hygiene factors - they prevent dissatisfaction but don't necessarily create motivation."
+        },
+        {
+            "question": "According to Herzberg, if you want to create 'superior performance and effort,' you should focus on:",
+            "option_a": "A. Improving salary and benefits",
+            "option_b": "B. Enhancing job enrichment and motivation factors",
+            "option_c": "C. Strengthening company policies",
+            "option_d": "D. Improving physical working conditions",
+            "correct_answer": "B",
+            "explanation": "Job enrichment and motivation factors lead to superior performance and effort, while hygiene factors only prevent dissatisfaction."
+        },
+        {
+            "question": "The module lists 'SOLID' as characteristics of good goals. What does the 'S' stand for?",
+            "option_a": "A. Strategic",
+            "option_b": "B. Specific",
+            "option_c": "C. Simple",
+            "option_d": "D. Stretching",
+            "correct_answer": "B",
+            "explanation": "In the SOLID goal characteristics, S stands for Specific - goals should be clear and unambiguous."
+        },
+        {
+            "question": "A goal to 'improve customer satisfaction' lacks which SOLID characteristic?",
+            "option_a": "A. Specific and Measurable",
+            "option_b": "B. Achievable only",
+            "option_c": "C. Result-based only",
+            "option_d": "D. Time-specific only",
+            "correct_answer": "A",
+            "explanation": "This goal is not specific (what does improvement mean?) and not measurable (how will we know when it's achieved?). It lacks both S and M."
+        },
+        {
+            "question": "What does 'Result-based' mean in the SOLID goal framework?",
+            "option_a": "A. The goal should focus on activities rather than outcomes",
+            "option_b": "B. The goal should focus on measurable outcomes or achievements",
+            "option_c": "C. The goal should be based on past results only",
+            "option_d": "D. The goal should guarantee results immediately",
+            "correct_answer": "B",
+            "explanation": "Result-based means the goal should focus on specific outcomes or achievements rather than just activities or processes."
+        },
+        {
+            "question": "Stephen Covey's principle '#2 Begin with the End in Mind' relates most closely to which aspect of goal setting?",
+            "option_a": "A. Making goals specific and measurable",
+            "option_b": "B. Having a clear vision of the desired outcome before starting",
+            "option_c": "C. Setting time limits for goal completion",
+            "option_d": "D. Ensuring goals are achievable",
+            "correct_answer": "B",
+            "explanation": "Beginning with the end in mind means having a clear understanding of your destination before you start - knowing what you want to achieve before taking action."
+        },
+        {
+            "question": "A student sets a goal: 'I will score at least 85% on my final exam by studying 3 hours daily for 4 weeks.' This goal demonstrates which SOLID characteristics?",
+            "option_a": "A. Specific and Measurable only",
+            "option_b": "B. Time-specific only",
+            "option_c": "C. All SOLID characteristics",
+            "option_d": "D. Achievable and Result-based only",
+            "correct_answer": "C",
+            "explanation": "This goal is Specific (85% on final exam), Measurable (score percentage), Achievable (3 hours daily), Result-based (score outcome), and Time-specific (4 weeks)."
+        },
+        {
+            "question": "According to the Locke and Latham model presented, what is the relationship between goals and performance?",
+            "option_a": "A. Goals have no direct impact on performance",
+            "option_b": "B. Specific and challenging goals lead to higher performance when combined with feedback and commitment",
+            "option_c": "C. Only easy goals improve performance",
+            "option_d": "D. Goals only affect satisfaction, not performance",
+            "correct_answer": "B",
+            "explanation": "The Locke and Latham model shows that specific, challenging goals, when combined with feedback, commitment, and appropriate strategies, lead to higher performance and subsequent satisfaction."
+        },
+        {
+            "question": "In the goal setting to performance cycle, what typically follows successful performance?",
+            "option_a": "A. Lower goals for next cycle",
+            "option_b": "B. Satisfaction and potentially higher future goals",
+            "option_c": "C. Immediate disengagement",
+            "option_d": "D. Focus only on hygiene factors",
+            "correct_answer": "B",
+            "explanation": "The model shows that successful performance leads to satisfaction, which then influences future goal setting, often leading to higher or more challenging goals."
+        },
+        {
+            "question": "According to the module, what is the definition of time management?",
+            "option_a": "A. Working as many hours as possible each day",
+            "option_b": "B. Paying attention to how you spend time and devising a plan to use it more effectively",
+            "option_c": "C. Scheduling every minute of your day without breaks",
+            "option_d": "D. Multitasking to accomplish more in less time",
+            "correct_answer": "B",
+            "explanation": "The module defines time management as paying attention to how you are spending your most valuable resource (time) and devising a plan to use it more effectively."
+        },
+        {
+            "question": "Which of the following is NOT listed in the module as preparation for time management?",
+            "option_a": "A. Deep night time sleep",
+            "option_b": "B. Balanced food, water, breathing and exercise",
+            "option_c": "C. Organized environment",
+            "option_d": "D. Working through sleep to save time",
+            "correct_answer": "D",
+            "explanation": "The module specifically lists sleep, balanced food/water/exercise, organized environment, and mindfulness as preparations - working through sleep contradicts the sleep requirement."
+        },
+        {
+            "question": "What is the purpose of the 168-hour calculation exercise (Task 1) in the module?",
+            "option_a": "A. To prove there aren't enough hours in a week",
+            "option_b": "B. To track how time is currently spent and identify available time",
+            "option_c": "C. To calculate how much overtime you can work",
+            "option_d": "D. To compare your schedule with others",
+            "correct_answer": "B",
+            "explanation": "The 168-hour exercise helps you track your current time usage across sleep, meals, work, classes, etc., then subtract from 168 to see how much time remains for other activities."
+        },
+        {
+            "question": "If a student calculates their total committed time (sleep, meals, classes, work, etc.) as 140 hours per week, how many hours remain for other activities according to the 168-hour formula?",
+            "option_a": "A. 28 hours",
+            "option_b": "B. 48 hours",
+            "option_c": "C. 24 hours",
+            "option_d": "D. 38 hours",
+            "correct_answer": "A",
+            "explanation": "The formula is 168 (total weekly hours) minus committed time (140) = 28 hours remaining for other activities, study, etc."
+        },
+        {
+            "question": "According to the time tracking exercise, what categories should be multiplied by 7 days?",
+            "option_a": "A. Travel time weekends only",
+            "option_b": "B. Hours of work per week only",
+            "option_c": "C. Daily activities like sleep, meals, grooming, and chores",
+            "option_d": "D. Regularly scheduled functions only",
+            "correct_answer": "C",
+            "explanation": "Daily activities like sleep, grooming, meals, and chores are multiplied by 7 to get weekly totals. Travel time weekdays uses ×5, weekends are separate."
+        },
+        {
+            "question": "What is the primary purpose of a To-Do List in time management according to the module?",
+            "option_a": "A. To remember everything that needs to be done",
+            "option_b": "B. To create stress about unfinished tasks",
+            "option_c": "C. To replace proper scheduling",
+            "option_d": "D. To impress others with busyness",
+            "correct_answer": "A",
+            "explanation": "A To-Do List helps you remember and organize tasks that need completion, serving as a basic but essential time management tool."
+        },
+        {
+            "question": "The TIME MANAGEMENT MATRIX shown in the module categorizes tasks based on which two dimensions?",
+            "option_a": "A. Personal vs. Professional",
+            "option_b": "B. Urgent and Important",
+            "option_c": "C. Easy vs. Difficult",
+            "option_d": "D. Short-term vs. Long-term",
+            "correct_answer": "B",
+            "explanation": "The Time Management Matrix (likely Eisenhower Matrix) categorizes tasks by urgency and importance, creating four quadrants for prioritization."
+        },
+        {
+            "question": "In the Pomodoro Technique, what is the standard length of a work interval?",
+            "option_a": "A. 15 minutes",
+            "option_b": "B. 25 minutes",
+            "option_c": "C. 45 minutes",
+            "option_d": "D. 60 minutes",
+            "correct_answer": "B",
+            "explanation": "The module states that the Pomodoro Technique uses intervals typically 25 minutes in length, separated by short breaks."
+        },
+        {
+            "question": "Francesco Cirillo developed the Pomodoro Technique using which object as a timer?",
+            "option_a": "A. His smartphone",
+            "option_b": "B. A kitchen timer shaped like a tomato",
+            "option_c": "C. A standard stopwatch",
+            "option_d": "D. An hourglass",
+            "correct_answer": "B",
+            "explanation": "The technique is named after the tomato-shaped kitchen timer Cirillo used as a university student - 'pomodoro' is Italian for tomato."
+        },
+        {
+            "question": "What is the purpose of Android's Focus mode according to the module?",
+            "option_a": "A. To increase screen brightness",
+            "option_b": "B. To minimize distractions and get things done",
+            "option_c": "C. To track battery usage",
+            "option_d": "D. To update apps automatically",
+            "correct_answer": "B",
+            "explanation": "The module describes Focus mode as helping to 'minimize distractions and get things done' as part of digital wellbeing."
+        },
+        {
+            "question": "According to Michael Althsuler's quote in the module, what is the relationship between time and the individual?",
+            "option_a": "A. Time flies and there's nothing you can do about it",
+            "option_b": "B. You are the pilot of your time",
+            "option_c": "C. Time controls your destiny",
+            "option_d": "D. You are a passenger in time's journey",
+            "correct_answer": "B",
+            "explanation": "The quote states: 'The bad news is time flies, The good news is you are the pilot' - emphasizing personal control over time use."
+        },
+        {
+            "question": "A student consistently works on urgent but unimportant tasks (like responding to every notification immediately) while neglecting important but non-urgent tasks (like long-term projects). According to the Time Management Matrix, this student is operating primarily in which quadrant?",
+            "option_a": "A. Quadrant I (Urgent and Important)",
+            "option_b": "B. Quadrant II (Not Urgent but Important)",
+            "option_c": "C. Quadrant III (Urgent but Not Important)",
+            "option_d": "D. Quadrant IV (Not Urgent and Not Important)",
+            "correct_answer": "C",
+            "explanation": "Responding to notifications is often urgent but not important (Quadrant III). This quadrant gives the illusion of productivity while neglecting truly important work."
+        },
+        {
+            "question": "A software development team has excellent salaries, modern offices, and great benefits (high hygiene) but the work is boring and offers no growth opportunities (low motivation). According to Herzberg's combinations, these employees will likely:",
+            "option_a": "A. Be highly motivated with few complaints",
+            "option_b": "B. Have low motivation but few complaints",
+            "option_c": "C. Have high motivation with many complaints",
+            "option_d": "D. Have low motivation with many complaints",
+            "correct_answer": "B",
+            "explanation": "High H + Low M = 'low motivation few complaints' - employees aren't dissatisfied with conditions but aren't motivated by the work itself."
+        },
+        {
+            "question": "When using the 168-hour time tracking exercise, a student discovers they have 30 hours unaccounted for. What is the most appropriate next step?",
+            "option_a": "A. Assume the calculation is wrong and ignore it",
+            "option_b": "B. Use the time for additional sleep only",
+            "option_c": "C. Analyze how these hours are actually spent and consciously allocate them",
+            "option_d": "D. Immediately schedule every minute of those 30 hours",
+            "correct_answer": "C",
+            "explanation": "The purpose of tracking is awareness. The next step is to understand where those hours go (they may be wasted or productive but untracked) and then consciously decide how to use them."
+        }
+    ]
+}
