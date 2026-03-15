@@ -1,0 +1,337 @@
+{
+    "questions": [
+        {
+            "question": "What does the term 'cognitive style' primarily refer to?",
+            "option_a": "A. The emotional reactions individuals display",
+            "option_b": "B. The way individuals think, perceive, and remember information",
+            "option_c": "C. Genetic traits that determine intelligence",
+            "option_d": "D. Social influences on personality",
+            "correct_answer": "B",
+            "explanation": "Cognitive style is defined as an individual's preferred way of thinking, perceiving, and remembering information, not their emotions, genetic traits, or social influences."
+        },
+        {
+            "question": "From which Latin word does the term 'cognition' originate, and what does it mean?",
+            "option_a": "A. Calculare, to calculate",
+            "option_b": "B. Interpretari, to interpret",
+            "option_c": "C. Cognito, to apprehend or understand",
+            "option_d": "D. Observare, to observe",
+            "correct_answer": "C",
+            "explanation": "The document states that 'cognition' originates from the Latin word 'cognito', meaning 'to apprehend or understand'."
+        },
+        {
+            "question": "Which of the following is NOT identified as one of the three major cognitive styles in the lecture?",
+            "option_a": "A. Knowing",
+            "option_b": "B. Planning",
+            "option_c": "C. Creating",
+            "option_d": "D. Evaluating",
+            "correct_answer": "D",
+            "explanation": "The three cognitive styles discussed are Knowing, Planning, and Creating. Evaluating is listed as a distractor and is not one of the three major styles."
+        },
+        {
+            "question": "An individual who focuses heavily on facts, data, and precision typically demonstrates which cognitive style?",
+            "option_a": "A. Creating",
+            "option_b": "B. Knowing",
+            "option_c": "C. Planning",
+            "option_d": "D. Emotional",
+            "correct_answer": "B",
+            "explanation": "The Knowing cognitive style is characterized by a focus on facts, data, and precision."
+        },
+        {
+            "question": "Which cognitive style is characterized by a strong emphasis on structure, logical organization, and preparation?",
+            "option_a": "A. Creating",
+            "option_b": "B. Knowing",
+            "option_c": "C. Planning",
+            "option_d": "D. Observing",
+            "correct_answer": "C",
+            "explanation": "The Planning cognitive style is defined by its emphasis on structure, logical organization, and methodical preparation."
+        },
+        {
+            "question": "A person who enjoys experimentation, brainstorming, and risk-taking most likely exhibits which cognitive style?",
+            "option_a": "A. Planning",
+            "option_b": "B. Creating",
+            "option_c": "C. Knowing",
+            "option_d": "D. Analytical",
+            "correct_answer": "B",
+            "explanation": "The Creating cognitive style is associated with experimentation, brainstorming, innovation, and a tolerance for risk."
+        },
+        {
+            "question": "What is a major weakness associated with the Knowing cognitive style?",
+            "option_a": "A. Ignoring facts",
+            "option_b": "B. Slow decision making and resistance to innovation",
+            "option_c": "C. Lack of structure in problem solving",
+            "option_d": "D. High tolerance for ambiguity",
+            "correct_answer": "B",
+            "explanation": "A key weakness of the Knowing style is an over-reliance on existing facts, which can lead to slow decision-making and resistance to new, innovative ideas."
+        },
+        {
+            "question": "People with a Planning cognitive style may struggle most with which of the following?",
+            "option_a": "A. Logical thinking",
+            "option_b": "B. Handling ambiguity and unexpected situations",
+            "option_c": "C. Collecting factual information",
+            "option_d": "D. Data analysis",
+            "correct_answer": "B",
+            "explanation": "Because the Planning style relies heavily on structure and order, individuals with this style often find it difficult to handle ambiguity and adapt to unexpected situations."
+        },
+        {
+            "question": "Individuals with the Creating cognitive style may experience problems because they:",
+            "option_a": "A. Rely excessively on rules",
+            "option_b": "B. Ignore creativity",
+            "option_c": "C. Sometimes disregard data and factual evidence",
+            "option_d": "D. Avoid experimentation",
+            "correct_answer": "C",
+            "explanation": "A potential downside of the Creating style is a focus on new ideas and possibilities, which can sometimes lead to disregarding existing data or factual evidence."
+        },
+        {
+            "question": "Cognitive processes are described as 'softwired' because they:",
+            "option_a": "A. Cannot be influenced by environment",
+            "option_b": "B. Are genetically fixed",
+            "option_c": "C. Can be modified and developed through experience",
+            "option_d": "D. Exist only during childhood",
+            "correct_answer": "C",
+            "explanation": "Cognitive processes are considered 'softwired' because, unlike the brain's hardwired macro-structure, they are malleable and can be changed and developed through learning and experience."
+        },
+        {
+            "question": "According to the document, the macro-structure of the brain is considered:",
+            "option_a": "A. Softwired",
+            "option_b": "B. Hardwired",
+            "option_c": "C. Adaptive",
+            "option_d": "D. Malleable",
+            "correct_answer": "B",
+            "explanation": "The document contrasts cognitive processes as 'softwired' with the brain's macro-structure, which is described as 'hardwired'."
+        },
+        {
+            "question": "Which of the following is NOT listed as a softwired cognitive process?",
+            "option_a": "A. Perception and attribution",
+            "option_b": "B. Personality and attitudes",
+            "option_c": "C. Motivational needs",
+            "option_d": "D. Brain anatomy",
+            "correct_answer": "D",
+            "explanation": "Brain anatomy is described as the 'hardwired' macro-structure, whereas perception, attribution, personality, attitudes, and motivational needs are examples of 'softwired' cognitive processes."
+        },
+        {
+            "question": "How is perception defined in the text?",
+            "option_a": "A. The process of storing long-term memories",
+            "option_b": "B. The process by which individuals select, organize, interpret, retrieve, and respond to information",
+            "option_c": "C. The process of developing emotional intelligence",
+            "option_d": "D. The process of constructing personality traits",
+            "correct_answer": "B",
+            "explanation": "Perception is explicitly defined as the process by which individuals select, organize, interpret, retrieve, and respond to information from the environment."
+        },
+        {
+            "question": "Perceptual information is gathered from how many primary senses?",
+            "option_a": "A. Three",
+            "option_b": "B. Four",
+            "option_c": "C. Five",
+            "option_d": "D. Six",
+            "correct_answer": "C",
+            "explanation": "The document states that perceptual information is gathered from the five primary senses."
+        },
+        {
+            "question": "Which of the following is an example of an external factor affecting perceptual selectivity?",
+            "option_a": "A. Experience",
+            "option_b": "B. Motivation",
+            "option_c": "C. Contrast",
+            "option_d": "D. Personality",
+            "correct_answer": "C",
+            "explanation": "Contrast is an external factor in the environment that influences what we notice. Experience and motivation are internal factors."
+        },
+        {
+            "question": "What does the term 'attribution' refer to?",
+            "option_a": "A. The process of evaluating emotions",
+            "option_b": "B. The way people explain the causes of behavior",
+            "option_c": "C. A personality assessment method",
+            "option_d": "D. A cognitive learning style",
+            "correct_answer": "B",
+            "explanation": "Attribution is defined as the process by which individuals explain the causes of behavior and events."
+        },
+        {
+            "question": "Assigning the cause of a behavior to personal characteristics such as ability or motivation is called:",
+            "option_a": "A. External attribution",
+            "option_b": "B. Situational attribution",
+            "option_c": "C. Internal attribution",
+            "option_d": "D. Cognitive attribution",
+            "correct_answer": "C",
+            "explanation": "Internal attribution (also known as dispositional attribution) assigns the cause of behavior to internal factors like personality, ability, or motivation."
+        },
+        {
+            "question": "Which factor is typically associated with external attribution?",
+            "option_a": "A. Personality",
+            "option_b": "B. Task difficulty",
+            "option_c": "C. Ability",
+            "option_d": "D. Motivation",
+            "correct_answer": "B",
+            "explanation": "External attribution assigns cause to situational factors outside the person's control, such as task difficulty, luck, or the actions of others."
+        },
+        {
+            "question": "The Fundamental Attribution Error refers to the tendency to:",
+            "option_a": "A. Attribute one's own failures to external factors",
+            "option_b": "B. Overestimate the influence of internal factors when explaining others' behaviors",
+            "option_c": "C. Attribute successes to internal factors and failures to external factors",
+            "option_d": "D. Attribute all outcomes to external factors",
+            "correct_answer": "B",
+            "explanation": "The Fundamental Attribution Error is the tendency to overemphasize internal characteristics (like personality) and underestimate situational factors when explaining other people's behavior."
+        },
+        {
+            "question": "The Self-Serving Bias occurs when individuals:",
+            "option_a": "A. Attribute failures to internal causes",
+            "option_b": "B. Attribute successes to internal causes and failures to external causes",
+            "option_c": "C. Attribute successes to luck",
+            "option_d": "D. Attribute all outcomes to external factors",
+            "correct_answer": "B",
+            "explanation": "The Self-Serving Bias is the tendency to protect one's self-esteem by attributing successes to internal factors and failures to external factors."
+        },
+        {
+            "question": "How is personality defined in the provided text?",
+            "option_a": "A. Temporary emotional states",
+            "option_b": "B. The unique and relatively stable qualities of an individual that affect their behavior and interactions",
+            "option_c": "C. Learned behavioral patterns only",
+            "option_d": "D. Genetic intelligence traits",
+            "correct_answer": "B",
+            "explanation": "Personality is defined as the unique and relatively stable qualities of an individual that influence how they understand themselves, others, and the world around them."
+        },
+        {
+            "question": "Which of the following is NOT one of the Big Five personality dimensions?",
+            "option_a": "A. Conscientiousness",
+            "option_b": "B. Emotional stability",
+            "option_c": "C. Creativity",
+            "option_d": "D. Agreeableness",
+            "correct_answer": "C",
+            "explanation": "The Big Five personality dimensions are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (Emotional Stability is the inverse of Neuroticism). Creativity is not a core dimension."
+        },
+        {
+            "question": "Self-esteem, as defined in the document, refers to:",
+            "option_a": "A. Emotional intelligence",
+            "option_b": "B. Belief in one's competence and self-image",
+            "option_c": "C. External motivation",
+            "option_d": "D. Cognitive style",
+            "correct_answer": "B",
+            "explanation": "Self-esteem is defined as an individual's overall subjective sense of personal worth or value, encompassing beliefs about one's competence and self-image."
+        },
+        {
+            "question": "Individuals with an internal locus of control believe that:",
+            "option_a": "A. Luck determines success",
+            "option_b": "B. External circumstances control outcomes",
+            "option_c": "C. Their actions and decisions influence outcomes",
+            "option_d": "D. Social factors determine behavior",
+            "correct_answer": "C",
+            "explanation": "An internal locus of control is the belief that one's own actions, efforts, and decisions primarily determine the outcomes and events in their life."
+        },
+        {
+            "question": "Which belief is characteristic of an external locus of control?",
+            "option_a": "A. I control my own fate",
+            "option_b": "B. My success depends on my effort",
+            "option_c": "C. Circumstances and other people control my fate",
+            "option_d": "D. I determine my own outcomes",
+            "correct_answer": "C",
+            "explanation": "An external locus of control is the belief that external forces, such as luck, fate, or powerful others, are in control of one's life and outcomes."
+        },
+        {
+            "question": "Generalized self-efficacy refers to:",
+            "option_a": "A. Beliefs about one's ability to perform tasks effectively across various situations",
+            "option_b": "B. A person's overall self-worth",
+            "option_c": "C. The belief that one can control external events",
+            "option_d": "D. A personality trait related to optimism",
+            "correct_answer": "A",
+            "explanation": "Generalized self-efficacy is a broad and stable sense of personal competence to deal effectively with a variety of stressful situations."
+        },
+        {
+            "question": "Which factor is identified as a key source of self-efficacy?",
+            "option_a": "A. Cultural norms",
+            "option_b": "B. Prior successful experiences (enactive mastery)",
+            "option_c": "C. Genetic inheritance",
+            "option_d": "D. Environmental stress",
+            "correct_answer": "B",
+            "explanation": "Prior successful experiences, or enactive mastery, are a primary source of self-efficacy as they provide authentic evidence of one's capability to succeed."
+        },
+        {
+            "question": "In the Attitude Model, beliefs correspond to which component?",
+            "option_a": "A. Behavioral component",
+            "option_b": "B. Affective component",
+            "option_c": "C. Cognitive component",
+            "option_d": "D. Emotional component",
+            "correct_answer": "C",
+            "explanation": "In the tri-component attitude model, the cognitive component consists of a person's beliefs, thoughts, and attributes about the object or situation."
+        },
+        {
+            "question": "Motivation is best defined as a process that begins with:",
+            "option_a": "A. A reward",
+            "option_b": "B. A physiological or psychological deficiency or need",
+            "option_c": "C. Emotional stimulation",
+            "option_d": "D. Cognitive evaluation",
+            "correct_answer": "B",
+            "explanation": "The motivation process is initiated by a need, which is a physiological or psychological deficiency that creates a drive to fulfill that need."
+        },
+        {
+            "question": "Positive psychology primarily focuses on:",
+            "option_a": "A. Treating psychological disorders",
+            "option_b": "B. Enhancing human strengths, well-being, and optimal functioning",
+            "option_c": "C. Eliminating negative emotions",
+            "option_d": "D. Studying genetic intelligence",
+            "correct_answer": "B",
+            "explanation": "Positive psychology is the scientific study of what makes life most worth living, focusing on strengths, virtues, and factors that contribute to well-being and flourishing."
+        },
+        {
+            "question": "Which of the following is NOT listed as a positive psychology state?",
+            "option_a": "A. Optimism",
+            "option_b": "B. Resilience",
+            "option_c": "C. Fear",
+            "option_d": "D. Confidence",
+            "correct_answer": "C",
+            "explanation": "Optimism, resilience, and confidence are all positive psychological states. Fear is a negative emotion and is not a focus of positive psychology."
+        },
+        {
+            "question": "According to the document, how do optimistic individuals tend to attribute failures?",
+            "option_a": "A. Internal, stable, and global",
+            "option_b": "B. External, temporary, and specific",
+            "option_c": "C. Internal and permanent",
+            "option_d": "D. Global and permanent",
+            "correct_answer": "B",
+            "explanation": "Optimists have a pessimistic explanatory style for negative events, viewing them as caused by external, temporary, and situation-specific factors."
+        },
+        {
+            "question": "Resilience is best described as:",
+            "option_a": "A. Avoiding risk to prevent failure",
+            "option_b": "B. The capacity to bounce back from adversity, conflict, and failure",
+            "option_c": "C. A fixed personality trait",
+            "option_d": "D. A state of constant positive emotion",
+            "correct_answer": "B",
+            "explanation": "Resilience is the positive psychological capacity to rebound from adversity, uncertainty, conflict, failure, or even positive change, progress, and increased responsibility."
+        },
+        {
+            "question": "In the theory of hope, 'will power' refers to:",
+            "option_a": "A. Agency or goal-directed energy and determination",
+            "option_b": "B. Emotional stability",
+            "option_c": "C. Cognitive thinking ability",
+            "option_d": "D. External motivation from others",
+            "correct_answer": "A",
+            "explanation": "In hope theory, 'willpower' (or agency) is the motivational component, representing the perceived capacity to use one's energy to move toward a goal."
+        },
+        {
+            "question": "What does 'way power' refer to in hope theory?",
+            "option_a": "A. Emotional intelligence",
+            "option_b": "B. Pathways thinking, or the ability to generate routes to reach goals",
+            "option_c": "C. Personality development",
+            "option_d": "D. Social influence",
+            "correct_answer": "B",
+            "explanation": "In hope theory, 'waypower' (or pathways thinking) is the cognitive component, referring to a person's perceived ability to generate workable routes to their goals."
+        },
+        {
+            "question": "Subjective Well-Being (SWB) is most commonly associated with:",
+            "option_a": "A. Cognitive ability and IQ",
+            "option_b": "B. Happiness and life satisfaction",
+            "option_c": "C. The quality of social relationships only",
+            "option_d": "D. Level of intelligence",
+            "correct_answer": "B",
+            "explanation": "Subjective Well-Being (SWB) is a self-reported measure of happiness and satisfaction with life, often used as an indicator of an individual's overall well-being."
+        },
+        {
+            "question": "Emotional Intelligence is defined as the capacity to:",
+            "option_a": "A. Solve complex mathematical problems quickly",
+            "option_b": "B. Recognize, understand, and manage emotions in oneself and others",
+            "option_c": "C. Develop advanced logical reasoning skills",
+            "option_d": "D. Analyze and interpret large datasets",
+            "correct_answer": "B",
+            "explanation": "Emotional Intelligence (EI) is the ability to perceive, use, understand, and manage emotions effectively in oneself and in relationships with others."
+        }
+    ]
+}

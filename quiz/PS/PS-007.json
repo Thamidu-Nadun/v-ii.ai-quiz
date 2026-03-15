@@ -1,0 +1,535 @@
+{
+    "questions": [
+        {
+            "question": "Complete the quote by John C. Maxwell: 'Reflection turns experience into...'",
+            "option_a": "A. Knowledge",
+            "option_b": "B. Insight",
+            "option_c": "C. Success",
+            "option_d": "D. Achievement",
+            "correct_answer": "B",
+            "explanation": "According to the provided answer key, the correct completion of John C. Maxwell's quote is 'insight'."
+        },
+        {
+            "question": "According to the lecture, why is it not enough to simply have an experience?",
+            "option_a": "A. Experiences are not valuable",
+            "option_b": "B. We need to reflect on the experience to maximize its learning potential",
+            "option_c": "C. Experiences should be forgotten quickly",
+            "option_d": "D. Only theoretical knowledge matters",
+            "correct_answer": "B",
+            "explanation": "Reflection is the key process that allows us to extract learning and value from an experience, maximizing its potential for growth."
+        },
+        {
+            "question": "How is reflection defined in the document?",
+            "option_a": "A. Thinking about mistakes only",
+            "option_b": "B. The purposive, deliberate revisiting of an experience to explore and extract the learning",
+            "option_c": "C. Casual thinking about the past",
+            "option_d": "D. Avoiding future problems",
+            "correct_answer": "B",
+            "explanation": "Reflection is presented as a purposeful and intentional activity, not just casual thought, aimed at learning from an experience."
+        },
+        {
+            "question": "What type of learning does reflection promote?",
+            "option_a": "A. Surface learning",
+            "option_b": "B. Deep learning in personal and professional development",
+            "option_c": "C. Memorization-based learning",
+            "option_d": "D. Competitive learning",
+            "correct_answer": "B",
+            "explanation": "Reflection is a process that leads to deep learning by encouraging analysis and connection-making, which is essential for personal and professional development."
+        },
+        {
+            "question": "What is the capacity of an individual learner engaged in reflective practice?",
+            "option_a": "A. Memorize experiences",
+            "option_b": "B. Engage with an experience, reflect critically on it, and deduce lessons for future activity",
+            "option_c": "C. Avoid making mistakes",
+            "option_d": "D. Follow instructions exactly",
+            "correct_answer": "B",
+            "explanation": "Reflective practice is an active process where a learner interacts with an experience, thinks about it critically, and identifies lessons to apply in the future."
+        },
+        {
+            "question": "Reflecting is an important stage of which process?",
+            "option_a": "A. Career advancement",
+            "option_b": "B. The PDP (Personal Development Planning) process",
+            "option_c": "C. Academic grading",
+            "option_d": "D. Social networking",
+            "correct_answer": "B",
+            "explanation": "Reflection is a core component of Personal Development Planning, as it allows an individual to learn from past experiences to plan future development."
+        },
+        {
+            "question": "Why is it necessary to reflect, according to the document?",
+            "option_a": "A. Pass exams only",
+            "option_b": "B. Improve and develop your skills and knowledge by learning from successes and mistakes",
+            "option_c": "C. Satisfy course requirements",
+            "option_d": "D. Impress others",
+            "correct_answer": "B",
+            "explanation": "The primary purpose of reflection is to foster improvement and development by drawing lessons from both positive and negative experiences."
+        },
+        {
+            "question": "How can one maximize the learning potential of a situation?",
+            "option_a": "A. We should move on quickly to new experiences",
+            "option_b": "B. We need to reflect on the experience before it is lost",
+            "option_c": "C. We should avoid thinking about it",
+            "option_d": "D. We should only focus on positive outcomes",
+            "correct_answer": "B",
+            "explanation": "To fully benefit from an experience, it is crucial to reflect on it promptly to capture insights and learning before the details fade."
+        },
+        {
+            "question": "What is surface learning characterized by?",
+            "option_a": "A. Intention to understand and seek meaning",
+            "option_b": "B. Intention to complete the task and memorize information",
+            "option_c": "C. Critical evaluation of events",
+            "option_d": "D. Deep understanding",
+            "correct_answer": "B",
+            "explanation": "Surface learning focuses on task completion and rote memorization, often without a deeper understanding of the material."
+        },
+        {
+            "question": "In surface learning, what is the relationship between new ideas and existing knowledge?",
+            "option_a": "A. Distinction between new ideas and existing knowledge",
+            "option_b": "B. No distinction between new ideas and existing knowledge",
+            "option_c": "C. Critical evaluation of all information",
+            "option_d": "D. Connection to real-world experience",
+            "correct_answer": "B",
+            "explanation": "Surface learning typically involves accepting new information without integrating or distinguishing it from what is already known."
+        },
+        {
+            "question": "What does deep learning involve?",
+            "option_a": "A. Facts learned without a meaningful framework",
+            "option_b": "B. Attempting to relate concepts to existing experience and distinguishing between new and existing knowledge",
+            "option_c": "C. Memorization without understanding",
+            "option_d": "D. Passive absorption of information",
+            "correct_answer": "B",
+            "explanation": "Deep learning is an active process where new concepts are connected to prior experience and knowledge, leading to a more meaningful understanding."
+        },
+        {
+            "question": "Surface learning results in ______, while deep learning results in ______.",
+            "option_a": "A. Understanding; Knowledge",
+            "option_b": "B. Knowledge; Understanding",
+            "option_c": "C. Skills; Theory",
+            "option_d": "D. Practice; Memory",
+            "correct_answer": "B",
+            "explanation": "Surface learning typically leads to the acquisition of isolated facts (knowledge), whereas deep learning fosters a comprehensive grasp of the subject (understanding)."
+        },
+        {
+            "question": "How many levels are in the Achievement of Expertise framework?",
+            "option_a": "A. 3 levels",
+            "option_b": "B. 4 levels",
+            "option_c": "C. 5 levels",
+            "option_d": "D. 6 levels",
+            "correct_answer": "C",
+            "explanation": "According to the document, the framework for the achievement of expertise has five distinct levels."
+        },
+        {
+            "question": "What characterizes the Novice stage (Level 1) of expertise?",
+            "option_a": "A. Deep implicit understanding",
+            "option_b": "B. Adherence to taught rules, little discretionary judgment",
+            "option_c": "C. Ability to differentiate between situations",
+            "option_d": "D. Mastery of routine procedures",
+            "correct_answer": "B",
+            "explanation": "A novice relies heavily on learned rules and has limited ability to use personal judgment or adapt to different contexts."
+        },
+        {
+            "question": "What is a key characteristic of an Advanced Beginner (Level 2)?",
+            "option_a": "A. All aspects and attributes are given equal importance",
+            "option_b": "B. Deep unconscious understanding exists",
+            "option_c": "C. One can differentiate between all aspects",
+            "option_d": "D. Expert-level decisions are made",
+            "correct_answer": "A",
+            "explanation": "At the advanced beginner stage, learners start to recognize aspects of a situation but may treat all of them with equal weight, not yet knowing what is most important."
+        },
+        {
+            "question": "Which statement best describes a Competent Practitioner (Level 3)?",
+            "option_a": "A. Still following all rules without judgment",
+            "option_b": "B. Able to perform routine procedures",
+            "option_c": "C. At the highest level of expertise",
+            "option_d": "D. Unable to handle complex situations",
+            "correct_answer": "B",
+            "explanation": "A competent practitioner can effectively handle and perform routine procedures and tasks."
+        },
+        {
+            "question": "What is a key attribute of an Expert Practitioner (Level 5)?",
+            "option_a": "A. Adherence to strict rules",
+            "option_b": "B. Deep, implicit and unconscious understanding",
+            "option_c": "C. Need for constant supervision",
+            "option_d": "D. Basic procedural knowledge",
+            "correct_answer": "B",
+            "explanation": "An expert operates from a place of deep, intuitive understanding, often performing actions fluidly without needing to consciously recall rules."
+        },
+        {
+            "question": "What are the two main models of reflective practice discussed in the lecture?",
+            "option_a": "A. Gibbs Model and DATA Model",
+            "option_b": "B. SWOT and PDP",
+            "option_c": "C. Johari Window and Values Test",
+            "option_d": "D. Surface and Deep Learning Models",
+            "correct_answer": "A",
+            "explanation": "The lecture specifically covers Gibbs' Reflective Cycle and the DATA model as frameworks for reflective practice."
+        },
+        {
+            "question": "In Gibbs' Reflective Cycle, at which stage is the question 'What happened?' asked?",
+            "option_a": "A. Feelings",
+            "option_b": "B. Description",
+            "option_c": "C. Evaluation",
+            "option_d": "D. Action Plan",
+            "correct_answer": "B",
+            "explanation": "The 'Description' stage of Gibbs' model is focused on objectively outlining the events of the situation, answering 'What happened?'."
+        },
+        {
+            "question": "In Gibbs' model, which stage addresses the question, 'What were you feeling during the situation?'",
+            "option_a": "A. Description",
+            "option_b": "B. Feelings",
+            "option_c": "C. Evaluation",
+            "option_d": "D. Analysis",
+            "correct_answer": "B",
+            "explanation": "The 'Feelings' stage is specifically dedicated to exploring the emotional responses and thoughts experienced during the event."
+        },
+        {
+            "question": "In Gibbs' Reflective Cycle, the question 'What sense can I make of the situation?' is part of which stage?",
+            "option_a": "A. Description",
+            "option_b": "B. Feelings",
+            "option_c": "C. Analysis",
+            "option_d": "D. Conclusion",
+            "correct_answer": "C",
+            "explanation": "The 'Analysis' stage is where you delve deeper to understand the factors at play and make sense of what happened."
+        },
+        {
+            "question": "What does the DATA model stand for?",
+            "option_a": "A. Design, Analyze, Test, Act",
+            "option_b": "B. Describe, Analyse, Theorie, Act",
+            "option_c": "C. Develop, Apply, Think, Assess",
+            "option_d": "D. Document, Analyze, Transform, Achieve",
+            "correct_answer": "B",
+            "explanation": "The DATA model is an acronym for the four stages of reflection it proposes: Describe, Analyse, Theorie, and Act."
+        },
+        {
+            "question": "In the DATA model, what does the 'Describe' stage refer to?",
+            "option_a": "A. Explaining the solution",
+            "option_b": "B. The area of practice which you feel needs improvement or change",
+            "option_c": "C. Documenting all events",
+            "option_d": "D. Writing a detailed report",
+            "correct_answer": "B",
+            "explanation": "The 'Describe' stage involves identifying and focusing on a specific aspect of your practice that you believe could be improved."
+        },
+        {
+            "question": "What is the focus of the 'Analyse' stage in the DATA model?",
+            "option_a": "A. Mathematical calculations",
+            "option_b": "B. The factors contributing to the problem area of practice",
+            "option_c": "C. Statistical analysis",
+            "option_d": "D. Comparing with others",
+            "correct_answer": "B",
+            "explanation": "In the 'Analyse' stage, you examine the various factors and reasons that contribute to the identified area needing improvement."
+        },
+        {
+            "question": "What does 'Act' mean in the context of the DATA model?",
+            "option_a": "A. Writing action plans only",
+            "option_b": "B. Trying out the new practice to see how it works",
+            "option_c": "C. Performing on stage",
+            "option_d": "D. Delegating tasks to others",
+            "correct_answer": "B",
+            "explanation": "The 'Act' stage is about implementing the planned change by putting the new approach into practice and observing its effect."
+        },
+        {
+            "question": "In the professional world, what is a Personal Development Plan also commonly called?",
+            "option_a": "A. Career plan",
+            "option_b": "B. Professional development plan",
+            "option_c": "C. Training plan",
+            "option_d": "D. Performance review",
+            "correct_answer": "B",
+            "explanation": "While related to career, in a professional context, a Personal Development Plan is often referred to as a Professional Development Plan."
+        },
+        {
+            "question": "How does a Personal Development Plan typically start?",
+            "option_a": "A. Writing a resume",
+            "option_b": "B. A goal or a gap analysis",
+            "option_c": "C. Taking assessments",
+            "option_d": "D. Interviewing for jobs",
+            "correct_answer": "B",
+            "explanation": "A PDP begins by identifying what you want to achieve (a goal) or where you need to improve (a gap in your skills or knowledge)."
+        },
+        {
+            "question": "What does SWOT Analysis stand for?",
+            "option_a": "A. Skills, Weaknesses, Opportunities, Talents",
+            "option_b": "B. Strengths, Weaknesses, Opportunities, Threats",
+            "option_c": "C. Success, Work, Organization, Teamwork",
+            "option_d": "D. Strategy, Willingness, Objectives, Training",
+            "correct_answer": "B",
+            "explanation": "SWOT is an acronym that stands for Strengths, Weaknesses, Opportunities, and Threats."
+        },
+        {
+            "question": "In a SWOT Analysis, what do S and W represent?",
+            "option_a": "A. External factors",
+            "option_b": "B. Internal factors",
+            "option_c": "C. Future factors",
+            "option_d": "D. Past factors",
+            "correct_answer": "B",
+            "explanation": "Strengths and Weaknesses are internal factors that originate from within the individual or organization."
+        },
+        {
+            "question": "In a SWOT Analysis, what do O and T represent?",
+            "option_a": "A. Internal factors",
+            "option_b": "B. External factors",
+            "option_c": "C. Personal characteristics",
+            "option_d": "D. Skills and abilities",
+            "correct_answer": "B",
+            "explanation": "Opportunities and Threats are external factors that exist in the wider environment."
+        },
+        {
+            "question": "In a SWOT Analysis, which components are considered FAVOURABLE?",
+            "option_a": "A. S and W",
+            "option_b": "B. S and O",
+            "option_c": "C. W and T",
+            "option_d": "D. O and T",
+            "correct_answer": "B",
+            "explanation": "Strengths (internal positives) and Opportunities (external positives) are the favorable components that can be leveraged for success."
+        },
+        {
+            "question": "In a SWOT Analysis, which components are considered UNFAVOURABLE?",
+            "option_a": "A. S and O",
+            "option_b": "B. W and T",
+            "option_c": "C. S and W",
+            "option_d": "D. O and T",
+            "correct_answer": "B",
+            "explanation": "Weaknesses (internal negatives) and Threats (external negatives) are the unfavorable components that pose challenges or risks."
+        },
+        {
+            "question": "When identifying your Strengths for a SWOT analysis, what should you consider?",
+            "option_a": "A. Only your own opinion",
+            "option_b": "B. What skills you possess, what you do well, and what others see as your strengths",
+            "option_c": "C. Only what others say",
+            "option_d": "D. Only academic achievements",
+            "correct_answer": "B",
+            "explanation": "A comprehensive view of strengths includes self-assessment of skills and achievements, as well as feedback and perceptions from others."
+        },
+        {
+            "question": "How are values defined in the document?",
+            "option_a": "A. Financial worth",
+            "option_b": "B. The principles that help you decide what is right and wrong and how to act in various situations",
+            "option_c": "C. Personal opinions",
+            "option_d": "D. Social status",
+            "correct_answer": "B",
+            "explanation": "Values are fundamental principles that serve as a guide for ethical decision-making and behavior in different situations."
+        },
+        {
+            "question": "Once internalized, what role does a value system play?",
+            "option_a": "A. Irrelevant to behavior",
+            "option_b": "B. A standard or criterion for guiding one's action, consciously or subconsciously",
+            "option_c": "C. Difficult to maintain",
+            "option_d": "D. Only applicable in personal life",
+            "correct_answer": "B",
+            "explanation": "An internalized value system becomes an integral part of a person, acting as a benchmark that influences their actions, whether they are aware of it or not."
+        },
+        {
+            "question": "What does the value 'Integrity' entail?",
+            "option_a": "A. Being wealthy",
+            "option_b": "B. Acting in accordance with strong moral and ethical principles; being honest, reliable, and consistent",
+            "option_c": "C. Being popular",
+            "option_d": "D. Being competitive",
+            "correct_answer": "B",
+            "explanation": "Integrity is about having a strong moral compass and consistently acting in an honest, reliable, and ethical manner."
+        },
+        {
+            "question": "What does the value 'Empathy' involve?",
+            "option_a": "A. Sympathy only",
+            "option_b": "B. Understanding and sharing the feelings of others; being able to put oneself in someone else's shoes",
+            "option_c": "C. Agreeing with everyone",
+            "option_d": "D. Avoiding conflict",
+            "correct_answer": "B",
+            "explanation": "Empathy is the ability to not only understand but also share and feel the emotions of another person from their perspective."
+        },
+        {
+            "question": "How is 'Honesty' defined as a value?",
+            "option_a": "A. Sometimes necessary",
+            "option_b": "B. Being truthful and sincere in words and actions, free from deceit and fraud",
+            "option_c": "C. Optional in professional settings",
+            "option_d": "D. Only important in personal relationships",
+            "correct_answer": "B",
+            "explanation": "Honesty is consistently being truthful and sincere, without any form of deception or fraud, in both words and actions."
+        },
+        {
+            "question": "What does 'Personal Development' as a value mean?",
+            "option_a": "A. Focusing only on career growth",
+            "option_b": "B. The ongoing process of self-improvement and self-awareness, guided by values",
+            "option_c": "C. Achieving academic degrees",
+            "option_d": "D. Earning promotions",
+            "correct_answer": "B",
+            "explanation": "Valuing personal development means committing to a continuous journey of improving oneself and increasing self-awareness, often informed by one's values."
+        },
+        {
+            "question": "According to the lecture, what is the significance of values?",
+            "option_a": "A. Never change",
+            "option_b": "B. Can shape us as human beings and determine how we are perceived by others",
+            "option_c": "C. Are the same for everyone",
+            "option_d": "D. Don't affect professional life",
+            "correct_answer": "B",
+            "explanation": "Values are fundamental in shaping an individual's character and actions, which in turn influences how others perceive them."
+        },
+        {
+            "question": "How are beliefs best described?",
+            "option_a": "A. Scientific facts",
+            "option_b": "B. Constructs that we hold to be true, especially one without proof",
+            "option_c": "C. Universal truths",
+            "option_d": "D. Religious views only",
+            "correct_answer": "B",
+            "explanation": "Beliefs are convictions or acceptances that something is true or exists, often not requiring empirical proof or evidence."
+        },
+        {
+            "question": "According to the Wikipedia definition cited, what is a belief?",
+            "option_a": "A. Always based on evidence",
+            "option_b": "B. The state of mind in which a person thinks something to be the case with or without empirical evidence",
+            "option_c": "C. Only about religion",
+            "option_d": "D. Based on scientific proof",
+            "correct_answer": "B",
+            "explanation": "The cited definition highlights that a belief is a psychological state of holding something to be true, which may or may not be supported by empirical evidence."
+        },
+        {
+            "question": "What does the video about Asian and Western dinner etiquette demonstrate?",
+            "option_a": "A. One culture is superior",
+            "option_b": "B. How beliefs shape customs and manners differently across cultures",
+            "option_c": "C. Everyone should follow the same etiquette",
+            "option_d": "D. Etiquette doesn't matter",
+            "correct_answer": "B",
+            "explanation": "The video is used as an example to show that differing cultural beliefs lead to the development of distinct and appropriate customs and manners."
+        },
+        {
+            "question": "What is an attitude?",
+            "option_a": "A. Personality type",
+            "option_b": "B. A mindset or tendency to act in a particular way due to both an individual's experience and temperament",
+            "option_c": "C. Intelligence level",
+            "option_d": "D. Educational background",
+            "correct_answer": "B",
+            "explanation": "Attitude is a learned predisposition to respond consistently in a favorable or unfavorable manner with respect to a given object, person, or situation."
+        },
+        {
+            "question": "What are the three components that an attitude includes?",
+            "option_a": "A. Past, present, future",
+            "option_b": "B. An affect (a feeling), cognition (a thought or belief), and behavior (an action)",
+            "option_c": "C. Internal, external, neutral",
+            "option_d": "D. Physical, mental, emotional",
+            "correct_answer": "B",
+            "explanation": "Attitudes are complex and comprise three elements: an emotional component (affect), a cognitive component (beliefs/thoughts), and a behavioral component (action)."
+        },
+        {
+            "question": "Although the feeling and belief components of an attitude are internal, how can we observe them?",
+            "option_a": "A. They cannot be measured",
+            "option_b": "B. We can view a person's attitude from his or her resulting behavior",
+            "option_c": "C. They are more important than behavior",
+            "option_d": "D. They don't affect others",
+            "correct_answer": "B",
+            "explanation": "While internal states are private, they manifest outwardly through a person's actions and behaviors, which provide a window into their attitude."
+        },
+        {
+            "question": "How are attitudes formed?",
+            "option_a": "A. Genetics only",
+            "option_b": "B. Genetics, socialization, and learning",
+            "option_c": "C. Environment only",
+            "option_d": "D. Personal choice only",
+            "correct_answer": "B",
+            "explanation": "Attitude formation is a complex process influenced by a combination of innate predispositions (genetics), interactions with others (socialization), and personal experiences (learning)."
+        },
+        {
+            "question": "How do individuals with a POSITIVE attitude typically behave?",
+            "option_a": "A. Ignore all problems",
+            "option_b": "B. Pay attention to the good, rather than bad in people, situations, and events",
+            "option_c": "C. Never face challenges",
+            "option_d": "D. Are unrealistic",
+            "correct_answer": "B",
+            "explanation": "A positive attitude involves an optimistic outlook that focuses on the favorable aspects of situations, people, and events, without ignoring the negative."
+        },
+        {
+            "question": "What characterizes people with a NEGATIVE attitude?",
+            "option_a": "A. See opportunities everywhere",
+            "option_b": "B. Ignore the good and pay attention to the bad in people, situations, and events",
+            "option_c": "C. Learn from all experiences",
+            "option_d": "D. Are always motivated",
+            "correct_answer": "B",
+            "explanation": "A negative attitude is characterized by a pessimistic focus, where one tends to overlook positive aspects and instead concentrate on the negative ones."
+        },
+        {
+            "question": "How is a positive attitude described?",
+            "option_a": "A. A pessimistic mindset",
+            "option_b": "B. An optimistic approach where a person believes everything happens for the best in the end",
+            "option_c": "C. Ignoring reality",
+            "option_d": "D. Being passive",
+            "correct_answer": "B",
+            "explanation": "A positive attitude is an optimistic outlook that involves maintaining hope and expecting favorable outcomes, even in challenging situations."
+        },
+        {
+            "question": "A positive attitude is a process of:",
+            "option_a": "A. Looking for problems",
+            "option_b": "B. Solving problems",
+            "option_c": "C. Avoiding all difficulties",
+            "option_d": "D. Ignoring weaknesses",
+            "correct_answer": "B",
+            "explanation": "A positive attitude is not about denying problems but about proactively engaging with them and seeking solutions."
+        },
+        {
+            "question": "What is character?",
+            "option_a": "A. Personality type",
+            "option_b": "B. A group of qualities that make a person, group, or thing different from others",
+            "option_c": "C. Physical appearance",
+            "option_d": "D. Social status",
+            "correct_answer": "B",
+            "explanation": "Character refers to the distinctive mental and moral qualities that are inherent to an individual, defining who they are."
+        },
+        {
+            "question": "What is the definition of 'Good character' provided?",
+            "option_a": "A. Being wealthy and successful",
+            "option_b": "B. Knowing the good, desiring the good, and doing the good (the head, the heart, the hand)",
+            "option_c": "C. Being popular",
+            "option_d": "D. Having many achievements",
+            "correct_answer": "B",
+            "explanation": "Good character is portrayed as a holistic integration of moral understanding (head), emotional commitment (heart), and consistent action (hand)."
+        },
+        {
+            "question": "What does good character involve?",
+            "option_a": "A. Only thinking about ethics",
+            "option_b": "B. Understanding, caring about, and acting on core ethical values such as honesty, responsibility, respect, hard work, and caring for others",
+            "option_c": "C. Following rules blindly",
+            "option_d": "D. Avoiding difficult decisions",
+            "correct_answer": "B",
+            "explanation": "Good character is active and practical, involving a deep comprehension of, emotional connection to, and behavioral enactment of key ethical values."
+        },
+        {
+            "question": "According to the lecture, your values shape your:",
+            "option_a": "A. Appearance",
+            "option_b": "B. Beliefs",
+            "option_c": "C. Financial status",
+            "option_d": "D. Educational level",
+            "correct_answer": "B",
+            "explanation": "The lecture suggests that your values, which are core principles, are foundational and subsequently influence and shape your beliefs."
+        },
+        {
+            "question": "What is the sequence of character development according to the lecture?",
+            "option_a": "A. Habits → Attitudes → Character",
+            "option_b": "B. Values → Beliefs → Attitudes → Behaviors → Habits → Character → Destiny",
+            "option_c": "C. Character → Values → Destiny",
+            "option_d": "D. Destiny → Character → Values",
+            "correct_answer": "B",
+            "explanation": "The lecture outlines a developmental chain where values form beliefs, which shape attitudes, leading to behaviors, which become habits, ultimately forging character and influencing destiny."
+        },
+        {
+            "question": "Who developed the Johari Window?",
+            "option_a": "A. Sigmund Freud",
+            "option_b": "B. Joseph Luft and Harrington Ingham in 1955",
+            "option_c": "C. Carl Jung",
+            "option_d": "D. Abraham Maslow",
+            "correct_answer": "B",
+            "explanation": "The Johari Window was created by American psychologists Joseph Luft and Harrington Ingham in 1955."
+        },
+        {
+            "question": "What is the Johari Window?",
+            "option_a": "A. A time management tool",
+            "option_b": "B. A graphic model of awareness in interpersonal relations",
+            "option_c": "C. A personality test",
+            "option_d": "D. A goal-setting framework",
+            "correct_answer": "B",
+            "explanation": "The Johari Window is a visual framework designed to help people understand their relationship with themselves and others by illustrating known/unknown areas of the self."
+        },
+        {
+            "question": "How many adjectives are used in the Johari Window to describe the participant?",
+            "option_a": "A. 25 adjectives",
+            "option_b": "B. 45 adjectives",
+            "option_c": "C. 55 adjectives",
+            "option_d": "D. 65 adjectives",
+            "correct_answer": "C",
+            "explanation": "According to the answer key, the Johari Window exercise uses 55 adjectives for participants to select from when describing themselves and receiving feedback from others."
+        }
+    ]
+}

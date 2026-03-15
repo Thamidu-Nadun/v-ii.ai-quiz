@@ -1,0 +1,175 @@
+{
+    "questions": [
+        {
+            "question": "According to the lecture, what is the definition of reflection in the context of professional development?",
+            "option_a": "A. Simply having an experience without analyzing it",
+            "option_b": "B. The purposive, deliberate revisiting of an experience to explore and extract the learning offered by the experience",
+            "option_c": "C. A casual conversation about daily activities",
+            "option_d": "D. Following instructions without questioning",
+            "correct_answer": "B",
+            "explanation": "The lecture slides explicitly define reflection as 'the purposive, deliberate revisiting of an experience, to explore and extract the learning offered by the experience.'"
+        },
+        {
+            "question": "What are the three components of attitude according to the lecture?",
+            "option_a": "A. Thoughts, feelings, and memories",
+            "option_b": "B. An affect (feeling), cognition (thought/belief), and behavior (action)",
+            "option_c": "C. Values, beliefs, and character",
+            "option_d": "D. Past, present, and future",
+            "correct_answer": "B",
+            "explanation": "Slide 30 states that an attitude includes three components: an affect (a feeling), cognition (a thought or belief), and behavior (an action)."
+        },
+        {
+            "question": "According to the lecture, what are values?",
+            "option_a": "A. Temporary preferences that change daily",
+            "option_b": "B. The principles that help you to decide what is right and wrong, and how to act in various situations",
+            "option_c": "C. Technical skills you possess",
+            "option_d": "D. Your salary expectations",
+            "correct_answer": "B",
+            "explanation": "Slide 17 defines values as 'the principles that help you to decide what is right and wrong, and how to act in various situations,' as per the Oxford Dictionary."
+        },
+        {
+            "question": "All of the following are levels in the Achievement of Expertise model EXCEPT:",
+            "option_a": "A. Novice stage",
+            "option_b": "B. Advanced Beginner",
+            "option_c": "C. Master Instructor",
+            "option_d": "D. Expert Practitioner",
+            "correct_answer": "C",
+            "explanation": "The Achievement of Expertise model lists Novice, Advanced Beginner, Competent Practitioner, Proficient Practitioner, and Expert Practitioner. 'Master Instructor' is not one of the levels."
+        },
+        {
+            "question": "Which of the following is NOT a stage in the Gibbs Reflective Cycle as shown in the lecture?",
+            "option_a": "A. Description",
+            "option_b": "B. Theorize",
+            "option_c": "C. Action Plan",
+            "option_d": "D. Feelings",
+            "correct_answer": "B",
+            "explanation": "The Gibbs cycle includes Description, Feelings, Evaluation, Analysis, Conclusion, and Action Plan. 'Theorize' is a stage in the DATA model, not Gibbs."
+        },
+        {
+            "question": "According to the lecture, which of the following is NOT listed as a value in the provided values list?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Popularity",
+            "option_c": "C. Financial Security",
+            "option_d": "D. Adventure",
+            "correct_answer": "B",
+            "explanation": "The values list includes Integrity, Financial Security, Gratitude, and Adventure, but 'Popularity' is not mentioned as a value."
+        },
+        {
+            "question": "According to John C. Maxwell, 'Reflection turns experience into ______.'",
+            "option_a": "A. knowledge",
+            "option_b": "B. insight",
+            "option_c": "C. money",
+            "option_d": "D. success",
+            "correct_answer": "B",
+            "explanation": "The opening slide of the lecture quotes John C. Maxwell stating, 'Reflection turns experience into insight.'"
+        },
+        {
+            "question": "The DATA model of reflective practice consists of four stages: Describe, Analyse, Theorie, and ______.",
+            "option_a": "A. Assess",
+            "option_b": "B. Act",
+            "option_c": "C. Adjust",
+            "option_d": "D. Apply",
+            "correct_answer": "B",
+            "explanation": "Slide 10 outlines the DATA model's sequence as Describe, Analyse, Theorie, and Act."
+        },
+        {
+            "question": "A first-year student strictly follows all the rules taught in their programming class without making any independent judgments. According to the Achievement of Expertise model, which level are they at?",
+            "option_a": "A. Advanced Beginner",
+            "option_b": "B. Competent Practitioner",
+            "option_c": "C. Novice stage",
+            "option_d": "D. Proficient Practitioner",
+            "correct_answer": "C",
+            "explanation": "The Novice stage is defined by 'adherence to taught rules, little discretionary judgment,' which precisely matches the student's behavior."
+        },
+        {
+            "question": "A software engineer can now perform routine procedures independently but still struggles with novel situations. Which level of the Achievement of Expertise model does this describe?",
+            "option_a": "A. Novice stage",
+            "option_b": "B. Advanced Beginner",
+            "option_c": "C. Competent Practitioner",
+            "option_d": "D. Expert Practitioner",
+            "correct_answer": "C",
+            "explanation": "The Competent Practitioner is defined as being 'able to perform routine procedures,' which matches the engineer's capability."
+        },
+        {
+            "question": "What is the primary difference between the Gibbs Reflective Cycle and the DATA model as presented in the lecture?",
+            "option_a": "A. Gibbs focuses on feelings while DATA ignores them completely.",
+            "option_b": "B. Gibbs is for individuals while DATA is for teams.",
+            "option_c": "C. Gibbs has 6 stages while DATA has 4 stages.",
+            "option_d": "D. There is no difference; they are the same model.",
+            "correct_answer": "C",
+            "explanation": "Slide 9 shows Gibbs with 6 stages, while Slide 10 shows the DATA model with 4 stages, making this the primary structural difference."
+        },
+        {
+            "question": "What is the difference between values and beliefs according to the lecture?",
+            "option_a": "A. Values are temporary while beliefs are permanent.",
+            "option_b": "B. Values are about right and wrong guiding action, while beliefs are constructs we hold to be true with or without proof.",
+            "option_c": "C. Values come from society while beliefs come from family.",
+            "option_d": "D. There is no difference.",
+            "correct_answer": "B",
+            "explanation": "Values are defined as principles of right/wrong that guide action, while beliefs are defined as constructs we hold to be true, often without proof."
+        },
+        {
+            "question": "Priya has just completed a group project that went poorly. She sits down and writes about what happened, why it happened, what she was feeling during the conflicts, and what she could have done differently. Which stage of the Gibbs Reflective Cycle is she primarily engaged in?",
+            "option_a": "A. Description only",
+            "option_b": "B. Analysis only",
+            "option_c": "C. The entire cycle",
+            "option_d": "D. Action Plan only",
+            "correct_answer": "C",
+            "explanation": "Her reflection covers all Gibbs stages: describing the event, her feelings, evaluating what went wrong, analyzing why, and concluding on what to do next."
+        },
+        {
+            "question": "During a team meeting, Sarah notices that her colleague John becomes visibly angry whenever someone suggests changes to his code. Based on the attitude model, what is being observed here?",
+            "option_a": "A. The cognitive component only",
+            "option_b": "B. The value system only",
+            "option_c": "C. The genetic basis of attitude",
+            "option_d": "D. The affective component through observable behavior",
+            "correct_answer": "D",
+            "explanation": "John's anger is an internal feeling (affective component), which Sarah observes through his visible behavior, as described in the attitude model."
+        },
+        {
+            "question": "According to the lecture, which part of the SWOT analysis deals with internal factors that are favorable and help you achieve your goals?",
+            "option_a": "A. Strengths",
+            "option_b": "B. Weaknesses",
+            "option_c": "C. Opportunities",
+            "option_d": "D. Threats",
+            "correct_answer": "A",
+            "explanation": "SWOT Analysis identifies Strengths and Weaknesses as internal factors, with Strengths being the positive, favorable internal factors."
+        },
+        {
+            "question": "In the Johari Window model, which quadrant represents information that is known to others but not known to yourself?",
+            "option_a": "A. Open Area (Arena)",
+            "option_b": "B. Hidden Area (Façade)",
+            "option_c": "C. Blind Area (Blind Spot)",
+            "option_d": "D. Unknown Area",
+            "correct_answer": "C",
+            "explanation": "The Blind Spot or Blind Area in the Johari Window represents information that others know about you but you do not know about yourself."
+        },
+        {
+            "question": "Michael consistently delivers his work on time, admits when he makes mistakes, and ensures his code is well-documented for his teammates. Which value from the lecture's list is Michael primarily demonstrating?",
+            "option_a": "A. Adventure",
+            "option_b": "B. Responsibility",
+            "option_c": "C. Freedom",
+            "option_d": "D. Creativity",
+            "correct_answer": "B",
+            "explanation": "Michael's actions of delivering on time and admitting mistakes directly reflect the value of Responsibility, which is about taking ownership and accountability."
+        },
+        {
+            "question": "According to the lecture's explanation of the Attitude Model, which of the following is NOT mentioned as a factor that influences the three components of attitude?",
+            "option_a": "A. Genetics",
+            "option_b": "B. Socialization",
+            "option_c": "C. Weather patterns",
+            "option_d": "D. Observable learning",
+            "correct_answer": "C",
+            "explanation": "Genetics, socialization, and observable learning are mentioned as influences, while weather patterns are not discussed as a factor influencing attitude."
+        },
+        {
+            "question": "According to the concluding remarks, 'We hire individuals with good values and attitudes, because with those qualities, developing their ______ is a simple task.'",
+            "option_a": "A. character",
+            "option_b": "B. technical skills",
+            "option_c": "C. network",
+            "option_d": "D. beliefs",
+            "correct_answer": "B",
+            "explanation": "The lecture concludes with an industry quote stating that with good values and attitudes, developing a person's 'technical skills is a simple task.'"
+        }
+    ]
+}

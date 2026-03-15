@@ -1,0 +1,211 @@
+{
+    "questions": [
+        {
+            "question": "Based on the provided document, what is the best definition of Personal Development Planning (PDP)?",
+            "option_a": "A. A university requirement for passing a module.",
+            "option_b": "B. A method to guarantee a higher salary and promotion.",
+            "option_c": "C. A process of improving oneself through conscious habits and activities.",
+            "option_d": "D. A short-term goal-setting exercise for completing assignments.",
+            "correct_answer": "C",
+            "explanation": "The document defines PDP as 'a process of improving oneself through conscious habits and activities,' which is a holistic and accurate definition."
+        },
+        {
+            "question": "According to the lecture content in the document, why is Personal Development Planning necessary in the modern professional world?",
+            "option_a": "A. Because universities require it for graduation.",
+            "option_b": "B. Because the industry is rapidly changing, and without development, one risks becoming obsolete.",
+            "option_c": "C. Primarily because it is an impressive addition to a resume.",
+            "option_d": "D. Because employers universally demand it as a hiring condition.",
+            "correct_answer": "B",
+            "explanation": "The document states that PDP is necessary because the 'industry is rapidly changing; if we don't change/develop we will become obsolete.'"
+        },
+        {
+            "question": "Who is identified in the lecture as having the primary responsibility for an individual's personal development?",
+            "option_a": "A. The university or educational institution.",
+            "option_b": "B. The current or prospective employer.",
+            "option_c": "C. The individual themselves.",
+            "option_d": "D. A government-appointed career advisor.",
+            "correct_answer": "C",
+            "explanation": "The document explicitly states that 'the individual themselves' has the primary responsibility for their own personal development."
+        },
+        {
+            "question": "The quote 'The only journey is the journey within' is used in the document to emphasize what concept?",
+            "option_a": "A. That physical travel and external experiences are unimportant.",
+            "option_b": "B. That self-reflection and internal growth are essential components of development.",
+            "option_c": "C. That a person must isolate themselves from society to grow.",
+            "option_d": "D. That external achievements should be ignored in favor of meditation.",
+            "correct_answer": "B",
+            "explanation": "The document interprets this quote as emphasizing that 'self-reflection and internal growth are essential' for personal development."
+        },
+        {
+            "question": "According to the document, what are the two key processes that drive Personal Development Planning?",
+            "option_a": "A. Reading and writing.",
+            "option_b": "B. Reflecting and planning.",
+            "option_c": "C. Studying and memorizing.",
+            "option_d": "D. Presenting and evaluating.",
+            "correct_answer": "B",
+            "explanation": "The document identifies 'reflecting and planning' as the two key processes that drive the PDP cycle."
+        },
+        {
+            "question": "In the context of PDP as described in the document, what does 'reflecting' primarily involve?",
+            "option_a": "A. Looking at oneself in a mirror to assess appearance.",
+            "option_b": "B. Thinking about how past skills were gained and the reasons for successes and failures.",
+            "option_c": "C. Comparing one's achievements and failures with those of peers.",
+            "option_d": "D. Creating a strict plan to avoid making any future mistakes.",
+            "correct_answer": "B",
+            "explanation": "The document defines reflecting in PDP as 'thinking about how past skills were gained and reasons for successes and failures.'"
+        },
+        {
+            "question": "What is the main message of 'The Rebirth of the Eagle' story as it is presented in the document?",
+            "option_a": "A. Eagles are among the most powerful and long-lived birds in nature.",
+            "option_b": "B. Change and transformation, though sometimes painful, are necessary for survival and continued growth.",
+            "option_c": "C. The natural world is unpredictable and requires constant adaptation.",
+            "option_d": "D. Physical strength is the most important attribute for overcoming obstacles.",
+            "correct_answer": "B",
+            "explanation": "The document states the story's main message is that 'change and transformation are necessary for survival and growth.'"
+        },
+        {
+            "question": "In the penguin metaphor from the document, what do the 'mountains' symbolize?",
+            "option_a": "A. Obstacles that are too difficult to overcome and should be avoided.",
+            "option_b": "B. The unconventional path, personal purpose, calling, and self-discovery.",
+            "option_c": "C. Goals that are admirable but ultimately impossible to achieve.",
+            "option_d": "D. Physical challenges that test one's endurance and strength.",
+            "correct_answer": "B",
+            "explanation": "The document explicitly states that the mountains symbolize 'the unconventional path, purpose, personal calling, and self-discovery.'"
+        },
+        {
+            "question": "In the penguin story, what is the significant moment that illustrates the struggle between expectation and personal calling?",
+            "option_a": "A. When the penguin successfully reaches the feeding grounds.",
+            "option_b": "B. When the penguin returns safely to the colony.",
+            "option_c": "C. When the penguin neither goes to the feeding grounds nor returns to the colony, but heads for the mountains.",
+            "option_d": "D. When the other penguins question the lone penguin by asking, 'But why?'",
+            "correct_answer": "C",
+            "explanation": "The document identifies the pivotal moment as when the penguin chooses the mountains, symbolizing the choice of an unconventional, purpose-driven path."
+        },
+        {
+            "question": "The question 'But why?' in the penguin story is said to represent what?",
+            "option_a": "A. A genuine and curious request for scientific information.",
+            "option_b": "B. Society's questioning and challenging of those who choose unconventional life paths.",
+            "option_c": "C. The penguin's own internal confusion about its direction.",
+            "option_d": "D. A form of constructive criticism meant to be helpful.",
+            "correct_answer": "B",
+            "explanation": "The document explains that the question 'But why?' represents 'society's questioning of those who choose unconventional paths.'"
+        },
+        {
+            "question": "How is 'self-awareness' defined in the document?",
+            "option_a": "A. Having a clear understanding of what others think about you.",
+            "option_b": "B. The ability to see yourself clearly and objectively through reflection and introspection.",
+            "option_c": "C. Being confident in your own abilities and judgments.",
+            "option_d": "D. A thorough understanding of your specific role and responsibilities in a job.",
+            "correct_answer": "B",
+            "explanation": "The document defines self-awareness as 'the ability to see yourself clearly and objectively through reflection and introspection.'"
+        },
+        {
+            "question": "Which ancient Greek philosopher is credited in the document with the aphorism 'Know thyself'?",
+            "option_a": "A. Aristotle.",
+            "option_b": "B. Plato.",
+            "option_c": "C. Socrates.",
+            "option_d": "D. Laozi.",
+            "correct_answer": "C",
+            "explanation": "The document attributes the saying 'Know thyself' to the philosopher Socrates."
+        },
+        {
+            "question": "According to the document, why can human behavior not be fully understood through physical or biological science alone?",
+            "option_a": "A. Because human beings are too biologically complex for current science to explain.",
+            "option_b": "B. Because human behavior involves social and psychological dimensions that go beyond mere physical composition.",
+            "option_c": "C. Because the scientific method is incomplete and cannot be applied to humans.",
+            "option_d": "D. Because human behavior is fundamentally random and unpredictable.",
+            "correct_answer": "B",
+            "explanation": "The document states that this is because 'human behavior involves social and psychological dimensions beyond physical composition.'"
+        },
+        {
+            "question": "The word 'cognitive' is derived from the Latin 'cognito'. What does it mean?",
+            "option_a": "A. To remember or recall information.",
+            "option_b": "B. To think critically and logically.",
+            "option_c": "C. To apprehend, understand, or know.",
+            "option_d": "D. To learn through experience.",
+            "correct_answer": "C",
+            "explanation": "The document states that 'cognito' is a Latin word which means 'to apprehend or understand.'"
+        },
+        {
+            "question": "What is the definition of 'cognition' as provided in the document?",
+            "option_a": "A. A person's intelligence quotient, or IQ score.",
+            "option_b": "B. A general term including all mental processes by which people become aware of and understand the world.",
+            "option_c": "C. The capacity of a person's short-term and long-term memory.",
+            "option_d": "D. The speed at which an individual can learn new information or skills.",
+            "correct_answer": "B",
+            "explanation": "The document defines cognition as 'a general term including all mental processes by which people become aware of and understand the world.'"
+        },
+        {
+            "question": "According to the document, which of the following is explicitly listed as one of the five core aspects of self-awareness?",
+            "option_a": "A. Physical fitness and well-being.",
+            "option_b": "B. Core self-evaluation (underlying personality).",
+            "option_c": "C. Technical knowledge and expertise.",
+            "option_d": "D. Financial status and literacy.",
+            "correct_answer": "B",
+            "explanation": "The document lists 'Core self-evaluation (underlying personality)' as one of the five core aspects of self-awareness."
+        },
+        {
+            "question": "In the document's five-stage model of personal development, what is identified as the first stage?",
+            "option_a": "A. Planning your future and setting long-term goals.",
+            "option_b": "B. Understanding oneself by identifying your skills, qualities, and attributes.",
+            "option_c": "C. Taking action to implement your development plan.",
+            "option_d": "D. Assessing the progress you have made in your journey.",
+            "correct_answer": "B",
+            "explanation": "The document clearly states that the first stage is 'Understanding oneself (identifying your skills, qualities, attributes and style).'"
+        },
+        {
+            "question": "In the PDP Framework diagram, which question does the 'Action Planning' stage primarily address?",
+            "option_a": "A. Where am I now?",
+            "option_b": "B. Where do I want to go?",
+            "option_c": "C. How will I get there?",
+            "option_d": "D. What did I achieve?",
+            "correct_answer": "C",
+            "explanation": "The document maps the 'Action Planning' stage to the question, 'How will I get there?'"
+        },
+        {
+            "question": "What is the purpose of a 'SWOT Analysis' within the PDP framework described in the document?",
+            "option_a": "A. To list only the strengths one possesses.",
+            "option_b": "B. To identify only the weaknesses that need to be improved.",
+            "option_c": "C. To identify internal and external factors that can help or obstruct development.",
+            "option_d": "D. To create a detailed action plan for the future.",
+            "correct_answer": "C",
+            "explanation": "The document states that a SWOT Analysis helps identify 'what helps or obstructs me,' referring to internal Strengths and Weaknesses, and external Opportunities and Threats."
+        },
+        {
+            "question": "In the context of the PDP framework, what does a 'Skill Audit' help an individual determine?",
+            "option_a": "A. The specific action steps they need to take.",
+            "option_b": "B. The gap between the skills they currently have and the skills they need.",
+            "option_c": "C. Their overall progress in the development cycle.",
+            "option_d": "D. A realistic timeline for achieving their goals.",
+            "correct_answer": "B",
+            "explanation": "The document indicates that a 'Skill Audit' asks, 'What skills do I have vs. need?', helping to identify the development gap."
+        },
+        {
+            "question": "According to the document, what does the acronym SMART stand for in the context of goal setting?",
+            "option_a": "A. Simple, Manageable, Achievable, Realistic, Timely.",
+            "option_b": "B. Strategic, Meaningful, Action-oriented, Relevant, Trackable.",
+            "option_c": "C. Specific, Measurable, Achievable, Relevant, Time-bound.",
+            "option_d": "D. Structured, Monitored, Assessed, Reviewed, Tested.",
+            "correct_answer": "C",
+            "explanation": "The document defines SMART goals as those that are 'Specific, Measurable, Achievable, Relevant, Time-bound.'"
+        },
+        {
+            "question": "The document describes the Personal Development stages as forming what kind of process?",
+            "option_a": "A. A linear, one-time process with a clear start and finish.",
+            "option_b": "B. A cyclical, continuous process of ongoing improvement.",
+            "option_c": "C. A rigid structure with unchangeable steps.",
+            "option_d": "D. An optional framework that is not essential for success.",
+            "correct_answer": "B",
+            "explanation": "The document states that the stages form 'a cyclical, continuous process of improvement,' emphasizing its iterative nature."
+        },
+        {
+            "question": "What is stated as the ultimate goal of Personal Development Planning (PDP)?",
+            "option_a": "A. To achieve high grades and complete all academic assignments successfully.",
+            "option_b": "B. To become industry-ready, professionally mature, and committed to continuous improvement.",
+            "option_c": "C. To satisfy the requirements of a university module or degree program.",
+            "option_d": "D. To create a comprehensive portfolio of one's academic work and achievements.",
+            "correct_answer": "B",
+            "explanation": "The document explicitly states the ultimate goal is to 'become industry-ready, professionally mature, and continuously improving.'"
+        }
+    ]
+}

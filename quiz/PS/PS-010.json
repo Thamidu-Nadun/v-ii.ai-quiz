@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "A team is best defined as:",
+            "option_a": "A. A group of individuals performing separate tasks independently",
+            "option_b": "B. A group of people working together toward a common goal",
+            "option_c": "C. Individuals sharing similar personalities",
+            "option_d": "D. A set of employees assigned to a department",
+            "correct_answer": "B",
+            "explanation": "A team is fundamentally defined by its collaborative effort towards a shared, common objective, distinguishing it from a simple group or department."
+        },
+        {
+            "question": "According to Professor Leigh Thompson, a team is characterized by:",
+            "option_a": "A. Individual independence in decision making",
+            "option_b": "B. Interdependence of information, skills, and resources",
+            "option_c": "C. Similar professional backgrounds",
+            "option_d": "D. Equal authority among members",
+            "correct_answer": "B",
+            "explanation": "Professor Thompson highlights that the defining feature of a team is the interdependence among its members, meaning they rely on each other's information, skills, and resources to achieve goals."
+        },
+        {
+            "question": "The primary difference between a working group and a team is that:",
+            "option_a": "A. Teams do not require collaboration",
+            "option_b": "B. Groups emphasize collective work products",
+            "option_c": "C. Teams produce both individual results and collective work products",
+            "option_d": "D. Groups have stronger communication structures",
+            "correct_answer": "C",
+            "explanation": "While working groups focus on individual contributions, a team is distinguished by its production of collective work products that require joint effort, in addition to individual results."
+        },
+        {
+            "question": "Which of the following best describes collective work products?",
+            "option_a": "A. The sum of individual work completed separately",
+            "option_b": "B. Tasks that are delegated to one person",
+            "option_c": "C. The outcome of members working together interdependently",
+            "option_d": "D. A manager's summary of team progress",
+            "correct_answer": "C",
+            "explanation": "Collective work products are the results of a team's interdependent effort, where members collaborate and combine their contributions to create something they couldn't achieve alone."
+        },
+        {
+            "question": "Teams can vary in size depending on purpose. A large team generally consists of:",
+            "option_a": "A. 2-5 members",
+            "option_b": "B. 10-15 members",
+            "option_c": "C. 20-30 members",
+            "option_d": "D. More than 50 members",
+            "correct_answer": "B",
+            "explanation": "Based on the document, a large team typically falls within the range of 10-15 members, which is larger than a small team but smaller than an entire department or organization."
+        },
+        {
+            "question": "A short-term team is typically formed for:",
+            "option_a": "A. Organizational restructuring",
+            "option_b": "B. A temporary project or event",
+            "option_c": "C. Permanent departmental operations",
+            "option_d": "D. Strategic long-term planning",
+            "correct_answer": "B",
+            "explanation": "Short-term teams, also known as task forces or project teams, are specifically created to accomplish a temporary project or event and disband once the objective is met."
+        },
+        {
+            "question": "According to Bruce Tuckman's model, the first stage of team development is:",
+            "option_a": "A. Storming",
+            "option_b": "B. Norming",
+            "option_c": "C. Forming",
+            "option_d": "D. Performing",
+            "correct_answer": "C",
+            "explanation": "Tuckman's model begins with the 'Forming' stage, where team members are just getting to know each other and understanding the team's purpose, with little actual work on the task itself."
+        },
+        {
+            "question": "During the storming stage, team members typically:",
+            "option_a": "A. Demonstrate strong collaboration",
+            "option_b": "B. Experience conflict over roles and responsibilities",
+            "option_c": "C. Accept group norms",
+            "option_d": "D. Work with high productivity",
+            "correct_answer": "B",
+            "explanation": "The storming stage is characterized by conflict and competition as members assert their ideas and jockey for position, which is a natural part of team development."
+        },
+        {
+            "question": "The norming stage occurs when team members:",
+            "option_a": "A. Begin competing for authority",
+            "option_b": "B. Accept group norms and cooperate effectively",
+            "option_c": "C. Focus only on individual goals",
+            "option_d": "D. Dissolve the team",
+            "correct_answer": "B",
+            "explanation": "During norming, the team resolves its earlier conflicts and establishes norms. Members begin to accept their roles, cooperate, and work together more cohesively."
+        },
+        {
+            "question": "The performing stage is characterized by:",
+            "option_a": "A. Conflict and disagreements",
+            "option_b": "B. Role confusion",
+            "option_c": "C. High productivity and collaboration",
+            "option_d": "D. Lack of communication",
+            "correct_answer": "C",
+            "explanation": "In the performing stage, the team has matured and is highly effective. Members are motivated, collaborative, and focused on achieving the team's goals with high productivity."
+        },
+        {
+            "question": "The final stage of Tuckman's model, adjourning, involves:",
+            "option_a": "A. Establishing group rules",
+            "option_b": "B. Completing tasks and dissolving the team",
+            "option_c": "C. Developing leadership skills",
+            "option_d": "D. Resolving internal conflicts",
+            "correct_answer": "B",
+            "explanation": "The adjourning stage marks the end of the team's life cycle. It occurs when the project is completed, and the team is disbanded after its purpose has been fulfilled."
+        },
+        {
+            "question": "A team role, according to Meredith Belbin, refers to:",
+            "option_a": "A. An assigned leadership position",
+            "option_b": "B. A formal job title",
+            "option_c": "C. A pattern of behavior characteristic of how a person contributes",
+            "option_d": "D. A member's seniority in the organization",
+            "correct_answer": "C",
+            "explanation": "Belbin's team role theory describes how individuals behave, contribute, and interact with others in a team. It is about their natural tendencies, not their formal job title or position."
+        },
+        {
+            "question": "Formal roles within teams are primarily:",
+            "option_a": "A. Created by team members spontaneously",
+            "option_b": "B. Dictated by organizational structure",
+            "option_c": "C. Developed during conflicts",
+            "option_d": "D. Assigned randomly",
+            "correct_answer": "B",
+            "explanation": "Formal roles, such as 'Project Manager' or 'Team Lead,' are officially defined by the organization's structure and hierarchy to establish authority and clear responsibilities."
+        },
+        {
+            "question": "Informal roles usually emerge due to:",
+            "option_a": "A. Organizational policies",
+            "option_b": "B. Group dynamics and interactions",
+            "option_c": "C. Leadership authority",
+            "option_d": "D. External pressure",
+            "correct_answer": "B",
+            "explanation": "Informal roles, like the 'peacemaker' or 'critic,' are not assigned but naturally develop from the interactions, personalities, and dynamics within the group as members work together."
+        },
+        {
+            "question": "Role acceptance within a team is important because it:",
+            "option_a": "A. Eliminates leadership",
+            "option_b": "B. Enhances group structure and efficiency",
+            "option_c": "C. Reduces communication",
+            "option_d": "D. Removes conflict entirely",
+            "correct_answer": "B",
+            "explanation": "When members understand and accept their roles, it creates a stable structure, reduces confusion, and allows the team to function more efficiently toward its goals."
+        },
+        {
+            "question": "According to Belbin's theory, how many team roles were identified?",
+            "option_a": "A. Five",
+            "option_b": "B. Seven",
+            "option_c": "C. Nine",
+            "option_d": "D. Eleven",
+            "correct_answer": "C",
+            "explanation": "While the provided text snippet cuts off, Belbin's original and most widely known model identifies nine distinct team roles that individuals may exhibit."
+        },
+        {
+            "question": "Which of the following is a thought-oriented team role?",
+            "option_a": "A. Shaper",
+            "option_b": "B. Implementer",
+            "option_c": "C. Plant",
+            "option_d": "D. Teamworker",
+            "correct_answer": "C",
+            "explanation": "In Belbin's model, the 'Plant' is a thought-oriented role. Plants are creative, innovative, and good at solving difficult problems by generating new ideas."
+        },
+        {
+            "question": "The monitor evaluator role primarily involves:",
+            "option_a": "A. Implementing decisions",
+            "option_b": "B. Generating innovative ideas",
+            "option_c": "C. Critically analyzing ideas and decisions",
+            "option_d": "D. Managing team conflicts",
+            "correct_answer": "C",
+            "explanation": "The monitor evaluator is a thought-oriented role that provides a logical eye. They are objective, strategic, and skilled at evaluating options and judging the merits of ideas."
+        },
+        {
+            "question": "A specialist in Belbin's team roles is typically characterized by:",
+            "option_a": "A. Broad knowledge across many areas",
+            "option_b": "B. Deep expertise in a specific field",
+            "option_c": "C. Strong leadership ability",
+            "option_d": "D. Social interaction skills",
+            "correct_answer": "B",
+            "explanation": "The 'Specialist' role is defined by having deep, focused knowledge and skills in a particular area. They are the go-to person for expert information in their niche."
+        },
+        {
+            "question": "Which role focuses on building relationships and cooperation within the team?",
+            "option_a": "A. Teamworker",
+            "option_b": "B. Shaper",
+            "option_c": "C. Plant",
+            "option_d": "D. Completer-Finisher",
+            "correct_answer": "A",
+            "explanation": "The 'Teamworker' role is a people-oriented role. Teamworkers are cooperative, diplomatic, and supportive, helping to build harmony and cohesion within the group."
+        },
+        {
+            "question": "The resource investigator role mainly contributes by:",
+            "option_a": "A. Monitoring internal processes",
+            "option_b": "B. Exploring external opportunities and networks",
+            "option_c": "C. Managing conflicts",
+            "option_d": "D. Evaluating team decisions",
+            "correct_answer": "B",
+            "explanation": "Resource investigators are curious and outgoing. Their main contribution is to explore external ideas, developments, and resources, and to build networks that can benefit the team."
+        },
+        {
+            "question": "Action-oriented team roles include:",
+            "option_a": "A. Plant, Specialist, Monitor Evaluator",
+            "option_b": "B. Shaper, Implementer, Completer-Finisher",
+            "option_c": "C. Coordinator, Teamworker, Resource Investigator",
+            "option_d": "D. Leader, Planner, Strategist",
+            "correct_answer": "B",
+            "explanation": "Belbin's action-oriented roles are those that focus on getting things done: the Shaper (drives action), the Implementer (makes ideas practical), and the Completer-Finisher (ensures deadlines are met)."
+        },
+        {
+            "question": "A shaper in a team is generally characterized by:",
+            "option_a": "A. Passive behavior",
+            "option_b": "B. High motivation and challenge-driven leadership",
+            "option_c": "C. Analytical thinking only",
+            "option_d": "D. Conflict avoidance",
+            "correct_answer": "B",
+            "explanation": "A Shaper is a dynamic and driven individual who thrives on challenge and pressure. They provide the energy and drive to overcome obstacles and get results."
+        },
+        {
+            "question": "Completer-finishers are most strongly associated with:",
+            "option_a": "A. Creativity",
+            "option_b": "B. Generating new ideas",
+            "option_c": "C. Attention to detail and meeting deadlines",
+            "option_d": "D. Building external contacts",
+            "correct_answer": "C",
+            "explanation": "The 'Completer-Finisher' is an action-oriented role focused on perfectionism and follow-through. They are meticulous, spot errors, and are essential for ensuring tasks are completed on time and to a high standard."
+        },
+        {
+            "question": "Role overload occurs when:",
+            "option_a": "A. Roles are clearly defined",
+            "option_b": "B. A member is assigned excessive responsibilities",
+            "option_c": "C. Team members refuse to perform tasks",
+            "option_d": "D. Members lack motivation",
+            "correct_answer": "B",
+            "explanation": "Role overload happens when a team member is given too many responsibilities, or tasks that are too difficult, making it impossible for them to fulfill all expectations effectively."
+        },
+        {
+            "question": "Role conflict arises when:",
+            "option_a": "A. Tasks are too simple",
+            "option_b": "B. Members have different expectations about responsibilities",
+            "option_c": "C. Leadership changes frequently",
+            "option_d": "D. Teams are too small",
+            "correct_answer": "B",
+            "explanation": "Role conflict occurs when a team member receives contradictory expectations from different people, or when the expectations of their role clash with their own values or another role they hold."
+        },
+        {
+            "question": "Role ambiguity occurs when:",
+            "option_a": "A. Team members disagree on goals",
+            "option_b": "B. Roles are poorly defined or unclear",
+            "option_c": "C. Leadership becomes authoritarian",
+            "option_d": "D. Workload becomes excessive",
+            "correct_answer": "B",
+            "explanation": "Role ambiguity is the uncertainty a person feels about what is expected of them in their role, often because the responsibilities, scope, or objectives of the role are not clearly communicated."
+        },
+        {
+            "question": "One consequence of role ambiguity is:",
+            "option_a": "A. Increased team cohesion",
+            "option_b": "B. Higher motivation",
+            "option_c": "C. Reduced job satisfaction and performance",
+            "option_d": "D. Clear communication",
+            "correct_answer": "C",
+            "explanation": "When team members are unsure of their responsibilities, it can lead to confusion, stress, and frustration, ultimately reducing their job satisfaction and hindering their performance."
+        },
+        {
+            "question": "Role rigidity refers to a situation where:",
+            "option_a": "A. Roles are constantly changing",
+            "option_b": "B. Individuals strictly adhere to roles without flexibility",
+            "option_c": "C. Teams operate without roles",
+            "option_d": "D. Leadership is absent",
+            "correct_answer": "B",
+            "explanation": "Role rigidity means team members stick so rigidly to their defined roles that they are unwilling to adapt or help with tasks outside their perceived area, which can harm team flexibility and effectiveness."
+        },
+        {
+            "question": "Territoriality in team roles refers to:",
+            "option_a": "A. Expanding team authority",
+            "option_b": "B. Guarding one's role and resisting others' contributions",
+            "option_c": "C. Sharing responsibilities equally",
+            "option_d": "D. Eliminating formal roles",
+            "correct_answer": "B",
+            "explanation": "Territoriality occurs when a team member becomes overly protective of their role, tasks, or information, and resists or rejects input or help from others, hindering collaboration."
+        },
+        {
+            "question": "Role abdication occurs when a member:",
+            "option_a": "A. Assumes additional responsibilities",
+            "option_b": "B. Abandons assigned duties",
+            "option_c": "C. Conflicts with other members",
+            "option_d": "D. Delegates tasks effectively",
+            "correct_answer": "B",
+            "explanation": "Role abdication is the opposite of role overload. It happens when a team member fails to fulfill the responsibilities of their role, effectively abandoning their duties and letting others down."
+        },
+        {
+            "question": "Human nature as a problem in team roles refers to:",
+            "option_a": "A. Strict adherence to roles",
+            "option_b": "B. Natural resistance to being 'put in a box' or stereotyped",
+            "option_c": "C. A preference for working alone",
+            "option_d": "D. The inability to learn new skills",
+            "correct_answer": "B",
+            "explanation": "A problem with role theory is that people are complex and may resist being labeled or confined to a specific role, feeling it limits their potential or doesn't capture their full range of abilities."
+        },
+        {
+            "question": "One effective way to resolve role problems is through:",
+            "option_a": "A. Ignoring conflicts",
+            "option_b": "B. Emotional arguments",
+            "option_c": "C. Unemotional discussion and role re-delegation",
+            "option_d": "D. Removing team members",
+            "correct_answer": "C",
+            "explanation": "Addressing role issues openly and calmly is key. A rational discussion to clarify expectations, renegotiate responsibilities, and re-delegate tasks can effectively resolve many role-related problems."
+        },
+        {
+            "question": "An alternative to strict role structures is:",
+            "option_a": "A. Role elimination",
+            "option_b": "B. Empowerment and multiskilling",
+            "option_c": "C. Leadership centralization",
+            "option_d": "D. Task specialization only",
+            "correct_answer": "B",
+            "explanation": "Instead of rigid, fixed roles, teams can adopt an approach based on empowerment and multiskilling, where members are trained in multiple areas and have the autonomy to contribute flexibly where needed."
+        },
+        {
+            "question": "A successful team is characterized by:",
+            "option_a": "A. Competition among members",
+            "option_b": "B. Lack of communication",
+            "option_c": "C. Mutual respect among members",
+            "option_d": "D. Individual performance only",
+            "correct_answer": "C",
+            "explanation": "Mutual respect is a cornerstone of successful teamwork. It fosters a positive environment where members value each other's contributions, leading to better collaboration and performance."
+        },
+        {
+            "question": "Diversity of skills within a team contributes to:",
+            "option_a": "A. Reduced productivity",
+            "option_b": "B. A wider range of perspectives and solutions",
+            "option_c": "C. Increased interpersonal conflict",
+            "option_d": "D. Slower decision-making",
+            "correct_answer": "B",
+            "explanation": "Skill diversity brings different viewpoints and expertise to the table, which allows the team to approach problems from multiple angles and develop more innovative and comprehensive solutions."
+        },
+        {
+            "question": "Effective teamwork requires:",
+            "option_a": "A. Uniform communication styles",
+            "option_b": "B. Cooperation among diverse members",
+            "option_c": "C. Independent work",
+            "option_d": "D. Hierarchical decision making",
+            "correct_answer": "B",
+            "explanation": "For teamwork to be effective, members must cooperate. This means they need to work together, share information, and support one another, even if they have different backgrounds or work styles."
+        },
+        {
+            "question": "Groupthink occurs when:",
+            "option_a": "A. Members challenge decisions aggressively",
+            "option_b": "B. Members suppress dissent to maintain consensus",
+            "option_c": "C. Teams avoid communication",
+            "option_d": "D. Leaders encourage debate",
+            "correct_answer": "B",
+            "explanation": "Groupthink is a phenomenon where the desire for harmony and conformity in a group results in an irrational or dysfunctional decision-making outcome, as members suppress dissenting viewpoints to avoid conflict."
+        },
+        {
+            "question": "Which symptom is associated with groupthink?",
+            "option_a": "A. Encouraging diverse opinions",
+            "option_b": "B. Illusion of unanimity",
+            "option_c": "C. High transparency",
+            "option_d": "D. Critical thinking",
+            "correct_answer": "B",
+            "explanation": "The 'illusion of unanimity' is a classic symptom of groupthink. It's the false belief that everyone in the group agrees, often because members who have doubts remain silent."
+        },
+        {
+            "question": "Teamwork can best be described as:",
+            "option_a": "A. Individual effort toward separate goals",
+            "option_b": "B. Cooperation among individuals with diverse skills toward a shared goal",
+            "option_c": "C. Leadership dominance in decision making",
+            "option_d": "D. Competition among members",
+            "correct_answer": "B",
+            "explanation": "Teamwork is the collaborative effort of a group to achieve a common goal in the most effective and efficient way, leveraging the diverse skills of its members."
+        }
+    ]
+}

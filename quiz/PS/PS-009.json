@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "Motivation is best described as a process that begins with:",
+            "option_a": "A. Emotional reaction",
+            "option_b": "B. Psychological or physiological deficiency",
+            "option_c": "C. External reward",
+            "option_d": "D. Cognitive perception",
+            "correct_answer": "B",
+            "explanation": "The motivation process typically starts with a need, which is a psychological or physiological deficiency that a person wants to fulfill."
+        },
+        {
+            "question": "In the motivation process, needs lead to drives, which then lead to:",
+            "option_a": "A. Perceptions",
+            "option_b": "B. Incentives",
+            "option_c": "C. Attitudes",
+            "option_d": "D. Behaviors",
+            "correct_answer": "D",
+            "explanation": "The sequence is that a need creates a drive, which then motivates behaviors to satisfy the original need."
+        },
+        {
+            "question": "Which of the following is an example of a physiological need?",
+            "option_a": "A. Recognition",
+            "option_b": "B. Friendship",
+            "option_c": "C. Hunger",
+            "option_d": "D. Achievement",
+            "correct_answer": "C",
+            "explanation": "Hunger is a basic biological requirement for survival, making it a physiological need, unlike social or psychological needs like recognition or friendship."
+        },
+        {
+            "question": "According to Maslow's hierarchy, the lowest level of needs includes:",
+            "option_a": "A. Esteem needs",
+            "option_b": "B. Social needs",
+            "option_c": "C. Safety needs",
+            "option_d": "D. Physiological needs",
+            "correct_answer": "D",
+            "explanation": "Maslow's hierarchy is often depicted as a pyramid with the most fundamental needs at the bottom. The lowest level consists of physiological needs like food, water, and shelter."
+        },
+        {
+            "question": "Which level of Maslow's hierarchy focuses on belongingness and relationships?",
+            "option_a": "A. Social needs",
+            "option_b": "B. Security needs",
+            "option_c": "C. Esteem needs",
+            "option_d": "D. Self-actualization",
+            "correct_answer": "A",
+            "explanation": "Social needs, also known as love and belonging needs, encompass relationships, friendship, and family."
+        },
+        {
+            "question": "In Maslow's hierarchy, esteem needs are associated with:",
+            "option_a": "A. Food and shelter",
+            "option_b": "B. Promotions and status",
+            "option_c": "C. Personal safety",
+            "option_d": "D. Social belonging",
+            "correct_answer": "B",
+            "explanation": "Esteem needs relate to feelings of achievement, respect, and recognition from others, which can be reflected in things like promotions and status."
+        },
+        {
+            "question": "The highest level of Maslow's hierarchy is:",
+            "option_a": "A. Esteem needs",
+            "option_b": "B. Social needs",
+            "option_c": "C. Self-actualization",
+            "option_d": "D. Security needs",
+            "correct_answer": "C",
+            "explanation": "Self-actualization, or the desire to become the most that one can be, represents the pinnacle of Maslow's hierarchy of needs."
+        },
+        {
+            "question": "Herzberg's Two-Factor Theory divides job factors into:",
+            "option_a": "A. Internal and external factors",
+            "option_b": "B. Hygiene factors and motivation factors",
+            "option_c": "C. Satisfiers and dissatisfiers",
+            "option_d": "D. Physiological and psychological factors",
+            "correct_answer": "B",
+            "explanation": "Herzberg's theory specifically identifies two distinct categories of workplace factors: Hygiene factors and Motivation factors."
+        },
+        {
+            "question": "Which of the following is considered a hygiene factor?",
+            "option_a": "A. Achievement",
+            "option_b": "B. Responsibility",
+            "option_c": "C. Salary",
+            "option_d": "D. Growth",
+            "correct_answer": "C",
+            "explanation": "According to Herzberg, hygiene factors are extrinsic elements like company policy, supervision, and salary, which can cause dissatisfaction if inadequate."
+        },
+        {
+            "question": "Hygiene factors primarily aim to:",
+            "option_a": "A. Increase job satisfaction",
+            "option_b": "B. Prevent job dissatisfaction",
+            "option_c": "C. Improve creativity",
+            "option_d": "D. Increase productivity directly",
+            "correct_answer": "B",
+            "explanation": "Hygiene factors are not motivators; their main function is to prevent dissatisfaction and maintain a baseline level of contentment."
+        },
+        {
+            "question": "Which of the following is a motivation factor according to Herzberg?",
+            "option_a": "A. Company policy",
+            "option_b": "B. Supervision",
+            "option_c": "C. Achievement recognition",
+            "option_d": "D. Working conditions",
+            "correct_answer": "C",
+            "explanation": "Motivation factors are intrinsic to the job and include elements like recognition, achievement, and responsibility, which lead to job satisfaction."
+        },
+        {
+            "question": "Motivation factors are mainly related to:",
+            "option_a": "A. Avoiding complaints",
+            "option_b": "B. Job content",
+            "option_c": "C. Work environment",
+            "option_d": "D. Company policies",
+            "correct_answer": "B",
+            "explanation": "Motivation factors are intrinsic to the job itself, such as the work, responsibility, and growth, focusing on the content of the work rather than the context."
+        },
+        {
+            "question": "According to the Motivation-Hygiene matrix, when hygiene is high but motivation is low, the result is:",
+            "option_a": "A. High motivation with complaints",
+            "option_b": "B. Low motivation with few complaints",
+            "option_c": "C. High motivation with no complaints",
+            "option_d": "D. Low motivation with many complaints",
+            "correct_answer": "B",
+            "explanation": "High hygiene factors mean few complaints about the work environment, but low motivation factors mean employees lack satisfaction and drive, resulting in low motivation with few complaints."
+        },
+        {
+            "question": "Goal setting improves performance mainly by:",
+            "option_a": "A. Reducing workload",
+            "option_b": "B. Increasing focus and direction",
+            "option_c": "C. Eliminating distractions",
+            "option_d": "D. Increasing emotional intelligence",
+            "correct_answer": "B",
+            "explanation": "Goals direct attention and action, mobilizing effort and encouraging persistence, which enhances performance by providing clear focus and direction."
+        },
+        {
+            "question": "Which of the following represents the first component of SMART goals?",
+            "option_a": "A. Strategic",
+            "option_b": "B. Specific",
+            "option_c": "C. Systematic",
+            "option_d": "D. Sustainable",
+            "correct_answer": "B",
+            "explanation": "SMART is an acronym where the 'S' stands for Specific, meaning the goal should be clear and well-defined."
+        },
+        {
+            "question": "In SMART goals, the 'M' refers to:",
+            "option_a": "A. Meaningful",
+            "option_b": "B. Motivational",
+            "option_c": "C. Measurable",
+            "option_d": "D. Manageable",
+            "correct_answer": "C",
+            "explanation": "In the SMART goal framework, 'M' stands for Measurable, meaning there should be criteria to track progress and know when the goal is achieved."
+        },
+        {
+            "question": "The 'A' in SMART goals stands for:",
+            "option_a": "A. Accurate",
+            "option_b": "B. Achievable",
+            "option_c": "C. Analytical",
+            "option_d": "D. Adaptive",
+            "correct_answer": "B",
+            "explanation": "Within the SMART framework, 'A' typically stands for Achievable or Attainable, ensuring the goal is realistic and possible to accomplish."
+        },
+        {
+            "question": "Which component of SMART goals focuses on clear outcomes?",
+            "option_a": "A. Result-based",
+            "option_b": "B. Time-specific",
+            "option_c": "C. Measurable",
+            "option_d": "D. Specific",
+            "correct_answer": "D",
+            "explanation": "The 'Specific' component requires a goal to be clear and unambiguous, defining exactly what the desired outcome is."
+        },
+        {
+            "question": "The 'T' in SMART goals emphasizes:",
+            "option_a": "A. Teamwork",
+            "option_b": "B. Time-bound",
+            "option_c": "C. Technology",
+            "option_d": "D. Testing",
+            "correct_answer": "B",
+            "explanation": "In SMART goals, 'T' stands for Time-bound or Time-specific, meaning the goal has a defined deadline or timeframe for completion."
+        },
+        {
+            "question": "According to Stephen Covey, an important principle of leadership is:",
+            "option_a": "A. Managing time efficiently",
+            "option_b": "B. Beginning with the end in mind",
+            "option_c": "C. Controlling others",
+            "option_d": "D. Prioritizing urgent tasks",
+            "correct_answer": "B",
+            "explanation": "'Begin with the end in mind' is one of Stephen Covey's 7 Habits of Highly Effective People, emphasizing the importance of vision and leadership in defining desired outcomes."
+        },
+        {
+            "question": "The Locke and Latham Goal-Setting Model suggests that performance depends on:",
+            "option_a": "A. Random motivation",
+            "option_b": "B. Goal specificity and difficulty",
+            "option_c": "C. Emotional intelligence",
+            "option_d": "D. External rewards only",
+            "correct_answer": "B",
+            "explanation": "Locke and Latham's research established that specific and challenging goals, when combined with commitment and feedback, lead to higher performance."
+        },
+        {
+            "question": "Which of the following acts as a moderator in the goal-setting model?",
+            "option_a": "A. Task complexity",
+            "option_b": "B. Social interaction",
+            "option_c": "C. Cultural background",
+            "option_d": "D. Personality type",
+            "correct_answer": "A",
+            "explanation": "Task complexity is a moderator in goal-setting theory because the strategies and effort required to achieve a goal can vary greatly depending on how complex the task is."
+        },
+        {
+            "question": "Which factor influences how strongly a person pursues a goal?",
+            "option_a": "A. Goal commitment",
+            "option_b": "B. Personality",
+            "option_c": "C. Social pressure",
+            "option_d": "D. Environmental conditions",
+            "correct_answer": "A",
+            "explanation": "Goal commitment refers to one's attachment to and determination to reach a goal; it is a key moderator in the goal-setting model, influencing the strength and persistence of goal-directed behavior."
+        },
+        {
+            "question": "Time management refers to:",
+            "option_a": "A. Controlling other people's schedules",
+            "option_b": "B. Planning and organizing how time is spent",
+            "option_c": "C. Completing tasks quickly without planning",
+            "option_d": "D. Avoiding distractions completely",
+            "correct_answer": "B",
+            "explanation": "Time management is the deliberate process of planning and exercising control over the amount of time spent on specific activities to increase effectiveness, efficiency, or productivity."
+        },
+        {
+            "question": "The most valuable resource emphasized in time management is:",
+            "option_a": "A. Energy",
+            "option_b": "B. Knowledge",
+            "option_c": "C. Time",
+            "option_d": "D. Technology",
+            "correct_answer": "C",
+            "explanation": "Time is a unique and irreplaceable resource. Unlike other resources, it cannot be stored, saved, or regained once spent, making it the most valuable in the context of time management."
+        },
+        {
+            "question": "Tracking time helps individuals:",
+            "option_a": "A. Avoid responsibility",
+            "option_b": "B. Understand how their time is spent",
+            "option_c": "C. Increase working hours",
+            "option_d": "D. Reduce daily activities",
+            "correct_answer": "B",
+            "explanation": "Time tracking provides data and awareness, revealing patterns and habits, which is the first step in identifying areas for improvement and managing time more effectively."
+        },
+        {
+            "question": "A weekly time calculation begins with the total number of hours in a week, which is:",
+            "option_a": "A. 144",
+            "option_b": "B. 168",
+            "option_c": "C. 180",
+            "option_d": "D. 200",
+            "correct_answer": "B",
+            "explanation": "There are 24 hours in a day, and 7 days in a week, so 24 hours * 7 days = 168 total hours in a week."
+        },
+        {
+            "question": "Which activity is included in time tracking analysis?",
+            "option_a": "A. Personality testing",
+            "option_b": "B. Sleep hours per week",
+            "option_c": "C. Emotional analysis",
+            "option_d": "D. Intelligence measurement",
+            "correct_answer": "B",
+            "explanation": "Time tracking analysis involves logging and reviewing how time is allocated across various activities, including essential ones like sleep, work, and leisure."
+        },
+        {
+            "question": "Which of the following is a tool for effective time management?",
+            "option_a": "A. Personality test",
+            "option_b": "B. To-do list",
+            "option_c": "C. IQ assessment",
+            "option_d": "D. Emotional analysis",
+            "correct_answer": "B",
+            "explanation": "A to-do list is a fundamental time management tool used to organize tasks, set priorities, and track progress on what needs to be accomplished."
+        },
+        {
+            "question": "A Time Management Matrix categorizes tasks based on:",
+            "option_a": "A. Difficulty and complexity",
+            "option_b": "B. Urgency and importance",
+            "option_c": "C. Time and resources",
+            "option_d": "D. Motivation and effort",
+            "correct_answer": "B",
+            "explanation": "Popularized by Stephen Covey, the Time Management Matrix (or Eisenhower Matrix) helps prioritize tasks by classifying them according to their urgency and importance."
+        },
+        {
+            "question": "Tasks that are important and urgent should be:",
+            "option_a": "A. Scheduled later",
+            "option_b": "B. Delegated",
+            "option_c": "C. Done immediately",
+            "option_d": "D. Ignored",
+            "correct_answer": "C",
+            "explanation": "Tasks in Quadrant I of the Time Management Matrix are both important and urgent, requiring immediate attention as they are critical and have pressing deadlines."
+        },
+        {
+            "question": "Tasks that are important but not urgent should be:",
+            "option_a": "A. Scheduled",
+            "option_b": "B. Delegated",
+            "option_c": "C. Ignored",
+            "option_d": "D. Eliminated",
+            "correct_answer": "A",
+            "explanation": "Important but not urgent tasks, like planning and personal development, are key to long-term success. They should be scheduled for dedicated time to prevent them from becoming urgent."
+        },
+        {
+            "question": "Tasks that are not important and not urgent should generally be:",
+            "option_a": "A. Done immediately",
+            "option_b": "B. Delegated or eliminated",
+            "option_c": "C. Scheduled carefully",
+            "option_d": "D. Prioritized highly",
+            "correct_answer": "B",
+            "explanation": "These tasks represent time-wasting activities. The best approach is to delegate them if possible or eliminate them altogether to free up time for more important priorities."
+        },
+        {
+            "question": "The Pomodoro Technique was developed by:",
+            "option_a": "A. Stephen Covey",
+            "option_b": "B. Frederick Herzberg",
+            "option_c": "C. Francesco Cirillo",
+            "option_d": "D. Abraham Maslow",
+            "correct_answer": "C",
+            "explanation": "Francesco Cirillo created the Pomodoro Technique in the late 1980s as a time management method to improve focus and productivity by breaking work into intervals."
+        },
+        {
+            "question": "The Pomodoro technique divides work into intervals of approximately:",
+            "option_a": "A. 15 minutes",
+            "option_b": "B. 25 minutes",
+            "option_c": "C. 45 minutes",
+            "option_d": "D. 60 minutes",
+            "correct_answer": "B",
+            "explanation": "The classic Pomodoro Technique uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks."
+        },
+        {
+            "question": "Each interval in the Pomodoro technique is called:",
+            "option_a": "A. Cycle",
+            "option_b": "B. Pomodoro",
+            "option_c": "C. Session",
+            "option_d": "D. Block",
+            "correct_answer": "B",
+            "explanation": "Each focused work interval in this technique is named a 'Pomodoro', which is the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used."
+        },
+        {
+            "question": "Digital wellbeing mainly focuses on:",
+            "option_a": "A. Increasing smartphone usage",
+            "option_b": "B. Managing technology usage to reduce distractions",
+            "option_c": "C. Learning programming skills",
+            "option_d": "D. Improving internet speed",
+            "correct_answer": "B",
+            "explanation": "Digital wellbeing is about maintaining a healthy relationship with technology, which involves mindful usage to minimize distractions and its negative impacts on mental and physical health."
+        },
+        {
+            "question": "Digital wellbeing tools help users:",
+            "option_a": "A. Increase online gaming",
+            "option_b": "B. Track and control screen time",
+            "option_c": "C. Improve computer hardware",
+            "option_d": "D. Develop software",
+            "correct_answer": "B",
+            "explanation": "Tools for digital wellbeing, such as screen time trackers and app limiters, are designed to help individuals monitor and manage their device usage."
+        },
+        {
+            "question": "The concept of digital wellbeing involves:",
+            "option_a": "A. Removing all technology",
+            "option_b": "B. Awareness of technology's positive and negative impacts",
+            "option_c": "C. Increasing digital entertainment",
+            "option_d": "D. Avoiding productivity tools",
+            "correct_answer": "B",
+            "explanation": "Digital wellbeing is not about abandoning technology but developing a conscious awareness of how it affects our lives to harness its benefits while mitigating its harms."
+        },
+        {
+            "question": "The quote 'The bad news is time flies, the good news is you are the pilot' emphasizes:",
+            "option_a": "A. The importance of technology",
+            "option_b": "B. Personal responsibility in managing time",
+            "option_c": "C. The speed of modern life",
+            "option_d": "D. The importance of motivation",
+            "correct_answer": "B",
+            "explanation": "The metaphor of being the pilot highlights that while time passes quickly and is uncontrollable, individuals have the autonomy and responsibility to choose how they navigate and utilize it."
+        }
+    ]
+}

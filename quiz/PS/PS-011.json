@@ -1,0 +1,220 @@
+{
+    "questions": [
+        {
+            "question": "According to the lecture, what is the process of improving oneself through conscious habits and activities?",
+            "option_a": "A. Career Planning",
+            "option_b": "B. Personal Development Planning",
+            "option_c": "C. Self-Awareness",
+            "option_d": "D. Professional Networking",
+            "correct_answer": "B",
+            "explanation": "Slide 7 explicitly defines Personal Development Planning as 'the Process of Improving oneself Through Conscious habits and activities.'"
+        },
+        {
+            "question": "What is the term for the ability to see yourself clearly and objectively through reflection and introspection?",
+            "option_a": "A. Core Self-evaluation",
+            "option_b": "B. Cognitive Style",
+            "option_c": "C. Self-awareness",
+            "option_d": "D. Emotional Intelligence",
+            "correct_answer": "C",
+            "explanation": "Slide 16 defines self-awareness as 'the ability to see yourself clearly and objectively through reflection and introspection (self examination).'"
+        },
+        {
+            "question": "Which academic discipline investigates the interrelationships among people?",
+            "option_a": "A. Physical Science",
+            "option_b": "B. Biological Science",
+            "option_c": "C. Social Science",
+            "option_d": "D. Chemical Science",
+            "correct_answer": "C",
+            "explanation": "Slide 18 states that 'Social Science is the discipline that investigates the interrelationships among people,' with examples including sociology and psychology."
+        },
+        {
+            "question": "According to the lecture, which of the following is NOT mentioned as a core reason why we need PDP?",
+            "option_a": "A. The industry is rapidly changing",
+            "option_b": "B. To guarantee an immediate promotion at work",
+            "option_c": "C. To take personal responsibility for our own development",
+            "option_d": "D. To avoid becoming obsolete",
+            "correct_answer": "B",
+            "explanation": "Slide 9 mentions industry changes, personal responsibility, and avoiding obsolescence as reasons for PDP. Guaranteed promotion is never stated."
+        },
+        {
+            "question": "All of the following are listed as stages in Personal Development EXCEPT:",
+            "option_a": "A. Understanding oneself",
+            "option_b": "B. Identifying and applying methods of learning",
+            "option_c": "C. Waiting for opportunities to find you",
+            "option_d": "D. Assessing your progress",
+            "correct_answer": "C",
+            "explanation": "Slides 14-15 list five active stages: understanding oneself, deciding future goals, identifying gaps, applying learning methods, and assessing progress. Passive waiting is not included."
+        },
+        {
+            "question": "According to the four stages of PDP, which of these is NOT one of the main stages?",
+            "option_a": "A. Reflection",
+            "option_b": "B. Procrastination",
+            "option_c": "C. Action",
+            "option_d": "D. Review",
+            "correct_answer": "B",
+            "explanation": "Slide 23 clearly outlines the four stages as Reflection, Planning, Action, and Review. Procrastination is a challenge, not a stage."
+        },
+        {
+            "question": "PDP is a record of achievements, learning experiences, and ______.",
+            "option_a": "A. failures",
+            "option_b": "B. criticisms",
+            "option_c": "C. plans",
+            "option_d": "D. salaries",
+            "correct_answer": "C",
+            "explanation": "Slide 11 states: 'PDP is a record of achievements, learning experiences and plans.'"
+        },
+        {
+            "question": "The PDP process is driven by two key actions: reflecting on the past and ______ for the future.",
+            "option_a": "A. worrying",
+            "option_b": "B. planning",
+            "option_c": "C. hoping",
+            "option_d": "D. dreaming",
+            "correct_answer": "B",
+            "explanation": "Slide 13 explains that PDP is driven by 'Reflecting' on past skills and 'Planning' for future development."
+        },
+        {
+            "question": "Self-awareness is developed through reflection and introspection, which is also known as self-______.",
+            "option_a": "A. criticism",
+            "option_b": "B. examination",
+            "option_c": "C. promotion",
+            "option_d": "D. doubt",
+            "correct_answer": "B",
+            "explanation": "Slide 16 defines introspection as 'self examination' in parentheses."
+        },
+        {
+            "question": "A student is at the 'Planning' stage of their PDP. What should they be doing?",
+            "option_a": "A. Writing a reflection on a past group project",
+            "option_b": "B. Setting SMART goals to define where they want to be",
+            "option_c": "C. Taking an online course to learn a new programming language",
+            "option_d": "D. Evaluating their progress against their original goals",
+            "correct_answer": "B",
+            "explanation": "Slide 23 defines the Planning stage as 'Where do I want to go? Set SMART goals.'"
+        },
+        {
+            "question": "If a student is implementing the steps from their plan, such as starting a new coding project or joining a club, which stage of the PDP cycle are they in?",
+            "option_a": "A. Reflection",
+            "option_b": "B. Planning",
+            "option_c": "C. Action",
+            "option_d": "D. Review",
+            "correct_answer": "C",
+            "explanation": "Slide 23 defines the Action stage as 'What will I do? Implement steps (courses, projects, habits, skill-building).'"
+        },
+        {
+            "question": "A professional conducts a self-assessment and seeks feedback from colleagues to understand their current skills. According to the PDP stages, this process of 'Where am I now?' is known as:",
+            "option_a": "A. Action",
+            "option_b": "B. Planning",
+            "option_c": "C. Review",
+            "option_d": "D. Reflection",
+            "correct_answer": "D",
+            "explanation": "Slide 23 explicitly states that Reflection answers the question 'Where am I now?' and involves self-assessment tools and feedback."
+        },
+        {
+            "question": "In the 'Review' stage of the PDP cycle, a student would primarily:",
+            "option_a": "A. Decide what job they want in the future",
+            "option_b": "B. Set their SMART goals",
+            "option_c": "C. Evaluate their progress and identify any obstacles",
+            "option_d": "D. Begin a new learning activity",
+            "correct_answer": "C",
+            "explanation": "Slide 23 states the Review stage involves evaluating progress, identifying obstacles, and adjusting plans."
+        },
+        {
+            "question": "What is the primary difference between the focus of Physical/Biological Sciences and Social Sciences, as described in the lecture?",
+            "option_a": "A. Physical sciences study living things, while social sciences study non-living things",
+            "option_b": "B. Physical sciences are more difficult than social sciences",
+            "option_c": "C. Physical sciences study basic ingredients of matter, while social sciences study interrelationships among people",
+            "option_d": "D. There is no difference; they are the same",
+            "correct_answer": "C",
+            "explanation": "Slide 18 contrasts the basic ingredients studied by physical/biological sciences with the interrelationships among people studied by social sciences."
+        },
+        {
+            "question": "In the context of the PDP process, what is the key difference between 'Reflection' and 'Review'?",
+            "option_a": "A. Reflection looks at the past to understand it, while Review evaluates progress after taking action",
+            "option_b": "B. Reflection and Review are the exact same stage",
+            "option_c": "C. Review is about looking forward, while Reflection is about looking back",
+            "option_d": "D. Reflection is for group work, while Review is for individual work",
+            "correct_answer": "A",
+            "explanation": "Slide 23 positions Reflection as the starting point analyzing past experiences, while Review is the final stage assessing implemented actions."
+        },
+        {
+            "question": "Imran is a second-year student. He feels he has good technical skills but struggles to work in teams. He decides he needs to improve his communication and conflict-resolution skills to become a more effective team member. According to the stages in personal development, Imran is in the stage of:",
+            "option_a": "A. Assessing your progress",
+            "option_b": "B. Understanding oneself (identifying a gap)",
+            "option_c": "C. Identifying and applying methods of learning",
+            "option_d": "D. Deciding where you want to be in the future",
+            "correct_answer": "B",
+            "explanation": "Slide 14 lists 'Understanding oneself' as the first stage, which includes identifying skills and qualities—and by extension, gaps."
+        },
+        {
+            "question": "A project manager consistently asks her team for feedback on her leadership style and takes time each month to think about her decisions and how they affected the team's morale and output. This practice is a direct example of:",
+            "option_a": "A. Deciding what you need to change",
+            "option_b": "B. Applying methods of learning",
+            "option_c": "C. Self-awareness through reflection and introspection",
+            "option_d": "D. Setting SMART goals",
+            "correct_answer": "C",
+            "explanation": "Slide 16 defines self-awareness as seeing yourself objectively through reflection and introspection—exactly what the manager is doing."
+        },
+        {
+            "question": "A group of students is watching a video in class. The video shows a penguin that refuses to go to the feeding grounds or return to the colony, instead choosing to walk towards the mountains. The lecturer explains that this symbolizes choosing purpose over comfort and following a personal calling. This discussion is part of which topic?",
+            "option_a": "A. The four stages of PDP",
+            "option_b": "B. The difference between social and physical sciences",
+            "option_c": "C. Adaptation, Identity, and the Search for Meaning",
+            "option_d": "D. Core aspects of self-awareness",
+            "correct_answer": "C",
+            "explanation": "Slides 11-12 explicitly cover this and its symbolism about the penguin representing human choices and purpose."
+        },
+        {
+            "question": "Maria has completed a group project. She writes in her journal about what she learned from the experience, how she handled a conflict with a teammate, and what she would do differently next time. This activity is a direct application of which stage of Personal Development?",
+            "option_a": "A. Planning",
+            "option_b": "B. Reflection",
+            "option_c": "C. Action",
+            "option_d": "D. Review",
+            "correct_answer": "B",
+            "explanation": "Slide 13 states that reflection involves understanding 'how past skills are gained' and 'reasons on successes and failures.'"
+        },
+        {
+            "question": "According to the lecture slides, which of the following is one of the five core aspects of self-awareness?",
+            "option_a": "A. Physical fitness",
+            "option_b": "B. Financial status",
+            "option_c": "C. Core Self-evaluation",
+            "option_d": "D. Number of friends",
+            "correct_answer": "C",
+            "explanation": "Slide 19 lists five core aspects including Core Self-evaluation, Values, Cognitive Style, Attitudes towards Change, and Emotional Intelligence."
+        },
+        {
+            "question": "The lecture mentions that 'Cognitive Style' is one of the five core aspects of self-awareness. What does this aspect primarily deal with?",
+            "option_a": "A. Emotional awareness and control",
+            "option_b": "B. Information acquisition and evaluation",
+            "option_c": "C. Personal standards and moral judgment",
+            "option_d": "D. Adaptability to change",
+            "correct_answer": "B",
+            "explanation": "Slide 20 explicitly states that Cognitive Style involves 'Information acquisition and evaluation' and explains it comes from the Latin 'cognito' meaning to apprehend or understand."
+        },
+        {
+            "question": "A software developer realizes that to achieve his five-year goal of becoming a solution architect, he needs to gain experience in cloud computing and project management. He then lists these skills as gaps. This scenario best represents which PDP stage?",
+            "option_a": "A. Reflection: 'Where am I now?'",
+            "option_b": "B. Planning: 'Where do I want to go? What is the gap?'",
+            "option_c": "C. Action: 'What will I do?'",
+            "option_d": "D. Review: 'How did I do?'",
+            "correct_answer": "B",
+            "explanation": "He has identified his future goal (solution architect) and the gap between current and required skills, which aligns with the Planning stage in Slide 23."
+        },
+        {
+            "question": "Which of the following is NOT listed in the lecture as a benefit or purpose of creating a Personal Development Plan?",
+            "option_a": "A. To recognize your achievements",
+            "option_b": "B. To understand how you gained your existing skills",
+            "option_c": "C. To provide a document to your employer demanding a raise",
+            "option_d": "D. To plan to enhance your skills and develop new ones",
+            "correct_answer": "C",
+            "explanation": "Slide 11 lists recognizing achievements, understanding skill acquisition, and planning enhancement as purposes. Demanding a raise is never mentioned."
+        },
+        {
+            "question": "The lecture uses the story of the penguin heading for the mountains to symbolize choosing ______ over comfort.",
+            "option_a": "A. safety",
+            "option_b": "B. routine",
+            "option_c": "C. purpose",
+            "option_d": "D. conformity",
+            "correct_answer": "C",
+            "explanation": "Slide 12 explicitly states 'The mountains symbolize: Choosing purpose over comfort' and 'Following a personal calling.'"
+        }
+    ]
+}

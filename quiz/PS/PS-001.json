@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "A student regularly documents achievements, reflects on weaknesses, and plans ways to improve technical and communication skills. Which structured process is the student practicing?",
+            "option_a": "A. Strategic management",
+            "option_b": "B. Personal Development Planning",
+            "option_c": "C. Performance benchmarking",
+            "option_d": "D. Knowledge auditing",
+            "correct_answer": "B",
+            "explanation": "Personal Development Planning is a structured process where individuals record achievements, reflect on progress, and plan future skill development."
+        },
+        {
+            "question": "Which activity best demonstrates reflective practice in personal development?",
+            "option_a": "A. Memorizing lecture notes",
+            "option_b": "B. Repeating the same study routine every week",
+            "option_c": "C. Analyzing past successes and failures to improve future performance",
+            "option_d": "D. Completing assignments without reviewing feedback",
+            "correct_answer": "C",
+            "explanation": "Reflective practice involves examining past experiences to understand what worked well and what needs improvement."
+        },
+        {
+            "question": "A student sets a goal to complete three cybersecurity certifications within the next year and tracks progress monthly. Which PDP stage does this represent?",
+            "option_a": "A. Planning",
+            "option_b": "B. Reflection",
+            "option_c": "C. Review",
+            "option_d": "D. Observation",
+            "correct_answer": "A",
+            "explanation": "Planning involves defining future goals and deciding what steps are needed to achieve them."
+        },
+        {
+            "question": "Which action represents the 'Action' stage in a personal development cycle?",
+            "option_a": "A. Reviewing past achievements",
+            "option_b": "B. Implementing learning activities such as courses or projects",
+            "option_c": "C. Identifying personal strengths",
+            "option_d": "D. Evaluating long-term career goals",
+            "correct_answer": "B",
+            "explanation": "The action stage focuses on implementing concrete steps to achieve development goals."
+        },
+        {
+            "question": "Which stage of PDP evaluates whether the chosen actions successfully achieved development goals?",
+            "option_a": "A. Reflection",
+            "option_b": "B. Planning",
+            "option_c": "C. Review",
+            "option_d": "D. Strategy formulation",
+            "correct_answer": "C",
+            "explanation": "The review stage assesses progress and determines whether the development activities were effective."
+        },
+        {
+            "question": "A student analyzes current programming skills, identifies weak areas, and decides which technologies need improvement. Which stage of personal development does this represent?",
+            "option_a": "A. Understanding oneself",
+            "option_b": "B. Applying methods of learning",
+            "option_c": "C. Assessing progress",
+            "option_d": "D. Implementing actions",
+            "correct_answer": "A",
+            "explanation": "Understanding oneself involves identifying existing skills, strengths, and weaknesses."
+        },
+        {
+            "question": "A team is trying to determine why a software project failed instead of simply fixing surface-level errors. Which skill are they demonstrating?",
+            "option_a": "A. Critical thinking",
+            "option_b": "B. Data entry",
+            "option_c": "C. Memorization",
+            "option_d": "D. Routine processing",
+            "correct_answer": "A",
+            "explanation": "Critical thinking involves identifying underlying problems and analyzing situations deeply."
+        },
+        {
+            "question": "Which approach is most effective when analyzing a complex professional case study?",
+            "option_a": "A. Focus only on technical issues",
+            "option_b": "B. Consider human, organizational, technical, and ethical aspects",
+            "option_c": "C. Choose the first solution that appears",
+            "option_d": "D. Ignore conflicting viewpoints",
+            "correct_answer": "B",
+            "explanation": "Effective case study analysis evaluates multiple dimensions including human, organizational, technical, and ethical factors."
+        },
+        {
+            "question": "A developer receives feedback that they struggle to adapt when project requirements change. Which aspect of self-awareness does this most relate to?",
+            "option_a": "A. Cognitive style",
+            "option_b": "B. Attitudes toward change",
+            "option_c": "C. Core self-evaluation",
+            "option_d": "D. Technical competence",
+            "correct_answer": "B",
+            "explanation": "Attitudes toward change relate to adaptability and willingness to adjust to new situations."
+        },
+        {
+            "question": "Which field of study primarily investigates relationships and interactions among people in society?",
+            "option_a": "A. Physical science",
+            "option_b": "B. Social science",
+            "option_c": "C. Chemical science",
+            "option_d": "D. Computational science",
+            "correct_answer": "B",
+            "explanation": "Social sciences focus on understanding interactions, behaviors, and relationships among people."
+        },
+        {
+            "question": "Which scenario best demonstrates emotional intelligence?",
+            "option_a": "A. Ignoring team conflicts during a project",
+            "option_b": "B. Understanding teammates' emotions and managing responses effectively",
+            "option_c": "C. Completing technical tasks faster than others",
+            "option_d": "D. Avoiding discussions during meetings",
+            "correct_answer": "B",
+            "explanation": "Emotional intelligence involves recognizing and managing both personal and others' emotions."
+        },
+        {
+            "question": "Which mental process describes how individuals acquire, interpret, and evaluate information?",
+            "option_a": "A. Cognitive style",
+            "option_b": "B. Strategic planning",
+            "option_c": "C. Operational design",
+            "option_d": "D. Behavioral automation",
+            "correct_answer": "A",
+            "explanation": "Cognitive style refers to how individuals process information and understand the world."
+        },
+        {
+            "question": "During a team project, one member consistently mediates conflicts and ensures every voice is heard. Which leadership quality is being demonstrated?",
+            "option_a": "A. Technical specialization",
+            "option_b": "B. Conflict mediation",
+            "option_c": "C. Resource allocation",
+            "option_d": "D. Data modeling",
+            "correct_answer": "B",
+            "explanation": "Conflict mediation is a leadership skill that helps resolve disagreements and maintain collaboration."
+        },
+        {
+            "question": "Which responsibility is most essential for a project team leader?",
+            "option_a": "A. Completing all tasks alone",
+            "option_b": "B. Ensuring equal participation and coordinating tasks",
+            "option_c": "C. Avoiding communication with team members",
+            "option_d": "D. Ignoring deadlines to reduce stress",
+            "correct_answer": "B",
+            "explanation": "A leader facilitates participation, coordinates responsibilities, and ensures progress toward deadlines."
+        },
+        {
+            "question": "Which professional skill is developed when students review each other's work and provide structured feedback?",
+            "option_a": "A. Peer evaluation",
+            "option_b": "B. Data processing",
+            "option_c": "C. Information encryption",
+            "option_d": "D. Technical debugging",
+            "correct_answer": "A",
+            "explanation": "Peer evaluation involves assessing and providing feedback on the work of peers."
+        },
+        {
+            "question": "A student delays working on assignments until the last day despite having enough time earlier. Which common challenge does this represent?",
+            "option_a": "A. Technical debt",
+            "option_b": "B. Procrastination",
+            "option_c": "C. Leadership conflict",
+            "option_d": "D. System optimization",
+            "correct_answer": "B",
+            "explanation": "Procrastination refers to postponing tasks unnecessarily, often causing poor planning and stress."
+        },
+        {
+            "question": "A team repeatedly relies on one highly skilled member to complete most of the technical tasks. Which problem does this indicate?",
+            "option_a": "A. Efficient delegation",
+            "option_b": "B. Overdependence on stronger members",
+            "option_c": "C. Effective collaboration",
+            "option_d": "D. Agile development practice",
+            "correct_answer": "B",
+            "explanation": "Overdependence occurs when teams rely excessively on a single member instead of sharing responsibilities."
+        },
+        {
+            "question": "Which factor most improves the quality of a professional presentation?",
+            "option_a": "A. Using complex terminology unnecessarily",
+            "option_b": "B. Maintaining clear structure and logical flow",
+            "option_c": "C. Reading slides word-for-word",
+            "option_d": "D. Avoiding visual aids",
+            "correct_answer": "B",
+            "explanation": "A clear logical structure helps the audience follow the argument and improves communication effectiveness."
+        },
+        {
+            "question": "A developer frequently reflects on how they learn new technologies and adjusts study techniques accordingly. Which self-awareness component is involved?",
+            "option_a": "A. Emotional intelligence",
+            "option_b": "B. Cognitive style",
+            "option_c": "C. Organizational hierarchy",
+            "option_d": "D. Resource planning",
+            "correct_answer": "B",
+            "explanation": "Cognitive style describes how individuals process and acquire knowledge."
+        },
+        {
+            "question": "Which principle is essential when providing peer feedback in professional environments?",
+            "option_a": "A. Personal bias",
+            "option_b": "B. Constructive criticism",
+            "option_c": "C. Ignoring weaknesses",
+            "option_d": "D. Competitive grading",
+            "correct_answer": "B",
+            "explanation": "Constructive criticism focuses on improvement and objective feedback rather than personal judgment."
+        },
+        {
+            "question": "A student sets a goal that is specific, measurable, achievable, relevant, and time-bound. Which framework is being applied?",
+            "option_a": "A. SMART goals",
+            "option_b": "B. SWOT analysis",
+            "option_c": "C. Agile iteration",
+            "option_d": "D. Balanced scorecard",
+            "correct_answer": "A",
+            "explanation": "SMART goals ensure objectives are clear, measurable, and realistically achievable within a timeframe."
+        },
+        {
+            "question": "Which action best demonstrates accountability in teamwork?",
+            "option_a": "A. Ignoring assigned tasks",
+            "option_b": "B. Taking responsibility for completing assigned work",
+            "option_c": "C. Delegating all tasks to others",
+            "option_d": "D. Avoiding project meetings",
+            "correct_answer": "B",
+            "explanation": "Accountability involves accepting responsibility for one's assigned duties and outcomes."
+        },
+        {
+            "question": "When analyzing a case study, identifying the underlying problem rather than symptoms demonstrates which analytical skill?",
+            "option_a": "A. Surface analysis",
+            "option_b": "B. Root cause identification",
+            "option_c": "C. Data summarization",
+            "option_d": "D. Technical formatting",
+            "correct_answer": "B",
+            "explanation": "Root cause identification focuses on determining the true source of a problem rather than superficial symptoms."
+        },
+        {
+            "question": "A student evaluates whether a training course improved their communication skills and decides to modify the learning strategy. Which PDP stage is this?",
+            "option_a": "A. Review",
+            "option_b": "B. Planning",
+            "option_c": "C. Reflection",
+            "option_d": "D. Implementation",
+            "correct_answer": "A",
+            "explanation": "The review stage evaluates outcomes and determines whether adjustments are necessary."
+        },
+        {
+            "question": "Which factor most directly contributes to professional growth?",
+            "option_a": "A. Avoiding challenges",
+            "option_b": "B. Continuous self-improvement and learning",
+            "option_c": "C. Relying only on existing knowledge",
+            "option_d": "D. Ignoring feedback",
+            "correct_answer": "B",
+            "explanation": "Continuous learning and self-improvement help individuals remain relevant in rapidly evolving industries."
+        },
+        {
+            "question": "A software team considers several alternative solutions before choosing one supported by evidence. Which professional practice does this illustrate?",
+            "option_a": "A. Evidence-based decision making",
+            "option_b": "B. Random selection",
+            "option_c": "C. Routine compliance",
+            "option_d": "D. Independent speculation",
+            "correct_answer": "A",
+            "explanation": "Evidence-based decision making relies on data and analysis rather than assumptions."
+        },
+        {
+            "question": "A student struggles to apply theoretical knowledge to practical software development projects. Which challenge does this illustrate?",
+            "option_a": "A. Lack of teamwork",
+            "option_b": "B. Difficulty translating theory into practice",
+            "option_c": "C. Technical automation",
+            "option_d": "D. Leadership delegation",
+            "correct_answer": "B",
+            "explanation": "Many learners face challenges when attempting to apply theoretical concepts to real-world problems."
+        },
+        {
+            "question": "Which action best represents ethical professional behavior during peer evaluation?",
+            "option_a": "A. Giving lower scores to competitors intentionally",
+            "option_b": "B. Providing fair and objective assessments",
+            "option_c": "C. Ignoring evaluation criteria",
+            "option_d": "D. Avoiding participation",
+            "correct_answer": "B",
+            "explanation": "Professional peer evaluation requires fairness, objectivity, and constructive feedback."
+        },
+        {
+            "question": "A team leader schedules meetings, coordinates submissions, and ensures deadlines are met. Which leadership role is being demonstrated?",
+            "option_a": "A. Operational coordination",
+            "option_b": "B. Independent analysis",
+            "option_c": "C. Personal specialization",
+            "option_d": "D. Competitive evaluation",
+            "correct_answer": "A",
+            "explanation": "Operational coordination involves organizing tasks, schedules, and team activities."
+        },
+        {
+            "question": "Which concept best describes a person's internal standards guiding ethical judgments and behavior?",
+            "option_a": "A. Cognitive style",
+            "option_b": "B. Personal values",
+            "option_c": "C. Strategic planning",
+            "option_d": "D. Technical competency",
+            "correct_answer": "B",
+            "explanation": "Personal values shape moral judgments and influence ethical decisions."
+        },
+        {
+            "question": "Which characteristic most strongly supports effective teamwork?",
+            "option_a": "A. Individual dominance",
+            "option_b": "B. Open communication and collaboration",
+            "option_c": "C. Task avoidance",
+            "option_d": "D. Competition within the team",
+            "correct_answer": "B",
+            "explanation": "Effective teams rely on communication, trust, and collaboration among members."
+        },
+        {
+            "question": "A developer reflects on their past coding mistakes to prevent similar issues in future projects. Which learning approach is demonstrated?",
+            "option_a": "A. Reflective learning",
+            "option_b": "B. Passive memorization",
+            "option_c": "C. Algorithmic training",
+            "option_d": "D. Mechanical repetition",
+            "correct_answer": "A",
+            "explanation": "Reflective learning involves analyzing past experiences to improve future performance."
+        },
+        {
+            "question": "Which factor most strongly improves critical thinking during problem solving?",
+            "option_a": "A. Considering multiple viewpoints",
+            "option_b": "B. Ignoring contradictory evidence",
+            "option_c": "C. Relying on assumptions",
+            "option_d": "D. Avoiding discussion",
+            "correct_answer": "A",
+            "explanation": "Critical thinking improves when individuals consider alternative viewpoints and evidence."
+        },
+        {
+            "question": "A student refuses to consider feedback from peers during a group project. Which professional skill is lacking?",
+            "option_a": "A. Adaptability",
+            "option_b": "B. Database optimization",
+            "option_c": "C. Algorithm design",
+            "option_d": "D. System integration",
+            "correct_answer": "A",
+            "explanation": "Adaptability involves accepting feedback and adjusting behavior or strategies accordingly."
+        },
+        {
+            "question": "Which stage in personal development focuses on identifying the gap between current skills and desired future abilities?",
+            "option_a": "A. Assessing progress",
+            "option_b": "B. Deciding what needs to change",
+            "option_c": "C. Implementing tasks",
+            "option_d": "D. Evaluating results",
+            "correct_answer": "B",
+            "explanation": "This stage identifies what skills or changes are needed to achieve future goals."
+        },
+        {
+            "question": "Which leadership approach best promotes balanced participation in team projects?",
+            "option_a": "A. Delegating all decisions to one expert",
+            "option_b": "B. Encouraging equal contribution from all members",
+            "option_c": "C. Allowing only the leader to speak",
+            "option_d": "D. Avoiding group discussions",
+            "correct_answer": "B",
+            "explanation": "Balanced participation ensures diverse ideas and shared responsibility within teams."
+        },
+        {
+            "question": "A professional sets long-term career goals and identifies the skills required to achieve them. Which development concept does this represent?",
+            "option_a": "A. Career planning",
+            "option_b": "B. Tactical scheduling",
+            "option_c": "C. Operational debugging",
+            "option_d": "D. Data synchronization",
+            "correct_answer": "A",
+            "explanation": "Career planning involves defining future career objectives and identifying the skills needed."
+        },
+        {
+            "question": "Which activity best improves communication skills during project presentations?",
+            "option_a": "A. Avoiding audience interaction",
+            "option_b": "B. Structuring ideas clearly and explaining them logically",
+            "option_c": "C. Reading notes continuously",
+            "option_d": "D. Speaking without preparation",
+            "correct_answer": "B",
+            "explanation": "Clear organization and logical explanation enhance communication effectiveness."
+        },
+        {
+            "question": "A student regularly evaluates personal learning strategies and adjusts them to improve productivity. Which professional habit is being demonstrated?",
+            "option_a": "A. Reflective self-management",
+            "option_b": "B. Automated learning",
+            "option_c": "C. Passive observation",
+            "option_d": "D. Task avoidance",
+            "correct_answer": "A",
+            "explanation": "Reflective self-management involves continuously evaluating and improving personal learning methods."
+        },
+        {
+            "question": "Which practice helps professionals remain competitive in rapidly changing industries?",
+            "option_a": "A. Ignoring emerging technologies",
+            "option_b": "B. Continuous skill development",
+            "option_c": "C. Limiting collaboration",
+            "option_d": "D. Avoiding feedback",
+            "correct_answer": "B",
+            "explanation": "Continuous skill development ensures professionals stay relevant in evolving industries."
+        },
+        {
+            "question": "Which factor most contributes to effective problem solving in professional environments?",
+            "option_a": "A. Relying only on intuition",
+            "option_b": "B. Structured analysis and evidence-based reasoning",
+            "option_c": "C. Avoiding collaboration",
+            "option_d": "D. Ignoring data",
+            "correct_answer": "B",
+            "explanation": "Structured analysis and evidence-based reasoning improve decision quality and problem solving."
+        }
+    ]
+}
