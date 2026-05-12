@@ -1,0 +1,742 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of a hard disk drive (HDD) in a computer system?",
+            "option_a": "A. Temporary storage for running processes",
+            "option_b": "B. Permanent secondary storage for data",
+            "option_c": "C. Processing arithmetic operations",
+            "option_d": "D. Managing network communication",
+            "correct_answer": "B",
+            "explanation": "An HDD is a secondary storage device used to store data permanently."
+        },
+        {
+            "question": "Which HDD component is responsible for reading and writing data?",
+            "option_a": "A. Sector",
+            "option_b": "B. Track",
+            "option_c": "C. Read/Write Head",
+            "option_d": "D. Platter",
+            "correct_answer": "C",
+            "explanation": "The read/write head accesses data by reading from and writing to the disk surface."
+        },
+        {
+            "question": "What is a track in a hard disk?",
+            "option_a": "A. A vertical partition of a disk",
+            "option_b": "B. A circular path on the platter surface",
+            "option_c": "C. A movable arm inside the HDD",
+            "option_d": "D. A memory buffer",
+            "correct_answer": "B",
+            "explanation": "Tracks are concentric circular paths where data is stored on the platter."
+        },
+        {
+            "question": "What is the smallest physical storage unit on a hard disk?",
+            "option_a": "A. Cylinder",
+            "option_b": "B. Sector",
+            "option_c": "C. Track",
+            "option_d": "D. Platter",
+            "correct_answer": "B",
+            "explanation": "A sector is the smallest addressable storage unit on a disk."
+        },
+        {
+            "question": "Which term refers to the time taken for the disk head to move to the required track?",
+            "option_a": "A. Transfer time",
+            "option_b": "B. Access latency",
+            "option_c": "C. Seek time",
+            "option_d": "D. Rotational delay",
+            "correct_answer": "C",
+            "explanation": "Seek time is the duration required for the disk head to reach the target track."
+        },
+        {
+            "question": "Rotational latency occurs because:",
+            "option_a": "A. The actuator arm is overloaded",
+            "option_b": "B. The disk must rotate until the desired sector aligns with the head",
+            "option_c": "C. Data transfer speed is low",
+            "option_d": "D. The OS queue is full",
+            "correct_answer": "B",
+            "explanation": "Rotational latency is caused by waiting for the disk platter to rotate to the correct sector."
+        },
+        {
+            "question": "Which formula correctly represents total disk access time?",
+            "option_a": "A. Access Time = Seek Time × Transfer Time",
+            "option_b": "B. Access Time = Seek Time + Rotational Latency + Transfer Time",
+            "option_c": "C. Access Time = Rotational Latency − Seek Time",
+            "option_d": "D. Access Time = Transfer Time ÷ Seek Time",
+            "correct_answer": "B",
+            "explanation": "Total disk access time is the sum of seek time, rotational latency, and transfer time."
+        },
+        {
+            "question": "What is the primary goal of disk scheduling algorithms?",
+            "option_a": "A. Increase CPU clock speed",
+            "option_b": "B. Reduce disk access time",
+            "option_c": "C. Increase RAM size",
+            "option_d": "D. Reduce file size",
+            "correct_answer": "B",
+            "explanation": "Disk scheduling algorithms aim to minimize head movement and improve system performance."
+        },
+        {
+            "question": "Why are disk scheduling algorithms necessary in operating systems?",
+            "option_a": "A. To compress files automatically",
+            "option_b": "B. To prevent CPU overheating",
+            "option_c": "C. To efficiently handle multiple disk access requests",
+            "option_d": "D. To increase internet speed",
+            "correct_answer": "C",
+            "explanation": "Disk scheduling optimizes the servicing order of multiple disk requests."
+        },
+        {
+            "question": "Which scheduling algorithm services requests strictly in the order they arrive?",
+            "option_a": "A. SSTF",
+            "option_b": "B. SCAN",
+            "option_c": "C. LOOK",
+            "option_d": "D. FCFS",
+            "correct_answer": "D",
+            "explanation": "FCFS processes requests sequentially based on arrival order."
+        },
+        {
+            "question": "What is a major disadvantage of the FCFS scheduling algorithm?",
+            "option_a": "A. It causes starvation",
+            "option_b": "B. It may result in excessive head movement",
+            "option_c": "C. It ignores request queues",
+            "option_d": "D. It requires parity bits",
+            "correct_answer": "B",
+            "explanation": "FCFS can move the disk head inefficiently, increasing total seek time."
+        },
+        {
+            "question": "Which disk scheduling algorithm selects the request closest to the current head position?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. C-SCAN",
+            "option_d": "D. LOOK",
+            "correct_answer": "B",
+            "explanation": "SSTF chooses the request with the minimum seek distance from the current head."
+        },
+        {
+            "question": "Which problem is commonly associated with SSTF scheduling?",
+            "option_a": "A. Data corruption",
+            "option_b": "B. Excessive parity overhead",
+            "option_c": "C. Starvation of distant requests",
+            "option_d": "D. Reduced disk capacity",
+            "correct_answer": "C",
+            "explanation": "Requests far from the current head position may wait indefinitely in SSTF."
+        },
+        {
+            "question": "The SCAN algorithm is also known as:",
+            "option_a": "A. Circular algorithm",
+            "option_b": "B. Elevator algorithm",
+            "option_c": "C. Priority algorithm",
+            "option_d": "D. Paging algorithm",
+            "correct_answer": "B",
+            "explanation": "SCAN moves like an elevator, servicing requests in one direction before reversing."
+        },
+        {
+            "question": "What distinguishes C-SCAN from SCAN?",
+            "option_a": "A. C-SCAN services requests randomly",
+            "option_b": "B. C-SCAN only moves in one direction and jumps back",
+            "option_c": "C. C-SCAN ignores seek time",
+            "option_d": "D. C-SCAN uses parity checking",
+            "correct_answer": "B",
+            "explanation": "C-SCAN services requests in one direction and returns to the beginning without servicing during the return."
+        },
+        {
+            "question": "How does LOOK differ from SCAN?",
+            "option_a": "A. LOOK reaches the physical end of the disk before reversing",
+            "option_b": "B. LOOK ignores pending requests",
+            "option_c": "C. LOOK reverses direction at the last pending request instead of the disk end",
+            "option_d": "D. LOOK always uses FCFS internally",
+            "correct_answer": "C",
+            "explanation": "LOOK stops at the final request in a direction instead of going to the disk boundary."
+        },
+        {
+            "question": "Which algorithm behaves like C-SCAN but only travels as far as the final request?",
+            "option_a": "A. SSTF",
+            "option_b": "B. LOOK",
+            "option_c": "C. C-LOOK",
+            "option_d": "D. FCFS",
+            "correct_answer": "C",
+            "explanation": "C-LOOK wraps around after reaching the last request instead of the disk end."
+        },
+        {
+            "question": "RAID stands for:",
+            "option_a": "A. Random Access Integrated Device",
+            "option_b": "B. Redundant Array of Independent Disks",
+            "option_c": "C. Rapid Array of Internal Drives",
+            "option_d": "D. Rotational Access Indexed Data",
+            "correct_answer": "B",
+            "explanation": "RAID stands for Redundant Array of Independent Disks."
+        },
+        {
+            "question": "Which RAID technique distributes data across multiple disks for improved performance?",
+            "option_a": "A. Mirroring",
+            "option_b": "B. Parity",
+            "option_c": "C. Striping",
+            "option_d": "D. Replication",
+            "correct_answer": "C",
+            "explanation": "Striping divides data across disks to enable parallel access."
+        },
+        {
+            "question": "Which RAID level provides no fault tolerance?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 0",
+            "correct_answer": "D",
+            "explanation": "RAID 0 only uses striping and does not provide redundancy."
+        },
+        {
+            "question": "Which RAID level duplicates data across disks?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 1",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "B",
+            "explanation": "RAID 1 uses mirroring to store identical copies of data."
+        },
+        {
+            "question": "What is a major disadvantage of RAID 1?",
+            "option_a": "A. Slow reads",
+            "option_b": "B. No redundancy",
+            "option_c": "C. Requires double storage capacity",
+            "option_d": "D. Cannot recover data",
+            "correct_answer": "C",
+            "explanation": "RAID 1 mirrors data, requiring twice the storage space."
+        },
+        {
+            "question": "Which RAID level uses parity to recover lost data?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 1",
+            "option_d": "D. RAID 10",
+            "correct_answer": "B",
+            "explanation": "RAID 5 distributes parity information across disks for recovery."
+        },
+        {
+            "question": "How many disk failures can RAID 5 tolerate?",
+            "option_a": "A. Zero",
+            "option_b": "B. One",
+            "option_c": "C. Two",
+            "option_d": "D. Unlimited",
+            "correct_answer": "B",
+            "explanation": "RAID 5 can recover from a single disk failure."
+        },
+        {
+            "question": "Which RAID level uses double parity?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 0",
+            "correct_answer": "C",
+            "explanation": "RAID 6 stores two parity blocks, enabling recovery from two disk failures."
+        },
+        {
+            "question": "What is a key advantage of RAID 10?",
+            "option_a": "A. Lowest storage overhead",
+            "option_b": "B. Very high performance and fault tolerance",
+            "option_c": "C. No mirroring required",
+            "option_d": "D. Minimal disk usage",
+            "correct_answer": "B",
+            "explanation": "RAID 10 combines striping and mirroring for performance and reliability."
+        },
+        {
+            "question": "Given the queue 98, 183, 37, 122, 14, 124, 65, 67 and head at 53, which request is serviced first in FCFS?",
+            "option_a": "A. 65",
+            "option_b": "B. 98",
+            "option_c": "C. 37",
+            "option_d": "D. 14",
+            "correct_answer": "B",
+            "explanation": "FCFS services requests in the order they arrive, so 98 is first."
+        },
+        {
+            "question": "In SSTF scheduling with head at 53 and queue 98, 183, 37, 122, 14, 124, 65, 67, which request is serviced first?",
+            "option_a": "A. 65",
+            "option_b": "B. 37",
+            "option_c": "C. 67",
+            "option_d": "D. 98",
+            "correct_answer": "A",
+            "explanation": "65 is closest to 53 with a seek distance of 12."
+        },
+        {
+            "question": "If the disk head is moving left in SCAN scheduling, what happens after reaching the lowest request?",
+            "option_a": "A. The algorithm terminates",
+            "option_b": "B. The head jumps to the highest track",
+            "option_c": "C. The head reverses direction",
+            "option_d": "D. Requests are ignored",
+            "correct_answer": "C",
+            "explanation": "SCAN reverses direction after reaching the end in one direction."
+        },
+        {
+            "question": "Which scheduling algorithm generally provides more uniform waiting times than SCAN?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. C-SCAN",
+            "option_d": "D. LOOK",
+            "correct_answer": "C",
+            "explanation": "C-SCAN offers more uniform wait times by servicing in one direction consistently."
+        },
+        {
+            "question": "What happens in C-LOOK after the highest request is serviced?",
+            "option_a": "A. The head moves to track 0",
+            "option_b": "B. The head reverses direction immediately",
+            "option_c": "C. The head jumps to the lowest pending request",
+            "option_d": "D. All requests are cleared",
+            "correct_answer": "C",
+            "explanation": "C-LOOK wraps around directly to the lowest pending request."
+        },
+        {
+            "question": "Which RAID level provides the best raw performance but the worst reliability?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 1",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "A",
+            "explanation": "RAID 0 maximizes speed through striping but has no redundancy."
+        },
+        {
+            "question": "A company requires high fault tolerance and the ability to survive two simultaneous disk failures. Which RAID level is most suitable?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 1",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "D",
+            "explanation": "RAID 6 uses double parity and can tolerate two disk failures."
+        },
+        {
+            "question": "Which scheduling algorithm can cause starvation because nearby requests are repeatedly prioritized?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. SCAN",
+            "option_d": "D. C-SCAN",
+            "correct_answer": "B",
+            "explanation": "SSTF may indefinitely delay distant requests."
+        },
+        {
+            "question": "What is the total disk access time if seek time is 5 ms, rotational latency is 3 ms, and transfer time is 2 ms?",
+            "option_a": "A. 5 ms",
+            "option_b": "B. 8 ms",
+            "option_c": "C. 10 ms",
+            "option_d": "D. 15 ms",
+            "correct_answer": "C",
+            "explanation": "Total access time = 5 + 3 + 2 = 10 ms."
+        },
+        {
+            "question": "Which RAID level combines striping and mirroring?",
+            "option_a": "A. RAID 10",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 0",
+            "correct_answer": "A",
+            "explanation": "RAID 10 combines RAID 1 and RAID 0 techniques."
+        },
+        {
+            "question": "A multimedia streaming server prioritizes maximum read/write speed and can tolerate data loss. Which RAID level is most appropriate?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 1",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "A",
+            "explanation": "RAID 0 offers maximum performance but no fault tolerance."
+        },
+        {
+            "question": "In SCAN scheduling, why is the algorithm compared to an elevator?",
+            "option_a": "A. It randomly selects floors",
+            "option_b": "B. It moves in one direction servicing requests before reversing",
+            "option_c": "C. It skips all intermediate requests",
+            "option_d": "D. It prioritizes top floors",
+            "correct_answer": "B",
+            "explanation": "SCAN services requests while moving in one direction, then reverses like an elevator."
+        },
+        {
+            "question": "Which component physically rotates inside an HDD?",
+            "option_a": "A. Actuator arm",
+            "option_b": "B. Sector",
+            "option_c": "C. Platter",
+            "option_d": "D. Cache controller",
+            "correct_answer": "C",
+            "explanation": "Platters spin to allow sectors to pass under the read/write head."
+        },
+        {
+            "question": "Which RAID level has less storage overhead than RAID 1 while still offering fault tolerance?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 10",
+            "option_d": "D. RAID 1",
+            "correct_answer": "B",
+            "explanation": "RAID 5 uses parity instead of full duplication, reducing overhead."
+        },
+        {
+            "question": "Which disk scheduling algorithm usually results in the minimum average seek time?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. C-SCAN",
+            "option_d": "D. LOOK",
+            "correct_answer": "B",
+            "explanation": "SSTF minimizes movement by always choosing the nearest request."
+        },
+        {
+            "question": "What is the primary disadvantage of RAID 6 compared to RAID 5?",
+            "option_a": "A. No redundancy",
+            "option_b": "B. Lower read speed",
+            "option_c": "C. Higher storage and write overhead",
+            "option_d": "D. Inability to recover data",
+            "correct_answer": "C",
+            "explanation": "RAID 6 uses two parity blocks, increasing overhead and slowing writes."
+        },
+        {
+            "question": "A disk request queue contains 20, 40, 60, 80 with head at 50. Which request will SSTF service first?",
+            "option_a": "A. 20",
+            "option_b": "B. 40",
+            "option_c": "C. 60",
+            "option_d": "D. 80",
+            "correct_answer": "B",
+            "explanation": "40 and 60 are equally distant, but lower track is typically chosen first in such cases."
+        },
+        {
+            "question": "Which RAID level would be least suitable for a banking database requiring maximum reliability?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 0",
+            "correct_answer": "D",
+            "explanation": "RAID 0 provides no redundancy and risks total data loss."
+        },
+        {
+            "question": "What happens to data in RAID 0 if one disk fails?",
+            "option_a": "A. Only one file is lost",
+            "option_b": "B. Data can be rebuilt using parity",
+            "option_c": "C. All data is lost",
+            "option_d": "D. Mirrored disks restore data",
+            "correct_answer": "C",
+            "explanation": "RAID 0 lacks redundancy, so failure of one disk destroys the array data."
+        },
+        {
+            "question": "Which scheduling algorithm reduces unnecessary movement by not going to the disk edge unless required?",
+            "option_a": "A. LOOK",
+            "option_b": "B. FCFS",
+            "option_c": "C. SSTF",
+            "option_d": "D. RAID",
+            "correct_answer": "A",
+            "explanation": "LOOK only travels as far as the last pending request."
+        },
+        {
+            "question": "What is the main benefit of parity in RAID systems?",
+            "option_a": "A. Increasing processor speed",
+            "option_b": "B. Compressing files",
+            "option_c": "C. Recovering data after disk failure",
+            "option_d": "D. Reducing rotational latency",
+            "correct_answer": "C",
+            "explanation": "Parity allows lost data to be reconstructed after failure."
+        },
+        {
+            "question": "A disk head is at track 100 and moving right using LOOK. Pending requests are 110, 130, 90, 70. Which request is serviced first?",
+            "option_a": "A. 90",
+            "option_b": "B. 70",
+            "option_c": "C. 110",
+            "option_d": "D. 130",
+            "correct_answer": "C",
+            "explanation": "LOOK continues in the current direction and services 110 first."
+        },
+        {
+            "question": "Which RAID level typically has the highest storage efficiency among fault-tolerant RAID levels?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 10",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 0",
+            "correct_answer": "C",
+            "explanation": "RAID 5 uses distributed parity with less overhead than mirroring."
+        },
+        {
+            "question": "Why are write operations slower in RAID 5?",
+            "option_a": "A. Because of striping overhead",
+            "option_b": "B. Because parity calculations are required",
+            "option_c": "C. Because no cache is used",
+            "option_d": "D. Because mirroring duplicates writes",
+            "correct_answer": "B",
+            "explanation": "Parity generation and updates increase write complexity."
+        },
+        {
+            "question": "Which disk scheduling algorithm generally provides the fairest servicing pattern?",
+            "option_a": "A. SSTF",
+            "option_b": "B. FCFS",
+            "option_c": "C. C-SCAN",
+            "option_d": "D. LOOK",
+            "correct_answer": "C",
+            "explanation": "C-SCAN gives more uniform wait times across requests."
+        },
+        {
+            "question": "If the transfer time increases while seek time and latency remain constant, what happens to total access time?",
+            "option_a": "A. It decreases",
+            "option_b": "B. It becomes zero",
+            "option_c": "C. It increases",
+            "option_d": "D. It stays the same",
+            "correct_answer": "C",
+            "explanation": "Transfer time is part of total disk access time."
+        },
+        {
+            "question": "Which scheduling algorithm is most likely to minimize variance in response times?",
+            "option_a": "A. C-SCAN",
+            "option_b": "B. SSTF",
+            "option_c": "C. FCFS",
+            "option_d": "D. RAID 1",
+            "correct_answer": "A",
+            "explanation": "C-SCAN provides more consistent response times by treating tracks uniformly."
+        },
+        {
+            "question": "Which RAID configuration would best suit a high-performance database requiring both speed and redundancy?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 10",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "B",
+            "explanation": "RAID 10 combines high speed with strong fault tolerance."
+        },
+        {
+            "question": "In FCFS scheduling, what is the next request serviced after 98 in the queue 98, 183, 37, 122?",
+            "option_a": "A. 37",
+            "option_b": "B. 122",
+            "option_c": "C. 183",
+            "option_d": "D. 14",
+            "correct_answer": "C",
+            "explanation": "FCFS processes requests in exact arrival order."
+        },
+        {
+            "question": "Which algorithm avoids unnecessary travel to the physical end of the disk while still maintaining directional movement?",
+            "option_a": "A. LOOK",
+            "option_b": "B. FCFS",
+            "option_c": "C. RAID 6",
+            "option_d": "D. SSTF",
+            "correct_answer": "A",
+            "explanation": "LOOK reverses at the final pending request instead of the disk boundary."
+        },
+        {
+            "question": "A RAID system must survive one disk failure with minimal storage overhead. Which RAID level is ideal?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 0",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 10",
+            "correct_answer": "C",
+            "explanation": "RAID 5 provides single-disk fault tolerance with efficient storage use."
+        },
+        {
+            "question": "Which disk scheduling algorithm may lead to very long waiting times for some requests?",
+            "option_a": "A. SSTF",
+            "option_b": "B. C-SCAN",
+            "option_c": "C. LOOK",
+            "option_d": "D. SCAN",
+            "correct_answer": "A",
+            "explanation": "SSTF can starve requests far from the current head position."
+        },
+        {
+            "question": "Which RAID level has approximately 50% storage overhead?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 10",
+            "option_d": "D. RAID 6",
+            "correct_answer": "C",
+            "explanation": "RAID 10 mirrors data, effectively halving usable storage."
+        },
+        {
+            "question": "What is the function of the actuator arm in an HDD?",
+            "option_a": "A. Rotates the platter",
+            "option_b": "B. Stores parity information",
+            "option_c": "C. Moves the read/write head",
+            "option_d": "D. Compresses data",
+            "correct_answer": "C",
+            "explanation": "The actuator arm positions the read/write head over tracks."
+        },
+        {
+            "question": "Which RAID level would be most cost-effective for maximum capacity without concern for reliability?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 6",
+            "option_c": "C. RAID 10",
+            "option_d": "D. RAID 0",
+            "correct_answer": "D",
+            "explanation": "RAID 0 uses all available storage without redundancy."
+        },
+        {
+            "question": "What is the main objective of SSTF compared to FCFS?",
+            "option_a": "A. Increase parity calculations",
+            "option_b": "B. Reduce average seek time",
+            "option_c": "C. Improve rotational speed",
+            "option_d": "D. Duplicate requests",
+            "correct_answer": "B",
+            "explanation": "SSTF minimizes head movement by servicing nearby requests first."
+        },
+        {
+            "question": "Which scheduling algorithm can be considered an optimized version of SCAN?",
+            "option_a": "A. LOOK",
+            "option_b": "B. FCFS",
+            "option_c": "C. RAID 5",
+            "option_d": "D. SSTF",
+            "correct_answer": "A",
+            "explanation": "LOOK improves SCAN by avoiding unnecessary movement to disk ends."
+        },
+        {
+            "question": "A server requires continuous availability even during two simultaneous disk failures. Which RAID level is best?",
+            "option_a": "A. RAID 5",
+            "option_b": "B. RAID 1",
+            "option_c": "C. RAID 0",
+            "option_d": "D. RAID 6",
+            "correct_answer": "D",
+            "explanation": "RAID 6 tolerates failure of two disks simultaneously."
+        },
+        {
+            "question": "Which scheduling algorithm usually gives the worst average seek performance?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. LOOK",
+            "option_d": "D. C-LOOK",
+            "correct_answer": "A",
+            "explanation": "FCFS does not optimize head movement."
+        },
+        {
+            "question": "In C-SCAN, what happens after the head reaches the final track?",
+            "option_a": "A. It reverses direction while servicing requests",
+            "option_b": "B. It stops permanently",
+            "option_c": "C. It jumps to the beginning without servicing requests",
+            "option_d": "D. It switches to SSTF",
+            "correct_answer": "C",
+            "explanation": "C-SCAN wraps around to the beginning after reaching the end."
+        },
+        {
+            "question": "Which RAID level provides both high read performance and simple recovery?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 0",
+            "option_c": "C. RAID 5",
+            "option_d": "D. RAID 6",
+            "correct_answer": "A",
+            "explanation": "RAID 1 mirrors data, making recovery straightforward and reads fast."
+        },
+        {
+            "question": "Which component contributes most directly to mechanical movement delay in HDDs?",
+            "option_a": "A. Transfer time",
+            "option_b": "B. Seek time",
+            "option_c": "C. Cache hit rate",
+            "option_d": "D. CPU cycle",
+            "correct_answer": "B",
+            "explanation": "Seek time involves physical movement of the disk head."
+        },
+        {
+            "question": "Why is RAID 10 considered expensive?",
+            "option_a": "A. It requires parity processors",
+            "option_b": "B. It uses double parity",
+            "option_c": "C. It requires many disks and mirroring",
+            "option_d": "D. It lacks striping",
+            "correct_answer": "C",
+            "explanation": "RAID 10 combines striping and mirroring, requiring many disks."
+        },
+        {
+            "question": "Which algorithm would likely provide the shortest response time for nearby clustered requests?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. C-SCAN",
+            "option_d": "D. RAID 1",
+            "correct_answer": "B",
+            "explanation": "SSTF prioritizes nearby requests, reducing immediate seek time."
+        },
+        {
+            "question": "Which RAID level is least efficient in terms of usable storage capacity?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 1",
+            "option_d": "D. RAID 6",
+            "correct_answer": "C",
+            "explanation": "RAID 1 duplicates all data, using 50% of total storage for redundancy."
+        },
+        {
+            "question": "What does parity information in RAID primarily help achieve?",
+            "option_a": "A. File compression",
+            "option_b": "B. Error detection and recovery",
+            "option_c": "C. Increased rotational speed",
+            "option_d": "D. Reduced CPU usage",
+            "correct_answer": "B",
+            "explanation": "Parity enables reconstruction of data after disk failures."
+        },
+        {
+            "question": "Which scheduling algorithm minimizes movement but may unfairly delay some requests?",
+            "option_a": "A. SSTF",
+            "option_b": "B. FCFS",
+            "option_c": "C. SCAN",
+            "option_d": "D. LOOK",
+            "correct_answer": "A",
+            "explanation": "SSTF optimizes movement but can starve distant requests."
+        },
+        {
+            "question": "A request queue contains 10, 20, 90, 150 and the head is at 100. Which request will SSTF likely service first?",
+            "option_a": "A. 10",
+            "option_b": "B. 20",
+            "option_c": "C. 90",
+            "option_d": "D. 150",
+            "correct_answer": "C",
+            "explanation": "90 is closest to 100 with a seek distance of 10."
+        },
+        {
+            "question": "Which RAID level balances performance, storage efficiency, and reliability?",
+            "option_a": "A. RAID 0",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 1",
+            "option_d": "D. RAID 0+0",
+            "correct_answer": "B",
+            "explanation": "RAID 5 offers a strong balance using striping and parity."
+        },
+        {
+            "question": "Which scheduling algorithm is designed to reduce variance in waiting times by servicing in a circular pattern?",
+            "option_a": "A. SSTF",
+            "option_b": "B. C-SCAN",
+            "option_c": "C. FCFS",
+            "option_d": "D. LOOK",
+            "correct_answer": "B",
+            "explanation": "C-SCAN provides uniform wait times using circular servicing."
+        },
+        {
+            "question": "What is the main drawback of FCFS in heavily loaded systems?",
+            "option_a": "A. Excessive head movement",
+            "option_b": "B. Lack of parity",
+            "option_c": "C. Mirroring overhead",
+            "option_d": "D. Reduced transfer time",
+            "correct_answer": "A",
+            "explanation": "FCFS may move the disk head inefficiently under heavy workloads."
+        },
+        {
+            "question": "Which RAID level offers the fastest rebuild after a disk failure?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 5",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 0",
+            "correct_answer": "A",
+            "explanation": "RAID 1 simply copies data from the mirrored disk during recovery."
+        },
+        {
+            "question": "In LOOK scheduling, why is performance often better than SCAN?",
+            "option_a": "A. LOOK uses parity",
+            "option_b": "B. LOOK avoids unnecessary movement to disk boundaries",
+            "option_c": "C. LOOK duplicates requests",
+            "option_d": "D. LOOK compresses data",
+            "correct_answer": "B",
+            "explanation": "LOOK stops at the last request instead of traveling to the physical end."
+        },
+        {
+            "question": "Which RAID level is unsuitable if storage efficiency is the highest priority?",
+            "option_a": "A. RAID 5",
+            "option_b": "B. RAID 6",
+            "option_c": "C. RAID 1",
+            "option_d": "D. RAID 0",
+            "correct_answer": "C",
+            "explanation": "RAID 1 sacrifices half the storage capacity for mirroring."
+        },
+        {
+            "question": "Which disk scheduling algorithm is most predictable in servicing order?",
+            "option_a": "A. FCFS",
+            "option_b": "B. SSTF",
+            "option_c": "C. LOOK",
+            "option_d": "D. C-LOOK",
+            "correct_answer": "A",
+            "explanation": "FCFS strictly follows arrival order, making it highly predictable."
+        },
+        {
+            "question": "Which RAID level can survive two disk failures but generally has slower writes than RAID 5?",
+            "option_a": "A. RAID 1",
+            "option_b": "B. RAID 0",
+            "option_c": "C. RAID 6",
+            "option_d": "D. RAID 10",
+            "correct_answer": "C",
+            "explanation": "RAID 6 uses double parity, increasing write overhead while tolerating two failures."
+        }
+    ]
+}

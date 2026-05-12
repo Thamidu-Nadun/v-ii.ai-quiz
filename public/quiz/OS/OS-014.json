@@ -1,0 +1,472 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of a file system in an operating system?",
+            "option_a": "A. To manage CPU scheduling",
+            "option_b": "B. To organize, store, and retrieve data on storage devices",
+            "option_c": "C. To allocate memory to running processes",
+            "option_d": "D. To encrypt all user data automatically",
+            "correct_answer": "B",
+            "explanation": "A file system manages how data is stored, organized, and retrieved from storage devices."
+        },
+        {
+            "question": "Which of the following best describes a file in an operating system?",
+            "option_a": "A. A temporary memory location",
+            "option_b": "B. A collection of related information stored on secondary storage",
+            "option_c": "C. A process currently executing in RAM",
+            "option_d": "D. A hardware component used for storage",
+            "correct_answer": "B",
+            "explanation": "A file is the smallest unit of logical storage containing related information on secondary storage."
+        },
+        {
+            "question": "Which file attribute uniquely identifies a file internally within the operating system?",
+            "option_a": "A. Name",
+            "option_b": "B. Identifier",
+            "option_c": "C. Location",
+            "option_d": "D. Size",
+            "correct_answer": "B",
+            "explanation": "The identifier is the unique internal ID used by the operating system to distinguish files."
+        },
+        {
+            "question": "What is the role of a directory in a file system?",
+            "option_a": "A. Execute programs",
+            "option_b": "B. Store CPU instructions",
+            "option_c": "C. Organize and store information about files",
+            "option_d": "D. Compress files automatically",
+            "correct_answer": "C",
+            "explanation": "Directories organize files logically and store metadata for efficient searching and management."
+        },
+        {
+            "question": "Which operation moves the current position within a file?",
+            "option_a": "A. Read",
+            "option_b": "B. Seek",
+            "option_c": "C. Delete",
+            "option_d": "D. Open",
+            "correct_answer": "B",
+            "explanation": "The seek operation changes the file pointer position within a file."
+        },
+        {
+            "question": "Why does an operating system maintain an open-file table?",
+            "option_a": "A. To permanently store deleted files",
+            "option_b": "B. To improve performance and manage open files efficiently",
+            "option_c": "C. To encrypt user files",
+            "option_d": "D. To replace secondary storage",
+            "correct_answer": "B",
+            "explanation": "The open-file table stores information such as file pointers and access rights to improve efficiency."
+        },
+        {
+            "question": "Which file access method is most suitable for reading a log file line by line?",
+            "option_a": "A. Direct access",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Sequential access",
+            "option_d": "D. Random allocation",
+            "correct_answer": "C",
+            "explanation": "Sequential access is efficient when data is processed in order from beginning to end."
+        },
+        {
+            "question": "Which access method allows a program to directly access record number 100 in a file?",
+            "option_a": "A. Sequential access",
+            "option_b": "B. Direct access",
+            "option_c": "C. Linked access",
+            "option_d": "D. Buffered access",
+            "correct_answer": "B",
+            "explanation": "Direct access allows random access to any location within a file."
+        },
+        {
+            "question": "Which operation is NOT typically performed on a directory?",
+            "option_a": "A. Traverse file system",
+            "option_b": "B. Rename a file",
+            "option_c": "C. Execute CPU instructions",
+            "option_d": "D. Search for a file",
+            "correct_answer": "C",
+            "explanation": "Directories manage files and metadata, not CPU instruction execution."
+        },
+        {
+            "question": "What is a major disadvantage of a single-level directory structure?",
+            "option_a": "A. Efficient grouping capability",
+            "option_b": "B. Naming conflicts among users",
+            "option_c": "C. Excessive memory allocation",
+            "option_d": "D. Slow CPU execution",
+            "correct_answer": "B",
+            "explanation": "Single-level directories create naming conflicts because all users share the same directory."
+        },
+        {
+            "question": "What advantage does a two-level directory provide?",
+            "option_a": "A. Eliminates the need for path names",
+            "option_b": "B. Supports unlimited grouping capability",
+            "option_c": "C. Allows different users to have files with the same name",
+            "option_d": "D. Prevents all access control issues",
+            "correct_answer": "C",
+            "explanation": "Two-level directories separate user directories, allowing identical file names for different users."
+        },
+        {
+            "question": "Which type of directory structure is most hierarchical and commonly used in modern systems?",
+            "option_a": "A. Single-level directory",
+            "option_b": "B. Two-level directory",
+            "option_c": "C. Tree-structured directory",
+            "option_d": "D. Flat directory",
+            "correct_answer": "C",
+            "explanation": "Tree-structured directories support hierarchical organization of files and directories."
+        },
+        {
+            "question": "Which file permission allows a user to modify file contents?",
+            "option_a": "A. Execute",
+            "option_b": "B. Read",
+            "option_c": "C. Write",
+            "option_d": "D. Append",
+            "correct_answer": "C",
+            "explanation": "Write permission allows modification or addition of data in a file."
+        },
+        {
+            "question": "In UNIX permissions, what does the numeric permission 7 represent?",
+            "option_a": "A. Read only",
+            "option_b": "B. Write only",
+            "option_c": "C. Read, write, and execute",
+            "option_d": "D. Execute only",
+            "correct_answer": "C",
+            "explanation": "Permission 7 corresponds to RWX (111 in binary)."
+        },
+        {
+            "question": "Which UNIX command attaches a group to a file?",
+            "option_a": "A. chmod",
+            "option_b": "B. chgrp",
+            "option_c": "C. mkdir",
+            "option_d": "D. passwd",
+            "correct_answer": "B",
+            "explanation": "The chgrp command changes the group ownership of a file."
+        },
+        {
+            "question": "Which layer of the file-system structure interacts directly with hardware devices?",
+            "option_a": "A. Application layer",
+            "option_b": "B. Logical file system",
+            "option_c": "C. Device drivers",
+            "option_d": "D. User interface layer",
+            "correct_answer": "C",
+            "explanation": "Device drivers communicate directly with storage hardware."
+        },
+        {
+            "question": "What information is typically stored in a File Control Block (FCB)?",
+            "option_a": "A. CPU temperature",
+            "option_b": "B. User passwords",
+            "option_c": "C. File permissions, size, and dates",
+            "option_d": "D. Network routing tables",
+            "correct_answer": "C",
+            "explanation": "An FCB stores metadata such as inode number, permissions, size, and timestamps."
+        },
+        {
+            "question": "Which file allocation method stores each file in contiguous disk blocks?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Contiguous allocation",
+            "option_d": "D. Dynamic allocation",
+            "correct_answer": "C",
+            "explanation": "Contiguous allocation stores files in sequential neighboring blocks."
+        },
+        {
+            "question": "What is a major problem associated with contiguous allocation?",
+            "option_a": "A. Internal fragmentation only",
+            "option_b": "B. External fragmentation",
+            "option_c": "C. Inability to perform direct access",
+            "option_d": "D. Lack of sequential access",
+            "correct_answer": "B",
+            "explanation": "Contiguous allocation suffers from external fragmentation as files grow and shrink."
+        },
+        {
+            "question": "In contiguous allocation, how many I/O operations are needed to access the 8th block directly?",
+            "option_a": "A. 8",
+            "option_b": "B. 4",
+            "option_c": "C. 2",
+            "option_d": "D. 1",
+            "correct_answer": "D",
+            "explanation": "Contiguous allocation supports direct access with only one I/O operation."
+        },
+        {
+            "question": "What is an extent in extent-based file systems?",
+            "option_a": "A. A random collection of memory addresses",
+            "option_b": "B. A contiguous block of disk space",
+            "option_c": "C. A network packet",
+            "option_d": "D. A file permission table",
+            "correct_answer": "B",
+            "explanation": "An extent is a contiguous sequence of disk blocks used for file allocation."
+        },
+        {
+            "question": "Which statement about linked allocation is TRUE?",
+            "option_a": "A. It requires all blocks to be contiguous",
+            "option_b": "B. It supports efficient direct access",
+            "option_c": "C. Each block contains a pointer to the next block",
+            "option_d": "D. It completely eliminates internal fragmentation",
+            "correct_answer": "C",
+            "explanation": "Linked allocation stores pointers linking each block to the next block."
+        },
+        {
+            "question": "Why is linked allocation inefficient for direct access?",
+            "option_a": "A. It requires compaction",
+            "option_b": "B. Blocks must be traversed sequentially",
+            "option_c": "C. It cannot store large files",
+            "option_d": "D. It lacks file pointers",
+            "correct_answer": "B",
+            "explanation": "To access a specific block, all previous blocks must be traversed."
+        },
+        {
+            "question": "A file uses linked allocation and contains 10 blocks. How many I/O operations are needed to access the 6th block?",
+            "option_a": "A. 1",
+            "option_b": "B. 2",
+            "option_c": "C. 6",
+            "option_d": "D. 10",
+            "correct_answer": "C",
+            "explanation": "Linked allocation requires traversal through the first six blocks."
+        },
+        {
+            "question": "What is the main advantage of indexed allocation?",
+            "option_a": "A. No storage overhead",
+            "option_b": "B. Supports direct access efficiently",
+            "option_c": "C. Eliminates all fragmentation",
+            "option_d": "D. Requires no index block",
+            "correct_answer": "B",
+            "explanation": "Indexed allocation enables efficient direct access through index blocks."
+        },
+        {
+            "question": "What is a disadvantage of indexed allocation?",
+            "option_a": "A. External fragmentation",
+            "option_b": "B. No random access",
+            "option_c": "C. Extra storage overhead for index blocks",
+            "option_d": "D. Sequential access only",
+            "correct_answer": "C",
+            "explanation": "Indexed allocation requires additional storage space for index blocks."
+        },
+        {
+            "question": "A file uses indexed allocation. If the index block is already in memory, how many I/O operations are needed to access a data block?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. 2",
+            "option_d": "D. 3",
+            "correct_answer": "B",
+            "explanation": "Only the target data block must be accessed when the index block is cached."
+        },
+        {
+            "question": "A file contains 10 blocks using indexed allocation. How many I/O operations are needed to read the entire file?",
+            "option_a": "A. 10",
+            "option_b": "B. 9",
+            "option_c": "C. 11",
+            "option_d": "D. 12",
+            "correct_answer": "C",
+            "explanation": "One I/O reads the index block and ten more read the data blocks."
+        },
+        {
+            "question": "Which modern file system is commonly associated with Linux?",
+            "option_a": "A. NTFS",
+            "option_b": "B. APFS",
+            "option_c": "C. ext4",
+            "option_d": "D. FAT12",
+            "correct_answer": "C",
+            "explanation": "ext4 is a widely used Linux file system."
+        },
+        {
+            "question": "What mechanism improves file system performance by reducing repeated disk access?",
+            "option_a": "A. External fragmentation",
+            "option_b": "B. Buffer caches",
+            "option_c": "C. Disk formatting",
+            "option_d": "D. Paging",
+            "correct_answer": "B",
+            "explanation": "Buffer caches store frequently accessed data in memory to improve efficiency."
+        },
+        {
+            "question": "A database system frequently accesses random records in huge files. Which access method is most appropriate?",
+            "option_a": "A. Sequential access",
+            "option_b": "B. Tape access",
+            "option_c": "C. Direct access",
+            "option_d": "D. Batch access",
+            "correct_answer": "C",
+            "explanation": "Direct access supports fast random retrieval of records."
+        },
+        {
+            "question": "A university server stores files for thousands of users. Which directory structure is MOST suitable?",
+            "option_a": "A. Single-level directory",
+            "option_b": "B. Tree-structured directory",
+            "option_c": "C. Flat directory",
+            "option_d": "D. Temporary directory",
+            "correct_answer": "B",
+            "explanation": "Tree-structured directories support scalable hierarchical organization."
+        },
+        {
+            "question": "Which allocation method provides the fastest direct block access in most cases?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Contiguous allocation",
+            "option_d": "D. Dynamic allocation",
+            "correct_answer": "C",
+            "explanation": "Contiguous allocation calculates physical addresses directly."
+        },
+        {
+            "question": "A file is expected to grow frequently and unpredictably. Which allocation method is LEAST suitable?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Contiguous allocation",
+            "option_d": "D. FAT allocation",
+            "correct_answer": "C",
+            "explanation": "Contiguous allocation struggles with file growth due to external fragmentation."
+        },
+        {
+            "question": "Which statement best explains why linked allocation avoids external fragmentation?",
+            "option_a": "A. Blocks can be scattered anywhere on the disk",
+            "option_b": "B. All files are compressed",
+            "option_c": "C. Blocks are always contiguous",
+            "option_d": "D. Files use only one block",
+            "correct_answer": "A",
+            "explanation": "Linked allocation allows blocks to be stored non-contiguously."
+        },
+        {
+            "question": "A system administrator wants both efficient direct access and minimal traversal overhead. Which allocation method should be selected?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Sequential allocation",
+            "option_d": "D. Single-level allocation",
+            "correct_answer": "B",
+            "explanation": "Indexed allocation supports direct access without traversing linked blocks."
+        },
+        {
+            "question": "Which scenario best demonstrates sequential access?",
+            "option_a": "A. Streaming a video file from beginning to end",
+            "option_b": "B. Accessing employee record #500 instantly",
+            "option_c": "C. Jumping directly to the last database entry",
+            "option_d": "D. Editing a random byte in memory",
+            "correct_answer": "A",
+            "explanation": "Sequential access processes data in order from start to finish."
+        },
+        {
+            "question": "Why are protection mechanisms important in multi-user operating systems?",
+            "option_a": "A. To increase CPU speed",
+            "option_b": "B. To reduce RAM usage",
+            "option_c": "C. To prevent unauthorized access to files",
+            "option_d": "D. To eliminate file fragmentation",
+            "correct_answer": "C",
+            "explanation": "Protection mechanisms enforce secure access control among users."
+        },
+        {
+            "question": "In UNIX permissions, what does the value 6 represent?",
+            "option_a": "A. RW-",
+            "option_b": "B. R-X",
+            "option_c": "C. --X",
+            "option_d": "D. RWX",
+            "correct_answer": "A",
+            "explanation": "Permission 6 corresponds to read and write permissions."
+        },
+        {
+            "question": "A file contains 12 blocks using contiguous allocation. How many I/O operations are needed to read the entire file?",
+            "option_a": "A. 1",
+            "option_b": "B. 6",
+            "option_c": "C. 12",
+            "option_d": "D. 13",
+            "correct_answer": "C",
+            "explanation": "Each block requires one read operation, totaling 12 I/Os."
+        },
+        {
+            "question": "A file contains 8 blocks using linked allocation. How many I/O operations are needed to read the entire file?",
+            "option_a": "A. 4",
+            "option_b": "B. 8",
+            "option_c": "C. 9",
+            "option_d": "D. 16",
+            "correct_answer": "B",
+            "explanation": "Each block must be accessed sequentially, requiring 8 I/Os."
+        },
+        {
+            "question": "A file contains 10 blocks. Which allocation method requires exactly 2 I/O operations to access the 7th block?",
+            "option_a": "A. Contiguous allocation",
+            "option_b": "B. Linked allocation",
+            "option_c": "C. Indexed allocation",
+            "option_d": "D. Sequential allocation",
+            "correct_answer": "C",
+            "explanation": "Indexed allocation requires one I/O for the index block and one for the target block."
+        },
+        {
+            "question": "Which allocation method is MOST vulnerable to pointer corruption issues?",
+            "option_a": "A. Contiguous allocation",
+            "option_b": "B. Linked allocation",
+            "option_c": "C. Indexed allocation",
+            "option_d": "D. Extent-based allocation",
+            "correct_answer": "B",
+            "explanation": "Linked allocation depends heavily on block pointers; corruption can break file chains."
+        },
+        {
+            "question": "Why do modern operating systems prefer extent-based systems over pure contiguous allocation?",
+            "option_a": "A. Extents eliminate all storage overhead",
+            "option_b": "B. Extents support flexible file growth while maintaining performance",
+            "option_c": "C. Extents remove the need for directories",
+            "option_d": "D. Extents disable fragmentation completely",
+            "correct_answer": "B",
+            "explanation": "Extent-based systems combine performance benefits with better scalability and flexibility."
+        },
+        {
+            "question": "Which component stores the current read/write location for an opened file?",
+            "option_a": "A. File pointer",
+            "option_b": "B. Cache controller",
+            "option_c": "C. Device driver",
+            "option_d": "D. Index node",
+            "correct_answer": "A",
+            "explanation": "The file pointer tracks the current position within an open file."
+        },
+        {
+            "question": "What is the main purpose of the file-open count in an open-file table?",
+            "option_a": "A. Count disk partitions",
+            "option_b": "B. Track how many processes currently opened the file",
+            "option_c": "C. Count the number of blocks in the file",
+            "option_d": "D. Measure disk speed",
+            "correct_answer": "B",
+            "explanation": "The file-open count tracks how many processes are using the file."
+        },
+        {
+            "question": "A company needs extremely fast sequential reading of very large multimedia files. Which allocation method is MOST appropriate?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Contiguous allocation",
+            "option_d": "D. Random allocation",
+            "correct_answer": "C",
+            "explanation": "Contiguous allocation provides excellent sequential performance due to adjacent block storage."
+        },
+        {
+            "question": "Which allocation method introduces additional storage overhead because of pointers inside blocks?",
+            "option_a": "A. Contiguous allocation",
+            "option_b": "B. Linked allocation",
+            "option_c": "C. Sequential allocation",
+            "option_d": "D. Single-level allocation",
+            "correct_answer": "B",
+            "explanation": "Linked allocation stores pointers in each block, reducing usable space."
+        },
+        {
+            "question": "Which of the following BEST explains the purpose of caching mechanisms in file systems?",
+            "option_a": "A. To permanently replace hard disks",
+            "option_b": "B. To reduce disk access latency",
+            "option_c": "C. To eliminate fragmentation",
+            "option_d": "D. To encrypt all files",
+            "correct_answer": "B",
+            "explanation": "Caching stores frequently used data in faster memory to reduce disk access times."
+        },
+        {
+            "question": "A student accidentally gives public users execute-only permission on a script. Which numeric permission corresponds to execute-only?",
+            "option_a": "A. 1",
+            "option_b": "B. 2",
+            "option_c": "C. 4",
+            "option_d": "D. 7",
+            "correct_answer": "A",
+            "explanation": "Execute-only permission corresponds to binary 001, which equals 1."
+        },
+        {
+            "question": "Which file-system layer is responsible for managing metadata and directory structures?",
+            "option_a": "A. Device drivers",
+            "option_b": "B. Physical file system",
+            "option_c": "C. Logical file system",
+            "option_d": "D. Application layer",
+            "correct_answer": "C",
+            "explanation": "The logical file system manages metadata, directories, and protection."
+        },
+        {
+            "question": "A file system designer wants to minimize external fragmentation while maintaining reasonable direct access. Which method is the BEST compromise?",
+            "option_a": "A. Linked allocation",
+            "option_b": "B. Indexed allocation",
+            "option_c": "C. Single contiguous allocation only",
+            "option_d": "D. Sequential access allocation",
+            "correct_answer": "B",
+            "explanation": "Indexed allocation avoids external fragmentation while supporting efficient direct access."
+        }
+    ]
+}

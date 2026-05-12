@@ -1,139 +1,175 @@
 export default [
     // Professional Skills Quizzes
-    {
-        title: 'Professional Skills - 15',
-        path: 'quiz/PS/PS-015.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 14',
-        path: 'quiz/PS/PS-014.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 13',
-        path: 'quiz/PS/PS-013.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 12',
-        path: 'quiz/PS/PS-012.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 11',
-        path: 'quiz/PS/PS-011.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 10',
-        path: 'quiz/PS/PS-010.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 09',
-        path: 'quiz/PS/PS-009.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 08',
-        path: 'quiz/PS/PS-008.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 07',
-        path: 'quiz/PS/PS-007.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 06',
-        path: 'quiz/PS/PS-006.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 05',
-        path: 'quiz/PS/PS-005.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 04',
-        path: 'quiz/PS/PS-004.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 03',
-        path: 'quiz/PS/PS-003.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 02',
-        path: 'quiz/PS/PS-002.json',
-        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    {
-        title: 'Professional Skills - 01',
-        path: 'quiz/PS/PS-001.json',
-        description: 'Test your knowledge of professional skills, including communication, teamwork, and problem-solving.',
-        isAvailable: true
-    },
-    // Network Programming Quizzes
-    {
-        title: 'Network Programming - 07',
-        path: 'quiz/NP/NP-007.json',
-        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 06',
-        path: 'quiz/NP/NP-006.json',
-        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 05 (optional)',
-        path: 'quiz/NP/NP-005.json',
-        description: 'Test your knowledge of network programming protocols, including TCP/IP, HTTP, and FTP.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 04',
-        path: 'quiz/NP/NP-004.json',
-        description: 'Evaluate your understanding of network programming security, including encryption, authentication, and secure communication.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 03',
-        path: 'quiz/NP/NP-003.json',
-        description: 'Test your knowledge of network programming tools and libraries, such as TCP/IP, UDP, and HTTP.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 02',
-        path: 'quiz/NP/NP-002.json',
-        description: 'Evaluate your understanding of network programming techniques, including client-server architecture and data transmission.',
-        isAvailable: true
-    },
-    {
-        title: 'Network Programming - 01',
-        path: 'quiz/NP/NP-001.json',
-        description: 'Test your knowledge of basic network programming concepts, including sockets, protocols, and communication models.',
-        isAvailable: true
-    },
+    // {
+    //     title: 'Professional Skills - 15',
+    //     path: 'quiz/PS/PS-015.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 14',
+    //     path: 'quiz/PS/PS-014.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 13',
+    //     path: 'quiz/PS/PS-013.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 12',
+    //     path: 'quiz/PS/PS-012.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 11',
+    //     path: 'quiz/PS/PS-011.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 10',
+    //     path: 'quiz/PS/PS-010.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 09',
+    //     path: 'quiz/PS/PS-009.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 08',
+    //     path: 'quiz/PS/PS-008.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 07',
+    //     path: 'quiz/PS/PS-007.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 06',
+    //     path: 'quiz/PS/PS-006.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 05',
+    //     path: 'quiz/PS/PS-005.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 04',
+    //     path: 'quiz/PS/PS-004.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 03',
+    //     path: 'quiz/PS/PS-003.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 02',
+    //     path: 'quiz/PS/PS-002.json',
+    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Professional Skills - 01',
+    //     path: 'quiz/PS/PS-001.json',
+    //     description: 'Test your knowledge of professional skills, including communication, teamwork, and problem-solving.',
+    //     isAvailable: true
+    // },
+    // // Network Programming Quizzes
+    // {
+    //     title: 'Network Programming - 07',
+    //     path: 'quiz/NP/NP-007.json',
+    //     description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 06',
+    //     path: 'quiz/NP/NP-006.json',
+    //     description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 05 (optional)',
+    //     path: 'quiz/NP/NP-005.json',
+    //     description: 'Test your knowledge of network programming protocols, including TCP/IP, HTTP, and FTP.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 04',
+    //     path: 'quiz/NP/NP-004.json',
+    //     description: 'Evaluate your understanding of network programming security, including encryption, authentication, and secure communication.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 03',
+    //     path: 'quiz/NP/NP-003.json',
+    //     description: 'Test your knowledge of network programming tools and libraries, such as TCP/IP, UDP, and HTTP.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 02',
+    //     path: 'quiz/NP/NP-002.json',
+    //     description: 'Evaluate your understanding of network programming techniques, including client-server architecture and data transmission.',
+    //     isAvailable: true
+    // },
+    // {
+    //     title: 'Network Programming - 01',
+    //     path: 'quiz/NP/NP-001.json',
+    //     description: 'Test your knowledge of basic network programming concepts, including sockets, protocols, and communication models.',
+    //     isAvailable: true
+    // },
     // Operating System Quizzes
+    {
+        title: 'Operating System - 17',
+        path: 'quiz/OS/OS-017.json',
+        description: 'Evaluate your understanding of operating system security, including access control, authentication, and encryption.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 16',
+        path: 'quiz/OS/OS-016.json',
+        description: 'Test your knowledge of operating system performance optimization techniques and tools.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 15',
+        path: 'quiz/OS/OS-015.json',
+        description: 'Evaluate your understanding of operating system virtualization, including hypervisors and containerization.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 14',
+        path: 'quiz/OS/OS-014.json',
+        description: 'Test your knowledge of operating system file systems, including types, structures, and management.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 13',
+        path: 'quiz/OS/OS-013.json',
+        description: 'Evaluate your understanding of operating system memory management, including virtual memory and paging.',
+        isAvailable: true
+    },
+    {
+        title: 'Operating System - 12',
+        path: 'quiz/OS/OS-012.json',
+        description: 'Test your knowledge of operating system process management, including scheduling and synchronization.',
+        isAvailable: true
+    },
     {
         title: 'Operating System - 11',
         path: 'quiz/OS/OS-011.json',

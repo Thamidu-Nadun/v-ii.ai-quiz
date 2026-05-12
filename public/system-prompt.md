@@ -56,3 +56,4 @@ example:
 YOU can add questions outside the scope to make sure students are well prepared for the exam and the real world. MOSTLY it will be exam. BUT HAVING QUIZZES FROM OUT OF SCOPE CAN GIVE A LITTLE CHALLENGE.
 
 BEFORE generating question tell me how should we generate quizzes to cover whole/every concepts. minimum questions 40. The is quiz for fully/master prepare students for the exam.
+I meant absoulte master covering all of the concepts.
