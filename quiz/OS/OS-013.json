@@ -1,0 +1,463 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of process synchronization in an operating system?",
+            "option_a": "A. To increase CPU clock speed",
+            "option_b": "B. To ensure orderly access to shared resources",
+            "option_c": "C. To reduce memory allocation",
+            "option_d": "D. To terminate blocked processes",
+            "correct_answer": "B",
+            "explanation": "Process synchronization ensures that concurrent processes access shared data safely and consistently."
+        },
+        {
+            "question": "A race condition occurs when:",
+            "option_a": "A. Multiple processes execute sequentially",
+            "option_b": "B. A process enters an infinite loop",
+            "option_c": "C. Concurrent processes access shared data and the result depends on execution order",
+            "option_d": "D. CPU scheduling fails",
+            "correct_answer": "C",
+            "explanation": "Race conditions occur when concurrent access to shared data produces unpredictable outcomes depending on execution timing."
+        },
+        {
+            "question": "Which of the following is considered shared data in the critical-section problem?",
+            "option_a": "A. Local variables of a function",
+            "option_b": "B. Shared buffers and shared files",
+            "option_c": "C. CPU registers of a process",
+            "option_d": "D. Stack frames of independent processes",
+            "correct_answer": "B",
+            "explanation": "Shared buffers, tables, variables, and files are examples of shared data accessed by multiple processes."
+        },
+        {
+            "question": "What is the critical section of a process?",
+            "option_a": "A. The portion where a process terminates",
+            "option_b": "B. The code segment where shared data is accessed or modified",
+            "option_c": "C. The memory allocated to the kernel",
+            "option_d": "D. The scheduler queue",
+            "correct_answer": "B",
+            "explanation": "The critical section contains code that manipulates shared resources and therefore requires synchronization."
+        },
+        {
+            "question": "Which requirement ensures that only one process can execute in its critical section at a time?",
+            "option_a": "A. Progress",
+            "option_b": "B. Fair scheduling",
+            "option_c": "C. Mutual exclusion",
+            "option_d": "D. Deadlock prevention",
+            "correct_answer": "C",
+            "explanation": "Mutual exclusion guarantees exclusive access to the critical section."
+        },
+        {
+            "question": "What does the progress condition guarantee in the critical-section problem?",
+            "option_a": "A. Every process eventually terminates",
+            "option_b": "B. Waiting processes are permanently blocked",
+            "option_c": "C. Selection of the next process to enter the critical section cannot be postponed indefinitely",
+            "option_d": "D. Processes execute in FIFO order",
+            "correct_answer": "C",
+            "explanation": "Progress ensures that processes wishing to enter the critical section are eventually allowed to proceed."
+        },
+        {
+            "question": "Bounded waiting guarantees that:",
+            "option_a": "A. The CPU usage remains below a threshold",
+            "option_b": "B. A process will not wait forever before entering its critical section",
+            "option_c": "C. Memory allocation is bounded",
+            "option_d": "D. Only two processes can execute simultaneously",
+            "correct_answer": "B",
+            "explanation": "Bounded waiting prevents starvation by limiting the number of times others may enter before a waiting process."
+        },
+        {
+            "question": "Why is disabling interrupts not a practical synchronization solution for user programs?",
+            "option_a": "A. It consumes too much memory",
+            "option_b": "B. It only works on distributed systems",
+            "option_c": "C. Enabling/disabling interrupts is a privileged instruction",
+            "option_d": "D. It causes process termination",
+            "correct_answer": "C",
+            "explanation": "Interrupt control instructions are privileged and generally restricted to kernel mode."
+        },
+        {
+            "question": "Which type of kernel is generally free from race conditions?",
+            "option_a": "A. Distributed kernel",
+            "option_b": "B. Preemptive kernel",
+            "option_c": "C. Non-preemptive kernel",
+            "option_d": "D. Virtual kernel",
+            "correct_answer": "C",
+            "explanation": "Non-preemptive kernels do not allow interruption while executing kernel code, reducing race conditions."
+        },
+        {
+            "question": "Busy waiting refers to:",
+            "option_a": "A. A process continuously checking a condition while consuming CPU cycles",
+            "option_b": "B. A process waiting in secondary storage",
+            "option_c": "C. A process sleeping voluntarily",
+            "option_d": "D. A CPU waiting for memory allocation",
+            "correct_answer": "A",
+            "explanation": "Busy waiting repeatedly tests a condition without relinquishing CPU control."
+        },
+        {
+            "question": "In the Bakery Algorithm, which process enters the critical section first?",
+            "option_a": "A. The process with the largest process ID",
+            "option_b": "B. The process with the highest priority",
+            "option_c": "C. The process with the smallest assigned number",
+            "option_d": "D. The process that arrived last",
+            "correct_answer": "C",
+            "explanation": "The Bakery Algorithm assigns numbers similar to a queue system, and the smallest number enters first."
+        },
+        {
+            "question": "Why are test-and-set and swap instructions suitable for synchronization?",
+            "option_a": "A. They reduce process size",
+            "option_b": "B. They are atomic operations",
+            "option_c": "C. They disable multitasking",
+            "option_d": "D. They eliminate semaphores",
+            "correct_answer": "B",
+            "explanation": "Atomic operations cannot be interrupted, making them suitable for synchronization."
+        },
+        {
+            "question": "What is the initial value of the lock variable in the test-and-set solution?",
+            "option_a": "A. 1",
+            "option_b": "B. true",
+            "option_c": "C. undefined",
+            "option_d": "D. false",
+            "correct_answer": "D",
+            "explanation": "The lock variable is initially false, indicating that the critical section is available."
+        },
+        {
+            "question": "A semaphore is best described as:",
+            "option_a": "A. A CPU scheduling algorithm",
+            "option_b": "B. An integer synchronization variable accessed only through atomic operations",
+            "option_c": "C. A deadlock detection tool",
+            "option_d": "D. A memory allocation table",
+            "correct_answer": "B",
+            "explanation": "Semaphores are synchronization variables manipulated using atomic wait() and signal() operations."
+        },
+        {
+            "question": "Which operations are used to manipulate semaphores?",
+            "option_a": "A. push() and pop()",
+            "option_b": "B. open() and close()",
+            "option_c": "C. wait() and signal()",
+            "option_d": "D. lock() and unlock()",
+            "correct_answer": "C",
+            "explanation": "Semaphores are controlled through wait() and signal() operations."
+        },
+        {
+            "question": "What distinguishes a binary semaphore from a counting semaphore?",
+            "option_a": "A. Binary semaphores can have negative values",
+            "option_b": "B. Binary semaphores range only between 0 and 1",
+            "option_c": "C. Counting semaphores cannot synchronize processes",
+            "option_d": "D. Counting semaphores are hardware instructions",
+            "correct_answer": "B",
+            "explanation": "Binary semaphores behave like mutex locks with values restricted to 0 or 1."
+        },
+        {
+            "question": "Which semaphore implementation method avoids busy waiting?",
+            "option_a": "A. Spinlock",
+            "option_b": "B. Test-and-set",
+            "option_c": "C. Block and wakeup",
+            "option_d": "D. Swap",
+            "correct_answer": "C",
+            "explanation": "Block and wakeup suspends waiting processes instead of consuming CPU cycles."
+        },
+        {
+            "question": "In the bounded-buffer problem, what is the initial value of the semaphore 'full'?",
+            "option_a": "A. n",
+            "option_b": "B. 1",
+            "option_c": "C. -1",
+            "option_d": "D. 0",
+            "correct_answer": "D",
+            "explanation": "Initially, no buffers are full, so the value of full is 0."
+        },
+        {
+            "question": "In the bounded-buffer problem, what does the semaphore 'empty' represent?",
+            "option_a": "A. Number of waiting consumers",
+            "option_b": "B. Number of available empty buffers",
+            "option_c": "C. Number of active producers",
+            "option_d": "D. Number of blocked threads",
+            "correct_answer": "B",
+            "explanation": "The empty semaphore tracks how many empty buffer slots remain."
+        },
+        {
+            "question": "Which synchronization problem allows multiple readers but only one writer at a time?",
+            "option_a": "A. Dining Philosophers Problem",
+            "option_b": "B. Producer-Consumer Problem",
+            "option_c": "C. Readers-Writers Problem",
+            "option_d": "D. Bakery Problem",
+            "correct_answer": "C",
+            "explanation": "The Readers-Writers problem permits concurrent readers but exclusive writers."
+        },
+        {
+            "question": "What issue occurs in the Dining Philosophers Problem when all philosophers pick up their left fork simultaneously?",
+            "option_a": "A. Starvation",
+            "option_b": "B. Deadlock",
+            "option_c": "C. Thrashing",
+            "option_d": "D. Livelock",
+            "correct_answer": "B",
+            "explanation": "Each philosopher waits indefinitely for the right fork, creating circular waiting and deadlock."
+        },
+        {
+            "question": "Which of the following can result from incorrect semaphore usage?",
+            "option_a": "A. Improved throughput",
+            "option_b": "B. Deadlock and starvation",
+            "option_c": "C. Faster interrupts",
+            "option_d": "D. Reduced context switching",
+            "correct_answer": "B",
+            "explanation": "Incorrect semaphore operations can lead to deadlock or starvation."
+        },
+        {
+            "question": "What is a monitor in operating systems?",
+            "option_a": "A. A CPU monitoring utility",
+            "option_b": "B. A high-level synchronization abstraction",
+            "option_c": "C. A memory allocation algorithm",
+            "option_d": "D. A hardware synchronization instruction",
+            "correct_answer": "B",
+            "explanation": "Monitors provide structured and safer synchronization mechanisms."
+        },
+        {
+            "question": "How many processes may be active inside a monitor at one time?",
+            "option_a": "A. Unlimited",
+            "option_b": "B. Two",
+            "option_c": "C. One",
+            "option_d": "D. Depends on CPU cores",
+            "correct_answer": "C",
+            "explanation": "Monitors enforce mutual exclusion by allowing only one active process inside."
+        },
+        {
+            "question": "Suppose producer and consumer processes both update a shared counter concurrently without synchronization. Which issue is most likely?",
+            "option_a": "A. Memory leak",
+            "option_b": "B. Race condition causing inconsistent counter values",
+            "option_c": "C. Disk fragmentation",
+            "option_d": "D. CPU overheating",
+            "correct_answer": "B",
+            "explanation": "Concurrent unsynchronized updates to shared variables commonly produce race conditions."
+        },
+        {
+            "question": "A process repeatedly checks whether a lock becomes available while consuming CPU cycles. Which synchronization drawback does this demonstrate?",
+            "option_a": "A. Starvation",
+            "option_b": "B. Deadlock",
+            "option_c": "C. Busy waiting",
+            "option_d": "D. Aging",
+            "correct_answer": "C",
+            "explanation": "Busy waiting wastes CPU cycles while continuously checking a condition."
+        },
+        {
+            "question": "Which synchronization requirement directly prevents starvation?",
+            "option_a": "A. Mutual exclusion",
+            "option_b": "B. Bounded waiting",
+            "option_c": "C. Progress",
+            "option_d": "D. Atomicity",
+            "correct_answer": "B",
+            "explanation": "Bounded waiting ensures every requesting process eventually enters the critical section."
+        },
+        {
+            "question": "What is the major disadvantage of spinlocks in heavily loaded systems?",
+            "option_a": "A. They increase disk usage",
+            "option_b": "B. They waste CPU time during waiting",
+            "option_c": "C. They require additional hardware",
+            "option_d": "D. They cannot support synchronization",
+            "correct_answer": "B",
+            "explanation": "Spinlocks rely on busy waiting, consuming CPU cycles while waiting."
+        },
+        {
+            "question": "A system designer chooses a preemptive kernel for better responsiveness. What synchronization challenge increases?",
+            "option_a": "A. Reduced memory allocation",
+            "option_b": "B. Higher risk of race conditions",
+            "option_c": "C. Lower throughput",
+            "option_d": "D. Increased disk fragmentation",
+            "correct_answer": "B",
+            "explanation": "Preemptive kernels allow interruption during execution, increasing concurrency risks."
+        },
+        {
+            "question": "Why must semaphore operations be atomic?",
+            "option_a": "A. To reduce process creation time",
+            "option_b": "B. To avoid interference while modifying semaphore values",
+            "option_c": "C. To improve virtual memory",
+            "option_d": "D. To increase CPU frequency",
+            "correct_answer": "B",
+            "explanation": "Atomicity ensures semaphore updates occur safely without interruption."
+        },
+        {
+            "question": "In the Readers-Writers problem, what happens if a writer is currently writing?",
+            "option_a": "A. Readers may still read concurrently",
+            "option_b": "B. Other writers may write simultaneously",
+            "option_c": "C. No readers or writers may access the shared data",
+            "option_d": "D. Only one reader may proceed",
+            "correct_answer": "C",
+            "explanation": "Writers require exclusive access to prevent inconsistent modifications."
+        },
+        {
+            "question": "Which scenario best demonstrates bounded waiting violation?",
+            "option_a": "A. A process enters the critical section twice",
+            "option_b": "B. A waiting process is indefinitely bypassed by other processes",
+            "option_c": "C. Two processes enter simultaneously",
+            "option_d": "D. A semaphore value becomes negative",
+            "correct_answer": "B",
+            "explanation": "If a process waits forever while others repeatedly proceed, bounded waiting is violated."
+        },
+        {
+            "question": "What is the primary advantage of monitors over semaphores?",
+            "option_a": "A. They require no CPU",
+            "option_b": "B. They are less error-prone and provide structured synchronization",
+            "option_c": "C. They eliminate critical sections",
+            "option_d": "D. They allow unlimited concurrent access",
+            "correct_answer": "B",
+            "explanation": "Monitors encapsulate synchronization logic and reduce programming mistakes."
+        },
+        {
+            "question": "If wait(mutex) is accidentally omitted before entering a critical section, what is the likely consequence?",
+            "option_a": "A. Reduced memory consumption",
+            "option_b": "B. Race condition due to concurrent access",
+            "option_c": "C. Guaranteed deadlock",
+            "option_d": "D. Improved synchronization",
+            "correct_answer": "B",
+            "explanation": "Without acquiring the mutex, multiple processes may enter simultaneously."
+        },
+        {
+            "question": "Why is the Bakery Algorithm considered fair?",
+            "option_a": "A. It uses hardware interrupts",
+            "option_b": "B. Processes are served according to assigned ticket numbers",
+            "option_c": "C. It eliminates semaphores",
+            "option_d": "D. It prevents all waiting",
+            "correct_answer": "B",
+            "explanation": "The Bakery Algorithm ensures orderly access similar to taking numbered tickets."
+        },
+        {
+            "question": "Which synchronization primitive behaves most similarly to a mutex lock?",
+            "option_a": "A. Counting semaphore",
+            "option_b": "B. Binary semaphore",
+            "option_c": "C. Monitor",
+            "option_d": "D. Swap instruction",
+            "correct_answer": "B",
+            "explanation": "Binary semaphores only allow two states, making them similar to mutex locks."
+        },
+        {
+            "question": "A process performs signal(mutex) before wait(mutex). What synchronization issue may occur?",
+            "option_a": "A. Deadlock prevention",
+            "option_b": "B. Incorrect semaphore behavior causing synchronization errors",
+            "option_c": "C. Automatic mutual exclusion",
+            "option_d": "D. Guaranteed bounded waiting",
+            "correct_answer": "B",
+            "explanation": "Incorrect ordering of semaphore operations can break synchronization logic."
+        },
+        {
+            "question": "In the bounded-buffer problem, why is the mutex semaphore initialized to 1?",
+            "option_a": "A. To represent one available critical section",
+            "option_b": "B. To represent one full buffer",
+            "option_c": "C. To disable synchronization",
+            "option_d": "D. To allow unlimited producers",
+            "correct_answer": "A",
+            "explanation": "Mutex initialized to 1 allows one process at a time to access the critical section."
+        },
+        {
+            "question": "Which of the following best explains starvation?",
+            "option_a": "A. Two processes waiting for each other forever",
+            "option_b": "B. A process never receiving CPU or resource access",
+            "option_c": "C. Simultaneous execution of processes",
+            "option_d": "D. Overflow of semaphore values",
+            "correct_answer": "B",
+            "explanation": "Starvation occurs when a process is perpetually denied access to resources."
+        },
+        {
+            "question": "Why can disabling interrupts reduce responsiveness in a system?",
+            "option_a": "A. Interrupts are required for handling important events promptly",
+            "option_b": "B. It increases disk operations",
+            "option_c": "C. It disables memory allocation",
+            "option_d": "D. It prevents semaphores from working",
+            "correct_answer": "A",
+            "explanation": "Disabling interrupts delays handling of hardware and system events."
+        },
+        {
+            "question": "Suppose five philosophers each hold one fork and wait for another indefinitely. Which deadlock condition is clearly present?",
+            "option_a": "A. Mutual exclusion only",
+            "option_b": "B. Circular waiting",
+            "option_c": "C. Preemption",
+            "option_d": "D. Aging",
+            "correct_answer": "B",
+            "explanation": "Each philosopher waits for a resource held by another, forming a circular dependency."
+        },
+        {
+            "question": "Which semaphore implementation is more suitable for long waiting periods?",
+            "option_a": "A. Spinlock",
+            "option_b": "B. Busy waiting loop",
+            "option_c": "C. Block and wakeup",
+            "option_d": "D. Test-and-set",
+            "correct_answer": "C",
+            "explanation": "Blocking avoids wasting CPU cycles during extended waiting."
+        },
+        {
+            "question": "A synchronization solution satisfies mutual exclusion and progress but not bounded waiting. Which issue may still occur?",
+            "option_a": "A. Disk corruption",
+            "option_b": "B. Starvation",
+            "option_c": "C. CPU underutilization",
+            "option_d": "D. Memory leaks",
+            "correct_answer": "B",
+            "explanation": "Without bounded waiting, some processes may wait indefinitely."
+        },
+        {
+            "question": "What is the key purpose of the semaphore 'synch' initialized to 0 in process ordering problems?",
+            "option_a": "A. To terminate blocked processes",
+            "option_b": "B. To ensure one event occurs before another",
+            "option_c": "C. To increase CPU utilization",
+            "option_d": "D. To allocate memory dynamically",
+            "correct_answer": "B",
+            "explanation": "A semaphore initialized to 0 can enforce ordering between processes or events."
+        },
+        {
+            "question": "Why are synchronization problems particularly difficult in concurrent systems?",
+            "option_a": "A. Process execution order is unpredictable",
+            "option_b": "B. CPUs cannot execute multiple tasks",
+            "option_c": "C. Operating systems avoid shared resources",
+            "option_d": "D. Interrupts are always disabled",
+            "correct_answer": "A",
+            "explanation": "Concurrency introduces nondeterministic execution timing, making synchronization challenging."
+        },
+        {
+            "question": "Which statement about monitors is TRUE?",
+            "option_a": "A. Multiple processes can execute monitor procedures simultaneously",
+            "option_b": "B. Internal variables are directly accessible from outside",
+            "option_c": "C. Monitors provide automatic mutual exclusion",
+            "option_d": "D. Monitors replace CPU scheduling",
+            "correct_answer": "C",
+            "explanation": "Monitors automatically ensure only one process executes within them at a time."
+        },
+        {
+            "question": "A system using busy waiting spends excessive CPU time checking locks. Which alternative would most improve efficiency?",
+            "option_a": "A. Increasing process priority",
+            "option_b": "B. Replacing busy waiting with block-and-wakeup synchronization",
+            "option_c": "C. Disabling interrupts permanently",
+            "option_d": "D. Removing semaphores entirely",
+            "correct_answer": "B",
+            "explanation": "Blocking allows processes to sleep instead of continuously consuming CPU cycles."
+        },
+        {
+            "question": "Which synchronization mechanism is MOST prone to programmer mistakes such as forgetting signal() calls?",
+            "option_a": "A. Monitors",
+            "option_b": "B. Semaphores",
+            "option_c": "C. Non-preemptive kernels",
+            "option_d": "D. Bakery algorithms",
+            "correct_answer": "B",
+            "explanation": "Semaphores require manual synchronization management, making misuse common."
+        },
+        {
+            "question": "If two processes simultaneously execute their critical sections modifying the same variable, which property has failed?",
+            "option_a": "A. Progress",
+            "option_b": "B. Mutual exclusion",
+            "option_c": "C. Bounded waiting",
+            "option_d": "D. Scheduling",
+            "correct_answer": "B",
+            "explanation": "Mutual exclusion requires only one process in the critical section at a time."
+        },
+        {
+            "question": "What is the primary goal of the Readers-Writers synchronization solution?",
+            "option_a": "A. Maximize writer starvation",
+            "option_b": "B. Allow safe concurrent reading while protecting writes",
+            "option_c": "C. Prevent all concurrent execution",
+            "option_d": "D. Eliminate semaphores",
+            "correct_answer": "B",
+            "explanation": "Readers-Writers solutions balance concurrency for readers with exclusive access for writers."
+        },
+        {
+            "question": "Why is process synchronization important in database systems and banking applications?",
+            "option_a": "A. To increase monitor size",
+            "option_b": "B. To prevent inconsistent updates to shared data",
+            "option_c": "C. To disable concurrent access",
+            "option_d": "D. To eliminate CPU scheduling",
+            "correct_answer": "B",
+            "explanation": "Concurrent transactions must be synchronized to maintain data consistency and integrity."
+        }
+    ]
+}

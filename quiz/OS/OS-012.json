@@ -1,0 +1,535 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of protection in an operating system?",
+            "option_a": "A. Guarding data against interference by external attackers",
+            "option_b": "B. Guarding user data and programs against interference by authorized users",
+            "option_c": "C. Encrypting all files in the system",
+            "option_d": "D. Preventing network communication",
+            "correct_answer": "B",
+            "explanation": "Protection focuses on controlling access among authorized users within the system."
+        },
+        {
+            "question": "Which statement best describes security in an operating system?",
+            "option_a": "A. Managing CPU scheduling efficiently",
+            "option_b": "B. Allocating memory to processes",
+            "option_c": "C. Guarding data and programs against external unauthorized entities",
+            "option_d": "D. Preventing process starvation",
+            "correct_answer": "C",
+            "explanation": "Security deals with defending the system from external unauthorized access and attacks."
+        },
+        {
+            "question": "Which facet of information protection ensures only authorized users can access information?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability",
+            "option_c": "C. Privacy",
+            "option_d": "D. Secrecy",
+            "correct_answer": "D",
+            "explanation": "Secrecy ensures that information is accessible only to authorized users."
+        },
+        {
+            "question": "Privacy in operating systems mainly refers to:",
+            "option_a": "A. Ensuring data is backed up regularly",
+            "option_b": "B. Using information only for intended purposes",
+            "option_c": "C. Preventing hardware failure",
+            "option_d": "D. Encrypting all communication",
+            "correct_answer": "B",
+            "explanation": "Privacy focuses on ensuring information is used only for the intended purposes."
+        },
+        {
+            "question": "Which of the following is a security mechanism?",
+            "option_a": "A. Verifying whether a person is an authorized user",
+            "option_b": "B. Specifying who can access a file",
+            "option_c": "C. Defining access rights for directories",
+            "option_d": "D. Specifying password complexity policies",
+            "correct_answer": "A",
+            "explanation": "Authentication and verification mechanisms enforce security policies."
+        },
+        {
+            "question": "A protection policy mainly specifies:",
+            "option_a": "A. Whether a user can access a specific file",
+            "option_b": "B. How network packets are routed",
+            "option_c": "C. How memory is allocated",
+            "option_d": "D. How processes are synchronized",
+            "correct_answer": "A",
+            "explanation": "Protection policies define access permissions for system resources."
+        },
+        {
+            "question": "Why do modern operating systems face significant security challenges?",
+            "option_a": "A. Systems are no longer connected to networks",
+            "option_b": "B. Programs are always trustworthy",
+            "option_c": "C. Multiple users share systems and attackers evolve techniques",
+            "option_d": "D. CPU speeds are increasing",
+            "correct_answer": "C",
+            "explanation": "Shared systems, network connectivity, and evolving attacks create security challenges."
+        },
+        {
+            "question": "Which is NOT a reason for taking security measures?",
+            "option_a": "A. Prevent theft of data",
+            "option_b": "B. Prevent compromise of data",
+            "option_c": "C. Increase monitor resolution",
+            "option_d": "D. Prevent corruption of data",
+            "correct_answer": "C",
+            "explanation": "Monitor resolution has no direct relationship with operating system security."
+        },
+        {
+            "question": "Which authentication mechanism relies on something the user knows?",
+            "option_a": "A. Biometric scan",
+            "option_b": "B. Physical token",
+            "option_c": "C. Password",
+            "option_d": "D. Smart card reader",
+            "correct_answer": "C",
+            "explanation": "Passwords are knowledge-based authentication mechanisms."
+        },
+        {
+            "question": "Which of the following is an example of biometric authentication?",
+            "option_a": "A. PIN code",
+            "option_b": "B. USB token",
+            "option_c": "C. Password",
+            "option_d": "D. Fingerprint scan",
+            "correct_answer": "D",
+            "explanation": "Biometric authentication uses physical or behavioral characteristics."
+        },
+        {
+            "question": "The CIA triad stands for:",
+            "option_a": "A. Confidentiality, Integrity, Availability",
+            "option_b": "B. Confidentiality, Identification, Authentication",
+            "option_c": "C. Control, Integrity, Access",
+            "option_d": "D. Confidentiality, Isolation, Availability",
+            "correct_answer": "A",
+            "explanation": "The three core security objectives are Confidentiality, Integrity, and Availability."
+        },
+        {
+            "question": "If an attacker views a user's password while it is being typed, which security principle is violated?",
+            "option_a": "A. Availability",
+            "option_b": "B. Integrity",
+            "option_c": "C. Confidentiality",
+            "option_d": "D. Authentication",
+            "correct_answer": "C",
+            "explanation": "Unauthorized disclosure of information violates confidentiality."
+        },
+        {
+            "question": "Ensuring that system files cannot be modified by unauthorized users supports:",
+            "option_a": "A. Integrity",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Availability",
+            "option_d": "D. Scalability",
+            "correct_answer": "A",
+            "explanation": "Integrity ensures data and resources are not altered without authorization."
+        },
+        {
+            "question": "CPU time being fairly shared among processes is an example of:",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Availability",
+            "option_c": "C. Integrity",
+            "option_d": "D. Privacy",
+            "correct_answer": "B",
+            "explanation": "Availability ensures resources are accessible when needed."
+        },
+        {
+            "question": "In a discretionary security model:",
+            "option_a": "A. Only administrators can transfer rights",
+            "option_b": "B. Users cannot share permissions",
+            "option_c": "C. Holders of rights may transfer them at their discretion",
+            "option_d": "D. All files are public",
+            "correct_answer": "C",
+            "explanation": "Discretionary models allow users with rights to transfer them."
+        },
+        {
+            "question": "Which statement best describes a mandatory security model?",
+            "option_a": "A. Users decide all permissions",
+            "option_b": "B. Rights can only be granted by designated roles",
+            "option_c": "C. Every file is executable",
+            "option_d": "D. No authentication is required",
+            "correct_answer": "B",
+            "explanation": "Mandatory models enforce centrally controlled permission assignment."
+        },
+        {
+            "question": "What is the primary difference between a security policy and a security model?",
+            "option_a": "A. Policies are hardware-based while models are software-based",
+            "option_b": "B. Policies define goals while models define mechanisms",
+            "option_c": "C. Policies are optional while models are mandatory",
+            "option_d": "D. Policies manage memory while models manage files",
+            "correct_answer": "B",
+            "explanation": "Policies define requirements, while models implement mechanisms to enforce them."
+        },
+        {
+            "question": "Which component of the access matrix model actively manipulates objects?",
+            "option_a": "A. Subjects",
+            "option_b": "B. Objects",
+            "option_c": "C. Policies",
+            "option_d": "D. Threads",
+            "correct_answer": "A",
+            "explanation": "Subjects are active entities that perform operations on objects."
+        },
+        {
+            "question": "In an access matrix, rows represent:",
+            "option_a": "A. Objects",
+            "option_b": "B. Processes only",
+            "option_c": "C. Subjects",
+            "option_d": "D. Files only",
+            "correct_answer": "C",
+            "explanation": "Each row corresponds to a subject in the system."
+        },
+        {
+            "question": "Each cell in an access matrix defines:",
+            "option_a": "A. CPU allocation",
+            "option_b": "B. Memory usage",
+            "option_c": "C. Allowed operations for a subject on an object",
+            "option_d": "D. Network latency",
+            "correct_answer": "C",
+            "explanation": "The cell stores permissions specifying what operations are permitted."
+        },
+        {
+            "question": "Which threat type involves direct attacks from hackers or disgruntled insiders?",
+            "option_a": "A. Indirect threat",
+            "option_b": "B. Trojan threat",
+            "option_c": "C. Direct threat",
+            "option_d": "D. Passive threat",
+            "correct_answer": "C",
+            "explanation": "Direct threats specifically target a system from attackers or insiders."
+        },
+        {
+            "question": "Computer worms and viruses are categorized as:",
+            "option_a": "A. Direct threats",
+            "option_b": "B. Indirect threats",
+            "option_c": "C. Hardware threats",
+            "option_d": "D. Authentication threats",
+            "correct_answer": "B",
+            "explanation": "Indirect threats are general attacks such as viruses and worms."
+        },
+        {
+            "question": "A malicious program disguised as a legitimate application is called:",
+            "option_a": "A. Worm",
+            "option_b": "B. Trojan Horse",
+            "option_c": "C. Logic Bomb",
+            "option_d": "D. Spoof",
+            "correct_answer": "B",
+            "explanation": "A Trojan Horse pretends to be legitimate software while performing malicious actions."
+        },
+        {
+            "question": "A developer secretly leaves a hidden login method in software for future access. This is an example of:",
+            "option_a": "A. Worm",
+            "option_b": "B. Logic Bomb",
+            "option_c": "C. Trapdoor",
+            "option_d": "D. Virus",
+            "correct_answer": "C",
+            "explanation": "A trapdoor or backdoor bypasses normal authentication mechanisms."
+        },
+        {
+            "question": "Which threat activates only when a specific condition is met?",
+            "option_a": "A. Trojan Horse",
+            "option_b": "B. Virus",
+            "option_c": "C. Logic Bomb",
+            "option_d": "D. Spoofing",
+            "correct_answer": "C",
+            "explanation": "Logic bombs remain dormant until triggered by a condition or event."
+        },
+        {
+            "question": "What distinguishes a worm from a virus?",
+            "option_a": "A. Worms require user passwords",
+            "option_b": "B. Viruses do not replicate",
+            "option_c": "C. Worms do not require a host program",
+            "option_d": "D. Viruses only affect hardware",
+            "correct_answer": "C",
+            "explanation": "Worms are standalone and spread independently, unlike viruses."
+        },
+        {
+            "question": "Which OS-level defense helps verify software authenticity?",
+            "option_a": "A. Sandboxing",
+            "option_b": "B. Code signing",
+            "option_c": "C. Scheduling",
+            "option_d": "D. Paging",
+            "correct_answer": "B",
+            "explanation": "Code signing verifies that software comes from a trusted source."
+        },
+        {
+            "question": "Running applications with minimal required permissions follows which principle?",
+            "option_a": "A. Maximum access",
+            "option_b": "B. Full disclosure",
+            "option_c": "C. Least privilege",
+            "option_d": "D. Open execution",
+            "correct_answer": "C",
+            "explanation": "Least privilege minimizes potential damage from compromised applications."
+        },
+        {
+            "question": "What is the main objective of a Denial of Service attack?",
+            "option_a": "A. Encrypt files for ransom",
+            "option_b": "B. Make resources unavailable to legitimate users",
+            "option_c": "C. Modify user passwords",
+            "option_d": "D. Improve network speed",
+            "correct_answer": "B",
+            "explanation": "DoS attacks overload resources and prevent normal access."
+        },
+        {
+            "question": "How does a DDoS attack differ from a DoS attack?",
+            "option_a": "A. DDoS uses multiple attacking machines",
+            "option_b": "B. DoS targets only databases",
+            "option_c": "C. DDoS cannot affect servers",
+            "option_d": "D. DoS always uses malware",
+            "correct_answer": "A",
+            "explanation": "Distributed DoS attacks involve multiple systems, often botnets."
+        },
+        {
+            "question": "An attacker sending emails pretending to be a bank is performing:",
+            "option_a": "A. Port scanning",
+            "option_b": "B. Spoofing",
+            "option_c": "C. Sandboxing",
+            "option_d": "D. Patching",
+            "correct_answer": "B",
+            "explanation": "Spoofing involves impersonating legitimate entities."
+        },
+        {
+            "question": "What is the primary purpose of port scanning?",
+            "option_a": "A. Encrypting files",
+            "option_b": "B. Detecting open ports and vulnerabilities",
+            "option_c": "C. Preventing authentication",
+            "option_d": "D. Allocating bandwidth",
+            "correct_answer": "B",
+            "explanation": "Port scanning identifies open services that may be vulnerable."
+        },
+        {
+            "question": "Stealing passwords over public Wi-Fi by intercepting communication is an example of:",
+            "option_a": "A. Worm attack",
+            "option_b": "B. Logic Bomb",
+            "option_c": "C. MITM attack",
+            "option_d": "D. Port scanning",
+            "correct_answer": "C",
+            "explanation": "MITM attacks intercept communication between parties."
+        },
+        {
+            "question": "Which of the following is considered network-based malware?",
+            "option_a": "A. Ransomware",
+            "option_b": "B. CPU scheduler",
+            "option_c": "C. Access matrix",
+            "option_d": "D. Page table",
+            "correct_answer": "A",
+            "explanation": "Ransomware is malicious software targeting systems and networks."
+        },
+        {
+            "question": "Which defense filters incoming and outgoing network traffic?",
+            "option_a": "A. Firewall",
+            "option_b": "B. Compiler",
+            "option_c": "C. Scheduler",
+            "option_d": "D. Loader",
+            "correct_answer": "A",
+            "explanation": "Firewalls monitor and filter network traffic based on rules."
+        },
+        {
+            "question": "An Intrusion Detection System (IDS) primarily helps to:",
+            "option_a": "A. Increase CPU performance",
+            "option_b": "B. Detect suspicious or malicious activities",
+            "option_c": "C. Compress files",
+            "option_d": "D. Manage virtual memory",
+            "correct_answer": "B",
+            "explanation": "IDS tools monitor systems and networks for attacks or abnormal behavior."
+        },
+        {
+            "question": "Which protocol is specifically designed to provide secure remote login access?",
+            "option_a": "A. HTTP",
+            "option_b": "B. FTP",
+            "option_c": "C. SSH",
+            "option_d": "D. SMTP",
+            "correct_answer": "C",
+            "explanation": "SSH encrypts remote communication and login sessions."
+        },
+        {
+            "question": "A fake calculator application secretly stealing passwords is an example of which attack combination?",
+            "option_a": "A. Trojan Horse violating confidentiality",
+            "option_b": "B. Worm violating availability",
+            "option_c": "C. Logic Bomb violating integrity",
+            "option_d": "D. DDoS violating secrecy",
+            "correct_answer": "A",
+            "explanation": "The fake application is a Trojan Horse and stealing passwords breaches confidentiality."
+        },
+        {
+            "question": "A malware program spreads automatically across a network without attaching to another executable file. Which threat is this?",
+            "option_a": "A. Virus",
+            "option_b": "B. Worm",
+            "option_c": "C. Trapdoor",
+            "option_d": "D. Trojan Horse",
+            "correct_answer": "B",
+            "explanation": "Worms self-replicate and spread independently across networks."
+        },
+        {
+            "question": "An employee intentionally changes payroll records without authorization. Which CIA principle is primarily violated?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Availability",
+            "option_c": "C. Integrity",
+            "option_d": "D. Authentication",
+            "correct_answer": "C",
+            "explanation": "Unauthorized modification of data violates integrity."
+        },
+        {
+            "question": "A hospital system becomes inaccessible after attackers flood the server with requests. Which security objective is mainly affected?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability",
+            "option_c": "C. Privacy",
+            "option_d": "D. Authentication",
+            "correct_answer": "B",
+            "explanation": "DoS attacks primarily affect system availability."
+        },
+        {
+            "question": "Which situation best demonstrates discretionary access control?",
+            "option_a": "A. Only administrators assign permissions",
+            "option_b": "B. A file owner shares access with another user",
+            "option_c": "C. All users receive identical permissions",
+            "option_d": "D. The operating system disables file sharing",
+            "correct_answer": "B",
+            "explanation": "Discretionary models allow owners to transfer access rights."
+        },
+        {
+            "question": "If Subject S1 has only read access to File F1 in an access matrix, which action violates the matrix?",
+            "option_a": "A. Opening F1",
+            "option_b": "B. Reading F1",
+            "option_c": "C. Modifying F1",
+            "option_d": "D. Viewing F1 metadata",
+            "correct_answer": "C",
+            "explanation": "Write or modification operations are not permitted with read-only access."
+        },
+        {
+            "question": "A malicious insider installs hidden code that deletes company files every January 1st. Which two threats are involved?",
+            "option_a": "A. Worm and Virus",
+            "option_b": "B. Trojan Horse and MITM",
+            "option_c": "C. Trapdoor and Logic Bomb",
+            "option_d": "D. DDoS and Spoofing",
+            "correct_answer": "C",
+            "explanation": "The hidden access is a trapdoor, while timed activation indicates a logic bomb."
+        },
+        {
+            "question": "Why is least privilege execution considered an effective security defense?",
+            "option_a": "A. It maximizes user convenience",
+            "option_b": "B. It ensures all applications run as administrators",
+            "option_c": "C. It limits damage if an application is compromised",
+            "option_d": "D. It removes the need for authentication",
+            "correct_answer": "C",
+            "explanation": "Restricting privileges reduces the impact of successful attacks."
+        },
+        {
+            "question": "An attacker intercepts communication between a client and server while pretending to each side that they are legitimate. Which attack is occurring?",
+            "option_a": "A. Virus",
+            "option_b": "B. MITM",
+            "option_c": "C. Logic Bomb",
+            "option_d": "D. Trapdoor",
+            "correct_answer": "B",
+            "explanation": "MITM attacks involve intercepting and relaying communications secretly."
+        },
+        {
+            "question": "Which of the following best demonstrates confidentiality?",
+            "option_a": "A. Ensuring services remain online during high traffic",
+            "option_b": "B. Preventing unauthorized viewing of examination papers",
+            "option_c": "C. Ensuring data is not modified accidentally",
+            "option_d": "D. Updating operating system patches regularly",
+            "correct_answer": "B",
+            "explanation": "Confidentiality protects information from unauthorized disclosure."
+        },
+        {
+            "question": "Which defense is MOST directly useful against malware hidden inside suspicious applications?",
+            "option_a": "A. Sandboxing",
+            "option_b": "B. CPU scheduling",
+            "option_c": "C. Paging",
+            "option_d": "D. Disk defragmentation",
+            "correct_answer": "A",
+            "explanation": "Sandboxing isolates applications to limit malicious behavior."
+        },
+        {
+            "question": "A company uses HTTPS and SSH throughout its infrastructure. What is the main security benefit?",
+            "option_a": "A. Faster CPU execution",
+            "option_b": "B. Reduced memory fragmentation",
+            "option_c": "C. Secure encrypted communication",
+            "option_d": "D. Automatic malware removal",
+            "correct_answer": "C",
+            "explanation": "HTTPS and SSH provide encrypted communication channels."
+        },
+        {
+            "question": "A malware program attaches itself to executable files and spreads when users launch them. Which threat is this?",
+            "option_a": "A. Virus",
+            "option_b": "B. Worm",
+            "option_c": "C. Spoofing",
+            "option_d": "D. IDS",
+            "correct_answer": "A",
+            "explanation": "Viruses require host programs to replicate and spread."
+        },
+        {
+            "question": "An attacker scans thousands of ports on a server before launching an exploit. Why is port scanning useful to attackers?",
+            "option_a": "A. It encrypts vulnerable services",
+            "option_b": "B. It identifies accessible services and potential weaknesses",
+            "option_c": "C. It immediately grants administrator access",
+            "option_d": "D. It disables firewalls automatically",
+            "correct_answer": "B",
+            "explanation": "Port scanning reveals open services that may contain vulnerabilities."
+        },
+        {
+            "question": "A system administrator regularly installs software updates to fix vulnerabilities. Which defense strategy is being used?",
+            "option_a": "A. Spoofing",
+            "option_b": "B. Mandatory access control",
+            "option_c": "C. Regular patching and updates",
+            "option_d": "D. Port flooding",
+            "correct_answer": "C",
+            "explanation": "Patching fixes known vulnerabilities and improves system security."
+        },
+        {
+            "question": "Which statement about worms is TRUE?",
+            "option_a": "A. Worms require user execution of infected files",
+            "option_b": "B. Worms cannot spread through networks",
+            "option_c": "C. Worms are self-replicating standalone programs",
+            "option_d": "D. Worms only affect databases",
+            "correct_answer": "C",
+            "explanation": "Worms independently replicate and commonly spread across networks."
+        },
+        {
+            "question": "A hacker uses a botnet consisting of thousands of infected machines to overwhelm a target website. Which attack is being performed?",
+            "option_a": "A. MITM",
+            "option_b": "B. DDoS",
+            "option_c": "C. Trojan Horse",
+            "option_d": "D. Port scanning",
+            "correct_answer": "B",
+            "explanation": "A DDoS attack uses multiple systems to flood a target."
+        },
+        {
+            "question": "Which combination correctly matches the threat with its characteristic?",
+            "option_a": "A. Virus - Does not require a host program",
+            "option_b": "B. Worm - Requires attachment to another executable",
+            "option_c": "C. Trojan Horse - Disguised as legitimate software",
+            "option_d": "D. Logic Bomb - Performs port scanning automatically",
+            "correct_answer": "C",
+            "explanation": "Trojan Horses masquerade as legitimate applications."
+        },
+        {
+            "question": "A user shares confidential company files with unauthorized people using legitimate access rights. Which concept is most closely related to preventing this issue?",
+            "option_a": "A. Privacy",
+            "option_b": "B. CPU scheduling",
+            "option_c": "C. Memory allocation",
+            "option_d": "D. Process synchronization",
+            "correct_answer": "A",
+            "explanation": "Privacy focuses on proper usage and sharing of information."
+        },
+        {
+            "question": "Which scenario best demonstrates a breach of availability?",
+            "option_a": "A. An attacker modifies database records",
+            "option_b": "B. A user views confidential files",
+            "option_c": "C. A website becomes unreachable due to traffic flooding",
+            "option_d": "D. Passwords are leaked online",
+            "correct_answer": "C",
+            "explanation": "Availability is compromised when services become inaccessible."
+        },
+        {
+            "question": "A security policy states that only HR staff can access payroll data. The actual implementation of access control lists represents the:",
+            "option_a": "A. Security model",
+            "option_b": "B. Authentication attack",
+            "option_c": "C. DDoS mechanism",
+            "option_d": "D. Port scanning rule",
+            "correct_answer": "A",
+            "explanation": "Security models implement the mechanisms required to enforce policies."
+        },
+        {
+            "question": "Which attack is MOST likely being attempted if an attacker pretends to be a trusted email sender?",
+            "option_a": "A. Spoofing",
+            "option_b": "B. Logic Bomb",
+            "option_c": "C. Worm propagation",
+            "option_d": "D. Sandboxing",
+            "correct_answer": "A",
+            "explanation": "Email spoofing impersonates trusted senders to deceive users."
+        }
+    ]
+}
