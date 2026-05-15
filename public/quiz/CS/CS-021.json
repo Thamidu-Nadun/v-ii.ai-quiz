@@ -1,0 +1,733 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of copyright law?",
+            "option_a": "A. To protect trade secrets",
+            "option_b": "B. To protect the expression of ideas",
+            "option_c": "C. To protect hardware patents",
+            "option_d": "D. To eliminate software piracy completely",
+            "correct_answer": "B",
+            "explanation": "Copyright protects the expression of ideas in tangible form rather than the ideas themselves."
+        },
+        {
+            "question": "Which organization was created in 1967 to promote intellectual property protection worldwide?",
+            "option_a": "A. IEEE",
+            "option_b": "B. ISO",
+            "option_c": "C. WIPO",
+            "option_d": "D. UNESCO",
+            "correct_answer": "C",
+            "explanation": "The World Intellectual Property Organization (WIPO) was created in 1967 to encourage creative activity and protect intellectual property."
+        },
+        {
+            "question": "Which legal mechanism is MOST suitable for protecting a secret algorithm that gives a company a competitive advantage?",
+            "option_a": "A. Trademark",
+            "option_b": "B. Copyright",
+            "option_c": "C. Trade Secret",
+            "option_d": "D. Public License",
+            "correct_answer": "C",
+            "explanation": "Trade secrets protect confidential information such as secret algorithms that provide business advantage."
+        },
+        {
+            "question": "According to copyright principles, ideas themselves are:",
+            "option_a": "A. Illegal",
+            "option_b": "B. Patent protected automatically",
+            "option_c": "C. Free and unprotected",
+            "option_d": "D. Protected only internationally",
+            "correct_answer": "C",
+            "explanation": "Copyright protects the expression of ideas, not the ideas themselves."
+        },
+        {
+            "question": "What is considered unfair use of copyrighted material?",
+            "option_a": "A. Fair use",
+            "option_b": "B. Academic citation",
+            "option_c": "C. Piracy",
+            "option_d": "D. Public domain usage",
+            "correct_answer": "C",
+            "explanation": "Unfair use of copyrighted material is referred to as piracy."
+        },
+        {
+            "question": "Which of the following is generally considered fair use?",
+            "option_a": "A. Selling pirated software",
+            "option_b": "B. Mass duplication of movies",
+            "option_c": "C. Using excerpts for teaching",
+            "option_d": "D. Sharing commercial software online",
+            "correct_answer": "C",
+            "explanation": "Teaching and scholarly research are examples of fair use."
+        },
+        {
+            "question": "What challenge exists in copyright protection for computer software?",
+            "option_a": "A. Algorithms are considered physical objects",
+            "option_b": "B. Algorithms are treated as ideas rather than expressions",
+            "option_c": "C. Source code cannot be copied",
+            "option_d": "D. Copyright automatically expires after one year",
+            "correct_answer": "B",
+            "explanation": "Algorithms are considered ideas, while programming statements are considered expressions."
+        },
+        {
+            "question": "Under copyright law, reimplementing an algorithm without copying source code is generally:",
+            "option_a": "A. Illegal",
+            "option_b": "B. Considered piracy",
+            "option_c": "C. Permitted",
+            "option_d": "D. Considered cybercrime",
+            "correct_answer": "C",
+            "explanation": "The algorithmic concept itself is not protected by copyright, only the specific code expression."
+        },
+        {
+            "question": "Why can copyright enforcement become difficult when source code is unpublished?",
+            "option_a": "A. Copyright only protects hardware",
+            "option_b": "B. Unpublished source code cannot be infringed legally",
+            "option_c": "C. Object code is automatically public domain",
+            "option_d": "D. Courts ignore unpublished software",
+            "correct_answer": "B",
+            "explanation": "If source code was never published, proving infringement becomes difficult."
+        },
+        {
+            "question": "The DMCA made it illegal to:",
+            "option_a": "A. Develop algorithms",
+            "option_b": "B. Create databases",
+            "option_c": "C. Circumvent anti-piracy mechanisms",
+            "option_d": "D. Patent computer hardware",
+            "correct_answer": "C",
+            "explanation": "The DMCA criminalizes bypassing anti-piracy protections."
+        },
+        {
+            "question": "Which activity is generally allowed under the DMCA?",
+            "option_a": "A. Commercial piracy",
+            "option_b": "B. Selling cracking tools illegally",
+            "option_c": "C. Making backup copies for protection",
+            "option_d": "D. Distributing copyrighted movies publicly",
+            "correct_answer": "C",
+            "explanation": "Making backup copies for protection against failure is allowed."
+        },
+        {
+            "question": "What is the key requirement for patent approval?",
+            "option_a": "A. Public availability",
+            "option_b": "B. Artistic value",
+            "option_c": "C. Novelty and uniqueness",
+            "option_d": "D. Low development cost",
+            "correct_answer": "C",
+            "explanation": "Patents require inventions to be novel and unique."
+        },
+        {
+            "question": "Which statement BEST distinguishes patents from copyrights?",
+            "option_a": "A. Patents protect expressions while copyrights protect inventions",
+            "option_b": "B. Patents protect inventions while copyrights protect expressions",
+            "option_c": "C. Both protect only software",
+            "option_d": "D. Copyrights require novelty",
+            "correct_answer": "B",
+            "explanation": "Patents protect inventions and processes, while copyrights protect creative expressions."
+        },
+        {
+            "question": "Patent law has expanded to include software because:",
+            "option_a": "A. Software is always artistic",
+            "option_b": "B. Algorithms are recognized as inventions",
+            "option_c": "C. Hardware protection became obsolete",
+            "option_d": "D. Copyrights were abolished",
+            "correct_answer": "B",
+            "explanation": "Algorithms are recognized as inventions similar to processes and formulas."
+        },
+        {
+            "question": "A patent owner must prosecute all violations because:",
+            "option_a": "A. Copyright laws demand it",
+            "option_b": "B. Failure may weaken or lose patent rights",
+            "option_c": "C. WIPO requires it",
+            "option_d": "D. Trade secret laws require disclosure",
+            "correct_answer": "B",
+            "explanation": "Ignoring infringements may cause loss or invalidation of patent protection."
+        },
+        {
+            "question": "Which is NOT typically an argument used by an alleged patent infringer?",
+            "option_a": "A. The invention is not novel",
+            "option_b": "B. The patent is invalid",
+            "option_c": "C. The work qualifies as fair use",
+            "option_d": "D. The invention was created first by the infringer",
+            "correct_answer": "C",
+            "explanation": "Fair use applies mainly to copyright, not patents."
+        },
+        {
+            "question": "What is a major disadvantage of patents for small software developers?",
+            "option_a": "A. Patents expire instantly",
+            "option_b": "B. Patent applications are confidential forever",
+            "option_c": "C. Obtaining and maintaining patents is costly",
+            "option_d": "D. Patents only protect hardware",
+            "correct_answer": "C",
+            "explanation": "Patent processes are expensive and time-consuming."
+        },
+        {
+            "question": "Trade secrets differ from patents because trade secrets:",
+            "option_a": "A. Require public disclosure",
+            "option_b": "B. Must remain confidential",
+            "option_c": "C. Protect artistic works",
+            "option_d": "D. Automatically expire after publication",
+            "correct_answer": "B",
+            "explanation": "Trade secret protection depends on secrecy."
+        },
+        {
+            "question": "Which action helps maintain trade secret protection?",
+            "option_a": "A. Publishing source code online",
+            "option_b": "B. Allowing unrestricted access",
+            "option_c": "C. Employee non-disclosure agreements",
+            "option_d": "D. Registering with WIPO only",
+            "correct_answer": "C",
+            "explanation": "NDAs help legally enforce secrecy."
+        },
+        {
+            "question": "Reverse engineering creates difficulties for trade secret protection because:",
+            "option_a": "A. It automatically grants patents",
+            "option_b": "B. Decompiled code may reveal hidden algorithms",
+            "option_c": "C. Copyright becomes invalid",
+            "option_d": "D. WIPO prohibits software protection",
+            "correct_answer": "B",
+            "explanation": "Decompiler and disassembler tools can expose secret program logic."
+        },
+        {
+            "question": "Which legal protection MOST directly protects object code software?",
+            "option_a": "A. Patent only",
+            "option_b": "B. Copyright",
+            "option_c": "C. Trademark",
+            "option_d": "D. Public license",
+            "correct_answer": "B",
+            "explanation": "Object code software is typically protected by copyright."
+        },
+        {
+            "question": "Which protection applies BEST to source code software?",
+            "option_a": "A. Trade secret and copyright",
+            "option_b": "B. Patent only",
+            "option_c": "C. Trademark only",
+            "option_d": "D. No protection",
+            "correct_answer": "A",
+            "explanation": "Source code may be protected both as copyrighted work and as a trade secret."
+        },
+        {
+            "question": "Computer crime is defined as:",
+            "option_a": "A. Any crime involving electricity",
+            "option_b": "B. A crime where computers are the object or tool of offense",
+            "option_c": "C. Only hacking into banks",
+            "option_d": "D. Illegal internet browsing",
+            "correct_answer": "B",
+            "explanation": "Cybercrime includes crimes targeting computers or using them to commit offenses."
+        },
+        {
+            "question": "Why is unauthorized access to a computer system legally challenging?",
+            "option_a": "A. Computers are not considered assets",
+            "option_b": "B. Access may not involve physical objects",
+            "option_c": "C. Courts prohibit prosecution",
+            "option_d": "D. Digital systems cannot store evidence",
+            "correct_answer": "B",
+            "explanation": "Traditional property laws were designed around physical objects."
+        },
+        {
+            "question": "Why is digital evidence problematic in court?",
+            "option_a": "A. It is always encrypted",
+            "option_b": "B. Courts only accept handwritten evidence",
+            "option_c": "C. Authenticity and integrity are difficult to prove",
+            "option_d": "D. Digital evidence cannot be copied",
+            "correct_answer": "C",
+            "explanation": "Courts require proof that evidence has not been altered."
+        },
+        {
+            "question": "Disclosing student grades without permission is primarily a threat to:",
+            "option_a": "A. Availability",
+            "option_b": "B. Confidentiality",
+            "option_c": "C. Hardware integrity",
+            "option_d": "D. Patents",
+            "correct_answer": "B",
+            "explanation": "Unauthorized disclosure violates confidentiality."
+        },
+        {
+            "question": "Why is determining the value of data difficult in computer crime cases?",
+            "option_a": "A. Data has no measurable value",
+            "option_b": "B. Data value varies depending on usage and impact",
+            "option_c": "C. Courts refuse to value digital assets",
+            "option_d": "D. Data cannot be copied",
+            "correct_answer": "B",
+            "explanation": "The usefulness and importance of data differ across contexts."
+        },
+        {
+            "question": "Which factor contributes to computer crime being hard to prosecute?",
+            "option_a": "A. Too much physical evidence",
+            "option_b": "B. Jurors may struggle to understand technical complexity",
+            "option_c": "C. Crimes always occur internationally",
+            "option_d": "D. Computers are not recognized legally",
+            "correct_answer": "B",
+            "explanation": "Technical complexity can make cases difficult for jurors."
+        },
+        {
+            "question": "Why may organizations avoid prosecuting cybercriminals?",
+            "option_a": "A. Cybercrime is legal",
+            "option_b": "B. They fear reputational damage and copycat crimes",
+            "option_c": "C. Courts prohibit prosecution",
+            "option_d": "D. WIPO discourages reporting",
+            "correct_answer": "B",
+            "explanation": "Organizations may fear public distrust and repeated attacks."
+        },
+        {
+            "question": "Which law specifically addresses unauthorized computer access in the United States?",
+            "option_a": "A. Freedom of Information Act",
+            "option_b": "B. Computer Fraud and Abuse Act",
+            "option_c": "C. Copyright Act",
+            "option_d": "D. Patent Reform Act",
+            "correct_answer": "B",
+            "explanation": "The Computer Fraud and Abuse Act targets unauthorized computer access."
+        },
+        {
+            "question": "What is ethics primarily concerned with?",
+            "option_a": "A. Legal punishment",
+            "option_b": "B. Objective standards of right and wrong",
+            "option_c": "C. Hardware protection",
+            "option_d": "D. Patent duration",
+            "correct_answer": "B",
+            "explanation": "Ethics concerns moral standards and behavior."
+        },
+        {
+            "question": "Which statement BEST describes ethics compared to law?",
+            "option_a": "A. Ethics are always enforceable by police",
+            "option_b": "B. Law is based entirely on personal opinion",
+            "option_c": "C. Ethics are generally unwritten principles",
+            "option_d": "D. Ethics are decided only by courts",
+            "correct_answer": "C",
+            "explanation": "Ethics are typically unwritten moral principles."
+        },
+        {
+            "question": "Who interprets ethical principles according to the lecture?",
+            "option_a": "A. Courts only",
+            "option_b": "B. Police departments",
+            "option_c": "C. Each individual",
+            "option_d": "D. Patent offices",
+            "correct_answer": "C",
+            "explanation": "Ethical principles are interpreted personally."
+        },
+        {
+            "question": "Which of the following is enforceable by police and courts?",
+            "option_a": "A. Ethics",
+            "option_b": "B. Personal values",
+            "option_c": "C. Law",
+            "option_d": "D. Professional opinions",
+            "correct_answer": "C",
+            "explanation": "Laws are formally enforceable by legal institutions."
+        },
+        {
+            "question": "A developer distributes only executable files while hiding the source code. Which protection mechanism is MOST aligned with this approach?",
+            "option_a": "A. Trade secret protection",
+            "option_b": "B. Public domain release",
+            "option_c": "C. Trademark law",
+            "option_d": "D. Fair use doctrine",
+            "correct_answer": "A",
+            "explanation": "Keeping source code hidden aligns with trade secret protection."
+        },
+        {
+            "question": "A researcher bypasses anti-piracy controls solely to study vulnerabilities in a system. According to the lecture, this may be:",
+            "option_a": "A. Automatically illegal",
+            "option_b": "B. Acceptable for research purposes",
+            "option_c": "C. Patent infringement",
+            "option_d": "D. A violation of fair use only",
+            "correct_answer": "B",
+            "explanation": "The DMCA allows certain research and educational exceptions."
+        },
+        {
+            "question": "Which legal protection would BEST protect a newly invented encryption hardware device?",
+            "option_a": "A. Patent",
+            "option_b": "B. Copyright",
+            "option_c": "C. Fair use",
+            "option_d": "D. Piracy",
+            "correct_answer": "A",
+            "explanation": "Patents protect novel inventions and hardware designs."
+        },
+        {
+            "question": "A programmer independently recreates a sorting algorithm without copying any source code. This is generally:",
+            "option_a": "A. Legal because algorithms are ideas",
+            "option_b": "B. Illegal under copyright",
+            "option_c": "C. Automatically patent infringement",
+            "option_d": "D. Considered piracy",
+            "correct_answer": "A",
+            "explanation": "Copyright protects code expression, not the abstract algorithm."
+        },
+        {
+            "question": "What is a major weakness of trade secret protection for software?",
+            "option_a": "A. It cannot protect algorithms",
+            "option_b": "B. Reverse engineering may reveal secrets",
+            "option_c": "C. It requires public publication",
+            "option_d": "D. It only applies to hardware",
+            "correct_answer": "B",
+            "explanation": "Reverse engineering tools can expose hidden program logic."
+        },
+        {
+            "question": "Which statement about copyright duration in Sri Lanka is correct?",
+            "option_a": "A. Copyright lasts 10 years only",
+            "option_b": "B. Copyright lasts 25 years after publication for all works",
+            "option_c": "C. Copyright lasts the author's lifetime plus 70 years",
+            "option_d": "D. Copyright never expires",
+            "correct_answer": "C",
+            "explanation": "Sri Lankan copyright protection generally extends for the author's lifetime plus 70 years."
+        },
+        {
+            "question": "Why is lack of technical expertise among legal personnel a challenge?",
+            "option_a": "A. It prevents all cybercrime investigations",
+            "option_b": "B. It makes understanding computer-related legal issues difficult",
+            "option_c": "C. It invalidates patents",
+            "option_d": "D. It eliminates ethical conflicts",
+            "correct_answer": "B",
+            "explanation": "Technical complexity can make computer-related legal issues difficult to interpret."
+        },
+        {
+            "question": "Which of the following BEST represents a trade secret?",
+            "option_a": "A. A published textbook",
+            "option_b": "B. A publicly available encryption algorithm",
+            "option_c": "C. A confidential recommendation engine used internally",
+            "option_d": "D. A patented CPU architecture",
+            "correct_answer": "C",
+            "explanation": "Trade secrets involve confidential information that gives competitive advantage."
+        },
+        {
+            "question": "What is the first sale doctrine in copyright law?",
+            "option_a": "A. The creator loses all rights after one sale",
+            "option_b": "B. Buyers can resell or give away purchased copyrighted objects",
+            "option_c": "C. Copyright expires after first purchase",
+            "option_d": "D. Only libraries may distribute copies",
+            "correct_answer": "B",
+            "explanation": "First sale allows owners of legal copies to resell or transfer them."
+        },
+        {
+            "question": "Which protection mechanism requires formal approval from a patent office?",
+            "option_a": "A. Fair use",
+            "option_b": "B. Copyright",
+            "option_c": "C. Patent",
+            "option_d": "D. Trade secret",
+            "correct_answer": "C",
+            "explanation": "Patents require examination and approval by a patent office."
+        },
+        {
+            "question": "Which of the following is TRUE regarding ethics?",
+            "option_a": "A. Ethical decisions are always legally correct",
+            "option_b": "B. Ethical positions may conflict",
+            "option_c": "C. Ethics are universally enforced",
+            "option_d": "D. Ethics never change",
+            "correct_answer": "B",
+            "explanation": "Different ethical principles may conflict in certain situations."
+        },
+        {
+            "question": "A company discovers that a former employee stole a secret algorithm and used it in another product. Which legal protection is MOST directly violated?",
+            "option_a": "A. Fair use",
+            "option_b": "B. Trade secret law",
+            "option_c": "C. Public domain rights",
+            "option_d": "D. Freedom of Information Act",
+            "correct_answer": "B",
+            "explanation": "Stealing and using confidential algorithms violates trade secret protection."
+        },
+        {
+            "question": "Which of the following BEST explains why cybercrime laws are still evolving?",
+            "option_a": "A. Technology changes rapidly",
+            "option_b": "B. Computers are disappearing",
+            "option_c": "C. Physical evidence is increasing",
+            "option_d": "D. Ethics are replacing law",
+            "correct_answer": "A",
+            "explanation": "Rapid technological advancement creates new legal challenges continuously."
+        },
+        {
+            "question": "Which protection method is MOST suitable for protecting website articles and images?",
+            "option_a": "A. Patent",
+            "option_b": "B. Copyright",
+            "option_c": "C. Trade secret",
+            "option_d": "D. Anti-piracy devices only",
+            "correct_answer": "B",
+            "explanation": "Web content is typically protected by copyright."
+        },
+        {
+            "question": "Why might proving authenticity of digital evidence be difficult?",
+            "option_a": "A. Digital files cannot be copied",
+            "option_b": "B. Digital information can be modified easily",
+            "option_c": "C. Courts reject computers completely",
+            "option_d": "D. Digital evidence is always encrypted",
+            "correct_answer": "B",
+            "explanation": "Digital information can be altered without obvious physical traces."
+        },
+        {
+            "question": "A company patents a novel compression algorithm. Another company independently develops the same algorithm later. Which statement is MOST accurate?",
+            "option_a": "A. The second company may still infringe the patent",
+            "option_b": "B. Independent development guarantees immunity",
+            "option_c": "C. Copyright law overrides the patent",
+            "option_d": "D. Trade secret law applies automatically",
+            "correct_answer": "A",
+            "explanation": "Patents protect inventions regardless of independent creation."
+        },
+        {
+            "question": "What is a major reason many cybercrimes are not prosecuted?",
+            "option_a": "A. Cybercrime is not illegal",
+            "option_b": "B. Victims fear negative publicity",
+            "option_c": "C. Evidence always disappears",
+            "option_d": "D. International law prohibits prosecution",
+            "correct_answer": "B",
+            "explanation": "Organizations often avoid exposure of vulnerabilities and reputational damage."
+        },
+        {
+            "question": "Which statement BEST describes copyright protection for software?",
+            "option_a": "A. It protects both algorithms and code equally",
+            "option_b": "B. It protects program expression but not algorithmic concepts",
+            "option_c": "C. It only protects executable files",
+            "option_d": "D. It automatically patents software",
+            "correct_answer": "B",
+            "explanation": "Copyright protects the code expression rather than the abstract algorithm."
+        },
+        {
+            "question": "What is the role of non-disclosure agreements in cybersecurity?",
+            "option_a": "A. They eliminate the need for encryption",
+            "option_b": "B. They legally reinforce secrecy obligations",
+            "option_c": "C. They replace patents",
+            "option_d": "D. They allow public disclosure",
+            "correct_answer": "B",
+            "explanation": "NDAs help enforce confidentiality and protect trade secrets."
+        },
+        {
+            "question": "Which protection method applies BEST to firmware code hidden inside chips?",
+            "option_a": "A. Trademark only",
+            "option_b": "B. Trade secret protection",
+            "option_c": "C. Public domain release",
+            "option_d": "D. Ethical principles only",
+            "correct_answer": "B",
+            "explanation": "Firmware code may be protected as a trade secret."
+        },
+        {
+            "question": "Why does law often lag behind technology?",
+            "option_a": "A. Technology never changes",
+            "option_b": "B. Legislatures and courts adapt slowly to technical developments",
+            "option_c": "C. Courts ignore computer science",
+            "option_d": "D. Ethical systems evolve faster than hardware",
+            "correct_answer": "B",
+            "explanation": "Legal systems typically adapt more slowly than technological innovation."
+        },
+        {
+            "question": "Which statement is TRUE regarding libraries under the DMCA?",
+            "option_a": "A. Libraries may create limited copies for lending purposes",
+            "option_b": "B. Libraries cannot duplicate digital content",
+            "option_c": "C. Libraries may distribute unlimited pirated copies",
+            "option_d": "D. Libraries are exempt from copyright law entirely",
+            "correct_answer": "A",
+            "explanation": "Libraries may make up to three copies for lending purposes."
+        },
+        {
+            "question": "A security analyst legally accesses a system but secretly copies confidential customer records for personal use. Which principle is MOST directly violated?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Availability",
+            "option_c": "C. Patent uniqueness",
+            "option_d": "D. Public domain rules",
+            "correct_answer": "A",
+            "explanation": "Unauthorized disclosure of customer records violates confidentiality."
+        },
+        {
+            "question": "Which challenge MOST affects jurors in cybercrime trials?",
+            "option_a": "A. Excessive physical evidence",
+            "option_b": "B. Technical complexity of cases",
+            "option_c": "C. Lack of witnesses",
+            "option_d": "D. Excessive patent filings",
+            "correct_answer": "B",
+            "explanation": "Technical details can be difficult for non-technical jurors to understand."
+        },
+        {
+            "question": "Which of the following is an example of a computer crime involving integrity?",
+            "option_a": "A. Viewing public websites",
+            "option_b": "B. Altering financial records without authorization",
+            "option_c": "C. Buying licensed software",
+            "option_d": "D. Creating backup copies legally",
+            "correct_answer": "B",
+            "explanation": "Unauthorized modification of data violates integrity."
+        },
+        {
+            "question": "Why are trade secrets sometimes preferred over patents for algorithms?",
+            "option_a": "A. Trade secrets require public disclosure",
+            "option_b": "B. Patents may expose algorithm details publicly",
+            "option_c": "C. Patents cannot protect inventions",
+            "option_d": "D. Trade secrets never expire automatically",
+            "correct_answer": "B",
+            "explanation": "Patents require disclosure, while trade secrets keep details hidden."
+        },
+        {
+            "question": "Which statement BEST describes fair use?",
+            "option_a": "A. Unlimited duplication for profit",
+            "option_b": "B. Reasonable use that does not interfere with the author's rights",
+            "option_c": "C. Selling copied software legally",
+            "option_d": "D. Disabling anti-piracy protections",
+            "correct_answer": "B",
+            "explanation": "Fair use allows limited lawful use for purposes like teaching and criticism."
+        },
+        {
+            "question": "What is one reason computer crimes often receive limited political attention?",
+            "option_a": "A. They are simple to solve",
+            "option_b": "B. They are often obscure and high-tech",
+            "option_c": "C. They only affect governments",
+            "option_d": "D. They are always international",
+            "correct_answer": "B",
+            "explanation": "High-tech crimes may not attract broad public or political focus."
+        },
+        {
+            "question": "Which of the following is protected primarily by copyright rather than patent?",
+            "option_a": "A. A new CPU architecture",
+            "option_b": "B. A song uploaded to a website",
+            "option_c": "C. A novel hardware invention",
+            "option_d": "D. An industrial machine design",
+            "correct_answer": "B",
+            "explanation": "Creative works such as songs are protected by copyright."
+        },
+        {
+            "question": "A company publicly releases source code under an open-source license. Which protection becomes weaker afterward?",
+            "option_a": "A. Trade secret protection",
+            "option_b": "B. Copyright",
+            "option_c": "C. Patent rights",
+            "option_d": "D. Ethical standards",
+            "correct_answer": "A",
+            "explanation": "Trade secret protection depends on confidentiality."
+        },
+        {
+            "question": "Which statement BEST explains the difference between ethics and law?",
+            "option_a": "A. Ethics are always legally binding",
+            "option_b": "B. Laws are personal choices only",
+            "option_c": "C. Laws are formal rules while ethics are moral principles",
+            "option_d": "D. Ethics are enforced by courts",
+            "correct_answer": "C",
+            "explanation": "Law consists of formal enforceable rules, while ethics are moral principles."
+        },
+        {
+            "question": "Why is copying a purchased music CD into MP3 format considered legally complex?",
+            "option_a": "A. Music cannot be copyrighted",
+            "option_b": "B. It raises debates regarding reasonable fair use",
+            "option_c": "C. Patents apply automatically",
+            "option_d": "D. WIPO prohibits digital music",
+            "correct_answer": "B",
+            "explanation": "Transferring music between personal formats creates fair use debates."
+        },
+        {
+            "question": "Which legal mechanism MOST directly protects inventions in engineering and science?",
+            "option_a": "A. Ethics",
+            "option_b": "B. Copyright",
+            "option_c": "C. Patent",
+            "option_d": "D. Fair use",
+            "correct_answer": "C",
+            "explanation": "Patents are intended to protect inventions and technological innovations."
+        },
+        {
+            "question": "Which of the following is an example of protecting confidentiality using technical safeguards?",
+            "option_a": "A. File encryption",
+            "option_b": "B. Public disclosure",
+            "option_c": "C. Fair use citation",
+            "option_d": "D. Copyright expiration",
+            "correct_answer": "A",
+            "explanation": "Encryption helps protect confidential information from unauthorized access."
+        },
+        {
+            "question": "A software company discovers pirated copies of its product online but chooses not to take legal action. Which protection may weaken as a result?",
+            "option_a": "A. Trade secret protection only",
+            "option_b": "B. Patent protection potentially",
+            "option_c": "C. Ethics enforcement",
+            "option_d": "D. WIPO membership",
+            "correct_answer": "B",
+            "explanation": "Failure to enforce patent rights may weaken patent validity."
+        },
+        {
+            "question": "Which statement about computer crime evidence is MOST accurate?",
+            "option_a": "A. Digital evidence cannot be altered",
+            "option_b": "B. Courts generally prefer original evidence over copies",
+            "option_c": "C. Physical evidence is unnecessary in all cases",
+            "option_d": "D. Digital evidence is always inadmissible",
+            "correct_answer": "B",
+            "explanation": "Courts traditionally favor original evidence because copies may be modified."
+        },
+        {
+            "question": "What is the PRIMARY purpose of anti-piracy functionality in digital products?",
+            "option_a": "A. To increase hardware speed",
+            "option_b": "B. To prevent unauthorized copying and distribution",
+            "option_c": "C. To replace copyrights",
+            "option_d": "D. To patent digital files",
+            "correct_answer": "B",
+            "explanation": "Anti-piracy mechanisms aim to prevent unauthorized duplication."
+        },
+        {
+            "question": "Which factor makes cybercrime prosecution different from traditional theft?",
+            "option_a": "A. Cybercrime always involves violence",
+            "option_b": "B. Digital assets are intangible",
+            "option_c": "C. Computers cannot store evidence",
+            "option_d": "D. Cybercrime is always international",
+            "correct_answer": "B",
+            "explanation": "Cybercrime often involves intangible digital assets rather than physical objects."
+        },
+        {
+            "question": "Which action would MOST likely violate ethical principles even if technically legal?",
+            "option_a": "A. Accessing employee data unnecessarily due to curiosity",
+            "option_b": "B. Using fair use excerpts for teaching",
+            "option_c": "C. Creating backups of company files",
+            "option_d": "D. Registering a patent",
+            "correct_answer": "A",
+            "explanation": "Accessing sensitive data without legitimate need violates ethical standards."
+        },
+        {
+            "question": "What is a significant limitation of copyright protection for software?",
+            "option_a": "A. It does not protect code expression",
+            "option_b": "B. It cannot fully protect algorithmic ideas",
+            "option_c": "C. It only applies to books",
+            "option_d": "D. It expires immediately after publication",
+            "correct_answer": "B",
+            "explanation": "Copyright protects expression rather than abstract ideas or algorithms."
+        },
+        {
+            "question": "Why are ethics considered personal choices?",
+            "option_a": "A. Ethics are interpreted individually",
+            "option_b": "B. Ethics are always identical worldwide",
+            "option_c": "C. Ethics are enforced by courts",
+            "option_d": "D. Ethics are written into constitutions",
+            "correct_answer": "A",
+            "explanation": "Individuals interpret and prioritize ethical principles personally."
+        },
+        {
+            "question": "Which organization administers intellectual property systems in Sri Lanka?",
+            "option_a": "A. Sri Lanka Cyber Bureau",
+            "option_b": "B. National Intellectual Property Office of Sri Lanka",
+            "option_c": "C. WIPO Sri Lanka Division",
+            "option_d": "D. Ministry of Technology",
+            "correct_answer": "B",
+            "explanation": "The National Intellectual Property Office administers intellectual property matters in Sri Lanka."
+        },
+        {
+            "question": "A hacker modifies patient medical records in a hospital database. Which security property is MOST directly compromised?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability",
+            "option_c": "C. Copyright",
+            "option_d": "D. Fair use",
+            "correct_answer": "A",
+            "explanation": "Unauthorized alteration of records compromises data integrity."
+        },
+        {
+            "question": "Which statement BEST explains why copyright law exists?",
+            "option_a": "A. To prevent all sharing of information",
+            "option_b": "B. To balance creator rights with societal intellectual growth",
+            "option_c": "C. To eliminate fair use",
+            "option_d": "D. To patent all creative works",
+            "correct_answer": "B",
+            "explanation": "Copyright balances creator compensation with free exchange of ideas."
+        },
+        {
+            "question": "What is the primary legal risk of distributing devices designed to bypass DRM protections?",
+            "option_a": "A. Patent invalidation",
+            "option_b": "B. Violation of the DMCA",
+            "option_c": "C. Loss of trade secret protection",
+            "option_d": "D. Ethical disagreement only",
+            "correct_answer": "B",
+            "explanation": "The DMCA prohibits distributing tools that bypass anti-piracy protections."
+        },
+        {
+            "question": "Which scenario BEST demonstrates confidentiality violation?",
+            "option_a": "A. Server downtime due to power failure",
+            "option_b": "B. Unauthorized disclosure of payroll data",
+            "option_c": "C. Corrupted operating system files",
+            "option_d": "D. Expired software license",
+            "correct_answer": "B",
+            "explanation": "Unauthorized disclosure of sensitive data violates confidentiality."
+        },
+        {
+            "question": "Which of the following is MOST likely protected by both copyright and trade secret law?",
+            "option_a": "A. Confidential source code",
+            "option_b": "B. Publicly released patent application",
+            "option_c": "C. Open government data",
+            "option_d": "D. Generic algorithms taught publicly",
+            "correct_answer": "A",
+            "explanation": "Confidential source code can simultaneously qualify as copyrighted work and trade secret."
+        }
+    ]
+}
