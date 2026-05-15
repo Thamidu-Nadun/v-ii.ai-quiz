@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "According to ITU-T Recommendation X.800, how is access control defined?",
+            "option_a": "A. The verification of a user's claimed identity",
+            "option_b": "B. The prevention of unauthorized use of a resource, including use in an unauthorized manner",
+            "option_c": "C. The process of encrypting data to prevent eavesdropping",
+            "option_d": "D. The monitoring of user activity for audit purposes",
+            "correct_answer": "B",
+            "explanation": "X.800 defines access control specifically as preventing unauthorized use of a resource or use in an unauthorized manner, focusing on resource access restrictions."
+        },
+        {
+            "question": "Which of the following correctly identifies the three main classes of subjects in access control?",
+            "option_a": "A. Admin, user, guest",
+            "option_b": "B. Owner, group, world",
+            "option_c": "C. Process, thread, application",
+            "option_d": "D. User, program, system",
+            "correct_answer": "B",
+            "explanation": "The lecture specifies three classes of subject: owner, group, and world, representing different privilege levels."
+        },
+        {
+            "question": "In discretionary access control (DAC), what makes the policy 'discretionary'?",
+            "option_a": "A. The system administrator has absolute discretion over all permissions",
+            "option_b": "B. An entity with access rights can, by its own volition, enable another entity to access a resource",
+            "option_c": "C. Access is granted based on security labels and clearances",
+            "option_d": "D. Users have no choice but to accept the access rules set by the system",
+            "correct_answer": "B",
+            "explanation": "DAC is termed discretionary because an entity that has access rights can voluntarily grant those rights to another entity."
+        },
+        {
+            "question": "Which access control policy uses security labels and security clearances to determine access?",
+            "option_a": "A. Discretionary Access Control (DAC)",
+            "option_b": "B. Role-Based Access Control (RBAC)",
+            "option_c": "C. Mandatory Access Control (MAC)",
+            "option_d": "D. Attribute-Based Access Control (ABAC)",
+            "correct_answer": "C",
+            "explanation": "MAC controls access by comparing security labels (resource sensitivity) with security clearances (entity eligibility)."
+        },
+        {
+            "question": "Why is MAC considered 'mandatory' rather than discretionary?",
+            "option_a": "A. All users must use the same operating system",
+            "option_b": "B. An entity with clearance cannot voluntarily enable another entity to access a resource",
+            "option_c": "C. The government mandates its use in all systems",
+            "option_d": "D. It requires mandatory two-factor authentication",
+            "correct_answer": "B",
+            "explanation": "MAC is mandatory because even if an entity has clearance, it cannot by its own volition grant access to another entity; the policy enforces restrictions."
+        },
+        {
+            "question": "In RBAC, access rights are assigned to:",
+            "option_a": "A. Individual users directly",
+            "option_b": "B. Security labels",
+            "option_c": "C. Roles that users assume in the system",
+            "option_d": "D. IP addresses and MAC addresses",
+            "correct_answer": "C",
+            "explanation": "RBAC assigns access rights based on roles (job functions) rather than user identities, distinguishing it from DAC."
+        },
+        {
+            "question": "Which of the following is NOT listed as an example of an access right?",
+            "option_a": "A. Read",
+            "option_b": "B. Write",
+            "option_c": "C. Share",
+            "option_d": "D. Execute",
+            "correct_answer": "C",
+            "explanation": "The lecture lists read, write, execute, delete, create, and search as access rights. 'Share' is not explicitly listed as a basic access right."
+        },
+        {
+            "question": "An access matrix is typically sparse. How is it commonly implemented?",
+            "option_a": "A. By compressing it into a single list of all permissions",
+            "option_b": "B. By decomposing it into Access Control Lists (by columns) or capability lists (by rows)",
+            "option_c": "C. By converting it into a relational database table",
+            "option_d": "D. By storing it as a bitmap in kernel memory",
+            "correct_answer": "B",
+            "explanation": "The sparse access matrix is decomposed by columns into ACLs (per object) or by rows into capability tickets (per subject)."
+        },
+        {
+            "question": "What is a primary advantage of using Access Control Lists (ACLs)?",
+            "option_a": "A. Easily determining all objects a specific user can access",
+            "option_b": "B. Low memory overhead compared to capability lists",
+            "option_c": "C. Efficiently knowing which subjects have what access rights to a particular object",
+            "option_d": "D. They are immune to security attacks",
+            "correct_answer": "C",
+            "explanation": "ACLs are efficient when you want to know which subjects have access to a specific object, though determining a user's access across all objects is harder."
+        },
+        {
+            "question": "What security problem is specifically associated with capability tickets?",
+            "option_a": "A. They cannot be revoked once issued",
+            "option_b": "B. Tickets may be spread around the system, causing greater security risk than ACLs",
+            "option_c": "C. They require more storage space than ACLs",
+            "option_d": "D. They only work on Windows operating systems",
+            "correct_answer": "B",
+            "explanation": "The lecture states that tickets may spread around the system, causing a greater security problem than ACLs, requiring integrity protection and unforgeability."
+        },
+        {
+            "question": "How does the operating system protect capability tickets from being forged?",
+            "option_a": "A. Tickets are stored encrypted on the hard drive",
+            "option_b": "B. The OS keeps all tickets for the user in a memory region inaccessible by users",
+            "option_c": "C. Tickets are digitally signed by the user",
+            "option_d": "D. Tickets expire after 24 hours",
+            "correct_answer": "B",
+            "explanation": "The OS protects tickets by keeping them in a memory region inaccessible to users, and users must use system calls to request their tickets."
+        },
+        {
+            "question": "In distributed systems, capability tickets often take the form of a token. What can this token be?",
+            "option_a": "A. A username and password pair",
+            "option_b": "B. A large random password or a cryptographic message authentication code",
+            "option_c": "C. The user's biometric data",
+            "option_d": "D. The IP address of the client machine",
+            "correct_answer": "B",
+            "explanation": "In distributed systems, the token can be a large random password or cryptographic MAC verified by the resource when access is requested."
+        },
+        {
+            "question": "What is the relationship between users and roles in RBAC?",
+            "option_a": "A. One-to-one",
+            "option_b": "B. One-to-many (one user, many roles)",
+            "option_c": "C. Many-to-one (many users, one role)",
+            "option_d": "D. Many-to-many",
+            "correct_answer": "D",
+            "explanation": "The lecture explicitly states that the relationship between users and roles is many-to-many."
+        },
+        {
+            "question": "What does the 'least privilege' principle require in access control?",
+            "option_a": "A. All users should have administrator privileges for flexibility",
+            "option_b": "B. Each entity gets the minimum system resources and authorizations needed to do its work",
+            "option_c": "C. Privileges should be reviewed monthly",
+            "option_d": "D. Only executives should have any privileges",
+            "correct_answer": "B",
+            "explanation": "Least privilege grants each entity the minimum resources and authorizations required, limiting damage from accidents or malicious acts."
+        },
+        {
+            "question": "What is 'separation of duty' in access control?",
+            "option_a": "A. Each employee has a unique job title",
+            "option_b": "B. Dividing steps in a system function among different individuals to prevent subversion",
+            "option_c": "C. Separating administrative duties from user duties",
+            "option_d": "D. Requiring two signatures for all transactions",
+            "correct_answer": "B",
+            "explanation": "Separation of duty divides system function steps among different individuals so a single person cannot subvert the process."
+        },
+        {
+            "question": "How does a 'closed policy' differ from an 'open policy'?",
+            "option_a": "A. Closed policy allows all accesses; open policy denies all",
+            "option_b": "B. Closed policy allows only specifically authorized accesses; open policy prohibits only specifically prohibited accesses",
+            "option_c": "C. Closed policy works at night; open policy works during business hours",
+            "option_d": "D. Closed policy requires passwords; open policy does not",
+            "correct_answer": "B",
+            "explanation": "Closed policies allow only explicitly authorized accesses. Open policies specify prohibited accesses and allow all others."
+        },
+        {
+            "question": "What happens when multiple access control policies apply to a resource and they conflict (one allows, another denies)?",
+            "option_a": "A. Allow always takes precedence",
+            "option_b": "B. Deny always takes precedence",
+            "option_c": "C. A conflict resolution procedure must be defined",
+            "option_d": "D. The system crashes",
+            "correct_answer": "C",
+            "explanation": "When policies conflict, a conflict resolution procedure must be defined to determine the outcome."
+        },
+        {
+            "question": "What does 'dual control' require?",
+            "option_a": "A. Two backup copies of all access logs",
+            "option_b": "B. Two or more individuals working in tandem to complete a task",
+            "option_c": "C. Two-factor authentication for all users",
+            "option_d": "D. Two separate access control systems running in parallel",
+            "correct_answer": "B",
+            "explanation": "Dual control requires two or more individuals working in tandem, typically to prevent single-person abuse of sensitive operations."
+        },
+        {
+            "question": "Why is 'reliable input' essential for access control systems?",
+            "option_a": "A. To speed up access decisions",
+            "option_b": "B. Because access control assumes a user is authentic and other inputs (e.g., IP address) must be verifiable",
+            "option_c": "C. To reduce storage requirements",
+            "option_d": "D. To enable cloud computing",
+            "correct_answer": "B",
+            "explanation": "Access control assumes authentication is reliable, and other inputs (like source IP addresses) must be verifiable for restrictions to operate effectively."
+        },
+        {
+            "question": "What does 'support for fine and coarse specifications' mean in access control requirements?",
+            "option_a": "A. The system should work on both small and large files",
+            "option_b": "B. Fine-grained control per record/field and per individual access; coarse-grained to reduce administrative burden",
+            "option_c": "C. Support for both text and binary files",
+            "option_d": "D. The ability to specify access at the file system or network level",
+            "correct_answer": "B",
+            "explanation": "Fine-grained allows per-record or per-field control; coarse-grained reduces administrative overhead for some resource classes."
+        },
+        {
+            "question": "A system administrator wants to know all users who can read a specific confidential file. Which implementation would be most efficient?",
+            "option_a": "A. Capability tickets",
+            "option_b": "B. Access Control Lists (ACLs)",
+            "option_c": "C. Role-Based Access Control matrix",
+            "option_d": "D. Security labels",
+            "correct_answer": "B",
+            "explanation": "ACLs are organized by object and efficiently answer which subjects have what access to a particular object."
+        },
+        {
+            "question": "A manager needs to determine all files a specific employee can access. Which approach is less efficient but still possible?",
+            "option_a": "A. Examining the access matrix directly",
+            "option_b": "B. Iterating through all ACLs to find entries for that user",
+            "option_c": "C. Using capability tickets for that user",
+            "option_d": "D. Checking the system audit log",
+            "correct_answer": "C",
+            "explanation": "Capability tickets are organized by subject, making it efficient to see what objects a user can access. However, the lecture notes ACLs make this harder; capability tickets solve that."
+        },
+        {
+            "question": "In a military system, a document labeled 'Top Secret' can only be accessed by users with 'Top Secret' clearance. Even if a Top Secret user wants to share it with a 'Secret' user, they cannot. This exemplifies:",
+            "option_a": "A. Discretionary Access Control",
+            "option_b": "B. Mandatory Access Control",
+            "option_c": "C. Role-Based Access Control",
+            "option_d": "D. Attribute-Based Access Control",
+            "correct_answer": "B",
+            "explanation": "MAC uses labels and clearances, and even a cleared user cannot voluntarily grant access to another, matching the description."
+        },
+        {
+            "question": "A company implements a system where employees in the 'Manager' role can approve purchase orders, and employees in 'Finance' role can process payments. No single person can both approve and process the same order. This implements:",
+            "option_a": "A. Least privilege",
+            "option_b": "B. Separation of duty",
+            "option_c": "C. Open policy",
+            "option_d": "D. Dual control",
+            "correct_answer": "B",
+            "explanation": "Separation of duty divides steps among different individuals to prevent subversion. Here, approval and payment are separated."
+        },
+        {
+            "question": "A database access control system allows specification that 'User A can read columns 'salary' and 'bonus' but not 'ssn' in the Employees table.' This is an example of:",
+            "option_a": "A. Coarse-grained specification",
+            "option_b": "B. Fine-grained specification",
+            "option_c": "C. Open policy",
+            "option_d": "D. Capability-based control",
+            "correct_answer": "B",
+            "explanation": "Fine-grained specification allows access control at the level of individual records or fields within records."
+        },
+        {
+            "question": "Which access control requirement directly limits the damage from an accidental or malicious act by a compromised user account?",
+            "option_a": "A. Separation of duty",
+            "option_b": "B. Open policy",
+            "option_c": "C. Least privilege",
+            "option_d": "D. Dual control",
+            "correct_answer": "C",
+            "explanation": "Least privilege minimizes the resources a compromised entity can affect, limiting potential damage."
+        },
+        {
+            "question": "An operating system uses an access matrix. The matrix has subjects in rows and objects in columns. Each entry contains read/write/execute permissions. Which decomposition would create a capability list?",
+            "option_a": "A. By columns (one list per object)",
+            "option_b": "B. By rows (one list per subject)",
+            "option_c": "C. By diagonal elements only",
+            "option_d": "D. By creating a separate matrix for each user",
+            "correct_answer": "B",
+            "explanation": "Decomposing the access matrix by rows (per subject) creates capability tickets for each subject/user."
+        },
+        {
+            "question": "In an ACL, what is the purpose of a 'default' or 'public' entry?",
+            "option_a": "A. To grant full access to everyone for testing",
+            "option_b": "B. To allow users not explicitly listed to have a default access right",
+            "option_c": "C. To store the system administrator's permissions",
+            "option_d": "D. To log all access attempts",
+            "correct_answer": "B",
+            "explanation": "A default or public entry in an ACL allows users not explicitly listed to have a predefined default access right."
+        },
+        {
+            "question": "A system uses RBAC. A user is assigned the 'Doctor' role during day shift and 'OnCallDoctor' role during night shift. The same user cannot simultaneously have both roles active. This is an example of:",
+            "option_a": "A. Static role assignment",
+            "option_b": "B. Dynamic role assignment",
+            "option_c": "C. Mandatory role control",
+            "option_d": "D. Role conflict",
+            "correct_answer": "B",
+            "explanation": "Dynamic role assignment means users are assigned roles based on context or time, not permanently."
+        },
+        {
+            "question": "An organization wants to implement a policy where any access not explicitly granted is denied by default. This is called a:",
+            "option_a": "A. Open policy",
+            "option_b": "B. Closed policy",
+            "option_c": "C. Default-permit policy",
+            "option_d": "D. Transparent policy",
+            "correct_answer": "B",
+            "explanation": "A closed policy allows only specifically authorized accesses; all others are denied by default."
+        },
+        {
+            "question": "A university wants students to see their own grades but not others', professors to enter grades, and administrators to change enrollment. No one should have overlapping privileges that allow grade fraud. Which combination of principles is most relevant?",
+            "option_a": "A. Least privilege + Open policy",
+            "option_b": "B. Least privilege + Separation of duty",
+            "option_c": "C. Dual control + MAC",
+            "option_d": "D. DAC + Open policy",
+            "correct_answer": "B",
+            "explanation": "Least privilege gives minimal access per role; separation of duty prevents any single role from both entering and changing grades fraudulently."
+        },
+        {
+            "question": "A capability ticket in a distributed cloud system is implemented as a cryptographically signed token containing user ID and object permissions. The resource server verifies the signature. This addresses which security concern?",
+            "option_a": "A. Ticket theft",
+            "option_b": "B. Ticket unforgeability",
+            "option_c": "C. Ticket revocation",
+            "option_d": "D. Ticket expiration",
+            "correct_answer": "B",
+            "explanation": "The cryptographic signature ensures the ticket cannot be forged, addressing the integrity and unforgeability requirement mentioned in the lecture."
+        },
+        {
+            "question": "A system has two policies: Policy A says 'Managers can read all files.' Policy B says 'No one can read HR-files except HR staff.' A manager tries to read an HR file. What is required?",
+            "option_a": "A. Policy A always wins because it's broader",
+            "option_b": "B. Policy B always wins because it's stricter",
+            "option_c": "C. A conflict resolution procedure must decide",
+            "option_d": "D. The system should allow access and log the conflict",
+            "correct_answer": "C",
+            "explanation": "When multiple policies conflict (one allows, another denies), a conflict resolution procedure must be defined."
+        },
+        {
+            "question": "Which of the following best describes the relationship between authentication and access control according to the lecture?",
+            "option_a": "A. Access control replaces authentication",
+            "option_b": "B. Authentication is a front end to an access control system",
+            "option_c": "C. They are unrelated security functions",
+            "option_d": "D. Authentication happens after access control",
+            "correct_answer": "B",
+            "explanation": "The lecture states that an authentication mechanism is needed as a front end to an access control system, because access control assumes a user is authentic."
+        },
+        {
+            "question": "In a bank, a $10,000 transfer requires two different managers to enter their credentials sequentially. This implements:",
+            "option_a": "A. Least privilege",
+            "option_b": "B. Separation of duty",
+            "option_c": "C. Dual control",
+            "option_d": "D. Closed policy",
+            "correct_answer": "C",
+            "explanation": "Dual control requires two or more individuals working in tandem, exactly matching the two-manager requirement."
+        },
+        {
+            "question": "A system's access control mechanism supports history-based authorization, making access dependent on previously executed accesses. This tool is particularly useful for enforcing:",
+            "option_a": "A. Least privilege",
+            "option_b": "B. Separation of duty across time",
+            "option_c": "C. Open policy",
+            "option_d": "D. Coarse-grained control",
+            "correct_answer": "B",
+            "explanation": "History-based authorization tracks previous accesses, helping enforce separation of duty by ensuring a user doesn't perform conflicting actions over time."
+        },
+        {
+            "question": "An administrator wants to implement a policy where users can loan their access rights to colleagues temporarily. Which policy supports this by design?",
+            "option_a": "A. MAC",
+            "option_b": "B. DAC",
+            "option_c": "C. RBAC",
+            "option_d": "D. Non-discretionary control",
+            "correct_answer": "B",
+            "explanation": "DAC is discretionary because an entity can, by its own volition, enable another entity to access a resource, including loaning access."
+        },
+        {
+            "question": "A file's ACL shows: 'Alice: RW, Bob: R, Group_Admins: RW, Public: (empty)'. What access does user Charlie have?",
+            "option_a": "A. Read and Write",
+            "option_b": "B. Read only",
+            "option_c": "C. No access",
+            "option_d": "D. Execute only",
+            "correct_answer": "C",
+            "explanation": "With no default/public entry and Charlie not explicitly listed, Charlie has no access under a closed policy (implied by typical ACL behavior)."
+        },
+        {
+            "question": "An RBAC system for a hospital has roles: Doctor, Nurse, Pharmacist. Doctors can prescribe. Pharmacists can dispense. A doctor should not also be a pharmacist for the same patient to prevent self-prescription abuse. This requires:",
+            "option_a": "A. Least privilege",
+            "option_b": "B. Separation of duty constraint on role assignment",
+            "option_c": "C. Mandatory access control",
+            "option_d": "D. Open policy",
+            "correct_answer": "B",
+            "explanation": "Separation of duty can be enforced by constraints that prevent a user from being assigned mutually exclusive roles simultaneously."
+        },
+        {
+            "question": "Which of the following is NOT one of the three main access control policy categories mentioned in the lecture?",
+            "option_a": "A. Discretionary Access Control (DAC)",
+            "option_b": "B. Mandatory Access Control (MAC)",
+            "option_c": "C. Role-Based Access Control (RBAC)",
+            "option_d": "D. Rule-Based Access Control (RuBAC)",
+            "correct_answer": "D",
+            "explanation": "The lecture groups access control policies into DAC, MAC, and RBAC. Rule-Based Access Control is not listed as a main category here."
+        }
+    ]
+}

@@ -1,0 +1,724 @@
+{
+    "questions": [
+        {
+            "question": "According to RFC 2828, what is authentication?",
+            "option_a": "A. The process of assigning permissions to users",
+            "option_b": "B. The process of verifying an identity claimed by a system entity",
+            "option_c": "C. The process of encrypting user credentials",
+            "option_d": "D. The process of monitoring network traffic",
+            "correct_answer": "B",
+            "explanation": "Authentication is the process of verifying the identity claimed by or for a system entity."
+        },
+        {
+            "question": "Which step of authentication involves presenting an identifier to the security system?",
+            "option_a": "A. Verification",
+            "option_b": "B. Authorization",
+            "option_c": "C. Identification",
+            "option_d": "D. Encryption",
+            "correct_answer": "C",
+            "explanation": "Identification is the step where a user presents an identifier such as a username."
+        },
+        {
+            "question": "What is the primary purpose of user identification in a system?",
+            "option_a": "A. To compress passwords",
+            "option_b": "B. To determine authorization and privileges",
+            "option_c": "C. To generate encryption keys",
+            "option_d": "D. To hide user activities",
+            "correct_answer": "B",
+            "explanation": "User IDs help determine system access permissions and privilege levels."
+        },
+        {
+            "question": "Which user generally has the highest privilege level in a system?",
+            "option_a": "A. Guest",
+            "option_b": "B. Anonymous user",
+            "option_c": "C. Superuser",
+            "option_d": "D. Remote user",
+            "correct_answer": "C",
+            "explanation": "Superusers typically have the highest level of access and privileges."
+        },
+        {
+            "question": "Which of the following is an example of discretionary access control?",
+            "option_a": "A. Firewall filtering",
+            "option_b": "B. File read/write/execute permissions",
+            "option_c": "C. Packet routing",
+            "option_d": "D. Session timeout",
+            "correct_answer": "B",
+            "explanation": "Discretionary access control commonly involves file permissions such as read, write, and execute."
+        },
+        {
+            "question": "Which of the following is NOT listed as a vulnerability of identification and authentication systems?",
+            "option_a": "A. Weak authentication methods",
+            "option_b": "B. Lack of confidentiality of stored authentication information",
+            "option_c": "C. Strong password complexity enforcement",
+            "option_d": "D. Lack of encryption over networks",
+            "correct_answer": "C",
+            "explanation": "Strong password complexity enforcement is a security measure, not a vulnerability."
+        },
+        {
+            "question": "Which authentication factor category includes passwords and PINs?",
+            "option_a": "A. Something the individual possesses",
+            "option_b": "B. Something the individual knows",
+            "option_c": "C. Something the individual does",
+            "option_d": "D. Something the individual is",
+            "correct_answer": "B",
+            "explanation": "Passwords and PINs are knowledge-based authentication methods."
+        },
+        {
+            "question": "Which of the following is considered a token-based authentication method?",
+            "option_a": "A. Fingerprint",
+            "option_b": "B. Typing rhythm",
+            "option_c": "C. Smart card",
+            "option_d": "D. Password",
+            "correct_answer": "C",
+            "explanation": "Smart cards are physical possession-based authentication tokens."
+        },
+        {
+            "question": "Face recognition belongs to which authentication category?",
+            "option_a": "A. Something the individual knows",
+            "option_b": "B. Something the individual possesses",
+            "option_c": "C. Static biometrics",
+            "option_d": "D. Dynamic biometrics",
+            "correct_answer": "C",
+            "explanation": "Face recognition is a static biometric authentication mechanism."
+        },
+        {
+            "question": "Typing rhythm is an example of which authentication factor?",
+            "option_a": "A. Static biometric",
+            "option_b": "B. Dynamic biometric",
+            "option_c": "C. Token-based authentication",
+            "option_d": "D. Knowledge-based authentication",
+            "correct_answer": "B",
+            "explanation": "Typing rhythm measures behavioral characteristics and is a dynamic biometric."
+        },
+        {
+            "question": "What does a system typically store in password-based authentication systems?",
+            "option_a": "A. Plaintext passwords",
+            "option_b": "B. Encrypted emails",
+            "option_c": "C. One-way hash values of passwords",
+            "option_d": "D. Session tokens only",
+            "correct_answer": "C",
+            "explanation": "Most systems store hashed versions of passwords rather than plaintext passwords."
+        },
+        {
+            "question": "Why are passwords vulnerable to attacks?",
+            "option_a": "A. Because passwords are always public",
+            "option_b": "B. Because users often choose weak or predictable passwords",
+            "option_c": "C. Because passwords cannot be hashed",
+            "option_d": "D. Because passwords bypass authentication",
+            "correct_answer": "B",
+            "explanation": "Weak and predictable passwords make password-based authentication vulnerable."
+        },
+        {
+            "question": "An attacker gains access to a password file and compares hashes against common words. What attack is this?",
+            "option_a": "A. Replay attack",
+            "option_b": "B. Session hijacking",
+            "option_c": "C. Offline dictionary attack",
+            "option_d": "D. SQL injection",
+            "correct_answer": "C",
+            "explanation": "Offline dictionary attacks compare password hashes against hashes of common words."
+        },
+        {
+            "question": "Which is a recommended countermeasure against offline dictionary attacks?",
+            "option_a": "A. Disable user accounts permanently",
+            "option_b": "B. Store passwords in plaintext",
+            "option_c": "C. Protect password files and detect intrusions",
+            "option_d": "D. Share passwords among administrators",
+            "correct_answer": "C",
+            "explanation": "Protecting password files and using intrusion detection reduces the effectiveness of offline attacks."
+        },
+        {
+            "question": "What is the primary goal of a specific account attack?",
+            "option_a": "A. To compromise every account simultaneously",
+            "option_b": "B. To target one account with repeated password guesses",
+            "option_c": "C. To intercept encrypted traffic",
+            "option_d": "D. To replace password hashes",
+            "correct_answer": "B",
+            "explanation": "Specific account attacks focus on repeatedly guessing one user's password."
+        },
+        {
+            "question": "Which mechanism is commonly used to defend against repeated login attempts on a single account?",
+            "option_a": "A. Salting",
+            "option_b": "B. Account lockout",
+            "option_c": "C. Packet filtering",
+            "option_d": "D. RAID storage",
+            "correct_answer": "B",
+            "explanation": "Account lockout prevents unlimited password guessing attempts."
+        },
+        {
+            "question": "What is a popular password attack?",
+            "option_a": "A. Guessing passwords for a single user",
+            "option_b": "B. Using a common password against many user IDs",
+            "option_c": "C. Encrypting password databases",
+            "option_d": "D. Stealing biometric templates",
+            "correct_answer": "B",
+            "explanation": "Popular password attacks try commonly used passwords across multiple accounts."
+        },
+        {
+            "question": "Why do users often choose weak passwords?",
+            "option_a": "A. To increase encryption speed",
+            "option_b": "B. To simplify system administration",
+            "option_c": "C. Because easy-to-remember passwords are more convenient",
+            "option_d": "D. Because systems require weak passwords",
+            "correct_answer": "C",
+            "explanation": "Users tend to choose memorable passwords, which are often easier to guess."
+        },
+        {
+            "question": "Which password policy helps prevent password guessing against a single user?",
+            "option_a": "A. Using short passwords",
+            "option_b": "B. Allowing usernames as passwords",
+            "option_c": "C. Enforcing strong password complexity requirements",
+            "option_d": "D. Disabling encryption",
+            "correct_answer": "C",
+            "explanation": "Strong password policies reduce the likelihood of successful password guessing."
+        },
+        {
+            "question": "Which attack often relies on social engineering to obtain passwords?",
+            "option_a": "A. Exploiting user mistakes",
+            "option_b": "B. Brute-force encryption",
+            "option_c": "C. DNS poisoning",
+            "option_d": "D. Port scanning",
+            "correct_answer": "A",
+            "explanation": "Social engineering tricks users into revealing passwords or sensitive information."
+        },
+        {
+            "question": "Which countermeasure helps reduce workstation hijacking risks?",
+            "option_a": "A. Using default passwords",
+            "option_b": "B. Automatic logout after inactivity",
+            "option_c": "C. Disabling session monitoring",
+            "option_d": "D. Sharing accounts",
+            "correct_answer": "B",
+            "explanation": "Automatically logging out inactive sessions reduces unauthorized access opportunities."
+        },
+        {
+            "question": "Why is password reuse across systems dangerous?",
+            "option_a": "A. It increases password length",
+            "option_b": "B. It makes encryption slower",
+            "option_c": "C. Compromise of one system can compromise others",
+            "option_d": "D. It prevents authentication",
+            "correct_answer": "C",
+            "explanation": "Reusing passwords allows attackers to access multiple systems once one password is compromised."
+        },
+        {
+            "question": "What security threat is associated with electronic monitoring during remote logins?",
+            "option_a": "A. Hardware failure",
+            "option_b": "B. Eavesdropping",
+            "option_c": "C. File fragmentation",
+            "option_d": "D. Deadlock",
+            "correct_answer": "B",
+            "explanation": "Attackers may intercept credentials transmitted over networks."
+        },
+        {
+            "question": "Why is simple encryption alone insufficient for password transmission security?",
+            "option_a": "A. Encrypted passwords can still be replayed",
+            "option_b": "B. Encryption deletes passwords",
+            "option_c": "C. Encryption weakens authentication",
+            "option_d": "D. Encryption prevents hashing",
+            "correct_answer": "A",
+            "explanation": "Captured encrypted passwords may still be reused in replay attacks."
+        },
+        {
+            "question": "What does multi-factor authentication require?",
+            "option_a": "A. Multiple usernames",
+            "option_b": "B. More than one authentication method",
+            "option_c": "C. Multiple network interfaces",
+            "option_d": "D. Several passwords from the same category",
+            "correct_answer": "B",
+            "explanation": "MFA combines multiple authentication factors such as passwords and biometrics."
+        },
+        {
+            "question": "Which combination represents two-factor authentication?",
+            "option_a": "A. Password and PIN",
+            "option_b": "B. Fingerprint and face scan",
+            "option_c": "C. Password and smart card",
+            "option_d": "D. Username and password",
+            "correct_answer": "C",
+            "explanation": "Two-factor authentication combines two different factor categories."
+        },
+        {
+            "question": "What is the primary goal of Single Sign-On (SSO)?",
+            "option_a": "A. To disable authentication",
+            "option_b": "B. To centralize authentication and authorization",
+            "option_c": "C. To create multiple passwords",
+            "option_d": "D. To remove access control",
+            "correct_answer": "B",
+            "explanation": "SSO centralizes authentication and authorization functions."
+        },
+        {
+            "question": "Which is an advantage of SSO?",
+            "option_a": "A. Increased number of passwords",
+            "option_b": "B. Reduced administrative overhead",
+            "option_c": "C. Elimination of authorization",
+            "option_d": "D. Guaranteed immunity from attacks",
+            "correct_answer": "B",
+            "explanation": "SSO reduces password reset and management overhead."
+        },
+        {
+            "question": "Why may users choose stronger passwords in SSO environments?",
+            "option_a": "A. Because they only need to remember one password",
+            "option_b": "B. Because encryption is disabled",
+            "option_c": "C. Because passwords are public",
+            "option_d": "D. Because SSO removes authentication",
+            "correct_answer": "A",
+            "explanation": "Users are more willing to create strong passwords when fewer passwords must be remembered."
+        },
+        {
+            "question": "What is a major disadvantage of SSO?",
+            "option_a": "A. Lack of network connectivity",
+            "option_b": "B. Increased password memorization",
+            "option_c": "C. Single point of failure",
+            "option_d": "D. Elimination of centralized administration",
+            "correct_answer": "C",
+            "explanation": "Compromise of the centralized SSO system can impact all connected resources."
+        },
+        {
+            "question": "Why is strong authentication often added to SSO systems?",
+            "option_a": "A. To increase typing speed",
+            "option_b": "B. To reduce the impact of centralized compromise",
+            "option_c": "C. To disable authorization",
+            "option_d": "D. To simplify replay attacks",
+            "correct_answer": "B",
+            "explanation": "Strong authentication mitigates the risks associated with centralized SSO systems."
+        },
+        {
+            "question": "What is a salt in password storage?",
+            "option_a": "A. A backup password",
+            "option_b": "B. A fixed plaintext key",
+            "option_c": "C. A pseudorandom value added before hashing",
+            "option_d": "D. A network token",
+            "correct_answer": "C",
+            "explanation": "Salt is a random value combined with a password before hashing."
+        },
+        {
+            "question": "Why are salts stored in plaintext?",
+            "option_a": "A. Because they are not secret values",
+            "option_b": "B. Because salts replace passwords",
+            "option_c": "C. Because salts cannot be stored securely",
+            "option_d": "D. Because salts are encrypted elsewhere",
+            "correct_answer": "A",
+            "explanation": "Salts do not need secrecy; they simply ensure unique hashes."
+        },
+        {
+            "question": "What is the first step in storing a salted password?",
+            "option_a": "A. Delete the password",
+            "option_b": "B. Generate a pseudorandom salt",
+            "option_c": "C. Send the password over the network",
+            "option_d": "D. Disable hashing",
+            "correct_answer": "B",
+            "explanation": "The system first generates a random or pseudorandom salt value."
+        },
+        {
+            "question": "During password verification with salts, what does the system retrieve first?",
+            "option_a": "A. Only the username",
+            "option_b": "B. The plaintext password",
+            "option_c": "C. The stored salt and encrypted password",
+            "option_d": "D. The session token",
+            "correct_answer": "C",
+            "explanation": "The system retrieves the stored salt and hashed password for verification."
+        },
+        {
+            "question": "Why do two users with the same password usually have different stored hashes in salted systems?",
+            "option_a": "A. Because the usernames are encrypted",
+            "option_b": "B. Because each password uses a different salt",
+            "option_c": "C. Because passwords are stored in plaintext",
+            "option_d": "D. Because hashing is disabled",
+            "correct_answer": "B",
+            "explanation": "Different salts produce different hashes even for identical passwords."
+        },
+        {
+            "question": "How does salt increase the difficulty of offline dictionary attacks?",
+            "option_a": "A. By shortening passwords",
+            "option_b": "B. By increasing the number of possible hash combinations",
+            "option_c": "C. By disabling password files",
+            "option_d": "D. By preventing authentication",
+            "correct_answer": "B",
+            "explanation": "Salt increases the search space attackers must compute."
+        },
+        {
+            "question": "Which attack becomes harder because of salting?",
+            "option_a": "A. Offline dictionary attack",
+            "option_b": "B. Shoulder surfing",
+            "option_c": "C. Physical theft",
+            "option_d": "D. Power outage attack",
+            "correct_answer": "A",
+            "explanation": "Salting significantly complicates offline hash cracking."
+        },
+        {
+            "question": "What additional threats exist in remote user authentication?",
+            "option_a": "A. File fragmentation",
+            "option_b": "B. Eavesdropping and replay attacks",
+            "option_c": "C. Cache overflow",
+            "option_d": "D. Battery drain",
+            "correct_answer": "B",
+            "explanation": "Remote authentication is exposed to network-based attacks."
+        },
+        {
+            "question": "Which protocol type is commonly used to counter replay attacks?",
+            "option_a": "A. Round-robin scheduling",
+            "option_b": "B. Challenge-response protocol",
+            "option_c": "C. Flooding protocol",
+            "option_d": "D. Packet fragmentation protocol",
+            "correct_answer": "B",
+            "explanation": "Challenge-response protocols use nonces to resist replay attacks."
+        },
+        {
+            "question": "What is a nonce in challenge-response authentication?",
+            "option_a": "A. A permanent password",
+            "option_b": "B. A random number used once",
+            "option_c": "C. A hashing algorithm",
+            "option_d": "D. A biometric template",
+            "correct_answer": "B",
+            "explanation": "A nonce is a random value used to ensure freshness."
+        },
+        {
+            "question": "Why does a challenge-response protocol use a nonce?",
+            "option_a": "A. To reduce storage costs",
+            "option_b": "B. To prevent replay attacks",
+            "option_c": "C. To compress passwords",
+            "option_d": "D. To bypass authentication",
+            "correct_answer": "B",
+            "explanation": "Nonces ensure that old authentication messages cannot be reused."
+        },
+        {
+            "question": "In a challenge-response protocol, what does the host store?",
+            "option_a": "A. Plaintext user passwords",
+            "option_b": "B. Password hashes",
+            "option_c": "C. User biometrics only",
+            "option_d": "D. Physical security tokens",
+            "correct_answer": "B",
+            "explanation": "The host stores hashed password values for verification."
+        },
+        {
+            "question": "What happens if the calculated response matches the received response in challenge-response authentication?",
+            "option_a": "A. The account is deleted",
+            "option_b": "B. The password is accepted",
+            "option_c": "C. The network disconnects",
+            "option_d": "D. The nonce is encrypted permanently",
+            "correct_answer": "B",
+            "explanation": "Matching values indicate successful authentication."
+        },
+        {
+            "question": "Which password selection strategy involves educating users about secure passwords?",
+            "option_a": "A. Reactive password checking",
+            "option_b": "B. User education",
+            "option_c": "C. Packet filtering",
+            "option_d": "D. Session management",
+            "correct_answer": "B",
+            "explanation": "User education teaches users how to choose and manage strong passwords."
+        },
+        {
+            "question": "What is reactive password checking?",
+            "option_a": "A. Preventing users from creating passwords",
+            "option_b": "B. Checking existing passwords after they are created",
+            "option_c": "C. Disabling password authentication",
+            "option_d": "D. Encrypting passwords twice",
+            "correct_answer": "B",
+            "explanation": "Reactive password checking identifies weak passwords after creation."
+        },
+        {
+            "question": "What is proactive password checking?",
+            "option_a": "A. Checking password strength before acceptance",
+            "option_b": "B. Deleting passwords periodically",
+            "option_c": "C. Sharing passwords securely",
+            "option_d": "D. Removing password expiration",
+            "correct_answer": "A",
+            "explanation": "Proactive checking validates password strength before allowing use."
+        },
+        {
+            "question": "A company stores plaintext passwords in its database. Which security principle is MOST violated?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Availability",
+            "option_c": "C. Confidentiality",
+            "option_d": "D. Scalability",
+            "correct_answer": "C",
+            "explanation": "Plaintext password storage severely compromises confidentiality."
+        },
+        {
+            "question": "An attacker steals encrypted password transmissions and reuses them later. Which attack is occurring?",
+            "option_a": "A. Replay attack",
+            "option_b": "B. Dictionary attack",
+            "option_c": "C. SQL injection",
+            "option_d": "D. Buffer overflow",
+            "correct_answer": "A",
+            "explanation": "Replay attacks reuse intercepted authentication messages."
+        },
+        {
+            "question": "Which authentication method would BEST reduce the impact of stolen passwords?",
+            "option_a": "A. Single-factor authentication",
+            "option_b": "B. Multi-factor authentication",
+            "option_c": "C. Shared passwords",
+            "option_d": "D. Password reuse",
+            "correct_answer": "B",
+            "explanation": "MFA adds additional verification layers beyond passwords."
+        },
+        {
+            "question": "A user leaves their computer unlocked in a public lab. Which vulnerability is MOST directly exploited?",
+            "option_a": "A. Offline dictionary attack",
+            "option_b": "B. Workstation hijacking",
+            "option_c": "C. Password salting",
+            "option_d": "D. Packet spoofing",
+            "correct_answer": "B",
+            "explanation": "Attackers can misuse unattended authenticated sessions."
+        },
+        {
+            "question": "An attacker tries the password '123456' against thousands of accounts. Which attack is this?",
+            "option_a": "A. Specific account attack",
+            "option_b": "B. Popular password attack",
+            "option_c": "C. Replay attack",
+            "option_d": "D. Shoulder surfing",
+            "correct_answer": "B",
+            "explanation": "Popular password attacks test common passwords across many accounts."
+        },
+        {
+            "question": "Which authentication factor would BEST resist shoulder surfing?",
+            "option_a": "A. Password",
+            "option_b": "B. PIN",
+            "option_c": "C. Fingerprint recognition",
+            "option_d": "D. Username",
+            "correct_answer": "C",
+            "explanation": "Biometric methods are difficult to observe and reuse directly."
+        },
+        {
+            "question": "Why is centralized SSO administration beneficial to administrators?",
+            "option_a": "A. It removes authorization policies",
+            "option_b": "B. It simplifies account management",
+            "option_c": "C. It disables passwords",
+            "option_d": "D. It prevents all cyberattacks",
+            "correct_answer": "B",
+            "explanation": "SSO centralizes user and authorization management."
+        },
+        {
+            "question": "Which scenario BEST demonstrates dynamic biometrics?",
+            "option_a": "A. Iris recognition",
+            "option_b": "B. Fingerprint scanning",
+            "option_c": "C. Voice pattern analysis",
+            "option_d": "D. Retina scanning",
+            "correct_answer": "C",
+            "explanation": "Voice pattern analysis measures behavioral characteristics."
+        },
+        {
+            "question": "Which of the following is TRUE about salts?",
+            "option_a": "A. Salts must remain secret",
+            "option_b": "B. Salts eliminate the need for hashing",
+            "option_c": "C. Salts can be stored in plaintext",
+            "option_d": "D. Salts prevent workstation hijacking",
+            "correct_answer": "C",
+            "explanation": "Salts do not need confidentiality and are commonly stored openly."
+        },
+        {
+            "question": "What is the MAIN reason replay attacks are dangerous?",
+            "option_a": "A. They destroy hardware",
+            "option_b": "B. They reuse valid authentication data",
+            "option_c": "C. They require insider access only",
+            "option_d": "D. They disable encryption",
+            "correct_answer": "B",
+            "explanation": "Replay attacks exploit previously captured authentication exchanges."
+        },
+        {
+            "question": "Which authentication factor combination is strongest?",
+            "option_a": "A. Password and PIN",
+            "option_b": "B. Fingerprint and retina scan",
+            "option_c": "C. Password and fingerprint",
+            "option_d": "D. Username and email",
+            "correct_answer": "C",
+            "explanation": "Combining different factor categories provides stronger security."
+        },
+        {
+            "question": "Why is account lockout usually limited to around five failed attempts?",
+            "option_a": "A. To simplify encryption",
+            "option_b": "B. To balance security and usability",
+            "option_c": "C. To prevent hashing",
+            "option_d": "D. To disable authentication",
+            "correct_answer": "B",
+            "explanation": "Lockout policies must stop attacks without excessively affecting legitimate users."
+        },
+        {
+            "question": "A company forces employees to use different passwords on all systems. Which vulnerability is being addressed?",
+            "option_a": "A. Exploiting multiple password use",
+            "option_b": "B. Dynamic biometric spoofing",
+            "option_c": "C. Replay attacks",
+            "option_d": "D. Packet loss",
+            "correct_answer": "A",
+            "explanation": "Unique passwords reduce the damage from credential compromise."
+        },
+        {
+            "question": "Which feature of challenge-response authentication ensures message freshness?",
+            "option_a": "A. Shared usernames",
+            "option_b": "B. Nonce generation",
+            "option_c": "C. Plaintext passwords",
+            "option_d": "D. Packet duplication",
+            "correct_answer": "B",
+            "explanation": "Fresh nonces prevent reuse of old authentication messages."
+        },
+        {
+            "question": "An organization deploys SSO but no MFA. Which risk increases MOST if credentials are stolen?",
+            "option_a": "A. Single application compromise only",
+            "option_b": "B. Compromise of multiple connected systems",
+            "option_c": "C. Password hashing failure",
+            "option_d": "D. Reduced usability",
+            "correct_answer": "B",
+            "explanation": "SSO credentials may unlock many integrated systems."
+        },
+        {
+            "question": "What is the MAIN advantage of storing hashes instead of plaintext passwords?",
+            "option_a": "A. Faster internet speed",
+            "option_b": "B. Reduced storage size",
+            "option_c": "C. Better protection if password files are exposed",
+            "option_d": "D. Easier password sharing",
+            "correct_answer": "C",
+            "explanation": "Hashes help protect passwords even if storage is compromised."
+        },
+        {
+            "question": "Why is user education important in authentication security?",
+            "option_a": "A. Users are often targeted through social engineering",
+            "option_b": "B. Users generate encryption keys manually",
+            "option_c": "C. Users manage network routing",
+            "option_d": "D. Users disable authentication servers",
+            "correct_answer": "A",
+            "explanation": "Educated users are less likely to fall victim to social engineering."
+        },
+        {
+            "question": "Which of the following BEST describes strong authentication?",
+            "option_a": "A. Using only long usernames",
+            "option_b": "B. Combining multiple secure authentication methods",
+            "option_c": "C. Disabling password expiration",
+            "option_d": "D. Sharing credentials securely",
+            "correct_answer": "B",
+            "explanation": "Strong authentication typically combines multiple secure factors."
+        },
+        {
+            "question": "A system administrator notices identical hashes for multiple users. What is MOST likely true?",
+            "option_a": "A. Unique salts are being used",
+            "option_b": "B. Password hashing is disabled",
+            "option_c": "C. The same password and salt combination was used",
+            "option_d": "D. Replay attacks are occurring",
+            "correct_answer": "C",
+            "explanation": "Identical hashes generally indicate identical password and salt inputs."
+        },
+        {
+            "question": "Which of the following is a behavioral biometric?",
+            "option_a": "A. Retina pattern",
+            "option_b": "B. Fingerprint",
+            "option_c": "C. Typing rhythm",
+            "option_d": "D. Facial structure",
+            "correct_answer": "C",
+            "explanation": "Typing rhythm measures user behavior rather than physical characteristics."
+        },
+        {
+            "question": "Why does MFA improve security even if passwords are compromised?",
+            "option_a": "A. Because passwords are deleted",
+            "option_b": "B. Because attackers still need additional authentication factors",
+            "option_c": "C. Because MFA removes user IDs",
+            "option_d": "D. Because hashing becomes unnecessary",
+            "correct_answer": "B",
+            "explanation": "Attackers must bypass additional authentication mechanisms."
+        },
+        {
+            "question": "Which scenario BEST illustrates an offline dictionary attack?",
+            "option_a": "A. Guessing passwords through a login form",
+            "option_b": "B. Intercepting packets on Wi-Fi",
+            "option_c": "C. Comparing stolen password hashes against precomputed values",
+            "option_d": "D. Watching users type passwords",
+            "correct_answer": "C",
+            "explanation": "Offline attacks occur using stolen password data without interacting with the system."
+        },
+        {
+            "question": "What is the PRIMARY weakness of simple password-only authentication?",
+            "option_a": "A. It requires no storage",
+            "option_b": "B. It relies on a single factor that may be guessed or stolen",
+            "option_c": "C. It prevents authorization",
+            "option_d": "D. It disables encryption",
+            "correct_answer": "B",
+            "explanation": "Single-factor systems are vulnerable if the factor is compromised."
+        },
+        {
+            "question": "Which security property is strengthened by using salts with hashes?",
+            "option_a": "A. Non-repudiation only",
+            "option_b": "B. Confidentiality of password representations",
+            "option_c": "C. Physical availability",
+            "option_d": "D. Network bandwidth",
+            "correct_answer": "B",
+            "explanation": "Salting improves protection of stored password hashes."
+        },
+        {
+            "question": "A company wants users to authenticate once and access all enterprise services. Which solution is MOST appropriate?",
+            "option_a": "A. Packet sniffing",
+            "option_b": "B. Single Sign-On",
+            "option_c": "C. Shared administrator accounts",
+            "option_d": "D. Plaintext password storage",
+            "correct_answer": "B",
+            "explanation": "SSO allows centralized authentication across multiple services."
+        },
+        {
+            "question": "Which authentication attack specifically benefits from weak user password habits?",
+            "option_a": "A. Popular password attack",
+            "option_b": "B. Hardware fault injection",
+            "option_c": "C. Packet fragmentation",
+            "option_d": "D. RAID corruption",
+            "correct_answer": "A",
+            "explanation": "Popular password attacks exploit predictable user password choices."
+        },
+        {
+            "question": "Why are challenge-response protocols superior to transmitting static passwords directly?",
+            "option_a": "A. They eliminate user IDs",
+            "option_b": "B. They reduce network speed",
+            "option_c": "C. They prevent reuse of captured authentication data",
+            "option_d": "D. They disable hashing",
+            "correct_answer": "C",
+            "explanation": "Challenge-response systems resist replay attacks by using fresh challenges."
+        },
+        {
+            "question": "Which of the following would MOST likely improve authentication security in an enterprise?",
+            "option_a": "A. Shared employee accounts",
+            "option_b": "B. Default administrator passwords",
+            "option_c": "C. MFA combined with proactive password checking",
+            "option_d": "D. Reusing passwords across systems",
+            "correct_answer": "C",
+            "explanation": "Combining strong password policies with MFA significantly improves security."
+        },
+        {
+            "question": "An attacker calls an employee pretending to be IT support and asks for credentials. What attack technique is being used?",
+            "option_a": "A. SQL injection",
+            "option_b": "B. Social engineering",
+            "option_c": "C. Replay attack",
+            "option_d": "D. Packet flooding",
+            "correct_answer": "B",
+            "explanation": "Social engineering manipulates users into revealing sensitive information."
+        },
+        {
+            "question": "Which statement about authentication and authorization is TRUE?",
+            "option_a": "A. Authentication determines permissions before identity verification",
+            "option_b": "B. Authorization verifies user identity",
+            "option_c": "C. Authentication verifies identity, while authorization determines access rights",
+            "option_d": "D. They are identical processes",
+            "correct_answer": "C",
+            "explanation": "Authentication verifies identity; authorization determines allowed actions."
+        },
+        {
+            "question": "Why are default administrator passwords dangerous?",
+            "option_a": "A. They improve usability",
+            "option_b": "B. Attackers often know common defaults",
+            "option_c": "C. They increase encryption strength",
+            "option_d": "D. They prevent replay attacks",
+            "correct_answer": "B",
+            "explanation": "Known default passwords are frequently exploited by attackers."
+        },
+        {
+            "question": "What is the BEST reason to combine simpler passwords with another authentication mechanism?",
+            "option_a": "A. To remove authentication",
+            "option_b": "B. To improve usability while maintaining security",
+            "option_c": "C. To disable hashing",
+            "option_d": "D. To encourage password sharing",
+            "correct_answer": "B",
+            "explanation": "Additional authentication factors can offset weaker passwords while improving usability."
+        },
+        {
+            "question": "A security engineer wants to ensure captured login traffic cannot be reused later. Which approach is MOST effective?",
+            "option_a": "A. Plaintext passwords",
+            "option_b": "B. Challenge-response authentication with nonces",
+            "option_c": "C. Shared credentials",
+            "option_d": "D. Disabling account lockout",
+            "correct_answer": "B",
+            "explanation": "Nonces ensure authentication exchanges are unique and non-reusable."
+        }
+    ]
+}

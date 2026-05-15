@@ -1,0 +1,733 @@
+{
+    "questions": [
+        {
+            "question": "According to NIST, what is malware primarily designed to compromise?",
+            "option_a": "A. Only system performance",
+            "option_b": "B. Confidentiality, integrity, or availability",
+            "option_c": "C. Hardware manufacturing",
+            "option_d": "D. Database normalization",
+            "correct_answer": "B",
+            "explanation": "NIST defines malware as software intended to compromise confidentiality, integrity, or availability of systems or data."
+        },
+        {
+            "question": "Which of the following is an example of malware propagation through social engineering?",
+            "option_a": "A. Worm exploiting open ports",
+            "option_b": "B. Trojan disguised as legitimate software",
+            "option_c": "C. Boot sector infection",
+            "option_d": "D. Memory paging attack",
+            "correct_answer": "B",
+            "explanation": "Trojans commonly rely on tricking users into installing malicious software."
+        },
+        {
+            "question": "A malware program that replicates by attaching itself to executable files is called a:",
+            "option_a": "A. Worm",
+            "option_b": "B. Spyware",
+            "option_c": "C. Virus",
+            "option_d": "D. Rootkit",
+            "correct_answer": "C",
+            "explanation": "Viruses replicate by infecting executable files or scripts."
+        },
+        {
+            "question": "Which malware type can run independently without attaching to another program?",
+            "option_a": "A. Virus",
+            "option_b": "B. Worm",
+            "option_c": "C. Macro virus",
+            "option_d": "D. Boot sector infector",
+            "correct_answer": "B",
+            "explanation": "Worms are self-contained programs capable of independent execution and propagation."
+        },
+        {
+            "question": "What is the main purpose of a keylogger?",
+            "option_a": "A. Encrypting files",
+            "option_b": "B. Capturing keystrokes",
+            "option_c": "C. Speeding up systems",
+            "option_d": "D. Preventing phishing",
+            "correct_answer": "B",
+            "explanation": "Keyloggers monitor and capture keyboard input to steal sensitive information."
+        },
+        {
+            "question": "Which malware category primarily hides its existence while providing covert access?",
+            "option_a": "A. Rootkit",
+            "option_b": "B. Flooder",
+            "option_c": "C. Adware",
+            "option_d": "D. Macro virus",
+            "correct_answer": "A",
+            "explanation": "Rootkits hide malicious activity while maintaining privileged access to systems."
+        },
+        {
+            "question": "What is the function of a logic bomb?",
+            "option_a": "A. Compressing executable files",
+            "option_b": "B. Encrypting network traffic",
+            "option_c": "C. Triggering malicious activity under specific conditions",
+            "option_d": "D. Detecting viruses",
+            "correct_answer": "C",
+            "explanation": "Logic bombs remain dormant until predefined conditions activate them."
+        },
+        {
+            "question": "Which malware propagation method exploits software vulnerabilities directly?",
+            "option_a": "A. Worm",
+            "option_b": "B. Trojan",
+            "option_c": "C. Spam mail",
+            "option_d": "D. Adware",
+            "correct_answer": "A",
+            "explanation": "Worms commonly exploit software vulnerabilities to spread automatically."
+        },
+        {
+            "question": "Which malware is platform independent because it infects documents instead of executable code?",
+            "option_a": "A. Boot sector virus",
+            "option_b": "B. Macro virus",
+            "option_c": "C. Worm",
+            "option_d": "D. Rootkit",
+            "correct_answer": "B",
+            "explanation": "Macro viruses rely on document macros, making them platform independent."
+        },
+        {
+            "question": "What is the main difference between a virus and a worm?",
+            "option_a": "A. Worms require a host file",
+            "option_b": "B. Viruses exploit BIOS",
+            "option_c": "C. Worms self-propagate independently",
+            "option_d": "D. Viruses only infect documents",
+            "correct_answer": "C",
+            "explanation": "Worms can independently spread across networks without attaching to files."
+        },
+        {
+            "question": "Which malware type appears useful but contains hidden malicious functionality?",
+            "option_a": "A. Trojan horse",
+            "option_b": "B. Worm",
+            "option_c": "C. Virus",
+            "option_d": "D. Flooder",
+            "correct_answer": "A",
+            "explanation": "A Trojan horse disguises itself as legitimate software while hiding malicious behavior."
+        },
+        {
+            "question": "What does a botnet consist of?",
+            "option_a": "A. Encrypted databases",
+            "option_b": "B. Multiple infected machines under attacker control",
+            "option_c": "C. Antivirus scanners",
+            "option_d": "D. Firewall clusters",
+            "correct_answer": "B",
+            "explanation": "A botnet is a collection of compromised systems controlled remotely by an attacker."
+        },
+        {
+            "question": "Which malware payload focuses on stealing login credentials and sensitive data?",
+            "option_a": "A. Spyware",
+            "option_b": "B. Boot infector",
+            "option_c": "C. Flooder",
+            "option_d": "D. Logic bomb",
+            "correct_answer": "A",
+            "explanation": "Spyware gathers confidential information from infected systems."
+        },
+        {
+            "question": "Which of the following is NOT a worm replication method?",
+            "option_a": "A. Electronic mail",
+            "option_b": "B. Remote login capability",
+            "option_c": "C. Shared media",
+            "option_d": "D. CPU scheduling",
+            "correct_answer": "D",
+            "explanation": "CPU scheduling is unrelated to worm replication mechanisms."
+        },
+        {
+            "question": "Which virus category infects the master boot record?",
+            "option_a": "A. Multipartite virus",
+            "option_b": "B. File infector",
+            "option_c": "C. Boot sector infector",
+            "option_d": "D. Macro virus",
+            "correct_answer": "C",
+            "explanation": "Boot sector infectors target the master boot record and activate during system boot."
+        },
+        {
+            "question": "Why are polymorphic viruses difficult to detect?",
+            "option_a": "A. They disable hardware",
+            "option_b": "B. They mutate their signatures",
+            "option_c": "C. They cannot replicate",
+            "option_d": "D. They only attack routers",
+            "correct_answer": "B",
+            "explanation": "Polymorphic viruses alter their code patterns to evade signature-based detection."
+        },
+        {
+            "question": "What distinguishes a metamorphic virus from a polymorphic virus?",
+            "option_a": "A. It cannot spread",
+            "option_b": "B. It completely rewrites itself",
+            "option_c": "C. It only infects BIOS",
+            "option_d": "D. It only spreads through email",
+            "correct_answer": "B",
+            "explanation": "Metamorphic viruses fully rewrite their code structure during propagation."
+        },
+        {
+            "question": "What is the trigger component of a virus also commonly called?",
+            "option_a": "A. Backdoor",
+            "option_b": "B. Flooder",
+            "option_c": "C. Logic bomb",
+            "option_d": "D. Rootkit",
+            "correct_answer": "C",
+            "explanation": "The trigger determines when the payload activates and is also known as a logic bomb."
+        },
+        {
+            "question": "During which virus phase does the malware replicate itself into other files?",
+            "option_a": "A. Dormant phase",
+            "option_b": "B. Triggering phase",
+            "option_c": "C. Execution phase",
+            "option_d": "D. Propagation phase",
+            "correct_answer": "D",
+            "explanation": "The propagation phase is responsible for spreading the virus."
+        },
+        {
+            "question": "What is the primary purpose of malware stealthing?",
+            "option_a": "A. Increasing processing speed",
+            "option_b": "B. Avoiding detection",
+            "option_c": "C. Enhancing graphics",
+            "option_d": "D. Improving encryption",
+            "correct_answer": "B",
+            "explanation": "Stealth techniques help malware remain hidden from users and security tools."
+        },
+        {
+            "question": "Which malware can redirect browsers to commercial sites and display pop-up ads?",
+            "option_a": "A. Rootkit",
+            "option_b": "B. Adware",
+            "option_c": "C. Worm",
+            "option_d": "D. Logic bomb",
+            "correct_answer": "B",
+            "explanation": "Adware integrates advertising functionality into software."
+        },
+        {
+            "question": "What is a drive-by download attack?",
+            "option_a": "A. Downloading updates manually",
+            "option_b": "B. Malware infection through compromised websites",
+            "option_c": "C. Installing software from USB",
+            "option_d": "D. BIOS replacement attack",
+            "correct_answer": "B",
+            "explanation": "Drive-by downloads exploit browser vulnerabilities when users visit compromised websites."
+        },
+        {
+            "question": "Which malware type primarily performs denial-of-service attacks?",
+            "option_a": "A. Flooder",
+            "option_b": "B. Macro virus",
+            "option_c": "C. Rootkit",
+            "option_d": "D. Spyware",
+            "correct_answer": "A",
+            "explanation": "Flooders generate massive traffic volumes to overwhelm systems."
+        },
+        {
+            "question": "What is the primary goal of phishing attacks?",
+            "option_a": "A. File compression",
+            "option_b": "B. Credential theft",
+            "option_c": "C. System backup",
+            "option_d": "D. CPU optimization",
+            "correct_answer": "B",
+            "explanation": "Phishing tricks victims into revealing sensitive information such as passwords."
+        },
+        {
+            "question": "Which malware example specifically targeted industrial control systems?",
+            "option_a": "A. Melissa",
+            "option_b": "B. Stuxnet",
+            "option_c": "C. Nimda",
+            "option_d": "D. Mydoom",
+            "correct_answer": "B",
+            "explanation": "Stuxnet targeted industrial control systems and physical equipment."
+        },
+        {
+            "question": "What is the primary weakness of first-generation antivirus scanners?",
+            "option_a": "A. They are too slow",
+            "option_b": "B. They only detect known signatures",
+            "option_c": "C. They require hardware upgrades",
+            "option_d": "D. They cannot scan files",
+            "correct_answer": "B",
+            "explanation": "Signature-based scanners cannot detect previously unknown malware."
+        },
+        {
+            "question": "Heuristic scanners improve detection by:",
+            "option_a": "A. Ignoring suspicious activity",
+            "option_b": "B. Using behavioral and structural clues",
+            "option_c": "C. Disabling encryption",
+            "option_d": "D. Removing operating systems",
+            "correct_answer": "B",
+            "explanation": "Heuristic scanners analyze suspicious behavior and code patterns instead of relying solely on signatures."
+        },
+        {
+            "question": "What is integrity checking in malware detection?",
+            "option_a": "A. Monitoring CPU temperature",
+            "option_b": "B. Comparing file changes using checksums or hashes",
+            "option_c": "C. Encrypting viruses",
+            "option_d": "D. Disabling network access",
+            "correct_answer": "B",
+            "explanation": "Integrity checking detects unauthorized modifications to files."
+        },
+        {
+            "question": "Which scanner generation detects malware based on actions rather than structure?",
+            "option_a": "A. First generation",
+            "option_b": "B. Second generation",
+            "option_c": "C. Third generation",
+            "option_d": "D. Fourth generation",
+            "correct_answer": "C",
+            "explanation": "Third-generation activity traps monitor suspicious actions in memory."
+        },
+        {
+            "question": "What additional capability is included in fourth-generation scanners?",
+            "option_a": "A. Blockchain support",
+            "option_b": "B. Access control capability",
+            "option_c": "C. CPU virtualization",
+            "option_d": "D. Hardware formatting",
+            "correct_answer": "B",
+            "explanation": "Fourth-generation protection combines scanning, activity traps, and access control."
+        },
+        {
+            "question": "Which malware propagation strategy uses random IP addresses to locate victims?",
+            "option_a": "A. Topological scanning",
+            "option_b": "B. Local subnet scanning",
+            "option_c": "C. Random scanning",
+            "option_d": "D. Hit-list scanning",
+            "correct_answer": "C",
+            "explanation": "Random scanning selects targets using randomly generated IP addresses."
+        },
+        {
+            "question": "What is the purpose of topological scanning in worms?",
+            "option_a": "A. Compressing malware",
+            "option_b": "B. Using information from infected systems to find new targets",
+            "option_c": "C. Replacing BIOS firmware",
+            "option_d": "D. Encrypting traffic",
+            "correct_answer": "B",
+            "explanation": "Topological scanning leverages local information such as address books and trusted peers."
+        },
+        {
+            "question": "Which worm scanning method focuses on systems within the same local network?",
+            "option_a": "A. Random",
+            "option_b": "B. Hit-list",
+            "option_c": "C. Local subnet",
+            "option_d": "D. Distributed",
+            "correct_answer": "C",
+            "explanation": "Local subnet scanning targets nearby hosts behind the same firewall."
+        },
+        {
+            "question": "What is the main advantage of a compression virus?",
+            "option_a": "A. Faster internet speeds",
+            "option_b": "B. Reduced likelihood of size-based detection",
+            "option_c": "C. Better hardware performance",
+            "option_d": "D. Improved graphics rendering",
+            "correct_answer": "B",
+            "explanation": "Compression viruses hide changes in file size to avoid detection."
+        },
+        {
+            "question": "Why can keyloggers still steal passwords sent over HTTPS?",
+            "option_a": "A. HTTPS disables encryption",
+            "option_b": "B. Keyloggers capture input before encryption occurs",
+            "option_c": "C. HTTPS only protects images",
+            "option_d": "D. HTTPS only works on Linux",
+            "correct_answer": "B",
+            "explanation": "Keyloggers capture keystrokes directly from the keyboard before data is encrypted."
+        },
+        {
+            "question": "What is spear phishing?",
+            "option_a": "A. Random malware scanning",
+            "option_b": "B. Targeted phishing using victim-specific information",
+            "option_c": "C. BIOS infection",
+            "option_d": "D. A type of firewall",
+            "correct_answer": "B",
+            "explanation": "Spear phishing targets carefully researched victims using personalized details."
+        },
+        {
+            "question": "Which malware payload converts infected machines into remotely controlled attack systems?",
+            "option_a": "A. Bot",
+            "option_b": "B. Macro virus",
+            "option_c": "C. Boot loader",
+            "option_d": "D. Compression virus",
+            "correct_answer": "A",
+            "explanation": "Bots allow attackers to remotely control compromised systems."
+        },
+        {
+            "question": "Which of the following is an example of real-world physical damage caused by malware?",
+            "option_a": "A. Browser pop-up advertisements",
+            "option_b": "B. Worm sending spam",
+            "option_c": "C. Stuxnet damaging industrial equipment",
+            "option_d": "D. Macro virus editing documents",
+            "correct_answer": "C",
+            "explanation": "Stuxnet manipulated industrial systems to physically damage equipment."
+        },
+        {
+            "question": "Which malware component determines how the malware spreads?",
+            "option_a": "A. Payload",
+            "option_b": "B. Trigger",
+            "option_c": "C. Infection mechanism",
+            "option_d": "D. Activity trap",
+            "correct_answer": "C",
+            "explanation": "The infection mechanism controls how malware propagates."
+        },
+        {
+            "question": "Which phase of worm propagation typically experiences exponential growth?",
+            "option_a": "A. Final phase",
+            "option_b": "B. Initial phase",
+            "option_c": "C. Dormant phase",
+            "option_d": "D. Execution phase",
+            "correct_answer": "B",
+            "explanation": "The initial phase spreads rapidly as many new systems become infected."
+        },
+        {
+            "question": "Which malware countermeasure requirement ensures minimal disruption to normal system operations?",
+            "option_a": "A. Timeliness",
+            "option_b": "B. Generality",
+            "option_c": "C. Minimal denial of service cost",
+            "option_d": "D. Resiliency",
+            "correct_answer": "C",
+            "explanation": "Effective countermeasures should avoid significantly degrading system performance."
+        },
+        {
+            "question": "Why are macro viruses difficult to stop using traditional file permissions?",
+            "option_a": "A. Documents are expected to be modified by users",
+            "option_b": "B. They only infect kernels",
+            "option_c": "C. They bypass all encryption",
+            "option_d": "D. They disable operating systems",
+            "correct_answer": "A",
+            "explanation": "Users normally edit documents, making restrictive controls impractical."
+        },
+        {
+            "question": "A malware sample continuously rewrites its own code structure after every infection. What is it most likely?",
+            "option_a": "A. Stealth virus",
+            "option_b": "B. Multipartite virus",
+            "option_c": "C. Metamorphic virus",
+            "option_d": "D. Boot sector infector",
+            "correct_answer": "C",
+            "explanation": "Metamorphic viruses fully rewrite themselves to evade detection."
+        },
+        {
+            "question": "Which malware detection approach is MOST effective against previously unknown malware variants?",
+            "option_a": "A. Signature-only scanning",
+            "option_b": "B. Exact checksum comparison",
+            "option_c": "C. Activity-based monitoring",
+            "option_d": "D. Static file length monitoring",
+            "correct_answer": "C",
+            "explanation": "Behavior-based monitoring can identify suspicious activity even from unknown malware."
+        },
+        {
+            "question": "An attacker sends a fake banking website link customized with employee names and company data. What attack is this?",
+            "option_a": "A. Random scanning",
+            "option_b": "B. Spear phishing",
+            "option_c": "C. Boot sector infection",
+            "option_d": "D. Macro scripting",
+            "correct_answer": "B",
+            "explanation": "Spear phishing uses victim-specific information to increase credibility."
+        },
+        {
+            "question": "A malware author wants the virus to avoid detection by keeping infected files the same size as original files. Which technique should be used?",
+            "option_a": "A. Keylogging",
+            "option_b": "B. Compression virus logic",
+            "option_c": "C. Activity traps",
+            "option_d": "D. Rootkit injection",
+            "correct_answer": "B",
+            "explanation": "Compression viruses shrink files before inserting malicious code to preserve file size."
+        },
+        {
+            "question": "Which malware type MOST directly threatens information confidentiality?",
+            "option_a": "A. Spyware",
+            "option_b": "B. Flooder",
+            "option_c": "C. Boot infector",
+            "option_d": "D. Logic bomb",
+            "correct_answer": "A",
+            "explanation": "Spyware steals sensitive user information and credentials."
+        },
+        {
+            "question": "Which scanning strategy would spread fastest inside a corporate LAN protected by external firewalls?",
+            "option_a": "A. Random scanning",
+            "option_b": "B. Local subnet scanning",
+            "option_c": "C. Hit-list scanning",
+            "option_d": "D. Remote DNS scanning",
+            "correct_answer": "B",
+            "explanation": "Local subnet scanning targets nearby systems within the protected internal network."
+        },
+        {
+            "question": "A malware sample decrypts itself only during execution and stores a unique key for each infection. Which concealment method is being used?",
+            "option_a": "A. Multipartite infection",
+            "option_b": "B. Encrypted virus",
+            "option_c": "C. Activity trapping",
+            "option_d": "D. Signature scanning",
+            "correct_answer": "B",
+            "explanation": "Encrypted viruses use changing encryption keys to avoid constant signatures."
+        },
+        {
+            "question": "Which malware would MOST likely be used to secretly monitor processes and hide system modifications?",
+            "option_a": "A. Rootkit",
+            "option_b": "B. Flooder",
+            "option_c": "C. Adware",
+            "option_d": "D. Macro virus",
+            "correct_answer": "A",
+            "explanation": "Rootkits operate with privileged access and conceal malicious activities."
+        },
+        {
+            "question": "Why are first-generation scanners ineffective against polymorphic malware?",
+            "option_a": "A. Polymorphic malware changes signatures",
+            "option_b": "B. Polymorphic malware only attacks hardware",
+            "option_c": "C. First-generation scanners only scan networks",
+            "option_d": "D. Polymorphic malware cannot replicate",
+            "correct_answer": "A",
+            "explanation": "Signature mutation prevents reliable detection using fixed patterns."
+        },
+        {
+            "question": "Which malware propagation technique relies MOST heavily on human error?",
+            "option_a": "A. Exploiting vulnerabilities",
+            "option_b": "B. Random IP scanning",
+            "option_c": "C. Social engineering",
+            "option_d": "D. Buffer allocation",
+            "correct_answer": "C",
+            "explanation": "Social engineering manipulates users into performing unsafe actions."
+        },
+        {
+            "question": "A system administrator discovers malware that activates only on Fridays when a specific employee logs in. What feature does this demonstrate?",
+            "option_a": "A. File infection",
+            "option_b": "B. Logic bomb trigger",
+            "option_c": "C. Random propagation",
+            "option_d": "D. Integrity checking",
+            "correct_answer": "B",
+            "explanation": "Logic bombs activate under predefined conditions such as dates or user activity."
+        },
+        {
+            "question": "Which malware type can infect both boot records and executable files?",
+            "option_a": "A. Multipartite virus",
+            "option_b": "B. Macro virus",
+            "option_c": "C. Spyware",
+            "option_d": "D. Adware",
+            "correct_answer": "A",
+            "explanation": "Multipartite viruses infect systems through multiple infection methods."
+        },
+        {
+            "question": "A malware scanner stores hashes externally using encryption keys unavailable to malware. What problem is this intended to solve?",
+            "option_a": "A. Slow internet speed",
+            "option_b": "B. Malware modifying checksums",
+            "option_c": "C. BIOS overheating",
+            "option_d": "D. Firewall congestion",
+            "correct_answer": "B",
+            "explanation": "External encrypted hashes prevent malware from forging integrity values."
+        },
+        {
+            "question": "Which malware countermeasure characteristic ensures resistance against concealment techniques?",
+            "option_a": "A. Resiliency",
+            "option_b": "B. Transparency",
+            "option_c": "C. Generality",
+            "option_d": "D. Timeliness",
+            "correct_answer": "A",
+            "explanation": "Resiliency allows defenses to withstand attacker hiding strategies."
+        },
+        {
+            "question": "A worm obtains victim email contacts and spreads by sending infected attachments to trusted peers. Which scanning method is MOST closely related?",
+            "option_a": "A. Topological scanning",
+            "option_b": "B. Random scanning",
+            "option_c": "C. Local subnet scanning",
+            "option_d": "D. Sequential scanning",
+            "correct_answer": "A",
+            "explanation": "Topological scanning uses information available on infected hosts."
+        },
+        {
+            "question": "Which malware would MOST likely bypass traditional antivirus by embedding itself inside Office documents?",
+            "option_a": "A. Macro virus",
+            "option_b": "B. Boot infector",
+            "option_c": "C. Flooder",
+            "option_d": "D. Rootkit",
+            "correct_answer": "A",
+            "explanation": "Macro viruses infect documents commonly exchanged between users."
+        },
+        {
+            "question": "Why is a worm generally capable of spreading faster than a virus?",
+            "option_a": "A. Worms require user execution",
+            "option_b": "B. Worms replicate independently across networks",
+            "option_c": "C. Worms only target BIOS",
+            "option_d": "D. Worms cannot exploit vulnerabilities",
+            "correct_answer": "B",
+            "explanation": "Worms self-propagate automatically through networks and vulnerabilities."
+        },
+        {
+            "question": "A hidden maintenance hook added by a programmer for debugging later becomes abused by attackers. What is this called?",
+            "option_a": "A. Worm",
+            "option_b": "B. Backdoor",
+            "option_c": "C. Macro virus",
+            "option_d": "D. Flooder",
+            "correct_answer": "B",
+            "explanation": "Backdoors bypass normal authentication and security mechanisms."
+        },
+        {
+            "question": "Which malware payload is MOST associated with ransomware behavior?",
+            "option_a": "A. Encrypting user data for ransom",
+            "option_b": "B. Displaying advertisements",
+            "option_c": "C. Speeding up file transfers",
+            "option_d": "D. Updating antivirus signatures",
+            "correct_answer": "A",
+            "explanation": "Ransomware encrypts user data and demands payment for decryption."
+        },
+        {
+            "question": "An organization deploys antivirus both on hosts and at firewall gateways. What countermeasure strategy is this?",
+            "option_a": "A. Distributed protection",
+            "option_b": "B. Random scanning",
+            "option_c": "C. BIOS hardening",
+            "option_d": "D. Local subnet propagation",
+            "correct_answer": "A",
+            "explanation": "Distributed protection combines host-based and perimeter-based defenses."
+        },
+        {
+            "question": "Which malware type is MOST likely to be spread through infected PDF documents?",
+            "option_a": "A. Macro virus",
+            "option_b": "B. Boot infector",
+            "option_c": "C. Flooder",
+            "option_d": "D. Botnet controller",
+            "correct_answer": "A",
+            "explanation": "Macro and scripting viruses commonly infect documents such as PDFs."
+        },
+        {
+            "question": "A malware sample checks whether a system is already infected before replicating. During which phase is this behavior MOST likely performed?",
+            "option_a": "A. Propagation phase",
+            "option_b": "B. Triggering phase",
+            "option_c": "C. Execution phase",
+            "option_d": "D. Dormant phase",
+            "correct_answer": "A",
+            "explanation": "Replication logic and infection checks occur during propagation."
+        },
+        {
+            "question": "Which attack would MOST likely use a botnet consisting of millions of compromised systems?",
+            "option_a": "A. Distributed denial of service",
+            "option_b": "B. File compression",
+            "option_c": "C. BIOS updates",
+            "option_d": "D. Memory defragmentation",
+            "correct_answer": "A",
+            "explanation": "Botnets are frequently used to launch large-scale DDoS attacks."
+        },
+        {
+            "question": "Why is transparency an important malware countermeasure requirement?",
+            "option_a": "A. It minimizes the need to modify systems and applications",
+            "option_b": "B. It hides malware signatures",
+            "option_c": "C. It increases worm propagation speed",
+            "option_d": "D. It weakens encryption",
+            "correct_answer": "A",
+            "explanation": "Transparent countermeasures reduce deployment complexity and compatibility issues."
+        },
+        {
+            "question": "An attacker wants malware that can steal passwords, monitor screens, and inspect network traffic simultaneously. Which malware type best fits this description?",
+            "option_a": "A. Spyware",
+            "option_b": "B. Boot infector",
+            "option_c": "C. Flooder",
+            "option_d": "D. Multipartite virus",
+            "correct_answer": "A",
+            "explanation": "Spyware monitors multiple forms of user and system activity."
+        },
+        {
+            "question": "Which malware propagation model phase slows down because most vulnerable hosts are already infected?",
+            "option_a": "A. Initial phase",
+            "option_b": "B. Middle phase",
+            "option_c": "C. Finish phase",
+            "option_d": "D. Trigger phase",
+            "correct_answer": "C",
+            "explanation": "The finish phase slows because few uninfected systems remain."
+        },
+        {
+            "question": "A malware author creates a toolkit that automatically generates new malware variants with different propagation and payload mechanisms. What is this called?",
+            "option_a": "A. Crimeware toolkit",
+            "option_b": "B. Activity trap",
+            "option_c": "C. BIOS scanner",
+            "option_d": "D. Root bridge",
+            "correct_answer": "A",
+            "explanation": "Crimeware toolkits automate malware creation and customization."
+        },
+        {
+            "question": "Which malware type would MOST likely bypass authentication checks entirely?",
+            "option_a": "A. Backdoor",
+            "option_b": "B. Adware",
+            "option_c": "C. Flooder",
+            "option_d": "D. Macro virus",
+            "correct_answer": "A",
+            "explanation": "Backdoors allow unauthorized access without standard authentication."
+        },
+        {
+            "question": "Why are worms particularly dangerous in highly connected enterprise environments?",
+            "option_a": "A. They require physical access",
+            "option_b": "B. They propagate automatically across networks",
+            "option_c": "C. They only attack printers",
+            "option_d": "D. They cannot replicate",
+            "correct_answer": "B",
+            "explanation": "Network connectivity enables worms to spread rapidly between systems."
+        },
+        {
+            "question": "An antivirus identifies malware by monitoring suspicious system actions such as unauthorized file modification and registry manipulation. Which approach is this?",
+            "option_a": "A. Signature scanning",
+            "option_b": "B. Activity traps",
+            "option_c": "C. File compression",
+            "option_d": "D. Static hashing",
+            "correct_answer": "B",
+            "explanation": "Activity traps detect malware behavior rather than code signatures."
+        },
+        {
+            "question": "Which malware type is MOST likely to abuse legitimate user permissions to execute hidden malicious functions?",
+            "option_a": "A. Trojan horse",
+            "option_b": "B. Flooder",
+            "option_c": "C. Root bridge",
+            "option_d": "D. Boot manager",
+            "correct_answer": "A",
+            "explanation": "Trojans exploit legitimate user trust and permissions."
+        },
+        {
+            "question": "What is the BEST immediate recovery option if malware detection succeeds but removal fails?",
+            "option_a": "A. Disable all networking permanently",
+            "option_b": "B. Replace infected files with clean backups",
+            "option_c": "C. Ignore the infection",
+            "option_d": "D. Delete the operating system kernel",
+            "correct_answer": "B",
+            "explanation": "Restoring clean backups is recommended when complete malware removal is not possible."
+        },
+        {
+            "question": "Which malware concealment strategy specifically aims to avoid constant bit patterns in infected files?",
+            "option_a": "A. Multipartite infection",
+            "option_b": "B. Encrypted virus techniques",
+            "option_c": "C. Local subnet scanning",
+            "option_d": "D. Access control",
+            "correct_answer": "B",
+            "explanation": "Encryption with random keys prevents consistent malware signatures."
+        },
+        {
+            "question": "A worm spreads through USB drives, email attachments, and shared folders simultaneously. What does this demonstrate?",
+            "option_a": "A. Multiple propagation vectors",
+            "option_b": "B. Signature scanning",
+            "option_c": "C. CPU scheduling",
+            "option_d": "D. Access denial",
+            "correct_answer": "A",
+            "explanation": "Worms commonly exploit multiple propagation mechanisms to maximize spread."
+        },
+        {
+            "question": "Which malware category is MOST likely to remain dormant for long periods before activation?",
+            "option_a": "A. Logic bomb",
+            "option_b": "B. Adware",
+            "option_c": "C. Flooder",
+            "option_d": "D. Compression utility",
+            "correct_answer": "A",
+            "explanation": "Logic bombs intentionally wait for triggering conditions."
+        },
+        {
+            "question": "An attacker needs malware capable of hiding processes, altering files, and manipulating operating system monitoring mechanisms. Which malware should be selected?",
+            "option_a": "A. Rootkit",
+            "option_b": "B. Macro virus",
+            "option_c": "C. Flooder",
+            "option_d": "D. Adware",
+            "correct_answer": "A",
+            "explanation": "Rootkits provide deep privileged access and stealth capabilities."
+        },
+        {
+            "question": "Why is generality important in malware countermeasures?",
+            "option_a": "A. It ensures compatibility with only one attack type",
+            "option_b": "B. It allows protection against diverse malware attacks",
+            "option_c": "C. It prevents operating system installation",
+            "option_d": "D. It disables user authentication",
+            "correct_answer": "B",
+            "explanation": "General countermeasures can defend against many forms of malware."
+        },
+        {
+            "question": "Which malware type is MOST likely associated with remote control by a bot master?",
+            "option_a": "A. Zombie",
+            "option_b": "B. Macro document",
+            "option_c": "C. Boot sector utility",
+            "option_d": "D. Activity scanner",
+            "correct_answer": "A",
+            "explanation": "Zombie systems are remotely controlled members of a botnet."
+        },
+        {
+            "question": "A malware sample infects executable programs by prepending malicious code to the beginning of files. What type of malware behavior is this?",
+            "option_a": "A. File infection",
+            "option_b": "B. Phishing",
+            "option_c": "C. Keylogging",
+            "option_d": "D. Activity trapping",
+            "correct_answer": "A",
+            "explanation": "File infectors commonly prepend or append malicious code to executables."
+        }
+    ]
+}

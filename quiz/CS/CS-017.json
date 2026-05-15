@@ -1,0 +1,733 @@
+{
+    "questions": [
+        {
+            "question": "What is another common name for asymmetric encryption algorithms?",
+            "option_a": "A. Stream ciphers",
+            "option_b": "B. Public-key algorithms",
+            "option_c": "C. Block hashing systems",
+            "option_d": "D. Symmetric key systems",
+            "correct_answer": "B",
+            "explanation": "Asymmetric encryption algorithms are commonly called public-key algorithms because they use a public and private key pair."
+        },
+        {
+            "question": "Which characteristic best describes asymmetric encryption?",
+            "option_a": "A. Both users share the same secret key",
+            "option_b": "B. Encryption and decryption use different keys",
+            "option_c": "C. Only hashing is performed",
+            "option_d": "D. Data cannot be decrypted",
+            "correct_answer": "B",
+            "explanation": "Asymmetric encryption uses different keys for encryption and decryption."
+        },
+        {
+            "question": "Which key must remain secret in a public-key cryptosystem?",
+            "option_a": "A. Session key",
+            "option_b": "B. Public key",
+            "option_c": "C. Private key",
+            "option_d": "D. Shared key",
+            "correct_answer": "C",
+            "explanation": "The private key must only be known by its owner."
+        },
+        {
+            "question": "What is the usual key length range for asymmetric algorithms mentioned in the lecture?",
+            "option_a": "A. 8 to 64 bits",
+            "option_b": "B. 64 to 128 bits",
+            "option_c": "C. 128 to 256 bits",
+            "option_d": "D. 512 to 4096 bits",
+            "correct_answer": "D",
+            "explanation": "The lecture states that asymmetric key lengths commonly range from 512 to 4096 bits."
+        },
+        {
+            "question": "Why are asymmetric algorithms generally slower than symmetric algorithms?",
+            "option_a": "A. They use smaller keys",
+            "option_b": "B. They rely on difficult computational problems",
+            "option_c": "C. They require no encryption",
+            "option_d": "D. They avoid mathematical operations",
+            "correct_answer": "B",
+            "explanation": "Asymmetric algorithms are computationally intensive because they rely on mathematically difficult problems."
+        },
+        {
+            "question": "Which of the following is an asymmetric encryption algorithm?",
+            "option_a": "A. AES",
+            "option_b": "B. DES",
+            "option_c": "C. RSA",
+            "option_d": "D. 3DES",
+            "correct_answer": "C",
+            "explanation": "RSA is a well-known asymmetric encryption algorithm."
+        },
+        {
+            "question": "In asymmetric encryption, if a message is encrypted using the public key, which key decrypts it?",
+            "option_a": "A. Another public key",
+            "option_b": "B. Shared key",
+            "option_c": "C. Private key",
+            "option_d": "D. Session key",
+            "correct_answer": "C",
+            "explanation": "Data encrypted with a public key is decrypted using the corresponding private key."
+        },
+        {
+            "question": "What security service is primarily achieved when data is encrypted using a recipient's public key?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Authentication",
+            "option_c": "C. Confidentiality",
+            "option_d": "D. Availability",
+            "correct_answer": "C",
+            "explanation": "Using the recipient's public key ensures only the private key holder can decrypt the message."
+        },
+        {
+            "question": "Authentication in asymmetric cryptography is achieved when encryption starts with which key?",
+            "option_a": "A. Public key",
+            "option_b": "B. Private key",
+            "option_c": "C. Shared secret",
+            "option_d": "D. Session key",
+            "correct_answer": "B",
+            "explanation": "Encrypting with the sender's private key enables authentication because only the sender owns that key."
+        },
+        {
+            "question": "What does successful decryption using Alice's public key prove?",
+            "option_a": "A. Alice knows Bob's password",
+            "option_b": "B. The message was encrypted using Alice's private key",
+            "option_c": "C. The message used symmetric encryption",
+            "option_d": "D. Alice intercepted the message",
+            "correct_answer": "B",
+            "explanation": "Only Alice's private key could have produced content decryptable with her public key."
+        },
+        {
+            "question": "Which two phases are combined to achieve confidentiality, authentication, and integrity together?",
+            "option_a": "A. Hashing and compression",
+            "option_b": "B. Confidentiality and authentication/integrity",
+            "option_c": "C. Routing and encapsulation",
+            "option_d": "D. Fragmentation and transmission",
+            "correct_answer": "B",
+            "explanation": "The lecture explains that confidentiality plus authentication/integrity phases are required together."
+        },
+        {
+            "question": "In the combined authentication and confidentiality process, Alice encrypts the message using whose public key?",
+            "option_a": "A. Her own",
+            "option_b": "B. The CA's",
+            "option_c": "C. Bob's",
+            "option_d": "D. Nobody's",
+            "correct_answer": "C",
+            "explanation": "Encrypting with Bob's public key ensures only Bob can decrypt the message."
+        },
+        {
+            "question": "What does a digital signature primarily provide?",
+            "option_a": "A. Compression",
+            "option_b": "B. Routing",
+            "option_c": "C. Authenticity and integrity",
+            "option_d": "D. Packet forwarding",
+            "correct_answer": "C",
+            "explanation": "Digital signatures verify authenticity and ensure data integrity."
+        },
+        {
+            "question": "Which property prevents a signer from denying they signed a document?",
+            "option_a": "A. Encryption",
+            "option_b": "B. Availability",
+            "option_c": "C. Nonrepudiation",
+            "option_d": "D. Fragmentation",
+            "correct_answer": "C",
+            "explanation": "Nonrepudiation prevents the signer from denying authorship of signed data."
+        },
+        {
+            "question": "Which statement about digital signatures is TRUE?",
+            "option_a": "A. They guarantee network availability",
+            "option_b": "B. They prevent all malware",
+            "option_c": "C. They prove the data has not changed",
+            "option_d": "D. They replace encryption completely",
+            "correct_answer": "C",
+            "explanation": "Digital signatures ensure integrity by detecting modifications."
+        },
+        {
+            "question": "Why is a digital signature considered not reusable?",
+            "option_a": "A. It expires every second",
+            "option_b": "B. It is tied to a specific document",
+            "option_c": "C. It uses only symmetric keys",
+            "option_d": "D. It cannot be transmitted",
+            "correct_answer": "B",
+            "explanation": "A digital signature is bound to a specific document and cannot simply be transferred."
+        },
+        {
+            "question": "What is the first step in the digital signature process?",
+            "option_a": "A. Encrypt the message with a public key",
+            "option_b": "B. Generate a hash of the document",
+            "option_c": "C. Publish the certificate",
+            "option_d": "D. Delete the plaintext",
+            "correct_answer": "B",
+            "explanation": "The signing device first creates a hash of the document."
+        },
+        {
+            "question": "Which key is used to encrypt the hash during digital signing?",
+            "option_a": "A. Receiver's private key",
+            "option_b": "B. Sender's private key",
+            "option_c": "C. Receiver's public key",
+            "option_d": "D. Shared symmetric key",
+            "correct_answer": "B",
+            "explanation": "The sender encrypts the hash using their private key."
+        },
+        {
+            "question": "What does the receiver use to verify a digital signature?",
+            "option_a": "A. Sender's public key",
+            "option_b": "B. Receiver's private key",
+            "option_c": "C. Sender's password",
+            "option_d": "D. Session key",
+            "correct_answer": "A",
+            "explanation": "The receiver uses the sender's public key to decrypt the signature."
+        },
+        {
+            "question": "What happens if the calculated hash and decrypted signature hash do not match?",
+            "option_a": "A. The document is authentic",
+            "option_b": "B. The document has been altered or forged",
+            "option_c": "C. The certificate is renewed",
+            "option_d": "D. The public key becomes invalid",
+            "correct_answer": "B",
+            "explanation": "A mismatch indicates integrity failure or forgery."
+        },
+        {
+            "question": "What assurance does digitally signed code provide?",
+            "option_a": "A. Faster execution",
+            "option_b": "B. Guaranteed internet access",
+            "option_c": "C. Verification that the code has not been modified",
+            "option_d": "D. Automatic encryption",
+            "correct_answer": "C",
+            "explanation": "Digitally signed code assures integrity and authenticity."
+        },
+        {
+            "question": "Which algorithm was invented by Whitfield Diffie and Martin Hellman?",
+            "option_a": "A. AES",
+            "option_b": "B. RSA",
+            "option_c": "C. Diffie-Hellman",
+            "option_d": "D. SHA-1",
+            "correct_answer": "C",
+            "explanation": "Diffie and Hellman invented the DH algorithm in 1976."
+        },
+        {
+            "question": "What is the primary purpose of the Diffie-Hellman algorithm?",
+            "option_a": "A. File compression",
+            "option_b": "B. Secure key exchange",
+            "option_c": "C. Packet routing",
+            "option_d": "D. Password storage",
+            "correct_answer": "B",
+            "explanation": "DH is designed to securely exchange keys."
+        },
+        {
+            "question": "Why is Diffie-Hellman usually not used for bulk encryption?",
+            "option_a": "A. It cannot generate keys",
+            "option_b": "B. It is extremely slow for large data encryption",
+            "option_c": "C. It only works offline",
+            "option_d": "D. It requires no public key",
+            "correct_answer": "B",
+            "explanation": "DH is computationally expensive and unsuitable for bulk data encryption."
+        },
+        {
+            "question": "Which protocols commonly use Diffie-Hellman?",
+            "option_a": "A. FTP only",
+            "option_b": "B. DNS only",
+            "option_c": "C. SSL/TLS, SSH, and IPsec",
+            "option_d": "D. ARP only",
+            "correct_answer": "C",
+            "explanation": "DH is widely used in SSL/TLS, SSH, and IPsec VPNs."
+        },
+        {
+            "question": "What does the modulo operation return?",
+            "option_a": "A. Quotient",
+            "option_b": "B. Power value",
+            "option_c": "C. Remainder",
+            "option_d": "D. Product",
+            "correct_answer": "C",
+            "explanation": "Modulo returns the remainder after division."
+        },
+        {
+            "question": "What is the value of 8 mod 3?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. 2",
+            "option_d": "D. 3",
+            "correct_answer": "C",
+            "explanation": "8 divided by 3 leaves a remainder of 2."
+        },
+        {
+            "question": "In the DH example, what public values were agreed upon initially?",
+            "option_a": "A. g = 5 and p = 23",
+            "option_b": "B. g = 6 and p = 15",
+            "option_c": "C. g = 8 and p = 19",
+            "option_d": "D. g = 2 and p = 11",
+            "correct_answer": "A",
+            "explanation": "The lecture example uses base g=5 and prime p=23."
+        },
+        {
+            "question": "In the DH example, what secret integer did Alice choose?",
+            "option_a": "A. 5",
+            "option_b": "B. 6",
+            "option_c": "C. 15",
+            "option_d": "D. 23",
+            "correct_answer": "B",
+            "explanation": "Alice selected the secret integer a=6."
+        },
+        {
+            "question": "What value did Alice send to Bob in the DH example?",
+            "option_a": "A. 19",
+            "option_b": "B. 23",
+            "option_c": "C. 8",
+            "option_d": "D. 2",
+            "correct_answer": "C",
+            "explanation": "Alice computed 5^6 mod 23 = 8."
+        },
+        {
+            "question": "What shared secret was ultimately derived in the DH example?",
+            "option_a": "A. 5",
+            "option_b": "B. 8",
+            "option_c": "C. 19",
+            "option_d": "D. 2",
+            "correct_answer": "D",
+            "explanation": "Both Alice and Bob computed the same shared secret value, 2."
+        },
+        {
+            "question": "Why are very large integers used in practical DH implementations?",
+            "option_a": "A. To simplify calculations",
+            "option_b": "B. To reduce transmission size",
+            "option_c": "C. To improve security against attacks",
+            "option_d": "D. To avoid modulo operations",
+            "correct_answer": "C",
+            "explanation": "Large numbers make brute-force and discrete logarithm attacks difficult."
+        },
+        {
+            "question": "Which organization created the Digital Signature Standard (DSS)?",
+            "option_a": "A. IEEE",
+            "option_b": "B. Cisco",
+            "option_c": "C. NIST",
+            "option_d": "D. ISO",
+            "correct_answer": "C",
+            "explanation": "NIST created DSS and specified DSA."
+        },
+        {
+            "question": "DSA is primarily designed for which function?",
+            "option_a": "A. Bulk encryption",
+            "option_b": "B. File compression",
+            "option_c": "C. Digital signatures",
+            "option_d": "D. Packet switching",
+            "correct_answer": "C",
+            "explanation": "DSA is specifically designed for digital signatures."
+        },
+        {
+            "question": "What is one advantage of RSA over DSA according to the lecture?",
+            "option_a": "A. RSA verification is faster",
+            "option_b": "B. RSA requires no keys",
+            "option_c": "C. RSA only supports hashing",
+            "option_d": "D. RSA is always smaller",
+            "correct_answer": "A",
+            "explanation": "RSA signature verification is much faster than generation."
+        },
+        {
+            "question": "Which mathematical problem is RSA based on?",
+            "option_a": "A. Matrix inversion",
+            "option_b": "B. Factoring large numbers",
+            "option_c": "C. Packet fragmentation",
+            "option_d": "D. Data compression",
+            "correct_answer": "B",
+            "explanation": "RSA security relies on the difficulty of factoring very large numbers."
+        },
+        {
+            "question": "Why is RSA typically used only for small amounts of data?",
+            "option_a": "A. It lacks confidentiality",
+            "option_b": "B. It is much slower than DES",
+            "option_c": "C. It only works on text",
+            "option_d": "D. It cannot generate signatures",
+            "correct_answer": "B",
+            "explanation": "RSA is significantly slower than DES, especially in software."
+        },
+        {
+            "question": "What is a major advantage of elliptic curve cryptography (ECC)?",
+            "option_a": "A. No keys are required",
+            "option_b": "B. Smaller key sizes",
+            "option_c": "C. No computations are needed",
+            "option_d": "D. It only supports symmetric encryption",
+            "correct_answer": "B",
+            "explanation": "ECC achieves strong security with smaller keys."
+        },
+        {
+            "question": "Which algorithm is based on the Diffie-Hellman key agreement?",
+            "option_a": "A. ElGamal",
+            "option_b": "B. AES",
+            "option_c": "C. SHA-1",
+            "option_d": "D. DES",
+            "correct_answer": "A",
+            "explanation": "ElGamal is based on the Diffie-Hellman key agreement concept."
+        },
+        {
+            "question": "What is a disadvantage of ElGamal encryption?",
+            "option_a": "A. It cannot use public keys",
+            "option_b": "B. Encrypted messages become much larger",
+            "option_c": "C. It cannot support signatures",
+            "option_d": "D. It only works with DES",
+            "correct_answer": "B",
+            "explanation": "ElGamal ciphertexts can be approximately twice the original message size."
+        },
+        {
+            "question": "What is PKI primarily designed to support?",
+            "option_a": "A. Packet routing",
+            "option_b": "B. Large-scale public key technologies",
+            "option_c": "C. Video rendering",
+            "option_d": "D. Operating system scheduling",
+            "correct_answer": "B",
+            "explanation": "PKI supports scalable public-key cryptography systems."
+        },
+        {
+            "question": "Which of the following is NOT part of the PKI framework?",
+            "option_a": "A. Policies and procedures",
+            "option_b": "B. Certificate management",
+            "option_c": "C. Packet fragmentation engine",
+            "option_d": "D. Hardware and software",
+            "correct_answer": "C",
+            "explanation": "Packet fragmentation is unrelated to PKI infrastructure."
+        },
+        {
+            "question": "What does a Certificate Authority (CA) do?",
+            "option_a": "A. Encrypts every packet",
+            "option_b": "B. Issues and signs certificates",
+            "option_c": "C. Replaces routers",
+            "option_d": "D. Compresses certificates",
+            "correct_answer": "B",
+            "explanation": "A CA is a trusted third party that issues and signs certificates."
+        },
+        {
+            "question": "What is a self-signed CA certificate?",
+            "option_a": "A. A certificate signed by users",
+            "option_b": "B. A revoked certificate",
+            "option_c": "C. A CA certificate signed by the CA itself",
+            "option_d": "D. A certificate without keys",
+            "correct_answer": "C",
+            "explanation": "A CA signs its own certificate to establish trust."
+        },
+        {
+            "question": "Which PKI component handles user authentication support?",
+            "option_a": "A. LRA",
+            "option_b": "B. DNS",
+            "option_c": "C. FTP",
+            "option_d": "D. ARP",
+            "correct_answer": "A",
+            "explanation": "Local Registration Authorities assist with authentication in PKI."
+        },
+        {
+            "question": "Which PKI certificate class is used for testing purposes with no identity checks?",
+            "option_a": "A. Class 0",
+            "option_b": "B. Class 1",
+            "option_c": "C. Class 3",
+            "option_d": "D. Class 5",
+            "correct_answer": "A",
+            "explanation": "Class 0 certificates are used only for testing."
+        },
+        {
+            "question": "Which certificate class is commonly used for servers and software signing?",
+            "option_a": "A. Class 1",
+            "option_b": "B. Class 2",
+            "option_c": "C. Class 3",
+            "option_d": "D. Class 4",
+            "correct_answer": "C",
+            "explanation": "Class 3 certificates are used for servers and software signing."
+        },
+        {
+            "question": "Which certificate class is intended for governmental or highly secure private organizations?",
+            "option_a": "A. Class 0",
+            "option_b": "B. Class 2",
+            "option_c": "C. Class 4",
+            "option_d": "D. Class 5",
+            "correct_answer": "D",
+            "explanation": "Class 5 certificates are used for high-security environments."
+        },
+        {
+            "question": "What issue led to the formation of the IETF PKIX workgroup?",
+            "option_a": "A. Weak DES encryption",
+            "option_b": "B. PKI vendor interoperability problems",
+            "option_c": "C. Network congestion",
+            "option_d": "D. IPv4 exhaustion",
+            "correct_answer": "B",
+            "explanation": "PKIX was created to standardize PKI interoperability."
+        },
+        {
+            "question": "What does the X.509 standard define?",
+            "option_a": "A. IP routing tables",
+            "option_b": "B. Certificate and CRL formats",
+            "option_c": "C. Database schemas",
+            "option_d": "D. Video codecs",
+            "correct_answer": "B",
+            "explanation": "X.509 standardizes certificate and revocation list formats."
+        },
+        {
+            "question": "Which technology commonly uses X.509 certificates?",
+            "option_a": "A. SSL/TLS",
+            "option_b": "B. ARP",
+            "option_c": "C. ICMP",
+            "option_d": "D. NAT",
+            "correct_answer": "A",
+            "explanation": "SSL/TLS widely relies on X.509 certificates."
+        },
+        {
+            "question": "What allows PKI users to verify certificate validity?",
+            "option_a": "A. DNS lookups",
+            "option_b": "B. The CA's public key",
+            "option_c": "C. MAC addresses",
+            "option_d": "D. DHCP servers",
+            "correct_answer": "B",
+            "explanation": "Users verify certificates using the CA's public key."
+        },
+        {
+            "question": "Why can certificates often have long lifetimes?",
+            "option_a": "A. Public-key algorithms are strong",
+            "option_b": "B. Certificates never expire",
+            "option_c": "C. RSA requires no updates",
+            "option_d": "D. Hashing is unnecessary",
+            "correct_answer": "A",
+            "explanation": "Strong cryptographic algorithms allow long certificate validity periods."
+        },
+        {
+            "question": "Cryptology is a combination of which two fields?",
+            "option_a": "A. Routing and switching",
+            "option_b": "B. Compression and parsing",
+            "option_c": "C. Cryptography and cryptanalysis",
+            "option_d": "D. Hashing and multiplexing",
+            "correct_answer": "C",
+            "explanation": "Cryptology combines cryptography and cryptanalysis."
+        },
+        {
+            "question": "Which algorithm is mentioned as providing integrity?",
+            "option_a": "A. SHA-1",
+            "option_b": "B. ARP",
+            "option_c": "C. FTP",
+            "option_d": "D. SMTP",
+            "correct_answer": "A",
+            "explanation": "SHA-1 and MD5 are mentioned as integrity algorithms."
+        },
+        {
+            "question": "Which mechanism provides authenticity according to the lecture summary?",
+            "option_a": "A. HMAC",
+            "option_b": "B. DHCP",
+            "option_c": "C. ICMP",
+            "option_d": "D. NAT",
+            "correct_answer": "A",
+            "explanation": "HMAC provides authenticity verification."
+        },
+        {
+            "question": "Which symmetric algorithms were mentioned in the lecture?",
+            "option_a": "A. RSA and DSA",
+            "option_b": "B. AES and 3DES",
+            "option_c": "C. ElGamal and ECC",
+            "option_d": "D. DH and PKI",
+            "correct_answer": "B",
+            "explanation": "DES, 3DES, AES, and SEAL were listed as symmetric algorithms."
+        },
+        {
+            "question": "Which statement best explains why public-key systems simplify key management?",
+            "option_a": "A. No keys are exchanged",
+            "option_b": "B. Users freely exchange certificates instead of secret keys",
+            "option_c": "C. Only symmetric keys are used",
+            "option_d": "D. Certificates are never verified",
+            "correct_answer": "B",
+            "explanation": "PKI simplifies key management because users exchange certificates publicly."
+        },
+        {
+            "question": "A company wants confidentiality when sending data to Bob. Which key should Alice use?",
+            "option_a": "A. Alice's private key",
+            "option_b": "B. Alice's public key",
+            "option_c": "C. Bob's public key",
+            "option_d": "D. Bob's private key",
+            "correct_answer": "C",
+            "explanation": "Encrypting with Bob's public key ensures only Bob can decrypt the data."
+        },
+        {
+            "question": "An attacker intercepts a message encrypted with Bob's public key. What prevents decryption?",
+            "option_a": "A. The attacker lacks Bob's private key",
+            "option_b": "B. The attacker lacks Bob's public key",
+            "option_c": "C. The attacker lacks the router password",
+            "option_d": "D. The attacker lacks the plaintext certificate",
+            "correct_answer": "A",
+            "explanation": "Only Bob's private key can decrypt the message."
+        },
+        {
+            "question": "Which situation demonstrates authentication rather than confidentiality?",
+            "option_a": "A. Alice encrypts data using Bob's public key",
+            "option_b": "B. Alice encrypts a hash using her private key",
+            "option_c": "C. Alice compresses a file",
+            "option_d": "D. Alice stores the message offline",
+            "correct_answer": "B",
+            "explanation": "Encrypting a hash with the sender's private key provides authentication."
+        },
+        {
+            "question": "Why is hashing used in digital signatures instead of encrypting the entire document?",
+            "option_a": "A. Hashes are smaller and more efficient",
+            "option_b": "B. Hashes eliminate authentication",
+            "option_c": "C. Hashes prevent certificate use",
+            "option_d": "D. Hashes replace public keys",
+            "correct_answer": "A",
+            "explanation": "Hashing is computationally efficient and still preserves integrity checking."
+        },
+        {
+            "question": "A software publisher digitally signs an application. What can users verify?",
+            "option_a": "A. The program is bug-free",
+            "option_b": "B. The source code is open-source",
+            "option_c": "C. The software has not been altered and came from the publisher",
+            "option_d": "D. The software runs faster",
+            "correct_answer": "C",
+            "explanation": "Digital signatures verify integrity and authenticity of software."
+        },
+        {
+            "question": "Why is Diffie-Hellman vulnerable if small secret integers are used?",
+            "option_a": "A. Small values make brute-force attacks easier",
+            "option_b": "B. DH stops using modulo arithmetic",
+            "option_c": "C. Public keys become private",
+            "option_d": "D. Certificates expire immediately",
+            "correct_answer": "A",
+            "explanation": "Small secret values reduce security and make attacks easier."
+        },
+        {
+            "question": "An organization requires fast signature verification for millions of users. Which algorithm is most appropriate?",
+            "option_a": "A. RSA",
+            "option_b": "B. DES",
+            "option_c": "C. AES",
+            "option_d": "D. SHA-1",
+            "correct_answer": "A",
+            "explanation": "RSA verification is much faster than RSA signing and generally faster than DSA verification."
+        },
+        {
+            "question": "Which statement correctly compares DSA and RSA?",
+            "option_a": "A. DSA is mainly for encryption",
+            "option_b": "B. RSA cannot provide digital signatures",
+            "option_c": "C. DSA verification is slower than RSA verification",
+            "option_d": "D. RSA cannot provide confidentiality",
+            "correct_answer": "C",
+            "explanation": "The lecture notes that DSA verification is slower compared to RSA verification."
+        },
+        {
+            "question": "What would most likely happen if a CA's private key were compromised?",
+            "option_a": "A. Certificates could be fraudulently issued",
+            "option_b": "B. All symmetric encryption stops working",
+            "option_c": "C. Routers stop forwarding traffic",
+            "option_d": "D. Modulo arithmetic becomes invalid",
+            "correct_answer": "A",
+            "explanation": "Compromising a CA private key undermines trust because attackers can forge certificates."
+        },
+        {
+            "question": "Why is PKI considered scalable?",
+            "option_a": "A. Every pair of users shares unique secret keys",
+            "option_b": "B. Certificates can be distributed publicly",
+            "option_c": "C. Symmetric keys are never needed",
+            "option_d": "D. Hashing replaces encryption",
+            "correct_answer": "B",
+            "explanation": "Public distribution of certificates enables scalable trust relationships."
+        },
+        {
+            "question": "What problem does PKI solve in asymmetric cryptography?",
+            "option_a": "A. How to compress packets",
+            "option_b": "B. How to establish trusted public keys",
+            "option_c": "C. How to increase bandwidth",
+            "option_d": "D. How to bypass hashing",
+            "correct_answer": "B",
+            "explanation": "PKI establishes trust in public keys through certificates and CAs."
+        },
+        {
+            "question": "Why is confidentiality NOT guaranteed if Alice encrypts data using her own private key?",
+            "option_a": "A. Anyone with Alice's public key can decrypt it",
+            "option_b": "B. Private keys cannot encrypt",
+            "option_c": "C. Public keys are secret",
+            "option_d": "D. Modulo operations fail",
+            "correct_answer": "A",
+            "explanation": "Encrypting with a private key supports authentication, not confidentiality."
+        },
+        {
+            "question": "A security engineer wants minimal key sizes while maintaining strong security. Which technique is most suitable?",
+            "option_a": "A. DES",
+            "option_b": "B. ECC",
+            "option_c": "C. FTP",
+            "option_d": "D. MD5",
+            "correct_answer": "B",
+            "explanation": "ECC achieves strong security with significantly smaller keys."
+        },
+        {
+            "question": "What is the main reason asymmetric encryption is often combined with symmetric encryption?",
+            "option_a": "A. Symmetric encryption is faster for bulk data",
+            "option_b": "B. Asymmetric encryption cannot use keys",
+            "option_c": "C. Symmetric encryption provides no confidentiality",
+            "option_d": "D. Public keys are unnecessary",
+            "correct_answer": "A",
+            "explanation": "Asymmetric encryption is computationally expensive, so symmetric encryption handles bulk traffic."
+        },
+        {
+            "question": "In a secure HTTPS connection, what is one likely role of Diffie-Hellman?",
+            "option_a": "A. Compressing webpages",
+            "option_b": "B. Generating shared encryption keys",
+            "option_c": "C. Replacing certificates",
+            "option_d": "D. Blocking malware automatically",
+            "correct_answer": "B",
+            "explanation": "DH is commonly used to establish shared symmetric keys securely."
+        },
+        {
+            "question": "Which property of digital signatures is most important in legal disputes?",
+            "option_a": "A. Packet switching",
+            "option_b": "B. Nonrepudiation",
+            "option_c": "C. Compression",
+            "option_d": "D. Fragmentation",
+            "correct_answer": "B",
+            "explanation": "Nonrepudiation prevents a signer from denying involvement."
+        },
+        {
+            "question": "A forged message passes integrity verification but fails authentication. What likely occurred?",
+            "option_a": "A. The attacker used the wrong private key",
+            "option_b": "B. The hash algorithm stopped working",
+            "option_c": "C. The message was never transmitted",
+            "option_d": "D. Symmetric encryption was too strong",
+            "correct_answer": "A",
+            "explanation": "Authentication failure indicates the proper signing private key was not used."
+        },
+        {
+            "question": "Why are certificate revocation lists (CRLs) important?",
+            "option_a": "A. They store routing tables",
+            "option_b": "B. They identify certificates that should no longer be trusted",
+            "option_c": "C. They replace private keys",
+            "option_d": "D. They increase encryption speed",
+            "correct_answer": "B",
+            "explanation": "CRLs help invalidate compromised or expired certificates."
+        },
+        {
+            "question": "What is a likely consequence if users fail to verify CA certificates?",
+            "option_a": "A. Increased encryption speed",
+            "option_b": "B. Greater risk of impersonation attacks",
+            "option_c": "C. Automatic confidentiality",
+            "option_d": "D. Elimination of hashing",
+            "correct_answer": "B",
+            "explanation": "Without verifying trust chains, attackers may impersonate legitimate entities."
+        },
+        {
+            "question": "An attacker modifies a digitally signed document after signing. What happens during verification?",
+            "option_a": "A. Verification still succeeds",
+            "option_b": "B. The hash comparison fails",
+            "option_c": "C. The public key changes automatically",
+            "option_d": "D. The CA becomes invalid",
+            "correct_answer": "B",
+            "explanation": "Modification changes the hash, causing signature verification failure."
+        },
+        {
+            "question": "Which cryptographic mechanism is MOST associated with ensuring message integrity?",
+            "option_a": "A. Hashing",
+            "option_b": "B. Routing",
+            "option_c": "C. NAT",
+            "option_d": "D. Multiplexing",
+            "correct_answer": "A",
+            "explanation": "Hashing mechanisms detect changes to data and ensure integrity."
+        },
+        {
+            "question": "Why is a CA considered a trusted third party?",
+            "option_a": "A. It performs packet routing",
+            "option_b": "B. It validates identities and signs certificates",
+            "option_c": "C. It replaces encryption algorithms",
+            "option_d": "D. It generates internet bandwidth",
+            "correct_answer": "B",
+            "explanation": "A CA establishes trust by verifying identities and issuing certificates."
+        },
+        {
+            "question": "Which statement BEST explains the relationship between PKI and asymmetric cryptography?",
+            "option_a": "A. PKI replaces asymmetric cryptography",
+            "option_b": "B. PKI manages trust and certificates for asymmetric systems",
+            "option_c": "C. PKI only supports symmetric encryption",
+            "option_d": "D. PKI eliminates the need for public keys",
+            "correct_answer": "B",
+            "explanation": "PKI provides the infrastructure and trust model for asymmetric cryptography."
+        }
+    ]
+}

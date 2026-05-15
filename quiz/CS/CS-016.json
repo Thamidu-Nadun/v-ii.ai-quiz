@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary goal of symmetric-key encryption?",
+            "option_a": "A. Confidentiality of data using a shared secret key",
+            "option_b": "B. Digital signature generation using public keys",
+            "option_c": "C. Hashing data for integrity verification only",
+            "option_d": "D. Key exchange over insecure channels without encryption",
+            "correct_answer": "A",
+            "explanation": "Symmetric encryption uses a shared secret key between sender and receiver to ensure data confidentiality."
+        },
+        {
+            "question": "Which of the following best describes a symmetric encryption system?",
+            "option_a": "A. Uses different keys for encryption and decryption",
+            "option_b": "B. Uses a shared secret key for both encryption and decryption",
+            "option_c": "C. Uses only public keys",
+            "option_d": "D. Does not require keys",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption uses the same pre-shared secret key for both encryption and decryption."
+        },
+        {
+            "question": "Which statement about symmetric encryption is correct?",
+            "option_a": "A. It is generally slower than asymmetric encryption",
+            "option_b": "B. It requires a shared secret key between sender and receiver",
+            "option_c": "C. It uses very large key sizes like 4096 bits",
+            "option_d": "D. It is mainly used for digital signatures",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption relies on a shared secret key that both parties must know beforehand."
+        },
+        {
+            "question": "Which of the following is an example of a symmetric encryption algorithm?",
+            "option_a": "A. RSA",
+            "option_b": "B. AES",
+            "option_c": "C. Diffie-Hellman",
+            "option_d": "D. ElGamal",
+            "correct_answer": "B",
+            "explanation": "AES is a widely used symmetric encryption algorithm."
+        },
+        {
+            "question": "What is a key characteristic of symmetric encryption algorithms?",
+            "option_a": "A. They are computationally slow",
+            "option_b": "B. They use two different keys",
+            "option_c": "C. They are generally fast and efficient",
+            "option_d": "D. They require public key infrastructure",
+            "correct_answer": "C",
+            "explanation": "Symmetric algorithms are fast due to simpler mathematical operations."
+        },
+        {
+            "question": "Which key length range is commonly associated with symmetric encryption algorithms?",
+            "option_a": "A. 32–64 bits",
+            "option_b": "B. 80–256 bits",
+            "option_c": "C. 512–4096 bits",
+            "option_d": "D. 1024–8192 bits",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption typically uses key lengths between 80 and 256 bits."
+        },
+        {
+            "question": "What is the main reason symmetric encryption is faster than asymmetric encryption?",
+            "option_a": "A. It uses larger keys",
+            "option_b": "B. It relies on simpler mathematical operations",
+            "option_c": "C. It uses public key exchange",
+            "option_d": "D. It does not require keys",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption uses simpler operations, making it computationally efficient."
+        },
+        {
+            "question": "Which of the following is NOT a symmetric encryption algorithm?",
+            "option_a": "A. DES",
+            "option_b": "B. AES",
+            "option_c": "C. RSA",
+            "option_d": "D. Blowfish",
+            "correct_answer": "C",
+            "explanation": "RSA is an asymmetric encryption algorithm, not symmetric."
+        },
+        {
+            "question": "Which encryption technique processes data one bit or byte at a time?",
+            "option_a": "A. Block cipher",
+            "option_b": "B. Stream cipher",
+            "option_c": "C. Hash function",
+            "option_d": "D. Public key encryption",
+            "correct_answer": "B",
+            "explanation": "Stream ciphers encrypt data one bit or byte at a time."
+        },
+        {
+            "question": "Which encryption method processes fixed-size blocks of data?",
+            "option_a": "A. Stream cipher",
+            "option_b": "B. Block cipher",
+            "option_c": "C. Hash function",
+            "option_d": "D. Digital signature",
+            "correct_answer": "B",
+            "explanation": "Block ciphers encrypt fixed-length blocks such as 64 or 128 bits."
+        },
+        {
+            "question": "What is a major advantage of stream ciphers over block ciphers?",
+            "option_a": "A. They are slower",
+            "option_b": "B. They always increase message size",
+            "option_c": "C. They are generally faster and do not increase message size",
+            "option_d": "D. They require large block sizes",
+            "correct_answer": "C",
+            "explanation": "Stream ciphers are fast and typically do not expand message size."
+        },
+        {
+            "question": "Which of the following is an example of a stream cipher?",
+            "option_a": "A. AES",
+            "option_b": "B. DES",
+            "option_c": "C. RC4",
+            "option_d": "D. RSA",
+            "correct_answer": "C",
+            "explanation": "RC4 is a well-known stream cipher."
+        },
+        {
+            "question": "What is the block size of DES?",
+            "option_a": "A. 32 bits",
+            "option_b": "B. 64 bits",
+            "option_c": "C. 128 bits",
+            "option_d": "D. 256 bits",
+            "correct_answer": "B",
+            "explanation": "DES encrypts data in 64-bit blocks."
+        },
+        {
+            "question": "What is the main weakness of DES?",
+            "option_a": "A. Too large key size",
+            "option_b": "B. Too slow encryption",
+            "option_c": "C. Short key length making brute-force attacks feasible",
+            "option_d": "D. Uses public key encryption",
+            "correct_answer": "C",
+            "explanation": "DES uses a short key, making it vulnerable to brute-force attacks."
+        },
+        {
+            "question": "Which algorithm was designed as an improvement over DES?",
+            "option_a": "A. AES",
+            "option_b": "B. 3DES",
+            "option_c": "C. RC4",
+            "option_d": "D. MD5",
+            "correct_answer": "B",
+            "explanation": "3DES improves security by applying DES three times."
+        },
+        {
+            "question": "What is the structure of 3DES encryption?",
+            "option_a": "A. Encrypt-Encrypt-Encrypt",
+            "option_b": "B. Decrypt-Encrypt-Decrypt",
+            "option_c": "C. Encrypt-Decrypt-Encrypt",
+            "option_d": "D. Encrypt-Decrypt-Decrypt",
+            "correct_answer": "C",
+            "explanation": "3DES uses Encrypt-Decrypt-Encrypt sequence."
+        },
+        {
+            "question": "What is a disadvantage of 3DES?",
+            "option_a": "A. Too weak",
+            "option_b": "B. Requires asymmetric keys",
+            "option_c": "C. Slower due to triple processing",
+            "option_d": "D. Uses 32-bit blocks",
+            "correct_answer": "C",
+            "explanation": "3DES is slower because it applies DES three times."
+        },
+        {
+            "question": "Which algorithm was selected by NIST as a replacement for DES?",
+            "option_a": "A. RC4",
+            "option_b": "B. AES",
+            "option_c": "C. 3DES",
+            "option_d": "D. Blowfish",
+            "correct_answer": "B",
+            "explanation": "AES was selected by NIST after a global evaluation process."
+        },
+        {
+            "question": "AES is based on which algorithm?",
+            "option_a": "A. RSA",
+            "option_b": "B. Rijndael",
+            "option_c": "C. Diffie-Hellman",
+            "option_d": "D. DES",
+            "correct_answer": "B",
+            "explanation": "AES is based on the Rijndael cipher."
+        },
+        {
+            "question": "Which AES key sizes are valid?",
+            "option_a": "A. 64, 128, 256 bits",
+            "option_b": "B. 128, 192, 256 bits",
+            "option_c": "C. 56, 128, 512 bits",
+            "option_d": "D. 32, 64, 128 bits",
+            "correct_answer": "B",
+            "explanation": "AES supports 128, 192, and 256-bit keys."
+        },
+        {
+            "question": "Which AES feature contributes most to its performance advantage?",
+            "option_a": "A. Larger block size only",
+            "option_b": "B. Efficient software and hardware optimization",
+            "option_c": "C. Public key usage",
+            "option_d": "D. Shorter encryption time due to hashing",
+            "correct_answer": "B",
+            "explanation": "AES is highly optimized for both hardware and software performance."
+        },
+        {
+            "question": "Which mode of operation encrypts each block independently?",
+            "option_a": "A. CBC",
+            "option_b": "B. ECB",
+            "option_c": "C. CFB",
+            "option_d": "D. OFB",
+            "correct_answer": "B",
+            "explanation": "ECB encrypts each block independently using the same key."
+        },
+        {
+            "question": "What is a major weakness of ECB mode?",
+            "option_a": "A. Requires initialization vector",
+            "option_b": "B. Produces different ciphertext for same plaintext always",
+            "option_c": "C. Identical plaintext blocks produce identical ciphertext blocks",
+            "option_d": "D. Cannot encrypt binary data",
+            "correct_answer": "C",
+            "explanation": "ECB leaks patterns because identical plaintext blocks produce identical ciphertext."
+        },
+        {
+            "question": "Which mode uses XOR with previous ciphertext block?",
+            "option_a": "A. ECB",
+            "option_b": "B. CBC",
+            "option_c": "C. OFB",
+            "option_d": "D. CFB",
+            "correct_answer": "B",
+            "explanation": "CBC XORs each plaintext block with the previous ciphertext block."
+        },
+        {
+            "question": "What is a key advantage of CBC mode over ECB?",
+            "option_a": "A. Faster encryption",
+            "option_b": "B. Independent block encryption",
+            "option_c": "C. Prevents pattern leakage",
+            "option_d": "D. Uses public keys",
+            "correct_answer": "C",
+            "explanation": "CBC prevents identical ciphertext patterns for identical plaintext blocks."
+        },
+        {
+            "question": "Which mode generates a keystream for encryption?",
+            "option_a": "A. CBC",
+            "option_b": "B. ECB",
+            "option_c": "C. OFB",
+            "option_d": "D. None",
+            "correct_answer": "C",
+            "explanation": "OFB generates a keystream that is XORed with plaintext."
+        },
+        {
+            "question": "Stream ciphers are best described as:",
+            "option_a": "A. Encrypting fixed 128-bit blocks",
+            "option_b": "B. Encrypting data bit by bit or byte by byte",
+            "option_c": "C. Using public/private keys",
+            "option_d": "D. Only used for hashing",
+            "correct_answer": "B",
+            "explanation": "Stream ciphers process data continuously bit or byte at a time."
+        },
+        {
+            "question": "Which algorithm family includes RC4, RC5, and RC6?",
+            "option_a": "A. DES family",
+            "option_b": "B. RSA family",
+            "option_c": "C. RC algorithms",
+            "option_d": "D. SHA family",
+            "correct_answer": "C",
+            "explanation": "RC algorithms were designed by Ronald Rivest."
+        },
+        {
+            "question": "What is SEAL primarily designed for?",
+            "option_a": "A. Hardware encryption",
+            "option_b": "B. Software-optimized stream encryption",
+            "option_c": "C. Public key exchange",
+            "option_d": "D. Hashing data",
+            "correct_answer": "B",
+            "explanation": "SEAL is a fast software-optimized stream cipher."
+        },
+        {
+            "question": "Which is a reason AES replaced DES?",
+            "option_a": "A. Smaller key size",
+            "option_b": "B. Lower security level",
+            "option_c": "C. Higher security and better performance",
+            "option_d": "D. Requires public keys",
+            "correct_answer": "C",
+            "explanation": "AES offers stronger security and better efficiency than DES."
+        },
+        {
+            "question": "Which factor is MOST important when choosing an encryption algorithm?",
+            "option_a": "A. Color of implementation",
+            "option_b": "B. Community trust and resistance to attacks",
+            "option_c": "C. Programming language used",
+            "option_d": "D. File size of algorithm",
+            "correct_answer": "B",
+            "explanation": "Trusted and well-analyzed algorithms are preferred."
+        },
+        {
+            "question": "What does brute-force resistance depend on most?",
+            "option_a": "A. Algorithm name",
+            "option_b": "B. Key length",
+            "option_c": "C. Programming language",
+            "option_d": "D. Block size only",
+            "correct_answer": "B",
+            "explanation": "Longer key lengths make brute-force attacks infeasible."
+        },
+        {
+            "question": "Which statement about asymmetric encryption is correct?",
+            "option_a": "A. Uses same key for encryption and decryption",
+            "option_b": "B. Is faster than symmetric encryption",
+            "option_c": "C. Uses public and private key pairs",
+            "option_d": "D. Uses 64-bit keys only",
+            "correct_answer": "C",
+            "explanation": "Asymmetric encryption uses a public/private key pair."
+        },
+        {
+            "question": "Why are stream ciphers generally faster than block ciphers?",
+            "option_a": "A. They use larger keys",
+            "option_b": "B. They encrypt data continuously without block processing",
+            "option_c": "C. They use public keys",
+            "option_d": "D. They require more memory",
+            "correct_answer": "B",
+            "explanation": "Stream ciphers process data continuously, making them faster."
+        },
+        {
+            "question": "What happens if identical plaintext blocks are encrypted in ECB mode?",
+            "option_a": "A. Different ciphertext is always produced",
+            "option_b": "B. Ciphertext is compressed",
+            "option_c": "C. Identical ciphertext blocks are produced",
+            "option_d": "D. Encryption fails",
+            "correct_answer": "C",
+            "explanation": "ECB produces identical ciphertext for identical plaintext blocks."
+        },
+        {
+            "question": "Which encryption approach is best for high-throughput software systems?",
+            "option_a": "A. DES",
+            "option_b": "B. AES",
+            "option_c": "C. Manual encoding",
+            "option_d": "D. RSA only",
+            "correct_answer": "B",
+            "explanation": "AES is optimized for high-performance environments."
+        },
+        {
+            "question": "Which statement best describes CBC mode?",
+            "option_a": "A. Each block is encrypted independently",
+            "option_b": "B. Each block depends on previous ciphertext",
+            "option_c": "C. It uses public key encryption",
+            "option_d": "D. It does not use XOR",
+            "correct_answer": "B",
+            "explanation": "CBC uses previous ciphertext block for encryption of next block."
+        },
+        {
+            "question": "What is the main purpose of XOR in CBC mode?",
+            "option_a": "A. Compress data",
+            "option_b": "B. Combine plaintext with previous ciphertext securely",
+            "option_c": "C. Generate public keys",
+            "option_d": "D. Increase block size",
+            "correct_answer": "B",
+            "explanation": "XOR mixes plaintext with previous ciphertext to enhance security."
+        },
+        {
+            "question": "Which cipher type is Vigenère cipher categorized as?",
+            "option_a": "A. Block cipher",
+            "option_b": "B. Stream cipher",
+            "option_c": "C. Asymmetric cipher",
+            "option_d": "D. Hash function",
+            "correct_answer": "B",
+            "explanation": "Vigenère is an example of a stream cipher."
+        },
+        {
+            "question": "Which statement is TRUE about AES compared to 3DES?",
+            "option_a": "A. AES is slower than 3DES",
+            "option_b": "B. AES is less secure than DES",
+            "option_c": "C. AES is faster and more efficient",
+            "option_d": "D. AES uses 56-bit keys",
+            "correct_answer": "C",
+            "explanation": "AES is both faster and more efficient than 3DES."
+        }
+    ]
+}
