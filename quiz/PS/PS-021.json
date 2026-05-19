@@ -1,0 +1,400 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary idea behind sustainability according to the lecture?",
+            "option_a": "A. Maximizing profits regardless of environmental impact",
+            "option_b": "B. Meeting current needs without harming future generations' ability to meet theirs",
+            "option_c": "C. Reducing all forms of technology usage",
+            "option_d": "D. Eliminating industrial development completely",
+            "correct_answer": "B",
+            "explanation": "The lecture defines sustainability as meeting present needs without compromising future generations."
+        },
+        {
+            "question": "Which component of the Triple Bottom Line focuses on environmental impact?",
+            "option_a": "A. People",
+            "option_b": "B. Profit",
+            "option_c": "C. Planet",
+            "option_d": "D. Policy",
+            "correct_answer": "C",
+            "explanation": "The Planet component measures environmental impact and ecological sustainability."
+        },
+        {
+            "question": "In the Triple Bottom Line, profitability and return on assets belong to which category?",
+            "option_a": "A. Planet",
+            "option_b": "B. Ethics",
+            "option_c": "C. People",
+            "option_d": "D. Profit",
+            "correct_answer": "D",
+            "explanation": "Profit represents the economic account of sustainability."
+        },
+        {
+            "question": "According to the lecture, technology disrupts all of the following EXCEPT:",
+            "option_a": "A. Privacy",
+            "option_b": "B. Democratic systems",
+            "option_c": "C. Human behavior",
+            "option_d": "D. Gravity",
+            "correct_answer": "D",
+            "explanation": "The lecture discusses impacts on privacy, work, democratic systems, and behavior, not gravity."
+        },
+        {
+            "question": "Why is ethical reflection important in computing?",
+            "option_a": "A. Ethical consequences are always predictable",
+            "option_b": "B. Computing systems are too small to matter",
+            "option_c": "C. Consequences of technology are often difficult to predict",
+            "option_d": "D. Ethics only apply to government organizations",
+            "correct_answer": "C",
+            "explanation": "The lecture emphasizes that technology consequences are difficult to predict, making ethical reflection necessary."
+        },
+        {
+            "question": "Which issue is identified as a social impact of technology?",
+            "option_a": "A. Photosynthesis",
+            "option_b": "B. Misinformation",
+            "option_c": "C. Plate tectonics",
+            "option_d": "D. Ocean salinity",
+            "correct_answer": "B",
+            "explanation": "The lecture specifically lists misinformation as a significant social impact."
+        },
+        {
+            "question": "Ethical behavior in organizations primarily emerges from:",
+            "option_a": "A. Strict punishment alone",
+            "option_b": "B. Culture rather than only rules",
+            "option_c": "C. Financial incentives only",
+            "option_d": "D. Government surveillance",
+            "correct_answer": "B",
+            "explanation": "The lecture states that ethical behavior emerges from organizational culture, not only rules."
+        },
+        {
+            "question": "What can biased systems arise from according to the lecture?",
+            "option_a": "A. Fast internet connections",
+            "option_b": "B. High-quality software testing",
+            "option_c": "C. Biased organizational cultures",
+            "option_d": "D. Open-source development",
+            "correct_answer": "C",
+            "explanation": "The lecture explains that biased systems often originate from biased cultures."
+        },
+        {
+            "question": "Which of the following is a Sri Lankan ethical concern mentioned in the lecture?",
+            "option_a": "A. Quantum computing regulations",
+            "option_b": "B. National digital ID concerns",
+            "option_c": "C. Space exploration ethics",
+            "option_d": "D. Autonomous submarines",
+            "correct_answer": "B",
+            "explanation": "The lecture specifically mentions national digital ID concerns in Sri Lanka."
+        },
+        {
+            "question": "What global issue related to technology is highlighted in the lecture?",
+            "option_a": "A. Agricultural overproduction",
+            "option_b": "B. Social media addiction",
+            "option_c": "C. Overpopulation of forests",
+            "option_d": "D. Excessive rainfall",
+            "correct_answer": "B",
+            "explanation": "Social media addiction is identified as a global ethical concern."
+        },
+        {
+            "question": "Rapid hardware obsolescence contributes mainly to:",
+            "option_a": "A. Reduced electricity usage",
+            "option_b": "B. Increased global e-waste",
+            "option_c": "C. Better recycling systems",
+            "option_d": "D. Lower carbon emissions",
+            "correct_answer": "B",
+            "explanation": "Frequent replacement of devices increases electronic waste."
+        },
+        {
+            "question": "Why are data centers considered a sustainability concern?",
+            "option_a": "A. They reduce internet access",
+            "option_b": "B. They require massive electricity consumption",
+            "option_c": "C. They eliminate cloud computing",
+            "option_d": "D. They decrease storage capacity",
+            "correct_answer": "B",
+            "explanation": "Data centers consume significant electricity and contribute to carbon emissions."
+        },
+        {
+            "question": "Which activity is associated with an extreme carbon footprint?",
+            "option_a": "A. Word processing",
+            "option_b": "B. Cryptocurrency mining",
+            "option_c": "C. Sending emails",
+            "option_d": "D. Database indexing",
+            "correct_answer": "B",
+            "explanation": "The lecture specifically identifies cryptocurrency mining as highly carbon intensive."
+        },
+        {
+            "question": "What is green computing?",
+            "option_a": "A. Using only green-colored devices",
+            "option_b": "B. Energy-efficient software and hardware practices",
+            "option_c": "C. Increasing device replacement cycles",
+            "option_d": "D. Disabling cloud services",
+            "correct_answer": "B",
+            "explanation": "Green computing focuses on reducing energy consumption through efficient technology."
+        },
+        {
+            "question": "Which concept promotes repairing and refurbishing devices instead of replacing them?",
+            "option_a": "A. Digital capitalism",
+            "option_b": "B. Circular economy",
+            "option_c": "C. Algorithmic transparency",
+            "option_d": "D. Cyber resilience",
+            "correct_answer": "B",
+            "explanation": "The circular economy encourages repair, refurbishment, and recycling."
+        },
+        {
+            "question": "Which UN-related goal is associated with sustainability efforts in IT?",
+            "option_a": "A. Unlimited industrial growth",
+            "option_b": "B. Responsible consumption",
+            "option_c": "C. Increased fossil fuel usage",
+            "option_d": "D. Hardware monopolization",
+            "correct_answer": "B",
+            "explanation": "Responsible consumption is one of the UN Sustainable Development Goals linked to IT sustainability."
+        },
+        {
+            "question": "Ethical IT professionals should prioritize:",
+            "option_a": "A. Public welfare",
+            "option_b": "B. Company profits above all else",
+            "option_c": "C. Unlimited data collection",
+            "option_d": "D. Avoiding teamwork",
+            "correct_answer": "A",
+            "explanation": "The lecture emphasizes prioritizing public welfare when designing systems."
+        },
+        {
+            "question": "Which professional responsibility involves supporting inclusive teamwork?",
+            "option_a": "A. Responsibility to clients",
+            "option_b": "B. Responsibility to employers",
+            "option_c": "C. Responsibility to colleagues",
+            "option_d": "D. Responsibility to competitors",
+            "correct_answer": "C",
+            "explanation": "Supporting inclusive teamwork is part of responsibilities toward colleagues."
+        },
+        {
+            "question": "What does GDPR primarily emphasize?",
+            "option_a": "A. Reducing internet speeds",
+            "option_b": "B. Strong user rights over personal data",
+            "option_c": "C. Increasing software piracy",
+            "option_d": "D. Eliminating online businesses",
+            "correct_answer": "B",
+            "explanation": "GDPR focuses heavily on user data rights and transparency."
+        },
+        {
+            "question": "Under Sri Lanka's PDPA, organizations must:",
+            "option_a": "A. Sell personal data freely",
+            "option_b": "B. Ignore user deletion requests",
+            "option_c": "C. Safeguard personal data",
+            "option_d": "D. Eliminate cybersecurity measures",
+            "correct_answer": "C",
+            "explanation": "The PDPA requires organizations to protect personal data."
+        },
+        {
+            "question": "Which Sri Lankan law addresses illegal access and hacking?",
+            "option_a": "A. RTI Act",
+            "option_b": "B. Electronic Transactions Act",
+            "option_c": "C. Computer Crimes Act",
+            "option_d": "D. Environmental Protection Act",
+            "correct_answer": "C",
+            "explanation": "The Computer Crimes Act covers offenses such as hacking and illegal access."
+        },
+        {
+            "question": "Digital signatures are recognized under which Sri Lankan act?",
+            "option_a": "A. Computer Crimes Act",
+            "option_b": "B. Electronic Transactions Act",
+            "option_c": "C. RTI Act",
+            "option_d": "D. PDPA",
+            "correct_answer": "B",
+            "explanation": "The Electronic Transactions Act governs digital signatures."
+        },
+        {
+            "question": "Corporate accountability means companies must:",
+            "option_a": "A. Focus only on shareholder profits",
+            "option_b": "B. Answer for environmental, ethical, and social impacts",
+            "option_c": "C. Ignore sustainability reporting",
+            "option_d": "D. Avoid transparency",
+            "correct_answer": "B",
+            "explanation": "Corporate accountability includes responsibility for broader societal and environmental effects."
+        },
+        {
+            "question": "Which tool supports corporate accountability?",
+            "option_a": "A. Sustainability reports",
+            "option_b": "B. Anonymous hacking",
+            "option_c": "C. Data deletion without backup",
+            "option_d": "D. Software piracy",
+            "correct_answer": "A",
+            "explanation": "Sustainability reports help organizations demonstrate accountability."
+        },
+        {
+            "question": "A company develops an AI hiring system that consistently rejects applicants from certain ethnic groups. What is the MOST likely root cause?",
+            "option_a": "A. Excessive hardware recycling",
+            "option_b": "B. Biased training data or organizational culture",
+            "option_c": "C. Weak internet connectivity",
+            "option_d": "D. Insufficient cloud storage",
+            "correct_answer": "B",
+            "explanation": "Biased systems often arise from biased data and organizational cultures."
+        },
+        {
+            "question": "An organization collects biometric data from users without explicit consent. Which regulation is MOST directly violated?",
+            "option_a": "A. PDPA",
+            "option_b": "B. RTI Act",
+            "option_c": "C. Electronic Transactions Act",
+            "option_d": "D. Copyright law",
+            "correct_answer": "A",
+            "explanation": "PDPA requires consent for personal data collection."
+        },
+        {
+            "question": "A company upgrades employee smartphones every year despite devices functioning properly. Which sustainability issue does this MOST contribute to?",
+            "option_a": "A. Circular economy",
+            "option_b": "B. Reduced carbon footprint",
+            "option_c": "C. Rapid hardware obsolescence and e-waste",
+            "option_d": "D. Ethical transparency",
+            "correct_answer": "C",
+            "explanation": "Frequent upgrades increase electronic waste and resource consumption."
+        },
+        {
+            "question": "A cloud provider expands hyperscale data centers globally. What is the primary environmental concern?",
+            "option_a": "A. Reduced network latency",
+            "option_b": "B. Increased electricity usage and carbon emissions",
+            "option_c": "C. Improved accessibility",
+            "option_d": "D. Better software maintenance",
+            "correct_answer": "B",
+            "explanation": "Large data centers consume massive amounts of electricity."
+        },
+        {
+            "question": "Which action BEST demonstrates psychological safety in an IT workplace?",
+            "option_a": "A. Punishing employees for reporting bugs",
+            "option_b": "B. Encouraging open discussion and respect",
+            "option_c": "C. Preventing junior staff from speaking",
+            "option_d": "D. Ignoring ethical concerns",
+            "correct_answer": "B",
+            "explanation": "Psychological safety involves openness, fairness, and respect."
+        },
+        {
+            "question": "A software engineer discovers a serious privacy flaw but hides it to protect company reputation. Which professional responsibility is violated MOST directly?",
+            "option_a": "A. Transparency and avoiding harm",
+            "option_b": "B. Hardware optimization",
+            "option_c": "C. Market competitiveness",
+            "option_d": "D. Circular economy principles",
+            "correct_answer": "A",
+            "explanation": "Ethical professionals must avoid harm and remain transparent."
+        },
+        {
+            "question": "Which practice BEST aligns with a circular economy model?",
+            "option_a": "A. Discarding devices after minor faults",
+            "option_b": "B. Repairing and refurbishing electronics",
+            "option_c": "C. Increasing mining activities",
+            "option_d": "D. Encouraging yearly device replacement",
+            "correct_answer": "B",
+            "explanation": "Circular economy principles emphasize repair and reuse."
+        },
+        {
+            "question": "A social media platform intentionally designs addictive scrolling mechanisms to maximize engagement. Which ethical issue is MOST relevant?",
+            "option_a": "A. Psychological manipulation",
+            "option_b": "B. Green computing",
+            "option_c": "C. Database normalization",
+            "option_d": "D. Encryption failure",
+            "correct_answer": "A",
+            "explanation": "Manipulative engagement techniques raise ethical concerns about user wellbeing."
+        },
+        {
+            "question": "Which responsibility toward society should guide IT professionals?",
+            "option_a": "A. Maximizing surveillance",
+            "option_b": "B. Ensuring technology contributes to fairness and social good",
+            "option_c": "C. Prioritizing automation over people",
+            "option_d": "D. Ignoring sustainability concerns",
+            "correct_answer": "B",
+            "explanation": "Technology should positively contribute to society and fairness."
+        },
+        {
+            "question": "Why is software inefficiency considered a sustainability problem?",
+            "option_a": "A. It reduces internet usage",
+            "option_b": "B. It increases energy consumption",
+            "option_c": "C. It prevents cloud adoption",
+            "option_d": "D. It eliminates cybersecurity threats",
+            "correct_answer": "B",
+            "explanation": "Inefficient software consumes more computing resources and electricity."
+        },
+        {
+            "question": "A Sri Lankan bank deploys AI-based employee screening without fairness testing. Which ethical principle is MOST at risk?",
+            "option_a": "A. Inclusion and fairness",
+            "option_b": "B. File compression",
+            "option_c": "C. Hardware redundancy",
+            "option_d": "D. Data caching",
+            "correct_answer": "A",
+            "explanation": "AI systems without fairness checks may discriminate unfairly."
+        },
+        {
+            "question": "What is the purpose of whistleblower protection in organizations?",
+            "option_a": "A. To encourage illegal hacking",
+            "option_b": "B. To support reporting unethical behavior safely",
+            "option_c": "C. To increase employee surveillance",
+            "option_d": "D. To reduce transparency",
+            "correct_answer": "B",
+            "explanation": "Whistleblower protection allows ethical concerns to be reported safely."
+        },
+        {
+            "question": "Which statement BEST reflects ethical technology design?",
+            "option_a": "A. User privacy is optional if profits increase",
+            "option_b": "B. Underrepresented voices should be considered in decision-making",
+            "option_c": "C. Ethical concerns only matter after deployment",
+            "option_d": "D. Fairness reduces software quality",
+            "correct_answer": "B",
+            "explanation": "Inclusive decision-making helps create fairer systems."
+        },
+        {
+            "question": "A company publishes yearly sustainability audits and third-party reviews. What principle is being demonstrated?",
+            "option_a": "A. Corporate accountability",
+            "option_b": "B. Planned obsolescence",
+            "option_c": "C. Data exploitation",
+            "option_d": "D. Software piracy",
+            "correct_answer": "A",
+            "explanation": "Audits and reviews help organizations remain accountable."
+        },
+        {
+            "question": "Which scenario BEST demonstrates ethical conflict in computing?",
+            "option_a": "A. Improving battery efficiency",
+            "option_b": "B. Balancing national security surveillance with user privacy",
+            "option_c": "C. Compressing image files",
+            "option_d": "D. Increasing RAM capacity",
+            "correct_answer": "B",
+            "explanation": "Ethical dilemmas often involve balancing competing benefits and risks."
+        },
+        {
+            "question": "Why are underrepresented voices important in technology decision-making?",
+            "option_a": "A. They reduce software performance",
+            "option_b": "B. They help improve fairness and social equity",
+            "option_c": "C. They eliminate cybersecurity threats",
+            "option_d": "D. They reduce internet availability",
+            "correct_answer": "B",
+            "explanation": "Considering diverse perspectives helps prevent discrimination and exclusion."
+        },
+        {
+            "question": "A government agency leaks citizen data due to weak security controls. Which ethical responsibility failed MOST clearly?",
+            "option_a": "A. Respecting privacy and confidentiality",
+            "option_b": "B. Hardware standardization",
+            "option_c": "C. Device virtualization",
+            "option_d": "D. Software monetization",
+            "correct_answer": "A",
+            "explanation": "Organizations must protect personal information responsibly."
+        },
+        {
+            "question": "Which practice would MOST effectively reduce IT-related carbon emissions?",
+            "option_a": "A. Increasing unnecessary software computations",
+            "option_b": "B. Designing energy-efficient systems",
+            "option_c": "C. Encouraging faster device replacement",
+            "option_d": "D. Expanding cryptocurrency mining operations",
+            "correct_answer": "B",
+            "explanation": "Energy-efficient systems reduce electricity usage and emissions."
+        },
+        {
+            "question": "A company chooses transparency by informing users about how their data is processed. Which regulation principle does this align with?",
+            "option_a": "A. GDPR transparency requirements",
+            "option_b": "B. Computer Crimes Act penalties",
+            "option_c": "C. Cryptocurrency decentralization",
+            "option_d": "D. Hardware virtualization",
+            "correct_answer": "A",
+            "explanation": "GDPR emphasizes transparency regarding personal data usage."
+        },
+        {
+            "question": "Which of the following BEST illustrates social impact caused by computing technologies?",
+            "option_a": "A. Automation changing employment patterns",
+            "option_b": "B. Increased keyboard manufacturing",
+            "option_c": "C. Reduced transistor sizes",
+            "option_d": "D. Faster cooling fans",
+            "correct_answer": "A",
+            "explanation": "Automation significantly affects employment and society."
+        }
+    ]
+}

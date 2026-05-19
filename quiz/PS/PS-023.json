@@ -1,0 +1,472 @@
+{
+    "questions": [
+        {
+            "question": "What is intellectual property (IP)?",
+            "option_a": "A. Any physical property owned by a company",
+            "option_b": "B. Any intangible asset consisting of human knowledge and ideas",
+            "option_c": "C. Only patented inventions",
+            "option_d": "D. Government-owned digital information",
+            "correct_answer": "B",
+            "explanation": "Intellectual property refers to intangible assets created through human intellect such as inventions, software, trademarks, and copyrights."
+        },
+        {
+            "question": "Which of the following is NOT considered a form of intellectual property?",
+            "option_a": "A. Patent",
+            "option_b": "B. Trademark",
+            "option_c": "C. Copyright",
+            "option_d": "D. Electricity bill",
+            "correct_answer": "D",
+            "explanation": "Patents, trademarks, and copyrights are recognized forms of IP, while an electricity bill is not."
+        },
+        {
+            "question": "The primary intent of intellectual property laws is to:",
+            "option_a": "A. Eliminate software development",
+            "option_b": "B. Encourage ingenuity and protect creative ventures",
+            "option_c": "C. Restrict technological innovation permanently",
+            "option_d": "D. Prevent all sharing of information",
+            "correct_answer": "B",
+            "explanation": "IP laws are designed to encourage innovation while protecting creators’ rights."
+        },
+        {
+            "question": "Which unethical behavior directly violates ethical IT practice?",
+            "option_a": "A. Properly citing open-source software",
+            "option_b": "B. Obtaining software licenses legally",
+            "option_c": "C. Unauthorized code reuse",
+            "option_d": "D. Reporting software vulnerabilities responsibly",
+            "correct_answer": "C",
+            "explanation": "Unauthorized code reuse violates ethical and legal principles related to IP."
+        },
+        {
+            "question": "Why are internally generated intellectual assets difficult to recognize on a balance sheet?",
+            "option_a": "A. They are illegal",
+            "option_b": "B. They cannot be stored digitally",
+            "option_c": "C. Their value is difficult to objectively determine",
+            "option_d": "D. Governments prohibit their valuation",
+            "correct_answer": "C",
+            "explanation": "Internally generated IP assets are difficult to value objectively, making accounting treatment challenging."
+        },
+        {
+            "question": "Which type of IP protection is most suitable for protecting a company logo?",
+            "option_a": "A. Patent",
+            "option_b": "B. Trademark",
+            "option_c": "C. Copyright",
+            "option_d": "D. Trade secret",
+            "correct_answer": "B",
+            "explanation": "Trademarks protect names, symbols, and marks used to distinguish products or services."
+        },
+        {
+            "question": "What does copyright primarily protect?",
+            "option_a": "A. Ideas themselves",
+            "option_b": "B. Expression of ideas in a tangible medium",
+            "option_c": "C. Business strategies",
+            "option_d": "D. Trade negotiations",
+            "correct_answer": "B",
+            "explanation": "Copyright protects the expression of ideas rather than the ideas themselves."
+        },
+        {
+            "question": "Which statement about trade secrets is TRUE?",
+            "option_a": "A. They require public disclosure",
+            "option_b": "B. They have a fixed protection period",
+            "option_c": "C. They protect confidential valuable information",
+            "option_d": "D. They cannot protect software algorithms",
+            "correct_answer": "C",
+            "explanation": "Trade secrets protect confidential information that provides economic value due to secrecy."
+        },
+        {
+            "question": "Which of the following is an example of software piracy?",
+            "option_a": "A. Purchasing licensed software",
+            "option_b": "B. Sharing one licensed copy with multiple unauthorized users",
+            "option_c": "C. Using open-source software legally",
+            "option_d": "D. Backing up personal data",
+            "correct_answer": "B",
+            "explanation": "Sharing a licensed copy beyond authorized usage terms constitutes software piracy."
+        },
+        {
+            "question": "Soft-lifting refers to:",
+            "option_a": "A. Downloading software from official stores",
+            "option_b": "B. Installing licensed software on multiple machines beyond license terms",
+            "option_c": "C. Reverse engineering software",
+            "option_d": "D. Creating open-source applications",
+            "correct_answer": "B",
+            "explanation": "Soft-lifting involves using one licensed copy of software on multiple computers illegally."
+        },
+        {
+            "question": "Client-server overuse occurs when:",
+            "option_a": "A. Servers crash due to power failures",
+            "option_b": "B. More users access software than the license permits",
+            "option_c": "C. Software is distributed freely online",
+            "option_d": "D. Software is sold with hardware",
+            "correct_answer": "B",
+            "explanation": "Client-server overuse violates licensing agreements by exceeding permitted users."
+        },
+        {
+            "question": "Which software piracy type involves selling computers with illegal software pre-installed?",
+            "option_a": "A. Internet piracy",
+            "option_b": "B. Soft-lifting",
+            "option_c": "C. Hard-disk loading",
+            "option_d": "D. Counterfeiting",
+            "correct_answer": "C",
+            "explanation": "Hard-disk loading occurs when unauthorized software is installed on computers before sale."
+        },
+        {
+            "question": "Which statement best describes fair use?",
+            "option_a": "A. Unlimited copying for personal gain",
+            "option_b": "B. Limited use of copyrighted material without permission under certain conditions",
+            "option_c": "C. Permanent ownership transfer of copyrighted material",
+            "option_d": "D. Illegal reproduction of digital media",
+            "correct_answer": "B",
+            "explanation": "Fair use permits limited use of copyrighted works under specific legal conditions."
+        },
+        {
+            "question": "Which factor is considered in determining fair use?",
+            "option_a": "A. Weather conditions",
+            "option_b": "B. Number of company employees",
+            "option_c": "C. Effect on the market value of the original work",
+            "option_d": "D. CPU speed",
+            "correct_answer": "C",
+            "explanation": "One fair use factor evaluates whether the use negatively affects the market for the original work."
+        },
+        {
+            "question": "What is a major characteristic of open-source software?",
+            "option_a": "A. Source code is hidden",
+            "option_b": "B. Users cannot modify the software",
+            "option_c": "C. Source code is freely available for examination and improvement",
+            "option_d": "D. It is always commercial software",
+            "correct_answer": "C",
+            "explanation": "Open-source software allows users to study, modify, and improve source code."
+        },
+        {
+            "question": "Which is an example of open-source software mentioned in the lecture?",
+            "option_a": "A. Microsoft Word",
+            "option_b": "B. Linux OS",
+            "option_c": "C. Adobe Photoshop",
+            "option_d": "D. Oracle Database Enterprise Edition",
+            "correct_answer": "B",
+            "explanation": "Linux OS is a widely known open-source operating system."
+        },
+        {
+            "question": "A trademark protects against:",
+            "option_a": "A. Data corruption",
+            "option_b": "B. Independent creation of software",
+            "option_c": "C. Confusion and dilution of brand identity",
+            "option_d": "D. Unauthorized reverse engineering",
+            "correct_answer": "C",
+            "explanation": "Trademarks protect brands from confusion and misuse by others."
+        },
+        {
+            "question": "What is the renewable term duration for trademarks mentioned in the lecture?",
+            "option_a": "A. 5 years",
+            "option_b": "B. 10 years",
+            "option_c": "C. 20 years",
+            "option_d": "D. Lifetime only",
+            "correct_answer": "B",
+            "explanation": "Trademark protection is renewable every 10 years with no upper limit."
+        },
+        {
+            "question": "Which requirement must be satisfied for copyright protection?",
+            "option_a": "A. Government approval only",
+            "option_b": "B. Registration in every country",
+            "option_c": "C. Original work fixed in tangible form",
+            "option_d": "D. Commercial publication",
+            "correct_answer": "C",
+            "explanation": "Copyright applies to original works fixed in a tangible medium."
+        },
+        {
+            "question": "Proprietary software is generally:",
+            "option_a": "A. Publicly owned",
+            "option_b": "B. Licensed rather than sold",
+            "option_c": "C. Always open-source",
+            "option_d": "D. Illegal to distribute",
+            "correct_answer": "B",
+            "explanation": "Users receive a license to use proprietary software while ownership remains with the publisher."
+        },
+        {
+            "question": "Reverse engineering in software commonly involves:",
+            "option_a": "A. Database indexing",
+            "option_b": "B. Source code encryption",
+            "option_c": "C. Decompilation of object code",
+            "option_d": "D. Cloud migration",
+            "correct_answer": "C",
+            "explanation": "Reverse engineering often involves converting object code back into source code."
+        },
+        {
+            "question": "Under certain conditions, reverse engineering may be permitted for:",
+            "option_a": "A. Tax evasion",
+            "option_b": "B. Interoperability purposes",
+            "option_c": "C. Selling pirated software",
+            "option_d": "D. Bypassing all copyright laws",
+            "correct_answer": "B",
+            "explanation": "Some legal systems permit reverse engineering to achieve interoperability."
+        },
+        {
+            "question": "Which of the following is required for trade secret protection?",
+            "option_a": "A. Mandatory public disclosure",
+            "option_b": "B. No economic value",
+            "option_c": "C. Reasonable efforts to maintain secrecy",
+            "option_d": "D. Annual government renewal",
+            "correct_answer": "C",
+            "explanation": "Trade secret protection requires organizations to actively maintain secrecy."
+        },
+        {
+            "question": "Which risk category includes AI bias and unfair algorithms?",
+            "option_a": "A. Operational risk",
+            "option_b": "B. Ethical risk",
+            "option_c": "C. Physical risk",
+            "option_d": "D. Environmental risk",
+            "correct_answer": "B",
+            "explanation": "AI bias and unfair algorithms are classified as ethical risks."
+        },
+        {
+            "question": "What is the correct order of the risk management process?",
+            "option_a": "A. Identify, Analyse, Mitigate, Monitor",
+            "option_b": "B. Monitor, Identify, Eliminate, Ignore",
+            "option_c": "C. Analyse, Ignore, Mitigate, Sell",
+            "option_d": "D. Mitigate, Monitor, Analyse, Forget",
+            "correct_answer": "A",
+            "explanation": "The standard process is identifying, analyzing, mitigating, and monitoring risks."
+        },
+        {
+            "question": "Which Sri Lankan issue was identified as a cybersecurity concern?",
+            "option_a": "A. Excessive open-source adoption",
+            "option_b": "B. Poor cybersecurity literacy",
+            "option_c": "C. Too many patents",
+            "option_d": "D. Lack of internet connectivity",
+            "correct_answer": "B",
+            "explanation": "Poor cybersecurity literacy was identified as a key risk factor."
+        },
+        {
+            "question": "The Apple vs Samsung case study primarily demonstrates:",
+            "option_a": "A. Importance of protecting innovation",
+            "option_b": "B. Benefits of software piracy",
+            "option_c": "C. Elimination of trademarks",
+            "option_d": "D. Risks of cloud computing",
+            "correct_answer": "A",
+            "explanation": "The case highlights the importance of patent and IP protection."
+        },
+        {
+            "question": "Why is widespread software piracy ethically problematic?",
+            "option_a": "A. It improves innovation incentives",
+            "option_b": "B. It guarantees better software quality",
+            "option_c": "C. It is unfair to creators and may introduce malware risks",
+            "option_d": "D. It eliminates operational risks",
+            "correct_answer": "C",
+            "explanation": "Piracy harms creators financially and often exposes users to malware."
+        },
+        {
+            "question": "A company uses AI credit scoring that unfairly disadvantages certain ethnic groups. Which risk category is MOST relevant?",
+            "option_a": "A. Ethical risk",
+            "option_b": "B. Hardware risk",
+            "option_c": "C. Thermal risk",
+            "option_d": "D. Licensing risk",
+            "correct_answer": "A",
+            "explanation": "Bias in AI decision-making systems represents an ethical risk."
+        },
+        {
+            "question": "An employee leaks confidential source code that the company kept secret for years. Which form of IP protection is MOST affected?",
+            "option_a": "A. Trademark",
+            "option_b": "B. Copyright",
+            "option_c": "C. Trade secret",
+            "option_d": "D. Patent",
+            "correct_answer": "C",
+            "explanation": "Trade secrets rely on maintaining confidentiality to retain protection."
+        },
+        {
+            "question": "Which statement best distinguishes patents from trade secrets?",
+            "option_a": "A. Patents require secrecy forever",
+            "option_b": "B. Trade secrets require public disclosure",
+            "option_c": "C. Patents provide protection after public disclosure",
+            "option_d": "D. Trade secrets have mandatory expiration dates",
+            "correct_answer": "C",
+            "explanation": "Patents grant legal protection in exchange for public disclosure of inventions."
+        },
+        {
+            "question": "A startup publishes another company's proprietary source code online without permission. Which violation is MOST directly involved?",
+            "option_a": "A. Copyright infringement",
+            "option_b": "B. Fair use",
+            "option_c": "C. Ethical compliance",
+            "option_d": "D. Trademark renewal",
+            "correct_answer": "A",
+            "explanation": "Unauthorized reproduction and distribution of copyrighted code is copyright infringement."
+        },
+        {
+            "question": "Why do organizations license intellectual property?",
+            "option_a": "A. To permanently lose ownership",
+            "option_b": "B. To establish legal transfer and generate income",
+            "option_c": "C. To avoid innovation",
+            "option_d": "D. To remove all restrictions on usage",
+            "correct_answer": "B",
+            "explanation": "Licensing allows owners to retain ownership while permitting controlled use and revenue generation."
+        },
+        {
+            "question": "Internet piracy refers to:",
+            "option_a": "A. Purchasing software legally online",
+            "option_b": "B. Downloading software outside official distribution channels",
+            "option_c": "C. Using cloud storage services",
+            "option_d": "D. Registering trademarks online",
+            "correct_answer": "B",
+            "explanation": "Internet piracy involves downloading software from unauthorized sources."
+        },
+        {
+            "question": "What is the major ethical concern with cracked software in Sri Lanka?",
+            "option_a": "A. Reduced CPU performance",
+            "option_b": "B. Increased electricity consumption",
+            "option_c": "C. Unfairness and malware exposure",
+            "option_d": "D. Better interoperability",
+            "correct_answer": "C",
+            "explanation": "Cracked software is unethical and frequently carries malware risks."
+        },
+        {
+            "question": "Which fair use factor examines whether usage is commercial or educational?",
+            "option_a": "A. Nature of the copyrighted work",
+            "option_b": "B. Amount used",
+            "option_c": "C. Purpose and character of use",
+            "option_d": "D. Market geography",
+            "correct_answer": "C",
+            "explanation": "The purpose and character of use evaluate whether the use is commercial or educational."
+        },
+        {
+            "question": "A developer modifies Linux source code and redistributes improvements legally. Which concept allows this?",
+            "option_a": "A. Trade secret law",
+            "option_b": "B. Open-source software principles",
+            "option_c": "C. Software counterfeiting",
+            "option_d": "D. Hard-disk loading",
+            "correct_answer": "B",
+            "explanation": "Open-source licensing allows modification and redistribution under defined terms."
+        },
+        {
+            "question": "What is a major benefit of open-source software mentioned in the lecture?",
+            "option_a": "A. Hidden source code",
+            "option_b": "B. Elimination of innovation",
+            "option_c": "C. Faster improvement and version releases",
+            "option_d": "D. Prevention of collaboration",
+            "correct_answer": "C",
+            "explanation": "Open-source ecosystems encourage rapid improvements and frequent updates."
+        },
+        {
+            "question": "Which IP protection specifically prevents confusion between products?",
+            "option_a": "A. Patent",
+            "option_b": "B. Trade secret",
+            "option_c": "C. Trademark",
+            "option_d": "D. Fair use",
+            "correct_answer": "C",
+            "explanation": "Trademarks distinguish products and prevent consumer confusion."
+        },
+        {
+            "question": "Which statement about proprietary licenses is MOST accurate?",
+            "option_a": "A. Users own the software completely after purchase",
+            "option_b": "B. End-users receive limited rights to use software",
+            "option_c": "C. Proprietary software must always be free",
+            "option_d": "D. Licenses are unnecessary for software usage",
+            "correct_answer": "B",
+            "explanation": "Proprietary licenses grant restricted usage rights while ownership remains with the publisher."
+        },
+        {
+            "question": "A company decompiles software solely to create compatibility with another system. Which concept is MOST relevant?",
+            "option_a": "A. Fair use",
+            "option_b": "B. Interoperability exception",
+            "option_c": "C. Trademark dilution",
+            "option_d": "D. Hard-disk loading",
+            "correct_answer": "B",
+            "explanation": "Some laws permit reverse engineering when necessary for interoperability."
+        },
+        {
+            "question": "Which action would MOST weaken trade secret protection?",
+            "option_a": "A. Restricting employee access",
+            "option_b": "B. Signing NDAs",
+            "option_c": "C. Publicly posting confidential algorithms online",
+            "option_d": "D. Encrypting sensitive files",
+            "correct_answer": "C",
+            "explanation": "Public disclosure destroys secrecy, eliminating trade secret protection."
+        },
+        {
+            "question": "A company fears privacy breaches caused by its mobile application. Which area does this concern belong to?",
+            "option_a": "A. Harm and consequence awareness",
+            "option_b": "B. Trademark enforcement",
+            "option_c": "C. Patent filing",
+            "option_d": "D. Software counterfeiting",
+            "correct_answer": "A",
+            "explanation": "Privacy breaches are part of understanding digital harm and consequences."
+        },
+        {
+            "question": "Which type of risk involves failures in daily organizational processes?",
+            "option_a": "A. Ethical risk",
+            "option_b": "B. Operational risk",
+            "option_c": "C. Trademark risk",
+            "option_d": "D. Geological risk",
+            "correct_answer": "B",
+            "explanation": "Operational risks arise from failures in processes, systems, or operations."
+        },
+        {
+            "question": "What is the main purpose of monitoring in risk management?",
+            "option_a": "A. Ignoring threats",
+            "option_b": "B. Tracking risks continuously after mitigation",
+            "option_c": "C. Deleting risk reports",
+            "option_d": "D. Eliminating all software",
+            "correct_answer": "B",
+            "explanation": "Monitoring ensures risks remain controlled over time."
+        },
+        {
+            "question": "Why might startups be particularly vulnerable to cybersecurity risks?",
+            "option_a": "A. They never use software",
+            "option_b": "B. They often lack mature security infrastructure",
+            "option_c": "C. They are exempt from cyberattacks",
+            "option_d": "D. They cannot own IP",
+            "correct_answer": "B",
+            "explanation": "Startups commonly lack resources and mature cybersecurity defenses."
+        },
+        {
+            "question": "What lesson is emphasized by whistleblowing case studies in startups?",
+            "option_a": "A. Reporting unsafe practices should be discouraged",
+            "option_b": "B. Supportive environments are important for ethical reporting",
+            "option_c": "C. Trade secrets should always be leaked publicly",
+            "option_d": "D. Software piracy should be ignored",
+            "correct_answer": "B",
+            "explanation": "Organizations should encourage ethical reporting and protect whistleblowers."
+        },
+        {
+            "question": "Which scenario BEST represents fair use?",
+            "option_a": "A. Uploading an entire paid textbook online",
+            "option_b": "B. Using a short copyrighted excerpt for classroom criticism",
+            "option_c": "C. Selling pirated movies commercially",
+            "option_d": "D. Copying enterprise software for a corporation",
+            "correct_answer": "B",
+            "explanation": "Educational criticism using limited excerpts may qualify as fair use."
+        },
+        {
+            "question": "A software company wants indefinite protection without revealing implementation details publicly. Which IP strategy is MOST suitable?",
+            "option_a": "A. Patent",
+            "option_b": "B. Trade secret",
+            "option_c": "C. Trademark",
+            "option_d": "D. Fair use",
+            "correct_answer": "B",
+            "explanation": "Trade secrets can last indefinitely if secrecy is maintained."
+        },
+        {
+            "question": "Why can software piracy reduce innovation incentives?",
+            "option_a": "A. Developers lose potential revenue",
+            "option_b": "B. Piracy improves legal protections",
+            "option_c": "C. Piracy guarantees market fairness",
+            "option_d": "D. Piracy increases software testing",
+            "correct_answer": "A",
+            "explanation": "Revenue loss discourages investment in future innovation."
+        },
+        {
+            "question": "A company copies another firm's logo with slight modifications to confuse customers. Which issue is MOST relevant?",
+            "option_a": "A. Trade secret misappropriation",
+            "option_b": "B. Trademark infringement",
+            "option_c": "C. Fair use",
+            "option_d": "D. Reverse engineering",
+            "correct_answer": "B",
+            "explanation": "Using confusingly similar branding may violate trademark protections."
+        },
+        {
+            "question": "Which statement BEST explains why innovation should be socially responsible?",
+            "option_a": "A. Technology can create unintended societal harm",
+            "option_b": "B. Innovation should always maximize profit only",
+            "option_c": "C. Ethics slows technological progress",
+            "option_d": "D. Legal systems forbid innovation",
+            "correct_answer": "A",
+            "explanation": "Responsible innovation considers societal and ethical consequences."
+        }
+    ]
+}

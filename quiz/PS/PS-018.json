@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "According to sociology and political science perspectives, what is power?",
+            "option_a": "A. The legal authority granted to a manager",
+            "option_b": "B. The ability to influence another person despite resistance",
+            "option_c": "C. The process of rewarding employees",
+            "option_d": "D. The formal organizational hierarchy",
+            "correct_answer": "B",
+            "explanation": "Max Weber defined power as the probability that one actor can carry out their will despite resistance."
+        },
+        {
+            "question": "Which statement best distinguishes authority from power?",
+            "option_a": "A. Authority is informal while power is always formal",
+            "option_b": "B. Power requires permission while authority does not",
+            "option_c": "C. Authority is the right to influence, while power is the ability to influence",
+            "option_d": "D. Power only exists in politics while authority exists in organizations",
+            "correct_answer": "C",
+            "explanation": "Authority refers to the legitimate right to influence, whereas power refers to the actual ability to influence others."
+        },
+        {
+            "question": "Who introduced the five bases of power theory in 1959?",
+            "option_a": "A. Max Weber and Dale Carnegie",
+            "option_b": "B. Stanley Milgram and Stephen Robbins",
+            "option_c": "C. John R. P. French and Bertram Raven",
+            "option_d": "D. Mahesh Amalean and Dian Gomes",
+            "correct_answer": "C",
+            "explanation": "French and Raven developed the five bases of power through theoretical and empirical research."
+        },
+        {
+            "question": "Which type of power is based on an individual's expertise or specialized knowledge?",
+            "option_a": "A. Coercive Power",
+            "option_b": "B. Legitimate Power",
+            "option_c": "C. Referent Power",
+            "option_d": "D. Expert Power",
+            "correct_answer": "D",
+            "explanation": "Expert power arises when a person possesses valuable knowledge or skills needed by others."
+        },
+        {
+            "question": "A supervisor threatens disciplinary action if safety protocols are violated. Which type of power is being used?",
+            "option_a": "A. Reward Power",
+            "option_b": "B. Coercive Power",
+            "option_c": "C. Referent Power",
+            "option_d": "D. Expert Power",
+            "correct_answer": "B",
+            "explanation": "Coercive power involves the ability to impose punishments or unpleasant consequences."
+        },
+        {
+            "question": "Which power base depends heavily on admiration, charisma, and interpersonal attraction?",
+            "option_a": "A. Legitimate Power",
+            "option_b": "B. Expert Power",
+            "option_c": "C. Referent Power",
+            "option_d": "D. Reward Power",
+            "correct_answer": "C",
+            "explanation": "Referent power comes from personal appeal, admiration, and trust."
+        },
+        {
+            "question": "In the Milgram experiments, participants primarily obeyed because of:",
+            "option_a": "A. Referent Power",
+            "option_b": "B. Expert Power",
+            "option_c": "C. Formal authority",
+            "option_d": "D. Organizational culture",
+            "correct_answer": "C",
+            "explanation": "Milgram's experiments demonstrated how people obey formal authority figures even in uncomfortable situations."
+        },
+        {
+            "question": "Which of the following is an example of reward power?",
+            "option_a": "A. A manager assigning overtime as punishment",
+            "option_b": "B. A team leader admired for charisma",
+            "option_c": "C. A supervisor granting bonuses for excellent performance",
+            "option_d": "D. A technician solving complex system failures",
+            "correct_answer": "C",
+            "explanation": "Reward power is based on controlling rewards desired by others."
+        },
+        {
+            "question": "Why is legitimate power generally accepted by employees?",
+            "option_a": "A. Employees fear punishment",
+            "option_b": "B. Employees admire the leader personally",
+            "option_c": "C. Employees recognize the leader's formal position",
+            "option_d": "D. Employees expect financial rewards",
+            "correct_answer": "C",
+            "explanation": "Legitimate power exists because individuals accept the authority associated with a formal role."
+        },
+        {
+            "question": "Which statement about charismatic power is TRUE?",
+            "option_a": "A. It is always permanent",
+            "option_b": "B. Timing and public perception strongly influence it",
+            "option_c": "C. It only exists in politics",
+            "option_d": "D. It depends entirely on formal titles",
+            "correct_answer": "B",
+            "explanation": "The lecture emphasized that referent or charismatic power is highly dependent on timing and public appeal."
+        },
+        {
+            "question": "A software architect influences a project team because nobody else understands the cloud infrastructure. Which power type is dominant?",
+            "option_a": "A. Reward Power",
+            "option_b": "B. Legitimate Power",
+            "option_c": "C. Expert Power",
+            "option_d": "D. Coercive Power",
+            "correct_answer": "C",
+            "explanation": "The architect possesses specialized expertise that others depend upon."
+        },
+        {
+            "question": "What is political behavior in organizations according to Stephen P. Robbins?",
+            "option_a": "A. Legally approved managerial activities",
+            "option_b": "B. Actions officially sanctioned by management",
+            "option_c": "C. Informal actions used to influence others for personal goals",
+            "option_d": "D. Government interventions in business operations",
+            "correct_answer": "C",
+            "explanation": "Political behavior refers to unofficial actions taken to influence others and achieve personal objectives."
+        },
+        {
+            "question": "Which political strategy involves gaining influence by controlling critical information?",
+            "option_a": "A. Building personal stature",
+            "option_b": "B. Restricting communication",
+            "option_c": "C. Controlling access to information and persons",
+            "option_d": "D. Forming a winning coalition",
+            "correct_answer": "C",
+            "explanation": "Control over information and access creates dependency and influence."
+        },
+        {
+            "question": "The MAS Holdings 'Voice of the Employee' program is an example of:",
+            "option_a": "A. Neutralizing opposition",
+            "option_b": "B. Committing the uncommitted",
+            "option_c": "C. Restricting communication",
+            "option_d": "D. Strategic replacement",
+            "correct_answer": "B",
+            "explanation": "The program engaged previously disengaged employees and increased commitment."
+        },
+        {
+            "question": "Which characteristic is MOST associated with organizational culture?",
+            "option_a": "A. Stock market performance",
+            "option_b": "B. External political alliances",
+            "option_c": "C. Shared assumptions and norms",
+            "option_d": "D. Employee salaries",
+            "correct_answer": "C",
+            "explanation": "Organizational culture consists of shared assumptions, values, norms, and behaviors."
+        },
+        {
+            "question": "What is the primary consequence of expert power?",
+            "option_a": "A. Resistance",
+            "option_b": "B. Compliance only",
+            "option_c": "C. Commitment from followers",
+            "option_d": "D. Fear among employees",
+            "correct_answer": "C",
+            "explanation": "Expert power often produces commitment because followers trust the expertise of the leader."
+        },
+        {
+            "question": "Which organizational culture characteristic refers to expected standards of behavior?",
+            "option_a": "A. Norms",
+            "option_b": "B. Organizational climate",
+            "option_c": "C. Philosophy",
+            "option_d": "D. Rules",
+            "correct_answer": "A",
+            "explanation": "Norms are guidelines regarding expected behavior and performance."
+        },
+        {
+            "question": "A politician forms alliances with multiple opposing groups to defeat a common rival. Which strategy is demonstrated?",
+            "option_a": "A. Strategic replacement",
+            "option_b": "B. Forming a winning coalition",
+            "option_c": "C. Restricting communication",
+            "option_d": "D. Neutralizing opposition",
+            "correct_answer": "B",
+            "explanation": "Forming a winning coalition involves uniting different groups toward a shared objective."
+        },
+        {
+            "question": "Which type of power is MOST likely to create resistance rather than commitment?",
+            "option_a": "A. Expert Power",
+            "option_b": "B. Referent Power",
+            "option_c": "C. Coercive Power",
+            "option_d": "D. Legitimate Power",
+            "correct_answer": "C",
+            "explanation": "Coercive power often generates resistance because it relies on fear and punishment."
+        },
+        {
+            "question": "What is organizational climate?",
+            "option_a": "A. The financial environment of a company",
+            "option_b": "B. The way members interact with customers and outsiders",
+            "option_c": "C. Government policies affecting organizations",
+            "option_d": "D. The technical infrastructure of the organization",
+            "correct_answer": "B",
+            "explanation": "Organizational climate refers to interaction patterns and behavioral atmosphere."
+        },
+        {
+            "question": "A project manager delays sharing information with competitors inside the company until approval is secured. Which political strategy is this?",
+            "option_a": "A. Promoting limited communication",
+            "option_b": "B. Building personal stature",
+            "option_c": "C. Rewarding compliance",
+            "option_d": "D. Developing expertise",
+            "correct_answer": "A",
+            "explanation": "Promoting limited communication can preserve strategic advantage and control."
+        },
+        {
+            "question": "Which of the following best represents referent power?",
+            "option_a": "A. A CEO increasing salaries",
+            "option_b": "B. An admired mentor inspiring employees through personality",
+            "option_c": "C. A judge issuing penalties",
+            "option_d": "D. A technician fixing server failures",
+            "correct_answer": "B",
+            "explanation": "Referent power depends on admiration and personal attraction."
+        },
+        {
+            "question": "Why can expert power sometimes exceed legitimate power?",
+            "option_a": "A. Expertise creates dependency regardless of hierarchy",
+            "option_b": "B. Expert power is always legally protected",
+            "option_c": "C. Expert power includes financial authority",
+            "option_d": "D. Expertise guarantees promotions",
+            "correct_answer": "A",
+            "explanation": "People often depend more on specialized knowledge than formal authority."
+        },
+        {
+            "question": "Which characteristic of organizational culture relates to beliefs about employee treatment?",
+            "option_a": "A. Philosophy",
+            "option_b": "B. Norms",
+            "option_c": "C. Climate",
+            "option_d": "D. Dominant values",
+            "correct_answer": "A",
+            "explanation": "Philosophy reflects organizational beliefs regarding employees and customers."
+        },
+        {
+            "question": "A charismatic celebrity enters politics and gains immediate public support despite lacking policy expertise. Which power base is strongest?",
+            "option_a": "A. Legitimate Power",
+            "option_b": "B. Coercive Power",
+            "option_c": "C. Expert Power",
+            "option_d": "D. Referent Power",
+            "correct_answer": "D",
+            "explanation": "Public admiration and charisma create referent power."
+        },
+        {
+            "question": "Which strategy involves making one's role difficult to replace?",
+            "option_a": "A. Making activities central and nonsubstitutable",
+            "option_b": "B. Withdrawing from disputes",
+            "option_c": "C. Strategic replacement",
+            "option_d": "D. Forming coalitions",
+            "correct_answer": "A",
+            "explanation": "Being central and difficult to substitute increases organizational power."
+        },
+        {
+            "question": "An employee complies with orders only because they fear losing their job. Which outcome of power is MOST evident?",
+            "option_a": "A. Commitment",
+            "option_b": "B. Resistance",
+            "option_c": "C. Compliance",
+            "option_d": "D. Innovation",
+            "correct_answer": "C",
+            "explanation": "Compliance occurs when individuals obey without genuine commitment."
+        },
+        {
+            "question": "Which power type relies MOST on formal organizational structure?",
+            "option_a": "A. Legitimate Power",
+            "option_b": "B. Referent Power",
+            "option_c": "C. Expert Power",
+            "option_d": "D. Charismatic Power",
+            "correct_answer": "A",
+            "explanation": "Legitimate power comes directly from one's official position in the hierarchy."
+        },
+        {
+            "question": "A manager intentionally creates competition among ambitious subordinates. What is the likely political objective?",
+            "option_a": "A. Increasing employee satisfaction",
+            "option_b": "B. Strengthening the manager's control and influence",
+            "option_c": "C. Reducing organizational performance",
+            "option_d": "D. Eliminating expert power",
+            "correct_answer": "B",
+            "explanation": "Competition among subordinates can increase managerial influence and dependency."
+        },
+        {
+            "question": "Which organizational culture characteristic includes shared terminology and language?",
+            "option_a": "A. Philosophy",
+            "option_b": "B. Rules",
+            "option_c": "C. Observed behavioral regularities",
+            "option_d": "D. Climate",
+            "correct_answer": "C",
+            "explanation": "Observed behavioral regularities include common language and interaction patterns."
+        },
+        {
+            "question": "Which of the following is the BEST example of coercive power in a software company?",
+            "option_a": "A. A senior developer mentoring juniors",
+            "option_b": "B. A manager threatening demotion for missing deadlines",
+            "option_c": "C. A CEO inspiring workers with vision",
+            "option_d": "D. An architect recommending best practices",
+            "correct_answer": "B",
+            "explanation": "Threatening punishment or negative consequences reflects coercive power."
+        },
+        {
+            "question": "Why is timing important in charismatic power?",
+            "option_a": "A. Public admiration can decline over time",
+            "option_b": "B. Timing determines legal authority",
+            "option_c": "C. Expertise depends entirely on timing",
+            "option_d": "D. Coercive power disappears quickly",
+            "correct_answer": "A",
+            "explanation": "Charismatic influence often depends on current popularity and public perception."
+        },
+        {
+            "question": "A manager gains influence because employees believe she understands cybersecurity threats better than anyone else. Which type of power applies?",
+            "option_a": "A. Referent Power",
+            "option_b": "B. Expert Power",
+            "option_c": "C. Reward Power",
+            "option_d": "D. Legitimate Power",
+            "correct_answer": "B",
+            "explanation": "The manager's influence is based on specialized expertise."
+        },
+        {
+            "question": "Which political strategy involves using evidence to justify decisions?",
+            "option_a": "A. Building personal stature",
+            "option_b": "B. Employing trade-offs",
+            "option_c": "C. Using research data to support one's point of view",
+            "option_d": "D. Restricting communication",
+            "correct_answer": "C",
+            "explanation": "Research data can strengthen credibility and persuasion."
+        },
+        {
+            "question": "An organization encourages innovation, teamwork, and customer respect across all departments. These shared values form the organization's:",
+            "option_a": "A. Political structure",
+            "option_b": "B. Reward system",
+            "option_c": "C. Organizational culture",
+            "option_d": "D. Informal network",
+            "correct_answer": "C",
+            "explanation": "Shared assumptions and values collectively define organizational culture."
+        },
+        {
+            "question": "Which power base is LEAST dependent on formal hierarchy?",
+            "option_a": "A. Legitimate Power",
+            "option_b": "B. Expert Power",
+            "option_c": "C. Positional Power",
+            "option_d": "D. Administrative Power",
+            "correct_answer": "B",
+            "explanation": "Expert power depends on knowledge rather than formal position."
+        },
+        {
+            "question": "A company leader avoids petty conflicts to maintain strategic focus. Which political strategy is being used?",
+            "option_a": "A. Restricting communication",
+            "option_b": "B. Neutralizing opposition",
+            "option_c": "C. Withdrawing from petty disputes",
+            "option_d": "D. Stimulating competition",
+            "correct_answer": "C",
+            "explanation": "Avoiding unnecessary conflicts helps preserve influence and focus."
+        },
+        {
+            "question": "Which of the following would MOST likely increase employee commitment rather than simple compliance?",
+            "option_a": "A. Threatening salary cuts",
+            "option_b": "B. Public humiliation for mistakes",
+            "option_c": "C. Sharing expertise and involving employees in decisions",
+            "option_d": "D. Excessive monitoring",
+            "correct_answer": "C",
+            "explanation": "Participation and expertise encourage genuine commitment."
+        },
+        {
+            "question": "Why might coercive power damage organizational culture over time?",
+            "option_a": "A. Employees may become fearful and less innovative",
+            "option_b": "B. It always increases trust",
+            "option_c": "C. It strengthens collaboration automatically",
+            "option_d": "D. It removes all conflict",
+            "correct_answer": "A",
+            "explanation": "Fear-based environments can reduce trust, morale, and creativity."
+        },
+        {
+            "question": "A manager gains influence by mentoring a promising junior employee who later becomes a senior executive. Which strategy is this?",
+            "option_a": "A. Sponsor-protege relationship",
+            "option_b": "B. Strategic replacement",
+            "option_c": "C. Coalition formation",
+            "option_d": "D. Restricting communication",
+            "correct_answer": "A",
+            "explanation": "Sponsor-protege relationships help leaders extend influence through protégés."
+        },
+        {
+            "question": "Which statement BEST explains the relationship between power and organizational politics?",
+            "option_a": "A. Politics only exists when organizations fail",
+            "option_b": "B. Politics is often used as a mechanism to gain or maintain power",
+            "option_c": "C. Power eliminates political behavior",
+            "option_d": "D. Politics is unrelated to influence",
+            "correct_answer": "B",
+            "explanation": "Political behavior is frequently used to acquire, preserve, or expand power."
+        }
+    ]
+}
