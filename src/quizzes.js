@@ -1,95 +1,149 @@
 export default [
     // Professional Skills Quizzes
-    // {
-    //     title: 'Professional Skills - 15',
-    //     path: 'quiz/PS/PS-015.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 14',
-    //     path: 'quiz/PS/PS-014.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 13',
-    //     path: 'quiz/PS/PS-013.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 12',
-    //     path: 'quiz/PS/PS-012.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 11',
-    //     path: 'quiz/PS/PS-011.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 10',
-    //     path: 'quiz/PS/PS-010.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 09',
-    //     path: 'quiz/PS/PS-009.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 08',
-    //     path: 'quiz/PS/PS-008.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 07',
-    //     path: 'quiz/PS/PS-007.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 06',
-    //     path: 'quiz/PS/PS-006.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 05',
-    //     path: 'quiz/PS/PS-005.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 04',
-    //     path: 'quiz/PS/PS-004.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 03',
-    //     path: 'quiz/PS/PS-003.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 02',
-    //     path: 'quiz/PS/PS-002.json',
-    //     description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Professional Skills - 01',
-    //     path: 'quiz/PS/PS-001.json',
-    //     description: 'Test your knowledge of professional skills, including communication, teamwork, and problem-solving.',
-    //     isAvailable: true
-    // },
+    {
+        title: 'Professional Skills - 24',
+        path: 'quiz/PS/PS-024.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 23',
+        path: 'quiz/PS/PS-023.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 22',
+        path: 'quiz/PS/PS-022.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 21',
+        path: 'quiz/PS/PS-021.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 20',
+        path: 'quiz/PS/PS-020.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 19',
+        path: 'quiz/PS/PS-019.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 18',
+        path: 'quiz/PS/PS-018.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 17',
+        path: 'quiz/PS/PS-017.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 16',
+        path: 'quiz/PS/PS-016.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 15',
+        path: 'quiz/PS/PS-015.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 14',
+        path: 'quiz/PS/PS-014.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 13',
+        path: 'quiz/PS/PS-013.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 12',
+        path: 'quiz/PS/PS-012.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 11',
+        path: 'quiz/PS/PS-011.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 10',
+        path: 'quiz/PS/PS-010.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 09',
+        path: 'quiz/PS/PS-009.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 08',
+        path: 'quiz/PS/PS-008.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 07',
+        path: 'quiz/PS/PS-007.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 06',
+        path: 'quiz/PS/PS-006.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 05',
+        path: 'quiz/PS/PS-005.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 04',
+        path: 'quiz/PS/PS-004.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 03',
+        path: 'quiz/PS/PS-003.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 02',
+        path: 'quiz/PS/PS-002.json',
+        description: 'Evaluate your understanding of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
+    {
+        title: 'Professional Skills - 01',
+        path: 'quiz/PS/PS-001.json',
+        description: 'Test your knowledge of professional skills, including communication, teamwork, and problem-solving.',
+        isAvailable: true
+    },
     // // Network Programming Quizzes
     // {
     //     title: 'Network Programming - 07',

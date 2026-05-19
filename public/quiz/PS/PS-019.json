@@ -1,0 +1,427 @@
+{
+    "questions": [
+        {
+            "question": "What best describes a profession according to the lecture?",
+            "option_a": "A. A hobby pursued during leisure time",
+            "option_b": "B. A calling requiring specialized knowledge and intensive preparation",
+            "option_c": "C. Any activity done for financial gain",
+            "option_d": "D. A temporary organizational role",
+            "correct_answer": "B",
+            "explanation": "A profession requires specialized knowledge and often extensive academic preparation."
+        },
+        {
+            "question": "Which term refers to the conduct and qualities that characterize a professional?",
+            "option_a": "A. Ethics",
+            "option_b": "B. Autonomy",
+            "option_c": "C. Professionalism",
+            "option_d": "D. Responsibility",
+            "correct_answer": "C",
+            "explanation": "Professionalism refers to the conduct, aims, and qualities associated with professionals."
+        },
+        {
+            "question": "Which attribute is most associated with a professional?",
+            "option_a": "A. Independence in professional practice",
+            "option_b": "B. Avoiding teamwork",
+            "option_c": "C. Ignoring public concerns",
+            "option_d": "D. Refusing accountability",
+            "correct_answer": "A",
+            "explanation": "Professionals are expected to have autonomy and independence in their practice."
+        },
+        {
+            "question": "An amateur is best described as someone who:",
+            "option_a": "A. Works without ethics",
+            "option_b": "B. Performs activities only for profit",
+            "option_c": "C. Participates in an activity primarily for enjoyment",
+            "option_d": "D. Holds multiple certifications",
+            "correct_answer": "C",
+            "explanation": "An amateur participates mainly due to interest or enjoyment rather than as a profession."
+        },
+        {
+            "question": "Which organization is specifically mentioned as a professional body for computing professionals?",
+            "option_a": "A. ACM",
+            "option_b": "B. NASA",
+            "option_c": "C. WHO",
+            "option_d": "D. IMF",
+            "correct_answer": "A",
+            "explanation": "The ACM is a recognized professional organization in computing."
+        },
+        {
+            "question": "Which of the following is considered a computing professional?",
+            "option_a": "A. Software engineer",
+            "option_b": "B. Database administrator",
+            "option_c": "C. Computer scientist",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "All listed roles fall under computing professions."
+        },
+        {
+            "question": "Why can computing systems have life-threatening impacts?",
+            "option_a": "A. They are always connected to the internet",
+            "option_b": "B. They are used in critical systems like air traffic control and medical treatment",
+            "option_c": "C. They consume large amounts of electricity",
+            "option_d": "D. They replace paper-based systems",
+            "correct_answer": "B",
+            "explanation": "Computing systems are integrated into safety-critical domains where failures can endanger lives."
+        },
+        {
+            "question": "Which of the following is NOT listed as a responsibility of computing professionals?",
+            "option_a": "A. Responsibility to clients and users",
+            "option_b": "B. Responsibility to the public",
+            "option_c": "C. Responsibility to competitors",
+            "option_d": "D. Responsibility to employers",
+            "correct_answer": "C",
+            "explanation": "The lecture identifies responsibilities to clients, employers, professionals, and the public."
+        },
+        {
+            "question": "Ethics is primarily concerned with:",
+            "option_a": "A. Increasing profits",
+            "option_b": "B. Beliefs about right and wrong behavior",
+            "option_c": "C. Technical certifications",
+            "option_d": "D. Hardware performance",
+            "correct_answer": "B",
+            "explanation": "Ethics concerns moral principles regarding right and wrong conduct."
+        },
+        {
+            "question": "Why is ethics important according to the lecture?",
+            "option_a": "A. It replaces laws",
+            "option_b": "B. It helps people make moral decisions",
+            "option_c": "C. It guarantees success",
+            "option_d": "D. It removes accountability",
+            "correct_answer": "B",
+            "explanation": "Ethics guides individuals in making moral and rational decisions."
+        },
+        {
+            "question": "Professional ethics include responsibilities involving:",
+            "option_a": "A. Employees and employers",
+            "option_b": "B. Product users",
+            "option_c": "C. Organizations",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "Professional ethics involve relationships with all relevant stakeholders."
+        },
+        {
+            "question": "Which organization published the Software Engineering Code of Ethics?",
+            "option_a": "A. UNESCO",
+            "option_b": "B. ACM",
+            "option_c": "C. NATO",
+            "option_d": "D. ISO",
+            "correct_answer": "B",
+            "explanation": "The ACM developed the Software Engineering Code of Ethics."
+        },
+        {
+            "question": "According to the IEEE Code of Ethics, engineers should:",
+            "option_a": "A. Accept bribery when necessary",
+            "option_b": "B. Ignore conflicts of interest",
+            "option_c": "C. Reject bribery in all forms",
+            "option_d": "D. Prioritize deadlines over safety",
+            "correct_answer": "C",
+            "explanation": "IEEE ethics explicitly require rejection of bribery."
+        },
+        {
+            "question": "Which ACM ethical principle focuses on intellectual property rights?",
+            "option_a": "A. Respect privacy",
+            "option_b": "B. Honour property rights and patents",
+            "option_c": "C. Avoid discrimination",
+            "option_d": "D. Contribute to society",
+            "correct_answer": "B",
+            "explanation": "The ACM Code emphasizes respecting copyrights, patents, and intellectual property."
+        },
+        {
+            "question": "The ACM SE Code principle 'PUBLIC' requires software engineers to:",
+            "option_a": "A. Prioritize personal gain",
+            "option_b": "B. Act consistently with public interest",
+            "option_c": "C. Avoid communication with users",
+            "option_d": "D. Ignore ethical concerns",
+            "correct_answer": "B",
+            "explanation": "Software engineers must prioritize public interest in their work."
+        },
+        {
+            "question": "Which ACM SE Code principle emphasizes maintaining integrity and independence in judgment?",
+            "option_a": "A. PRODUCT",
+            "option_b": "B. CLIENT AND EMPLOYER",
+            "option_c": "C. JUDGMENT",
+            "option_d": "D. SELF",
+            "correct_answer": "C",
+            "explanation": "The JUDGMENT principle focuses on professional integrity and independence."
+        },
+        {
+            "question": "What is one major purpose of professional codes of ethics?",
+            "option_a": "A. Eliminating all workplace conflicts",
+            "option_b": "B. Motivating members to behave ethically",
+            "option_c": "C. Increasing market competition",
+            "option_d": "D. Reducing technical complexity",
+            "correct_answer": "B",
+            "explanation": "Professional codes guide and motivate ethical behavior."
+        },
+        {
+            "question": "Which of the following is NOT one of the five primary functions of professional codes?",
+            "option_a": "A. Inspire",
+            "option_b": "B. Educate",
+            "option_c": "C. Manipulate",
+            "option_d": "D. Discipline",
+            "correct_answer": "C",
+            "explanation": "Manipulation is not a function of professional ethical codes."
+        },
+        {
+            "question": "IT professionals are expected to commit to:",
+            "option_a": "A. Integrity",
+            "option_b": "B. Competence",
+            "option_c": "C. Societal responsibility",
+            "option_d": "D. All of the above",
+            "correct_answer": "D",
+            "explanation": "All listed values are key professional commitments."
+        },
+        {
+            "question": "A programmer discovers a flaw in ATM software. According to ethical principles, the programmer should:",
+            "option_a": "A. Hide the flaw to avoid punishment",
+            "option_b": "B. Inform the employer and help fix the issue",
+            "option_c": "C. Ignore the flaw if the system mostly works",
+            "option_d": "D. Sell the flaw to competitors",
+            "correct_answer": "B",
+            "explanation": "Professionals should act honestly and responsibly when discovering faults."
+        },
+        {
+            "question": "Why should professional ethics be continuously reviewed?",
+            "option_a": "A. Technology and societal impacts evolve",
+            "option_b": "B. Laws never change",
+            "option_c": "C. Ethics become less relevant over time",
+            "option_d": "D. Professional organizations require no updates",
+            "correct_answer": "A",
+            "explanation": "Ethical understanding must evolve with technological and societal changes."
+        },
+        {
+            "question": "A software engineer releases untested medical software to meet a deadline. Which ethical concern is MOST serious?",
+            "option_a": "A. Reduced development costs",
+            "option_b": "B. Public safety risks",
+            "option_c": "C. Team communication delays",
+            "option_d": "D. Lower server performance",
+            "correct_answer": "B",
+            "explanation": "Medical software failures can directly threaten human lives."
+        },
+        {
+            "question": "Which stakeholder is MOST directly affected by failures in a cancer-treatment device?",
+            "option_a": "A. Patients",
+            "option_b": "B. Social media advertisers",
+            "option_c": "C. Retail companies",
+            "option_d": "D. Entertainment providers",
+            "correct_answer": "A",
+            "explanation": "Patients are the primary stakeholders affected by medical system failures."
+        },
+        {
+            "question": "A project manager ignores testing to meet deadlines. Which ACM SE Code principle is MOST violated?",
+            "option_a": "A. PRODUCT",
+            "option_b": "B. SELF",
+            "option_c": "C. COLLEAGUES",
+            "option_d": "D. MANAGEMENT",
+            "correct_answer": "A",
+            "explanation": "The PRODUCT principle requires maintaining high professional standards."
+        },
+        {
+            "question": "Which ethical principle is most related to avoiding discrimination?",
+            "option_a": "A. Fairness",
+            "option_b": "B. Profitability",
+            "option_c": "C. Automation",
+            "option_d": "D. Competition",
+            "correct_answer": "A",
+            "explanation": "Ethical fairness includes avoiding discrimination."
+        },
+        {
+            "question": "A computing professional leaks confidential user data to increase company revenue. Which ACM principle is violated?",
+            "option_a": "A. Respect privacy",
+            "option_b": "B. Promote teamwork",
+            "option_c": "C. Reduce maintenance costs",
+            "option_d": "D. Improve efficiency",
+            "correct_answer": "A",
+            "explanation": "Leaking confidential data violates privacy and confidentiality obligations."
+        },
+        {
+            "question": "What is the BEST reason for avoiding conflicts of interest in engineering decisions?",
+            "option_a": "A. To maximize profits",
+            "option_b": "B. To preserve professional integrity and public trust",
+            "option_c": "C. To reduce workloads",
+            "option_d": "D. To simplify programming",
+            "correct_answer": "B",
+            "explanation": "Avoiding conflicts maintains trust and ethical integrity."
+        },
+        {
+            "question": "Which scenario BEST demonstrates professionalism?",
+            "option_a": "A. Ignoring user complaints",
+            "option_b": "B. Falsifying test reports",
+            "option_c": "C. Admitting mistakes and correcting them",
+            "option_d": "D. Prioritizing profits over safety",
+            "correct_answer": "C",
+            "explanation": "Professionalism includes accountability and ethical conduct."
+        },
+        {
+            "question": "A developer copies proprietary code without permission. Which ethical issue is MOST directly involved?",
+            "option_a": "A. Privacy",
+            "option_b": "B. Intellectual property violation",
+            "option_c": "C. Hardware failure",
+            "option_d": "D. Scalability",
+            "correct_answer": "B",
+            "explanation": "Unauthorized copying violates intellectual property rights."
+        },
+        {
+            "question": "Which computing system listed in the lecture can directly affect transportation safety?",
+            "option_a": "A. Air traffic control systems",
+            "option_b": "B. Social networking platforms",
+            "option_c": "C. Music streaming services",
+            "option_d": "D. E-commerce systems",
+            "correct_answer": "A",
+            "explanation": "Air traffic control systems are safety-critical transportation systems."
+        },
+        {
+            "question": "Which ACM SE Code principle emphasizes lifelong learning?",
+            "option_a": "A. SELF",
+            "option_b": "B. PUBLIC",
+            "option_c": "C. PRODUCT",
+            "option_d": "D. MANAGEMENT",
+            "correct_answer": "A",
+            "explanation": "The SELF principle promotes continuous professional learning."
+        },
+        {
+            "question": "A company asks an engineer to hide a security vulnerability from users. What is the MOST ethical response?",
+            "option_a": "A. Hide the issue to protect the company",
+            "option_b": "B. Inform relevant stakeholders and seek remediation",
+            "option_c": "C. Delete all evidence",
+            "option_d": "D. Ignore the request completely",
+            "correct_answer": "B",
+            "explanation": "Ethical responsibility requires transparency and corrective action."
+        },
+        {
+            "question": "What is the main ethical concern in AI systems making medical decisions?",
+            "option_a": "A. Increased electricity usage",
+            "option_b": "B. Potential harm from incorrect decisions",
+            "option_c": "C. Faster processing speed",
+            "option_d": "D. Reduced hardware costs",
+            "correct_answer": "B",
+            "explanation": "Incorrect AI medical decisions can directly impact patient safety."
+        },
+        {
+            "question": "Why are professional codes important for society?",
+            "option_a": "A. They eliminate all software bugs",
+            "option_b": "B. They encourage ethical and responsible professional conduct",
+            "option_c": "C. They increase hardware performance",
+            "option_d": "D. They replace technical education",
+            "correct_answer": "B",
+            "explanation": "Professional codes promote responsible conduct benefiting society."
+        },
+        {
+            "question": "Which ethical responsibility is MOST associated with honesty in reporting software defects?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Profitability",
+            "option_c": "C. Marketing",
+            "option_d": "D. Competition",
+            "correct_answer": "A",
+            "explanation": "Integrity requires honesty and transparency."
+        },
+        {
+            "question": "A developer intentionally ignores safety testing for a bridge-control system. What could be the consequence?",
+            "option_a": "A. Improved software performance",
+            "option_b": "B. Potential loss of life",
+            "option_c": "C. Reduced maintenance costs",
+            "option_d": "D. Faster deployment only",
+            "correct_answer": "B",
+            "explanation": "Critical infrastructure failures can lead to severe physical harm."
+        },
+        {
+            "question": "Which principle is MOST relevant when ensuring software does not unfairly disadvantage users?",
+            "option_a": "A. Fairness",
+            "option_b": "B. Profit maximization",
+            "option_c": "C. Rapid deployment",
+            "option_d": "D. Market expansion",
+            "correct_answer": "A",
+            "explanation": "Fairness requires avoiding discriminatory or harmful outcomes."
+        },
+        {
+            "question": "What is the BEST example of societal responsibility in computing?",
+            "option_a": "A. Releasing malware for research",
+            "option_b": "B. Developing secure healthcare systems",
+            "option_c": "C. Ignoring accessibility requirements",
+            "option_d": "D. Hiding system vulnerabilities",
+            "correct_answer": "B",
+            "explanation": "Secure healthcare systems directly support societal well-being."
+        },
+        {
+            "question": "Which action BEST demonstrates ethical leadership in software management?",
+            "option_a": "A. Encouraging developers to skip testing",
+            "option_b": "B. Promoting ethical development practices",
+            "option_c": "C. Concealing defects from clients",
+            "option_d": "D. Ignoring stakeholder concerns",
+            "correct_answer": "B",
+            "explanation": "Ethical leadership promotes responsible development practices."
+        },
+        {
+            "question": "Which of the following is a core ethical issue in cybersecurity?",
+            "option_a": "A. Protecting user privacy",
+            "option_b": "B. Increasing advertisement revenue",
+            "option_c": "C. Maximizing processor usage",
+            "option_d": "D. Reducing software readability",
+            "correct_answer": "A",
+            "explanation": "Cybersecurity ethics strongly involve protecting privacy and confidentiality."
+        },
+        {
+            "question": "A developer receives money to approve unsafe software. Which IEEE ethical rule is violated?",
+            "option_a": "A. Reject bribery in all forms",
+            "option_b": "B. Improve programming speed",
+            "option_c": "C. Increase software profits",
+            "option_d": "D. Reduce user feedback",
+            "correct_answer": "A",
+            "explanation": "Accepting bribes directly violates IEEE ethical standards."
+        },
+        {
+            "question": "Why is stakeholder analysis important in software engineering ethics?",
+            "option_a": "A. It identifies who may be positively or negatively affected",
+            "option_b": "B. It reduces programming time",
+            "option_c": "C. It guarantees bug-free software",
+            "option_d": "D. It replaces software testing",
+            "correct_answer": "A",
+            "explanation": "Stakeholder analysis helps evaluate ethical impacts on all affected parties."
+        },
+        {
+            "question": "Which stakeholder group is represented by the ACM SE Code principle 'COLLEAGUES'?",
+            "option_a": "A. Government regulators",
+            "option_b": "B. Fellow professionals",
+            "option_c": "C. Investors only",
+            "option_d": "D. Hardware vendors",
+            "correct_answer": "B",
+            "explanation": "The COLLEAGUES principle promotes fairness and support among professionals."
+        },
+        {
+            "question": "A facial recognition system unfairly misidentifies certain ethnic groups. Which ethical issue is MOST relevant?",
+            "option_a": "A. Scalability",
+            "option_b": "B. Bias and discrimination",
+            "option_c": "C. Processor speed",
+            "option_d": "D. Network latency",
+            "correct_answer": "B",
+            "explanation": "Bias in AI systems can create discriminatory outcomes."
+        },
+        {
+            "question": "Which action BEST aligns with the ACM principle of contributing to society and human well-being?",
+            "option_a": "A. Selling user data secretly",
+            "option_b": "B. Designing accessible software for disabled users",
+            "option_c": "C. Ignoring security vulnerabilities",
+            "option_d": "D. Manipulating users through deceptive design",
+            "correct_answer": "B",
+            "explanation": "Accessible software improves inclusivity and societal well-being."
+        },
+        {
+            "question": "A software engineer hides evidence of a defect because fixing it would delay release. Which ethical value is MOST compromised?",
+            "option_a": "A. Integrity",
+            "option_b": "B. Scalability",
+            "option_c": "C. Performance optimization",
+            "option_d": "D. Automation",
+            "correct_answer": "A",
+            "explanation": "Concealing defects violates honesty and professional integrity."
+        },
+        {
+            "question": "Which is the MOST ethical decision regarding an untested cancer-treatment device?",
+            "option_a": "A. Deploy immediately to meet deadlines",
+            "option_b": "B. Continue testing to ensure patient safety",
+            "option_c": "C. Ignore discovered bugs",
+            "option_d": "D. Release only to reduce financial losses",
+            "correct_answer": "B",
+            "explanation": "Patient safety and public welfare must take priority over deadlines."
+        }
+    ]
+}

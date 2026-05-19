@@ -5,14 +5,18 @@
             "option_a": "A. Compressed to save storage space.",
             "option_b": "B. Intentionally or unintentionally lost, stolen, or leaked to the outside world.",
             "option_c": "C. Encrypted with a strong cipher algorithm.",
-            "option_d": "D. Backed up to an internal server."
+            "option_d": "D. Backed up to an internal server.",
+            "correct_option": "B",
+            "explanation": "Data loss, also known as data exfiltration, refers to the intentional or unintentional loss, theft, or leakage of data to the outside world. This can occur through various means such as cyber attacks, insider threats, accidental deletion, or physical theft of devices containing sensitive information."
         },
         {
             "question": "According to the lecture, data is considered to be an organization's:",
             "option_a": "A. Least important asset.",
             "option_b": "B. Most valuable asset.",
             "option_c": "C. Only physical asset.",
-            "option_d": "D. Only temporary asset."
+            "option_d": "D. Only temporary asset.",
+            "correct_option": "B",
+            "explanation": "The lecture emphasizes that data is an organization's most valuable asset. It contains critical information such as customer data, financial records, intellectual property, and operational data that are essential for the organization's success and competitive advantage. Protecting this data is crucial to maintaining the organization's integrity and reputation."
         },
         {
             "question": "Which of the following is explicitly listed as an example of organizational data?",

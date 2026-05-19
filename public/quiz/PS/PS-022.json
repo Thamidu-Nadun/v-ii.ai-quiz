@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "According to Archie Carroll, which responsibility of business focuses on producing goods and services that society needs while generating profit?",
+            "option_a": "A. Ethical responsibility",
+            "option_b": "B. Economic responsibility",
+            "option_c": "C. Legal responsibility",
+            "option_d": "D. Discretionary responsibility",
+            "correct_answer": "B",
+            "explanation": "Economic responsibility involves producing valuable goods and services while ensuring profitability and shareholder wealth."
+        },
+        {
+            "question": "Which responsibility requires corporations to obey laws established by governments?",
+            "option_a": "A. Legal responsibility",
+            "option_b": "B. Ethical responsibility",
+            "option_c": "C. Economic responsibility",
+            "option_d": "D. Discretionary responsibility",
+            "correct_answer": "A",
+            "explanation": "Legal responsibilities are defined by governments and require businesses to comply with laws and regulations."
+        },
+        {
+            "question": "A company voluntarily builds a daycare center for employees without any legal requirement. Which responsibility does this represent?",
+            "option_a": "A. Legal responsibility",
+            "option_b": "B. Economic responsibility",
+            "option_c": "C. Ethical responsibility",
+            "option_d": "D. Discretionary responsibility",
+            "correct_answer": "D",
+            "explanation": "Discretionary responsibilities are voluntary actions taken by corporations beyond legal or economic obligations."
+        },
+        {
+            "question": "Following generally accepted societal beliefs about proper behavior is part of which responsibility?",
+            "option_a": "A. Ethical responsibility",
+            "option_b": "B. Economic responsibility",
+            "option_c": "C. Discretionary responsibility",
+            "option_d": "D. Legal responsibility",
+            "correct_answer": "A",
+            "explanation": "Ethical responsibilities involve adhering to moral expectations and accepted standards of behavior."
+        },
+        {
+            "question": "Why does corporate responsibility matter in technology industries?",
+            "option_a": "A. Technology only affects entertainment industries",
+            "option_b": "B. Technology decisions influence access, fairness, and social impact",
+            "option_c": "C. Technology corporations are controlled entirely by governments",
+            "option_d": "D. Technology has no effect on healthcare or education",
+            "correct_answer": "B",
+            "explanation": "Technology affects many aspects of society, so corporate decisions influence inclusion, fairness, and accessibility."
+        },
+        {
+            "question": "Digital inclusion primarily ensures that:",
+            "option_a": "A. Only educated people can access technology",
+            "option_b": "B. Everyone can meaningfully participate in the digital world",
+            "option_c": "C. Corporations maximize profit from digital services",
+            "option_d": "D. Governments fully control the internet",
+            "correct_answer": "B",
+            "explanation": "Digital inclusion focuses on ensuring meaningful digital participation for all individuals."
+        },
+        {
+            "question": "Which of the following is NOT a component of digital inclusion?",
+            "option_a": "A. Accessibility",
+            "option_b": "B. Affordability",
+            "option_c": "C. Monopoly",
+            "option_d": "D. Awareness",
+            "correct_answer": "C",
+            "explanation": "Monopoly is unrelated to digital inclusion components, unlike accessibility, affordability, and awareness."
+        },
+        {
+            "question": "The availability of internet connections and digital devices refers to which component of digital inclusion?",
+            "option_a": "A. Ability",
+            "option_b": "B. Accessibility",
+            "option_c": "C. Access",
+            "option_d": "D. Awareness",
+            "correct_answer": "C",
+            "explanation": "Access refers to the availability of internet services, devices, and connectivity."
+        },
+        {
+            "question": "Digital literacy and user skills are associated with which component of digital inclusion?",
+            "option_a": "A. Affordability",
+            "option_b": "B. Ability",
+            "option_c": "C. Awareness",
+            "option_d": "D. Accessibility",
+            "correct_answer": "B",
+            "explanation": "Ability focuses on users having the knowledge and skills to use digital technologies effectively."
+        },
+        {
+            "question": "What does accessibility in digital inclusion mainly focus on?",
+            "option_a": "A. Lowering internet prices",
+            "option_b": "B. Preventing cyberattacks",
+            "option_c": "C. Inclusive design for people with disabilities",
+            "option_d": "D. Increasing software advertisements",
+            "correct_answer": "C",
+            "explanation": "Accessibility ensures systems are usable by individuals with disabilities."
+        },
+        {
+            "question": "Which global issue related to digital inclusion is highlighted in the lecture?",
+            "option_a": "A. Excessive internet speed worldwide",
+            "option_b": "B. 2.7 billion people remain offline",
+            "option_c": "C. All rural communities have reliable connectivity",
+            "option_d": "D. Digital literacy is universal",
+            "correct_answer": "B",
+            "explanation": "The lecture highlights that 2.7 billion people globally still lack internet access."
+        },
+        {
+            "question": "Which issue is specifically identified as a Sri Lankan digital inclusion challenge?",
+            "option_a": "A. Overuse of AI systems",
+            "option_b": "B. Lack of cybersecurity laws",
+            "option_c": "C. Digital literacy gaps among senior citizens",
+            "option_d": "D. Excessive broadband penetration",
+            "correct_answer": "C",
+            "explanation": "The lecture identifies digital literacy gaps among older populations in Sri Lanka."
+        },
+        {
+            "question": "Why is digital inclusion important in developing nations like Sri Lanka?",
+            "option_a": "A. It helps reinforce social inequality",
+            "option_b": "B. It reduces existing social and economic divisions",
+            "option_c": "C. It limits rural internet access",
+            "option_d": "D. It removes the need for ethical governance",
+            "correct_answer": "B",
+            "explanation": "Digital inclusion aims to reduce social and economic gaps caused by unequal access to technology."
+        },
+        {
+            "question": "A software company designs an online learning platform only in English, making it difficult for rural Sinhala and Tamil speakers to use. Which principle is MOST violated?",
+            "option_a": "A. Economic responsibility",
+            "option_b": "B. Digital inclusion",
+            "option_c": "C. Shareholder responsibility",
+            "option_d": "D. Cybersecurity",
+            "correct_answer": "B",
+            "explanation": "Digital inclusion requires systems to support diverse languages and user groups."
+        },
+        {
+            "question": "Which responsibility toward clients requires corporations to protect user data?",
+            "option_a": "A. Responsibility toward colleagues",
+            "option_b": "B. Responsibility toward society",
+            "option_c": "C. Responsibility toward clients",
+            "option_d": "D. Responsibility toward shareholders",
+            "correct_answer": "C",
+            "explanation": "Corporations have a responsibility toward clients to ensure data protection and secure systems."
+        },
+        {
+            "question": "Employees reporting security vulnerabilities demonstrates:",
+            "option_a": "A. Ethical behavior",
+            "option_b": "B. Discretionary responsibility",
+            "option_c": "C. Profit maximization",
+            "option_d": "D. Market competition",
+            "correct_answer": "A",
+            "explanation": "Reporting vulnerabilities is considered ethical professional conduct."
+        },
+        {
+            "question": "Which of the following BEST represents responsibility toward society?",
+            "option_a": "A. Ignoring accessibility standards to reduce development costs",
+            "option_b": "B. Designing systems that worsen inequality",
+            "option_c": "C. Developing fair and inclusive technologies",
+            "option_d": "D. Selling user data without consent",
+            "correct_answer": "C",
+            "explanation": "Corporations should create technologies that reduce inequality and improve social welfare."
+        },
+        {
+            "question": "Transparency in data usage means:",
+            "option_a": "A. Users are clearly informed how their data is collected and used",
+            "option_b": "B. Corporations can secretly collect information",
+            "option_c": "C. Data should never be encrypted",
+            "option_d": "D. Only employees can access policies",
+            "correct_answer": "A",
+            "explanation": "Transparency requires openness about data collection and usage practices."
+        },
+        {
+            "question": "What is the digital divide?",
+            "option_a": "A. Competition between software companies",
+            "option_b": "B. Differences in technology access and usage among groups",
+            "option_c": "C. Separation between hardware and software",
+            "option_d": "D. Internet speed limitations in offices",
+            "correct_answer": "B",
+            "explanation": "The digital divide refers to inequalities in access to and effective use of technology."
+        },
+        {
+            "question": "A government website lacks screen reader support for visually impaired users. Which digital inclusion component is MOST affected?",
+            "option_a": "A. Accessibility",
+            "option_b": "B. Awareness",
+            "option_c": "C. Affordability",
+            "option_d": "D. Ability",
+            "correct_answer": "A",
+            "explanation": "Accessibility ensures systems can be used by people with disabilities."
+        },
+        {
+            "question": "Which statement BEST distinguishes ethical responsibilities from legal responsibilities?",
+            "option_a": "A. Ethical responsibilities are enforced by courts",
+            "option_b": "B. Legal responsibilities are always voluntary",
+            "option_c": "C. Ethical responsibilities involve societal expectations beyond laws",
+            "option_d": "D. Legal responsibilities focus only on employee salaries",
+            "correct_answer": "C",
+            "explanation": "Ethical responsibilities extend beyond formal laws to societal moral expectations."
+        },
+        {
+            "question": "Why should corporations avoid biased algorithms?",
+            "option_a": "A. Biased algorithms improve social equality",
+            "option_b": "B. Bias can unfairly discriminate against certain groups",
+            "option_c": "C. Bias increases accessibility",
+            "option_d": "D. Bias is required for personalization",
+            "correct_answer": "B",
+            "explanation": "Biased algorithms can reinforce discrimination and social inequality."
+        },
+        {
+            "question": "Which scenario BEST demonstrates affordability issues in digital inclusion?",
+            "option_a": "A. A platform lacks support for disabled users",
+            "option_b": "B. Users cannot afford internet services or devices",
+            "option_c": "C. Employees violate privacy policies",
+            "option_d": "D. A company launches a secure application",
+            "correct_answer": "B",
+            "explanation": "Affordability concerns arise when users cannot pay for devices or connectivity."
+        },
+        {
+            "question": "A company chooses profits over fixing a known security flaw affecting millions of users. Which responsibility is MOST neglected?",
+            "option_a": "A. Ethical responsibility",
+            "option_b": "B. Economic responsibility",
+            "option_c": "C. Discretionary responsibility",
+            "option_d": "D. Marketing responsibility",
+            "correct_answer": "A",
+            "explanation": "Ignoring serious security risks violates ethical obligations to protect users."
+        },
+        {
+            "question": "Which of the following is an example of inclusive workplace behavior?",
+            "option_a": "A. Encouraging discrimination based on language",
+            "option_b": "B. Supporting belonging and avoiding discrimination",
+            "option_c": "C. Ignoring accessibility needs",
+            "option_d": "D. Restricting opportunities to certain groups",
+            "correct_answer": "B",
+            "explanation": "Inclusive workplaces foster belonging and equal treatment for all employees."
+        },
+        {
+            "question": "Why is awareness considered a component of digital inclusion?",
+            "option_a": "A. Users must understand the benefits of digital technologies",
+            "option_b": "B. It ensures lower taxes for corporations",
+            "option_c": "C. It removes cybersecurity requirements",
+            "option_d": "D. It increases advertising revenue",
+            "correct_answer": "A",
+            "explanation": "Awareness helps individuals understand and benefit from digital technologies."
+        },
+        {
+            "question": "A mobile banking application is accessible only to users with high-end smartphones. Which issue is MOST evident?",
+            "option_a": "A. Accessibility",
+            "option_b": "B. Affordability and access limitations",
+            "option_c": "C. Ethical hacking",
+            "option_d": "D. Transparency",
+            "correct_answer": "B",
+            "explanation": "Requiring expensive devices creates affordability and access barriers."
+        },
+        {
+            "question": "Which responsibility focuses on improving conditions for communities and the environment?",
+            "option_a": "A. Corporate social responsibility",
+            "option_b": "B. Economic inflation",
+            "option_c": "C. Software optimization",
+            "option_d": "D. Market segmentation",
+            "correct_answer": "A",
+            "explanation": "Corporate social responsibility includes improving conditions for communities and the environment."
+        },
+        {
+            "question": "A corporation collects user data without informing customers. Which principle is MOST violated?",
+            "option_a": "A. Accessibility",
+            "option_b": "B. Transparency",
+            "option_c": "C. Affordability",
+            "option_d": "D. Awareness",
+            "correct_answer": "B",
+            "explanation": "Transparency requires corporations to clearly communicate data collection practices."
+        },
+        {
+            "question": "Why should corporations support sustainable digital practices?",
+            "option_a": "A. To increase digital inequality",
+            "option_b": "B. To ensure long-term social and environmental responsibility",
+            "option_c": "C. To eliminate accessibility",
+            "option_d": "D. To avoid all legal obligations",
+            "correct_answer": "B",
+            "explanation": "Sustainable practices help balance technological growth with environmental and social well-being."
+        },
+        {
+            "question": "A rural school lacks high-speed internet, preventing students from attending online classes. Which global issue does this illustrate?",
+            "option_a": "A. Digital divide",
+            "option_b": "B. Data transparency",
+            "option_c": "C. Ethical marketing",
+            "option_d": "D. Cyberwarfare",
+            "correct_answer": "A",
+            "explanation": "Limited connectivity in rural regions is a major example of the digital divide."
+        },
+        {
+            "question": "Which statement BEST reflects responsible IT practice?",
+            "option_a": "A. Maximize profit regardless of user harm",
+            "option_b": "B. Ignore accessibility to reduce costs",
+            "option_c": "C. Use fairness and transparency in decision-making",
+            "option_d": "D. Limit digital access to urban populations",
+            "correct_answer": "C",
+            "explanation": "Responsible IT practice requires fairness, transparency, and ethical consideration."
+        },
+        {
+            "question": "A company intentionally manipulates users through misleading interface design. Which responsibility toward society is violated?",
+            "option_a": "A. Creating fair digital systems",
+            "option_b": "B. Improving accessibility",
+            "option_c": "C. Supporting digital literacy",
+            "option_d": "D. Following encryption standards",
+            "correct_answer": "A",
+            "explanation": "Misleading interfaces violate the responsibility to create fair and ethical systems."
+        },
+        {
+            "question": "Which group is specifically mentioned as vulnerable to digital exclusion in Sri Lanka?",
+            "option_a": "A. Software engineers",
+            "option_b": "B. Senior citizens",
+            "option_c": "C. International tourists",
+            "option_d": "D. Shareholders",
+            "correct_answer": "B",
+            "explanation": "The lecture identifies senior citizens as facing digital literacy challenges."
+        },
+        {
+            "question": "What is the MOST ethical action when discovering a major security vulnerability in company software?",
+            "option_a": "A. Sell the vulnerability to competitors",
+            "option_b": "B. Ignore it to avoid financial loss",
+            "option_c": "C. Report it through proper internal procedures",
+            "option_d": "D. Publicly leak all company systems",
+            "correct_answer": "C",
+            "explanation": "Ethical professionals should responsibly report vulnerabilities to protect users and systems."
+        },
+        {
+            "question": "A corporation develops AI recruitment software that unfairly rejects applicants from rural areas. What is the MOST likely issue?",
+            "option_a": "A. Accessibility optimization",
+            "option_b": "B. Algorithmic bias",
+            "option_c": "C. Digital literacy improvement",
+            "option_d": "D. Ethical transparency",
+            "correct_answer": "B",
+            "explanation": "The algorithm demonstrates bias that unfairly disadvantages specific groups."
+        },
+        {
+            "question": "Which concept ensures people understand the benefits and uses of technology?",
+            "option_a": "A. Awareness",
+            "option_b": "B. Accessibility",
+            "option_c": "C. Affordability",
+            "option_d": "D. Encryption",
+            "correct_answer": "A",
+            "explanation": "Awareness involves understanding how digital technologies can be useful."
+        },
+        {
+            "question": "Why are corporations expected to consider social consequences when designing digital systems?",
+            "option_a": "A. Their systems can influence millions of users",
+            "option_b": "B. Governments fully own all software",
+            "option_c": "C. Technology has no social impact",
+            "option_d": "D. Ethics are unrelated to computing",
+            "correct_answer": "A",
+            "explanation": "Technology companies influence society significantly, making ethical consideration essential."
+        },
+        {
+            "question": "Which of the following BEST represents a hard example of digital exclusion?",
+            "option_a": "A. A user forgetting a password",
+            "option_b": "B. An application unavailable in local languages and inaccessible to disabled users",
+            "option_c": "C. A company upgrading its servers",
+            "option_d": "D. A faster internet package release",
+            "correct_answer": "B",
+            "explanation": "Lack of language and accessibility support creates severe digital exclusion."
+        },
+        {
+            "question": "A corporation refuses to improve accessibility because disabled users are a small market segment. Which principle is MOST violated?",
+            "option_a": "A. Economic efficiency",
+            "option_b": "B. Ethical responsibility and inclusion",
+            "option_c": "C. Shareholder value",
+            "option_d": "D. Legal enforcement",
+            "correct_answer": "B",
+            "explanation": "Ignoring accessibility needs violates ethical obligations and principles of digital inclusion."
+        },
+        {
+            "question": "Which responsibility toward colleagues promotes belonging in workplaces?",
+            "option_a": "A. Encouraging discrimination",
+            "option_b": "B. Fostering inclusive workplaces",
+            "option_c": "C. Maximizing productivity only",
+            "option_d": "D. Restricting communication",
+            "correct_answer": "B",
+            "explanation": "Inclusive workplaces support equality, belonging, and respect among employees."
+        }
+    ]
+}

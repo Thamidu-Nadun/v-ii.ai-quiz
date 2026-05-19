@@ -1,0 +1,562 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of ethics in Information Technology?",
+            "option_a": "A. To maximize company profits",
+            "option_b": "B. To guide decisions about right and wrong in technology use",
+            "option_c": "C. To eliminate all government regulations",
+            "option_d": "D. To automate all workplace tasks",
+            "correct_answer": "B",
+            "explanation": "Ethics provides guidelines for determining right and wrong behavior in designing, developing, and managing technology systems."
+        },
+        {
+            "question": "Why do computing technologies often create unexpected ethical consequences?",
+            "option_a": "A. Hardware devices are too expensive",
+            "option_b": "B. Ethics changes faster than technology",
+            "option_c": "C. Technology evolves faster than laws and ethics can keep up",
+            "option_d": "D. Users refuse to adopt new technologies",
+            "correct_answer": "C",
+            "explanation": "The lecture emphasizes that technology evolves rapidly, while ethical frameworks and laws struggle to keep pace."
+        },
+        {
+            "question": "Which of the following is NOT identified as a key ethical concern in IT?",
+            "option_a": "A. Loss of privacy",
+            "option_b": "B. Long-term societal impact",
+            "option_c": "C. Increasing electricity production",
+            "option_d": "D. Fairness and respect toward users",
+            "correct_answer": "C",
+            "explanation": "Electricity production is not discussed as a core ethical concern in the lecture."
+        },
+        {
+            "question": "Why is inclusion important in system design?",
+            "option_a": "A. It reduces development costs",
+            "option_b": "B. It eliminates the need for testing",
+            "option_c": "C. It reduces discrimination and promotes fairness",
+            "option_d": "D. It guarantees higher profits",
+            "correct_answer": "C",
+            "explanation": "Inclusive design helps reduce discrimination and ensures systems benefit diverse user groups."
+        },
+        {
+            "question": "According to the lecture, IT students may become legally responsible because they:",
+            "option_a": "A. Work only with open-source systems",
+            "option_b": "B. Build systems that affect finances, privacy, and decisions",
+            "option_c": "C. Rarely interact with users",
+            "option_d": "D. Only maintain hardware systems",
+            "correct_answer": "B",
+            "explanation": "IT professionals often handle sensitive systems involving personal data, finances, and automated decisions."
+        },
+        {
+            "question": "Which responsibility belongs specifically to IT professionals toward clients?",
+            "option_a": "A. Ignoring software limitations",
+            "option_b": "B. Misusing client data for analytics",
+            "option_c": "C. Delivering accurate and reliable systems",
+            "option_d": "D. Sharing confidential data with partners",
+            "correct_answer": "C",
+            "explanation": "Professionals are responsible for providing accurate, dependable systems and protecting client information."
+        },
+        {
+            "question": "An employee discovers a serious cybersecurity vulnerability in their company system. Which professional responsibility applies MOST directly?",
+            "option_a": "A. Responsibility to society",
+            "option_b": "B. Responsibility to employers",
+            "option_c": "C. Responsibility to clients only",
+            "option_d": "D. Responsibility to competitors",
+            "correct_answer": "B",
+            "explanation": "Employees are expected to report security threats and unethical behavior to employers."
+        },
+        {
+            "question": "Which organization codes are mentioned as sources of professional responsibilities?",
+            "option_a": "A. ACM, IEEE, and CSSL",
+            "option_b": "B. NATO and UNESCO",
+            "option_c": "C. IMF and WTO",
+            "option_d": "D. Linux Foundation and Mozilla",
+            "correct_answer": "A",
+            "explanation": "The lecture states that ACM, IEEE, and CSSL codes define these professional responsibilities."
+        },
+        {
+            "question": "What is the first step in the ethical decision-making model?",
+            "option_a": "A. Apply ethical theories",
+            "option_b": "B. Evaluate consequences",
+            "option_c": "C. Identify stakeholders",
+            "option_d": "D. Make decision",
+            "correct_answer": "C",
+            "explanation": "The ethical decision-making process begins with identifying stakeholders after recognizing the ethical problem."
+        },
+        {
+            "question": "Stakeholder analysis emphasizes considering:",
+            "option_a": "A. Only paying customers",
+            "option_b": "B. Only shareholders",
+            "option_c": "C. Everyone affected by the decision",
+            "option_d": "D. Only government regulators",
+            "correct_answer": "C",
+            "explanation": "Stakeholder analysis includes all groups affected by a technological decision."
+        },
+        {
+            "question": "In the AI hiring system example, what was the major ethical risk?",
+            "option_a": "A. Slow network performance",
+            "option_b": "B. Excessive cloud storage costs",
+            "option_c": "C. Algorithmic bias excluding certain groups",
+            "option_d": "D. Lack of employee salaries",
+            "correct_answer": "C",
+            "explanation": "The AI system risked unfairly excluding underrepresented groups due to biased training data."
+        },
+        {
+            "question": "Which action helps reduce bias in AI hiring systems?",
+            "option_a": "A. Removing human oversight",
+            "option_b": "B. Using only historical hiring data",
+            "option_c": "C. Testing for bias and using diverse datasets",
+            "option_d": "D. Hiding algorithm decisions from users",
+            "correct_answer": "C",
+            "explanation": "Bias testing and diverse datasets are important mitigation strategies."
+        },
+        {
+            "question": "A university app fails to support visually impaired students. Which ethical principle is MOST directly violated?",
+            "option_a": "A. Accessibility and inclusion",
+            "option_b": "B. Profit maximization",
+            "option_c": "C. Data portability",
+            "option_d": "D. Encryption",
+            "correct_answer": "A",
+            "explanation": "Ignoring accessibility excludes certain user groups and violates inclusive design principles."
+        },
+        {
+            "question": "Utilitarianism focuses primarily on:",
+            "option_a": "A. Rules and duties",
+            "option_b": "B. Religious traditions",
+            "option_c": "C. Outcomes benefiting the greatest number",
+            "option_d": "D. Protecting only minority groups",
+            "correct_answer": "C",
+            "explanation": "Utilitarianism evaluates decisions based on maximizing overall benefit."
+        },
+        {
+            "question": "What is a major criticism of utilitarianism?",
+            "option_a": "A. It ignores all social benefits",
+            "option_b": "B. It can unfairly harm minorities",
+            "option_c": "C. It rejects all technology",
+            "option_d": "D. It prohibits data collection",
+            "correct_answer": "B",
+            "explanation": "Utilitarian approaches may sacrifice minority rights for majority benefit."
+        },
+        {
+            "question": "In the pandemic tracking app example, what justified deployment under utilitarianism?",
+            "option_a": "A. Increased advertising revenue",
+            "option_b": "B. Political campaign benefits",
+            "option_c": "C. Benefits to society outweighed privacy risks",
+            "option_d": "D. Elimination of cybersecurity requirements",
+            "correct_answer": "C",
+            "explanation": "The app was justified because it could save lives and reduce infection spread."
+        },
+        {
+            "question": "Which safeguard was recommended for the pandemic tracking app?",
+            "option_a": "A. Removing user consent",
+            "option_b": "B. Publicly sharing health records",
+            "option_c": "C. Encryption and transparency",
+            "option_d": "D. Eliminating access controls",
+            "correct_answer": "C",
+            "explanation": "Encryption, consent, and transparency reduce privacy risks."
+        },
+        {
+            "question": "A city uses AI traffic cameras that wrongly fine some drivers but improve traffic for millions. Which ethical theory MOST likely supports deployment?",
+            "option_a": "A. Deontology",
+            "option_b": "B. Utilitarianism",
+            "option_c": "C. Ethical egoism",
+            "option_d": "D. Moral relativism",
+            "correct_answer": "B",
+            "explanation": "Utilitarianism prioritizes overall societal benefit despite limited harm."
+        },
+        {
+            "question": "What additional mechanism was recommended for automated traffic optimization systems?",
+            "option_a": "A. Removing fines completely",
+            "option_b": "B. Eliminating cameras",
+            "option_c": "C. Creating an appeals process",
+            "option_d": "D. Hiding AI decisions",
+            "correct_answer": "C",
+            "explanation": "Appeals processes help reduce harm caused by AI errors."
+        },
+        {
+            "question": "Deontology argues that:",
+            "option_a": "A. Outcomes are all that matter",
+            "option_b": "B. Some actions are always right or wrong",
+            "option_c": "C. Privacy can always be violated for profit",
+            "option_d": "D. Majority rule determines morality",
+            "correct_answer": "B",
+            "explanation": "Deontology emphasizes duties, rights, and moral rules."
+        },
+        {
+            "question": "Why was secret employee monitoring considered unethical from a deontological perspective?",
+            "option_a": "A. It reduced productivity",
+            "option_b": "B. It increased server costs",
+            "option_c": "C. It violated employee rights and consent",
+            "option_d": "D. It prevented data analytics",
+            "correct_answer": "C",
+            "explanation": "Deontology rejects actions that violate rights and trust, regardless of outcomes."
+        },
+        {
+            "question": "Dark patterns in websites are considered unethical because they:",
+            "option_a": "A. Increase accessibility",
+            "option_b": "B. Improve transparency",
+            "option_c": "C. Manipulate users through deception",
+            "option_d": "D. Reduce user confusion",
+            "correct_answer": "C",
+            "explanation": "Dark patterns violate honesty, transparency, and user autonomy."
+        },
+        {
+            "question": "What does GDPR stand for?",
+            "option_a": "A. Global Data Protection Rules",
+            "option_b": "B. General Data Protection Regulation",
+            "option_c": "C. Government Data Privacy Regulation",
+            "option_d": "D. General Digital Protection Rights",
+            "correct_answer": "B",
+            "explanation": "GDPR stands for General Data Protection Regulation."
+        },
+        {
+            "question": "When was GDPR introduced?",
+            "option_a": "A. 2006",
+            "option_b": "B. 2012",
+            "option_c": "C. 2018",
+            "option_d": "D. 2022",
+            "correct_answer": "C",
+            "explanation": "GDPR was introduced by the European Union in 2018."
+        },
+        {
+            "question": "Which statement about GDPR is TRUE?",
+            "option_a": "A. It applies only to companies physically located in Europe",
+            "option_b": "B. It applies only to governments",
+            "option_c": "C. It can apply to companies outside the EU handling EU citizen data",
+            "option_d": "D. It applies only to social media companies",
+            "correct_answer": "C",
+            "explanation": "GDPR applies globally if organizations process EU citizens' personal data."
+        },
+        {
+            "question": "Which GDPR principle applies during data collection?",
+            "option_a": "A. Right to erase",
+            "option_b": "B. Consent",
+            "option_c": "C. Transparency",
+            "option_d": "D. Data portability",
+            "correct_answer": "B",
+            "explanation": "Consent is required when collecting personal data."
+        },
+        {
+            "question": "What GDPR principle applies during data storage?",
+            "option_a": "A. Security",
+            "option_b": "B. Transparency",
+            "option_c": "C. Advertising",
+            "option_d": "D. Portability",
+            "correct_answer": "A",
+            "explanation": "Stored data must be secured against unauthorized access and misuse."
+        },
+        {
+            "question": "Under GDPR, users have the right to ask companies:",
+            "option_a": "A. To disclose competitors’ data",
+            "option_b": "B. What information is held about them",
+            "option_c": "C. To remove all cybersecurity controls",
+            "option_d": "D. To publicly reveal encryption keys",
+            "correct_answer": "B",
+            "explanation": "The right to access allows users to request their stored personal data."
+        },
+        {
+            "question": "Which GDPR right allows users to fix incorrect information?",
+            "option_a": "A. Right to portability",
+            "option_b": "B. Right to correction",
+            "option_c": "C. Right to surveillance",
+            "option_d": "D. Right to monetization",
+            "correct_answer": "B",
+            "explanation": "The right to rectification allows correction of inaccurate data."
+        },
+        {
+            "question": "The 'Right to Be Forgotten' refers to:",
+            "option_a": "A. Automatic data encryption",
+            "option_b": "B. Deleting old software logs",
+            "option_c": "C. Requesting deletion of personal data",
+            "option_d": "D. Transferring files between companies",
+            "correct_answer": "C",
+            "explanation": "Users can request erasure of personal data under certain conditions."
+        },
+        {
+            "question": "Which GDPR right enables users to transfer their data between services?",
+            "option_a": "A. Right to portability",
+            "option_b": "B. Right to surveillance",
+            "option_c": "C. Right to anonymity",
+            "option_d": "D. Right to monetization",
+            "correct_answer": "A",
+            "explanation": "Data portability allows users to obtain data in machine-readable format."
+        },
+        {
+            "question": "What is the maximum GDPR penalty mentioned in the lecture?",
+            "option_a": "A. €1 million",
+            "option_b": "B. 2% of annual revenue",
+            "option_c": "C. €20 million or 4% of global annual revenue",
+            "option_d": "D. Permanent company shutdown only",
+            "correct_answer": "C",
+            "explanation": "GDPR penalties can reach €20 million or 4% of annual global revenue."
+        },
+        {
+            "question": "Which company was mentioned as receiving a GDPR-related fine of €746 million?",
+            "option_a": "A. Apple",
+            "option_b": "B. Amazon",
+            "option_c": "C. IBM",
+            "option_d": "D. Netflix",
+            "correct_answer": "B",
+            "explanation": "Amazon was cited as receiving a €746 million GDPR fine."
+        },
+        {
+            "question": "What is a major feature of the California Consumer Privacy Act (CCPA)?",
+            "option_a": "A. Mandatory cryptocurrency payments",
+            "option_b": "B. Citizens can opt out of data selling",
+            "option_c": "C. Elimination of user consent",
+            "option_d": "D. Free global internet access",
+            "correct_answer": "B",
+            "explanation": "CCPA gives users the right to opt out of data sales."
+        },
+        {
+            "question": "Which Sri Lankan law specifically addresses hacking-related offenses?",
+            "option_a": "A. Electronic Transactions Act",
+            "option_b": "B. Personal Data Protection Act",
+            "option_c": "C. Computer Crimes Act",
+            "option_d": "D. Right to Information Act",
+            "correct_answer": "C",
+            "explanation": "The Computer Crimes Act (2007) covers hacking and related cyber offenses."
+        },
+        {
+            "question": "Which Sri Lankan law legitimizes digital signatures?",
+            "option_a": "A. Right to Information Act",
+            "option_b": "B. Electronic Transactions Act",
+            "option_c": "C. Computer Crimes Act",
+            "option_d": "D. Data Accountability Act",
+            "correct_answer": "B",
+            "explanation": "The Electronic Transactions Act (2006) legitimizes digital signatures."
+        },
+        {
+            "question": "Under Sri Lanka’s PDPA, organizations must:",
+            "option_a": "A. Sell data to third parties",
+            "option_b": "B. Collect all possible user data",
+            "option_c": "C. Secure personal data appropriately",
+            "option_d": "D. Ignore deletion requests",
+            "correct_answer": "C",
+            "explanation": "The PDPA requires organizations to protect and secure personal data."
+        },
+        {
+            "question": "Which is a legal responsibility of IT professionals?",
+            "option_a": "A. Exposing personal data publicly",
+            "option_b": "B. Ignoring audit requirements",
+            "option_c": "C. Using encryption and access controls",
+            "option_d": "D. Removing cybersecurity protections",
+            "correct_answer": "C",
+            "explanation": "Encryption and access controls are essential privacy and security measures."
+        },
+        {
+            "question": "Which privacy principle recommends collecting only necessary data?",
+            "option_a": "A. Data minimization",
+            "option_b": "B. Profit maximization",
+            "option_c": "C. Unlimited retention",
+            "option_d": "D. Public disclosure",
+            "correct_answer": "A",
+            "explanation": "Organizations should only collect data needed for a legitimate purpose."
+        },
+        {
+            "question": "What is the primary goal of a Data Protection Impact Assessment (DPIA)?",
+            "option_a": "A. To increase advertising revenue",
+            "option_b": "B. To identify and reduce privacy risks",
+            "option_c": "C. To eliminate cybersecurity teams",
+            "option_d": "D. To avoid using encryption",
+            "correct_answer": "B",
+            "explanation": "DPIAs help organizations identify and mitigate privacy risks."
+        },
+        {
+            "question": "Why should organizations maintain logs of data processing?",
+            "option_a": "A. To increase storage costs",
+            "option_b": "B. To support audits and accountability",
+            "option_c": "C. To hide unauthorized access",
+            "option_d": "D. To reduce transparency",
+            "correct_answer": "B",
+            "explanation": "Logs provide traceability and help demonstrate compliance."
+        },
+        {
+            "question": "In the Cambridge Analytica case, what ethical issue was MOST significant?",
+            "option_a": "A. Poor website performance",
+            "option_b": "B. Unauthorized harvesting of user data",
+            "option_c": "C. Lack of cloud storage",
+            "option_d": "D. Weak internet speed",
+            "correct_answer": "B",
+            "explanation": "The scandal centered on collecting and exploiting user data without proper consent."
+        },
+        {
+            "question": "Which action should Facebook have taken according to the lecture?",
+            "option_a": "A. Remove all privacy settings",
+            "option_b": "B. Enforce stricter data-access limits",
+            "option_c": "C. Allow unrestricted third-party access",
+            "option_d": "D. Stop using cybersecurity audits",
+            "correct_answer": "B",
+            "explanation": "Strict access controls and audits could have reduced misuse."
+        },
+        {
+            "question": "Why was the AI hiring system considered discriminatory?",
+            "option_a": "A. It hired too many employees",
+            "option_b": "B. It favored resumes from women",
+            "option_c": "C. It penalized resumes linked to women",
+            "option_d": "D. It rejected all applications equally",
+            "correct_answer": "C",
+            "explanation": "The system learned gender bias from historical hiring data."
+        },
+        {
+            "question": "Which measure BEST reduces bias in AI systems?",
+            "option_a": "A. Removing all testing",
+            "option_b": "B. Using homogeneous datasets",
+            "option_c": "C. Conducting regular bias testing",
+            "option_d": "D. Hiding model outputs",
+            "correct_answer": "C",
+            "explanation": "Bias testing helps identify unfair patterns in AI systems."
+        },
+        {
+            "question": "What was the core issue in the NDB Bank ledger fraud case?",
+            "option_a": "A. Weak internet connectivity",
+            "option_b": "B. Unauthorized ledger manipulation",
+            "option_c": "C. Excessive encryption",
+            "option_d": "D. Lack of mobile banking",
+            "correct_answer": "B",
+            "explanation": "The fraud involved ledger manipulation and hidden unauthorized transactions."
+        },
+        {
+            "question": "Which control could BEST help prevent ledger fraud?",
+            "option_a": "A. Removing monitoring systems",
+            "option_b": "B. Eliminating audit trails",
+            "option_c": "C. Implementing access controls",
+            "option_d": "D. Sharing passwords among employees",
+            "correct_answer": "C",
+            "explanation": "Access controls limit unauthorized system modifications."
+        },
+        {
+            "question": "Why is accountability important in organizations?",
+            "option_a": "A. It guarantees higher stock prices",
+            "option_b": "B. It prevents data misuse and builds public trust",
+            "option_c": "C. It removes the need for cybersecurity",
+            "option_d": "D. It eliminates legal obligations",
+            "correct_answer": "B",
+            "explanation": "Accountability improves transparency and public confidence."
+        },
+        {
+            "question": "Which tool helps ensure corporate accountability?",
+            "option_a": "A. Whistleblowing channels",
+            "option_b": "B. Removing audits",
+            "option_c": "C. Hiding documentation",
+            "option_d": "D. Eliminating compliance officers",
+            "correct_answer": "A",
+            "explanation": "Whistleblowing systems help identify unethical or illegal behavior."
+        },
+        {
+            "question": "A company secretly shares customer health data with advertisers to improve targeted marketing. Which ethical theory would MOST strongly reject this action regardless of benefits?",
+            "option_a": "A. Utilitarianism",
+            "option_b": "B. Deontology",
+            "option_c": "C. Consequentialism",
+            "option_d": "D. Pragmatism",
+            "correct_answer": "B",
+            "explanation": "Deontology rejects privacy violations and lack of consent regardless of positive outcomes."
+        },
+        {
+            "question": "An AI recruitment platform improves hiring speed by 70% but systematically disadvantages minority applicants. Which is the BEST ethical response?",
+            "option_a": "A. Continue using the system because efficiency improved",
+            "option_b": "B. Hide the bias findings from applicants",
+            "option_c": "C. Suspend deployment until fairness testing and mitigation occur",
+            "option_d": "D. Remove all human oversight permanently",
+            "correct_answer": "C",
+            "explanation": "Bias mitigation and fairness validation are necessary before ethical deployment."
+        },
+        {
+            "question": "A company stores user data indefinitely without informing users. Which privacy principle is MOST clearly violated?",
+            "option_a": "A. Transparency",
+            "option_b": "B. Accessibility",
+            "option_c": "C. Sustainability",
+            "option_d": "D. Load balancing",
+            "correct_answer": "A",
+            "explanation": "Users must be informed about how long data is retained and why."
+        },
+        {
+            "question": "Which scenario BEST demonstrates stakeholder analysis?",
+            "option_a": "A. Choosing the cheapest server provider",
+            "option_b": "B. Evaluating how a facial-recognition system affects citizens, police, and minorities",
+            "option_c": "C. Increasing advertising frequency",
+            "option_d": "D. Compressing database backups",
+            "correct_answer": "B",
+            "explanation": "Stakeholder analysis examines effects on all affected groups."
+        },
+        {
+            "question": "A developer intentionally designs confusing subscription cancellation buttons to reduce customer cancellations. What is this an example of?",
+            "option_a": "A. Accessibility enhancement",
+            "option_b": "B. Ethical transparency",
+            "option_c": "C. Dark patterns",
+            "option_d": "D. Responsible design",
+            "correct_answer": "C",
+            "explanation": "Dark patterns manipulate users into actions they may not intend."
+        },
+        {
+            "question": "Which statement BEST reflects utilitarian thinking?",
+            "option_a": "A. User consent must never be violated",
+            "option_b": "B. The morally correct action is the one producing the greatest overall benefit",
+            "option_c": "C. Privacy rights always override social benefit",
+            "option_d": "D. Ethical decisions should ignore outcomes",
+            "correct_answer": "B",
+            "explanation": "Utilitarianism evaluates morality based on consequences and total benefit."
+        },
+        {
+            "question": "A Sri Lankan e-commerce company processes EU customer data but ignores GDPR requirements because it is not based in Europe. What is TRUE?",
+            "option_a": "A. GDPR does not apply outside Europe",
+            "option_b": "B. GDPR applies because EU citizen data is processed",
+            "option_c": "C. Only local Sri Lankan laws apply",
+            "option_d": "D. GDPR applies only to banks",
+            "correct_answer": "B",
+            "explanation": "GDPR has extraterritorial reach when handling EU residents’ data."
+        },
+        {
+            "question": "Which combination BEST supports prevention of insider financial fraud?",
+            "option_a": "A. Shared passwords and hidden logs",
+            "option_b": "B. Access controls, monitoring, and audit trails",
+            "option_c": "C. Unlimited administrator privileges",
+            "option_d": "D. Removing compliance checks",
+            "correct_answer": "B",
+            "explanation": "Strong monitoring and access restrictions reduce fraud opportunities."
+        },
+        {
+            "question": "A hospital deploys an AI diagnosis system without testing it on minority populations. What is the GREATEST ethical concern?",
+            "option_a": "A. Increased electricity usage",
+            "option_b": "B. Biased outcomes harming underrepresented groups",
+            "option_c": "C. Excessive hardware procurement",
+            "option_d": "D. Reduced internet bandwidth",
+            "correct_answer": "B",
+            "explanation": "Insufficiently representative datasets can create discriminatory outcomes."
+        },
+        {
+            "question": "An organization deletes user data immediately after service cancellation despite legal retention obligations. Which issue exists?",
+            "option_a": "A. Violation of legal compliance requirements",
+            "option_b": "B. Violation of accessibility guidelines",
+            "option_c": "C. Excessive transparency",
+            "option_d": "D. Ethical perfection",
+            "correct_answer": "A",
+            "explanation": "Data deletion must also comply with legitimate legal retention requirements."
+        },
+        {
+            "question": "Which action MOST directly improves transparency in AI systems?",
+            "option_a": "A. Hiding model decision logic",
+            "option_b": "B. Informing users how decisions are made",
+            "option_c": "C. Eliminating user consent forms",
+            "option_d": "D. Preventing audits",
+            "correct_answer": "B",
+            "explanation": "Transparency requires explaining how systems use and process data."
+        },
+        {
+            "question": "A social media company wants to maximize engagement by promoting emotionally manipulative content. Which stakeholder may be harmed MOST broadly?",
+            "option_a": "A. Only shareholders",
+            "option_b": "B. Society and democratic processes",
+            "option_c": "C. Only software developers",
+            "option_d": "D. Only advertisers",
+            "correct_answer": "B",
+            "explanation": "Manipulative content can affect public trust, elections, and societal well-being."
+        },
+        {
+            "question": "What is the BEST reason for maintaining cybersecurity controls under compliance frameworks?",
+            "option_a": "A. To increase system complexity unnecessarily",
+            "option_b": "B. To protect personal data and reduce unauthorized access",
+            "option_c": "C. To avoid using documentation",
+            "option_d": "D. To eliminate all business risks permanently",
+            "correct_answer": "B",
+            "explanation": "Cybersecurity controls protect systems and sensitive information."
+        }
+    ]
+}

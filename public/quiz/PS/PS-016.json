@@ -1,0 +1,535 @@
+{
+    "questions": [
+        {
+            "question": "According to Warren Bennis, leadership primarily involves:",
+            "option_a": "A. Controlling employees through authority",
+            "option_b": "B. Knowing yourself, communicating vision, building trust, and taking effective action",
+            "option_c": "C. Delegating all responsibilities to followers",
+            "option_d": "D. Maintaining strict organizational hierarchy",
+            "correct_answer": "B",
+            "explanation": "Warren Bennis defined leadership as knowing yourself, communicating vision, building trust, and realizing leadership potential."
+        },
+        {
+            "question": "Why is leadership considered controversial according to the lecture?",
+            "option_a": "A. Leadership theories are illegal in some countries",
+            "option_b": "B. Leadership depends on many situational factors",
+            "option_c": "C. Only military leaders can demonstrate leadership",
+            "option_d": "D. Leadership has only one accepted definition",
+            "correct_answer": "B",
+            "explanation": "Leadership is controversial because its effectiveness depends on multiple factors such as environment and context."
+        },
+        {
+            "question": "The 'Great Man Theory' suggests that leaders:",
+            "option_a": "A. Are developed through formal education",
+            "option_b": "B. Emerge only during crises",
+            "option_c": "C. Are born with innate leadership qualities",
+            "option_d": "D. Must follow democratic principles",
+            "correct_answer": "C",
+            "explanation": "Great Man Theory proposes that leaders are exceptional individuals born with natural leadership abilities."
+        },
+        {
+            "question": "Which of the following is NOT listed as a leadership trait in the lecture?",
+            "option_a": "A. Assertiveness",
+            "option_b": "B. Dependability",
+            "option_c": "C. Persistence",
+            "option_d": "D. Introversion",
+            "correct_answer": "D",
+            "explanation": "Introversion was not included among the listed leadership traits."
+        },
+        {
+            "question": "In Trait Theory, one major challenge is:",
+            "option_a": "A. Leaders cannot be identified",
+            "option_b": "B. Traits are difficult to measure objectively",
+            "option_c": "C. Followers are ignored completely",
+            "option_d": "D. Leadership is unrelated to personality",
+            "correct_answer": "B",
+            "explanation": "Trait Theory struggles because qualities like honesty and integrity are difficult to measure."
+        },
+        {
+            "question": "Which leadership perspective focuses mainly on follower readiness?",
+            "option_a": "A. Trait Perspective",
+            "option_b": "B. Transformational Perspective",
+            "option_c": "C. Situational Leadership Theory",
+            "option_d": "D. Great Man Theory",
+            "correct_answer": "C",
+            "explanation": "Situational Leadership Theory focuses on the readiness and competence of followers."
+        },
+        {
+            "question": "A follower who is unable but willing should typically be managed using which leadership style?",
+            "option_a": "A. Delegatory",
+            "option_b": "B. Coaching",
+            "option_c": "C. Monitoring",
+            "option_d": "D. Supportive",
+            "correct_answer": "B",
+            "explanation": "Coaching is appropriate for followers who are motivated but lack competence."
+        },
+        {
+            "question": "Transformational leaders primarily aim to:",
+            "option_a": "A. Increase employee fear",
+            "option_b": "B. Exchange rewards for performance only",
+            "option_c": "C. Inspire creativity and personal growth",
+            "option_d": "D. Avoid organizational change",
+            "correct_answer": "C",
+            "explanation": "Transformational leadership inspires trust, creativity, and growth beyond self-interest."
+        },
+        {
+            "question": "Which of the following is considered a leadership skill rather than a trait?",
+            "option_a": "A. Persistence",
+            "option_b": "B. Self-confidence",
+            "option_c": "C. Persuasiveness",
+            "option_d": "D. Tolerance of stress",
+            "correct_answer": "C",
+            "explanation": "Persuasiveness is categorized as a leadership skill in the lecture."
+        },
+        {
+            "question": "The statement 'one cannot be a great leader without great followers' emphasizes:",
+            "option_a": "A. Leadership independence",
+            "option_b": "B. Employee inclusion and cooperation",
+            "option_c": "C. Strict organizational control",
+            "option_d": "D. Financial incentives",
+            "correct_answer": "B",
+            "explanation": "The lecture emphasizes that leadership requires follower cooperation and initiative."
+        },
+        {
+            "question": "Which leadership style is most suitable for followers who are able and willing?",
+            "option_a": "A. Directive",
+            "option_b": "B. Coaching",
+            "option_c": "C. Delegatory",
+            "option_d": "D. High-task orientation",
+            "correct_answer": "C",
+            "explanation": "Delegatory leadership is appropriate when followers are competent and motivated."
+        },
+        {
+            "question": "What is the main goal of team decision-making strategies?",
+            "option_a": "A. Eliminating disagreements",
+            "option_b": "B. Achieving participation and consensus",
+            "option_c": "C. Increasing organizational hierarchy",
+            "option_d": "D. Reducing creativity",
+            "correct_answer": "B",
+            "explanation": "Team decision-making strategies are used to encourage participation and consensus."
+        },
+        {
+            "question": "Decision making is best described as:",
+            "option_a": "A. Ignoring alternative solutions",
+            "option_b": "B. Randomly selecting an action",
+            "option_c": "C. Choosing between alternative courses of action using cognitive processes",
+            "option_d": "D. Delegating responsibility to management",
+            "correct_answer": "C",
+            "explanation": "Decision making involves cognitive evaluation and selecting among alternatives."
+        },
+        {
+            "question": "Why should teams learn decision-making processes?",
+            "option_a": "A. To avoid communication",
+            "option_b": "B. To make informed choices and justify decisions",
+            "option_c": "C. To eliminate responsibility",
+            "option_d": "D. To reduce collaboration",
+            "correct_answer": "B",
+            "explanation": "Decision-making knowledge helps teams make informed and defensible decisions."
+        },
+        {
+            "question": "Which step comes first in the logical decision-making process?",
+            "option_a": "A. Explore alternatives",
+            "option_b": "B. Communicate the decision",
+            "option_c": "C. Create a constructive environment",
+            "option_d": "D. Check assumptions",
+            "correct_answer": "C",
+            "explanation": "The process begins with creating a constructive environment."
+        },
+        {
+            "question": "In the car-buying example, considering family opinions primarily supports which step?",
+            "option_a": "A. Generate alternatives",
+            "option_b": "B. Create a constructive environment",
+            "option_c": "C. Decision tree analysis",
+            "option_d": "D. Testing assumptions",
+            "correct_answer": "B",
+            "explanation": "Including affected stakeholders helps create a constructive environment."
+        },
+        {
+            "question": "What is the purpose of exploring alternatives during decision making?",
+            "option_a": "A. To avoid risks entirely",
+            "option_b": "B. To evaluate risks, impacts, and validations",
+            "option_c": "C. To reduce participation",
+            "option_d": "D. To eliminate creativity",
+            "correct_answer": "B",
+            "explanation": "Exploring alternatives involves analyzing risks, impacts, and validating options."
+        },
+        {
+            "question": "Which tool is specifically mentioned for choosing the best alternative?",
+            "option_a": "A. Fishbone diagram",
+            "option_b": "B. SWOT analysis",
+            "option_c": "C. Decision trees",
+            "option_d": "D. Gantt charts",
+            "correct_answer": "C",
+            "explanation": "Decision trees are identified as tools for selecting the best alternative."
+        },
+        {
+            "question": "A team blindly choosing a car because of brand loyalty demonstrates:",
+            "option_a": "A. Objective evaluation",
+            "option_b": "B. Emotional bias",
+            "option_c": "C. Consensus building",
+            "option_d": "D. Delegatory leadership",
+            "correct_answer": "B",
+            "explanation": "Brand loyalty can create emotional bias during decision making."
+        },
+        {
+            "question": "Which of the following is one of the three main areas supporting systematic decision making?",
+            "option_a": "A. Personality testing",
+            "option_b": "B. Financial auditing",
+            "option_c": "C. Methods for decision making",
+            "option_d": "D. Human resource allocation",
+            "correct_answer": "C",
+            "explanation": "Methods for decision making are one of the three supporting areas."
+        },
+        {
+            "question": "In a thinking environment, 'Attention' refers to:",
+            "option_a": "A. Monitoring employee attendance",
+            "option_b": "B. Listening respectfully and with interest",
+            "option_c": "C. Enforcing discipline",
+            "option_d": "D. Increasing urgency",
+            "correct_answer": "B",
+            "explanation": "Attention involves respectful and fascinated listening to team members."
+        },
+        {
+            "question": "The lecture suggests a recommended appreciation-to-criticism ratio of:",
+            "option_a": "A. 1:1",
+            "option_b": "B. 2:1",
+            "option_c": "C. 5:1",
+            "option_d": "D. 10:1",
+            "correct_answer": "C",
+            "explanation": "The lecture recommends practicing a 5:1 ratio of appreciation to criticism."
+        },
+        {
+            "question": "Why is diversity important in a thinking environment?",
+            "option_a": "A. It reduces accountability",
+            "option_b": "B. It increases decision speed only",
+            "option_c": "C. It adds quality through differing perspectives",
+            "option_d": "D. It eliminates conflict completely",
+            "correct_answer": "C",
+            "explanation": "Diversity improves decision quality through varied viewpoints."
+        },
+        {
+            "question": "Which decision-making method is most appropriate when team commitment is highly important and sufficient time is available?",
+            "option_a": "A. Majority vote",
+            "option_b": "B. Authority without discussion",
+            "option_c": "C. Consensus",
+            "option_d": "D. Expert decision",
+            "correct_answer": "C",
+            "explanation": "Consensus works best when high commitment and adequate time exist."
+        },
+        {
+            "question": "Decision by majority vote is most appropriate when:",
+            "option_a": "A. No time constraints exist",
+            "option_b": "B. Team commitment is irrelevant",
+            "option_c": "C. Time constraints require faster decisions",
+            "option_d": "D. Expertise is unavailable",
+            "correct_answer": "C",
+            "explanation": "Majority voting is suitable when decisions must be made quickly."
+        },
+        {
+            "question": "Which decision-making method is ideal for simple routine administrative decisions?",
+            "option_a": "A. Consensus",
+            "option_b": "B. Authority without group discussion",
+            "option_c": "C. Brainstorming",
+            "option_d": "D. Affinity grouping",
+            "correct_answer": "B",
+            "explanation": "Authority decisions without discussion suit simple routine decisions."
+        },
+        {
+            "question": "Brainstorming is primarily used to:",
+            "option_a": "A. Criticize team members",
+            "option_b": "B. Generate ideas spontaneously",
+            "option_c": "C. Eliminate participation",
+            "option_d": "D. Finalize budgets",
+            "correct_answer": "B",
+            "explanation": "Brainstorming is a creativity technique for generating ideas."
+        },
+        {
+            "question": "Affinity grouping is mainly used for:",
+            "option_a": "A. Voting on salaries",
+            "option_b": "B. Grouping related ideas naturally",
+            "option_c": "C. Delegating tasks",
+            "option_d": "D. Selecting leadership theories",
+            "correct_answer": "B",
+            "explanation": "Affinity grouping organizes brainstorming ideas by natural relationships."
+        },
+        {
+            "question": "What is the main purpose of multi-voting?",
+            "option_a": "A. Increasing conflict",
+            "option_b": "B. Reducing many options to manageable choices",
+            "option_c": "C. Avoiding collaboration",
+            "option_d": "D. Eliminating brainstorming",
+            "correct_answer": "B",
+            "explanation": "Multi-voting helps teams narrow down many alternatives."
+        },
+        {
+            "question": "A decision matrix helps teams by:",
+            "option_a": "A. Randomizing decisions",
+            "option_b": "B. Systematically evaluating criteria and options",
+            "option_c": "C. Removing logical analysis",
+            "option_d": "D. Avoiding comparisons",
+            "correct_answer": "B",
+            "explanation": "Decision matrices organize and compare alternatives using criteria."
+        },
+        {
+            "question": "The Six Thinking Hats technique encourages teams to:",
+            "option_a": "A. Avoid disagreement",
+            "option_b": "B. Use only logical thinking",
+            "option_c": "C. Examine decisions from multiple perspectives",
+            "option_d": "D. Ignore emotional viewpoints",
+            "correct_answer": "C",
+            "explanation": "Six Thinking Hats promotes viewing problems from different perspectives."
+        },
+        {
+            "question": "A software team is inexperienced and insecure about a new technology stack. Which leadership style is MOST appropriate?",
+            "option_a": "A. Delegatory",
+            "option_b": "B. Monitoring",
+            "option_c": "C. Directive",
+            "option_d": "D. Authority-free",
+            "correct_answer": "C",
+            "explanation": "Directive leadership is suitable when followers are unable and unwilling or insecure."
+        },
+        {
+            "question": "A leader encourages employees to work toward a shared social mission rather than personal rewards. This reflects:",
+            "option_a": "A. Trait Theory",
+            "option_b": "B. Transformational Leadership",
+            "option_c": "C. Majority voting",
+            "option_d": "D. Great Man Theory",
+            "correct_answer": "B",
+            "explanation": "Transformational leaders inspire purpose beyond self-interest."
+        },
+        {
+            "question": "A project manager gives complete freedom to a highly skilled and motivated developer team. Which leadership style is being applied?",
+            "option_a": "A. Coaching",
+            "option_b": "B. Directive",
+            "option_c": "C. Delegatory",
+            "option_d": "D. Supportive",
+            "correct_answer": "C",
+            "explanation": "Delegatory leadership works best for capable and willing followers."
+        },
+        {
+            "question": "A company urgently needs a decision during a cybersecurity incident. Which decision-making method is MOST appropriate?",
+            "option_a": "A. Consensus",
+            "option_b": "B. Authority without group discussion",
+            "option_c": "C. Affinity grouping",
+            "option_d": "D. Brainstorming only",
+            "correct_answer": "B",
+            "explanation": "Emergency situations often require fast authority-based decisions."
+        },
+        {
+            "question": "Which scenario BEST demonstrates the feature 'Equality' in a thinking environment?",
+            "option_a": "A. The manager ignores junior developers",
+            "option_b": "B. Every team member's ideas are treated with equal respect",
+            "option_c": "C. Decisions are made only by senior engineers",
+            "option_d": "D. Urgency is prioritized over participation",
+            "correct_answer": "B",
+            "explanation": "Equality means treating all team members as thinking peers."
+        },
+        {
+            "question": "A team repeatedly interrupts members during meetings. Which feature of a thinking environment is MOST lacking?",
+            "option_a": "A. Diversity",
+            "option_b": "B. Attention",
+            "option_c": "C. Place",
+            "option_d": "D. Ease",
+            "correct_answer": "B",
+            "explanation": "Attention requires respectful listening to others."
+        },
+        {
+            "question": "Which leadership theory would MOST likely argue that leadership ability is inherited rather than learned?",
+            "option_a": "A. Situational Theory",
+            "option_b": "B. Transformational Theory",
+            "option_c": "C. Great Man Theory",
+            "option_d": "D. Decision Matrix Theory",
+            "correct_answer": "C",
+            "explanation": "Great Man Theory assumes leaders are born with leadership traits."
+        },
+        {
+            "question": "A startup founder adapts leadership style depending on employee competence and motivation. Which perspective is this?",
+            "option_a": "A. Trait Perspective",
+            "option_b": "B. Contingency Perspective",
+            "option_c": "C. Great Man Perspective",
+            "option_d": "D. Administrative Perspective",
+            "correct_answer": "B",
+            "explanation": "Contingency leadership adapts according to the situation and follower readiness."
+        },
+        {
+            "question": "A team wants maximum creativity before narrowing ideas into categories. Which sequence is MOST appropriate?",
+            "option_a": "A. Multi-voting → Brainstorming",
+            "option_b": "B. Brainstorming → Affinity Grouping",
+            "option_c": "C. Criteria Matrix → Brainstorming",
+            "option_d": "D. Consensus → Brainstorming",
+            "correct_answer": "B",
+            "explanation": "Brainstorming generates ideas, while affinity grouping organizes them."
+        },
+        {
+            "question": "Which situation BEST fits 'decision by expert'?",
+            "option_a": "A. Choosing lunch options for a team",
+            "option_b": "B. Resolving a highly technical server failure",
+            "option_c": "C. Conducting a brainstorming session",
+            "option_d": "D. Voting for a team outing",
+            "correct_answer": "B",
+            "explanation": "Expert decisions are appropriate when specialized expertise is required."
+        },
+        {
+            "question": "A team leader pressures employees aggressively with unrealistic deadlines, reducing creativity. Which thinking environment feature is violated?",
+            "option_a": "A. Ease",
+            "option_b": "B. Diversity",
+            "option_c": "C. Information",
+            "option_d": "D. Appreciation",
+            "correct_answer": "A",
+            "explanation": "The lecture states that ease creates while urgency destroys."
+        },
+        {
+            "question": "Why is consensus decision making often difficult in large organizations?",
+            "option_a": "A. It eliminates creativity",
+            "option_b": "B. It requires significant time and collaboration",
+            "option_c": "C. It depends only on experts",
+            "option_d": "D. It ignores team commitment",
+            "correct_answer": "B",
+            "explanation": "Consensus requires time, participation, and alignment among members."
+        },
+        {
+            "question": "A team uses a scoring table comparing cost, safety, and reliability before selecting a product. Which tool are they using?",
+            "option_a": "A. Brainstorming",
+            "option_b": "B. Multi-voting",
+            "option_c": "C. Criteria Matrix",
+            "option_d": "D. Affinity Grouping",
+            "correct_answer": "C",
+            "explanation": "Criteria matrices systematically compare alternatives using weighted criteria."
+        },
+        {
+            "question": "Which leadership trait reflects a desire to influence others?",
+            "option_a": "A. Compassion",
+            "option_b": "B. Dominance",
+            "option_c": "C. Equality",
+            "option_d": "D. Creativity",
+            "correct_answer": "B",
+            "explanation": "Dominance is described as the desire to influence others."
+        },
+        {
+            "question": "A leader motivates employees through rewards and punishments only. Which leadership model would MOST criticize this approach?",
+            "option_a": "A. Transformational Theory",
+            "option_b": "B. Great Man Theory",
+            "option_c": "C. Trait Theory",
+            "option_d": "D. Majority Voting",
+            "correct_answer": "A",
+            "explanation": "Transformational leadership focuses on inspiration beyond reward exchange."
+        },
+        {
+            "question": "Which leadership skill is MOST associated with managing relationships tactfully?",
+            "option_a": "A. Persistence",
+            "option_b": "B. Diplomacy",
+            "option_c": "C. Dominance",
+            "option_d": "D. Tolerance of stress",
+            "correct_answer": "B",
+            "explanation": "Diplomatic and tactful behavior is listed as a leadership skill."
+        },
+        {
+            "question": "A team narrows 20 ideas down to 5 through several voting rounds. Which tool are they MOST likely using?",
+            "option_a": "A. Criteria Matrix",
+            "option_b": "B. Multi-voting",
+            "option_c": "C. Brainstorming",
+            "option_d": "D. Delegation",
+            "correct_answer": "B",
+            "explanation": "Multi-voting uses repeated rounds to reduce alternatives."
+        },
+        {
+            "question": "A team member is highly skilled but lacks motivation. Which leadership style should be applied according to SLT?",
+            "option_a": "A. Supportive",
+            "option_b": "B. Directive",
+            "option_c": "C. Delegatory",
+            "option_d": "D. Punitive",
+            "correct_answer": "A",
+            "explanation": "Supportive leadership is suitable for able but unwilling followers."
+        },
+        {
+            "question": "Which statement BEST describes effective decision making?",
+            "option_a": "A. It depends entirely on intuition",
+            "option_b": "B. It is logical and systematic",
+            "option_c": "C. It avoids evaluating risks",
+            "option_d": "D. It removes collaboration",
+            "correct_answer": "B",
+            "explanation": "The lecture defines decision making as a logical and systematic process."
+        },
+        {
+            "question": "Why are incisive questions important in a thinking environment?",
+            "option_a": "A. They increase emotional pressure",
+            "option_b": "B. They remove limiting assumptions",
+            "option_c": "C. They prevent collaboration",
+            "option_d": "D. They reduce participation",
+            "correct_answer": "B",
+            "explanation": "Incisive questions challenge assumptions that limit thinking."
+        },
+        {
+            "question": "A leader constantly adapts between directive and supportive behaviors depending on the employee. This demonstrates:",
+            "option_a": "A. Fixed leadership behavior",
+            "option_b": "B. Situational leadership flexibility",
+            "option_c": "C. Majority voting",
+            "option_d": "D. Leadership irrelevance",
+            "correct_answer": "B",
+            "explanation": "Situational leadership requires adapting styles based on follower readiness."
+        },
+        {
+            "question": "Which decision-making method is MOST vulnerable to group polarization if not managed carefully?",
+            "option_a": "A. Consensus",
+            "option_b": "B. Authority without discussion",
+            "option_c": "C. Expert decision",
+            "option_d": "D. Decision by averaging opinions",
+            "correct_answer": "A",
+            "explanation": "Consensus processes can sometimes push groups toward extreme shared positions."
+        },
+        {
+            "question": "A company invites developers, designers, testers, and customers into planning sessions to improve idea quality. Which thinking environment feature is emphasized?",
+            "option_a": "A. Ease",
+            "option_b": "B. Diversity",
+            "option_c": "C. Monitoring",
+            "option_d": "D. Dominance",
+            "correct_answer": "B",
+            "explanation": "Diversity improves quality through different participant perspectives."
+        },
+        {
+            "question": "Which action BEST demonstrates transformational leadership in a software engineering team?",
+            "option_a": "A. Threatening employees for missing deadlines",
+            "option_b": "B. Encouraging innovation and shared vision",
+            "option_c": "C. Avoiding communication with junior staff",
+            "option_d": "D. Making every decision alone",
+            "correct_answer": "B",
+            "explanation": "Transformational leaders inspire creativity, trust, and shared purpose."
+        },
+        {
+            "question": "What is the primary weakness of relying ONLY on trait-based leadership theories?",
+            "option_a": "A. They ignore situational influences",
+            "option_b": "B. They emphasize teamwork excessively",
+            "option_c": "C. They focus only on technology",
+            "option_d": "D. They eliminate motivation",
+            "correct_answer": "A",
+            "explanation": "Trait theories often overlook the importance of context and environment."
+        },
+        {
+            "question": "A manager gathers ideas freely first, organizes them into themes second, and finally ranks them through voting. Which combination of tools is being used?",
+            "option_a": "A. Brainstorming → Affinity Grouping → Multi-voting",
+            "option_b": "B. Decision Tree → Consensus → Delegation",
+            "option_c": "C. Majority Vote → Brainstorming → Expert Decision",
+            "option_d": "D. Criteria Matrix → Brainstorming → Authority Decision",
+            "correct_answer": "A",
+            "explanation": "This sequence follows the standard idea generation, organization, and prioritization process."
+        },
+        {
+            "question": "A leader refuses input from team members because he believes only executives can think strategically. Which principle of effective leadership is MOST violated?",
+            "option_a": "A. Equality",
+            "option_b": "B. Delegation",
+            "option_c": "C. Voting",
+            "option_d": "D. Monitoring",
+            "correct_answer": "A",
+            "explanation": "Equality involves treating all members as valuable thinking peers."
+        },
+        {
+            "question": "Which statement BEST summarizes the lecture's view of leadership?",
+            "option_a": "A. Leadership depends solely on authority",
+            "option_b": "B. Leadership is fixed and universal",
+            "option_c": "C. Leadership effectiveness depends on people, situations, and decision processes",
+            "option_d": "D. Leadership is unrelated to teamwork",
+            "correct_answer": "C",
+            "explanation": "The lecture emphasizes that leadership depends on followers, environments, and situational decision making."
+        }
+    ]
+}

@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of AI ethics?",
+            "option_a": "A. To maximize company profits using AI",
+            "option_b": "B. To ensure AI systems are fair, safe, and accountable",
+            "option_c": "C. To eliminate human involvement in computing",
+            "option_d": "D. To increase automation regardless of consequences",
+            "correct_answer": "B",
+            "explanation": "AI ethics focuses on ensuring AI systems operate fairly, safely, transparently, and responsibly."
+        },
+        {
+            "question": "Which industry was specifically mentioned as being transformed by AI?",
+            "option_a": "A. Agriculture only",
+            "option_b": "B. Mining only",
+            "option_c": "C. Healthcare and finance",
+            "option_d": "D. Tourism only",
+            "correct_answer": "C",
+            "explanation": "The lecture highlighted healthcare and finance among industries being transformed by AI."
+        },
+        {
+            "question": "Why is explainability important in AI systems?",
+            "option_a": "A. It makes AI slower",
+            "option_b": "B. It increases hardware costs",
+            "option_c": "C. Users require transparent decisions",
+            "option_d": "D. It removes the need for regulations",
+            "correct_answer": "C",
+            "explanation": "Explainability helps users understand AI decisions, especially in sensitive sectors like banking and healthcare."
+        },
+        {
+            "question": "What is one major risk of AI-generated deepfakes?",
+            "option_a": "A. Increased electricity consumption",
+            "option_b": "B. Threats to democracy through misinformation",
+            "option_c": "C. Faster internet speeds",
+            "option_d": "D. Reduced computing performance",
+            "correct_answer": "B",
+            "explanation": "Deepfakes can spread misinformation and manipulate public opinion, threatening democratic processes."
+        },
+        {
+            "question": "Which Sri Lankan law regulates data handling and privacy?",
+            "option_a": "A. Computer Crimes Act",
+            "option_b": "B. UNESCO AI Ethics",
+            "option_c": "C. PDPA Act No. 9 of 2022",
+            "option_d": "D. GDPR",
+            "correct_answer": "C",
+            "explanation": "The Personal Data Protection Act (PDPA) regulates how organizations handle personal data in Sri Lanka."
+        },
+        {
+            "question": "What is responsible innovation primarily concerned with?",
+            "option_a": "A. Maximizing software sales",
+            "option_b": "B. Developing technology without restrictions",
+            "option_c": "C. Ensuring technology benefits society while minimizing harm",
+            "option_d": "D. Replacing all human workers with AI",
+            "correct_answer": "C",
+            "explanation": "Responsible innovation balances technological advancement with societal well-being and harm prevention."
+        },
+        {
+            "question": "Which principle of responsible innovation focuses on openness in decision-making?",
+            "option_a": "A. Sustainability",
+            "option_b": "B. Transparency",
+            "option_c": "C. Accountability",
+            "option_d": "D. Profitability",
+            "correct_answer": "B",
+            "explanation": "Transparency ensures AI decisions and processes can be understood and examined."
+        },
+        {
+            "question": "According to the lecture, what can happen if AI systems are built without diverse input?",
+            "option_a": "A. They become cheaper",
+            "option_b": "B. They may reinforce bias",
+            "option_c": "C. They automatically become ethical",
+            "option_d": "D. They require less maintenance",
+            "correct_answer": "B",
+            "explanation": "Lack of diversity in AI development can reinforce discrimination and existing societal biases."
+        },
+        {
+            "question": "Which global regulation specifically addresses AI governance in Europe?",
+            "option_a": "A. PDPA",
+            "option_b": "B. EU AI Act",
+            "option_c": "C. Computer Crimes Act",
+            "option_d": "D. Electronic Transactions Act",
+            "correct_answer": "B",
+            "explanation": "The EU AI Act is a European framework designed to regulate AI systems and governance."
+        },
+        {
+            "question": "What is one professional responsibility towards society when developing AI?",
+            "option_a": "A. Avoid documenting AI systems",
+            "option_b": "B. Prevent harmful or manipulative AI",
+            "option_c": "C. Prioritize profits above safety",
+            "option_d": "D. Ignore minority concerns",
+            "correct_answer": "B",
+            "explanation": "Developers have a responsibility to prevent harmful or manipulative uses of AI technologies."
+        },
+        {
+            "question": "Which issue was highlighted in the COMPAS algorithm case study?",
+            "option_a": "A. Excessive energy consumption",
+            "option_b": "B. Slow algorithm performance",
+            "option_c": "C. Bias against minorities",
+            "option_d": "D. Hardware incompatibility",
+            "correct_answer": "C",
+            "explanation": "The COMPAS algorithm was criticized for exhibiting racial bias in criminal risk predictions."
+        },
+        {
+            "question": "What ethical concern arose in the Google Photos tagging scandal?",
+            "option_a": "A. Privacy leakage",
+            "option_b": "B. Server downtime",
+            "option_c": "C. Biased training data",
+            "option_d": "D. Weak encryption",
+            "correct_answer": "C",
+            "explanation": "The incident highlighted how biased training data can lead to discriminatory AI outputs."
+        },
+        {
+            "question": "Which of the following is NOT listed as a principle of responsible innovation?",
+            "option_a": "A. Inclusiveness",
+            "option_b": "B. Fairness",
+            "option_c": "C. Sustainability",
+            "option_d": "D. Monopoly",
+            "correct_answer": "D",
+            "explanation": "Monopoly is not a principle of responsible innovation."
+        },
+        {
+            "question": "Why does AI create privacy challenges?",
+            "option_a": "A. AI requires large datasets",
+            "option_b": "B. AI cannot process encrypted data",
+            "option_c": "C. AI systems are always public",
+            "option_d": "D. AI eliminates cybersecurity",
+            "correct_answer": "A",
+            "explanation": "AI systems often rely on large datasets containing personal or sensitive information."
+        },
+        {
+            "question": "What does career readiness in an AI-driven world require?",
+            "option_a": "A. Only coding skills",
+            "option_b": "B. Ethical competence and adaptability",
+            "option_c": "C. Avoiding teamwork",
+            "option_d": "D. Ignoring regulations",
+            "correct_answer": "B",
+            "explanation": "Career readiness requires both technical and ethical skills, along with adaptability."
+        },
+        {
+            "question": "A bank deploys an AI loan approval system that rejects applicants from certain regions significantly more often than others. Which ethical issue is MOST likely present?",
+            "option_a": "A. Sustainability",
+            "option_b": "B. Fairness and bias",
+            "option_c": "C. Hardware failure",
+            "option_d": "D. Network congestion",
+            "correct_answer": "B",
+            "explanation": "Discriminatory outcomes in loan approvals indicate fairness and bias issues in the AI system."
+        },
+        {
+            "question": "An AI healthcare system provides treatment recommendations but cannot explain how decisions were made. Which AI principle is being violated?",
+            "option_a": "A. Accountability",
+            "option_b": "B. Sustainability",
+            "option_c": "C. Explainability",
+            "option_d": "D. Inclusiveness",
+            "correct_answer": "C",
+            "explanation": "Explainable AI requires decisions to be understandable and transparent."
+        },
+        {
+            "question": "Which statement best reflects Baase's perspective on technology?",
+            "option_a": "A. Technology is always neutral",
+            "option_b": "B. Technology amplifies consequences of human decisions",
+            "option_c": "C. Technology eliminates ethical concerns",
+            "option_d": "D. Technology should replace human judgment",
+            "correct_answer": "B",
+            "explanation": "Baase emphasized that technology magnifies the impact of human decisions and actions."
+        },
+        {
+            "question": "Why are inclusive teams important in AI development?",
+            "option_a": "A. They reduce server costs",
+            "option_b": "B. They create fairer technologies",
+            "option_c": "C. They eliminate all software bugs",
+            "option_d": "D. They remove the need for testing",
+            "correct_answer": "B",
+            "explanation": "Inclusive teams bring diverse perspectives that help reduce bias and improve fairness."
+        },
+        {
+            "question": "What is a key concern regarding AI-generated misinformation during elections?",
+            "option_a": "A. Reduced battery life",
+            "option_b": "B. Manipulation of public opinion",
+            "option_c": "C. Increased internet speed",
+            "option_d": "D. Lower software costs",
+            "correct_answer": "B",
+            "explanation": "AI-generated misinformation can influence voters and undermine democratic processes."
+        },
+        {
+            "question": "Which law is primarily associated with data protection in the European Union?",
+            "option_a": "A. GDPR",
+            "option_b": "B. PDPA",
+            "option_c": "C. Computer Crimes Act",
+            "option_d": "D. Electronic Transactions Act",
+            "correct_answer": "A",
+            "explanation": "GDPR is the European Union's major data protection regulation."
+        },
+        {
+            "question": "A developer discovers that an AI recruitment tool consistently disadvantages female applicants. What is the MOST ethical action?",
+            "option_a": "A. Ignore the issue to protect deadlines",
+            "option_b": "B. Report the issue and recommend corrective action",
+            "option_c": "C. Delete the training data secretly",
+            "option_d": "D. Continue deployment until complaints arise",
+            "correct_answer": "B",
+            "explanation": "Professionals have a responsibility to report risks and unethical AI behavior."
+        },
+        {
+            "question": "Which of the following best describes accountability in AI?",
+            "option_a": "A. AI systems are responsible for their own actions",
+            "option_b": "B. Developers must prevent harm caused by AI",
+            "option_c": "C. Governments are solely responsible",
+            "option_d": "D. Accountability only matters after deployment",
+            "correct_answer": "B",
+            "explanation": "Developers and organizations remain responsible for preventing AI-related harm."
+        },
+        {
+            "question": "What is the primary ethical concern with facial recognition systems in public spaces?",
+            "option_a": "A. Reduced internet bandwidth",
+            "option_b": "B. Privacy and consent",
+            "option_c": "C. Limited storage space",
+            "option_d": "D. Low processing speed",
+            "correct_answer": "B",
+            "explanation": "Facial recognition systems raise major concerns about surveillance, consent, and privacy."
+        },
+        {
+            "question": "Why is ethical decision-making recommended before AI deployment?",
+            "option_a": "A. Ethical fixes become impossible later",
+            "option_b": "B. Preventing harm early is more effective",
+            "option_c": "C. AI systems cannot be updated",
+            "option_d": "D. Deployment automatically removes risks",
+            "correct_answer": "B",
+            "explanation": "Addressing ethical risks early helps prevent large-scale societal harm."
+        },
+        {
+            "question": "Which of the following is an example of responsible AI governance?",
+            "option_a": "A. Deploying AI without testing",
+            "option_b": "B. Ignoring minority feedback",
+            "option_c": "C. Following ethical guidelines and regulations",
+            "option_d": "D. Prioritizing profit over fairness",
+            "correct_answer": "C",
+            "explanation": "Responsible governance requires compliance with ethical and legal standards."
+        },
+        {
+            "question": "A company uses AI to analyze customer behavior without informing users. Which ethical principle is MOST directly violated?",
+            "option_a": "A. Transparency",
+            "option_b": "B. Sustainability",
+            "option_c": "C. Scalability",
+            "option_d": "D. Automation",
+            "correct_answer": "A",
+            "explanation": "Transparency requires organizations to openly communicate AI usage and data collection practices."
+        },
+        {
+            "question": "Which organization provides global AI ethics guidance mentioned in the lecture?",
+            "option_a": "A. UNESCO",
+            "option_b": "B. FIFA",
+            "option_c": "C. NATO",
+            "option_d": "D. IMF",
+            "correct_answer": "A",
+            "explanation": "UNESCO has developed international AI ethics guidelines."
+        },
+        {
+            "question": "What does fairness in AI primarily aim to achieve?",
+            "option_a": "A. Faster computation",
+            "option_b": "B. Equal and unbiased treatment",
+            "option_c": "C. Reduced energy usage",
+            "option_d": "D. Automated decision-making only",
+            "correct_answer": "B",
+            "explanation": "Fairness ensures AI systems do not discriminate against individuals or groups."
+        },
+        {
+            "question": "A social media platform deploys an AI model that promotes sensational fake news because it increases engagement. Which responsible innovation principle is MOST compromised?",
+            "option_a": "A. Accountability",
+            "option_b": "B. Sustainability",
+            "option_c": "C. Ethical responsibility toward society",
+            "option_d": "D. Scalability",
+            "correct_answer": "C",
+            "explanation": "Promoting misinformation harms society and violates ethical responsibilities."
+        },
+        {
+            "question": "What is one benefit of Explainable AI in healthcare?",
+            "option_a": "A. Eliminating doctors",
+            "option_b": "B. Increasing trust in AI decisions",
+            "option_c": "C. Reducing data privacy requirements",
+            "option_d": "D. Removing legal obligations",
+            "correct_answer": "B",
+            "explanation": "Explainable AI helps doctors and patients trust and verify AI-assisted decisions."
+        },
+        {
+            "question": "Which of the following best describes ethical foresight?",
+            "option_a": "A. Ignoring future risks",
+            "option_b": "B. Predicting stock market trends",
+            "option_c": "C. Anticipating unintended consequences",
+            "option_d": "D. Increasing software complexity",
+            "correct_answer": "C",
+            "explanation": "Ethical foresight involves proactively identifying possible harms before deployment."
+        },
+        {
+            "question": "A company refuses to investigate reports of biased AI outputs because the system is profitable. Which professional responsibility is being neglected?",
+            "option_a": "A. Protecting society from harm",
+            "option_b": "B. Improving network infrastructure",
+            "option_c": "C. Reducing electricity usage",
+            "option_d": "D. Expanding cloud storage",
+            "correct_answer": "A",
+            "explanation": "Organizations have a duty to address harmful AI outcomes regardless of profitability."
+        },
+        {
+            "question": "Why is transparency critical in automated banking decisions?",
+            "option_a": "A. Customers need to understand why decisions were made",
+            "option_b": "B. It increases CPU speed",
+            "option_c": "C. It eliminates databases",
+            "option_d": "D. It prevents software updates",
+            "correct_answer": "A",
+            "explanation": "Customers deserve understandable explanations for financial decisions affecting them."
+        },
+        {
+            "question": "What is a major ethical concern regarding surveillance AI systems?",
+            "option_a": "A. Excessive cooling requirements",
+            "option_b": "B. Loss of privacy and civil liberties",
+            "option_c": "C. Slow internet speeds",
+            "option_d": "D. Reduced AI accuracy",
+            "correct_answer": "B",
+            "explanation": "Surveillance systems can violate privacy rights and reduce personal freedoms."
+        },
+        {
+            "question": "Which statement best reflects responsible innovation?",
+            "option_a": "A. Innovation should prioritize speed over ethics",
+            "option_b": "B. Innovation should empower communities without causing harm",
+            "option_c": "C. Innovation should replace ethical review",
+            "option_d": "D. Innovation should avoid regulations entirely",
+            "correct_answer": "B",
+            "explanation": "Responsible innovation balances progress with fairness, inclusion, and societal well-being."
+        },
+        {
+            "question": "An AI hiring system uses historical company data where most executives were male. What risk is MOST likely?",
+            "option_a": "A. Gender bias in hiring recommendations",
+            "option_b": "B. Faster network processing",
+            "option_c": "C. Lower electricity costs",
+            "option_d": "D. Improved inclusiveness",
+            "correct_answer": "A",
+            "explanation": "Historical bias in data can cause AI systems to reproduce discriminatory patterns."
+        },
+        {
+            "question": "What is the purpose of whistleblowing in AI teams?",
+            "option_a": "A. To promote unethical behavior",
+            "option_b": "B. To report harmful or unethical practices",
+            "option_c": "C. To bypass legal regulations",
+            "option_d": "D. To reduce accountability",
+            "correct_answer": "B",
+            "explanation": "Whistleblowing helps organizations identify and address unethical AI practices."
+        },
+        {
+            "question": "Which ethical issue is MOST associated with AI-generated political targeting?",
+            "option_a": "A. Processor overheating",
+            "option_b": "B. Manipulation of voters",
+            "option_c": "C. Limited memory capacity",
+            "option_d": "D. Software licensing",
+            "correct_answer": "B",
+            "explanation": "Political targeting through AI can manipulate opinions and undermine democratic fairness."
+        },
+        {
+            "question": "What does inclusiveness in responsible innovation encourage?",
+            "option_a": "A. Excluding minority perspectives",
+            "option_b": "B. Diverse participation in technology development",
+            "option_c": "C. Eliminating teamwork",
+            "option_d": "D. Restricting access to technology",
+            "correct_answer": "B",
+            "explanation": "Inclusiveness ensures technologies are designed with input from diverse communities."
+        },
+        {
+            "question": "A facial recognition system incorrectly identifies minority individuals at a higher rate than others. Which combination of ethical concerns is MOST relevant?",
+            "option_a": "A. Fairness and accountability",
+            "option_b": "B. Sustainability and profitability",
+            "option_c": "C. Speed and efficiency",
+            "option_d": "D. Networking and storage",
+            "correct_answer": "A",
+            "explanation": "The issue reflects unfair treatment and raises accountability concerns for developers and operators."
+        }
+    ]
+}

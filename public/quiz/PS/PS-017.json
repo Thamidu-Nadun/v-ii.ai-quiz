@@ -1,0 +1,373 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary meaning of team diversity?",
+            "option_a": "A. The similarity of employees in an organization",
+            "option_b": "B. The uniqueness and differences among team members",
+            "option_c": "C. The hierarchy within a management structure",
+            "option_d": "D. The process of reducing conflicts in teams",
+            "correct_answer": "B",
+            "explanation": "Team diversity refers to the significant uniqueness and differences among individuals in a team."
+        },
+        {
+            "question": "Which of the following is NOT mentioned as a dimension of team diversity in the lecture?",
+            "option_a": "A. Religion",
+            "option_b": "B. Gender",
+            "option_c": "C. Political preferences",
+            "option_d": "D. Programming language expertise",
+            "correct_answer": "D",
+            "explanation": "Programming language expertise was not directly listed among the diversity dimensions discussed."
+        },
+        {
+            "question": "Why can religious diversity benefit organizations?",
+            "option_a": "A. It eliminates workplace disagreements",
+            "option_b": "B. It ensures identical decision-making styles",
+            "option_c": "C. It introduces multiple viewpoints into decisions",
+            "option_d": "D. It reduces the need for communication",
+            "correct_answer": "C",
+            "explanation": "Religious diversity contributes different viewpoints that can improve decision-making quality."
+        },
+        {
+            "question": "Which practice is MOST effective for managing religious diversity in the workplace?",
+            "option_a": "A. Ignoring religious differences completely",
+            "option_b": "B. Allowing only one religion to dominate",
+            "option_c": "C. Training employees on diversity policies",
+            "option_d": "D. Preventing discussions about beliefs",
+            "correct_answer": "C",
+            "explanation": "Training employees helps organizations fairly and effectively manage religious diversity."
+        },
+        {
+            "question": "A software company allows flexible scheduling for employees observing religious holidays. Which diversity management principle is being applied?",
+            "option_a": "A. Conflict escalation",
+            "option_b": "B. Fair accommodation",
+            "option_c": "C. Performance punishment",
+            "option_d": "D. Workforce segregation",
+            "correct_answer": "B",
+            "explanation": "Providing fair accommodations for religious observations promotes inclusion and respect."
+        },
+        {
+            "question": "Which of the following is a major benefit of gender diversity?",
+            "option_a": "A. Reduced customer understanding",
+            "option_b": "B. Narrower talent pool",
+            "option_c": "C. Enhanced collaboration",
+            "option_d": "D. Elimination of communication challenges",
+            "correct_answer": "C",
+            "explanation": "Gender diversity improves collaboration by bringing multiple perspectives into teamwork."
+        },
+        {
+            "question": "Gender communication issues in teams may include:",
+            "option_a": "A. Different communication styles",
+            "option_b": "B. Uniform workplace behavior",
+            "option_c": "C. Elimination of misunderstandings",
+            "option_d": "D. Reduced interaction among employees",
+            "correct_answer": "A",
+            "explanation": "Communication styles and perceptions can differ across genders and affect teamwork."
+        },
+        {
+            "question": "Which outcome is commonly associated with age diversity in teams?",
+            "option_a": "A. Decreased flexibility",
+            "option_b": "B. Reduced idea generation",
+            "option_c": "C. Well-rounded decisions",
+            "option_d": "D. Elimination of workplace conflict",
+            "correct_answer": "C",
+            "explanation": "Age diversity introduces varied experiences and opinions, leading to balanced decisions."
+        },
+        {
+            "question": "Which characteristic is strongly associated with older workers according to the lecture?",
+            "option_a": "A. Lack of organizational skills",
+            "option_b": "B. Weak communication abilities",
+            "option_c": "C. Maturity",
+            "option_d": "D. Resistance to punctuality",
+            "correct_answer": "C",
+            "explanation": "Older workers were described as mature, punctual, and detail-oriented."
+        },
+        {
+            "question": "Why are young employees often valuable in organizations?",
+            "option_a": "A. They avoid learning new technologies",
+            "option_b": "B. They are usually less adaptable",
+            "option_c": "C. They bring fresh perspectives and energy",
+            "option_d": "D. They discourage innovation",
+            "correct_answer": "C",
+            "explanation": "Young employees often contribute new energy, fresh ideas, and innovative thinking."
+        },
+        {
+            "question": "A startup hires young graduates primarily because they quickly adapt to emerging technologies. Which advantage is being utilized?",
+            "option_a": "A. Organizational rigidity",
+            "option_b": "B. Tech advancement and early adoption",
+            "option_c": "C. Resistance to change",
+            "option_d": "D. Workforce stagnation",
+            "correct_answer": "B",
+            "explanation": "Young employees are often quick to adopt and understand new technologies."
+        },
+        {
+            "question": "Culture refers to:",
+            "option_a": "A. Financial systems within organizations",
+            "option_b": "B. Standards of interaction, values, and beliefs",
+            "option_c": "C. Only national traditions",
+            "option_d": "D. A company's technical infrastructure",
+            "correct_answer": "B",
+            "explanation": "Culture includes social interaction standards, beliefs, and values shared by groups."
+        },
+        {
+            "question": "What is national culture?",
+            "option_a": "A. A fixed and unchanging social system",
+            "option_b": "B. A society's shared values, beliefs, and approved behaviors",
+            "option_c": "C. The legal structure of a country",
+            "option_d": "D. A country's economic ranking",
+            "correct_answer": "B",
+            "explanation": "National culture consists of the values, beliefs, and behavioral norms accepted by society."
+        },
+        {
+            "question": "Which of the following is considered a popular dimension of culture?",
+            "option_a": "A. CPU architecture",
+            "option_b": "B. Language",
+            "option_c": "C. Market capitalization",
+            "option_d": "D. Salary structure",
+            "correct_answer": "B",
+            "explanation": "Language is one of the major dimensions used to describe culture."
+        },
+        {
+            "question": "According to the Whorfian hypothesis, language:",
+            "option_a": "A. Has no influence on thought",
+            "option_b": "B. Is unrelated to communication",
+            "option_c": "C. Is a major determinant of thinking",
+            "option_d": "D. Prevents cultural diversity",
+            "correct_answer": "C",
+            "explanation": "The Whorfian hypothesis suggests language significantly influences human thinking."
+        },
+        {
+            "question": "Which of the following is an example of a low-context culture?",
+            "option_a": "A. Japan",
+            "option_b": "B. Brazil",
+            "option_c": "C. Germany",
+            "option_d": "D. India",
+            "correct_answer": "C",
+            "explanation": "German-speaking countries are examples of low-context cultures where messages are explicit."
+        },
+        {
+            "question": "High-context cultures typically:",
+            "option_a": "A. Depend heavily on explicit verbal communication",
+            "option_b": "B. Convey meaning indirectly through context",
+            "option_c": "C. Avoid nonverbal communication",
+            "option_d": "D. Reject cultural traditions",
+            "correct_answer": "B",
+            "explanation": "High-context cultures rely on context, relationships, and implicit understanding."
+        },
+        {
+            "question": "A Sri Lankan team member assumes colleagues understand implied meanings without direct explanation. This behavior reflects:",
+            "option_a": "A. Monochronic communication",
+            "option_b": "B. Low-context culture",
+            "option_c": "C. High-context culture",
+            "option_d": "D. Cultural isolation",
+            "correct_answer": "C",
+            "explanation": "Sri Lanka was identified as a high-context culture in the lecture."
+        },
+        {
+            "question": "Which statement BEST describes monochronic cultures?",
+            "option_a": "A. They emphasize flexible schedules and present-focused activities",
+            "option_b": "B. They prioritize long-term planning and deadlines",
+            "option_c": "C. They avoid time management completely",
+            "option_d": "D. They discourage performance evaluation",
+            "correct_answer": "B",
+            "explanation": "Monochronic cultures view time linearly and value planning and deadlines."
+        },
+        {
+            "question": "Polychronic cultures generally:",
+            "option_a": "A. Focus heavily on strict scheduling",
+            "option_b": "B. Create pressure for immediate action",
+            "option_c": "C. Emphasize the present and flexible time use",
+            "option_d": "D. Reject multitasking",
+            "correct_answer": "C",
+            "explanation": "Polychronic cultures have a flexible and circular view of time."
+        },
+        {
+            "question": "What is proxemics?",
+            "option_a": "A. The study of workplace efficiency",
+            "option_b": "B. The study of how people use space to communicate",
+            "option_c": "C. The study of economic behavior",
+            "option_d": "D. The analysis of leadership styles",
+            "correct_answer": "B",
+            "explanation": "Proxemics studies how physical space communicates cultural meaning."
+        },
+        {
+            "question": "Why might a person from the Netherlands appear distant to someone from Saudi Arabia during conversation?",
+            "option_a": "A. Differences in religious beliefs",
+            "option_b": "B. Differences in technological skills",
+            "option_c": "C. Different cultural perceptions of personal space",
+            "option_d": "D. Language barriers only",
+            "correct_answer": "C",
+            "explanation": "Cultures differ significantly in their expectations regarding personal space."
+        },
+        {
+            "question": "Religion influences workplace culture because it:",
+            "option_a": "A. Eliminates ethical decision-making",
+            "option_b": "B. Influences moral behavior and ethics",
+            "option_c": "C. Prevents teamwork",
+            "option_d": "D. Reduces communication",
+            "correct_answer": "B",
+            "explanation": "Religion often shapes ethical standards and behavioral expectations."
+        },
+        {
+            "question": "Racism is best defined as:",
+            "option_a": "A. Respecting cultural differences",
+            "option_b": "B. Believing inherited characteristics affect abilities or behavior",
+            "option_c": "C. Encouraging workplace inclusion",
+            "option_d": "D. Supporting equal opportunity policies",
+            "correct_answer": "B",
+            "explanation": "Racism involves assumptions about abilities based on inherited traits."
+        },
+        {
+            "question": "Why can disabilities create challenges in team environments?",
+            "option_a": "A. Disabled individuals cannot work in teams",
+            "option_b": "B. Communication and emotional interaction difficulties may arise",
+            "option_c": "C. Diversity decreases productivity automatically",
+            "option_d": "D. Teams cannot adapt to accessibility needs",
+            "correct_answer": "B",
+            "explanation": "Communication barriers and uncertainty in interactions may create challenges."
+        },
+        {
+            "question": "Which of the following is a major benefit of workplace diversity?",
+            "option_a": "A. Reduced innovation",
+            "option_b": "B. Limited talent pool",
+            "option_c": "C. Improved employee performance",
+            "option_d": "D. Elimination of disagreements",
+            "correct_answer": "C",
+            "explanation": "Diversity improves performance through varied skills and perspectives."
+        },
+        {
+            "question": "How can language diversity benefit a company?",
+            "option_a": "A. By limiting customer reach",
+            "option_b": "B. By opening doors to wider business opportunities",
+            "option_c": "C. By reducing communication",
+            "option_d": "D. By increasing discrimination",
+            "correct_answer": "B",
+            "explanation": "Employees with multiple language skills help businesses access broader markets."
+        },
+        {
+            "question": "Which of the following is considered a challenge of workplace diversity?",
+            "option_a": "A. Innovation",
+            "option_b": "B. Improved talent pool",
+            "option_c": "C. Stereotyping",
+            "option_d": "D. Better collaboration",
+            "correct_answer": "C",
+            "explanation": "Stereotyping can negatively affect teamwork and inclusion."
+        },
+        {
+            "question": "Discrimination refers to:",
+            "option_a": "A. Encouraging equal participation",
+            "option_b": "B. Treating individuals unfairly due to characteristics",
+            "option_c": "C. Supporting diversity training",
+            "option_d": "D. Improving workplace communication",
+            "correct_answer": "B",
+            "explanation": "Discrimination involves unfair treatment based on personal characteristics."
+        },
+        {
+            "question": "Which situation is an example of workplace discrimination?",
+            "option_a": "A. Providing equal opportunities to all employees",
+            "option_b": "B. Refusing promotion because of gender",
+            "option_c": "C. Conducting diversity workshops",
+            "option_d": "D. Encouraging team collaboration",
+            "correct_answer": "B",
+            "explanation": "Denying opportunities based on gender is discriminatory behavior."
+        },
+        {
+            "question": "Stereotyping is BEST described as:",
+            "option_a": "A. An objective assessment of individuals",
+            "option_b": "B. A detailed psychological evaluation",
+            "option_c": "C. An oversimplified belief about a group",
+            "option_d": "D. A scientific method for hiring",
+            "correct_answer": "C",
+            "explanation": "Stereotyping involves oversimplified assumptions about groups of people."
+        },
+        {
+            "question": "Why are stereotypes considered functional according to the lecture?",
+            "option_a": "A. They always improve decision-making",
+            "option_b": "B. People process information selectively",
+            "option_c": "C. They eliminate prejudice",
+            "option_d": "D. They increase cultural awareness",
+            "correct_answer": "B",
+            "explanation": "Humans simplify information processing by relying on selective perceptions."
+        },
+        {
+            "question": "A manager assumes older employees cannot learn modern programming frameworks. This is an example of:",
+            "option_a": "A. Inclusion",
+            "option_b": "B. Innovation",
+            "option_c": "C. Stereotyping",
+            "option_d": "D. Psychological safety",
+            "correct_answer": "C",
+            "explanation": "The manager is making an oversimplified assumption based on age."
+        },
+        {
+            "question": "Which skill is essential for managing diversity-related conflicts?",
+            "option_a": "A. Avoiding communication",
+            "option_b": "B. Conflict resolution",
+            "option_c": "C. Strict hierarchy enforcement",
+            "option_d": "D. Workforce segregation",
+            "correct_answer": "B",
+            "explanation": "Conflict resolution skills help address disagreements caused by diversity differences."
+        },
+        {
+            "question": "Why is communication important in diversity management?",
+            "option_a": "A. It prevents employees from sharing concerns",
+            "option_b": "B. It helps employees feel valued and heard",
+            "option_c": "C. It reduces transparency",
+            "option_d": "D. It increases stereotyping",
+            "correct_answer": "B",
+            "explanation": "Open communication encourages inclusion and trust."
+        },
+        {
+            "question": "Inclusion is BEST defined as:",
+            "option_a": "A. Forcing employees into uniform behavior",
+            "option_b": "B. A sense of belonging and respect",
+            "option_c": "C. Eliminating cultural differences",
+            "option_d": "D. A method of performance evaluation",
+            "correct_answer": "B",
+            "explanation": "Inclusion ensures individuals feel respected, valued, and accepted."
+        },
+        {
+            "question": "Which of the following directly supports effective team dynamics?",
+            "option_a": "A. Exclusion",
+            "option_b": "B. Unequal contribution opportunities",
+            "option_c": "C. Inclusion",
+            "option_d": "D. Discrimination",
+            "correct_answer": "C",
+            "explanation": "Inclusive environments strengthen communication and teamwork."
+        },
+        {
+            "question": "Belonging is primarily:",
+            "option_a": "A. A financial reward system",
+            "option_b": "B. The emotional outcome of inclusion",
+            "option_c": "C. A legal workplace requirement",
+            "option_d": "D. A method of reducing salaries",
+            "correct_answer": "B",
+            "explanation": "Belonging refers to feeling safe, accepted, and valued."
+        },
+        {
+            "question": "Psychological safety within teams is strengthened when employees:",
+            "option_a": "A. Fear punishment for speaking",
+            "option_b": "B. Feel accepted and valued",
+            "option_c": "C. Avoid collaboration",
+            "option_d": "D. Compete aggressively",
+            "correct_answer": "B",
+            "explanation": "Feeling valued and accepted increases trust and psychological safety."
+        },
+        {
+            "question": "How does inclusion affect Tuckman's team development stages?",
+            "option_a": "A. It slows down team development",
+            "option_b": "B. It accelerates norming and performing",
+            "option_c": "C. It prevents collaboration",
+            "option_d": "D. It removes conflict entirely",
+            "correct_answer": "B",
+            "explanation": "Inclusive environments help teams reach productive stages more quickly."
+        },
+        {
+            "question": "According to Belbin's team role theory, inclusive environments:",
+            "option_a": "A. Restrict diverse roles",
+            "option_b": "B. Encourage only leadership roles",
+            "option_c": "C. Allow diverse roles to thrive",
+            "option_d": "D. Eliminate specialization",
+            "correct_answer": "C",
+            "explanation": "Inclusive teams support different strengths and working styles."
+        }
+    ]
+}
