@@ -1,0 +1,490 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary advantage of using threads instead of fork() in network servers?",
+            "option_a": "Threads use separate address spaces",
+            "option_b": "Thread creation is significantly faster than process creation",
+            "option_c": "Threads eliminate the need for synchronization",
+            "option_d": "Threads prevent race conditions automatically",
+            "correct_answer": "B",
+            "explanation": "Thread creation is much faster because threads share the same process memory space."
+        },
+        {
+            "question": "Which resource is shared among all threads within the same process?",
+            "option_a": "Program counter",
+            "option_b": "Stack memory",
+            "option_c": "Global variables",
+            "option_d": "Registers",
+            "correct_answer": "C",
+            "explanation": "Threads within a process share global memory and file descriptors."
+        },
+        {
+            "question": "Which pthread function is used to create a new thread?",
+            "option_a": "pthread_join()",
+            "option_b": "pthread_exit()",
+            "option_c": "pthread_create()",
+            "option_d": "pthread_detach()",
+            "correct_answer": "C",
+            "explanation": "pthread_create() creates a new thread and starts executing a specified function."
+        },
+        {
+            "question": "What does pthread_self() return?",
+            "option_a": "Parent process ID",
+            "option_b": "Current thread ID",
+            "option_c": "Mutex identifier",
+            "option_d": "Stack pointer",
+            "correct_answer": "B",
+            "explanation": "pthread_self() returns the identifier of the calling thread."
+        },
+        {
+            "question": "Which function is similar to waitpid() for threads?",
+            "option_a": "pthread_create()",
+            "option_b": "pthread_exit()",
+            "option_c": "pthread_join()",
+            "option_d": "pthread_mutex_lock()",
+            "correct_answer": "C",
+            "explanation": "pthread_join() waits for a specified thread to terminate."
+        },
+        {
+            "question": "What happens when a detached thread terminates?",
+            "option_a": "Its resources remain allocated",
+            "option_b": "Its parent must call pthread_join()",
+            "option_c": "Its resources are automatically released",
+            "option_d": "The process terminates",
+            "correct_answer": "C",
+            "explanation": "Detached threads automatically release their resources upon termination."
+        },
+        {
+            "question": "Which function explicitly terminates a thread?",
+            "option_a": "pthread_join()",
+            "option_b": "pthread_exit()",
+            "option_c": "pthread_detach()",
+            "option_d": "pthread_cancel()",
+            "correct_answer": "B",
+            "explanation": "pthread_exit() terminates the calling thread."
+        },
+        {
+            "question": "What is the default detach state of a thread?",
+            "option_a": "PTHREAD_CREATE_DETACHED",
+            "option_b": "PTHREAD_JOINABLE",
+            "option_c": "PTHREAD_CANCELABLE",
+            "option_d": "PTHREAD_WAITABLE",
+            "correct_answer": "B",
+            "explanation": "Threads are joinable by default unless explicitly detached."
+        },
+        {
+            "question": "Why is synchronization needed in multithreaded programs?",
+            "option_a": "Threads do not share memory",
+            "option_b": "To improve compiler optimization",
+            "option_c": "To avoid inconsistent access to shared resources",
+            "option_d": "To reduce CPU usage",
+            "correct_answer": "C",
+            "explanation": "Synchronization ensures consistent access to shared variables and resources."
+        },
+        {
+            "question": "What issue may occur when passing '&connfd' directly to pthread_create()?",
+            "option_a": "Memory leak",
+            "option_b": "Deadlock",
+            "option_c": "Race condition due to shared variable overwriting",
+            "option_d": "Compiler syntax error",
+            "correct_answer": "C",
+            "explanation": "Multiple threads may access the same changing variable, causing incorrect behavior."
+        },
+        {
+            "question": "What is the recommended solution for safely passing connfd to threads?",
+            "option_a": "Use a static variable",
+            "option_b": "Use global variables",
+            "option_c": "Allocate separate memory using malloc()",
+            "option_d": "Use fork() instead",
+            "correct_answer": "C",
+            "explanation": "Each thread should receive its own dynamically allocated copy of connfd."
+        },
+        {
+            "question": "What does malloc() return?",
+            "option_a": "An integer",
+            "option_b": "A thread ID",
+            "option_c": "A pointer to allocated memory",
+            "option_d": "A mutex lock",
+            "correct_answer": "C",
+            "explanation": "malloc() allocates memory dynamically and returns its address."
+        },
+        {
+            "question": "Which statement about free() is correct?",
+            "option_a": "free() initializes memory",
+            "option_b": "free() can safely free already-freed memory",
+            "option_c": "free() releases dynamically allocated memory",
+            "option_d": "free() allocates stack memory",
+            "correct_answer": "C",
+            "explanation": "free() releases memory previously allocated using malloc/calloc/realloc."
+        },
+        {
+            "question": "A function is thread-safe if:",
+            "option_a": "It uses static variables",
+            "option_b": "It can be called concurrently by multiple threads safely",
+            "option_c": "It always uses recursion",
+            "option_d": "It avoids pointers",
+            "correct_answer": "B",
+            "explanation": "Thread-safe functions can execute concurrently without corrupting shared data."
+        },
+        {
+            "question": "What is a common naming convention for thread-safe versions of functions?",
+            "option_a": "_safe",
+            "option_b": "_thread",
+            "option_c": "_r",
+            "option_d": "_mutex",
+            "correct_answer": "C",
+            "explanation": "POSIX thread-safe alternatives often use the suffix '_r'."
+        },
+        {
+            "question": "Why are static variables problematic in multithreaded functions?",
+            "option_a": "They increase CPU speed",
+            "option_b": "They are stored on stack memory",
+            "option_c": "They are shared across threads",
+            "option_d": "They prevent compilation",
+            "correct_answer": "C",
+            "explanation": "Static variables are shared among threads and can cause data corruption."
+        },
+        {
+            "question": "What does TSD stand for?",
+            "option_a": "Thread Shared Data",
+            "option_b": "Thread Specific Data",
+            "option_c": "Thread Static Descriptor",
+            "option_d": "Task Synchronization Data",
+            "correct_answer": "B",
+            "explanation": "Thread-Specific Data provides each thread with its own private data."
+        },
+        {
+            "question": "Which function creates a thread-specific data key?",
+            "option_a": "pthread_setspecific()",
+            "option_b": "pthread_getspecific()",
+            "option_c": "pthread_key_create()",
+            "option_d": "pthread_once()",
+            "correct_answer": "C",
+            "explanation": "pthread_key_create() allocates a key for thread-specific data."
+        },
+        {
+            "question": "What is the purpose of pthread_once()?",
+            "option_a": "Create one thread only",
+            "option_b": "Ensure initialization code runs once",
+            "option_c": "Lock a mutex once",
+            "option_d": "Terminate threads once",
+            "correct_answer": "B",
+            "explanation": "pthread_once() guarantees that initialization happens exactly once."
+        },
+        {
+            "question": "Which function retrieves thread-specific data associated with a key?",
+            "option_a": "pthread_setspecific()",
+            "option_b": "pthread_key_create()",
+            "option_c": "pthread_getspecific()",
+            "option_d": "pthread_create()",
+            "correct_answer": "C",
+            "explanation": "pthread_getspecific() returns the thread-specific pointer for a key."
+        },
+        {
+            "question": "What is the purpose of a destructor function in TSD?",
+            "option_a": "Create threads",
+            "option_b": "Destroy mutexes",
+            "option_c": "Release thread-specific memory upon thread termination",
+            "option_d": "Allocate thread stacks",
+            "correct_answer": "C",
+            "explanation": "Destructor functions automatically free thread-specific resources."
+        },
+        {
+            "question": "What concurrency issue occurs when two threads modify the same variable without synchronization?",
+            "option_a": "Memory alignment",
+            "option_b": "Race condition",
+            "option_c": "Segmentation fault",
+            "option_d": "Compilation failure",
+            "correct_answer": "B",
+            "explanation": "Race conditions occur when multiple threads access shared data concurrently."
+        },
+        {
+            "question": "Why can 'nconn = nconn - 1' produce incorrect results in multithreading?",
+            "option_a": "The compiler removes the instruction",
+            "option_b": "The operation is not atomic",
+            "option_c": "The decrement operator is recursive",
+            "option_d": "Threads cannot access integers",
+            "correct_answer": "B",
+            "explanation": "The operation involves multiple machine instructions that may interleave."
+        },
+        {
+            "question": "What is a mutex primarily used for?",
+            "option_a": "Memory allocation",
+            "option_b": "Mutual exclusion for critical sections",
+            "option_c": "Thread creation",
+            "option_d": "Socket communication",
+            "correct_answer": "B",
+            "explanation": "Mutexes prevent simultaneous access to shared resources."
+        },
+        {
+            "question": "Which type represents a mutex variable?",
+            "option_a": "pthread_cond_t",
+            "option_b": "pthread_t",
+            "option_c": "pthread_mutex_t",
+            "option_d": "pthread_key_t",
+            "correct_answer": "C",
+            "explanation": "pthread_mutex_t is the POSIX thread mutex type."
+        },
+        {
+            "question": "Which function locks a mutex?",
+            "option_a": "pthread_mutex_unlock()",
+            "option_b": "pthread_mutex_wait()",
+            "option_c": "pthread_mutex_lock()",
+            "option_d": "pthread_cond_wait()",
+            "correct_answer": "C",
+            "explanation": "pthread_mutex_lock() acquires the mutex before entering the critical section."
+        },
+        {
+            "question": "What happens if a mutex is already locked when another thread calls pthread_mutex_lock()?",
+            "option_a": "The program terminates",
+            "option_b": "The thread is blocked until the mutex becomes available",
+            "option_c": "The mutex is duplicated",
+            "option_d": "The lock is ignored",
+            "correct_answer": "B",
+            "explanation": "Threads wait until the mutex is unlocked."
+        },
+        {
+            "question": "Why should critical sections be kept short?",
+            "option_a": "To increase race conditions",
+            "option_b": "To reduce thread contention and improve performance",
+            "option_c": "To avoid compilation errors",
+            "option_d": "To increase stack memory",
+            "correct_answer": "B",
+            "explanation": "Short critical sections minimize waiting time for other threads."
+        },
+        {
+            "question": "In the producer-consumer problem, producers:",
+            "option_a": "Remove items from a queue",
+            "option_b": "Create data and place it in a buffer",
+            "option_c": "Destroy mutexes",
+            "option_d": "Terminate threads",
+            "correct_answer": "B",
+            "explanation": "Producer threads generate items and place them into a shared buffer."
+        },
+        {
+            "question": "What problem occurs if a consumer removes data from an empty buffer?",
+            "option_a": "Buffer overflow",
+            "option_b": "Deadlock",
+            "option_c": "Invalid synchronization",
+            "option_d": "Compilation failure",
+            "correct_answer": "C",
+            "explanation": "Consumers must wait until items become available."
+        },
+        {
+            "question": "Which synchronization mechanism allows a thread to sleep until a condition becomes true?",
+            "option_a": "Mutex",
+            "option_b": "Semaphore",
+            "option_c": "Condition variable",
+            "option_d": "Thread key",
+            "correct_answer": "C",
+            "explanation": "Condition variables efficiently block threads until conditions change."
+        },
+        {
+            "question": "Which function atomically releases a mutex and blocks the thread?",
+            "option_a": "pthread_mutex_unlock()",
+            "option_b": "pthread_cond_wait()",
+            "option_c": "pthread_join()",
+            "option_d": "pthread_cond_signal()",
+            "correct_answer": "B",
+            "explanation": "pthread_cond_wait() releases the mutex and blocks atomically."
+        },
+        {
+            "question": "Why must predicates be rechecked after pthread_cond_wait() returns?",
+            "option_a": "Signals guarantee predicate truth",
+            "option_b": "Mutexes automatically reset predicates",
+            "option_c": "Wakeups may occur even when the condition is still false",
+            "option_d": "The compiler requires it",
+            "correct_answer": "C",
+            "explanation": "Condition variable wakeups only indicate that state may have changed."
+        },
+        {
+            "question": "Which function wakes one waiting thread on a condition variable?",
+            "option_a": "pthread_cond_wait()",
+            "option_b": "pthread_cond_signal()",
+            "option_c": "pthread_mutex_unlock()",
+            "option_d": "pthread_exit()",
+            "correct_answer": "B",
+            "explanation": "pthread_cond_signal() wakes a single blocked thread."
+        },
+        {
+            "question": "Which function wakes all threads waiting on a condition variable?",
+            "option_a": "pthread_cond_wait()",
+            "option_b": "pthread_mutex_unlock()",
+            "option_c": "pthread_cond_signal()",
+            "option_d": "pthread_cond_broadcast()",
+            "correct_answer": "D",
+            "explanation": "pthread_cond_broadcast() wakes all waiting threads."
+        },
+        {
+            "question": "Why should a mutex be acquired before testing a predicate?",
+            "option_a": "To increase CPU usage",
+            "option_b": "To ensure atomicity between testing and waiting",
+            "option_c": "To allocate memory",
+            "option_d": "To terminate blocked threads",
+            "correct_answer": "B",
+            "explanation": "Mutex protection prevents race conditions while checking conditions."
+        },
+        {
+            "question": "In the producer-consumer example, what does 'nslots' represent?",
+            "option_a": "Number of producers",
+            "option_b": "Number of consumers",
+            "option_c": "Available buffer slots",
+            "option_d": "Total threads",
+            "correct_answer": "C",
+            "explanation": "nslots tracks free positions in the bounded buffer."
+        },
+        {
+            "question": "What is the main role of pthread_cond_signal() in thread synchronization?",
+            "option_a": "Destroy a thread",
+            "option_b": "Wake a waiting thread when shared state changes",
+            "option_c": "Allocate memory",
+            "option_d": "Lock a mutex permanently",
+            "correct_answer": "B",
+            "explanation": "pthread_cond_signal() notifies waiting threads of possible condition changes."
+        },
+        {
+            "question": "Why is polling thread flags inefficient in pthread_join() scenarios?",
+            "option_a": "It increases memory allocation",
+            "option_b": "It wastes CPU time continuously checking state",
+            "option_c": "It disables synchronization",
+            "option_d": "It prevents thread creation",
+            "correct_answer": "B",
+            "explanation": "Busy waiting continuously consumes CPU cycles unnecessarily."
+        },
+        {
+            "question": "What synchronization tools are recommended for efficient parent-child thread notification?",
+            "option_a": "Signals only",
+            "option_b": "Mutexes only",
+            "option_c": "Mutexes with condition variables",
+            "option_d": "Static variables",
+            "correct_answer": "C",
+            "explanation": "Condition variables with mutexes provide efficient signaling and synchronization."
+        },
+        {
+            "question": "What is the main reason threads improve network server scalability?",
+            "option_a": "Threads eliminate sockets",
+            "option_b": "Threads allow concurrent client handling with lower overhead",
+            "option_c": "Threads prevent deadlocks",
+            "option_d": "Threads use separate kernels",
+            "correct_answer": "B",
+            "explanation": "Threads efficiently support concurrent client servicing."
+        },
+        {
+            "question": "Why is using global static buffers dangerous in multithreaded readline() implementations?",
+            "option_a": "They reduce performance",
+            "option_b": "Multiple threads may overwrite shared state",
+            "option_c": "They increase stack usage",
+            "option_d": "They disable mutexes",
+            "correct_answer": "B",
+            "explanation": "Shared static buffers cause race conditions and inconsistent reads."
+        },
+        {
+            "question": "What is the purpose of Calloc() in the TSD readline() implementation?",
+            "option_a": "Destroy thread data",
+            "option_b": "Initialize allocated memory to zero",
+            "option_c": "Lock mutexes",
+            "option_d": "Wake blocked threads",
+            "correct_answer": "B",
+            "explanation": "calloc() allocates and initializes memory to zero."
+        },
+        {
+            "question": "Why is pthread_setspecific() needed after memory allocation in TSD?",
+            "option_a": "To free memory",
+            "option_b": "To associate allocated memory with the current thread",
+            "option_c": "To terminate the thread",
+            "option_d": "To initialize mutexes",
+            "correct_answer": "B",
+            "explanation": "pthread_setspecific() stores the thread-specific pointer."
+        },
+        {
+            "question": "Which issue is most likely if mutex locking is omitted in counter increment operations?",
+            "option_a": "Thread starvation",
+            "option_b": "Race conditions and incorrect counter values",
+            "option_c": "Memory leaks only",
+            "option_d": "Compilation failure",
+            "correct_answer": "B",
+            "explanation": "Concurrent unsynchronized access causes inconsistent updates."
+        },
+        {
+            "question": "What is the critical section in a multithreaded program?",
+            "option_a": "Code executed only by the main thread",
+            "option_b": "Code accessing shared resources",
+            "option_c": "Code outside mutexes",
+            "option_d": "Compiler optimization region",
+            "correct_answer": "B",
+            "explanation": "Critical sections access shared data that must be synchronized."
+        },
+        {
+            "question": "Why is pthread_cond_wait() considered efficient?",
+            "option_a": "It continuously polls conditions",
+            "option_b": "It blocks threads instead of wasting CPU cycles",
+            "option_c": "It duplicates threads",
+            "option_d": "It removes mutexes",
+            "correct_answer": "B",
+            "explanation": "Blocked threads consume minimal CPU resources."
+        },
+        {
+            "question": "In the synchronized producer-consumer example, why does the producer signal 'items'?",
+            "option_a": "To indicate the producer terminated",
+            "option_b": "To notify consumers that new items are available",
+            "option_c": "To lock the buffer",
+            "option_d": "To release memory",
+            "correct_answer": "B",
+            "explanation": "Consumers waiting for items must be notified when data arrives."
+        },
+        {
+            "question": "Why does the consumer signal 'slots' after consuming an item?",
+            "option_a": "To wake producers waiting for free buffer space",
+            "option_b": "To terminate consumers",
+            "option_c": "To reset the mutex",
+            "option_d": "To allocate more memory",
+            "correct_answer": "A",
+            "explanation": "Removing an item frees a slot for producers."
+        },
+        {
+            "question": "What could happen if multiple threads call non-thread-safe functions concurrently?",
+            "option_a": "Guaranteed correct execution",
+            "option_b": "Data corruption or undefined behavior",
+            "option_c": "Automatic mutex creation",
+            "option_d": "Faster execution only",
+            "correct_answer": "B",
+            "explanation": "Shared internal state may become corrupted under concurrent access."
+        },
+        {
+            "question": "Why is pthread_cond_broadcast() used when producer_done becomes true?",
+            "option_a": "To terminate the process",
+            "option_b": "To wake all waiting consumers",
+            "option_c": "To lock all mutexes",
+            "option_d": "To create new threads",
+            "correct_answer": "B",
+            "explanation": "All waiting consumers must know production has finished."
+        },
+        {
+            "question": "What is a major difference between mutexes and condition variables?",
+            "option_a": "Mutexes are faster than condition variables",
+            "option_b": "Mutexes provide exclusion while condition variables provide waiting/signaling",
+            "option_c": "Condition variables replace threads",
+            "option_d": "Mutexes are used only in networking",
+            "correct_answer": "B",
+            "explanation": "Mutexes protect shared data, while condition variables coordinate waiting."
+        },
+        {
+            "question": "Why does pthread_join() require a specific thread ID?",
+            "option_a": "Threads are anonymous",
+            "option_b": "POSIX requires joining specific target threads",
+            "option_c": "It improves memory allocation",
+            "option_d": "To prevent mutex deadlocks",
+            "correct_answer": "B",
+            "explanation": "pthread_join() synchronizes with a particular thread's termination."
+        },
+        {
+            "question": "What is the main danger of long critical sections?",
+            "option_a": "Reduced synchronization overhead",
+            "option_b": "Higher contention and reduced concurrency",
+            "option_c": "Improved scalability",
+            "option_d": "Automatic deadlock prevention",
+            "correct_answer": "B",
+            "explanation": "Long critical sections force threads to wait longer for shared resources."
+        }
+    ]
+}

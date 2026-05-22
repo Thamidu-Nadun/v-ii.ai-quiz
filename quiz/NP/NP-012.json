@@ -1,0 +1,418 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of SSL/TLS in network communication?",
+            "option_a": "A. Compressing network packets",
+            "option_b": "B. Providing secure communication over insecure networks",
+            "option_c": "C. Routing packets between routers",
+            "option_d": "D. Increasing network bandwidth",
+            "correct_answer": "B",
+            "explanation": "SSL/TLS is designed to provide confidentiality, integrity, and authentication for communications over insecure networks like the Internet."
+        },
+        {
+            "question": "Which security property ensures that data cannot be modified without detection during transmission?",
+            "option_a": "A. Confidentiality",
+            "option_b": "B. Availability",
+            "option_c": "C. Integrity",
+            "option_d": "D. Scalability",
+            "correct_answer": "C",
+            "explanation": "Integrity ensures that transmitted data remains unchanged and tampering can be detected."
+        },
+        {
+            "question": "Which protocol replaced SSL as the modern standard for secure communication?",
+            "option_a": "A. FTP",
+            "option_b": "B. TLS",
+            "option_c": "C. SSH",
+            "option_d": "D. SMTP",
+            "correct_answer": "B",
+            "explanation": "Transport Layer Security (TLS) was introduced as the successor to SSL."
+        },
+        {
+            "question": "Which layer of the OSI model is most closely associated with SSL/TLS?",
+            "option_a": "A. Application Layer",
+            "option_b": "B. Network Layer",
+            "option_c": "C. Session/Transport boundary",
+            "option_d": "D. Physical Layer",
+            "correct_answer": "C",
+            "explanation": "SSL/TLS operates between the Application Layer and Transport Layer, commonly associated with the session layer functionality."
+        },
+        {
+            "question": "Which protocol commonly uses TLS to secure web traffic?",
+            "option_a": "A. HTTP",
+            "option_b": "B. HTTPS",
+            "option_c": "C. FTP",
+            "option_d": "D. Telnet",
+            "correct_answer": "B",
+            "explanation": "HTTPS is HTTP secured using SSL/TLS."
+        },
+        {
+            "question": "What is the purpose of the TLS Handshake Protocol?",
+            "option_a": "A. Compress application data",
+            "option_b": "B. Establish security parameters and keys",
+            "option_c": "C. Route packets",
+            "option_d": "D. Monitor bandwidth usage",
+            "correct_answer": "B",
+            "explanation": "The handshake protocol negotiates algorithms, authenticates parties, and establishes session keys."
+        },
+        {
+            "question": "Which cryptographic approach is mainly used after the TLS handshake for bulk data encryption?",
+            "option_a": "A. Symmetric encryption",
+            "option_b": "B. Asymmetric encryption",
+            "option_c": "C. Hash-only encryption",
+            "option_d": "D. Plaintext transmission",
+            "correct_answer": "A",
+            "explanation": "Symmetric encryption is faster and more efficient for encrypting large amounts of data."
+        },
+        {
+            "question": "Which of the following is exchanged during the TLS handshake to authenticate a server?",
+            "option_a": "A. Routing table",
+            "option_b": "B. MAC address",
+            "option_c": "C. Digital certificate",
+            "option_d": "D. ARP table",
+            "correct_answer": "C",
+            "explanation": "The server provides a digital certificate containing its public key and identity information."
+        },
+        {
+            "question": "What is a cipher suite in TLS?",
+            "option_a": "A. A list of routing protocols",
+            "option_b": "B. A combination of cryptographic algorithms",
+            "option_c": "C. A DNS lookup table",
+            "option_d": "D. A packet filtering mechanism",
+            "correct_answer": "B",
+            "explanation": "A cipher suite defines the algorithms used for key exchange, encryption, and integrity verification."
+        },
+        {
+            "question": "Which TLS component is responsible for fragmenting and encrypting application data?",
+            "option_a": "A. Handshake Protocol",
+            "option_b": "B. Record Protocol",
+            "option_c": "C. Alert Protocol",
+            "option_d": "D. DNS Resolver",
+            "correct_answer": "B",
+            "explanation": "The Record Protocol handles fragmentation, encryption, and integrity checking of data."
+        },
+        {
+            "question": "What is the main advantage of session resumption in TLS?",
+            "option_a": "A. Increased packet loss",
+            "option_b": "B. Reduced computational overhead",
+            "option_c": "C. Elimination of encryption",
+            "option_d": "D. Improved DNS resolution",
+            "correct_answer": "B",
+            "explanation": "Session resumption avoids performing a full handshake again, improving performance."
+        },
+        {
+            "question": "Which TLS version introduced support for stronger hash algorithms like SHA-256?",
+            "option_a": "A. SSL v2",
+            "option_b": "B. SSL v3",
+            "option_c": "C. TLS 1.2",
+            "option_d": "D. TLS 1.0",
+            "correct_answer": "C",
+            "explanation": "TLS 1.2 introduced support for stronger cryptographic algorithms and hashes such as SHA-256."
+        },
+        {
+            "question": "Why was SSL v2 considered insecure?",
+            "option_a": "A. It used too much bandwidth",
+            "option_b": "B. It lacked cryptographic weaknesses protections",
+            "option_c": "C. It only supported IPv6",
+            "option_d": "D. It prevented authentication",
+            "correct_answer": "B",
+            "explanation": "SSL v2 contained several cryptographic design flaws and weak security mechanisms."
+        },
+        {
+            "question": "Which TLS protocol message indicates that subsequent messages will be encrypted with negotiated keys?",
+            "option_a": "A. ClientHello",
+            "option_b": "B. Finished",
+            "option_c": "C. ChangeCipherSpec",
+            "option_d": "D. Alert",
+            "correct_answer": "C",
+            "explanation": "The ChangeCipherSpec message signals the switch to the negotiated cryptographic parameters."
+        },
+        {
+            "question": "Which attack exploits fallback to older insecure SSL/TLS versions?",
+            "option_a": "A. SQL Injection",
+            "option_b": "B. Downgrade attack",
+            "option_c": "C. Cross-Site Scripting",
+            "option_d": "D. ARP spoofing",
+            "correct_answer": "B",
+            "explanation": "Downgrade attacks force communication to use weaker protocol versions."
+        },
+        {
+            "question": "What role does a Certificate Authority (CA) play in TLS?",
+            "option_a": "A. Encrypting packets directly",
+            "option_b": "B. Issuing and validating digital certificates",
+            "option_c": "C. Compressing session keys",
+            "option_d": "D. Performing DNS lookups",
+            "correct_answer": "B",
+            "explanation": "Certificate Authorities verify identities and issue trusted certificates."
+        },
+        {
+            "question": "Which cryptographic algorithm is commonly used for secure key exchange in TLS?",
+            "option_a": "A. AES",
+            "option_b": "B. DES",
+            "option_c": "C. RSA",
+            "option_d": "D. MD5",
+            "correct_answer": "C",
+            "explanation": "RSA has historically been widely used for key exchange and authentication in TLS."
+        },
+        {
+            "question": "Why are symmetric algorithms preferred for encrypting actual session data?",
+            "option_a": "A. They consume less memory than hashes",
+            "option_b": "B. They are computationally faster",
+            "option_c": "C. They avoid authentication",
+            "option_d": "D. They eliminate certificates",
+            "correct_answer": "B",
+            "explanation": "Symmetric encryption is significantly faster than asymmetric encryption for bulk data transfer."
+        },
+        {
+            "question": "What is the primary function of the TLS Alert Protocol?",
+            "option_a": "A. Fragmenting records",
+            "option_b": "B. Sending warnings and error notifications",
+            "option_c": "C. Resolving domain names",
+            "option_d": "D. Compressing certificates",
+            "correct_answer": "B",
+            "explanation": "The Alert Protocol communicates errors, warnings, and connection termination notifications."
+        },
+        {
+            "question": "Which of the following best describes forward secrecy?",
+            "option_a": "A. Old session keys remain secure even if the server private key is compromised later",
+            "option_b": "B. Data is permanently stored on the server",
+            "option_c": "C. Certificates never expire",
+            "option_d": "D. Session keys are reused indefinitely",
+            "correct_answer": "A",
+            "explanation": "Forward secrecy prevents past communications from being decrypted even if long-term keys are compromised."
+        },
+        {
+            "question": "During the TLS handshake, what is the purpose of the ClientHello message?",
+            "option_a": "A. To send encrypted application data",
+            "option_b": "B. To initiate communication and propose security parameters",
+            "option_c": "C. To terminate the session",
+            "option_d": "D. To verify routing paths",
+            "correct_answer": "B",
+            "explanation": "ClientHello initiates the handshake and includes supported TLS versions and cipher suites."
+        },
+        {
+            "question": "Which of the following algorithms is considered weak and deprecated in modern TLS configurations?",
+            "option_a": "A. AES",
+            "option_b": "B. ChaCha20",
+            "option_c": "C. DES",
+            "option_d": "D. SHA-256",
+            "correct_answer": "C",
+            "explanation": "DES uses a short key length and is vulnerable to brute-force attacks."
+        },
+        {
+            "question": "What is the effective number of possible keys for a 56-bit encryption key?",
+            "option_a": "A. 2^16",
+            "option_b": "B. 2^32",
+            "option_c": "C. 2^56",
+            "option_d": "D. 2^128",
+            "correct_answer": "C",
+            "explanation": "A 56-bit key has 2^56 possible combinations that an attacker would need to test in a brute-force attack."
+        },
+        {
+            "question": "Which protocol message confirms that the handshake completed successfully?",
+            "option_a": "A. Finished",
+            "option_b": "B. ClientHello",
+            "option_c": "C. Alert",
+            "option_d": "D. SYN",
+            "correct_answer": "A",
+            "explanation": "The Finished message verifies that both parties derived the same session keys."
+        },
+        {
+            "question": "What is the primary reason TLS replaced SSL?",
+            "option_a": "A. SSL was too fast",
+            "option_b": "B. TLS supports wireless routing",
+            "option_c": "C. SSL had major security weaknesses",
+            "option_d": "D. SSL lacked certificates",
+            "correct_answer": "C",
+            "explanation": "TLS was developed to address vulnerabilities and improve cryptographic security."
+        },
+        {
+            "question": "Which of the following is NOT typically included in a cipher suite name?",
+            "option_a": "A. Key exchange algorithm",
+            "option_b": "B. Encryption algorithm",
+            "option_c": "C. Hash algorithm",
+            "option_d": "D. IP address",
+            "correct_answer": "D",
+            "explanation": "Cipher suite names specify cryptographic algorithms, not network addressing information."
+        },
+        {
+            "question": "A company allows SSLv3 fallback support for compatibility with legacy clients. What is the biggest security risk?",
+            "option_a": "A. Increased latency",
+            "option_b": "B. Exposure to downgrade attacks",
+            "option_c": "C. Reduced DNS availability",
+            "option_d": "D. Packet fragmentation issues",
+            "correct_answer": "B",
+            "explanation": "Supporting insecure legacy versions enables attackers to force weaker cryptographic protections."
+        },
+        {
+            "question": "What happens if a browser cannot validate a server certificate chain?",
+            "option_a": "A. The browser silently ignores the error",
+            "option_b": "B. The connection is considered untrusted",
+            "option_c": "C. TLS switches to UDP",
+            "option_d": "D. The session key is regenerated automatically",
+            "correct_answer": "B",
+            "explanation": "Browsers warn users when certificate validation fails because authenticity cannot be guaranteed."
+        },
+        {
+            "question": "Which TLS extension allows multiple domains to share the same IP address securely?",
+            "option_a": "A. SNI",
+            "option_b": "B. ARP",
+            "option_c": "C. DHCP",
+            "option_d": "D. ICMP",
+            "correct_answer": "A",
+            "explanation": "Server Name Indication (SNI) allows clients to specify the hostname during the TLS handshake."
+        },
+        {
+            "question": "Which statement best explains why MACs are used in TLS?",
+            "option_a": "A. To increase bandwidth",
+            "option_b": "B. To ensure message integrity",
+            "option_c": "C. To replace certificates",
+            "option_d": "D. To compress payloads",
+            "correct_answer": "B",
+            "explanation": "Message Authentication Codes verify that transmitted data was not altered."
+        },
+        {
+            "question": "A TLS session uses RSA for key exchange and AES for data encryption. Which statement is correct?",
+            "option_a": "A. RSA encrypts all transmitted application data",
+            "option_b": "B. AES is used because symmetric encryption is more efficient",
+            "option_c": "C. AES is slower than RSA",
+            "option_d": "D. RSA eliminates the need for session keys",
+            "correct_answer": "B",
+            "explanation": "RSA is used during key exchange while AES efficiently encrypts bulk session data."
+        },
+        {
+            "question": "Which protocol works closely with TLS to provide secure websites?",
+            "option_a": "A. HTTPS",
+            "option_b": "B. POP3",
+            "option_c": "C. ICMP",
+            "option_d": "D. RIP",
+            "correct_answer": "A",
+            "explanation": "HTTPS combines HTTP with TLS to provide secure web communication."
+        },
+        {
+            "question": "Why is reusing the same session key for many sessions considered dangerous?",
+            "option_a": "A. It increases packet size",
+            "option_b": "B. Compromise of one key could expose multiple sessions",
+            "option_c": "C. It disables authentication",
+            "option_d": "D. It prevents routing",
+            "correct_answer": "B",
+            "explanation": "Using unique session keys limits damage if a key becomes compromised."
+        },
+        {
+            "question": "What is the purpose of random values exchanged during the TLS handshake?",
+            "option_a": "A. To reduce packet size",
+            "option_b": "B. To help generate secure session keys",
+            "option_c": "C. To identify routers",
+            "option_d": "D. To replace certificates",
+            "correct_answer": "B",
+            "explanation": "Random values contribute entropy to securely derive session keys."
+        },
+        {
+            "question": "Which attack specifically targeted SSLv3 and exploited weaknesses in block cipher padding?",
+            "option_a": "A. Heartbleed",
+            "option_b": "B. POODLE",
+            "option_c": "C. SYN Flood",
+            "option_d": "D. Smurf Attack",
+            "correct_answer": "B",
+            "explanation": "POODLE exploited vulnerabilities in SSLv3 padding mechanisms."
+        },
+        {
+            "question": "Which statement about TLS 1.2 is TRUE?",
+            "option_a": "A. It completely removes encryption",
+            "option_b": "B. It introduced stronger cryptographic flexibility",
+            "option_c": "C. It only works with IPv6",
+            "option_d": "D. It replaced certificates with passwords",
+            "correct_answer": "B",
+            "explanation": "TLS 1.2 improved support for stronger algorithms and cryptographic negotiation."
+        },
+        {
+            "question": "A network attacker captures encrypted TLS traffic today and later steals the server’s private key. Which feature prevents decryption of past sessions?",
+            "option_a": "A. Session IDs",
+            "option_b": "B. Forward secrecy",
+            "option_c": "C. DNS caching",
+            "option_d": "D. Compression",
+            "correct_answer": "B",
+            "explanation": "Forward secrecy ensures previous session keys cannot be reconstructed from the server private key."
+        },
+        {
+            "question": "What is the biggest weakness of short cryptographic keys?",
+            "option_a": "A. Increased certificate size",
+            "option_b": "B. Easier brute-force attacks",
+            "option_c": "C. Reduced compatibility",
+            "option_d": "D. Higher latency",
+            "correct_answer": "B",
+            "explanation": "Shorter keys reduce the number of possible combinations attackers must test."
+        },
+        {
+            "question": "Which type of encryption uses separate public and private keys?",
+            "option_a": "A. Symmetric encryption",
+            "option_b": "B. Stream encryption",
+            "option_c": "C. Asymmetric encryption",
+            "option_d": "D. Hashing",
+            "correct_answer": "C",
+            "explanation": "Asymmetric encryption relies on mathematically related public and private key pairs."
+        },
+        {
+            "question": "Why are certificates important in TLS?",
+            "option_a": "A. They increase network speed",
+            "option_b": "B. They authenticate identities and distribute public keys",
+            "option_c": "C. They replace encryption algorithms",
+            "option_d": "D. They compress handshake packets",
+            "correct_answer": "B",
+            "explanation": "Certificates bind identities to public keys through trusted Certificate Authorities."
+        },
+        {
+            "question": "A server supports only outdated cipher suites using weak hashes such as MD5. What is the primary security concern?",
+            "option_a": "A. Reduced packet routing efficiency",
+            "option_b": "B. Increased vulnerability to cryptographic attacks",
+            "option_c": "C. Excessive DNS requests",
+            "option_d": "D. Inability to establish TCP connections",
+            "correct_answer": "B",
+            "explanation": "Weak hash algorithms like MD5 are vulnerable to collision and integrity attacks."
+        },
+        {
+            "question": "What is the role of the Finished message in TLS?",
+            "option_a": "A. It terminates TCP connections",
+            "option_b": "B. It verifies that the handshake was not tampered with",
+            "option_c": "C. It distributes certificates",
+            "option_d": "D. It assigns IP addresses",
+            "correct_answer": "B",
+            "explanation": "The Finished message validates that both parties computed the same handshake secrets securely."
+        },
+        {
+            "question": "Why is TLS considered critical for online banking systems?",
+            "option_a": "A. It improves video streaming",
+            "option_b": "B. It secures sensitive financial data during transmission",
+            "option_c": "C. It replaces databases",
+            "option_d": "D. It reduces storage requirements",
+            "correct_answer": "B",
+            "explanation": "TLS protects banking credentials and financial transactions from interception and tampering."
+        },
+        {
+            "question": "Which of the following best describes session resumption using session IDs?",
+            "option_a": "A. The server stores previously negotiated session parameters",
+            "option_b": "B. The client disables encryption",
+            "option_c": "C. The connection switches to UDP",
+            "option_d": "D. The certificate authority generates new keys",
+            "correct_answer": "A",
+            "explanation": "Session IDs allow clients and servers to reuse existing session parameters efficiently."
+        },
+        {
+            "question": "An attacker attempts to impersonate a legitimate server using a fake certificate. Which TLS mechanism primarily protects against this?",
+            "option_a": "A. TCP checksums",
+            "option_b": "B. Certificate validation and trusted CAs",
+            "option_c": "C. DNS round robin",
+            "option_d": "D. Session compression",
+            "correct_answer": "B",
+            "explanation": "Browsers verify certificate chains against trusted Certificate Authorities."
+        },
+        {
+            "question": "Why are TLS extensions useful?",
+            "option_a": "A. They allow protocol enhancements without redesigning TLS completely",
+            "option_b": "B. They disable encryption",
+            "option_c": "C. They replace certificates",
+            "option_d": "D. They eliminate handshakes",
+            "correct_answer": "A",
+            "explanation": "TLS extensions provide flexibility for adding new functionality and optimizations."
+        }
+    ]
+}
