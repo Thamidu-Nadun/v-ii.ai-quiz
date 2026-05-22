@@ -1,4 +1,77 @@
 export default [
+    // Network Programming Quizzes
+    {
+        title: 'Network Programming - 12',
+        path: 'quiz/NP/NP-012.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 11',
+        path: 'quiz/NP/NP-011.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 10',
+        path: 'quiz/NP/NP-010.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 09',
+        path: 'quiz/NP/NP-009.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 08',
+        path: 'quiz/NP/NP-008.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 07',
+        path: 'quiz/NP/NP-007.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 06',
+        path: 'quiz/NP/NP-006.json',
+        description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 05 (optional)',
+        path: 'quiz/NP/NP-005.json',
+        description: 'Test your knowledge of network programming protocols, including TCP/IP, HTTP, and FTP.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 04',
+        path: 'quiz/NP/NP-004.json',
+        description: 'Evaluate your understanding of network programming security, including encryption, authentication, and secure communication.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 03',
+        path: 'quiz/NP/NP-003.json',
+        description: 'Test your knowledge of network programming tools and libraries, such as TCP/IP, UDP, and HTTP.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 02',
+        path: 'quiz/NP/NP-002.json',
+        description: 'Evaluate your understanding of network programming techniques, including client-server architecture and data transmission.',
+        isAvailable: true
+    },
+    {
+        title: 'Network Programming - 01',
+        path: 'quiz/NP/NP-001.json',
+        description: 'Test your knowledge of basic network programming concepts, including sockets, protocols, and communication models.',
+        isAvailable: true
+    },
     // Professional Skills Quizzes
     {
         title: 'Professional Skills - 24',
@@ -144,49 +217,6 @@ export default [
         description: 'Test your knowledge of professional skills, including communication, teamwork, and problem-solving.',
         isAvailable: true
     },
-    // // Network Programming Quizzes
-    // {
-    //     title: 'Network Programming - 07',
-    //     path: 'quiz/NP/NP-007.json',
-    //     description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 06',
-    //     path: 'quiz/NP/NP-006.json',
-    //     description: 'Evaluate your understanding of network programming concepts, including protocols, sockets, and communication models.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 05 (optional)',
-    //     path: 'quiz/NP/NP-005.json',
-    //     description: 'Test your knowledge of network programming protocols, including TCP/IP, HTTP, and FTP.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 04',
-    //     path: 'quiz/NP/NP-004.json',
-    //     description: 'Evaluate your understanding of network programming security, including encryption, authentication, and secure communication.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 03',
-    //     path: 'quiz/NP/NP-003.json',
-    //     description: 'Test your knowledge of network programming tools and libraries, such as TCP/IP, UDP, and HTTP.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 02',
-    //     path: 'quiz/NP/NP-002.json',
-    //     description: 'Evaluate your understanding of network programming techniques, including client-server architecture and data transmission.',
-    //     isAvailable: true
-    // },
-    // {
-    //     title: 'Network Programming - 01',
-    //     path: 'quiz/NP/NP-001.json',
-    //     description: 'Test your knowledge of basic network programming concepts, including sockets, protocols, and communication models.',
-    //     isAvailable: true
-    // },
     // Operating System Quizzes
     {
         title: 'Operating System - 17',

@@ -1,0 +1,598 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary purpose of the Domain Name System (DNS)?",
+            "option_a": "A. Encrypt network traffic",
+            "option_b": "B. Map hostnames to IP addresses",
+            "option_c": "C. Assign MAC addresses",
+            "option_d": "D. Compress network packets",
+            "correct_answer": "B",
+            "explanation": "DNS is primarily used to translate human-readable hostnames into IP addresses."
+        },
+        {
+            "question": "Why are symbolic hostnames preferred over numeric IP addresses?",
+            "option_a": "A. They require less memory",
+            "option_b": "B. They are easier for computers to process",
+            "option_c": "C. They are easier for humans to remember",
+            "option_d": "D. They reduce network latency",
+            "correct_answer": "C",
+            "explanation": "Hostnames are easier for humans to remember compared to numeric IP addresses."
+        },
+        {
+            "question": "Which DNS record type maps a hostname to an IPv4 address?",
+            "option_a": "A. PTR",
+            "option_b": "B. MX",
+            "option_c": "C. AAAA",
+            "option_d": "D. A",
+            "correct_answer": "D",
+            "explanation": "An A record maps a hostname to a 32-bit IPv4 address."
+        },
+        {
+            "question": "Which DNS record type is used for IPv6 address mapping?",
+            "option_a": "A. AAAA",
+            "option_b": "B. MX",
+            "option_c": "C. PTR",
+            "option_d": "D. CNAME",
+            "correct_answer": "A",
+            "explanation": "AAAA records map hostnames to 128-bit IPv6 addresses."
+        },
+        {
+            "question": "What does an MX record specify?",
+            "option_a": "A. Alias name of a host",
+            "option_b": "B. Mail exchange server",
+            "option_c": "C. IPv6 address",
+            "option_d": "D. Reverse DNS mapping",
+            "correct_answer": "B",
+            "explanation": "MX records identify mail servers responsible for handling email for a domain."
+        },
+        {
+            "question": "Which DNS record type is commonly used for reverse DNS lookups?",
+            "option_a": "A. PTR",
+            "option_b": "B. A",
+            "option_c": "C. MX",
+            "option_d": "D. AAAA",
+            "correct_answer": "A",
+            "explanation": "PTR records map IP addresses back to hostnames."
+        },
+        {
+            "question": "What does DNS caching primarily improve?",
+            "option_a": "A. Encryption",
+            "option_b": "B. Fault tolerance",
+            "option_c": "C. Lookup performance",
+            "option_d": "D. Packet fragmentation",
+            "correct_answer": "C",
+            "explanation": "Caching reduces repeated lookups and improves DNS response times."
+        },
+        {
+            "question": "What does TTL stand for in DNS?",
+            "option_a": "A. Time To Link",
+            "option_b": "B. Transfer Time Limit",
+            "option_c": "C. Time To Live",
+            "option_d": "D. Transmission Type Level",
+            "correct_answer": "C",
+            "explanation": "TTL defines how long a DNS record may remain cached."
+        },
+        {
+            "question": "Which top-level domain is associated with educational institutions?",
+            "option_a": "A. gov",
+            "option_b": "B. edu",
+            "option_c": "C. net",
+            "option_d": "D. org",
+            "correct_answer": "B",
+            "explanation": "The .edu domain is reserved for educational institutions."
+        },
+        {
+            "question": "Which organization assigns unique domain suffixes?",
+            "option_a": "A. IEEE",
+            "option_b": "B. ISO",
+            "option_c": "C. IANA",
+            "option_d": "D. ICMP",
+            "correct_answer": "C",
+            "explanation": "IANA manages Internet Assigned Numbers and domain assignments."
+        },
+        {
+            "question": "What is iterative query resolution in DNS?",
+            "option_a": "A. Encrypting DNS responses",
+            "option_b": "B. Traversing DNS hierarchy step by step",
+            "option_c": "C. Replicating DNS databases",
+            "option_d": "D. Compressing DNS packets",
+            "correct_answer": "B",
+            "explanation": "Iterative resolution involves querying multiple DNS servers stepwise to resolve a name."
+        },
+        {
+            "question": "Why are root DNS servers replicated worldwide?",
+            "option_a": "A. To increase packet size",
+            "option_b": "B. To reduce DNS functionality",
+            "option_c": "C. To improve availability and scalability",
+            "option_d": "D. To encrypt queries",
+            "correct_answer": "C",
+            "explanation": "Replication distributes load and improves fault tolerance."
+        },
+        {
+            "question": "What transport protocol is typically used by DNS queries?",
+            "option_a": "A. TCP",
+            "option_b": "B. UDP",
+            "option_c": "C. ICMP",
+            "option_d": "D. ARP",
+            "correct_answer": "B",
+            "explanation": "DNS commonly uses UDP for fast query-response communication."
+        },
+        {
+            "question": "What is the role of the resolver in DNS?",
+            "option_a": "A. Encrypt packets",
+            "option_b": "B. Generate MAC addresses",
+            "option_c": "C. Communicate with DNS servers on behalf of applications",
+            "option_d": "D. Replace routers",
+            "correct_answer": "C",
+            "explanation": "Resolvers are library functions used by applications to query DNS servers."
+        },
+        {
+            "question": "Which function maps a hostname to an IP address?",
+            "option_a": "A. gethostbyaddr()",
+            "option_b": "B. gethostname()",
+            "option_c": "C. gethostbyname()",
+            "option_d": "D. uname()",
+            "correct_answer": "C",
+            "explanation": "gethostbyname() resolves hostnames into IP addresses."
+        },
+        {
+            "question": "Which function performs reverse DNS lookups?",
+            "option_a": "A. gethostbyaddr()",
+            "option_b": "B. gethostname()",
+            "option_c": "C. uname()",
+            "option_d": "D. getservbyname()",
+            "correct_answer": "A",
+            "explanation": "gethostbyaddr() maps IP addresses to hostnames."
+        },
+        {
+            "question": "Which structure is returned by gethostbyname()?",
+            "option_a": "A. sockaddr",
+            "option_b": "B. hostent",
+            "option_c": "C. servent",
+            "option_d": "D. utsname",
+            "correct_answer": "B",
+            "explanation": "gethostbyname() returns a pointer to a hostent structure."
+        },
+        {
+            "question": "What does the h_name field in hostent represent?",
+            "option_a": "A. IP address",
+            "option_b": "B. Canonical hostname",
+            "option_c": "C. Service protocol",
+            "option_d": "D. Port number",
+            "correct_answer": "B",
+            "explanation": "h_name stores the official canonical hostname."
+        },
+        {
+            "question": "What does h_aliases contain?",
+            "option_a": "A. MAC addresses",
+            "option_b": "B. Port mappings",
+            "option_c": "C. Alias names for the host",
+            "option_d": "D. Routing entries",
+            "correct_answer": "C",
+            "explanation": "h_aliases stores alternative names associated with the host."
+        },
+        {
+            "question": "Which constant indicates IPv4 addresses in hostent?",
+            "option_a": "A. AF_UNIX",
+            "option_b": "B. AF_INET",
+            "option_c": "C. AF_PACKET",
+            "option_d": "D. AF_LOCAL",
+            "correct_answer": "B",
+            "explanation": "AF_INET identifies IPv4 address family."
+        },
+        {
+            "question": "What does AF_INET6 represent?",
+            "option_a": "A. Ethernet communication",
+            "option_b": "B. IPv4 networking",
+            "option_c": "C. IPv6 networking",
+            "option_d": "D. File system sockets",
+            "correct_answer": "C",
+            "explanation": "AF_INET6 identifies IPv6 address family."
+        },
+        {
+            "question": "What happens if gethostbyname() fails?",
+            "option_a": "A. Program always terminates",
+            "option_b": "B. NULL is returned and h_errno is set",
+            "option_c": "C. It retries forever",
+            "option_d": "D. A segmentation fault occurs",
+            "correct_answer": "B",
+            "explanation": "On failure, gethostbyname() returns NULL and sets h_errno."
+        },
+        {
+            "question": "Which error constant indicates a temporary DNS failure?",
+            "option_a": "A. HOST_NOT_FOUND",
+            "option_b": "B. NO_RECOVERY",
+            "option_c": "C. TRY_AGAIN",
+            "option_d": "D. NO_DATA",
+            "correct_answer": "C",
+            "explanation": "TRY_AGAIN indicates a temporary and recoverable failure."
+        },
+        {
+            "question": "What is the purpose of hstrerror()?",
+            "option_a": "A. Convert IP to hostname",
+            "option_b": "B. Print DNS packet",
+            "option_c": "C. Translate h_errno into readable text",
+            "option_d": "D. Encode IPv6 addresses",
+            "correct_answer": "C",
+            "explanation": "hstrerror() converts resolver error codes into human-readable messages."
+        },
+        {
+            "question": "Why is DNS considered a distributed database?",
+            "option_a": "A. All records exist in one server",
+            "option_b": "B. Data is spread across many coordinated servers",
+            "option_c": "C. It stores only local records",
+            "option_d": "D. DNS cannot scale",
+            "correct_answer": "B",
+            "explanation": "DNS information is distributed among multiple hierarchical servers."
+        },
+        {
+            "question": "Which statement about authoritative DNS records is correct?",
+            "option_a": "A. They are always cached records",
+            "option_b": "B. They come from the server responsible for the domain",
+            "option_c": "C. They are generated by clients",
+            "option_d": "D. They expire immediately",
+            "correct_answer": "B",
+            "explanation": "Authoritative records originate from servers managing the domain."
+        },
+        {
+            "question": "What is the benefit of temporal locality in DNS caching?",
+            "option_a": "A. Users repeatedly access similar domain names",
+            "option_b": "B. DNS eliminates routing",
+            "option_c": "C. IP addresses never change",
+            "option_d": "D. It prevents packet loss",
+            "correct_answer": "A",
+            "explanation": "Users often access the same domains repeatedly, making caching effective."
+        },
+        {
+            "question": "Which field of hostent contains IP addresses?",
+            "option_a": "A. h_length",
+            "option_b": "B. h_aliases",
+            "option_c": "C. h_addr_list",
+            "option_d": "D. h_name",
+            "correct_answer": "C",
+            "explanation": "h_addr_list stores one or more IP addresses associated with the host."
+        },
+        {
+            "question": "What does gethostbyname2() add compared to gethostbyname()?",
+            "option_a": "A. Encryption support",
+            "option_b": "B. IPv6 support",
+            "option_c": "C. SMTP integration",
+            "option_d": "D. DNSSEC validation",
+            "correct_answer": "B",
+            "explanation": "gethostbyname2() supports both IPv4 and IPv6 lookups."
+        },
+        {
+            "question": "Which argument specifies address family in gethostbyname2()?",
+            "option_a": "A. hostname",
+            "option_b": "B. port",
+            "option_c": "C. family",
+            "option_d": "D. protocol",
+            "correct_answer": "C",
+            "explanation": "The family parameter specifies AF_INET or AF_INET6."
+        },
+        {
+            "question": "What does uname() primarily provide?",
+            "option_a": "A. DNS cache",
+            "option_b": "B. Local system information",
+            "option_c": "C. Router statistics",
+            "option_d": "D. DNS zone transfers",
+            "correct_answer": "B",
+            "explanation": "uname() provides OS and node-related system information."
+        },
+        {
+            "question": "Which field in utsname stores the hostname of the machine?",
+            "option_a": "A. sysname",
+            "option_b": "B. version",
+            "option_c": "C. machine",
+            "option_d": "D. nodename",
+            "correct_answer": "D",
+            "explanation": "nodename stores the current machine's hostname."
+        },
+        {
+            "question": "What does gethostname() return?",
+            "option_a": "A. IP address",
+            "option_b": "B. Current hostname",
+            "option_c": "C. DNS server address",
+            "option_d": "D. Router hostname",
+            "correct_answer": "B",
+            "explanation": "gethostname() retrieves the current host's name."
+        },
+        {
+            "question": "What information does getservbyname() return?",
+            "option_a": "A. IP addresses",
+            "option_b": "B. Routing entries",
+            "option_c": "C. Service information including port number",
+            "option_d": "D. DNS cache statistics",
+            "correct_answer": "C",
+            "explanation": "getservbyname() returns service details such as protocol and port."
+        },
+        {
+            "question": "Why would getservbyname(\"ftp\", \"udp\") fail?",
+            "option_a": "A. FTP only uses TCP",
+            "option_b": "B. FTP requires IPv6",
+            "option_c": "C. FTP requires DNSSEC",
+            "option_d": "D. UDP does not support ports",
+            "correct_answer": "A",
+            "explanation": "FTP is defined to operate over TCP, not UDP."
+        },
+        {
+            "question": "What does getservbyport() perform?",
+            "option_a": "A. Maps port numbers to services",
+            "option_b": "B. Maps hostnames to MAC addresses",
+            "option_c": "C. Encrypts ports",
+            "option_d": "D. Generates IP packets",
+            "correct_answer": "A",
+            "explanation": "getservbyport() identifies services associated with a given port."
+        },
+        {
+            "question": "Why is htons() used with getservbyport()?",
+            "option_a": "A. To convert port numbers to network byte order",
+            "option_b": "B. To encrypt port numbers",
+            "option_c": "C. To compress port values",
+            "option_d": "D. To generate checksums",
+            "correct_answer": "A",
+            "explanation": "Ports must be represented in network byte order."
+        },
+        {
+            "question": "A resolver repeatedly contacts the root server for common domains despite caching being enabled. Which issue is MOST likely?",
+            "option_a": "A. TTL values expire too quickly",
+            "option_b": "B. UDP packets are encrypted",
+            "option_c": "C. MX records are missing",
+            "option_d": "D. IPv6 is disabled",
+            "correct_answer": "A",
+            "explanation": "Very short TTL values reduce cache usefulness and force repeated queries."
+        },
+        {
+            "question": "A company wants both www.example.com and ftp.example.com to point to the same host. Which DNS record is MOST suitable?",
+            "option_a": "A. PTR",
+            "option_b": "B. MX",
+            "option_c": "C. CNAME",
+            "option_d": "D. AAAA",
+            "correct_answer": "C",
+            "explanation": "CNAME records create aliases pointing to another canonical hostname."
+        },
+        {
+            "question": "A network application must support IPv6-only systems. Which resolver function is MOST appropriate?",
+            "option_a": "A. gethostbyname()",
+            "option_b": "B. gethostbyname2()",
+            "option_c": "C. gethostname()",
+            "option_d": "D. uname()",
+            "correct_answer": "B",
+            "explanation": "gethostbyname2() explicitly supports IPv6 via AF_INET6."
+        },
+        {
+            "question": "Why are cached DNS responses considered non-authoritative?",
+            "option_a": "A. They may be outdated",
+            "option_b": "B. They are encrypted",
+            "option_c": "C. They contain MAC addresses",
+            "option_d": "D. They bypass root servers",
+            "correct_answer": "A",
+            "explanation": "Cached records may become stale over time and are not directly managed by authoritative servers."
+        },
+        {
+            "question": "An application calls gethostbyaddr() using an IPv6 address but passes AF_INET. What is the likely outcome?",
+            "option_a": "A. Successful lookup",
+            "option_b": "B. Automatic protocol conversion",
+            "option_c": "C. Resolver failure",
+            "option_d": "D. TCP fallback",
+            "correct_answer": "C",
+            "explanation": "Incorrect address family usage causes lookup failure."
+        },
+        {
+            "question": "Which DNS optimization directly reduces root server load?",
+            "option_a": "A. Fragmentation",
+            "option_b": "B. DNS caching",
+            "option_c": "C. Broadcast queries",
+            "option_d": "D. Port forwarding",
+            "correct_answer": "B",
+            "explanation": "Caching prevents repeated requests from reaching root servers."
+        },
+        {
+            "question": "A DNS server knows how to reach root servers but not a target domain directly. What happens next?",
+            "option_a": "A. Iterative query resolution begins",
+            "option_b": "B. DNS shuts down",
+            "option_c": "C. TCP resets occur",
+            "option_d": "D. Cache is flushed",
+            "correct_answer": "A",
+            "explanation": "The server iteratively queries higher-level servers to locate the authoritative server."
+        },
+        {
+            "question": "What is the main advantage of binary IP addresses over symbolic names?",
+            "option_a": "A. Easier for humans to memorize",
+            "option_b": "B. Require less computation and memory",
+            "option_c": "C. Provide built-in encryption",
+            "option_d": "D. Eliminate DNS servers",
+            "correct_answer": "B",
+            "explanation": "Binary IP addresses are compact and computationally efficient."
+        },
+        {
+            "question": "What is multihoming in networking?",
+            "option_a": "A. A host having multiple IP addresses",
+            "option_b": "B. A router having one interface",
+            "option_c": "C. Multiple DNS caches",
+            "option_d": "D. Encryption of DNS records",
+            "correct_answer": "A",
+            "explanation": "Multihoming allows a host to use multiple network interfaces or addresses."
+        },
+        {
+            "question": "Which field of hostent indicates address size?",
+            "option_a": "A. h_name",
+            "option_b": "B. h_addrtype",
+            "option_c": "C. h_length",
+            "option_d": "D. h_aliases",
+            "correct_answer": "C",
+            "explanation": "h_length specifies the size of the address in bytes."
+        },
+        {
+            "question": "Why might DNS overuse root servers without caching?",
+            "option_a": "A. Each lookup would require root-level queries",
+            "option_b": "B. Root servers reject UDP",
+            "option_c": "C. IPv6 disables caching",
+            "option_d": "D. MX records duplicate requests",
+            "correct_answer": "A",
+            "explanation": "Without caching, every lookup would begin from root servers, causing excessive load."
+        },
+        {
+            "question": "What does the Class field in a DNS resource record commonly contain for Internet data?",
+            "option_a": "A. UDP",
+            "option_b": "B. DNS",
+            "option_c": "C. IN",
+            "option_d": "D. TCP",
+            "correct_answer": "C",
+            "explanation": "IN represents the Internet class in DNS records."
+        },
+        {
+            "question": "Which of the following best describes an FQDN?",
+            "option_a": "A. A binary IP address",
+            "option_b": "B. A partially qualified domain",
+            "option_c": "C. A fully qualified domain name",
+            "option_d": "D. A network packet",
+            "correct_answer": "C",
+            "explanation": "FQDN stands for Fully Qualified Domain Name."
+        },
+        {
+            "question": "Why are domain names considered case-insensitive?",
+            "option_a": "A. DNS automatically encrypts them",
+            "option_b": "B. EDU and edu are treated identically",
+            "option_c": "C. IPv6 requires lowercase",
+            "option_d": "D. Root servers reject uppercase",
+            "correct_answer": "B",
+            "explanation": "DNS does not distinguish between uppercase and lowercase letters."
+        },
+        {
+            "question": "Which resolver function would MOST likely be used internally after uname() in determining local IP addresses?",
+            "option_a": "A. getservbyport()",
+            "option_b": "B. gethostbyname()",
+            "option_c": "C. gethostname()",
+            "option_d": "D. hstrerror()",
+            "correct_answer": "B",
+            "explanation": "The nodename obtained from uname() is resolved using gethostbyname()."
+        },
+        {
+            "question": "A system administrator wants to identify the hostname associated with IP 192.168.1.20. Which DNS record is queried?",
+            "option_a": "A. MX",
+            "option_b": "B. AAAA",
+            "option_c": "C. PTR",
+            "option_d": "D. CNAME",
+            "correct_answer": "C",
+            "explanation": "PTR records support reverse DNS lookups from IP addresses to hostnames."
+        },
+        {
+            "question": "Which statement about DNS hierarchy is TRUE?",
+            "option_a": "A. Every DNS server stores all Internet records",
+            "option_b": "B. Root servers directly store every hostname",
+            "option_c": "C. Authority is distributed among hierarchical servers",
+            "option_d": "D. DNS hierarchy exists only for IPv4",
+            "correct_answer": "C",
+            "explanation": "DNS distributes authority among hierarchical domain servers."
+        },
+        {
+            "question": "What would MOST likely happen if h_addr_list contains multiple entries?",
+            "option_a": "A. The host has multiple associated IP addresses",
+            "option_b": "B. DNS cache corruption occurred",
+            "option_c": "C. The resolver failed",
+            "option_d": "D. The host is unreachable",
+            "correct_answer": "A",
+            "explanation": "Multiple entries indicate multiple IP addresses for the host."
+        },
+        {
+            "question": "Why is DNS especially important for IPv6?",
+            "option_a": "A. IPv6 eliminates routing",
+            "option_b": "B. IPv6 addresses are significantly longer",
+            "option_c": "C. IPv6 requires FTP",
+            "option_d": "D. IPv6 uses MAC addresses only",
+            "correct_answer": "B",
+            "explanation": "IPv6 addresses are 128 bits long and difficult for humans to remember."
+        },
+        {
+            "question": "Which field in the servent structure is MOST important for socket programming?",
+            "option_a": "A. s_aliases",
+            "option_b": "B. s_name",
+            "option_c": "C. s_port",
+            "option_d": "D. s_proto",
+            "correct_answer": "C",
+            "explanation": "s_port contains the network service port number."
+        },
+        {
+            "question": "What is the primary purpose of the resolver configuration file shown in the architecture diagram?",
+            "option_a": "A. Encrypt DNS packets",
+            "option_b": "B. Specify how resolvers communicate with DNS servers",
+            "option_c": "C. Store routing tables",
+            "option_d": "D. Allocate memory",
+            "correct_answer": "B",
+            "explanation": "Resolver configuration files define DNS server information used by applications."
+        },
+        {
+            "question": "A developer uses gethostbyname() for an IPv6-only host and receives failures. What is the BEST fix?",
+            "option_a": "A. Replace UDP with ICMP",
+            "option_b": "B. Use gethostbyname2() with AF_INET6",
+            "option_c": "C. Disable DNS caching",
+            "option_d": "D. Use getservbyname() instead",
+            "correct_answer": "B",
+            "explanation": "gethostbyname() is IPv4-oriented, while gethostbyname2() supports IPv6."
+        },
+        {
+            "question": "What is the significance of the in-addr.arpa domain?",
+            "option_a": "A. It stores MX records",
+            "option_b": "B. It supports reverse IPv4 lookups",
+            "option_c": "C. It encrypts DNS traffic",
+            "option_d": "D. It stores IPv6 AAAA records",
+            "correct_answer": "B",
+            "explanation": "Reverse IPv4 DNS lookups use the in-addr.arpa domain."
+        },
+        {
+            "question": "Which operation would MOST likely involve getservbyport()?",
+            "option_a": "A. Determining which service uses TCP port 21",
+            "option_b": "B. Resolving www.example.com",
+            "option_c": "C. Obtaining MAC addresses",
+            "option_d": "D. Assigning DNS zones",
+            "correct_answer": "A",
+            "explanation": "getservbyport() maps ports back to service names."
+        },
+        {
+            "question": "Why are plausible alias records useful in DNS?",
+            "option_a": "A. They eliminate IP addressing",
+            "option_b": "B. They allow multiple service names for one host",
+            "option_c": "C. They replace routing protocols",
+            "option_d": "D. They disable caching",
+            "correct_answer": "B",
+            "explanation": "Aliases allow convenient naming for services hosted on the same system."
+        },
+        {
+            "question": "A DNS response contains stale information because the hostname changed recently. Which DNS mechanism contributes MOST to this issue?",
+            "option_a": "A. Iterative resolution",
+            "option_b": "B. UDP checksum",
+            "option_c": "C. DNS caching",
+            "option_d": "D. Port translation",
+            "correct_answer": "C",
+            "explanation": "Caching can temporarily retain outdated records until TTL expires."
+        },
+        {
+            "question": "What is the relationship between applications and resolvers?",
+            "option_a": "A. Applications directly contact root servers",
+            "option_b": "B. Resolvers act as intermediary libraries for applications",
+            "option_c": "C. Applications replace DNS servers",
+            "option_d": "D. Resolvers allocate MAC addresses",
+            "correct_answer": "B",
+            "explanation": "Applications use resolver libraries to perform DNS operations."
+        },
+        {
+            "question": "Why is UDP preferred for most DNS operations?",
+            "option_a": "A. It guarantees delivery",
+            "option_b": "B. It has lower overhead and faster communication",
+            "option_c": "C. It supports encryption natively",
+            "option_d": "D. It replaces caching",
+            "correct_answer": "B",
+            "explanation": "UDP provides lightweight communication suitable for quick DNS queries."
+        },
+        {
+            "question": "A DNS administrator notices that local domain queries are significantly faster than remote ones. Which DNS principle BEST explains this?",
+            "option_a": "A. Temporal and spatial locality",
+            "option_b": "B. Packet fragmentation",
+            "option_c": "C. Network congestion control",
+            "option_d": "D. TCP window scaling",
+            "correct_answer": "A",
+            "explanation": "DNS caching and locality of reference improve access speed for frequently used local domains."
+        }
+    ]
+}

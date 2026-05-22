@@ -1,0 +1,490 @@
+{
+    "questions": [
+        {
+            "question": "Which statement best describes UDP?",
+            "option_a": "A. Connection-oriented reliable byte stream protocol",
+            "option_b": "B. Connectionless unreliable datagram protocol",
+            "option_c": "C. Reliable multicast transport protocol",
+            "option_d": "D. Flow-controlled message queue protocol",
+            "correct_answer": "B",
+            "explanation": "UDP is a connectionless and unreliable datagram-based transport protocol."
+        },
+        {
+            "question": "Which application commonly uses UDP?",
+            "option_a": "A. FTP",
+            "option_b": "B. SSH",
+            "option_c": "C. DNS",
+            "option_d": "D. Telnet",
+            "correct_answer": "C",
+            "explanation": "DNS commonly uses UDP because requests and responses are usually small and require low overhead."
+        },
+        {
+            "question": "What is the primary advantage of UDP over TCP?",
+            "option_a": "A. Guaranteed delivery",
+            "option_b": "B. Congestion avoidance",
+            "option_c": "C. Lower communication overhead",
+            "option_d": "D. Built-in sequencing",
+            "correct_answer": "C",
+            "explanation": "UDP avoids connection setup and reliability mechanisms, reducing overhead."
+        },
+        {
+            "question": "Which function is typically used by a UDP server to receive datagrams?",
+            "option_a": "A. accept()",
+            "option_b": "B. recvfrom()",
+            "option_c": "C. listen()",
+            "option_d": "D. connect()",
+            "correct_answer": "B",
+            "explanation": "recvfrom() is used to receive UDP datagrams and optionally obtain sender information."
+        },
+        {
+            "question": "What does recvfrom() return on success?",
+            "option_a": "A. Destination port number",
+            "option_b": "B. Number of bytes read",
+            "option_c": "C. Sender IP address",
+            "option_d": "D. Socket descriptor",
+            "correct_answer": "B",
+            "explanation": "recvfrom() returns the number of bytes successfully read."
+        },
+        {
+            "question": "Why might a UDP client block forever in recvfrom()?",
+            "option_a": "A. TCP handshake failure",
+            "option_b": "B. Datagram or reply loss",
+            "option_c": "C. Invalid checksum in Ethernet frame",
+            "option_d": "D. Congestion window overflow",
+            "correct_answer": "B",
+            "explanation": "UDP provides no reliability, so lost requests or replies can cause indefinite blocking."
+        },
+        {
+            "question": "Which function is commonly used to send UDP datagrams?",
+            "option_a": "A. sendto()",
+            "option_b": "B. accept()",
+            "option_c": "C. fork()",
+            "option_d": "D. bind()",
+            "correct_answer": "A",
+            "explanation": "sendto() sends datagrams to a specified destination address."
+        },
+        {
+            "question": "In UDP communication, what does bind() primarily do on the server side?",
+            "option_a": "A. Creates the socket",
+            "option_b": "B. Sends a datagram",
+            "option_c": "C. Associates the socket with a local port",
+            "option_d": "D. Establishes a connection",
+            "correct_answer": "C",
+            "explanation": "bind() associates a socket with a local IP address and port number."
+        },
+        {
+            "question": "Why are concurrent UDP servers less common than concurrent TCP servers?",
+            "option_a": "A. UDP does not support sockets",
+            "option_b": "B. UDP cannot process multiple clients",
+            "option_c": "C. Process creation overhead may outweigh concurrency benefits",
+            "option_d": "D. UDP requires sequential packet ordering",
+            "correct_answer": "C",
+            "explanation": "UDP request handling is often lightweight, making concurrency less beneficial."
+        },
+        {
+            "question": "What is an ephemeral port?",
+            "option_a": "A. A reserved server port",
+            "option_b": "B. A dynamically selected temporary client port",
+            "option_c": "C. A multicast-only port",
+            "option_d": "D. A broadcast address",
+            "correct_answer": "B",
+            "explanation": "UDP clients are typically assigned temporary ephemeral ports automatically."
+        },
+        {
+            "question": "Why should a UDP client verify the sender address of replies?",
+            "option_a": "A. To improve congestion control",
+            "option_b": "B. To ensure the reply came from the expected server",
+            "option_c": "C. To avoid TCP retransmission",
+            "option_d": "D. To reduce packet size",
+            "correct_answer": "B",
+            "explanation": "Any process knowing the client's port can send datagrams, so verification is important."
+        },
+        {
+            "question": "What problem occurs when a UDP server is multihomed?",
+            "option_a": "A. Duplicate sockets cannot exist",
+            "option_b": "B. The client may reject valid replies from different server interfaces",
+            "option_c": "C. UDP becomes connection-oriented",
+            "option_d": "D. Packets are automatically encrypted",
+            "correct_answer": "B",
+            "explanation": "A multihomed server may reply using a different IP address than the client expects."
+        },
+        {
+            "question": "What does connect() do for a UDP socket?",
+            "option_a": "A. Establishes a TCP-style handshake",
+            "option_b": "B. Enables flow control",
+            "option_c": "C. Records the peer IP address and port in the kernel",
+            "option_d": "D. Enables retransmission",
+            "correct_answer": "C",
+            "explanation": "UDP connect() simply stores peer information without establishing a real connection."
+        },
+        {
+            "question": "After calling connect() on a UDP socket, which functions can be used instead of sendto() and recvfrom()?",
+            "option_a": "A. accept() and bind()",
+            "option_b": "B. read() and write()",
+            "option_c": "C. select() and fork()",
+            "option_d": "D. getsockname() and close()",
+            "correct_answer": "B",
+            "explanation": "Connected UDP sockets can use read()/write() or recv()/send()."
+        },
+        {
+            "question": "Which error may occur if sendto() specifies a destination on a connected UDP socket?",
+            "option_a": "A. EDESTADDRREQ",
+            "option_b": "B. EINTR",
+            "option_c": "C. EISCONN",
+            "option_d": "D. EMSGSIZE",
+            "correct_answer": "C",
+            "explanation": "EISCONN occurs because the socket is already connected to a peer."
+        },
+        {
+            "question": "Why can connected UDP sockets improve performance?",
+            "option_a": "A. They enable TCP congestion control",
+            "option_b": "B. They eliminate the need for repeated destination specification",
+            "option_c": "C. They compress UDP headers",
+            "option_d": "D. They guarantee packet delivery",
+            "correct_answer": "B",
+            "explanation": "Connected UDP sockets avoid repeated connect/unconnect operations."
+        },
+        {
+            "question": "What is a major limitation of UDP regarding data transmission speed?",
+            "option_a": "A. UDP supports only half-duplex communication",
+            "option_b": "B. UDP lacks flow control",
+            "option_c": "C. UDP cannot transmit large packets",
+            "option_d": "D. UDP requires acknowledgments",
+            "correct_answer": "B",
+            "explanation": "UDP does not regulate sender speed, potentially overwhelming receivers."
+        },
+        {
+            "question": "Why might increasing SO_RCVBUF still fail to prevent UDP packet loss?",
+            "option_a": "A. UDP ignores socket buffers",
+            "option_b": "B. Slow receivers may still process packets too slowly",
+            "option_c": "C. SO_RCVBUF applies only to TCP",
+            "option_d": "D. UDP buffers are fixed in hardware",
+            "correct_answer": "B",
+            "explanation": "If the receiver cannot process packets quickly enough, loss can still occur."
+        },
+        {
+            "question": "Which function allows a UDP server to obtain the destination IP address of incoming datagrams?",
+            "option_a": "A. recvmsg()",
+            "option_b": "B. accept()",
+            "option_c": "C. writev()",
+            "option_d": "D. connect()",
+            "correct_answer": "A",
+            "explanation": "recvmsg() can retrieve advanced control information including destination addresses."
+        },
+        {
+            "question": "Which feature is supported by UDP but not directly by TCP?",
+            "option_a": "A. Sequencing",
+            "option_b": "B. Retransmission",
+            "option_c": "C. Broadcasting",
+            "option_d": "D. Flow control",
+            "correct_answer": "C",
+            "explanation": "UDP supports broadcast and multicast communication."
+        },
+        {
+            "question": "Why is UDP usually avoided for bulk file transfers?",
+            "option_a": "A. UDP packets cannot exceed 512 bytes",
+            "option_b": "B. UDP lacks reliability and flow control",
+            "option_c": "C. UDP requires encryption",
+            "option_d": "D. UDP cannot use ports",
+            "correct_answer": "B",
+            "explanation": "Reliable bulk transfer requires retransmission and ordering mechanisms."
+        },
+        {
+            "question": "What enhancement helps identify whether a UDP reply corresponds to a specific request?",
+            "option_a": "A. Encryption keys",
+            "option_b": "B. Sequence numbers",
+            "option_c": "C. Window scaling",
+            "option_d": "D. MAC addresses",
+            "correct_answer": "B",
+            "explanation": "Sequence numbers allow clients to match replies with requests."
+        },
+        {
+            "question": "What is the purpose of retransmission timeout (RTO) in UDP reliability enhancements?",
+            "option_a": "A. To terminate sockets",
+            "option_b": "B. To retransmit requests after waiting too long",
+            "option_c": "C. To increase packet size",
+            "option_d": "D. To disable ICMP messages",
+            "correct_answer": "B",
+            "explanation": "RTO determines when retransmission should occur after no reply is received."
+        },
+        {
+            "question": "What is retransmission ambiguity in UDP?",
+            "option_a": "A. Packets arrive out of order",
+            "option_b": "B. The client cannot determine which request a reply belongs to",
+            "option_c": "C. Routers duplicate packets",
+            "option_d": "D. UDP headers become corrupted",
+            "correct_answer": "B",
+            "explanation": "Retransmitted requests can make replies ambiguous without identifiers."
+        },
+        {
+            "question": "Why might timestamps be added to UDP requests?",
+            "option_a": "A. To compress payloads",
+            "option_b": "B. To identify retransmission timing and match replies",
+            "option_c": "C. To avoid checksum calculations",
+            "option_d": "D. To increase bandwidth",
+            "correct_answer": "B",
+            "explanation": "Timestamps help distinguish replies for retransmitted requests."
+        },
+        {
+            "question": "When are concurrent UDP servers most useful?",
+            "option_a": "A. When processing client requests takes significant time",
+            "option_b": "B. Only during multicast",
+            "option_c": "C. When UDP reliability is disabled",
+            "option_d": "D. Only on Windows systems",
+            "correct_answer": "A",
+            "explanation": "Concurrency helps when client processing is expensive or lengthy."
+        },
+        {
+            "question": "Why does a concurrent UDP server create a new socket with an ephemeral port?",
+            "option_a": "A. To replace TCP",
+            "option_b": "B. To distinguish communication sessions with different clients",
+            "option_c": "C. To disable multicast",
+            "option_d": "D. To avoid routing",
+            "correct_answer": "B",
+            "explanation": "Separate sockets help distinguish multi-datagram interactions."
+        },
+        {
+            "question": "Which recv/send flag allows peeking at incoming data without removing it from the queue?",
+            "option_a": "A. MSG_OOB",
+            "option_b": "B. MSG_WAITALL",
+            "option_c": "C. MSG_PEEK",
+            "option_d": "D. MSG_DONTROUTE",
+            "correct_answer": "C",
+            "explanation": "MSG_PEEK reads data without consuming it from the receive queue."
+        },
+        {
+            "question": "What is the purpose of MSG_DONTWAIT?",
+            "option_a": "A. Enables permanent nonblocking mode",
+            "option_b": "B. Makes a single operation nonblocking",
+            "option_c": "C. Waits for all requested bytes",
+            "option_d": "D. Disables routing",
+            "correct_answer": "B",
+            "explanation": "MSG_DONTWAIT applies nonblocking behavior to only one I/O operation."
+        },
+        {
+            "question": "Which pair of functions supports scatter/gather I/O?",
+            "option_a": "A. recvfrom() and sendto()",
+            "option_b": "B. accept() and bind()",
+            "option_c": "C. readv() and writev()",
+            "option_d": "D. recv() and send()",
+            "correct_answer": "C",
+            "explanation": "readv() and writev() support multiple buffers in one operation."
+        },
+        {
+            "question": "What is scatter read?",
+            "option_a": "A. Reading from multiple buffers in one call",
+            "option_b": "B. Writing to multiple sockets",
+            "option_c": "C. Broadcasting packets",
+            "option_d": "D. Fragmenting Ethernet frames",
+            "correct_answer": "A",
+            "explanation": "Scatter read distributes incoming data across multiple buffers."
+        },
+        {
+            "question": "Which functions are considered the most general socket I/O functions?",
+            "option_a": "A. recvmsg() and sendmsg()",
+            "option_b": "B. recv() and send()",
+            "option_c": "C. read() and write()",
+            "option_d": "D. connect() and accept()",
+            "correct_answer": "A",
+            "explanation": "recvmsg() and sendmsg() support advanced control data and scatter/gather I/O."
+        },
+        {
+            "question": "What is the limited broadcast address in IPv4?",
+            "option_a": "A. 224.0.0.1",
+            "option_b": "B. 255.255.255.255",
+            "option_c": "C. 127.0.0.1",
+            "option_d": "D. 0.0.0.0",
+            "correct_answer": "B",
+            "explanation": "255.255.255.255 is the limited broadcast address and is not forwarded by routers."
+        },
+        {
+            "question": "Why is broadcasting inefficient on large networks?",
+            "option_a": "A. TCP cannot process broadcasts",
+            "option_b": "B. Every host must process the packet before discarding it",
+            "option_c": "C. Broadcasts disable ARP",
+            "option_d": "D. Routers always duplicate packets",
+            "correct_answer": "B",
+            "explanation": "All hosts must process broadcast packets even if uninterested."
+        },
+        {
+            "question": "Which socket option enables UDP broadcasting?",
+            "option_a": "A. SO_REUSEADDR",
+            "option_b": "B. SO_KEEPALIVE",
+            "option_c": "C. SO_BROADCAST",
+            "option_d": "D. SO_TIMEOUT",
+            "correct_answer": "C",
+            "explanation": "SO_BROADCAST allows transmission of broadcast datagrams."
+        },
+        {
+            "question": "Why should broadcast UDP datagrams typically remain below 1472 bytes?",
+            "option_a": "A. To avoid fragmentation issues with Ethernet MTU",
+            "option_b": "B. UDP headers exceed 28 bytes",
+            "option_c": "C. Routers reject larger TCP frames",
+            "option_d": "D. IPv4 requires fixed-size datagrams",
+            "correct_answer": "A",
+            "explanation": "1472 bytes fits within Ethernet MTU while avoiding fragmentation."
+        },
+        {
+            "question": "What is a race condition?",
+            "option_a": "A. Delayed packet transmission",
+            "option_b": "B. Simultaneous routing updates",
+            "option_c": "C. A situation where correctness depends on execution order",
+            "option_d": "D. Packet duplication by switches",
+            "correct_answer": "C",
+            "explanation": "Race conditions occur when shared operations depend on unpredictable timing."
+        },
+        {
+            "question": "Why can signals create race conditions?",
+            "option_a": "A. Signals are delivered synchronously",
+            "option_b": "B. Signals can arrive at unpredictable times",
+            "option_c": "C. Signals disable interrupts",
+            "option_d": "D. Signals replace sockets",
+            "correct_answer": "B",
+            "explanation": "Signals may interrupt execution at unexpected moments."
+        },
+        {
+            "question": "What problem exists in simply blocking and unblocking SIGALRM around recvfrom()?",
+            "option_a": "A. recvfrom() becomes nonblocking",
+            "option_b": "B. The operations are not atomic",
+            "option_c": "C. Signals become encrypted",
+            "option_d": "D. UDP becomes connection-oriented",
+            "correct_answer": "B",
+            "explanation": "Independent system calls leave small timing windows for race conditions."
+        },
+        {
+            "question": "What advantage does pselect() provide over select()?",
+            "option_a": "A. Built-in retransmission",
+            "option_b": "B. Atomic signal mask handling",
+            "option_c": "C. TCP acceleration",
+            "option_d": "D. Hardware routing",
+            "correct_answer": "B",
+            "explanation": "pselect() atomically handles signal masks and descriptor testing."
+        },
+        {
+            "question": "What is the main advantage of multicasting over broadcasting?",
+            "option_a": "A. Guaranteed delivery",
+            "option_b": "B. Reduced load on uninterested hosts",
+            "option_c": "C. Built-in sequencing",
+            "option_d": "D. Connection establishment",
+            "correct_answer": "B",
+            "explanation": "Only interested hosts receive multicast packets."
+        },
+        {
+            "question": "Which IPv4 address range is reserved for multicast?",
+            "option_a": "A. 192.168.0.0 – 192.168.255.255",
+            "option_b": "B. 127.0.0.0 – 127.255.255.255",
+            "option_c": "C. 224.0.0.0 – 239.255.255.255",
+            "option_d": "D. 10.0.0.0 – 10.255.255.255",
+            "correct_answer": "C",
+            "explanation": "Class D IPv4 addresses are reserved for multicast."
+        },
+        {
+            "question": "What multicast group address represents all hosts on a subnet?",
+            "option_a": "A. 255.255.255.255",
+            "option_b": "B. 224.0.0.1",
+            "option_c": "C. 224.0.0.2",
+            "option_d": "D. 239.255.255.255",
+            "correct_answer": "B",
+            "explanation": "224.0.0.1 is the all-hosts multicast group."
+        },
+        {
+            "question": "What does IP_ADD_MEMBERSHIP do?",
+            "option_a": "A. Disconnects multicast receivers",
+            "option_b": "B. Joins a multicast group",
+            "option_c": "C. Enables TCP loopback",
+            "option_d": "D. Changes socket type",
+            "correct_answer": "B",
+            "explanation": "IP_ADD_MEMBERSHIP subscribes a socket to a multicast group."
+        },
+        {
+            "question": "What is the default TTL for outgoing multicast datagrams if not explicitly set?",
+            "option_a": "A. 0",
+            "option_b": "B. 1",
+            "option_c": "C. 32",
+            "option_d": "D. 255",
+            "correct_answer": "B",
+            "explanation": "The default multicast TTL is 1, limiting packets to the local subnet."
+        },
+        {
+            "question": "Which multicast socket option controls loopback behavior?",
+            "option_a": "A. IP_MULTICAST_LOOP",
+            "option_b": "B. SO_BROADCAST",
+            "option_c": "C. MSG_PEEK",
+            "option_d": "D. IP_DROP_MEMBERSHIP",
+            "correct_answer": "A",
+            "explanation": "IP_MULTICAST_LOOP enables or disables loopback of multicast packets."
+        },
+        {
+            "question": "Why can multiple multicast addresses map to the same Ethernet address?",
+            "option_a": "A. Ethernet supports only TCP",
+            "option_b": "B. Only 23 bits of the multicast address are used",
+            "option_c": "C. Routers remove high-order bits",
+            "option_d": "D. IPv6 compatibility requirements",
+            "correct_answer": "B",
+            "explanation": "The high-order 5 bits are ignored during multicast-to-Ethernet mapping."
+        },
+        {
+            "question": "A UDP client sends datagrams to multiple servers using an unconnected socket. One server is down. Why is identifying the failed server difficult?",
+            "option_a": "A. UDP encrypts destination addresses",
+            "option_b": "B. Asynchronous errors lack destination server information",
+            "option_c": "C. Routers hide ICMP packets",
+            "option_d": "D. UDP disables ICMP",
+            "correct_answer": "B",
+            "explanation": "Unconnected UDP sockets do not associate errors with specific destinations."
+        },
+        {
+            "question": "Why is multicast preferred over broadcast in video streaming systems?",
+            "option_a": "A. Multicast guarantees delivery",
+            "option_b": "B. Broadcast supports only TCP",
+            "option_c": "C. Multicast sends packets only to interested receivers",
+            "option_d": "D. Multicast avoids IP addressing",
+            "correct_answer": "C",
+            "explanation": "Multicast reduces unnecessary traffic and processing overhead."
+        },
+        {
+            "question": "A developer uses alarm() to interrupt recvfrom(), but the signal arrives during sleep(). What issue can occur?",
+            "option_a": "A. Deadlock",
+            "option_b": "B. Race condition causing indefinite blocking",
+            "option_c": "C. TCP reset",
+            "option_d": "D. Socket duplication",
+            "correct_answer": "B",
+            "explanation": "Signals may interrupt unintended code sections, causing logic errors."
+        },
+        {
+            "question": "Why does UDP suit online multiplayer gaming better than TCP in many cases?",
+            "option_a": "A. UDP guarantees packet order",
+            "option_b": "B. UDP retransmits lost packets faster",
+            "option_c": "C. Lower latency is often more important than reliability",
+            "option_d": "D. UDP compresses game data",
+            "correct_answer": "C",
+            "explanation": "Games often prioritize responsiveness over perfect reliability."
+        },
+        {
+            "question": "Which statement about asynchronous UDP errors is correct?",
+            "option_a": "A. They are always returned immediately from sendto()",
+            "option_b": "B. They occur only in TCP",
+            "option_c": "C. They may be reported later after packet transmission",
+            "option_d": "D. They disable recvfrom()",
+            "correct_answer": "C",
+            "explanation": "Asynchronous errors can be reported after packet transmission completes."
+        },
+        {
+            "question": "Why is recvmsg() more powerful than recvfrom()?",
+            "option_a": "A. It supports only TCP",
+            "option_b": "B. It can retrieve ancillary control information",
+            "option_c": "C. It eliminates UDP packet loss",
+            "option_d": "D. It automatically retransmits packets",
+            "correct_answer": "B",
+            "explanation": "recvmsg() supports advanced metadata and scatter/gather operations."
+        },
+        {
+            "question": "A UDP server receives thousands of datagrams per second but processes them slowly. Which issue is most likely?",
+            "option_a": "A. Automatic TCP fallback",
+            "option_b": "B. Receive buffer overflow causing packet loss",
+            "option_c": "C. Ethernet checksum corruption",
+            "option_d": "D. Forced multicast routing",
+            "correct_answer": "B",
+            "explanation": "UDP datagrams may be dropped if the receive queue fills faster than processing occurs."
+        }
+    ]
+}
