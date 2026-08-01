@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -6,8 +6,8 @@ import {
   CheckCircle,
   AlertCircle,
   Award,
-} from 'lucide-react';
-import { formatTime } from '../utils';
+} from "lucide-react";
+import { formatTime } from "../utils";
 
 const QuizScreen = ({
   quizData,
@@ -59,7 +59,7 @@ const QuizScreen = ({
             <div
               className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-300"
               style={{
-                width: `${(currentQuestion + 1) / quizData.questions.length * 100}%`,
+                width: `${((currentQuestion + 1) / quizData.questions.length) * 100}%`,
               }}
             />
           </div>
@@ -87,36 +87,38 @@ const QuizScreen = ({
           </div>
 
           <div className="space-y-4 mb-8">
-            {['option_a', 'option_b', 'option_c', 'option_d'].map(optionKey => {
-              const optionValue = question[optionKey];
-              const optionLetter = optionKey.split('_')[1].toUpperCase();
-              const isSelected = answers[currentQuestion] === optionLetter;
+            {["option_a", "option_b", "option_c", "option_d"].map(
+              (optionKey) => {
+                const optionValue = question[optionKey];
+                const optionLetter = optionKey.split("_")[1].toUpperCase();
+                const isSelected = answers[currentQuestion] === optionLetter;
 
-              return (
-                <button
-                  key={optionKey}
-                  onClick={() => selectAnswer(currentQuestion, optionLetter)}
-                  className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-200 ${
-                    isSelected
-                      ? 'border-blue-500 bg-blue-500/10 text-blue-300'
-                      : 'border-gray-600 bg-gray-700/50 hover:border-gray-500 hover:bg-gray-700'
-                  }`}
-                >
-                  <div className="flex items-center">
-                    <div
-                      className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-sm font-medium mr-4 ${
-                        isSelected
-                          ? 'border-blue-500 bg-blue-500 text-white'
-                          : 'border-gray-500'
-                      }`}
-                    >
-                      {isSelected && <CheckCircle className="w-4 h-4" />}
+                return (
+                  <button
+                    key={optionKey}
+                    onClick={() => selectAnswer(currentQuestion, optionLetter)}
+                    className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-200 ${
+                      isSelected
+                        ? "border-blue-500 bg-blue-500/10 text-blue-300"
+                        : "border-gray-600 bg-gray-700/50 hover:border-gray-500 hover:bg-gray-700"
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div
+                        className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-sm font-medium mr-4 ${
+                          isSelected
+                            ? "border-blue-500 bg-blue-500 text-white"
+                            : "border-gray-500"
+                        }`}
+                      >
+                        {isSelected && <CheckCircle className="w-4 h-4" />}
+                      </div>
+                      <span dangerouslySetInnerHTML={{ __html: optionValue }} />
                     </div>
-                    <span dangerouslySetInnerHTML={{ __html: optionValue }} />
-                  </div>
-                </button>
-              );
-            })}
+                  </button>
+                );
+              },
+            )}
           </div>
 
           {/* Navigation */}
@@ -126,8 +128,8 @@ const QuizScreen = ({
               disabled={currentQuestion === 0}
               className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${
                 currentQuestion === 0
-                  ? 'text-gray-500 cursor-not-allowed'
-                  : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                  ? "text-gray-500 cursor-not-allowed"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               <ChevronLeft className="w-4 h-4 mr-2" />
@@ -140,8 +142,8 @@ const QuizScreen = ({
                 disabled={!isAnswered}
                 className={`flex items-center px-8 py-3 rounded-lg font-medium transition-colors ${
                   isAnswered
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white'
-                    : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                    ? "bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white"
+                    : "bg-gray-600 text-gray-400 cursor-not-allowed"
                 }`}
               >
                 <Award className="w-4 h-4 mr-2" />
@@ -153,8 +155,8 @@ const QuizScreen = ({
                 disabled={!isAnswered}
                 className={`flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${
                   isAnswered
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white'
-                    : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                    ? "bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white"
+                    : "bg-gray-600 text-gray-400 cursor-not-allowed"
                 }`}
               >
                 Next
@@ -184,10 +186,10 @@ const QuizScreen = ({
                 onClick={() => setCurrentQuestion(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
                   index === currentQuestion
-                    ? 'bg-blue-500'
+                    ? "bg-blue-500"
                     : answers[index] !== undefined
-                    ? 'bg-green-500'
-                    : 'bg-gray-600'
+                      ? "bg-green-500"
+                      : "bg-gray-600"
                 }`}
               />
             ))}
