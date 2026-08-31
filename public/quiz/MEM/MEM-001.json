@@ -1,0 +1,1534 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes an organization?",
+      "option_a": "A. A group of people who work independently without common objectives",
+      "option_b": "B. A structured group of people who collaborate to achieve shared goals",
+      "option_c": "C. A collection of resources without defined responsibilities",
+      "option_d": "D. A system that only exists for financial activities",
+      "correct_answer": "B",
+      "explanation": "An organization is a structured group of people with defined roles, hierarchy, rules, and shared goals."
+    },
+    {
+      "question": "According to Louis Allen, organization involves identifying and grouping work, delegating responsibility and authority, and establishing relationships primarily to achieve what?",
+      "option_a": "A. Individual employee rewards",
+      "option_b": "B. Maximum employee independence",
+      "option_c": "C. Effective collaboration toward objectives",
+      "option_d": "D. Complete centralization of decisions",
+      "correct_answer": "C",
+      "explanation": "Louis Allen's definition emphasizes structuring work, responsibility, authority, and relationships so people can work effectively toward objectives."
+    },
+    {
+      "question": "Which of the following is an example of SLIIT's organizational resources?",
+      "option_a": "A. Classrooms, laboratories, libraries, LMS, technology, and staff expertise",
+      "option_b": "B. Only students and lecturers",
+      "option_c": "C. Only faculties and departments",
+      "option_d": "D. Only admission and examination procedures",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies classrooms, labs, libraries, LMS, technology, finance, and staff expertise as organizational resources."
+    },
+    {
+      "question": "Which combination represents the four key functions of management?",
+      "option_a": "A. Recruiting, budgeting, selling, and auditing",
+      "option_b": "B. Planning, organizing, leading, and controlling",
+      "option_c": "C. Directing, staffing, marketing, and reporting",
+      "option_d": "D. Designing, producing, purchasing, and selling",
+      "correct_answer": "B",
+      "explanation": "The lecture presents planning, organizing, leading, and controlling as the four key management functions."
+    },
+    {
+      "question": "Which management function involves setting organizational goals and determining the best course of action to achieve them?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "A",
+      "explanation": "Planning establishes objectives, develops strategies, and determines actions and resource allocation in advance."
+    },
+    {
+      "question": "A manager assigns responsibilities to employees, groups related activities, and establishes reporting relationships. Which management function is primarily being performed?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "B",
+      "explanation": "Organizing involves arranging tasks and resources, assigning responsibilities, and establishing relationships."
+    },
+    {
+      "question": "Which activity is most closely associated with leading?",
+      "option_a": "A. Comparing actual results with planned results",
+      "option_b": "B. Assigning departments to organizational units",
+      "option_c": "C. Motivating employees and building commitment",
+      "option_d": "D. Developing long-term organizational objectives",
+      "correct_answer": "C",
+      "explanation": "Leading involves guiding, motivating, communicating with, and influencing employees toward organizational goals."
+    },
+    {
+      "question": "What is the primary purpose of controlling?",
+      "option_a": "A. To eliminate all organizational planning",
+      "option_b": "B. To monitor performance and correct deviations from planned objectives",
+      "option_c": "C. To replace managers with automated systems",
+      "option_d": "D. To increase the number of management levels",
+      "correct_answer": "B",
+      "explanation": "Controlling monitors activities, measures performance, compares results with expectations, and takes corrective action."
+    },
+    {
+      "question": "A company decides that it wants to become the leading provider of cloud services over the next five years and develops a broad strategy to achieve this. Which management function is most directly involved?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "A",
+      "explanation": "Long-term goals and strategic plans are central elements of planning."
+    },
+    {
+      "question": "A manager discovers that project performance is below the expected target and introduces corrective actions. Which part of management is illustrated?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "D",
+      "explanation": "Controlling includes measuring performance, comparing it with expected results, and making corrections."
+    },
+    {
+      "question": "Which statement best describes a tactical plan?",
+      "option_a": "A. It defines the organization's broadest long-term direction only",
+      "option_b": "B. It translates strategic plans into specific actions",
+      "option_c": "C. It eliminates the need for organizational goals",
+      "option_d": "D. It focuses exclusively on employee motivation",
+      "correct_answer": "B",
+      "explanation": "Tactical plans translate strategic plans into specific actions such as who will do what and where."
+    },
+    {
+      "question": "Which type of plan generally has effects across the entire organization and focuses on the long-term future?",
+      "option_a": "A. Strategic plan",
+      "option_b": "B. Tactical plan",
+      "option_c": "C. Daily work schedule",
+      "option_d": "D. Individual task assignment",
+      "correct_answer": "A",
+      "explanation": "Strategic plans define the organization's long-term direction and affect the organization as a whole."
+    },
+    {
+      "question": "Which statement best captures the relationship between strategic and tactical planning?",
+      "option_a": "A. Tactical planning replaces strategic planning",
+      "option_b": "B. Strategic planning provides broad direction while tactical planning translates it into specific actions",
+      "option_c": "C. Both are limited to individual employees",
+      "option_d": "D. Strategic planning occurs only after controlling",
+      "correct_answer": "B",
+      "explanation": "Strategic planning establishes broad long-term direction, while tactical planning converts that direction into concrete actions."
+    },
+    {
+      "question": "Which of the following is most clearly an organizing activity?",
+      "option_a": "A. Setting a five-year growth target",
+      "option_b": "B. Comparing actual sales with expected sales",
+      "option_c": "C. Deciding how authority and responsibility should be assigned",
+      "option_d": "D. Encouraging employees after a difficult project",
+      "correct_answer": "C",
+      "explanation": "Organizing determines how work, authority, responsibility, resources, and coordination should be arranged."
+    },
+    {
+      "question": "Which statement best describes controlling as a feedback loop?",
+      "option_a": "A. Managers make plans but never examine results",
+      "option_b": "B. Managers observe results, compare them with expectations, and respond with corrections",
+      "option_c": "C. Managers delegate every decision to employees",
+      "option_d": "D. Managers focus only on future goals without considering current performance",
+      "correct_answer": "B",
+      "explanation": "The controlling feedback loop involves monitoring, measuring, comparing, and responding to what happens."
+    },
+    {
+      "question": "According to the lecture, what is one of the most important aspects of controlling?",
+      "option_a": "A. Managers must remain informed",
+      "option_b": "B. Managers must avoid collecting performance information",
+      "option_c": "C. Managers must eliminate all deviations before they occur",
+      "option_d": "D. Managers must always centralize decisions",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes that managers must keep informed so they can observe and respond to unexpected issues."
+    },
+    {
+      "question": "A manager creates a plan, assigns resources, motivates employees, and then monitors whether the results meet expectations. What does this demonstrate?",
+      "option_a": "A. Only the controlling function",
+      "option_b": "B. Only the planning function",
+      "option_c": "C. The interconnected nature of the four management functions",
+      "option_d": "D. Only the organizing function",
+      "correct_answer": "C",
+      "explanation": "Planning, organizing, leading, and controlling work together as a framework for coordinating people and resources."
+    },
+    {
+      "question": "Which statement about management is consistent with Henri Fayol's definition?",
+      "option_a": "A. Management is only the process of supervising employees",
+      "option_b": "B. Management involves planning, organizing, leading, and controlling organizational efforts and resources",
+      "option_c": "C. Management focuses exclusively on financial resources",
+      "option_d": "D. Management eliminates the need for organizational goals",
+      "correct_answer": "B",
+      "explanation": "Fayol describes management as planning, organizing, leading, and controlling organizational members and resources to achieve goals."
+    },
+    {
+      "question": "Mary Parker Follett described management primarily as:",
+      "option_a": "A. The science of financial forecasting",
+      "option_b": "B. The art of getting things done through people",
+      "option_c": "C. The process of eliminating organizational structures",
+      "option_d": "D. The process of controlling machines",
+      "correct_answer": "B",
+      "explanation": "Mary Parker Follett described management as the art of getting things done through people."
+    },
+    {
+      "question": "Which management level is primarily responsible for the organization's long-term success and pays close attention to the external environment?",
+      "option_a": "A. First-line management",
+      "option_b": "B. Team leaders",
+      "option_c": "C. Middle management",
+      "option_d": "D. Top-level management",
+      "correct_answer": "D",
+      "explanation": "Top managers establish goals, consider external conditions, make major investments, and are responsible for long-term success."
+    },
+    {
+      "question": "Which of the following is most likely to be a top-level management position?",
+      "option_a": "A. Shift manager",
+      "option_b": "B. Chief Executive Officer",
+      "option_c": "C. Section chief",
+      "option_d": "D. Team leader",
+      "correct_answer": "B",
+      "explanation": "CEO, COO, CMO, CTO, CFO, and CCO are examples of top management positions."
+    },
+    {
+      "question": "A department director receives broad strategic plans from senior management and converts them into objectives for the department. Which management level is this person most likely part of?",
+      "option_a": "A. Top management",
+      "option_b": "B. Middle management",
+      "option_c": "C. First-line management",
+      "option_d": "D. External management",
+      "correct_answer": "B",
+      "explanation": "Middle managers receive broad strategic plans and work with specific objectives while linking top and first-line managers."
+    },
+    {
+      "question": "Which role acts as a link between top managers and first-line managers?",
+      "option_a": "A. Middle manager",
+      "option_b": "B. Team member",
+      "option_c": "C. Customer",
+      "option_d": "D. External stakeholder",
+      "correct_answer": "A",
+      "explanation": "Middle managers connect top-level strategic direction with first-line management."
+    },
+    {
+      "question": "Which manager is normally in close contact with workers and focuses primarily on internal operational issues?",
+      "option_a": "A. Top-level manager",
+      "option_b": "B. Middle manager",
+      "option_c": "C. First-line manager",
+      "option_d": "D. Chief executive",
+      "correct_answer": "C",
+      "explanation": "First-line managers are close to workers and are responsible for implementing organizational objectives and plans at the operational level."
+    },
+    {
+      "question": "Which of the following is an example of a first-line management position?",
+      "option_a": "A. CEO",
+      "option_b": "B. Department director",
+      "option_c": "C. Shift manager",
+      "option_d": "D. CFO",
+      "correct_answer": "C",
+      "explanation": "Shift managers, assistant managers, foremen, section chiefs, and office managers are examples of first-line managers."
+    },
+    {
+      "question": "A team leader creates work timelines, assigns specific tasks, trains team members, and ensures that the team operates efficiently. Which role is being described?",
+      "option_a": "A. Top-level executive",
+      "option_b": "B. Team leader",
+      "option_c": "C. External consultant",
+      "option_d": "D. Board member",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies timelines, work assignments, training, clear instructions, and team efficiency as team leader responsibilities."
+    },
+    {
+      "question": "A team leader usually reports to which management level or levels?",
+      "option_a": "A. Customers only",
+      "option_b": "B. First-line or middle manager",
+      "option_c": "C. External suppliers only",
+      "option_d": "D. Government authorities",
+      "correct_answer": "B",
+      "explanation": "The lecture states that team leaders report to first-line or middle managers."
+    },
+    {
+      "question": "A company is facing new economic conditions and proposed legal changes. Which management level would most directly be expected to monitor these external factors?",
+      "option_a": "A. Team leaders",
+      "option_b": "B. First-line managers",
+      "option_c": "C. Top-level management",
+      "option_d": "D. Individual employees only",
+      "correct_answer": "C",
+      "explanation": "Top management pays careful attention to the external environment, including economic and legal developments."
+    },
+    {
+      "question": "Which statement best describes effectiveness?",
+      "option_a": "A. Completing a task using the fewest resources",
+      "option_b": "B. Achieving the desired goal",
+      "option_c": "C. Reducing the number of employees",
+      "option_d": "D. Minimizing working hours regardless of results",
+      "correct_answer": "B",
+      "explanation": "Effectiveness concerns achieving the desired organizational goal."
+    },
+    {
+      "question": "A team completes a project using very few resources but fails to achieve the required outcome. Based on the lecture's distinction, what is the main problem?",
+      "option_a": "A. The team may be efficient but ineffective",
+      "option_b": "B. The team is effective but not efficient",
+      "option_c": "C. The team is both efficient and effective",
+      "option_d": "D. Efficiency and effectiveness are identical",
+      "correct_answer": "A",
+      "explanation": "Using minimum resources reflects efficiency, while failing to achieve the desired goal indicates a lack of effectiveness."
+    },
+    {
+      "question": "A team achieves its target but consumes significantly more resources than necessary. What does this most likely indicate?",
+      "option_a": "A. Effective but inefficient performance",
+      "option_b": "B. Efficient but ineffective performance",
+      "option_c": "C. Neither effectiveness nor inefficiency",
+      "option_d": "D. Complete organizational failure",
+      "correct_answer": "A",
+      "explanation": "The desired goal was achieved, indicating effectiveness, but excessive resource use suggests poor efficiency."
+    },
+    {
+      "question": "What is an organizational environment?",
+      "option_a": "A. Only the physical office where employees work",
+      "option_b": "B. The internal and external forces and conditions affecting an organization's operations and decisions",
+      "option_c": "C. Only the organization's employees",
+      "option_d": "D. Only government regulations",
+      "correct_answer": "B",
+      "explanation": "The organizational environment includes internal and external forces, factors, and conditions affecting operations, performance, and decision-making."
+    },
+    {
+      "question": "Why must organizations continuously interact with their surroundings?",
+      "option_a": "A. To eliminate all internal processes",
+      "option_b": "B. To survive and respond to environmental conditions",
+      "option_c": "C. To prevent employees from communicating",
+      "option_d": "D. To avoid establishing organizational goals",
+      "correct_answer": "B",
+      "explanation": "The lecture states that organizations constantly interact with their surroundings to survive."
+    },
+    {
+      "question": "Which level of Organizational Behavior focuses on personal characteristics and how an individual handles tasks and obstacles?",
+      "option_a": "A. Individual level",
+      "option_b": "B. Group level",
+      "option_c": "C. Organizational level",
+      "option_d": "D. Environmental level",
+      "correct_answer": "A",
+      "explanation": "The individual level examines personal drivers and characteristics that shape behavior and interactions."
+    },
+    {
+      "question": "Which level of Organizational Behavior examines how individual behavior changes when people work together in teams?",
+      "option_a": "A. Individual level",
+      "option_b": "B. Group/team level",
+      "option_c": "C. Organizational level",
+      "option_d": "D. Environmental level",
+      "correct_answer": "B",
+      "explanation": "The group/team level examines how people function collectively and how behavior changes in team environments."
+    },
+    {
+      "question": "Which level of Organizational Behavior views the organization as a whole and considers how it functions in the broader market?",
+      "option_a": "A. Individual level",
+      "option_b": "B. Group level",
+      "option_c": "C. Organizational level",
+      "option_d": "D. Personal level",
+      "correct_answer": "C",
+      "explanation": "The organizational level examines the company as a whole and its broader environment."
+    },
+    {
+      "question": "A manager investigates why one employee struggles with a task because of that employee's personal characteristics. Which OB level is most relevant?",
+      "option_a": "A. Individual",
+      "option_b": "B. Group",
+      "option_c": "C. Organizational",
+      "option_d": "D. Cultural only",
+      "correct_answer": "A",
+      "explanation": "The individual level focuses on personal drivers and characteristics affecting behavior."
+    },
+    {
+      "question": "A manager notices that employees who work well individually begin experiencing conflicts when placed into a project team. Which OB level should be examined first?",
+      "option_a": "A. Individual level only",
+      "option_b": "B. Group/team level",
+      "option_c": "C. Organizational level only",
+      "option_d": "D. Financial level",
+      "correct_answer": "B",
+      "explanation": "The group/team level examines how people function collectively and how behavior changes in team environments."
+    },
+    {
+      "question": "Which management perspective focuses on finding the most efficient way to perform a job by breaking tasks into smaller steps and establishing clear rules?",
+      "option_a": "A. Human Relations",
+      "option_b": "B. Scientific Management",
+      "option_c": "C. Cultural Perspective",
+      "option_d": "D. Critical Perspective",
+      "correct_answer": "B",
+      "explanation": "Scientific Management focuses on task efficiency, small steps, clear rules, and productivity."
+    },
+    {
+      "question": "Which perspective emphasizes that employees have feelings and social needs and may perform better when respected and supported?",
+      "option_a": "A. Human Relations",
+      "option_b": "B. Scientific Management",
+      "option_c": "C. Quantitative",
+      "option_d": "D. Critical",
+      "correct_answer": "A",
+      "explanation": "The Human Relations perspective emphasizes employee feelings, social needs, support, and belonging."
+    },
+    {
+      "question": "A manager argues that there is no single best management method and that the appropriate approach depends on the work, environment, and people involved. Which perspective is this?",
+      "option_a": "A. Scientific Management",
+      "option_b": "B. Human Relations",
+      "option_c": "C. Contingency Perspective",
+      "option_d": "D. Cultural Perspective",
+      "correct_answer": "C",
+      "explanation": "The Contingency Perspective states that the appropriate management approach depends on the situation."
+    },
+    {
+      "question": "Which perspective views an organization as a set of connected parts where changes in one part can affect other parts?",
+      "option_a": "A. Systems Perspective",
+      "option_b": "B. Critical Perspective",
+      "option_c": "C. Human Relations Perspective",
+      "option_d": "D. Scientific Management",
+      "correct_answer": "A",
+      "explanation": "The Systems Perspective treats the organization as interconnected parts that must work together."
+    },
+    {
+      "question": "A company studies how its shared values, beliefs, and habits influence communication and employee decisions. Which perspective is most relevant?",
+      "option_a": "A. Cultural Perspective",
+      "option_b": "B. Scientific Management",
+      "option_c": "C. Quantitative Perspective",
+      "option_d": "D. Controlling Perspective",
+      "correct_answer": "A",
+      "explanation": "The Cultural Perspective focuses on shared values, beliefs, habits, communication, and organizational behavior."
+    },
+    {
+      "question": "Which perspective specifically questions power, control, and fairness and examines whether employees are treated equally and ethically?",
+      "option_a": "A. Symbolic Perspective",
+      "option_b": "B. Critical Perspective",
+      "option_c": "C. Systems Perspective",
+      "option_d": "D. Scientific Management",
+      "correct_answer": "B",
+      "explanation": "The Critical Perspective focuses on power, control, fairness, equality, and ethical treatment."
+    },
+    {
+      "question": "An organization uses stories, symbols, language, and traditions to help employees understand organizational identity. Which perspective is illustrated?",
+      "option_a": "A. Symbolic Perspective",
+      "option_b": "B. Quantitative Perspective",
+      "option_c": "C. Scientific Management",
+      "option_d": "D. Contingency Perspective",
+      "correct_answer": "A",
+      "explanation": "The Symbolic Perspective examines how symbols, stories, language, and traditions shape organizational meaning and identity."
+    },
+    {
+      "question": "Which management approach emphasizes hierarchy, clearly defined roles, strict rules, and standardized procedures?",
+      "option_a": "A. Behavioral Approach",
+      "option_b": "B. Classical Approach",
+      "option_c": "C. Quantitative Approach",
+      "option_d": "D. Modern Approach",
+      "correct_answer": "B",
+      "explanation": "The Classical Approach focuses on structure, control, efficiency, hierarchy, rules, and standardized procedures."
+    },
+    {
+      "question": "Which management approach focuses strongly on employee needs, motivation, emotions, and relationships?",
+      "option_a": "A. Classical Approach",
+      "option_b": "B. Behavioral Approach",
+      "option_c": "C. Quantitative Approach",
+      "option_d": "D. Structural Approach",
+      "correct_answer": "B",
+      "explanation": "The Behavioral Approach emphasizes people, motivation, behavior, needs, emotions, and relationships."
+    },
+    {
+      "question": "A manager uses mathematical models, statistics, and data analysis to determine how resources should be allocated. Which approach is being used?",
+      "option_a": "A. Classical",
+      "option_b": "B. Behavioral",
+      "option_c": "C. Quantitative",
+      "option_d": "D. Symbolic",
+      "correct_answer": "C",
+      "explanation": "The Quantitative Approach uses mathematics, statistics, data analysis, models, and calculations to support decisions."
+    },
+    {
+      "question": "Which approach combines different ideas and emphasizes flexibility, adaptability, contingency thinking, systems thinking, culture, and environment?",
+      "option_a": "A. Classical Approach",
+      "option_b": "B. Behavioral Approach",
+      "option_c": "C. Quantitative Approach",
+      "option_d": "D. Modern Approach",
+      "correct_answer": "D",
+      "explanation": "The Modern Approach combines different ideas and emphasizes flexibility, systems, contingency, culture, and environmental factors."
+    },
+    {
+      "question": "A factory manager redesigns every job into standardized steps with strict procedures to maximize productivity. Which approach is most consistent with this decision?",
+      "option_a": "A. Classical",
+      "option_b": "B. Behavioral",
+      "option_c": "C. Cultural",
+      "option_d": "D. Human Relations",
+      "correct_answer": "A",
+      "explanation": "Standardization, strict procedures, structure, and productivity are central to the Classical Approach."
+    },
+    {
+      "question": "A company discovers that a management technique that worked well in one branch fails in another because the employees and working environment differ. Which concept best explains this?",
+      "option_a": "A. Classical management",
+      "option_b": "B. Contingency thinking",
+      "option_c": "C. Centralization",
+      "option_d": "D. Scientific Management only",
+      "correct_answer": "B",
+      "explanation": "Contingency thinking recognizes that there is no single best way to manage; the appropriate approach depends on the situation."
+    },
+    {
+      "question": "Which organizational structure groups employees according to specialized functions such as marketing, finance, and IT?",
+      "option_a": "A. Divisional",
+      "option_b": "B. Functional",
+      "option_c": "C. Matrix",
+      "option_d": "D. Flat",
+      "correct_answer": "B",
+      "explanation": "Functional structures group employees according to specialized functions."
+    },
+    {
+      "question": "What is a common disadvantage of a functional organizational structure?",
+      "option_a": "A. No specialization is possible",
+      "option_b": "B. Communication between departments may be reduced",
+      "option_c": "C. Employees always report to multiple managers",
+      "option_d": "D. There is no organizational hierarchy",
+      "correct_answer": "B",
+      "explanation": "Functional structures improve specialization but can create communication barriers between departments."
+    },
+    {
+      "question": "An organization creates independent business units for its software, hardware, and consulting products. Which structure best describes this arrangement?",
+      "option_a": "A. Functional",
+      "option_b": "B. Divisional",
+      "option_c": "C. Flat",
+      "option_d": "D. Tall",
+      "correct_answer": "B",
+      "explanation": "Divisional structures organize the company into units based on products, services, or regions."
+    },
+    {
+      "question": "Which is a potential disadvantage of a divisional structure?",
+      "option_a": "A. It prevents divisions from focusing on their products",
+      "option_b": "B. It can lead to duplication of resources",
+      "option_c": "C. It eliminates independent operation",
+      "option_d": "D. It requires every employee to report to two managers",
+      "correct_answer": "B",
+      "explanation": "Divisions may independently maintain similar resources, causing duplication."
+    },
+    {
+      "question": "Which organizational structure combines functional and divisional structures?",
+      "option_a": "A. Matrix",
+      "option_b": "B. Flat",
+      "option_c": "C. Tall",
+      "option_d": "D. Centralized",
+      "correct_answer": "A",
+      "explanation": "A matrix structure combines functional and divisional arrangements."
+    },
+    {
+      "question": "An employee reports to both a functional manager and a product manager. Which structure is most likely being used?",
+      "option_a": "A. Functional",
+      "option_b": "B. Divisional",
+      "option_c": "C. Matrix",
+      "option_d": "D. Tall",
+      "correct_answer": "C",
+      "explanation": "Matrix structures commonly involve employees reporting to more than one manager."
+    },
+    {
+      "question": "What is a major risk associated with a matrix structure?",
+      "option_a": "A. Complete absence of specialization",
+      "option_b": "B. Confusion over authority",
+      "option_c": "C. No flexibility",
+      "option_d": "D. Elimination of management roles",
+      "correct_answer": "B",
+      "explanation": "Multiple reporting relationships can create confusion or conflicts regarding authority."
+    },
+    {
+      "question": "Which organizational structure has fewer management levels and a wider span of control?",
+      "option_a": "A. Tall",
+      "option_b": "B. Flat",
+      "option_c": "C. Divisional",
+      "option_d": "D. Matrix",
+      "correct_answer": "B",
+      "explanation": "Flat structures have fewer management levels and wider spans of control."
+    },
+    {
+      "question": "Which is a potential advantage of a flat structure?",
+      "option_a": "A. Faster decision-making and better communication",
+      "option_b": "B. Stronger hierarchical control through many levels",
+      "option_c": "C. Guaranteed close supervision of every employee",
+      "option_d": "D. Increased duplication of resources",
+      "correct_answer": "A",
+      "explanation": "Fewer management levels can encourage faster decisions and better communication."
+    },
+    {
+      "question": "Which is a potential disadvantage of a flat organizational structure?",
+      "option_a": "A. Too many hierarchical levels",
+      "option_b": "B. Reduced clarity of supervision",
+      "option_c": "C. Excessive duplication of departments",
+      "option_d": "D. Multiple managers for every employee",
+      "correct_answer": "B",
+      "explanation": "A wider span of control and fewer management levels can reduce clear supervision."
+    },
+    {
+      "question": "Which structure has many levels of hierarchy and provides clear authority and control?",
+      "option_a": "A. Flat",
+      "option_b": "B. Tall",
+      "option_c": "C. Matrix",
+      "option_d": "D. Decentralized",
+      "correct_answer": "B",
+      "explanation": "Tall structures have many hierarchical levels and provide clear authority and control."
+    },
+    {
+      "question": "A company has many layers between employees and senior executives, resulting in slow communication. Which structure most likely contributes to this problem?",
+      "option_a": "A. Flat structure",
+      "option_b": "B. Tall structure",
+      "option_c": "C. Decentralized structure",
+      "option_d": "D. Functional structure only",
+      "correct_answer": "B",
+      "explanation": "Tall structures may provide strong supervision but can slow decision-making and communication."
+    },
+    {
+      "question": "In which structure is decision-making authority concentrated at the top levels of management?",
+      "option_a": "A. Decentralized",
+      "option_b": "B. Centralized",
+      "option_c": "C. Flat",
+      "option_d": "D. Divisional",
+      "correct_answer": "B",
+      "explanation": "Centralized structures concentrate decision-making authority at higher management levels."
+    },
+    {
+      "question": "What is a potential disadvantage of centralized decision-making?",
+      "option_a": "A. Increased employee involvement",
+      "option_b": "B. Reduced employee involvement",
+      "option_c": "C. Increased local flexibility",
+      "option_d": "D. Elimination of senior management",
+      "correct_answer": "B",
+      "explanation": "Centralization can provide consistency but may reduce employee involvement."
+    },
+    {
+      "question": "A multinational company allows regional managers to make many decisions appropriate to their local markets. Which structure is this most consistent with?",
+      "option_a": "A. Centralized",
+      "option_b": "B. Decentralized",
+      "option_c": "C. Tall",
+      "option_d": "D. Classical only",
+      "correct_answer": "B",
+      "explanation": "Decentralized structures spread decision-making across different organizational levels."
+    },
+    {
+      "question": "Which is a potential advantage of decentralization?",
+      "option_a": "A. Increased flexibility and employee participation",
+      "option_b": "B. Guaranteed consistency in every decision",
+      "option_c": "C. Complete elimination of local decision-making",
+      "option_d": "D. Increased dependence on top management for every decision",
+      "correct_answer": "A",
+      "explanation": "Decentralization increases flexibility and employee participation, although it can reduce consistency."
+    },
+    {
+      "question": "A company wants highly consistent decisions across all departments and therefore concentrates major decisions at senior management. Which arrangement is most appropriate?",
+      "option_a": "A. Decentralized",
+      "option_b": "B. Centralized",
+      "option_c": "C. Flat",
+      "option_d": "D. Matrix",
+      "correct_answer": "B",
+      "explanation": "Centralization concentrates authority at the top and can promote consistency."
+    },
+    {
+      "question": "A rapidly changing company wants employees at different levels to make decisions quickly, but management accepts that some inconsistency may occur. Which structure best fits this objective?",
+      "option_a": "A. Centralized",
+      "option_b": "B. Decentralized",
+      "option_c": "C. Tall",
+      "option_d": "D. Strictly functional",
+      "correct_answer": "B",
+      "explanation": "Decentralization spreads authority and increases flexibility and participation, although consistency may decrease."
+    },
+    {
+      "question": "What is organizational power?",
+      "option_a": "A. The ability to influence decisions, behaviors, and outcomes",
+      "option_b": "B. The number of employees under a manager",
+      "option_c": "C. The financial value of an organization",
+      "option_d": "D. The formal structure of departments only",
+      "correct_answer": "A",
+      "explanation": "Power is the capacity of individuals or groups to influence decisions, behavior, outcomes, work, and resource distribution."
+    },
+    {
+      "question": "A manager's ability to influence employees comes directly from the manager's formal position in the organization. Which type of power is this?",
+      "option_a": "A. Expert power",
+      "option_b": "B. Referent power",
+      "option_c": "C. Legitimate power",
+      "option_d": "D. Information power",
+      "correct_answer": "C",
+      "explanation": "Legitimate power comes from a person's formal organizational position or role."
+    },
+    {
+      "question": "A manager influences employees by offering bonuses and promotions. Which type of power is being used?",
+      "option_a": "A. Reward power",
+      "option_b": "B. Expert power",
+      "option_c": "C. Referent power",
+      "option_d": "D. Information power",
+      "correct_answer": "A",
+      "explanation": "Reward power is the ability to provide rewards such as promotions, bonuses, or recognition."
+    },
+    {
+      "question": "A supervisor threatens disciplinary action when employees fail to follow instructions. Which type of power is primarily being exercised?",
+      "option_a": "A. Referent power",
+      "option_b": "B. Corrective power",
+      "option_c": "C. Expert power",
+      "option_d": "D. Information power",
+      "correct_answer": "B",
+      "explanation": "Corrective power involves punishment or discipline such as warnings or demotions."
+    },
+    {
+      "question": "Employees follow a senior engineer because they trust her technical knowledge and skills, even when she has no formal managerial position. Which power is this?",
+      "option_a": "A. Legitimate power",
+      "option_b": "B. Reward power",
+      "option_c": "C. Expert power",
+      "option_d": "D. Corrective power",
+      "correct_answer": "C",
+      "explanation": "Expert power comes from knowledge, skills, and expertise."
+    },
+    {
+      "question": "Employees follow a manager because they admire and respect the manager's personality and charisma. Which type of power is demonstrated?",
+      "option_a": "A. Referent power",
+      "option_b": "B. Corrective power",
+      "option_c": "C. Information power",
+      "option_d": "D. Legitimate power",
+      "correct_answer": "A",
+      "explanation": "Referent power is based on personal qualities, charisma, relationships, and respect."
+    },
+    {
+      "question": "An employee has access to confidential information that senior colleagues do not possess and can influence decisions by controlling when and how that information is shared. Which power is this?",
+      "option_a": "A. Reward power",
+      "option_b": "B. Information power",
+      "option_c": "C. Legitimate power",
+      "option_d": "D. Referent power",
+      "correct_answer": "B",
+      "explanation": "Information power comes from access to important information and the ability to share or control it."
+    },
+    {
+      "question": "A project leader has no formal authority but is consistently consulted because of exceptional technical knowledge. Which combination best explains the leader's influence?",
+      "option_a": "A. Expert power",
+      "option_b": "B. Corrective power",
+      "option_c": "C. Legitimate power",
+      "option_d": "D. Reward power",
+      "correct_answer": "A",
+      "explanation": "The influence comes from trusted knowledge and competence, which are characteristics of expert power."
+    },
+    {
+      "question": "A manager has the formal authority to assign tasks but employees are especially influenced because they admire the manager personally. Which two sources of power are present?",
+      "option_a": "A. Reward and corrective power",
+      "option_b": "B. Legitimate and referent power",
+      "option_c": "C. Expert and information power",
+      "option_d": "D. Corrective and expert power",
+      "correct_answer": "B",
+      "explanation": "Formal position provides legitimate power, while admiration and respect provide referent power."
+    },
+    {
+      "question": "What is motivation?",
+      "option_a": "A. The process of assigning employees to departments",
+      "option_b": "B. Internal drives and external influences that initiate, direct, and sustain behavior toward goals",
+      "option_c": "C. The formal authority of managers",
+      "option_d": "D. The process of measuring organizational performance",
+      "correct_answer": "B",
+      "explanation": "Motivation explains why people choose actions, how much effort they apply, and how long they persist."
+    },
+    {
+      "question": "Which of the following represents intrinsic motivation?",
+      "option_a": "A. Working because a bonus is offered",
+      "option_b": "B. Working to avoid punishment",
+      "option_c": "C. Working because the task is enjoyable and provides learning",
+      "option_d": "D. Working to receive a promotion",
+      "correct_answer": "C",
+      "explanation": "Intrinsic motivation comes from internal rewards such as enjoyment, curiosity, learning, and personal growth."
+    },
+    {
+      "question": "Which of the following is an example of extrinsic motivation?",
+      "option_a": "A. Completing a task because it is personally enjoyable",
+      "option_b": "B. Learning a skill because of curiosity",
+      "option_c": "C. Solving a difficult problem because it is satisfying",
+      "option_d": "D. Working hard to earn a bonus",
+      "correct_answer": "D",
+      "explanation": "Extrinsic motivation is driven by external rewards or pressures such as bonuses, promotions, or avoiding punishment."
+    },
+    {
+      "question": "An employee chooses to improve the quality of a project rather than finish it as quickly as possible. Which aspect of motivation is primarily reflected?",
+      "option_a": "A. Direction of behavior",
+      "option_b": "B. Level of effort",
+      "option_c": "C. Persistence",
+      "option_d": "D. Corrective power",
+      "correct_answer": "A",
+      "explanation": "Direction of behavior concerns what a person chooses to focus on or accomplish."
+    },
+    {
+      "question": "Two employees work on the same task, but one invests substantially more time, energy, and commitment. Which aspect of motivation differs?",
+      "option_a": "A. Direction of behavior",
+      "option_b": "B. Level of effort",
+      "option_c": "C. Organizational structure",
+      "option_d": "D. Legitimate power",
+      "correct_answer": "B",
+      "explanation": "Level of effort concerns how hard a person tries and how much energy, time, and commitment they invest."
+    },
+    {
+      "question": "An employee continues working toward a difficult goal despite repeated setbacks. Which aspect of motivation is most clearly demonstrated?",
+      "option_a": "A. Direction",
+      "option_b": "B. Persistence",
+      "option_c": "C. Efficiency",
+      "option_d": "D. Authority",
+      "correct_answer": "B",
+      "explanation": "Persistence describes how long an individual continues working toward a goal despite difficulties."
+    },
+    {
+      "question": "According to the lecture, which type of motivation often supports creativity, engagement, and long-term commitment?",
+      "option_a": "A. Intrinsic motivation",
+      "option_b": "B. Corrective motivation",
+      "option_c": "C. Extrinsic motivation only",
+      "option_d": "D. Centralized motivation",
+      "correct_answer": "A",
+      "explanation": "The lecture states that intrinsic motivation often leads to higher creativity, engagement, and long-term commitment."
+    },
+    {
+      "question": "Which type of motivation is described as particularly useful for short-term performance and structured tasks?",
+      "option_a": "A. Intrinsic motivation",
+      "option_b": "B. Extrinsic motivation",
+      "option_c": "C. Referent motivation",
+      "option_d": "D. Expert motivation",
+      "correct_answer": "B",
+      "explanation": "The lecture notes that extrinsic motivation can be effective for short-term performance and structured tasks."
+    },
+    {
+      "question": "According to Maslow's hierarchy, which need is the most basic?",
+      "option_a": "A. Esteem",
+      "option_b": "B. Social",
+      "option_c": "C. Physiological",
+      "option_d": "D. Self-actualization",
+      "correct_answer": "C",
+      "explanation": "Physiological needs are the basic survival needs at the lowest level of Maslow's hierarchy."
+    },
+    {
+      "question": "An employee is primarily concerned about job security and safe working conditions. Which Maslow need is most directly relevant?",
+      "option_a": "A. Physiological",
+      "option_b": "B. Safety",
+      "option_c": "C. Social",
+      "option_d": "D. Esteem",
+      "correct_answer": "B",
+      "explanation": "Safety needs include security, stable employment, safe working conditions, and financial protection."
+    },
+    {
+      "question": "An employee strongly values teamwork, friendships, and belonging in the workplace. Which Maslow level is most relevant?",
+      "option_a": "A. Physiological",
+      "option_b": "B. Safety",
+      "option_c": "C. Social",
+      "option_d": "D. Self-actualization",
+      "correct_answer": "C",
+      "explanation": "Social needs involve belonging, relationships, teamwork, friendship, and community."
+    },
+    {
+      "question": "An employee wants recognition for achievements and wants to feel valued by colleagues. Which Maslow need is being addressed?",
+      "option_a": "A. Physiological",
+      "option_b": "B. Safety",
+      "option_c": "C. Social",
+      "option_d": "D. Esteem",
+      "correct_answer": "D",
+      "explanation": "Esteem needs include respect, recognition, achievement, and feeling valued."
+    },
+    {
+      "question": "An employee seeks opportunities for creativity, personal growth, and reaching their full potential. Which Maslow level is most relevant?",
+      "option_a": "A. Safety",
+      "option_b": "B. Social",
+      "option_c": "C. Esteem",
+      "option_d": "D. Self-actualization",
+      "correct_answer": "D",
+      "explanation": "Self-actualization is the highest level and concerns personal growth, creativity, and reaching one's full potential."
+    },
+    {
+      "question": "A company increases salaries and improves job security. Employees become less dissatisfied, but their engagement does not increase substantially. Which theory best explains this result?",
+      "option_a": "A. Maslow's theory only",
+      "option_b": "B. Herzberg's Two-Factor Theory",
+      "option_c": "C. Contingency theory",
+      "option_d": "D. Scientific Management",
+      "correct_answer": "B",
+      "explanation": "Herzberg classifies salary and job security as hygiene factors that prevent dissatisfaction but do not strongly motivate by themselves."
+    },
+    {
+      "question": "Which of the following is a hygiene factor according to Herzberg?",
+      "option_a": "A. Achievement",
+      "option_b": "B. Personal growth",
+      "option_c": "C. Recognition",
+      "option_d": "D. Working conditions",
+      "correct_answer": "D",
+      "explanation": "Working conditions are listed as hygiene factors that help prevent dissatisfaction."
+    },
+    {
+      "question": "Which of the following is a Herzberg motivator?",
+      "option_a": "A. Company policy",
+      "option_b": "B. Job security",
+      "option_c": "C. Achievement",
+      "option_d": "D. Salary",
+      "correct_answer": "C",
+      "explanation": "Achievement is a motivator that can actively create satisfaction and higher performance."
+    },
+    {
+      "question": "A company has excellent policies, good working conditions, competitive salaries, and strong job security, but employees still report low satisfaction because their jobs lack meaningful achievement and responsibility. What should management focus on according to Herzberg?",
+      "option_a": "A. More hygiene factors only",
+      "option_b": "B. Motivators such as achievement and responsibility",
+      "option_c": "C. More punishment",
+      "option_d": "D. Greater centralization",
+      "correct_answer": "B",
+      "explanation": "Once hygiene factors are adequate, motivators such as achievement, responsibility, recognition, growth, and meaningful work can increase satisfaction."
+    },
+    {
+      "question": "Which statement correctly distinguishes Herzberg's two categories?",
+      "option_a": "A. Hygiene factors create satisfaction while motivators prevent dissatisfaction",
+      "option_b": "B. Hygiene factors prevent dissatisfaction while motivators create satisfaction",
+      "option_c": "C. Both categories have exactly the same effect",
+      "option_d": "D. Both categories are external rewards only",
+      "correct_answer": "B",
+      "explanation": "Herzberg distinguishes hygiene factors, which prevent dissatisfaction, from motivators, which actively create satisfaction."
+    },
+    {
+      "question": "A manager gives an employee greater responsibility, meaningful work, and opportunities for personal growth. Which theory would most directly classify these as motivators?",
+      "option_a": "A. Herzberg's Two-Factor Theory",
+      "option_b": "B. Classical Approach",
+      "option_c": "C. Scientific Management",
+      "option_d": "D. Contingency Perspective",
+      "correct_answer": "A",
+      "explanation": "Responsibility, meaningful work, and personal growth are identified as Herzberg motivators."
+    },
+    {
+      "question": "A university introduces an automated reporting system that generates regular performance reports for managers. Which application of digital technology in management does this represent?",
+      "option_a": "A. Automation of routine tasks",
+      "option_b": "B. Organizational restructuring",
+      "option_c": "C. Corrective power",
+      "option_d": "D. Self-actualization",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies automation of routine tasks such as scheduling and reporting as an application of digital technologies."
+    },
+    {
+      "question": "A management team uses data-driven predictive models to anticipate future organizational outcomes. Which digital technology application is most directly involved?",
+      "option_a": "A. Predictive analytics",
+      "option_b": "B. Social motivation",
+      "option_c": "C. Functional structure",
+      "option_d": "D. Legitimate power",
+      "correct_answer": "A",
+      "explanation": "Predictive analytics is explicitly identified as an application of digital technologies in management."
+    },
+    {
+      "question": "A company deploys a collaboration platform so employees in different departments can communicate and work together. Which application does this best represent?",
+      "option_a": "A. Communication and collaboration",
+      "option_b": "B. Corrective power",
+      "option_c": "C. Strategic planning only",
+      "option_d": "D. Hygiene factors",
+      "correct_answer": "A",
+      "explanation": "Communication and collaboration tools are one of the listed applications of digital technologies in management."
+    },
+    {
+      "question": "A company introduces an AI-based system that provides employees with personalized feedback intended to improve engagement. Which application is most directly represented?",
+      "option_a": "A. Employee motivation and engagement",
+      "option_b": "B. Divisional structure",
+      "option_c": "C. Centralized authority",
+      "option_d": "D. Corrective power",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies employee motivation and engagement, including personalized feedback, as a digital technology application."
+    },
+    {
+      "question": "A manager must decide between using a strict standardized process and a flexible approach for a team performing highly unpredictable work. Which management concept suggests that the manager should consider the specific situation before choosing?",
+      "option_a": "A. Contingency perspective",
+      "option_b": "B. Classical approach only",
+      "option_c": "C. Centralization",
+      "option_d": "D. Corrective power",
+      "correct_answer": "A",
+      "explanation": "The contingency perspective argues that the appropriate management approach depends on the situation, including the work and environment."
+    },
+    {
+      "question": "A company organizes employees by finance, marketing, HR, and IT. Communication between these departments becomes difficult. Which conclusion is most consistent with the lecture?",
+      "option_a": "A. The company is using a functional structure and experiencing one of its possible disadvantages",
+      "option_b": "B. The company is using a matrix structure and experiencing multiple reporting relationships",
+      "option_c": "C. The company is using a flat structure and therefore cannot specialize",
+      "option_d": "D. The company is using a divisional structure and duplicating resources",
+      "correct_answer": "A",
+      "explanation": "Functional structures group employees by specialization and may reduce communication between departments."
+    },
+    {
+      "question": "A technology company creates separate divisions for North America, Europe, and Asia. Each division has its own resources and operates relatively independently. Which structure is most appropriate?",
+      "option_a": "A. Functional",
+      "option_b": "B. Divisional",
+      "option_c": "C. Matrix",
+      "option_d": "D. Flat",
+      "correct_answer": "B",
+      "explanation": "Divisional structures can organize units around regions and allow them to operate more independently."
+    },
+    {
+      "question": "A large organization wants strong supervision and clear authority but discovers that decisions take too long because requests must pass through many management levels. Which structure most likely explains this trade-off?",
+      "option_a": "A. Flat structure",
+      "option_b": "B. Tall structure",
+      "option_c": "C. Decentralized structure",
+      "option_d": "D. Divisional structure",
+      "correct_answer": "B",
+      "explanation": "Tall structures provide clear authority and strong supervision but can slow decision-making and communication."
+    },
+    {
+      "question": "A startup removes several layers of management so employees can communicate directly with senior managers. The organization expects faster decisions but worries that managers may struggle to supervise everyone. Which structure best describes the startup?",
+      "option_a": "A. Tall",
+      "option_b": "B. Flat",
+      "option_c": "C. Centralized",
+      "option_d": "D. Divisional",
+      "correct_answer": "B",
+      "explanation": "Flat structures have fewer management levels, encouraging faster communication but potentially reducing clear supervision."
+    },
+    {
+      "question": "A project manager can offer bonuses, while another project member has no formal authority but is followed because of exceptional technical expertise. Which pairing correctly identifies their power sources?",
+      "option_a": "A. Reward power and expert power",
+      "option_b": "B. Corrective power and legitimate power",
+      "option_c": "C. Referent power and information power",
+      "option_d": "D. Legitimate power and corrective power",
+      "correct_answer": "A",
+      "explanation": "The ability to provide bonuses represents reward power, while influence based on technical competence represents expert power."
+    },
+    {
+      "question": "A manager wants employees to comply with instructions. The manager can either threaten disciplinary action or inspire employees through personal respect. Which two power sources correspond to these approaches?",
+      "option_a": "A. Reward and information power",
+      "option_b": "B. Corrective and referent power",
+      "option_c": "C. Expert and legitimate power",
+      "option_d": "D. Information and reward power",
+      "correct_answer": "B",
+      "explanation": "Threatening discipline represents corrective power, while influence through admiration and respect represents referent power."
+    },
+    {
+      "question": "An employee receives a higher salary and improved job security but says, 'I am still not excited about my work because I have no opportunity to achieve anything meaningful.' Which interpretation best fits the lecture?",
+      "option_a": "A. Hygiene factors have improved, but motivators remain insufficient",
+      "option_b": "B. Motivators have improved, but hygiene factors remain insufficient",
+      "option_c": "C. The employee is necessarily self-actualized",
+      "option_d": "D. The employee is demonstrating corrective power",
+      "correct_answer": "A",
+      "explanation": "Salary and job security are hygiene factors, while achievement and meaningful work are motivators."
+    },
+    {
+      "question": "A manager wants to improve an employee's motivation. The employee already has adequate salary, safe conditions, and job security but wants greater recognition and opportunities to grow. Which action best matches the lecture?",
+      "option_a": "A. Increase only job security",
+      "option_b": "B. Provide recognition and opportunities for personal growth",
+      "option_c": "C. Add more disciplinary rules",
+      "option_d": "D. Reduce the employee's responsibility",
+      "correct_answer": "B",
+      "explanation": "Recognition and personal growth are Herzberg motivators and correspond to higher-level motivational needs."
+    },
+    {
+      "question": "A company introduces a data analytics system that helps managers compare actual employee performance against expected targets and identify areas requiring correction. Which combination of management and technology concepts is most directly illustrated?",
+      "option_a": "A. Controlling and digital decision/performance support",
+      "option_b": "B. Leading and corrective power only",
+      "option_c": "C. Organizing and referent power",
+      "option_d": "D. Planning and social needs only",
+      "correct_answer": "A",
+      "explanation": "Comparing actual performance with expected results is controlling, while digital tools can support decision-making and performance management."
+    },
+    {
+      "question": "A company changes its internal software team structure after discovering that communication problems between specialized departments are slowing projects. Which reasoning best reflects the lecture?",
+      "option_a": "A. Organizational structure affects how work and communication occur",
+      "option_b": "B. Organizational structure has no effect on communication",
+      "option_c": "C. Only motivation can influence communication",
+      "option_d": "D. Power cannot exist within organizational structures",
+      "correct_answer": "A",
+      "explanation": "The lecture connects organizational structures with specialization, communication, authority, coordination, and workflow."
+    },
+    {
+      "question": "A company gives regional managers more decision-making authority because local market conditions differ significantly. Senior management accepts that decisions may become less consistent across regions. Which combination best explains this decision?",
+      "option_a": "A. Centralization and classical management",
+      "option_b": "B. Decentralization and contingency thinking",
+      "option_c": "C. Tall structure and corrective power",
+      "option_d": "D. Functional structure and scientific management",
+      "correct_answer": "B",
+      "explanation": "Decentralization gives authority to different levels, while contingency thinking supports adapting management to different environmental situations."
+    },
+    {
+      "question": "A manager observes that employees are working very hard but are focusing on the wrong project objective. Which aspect of motivation needs to be reconsidered?",
+      "option_a": "A. Direction of behavior",
+      "option_b": "B. Level of effort",
+      "option_c": "C. Persistence",
+      "option_d": "D. Corrective power",
+      "correct_answer": "A",
+      "explanation": "Direction concerns what employees choose to focus on; high effort does not help if the effort is directed toward the wrong objective."
+    },
+    {
+      "question": "Two employees both choose the correct organizational objective and work equally hard, but one continues working despite repeated failures while the other gives up quickly. What motivational dimension distinguishes them?",
+      "option_a": "A. Direction",
+      "option_b": "B. Level of effort",
+      "option_c": "C. Persistence",
+      "option_d": "D. Efficiency",
+      "correct_answer": "C",
+      "explanation": "Persistence concerns how long an individual continues working toward a goal when facing difficulties."
+    },
+    {
+      "question": "A university department introduces a new admissions system. The manager first establishes goals, then assigns responsibilities, motivates staff to use the system, and finally checks whether admission processing meets the target. Which sequence correctly identifies the management functions?",
+      "option_a": "A. Controlling, planning, organizing, leading",
+      "option_b": "B. Planning, organizing, leading, controlling",
+      "option_c": "C. Organizing, controlling, planning, leading",
+      "option_d": "D. Leading, organizing, controlling, planning",
+      "correct_answer": "B",
+      "explanation": "The sequence follows the four functions: setting goals, arranging work, motivating people, and monitoring results."
+    },
+    {
+      "question": "A company wants to increase productivity by breaking a manufacturing task into small standardized steps and establishing strict procedures. At the same time, management wants to address employee dissatisfaction caused by poor relationships. Which two concepts are most directly relevant?",
+      "option_a": "A. Scientific Management and Human Relations",
+      "option_b": "B. Symbolic Perspective and Quantitative Approach",
+      "option_c": "C. Decentralization and Referent Power",
+      "option_d": "D. Divisional Structure and Information Power",
+      "correct_answer": "A",
+      "explanation": "Scientific Management emphasizes efficient standardized tasks, while Human Relations emphasizes employee feelings, relationships, and social needs."
+    },
+    {
+      "question": "A manager argues that changing an organization's technology department will affect finance, human resources, workflows, and communication. Which perspective supports this reasoning?",
+      "option_a": "A. Systems Perspective",
+      "option_b": "B. Scientific Management",
+      "option_c": "C. Critical Perspective",
+      "option_d": "D. Human Relations only",
+      "correct_answer": "A",
+      "explanation": "Systems thinking views the organization as connected parts where changes in one part can affect others."
+    },
+    {
+      "question": "An organization notices that employees from different cultures interpret workplace communication differently. Management studies shared values and habits to understand the behavior. Which perspective is most relevant?",
+      "option_a": "A. Cultural Perspective",
+      "option_b": "B. Quantitative Approach",
+      "option_c": "C. Corrective Power",
+      "option_d": "D. Tall Structure",
+      "correct_answer": "A",
+      "explanation": "The Cultural Perspective examines shared values, beliefs, habits, communication, and decision-making."
+    },
+    {
+      "question": "A manager discovers that a powerful executive controls access to critical project information and uses that access to influence decisions. Which power source is most directly involved?",
+      "option_a": "A. Information power",
+      "option_b": "B. Referent power",
+      "option_c": "C. Corrective power",
+      "option_d": "D. Legitimate power only",
+      "correct_answer": "A",
+      "explanation": "Information power arises from access to important information and the ability to share or control it."
+    },
+    {
+      "question": "A company wants employees to become more committed to a project. Management gives employees meaningful responsibilities, recognizes achievements, and provides opportunities for personal growth. Which theory most strongly supports this strategy?",
+      "option_a": "A. Herzberg's Two-Factor Theory",
+      "option_b": "B. Classical Approach",
+      "option_c": "C. Scientific Management",
+      "option_d": "D. Centralized Structure",
+      "correct_answer": "A",
+      "explanation": "Responsibility, recognition, achievement, meaningful work, and personal growth are Herzberg motivators."
+    },
+    {
+      "question": "A company pays employees well but offers no opportunities for achievement, recognition, responsibility, or personal growth. According to the lecture, which conclusion is most appropriate?",
+      "option_a": "A. High salary automatically guarantees high job satisfaction",
+      "option_b": "B. Hygiene factors may prevent dissatisfaction, but the absence of motivators can limit satisfaction",
+      "option_c": "C. Salary is a Herzberg motivator that guarantees engagement",
+      "option_d": "D. Employees must therefore have reached self-actualization",
+      "correct_answer": "B",
+      "explanation": "Salary is a hygiene factor. Adequate hygiene factors can reduce dissatisfaction, but motivators are needed to actively create satisfaction."
+    },
+    {
+      "question": "A company operates in a rapidly changing environment and decides that its management practices must change depending on market conditions, employee characteristics, and the type of work. Which overall management philosophy is most consistent with the lecture?",
+      "option_a": "A. Contingency thinking within the Modern Approach",
+      "option_b": "B. Strict Classical management only",
+      "option_c": "C. Centralized management only",
+      "option_d": "D. Scientific Management without modification",
+      "correct_answer": "A",
+      "explanation": "The Modern Approach emphasizes flexibility and adaptability and includes contingency thinking based on the situation."
+    },
+    {
+      "question": "A company has excellent communication within each specialized department but poor communication across departments. Which structural change might address the problem while potentially introducing another challenge?",
+      "option_a": "A. Move toward a matrix structure, which may improve flexibility but create authority confusion",
+      "option_b": "B. Add more hierarchical levels, guaranteeing faster communication",
+      "option_c": "C. Increase centralization, automatically eliminating all communication problems",
+      "option_d": "D. Remove all specialized functions",
+      "correct_answer": "A",
+      "explanation": "A matrix structure combines functional and divisional structures and can improve flexibility, although multiple managers can create authority confusion."
+    },
+    {
+      "question": "A company wants to reduce management layers to speed decisions. However, managers are concerned that each manager will have more employees to supervise. Which trade-off is directly associated with this choice?",
+      "option_a": "A. Flat structure: faster decisions but potentially less clear supervision",
+      "option_b": "B. Tall structure: faster decisions and wider spans of control",
+      "option_c": "C. Divisional structure: no specialization but stronger supervision",
+      "option_d": "D. Centralized structure: greater employee participation",
+      "correct_answer": "A",
+      "explanation": "Flat structures have fewer levels and wider spans of control, supporting faster decisions but potentially reducing clear supervision."
+    },
+    {
+      "question": "A manager notices that an employee works hard because they enjoy learning new technologies, while another works hard primarily to receive a promotion. Which classification is correct?",
+      "option_a": "A. Both are intrinsic",
+      "option_b": "B. Both are extrinsic",
+      "option_c": "C. The first is intrinsic and the second is extrinsic",
+      "option_d": "D. The first is extrinsic and the second is intrinsic",
+      "correct_answer": "C",
+      "explanation": "Enjoyment and learning are internal drivers, while promotion is an external reward."
+    },
+    {
+      "question": "An employee says, 'My salary and working conditions are acceptable, but I want recognition for my accomplishments and greater responsibility.' Which pair of Herzberg categories best explains the statement?",
+      "option_a": "A. Salary and working conditions are motivators; recognition and responsibility are hygiene factors",
+      "option_b": "B. Salary and working conditions are hygiene factors; recognition and responsibility are motivators",
+      "option_c": "C. All four are hygiene factors",
+      "option_d": "D. All four are motivators",
+      "correct_answer": "B",
+      "explanation": "Salary and working conditions are hygiene factors, while recognition and responsibility are motivators."
+    },
+    {
+      "question": "A manager uses employee performance data to identify a problem, compares actual performance against planned targets, and changes the work process. Which management function is most clearly represented?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "D",
+      "explanation": "The manager is monitoring, comparing actual results with expected results, and making corrections, which defines controlling."
+    },
+    {
+      "question": "A newly appointed department head receives a broad strategic goal from senior management and converts it into specific objectives for staff. What role is the manager performing?",
+      "option_a": "A. Middle management",
+      "option_b": "B. Team member",
+      "option_c": "C. Top-level management",
+      "option_d": "D. External stakeholder",
+      "correct_answer": "A",
+      "explanation": "Middle managers receive broad strategic plans and translate them into specific objectives while linking top and first-line management."
+    },
+    {
+      "question": "A senior executive is evaluating proposed laws, economic trends, and consumer relations before making a major investment. Which management responsibility is most directly demonstrated?",
+      "option_a": "A. First-line supervision",
+      "option_b": "B. Top-level strategic responsibility",
+      "option_c": "C. Team-level training",
+      "option_d": "D. Routine task automation",
+      "correct_answer": "B",
+      "explanation": "Top management is responsible for long-term success, external environmental analysis, and major financial investments."
+    },
+    {
+      "question": "A company has a formal hierarchy, specialized departments, and standardized procedures. Employees complain that flexibility is low. Which management approach is most likely reflected?",
+      "option_a": "A. Classical",
+      "option_b": "B. Behavioral",
+      "option_c": "C. Modern",
+      "option_d": "D. Contingency",
+      "correct_answer": "A",
+      "explanation": "The Classical Approach emphasizes hierarchy, defined roles, strict rules, standardized procedures, efficiency, and control."
+    },
+    {
+      "question": "A manager changes their leadership method because one team requires close structure while another performs better with greater flexibility. Which idea from the lecture is most important in explaining this decision?",
+      "option_a": "A. There is one universally best management method",
+      "option_b": "B. Management should depend on the situation",
+      "option_c": "C. Centralization is always superior",
+      "option_d": "D. Employees should never participate in decisions",
+      "correct_answer": "B",
+      "explanation": "The Contingency Perspective states that the right management approach depends on the situation, including the work, environment, and people."
+    },
+    {
+      "question": "A company wants to use digital technology to improve management but is concerned about employee privacy. Which lecture topic should management consider alongside technological benefits?",
+      "option_a": "A. Ethical and control considerations",
+      "option_b": "B. Divisional structure only",
+      "option_c": "C. Corrective power only",
+      "option_d": "D. Physiological needs only",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly identifies ethical and control considerations, including privacy, as an application area of digital technologies in management."
+    },
+    {
+      "question": "A manager must decide whether to centralize decisions or distribute them among lower organizational levels. The manager values consistency but also wants employee participation and flexibility. Which statement best captures the trade-off?",
+      "option_a": "A. Centralization generally improves consistency, while decentralization can improve flexibility and participation",
+      "option_b": "B. Centralization always increases participation, while decentralization always increases consistency",
+      "option_c": "C. Both approaches have exactly the same effects",
+      "option_d": "D. Neither approach affects employee participation",
+      "correct_answer": "A",
+      "explanation": "The lecture states that centralization can ensure consistency but reduce employee involvement, while decentralization can increase flexibility and participation but reduce consistency."
+    },
+    {
+      "question": "A company promotes a highly respected technical employee into a management role. Employees follow the person partly because of formal authority and partly because they already admire the person's competence and character. Which combination of power is most appropriate?",
+      "option_a": "A. Legitimate, expert, and referent power",
+      "option_b": "B. Corrective power only",
+      "option_c": "C. Reward power only",
+      "option_d": "D. Information power only",
+      "correct_answer": "A",
+      "explanation": "Formal position provides legitimate power, technical competence provides expert power, and admiration provides referent power."
+    },
+    {
+      "question": "A company gives employees bonuses for completing a project, but employees continue working on the project even after the bonus is removed because they enjoy solving the underlying problems. What does this situation demonstrate?",
+      "option_a": "A. The employees demonstrate both extrinsic and intrinsic motivation",
+      "option_b": "B. The employees demonstrate only corrective power",
+      "option_c": "C. The employees demonstrate only legitimate power",
+      "option_d": "D. The employees are not motivated",
+      "correct_answer": "A",
+      "explanation": "The bonus represents extrinsic motivation, while continuing because the work is enjoyable represents intrinsic motivation."
+    },
+    {
+      "question": "A manager wants to determine why an employee's behavior is changing, why team performance differs from individual performance, and how the entire company functions in its market. Which framework provides these three levels of analysis?",
+      "option_a": "A. Organizational Behavior",
+      "option_b": "B. Herzberg's theory",
+      "option_c": "C. Maslow's hierarchy",
+      "option_d": "D. Organizational structure only",
+      "correct_answer": "A",
+      "explanation": "Organizational Behavior examines individuals, groups/teams, and organizations as a whole."
+    },
+    {
+      "question": "A company has a problem where every department optimizes its own performance, but the organization as a whole performs poorly because the departments are interdependent. Which perspective would best encourage management to address the problem?",
+      "option_a": "A. Systems Perspective",
+      "option_b": "B. Scientific Management only",
+      "option_c": "C. Corrective Power",
+      "option_d": "D. Referent Power",
+      "correct_answer": "A",
+      "explanation": "The Systems Perspective emphasizes that organizational parts are connected and that changes or optimization in one part can affect others."
+    },
+    {
+      "question": "A manager introduces employee recognition, responsibility, meaningful work, and personal growth opportunities rather than relying exclusively on salary increases. Why is this approach consistent with the lecture?",
+      "option_a": "A. These are Herzberg motivators that can actively create satisfaction",
+      "option_b": "B. These are all corrective power techniques",
+      "option_c": "C. These are all physiological needs",
+      "option_d": "D. These are all examples of centralization",
+      "correct_answer": "A",
+      "explanation": "Recognition, responsibility, meaningful work, achievement, and personal growth are identified as Herzberg motivators."
+    },
+    {
+      "question": "A manager first asks, 'What do we want the organization to achieve?' Then asks, 'How should work and resources be arranged?' Then, 'How can employees be motivated?' Finally, 'Did we achieve what we planned?' Which sequence of functions is represented?",
+      "option_a": "A. Planning, organizing, leading, controlling",
+      "option_b": "B. Organizing, planning, controlling, leading",
+      "option_c": "C. Leading, controlling, organizing, planning",
+      "option_d": "D. Controlling, leading, planning, organizing",
+      "correct_answer": "A",
+      "explanation": "The questions correspond respectively to planning, organizing, leading, and controlling."
+    },
+    {
+      "question": "A company wants to become more adaptive because its environment changes rapidly. It combines systems thinking, contingency thinking, and attention to culture and environment. Which approach is this?",
+      "option_a": "A. Classical",
+      "option_b": "B. Behavioral",
+      "option_c": "C. Quantitative",
+      "option_d": "D. Modern",
+      "correct_answer": "D",
+      "explanation": "The Modern Approach combines multiple ideas and emphasizes flexibility, adaptability, systems, contingency, culture, and environment."
+    },
+    {
+      "question": "An organization is deciding how to structure a new project team. Employees need functional expertise, but projects also require product-focused coordination. Some employees may need to report to both a functional manager and a project manager. Which choice best fits?",
+      "option_a": "A. Matrix structure",
+      "option_b": "B. Purely functional structure",
+      "option_c": "C. Purely flat structure",
+      "option_d": "D. Centralized structure",
+      "correct_answer": "A",
+      "explanation": "A matrix structure combines functional and divisional arrangements and can involve multiple reporting relationships."
+    },
+    {
+      "question": "A manager believes employees will work harder if they are given opportunities to achieve challenging goals, receive recognition, take responsibility, and grow personally. Which theory most directly supports this belief?",
+      "option_a": "A. Herzberg's Two-Factor Theory",
+      "option_b": "B. Classical Approach",
+      "option_c": "C. Scientific Management",
+      "option_d": "D. Centralized Structure",
+      "correct_answer": "A",
+      "explanation": "Achievement, recognition, responsibility, and personal growth are listed as Herzberg motivators."
+    },
+    {
+      "question": "An employee has adequate food, rest, salary, and basic living resources but is primarily worried about losing their job. According to Maslow's hierarchy, which need is currently most relevant?",
+      "option_a": "A. Physiological",
+      "option_b": "B. Safety",
+      "option_c": "C. Social",
+      "option_d": "D. Esteem",
+      "correct_answer": "B",
+      "explanation": "Once basic physiological needs are addressed, job security and stability are associated with safety needs."
+    },
+    {
+      "question": "An employee has job security and strong relationships with coworkers but feels that their accomplishments are not recognized. Which Maslow need is most directly unmet?",
+      "option_a": "A. Physiological",
+      "option_b": "B. Safety",
+      "option_c": "C. Esteem",
+      "option_d": "D. Self-actualization",
+      "correct_answer": "C",
+      "explanation": "Esteem needs include respect, recognition, achievement, and feeling valued."
+    },
+    {
+      "question": "A company provides an online training system that helps employees develop new skills and supports learning and development. Which digital technology application is represented?",
+      "option_a": "A. Learning and development",
+      "option_b": "B. Corrective power",
+      "option_c": "C. Centralization",
+      "option_d": "D. Divisional structure",
+      "correct_answer": "A",
+      "explanation": "Learning and development, including training, is explicitly identified as a digital technology application in management."
+    },
+    {
+      "question": "A manager has access to important market data and selectively shares it with different employees, influencing their decisions. Which source of power is most directly responsible for the manager's influence?",
+      "option_a": "A. Information power",
+      "option_b": "B. Referent power",
+      "option_c": "C. Reward power",
+      "option_d": "D. Corrective power",
+      "correct_answer": "A",
+      "explanation": "Information power is based on access to important information and the ability to share or control it."
+    },
+    {
+      "question": "A company changes its organizational structure to improve flexibility but discovers that employees are uncertain about who has final authority because they report to multiple managers. Which structure and problem are being described?",
+      "option_a": "A. Matrix structure and authority confusion",
+      "option_b": "B. Flat structure and excessive hierarchy",
+      "option_c": "C. Tall structure and lack of authority",
+      "option_d": "D. Divisional structure and absence of independent units",
+      "correct_answer": "A",
+      "explanation": "Matrix structures improve flexibility but can create confusion because employees may report to more than one manager."
+    },
+    {
+      "question": "A manager wants employees to remain committed to a difficult project for several months despite slow progress. Which motivational dimension should the manager focus on strengthening?",
+      "option_a": "A. Direction",
+      "option_b": "B. Persistence",
+      "option_c": "C. Organizational structure",
+      "option_d": "D. Legitimate power",
+      "correct_answer": "B",
+      "explanation": "Persistence is the ability to continue working toward a goal despite challenges or slow progress."
+    },
+    {
+      "question": "A company uses mathematics and statistical analysis to optimize the allocation of limited resources. Which management approach is being applied?",
+      "option_a": "A. Behavioral",
+      "option_b": "B. Classical",
+      "option_c": "C. Quantitative",
+      "option_d": "D. Symbolic",
+      "correct_answer": "C",
+      "explanation": "The Quantitative Approach uses mathematics, statistics, data analysis, models, and calculations to support decisions and optimize resources."
+    },
+    {
+      "question": "A manager believes that improving employee relationships and understanding emotional and social needs will improve performance. Which management approach most directly supports this belief?",
+      "option_a": "A. Classical",
+      "option_b": "B. Behavioral",
+      "option_c": "C. Quantitative",
+      "option_d": "D. Centralized",
+      "correct_answer": "B",
+      "explanation": "The Behavioral Approach focuses on people, motivation, emotions, relationships, satisfaction, and performance."
+    },
+    {
+      "question": "An organization uses strict rules and standardized procedures because management wants consistency and control. Which trade-off should management recognize based on the lecture's broader approaches?",
+      "option_a": "A. A strong focus on structure and control may provide efficiency but can be less flexible",
+      "option_b": "B. Strict procedures automatically create intrinsic motivation",
+      "option_c": "C. Standardization guarantees employee participation",
+      "option_d": "D. Rules eliminate the need for planning",
+      "correct_answer": "A",
+      "explanation": "The Classical Approach emphasizes structure, control, efficiency, and standardization, whereas modern thinking emphasizes flexibility and adaptability."
+    },
+    {
+      "question": "A company discovers that a new technology system affects employee behavior, department workflows, communication, and management decisions. Which two concepts provide the strongest explanation?",
+      "option_a": "A. Systems perspective and organizational environment",
+      "option_b": "B. Corrective power and physiological needs",
+      "option_c": "C. Reward power and flat structure only",
+      "option_d": "D. Scientific management and esteem needs only",
+      "correct_answer": "A",
+      "explanation": "Systems thinking emphasizes interconnected organizational parts, while the organizational environment includes forces affecting operations, performance, and decisions."
+    },
+    {
+      "question": "A company wants to improve performance. Managers first ensure safe working conditions and job security, then introduce recognition, responsibility, and meaningful work. Why is this strategy consistent with the lecture?",
+      "option_a": "A. It addresses both Herzberg hygiene factors and motivators",
+      "option_b": "B. It relies exclusively on corrective power",
+      "option_c": "C. It eliminates the need for organizational goals",
+      "option_d": "D. It treats all motivational factors as identical",
+      "correct_answer": "A",
+      "explanation": "Safe conditions and job security are hygiene factors, while recognition, responsibility, and meaningful work are motivators."
+    },
+    {
+      "question": "A manager evaluates a department's actual results against its planned targets and discovers that performance is lower than expected. Which action best represents the complete controlling process?",
+      "option_a": "A. Ignore the difference because planning has already finished",
+      "option_b": "B. Identify the deviation and take corrective action",
+      "option_c": "C. Immediately replace the entire department",
+      "option_d": "D. Create a new organizational hierarchy without examining the cause",
+      "correct_answer": "B",
+      "explanation": "Controlling requires monitoring performance, comparing actual results with expectations, and making corrections when necessary."
+    },
+    {
+      "question": "A manager is deciding how to allocate responsibilities, establish authority, acquire resources, and coordinate employees after a strategic plan has been created. Which management function should guide these decisions?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "B",
+      "explanation": "Organizing determines how plans will be implemented, including structure, authority, responsibility, resources, and coordination."
+    },
+    {
+      "question": "A manager communicates a clear vision, builds shared values, encourages high performance, and uses rewards to influence employees. Which management function is primarily demonstrated?",
+      "option_a": "A. Planning",
+      "option_b": "B. Organizing",
+      "option_c": "C. Leading",
+      "option_d": "D. Controlling",
+      "correct_answer": "C",
+      "explanation": "Leading includes communication, building commitment, creating shared values, motivating employees, and using rewards or punishments."
+    },
+    {
+      "question": "An organization wants managers to respond quickly to local problems and encourages employees at lower levels to participate in decisions. Which structural choice is most consistent with these objectives?",
+      "option_a": "A. Centralized",
+      "option_b": "B. Decentralized",
+      "option_c": "C. Tall",
+      "option_d": "D. Strictly hierarchical",
+      "correct_answer": "B",
+      "explanation": "Decentralization spreads decision-making across organizational levels and can increase flexibility and employee participation."
+    },
+    {
+      "question": "A company has a manager whose influence comes from formal authority, ability to give bonuses, technical knowledge, personal respect, and access to critical information. Which conclusion is most accurate?",
+      "option_a": "A. Organizational power can arise from multiple sources simultaneously",
+      "option_b": "B. Only legitimate power can exist in an organization",
+      "option_c": "C. Power exists only at top management levels",
+      "option_d": "D. Expertise cannot be a source of power",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies several sources of power, including legitimate, reward, corrective, expert, referent, and information power."
+    },
+    {
+      "question": "A company wants to improve employee performance and asks whether employees are choosing the right goals, applying sufficient effort, and continuing despite obstacles. Which three aspects should management examine?",
+      "option_a": "A. Direction, level of effort, and persistence",
+      "option_b": "B. Authority, hierarchy, and structure",
+      "option_c": "C. Planning, organizing, and controlling only",
+      "option_d": "D. Salary, policy, and working conditions only",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies direction of behavior, level of effort, and persistence as key aspects of motivation."
+    },
+    {
+      "question": "A company introduces digital tools for decision support, performance management, communication, automation, employee engagement, predictive analytics, and training. What broader conclusion is supported by the lecture?",
+      "option_a": "A. Digital technologies can support multiple management activities rather than a single function",
+      "option_b": "B. Digital technologies are useful only for employee communication",
+      "option_c": "C. Digital technologies eliminate all management responsibilities",
+      "option_d": "D. Digital technologies are unrelated to management",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies numerous applications of digital technologies across decision-making, performance, communication, automation, engagement, analytics, and learning."
+    },
+    {
+      "question": "A company chooses a management method solely because it worked successfully elsewhere, without considering its own employees, environment, or type of work. Which principle from the lecture does this decision violate?",
+      "option_a": "A. Contingency perspective",
+      "option_b": "B. Information power",
+      "option_c": "C. Functional structure",
+      "option_d": "D. Herzberg's hygiene factors",
+      "correct_answer": "A",
+      "explanation": "The Contingency Perspective rejects the idea of one universally best method and requires consideration of the specific situation."
+    },
+    {
+      "question": "A university department has specialized finance, marketing, and IT functions. Management considers reorganizing into product-oriented divisions because each program needs greater independent focus. Which trade-off should management expect?",
+      "option_a": "A. Divisional organization may improve focus but can duplicate resources",
+      "option_b": "B. Divisional organization eliminates all independent operation",
+      "option_c": "C. Divisional organization always creates multiple managers for every employee",
+      "option_d": "D. Divisional organization guarantees communication between all functions",
+      "correct_answer": "A",
+      "explanation": "Divisional structures allow greater focus and independence but can cause duplication of resources."
+    },
+    {
+      "question": "A manager notices that employees are dissatisfied because of poor working conditions. The manager improves the conditions, but employee satisfaction increases only modestly. Which explanation best matches Herzberg?",
+      "option_a": "A. Working conditions are hygiene factors, so improving them primarily reduces dissatisfaction",
+      "option_b": "B. Working conditions are motivators that always create strong satisfaction",
+      "option_c": "C. Working conditions are examples of referent power",
+      "option_d": "D. Working conditions represent self-actualization",
+      "correct_answer": "A",
+      "explanation": "Working conditions are hygiene factors; poor conditions can cause dissatisfaction, while improvement does not necessarily create strong motivation."
+    },
+    {
+      "question": "An employee receives recognition, responsibility, and opportunities for achievement but lacks job security. Based on Herzberg, which statement is most accurate?",
+      "option_a": "A. Motivators may increase satisfaction, while inadequate hygiene factors may still cause dissatisfaction",
+      "option_b": "B. Motivators eliminate all effects of poor hygiene factors",
+      "option_c": "C. Recognition and responsibility are hygiene factors",
+      "option_d": "D. Job security is a motivator rather than a hygiene factor",
+      "correct_answer": "A",
+      "explanation": "Herzberg treats motivators and hygiene factors as different dimensions; motivators can create satisfaction while poor hygiene factors can still produce dissatisfaction."
+    },
+    {
+      "question": "A manager must choose between two organizational structures. Structure X has many management levels and strong supervision but slower communication. Structure Y has fewer management levels and faster communication but less clear supervision. Which identification is correct?",
+      "option_a": "A. X is flat and Y is tall",
+      "option_b": "B. X is tall and Y is flat",
+      "option_c": "C. X is decentralized and Y is centralized",
+      "option_d": "D. X is divisional and Y is matrix",
+      "correct_answer": "B",
+      "explanation": "Tall structures provide many hierarchical levels and strong supervision, while flat structures have fewer levels and faster communication but potentially less clear supervision."
+    },
+    {
+      "question": "A project requires employees to maintain strong functional expertise while simultaneously working under product-specific managers. Management expects flexibility but knows conflicts over authority may occur. Which structure best fits?",
+      "option_a": "A. Functional",
+      "option_b": "B. Divisional",
+      "option_c": "C. Matrix",
+      "option_d": "D. Tall",
+      "correct_answer": "C",
+      "explanation": "Matrix structures combine functional and divisional structures and can improve flexibility while creating authority conflicts."
+    },
+    {
+      "question": "A manager notices that an employee's performance improves after receiving a promotion, while another employee's performance improves because they enjoy mastering difficult tasks. Which interpretation is best?",
+      "option_a": "A. Both are intrinsic motivation",
+      "option_b": "B. Both are extrinsic motivation",
+      "option_c": "C. Promotion represents extrinsic motivation, while enjoyment of mastery represents intrinsic motivation",
+      "option_d": "D. Neither represents motivation",
+      "correct_answer": "C",
+      "explanation": "Promotion is an external reward, whereas enjoyment, learning, and personal mastery are internal sources of motivation."
+    },
+    {
+      "question": "A company wants to understand why an organizational restructuring caused different reactions among individuals, teams, and the company as a whole. Which approach provides the broadest framework from the lecture?",
+      "option_a": "A. Organizational Behavior across individual, group/team, and organizational levels",
+      "option_b": "B. Herzberg's hygiene factors only",
+      "option_c": "C. Legitimate power only",
+      "option_d": "D. Tactical planning only",
+      "correct_answer": "A",
+      "explanation": "Organizational Behavior examines behavior at individual, group/team, and organizational levels."
+    },
+    {
+      "question": "A manager is deciding whether to introduce a new organizational structure. Before making the decision, the manager examines employee characteristics, market conditions, type of work, communication requirements, and organizational culture. Which overall reasoning style is most consistent with the lecture?",
+      "option_a": "A. Contingency and Modern management thinking",
+      "option_b": "B. Classical thinking that assumes one best structure",
+      "option_c": "C. Corrective power",
+      "option_d": "D. Intrinsic motivation",
+      "correct_answer": "A",
+      "explanation": "Modern management thinking emphasizes flexibility, while contingency thinking requires considering the situation, people, work, environment, and related factors."
+    }
+  ]
+}
