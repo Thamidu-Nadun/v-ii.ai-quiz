@@ -1,0 +1,652 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of financial accounting?",
+      "option_a": "A. To record only the cash held by a business",
+      "option_b": "B. To record, classify, summarize, and report financial transactions for decision-making",
+      "option_c": "C. To calculate employee salaries only",
+      "option_d": "D. To determine the market price of company shares",
+      "correct_answer": "B",
+      "explanation": "Financial accounting records, classifies, summarizes, and reports financial transactions to provide useful information for decision-making."
+    },
+    {
+      "question": "Which group is specifically identified as an external user of financial accounting information?",
+      "option_a": "A. Production employees",
+      "option_b": "B. Department managers",
+      "option_c": "C. Investors and lenders",
+      "option_d": "D. Software developers",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies investors and lenders as external users who use financial statements to understand financial position, performance, and cash flow."
+    },
+    {
+      "question": "Which of the following is NOT listed as a key financial statement in the lecture?",
+      "option_a": "A. Balance Sheet",
+      "option_b": "B. Income Statement",
+      "option_c": "C. Cash Flow Statement",
+      "option_d": "D. Customer Satisfaction Statement",
+      "correct_answer": "D",
+      "explanation": "The three key statements are the Balance Sheet, Income Statement, and Cash Flow Statement."
+    },
+    {
+      "question": "A software company earns LKR 500,000 from providing services before deducting any expenses. What does this amount represent?",
+      "option_a": "A. Revenue",
+      "option_b": "B. Equity",
+      "option_c": "C. Net profit",
+      "option_d": "D. Liability",
+      "correct_answer": "A",
+      "explanation": "Revenue is the total money earned from selling products or services before expenses are deducted."
+    },
+    {
+      "question": "Which statement best distinguishes revenue from income as presented in the lecture?",
+      "option_a": "A. Revenue is after expenses, while income is before expenses",
+      "option_b": "B. Revenue is money earned before expenses, while income is what remains after expenses",
+      "option_c": "C. Revenue is always a liability, while income is always an asset",
+      "option_d": "D. Revenue and income refer only to cash received from loans",
+      "correct_answer": "B",
+      "explanation": "The lecture describes revenue as the top line and income as what remains after subtracting expenses, often used interchangeably with profit."
+    },
+    {
+      "question": "Which of the following is best classified as an expense?",
+      "option_a": "A. Purchase of a long-term server",
+      "option_b": "B. Owner's capital contribution",
+      "option_c": "C. Employee salaries",
+      "option_d": "D. Bank loan received",
+      "correct_answer": "C",
+      "explanation": "Salaries are recurring costs required to keep the business operating and are therefore expenses."
+    },
+    {
+      "question": "A company purchases a server that will be used for several years. According to the lecture's distinction between expenditure and expense, how should this spending primarily be viewed?",
+      "option_a": "A. As a daily operating expense",
+      "option_b": "B. As an investment in an asset",
+      "option_c": "C. As revenue",
+      "option_d": "D. As retained earnings",
+      "correct_answer": "B",
+      "explanation": "The lecture states that buying equipment is an investment rather than a daily expense."
+    },
+    {
+      "question": "A business has revenue of LKR 900,000 and expenses of LKR 650,000. What is its profit?",
+      "option_a": "A. LKR 250,000",
+      "option_b": "B. LKR 1,550,000",
+      "option_c": "C. LKR 650,000",
+      "option_d": "D. LKR 250,000 loss",
+      "correct_answer": "A",
+      "explanation": "Profit equals revenue minus expenses: LKR 900,000 − LKR 650,000 = LKR 250,000."
+    },
+    {
+      "question": "If a company's expenses exceed its revenue, what is the resulting financial outcome?",
+      "option_a": "A. Gross profit",
+      "option_b": "B. Equity",
+      "option_c": "C. Loss",
+      "option_d": "D. Positive cash flow automatically",
+      "correct_answer": "C",
+      "explanation": "The lecture defines a loss as occurring when expenses exceed revenue."
+    },
+    {
+      "question": "Which item is a current asset according to the lecture?",
+      "option_a": "A. Building",
+      "option_b": "B. Cash",
+      "option_c": "C. Mortgage payable",
+      "option_d": "D. Long-term bank loan",
+      "correct_answer": "B",
+      "explanation": "Cash is a current asset because it is immediately available and current assets are resources convertible to cash within one year."
+    },
+    {
+      "question": "Which of the following is an example of a fixed asset?",
+      "option_a": "A. Accounts receivable",
+      "option_b": "B. Cash on hand",
+      "option_c": "C. Machinery used over many years",
+      "option_d": "D. Short-term investment",
+      "correct_answer": "C",
+      "explanation": "Fixed assets are long-term resources such as buildings, vehicles, machinery, and equipment used over many years."
+    },
+    {
+      "question": "Which item is classified as an intangible asset?",
+      "option_a": "A. Server rack",
+      "option_b": "B. Company vehicle",
+      "option_c": "C. Patent",
+      "option_d": "D. Inventory",
+      "correct_answer": "C",
+      "explanation": "Patents are non-physical resources and are therefore classified as intangible assets."
+    },
+    {
+      "question": "A company has LKR 200,000 in current assets and LKR 150,000 in current liabilities. Which conclusion is most directly supported by these figures?",
+      "option_a": "A. The company has no liabilities",
+      "option_b": "B. The company has current assets exceeding current liabilities",
+      "option_c": "C. The company must have a net loss",
+      "option_d": "D. The company has no fixed assets",
+      "correct_answer": "B",
+      "explanation": "Current assets of LKR 200,000 exceed current liabilities of LKR 150,000, which is relevant when assessing short-term liquidity."
+    },
+    {
+      "question": "Which of the following is a current liability?",
+      "option_a": "A. Patent",
+      "option_b": "B. Building",
+      "option_c": "C. Unpaid bill due within one year",
+      "option_d": "D. Owner's contribution",
+      "correct_answer": "C",
+      "explanation": "Current liabilities are financial obligations due within one year, including unpaid bills and short-term loans."
+    },
+    {
+      "question": "Which of the following is classified as a long-term liability?",
+      "option_a": "A. Credit card balance due shortly",
+      "option_b": "B. Unpaid utility bill",
+      "option_c": "C. Long-term bank loan",
+      "option_d": "D. Accounts receivable",
+      "correct_answer": "C",
+      "explanation": "Long-term liabilities are obligations due beyond one year, including long-term bank loans."
+    },
+    {
+      "question": "A company has assets of LKR 100,000 and liabilities of LKR 30,000. What is its equity?",
+      "option_a": "A. LKR 30,000",
+      "option_b": "B. LKR 70,000",
+      "option_c": "C. LKR 100,000",
+      "option_d": "D. LKR 130,000",
+      "correct_answer": "B",
+      "explanation": "Equity = Assets − Liabilities = LKR 100,000 − LKR 30,000 = LKR 70,000."
+    },
+    {
+      "question": "Which equation represents the fundamental accounting equation?",
+      "option_a": "A. Assets = Revenue − Expenses",
+      "option_b": "B. Assets = Liabilities + Equity",
+      "option_c": "C. Equity = Assets + Liabilities",
+      "option_d": "D. Liabilities = Assets + Equity",
+      "correct_answer": "B",
+      "explanation": "The Balance Sheet follows the fundamental accounting equation: Assets = Liabilities + Equity."
+    },
+    {
+      "question": "A business has assets of LKR 80,000 and liabilities of LKR 32,000. What is its equity?",
+      "option_a": "A. LKR 48,000",
+      "option_b": "B. LKR 32,000",
+      "option_c": "C. LKR 112,000",
+      "option_d": "D. LKR 80,000",
+      "correct_answer": "A",
+      "explanation": "Equity = Assets − Liabilities = LKR 80,000 − LKR 32,000 = LKR 48,000."
+    },
+    {
+      "question": "Business A has assets of LKR 100,000 and liabilities of LKR 150,000. What is its equity?",
+      "option_a": "A. LKR 250,000",
+      "option_b": "B. LKR 50,000",
+      "option_c": "C. LKR −50,000",
+      "option_d": "D. LKR 100,000",
+      "correct_answer": "C",
+      "explanation": "Equity = Assets − Liabilities = LKR 100,000 − LKR 150,000 = LKR −50,000."
+    },
+    {
+      "question": "Which statement best describes equity?",
+      "option_a": "A. Money owed only to suppliers",
+      "option_b": "B. The owner's stake remaining after liabilities are deducted from assets",
+      "option_c": "C. Total revenue before expenses",
+      "option_d": "D. Cash generated from operating activities",
+      "correct_answer": "B",
+      "explanation": "Equity represents the owner's stake and is calculated as assets minus liabilities."
+    },
+    {
+      "question": "Which of the following can form part of equity according to the lecture?",
+      "option_a": "A. Retained earnings",
+      "option_b": "B. Accounts payable",
+      "option_c": "C. Credit card balance",
+      "option_d": "D. Supplier invoice",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies owner's contributions and retained earnings as components of equity."
+    },
+    {
+      "question": "A company has assets of LKR 500,000 and liabilities of LKR 350,000. If liabilities increase by LKR 50,000 while assets remain unchanged, what happens to equity?",
+      "option_a": "A. Equity increases to LKR 200,000",
+      "option_b": "B. Equity decreases to LKR 100,000",
+      "option_c": "C. Equity remains LKR 150,000",
+      "option_d": "D. Equity becomes LKR 400,000",
+      "correct_answer": "B",
+      "explanation": "Initially equity is LKR 150,000. With liabilities increasing to LKR 400,000 while assets remain LKR 500,000, equity becomes LKR 100,000."
+    },
+    {
+      "question": "Which financial statement provides a snapshot of a company's financial position at a specific point in time?",
+      "option_a": "A. Income Statement",
+      "option_b": "B. Cash Flow Statement",
+      "option_c": "C. Balance Sheet",
+      "option_d": "D. Profit analysis report",
+      "correct_answer": "C",
+      "explanation": "The Balance Sheet shows assets, liabilities, and equity at a specific point in time."
+    },
+    {
+      "question": "Which financial statement primarily reports revenues and expenses over a period?",
+      "option_a": "A. Balance Sheet",
+      "option_b": "B. Income Statement",
+      "option_c": "C. Cash Flow Statement",
+      "option_d": "D. Equity statement",
+      "correct_answer": "B",
+      "explanation": "The Income Statement shows financial performance over a period through revenues and expenses."
+    },
+    {
+      "question": "Which financial statement focuses specifically on movements of cash into and out of a business?",
+      "option_a": "A. Balance Sheet",
+      "option_b": "B. Income Statement",
+      "option_c": "C. Cash Flow Statement",
+      "option_d": "D. Profit and Loss Statement",
+      "correct_answer": "C",
+      "explanation": "The Cash Flow Statement reports cash inflows and outflows over a period."
+    },
+    {
+      "question": "A manager wants to determine whether a company can meet its short-term obligations. Which Balance Sheet comparison is most relevant?",
+      "option_a": "A. Intangible assets versus revenue",
+      "option_b": "B. Current assets versus current liabilities",
+      "option_c": "C. Revenue versus retained earnings",
+      "option_d": "D. Fixed assets versus operating expenses",
+      "correct_answer": "B",
+      "explanation": "Comparing current assets with current liabilities helps assess short-term liquidity."
+    },
+    {
+      "question": "A company has significantly more debt relative to equity than before. Which concern is most directly associated with this change?",
+      "option_a": "A. Lower financial risk",
+      "option_b": "B. Higher financial risk",
+      "option_c": "C. Guaranteed higher profit",
+      "option_d": "D. Guaranteed positive cash flow",
+      "correct_answer": "B",
+      "explanation": "The lecture states that higher debt compared with equity may indicate greater financial risk."
+    },
+    {
+      "question": "A technology company's revenue is LKR 100,000 and its cost of sales is LKR 60,000. What is its gross profit?",
+      "option_a": "A. LKR 20,000",
+      "option_b": "B. LKR 40,000",
+      "option_c": "C. LKR 60,000",
+      "option_d": "D. LKR 160,000",
+      "correct_answer": "B",
+      "explanation": "Gross Profit = Revenue − Cost of Sales = LKR 100,000 − LKR 60,000 = LKR 40,000."
+    },
+    {
+      "question": "A company has revenue of LKR 150,000, cost of sales of LKR 90,000, and operating expenses of LKR 30,000. What is the operating profit?",
+      "option_a": "A. LKR 30,000",
+      "option_b": "B. LKR 60,000",
+      "option_c": "C. LKR 90,000",
+      "option_d": "D. LKR 120,000",
+      "correct_answer": "A",
+      "explanation": "Gross profit is LKR 60,000, and operating profit is LKR 60,000 − LKR 30,000 = LKR 30,000."
+    },
+    {
+      "question": "Which profit level is calculated by subtracting cost of sales from revenue?",
+      "option_a": "A. Gross profit",
+      "option_b": "B. Operating profit",
+      "option_c": "C. Net profit",
+      "option_d": "D. Equity",
+      "correct_answer": "A",
+      "explanation": "Gross Profit = Revenue − Cost of Sales."
+    },
+    {
+      "question": "Which profit level most directly reflects profit generated from core business operations after operating expenses?",
+      "option_a": "A. Gross profit",
+      "option_b": "B. Operating profit",
+      "option_c": "C. Equity",
+      "option_d": "D. Revenue",
+      "correct_answer": "B",
+      "explanation": "Operating profit is gross profit minus operating expenses and reflects profit from core business operations."
+    },
+    {
+      "question": "What distinguishes net profit from operating profit in the lecture?",
+      "option_a": "A. Net profit is revenue before cost of sales",
+      "option_b": "B. Net profit is calculated before operating expenses",
+      "option_c": "C. Net profit is the final profit after all expenses, including finance costs and taxes",
+      "option_d": "D. Net profit is the same as total assets",
+      "correct_answer": "C",
+      "explanation": "Net profit is the final profit after deducting all expenses, including finance costs and taxes."
+    },
+    {
+      "question": "A business has revenue of LKR 200,000, cost of sales of LKR 120,000, and operating expenses of LKR 50,000. What is the operating profit?",
+      "option_a": "A. LKR 30,000",
+      "option_b": "B. LKR 80,000",
+      "option_c": "C. LKR 130,000",
+      "option_d": "D. LKR 170,000",
+      "correct_answer": "A",
+      "explanation": "Gross profit is LKR 80,000. Subtracting LKR 50,000 operating expenses gives an operating profit of LKR 30,000."
+    },
+    {
+      "question": "Why is comparing Income Statements across multiple periods useful?",
+      "option_a": "A. It determines the exact cash balance at every moment",
+      "option_b": "B. It can reveal trends such as growth or decline",
+      "option_c": "C. It eliminates all financial risk",
+      "option_d": "D. It directly calculates shareholders' equity",
+      "correct_answer": "B",
+      "explanation": "The lecture states that comparing Income Statements across periods helps identify trends such as growth or decline."
+    },
+    {
+      "question": "Which cash flow activity includes payments received from customers for software subscriptions?",
+      "option_a": "A. Operating",
+      "option_b": "B. Investing",
+      "option_c": "C. Financing",
+      "option_d": "D. Equity",
+      "correct_answer": "A",
+      "explanation": "Cash received from customers for core business services is an operating cash flow."
+    },
+    {
+      "question": "Which cash flow activity includes purchasing equipment or servers?",
+      "option_a": "A. Operating",
+      "option_b": "B. Investing",
+      "option_c": "C. Financing",
+      "option_d": "D. Revenue",
+      "correct_answer": "B",
+      "explanation": "Purchasing long-term assets such as equipment and servers is an investing activity."
+    },
+    {
+      "question": "Which of the following is a financing cash inflow?",
+      "option_a": "A. Cash received from customers",
+      "option_b": "B. Sale of an old server",
+      "option_c": "C. Loan received from a bank",
+      "option_d": "D. Payment to employees",
+      "correct_answer": "C",
+      "explanation": "Loans received from banks are financing cash inflows because they involve raising funds."
+    },
+    {
+      "question": "Which of the following is a financing cash outflow according to the lecture?",
+      "option_a": "A. Customer subscription payment",
+      "option_b": "B. Loan repayment",
+      "option_c": "C. Sale of equipment",
+      "option_d": "D. Service revenue",
+      "correct_answer": "B",
+      "explanation": "Loan repayments are financing cash outflows."
+    },
+    {
+      "question": "An IT startup receives LKR 80,000 from customers and pays LKR 50,000 for salaries and operating expenses. What is its net cash flow from operating activities?",
+      "option_a": "A. LKR 20,000",
+      "option_b": "B. LKR 30,000",
+      "option_c": "C. LKR 50,000",
+      "option_d": "D. LKR 80,000",
+      "correct_answer": "B",
+      "explanation": "Operating cash flow = LKR 80,000 − LKR 50,000 = LKR 30,000."
+    },
+    {
+      "question": "An IT startup has operating cash flow of LKR 30,000, purchases equipment for LKR 20,000, receives a bank loan of LKR 30,000, and repays LKR 10,000 of the loan. What is the net increase in cash?",
+      "option_a": "A. LKR 10,000",
+      "option_b": "B. LKR 20,000",
+      "option_c": "C. LKR 30,000",
+      "option_d": "D. LKR 50,000",
+      "correct_answer": "C",
+      "explanation": "Net cash flow = 30,000 − 20,000 + 30,000 − 10,000 = LKR 30,000."
+    },
+    {
+      "question": "Why can a company be profitable on paper but still face bankruptcy risk?",
+      "option_a": "A. Profit automatically increases liabilities",
+      "option_b": "B. Profit and cash availability are not the same thing",
+      "option_c": "C. Assets cannot be used in businesses",
+      "option_d": "D. Revenue is always a cash outflow",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes that a company can be profitable but still fail if it runs out of available cash."
+    },
+    {
+      "question": "A company has strong operating cash flow but spends heavily on purchasing new servers. Which cash-flow pattern best describes the situation?",
+      "option_a": "A. Operating inflow and investing outflow",
+      "option_b": "B. Operating outflow and investing inflow",
+      "option_c": "C. Financing inflow only",
+      "option_d": "D. Financing outflow only",
+      "correct_answer": "A",
+      "explanation": "Cash generated from core operations is an operating inflow, while purchasing servers is an investing outflow."
+    },
+    {
+      "question": "A company reports the following cash flows: operating +LKR 49 billion, investing −LKR 20 billion, and financing −LKR 10 billion. What is the net cash flow?",
+      "option_a": "A. +LKR 19 billion",
+      "option_b": "B. +LKR 39 billion",
+      "option_c": "C. −LKR 19 billion",
+      "option_d": "D. +LKR 79 billion",
+      "correct_answer": "A",
+      "explanation": "Net cash flow = 49 − 20 − 10 = +LKR 19 billion."
+    },
+    {
+      "question": "What is the main purpose of financial ratios?",
+      "option_a": "A. To replace all financial statements",
+      "option_b": "B. To establish a company's exact future profit",
+      "option_c": "C. To analyze and interpret financial performance and position",
+      "option_d": "D. To calculate employee attendance",
+      "correct_answer": "C",
+      "explanation": "Financial ratios relate figures from financial statements to analyze and interpret business performance and position."
+    },
+    {
+      "question": "Which type of ratio evaluates a company's ability to generate profit relative to revenue, assets, or equity?",
+      "option_a": "A. Liquidity ratio",
+      "option_b": "B. Efficiency ratio",
+      "option_c": "C. Profitability ratio",
+      "option_d": "D. Gearing ratio",
+      "correct_answer": "C",
+      "explanation": "Profitability ratios assess the company's ability to generate profit relative to revenue, assets, or equity."
+    },
+    {
+      "question": "Which type of ratio focuses on a company's ability to meet short-term obligations using short-term assets?",
+      "option_a": "A. Profitability ratio",
+      "option_b": "B. Liquidity ratio",
+      "option_c": "C. Gearing ratio",
+      "option_d": "D. Efficiency ratio",
+      "correct_answer": "B",
+      "explanation": "Liquidity ratios evaluate the relationship between current assets and current liabilities to assess short-term obligations."
+    },
+    {
+      "question": "Which type of ratio evaluates how effectively a business uses and manages its resources to support operations?",
+      "option_a": "A. Efficiency ratio",
+      "option_b": "B. Gearing ratio",
+      "option_c": "C. Profitability ratio",
+      "option_d": "D. Liquidity ratio",
+      "correct_answer": "A",
+      "explanation": "Efficiency ratios evaluate resource management, working capital, assets, time, and turnover."
+    },
+    {
+      "question": "A company wants to understand how heavily it relies on borrowed funds compared with owners' funds. Which ratio category is most relevant?",
+      "option_a": "A. Liquidity",
+      "option_b": "B. Efficiency",
+      "option_c": "C. Profitability",
+      "option_d": "D. Gearing",
+      "correct_answer": "D",
+      "explanation": "Gearing ratios examine the relationship between debt and equity and indicate financing structure and financial risk."
+    },
+    {
+      "question": "A company has revenue of LKR 200,000 and net profit of LKR 40,000. What is its Net Profit Margin?",
+      "option_a": "A. 10%",
+      "option_b": "B. 20%",
+      "option_c": "C. 25%",
+      "option_d": "D. 40%",
+      "correct_answer": "B",
+      "explanation": "Net Profit Margin = Net Profit ÷ Revenue × 100 = 40,000 ÷ 200,000 × 100 = 20%."
+    },
+    {
+      "question": "A company has current assets of LKR 90,000 and current liabilities of LKR 45,000. What is its current ratio?",
+      "option_a": "A. 0.5:1",
+      "option_b": "B. 1:1",
+      "option_c": "C. 2:1",
+      "option_d": "D. 4:1",
+      "correct_answer": "C",
+      "explanation": "Current Ratio = Current Assets ÷ Current Liabilities = 90,000 ÷ 45,000 = 2:1."
+    },
+    {
+      "question": "A company has current assets of LKR 120,000 and current liabilities of LKR 80,000. Which interpretation is most appropriate based on the current ratio?",
+      "option_a": "A. The current ratio is 1.5:1",
+      "option_b": "B. The current ratio is 0.67:1",
+      "option_c": "C. The company has no liabilities",
+      "option_d": "D. The company must have a net loss",
+      "correct_answer": "A",
+      "explanation": "Current Ratio = 120,000 ÷ 80,000 = 1.5:1."
+    },
+    {
+      "question": "Dialog Axiata's financial overview gives revenue of LKR 180 billion and cost of sales of LKR 90 billion. What is its gross profit?",
+      "option_a": "A. LKR 50 billion",
+      "option_b": "B. LKR 90 billion",
+      "option_c": "C. LKR 180 billion",
+      "option_d": "D. LKR 270 billion",
+      "correct_answer": "B",
+      "explanation": "Gross Profit = Revenue − Cost of Sales = 180 − 90 = LKR 90 billion."
+    },
+    {
+      "question": "Using the Dialog Axiata figures, what is the operating profit?",
+      "option_a": "A. LKR 20 billion",
+      "option_b": "B. LKR 40 billion",
+      "option_c": "C. LKR 50 billion",
+      "option_d": "D. LKR 90 billion",
+      "correct_answer": "B",
+      "explanation": "Gross profit is LKR 90 billion and operating expenses are LKR 50 billion, giving operating profit of LKR 40 billion."
+    },
+    {
+      "question": "Dialog Axiata's financial overview reports total assets of LKR 286 billion and liabilities of LKR 220 billion. What is equity?",
+      "option_a": "A. LKR 66 billion",
+      "option_b": "B. LKR 220 billion",
+      "option_c": "C. LKR 286 billion",
+      "option_d": "D. LKR 506 billion",
+      "correct_answer": "A",
+      "explanation": "Equity = Assets − Liabilities = 286 − 220 = LKR 66 billion."
+    },
+    {
+      "question": "Dialog Axiata has an operating cash flow of +LKR 49 billion, investing cash flow of −LKR 20 billion, and financing cash flow of −LKR 10 billion. What does the resulting +LKR 19 billion indicate?",
+      "option_a": "A. Cash decreased by LKR 19 billion",
+      "option_b": "B. Cash increased by LKR 19 billion",
+      "option_c": "C. Revenue increased by LKR 19 billion",
+      "option_d": "D. Equity decreased by LKR 19 billion",
+      "correct_answer": "B",
+      "explanation": "The three activities produce a net cash flow of +LKR 19 billion, indicating an overall increase in cash."
+    },
+    {
+      "question": "Dialog Axiata's gross profit is LKR 90 billion on revenue of LKR 180 billion. Which gross profit margin is consistent with these figures?",
+      "option_a": "A. 11%",
+      "option_b": "B. 20%",
+      "option_c": "C. 50%",
+      "option_d": "D. 90%",
+      "correct_answer": "C",
+      "explanation": "Gross Profit Margin = 90 ÷ 180 × 100 = 50%, matching the value presented in the lecture."
+    },
+    {
+      "question": "A company has strong profitability but consistently negative cash flow from its operations. Which conclusion is most appropriate based on the lecture?",
+      "option_a": "A. Profitability guarantees financial survival",
+      "option_b": "B. The company may still face financial difficulties because it needs cash to sustain operations",
+      "option_c": "C. Negative operating cash flow automatically means revenue is zero",
+      "option_d": "D. The company must have no assets",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes that profitability alone does not guarantee survival because businesses require available cash to meet obligations and operate."
+    },
+    {
+      "question": "A software company increases its long-term bank borrowing substantially while equity remains unchanged. Which financial effect is most directly expected?",
+      "option_a": "A. Lower gearing and lower financial risk",
+      "option_b": "B. Higher gearing and potentially higher financial risk",
+      "option_c": "C. Higher liquidity automatically",
+      "option_d": "D. Higher profitability automatically",
+      "correct_answer": "B",
+      "explanation": "Higher debt relative to equity increases the debt-to-equity relationship and may increase financial risk."
+    },
+    {
+      "question": "A business has revenue of LKR 500,000, cost of sales of LKR 300,000, and operating expenses of LKR 120,000. If all other expenses are ignored, which pair is correct?",
+      "option_a": "A. Gross profit = LKR 200,000; operating profit = LKR 80,000",
+      "option_b": "B. Gross profit = LKR 380,000; operating profit = LKR 260,000",
+      "option_c": "C. Gross profit = LKR 120,000; operating profit = LKR 80,000",
+      "option_d": "D. Gross profit = LKR 200,000; operating profit = LKR 320,000",
+      "correct_answer": "A",
+      "explanation": "Gross profit = 500,000 − 300,000 = 200,000. Operating profit = 200,000 − 120,000 = 80,000."
+    },
+    {
+      "question": "A company has assets of LKR 1,000,000 and liabilities of LKR 600,000. It then obtains an additional LKR 100,000 loan while keeping its other assets unchanged. What are the resulting liabilities and equity, assuming the loan proceeds are included in assets?",
+      "option_a": "A. Liabilities LKR 700,000 and equity LKR 400,000",
+      "option_b": "B. Liabilities LKR 600,000 and equity LKR 500,000",
+      "option_c": "C. Liabilities LKR 700,000 and equity LKR 500,000",
+      "option_d": "D. Liabilities LKR 500,000 and equity LKR 600,000",
+      "correct_answer": "A",
+      "explanation": "The loan increases assets to LKR 1,100,000 and liabilities to LKR 700,000. Equity remains LKR 400,000 because the loan creates both an asset and a liability."
+    },
+    {
+      "question": "An IT company receives LKR 200,000 from customers, pays LKR 130,000 in salaries and day-to-day expenses, purchases servers for LKR 50,000, receives a bank loan of LKR 100,000, and repays LKR 20,000 of an existing loan. What is the net increase in cash?",
+      "option_a": "A. LKR 50,000",
+      "option_b": "B. LKR 80,000",
+      "option_c": "C. LKR 100,000",
+      "option_d": "D. LKR 150,000",
+      "correct_answer": "B",
+      "explanation": "Operating = 200,000 − 130,000 = 70,000; investing = −50,000; financing = 100,000 − 20,000 = 80,000. Total net increase = 70,000 − 50,000 + 80,000 = LKR 100,000. Therefore the correct answer is C."
+    },
+    {
+      "question": "A company reports current assets of LKR 300,000 and current liabilities of LKR 150,000. It then uses LKR 50,000 of cash to pay a current liability. Assuming both amounts decrease by LKR 50,000, what happens to the current ratio?",
+      "option_a": "A. It decreases from 2:1 to 1.67:1",
+      "option_b": "B. It increases from 2:1 to 2.5:1",
+      "option_c": "C. It remains exactly 2:1",
+      "option_d": "D. It becomes 1:2",
+      "correct_answer": "B",
+      "explanation": "After payment, current assets are LKR 250,000 and current liabilities are LKR 100,000. The new ratio is 2.5:1, higher than the original 2:1."
+    },
+    {
+      "question": "A company has revenue of LKR 400,000, cost of sales of LKR 220,000, and operating expenses of LKR 100,000. Another company has the same revenue but cost of sales of LKR 260,000 and operating expenses of LKR 60,000. Which statement is correct?",
+      "option_a": "A. Both companies have the same gross profit and same operating profit",
+      "option_b": "B. The first company has higher gross profit, but both have the same operating profit",
+      "option_c": "C. The second company has higher gross profit and higher operating profit",
+      "option_d": "D. The first company has lower gross profit and lower operating profit",
+      "correct_answer": "B",
+      "explanation": "Company 1 gross profit is 180,000 and operating profit is 80,000. Company 2 gross profit is 140,000 and operating profit is also 80,000. Thus gross profitability differs while operating profit is equal."
+    },
+    {
+      "question": "A technology company has a current ratio of 0.8:1. Which interpretation is most consistent with the lecture's treatment of liquidity?",
+      "option_a": "A. Current assets are greater than current liabilities",
+      "option_b": "B. Current assets are equal to current liabilities",
+      "option_c": "C. Current assets are less than current liabilities, indicating potential short-term liquidity pressure",
+      "option_d": "D. The company necessarily has negative net profit",
+      "correct_answer": "C",
+      "explanation": "A current ratio below 1 means current assets are less than current liabilities, which can indicate difficulty meeting short-term obligations."
+    },
+    {
+      "question": "A company has a high debt-to-equity ratio but also strong operating cash flow and good liquidity. Which conclusion best matches the lecture's integrated approach?",
+      "option_a": "A. High gearing means the company is automatically failing",
+      "option_b": "B. High gearing can increase financial risk, while strong cash flow and liquidity can indicate an ability to manage current obligations",
+      "option_c": "C. Strong cash flow eliminates all financial risk from debt",
+      "option_d": "D. Liquidity and gearing measure exactly the same thing",
+      "correct_answer": "B",
+      "explanation": "The lecture's Dialog example shows that high but manageable gearing can coexist with strong cash flow and good liquidity, although debt still increases risk."
+    },
+    {
+      "question": "A business has revenue of LKR 1,000,000, cost of sales of LKR 600,000, operating expenses of LKR 250,000, and additional finance costs and taxes of LKR 50,000. What are its gross profit, operating profit, and net profit respectively?",
+      "option_a": "A. LKR 400,000; LKR 150,000; LKR 100,000",
+      "option_b": "B. LKR 400,000; LKR 350,000; LKR 300,000",
+      "option_c": "C. LKR 600,000; LKR 250,000; LKR 50,000",
+      "option_d": "D. LKR 150,000; LKR 400,000; LKR 100,000",
+      "correct_answer": "A",
+      "explanation": "Gross profit = 1,000,000 − 600,000 = 400,000. Operating profit = 400,000 − 250,000 = 150,000. Net profit = 150,000 − 50,000 = 100,000."
+    },
+    {
+      "question": "A company reports positive net profit but negative operating cash flow. At the same time, it receives a large bank loan. Its total cash balance increases. Which statement is most accurate?",
+      "option_a": "A. The company has positive operating cash flow because total cash increased",
+      "option_b": "B. The bank loan is an operating cash inflow",
+      "option_c": "C. Total cash can increase because of financing inflows even when operating cash flow is negative",
+      "option_d": "D. Negative operating cash flow means the company cannot have revenue",
+      "correct_answer": "C",
+      "explanation": "Financing activities such as receiving a bank loan can increase total cash even when the core operations themselves generate negative cash flow."
+    },
+    {
+      "question": "Dialog Axiata's financial overview reports net profit of LKR 20 billion on revenue of LKR 180 billion. Which conclusion is correct?",
+      "option_a": "A. Its net profit margin is approximately 11%, indicating the final profit relative to revenue",
+      "option_b": "B. Its net profit margin is 50%, because gross profit is LKR 90 billion",
+      "option_c": "C. Its net profit margin is 20%, because net profit is LKR 20 billion",
+      "option_d": "D. Its net profit margin cannot be calculated from these figures",
+      "correct_answer": "A",
+      "explanation": "Net Profit Margin = 20 ÷ 180 × 100 ≈ 11.1%, consistent with the lecture's reported 11%."
+    },
+    {
+      "question": "Dialog Axiata's debt-to-equity ratio is reported as 2.3:1. What does this primarily indicate?",
+      "option_a": "A. The company has LKR 2.3 of current assets for every LKR 1 of current liability",
+      "option_b": "B. The company relies significantly on debt financing relative to shareholders' equity",
+      "option_c": "C. The company earns LKR 2.3 of profit for every LKR 1 of revenue",
+      "option_d": "D. The company has a 2.3% net profit margin",
+      "correct_answer": "B",
+      "explanation": "Debt-to-equity is a gearing measure comparing borrowings with shareholders' equity. A 2.3:1 ratio indicates significant reliance on debt financing."
+    },
+    {
+      "question": "A manager is deciding whether a company can safely meet upcoming short-term bills. Which combination of information would be most directly useful?",
+      "option_a": "A. Current assets, current liabilities, and cash-flow information",
+      "option_b": "B. Intangible assets and gross profit only",
+      "option_c": "C. Revenue and fixed assets only",
+      "option_d": "D. Long-term debt and trademarks only",
+      "correct_answer": "A",
+      "explanation": "Liquidity is assessed through current assets and current liabilities, while cash-flow information helps determine whether sufficient cash is actually being generated and managed."
+    },
+    {
+      "question": "A company increases revenue substantially, but its cost of sales increases even faster, causing gross profit to fall. What does this primarily suggest?",
+      "option_a": "A. Revenue growth automatically guarantees improved profitability",
+      "option_b": "B. The company may be generating more revenue but becoming less efficient at producing or delivering its products or services",
+      "option_c": "C. The company necessarily has higher equity",
+      "option_d": "D. Its financing activities must have increased",
+      "correct_answer": "B",
+      "explanation": "Gross profit measures revenue after cost of sales and helps assess how efficiently products or services are produced or delivered."
+    },
+    {
+      "question": "A company has assets of LKR 750,000 and liabilities of LKR 500,000. It reports revenue of LKR 300,000 and expenses of LKR 350,000. Which pair correctly describes its equity and operating financial result at the basic profit/loss level?",
+      "option_a": "A. Equity LKR 250,000 and loss LKR 50,000",
+      "option_b": "B. Equity LKR 1,250,000 and profit LKR 50,000",
+      "option_c": "C. Equity LKR 250,000 and profit LKR 50,000",
+      "option_d": "D. Equity LKR 500,000 and loss LKR 250,000",
+      "correct_answer": "A",
+      "explanation": "Equity = 750,000 − 500,000 = LKR 250,000. Basic profit/loss = revenue − expenses = 300,000 − 350,000 = LKR 50,000 loss."
+    }
+  ]
+}

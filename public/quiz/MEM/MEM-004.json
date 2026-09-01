@@ -1,0 +1,742 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes Human Resource Management (HRM)?",
+      "option_a": "Managing organizational finances to maximize profit",
+      "option_b": "Strategically managing people as key organizational assets to achieve organizational goals",
+      "option_c": "Managing only employee salaries and benefits",
+      "option_d": "Managing an organization's technology infrastructure",
+      "correct_answer": "B",
+      "explanation": "HRM is a strategic and coherent approach to managing people as key organizational assets and aligning their efforts with organizational goals."
+    },
+    {
+      "question": "Why is HRM considered a strategic function rather than merely an administrative function?",
+      "option_a": "It focuses only on maintaining employee records",
+      "option_b": "It eliminates the need for managers",
+      "option_c": "It aligns employee skills, efforts, and development with organizational objectives",
+      "option_d": "It is responsible for purchasing organizational equipment",
+      "correct_answer": "C",
+      "explanation": "HRM contributes to business performance by aligning people, their capabilities, and their efforts with organizational goals."
+    },
+    {
+      "question": "Which of the following is NOT identified as an important element of HRM in the lecture?",
+      "option_a": "Employee well-being",
+      "option_b": "Performance management",
+      "option_c": "Reward system",
+      "option_d": "Inventory management",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies employee well-being, reward systems, performance management, and employee development as important HRM elements."
+    },
+    {
+      "question": "Why is human capital particularly important in the IT industry?",
+      "option_a": "IT organizations depend heavily on skilled developers, engineers, and analysts",
+      "option_b": "IT organizations do not require specialized knowledge",
+      "option_c": "IT projects can be completed without employees",
+      "option_d": "Technology automatically replaces all human decision-making",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies skilled people and their expertise as valuable assets and a key source of competitive advantage in IT."
+    },
+    {
+      "question": "How does HRM support strategic alignment in an IT organization?",
+      "option_a": "By preventing employees from changing their skills",
+      "option_b": "By aligning employee skills and efforts with organizational objectives",
+      "option_c": "By focusing exclusively on employee salaries",
+      "option_d": "By replacing project planning with recruitment",
+      "correct_answer": "B",
+      "explanation": "Strategic HRM ensures employees' skills and efforts support objectives such as innovation, digital transformation, and project delivery."
+    },
+    {
+      "question": "Which HRM activity is most directly associated with reducing employee turnover?",
+      "option_a": "Talent acquisition and retention",
+      "option_b": "Database administration",
+      "option_c": "Inventory control",
+      "option_d": "Hardware maintenance",
+      "correct_answer": "A",
+      "explanation": "HRM attracts, develops, and retains appropriate talent, helping organizations reduce employee turnover."
+    },
+    {
+      "question": "Why is continuous learning important in IT organizations?",
+      "option_a": "Technology evolves rapidly and employees need continuous upskilling",
+      "option_b": "Employees should avoid learning new technologies",
+      "option_c": "Training eliminates the need for performance management",
+      "option_d": "Learning is only required during employee onboarding",
+      "correct_answer": "A",
+      "explanation": "Rapid technological change makes continuous training, upskilling, and career development important HR functions."
+    },
+    {
+      "question": "Which combination is most directly associated with improving employee motivation and engagement according to the lecture?",
+      "option_a": "Recognition, reward systems, and work-life balance",
+      "option_b": "Reduced communication and increased workload",
+      "option_c": "Strict control and elimination of feedback",
+      "option_d": "Recruitment without employee development",
+      "correct_answer": "A",
+      "explanation": "Supportive environments, meaningful work, recognition, rewards, and work-life balance contribute to motivation and engagement."
+    },
+    {
+      "question": "Which HRM function focuses on identifying workforce needs, attracting candidates, and selecting suitable individuals?",
+      "option_a": "Reward management",
+      "option_b": "Recruitment and selection",
+      "option_c": "Employee relations",
+      "option_d": "Performance appraisal",
+      "correct_answer": "B",
+      "explanation": "Recruitment and selection identify workforce requirements, attract candidates, and select people who fit the job and organization."
+    },
+    {
+      "question": "What is the primary purpose of recruitment?",
+      "option_a": "To create a pool of qualified candidates",
+      "option_b": "To evaluate existing employees",
+      "option_c": "To determine annual bonuses",
+      "option_d": "To resolve workplace conflicts",
+      "correct_answer": "A",
+      "explanation": "Recruitment aims to ensure that an organization has a pool of qualified candidates to meet current and future workforce needs."
+    },
+    {
+      "question": "Which activity should normally occur first in the recruitment process described in the lecture?",
+      "option_a": "Onboarding and induction",
+      "option_b": "Final selection",
+      "option_c": "Workforce planning",
+      "option_d": "Job offer and acceptance",
+      "correct_answer": "C",
+      "explanation": "The recruitment process begins with workforce planning before job analysis, sourcing, screening, selection, and onboarding."
+    },
+    {
+      "question": "What is the purpose of job analysis during recruitment?",
+      "option_a": "To identify job roles and the requirements associated with them",
+      "option_b": "To reward existing employees",
+      "option_c": "To conduct employee wellness programs",
+      "option_d": "To calculate company revenue",
+      "correct_answer": "A",
+      "explanation": "Job analysis defines the role and helps establish the job description and specification needed for recruitment."
+    },
+    {
+      "question": "Which pair represents two candidate sourcing approaches mentioned in the recruitment process?",
+      "option_a": "Internal and external sourcing",
+      "option_b": "Financial and intrinsic sourcing",
+      "option_c": "Autocratic and democratic sourcing",
+      "option_d": "Technical and emotional sourcing",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies internal and external sourcing as approaches for finding candidates."
+    },
+    {
+      "question": "Which activity is most closely associated with the screening stage of recruitment?",
+      "option_a": "CV filtering",
+      "option_b": "Employee promotion",
+      "option_c": "Performance appraisal",
+      "option_d": "Reward allocation",
+      "correct_answer": "A",
+      "explanation": "Screening includes filtering applications and CVs to identify candidates suitable for further selection."
+    },
+    {
+      "question": "Which of the following is an example of a selection method described in the Virtusa recruitment example?",
+      "option_a": "Online coding test",
+      "option_b": "Annual employee bonus",
+      "option_c": "Team-building retreat",
+      "option_d": "Work-life balance survey",
+      "correct_answer": "A",
+      "explanation": "The example uses an online coding test followed by technical and HR interviews."
+    },
+    {
+      "question": "Why were teamwork skills considered during final selection in the Virtusa example?",
+      "option_a": "Technical ability alone was considered insufficient for the project requirements",
+      "option_b": "Teamwork eliminates the need for technical ability",
+      "option_c": "Teamwork was used to calculate salaries",
+      "option_d": "Teamwork replaced the coding test",
+      "correct_answer": "A",
+      "explanation": "Candidates were evaluated on both technical ability and teamwork skills, reflecting the collaborative nature of IT projects."
+    },
+    {
+      "question": "Which activity occurs after a candidate accepts a job offer in the recruitment process?",
+      "option_a": "Workforce planning",
+      "option_b": "Job analysis",
+      "option_c": "Onboarding and induction",
+      "option_d": "Candidate sourcing",
+      "correct_answer": "C",
+      "explanation": "The lecture's recruitment sequence places onboarding and induction after job offer and acceptance."
+    },
+    {
+      "question": "Which recruitment trend uses automated systems for job postings, application tracking, and screening?",
+      "option_a": "Employer branding",
+      "option_b": "E-recruitment systems",
+      "option_c": "Referent recruitment",
+      "option_d": "Intrinsic recruitment",
+      "correct_answer": "B",
+      "explanation": "E-recruitment systems automate activities such as job posting, application tracking, and candidate screening."
+    },
+    {
+      "question": "What is the main purpose of employer branding in recruitment?",
+      "option_a": "To promote the organization as an attractive place to work",
+      "option_b": "To replace employee performance reviews",
+      "option_c": "To eliminate candidate interviews",
+      "option_d": "To reduce the need for workforce planning",
+      "correct_answer": "A",
+      "explanation": "Employer branding promotes the organization as an attractive workplace to help attract top talent."
+    },
+    {
+      "question": "Which recruitment trend uses analytics to improve hiring decisions and predict candidate success?",
+      "option_a": "Digital recruitment",
+      "option_b": "Data-driven recruitment",
+      "option_c": "Traditional recruitment",
+      "option_d": "Referent recruitment",
+      "correct_answer": "B",
+      "explanation": "Data-driven recruitment uses analytics to improve hiring decisions and predict candidate success."
+    },
+    {
+      "question": "Which recruitment approach is most appropriate when an IT company wants to recruit talent from different countries using virtual interviews?",
+      "option_a": "Remote and global hiring",
+      "option_b": "Internal-only hiring",
+      "option_c": "Traditional performance appraisal",
+      "option_d": "Intrinsic reward management",
+      "correct_answer": "A",
+      "explanation": "Remote and global hiring enables organizations to recruit talent from different locations using virtual tools and interviews."
+    },
+    {
+      "question": "Why is candidate experience important in modern recruitment?",
+      "option_a": "A positive and smooth recruitment process can help attract and retain candidates",
+      "option_b": "It eliminates the need to evaluate candidates",
+      "option_c": "It guarantees every applicant employment",
+      "option_d": "It replaces employer branding",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies candidate experience as important for attracting and retaining candidates."
+    },
+    {
+      "question": "Which statement best describes performance management?",
+      "option_a": "A one-time annual employee evaluation",
+      "option_b": "A continuous process of setting goals, monitoring, feedback, review, and development",
+      "option_c": "A system used only to determine employee salaries",
+      "option_d": "A recruitment method",
+      "correct_answer": "B",
+      "explanation": "Performance management is continuous and systematic, involving planning, monitoring, feedback, review, and employee development."
+    },
+    {
+      "question": "Which stage of the performance management cycle involves setting clear objectives and performance standards?",
+      "option_a": "Planning",
+      "option_b": "Monitoring",
+      "option_c": "Reviewing",
+      "option_d": "Development",
+      "correct_answer": "A",
+      "explanation": "Planning establishes clear objectives, performance standards, and expectations aligned with organizational goals."
+    },
+    {
+      "question": "During which performance management stage do employees carry out tasks while working toward agreed targets?",
+      "option_a": "Planning",
+      "option_b": "Acting",
+      "option_c": "Reviewing",
+      "option_d": "Development",
+      "correct_answer": "B",
+      "explanation": "The acting stage involves employees carrying out their tasks and responsibilities toward agreed targets."
+    },
+    {
+      "question": "A manager tracks an employee's progress and identifies a performance gap before the formal appraisal. Which performance management stage is primarily involved?",
+      "option_a": "Planning",
+      "option_b": "Acting",
+      "option_c": "Monitoring",
+      "option_d": "Recruitment",
+      "correct_answer": "C",
+      "explanation": "Monitoring involves tracking progress, providing ongoing support, and identifying performance gaps."
+    },
+    {
+      "question": "Which performance management stage evaluates achievements and areas for improvement through appraisals and feedback?",
+      "option_a": "Reviewing",
+      "option_b": "Planning",
+      "option_c": "Sourcing",
+      "option_d": "Onboarding",
+      "correct_answer": "A",
+      "explanation": "The reviewing stage evaluates performance through appraisals and feedback."
+    },
+    {
+      "question": "An employee is found to have a significant skill gap after a performance review. Which next step best matches the performance management cycle?",
+      "option_a": "Development through training and development activities",
+      "option_b": "Immediate recruitment of another employee",
+      "option_c": "Elimination of performance standards",
+      "option_d": "Stopping all feedback",
+      "correct_answer": "A",
+      "explanation": "The development stage identifies training and development needs to improve future performance."
+    },
+    {
+      "question": "Which of the following is an example of a performance measurement method mentioned in the lecture?",
+      "option_a": "Key Performance Indicators (KPIs)",
+      "option_b": "Employee hobbies",
+      "option_c": "Office location",
+      "option_d": "Recruitment advertisements",
+      "correct_answer": "A",
+      "explanation": "Performance measurement assesses employee performance using KPIs and agreed criteria."
+    },
+    {
+      "question": "Why is continuous feedback important in performance management?",
+      "option_a": "It supports communication, identifies improvement areas, and enables ongoing performance management",
+      "option_b": "It removes the need for performance goals",
+      "option_c": "It replaces employee development",
+      "option_d": "It prevents employees from receiving rewards",
+      "correct_answer": "A",
+      "explanation": "Continuous feedback and open communication help managers and employees identify progress and areas requiring improvement."
+    },
+    {
+      "question": "What is the primary purpose of reward management?",
+      "option_a": "To punish low-performing employees",
+      "option_b": "To attract, motivate, and retain talent",
+      "option_c": "To eliminate performance management",
+      "option_d": "To assign employee roles",
+      "correct_answer": "B",
+      "explanation": "Reward management systematically uses rewards to attract, motivate, and retain employees."
+    },
+    {
+      "question": "Which is a financial reward?",
+      "option_a": "Flexible working hours",
+      "option_b": "Employee recognition",
+      "option_c": "Performance-based bonus",
+      "option_d": "Training opportunity",
+      "correct_answer": "C",
+      "explanation": "Salary, bonuses, and performance-based incentives are financial rewards."
+    },
+    {
+      "question": "Which is a non-financial reward?",
+      "option_a": "Annual salary",
+      "option_b": "Performance bonus",
+      "option_c": "Flexible working hours",
+      "option_d": "Performance-based incentive",
+      "correct_answer": "C",
+      "explanation": "Recognition, flexible working hours, and training opportunities are examples of non-financial rewards."
+    },
+    {
+      "question": "An employee feels personally satisfied after solving a difficult technical problem. Which type of reward does this best represent?",
+      "option_a": "Financial reward",
+      "option_b": "Intrinsic reward",
+      "option_c": "Extrinsic reward",
+      "option_d": "Position-based reward",
+      "correct_answer": "B",
+      "explanation": "Intrinsic rewards come from personal satisfaction associated with successfully completing challenging tasks."
+    },
+    {
+      "question": "Which is an example of an extrinsic reward?",
+      "option_a": "Personal satisfaction from solving a problem",
+      "option_b": "Enjoyment of learning",
+      "option_c": "Promotion or pay raise",
+      "option_d": "Personal curiosity",
+      "correct_answer": "C",
+      "explanation": "Extrinsic rewards are provided by the organization, such as promotions, pay raises, and public recognition."
+    },
+    {
+      "question": "What does the total reward concept emphasize?",
+      "option_a": "Using only financial compensation",
+      "option_b": "Combining financial and non-financial rewards",
+      "option_c": "Removing recognition programs",
+      "option_d": "Rewarding employees only after resignation",
+      "correct_answer": "B",
+      "explanation": "Total reward is a holistic approach combining pay, benefits, recognition, career development, and work-life balance."
+    },
+    {
+      "question": "Which outcome is most directly associated with effectively designed rewards?",
+      "option_a": "Lower employee engagement",
+      "option_b": "Higher employee satisfaction, commitment, and retention",
+      "option_c": "Reduced organizational effectiveness",
+      "option_d": "Elimination of teamwork",
+      "correct_answer": "B",
+      "explanation": "Fair and appropriate rewards can increase satisfaction, engagement, commitment, motivation, and retention."
+    },
+    {
+      "question": "Which example best represents the total reward approach described through Google-style perks?",
+      "option_a": "Only increasing salaries",
+      "option_b": "Combining financial rewards with flexible work and innovation opportunities",
+      "option_c": "Removing employee recognition",
+      "option_d": "Increasing workload without additional support",
+      "correct_answer": "B",
+      "explanation": "The example combines financial rewards with non-financial benefits such as flexible work and innovation time."
+    },
+    {
+      "question": "What is the primary distinction between leadership and management presented in the lecture?",
+      "option_a": "Leadership focuses more on inspiring and influencing people, while management focuses on planning, organizing, and controlling resources",
+      "option_b": "Leadership only deals with finances while management deals with employees",
+      "option_c": "Leadership avoids organizational objectives while management creates them",
+      "option_d": "There is no distinction between the two",
+      "correct_answer": "A",
+      "explanation": "Leadership is people-oriented and change-driven, whereas management emphasizes planning, organizing, control, stability, and efficiency."
+    },
+    {
+      "question": "Which leadership style involves making decisions independently with minimal employee involvement?",
+      "option_a": "Democratic",
+      "option_b": "Transformational",
+      "option_c": "Autocratic",
+      "option_d": "Collaborative",
+      "correct_answer": "C",
+      "explanation": "Autocratic leadership involves independent decision-making by the leader with minimal employee involvement."
+    },
+    {
+      "question": "Which leadership style encourages team participation and collaboration in decision-making?",
+      "option_a": "Autocratic",
+      "option_b": "Democratic",
+      "option_c": "Competitive",
+      "option_d": "Traditional",
+      "correct_answer": "B",
+      "explanation": "Democratic leadership involves employees in decision-making and encourages participation and collaboration."
+    },
+    {
+      "question": "Which leadership style is most strongly associated with innovation, change, and a shared vision?",
+      "option_a": "Autocratic",
+      "option_b": "Traditional",
+      "option_c": "Transformational",
+      "option_d": "Compromising",
+      "correct_answer": "C",
+      "explanation": "Transformational leaders inspire and motivate employees toward innovation, change, and a shared vision."
+    },
+    {
+      "question": "In an Agile team, the leader removes blockers and encourages developers to self-manage rather than assigning every task. Which approach does this represent?",
+      "option_a": "Traditional management",
+      "option_b": "Agile team leadership",
+      "option_c": "Competitive negotiation",
+      "option_d": "Autocratic leadership",
+      "correct_answer": "B",
+      "explanation": "The lecture describes Agile team leadership as facilitating collaboration, removing obstacles, and supporting self-management."
+    },
+    {
+      "question": "Two parties discuss salary and working conditions and attempt to reach an agreement acceptable to both sides. What process are they using?",
+      "option_a": "Performance appraisal",
+      "option_b": "Negotiation",
+      "option_c": "Recruitment screening",
+      "option_d": "Performance measurement",
+      "correct_answer": "B",
+      "explanation": "Negotiation is a discussion between parties intended to reach mutually acceptable workplace agreements."
+    },
+    {
+      "question": "Which negotiation type focuses on mutually beneficial solutions and long-term relationships?",
+      "option_a": "Competitive negotiation",
+      "option_b": "Collaborative negotiation",
+      "option_c": "Autocratic negotiation",
+      "option_d": "Position-based negotiation",
+      "correct_answer": "B",
+      "explanation": "Collaborative or win-win negotiation focuses on mutually beneficial outcomes and long-term relationships."
+    },
+    {
+      "question": "Two employees each give up some of their demands to reach a middle-ground agreement. Which negotiation approach is this?",
+      "option_a": "Competitive",
+      "option_b": "Collaborative",
+      "option_c": "Compromising",
+      "option_d": "Transformational",
+      "correct_answer": "C",
+      "explanation": "Compromising negotiation involves both parties making concessions to reach a middle-ground agreement."
+    },
+    {
+      "question": "A manager's ability to influence employees because of their formal organizational position represents which source of power?",
+      "option_a": "Expert power",
+      "option_b": "Referent power",
+      "option_c": "Legitimate power",
+      "option_d": "Intrinsic power",
+      "correct_answer": "C",
+      "explanation": "Position-based or legitimate power comes from an individual's formal role or authority."
+    },
+    {
+      "question": "A senior developer strongly influences a technical architecture decision because of extensive technical knowledge. What type of power is being used?",
+      "option_a": "Legitimate power",
+      "option_b": "Expert power",
+      "option_c": "Referent power",
+      "option_d": "Competitive power",
+      "correct_answer": "B",
+      "explanation": "Expert power is derived from knowledge, skills, and expertise in a specific area."
+    },
+    {
+      "question": "An employee influences colleagues because they trust, respect, and admire that person. Which source of power is most relevant?",
+      "option_a": "Referent power",
+      "option_b": "Legitimate power",
+      "option_c": "Expert power",
+      "option_d": "Financial power",
+      "correct_answer": "A",
+      "explanation": "Referent or personal power is based on personal traits, relationships, trust, and respect."
+    },
+    {
+      "question": "Which statement best describes a project team?",
+      "option_a": "A permanent group with no defined objectives",
+      "option_b": "A group brought together to achieve a specific goal within a defined timeframe",
+      "option_c": "A group formed only to manage employee salaries",
+      "option_d": "A group with identical skills and responsibilities",
+      "correct_answer": "B",
+      "explanation": "Project teams are typically temporary, task-focused groups with different skills working toward a specific project goal."
+    },
+    {
+      "question": "Which characteristic helps prevent confusion and overlapping responsibilities within a project team?",
+      "option_a": "Undefined roles",
+      "option_b": "Defined roles and responsibilities",
+      "option_c": "Reduced communication",
+      "option_d": "Individual competition",
+      "correct_answer": "B",
+      "explanation": "Clearly defined roles and responsibilities help members understand their contributions and reduce confusion and overlap."
+    },
+    {
+      "question": "Which team characteristic most directly supports collaboration and problem-solving?",
+      "option_a": "Effective communication",
+      "option_b": "Role ambiguity",
+      "option_c": "Low commitment",
+      "option_d": "Lack of trust",
+      "correct_answer": "A",
+      "explanation": "Open and clear communication supports collaboration and problem-solving."
+    },
+    {
+      "question": "Which situation represents a role ambiguity problem?",
+      "option_a": "Every team member knows exactly what they are responsible for",
+      "option_b": "Two developers assume the other person is responsible for an important task",
+      "option_c": "The team communicates openly",
+      "option_d": "Members are accountable for their work",
+      "correct_answer": "B",
+      "explanation": "Role ambiguity occurs when responsibilities are unclear, potentially causing confusion and inefficiency."
+    },
+    {
+      "question": "A Scrum team building a mobile banking application contains developers, QA engineers, UI/UX designers, and a project manager. What does this primarily demonstrate?",
+      "option_a": "A team with identical expertise",
+      "option_b": "A cross-functional project team with specialized skills",
+      "option_c": "A team without defined objectives",
+      "option_d": "A financial reward system",
+      "correct_answer": "B",
+      "explanation": "The example illustrates a project team whose members contribute different specialized skills to achieve a common project outcome."
+    },
+    {
+      "question": "What is motivation according to the lecture?",
+      "option_a": "Only financial compensation provided by an organization",
+      "option_b": "Internal and external forces influencing employees' direction, effort, and persistence",
+      "option_c": "A method of selecting candidates",
+      "option_d": "A formal source of organizational authority",
+      "correct_answer": "B",
+      "explanation": "Motivation consists of internal and external forces influencing the direction, effort, and persistence employees apply to their work."
+    },
+    {
+      "question": "Which Big Five personality trait is most closely associated with creativity, curiosity, and willingness to try new ideas?",
+      "option_a": "Conscientiousness",
+      "option_b": "Agreeableness",
+      "option_c": "Openness to experience",
+      "option_d": "Emotional stability",
+      "correct_answer": "C",
+      "explanation": "Openness to experience reflects creativity, curiosity, and willingness to try new ideas."
+    },
+    {
+      "question": "Which Big Five trait is associated with reliability, organization, and responsibility?",
+      "option_a": "Conscientiousness",
+      "option_b": "Extraversion",
+      "option_c": "Openness",
+      "option_d": "Agreeableness",
+      "correct_answer": "A",
+      "explanation": "Conscientiousness reflects reliability, organization, and a strong sense of responsibility."
+    },
+    {
+      "question": "Which personality trait is primarily associated with sociability, energy, and assertiveness?",
+      "option_a": "Agreeableness",
+      "option_b": "Extraversion",
+      "option_c": "Conscientiousness",
+      "option_d": "Openness",
+      "correct_answer": "B",
+      "explanation": "Extraversion describes sociability, energy, and assertiveness in interactions."
+    },
+    {
+      "question": "Which personality trait is associated with cooperativeness, trust, and friendliness?",
+      "option_a": "Agreeableness",
+      "option_b": "Extraversion",
+      "option_c": "Conscientiousness",
+      "option_d": "Openness",
+      "correct_answer": "A",
+      "explanation": "Agreeableness represents cooperativeness, trust, and friendliness toward others."
+    },
+    {
+      "question": "An employee remains calm and handles pressure effectively during a high-pressure software release. Which Big Five trait is most relevant?",
+      "option_a": "Openness",
+      "option_b": "Agreeableness",
+      "option_c": "Emotional stability",
+      "option_d": "Extraversion",
+      "correct_answer": "C",
+      "explanation": "Emotional stability refers to the ability to remain calm and handle stress effectively."
+    },
+    {
+      "question": "An IT company has high developer turnover because employees are leaving for overseas opportunities and higher-paying remote jobs. Which response best matches the lecture's recommended HR strategy?",
+      "option_a": "Reduce career development opportunities",
+      "option_b": "Offer competitive salaries, retention bonuses, career progression, and flexible work options",
+      "option_c": "Stop recruiting skilled employees",
+      "option_d": "Eliminate employee recognition",
+      "correct_answer": "B",
+      "explanation": "The IFS case recommends stronger retention strategies including competitive compensation, retention bonuses, career progression, and flexible or remote work."
+    },
+    {
+      "question": "An IT company is losing candidates to international employers that recruit remotely. Which combination would best address the problem according to the lecture?",
+      "option_a": "Weaken employer branding and reduce university partnerships",
+      "option_b": "Strengthen employer branding, promote career growth, and build a strong employee value proposition",
+      "option_c": "Remove flexible working options and increase workload",
+      "option_d": "Stop graduate recruitment",
+      "correct_answer": "B",
+      "explanation": "The recommended response includes stronger employer branding, career opportunities, university partnerships, graduate hiring, and a strong employee value proposition."
+    },
+    {
+      "question": "An IT company experiences burnout because of high workloads and tight deadlines. Which response most directly addresses the lecture's recommendations?",
+      "option_a": "Increase workloads to improve productivity",
+      "option_b": "Improve work-life balance, provide recognition, performance incentives, and wellness support",
+      "option_c": "Remove leave policies",
+      "option_d": "Reduce communication between managers and employees",
+      "correct_answer": "B",
+      "explanation": "The lecture recommends flexible workloads, better work-life balance, recognition, performance incentives, and wellness programs to address burnout and low motivation."
+    },
+    {
+      "question": "A company rapidly adopts cloud and AI technologies, but employees lack the required skills. Which HR response is most appropriate?",
+      "option_a": "Prevent employees from learning new technologies",
+      "option_b": "Provide continuous training, certifications, career development, and learning time",
+      "option_c": "Replace performance management with recruitment only",
+      "option_d": "Remove innovation opportunities",
+      "correct_answer": "B",
+      "explanation": "The lecture recommends continuous training in cloud, AI, and emerging technologies, along with certifications and career development."
+    },
+    {
+      "question": "A software company wants to improve project delivery timelines. Which HRM approach best supports this objective?",
+      "option_a": "Align employee skills and efforts with organizational objectives and continuously manage performance",
+      "option_b": "Focus exclusively on employee salaries",
+      "option_c": "Avoid employee development",
+      "option_d": "Eliminate feedback",
+      "correct_answer": "A",
+      "explanation": "Strategic alignment and continuous performance management help ensure employee capabilities and efforts contribute to project delivery goals."
+    },
+    {
+      "question": "A manager evaluates developers only once at the end of the year and provides no feedback during projects. Which principle of the lecture is being violated?",
+      "option_a": "Performance management should be continuous and systematic",
+      "option_b": "Recruitment should be external",
+      "option_c": "Rewards must always be financial",
+      "option_d": "Leadership must always be autocratic",
+      "correct_answer": "A",
+      "explanation": "Performance management requires ongoing goal setting, monitoring, feedback, reviews, and development rather than only a one-time annual evaluation."
+    },
+    {
+      "question": "A development team has strong technical skills but repeatedly misses deadlines because members do not know who owns particular tasks. What is the most likely team problem?",
+      "option_a": "Role ambiguity",
+      "option_b": "Expert power",
+      "option_c": "Employer branding",
+      "option_d": "Intrinsic motivation",
+      "correct_answer": "A",
+      "explanation": "Unclear roles and responsibilities can cause confusion, inefficiency, and missed project outcomes."
+    },
+    {
+      "question": "A senior developer has no formal management position but successfully influences architecture decisions because other developers trust their technical knowledge. Which combination best describes the situation?",
+      "option_a": "Legitimate power and autocratic leadership",
+      "option_b": "Expert power and influence based on expertise",
+      "option_c": "Referent power based only on formal authority",
+      "option_d": "Competitive negotiation and legitimate power",
+      "correct_answer": "B",
+      "explanation": "The developer's influence comes primarily from technical knowledge and expertise, which is expert power."
+    },
+    {
+      "question": "A Scrum Master notices that developers are blocked by an unresolved technical issue. Instead of assigning every developer a task, the Scrum Master facilitates collaboration and helps remove the blocker. Which leadership approach is demonstrated?",
+      "option_a": "Traditional management",
+      "option_b": "Agile team leadership",
+      "option_c": "Competitive negotiation",
+      "option_d": "Autocratic leadership",
+      "correct_answer": "B",
+      "explanation": "Agile team leadership focuses on facilitation, removing obstacles, collaboration, and supporting team self-management."
+    },
+    {
+      "question": "A manager needs an urgent decision during a critical production incident and has very little time to consult the team. Which leadership style from the lecture may be most appropriate?",
+      "option_a": "Autocratic leadership",
+      "option_b": "Democratic leadership",
+      "option_c": "Collaborative negotiation",
+      "option_d": "Referent leadership",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies autocratic leadership as potentially effective in urgent or high-control situations."
+    },
+    {
+      "question": "A company wants employees to experiment with innovative ideas while remaining aligned with a shared organizational vision. Which leadership style is most suitable?",
+      "option_a": "Transformational leadership",
+      "option_b": "Autocratic leadership",
+      "option_c": "Competitive negotiation",
+      "option_d": "Traditional management",
+      "correct_answer": "A",
+      "explanation": "Transformational leadership inspires employees toward innovation, change, and achievement of a shared vision."
+    },
+    {
+      "question": "A manager and employee disagree about working hours. Both identify their underlying needs and jointly design a flexible arrangement that benefits both parties and supports the organization. Which negotiation approach is demonstrated?",
+      "option_a": "Competitive negotiation",
+      "option_b": "Collaborative negotiation",
+      "option_c": "Position-based power",
+      "option_d": "Autocratic decision-making",
+      "correct_answer": "B",
+      "explanation": "Collaborative negotiation seeks mutually beneficial solutions and emphasizes communication, compromise, and shared outcomes."
+    },
+    {
+      "question": "A manager has formal authority over a team, but a senior engineer has greater influence over technical decisions because of specialized expertise. Which conclusion is most accurate?",
+      "option_a": "Only the manager has organizational power",
+      "option_b": "The manager has legitimate power while the engineer has expert power",
+      "option_c": "The engineer has legitimate power because they are technically skilled",
+      "option_d": "Neither person has power",
+      "correct_answer": "B",
+      "explanation": "Formal organizational authority represents legitimate power, while influence based on specialized knowledge represents expert power."
+    },
+    {
+      "question": "A company uses salary increases, flexible working, career development, recognition, and benefits as part of one integrated reward strategy. What concept does this best illustrate?",
+      "option_a": "Competitive negotiation",
+      "option_b": "Total reward",
+      "option_c": "Performance monitoring",
+      "option_d": "Legitimate power",
+      "correct_answer": "B",
+      "explanation": "The total reward concept combines financial and non-financial rewards, including pay, benefits, recognition, career development, and work-life balance."
+    },
+    {
+      "question": "A manager discovers that an employee's performance is below the agreed KPI. The manager provides regular feedback, identifies the skill gap, and arranges training. Which sequence best represents the performance management logic?",
+      "option_a": "Monitoring → feedback → development",
+      "option_b": "Recruitment → sourcing → onboarding",
+      "option_c": "Reward → recruitment → negotiation",
+      "option_d": "Leadership → power → recruitment",
+      "correct_answer": "A",
+      "explanation": "Performance management involves monitoring progress, providing feedback, identifying gaps, and supporting development."
+    },
+    {
+      "question": "An organization wants to hire 50 software engineers for a new project requiring Java, Spring Boot, and AWS skills. What should HR establish before sourcing candidates?",
+      "option_a": "The workforce need and job requirements",
+      "option_b": "Employee-of-the-month awards",
+      "option_c": "The final performance appraisal",
+      "option_d": "A negotiation settlement",
+      "correct_answer": "A",
+      "explanation": "Workforce planning and job analysis should establish the required workforce and role-specific skills before sourcing candidates."
+    },
+    {
+      "question": "A company recruits highly skilled developers but later discovers that many cannot work effectively with the existing team. Which recruitment principle was insufficiently considered?",
+      "option_a": "Cultural fit and suitability",
+      "option_b": "Financial rewards",
+      "option_c": "Performance monitoring",
+      "option_d": "Legitimate power",
+      "correct_answer": "A",
+      "explanation": "Recruitment should assess not only technical suitability but also cultural fit and alignment with organizational needs."
+    },
+    {
+      "question": "An organization notices that employees are technically capable but increasingly disengaged. Which integrated HR response is most consistent with the lecture?",
+      "option_a": "Focus only on recruitment",
+      "option_b": "Combine meaningful work, recognition, rewards, work-life balance, development, and supportive management",
+      "option_c": "Increase workload and reduce communication",
+      "option_d": "Remove career development opportunities",
+      "correct_answer": "B",
+      "explanation": "The lecture connects engagement and motivation with supportive environments, meaningful work, recognition, rewards, work-life balance, and development."
+    },
+    {
+      "question": "A project team has clear goals and specialized roles but poor communication and low trust. Which prediction is most consistent with the lecture?",
+      "option_a": "Team performance may still suffer despite having clear goals",
+      "option_b": "The team is guaranteed to succeed because roles are defined",
+      "option_c": "Low trust automatically increases collaboration",
+      "option_d": "Communication is unrelated to project outcomes",
+      "correct_answer": "A",
+      "explanation": "Effective teams require more than clear goals and roles; communication, trust, cooperation, leadership, commitment, and accountability also influence performance."
+    },
+    {
+      "question": "A manager notices that one employee responds well to independent creative tasks while another prefers structured responsibilities and careful planning. Which HR application of personality is most relevant?",
+      "option_a": "Tailoring roles and management approaches to individual behavior and traits",
+      "option_b": "Eliminating performance management",
+      "option_c": "Using only financial rewards",
+      "option_d": "Replacing recruitment with negotiation",
+      "correct_answer": "A",
+      "explanation": "Understanding personality can help align roles with traits and enable managers to tailor feedback and management styles."
+    },
+    {
+      "question": "Which situation best demonstrates how personality awareness can reduce workplace conflict?",
+      "option_a": "Managers ignore individual differences",
+      "option_b": "Team members recognize differences in communication and behavior and adapt their collaboration accordingly",
+      "option_c": "Employees are prevented from communicating",
+      "option_d": "Managers use identical feedback regardless of employee behavior",
+      "correct_answer": "B",
+      "explanation": "Awareness of personality differences can support better communication, collaboration, and conflict management."
+    },
+    {
+      "question": "An IT company faces high turnover, burnout, global competition for talent, and pressure to adopt cloud and AI technologies. Which strategy best represents the integrated HR approach recommended by the lecture?",
+      "option_a": "Use only higher salaries and ignore development",
+      "option_b": "Combine retention strategies, well-being and rewards, learning and development, communication, and alignment with long-term technology strategy",
+      "option_c": "Focus exclusively on recruitment advertisements",
+      "option_d": "Reduce employee involvement in organizational change",
+      "correct_answer": "B",
+      "explanation": "The case recommendations combine retention, rewards, well-being, learning and development, communication, and alignment of HR practices with long-term business and technology strategy."
+    }
+  ]
+}

@@ -1,6 +1,48 @@
 export default [
   // Modern Enterprise Management Quizzes
   {
+    title: "Modern Enterprise Management - 07",
+    path: "quiz/MEM/MEM-007.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 06 (optional)",
+    path: "quiz/MEM/MEM-006.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 05",
+    path: "quiz/MEM/MEM-005.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 04",
+    path: "quiz/MEM/MEM-004.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 03",
+    path: "quiz/MEM/MEM-003.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 02",
+    path: "quiz/MEM/MEM-002.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
     title: "Modern Enterprise Management - 01",
     path: "quiz/MEM/MEM-001.json",
     description:

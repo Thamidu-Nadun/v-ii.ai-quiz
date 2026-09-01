@@ -1,0 +1,967 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes marketing according to the lecture?",
+      "option_a": "A. A short-term process of persuading customers to purchase a product",
+      "option_b": "B. A human-centric and technology-enabled process of creating, communicating, delivering and exchanging value",
+      "option_c": "C. A process focused mainly on increasing production efficiency",
+      "option_d": "D. A financial process for maximizing immediate revenue",
+      "correct_answer": "B",
+      "explanation": "Marketing involves creating, communicating, delivering and exchanging value while building meaningful, long-term customer relationships."
+    },
+    {
+      "question": "What is the primary distinction between marketing and selling?",
+      "option_a": "A. Marketing focuses on products while selling focuses on customers",
+      "option_b": "B. Marketing is always digital while selling is always physical",
+      "option_c": "C. Marketing focuses on customer needs and long-term relationships, while selling is primarily transactional",
+      "option_d": "D. Marketing focuses only on advertising while selling focuses only on pricing",
+      "correct_answer": "C",
+      "explanation": "The lecture contrasts marketing's customer and long-term relationship focus with selling's short-term transactional focus."
+    },
+    {
+      "question": "Which of the following is most closely associated with the product-centric marketing era before the 1960s?",
+      "option_a": "A. Personalization through AI",
+      "option_b": "B. Emotional connection",
+      "option_c": "C. Efficiency and production",
+      "option_d": "D. Immersive human-technology experiences",
+      "correct_answer": "C",
+      "explanation": "The pre-1960s era was product-centric, with emphasis on efficiency and production."
+    },
+    {
+      "question": "Which marketing era primarily emphasized customer satisfaction?",
+      "option_a": "A. Before the 1960s",
+      "option_b": "B. 1960s–1980s",
+      "option_c": "C. 1990s–2000s",
+      "option_d": "D. 2010s–2020s",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies the 1960s–1980s as the customer-centric era focused on satisfaction."
+    },
+    {
+      "question": "What was the key shift associated with the 1990s–2000s marketing era?",
+      "option_a": "A. Efficiency and production",
+      "option_b": "B. Customer satisfaction",
+      "option_c": "C. Emotional connection",
+      "option_d": "D. Human-plus-technology experience",
+      "correct_answer": "C",
+      "explanation": "The values-driven era of the 1990s–2000s emphasized emotional connection."
+    },
+    {
+      "question": "Which characteristic best represents the 2010s–2020s Data & AI Era?",
+      "option_a": "A. Personalization",
+      "option_b": "B. Production efficiency",
+      "option_c": "C. Emotional connection only",
+      "option_d": "D. Physical distribution",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies personalization as the key shift of the Data & AI Era."
+    },
+    {
+      "question": "What is the defining focus of Marketing 6.0 in the lecture?",
+      "option_a": "A. Replacing human interaction with automation",
+      "option_b": "B. Returning to product-centric marketing",
+      "option_c": "C. Combining human understanding with technology to create immersive experiences",
+      "option_d": "D. Focusing exclusively on traditional advertising",
+      "correct_answer": "C",
+      "explanation": "Marketing 6.0 emphasizes human understanding combined with advanced technology and immersive phygital experiences."
+    },
+    {
+      "question": "What does a marketing strategy primarily aim to achieve?",
+      "option_a": "A. Short-term increases in product sales only",
+      "option_b": "B. Long-term customer value and competitive advantage",
+      "option_c": "C. Maximum production regardless of customer needs",
+      "option_d": "D. Elimination of all competitors",
+      "correct_answer": "B",
+      "explanation": "Marketing strategy is a long-term plan focused on creating customer value and achieving competitive advantage."
+    },
+    {
+      "question": "A company states that its vision is to become the safest cloud-storage platform for global finance firms. Which element of the marketing strategy hierarchy is this?",
+      "option_a": "A. Vision",
+      "option_b": "B. Target market",
+      "option_c": "C. Execution",
+      "option_d": "D. Promotion",
+      "correct_answer": "A",
+      "explanation": "The statement describes the company's long-term desired direction, which is its vision."
+    },
+    {
+      "question": "A cloud-storage company decides to position its brand around military-grade encryption and target mid-sized banks. What does this primarily represent?",
+      "option_a": "A. Marketing strategy",
+      "option_b": "B. Customer retention",
+      "option_c": "C. Product life cycle",
+      "option_d": "D. Customer lifetime value",
+      "correct_answer": "A",
+      "explanation": "The decision connects brand positioning and target-market selection to the company's long-term strategic direction."
+    },
+    {
+      "question": "Which element of the marketing mix describes what a business is selling and why it is valuable?",
+      "option_a": "A. Price",
+      "option_b": "B. Place",
+      "option_c": "C. Product",
+      "option_d": "D. Promotion",
+      "correct_answer": "C",
+      "explanation": "Product concerns what is being sold and the value it provides to consumers."
+    },
+    {
+      "question": "A company changes its subscription fee after analyzing market demand and competitor pricing. Which marketing mix element is being addressed?",
+      "option_a": "A. Product",
+      "option_b": "B. Price",
+      "option_c": "C. Place",
+      "option_d": "D. Promotion",
+      "correct_answer": "B",
+      "explanation": "Price concerns the pricing strategy in relation to market demand and competitors."
+    },
+    {
+      "question": "A software company decides to distribute its application through its website and mobile app stores. Which marketing mix element is most directly involved?",
+      "option_a": "A. Product",
+      "option_b": "B. Price",
+      "option_c": "C. Place",
+      "option_d": "D. Promotion",
+      "correct_answer": "C",
+      "explanation": "Place concerns where the product is sold or distributed."
+    },
+    {
+      "question": "A company chooses LinkedIn advertisements and cybersecurity conferences to communicate its product's benefits. Which marketing mix element is this?",
+      "option_a": "A. Product",
+      "option_b": "B. Price",
+      "option_c": "C. Place",
+      "option_d": "D. Promotion",
+      "correct_answer": "D",
+      "explanation": "Promotion concerns the message and communication channels used to reach the target audience."
+    },
+    {
+      "question": "What does STP stand for?",
+      "option_a": "A. Strategy, Technology, Promotion",
+      "option_b": "B. Segmentation, Targeting, Positioning",
+      "option_c": "C. Selling, Technology, Pricing",
+      "option_d": "D. Segmentation, Technology, Product",
+      "correct_answer": "B",
+      "explanation": "STP stands for Segmentation, Targeting and Positioning."
+    },
+    {
+      "question": "A company divides its market according to age, gender and location. Which STP activity is being performed?",
+      "option_a": "A. Segmentation",
+      "option_b": "B. Targeting",
+      "option_c": "C. Positioning",
+      "option_d": "D. Branding",
+      "correct_answer": "A",
+      "explanation": "Segmentation divides a broad market into smaller groups using characteristics such as demographics, behavior and preferences."
+    },
+    {
+      "question": "A company evaluates several customer groups based on profitability, needs, growth potential, size and accessibility before selecting one to serve. Which STP stage is this?",
+      "option_a": "A. Segmentation",
+      "option_b": "B. Targeting",
+      "option_c": "C. Positioning",
+      "option_d": "D. Promotion",
+      "correct_answer": "B",
+      "explanation": "Targeting involves selecting the most attractive customer segments based on factors such as profitability, needs, growth potential, size and accessibility."
+    },
+    {
+      "question": "What is the main purpose of positioning?",
+      "option_a": "A. To divide customers into demographic groups",
+      "option_b": "B. To calculate customer acquisition cost",
+      "option_c": "C. To create a unique image of a product in the customer's mind",
+      "option_d": "D. To determine the number of employees required",
+      "correct_answer": "C",
+      "explanation": "Positioning creates a unique image of the product in customers' minds by emphasizing value, experience and differentiation."
+    },
+    {
+      "question": "Which sequence correctly represents the STP process?",
+      "option_a": "A. Targeting → Segmentation → Positioning",
+      "option_b": "B. Positioning → Targeting → Segmentation",
+      "option_c": "C. Segmentation → Targeting → Positioning",
+      "option_d": "D. Segmentation → Positioning → Targeting",
+      "correct_answer": "C",
+      "explanation": "The STP framework first divides the market, then selects attractive segments, and finally develops the desired market position."
+    },
+    {
+      "question": "A streaming platform divides users into groups based on viewing behavior, selects frequent documentary viewers as its target, and presents itself as the best platform for educational documentaries. Which sequence best describes these actions?",
+      "option_a": "A. Positioning → Targeting → Segmentation",
+      "option_b": "B. Segmentation → Targeting → Positioning",
+      "option_c": "C. Targeting → Promotion → Segmentation",
+      "option_d": "D. Branding → Segmentation → Pricing",
+      "correct_answer": "B",
+      "explanation": "Dividing users is segmentation, selecting documentary viewers is targeting, and creating a distinct educational-documentary image is positioning."
+    },
+    {
+      "question": "What is a Customer Value Proposition (CVP)?",
+      "option_a": "A. A company's internal production plan",
+      "option_b": "B. The unique value a company offers and the reason customers should choose it over competitors",
+      "option_c": "C. A method for calculating employee salaries",
+      "option_d": "D. A list of all products sold by competitors",
+      "correct_answer": "B",
+      "explanation": "CVP explains the unique value offered to customers and why they should choose the product or service over competitors."
+    },
+    {
+      "question": "A company promises customers a smoother and more personalized journey across its website, app and physical store. Which concept is most directly represented?",
+      "option_a": "A. Customer Value Proposition",
+      "option_b": "B. Product decline",
+      "option_c": "C. Production efficiency",
+      "option_d": "D. Transactional selling",
+      "correct_answer": "A",
+      "explanation": "The CVP describes the unique value offered and can support a consistent customer journey across touchpoints."
+    },
+    {
+      "question": "What is the primary purpose of market research?",
+      "option_a": "A. To eliminate the need for customer feedback",
+      "option_b": "B. To collect, analyze and interpret information about customers, markets and competitors for better decisions",
+      "option_c": "C. To increase production regardless of demand",
+      "option_d": "D. To replace marketing strategy",
+      "correct_answer": "B",
+      "explanation": "Market research provides information about customers, markets and competitors to support informed marketing decisions."
+    },
+    {
+      "question": "Which of the following is an example of primary market research data?",
+      "option_a": "A. An industry report downloaded from a database",
+      "option_b": "B. A published government report",
+      "option_c": "C. Responses collected through a new customer survey",
+      "option_d": "D. An existing competitor database",
+      "correct_answer": "C",
+      "explanation": "Primary data is collected directly for the research, such as through surveys and interviews."
+    },
+    {
+      "question": "Which of the following is an example of secondary data?",
+      "option_a": "A. Interviews conducted with potential customers",
+      "option_b": "B. A survey created specifically for a new product",
+      "option_c": "C. A report obtained from an existing database",
+      "option_d": "D. A usability test performed with recruited users",
+      "correct_answer": "C",
+      "explanation": "Secondary data consists of existing information such as reports and databases."
+    },
+    {
+      "question": "Why does data-driven market research reduce uncertainty?",
+      "option_a": "A. It guarantees that every product will succeed",
+      "option_b": "B. It provides evidence that can support informed, customer-focused decisions",
+      "option_c": "C. It removes the need for competitors to be analyzed",
+      "option_d": "D. It ensures that customers will always purchase the product",
+      "correct_answer": "B",
+      "explanation": "Research insights help organizations make informed decisions and reduce uncertainty rather than relying only on assumptions."
+    },
+    {
+      "question": "A startup wants to determine whether students actually need a proposed study-planning application. Which approach best follows the lecture's market-research principles?",
+      "option_a": "A. Launch the application immediately without collecting information",
+      "option_b": "B. Collect and analyze information about students' needs, preferences and behavior",
+      "option_c": "C. Copy a competitor's application without research",
+      "option_d": "D. Focus only on the application's technical implementation",
+      "correct_answer": "B",
+      "explanation": "Market research should investigate what customers need, want, think and do before making product decisions."
+    },
+    {
+      "question": "Which digital research tool can provide information about customer behavior and interactions in real time?",
+      "option_a": "A. Web analytics",
+      "option_b": "B. Manual accounting ledgers",
+      "option_c": "C. Production machinery",
+      "option_d": "D. Physical packaging",
+      "correct_answer": "A",
+      "explanation": "Web analytics, social media insights and online surveys are digital tools that can track customer behavior and interactions."
+    },
+    {
+      "question": "How can AI enhance market research according to the lecture?",
+      "option_a": "A. By eliminating all customer data",
+      "option_b": "B. By analyzing large datasets and predicting customer behavior",
+      "option_c": "C. By preventing personalization",
+      "option_d": "D. By replacing all marketing channels with one channel",
+      "correct_answer": "B",
+      "explanation": "AI can analyze large datasets, identify patterns and trends, perform predictive analytics and support personalization."
+    },
+    {
+      "question": "A retailer uses AI to identify purchasing patterns and predict which products individual customers are likely to want next. Which combination of capabilities is being used?",
+      "option_a": "A. Predictive analytics and personalization",
+      "option_b": "B. Physical distribution and product decline",
+      "option_c": "C. Traditional selling and production efficiency",
+      "option_d": "D. Brand identity and packaging only",
+      "correct_answer": "A",
+      "explanation": "The lecture states that AI supports predictive analytics and targeted or personalized marketing strategies."
+    },
+    {
+      "question": "What is product management primarily concerned with?",
+      "option_a": "A. Managing only advertising campaigns",
+      "option_b": "B. Planning, developing and managing products to deliver value and meet evolving customer needs",
+      "option_c": "C. Managing only product prices",
+      "option_d": "D. Eliminating the need for product updates",
+      "correct_answer": "B",
+      "explanation": "Product management guides products from idea through release and beyond while continuously addressing customer needs."
+    },
+    {
+      "question": "A product manager asks, 'Does the customer need this?' Which product-management perspective is primarily being considered?",
+      "option_a": "A. User experience",
+      "option_b": "B. Technology",
+      "option_c": "C. Business strategy",
+      "option_d": "D. Distribution",
+      "correct_answer": "A",
+      "explanation": "The lecture associates the question 'Does the customer need this?' with user experience."
+    },
+    {
+      "question": "A product manager asks, 'Can we build this?' Which dimension is being evaluated?",
+      "option_a": "A. User experience",
+      "option_b": "B. Technology",
+      "option_c": "C. Branding",
+      "option_d": "D. Promotion",
+      "correct_answer": "B",
+      "explanation": "The lecture associates 'Can we build this?' with technology."
+    },
+    {
+      "question": "A product manager evaluates whether a proposed feature makes sense commercially for the organization. Which dimension is most directly involved?",
+      "option_a": "A. User experience",
+      "option_b": "B. Technology",
+      "option_c": "C. Business strategy",
+      "option_d": "D. Digital advertising",
+      "correct_answer": "C",
+      "explanation": "The lecture connects the question 'Does this make sense for the business?' with business strategy."
+    },
+    {
+      "question": "Why are customer feedback and usage patterns important in product management?",
+      "option_a": "A. They prevent products from being updated",
+      "option_b": "B. They guide continuous improvement of product performance and relevance",
+      "option_c": "C. They replace the need for technology",
+      "option_d": "D. They guarantee that a product will enter the growth stage",
+      "correct_answer": "B",
+      "explanation": "Product decisions are guided by customer data, feedback and usage patterns to continuously improve performance and relevance."
+    },
+    {
+      "question": "Which approach is explicitly identified in the lecture as supporting continuous product testing, feedback and updates?",
+      "option_a": "A. Agile and Minimum Viable Product",
+      "option_b": "B. Traditional mass production only",
+      "option_c": "C. Direct selling and cold calling",
+      "option_d": "D. Physical distribution and packaging",
+      "correct_answer": "A",
+      "explanation": "The lecture specifically identifies Agile and MVP as approaches for continuous testing, feedback and updates."
+    },
+    {
+      "question": "A startup releases a basic version of its application, collects user feedback and improves it through repeated updates. Which product-management approach does this most closely demonstrate?",
+      "option_a": "A. Product decline",
+      "option_b": "B. MVP and continuous feedback",
+      "option_c": "C. Traditional selling",
+      "option_d": "D. Market saturation",
+      "correct_answer": "B",
+      "explanation": "An MVP provides an initial product that can be tested and improved using customer feedback."
+    },
+    {
+      "question": "Which stage of the Product Life Cycle is characterized by a newly launched product where awareness is being created?",
+      "option_a": "A. Introduction",
+      "option_b": "B. Growth",
+      "option_c": "C. Maturity",
+      "option_d": "D. Decline",
+      "correct_answer": "A",
+      "explanation": "During introduction, the product is launched and awareness is created."
+    },
+    {
+      "question": "A product is rapidly gaining popularity and sales are increasing. Which Product Life Cycle stage is most likely occurring?",
+      "option_a": "A. Introduction",
+      "option_b": "B. Growth",
+      "option_c": "C. Maturity",
+      "option_d": "D. Decline",
+      "correct_answer": "B",
+      "explanation": "The growth stage is characterized by increasing sales and growing popularity."
+    },
+    {
+      "question": "A product's market has become saturated and competition is high. Which Product Life Cycle stage is this?",
+      "option_a": "A. Introduction",
+      "option_b": "B. Growth",
+      "option_c": "C. Maturity",
+      "option_d": "D. Decline",
+      "correct_answer": "C",
+      "explanation": "The maturity stage occurs when the market becomes saturated and competition is high."
+    },
+    {
+      "question": "Sales of an application are falling because demand is decreasing and newer alternatives have emerged. Which Product Life Cycle stage does this represent?",
+      "option_a": "A. Introduction",
+      "option_b": "B. Growth",
+      "option_c": "C. Maturity",
+      "option_d": "D. Decline",
+      "correct_answer": "D",
+      "explanation": "Decline occurs when sales decrease because demand reduces or new alternatives emerge."
+    },
+    {
+      "question": "Which characteristic is particularly important for IT products such as SaaS applications and digital platforms?",
+      "option_a": "A. They never require updates",
+      "option_b": "B. They emphasize usability, interface design and user satisfaction",
+      "option_c": "C. They depend entirely on physical distribution",
+      "option_d": "D. They cannot be personalized",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes usability, interface design and user satisfaction for IT products."
+    },
+    {
+      "question": "A SaaS company continuously modifies its platform based on usage data, analytics and customer feedback. Why is this appropriate for an IT product?",
+      "option_a": "A. IT products are expected to remain unchanged after launch",
+      "option_b": "B. IT products are regularly updated and improved to remain relevant and competitive",
+      "option_c": "C. IT products cannot use customer data",
+      "option_d": "D. Updates are only necessary during the decline stage",
+      "correct_answer": "B",
+      "explanation": "The lecture states that IT products are regularly updated using customer feedback, usage data and analytics."
+    },
+    {
+      "question": "What does 'phygital' mean in the context of Marketing 6.0?",
+      "option_a": "A. Financial plus physical",
+      "option_b": "B. Physical plus digital",
+      "option_c": "C. Product plus pricing",
+      "option_d": "D. Personal plus traditional",
+      "correct_answer": "B",
+      "explanation": "Marketing 6.0 focuses on immersive 'phygital' experiences that combine physical and digital elements."
+    },
+    {
+      "question": "A retailer connects its website, mobile application and physical stores so customers receive consistent interactions across all channels. Which Marketing 6.0 capability is this?",
+      "option_a": "A. Integration",
+      "option_b": "B. Product decline",
+      "option_c": "C. Market segmentation",
+      "option_d": "D. Production efficiency",
+      "correct_answer": "A",
+      "explanation": "Integration connects multiple platforms and creates consistent customer interactions across channels."
+    },
+    {
+      "question": "A company uses customer data to automatically recommend products and has chatbots provide immediate support. Which Marketing 6.0 capability is most directly demonstrated?",
+      "option_a": "A. Automation",
+      "option_b": "B. Place",
+      "option_c": "C. Brand equity",
+      "option_d": "D. Market maturity",
+      "correct_answer": "A",
+      "explanation": "Automation includes predicting customer needs, recommending products and using chatbots for instant support."
+    },
+    {
+      "question": "An online retailer gives different customers different offers and recommendations based on their behavior. Which Marketing 6.0 capability does this demonstrate?",
+      "option_a": "A. Personalization",
+      "option_b": "B. Product decline",
+      "option_c": "C. Physical distribution",
+      "option_d": "D. Production efficiency",
+      "correct_answer": "A",
+      "explanation": "Personalization provides tailored content, offers and recommendations based on customer information."
+    },
+    {
+      "question": "A fashion retailer allows customers to virtually experience products using AR before purchasing. Which technology-related Marketing 6.0 capability is being used?",
+      "option_a": "A. Immersive technologies",
+      "option_b": "B. Secondary research",
+      "option_c": "C. Customer retention",
+      "option_d": "D. Pricing strategy",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies AR, VR and the metaverse as immersive technologies that can provide virtual product experiences."
+    },
+    {
+      "question": "A business analyzes customer activity immediately and changes its marketing response during the same period. Which Marketing 6.0 capability is most relevant?",
+      "option_a": "A. Real-time decision making",
+      "option_b": "B. Product maturity",
+      "option_c": "C. Traditional selling",
+      "option_d": "D. Brand identity",
+      "correct_answer": "A",
+      "explanation": "Real-time decision making uses immediate insights to respond quickly to customer behavior."
+    },
+    {
+      "question": "Which statement best describes digital marketing?",
+      "option_a": "A. Marketing performed exclusively through physical stores",
+      "option_b": "B. The use of digital technologies and online platforms to promote products, engage customers and deliver personalized experiences",
+      "option_c": "C. A process concerned only with product pricing",
+      "option_d": "D. A replacement for all forms of customer service",
+      "correct_answer": "B",
+      "explanation": "Digital marketing uses digital technologies and online platforms for promotion, engagement and personalized experiences."
+    },
+    {
+      "question": "Which of the following is NOT identified as a digital marketing channel in the lecture?",
+      "option_a": "A. Search engines",
+      "option_b": "B. Social media",
+      "option_c": "C. Email",
+      "option_d": "D. Manufacturing equipment",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies websites, search engines, social media, email and paid advertisements as digital marketing channels."
+    },
+    {
+      "question": "What is a major characteristic of digital marketing communication?",
+      "option_a": "A. It supports two-way communication and real-time interaction",
+      "option_b": "B. It prevents businesses from collecting customer data",
+      "option_c": "C. It only supports one-way communication",
+      "option_d": "D. It cannot be personalized",
+      "correct_answer": "A",
+      "explanation": "Digital marketing enables two-way communication and real-time interaction with customers."
+    },
+    {
+      "question": "What are digital marketing metrics primarily used for?",
+      "option_a": "A. Measuring and evaluating online campaign performance",
+      "option_b": "B. Designing physical warehouses",
+      "option_c": "C. Replacing customer relationships",
+      "option_d": "D. Determining employee salaries",
+      "correct_answer": "A",
+      "explanation": "Digital marketing metrics provide measurable evidence of campaign performance and audience interaction."
+    },
+    {
+      "question": "Which metric measures the proportion of people who click a link or advertisement relative to the number exposed to it?",
+      "option_a": "A. Conversion Rate",
+      "option_b": "B. Customer Acquisition Cost",
+      "option_c": "C. Click-through Rate",
+      "option_d": "D. Customer Lifetime Value",
+      "correct_answer": "C",
+      "explanation": "Click-through Rate, or CTR, measures how frequently audiences click through from an online marketing exposure."
+    },
+    {
+      "question": "A company wants to understand how much it spends to acquire a new customer through its marketing efforts. Which metric is most relevant?",
+      "option_a": "A. CTR",
+      "option_b": "B. Customer Acquisition Cost",
+      "option_c": "C. Brand Equity",
+      "option_d": "D. Conversion Rate",
+      "correct_answer": "B",
+      "explanation": "Customer Acquisition Cost measures the cost associated with acquiring customers."
+    },
+    {
+      "question": "What is brand management primarily concerned with?",
+      "option_a": "A. Creating, maintaining and enhancing a brand's identity, image and value in customers' minds",
+      "option_b": "B. Managing only production costs",
+      "option_c": "C. Selling individual products through personal persuasion",
+      "option_d": "D. Eliminating customer interactions",
+      "correct_answer": "A",
+      "explanation": "Brand management focuses on the brand's identity, image and value as perceived by customers."
+    },
+    {
+      "question": "A company ensures that its name, logo, message and values are communicated consistently on its website, social media and physical stores. What is this primarily intended to build?",
+      "option_a": "A. A consistent brand identity",
+      "option_b": "B. Product decline",
+      "option_c": "C. Customer acquisition cost",
+      "option_d": "D. Market segmentation",
+      "correct_answer": "A",
+      "explanation": "Consistent communication across digital and physical channels helps create a clear and recognizable brand identity."
+    },
+    {
+      "question": "Why do brands attempt to create emotional connections with customers?",
+      "option_a": "A. To eliminate the need for product value",
+      "option_b": "B. To build trust and long-term loyalty",
+      "option_c": "C. To increase production efficiency",
+      "option_d": "D. To prevent customer personalization",
+      "correct_answer": "B",
+      "explanation": "Aligning with customers' values, needs and lifestyles can create emotional connections that build trust and long-term loyalty."
+    },
+    {
+      "question": "A company uses social media, websites and digital content to communicate its brand story and engage customers. Which brand-management approach is being demonstrated?",
+      "option_a": "A. Digital platforms and storytelling",
+      "option_b": "B. Product decline",
+      "option_c": "C. Secondary production",
+      "option_d": "D. Price segmentation",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies digital platforms and storytelling as tools for sharing brand stories and strengthening brand perception."
+    },
+    {
+      "question": "What is brand equity?",
+      "option_a": "A. The total number of products manufactured by a company",
+      "option_b": "B. The value a brand adds to a product or service based on customer perceptions, trust and experiences",
+      "option_c": "C. The amount spent on online advertisements",
+      "option_d": "D. The number of employees working in marketing",
+      "correct_answer": "B",
+      "explanation": "Brand equity is the value associated with a brand because of customers' perceptions, trust and experiences."
+    },
+    {
+      "question": "Which combination most directly strengthens brand equity according to the lecture?",
+      "option_a": "A. Customer awareness, trust, loyalty and positive experiences",
+      "option_b": "B. High production volume and low employee numbers",
+      "option_c": "C. Short-term transactions and aggressive selling",
+      "option_d": "D. Reduced communication and inconsistent branding",
+      "correct_answer": "A",
+      "explanation": "Brand equity is built through awareness, trust and loyalty and strengthened by positive experiences and consistent branding."
+    },
+    {
+      "question": "What is the central idea behind experience-driven branding?",
+      "option_a": "A. Focusing exclusively on product specifications",
+      "option_b": "B. Creating meaningful and memorable customer experiences at every touchpoint",
+      "option_c": "C. Minimizing customer interactions",
+      "option_d": "D. Avoiding personalization",
+      "correct_answer": "B",
+      "explanation": "Experience-driven branding emphasizes meaningful customer experiences across every touchpoint to build emotional engagement and loyalty."
+    },
+    {
+      "question": "What does Customer Relationship Management (CRM) primarily involve?",
+      "option_a": "A. Managing and strengthening customer interactions to build long-term relationships and loyalty",
+      "option_b": "B. Managing only manufacturing processes",
+      "option_c": "C. Increasing prices without analyzing customers",
+      "option_d": "D. Focusing exclusively on acquiring new customers",
+      "correct_answer": "A",
+      "explanation": "CRM manages customer interactions and uses data and technology to strengthen long-term relationships and loyalty."
+    },
+    {
+      "question": "A company uses customer purchase history to send individualized offers. Which CRM objective is most directly demonstrated?",
+      "option_a": "A. Personalized customer experience",
+      "option_b": "B. Production efficiency",
+      "option_c": "C. Product decline",
+      "option_d": "D. Physical distribution",
+      "correct_answer": "A",
+      "explanation": "Personalized customer experiences use data and technology to deliver tailored interactions."
+    },
+    {
+      "question": "What is the primary purpose of customer retention in CRM?",
+      "option_a": "A. Keeping existing customers by providing consistent value and positive experiences",
+      "option_b": "B. Eliminating existing customers",
+      "option_c": "C. Increasing production regardless of demand",
+      "option_d": "D. Focusing exclusively on first-time buyers",
+      "correct_answer": "A",
+      "explanation": "Customer retention focuses on keeping existing customers through consistent value and positive experiences."
+    },
+    {
+      "question": "What does Customer Lifetime Value (CLV) aim to maximize?",
+      "option_a": "A. The number of advertisements shown to a customer",
+      "option_b": "B. The total value a customer brings over time through purchases and engagement",
+      "option_c": "C. The number of customer complaints",
+      "option_d": "D. The initial cost of producing a product",
+      "correct_answer": "B",
+      "explanation": "CLV concerns the total value generated by a customer over time through repeated purchases and engagement."
+    },
+    {
+      "question": "Which of the following is a core function of CRM tools?",
+      "option_a": "A. Storing and organizing customer information and interaction history",
+      "option_b": "B. Preventing businesses from analyzing customer data",
+      "option_c": "C. Replacing all products with physical services",
+      "option_d": "D. Eliminating automated communication",
+      "correct_answer": "A",
+      "explanation": "CRM tools store customer information and interaction histories and support personalization, automation and analytics."
+    },
+    {
+      "question": "A business wants one system to support marketing, sales and customer service, including email marketing, lead tracking and automation. Which CRM example from the lecture best fits this description?",
+      "option_a": "A. HubSpot",
+      "option_b": "B. AR",
+      "option_c": "C. Web analytics",
+      "option_d": "D. A search engine",
+      "correct_answer": "A",
+      "explanation": "The lecture describes HubSpot as a user-friendly CRM offering marketing, sales and customer service capabilities including email marketing, lead tracking and automation."
+    },
+    {
+      "question": "Which CRM platform is described as a cost-effective solution suitable for startups and SMEs?",
+      "option_a": "A. Salesforce",
+      "option_b": "B. HubSpot",
+      "option_c": "C. Zoho CRM",
+      "option_d": "D. Google Search",
+      "correct_answer": "C",
+      "explanation": "The lecture describes Zoho CRM as a cost-effective CRM suitable for startups and SMEs."
+    },
+    {
+      "question": "Which CRM platform is described as a leading cloud-based platform used by large organizations and offering advanced analytics, AI and automation?",
+      "option_a": "A. Salesforce",
+      "option_b": "B. HubSpot",
+      "option_c": "C. Zoho CRM",
+      "option_d": "D. Instagram",
+      "correct_answer": "A",
+      "explanation": "Salesforce is described as a leading cloud-based CRM for large organizations with advanced analytics, AI and automation."
+    },
+    {
+      "question": "A startup wants an affordable and customizable CRM with workflow automation and integration with other applications from the same provider. Which option from the lecture is the best fit?",
+      "option_a": "A. Salesforce",
+      "option_b": "B. Zoho CRM",
+      "option_c": "C. Search engine advertising",
+      "option_d": "D. AR",
+      "correct_answer": "B",
+      "explanation": "Zoho CRM is presented as an affordable and customizable solution with automation, analytics and integration with other Zoho applications."
+    },
+    {
+      "question": "What does Customer Experience (CX) refer to?",
+      "option_a": "A. Only the customer's experience during payment",
+      "option_b": "B. The overall perception and feelings a customer has from interactions with a brand across different touchpoints",
+      "option_c": "C. Only the visual design of a company's website",
+      "option_d": "D. The internal experience of marketing employees",
+      "correct_answer": "B",
+      "explanation": "CX encompasses the customer's overall perception and feelings from interactions with the brand across touchpoints."
+    },
+    {
+      "question": "Which stage is included within the customer experience according to the lecture?",
+      "option_a": "A. Only post-purchase support",
+      "option_b": "B. Only product development",
+      "option_c": "C. Awareness, consideration, purchase and post-purchase support",
+      "option_d": "D. Only advertising",
+      "correct_answer": "C",
+      "explanation": "CX covers interactions from initial awareness and consideration through purchase and post-purchase support."
+    },
+    {
+      "question": "A customer begins researching a product on a company's website, continues through its mobile app, purchases in a physical store and later contacts support online. What should the company primarily aim to provide?",
+      "option_a": "A. Different and disconnected experiences at each channel",
+      "option_b": "B. A seamless and consistent experience across touchpoints",
+      "option_c": "C. A single physical interaction only",
+      "option_d": "D. No personalization",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes a smooth and unified CX across websites, mobile apps, social media and physical stores."
+    },
+    {
+      "question": "Which three dimensions are identified as contributing to customer experience?",
+      "option_a": "A. Functional, emotional and digital experiences",
+      "option_b": "B. Production, pricing and accounting experiences",
+      "option_c": "C. Physical, financial and manufacturing experiences",
+      "option_d": "D. Technical, legal and employee experiences",
+      "correct_answer": "A",
+      "explanation": "The lecture describes CX as a combination of functional, emotional and digital experiences."
+    },
+    {
+      "question": "A company combines AI-driven personalization, consistent branding, CRM data and integrated website/mobile/physical-store interactions. What overall objective is most strongly represented?",
+      "option_a": "A. Improving customer experience",
+      "option_b": "B. Increasing production efficiency only",
+      "option_c": "C. Moving a product directly into decline",
+      "option_d": "D. Eliminating market research",
+      "correct_answer": "A",
+      "explanation": "Data, personalization, integration and technology are explicitly identified as ways to enhance the overall customer experience."
+    },
+    {
+      "question": "A software startup has an excellent technical product but almost no users. Research reveals that students do not consider the product useful for their actual study workflow. Which lesson from the lecture best explains the failure?",
+      "option_a": "A. Technology automatically creates demand",
+      "option_b": "B. Software products can fail because of poor market fit when customer needs are ignored",
+      "option_c": "C. Product maturity always causes startup failure",
+      "option_d": "D. Digital marketing eliminates the need for market research",
+      "correct_answer": "B",
+      "explanation": "The lecture notes that technology does not sell itself and that many software products fail because of poor market fit and insufficient attention to marketing."
+    },
+    {
+      "question": "A company performs surveys and interviews before developing a new application, then combines those findings with existing industry reports and databases. What is the strongest interpretation?",
+      "option_a": "A. It is using only primary data",
+      "option_b": "B. It is using only secondary data",
+      "option_c": "C. It is combining primary and secondary market research",
+      "option_d": "D. It is performing only digital advertising",
+      "correct_answer": "C",
+      "explanation": "Surveys and interviews provide primary data, while existing reports and databases provide secondary data."
+    },
+    {
+      "question": "A cybersecurity SaaS company wants to target mid-sized financial firms. It divides potential customers by industry and company size, selects firms with 50–500 employees, and positions the service around military-grade encryption. Which answer correctly maps the three STP stages?",
+      "option_a": "A. Segmentation: military-grade encryption; Targeting: industry; Positioning: 50–500 employees",
+      "option_b": "B. Segmentation: industry and company size; Targeting: mid-sized financial firms; Positioning: military-grade encryption",
+      "option_c": "C. Segmentation: mid-sized financial firms; Targeting: military-grade encryption; Positioning: company size",
+      "option_d": "D. Segmentation: advertising channel; Targeting: product price; Positioning: employee count",
+      "correct_answer": "B",
+      "explanation": "Industry and company size divide the market, mid-sized financial firms form the selected target, and military-grade encryption defines the desired differentiated position."
+    },
+    {
+      "question": "A product is technically feasible and commercially attractive, but research shows that customers do not actually need the proposed feature. Based on the product-management framework, what should be questioned first?",
+      "option_a": "A. Whether the customer need exists",
+      "option_b": "B. Whether the product should immediately enter maturity",
+      "option_c": "C. Whether more advertisements should be purchased",
+      "option_d": "D. Whether CRM software should be replaced",
+      "correct_answer": "A",
+      "explanation": "Product management considers user experience, technology and business strategy; customer need is a fundamental consideration."
+    },
+    {
+      "question": "An application has reached a saturated market with intense competition. The company observes that sales have stopped growing significantly. Which combination best identifies the situation?",
+      "option_a": "A. Introduction stage and customer-centric era",
+      "option_b": "B. Growth stage and digital era",
+      "option_c": "C. Maturity stage and need for continued competitive differentiation",
+      "option_d": "D. Decline stage and primary research",
+      "correct_answer": "C",
+      "explanation": "Market saturation and high competition characterize maturity. IT products can continue to be improved to remain competitive."
+    },
+    {
+      "question": "An online retailer notices that customers who receive personalized recommendations purchase more frequently. It uses CRM data and AI to improve future recommendations. Which combination of concepts is most directly involved?",
+      "option_a": "A. CRM, AI-supported personalization and customer lifetime value",
+      "option_b": "B. Product decline, place and traditional selling",
+      "option_c": "C. Secondary data and physical distribution only",
+      "option_d": "D. Market maturity and production efficiency",
+      "correct_answer": "A",
+      "explanation": "CRM stores customer information, AI supports personalization, and repeated purchases contribute to customer lifetime value."
+    },
+    {
+      "question": "A company receives high website traffic and many advertisement clicks but very few customers complete purchases. Which digital marketing concept would be especially important to examine?",
+      "option_a": "A. Conversion Rate",
+      "option_b": "B. Product Life Cycle only",
+      "option_c": "C. Brand logo dimensions",
+      "option_d": "D. Physical distribution",
+      "correct_answer": "A",
+      "explanation": "Conversion Rate is a digital marketing metric used to evaluate the extent to which desired actions are completed."
+    },
+    {
+      "question": "A company has a strong logo and recognizable name, but customers have inconsistent experiences across its website, app and physical stores. Which principle from the lecture suggests the biggest weakness?",
+      "option_a": "A. Consistent branding and seamless customer experience",
+      "option_b": "B. Product production efficiency",
+      "option_c": "C. Secondary market research",
+      "option_d": "D. Customer acquisition cost only",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes consistent brand communication and seamless experiences across digital and physical touchpoints."
+    },
+    {
+      "question": "A company uses social media analytics to detect a sudden change in customer preferences, AI to identify the trend, and immediately changes its promotional content. Which Marketing 6.0 capabilities are most clearly combined?",
+      "option_a": "A. Real-time decision making and AI-supported data analysis",
+      "option_b": "B. Product decline and physical distribution",
+      "option_c": "C. Selling and production efficiency",
+      "option_d": "D. Packaging and traditional advertising",
+      "correct_answer": "A",
+      "explanation": "Digital data collection, AI-based analysis and real-time response are central capabilities identified for Marketing 6.0."
+    },
+    {
+      "question": "A business wants to build long-term relationships rather than merely maximize immediate transactions. Which combination best aligns with the lecture?",
+      "option_a": "A. Marketing, CRM and customer experience",
+      "option_b": "B. Selling, production and product decline",
+      "option_c": "C. Pricing, manufacturing and packaging",
+      "option_d": "D. Distribution, production and inventory only",
+      "correct_answer": "A",
+      "explanation": "Marketing focuses on long-term relationships, CRM strengthens those relationships, and CX shapes the customer's overall perception."
+    },
+    {
+      "question": "A company chooses a highly profitable customer segment but later discovers that the segment is difficult to reach through available channels. Which STP targeting consideration was insufficiently evaluated?",
+      "option_a": "A. Accessibility",
+      "option_b": "B. Brand equity",
+      "option_c": "C. Product maturity",
+      "option_d": "D. Emotional connection",
+      "correct_answer": "A",
+      "explanation": "Accessibility is explicitly listed as a factor when selecting attractive target segments."
+    },
+    {
+      "question": "A company has several possible market segments. Segment X is large but has low growth and low profitability. Segment Y is smaller but highly profitable, has strong growth potential and is accessible. Based on the lecture's targeting principles, which segment is more attractive?",
+      "option_a": "A. Segment X because size is the only relevant factor",
+      "option_b": "B. Segment X because large markets are always preferable",
+      "option_c": "C. Segment Y because profitability, needs, growth potential, size and accessibility should be considered together",
+      "option_d": "D. Neither, because targeting does not evaluate segments",
+      "correct_answer": "C",
+      "explanation": "Targeting evaluates multiple factors, including profitability, needs, growth potential, size and accessibility rather than relying on size alone."
+    },
+    {
+      "question": "A company has excellent customer data but uses it only to send identical messages to every customer. Which capability from the lecture is being underutilized?",
+      "option_a": "A. Personalization",
+      "option_b": "B. Product maturity",
+      "option_c": "C. Place",
+      "option_d": "D. Traditional production",
+      "correct_answer": "A",
+      "explanation": "Personalization uses customer data to tailor content, offers and recommendations to individual customers."
+    },
+    {
+      "question": "A company introduces a new digital service, measures user behavior, gathers feedback, updates the service repeatedly and uses analytics to improve usability. Which combination best describes this approach?",
+      "option_a": "A. Product management, Agile/MVP principles and continuous improvement",
+      "option_b": "B. Traditional selling and product decline",
+      "option_c": "C. Physical distribution and customer acquisition only",
+      "option_d": "D. Brand equity without product management",
+      "correct_answer": "A",
+      "explanation": "The lecture describes product management as continuous planning and improvement using customer feedback, data, testing and approaches such as Agile and MVP."
+    },
+    {
+      "question": "A company wants to improve brand equity. Which strategy is most consistent with the lecture?",
+      "option_a": "A. Deliver inconsistent messages to create variety",
+      "option_b": "B. Build awareness, trust and loyalty through consistent branding and positive experiences",
+      "option_c": "C. Focus exclusively on short-term transactions",
+      "option_d": "D. Avoid emotional connections with customers",
+      "correct_answer": "B",
+      "explanation": "Brand equity is strengthened by awareness, trust, loyalty, positive experiences, emotional connections and consistent branding."
+    },
+    {
+      "question": "A customer interacts with a company through its social media account, website, mobile application, physical store and support service. The customer's overall feelings result from all of these interactions. Which concept best explains this?",
+      "option_a": "A. Customer Experience",
+      "option_b": "B. Product",
+      "option_c": "C. Price",
+      "option_d": "D. Segmentation",
+      "correct_answer": "A",
+      "explanation": "CX is the overall perception and feelings formed through interactions across different customer touchpoints."
+    },
+    {
+      "question": "A company integrates its CRM system with its website, mobile app and physical stores. Customer information is available across these channels, enabling consistent and personalized interactions. Which combination best describes the result?",
+      "option_a": "A. Integration, CRM and personalization",
+      "option_b": "B. Product decline and traditional selling",
+      "option_c": "C. Market segmentation and manufacturing",
+      "option_d": "D. Price reduction and physical distribution",
+      "correct_answer": "A",
+      "explanation": "Integration connects platforms, CRM manages customer data and personalization enables tailored interactions."
+    },
+    {
+      "question": "Which scenario best demonstrates the difference between marketing and selling?",
+      "option_a": "A. A salesperson persuades one customer to purchase immediately, while the company researches customer needs and develops long-term relationships",
+      "option_b": "B. A company researches customer needs and calls this selling",
+      "option_c": "C. A salesperson studies customer needs over several years and this is always selling",
+      "option_d": "D. Marketing and selling are identical because both involve products",
+      "correct_answer": "A",
+      "explanation": "Immediate persuasion of a specific customer is selling, while research, customer focus and long-term relationships characterize marketing."
+    },
+    {
+      "question": "A company launches a technically sophisticated product without researching customer needs. After launch, it discovers that its target users do not consider the product valuable. Which stage or activity was most clearly neglected?",
+      "option_a": "A. Market research before product development",
+      "option_b": "B. Product decline after saturation",
+      "option_c": "C. Customer retention after maturity",
+      "option_d": "D. Brand storytelling after loyalty",
+      "correct_answer": "A",
+      "explanation": "Market research should help organizations understand customer needs and guide product development and marketing decisions."
+    },
+    {
+      "question": "A business wants to create a marketing campaign but cannot determine which customers it should focus on or what message should distinguish the product. Which framework would most directly help solve both problems?",
+      "option_a": "A. STP",
+      "option_b": "B. Product Life Cycle",
+      "option_c": "C. CRM tools",
+      "option_d": "D. Customer Acquisition Cost",
+      "correct_answer": "A",
+      "explanation": "STP helps divide the market, select attractive customer groups and create a clear differentiated position."
+    },
+    {
+      "question": "A company identifies a target segment and then designs its communication around a unique benefit that competitors do not emphasize. Which STP stage is primarily responsible for the latter decision?",
+      "option_a": "A. Segmentation",
+      "option_b": "B. Targeting",
+      "option_c": "C. Positioning",
+      "option_d": "D. Market research",
+      "correct_answer": "C",
+      "explanation": "Positioning focuses on creating a unique image through value, experience and differentiation."
+    },
+    {
+      "question": "Which statement best integrates the lecture's view of technology's role in modern marketing?",
+      "option_a": "A. Technology replaces the need to understand humans",
+      "option_b": "B. Technology enables data analysis, personalization, automation and immersive experiences while supporting human-centered value",
+      "option_c": "C. Technology is useful only for advertising",
+      "option_d": "D. Technology makes customer relationships unnecessary",
+      "correct_answer": "B",
+      "explanation": "The lecture repeatedly presents technology as an enabler of customer understanding, personalization, automation, integration and improved experiences."
+    },
+    {
+      "question": "A company uses AR to let customers virtually experience a product, AI to analyze their behavior, CRM to retain interaction history, and personalized offers to encourage repeat engagement. Which broad marketing evolution does this most closely represent?",
+      "option_a": "A. Product-centric marketing before the 1960s",
+      "option_b": "B. Marketing 6.0 and technology-enabled human-centered experiences",
+      "option_c": "C. Traditional selling only",
+      "option_d": "D. Production-efficiency marketing",
+      "correct_answer": "B",
+      "explanation": "The combination of immersive technology, AI, CRM and personalization strongly reflects the lecture's Marketing 6.0 focus on human-plus-technology experiences."
+    },
+    {
+      "question": "A company has high customer acquisition but poor retention. It decides to analyze customer interaction histories, personalize communication and improve post-purchase experiences. Which objective is the company primarily trying to improve?",
+      "option_a": "A. Customer retention and loyalty",
+      "option_b": "B. Product distribution only",
+      "option_c": "C. Manufacturing efficiency",
+      "option_d": "D. Market segmentation only",
+      "correct_answer": "A",
+      "explanation": "CRM supports retention and loyalty by providing consistent value, personalized interactions and positive customer experiences."
+    },
+    {
+      "question": "A company measures CTR, conversion rate and customer acquisition cost for an online campaign. Why is this approach valuable?",
+      "option_a": "A. It provides objective evidence that can support campaign optimization, budget allocation and ROI improvement",
+      "option_b": "B. It guarantees that customers will become loyal",
+      "option_c": "C. It eliminates the need for market research",
+      "option_d": "D. It measures only the company's production capacity",
+      "correct_answer": "A",
+      "explanation": "Digital marketing metrics provide objective evidence for evaluating online performance, optimizing strategies, allocating budgets and improving ROI."
+    },
+    {
+      "question": "A company has strong products and competitive prices but communicates an inconsistent brand message across its channels. Which marketing area should receive the greatest attention?",
+      "option_a": "A. Brand management",
+      "option_b": "B. Product Life Cycle",
+      "option_c": "C. Customer Acquisition Cost",
+      "option_d": "D. Secondary research",
+      "correct_answer": "A",
+      "explanation": "Brand management ensures that brand name, logo, message and values are consistently communicated across digital and physical channels."
+    },
+    {
+      "question": "A company wants to maximize the value generated by an existing customer over several years rather than focusing only on the first purchase. Which CRM concept should guide this objective?",
+      "option_a": "A. Customer Lifetime Value",
+      "option_b": "B. Click-through Rate",
+      "option_c": "C. Market segmentation",
+      "option_d": "D. Product introduction",
+      "correct_answer": "A",
+      "explanation": "CLV focuses on the total value a customer brings over time through repeated purchases and engagement."
+    },
+    {
+      "question": "A company uses customer analytics to predict needs, automatically recommends products, provides chatbot support, connects multiple channels and offers tailored content. Which answer best identifies the overall Marketing 6.0 approach?",
+      "option_a": "A. A combination of automation, personalization, integration and data-driven decision making",
+      "option_b": "B. A return to product-centric production",
+      "option_c": "C. A purely transactional selling strategy",
+      "option_d": "D. A strategy that avoids technology",
+      "correct_answer": "A",
+      "explanation": "These are all capabilities explicitly associated with IT as an enabler of Marketing 6.0."
+    },
+    {
+      "question": "A product team discovers that users struggle with its interface. It analyzes usage patterns, collects feedback, tests changes and releases improvements repeatedly. Which principle from the lecture does this best demonstrate?",
+      "option_a": "A. Continuous product improvement using customer data, feedback and testing",
+      "option_b": "B. Product decline caused by market saturation",
+      "option_c": "C. Short-term transactional selling",
+      "option_d": "D. Traditional product-centric marketing",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes continuous testing, feedback, updates, customer data and usage patterns in product management."
+    },
+    {
+      "question": "A company wants its customers to perceive its service as highly trustworthy and different from competitors. It consistently communicates its values and provides positive personalized experiences. Which concepts are most directly connected?",
+      "option_a": "A. Positioning, brand equity and experience-driven branding",
+      "option_b": "B. Product decline, Place and selling",
+      "option_c": "C. Customer Acquisition Cost and production",
+      "option_d": "D. Secondary data and physical distribution",
+      "correct_answer": "A",
+      "explanation": "Positioning establishes differentiation, while consistent positive experiences and emotional connections strengthen brand equity and experience-driven branding."
+    },
+    {
+      "question": "Which statement represents the most complete view of modern marketing presented in the lecture?",
+      "option_a": "A. Marketing is primarily the act of persuading customers to buy immediately",
+      "option_b": "B. Marketing combines customer understanding, value creation, technology, data and long-term relationship building",
+      "option_c": "C. Marketing is mainly concerned with production efficiency",
+      "option_d": "D. Marketing is limited to advertisements on social media",
+      "correct_answer": "B",
+      "explanation": "The lecture presents marketing as a human-centric, technology-enabled process focused on value creation, customer needs, data, technology and long-term relationships."
+    }
+  ]
+}
