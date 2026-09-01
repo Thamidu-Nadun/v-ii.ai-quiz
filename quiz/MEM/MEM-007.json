@@ -1,0 +1,409 @@
+{
+  "questions": [
+    {
+      "question": "Which type of intellectual property primarily protects original software source code and documentation?",
+      "option_a": "A. Patent",
+      "option_b": "B. Copyright",
+      "option_c": "C. Trademark",
+      "option_d": "D. Trade secret only",
+      "correct_answer": "B",
+      "explanation": "Copyrights protect original works of authorship including software code and documentation."
+    },
+    {
+      "question": "What is the primary purpose of data privacy principles in IT?",
+      "option_a": "A. To generate government revenue",
+      "option_b": "B. To protect individuals’ personal information from unauthorized access or misuse",
+      "option_c": "C. To restrict all internet usage",
+      "option_d": "D. To protect only corporate trade secrets",
+      "correct_answer": "B",
+      "explanation": "Data privacy focuses on safeguarding personal data, respecting individuals’ rights, and ensuring responsible handling."
+    },
+    {
+      "question": "Which software license type makes the source code available but requires compliance with specific terms such as GPL, MIT or Apache?",
+      "option_a": "A. Proprietary",
+      "option_b": "B. Freeware",
+      "option_c": "C. Open-Source",
+      "option_d": "D. Shareware",
+      "correct_answer": "C",
+      "explanation": "Open-source licenses provide source code access while imposing conditions that must be followed."
+    },
+    {
+      "question": "In the Uber 2016 data breach, the main legal and ethical concerns involved:",
+      "option_a": "A. Only patent infringement",
+      "option_b": "B. Data protection, breach notification duties, and the ethical responsibility to protect users and remain transparent",
+      "option_c": "C. Trademark misuse only",
+      "option_d": "D. Failure to use open-source software",
+      "correct_answer": "B",
+      "explanation": "The incident highlighted cybersecurity obligations, notification requirements and ethical duties of transparency and protection."
+    },
+    {
+      "question": "Which of the following is NOT a core value of the CSSL Code of Ethics?",
+      "option_a": "A. Professionalism",
+      "option_b": "B. Honesty",
+      "option_c": "C. Maximizing shareholder profit regardless of consequences",
+      "option_d": "D. Responsibility and Integrity",
+      "correct_answer": "C",
+      "explanation": "CSSL core values are Professionalism, Honesty, Competence, Professional Development, Adding Value to Sri Lanka, and Responsibility and Integrity."
+    },
+    {
+      "question": "A software license primarily defines:",
+      "option_a": "A. Only the hardware requirements of the program",
+      "option_b": "B. Who can use the software, how it may be used, copied, modified and distributed",
+      "option_c": "C. The programming language used",
+      "option_d": "D. The physical size of the installation media",
+      "correct_answer": "B",
+      "explanation": "Licenses specify usage rights, copying, modification and distribution conditions."
+    },
+    {
+      "question": "Which regulatory standard is specifically associated with protecting payment card data in the finance sector?",
+      "option_a": "A. HIPAA",
+      "option_b": "B. PCI-DSS",
+      "option_c": "C. TRCSL",
+      "option_d": "D. GPL",
+      "correct_answer": "B",
+      "explanation": "PCI-DSS is the Payment Card Industry Data Security Standard used in finance."
+    },
+    {
+      "question": "What does the ‘Access Right’ ethical issue mainly address?",
+      "option_a": "A. Only physical building security",
+      "option_b": "B. Who may access systems and data, the permissions they hold, and prevention of unauthorized access",
+      "option_c": "C. Marketing access to customers",
+      "option_d": "D. Open-source code availability",
+      "correct_answer": "B",
+      "explanation": "Access rights cover authorized access, least-privilege permissions, access controls (passwords, MFA, RBAC) and monitoring balanced with privacy."
+    },
+    {
+      "question": "Which of the following is an example of a harmful action in IT ethics?",
+      "option_a": "A. Applying security patches regularly",
+      "option_b": "B. Spreading malware or intentionally destroying data",
+      "option_c": "C. Using strong authentication",
+      "option_d": "D. Documenting system changes",
+      "correct_answer": "B",
+      "explanation": "Harmful actions include spreading malware, destroying data, unauthorized system alteration and causing disruption."
+    },
+    {
+      "question": "Trade secrets in IT typically include:",
+      "option_a": "A. Publicly published open-source code",
+      "option_b": "B. Confidential source code, unique algorithms, business strategies and unreleased R&D",
+      "option_c": "C. Registered trademarks only",
+      "option_d": "D. Freeware applications",
+      "correct_answer": "B",
+      "explanation": "Trade secrets are confidential information that gives a competitive advantage and is not publicly known."
+    },
+    {
+      "question": "A major ethical challenge of AI systems highlighted in the lecture is:",
+      "option_a": "A. They always eliminate all human jobs immediately",
+      "option_b": "B. Bias and fairness when trained on biased historical data",
+      "option_c": "C. They never require human oversight",
+      "option_d": "D. They cannot be used in recruitment",
+      "correct_answer": "B",
+      "explanation": "AI can produce discriminatory outcomes if trained on biased data; transparency, human responsibility and safety are also key concerns."
+    },
+    {
+      "question": "In the Cambridge Analytica / Facebook case, the primary ethical failing was:",
+      "option_a": "A. Using open-source software without attribution",
+      "option_b": "B. Lack of transparency and misuse of personal data without informed consent",
+      "option_c": "C. Patent infringement",
+      "option_d": "D. Failure to apply security patches",
+      "correct_answer": "B",
+      "explanation": "Personal data were obtained and used for political profiling without users’ informed understanding, raising privacy, consent and trust issues."
+    },
+    {
+      "question": "The Amazon AI recruitment tool case illustrated which ethical problem?",
+      "option_a": "A. Copyright violation of training data",
+      "option_b": "B. Gender bias resulting from historical hiring data",
+      "option_c": "C. Use of proprietary software without license",
+      "option_d": "D. Physical security breaches",
+      "correct_answer": "B",
+      "explanation": "The system showed bias against women because it learned from past male-dominated hiring patterns."
+    },
+    {
+      "question": "Pratibha Syntex was penalized for:",
+      "option_a": "A. Data breach notification failure",
+      "option_b": "B. Using unlicensed Microsoft and Adobe software",
+      "option_c": "C. AI bias in hiring",
+      "option_d": "D. Violating GDPR only",
+      "correct_answer": "B",
+      "explanation": "The company settled a copyright and software-licensing case for $100,000 after using pirated software."
+    },
+    {
+      "question": "Which Sri Lankan law provides legal recognition for electronic contracts and e-signatures?",
+      "option_a": "A. Computer Crime Act No. 24 of 2007",
+      "option_b": "B. Electronic Transactions Act No. 19 of 2006",
+      "option_c": "C. CSSL Code of Ethics",
+      "option_d": "D. TRCSL regulations only",
+      "correct_answer": "B",
+      "explanation": "The Electronic Transactions Act No. 19 of 2006 gives legal validity to electronic contracts and signatures in Sri Lanka."
+    },
+    {
+      "question": "Freeware is best described as:",
+      "option_a": "A. Software whose source code must always be published under GPL",
+      "option_b": "B. Software that is free to use but whose source code is not necessarily open",
+      "option_c": "C. Software that requires payment after a trial period",
+      "option_d": "D. Fully proprietary software with no free version",
+      "correct_answer": "B",
+      "explanation": "Freeware can be used without payment, but the source code may remain closed."
+    },
+    {
+      "question": "Shareware typically means:",
+      "option_a": "A. Completely free and open-source software",
+      "option_b": "B. A trial version that requires payment for full features",
+      "option_c": "C. Software owned by the government",
+      "option_d": "D. Software that cannot be modified under any circumstances",
+      "correct_answer": "B",
+      "explanation": "Shareware provides a limited trial; full functionality usually requires a license fee."
+    },
+    {
+      "question": "Which best practice is listed for IT professionals in the lecture?",
+      "option_a": "A. Never update software to avoid compatibility issues",
+      "option_b": "B. Strong passwords & authentication, regular backups, security patches, access control and compliance",
+      "option_c": "C. Sharing all passwords among team members for convenience",
+      "option_d": "D. Ignoring data-protection laws if the company is small",
+      "correct_answer": "B",
+      "explanation": "Best practices include strong authentication, backups, updates, cybersecurity awareness, access control, privacy protection, documentation and legal compliance."
+    },
+    {
+      "question": "Under the CSSL Code of Ethics, ‘Competence’ requires professionals to:",
+      "option_a": "A. Accept any project regardless of skill level",
+      "option_b": "B. Accept only work they are qualified to perform and continuously improve their knowledge",
+      "option_c": "C. Never share knowledge with others",
+      "option_d": "D. Focus solely on profit",
+      "correct_answer": "B",
+      "explanation": "Competence means taking only work one is qualified for, lifelong learning and delivering quality services."
+    },
+    {
+      "question": "The ‘Adding Value to Sri Lanka’ principle of the CSSL Code emphasizes:",
+      "option_a": "A. Using ICT only for personal gain",
+      "option_b": "B. Using ICT to improve society, support national digital transformation and develop solutions for national development",
+      "option_c": "C. Avoiding any contribution to local projects",
+      "option_d": "D. Exporting all software without local benefit",
+      "correct_answer": "B",
+      "explanation": "This value encourages ICT professionals to contribute to Sri Lanka’s social and economic development."
+    },
+    {
+      "question": "In the Priya ‘Helpful Developer’ case study, the primary legal issue is:",
+      "option_a": "A. Unauthorized access to customer data",
+      "option_b": "B. Use of proprietary software without proper licenses (copyright infringement)",
+      "option_c": "C. AI bias in the project",
+      "option_d": "D. Failure to report a data breach",
+      "correct_answer": "B",
+      "explanation": "The company is using proprietary tools without purchasing licenses, which violates copyright and software-licensing law."
+    },
+    {
+      "question": "What ethical dilemma does Priya face in the case study?",
+      "option_a": "A. Whether to delete customer data",
+      "option_b": "B. Pressure to deliver results quickly versus the obligation to respect intellectual property and professional integrity",
+      "option_c": "C. Whether to open-source the entire product",
+      "option_d": "D. Whether to ignore cybersecurity patches",
+      "correct_answer": "B",
+      "explanation": "She knows the use of unlicensed software is illegal yet faces managerial pressure and team delivery deadlines."
+    },
+    {
+      "question": "In the Data Breach Dilemma case, the CEO’s desire to hide the breach primarily violates:",
+      "option_a": "A. Only trademark law",
+      "option_b": "B. Legal breach-notification duties and ethical principles of transparency, honesty and responsibility to customers",
+      "option_c": "C. Open-source license terms",
+      "option_d": "D. Patent filing requirements",
+      "correct_answer": "B",
+      "explanation": "Hiding a breach that exposed personal data breaches both legal notification obligations and CSSL values of honesty and responsibility."
+    },
+    {
+      "question": "Which step of the ETHICAL decision-making framework involves identifying the people or parties affected by the decision?",
+      "option_a": "A. E – Evaluate the situation",
+      "option_b": "B. T – Think about stakeholders",
+      "option_c": "C. H – Highlight legal requirements",
+      "option_d": "D. L – Learn and reflect",
+      "correct_answer": "B",
+      "explanation": "‘T – Think about stakeholders’ requires consideration of everyone impacted by the decision."
+    },
+    {
+      "question": "An IT consultant is offered a lucrative contract by a competitor that requires using knowledge developed for the current client (no non-compete signed). Which CSSL value is most directly at risk?",
+      "option_a": "A. Adding Value to Sri Lanka",
+      "option_b": "B. Responsibility and Integrity (protecting confidential information and avoiding conflicts of interest)",
+      "option_c": "C. Professional Development only",
+      "option_d": "D. Competence in programming languages",
+      "correct_answer": "B",
+      "explanation": "Using a client’s confidential techniques for a competitor creates a conflict of interest and risks disclosure of trade secrets."
+    },
+    {
+      "question": "For a cash-strapped Sri Lankan startup building an educational app, which database choice is generally most suitable from a licensing and cost perspective?",
+      "option_a": "A. A proprietary commercial database with high annual fees",
+      "option_b": "B. MySQL under the GPL open-source license",
+      "option_c": "C. Any freeware database that prohibits commercial use",
+      "option_d": "D. A closed-source database that cannot be modified",
+      "correct_answer": "B",
+      "explanation": "MySQL (GPL) is free to use, source is available, and is widely accepted for commercial applications when license terms are respected."
+    },
+    {
+      "question": "VS Code is distributed under which type of license?",
+      "option_a": "A. Proprietary closed-source",
+      "option_b": "B. Open-source MIT license",
+      "option_c": "C. Shareware requiring payment after 30 days",
+      "option_d": "D. GPL only",
+      "correct_answer": "B",
+      "explanation": "VS Code is open-source under the MIT license, allowing free use, modification and distribution with minimal restrictions."
+    },
+    {
+      "question": "Adobe Creative Cloud is an example of:",
+      "option_a": "A. Open-source software",
+      "option_b": "B. Proprietary software requiring a subscription license",
+      "option_c": "C. Freeware with unrestricted modification rights",
+      "option_d": "D. Public-domain software",
+      "correct_answer": "B",
+      "explanation": "Adobe Creative Cloud is proprietary; use is governed by a paid subscription license with restrictions on copying and redistribution."
+    },
+    {
+      "question": "Which statement about open-source software is FALSE?",
+      "option_a": "A. Source code is available",
+      "option_b": "B. It can never be used for commercial purposes",
+      "option_c": "C. Specific license terms (GPL, MIT, Apache) must be followed",
+      "option_d": "D. Modification is often permitted under the license",
+      "correct_answer": "B",
+      "explanation": "Many open-source licenses explicitly allow commercial use provided the license conditions are met."
+    },
+    {
+      "question": "Electronic signatures in Sri Lanka:",
+      "option_a": "A. Have no legal recognition",
+      "option_b": "B. Can have legal validity under the Electronic Transactions Act",
+      "option_c": "C. Are valid only for government contracts",
+      "option_d": "D. Require physical ink to be valid",
+      "correct_answer": "B",
+      "explanation": "The Electronic Transactions Act No. 19 of 2006 grants legal recognition to electronic signatures when proper conditions are satisfied."
+    },
+    {
+      "question": "Which of the following is a correct statement about regulatory compliance?",
+      "option_a": "A. It is optional for small IT companies",
+      "option_b": "B. Failure to comply can result in fines, legal action and reputational damage",
+      "option_c": "C. It only applies to hardware manufacturers",
+      "option_d": "D. It replaces the need for ethical behaviour",
+      "correct_answer": "B",
+      "explanation": "Regulatory compliance protects customers and the organization; non-compliance carries significant legal and business risks."
+    },
+    {
+      "question": "HIPAA is the regulatory framework primarily concerned with:",
+      "option_a": "A. Payment card data",
+      "option_b": "B. Healthcare data privacy and security",
+      "option_c": "C. Telecommunications licensing in Sri Lanka",
+      "option_d": "D. Open-source software distribution",
+      "correct_answer": "B",
+      "explanation": "HIPAA (Health Insurance Portability and Accountability Act) governs the protection of personal health information."
+    },
+    {
+      "question": "TRCSL is the regulatory body relevant to which sector in Sri Lanka?",
+      "option_a": "A. Healthcare only",
+      "option_b": "B. Telecommunications",
+      "option_c": "C. Banking card payments",
+      "option_d": "D. Software patent examination",
+      "correct_answer": "B",
+      "explanation": "TRCSL (Telecommunications Regulatory Commission of Sri Lanka) regulates the telecom sector."
+    },
+    {
+      "question": "Which action best demonstrates the CSSL value of Honesty?",
+      "option_a": "A. Claiming sole credit for a team project",
+      "option_b": "B. Being truthful in professional work, avoiding plagiarism and giving proper credit",
+      "option_c": "C. Hiding a known security vulnerability to protect reputation",
+      "option_d": "D. Using unlicensed software to meet a deadline",
+      "correct_answer": "B",
+      "explanation": "Honesty requires truthfulness, avoidance of deception and proper attribution of others’ work."
+    },
+    {
+      "question": "A key difference between proprietary and open-source software is:",
+      "option_a": "A. Proprietary software is always free",
+      "option_b": "B. Proprietary software is owned by a company with restrictions on use, modification and sharing; open-source makes source code available under license terms",
+      "option_c": "C. Open-source software cannot be used commercially",
+      "option_d": "D. Proprietary software always provides source code",
+      "correct_answer": "B",
+      "explanation": "Proprietary licenses restrict use and modification; open-source licenses grant access to source code under defined conditions."
+    },
+    {
+      "question": "When applying the ETHICAL framework, the step ‘H – Highlight legal requirements’ requires the professional to:",
+      "option_a": "A. Ignore all laws if they conflict with business goals",
+      "option_b": "B. Identify and understand the relevant laws, regulations and contractual obligations that apply to the situation",
+      "option_c": "C. Focus only on ethical principles and never on law",
+      "option_d": "D. Delay any decision until all laws worldwide are reviewed",
+      "correct_answer": "B",
+      "explanation": "This step ensures the decision is grounded in applicable legal obligations before ethical principles are applied."
+    },
+    {
+      "question": "Which of the following best describes the ethical stance on collecting user data to improve products when users do not fully understand how the data will be used?",
+      "option_a": "A. Always ethical because product improvement benefits everyone",
+      "option_b": "B. Raises serious privacy and transparency concerns; informed consent and clear communication are required",
+      "option_c": "C. Irrelevant because data collection is never regulated",
+      "option_d": "D. Acceptable only for open-source projects",
+      "correct_answer": "B",
+      "explanation": "Ethical data practices require transparency, informed consent and respect for privacy even when the goal is product improvement."
+    },
+    {
+      "question": "In a scenario where an IT professional discovers a data breach three months after it occurred, the ethically and legally preferred course of action is:",
+      "option_a": "A. Quietly fix the vulnerability and never inform customers",
+      "option_b": "B. Notify affected customers and relevant authorities as required, remediate the issue, and improve security practices",
+      "option_c": "C. Delete all logs to erase evidence",
+      "option_d": "D. Wait until the next annual report to mention it",
+      "correct_answer": "B",
+      "explanation": "Both legal notification duties and ethical principles of honesty, responsibility and protection of individuals require timely disclosure and remediation."
+    },
+    {
+      "question": "Which statement about personal liability of IT professionals for data breaches is most accurate in the context of the lecture and tutorial?",
+      "option_a": "A. IT professionals can never be held personally responsible",
+      "option_b": "B. Personal liability may arise if the professional acted negligently, violated professional codes, or ignored known security obligations",
+      "option_c": "C. Only the CEO is ever liable",
+      "option_d": "D. Liability is automatic for every employee in the IT department",
+      "correct_answer": "B",
+      "explanation": "While organizational liability is primary, individual professionals can face consequences for negligence, code-of-ethics violations or deliberate misconduct."
+    },
+    {
+      "question": "When choosing an operating system for a cost-sensitive educational startup in Sri Lanka, Ubuntu is often preferred over Windows because:",
+      "option_a": "A. Ubuntu is proprietary and more secure",
+      "option_b": "B. Ubuntu is open-source, free of license fees, and allows modification and redistribution under its license",
+      "option_c": "C. Windows is open-source",
+      "option_d": "D. Ubuntu cannot run educational software",
+      "correct_answer": "B",
+      "explanation": "Ubuntu (and similar Linux distributions) eliminate proprietary licensing costs and provide the freedom typical of open-source software."
+    },
+    {
+      "question": "The ‘L – Learn and reflect’ step of the ETHICAL framework emphasizes:",
+      "option_a": "A. Never changing one’s decision after acting",
+      "option_b": "B. Reviewing the outcome of the decision, learning from the experience, and improving future ethical decision-making",
+      "option_c": "C. Documenting only successful outcomes",
+      "option_d": "D. Ignoring stakeholder feedback",
+      "correct_answer": "B",
+      "explanation": "Reflection closes the decision cycle and builds professional ethical competence over time."
+    },
+    {
+      "question": "Which of the following is a correct application of the CSSL principle of Professional Development?",
+      "option_a": "A. Refusing to learn new technologies after graduation",
+      "option_b": "B. Keeping up with emerging technologies, engaging in lifelong learning, and sharing knowledge",
+      "option_c": "C. Avoiding any professional certifications",
+      "option_d": "D. Focusing solely on current job tasks without broader learning",
+      "correct_answer": "B",
+      "explanation": "Professional Development requires continuous learning and knowledge sharing within the ICT community."
+    },
+    {
+      "question": "In the context of access control, role-based permissions mean:",
+      "option_a": "A. Every user receives administrator rights",
+      "option_b": "B. Users are granted only the access rights necessary for their specific job roles (least privilege)",
+      "option_c": "C. Access is never monitored",
+      "option_d": "D. Passwords are shared among all employees",
+      "correct_answer": "B",
+      "explanation": "Role-based access control implements the principle of least privilege, reducing the risk of unauthorized actions."
+    },
+    {
+      "question": "Which real-world case best illustrates the legal and ethical risks of using unlicensed proprietary software?",
+      "option_a": "A. Cambridge Analytica",
+      "option_b": "B. Pratibha Syntex",
+      "option_c": "C. Amazon AI recruitment",
+      "option_d": "D. Uber 2016 breach",
+      "correct_answer": "B",
+      "explanation": "Pratibha Syntex settled a copyright infringement case after using unlicensed Microsoft and Adobe software."
+    },
+    {
+      "question": "A professional who accepts a project outside their area of competence primarily violates which CSSL core value?",
+      "option_a": "A. Adding Value to Sri Lanka",
+      "option_b": "B. Competence",
+      "option_c": "C. Professionalism only in appearance",
+      "option_d": "D. Honesty about project deadlines",
+      "correct_answer": "B",
+      "explanation": "Competence requires accepting only work one is qualified to perform and delivering quality outcomes."
+    }
+  ]
+}

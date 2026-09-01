@@ -1,0 +1,949 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes entrepreneurship?",
+      "option_a": "Working within an established organization while following assigned responsibilities",
+      "option_b": "Identifying opportunities, developing and organizing a business, managing operations, and accepting associated risks and uncertainties in pursuit of profit",
+      "option_c": "Managing only the technical activities of an established company",
+      "option_d": "Creating products without considering customers or market demand",
+      "correct_answer": "B",
+      "explanation": "Entrepreneurship involves identifying opportunities, creating and managing a business, and accepting risks and uncertainties while pursuing profit."
+    },
+    {
+      "question": "Which activity is most characteristic of an entrepreneur rather than a person following a traditional career path?",
+      "option_a": "Performing only assigned responsibilities",
+      "option_b": "Receiving a fixed salary from an established organization",
+      "option_c": "Identifying a market gap and creating a new solution to address it",
+      "option_d": "Following an organization's existing business model without modification",
+      "correct_answer": "C",
+      "explanation": "Entrepreneurs identify opportunities and create new products, services, or business models."
+    },
+    {
+      "question": "Which is a potential advantage of entrepreneurship compared with a traditional career path?",
+      "option_a": "Lower personal and financial risk",
+      "option_b": "Guaranteed income",
+      "option_c": "Potential for greater financial rewards and growth opportunities",
+      "option_d": "No responsibility for business outcomes",
+      "correct_answer": "C",
+      "explanation": "Entrepreneurship involves greater risk but can provide greater financial rewards and growth opportunities."
+    },
+    {
+      "question": "Which statement correctly describes the risk difference between entrepreneurship and a traditional career path?",
+      "option_a": "Entrepreneurship generally involves higher personal and financial risk",
+      "option_b": "Traditional employment always involves higher financial risk",
+      "option_c": "Both paths have exactly the same level of risk",
+      "option_d": "Entrepreneurship eliminates uncertainty through innovation",
+      "correct_answer": "A",
+      "explanation": "The lecture contrasts entrepreneurship's higher personal and financial risk with the generally lower risk of a traditional career."
+    },
+    {
+      "question": "What does opportunity recognition involve in an entrepreneurial mindset?",
+      "option_a": "Avoiding problems because they indicate business risk",
+      "option_b": "Observing the environment to identify unmet needs, market gaps, and emerging trends",
+      "option_c": "Copying established competitors without modification",
+      "option_d": "Waiting for customers to define every product feature",
+      "correct_answer": "B",
+      "explanation": "Opportunity recognition involves identifying unmet needs, market gaps, and emerging trends and viewing problems as opportunities."
+    },
+    {
+      "question": "Which characteristic of an entrepreneurial mindset involves exploring new approaches to solve problems?",
+      "option_a": "Creativity and innovation",
+      "option_b": "Financial feasibility",
+      "option_c": "Operational planning",
+      "option_d": "Risk avoidance",
+      "correct_answer": "A",
+      "explanation": "Creativity and innovation involve thinking beyond conventional solutions and exploring new ways to solve problems."
+    },
+    {
+      "question": "What is meant by calculated risk-taking?",
+      "option_a": "Avoiding every uncertain business decision",
+      "option_b": "Taking risks without considering possible consequences",
+      "option_c": "Assessing potential outcomes and making informed decisions despite uncertainty",
+      "option_d": "Investing all available resources in the first business idea",
+      "correct_answer": "C",
+      "explanation": "Calculated risk-taking means assessing potential outcomes and making informed decisions rather than blindly accepting or avoiding risk."
+    },
+    {
+      "question": "An entrepreneur's product fails its first pilot test, but the entrepreneur studies the mistakes, changes the product, and tries again. Which mindset characteristic is most evident?",
+      "option_a": "Resilience and perseverance",
+      "option_b": "Fixed thinking",
+      "option_c": "Risk elimination",
+      "option_d": "Traditional career planning",
+      "correct_answer": "A",
+      "explanation": "Resilience and perseverance involve learning from setbacks, adapting, and continuing despite failure."
+    },
+    {
+      "question": "Why is customer-centric thinking important for entrepreneurs?",
+      "option_a": "It allows entrepreneurs to avoid collecting feedback",
+      "option_b": "It focuses on understanding customer needs and delivering real value",
+      "option_c": "It guarantees that competitors will leave the market",
+      "option_d": "It removes the need for product development",
+      "correct_answer": "B",
+      "explanation": "Customer-centric entrepreneurs focus on customer needs, value, feedback, and continuous improvement."
+    },
+    {
+      "question": "Which characteristic enables entrepreneurs to adjust their strategies when their assumptions prove incorrect?",
+      "option_a": "Continuous learning and adaptability",
+      "option_b": "Fixed planning",
+      "option_c": "Risk avoidance",
+      "option_d": "Organizational dependence",
+      "correct_answer": "A",
+      "explanation": "Continuous learning and adaptability require entrepreneurs to remain open to feedback, experiment, and adjust strategies."
+    },
+    {
+      "question": "Which entrepreneurial characteristic focuses on having a clear future direction and inspiring others to achieve it?",
+      "option_a": "Market uncertainty",
+      "option_b": "Vision and leadership",
+      "option_c": "Financial feasibility",
+      "option_d": "Pilot testing",
+      "correct_answer": "B",
+      "explanation": "Vision and leadership involve establishing a clear future direction and inspiring others to work toward it."
+    },
+    {
+      "question": "A developer notices that rural farmers struggle to obtain current market prices and proposes a mobile application to solve the problem. Which entrepreneurial characteristic is demonstrated first?",
+      "option_a": "Opportunity recognition",
+      "option_b": "Talent retention",
+      "option_c": "Financial risk management",
+      "option_d": "Business scaling",
+      "correct_answer": "A",
+      "explanation": "The developer observes a real unmet need and identifies it as an opportunity for innovation."
+    },
+    {
+      "question": "Which statement best distinguishes entrepreneurship from intrapreneurship?",
+      "option_a": "Entrepreneurship occurs only in technology companies, while intrapreneurship occurs in non-technical companies",
+      "option_b": "Entrepreneurship creates and manages a new venture, while intrapreneurship involves entrepreneurial activities within an existing organization",
+      "option_c": "Entrepreneurship involves no risk, while intrapreneurship involves all business risk",
+      "option_d": "Intrapreneurship always creates an independent company",
+      "correct_answer": "B",
+      "explanation": "Entrepreneurs create new ventures, whereas intrapreneurs innovate within an existing organization's resources and strategic framework."
+    },
+    {
+      "question": "An employee develops a new digital service using the resources of the company where they work. Which concept best describes this activity?",
+      "option_a": "Traditional employment",
+      "option_b": "Intrapreneurship",
+      "option_c": "External entrepreneurship",
+      "option_d": "Business liquidation",
+      "correct_answer": "B",
+      "explanation": "Intrapreneurship involves generating innovative ideas or business opportunities within an existing organization using its resources."
+    },
+    {
+      "question": "Which sequence correctly represents the seven key stages of the entrepreneurship process?",
+      "option_a": "Business Planning → Idea Generation → Launch → Feasibility → Scaling → Opportunity Identification → Validation",
+      "option_b": "Idea Generation → Opportunity Identification → Feasibility Analysis → Business Planning → Product Development and Validation → Business Launch → Growth and Scaling",
+      "option_c": "Opportunity Identification → Idea Generation → Launch → Business Planning → Feasibility → Scaling → Validation",
+      "option_d": "Idea Generation → Business Launch → Opportunity Identification → Scaling → Feasibility → Validation → Business Planning",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies seven stages beginning with Idea Generation and progressing through Opportunity Identification, Feasibility Analysis, Business Planning, Product Development and Validation, Business Launch, and Growth and Scaling."
+    },
+    {
+      "question": "An entrepreneur observes customer frustrations and emerging technology trends to create a possible business idea. Which stage is this?",
+      "option_a": "Idea Generation",
+      "option_b": "Business Launch",
+      "option_c": "Growth and Scaling",
+      "option_d": "Financial Risk Management",
+      "correct_answer": "A",
+      "explanation": "Idea Generation begins by identifying problems, needs, or opportunities that could be addressed through an innovative solution."
+    },
+    {
+      "question": "After generating an idea for an online tutoring platform, an entrepreneur investigates customer demand, competitors, and the value the platform could provide. Which stage is being performed?",
+      "option_a": "Business Launch",
+      "option_b": "Opportunity Identification",
+      "option_c": "Growth and Scaling",
+      "option_d": "Talent Retention",
+      "correct_answer": "B",
+      "explanation": "Opportunity Identification evaluates whether an idea represents a viable opportunity by examining demand, customers, competition, and value."
+    },
+    {
+      "question": "What is the primary purpose of Opportunity Identification?",
+      "option_a": "To immediately launch the product",
+      "option_b": "To determine whether an idea represents a meaningful and viable business opportunity",
+      "option_c": "To recruit all employees required for scaling",
+      "option_d": "To calculate only the startup's tax obligations",
+      "correct_answer": "B",
+      "explanation": "Opportunity Identification validates whether an idea addresses a meaningful problem and has viable market potential."
+    },
+    {
+      "question": "Which activity most directly belongs to Feasibility Analysis?",
+      "option_a": "Designing a final advertising campaign after launch",
+      "option_b": "Assessing whether the proposed business can be successfully implemented and sustained",
+      "option_c": "Expanding into international markets after success",
+      "option_d": "Hiring employees after achieving market dominance",
+      "correct_answer": "B",
+      "explanation": "Feasibility Analysis determines whether the proposed business can realistically be implemented and sustained before major investment."
+    },
+    {
+      "question": "Which set contains the four major areas of feasibility analysis identified in the lecture?",
+      "option_a": "Technical, market, operational, and financial feasibility",
+      "option_b": "Legal, social, cultural, and political feasibility",
+      "option_c": "Marketing, advertising, branding, and sales feasibility",
+      "option_d": "Customer, employee, investor, and supplier feasibility",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies Technical Feasibility, Market Feasibility, Operational Feasibility, and Financial Feasibility."
+    },
+    {
+      "question": "A startup determines whether its proposed application can be technically built using available technology and resources. Which feasibility area is being assessed?",
+      "option_a": "Market feasibility",
+      "option_b": "Operational feasibility",
+      "option_c": "Technical feasibility",
+      "option_d": "Financial feasibility",
+      "correct_answer": "C",
+      "explanation": "Technical feasibility considers whether the proposed solution can be technically implemented."
+    },
+    {
+      "question": "A startup researches whether enough customers need its proposed product and whether competitors already provide similar services. Which feasibility area is most relevant?",
+      "option_a": "Technical feasibility",
+      "option_b": "Market feasibility",
+      "option_c": "Operational feasibility",
+      "option_d": "Financial feasibility",
+      "correct_answer": "B",
+      "explanation": "Market feasibility evaluates market demand and competitive conditions."
+    },
+    {
+      "question": "A startup examines whether it has the people, processes, and resources required to operate a proposed service. Which feasibility area is this?",
+      "option_a": "Operational feasibility",
+      "option_b": "Market feasibility",
+      "option_c": "Technical feasibility",
+      "option_d": "Financial feasibility",
+      "correct_answer": "A",
+      "explanation": "Operational feasibility considers whether the business can effectively operate using appropriate people, processes, and resources."
+    },
+    {
+      "question": "A founder estimates development costs, expected revenue, funding requirements, and whether the business can financially continue operating. Which feasibility area is being examined?",
+      "option_a": "Technical feasibility",
+      "option_b": "Operational feasibility",
+      "option_c": "Market feasibility",
+      "option_d": "Financial feasibility",
+      "correct_answer": "D",
+      "explanation": "Financial feasibility examines whether the venture can be financially supported and sustained."
+    },
+    {
+      "question": "Which item would normally be included in a business plan according to the lecture?",
+      "option_a": "Vision and mission",
+      "option_b": "Only source code documentation",
+      "option_c": "Only employee attendance records",
+      "option_d": "Only customer complaints",
+      "correct_answer": "A",
+      "explanation": "The business plan includes elements such as vision and mission, problem statement, solution, target customers, value proposition, revenue model, marketing strategy, operations, financial projections, and risk assessment."
+    },
+    {
+      "question": "Which business-plan component explains how the venture intends to generate income?",
+      "option_a": "Problem statement",
+      "option_b": "Revenue model",
+      "option_c": "Risk assessment",
+      "option_d": "Operational plan",
+      "correct_answer": "B",
+      "explanation": "The revenue model describes how the business intends to generate revenue."
+    },
+    {
+      "question": "Why is a business plan important in the entrepreneurship process?",
+      "option_a": "It transforms an idea into a structured roadmap for implementation and growth",
+      "option_b": "It guarantees market success",
+      "option_c": "It eliminates all business risks",
+      "option_d": "It removes the need for customer feedback",
+      "correct_answer": "A",
+      "explanation": "Business planning transforms an entrepreneurial idea into a structured roadmap covering implementation, operations, growth, finances, and risks."
+    },
+    {
+      "question": "What is the main purpose of a Minimum Viable Product (MVP)?",
+      "option_a": "To release every planned feature at once",
+      "option_b": "To create an initial product containing only core features needed to test customer interest",
+      "option_c": "To avoid testing with customers",
+      "option_d": "To guarantee profitability before launch",
+      "correct_answer": "B",
+      "explanation": "An MVP contains core features that allow entrepreneurs to test customer interest before investing heavily in a complete product."
+    },
+    {
+      "question": "A startup creates a basic version of a mobile application and releases it to 50 farmers in one district to collect feedback before developing additional features. Which stage is primarily represented?",
+      "option_a": "Opportunity Identification",
+      "option_b": "Business Planning",
+      "option_c": "Product Development and Validation",
+      "option_d": "Growth and Scaling",
+      "correct_answer": "C",
+      "explanation": "Developing a basic product, testing it with early users, and collecting feedback are activities of Product Development and Validation."
+    },
+    {
+      "question": "Which activity is most closely associated with Product Development and Validation?",
+      "option_a": "Entering new geographical markets",
+      "option_b": "Developing prototypes and testing with early adopters",
+      "option_c": "Preparing only tax documents",
+      "option_d": "Replacing all existing competitors",
+      "correct_answer": "B",
+      "explanation": "Product Development and Validation includes prototypes, pilot versions, early-adopter testing, customer feedback, and feature refinement."
+    },
+    {
+      "question": "Why should an entrepreneur avoid immediately building a complete product when customer demand is uncertain?",
+      "option_a": "A complete product can increase investment before customer interest has been validated",
+      "option_b": "Complete products can never be sold internationally",
+      "option_c": "Customer feedback is unnecessary for technology products",
+      "option_d": "MVPs are intended to replace all business planning permanently",
+      "correct_answer": "A",
+      "explanation": "Building only an MVP allows entrepreneurs to test customer interest before committing substantial resources to a complete solution."
+    },
+    {
+      "question": "After a product has been validated, the entrepreneur introduces it to the market and focuses on customer acquisition and market penetration. Which stage is this?",
+      "option_a": "Idea Generation",
+      "option_b": "Business Launch",
+      "option_c": "Feasibility Analysis",
+      "option_d": "Opportunity Identification",
+      "correct_answer": "B",
+      "explanation": "Business Launch follows product validation and focuses on introducing the product to the market, acquiring customers, and establishing operations."
+    },
+    {
+      "question": "Which activity is most appropriate during Business Launch?",
+      "option_a": "Identifying the original problem for the first time",
+      "option_b": "Marketing and promotion",
+      "option_c": "Determining whether the idea exists",
+      "option_d": "Creating a completely unrelated business idea",
+      "correct_answer": "B",
+      "explanation": "Business Launch includes marketing and promotion, customer relationships, sales channels, operational processes, and monitoring customer satisfaction."
+    },
+    {
+      "question": "A startup begins entering new geographical markets, adding services, and forming strategic partnerships after achieving initial success. Which stage is this?",
+      "option_a": "Idea Generation",
+      "option_b": "Opportunity Identification",
+      "option_c": "Growth and Scaling",
+      "option_d": "Feasibility Analysis",
+      "correct_answer": "C",
+      "explanation": "Growth and Scaling involves expanding revenue and customer reach through new markets, products, partnerships, investors, and technology."
+    },
+    {
+      "question": "What is the main objective of scaling a successful ICT business?",
+      "option_a": "Reduce the customer base",
+      "option_b": "Increase revenue and customer reach while maintaining operational efficiency",
+      "option_c": "Avoid all technological improvements",
+      "option_d": "Return the business to the idea-generation stage",
+      "correct_answer": "B",
+      "explanation": "Scaling aims to expand the business while maintaining operational efficiency and long-term sustainability."
+    },
+    {
+      "question": "Which factor has increased opportunities for ICT entrepreneurs by enabling access to applications, online banking, e-commerce, and digital services?",
+      "option_a": "Reduced internet access",
+      "option_b": "Smartphone and internet access",
+      "option_c": "Lower software availability",
+      "option_d": "Reduced digital connectivity",
+      "correct_answer": "B",
+      "explanation": "Smartphones and improved internet connectivity have increased the number of people able to access digital services."
+    },
+    {
+      "question": "Which of the following is an ICT opportunity associated with Artificial Intelligence?",
+      "option_a": "Manual warehouse storage",
+      "option_b": "Chatbots and predictive analytics",
+      "option_c": "Traditional paper filing",
+      "option_d": "Physical-only retail stores",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies chatbots, recommendation systems, predictive analytics, image recognition, NLP, and business automation as AI opportunities."
+    },
+    {
+      "question": "How do digital payments contribute to digital business opportunities?",
+      "option_a": "They make online transactions more convenient and secure",
+      "option_b": "They eliminate the need for e-commerce",
+      "option_c": "They prevent mobile applications from operating",
+      "option_d": "They restrict customers to physical stores",
+      "correct_answer": "A",
+      "explanation": "Mobile wallets, online banking, and QR-code payments support convenient and secure online transactions and enable digital business models."
+    },
+    {
+      "question": "Why does government digitization create opportunities for ICT entrepreneurs?",
+      "option_a": "It eliminates the need for technology",
+      "option_b": "It increases demand for ICT solutions for public services, records, and administrative processes",
+      "option_c": "It prevents businesses from serving government organizations",
+      "option_d": "It reduces the accessibility of digital services",
+      "correct_answer": "B",
+      "explanation": "Government digitization increases demand for ICT solutions and can improve efficiency, transparency, and accessibility."
+    },
+    {
+      "question": "Which option represents an opportunity area for ICT entrepreneurs identified in the lecture?",
+      "option_a": "Artificial Intelligence",
+      "option_b": "Only traditional agriculture without technology",
+      "option_c": "Manual bookkeeping exclusively",
+      "option_d": "Physical warehousing without digital systems",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies AI along with FinTech, EdTech, HealthTech, AgriTech, Tourism Tech, Cybersecurity, and E-Commerce as opportunity areas."
+    },
+    {
+      "question": "A Sri Lankan startup develops a platform that helps hospitals use digital systems to improve healthcare services. Which opportunity area does this best represent?",
+      "option_a": "HealthTech",
+      "option_b": "Tourism Tech",
+      "option_c": "E-Commerce",
+      "option_d": "Logistics only",
+      "correct_answer": "A",
+      "explanation": "HealthTech involves technology-driven solutions addressing healthcare needs."
+    },
+    {
+      "question": "A company creates a digital platform that helps farmers access information and services. Which opportunity area is most directly relevant?",
+      "option_a": "AgriTech",
+      "option_b": "FinTech",
+      "option_c": "Tourism Tech",
+      "option_d": "Social networking only",
+      "correct_answer": "A",
+      "explanation": "AgriTech applies ICT solutions to agricultural needs and opportunities."
+    },
+    {
+      "question": "Which combination best explains why digital products can be scaled globally?",
+      "option_a": "They require physical warehouses in every country",
+      "option_b": "They can be delivered through the internet, replicated at relatively low additional cost, and distributed electronically",
+      "option_c": "They always require local manufacturing",
+      "option_d": "They depend entirely on physical retail locations",
+      "correct_answer": "B",
+      "explanation": "Digital products have no inherent geographical limits, can serve many users with relatively little additional cost, and can be distributed electronically."
+    },
+    {
+      "question": "Why can software often reach international customers without establishing physical stores in every country?",
+      "option_a": "Software can be accessed and delivered through internet connectivity",
+      "option_b": "Software requires no infrastructure",
+      "option_c": "Software is always free",
+      "option_d": "International customers cannot use physical products",
+      "correct_answer": "A",
+      "explanation": "Digital products can be accessed from anywhere with an internet connection, reducing dependence on physical locations."
+    },
+    {
+      "question": "Which statement best explains the lower distribution cost of digital products?",
+      "option_a": "Digital products require more warehouses than physical products",
+      "option_b": "Digital products require manufacturing and shipping for every customer",
+      "option_c": "Digital products can be distributed electronically without manufacturing, warehousing, or shipping each copy",
+      "option_d": "Digital products must be transported internationally by air",
+      "correct_answer": "C",
+      "explanation": "Software, applications, and online services can be distributed electronically, avoiding many physical distribution costs."
+    },
+    {
+      "question": "Kapruka identified demand for convenient online shopping and also recognized overseas Sri Lankans who wanted to send products and gifts to family in Sri Lanka. What entrepreneurial lesson does this demonstrate?",
+      "option_a": "Technology prevents international expansion",
+      "option_b": "Market opportunities can be identified by understanding customer needs and served through digital platforms",
+      "option_c": "Physical stores are always superior to digital platforms",
+      "option_d": "Global customers cannot be served from Sri Lanka",
+      "correct_answer": "B",
+      "explanation": "Kapruka's example demonstrates identifying customer needs and using technology to serve both local and overseas markets."
+    },
+    {
+      "question": "Which challenge occurs when a startup cannot secure enough capital for product development, infrastructure, marketing, operations, and talent?",
+      "option_a": "Competition",
+      "option_b": "Funding",
+      "option_c": "Market uncertainty",
+      "option_d": "Talent retention",
+      "correct_answer": "B",
+      "explanation": "Funding is a major startup challenge because insufficient capital can restrict development, operations, marketing, and hiring."
+    },
+    {
+      "question": "Why may early-stage ICT startups struggle to attract investors?",
+      "option_a": "They always have excessive revenue",
+      "option_b": "They may have limited market traction, revenue, or proven business models",
+      "option_c": "They are legally prohibited from receiving investment",
+      "option_d": "They have no technology-related expenses",
+      "correct_answer": "B",
+      "explanation": "Early-stage startups often lack sufficient market traction, revenue, or evidence that their business model works."
+    },
+    {
+      "question": "Which funding sources are mentioned as options that entrepreneurs may rely on?",
+      "option_a": "Personal savings, family support, angel investors, grants, and venture capital",
+      "option_b": "Only government salaries",
+      "option_c": "Only customer complaints",
+      "option_d": "Only competitor funding",
+      "correct_answer": "A",
+      "explanation": "The lecture lists personal savings, family support, angel investors, grants, and venture capital among possible funding sources."
+    },
+    {
+      "question": "An ICT startup competes with large global companies that have stronger brands, larger customer bases, and greater financial resources. Which challenge is most evident?",
+      "option_a": "Competition",
+      "option_b": "Operational risk",
+      "option_c": "Government digitization",
+      "option_d": "Idea generation",
+      "correct_answer": "A",
+      "explanation": "ICT startups frequently compete against established and global companies with greater resources and stronger market positions."
+    },
+    {
+      "question": "Which strategy can help an ICT startup compete against larger companies?",
+      "option_a": "Ignoring customer experience",
+      "option_b": "Differentiating through innovation, niche focus, superior customer experience, or a unique value proposition",
+      "option_c": "Copying every competitor feature",
+      "option_d": "Avoiding all product improvements",
+      "correct_answer": "B",
+      "explanation": "Startups can compete by differentiating their offerings through innovation, customer experience, niche focus, or unique value propositions."
+    },
+    {
+      "question": "A startup cannot retain skilled developers because larger firms offer higher salaries, better benefits, and greater job security. Which challenge is most evident?",
+      "option_a": "Market uncertainty",
+      "option_b": "Talent retention",
+      "option_c": "Digital payments",
+      "option_d": "Global scalability",
+      "correct_answer": "B",
+      "explanation": "Talent retention is difficult when larger organizations can offer stronger compensation, benefits, and job security."
+    },
+    {
+      "question": "Which approach can help an ICT startup retain talented employees?",
+      "option_a": "Eliminating growth opportunities",
+      "option_b": "Building a positive work culture and providing growth opportunities",
+      "option_c": "Reducing employee responsibilities without explanation",
+      "option_d": "Avoiding professional development",
+      "correct_answer": "B",
+      "explanation": "A positive work culture and opportunities for growth are identified as important for retaining talent."
+    },
+    {
+      "question": "A startup launches a product without certainty about customer demand, and customer preferences change rapidly after launch. Which challenge is most directly involved?",
+      "option_a": "Market uncertainty",
+      "option_b": "Talent retention",
+      "option_c": "Funding only",
+      "option_d": "Intrapreneurship",
+      "correct_answer": "A",
+      "explanation": "Market uncertainty arises from incomplete knowledge about customer demand, changing preferences, industry trends, and economic conditions."
+    },
+    {
+      "question": "What should a startup do when changing customer preferences make its original assumptions questionable?",
+      "option_a": "Stop collecting feedback",
+      "option_b": "Continuously gather feedback, test assumptions, and adapt the product or business model",
+      "option_c": "Continue unchanged regardless of evidence",
+      "option_d": "Immediately abandon all technology",
+      "correct_answer": "B",
+      "explanation": "The lecture recommends continuous feedback, assumption testing, and adaptation to changing market needs."
+    },
+    {
+      "question": "Which is an example of a technology challenge for an ICT startup?",
+      "option_a": "The need to maintain scalability, reliability, security, and integration as technology evolves",
+      "option_b": "Having no need to update technology",
+      "option_c": "Having guaranteed system reliability",
+      "option_d": "Avoiding all cybersecurity threats automatically",
+      "correct_answer": "A",
+      "explanation": "Technology challenges include rapidly evolving technology, cybersecurity threats, reliability, scalability, data security, and integration."
+    },
+    {
+      "question": "An ICT startup must comply with requirements concerning data privacy, cybersecurity, intellectual property, taxation, and digital transactions. Which challenge does this represent?",
+      "option_a": "Regulatory barriers",
+      "option_b": "Opportunity recognition",
+      "option_c": "Product validation",
+      "option_d": "Talent development",
+      "correct_answer": "A",
+      "explanation": "Regulatory barriers include laws and regulations covering privacy, cybersecurity, intellectual property, taxation, digital transactions, and industry requirements."
+    },
+    {
+      "question": "Why can regulatory compliance be especially difficult for startups?",
+      "option_a": "Startups usually have unlimited legal resources",
+      "option_b": "Startups may have limited legal and administrative resources",
+      "option_c": "Regulations never affect ICT businesses",
+      "option_d": "Compliance is optional for technology companies",
+      "correct_answer": "B",
+      "explanation": "Understanding and complying with regulations can be difficult when startups have limited legal and administrative resources."
+    },
+    {
+      "question": "What is the Lean Startup approach described in the lecture?",
+      "option_a": "A method of building a complete product before contacting customers",
+      "option_b": "An approach that tests ideas with real customers through small experiments before heavy investment",
+      "option_c": "A method that eliminates customer feedback",
+      "option_d": "A strategy based entirely on long-term predictions",
+      "correct_answer": "B",
+      "explanation": "The Lean Startup approach, created by Eric Ries, emphasizes fast, evidence-based learning through experiments with real customers."
+    },
+    {
+      "question": "What does the Lean Startup approach seek to replace with fast, evidence-based learning?",
+      "option_a": "Customer feedback",
+      "option_b": "Small experiments",
+      "option_c": "Long business plans as the primary means of validating assumptions",
+      "option_d": "Product testing",
+      "correct_answer": "C",
+      "explanation": "The lecture describes Lean Startup as using small experiments and evidence-based learning instead of relying primarily on long business plans."
+    },
+    {
+      "question": "A founder believes university students will pay for a new study application. Instead of spending heavily on a complete system, the founder creates a small prototype and tests it with students. Which combination best describes the approach?",
+      "option_a": "Lean Startup and MVP-based validation",
+      "option_b": "Traditional scaling and market expansion",
+      "option_c": "Talent retention and regulatory compliance",
+      "option_d": "Financial risk elimination through planning",
+      "correct_answer": "A",
+      "explanation": "Testing an initial product with real customers before heavy investment reflects Lean Startup principles and MVP-based validation."
+    },
+    {
+      "question": "What is risk management in an ICT startup?",
+      "option_a": "The process of eliminating every possible uncertainty",
+      "option_b": "The process of identifying, assessing, and controlling potential events that could negatively affect startup objectives",
+      "option_c": "The process of maximizing competitors' risks",
+      "option_d": "The process of avoiding all business decisions",
+      "correct_answer": "B",
+      "explanation": "Risk management involves identifying, assessing, and controlling potential events that could negatively affect startup objectives."
+    },
+    {
+      "question": "A startup experiences software defects, system failures, cybersecurity threats, and scalability problems. Which risk category best covers these issues?",
+      "option_a": "Technical risk",
+      "option_b": "Financial risk",
+      "option_c": "Market risk",
+      "option_d": "Legal risk",
+      "correct_answer": "A",
+      "explanation": "Technical risks include software defects, system failures, cybersecurity threats, scalability problems, and unproven technologies."
+    },
+    {
+      "question": "A startup has insufficient funding, cash-flow shortages, unexpected expenses, and lower-than-expected revenue. Which risk category is most appropriate?",
+      "option_a": "Operational risk",
+      "option_b": "Financial risk",
+      "option_c": "Technical risk",
+      "option_d": "Market risk",
+      "correct_answer": "B",
+      "explanation": "Financial risks involve funding shortages, cash-flow problems, unexpected expenses, and lower-than-expected revenue."
+    },
+    {
+      "question": "A startup faces employee turnover, skill shortages, project delays, and ineffective management practices. Which risk category best describes these problems?",
+      "option_a": "Operational risk",
+      "option_b": "Market risk",
+      "option_c": "Legal risk",
+      "option_d": "Financial risk",
+      "correct_answer": "A",
+      "explanation": "Operational risks are associated with internal processes, people, resources, project delays, turnover, and management practices."
+    },
+    {
+      "question": "Customers do not adopt a product because their needs were misunderstood and preferences changed. Which risk category is most directly involved?",
+      "option_a": "Technical risk",
+      "option_b": "Market risk",
+      "option_c": "Operational risk",
+      "option_d": "Legal risk",
+      "correct_answer": "B",
+      "explanation": "Market risks arise from uncertainty about customer demand, changing preferences, competition, and market acceptance."
+    },
+    {
+      "question": "A startup violates data-protection requirements and faces possible penalties and reputational damage. Which risk category is involved?",
+      "option_a": "Legal risk",
+      "option_b": "Market risk",
+      "option_c": "Technical risk",
+      "option_d": "Operational risk",
+      "correct_answer": "A",
+      "explanation": "Legal risks include non-compliance with laws, regulations, contracts, intellectual property, data protection, and cybersecurity requirements."
+    },
+    {
+      "question": "Which risk-management strategy involves introducing a prototype to a small group of users before a full-scale launch?",
+      "option_a": "Pilot testing",
+      "option_b": "Market expansion",
+      "option_c": "Competitive elimination",
+      "option_d": "Revenue maximization",
+      "correct_answer": "A",
+      "explanation": "Pilot testing introduces a prototype or pilot version to a small user group to identify issues and validate customer needs."
+    },
+    {
+      "question": "What is the main benefit of pilot testing?",
+      "option_a": "It guarantees the product will become profitable",
+      "option_b": "It helps identify technical issues, validate customer needs, and reduce investment risk",
+      "option_c": "It eliminates all regulatory requirements",
+      "option_d": "It prevents competitors from entering the market",
+      "correct_answer": "B",
+      "explanation": "Pilot testing provides early evidence about technical performance and customer needs before significant investment."
+    },
+    {
+      "question": "What information does a risk register systematically record?",
+      "option_a": "Only employee salaries",
+      "option_b": "Identified risks, their likelihood, potential impact, and planned responses",
+      "option_c": "Only customer names",
+      "option_d": "Only marketing slogans",
+      "correct_answer": "B",
+      "explanation": "A risk register records identified risks along with likelihood, impact, and planned responses to support proactive management."
+    },
+    {
+      "question": "A startup prepares alternative procedures in case of a system failure, cyberattack, funding shortage, or operational disruption. Which risk mitigation strategy is this?",
+      "option_a": "Backup or contingency planning",
+      "option_b": "Opportunity identification",
+      "option_c": "Business launch",
+      "option_d": "Market segmentation",
+      "correct_answer": "A",
+      "explanation": "Backup or contingency plans prepare a startup for unexpected situations and reduce the impact of disruptions."
+    },
+    {
+      "question": "A startup has limited funding and is uncertain whether customers will value its proposed platform. Which approach best addresses both financial and market risk before a major investment?",
+      "option_a": "Build the complete platform immediately",
+      "option_b": "Use an MVP or pilot, test it with customers, collect feedback, and refine the product",
+      "option_c": "Avoid customers until development is complete",
+      "option_d": "Spend most of the funding on advertising before validation",
+      "correct_answer": "B",
+      "explanation": "MVP and pilot-based validation reduces the risk of spending heavily on a product before customer demand is established."
+    },
+    {
+      "question": "A startup's application is technically impressive, but research shows very few target customers have the problem it solves. Which conclusion is most appropriate?",
+      "option_a": "Technical feasibility automatically proves business viability",
+      "option_b": "The idea may fail opportunity identification or market feasibility despite technical feasibility",
+      "option_c": "The startup should immediately scale internationally",
+      "option_d": "The startup should ignore customer demand",
+      "correct_answer": "B",
+      "explanation": "A technically interesting idea is not necessarily a viable opportunity; meaningful customer need and market demand must also be validated."
+    },
+    {
+      "question": "An entrepreneur has a technically feasible application, but the estimated revenue cannot cover development and operating costs. Which issue is most directly indicated?",
+      "option_a": "Financial feasibility",
+      "option_b": "Opportunity recognition",
+      "option_c": "Talent retention",
+      "option_d": "Global distribution",
+      "correct_answer": "A",
+      "explanation": "If expected revenue cannot support the costs of the venture, financial feasibility is a major concern."
+    },
+    {
+      "question": "A startup identifies a real customer problem, confirms demand, evaluates feasibility, and prepares its business plan. What should logically happen next according to the entrepreneurship process?",
+      "option_a": "Immediately enter multiple international markets",
+      "option_b": "Develop and validate an initial product or service",
+      "option_c": "End the venture",
+      "option_d": "Return to identifying the original opportunity",
+      "correct_answer": "B",
+      "explanation": "After Idea Generation, Opportunity Identification, Feasibility Analysis, and Business Planning, the process moves to Product Development and Validation."
+    },
+    {
+      "question": "A startup has validated its MVP and now wants to attract customers, establish sales channels, and monitor customer satisfaction. Which stage should it enter?",
+      "option_a": "Business Launch",
+      "option_b": "Idea Generation",
+      "option_c": "Feasibility Analysis",
+      "option_d": "Opportunity Identification",
+      "correct_answer": "A",
+      "explanation": "Once the product has been validated, Business Launch focuses on introducing it to the market and acquiring customers."
+    },
+    {
+      "question": "A startup has strong initial customer adoption and now plans to add services, enter new geographical markets, form partnerships, and automate operations. Which stage is it entering?",
+      "option_a": "Business Planning",
+      "option_b": "Growth and Scaling",
+      "option_c": "Idea Generation",
+      "option_d": "Opportunity Identification",
+      "correct_answer": "B",
+      "explanation": "These are growth and scaling strategies intended to expand customer reach and revenue while maintaining operational efficiency."
+    },
+    {
+      "question": "Which scenario best demonstrates calculated risk-taking rather than reckless risk-taking?",
+      "option_a": "Investing all available money in an untested product without researching customers",
+      "option_b": "Launching a small pilot, assessing customer responses, and using the evidence to decide whether to invest further",
+      "option_c": "Ignoring competitors because innovation guarantees success",
+      "option_d": "Avoiding every opportunity because uncertainty exists",
+      "correct_answer": "B",
+      "explanation": "Calculated risk-taking involves evaluating possible outcomes and using evidence to make informed decisions under uncertainty."
+    },
+    {
+      "question": "A founder initially assumes students want a premium study platform. After testing an MVP, feedback shows students prefer a simpler low-cost version. The founder changes the product accordingly. Which combination of concepts is best demonstrated?",
+      "option_a": "Continuous learning, customer-centric thinking, and adaptability",
+      "option_b": "Talent retention and regulatory barriers",
+      "option_c": "Financial risk elimination and fixed planning",
+      "option_d": "Competition avoidance and traditional employment",
+      "correct_answer": "A",
+      "explanation": "The founder uses customer feedback to challenge assumptions, adapt the product, and focus on customer value."
+    },
+    {
+      "question": "A startup spends two years building a sophisticated e-commerce platform, but adoption is very low because customers prefer existing platforms and see insufficient value in switching. Which challenge was most likely underestimated?",
+      "option_a": "Market uncertainty",
+      "option_b": "Operational risk",
+      "option_c": "Legal risk",
+      "option_d": "Financial risk",
+      "correct_answer": "A",
+      "explanation": "The startup underestimated uncertainty about customer demand and market acceptance, which could have been tested earlier through MVP and customer validation."
+    },
+    {
+      "question": "A Sri Lankan startup has an innovative mobile application but cannot hire experienced software engineers because larger companies offer higher salaries and better benefits. What is the most evident challenge?",
+      "option_a": "Market uncertainty",
+      "option_b": "Regulatory barriers",
+      "option_c": "Talent retention",
+      "option_d": "Technical feasibility",
+      "correct_answer": "C",
+      "explanation": "The difficulty attracting and retaining skilled professionals because of stronger offers from larger organizations represents the talent-retention challenge."
+    },
+    {
+      "question": "A startup wants to develop a cybersecurity platform but has limited resources. It first tests a small working version with a selected group of organizations, records the risks and their likelihood and impact, and prepares alternatives for system failures. Which set of practices is being used?",
+      "option_a": "Pilot testing, risk register, and contingency planning",
+      "option_b": "Business launch, global scaling, and talent retention",
+      "option_c": "Opportunity generation, traditional employment, and advertising",
+      "option_d": "Market expansion, fixed planning, and risk avoidance",
+      "correct_answer": "A",
+      "explanation": "Testing with a small group is pilot testing, recording likelihood and impact is a risk register, and preparing alternatives is contingency planning."
+    },
+    {
+      "question": "An entrepreneur identifies that Sri Lankan tourists struggle to find reliable local tour guides. Before building the platform, she researches customer demand, competitors, and willingness to pay. What is the best interpretation?",
+      "option_a": "She is performing Business Launch",
+      "option_b": "She is performing Opportunity Identification",
+      "option_c": "She is performing Growth and Scaling",
+      "option_d": "She is performing Talent Retention",
+      "correct_answer": "B",
+      "explanation": "Researching demand, competitors, target customers, and potential value before development is part of Opportunity Identification."
+    },
+    {
+      "question": "A startup has validated a service for local customers and wants to serve overseas users without building physical stores in each country. Which characteristic of ICT products makes this strategy especially feasible?",
+      "option_a": "Digital products have no geographical limits and can be delivered electronically",
+      "option_b": "Digital products require physical manufacturing in every country",
+      "option_c": "Digital products cannot be replicated",
+      "option_d": "Digital products require international warehouses",
+      "correct_answer": "A",
+      "explanation": "Internet-based digital products can reach customers globally without requiring physical locations in every market."
+    },
+    {
+      "question": "A startup faces competition from a large international technology company. It cannot match the competitor's budget or customer base, so it focuses on a specialized local customer segment and provides a highly tailored service. Which strategy from the lecture does this best represent?",
+      "option_a": "Differentiation through niche market focus and customer value",
+      "option_b": "Avoidance of customer needs",
+      "option_c": "Elimination of innovation",
+      "option_d": "Traditional career development",
+      "correct_answer": "A",
+      "explanation": "Startups can compete with larger firms by focusing on a niche, providing superior customer experience, and creating a unique value proposition."
+    },
+    {
+      "question": "A founder has a promising idea but is unsure whether it is technically possible, whether customers will buy it, whether operations can support it, and whether it will be financially sustainable. What is the most appropriate next major activity?",
+      "option_a": "Growth and Scaling",
+      "option_b": "Feasibility Analysis",
+      "option_c": "Business Launch",
+      "option_d": "International expansion",
+      "correct_answer": "B",
+      "explanation": "Technical, market, operational, and financial concerns are precisely the four areas addressed during feasibility analysis."
+    },
+    {
+      "question": "A technology startup experiences a sudden cybersecurity attack that disrupts its service. Which combination represents the most appropriate response based on the lecture's risk-management concepts?",
+      "option_a": "Use contingency plans and manage the technical risk proactively",
+      "option_b": "Ignore the attack until customer demand increases",
+      "option_c": "Change the business idea without assessing the incident",
+      "option_d": "Focus only on advertising",
+      "correct_answer": "A",
+      "explanation": "Cybersecurity threats are technical risks, and contingency plans are specifically intended to reduce the impact of unexpected disruptions such as cyberattacks."
+    },
+    {
+      "question": "A startup's revenue is lower than expected, causing a cash-flow shortage that threatens operations. Which classification and response are most appropriate?",
+      "option_a": "Financial risk; assess and control the risk while using appropriate contingency measures",
+      "option_b": "Market opportunity; immediately expand internationally",
+      "option_c": "Technical risk; replace the entire development team",
+      "option_d": "Talent retention; stop collecting customer feedback",
+      "correct_answer": "A",
+      "explanation": "Insufficient revenue and cash-flow shortages are financial risks, which should be identified, assessed, controlled, and supported by contingency planning."
+    },
+    {
+      "question": "Which sequence best represents a disciplined approach for an entrepreneur who has identified a potentially valuable customer problem but has limited resources?",
+      "option_a": "Build the complete product → hire extensively → launch globally → seek feedback",
+      "option_b": "Identify the opportunity → assess feasibility → plan → build an MVP → validate with customers → launch → scale",
+      "option_c": "Launch globally → identify customers → assess feasibility → build an MVP",
+      "option_d": "Scale first → develop the idea → test customers → create a business plan",
+      "correct_answer": "B",
+      "explanation": "This sequence follows the lecture's entrepreneurship process and incorporates MVP-based validation before launch and scaling."
+    },
+    {
+      "question": "A founder notices that smartphone adoption and internet connectivity are increasing, digital payments are becoming common, and government services are being digitized. What is the strongest entrepreneurial interpretation?",
+      "option_a": "These developments can create favorable conditions and new opportunities for ICT entrepreneurship",
+      "option_b": "These developments reduce the need for ICT services",
+      "option_c": "These developments make global digital products impossible",
+      "option_d": "These developments eliminate market uncertainty",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies smartphone and internet access, digital payments, and government digitization as factors shaping new ICT opportunities in Sri Lanka."
+    },
+    {
+      "question": "A founder wants to create an AI-based recommendation system but discovers that the required technology infrastructure is too expensive for the current budget. Which two feasibility areas should receive particularly close attention?",
+      "option_a": "Technical and financial feasibility",
+      "option_b": "Market and operational feasibility only",
+      "option_c": "Marketing and branding feasibility",
+      "option_d": "Talent retention and competition only",
+      "correct_answer": "A",
+      "explanation": "The technical ability to implement the system and the financial ability to support the required infrastructure are both directly relevant."
+    },
+    {
+      "question": "Which scenario most clearly distinguishes a technically interesting concept from a genuine business opportunity?",
+      "option_a": "A developer builds advanced software and assumes customers will automatically want it",
+      "option_b": "An entrepreneur identifies a meaningful customer problem, researches demand and competitors, and evaluates the value of a proposed solution",
+      "option_c": "A startup purchases servers before identifying users",
+      "option_d": "A founder copies a competitor's product without researching customers",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes that a viable opportunity must address a meaningful problem and should be validated through demand, customer, competition, and value analysis."
+    },
+    {
+      "question": "A startup wants to reduce the probability of spending a large amount of money on a product that customers may reject. Which approach most directly addresses this objective?",
+      "option_a": "Develop an MVP, conduct pilot testing, gather customer feedback, and refine the product",
+      "option_b": "Avoid all customer interaction until after the full launch",
+      "option_c": "Invest all available funding before validating demand",
+      "option_d": "Focus exclusively on competitors rather than customers",
+      "correct_answer": "A",
+      "explanation": "MVP development, pilot testing, and customer feedback reduce uncertainty before significant investment and full-scale launch."
+    },
+    {
+      "question": "Which statement best captures the common lesson from the successful ICT examples discussed in the lecture?",
+      "option_a": "Successful technology companies succeed mainly by avoiding customer feedback",
+      "option_b": "Success commonly involves identifying real customer problems, leveraging technology, focusing on value, adapting to market needs, and building scalable models",
+      "option_c": "Successful companies must remain focused on one product forever",
+      "option_d": "International expansion is impossible for Sri Lankan ICT companies",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies customer problems, technology, customer value, adaptation, and scalable long-term business models as common success factors."
+    },
+    {
+      "question": "PickMe initially addressed local transportation challenges and later expanded into food delivery and logistics. Which entrepreneurial principle does this most strongly demonstrate?",
+      "option_a": "Adapting and expanding based on market needs",
+      "option_b": "Avoiding new opportunities",
+      "option_c": "Reducing customer reach",
+      "option_d": "Rejecting technology diversification",
+      "correct_answer": "A",
+      "explanation": "PickMe's expansion into additional services illustrates adapting and expanding based on market opportunities and customer needs."
+    },
+    {
+      "question": "Which example best demonstrates how an ICT entrepreneur could combine opportunity recognition with global scalability?",
+      "option_a": "Creating an online service for a clearly identified customer problem that can be delivered to users internationally through the internet",
+      "option_b": "Opening a physical store without researching customer needs",
+      "option_c": "Building a local service that requires manual delivery to every customer",
+      "option_d": "Developing software without identifying any users",
+      "correct_answer": "A",
+      "explanation": "Opportunity recognition identifies a meaningful problem, while digital delivery can allow the resulting product or service to reach customers globally."
+    },
+    {
+      "question": "A university student receives LKR 1 million to create an ICT venture. Which initial proposal would best reflect the entrepreneurship concepts in the lecture?",
+      "option_a": "Build a large application with every possible feature before speaking to students",
+      "option_b": "Identify a specific student problem, define target customers, develop a focused solution, establish a revenue model, and validate the idea with users",
+      "option_c": "Spend the entire amount on advertising before defining the problem",
+      "option_d": "Choose a technology first and search for customers afterward",
+      "correct_answer": "B",
+      "explanation": "The approach begins with a customer problem, defines the target market and value proposition, considers revenue, and uses validation before heavy investment."
+    },
+    {
+      "question": "A startup discovers through pilot testing that its customers strongly value one feature but ignore four other planned features. What is the most entrepreneurial response?",
+      "option_a": "Continue developing all features exactly as originally planned",
+      "option_b": "Use the evidence and customer feedback to refine the product and prioritize the valuable feature",
+      "option_c": "Stop collecting feedback because the original plan is already complete",
+      "option_d": "Immediately enter new geographical markets",
+      "correct_answer": "B",
+      "explanation": "Customer-centric thinking and continuous learning require the startup to adapt its product based on evidence from customers."
+    },
+    {
+      "question": "A startup has sufficient funding and strong technical capabilities, but customers do not perceive enough value in its product. Which conclusion is most appropriate?",
+      "option_a": "The startup is automatically ready for scaling",
+      "option_b": "Strong technical and financial resources do not by themselves establish market viability",
+      "option_c": "Customer feedback is irrelevant once funding is secured",
+      "option_d": "The startup should focus only on hiring more developers",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes that a technically interesting solution must solve a meaningful problem and provide real customer value."
+    },
+    {
+      "question": "An entrepreneur creates a business plan containing the problem statement, proposed solution, target customers, value proposition, revenue model, marketing strategy, operational plan, financial projections, and risk assessment. What stage does this represent?",
+      "option_a": "Business Planning",
+      "option_b": "Idea Generation",
+      "option_c": "Business Launch",
+      "option_d": "Growth and Scaling",
+      "correct_answer": "A",
+      "explanation": "These elements are specifically listed as components of a typical business plan."
+    },
+    {
+      "question": "A startup is deciding whether to use an unproven technology for its core product. The technology might provide competitive benefits but could also create reliability and scalability problems. What should the entrepreneur primarily do?",
+      "option_a": "Treat the uncertainty as irrelevant because innovation always succeeds",
+      "option_b": "Assess the technology-related risk and evaluate whether the technology can be reliably implemented and sustained",
+      "option_c": "Launch globally without testing",
+      "option_d": "Ignore scalability until after the company fails",
+      "correct_answer": "B",
+      "explanation": "Use of unproven technologies creates technical risk, requiring assessment of reliability, scalability, security, and implementation feasibility."
+    },
+    {
+      "question": "A startup wants to compete in a market dominated by established firms. It has fewer financial resources but has identified an underserved customer group. Which strategy is most consistent with the lecture?",
+      "option_a": "Focus on a niche market and create a unique value proposition",
+      "option_b": "Attempt to spend more than every competitor immediately",
+      "option_c": "Ignore customer needs and copy the largest competitor",
+      "option_d": "Avoid innovation to reduce uncertainty",
+      "correct_answer": "A",
+      "explanation": "Niche market focus and unique value propositions are ways startups can differentiate themselves from larger competitors."
+    },
+    {
+      "question": "An entrepreneur wants to minimize the impact of unexpected events such as cyberattacks, funding shortages, or infrastructure failures. Which action is most appropriate?",
+      "option_a": "Prepare backup or contingency plans",
+      "option_b": "Avoid documenting risks",
+      "option_c": "Ignore low-probability events completely",
+      "option_d": "Spend all resources on customer acquisition",
+      "correct_answer": "A",
+      "explanation": "Contingency plans provide alternative solutions for unexpected disruptions and improve business resilience."
+    },
+    {
+      "question": "Which statement provides the strongest explanation for why ICT professionals are well positioned for entrepreneurship?",
+      "option_a": "They can transform technical skills into scalable digital products and services for local and global markets",
+      "option_b": "They are guaranteed to receive investment",
+      "option_c": "They do not face market uncertainty",
+      "option_d": "They never need business skills",
+      "correct_answer": "A",
+      "explanation": "The lecture highlights that ICT professionals can transform their technical capabilities into scalable digital products and services."
+    },
+    {
+      "question": "A founder identifies a problem, confirms that customers care about it, evaluates technical and financial feasibility, and then builds a small version of the solution. Why is this progression preferable to immediately scaling the business?",
+      "option_a": "It allows the entrepreneur to reduce uncertainty and investment risk before pursuing large-scale growth",
+      "option_b": "It eliminates the need for a business model",
+      "option_c": "It guarantees the absence of competitors",
+      "option_d": "It prevents the product from being improved",
+      "correct_answer": "A",
+      "explanation": "The entrepreneurship process and Lean Startup principles emphasize validation and risk reduction before major investment and scaling."
+    }
+  ]
+}
