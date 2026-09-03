@@ -1,0 +1,1219 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of network security?",
+      "option_a": "To protect confidentiality, integrity, and availability of data and systems",
+      "option_b": "To prevent every employee from accessing the Internet",
+      "option_c": "To eliminate the need for security policies",
+      "option_d": "To replace physical security with firewalls",
+      "correct_answer": "A",
+      "explanation": "Network security protects confidentiality, integrity, and availability while involving people, processes, and technology."
+    },
+    {
+      "question": "Which security principle ensures that only authorised people or systems can access data?",
+      "option_a": "Availability",
+      "option_b": "Confidentiality",
+      "option_c": "Integrity",
+      "option_d": "Non-repudiation",
+      "correct_answer": "B",
+      "explanation": "Confidentiality prevents unauthorised disclosure or access to information."
+    },
+    {
+      "question": "Which CIA property is primarily violated when an attacker changes an authorised transaction without permission?",
+      "option_a": "Availability",
+      "option_b": "Confidentiality",
+      "option_c": "Integrity",
+      "option_d": "Authentication",
+      "correct_answer": "C",
+      "explanation": "Integrity means data remains accurate and is not altered without authorisation."
+    },
+    {
+      "question": "A company website is overwhelmed by malicious traffic and legitimate users cannot access it. Which CIA property is directly affected?",
+      "option_a": "Confidentiality",
+      "option_b": "Integrity",
+      "option_c": "Non-repudiation",
+      "option_d": "Availability",
+      "correct_answer": "D",
+      "explanation": "DoS and DDoS attacks primarily target availability by preventing legitimate users from accessing services."
+    },
+    {
+      "question": "Which statement best describes authentication?",
+      "option_a": "Determining what resources a verified user may access",
+      "option_b": "Determining whether a person or device is really who it claims to be",
+      "option_c": "Recording every action performed by a user",
+      "option_d": "Encrypting all information stored on a server",
+      "correct_answer": "B",
+      "explanation": "Authentication establishes identity; authorisation determines what an authenticated entity is allowed to do."
+    },
+    {
+      "question": "Which of the following is an example of something you know?",
+      "option_a": "Fingerprint",
+      "option_b": "Smart card",
+      "option_c": "Password",
+      "option_d": "Security token",
+      "correct_answer": "C",
+      "explanation": "Passwords and PINs are knowledge factors."
+    },
+    {
+      "question": "Which combination represents two different authentication factor categories?",
+      "option_a": "Password and PIN",
+      "option_b": "Fingerprint and facial recognition",
+      "option_c": "Password and security token",
+      "option_d": "Two different passwords",
+      "correct_answer": "C",
+      "explanation": "A password is something you know, while a token is something you have."
+    },
+    {
+      "question": "Why is multi-factor authentication generally stronger than using only a password?",
+      "option_a": "It makes passwords unnecessary in every implementation",
+      "option_b": "Compromising one factor alone may not be sufficient to authenticate",
+      "option_c": "It guarantees that an account cannot be attacked",
+      "option_d": "It automatically encrypts every network connection",
+      "correct_answer": "B",
+      "explanation": "MFA combines multiple factor categories, so compromising a single password does not necessarily provide access."
+    },
+    {
+      "question": "What does non-repudiation primarily provide?",
+      "option_a": "Proof that a party performed an action",
+      "option_b": "Protection against all malware",
+      "option_c": "Unlimited system availability",
+      "option_d": "Automatic network segmentation",
+      "correct_answer": "A",
+      "explanation": "Non-repudiation provides verifiable evidence that an identified party performed an action."
+    },
+    {
+      "question": "Which mechanisms are specifically associated with achieving non-repudiation in the lecture?",
+      "option_a": "Firewalls and VLANs",
+      "option_b": "Digital signatures and audit logging",
+      "option_c": "Antivirus and backups",
+      "option_d": "Port scanning and password attacks",
+      "correct_answer": "B",
+      "explanation": "Digital signatures and audit logs provide evidence connecting actions to identities."
+    },
+    {
+      "question": "Which term describes anything of value that an organisation wants to protect?",
+      "option_a": "Exploit",
+      "option_b": "Threat",
+      "option_c": "Asset",
+      "option_d": "Mitigation",
+      "correct_answer": "C",
+      "explanation": "An asset can be data, a server, a service, or even organisational reputation."
+    },
+    {
+      "question": "What is a vulnerability?",
+      "option_a": "The consequence of a successful attack",
+      "option_b": "A weakness that could be exploited",
+      "option_c": "A security control that blocks attacks",
+      "option_d": "A malicious actor",
+      "correct_answer": "B",
+      "explanation": "A vulnerability is a weakness such as a bug, misconfiguration, or missing patch."
+    },
+    {
+      "question": "Which term refers to anything with the potential to exploit a vulnerability and cause harm?",
+      "option_a": "Threat",
+      "option_b": "Impact",
+      "option_c": "Asset",
+      "option_d": "Control",
+      "correct_answer": "A",
+      "explanation": "A threat is something capable of exploiting a vulnerability and causing harm."
+    },
+    {
+      "question": "What is an exploit?",
+      "option_a": "The value of the protected system",
+      "option_b": "The specific method or tool used to take advantage of a vulnerability",
+      "option_c": "The consequence of an attack",
+      "option_d": "A policy used to train employees",
+      "correct_answer": "B",
+      "explanation": "An exploit is the specific technique or tool used to exploit a vulnerability."
+    },
+    {
+      "question": "Which term describes the actual event in which a threat uses an exploit against a vulnerability?",
+      "option_a": "Attack",
+      "option_b": "Risk",
+      "option_c": "Asset",
+      "option_d": "Mitigation",
+      "correct_answer": "A",
+      "explanation": "The attack is the actual event where the threat exploits the vulnerability."
+    },
+    {
+      "question": "What does impact represent in threat modeling?",
+      "option_a": "The likelihood that an attacker exists",
+      "option_b": "The weakness that an attacker discovers",
+      "option_c": "The real-world consequence of a successful attack",
+      "option_d": "The tool used by the attacker",
+      "correct_answer": "C",
+      "explanation": "Impact includes consequences such as data loss, downtime, financial cost, or reputational damage."
+    },
+    {
+      "question": "How is risk described in the lecture?",
+      "option_a": "The existence of any vulnerability",
+      "option_b": "The likelihood and impact of a threat exploiting a vulnerability",
+      "option_c": "The number of attackers targeting an organisation",
+      "option_d": "The number of security controls deployed",
+      "correct_answer": "B",
+      "explanation": "Risk combines the likelihood of exploitation with the resulting impact."
+    },
+    {
+      "question": "What is mitigation?",
+      "option_a": "A control or action used to reduce vulnerability, threat, or impact",
+      "option_b": "The attacker who performs reconnaissance",
+      "option_c": "The asset being protected",
+      "option_d": "The final consequence of an attack",
+      "correct_answer": "A",
+      "explanation": "Mitigation reduces overall risk by addressing weaknesses, blocking exploits, or limiting impact."
+    },
+    {
+      "question": "Which sequence best represents the threat-modeling process described in the lecture?",
+      "option_a": "Identify assets, identify threats, assess vulnerabilities, prioritise and mitigate by risk",
+      "option_b": "Install firewall, buy antivirus, identify users, document assets",
+      "option_c": "Identify attackers, encrypt everything, remove all services, disable Internet access",
+      "option_d": "Find exploits, launch attacks, identify assets, calculate impact",
+      "correct_answer": "A",
+      "explanation": "Threat modeling begins with assets, then considers threats and vulnerabilities before prioritising mitigations by risk."
+    },
+    {
+      "question": "A retailer has an unpatched web server containing valuable payment data. Financially motivated attackers are actively targeting the organisation. Which factor most strongly contributes to high risk?",
+      "option_a": "The data has little value",
+      "option_b": "The vulnerability is theoretical and cannot be exploited",
+      "option_c": "A valuable asset, known weakness, and motivated threat actor are present",
+      "option_d": "The server is located inside the company",
+      "correct_answer": "C",
+      "explanation": "High-value assets combined with known vulnerabilities and interested attackers create significant risk."
+    },
+    {
+      "question": "In the retailer example, which action is a mitigation?",
+      "option_a": "Copying the payment database after compromise",
+      "option_b": "Leaving the web server unpatched",
+      "option_c": "Enforcing strong administrator passwords and MFA",
+      "option_d": "Publishing the server's vulnerability",
+      "correct_answer": "C",
+      "explanation": "Strong passwords and MFA reduce the likelihood or impact of unauthorised access."
+    },
+    {
+      "question": "Why should security professionals prioritise vulnerabilities by risk rather than attempting to eliminate every vulnerability immediately?",
+      "option_a": "Because vulnerabilities have no security relevance",
+      "option_b": "Because organisations generally cannot eliminate every vulnerability",
+      "option_c": "Because mitigation increases the number of threats",
+      "option_d": "Because only physical vulnerabilities matter",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasises managing risk because eliminating every vulnerability is rarely practical."
+    },
+    {
+      "question": "What major change occurred as networks evolved from isolated LANs to Internet-connected systems?",
+      "option_a": "Physical access became the only possible attack method",
+      "option_b": "Remote attacks became possible",
+      "option_c": "Attack surfaces disappeared",
+      "option_d": "Security became unnecessary",
+      "correct_answer": "B",
+      "explanation": "Internet connectivity introduced remote attack possibilities that were not present in the same way on isolated LANs."
+    },
+    {
+      "question": "Why did cloud services and mobile devices increase an organisation's attack surface?",
+      "option_a": "They removed all external connectivity",
+      "option_b": "They introduced additional entry points and moved data beyond traditional boundaries",
+      "option_c": "They eliminated software vulnerabilities",
+      "option_d": "They guaranteed strong authentication",
+      "correct_answer": "B",
+      "explanation": "Cloud and mobile technologies create additional systems, connections, and locations that must be protected."
+    },
+    {
+      "question": "What is a major security characteristic of the 2020s+ environment described in the lecture?",
+      "option_a": "Organisations have returned to isolated LANs",
+      "option_b": "There are billions of devices and no fixed perimeter",
+      "option_c": "Only physical attacks remain relevant",
+      "option_d": "Remote work has reduced attack surface",
+      "correct_answer": "B",
+      "explanation": "IoT and remote work contribute to a highly distributed environment without a single fixed perimeter."
+    },
+    {
+      "question": "Which statement best captures the relationship between increased connectivity and attack surface?",
+      "option_a": "Every new capability necessarily eliminates an existing attack path",
+      "option_b": "More connectivity can create additional ways into an organisation",
+      "option_c": "Connectivity only affects availability",
+      "option_d": "Connectivity has no relationship with security",
+      "correct_answer": "B",
+      "explanation": "Remote access, cloud storage, and IoT capabilities can each introduce additional attack paths."
+    },
+    {
+      "question": "A hacker is authorised by a company to test its systems and report weaknesses. What type of hacker is this?",
+      "option_a": "Black hat",
+      "option_b": "Grey hat",
+      "option_c": "White hat",
+      "option_d": "Red hat",
+      "correct_answer": "C",
+      "explanation": "White hats are ethical hackers authorised to test systems."
+    },
+    {
+      "question": "Which hacker category is characterised by malicious exploitation for personal or financial gain?",
+      "option_a": "Black hat",
+      "option_b": "White hat",
+      "option_c": "Green hat",
+      "option_d": "Blue hat",
+      "correct_answer": "A",
+      "explanation": "Black hats maliciously exploit systems, commonly for personal or financial gain."
+    },
+    {
+      "question": "A person discovers a vulnerability without permission but does not appear to have malicious intent. Which classification best fits?",
+      "option_a": "White hat",
+      "option_b": "Grey hat",
+      "option_c": "Blue hat",
+      "option_d": "Green hat",
+      "correct_answer": "B",
+      "explanation": "Grey hats find vulnerabilities without permission but without necessarily having malicious intent."
+    },
+    {
+      "question": "Which hacker type is described as security professionals, often external or outsourced, who test an organisation's own systems?",
+      "option_a": "Blue hat",
+      "option_b": "Red hat",
+      "option_c": "Black hat",
+      "option_d": "Green hat",
+      "correct_answer": "A",
+      "explanation": "Blue hats are described as external or outsourced security professionals testing an organisation's systems."
+    },
+    {
+      "question": "Which hacker type aggressively targets black hats and may use illegal methods themselves?",
+      "option_a": "White hat",
+      "option_b": "Red hat",
+      "option_c": "Blue hat",
+      "option_d": "Green hat",
+      "correct_answer": "B",
+      "explanation": "Red hats aggressively target black hats and may themselves use unlawful techniques."
+    },
+    {
+      "question": "A newcomer with limited technical skill experiments with security tools and accidentally disrupts a system. Which category best fits?",
+      "option_a": "Green hat",
+      "option_b": "State-sponsored hacker",
+      "option_c": "Red hat",
+      "option_d": "Access broker",
+      "correct_answer": "A",
+      "explanation": "Green hats are newcomers learning security who may cause accidental harm."
+    },
+    {
+      "question": "What best distinguishes a script kiddie from a highly skilled attacker?",
+      "option_a": "Script kiddies only perform physical attacks",
+      "option_b": "Script kiddies generally run existing tools or scripts created by others",
+      "option_c": "Script kiddies are always government-funded",
+      "option_d": "Script kiddies always have malicious intent",
+      "correct_answer": "B",
+      "explanation": "Script kiddies typically have limited technical skill and rely on existing tools."
+    },
+    {
+      "question": "What is the primary role of an access and data broker?",
+      "option_a": "To physically guard servers",
+      "option_b": "To sell stolen access or data to other attackers",
+      "option_c": "To perform authorised penetration testing",
+      "option_d": "To design employee training",
+      "correct_answer": "B",
+      "explanation": "Access and data brokers sell stolen access or information rather than necessarily exploiting it themselves."
+    },
+    {
+      "question": "Which threat actor is typically highly resourced and may target strategic systems for a government?",
+      "option_a": "Script kiddie",
+      "option_b": "State-sponsored hacker",
+      "option_c": "Green hat",
+      "option_d": "Baiting attacker",
+      "correct_answer": "B",
+      "explanation": "State-sponsored hackers are funded by governments and may target high-value or strategic systems."
+    },
+    {
+      "question": "A group compromises a government website to protest a political decision and seeks publicity rather than payment. Which combination best describes the actor and motivation?",
+      "option_a": "Hacktivist and ideology/politics",
+      "option_b": "State-sponsored hacker and financial gain",
+      "option_c": "Script kiddie and revenge",
+      "option_d": "Access broker and espionage",
+      "correct_answer": "A",
+      "explanation": "Hacktivists are motivated by political or social causes and may seek to expose or disrupt opponents."
+    },
+    {
+      "question": "Which motivation is most closely associated with stealing government intelligence or intellectual property?",
+      "option_a": "Curiosity",
+      "option_b": "Espionage",
+      "option_c": "Financial gain",
+      "option_d": "Baiting",
+      "correct_answer": "B",
+      "explanation": "Espionage involves obtaining intelligence or intellectual property."
+    },
+    {
+      "question": "Which motivation is most directly associated with ransomware and selling stolen data?",
+      "option_a": "Financial gain",
+      "option_b": "Curiosity",
+      "option_c": "Political ideology",
+      "option_d": "Security research",
+      "correct_answer": "A",
+      "explanation": "Financial gain includes ransomware, fraud, and selling stolen information."
+    },
+    {
+      "question": "Which of the following is one of the four broad attack categories identified in the lecture?",
+      "option_a": "Database normalisation",
+      "option_b": "Social engineering",
+      "option_c": "Load balancing",
+      "option_d": "Data compression",
+      "correct_answer": "B",
+      "explanation": "The four broad categories are malware, social engineering, DoS/DDoS, and access/reconnaissance."
+    },
+    {
+      "question": "What distinguishes social engineering from a conventional software exploit?",
+      "option_a": "Social engineering primarily manipulates people",
+      "option_b": "Social engineering only targets routers",
+      "option_c": "Social engineering requires malware in every case",
+      "option_d": "Social engineering cannot affect network security",
+      "correct_answer": "A",
+      "explanation": "Social engineering attacks manipulate people using trust, urgency, authority, or fear."
+    },
+    {
+      "question": "What is malware?",
+      "option_a": "Any software used for system administration",
+      "option_b": "Software designed to damage, disrupt, or gain unauthorised access",
+      "option_c": "A physical security control",
+      "option_d": "A network topology",
+      "correct_answer": "B",
+      "explanation": "Malware is malicious software designed to damage, disrupt, or obtain unauthorised access."
+    },
+    {
+      "question": "Which is a possible malware delivery method identified in the lecture?",
+      "option_a": "Only physical cables",
+      "option_b": "Email attachments",
+      "option_c": "Only biometric scanners",
+      "option_d": "Only security cameras",
+      "correct_answer": "B",
+      "explanation": "Malware may be delivered through email attachments, malicious downloads, removable media, or exploited vulnerabilities."
+    },
+    {
+      "question": "What is the defining propagation characteristic of a virus?",
+      "option_a": "It automatically spreads across a network without user action",
+      "option_b": "It attaches to a legitimate file or program and spreads when that file is run or shared",
+      "option_c": "It always encrypts files",
+      "option_d": "It remains dormant until a specific date",
+      "correct_answer": "B",
+      "explanation": "A virus attaches to legitimate files or programs and spreads when those files are executed or shared."
+    },
+    {
+      "question": "What distinguishes a worm from a virus?",
+      "option_a": "A worm is always disguised as legitimate software",
+      "option_b": "A worm can self-replicate across a network without requiring user action",
+      "option_c": "A worm only records keystrokes",
+      "option_d": "A worm cannot spread between systems",
+      "correct_answer": "B",
+      "explanation": "Worms self-replicate and spread across networks without requiring a user to run an infected file."
+    },
+    {
+      "question": "What is the defining characteristic of a Trojan?",
+      "option_a": "It is disguised as legitimate software and relies on the user installing it",
+      "option_b": "It always self-replicates across networks",
+      "option_c": "It only activates after a specific date",
+      "option_d": "It exclusively encrypts files",
+      "correct_answer": "A",
+      "explanation": "A Trojan disguises itself as legitimate software and depends on the user installing it."
+    },
+    {
+      "question": "A malicious program automatically moves from one vulnerable computer to another without users opening infected files. Which malware type best fits?",
+      "option_a": "Trojan",
+      "option_b": "Worm",
+      "option_c": "Adware",
+      "option_d": "Logic bomb",
+      "correct_answer": "B",
+      "explanation": "Automatic self-replication across systems is characteristic of a worm."
+    },
+    {
+      "question": "A user downloads a program advertised as a useful utility, installs it, and unknowingly gives an attacker access. Which malware type best matches?",
+      "option_a": "Worm",
+      "option_b": "Trojan",
+      "option_c": "Botnet",
+      "option_d": "Logic bomb",
+      "correct_answer": "B",
+      "explanation": "A Trojan is disguised as legitimate software and relies on the victim installing it."
+    },
+    {
+      "question": "Which malware type encrypts victim files or systems and demands payment for a decryption key?",
+      "option_a": "Spyware",
+      "option_b": "Ransomware",
+      "option_c": "Adware",
+      "option_d": "Rootkit",
+      "correct_answer": "B",
+      "explanation": "Ransomware encrypts files or systems and demands payment for decryption."
+    },
+    {
+      "question": "Why can ransomware be particularly damaging to an organisation?",
+      "option_a": "It only displays advertisements",
+      "option_b": "It can prevent access to critical data and systems while demanding payment",
+      "option_c": "It only records browsing history",
+      "option_d": "It only affects physical security cameras",
+      "correct_answer": "B",
+      "explanation": "Ransomware can directly disrupt access to organisational data and systems, causing operational and financial damage."
+    },
+    {
+      "question": "Which malware secretly monitors activity and may exfiltrate keystrokes, credentials, or browsing information?",
+      "option_a": "Spyware",
+      "option_b": "Adware",
+      "option_c": "Worm",
+      "option_d": "Logic bomb",
+      "correct_answer": "A",
+      "explanation": "Spyware secretly monitors activity and can steal sensitive information."
+    },
+    {
+      "question": "Which malware is designed to hide deep within a system to maintain privileged, difficult-to-detect access?",
+      "option_a": "Rootkit",
+      "option_b": "Trojan",
+      "option_c": "Adware",
+      "option_d": "Virus",
+      "correct_answer": "A",
+      "explanation": "Rootkits hide deeply in systems to maintain privileged and difficult-to-detect access."
+    },
+    {
+      "question": "Which malware specifically records keystrokes to capture information such as passwords and card numbers?",
+      "option_a": "Keylogger",
+      "option_b": "Rootkit",
+      "option_c": "Adware",
+      "option_d": "Worm",
+      "correct_answer": "A",
+      "explanation": "A keylogger records keystrokes, potentially capturing sensitive information."
+    },
+    {
+      "question": "What is the primary purpose of bot or botnet malware?",
+      "option_a": "To enrol infected devices into a remotely controlled network",
+      "option_b": "To physically lock server rooms",
+      "option_c": "To authenticate users",
+      "option_d": "To encrypt every network packet",
+      "correct_answer": "A",
+      "explanation": "Bot malware turns infected devices into remotely controlled bots that can be used for DDoS, spam, or further attacks."
+    },
+    {
+      "question": "What distinguishes a logic bomb from continuously active malware?",
+      "option_a": "It lies dormant until a specific condition or date triggers it",
+      "option_b": "It always spreads automatically across networks",
+      "option_c": "It only displays advertisements",
+      "option_d": "It must be installed through a physical cable",
+      "correct_answer": "A",
+      "explanation": "A logic bomb remains dormant until a specified condition or date occurs."
+    },
+    {
+      "question": "Which malware automatically displays or downloads unwanted advertisements and is often bundled with free software?",
+      "option_a": "Adware",
+      "option_b": "Rootkit",
+      "option_c": "Spyware",
+      "option_d": "Ransomware",
+      "correct_answer": "A",
+      "explanation": "Adware is associated with unwanted advertising and is often bundled with free software."
+    },
+    {
+      "question": "Why can a real incident contain characteristics of more than one malware category?",
+      "option_a": "Malware categories are defined only by company ownership",
+      "option_b": "Different malware behaviours can be combined in one attack",
+      "option_c": "Only one malware category can technically exist",
+      "option_d": "Malware categories are unrelated to behaviour",
+      "correct_answer": "B",
+      "explanation": "The lecture notes that real malware can combine characteristics; WannaCry, for example, was ransomware with worm-like spreading."
+    },
+    {
+      "question": "An attacker sends a fraudulent email impersonating a trusted organisation to steal a user's credentials. What is this?",
+      "option_a": "Phishing",
+      "option_b": "Tailgating",
+      "option_c": "Shoulder surfing",
+      "option_d": "Quid pro quo",
+      "correct_answer": "A",
+      "explanation": "Phishing uses fraudulent messages that impersonate trusted sources to steal credentials or deliver malware."
+    },
+    {
+      "question": "What distinguishes spear phishing from ordinary phishing?",
+      "option_a": "It is delivered exclusively by telephone",
+      "option_b": "It is tailored to a specific individual or organisation using researched details",
+      "option_c": "It requires physical access to a building",
+      "option_d": "It only targets executives",
+      "correct_answer": "B",
+      "explanation": "Spear phishing is specifically tailored using researched information about its target."
+    },
+    {
+      "question": "A carefully researched phishing email is sent specifically to a company's CEO. What technique is this?",
+      "option_a": "Smishing",
+      "option_b": "Whaling",
+      "option_c": "Baiting",
+      "option_d": "Tailgating",
+      "correct_answer": "B",
+      "explanation": "Whaling is spear phishing directed specifically at senior executives or other high-value individuals."
+    },
+    {
+      "question": "A fraudulent phishing message is delivered through SMS. Which technique is being used?",
+      "option_a": "Vishing",
+      "option_b": "Smishing",
+      "option_c": "Pretexting",
+      "option_d": "Whaling",
+      "correct_answer": "B",
+      "explanation": "Smishing is phishing delivered through SMS or text messages."
+    },
+    {
+      "question": "An attacker phones a victim pretending to be a bank employee and requests account information. Which technique is this?",
+      "option_a": "Vishing",
+      "option_b": "Smishing",
+      "option_c": "Baiting",
+      "option_d": "Footprinting",
+      "correct_answer": "A",
+      "explanation": "Vishing is the voice-call form of phishing."
+    },
+    {
+      "question": "An attacker pretends to be IT support and invents a believable story to obtain an employee's credentials. What technique is this?",
+      "option_a": "Pretexting",
+      "option_b": "Baiting",
+      "option_c": "Tailgating",
+      "option_d": "Shoulder surfing",
+      "correct_answer": "A",
+      "explanation": "Pretexting involves inventing a false scenario or identity to obtain information or access."
+    },
+    {
+      "question": "An attacker leaves an attractive-looking USB drive labelled with useful software in a company car park. Which technique is this?",
+      "option_a": "Whaling",
+      "option_b": "Baiting",
+      "option_c": "Vishing",
+      "option_d": "Footprinting",
+      "correct_answer": "B",
+      "explanation": "Baiting offers something enticing, such as a USB drive or download, that can deliver malware."
+    },
+    {
+      "question": "An attacker offers fake technical support in exchange for an employee's credentials. Which technique best matches?",
+      "option_a": "Quid pro quo",
+      "option_b": "Smishing",
+      "option_c": "Shoulder surfing",
+      "option_d": "Port scanning",
+      "correct_answer": "A",
+      "explanation": "Quid pro quo offers a supposed benefit or service in exchange for information or access."
+    },
+    {
+      "question": "An unauthorised person follows an employee through a restricted door without using their own badge. What technique is this?",
+      "option_a": "Baiting",
+      "option_b": "Tailgating",
+      "option_c": "Vishing",
+      "option_d": "Footprinting",
+      "correct_answer": "B",
+      "explanation": "Tailgating or piggybacking involves physically following an authorised person into a restricted area."
+    },
+    {
+      "question": "An attacker watches an employee type a password into a workstation. Which social-engineering technique is involved?",
+      "option_a": "Pretexting",
+      "option_b": "Whaling",
+      "option_c": "Shoulder surfing",
+      "option_d": "Quid pro quo",
+      "correct_answer": "C",
+      "explanation": "Shoulder surfing involves directly observing passwords, PINs, or sensitive information."
+    },
+    {
+      "question": "A help-desk employee receives a call from someone claiming to be a senior manager who urgently needs a password reset without normal verification. Which technique most closely matches?",
+      "option_a": "Pretexting",
+      "option_b": "Port scanning",
+      "option_c": "Footprinting",
+      "option_d": "Adware",
+      "correct_answer": "A",
+      "explanation": "The attacker invents an identity and scenario to persuade the help desk to provide access."
+    },
+    {
+      "question": "Which policy would most directly reduce the success of the fraudulent help-desk password-reset scenario?",
+      "option_a": "Allow password resets whenever a caller claims urgency",
+      "option_b": "Require identity verification before password resets",
+      "option_c": "Disable all network logging",
+      "option_d": "Allow senior managers to bypass verification",
+      "correct_answer": "B",
+      "explanation": "A verification policy prevents social engineering from bypassing normal identity checks."
+    },
+    {
+      "question": "What is the primary goal of a DoS attack?",
+      "option_a": "To make legitimate users unable to access a service",
+      "option_b": "To secretly record keystrokes",
+      "option_c": "To identify employee names",
+      "option_d": "To encrypt files for ransom",
+      "correct_answer": "A",
+      "explanation": "DoS attacks overwhelm a system so legitimate users cannot use it."
+    },
+    {
+      "question": "What distinguishes DDoS from a traditional DoS attack?",
+      "option_a": "DDoS uses multiple distributed sources",
+      "option_b": "DDoS always targets confidentiality",
+      "option_c": "DDoS requires physical access",
+      "option_d": "DDoS cannot involve botnets",
+      "correct_answer": "A",
+      "explanation": "DDoS attacks use many distributed sources, commonly compromised devices in a botnet."
+    },
+    {
+      "question": "Why does a botnet make a DDoS attack particularly difficult to defend against?",
+      "option_a": "It allows traffic to originate from many distributed devices",
+      "option_b": "It prevents the attacker from sending traffic",
+      "option_c": "It guarantees that every packet is legitimate",
+      "option_d": "It restricts the attack to one connection",
+      "correct_answer": "A",
+      "explanation": "Distributed sources can generate large volumes of traffic from many locations, making simple source blocking less effective."
+    },
+    {
+      "question": "Which resource can a DoS/DDoS attack attempt to exhaust?",
+      "option_a": "Bandwidth",
+      "option_b": "Employee training records only",
+      "option_c": "Physical badges only",
+      "option_d": "Digital signatures only",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies bandwidth, processing power, and connection limits as possible resources to exhaust."
+    },
+    {
+      "question": "Mirai is significant in the lecture because it demonstrated how insecure IoT devices can be used to:",
+      "option_a": "Perform DDoS attacks through a botnet",
+      "option_b": "Create physical security controls",
+      "option_c": "Prevent phishing automatically",
+      "option_d": "Provide non-repudiation",
+      "correct_answer": "A",
+      "explanation": "Mirai infected insecure IoT devices and used them as bots for large-scale DDoS attacks."
+    },
+    {
+      "question": "What is reconnaissance?",
+      "option_a": "Restoring systems after an incident",
+      "option_b": "Gathering information about a target before attacking",
+      "option_c": "Encrypting files for ransom",
+      "option_d": "Training employees",
+      "correct_answer": "B",
+      "explanation": "Reconnaissance involves gathering information such as open ports, network topology, and software versions."
+    },
+    {
+      "question": "Why does reconnaissance often occur before an access attack?",
+      "option_a": "It helps attackers determine where to focus their access attempts",
+      "option_b": "It automatically patches vulnerable systems",
+      "option_c": "It prevents all subsequent attacks",
+      "option_d": "It restores compromised accounts",
+      "correct_answer": "A",
+      "explanation": "Reconnaissance identifies useful information and potential entry points before an attacker attempts access."
+    },
+    {
+      "question": "Which technique probes a host for open ports and services?",
+      "option_a": "Footprinting",
+      "option_b": "Port scanning",
+      "option_c": "Tailgating",
+      "option_d": "Baiting",
+      "correct_answer": "B",
+      "explanation": "Port scanning identifies open ports and services that may provide potential entry points."
+    },
+    {
+      "question": "An attacker passively collects DNS records, employee information, and technology details from public sources. What technique is this?",
+      "option_a": "Footprinting",
+      "option_b": "Brute force",
+      "option_c": "DDoS",
+      "option_d": "Ransomware",
+      "correct_answer": "A",
+      "explanation": "Footprinting is passive gathering of publicly available information about a target."
+    },
+    {
+      "question": "An attacker repeatedly guesses passwords using many possible combinations. Which attack is being used?",
+      "option_a": "Brute-force credential attack",
+      "option_b": "Footprinting",
+      "option_c": "Tailgating",
+      "option_d": "DDoS",
+      "correct_answer": "A",
+      "explanation": "Brute-force attacks systematically try many possible credentials."
+    },
+    {
+      "question": "An attacker tries common words and likely passwords from a prepared list against an account. Which technique best fits?",
+      "option_a": "Dictionary attack",
+      "option_b": "Shoulder surfing",
+      "option_c": "Vishing",
+      "option_d": "Port scanning",
+      "correct_answer": "A",
+      "explanation": "Dictionary attacks use lists of likely passwords rather than trying every possible combination."
+    },
+    {
+      "question": "An attacker uses credentials leaked from another website to access a company's accounts. What is this?",
+      "option_a": "Credential stuffing",
+      "option_b": "Footprinting",
+      "option_c": "Baiting",
+      "option_d": "Logic bombing",
+      "correct_answer": "A",
+      "explanation": "Credential stuffing reuses credentials leaked elsewhere in attempts to access other accounts."
+    },
+    {
+      "question": "What is a man-in-the-middle attack?",
+      "option_a": "Intercepting communication between two parties",
+      "option_b": "Encrypting files and demanding payment",
+      "option_c": "Scanning physical server rooms",
+      "option_d": "Training employees to detect phishing",
+      "correct_answer": "A",
+      "explanation": "A man-in-the-middle attack involves intercepting communication between two parties, often after gaining network access."
+    },
+    {
+      "question": "Which scenario is an access attack rather than reconnaissance?",
+      "option_a": "Mapping a target's network topology",
+      "option_b": "Identifying software versions",
+      "option_c": "Using stolen credentials to enter an account",
+      "option_d": "Checking publicly available DNS records",
+      "correct_answer": "C",
+      "explanation": "Using credentials to gain unauthorised entry is an access attack; the other examples are reconnaissance."
+    },
+    {
+      "question": "Which is an administrative security control?",
+      "option_a": "Firewall",
+      "option_b": "Security awareness training",
+      "option_c": "Locked server room",
+      "option_d": "Cable lock",
+      "correct_answer": "B",
+      "explanation": "Policies and training are administrative controls."
+    },
+    {
+      "question": "Which is a technical security control?",
+      "option_a": "Background checks",
+      "option_b": "Security awareness policy",
+      "option_c": "Firewall",
+      "option_d": "Locked server room",
+      "correct_answer": "C",
+      "explanation": "Firewalls, encryption, ACLs, and IDS/IPS are technical controls."
+    },
+    {
+      "question": "Which is a physical security control?",
+      "option_a": "Encryption",
+      "option_b": "Firewall",
+      "option_c": "Security awareness training",
+      "option_d": "Locked server room",
+      "correct_answer": "D",
+      "explanation": "Locked server rooms, badge access, cameras, and cable locks are physical controls."
+    },
+    {
+      "question": "A firewall rule is configured to block malicious traffic before it reaches a server. What control function does this primarily represent?",
+      "option_a": "Preventive",
+      "option_b": "Detective",
+      "option_c": "Corrective",
+      "option_d": "Recovery",
+      "correct_answer": "A",
+      "explanation": "Preventive controls aim to stop an incident before it occurs."
+    },
+    {
+      "question": "Visible security cameras are installed partly to discourage attackers from attempting unauthorised activity. What control function is this?",
+      "option_a": "Recovery",
+      "option_b": "Deterrent",
+      "option_c": "Corrective",
+      "option_d": "Compensating",
+      "correct_answer": "B",
+      "explanation": "Deterrent controls discourage attacks without necessarily stopping them technically."
+    },
+    {
+      "question": "An IDS identifies suspicious activity that is currently occurring. Which control function is this?",
+      "option_a": "Preventive",
+      "option_b": "Detective",
+      "option_c": "Recovery",
+      "option_d": "Compensating",
+      "correct_answer": "B",
+      "explanation": "Detective controls identify incidents that are happening or have already happened."
+    },
+    {
+      "question": "An infected computer is immediately isolated from the network after detection. Which control function best describes this action?",
+      "option_a": "Corrective",
+      "option_b": "Deterrent",
+      "option_c": "Preventive",
+      "option_d": "Recovery",
+      "correct_answer": "A",
+      "explanation": "Corrective controls address the immediate problem after an incident is detected."
+    },
+    {
+      "question": "A company restores its systems and data from backups after a ransomware incident. Which control function is this?",
+      "option_a": "Detective",
+      "option_b": "Preventive",
+      "option_c": "Recovery",
+      "option_d": "Deterrent",
+      "correct_answer": "C",
+      "explanation": "Recovery restores systems, data, and operations to normal after an incident."
+    },
+    {
+      "question": "A company cannot immediately patch a vulnerable system, so it adds extra monitoring until patching is possible. What type of control is this?",
+      "option_a": "Compensating",
+      "option_b": "Deterrent",
+      "option_c": "Physical",
+      "option_d": "Recovery",
+      "correct_answer": "A",
+      "explanation": "A compensating control is an alternative used when the ideal control is not currently feasible."
+    },
+    {
+      "question": "Which statement correctly distinguishes corrective controls from recovery controls?",
+      "option_a": "Corrective controls restore normal operations, while recovery controls detect incidents",
+      "option_b": "Corrective controls address the immediate problem, while recovery restores normal operations",
+      "option_c": "Corrective controls are always physical, while recovery controls are always technical",
+      "option_d": "There is no distinction between them",
+      "correct_answer": "B",
+      "explanation": "Corrective action stops or fixes the immediate problem; recovery focuses on returning systems and operations to normal."
+    },
+    {
+      "question": "What is the central idea of defense in depth?",
+      "option_a": "Use one extremely powerful security control",
+      "option_b": "Place multiple layers of controls so one failure does not necessarily cause total compromise",
+      "option_c": "Use only physical controls",
+      "option_d": "Remove all external network connections",
+      "correct_answer": "B",
+      "explanation": "Defense in depth uses multiple layers so attackers must overcome several controls."
+    },
+    {
+      "question": "Which sequence represents the defense-in-depth layers shown in the lecture?",
+      "option_a": "Perimeter → Network → Host → Application → Data",
+      "option_b": "Data → Perimeter → Application → Host → Network",
+      "option_c": "Host → Data → Perimeter → Network → Application",
+      "option_d": "Application → Perimeter → Data → Host → Network",
+      "correct_answer": "A",
+      "explanation": "The lecture presents defense in depth as Perimeter → Network → Host → Application → Data."
+    },
+    {
+      "question": "Why is relying only on a firewall insufficient for comprehensive security?",
+      "option_a": "A firewall prevents every type of attack except DDoS",
+      "option_b": "A firewall does not directly prevent attacks such as phishing",
+      "option_c": "Firewalls are administrative controls",
+      "option_d": "Firewalls cannot control network traffic",
+      "correct_answer": "B",
+      "explanation": "A firewall may help against certain access threats but cannot directly stop social engineering such as phishing."
+    },
+    {
+      "question": "A company has strong employee security training but no DDoS protection. What limitation does this demonstrate?",
+      "option_a": "Training is sufficient against every attack category",
+      "option_b": "Administrative controls cannot necessarily stop technical traffic floods",
+      "option_c": "DDoS is a form of phishing",
+      "option_d": "Training is a physical control",
+      "correct_answer": "B",
+      "explanation": "Security awareness can reduce social engineering risk but does not itself stop a large-scale DDoS flood."
+    },
+    {
+      "question": "Which control combination is most appropriate for reducing malware risk according to the lecture?",
+      "option_a": "Endpoint protection, patching, and a safe-download policy",
+      "option_b": "Only physical cameras",
+      "option_c": "Only DDoS protection",
+      "option_d": "Only warning banners",
+      "correct_answer": "A",
+      "explanation": "The lecture maps malware to technical controls such as endpoint protection and patching plus administrative safe-download policies."
+    },
+    {
+      "question": "Which control combination most directly addresses social engineering?",
+      "option_a": "Security-awareness training and email filtering",
+      "option_b": "Only redundant network capacity",
+      "option_c": "Only cable locks",
+      "option_d": "Only database backups",
+      "correct_answer": "A",
+      "explanation": "Security awareness addresses human manipulation while email filtering can reduce malicious messages."
+    },
+    {
+      "question": "Which controls are specifically associated with reducing DoS/DDoS impact in the lecture?",
+      "option_a": "Rate limiting, DDoS-protection services, and redundant capacity",
+      "option_b": "Password policies only",
+      "option_c": "Security cameras only",
+      "option_d": "Background checks only",
+      "correct_answer": "A",
+      "explanation": "These technical measures can help absorb, limit, or filter malicious traffic."
+    },
+    {
+      "question": "Which controls are particularly relevant to access and reconnaissance attacks?",
+      "option_a": "Firewalls, strong authentication, logging, and IDS",
+      "option_b": "Only physical locks",
+      "option_c": "Only security awareness posters",
+      "option_d": "Only disaster recovery backups",
+      "correct_answer": "A",
+      "explanation": "Firewalls and authentication can prevent access, while logging and IDS provide detection."
+    },
+    {
+      "question": "A company suffers a phishing attack that compromises an employee account. The attacker then uses the stolen credentials to access an internal system. Which sequence best describes the incident?",
+      "option_a": "Social engineering followed by an access attack",
+      "option_b": "DDoS followed by recovery",
+      "option_c": "Reconnaissance followed by physical security",
+      "option_d": "Ransomware followed by phishing",
+      "correct_answer": "A",
+      "explanation": "The phishing attack manipulates the employee, while the stolen credentials are subsequently used for unauthorised access."
+    },
+    {
+      "question": "An attacker first collects public DNS records and employee information, then scans open ports, and finally uses a stolen password to enter the system. Which sequence best represents the attack progression?",
+      "option_a": "Recovery → prevention → deterrence",
+      "option_b": "Footprinting → port scanning → access attack",
+      "option_c": "Ransomware → phishing → DDoS",
+      "option_d": "Authentication → authorisation → recovery",
+      "correct_answer": "B",
+      "explanation": "Public information gathering is footprinting, probing services is port scanning, and using stolen credentials is an access attack."
+    },
+    {
+      "question": "A company protects a critical database with encryption, strict access controls, employee training, network firewalls, and locked server rooms. What security principle is most clearly demonstrated?",
+      "option_a": "Defense in depth",
+      "option_b": "Single-point security",
+      "option_c": "Reconnaissance",
+      "option_d": "Credential stuffing",
+      "correct_answer": "A",
+      "explanation": "Multiple administrative, technical, and physical controls provide layered protection."
+    },
+    {
+      "question": "An organisation has an unpatched server, weak administrator passwords, valuable customer payment data, and financially motivated attackers actively searching for vulnerable systems. Which assessment is most appropriate?",
+      "option_a": "Low risk because only one vulnerability exists",
+      "option_b": "High risk because valuable assets, known weaknesses, and an interested threat actor are combined",
+      "option_c": "No risk because the server is connected to the Internet",
+      "option_d": "Low risk because passwords are unrelated to server security",
+      "correct_answer": "B",
+      "explanation": "The combination of valuable assets, exploitable weaknesses, and motivated attackers produces high risk."
+    },
+    {
+      "question": "A company wants to reduce the likelihood that an attacker can exploit an old web-server vulnerability. Which action most directly addresses the vulnerability itself?",
+      "option_a": "Patch the web server",
+      "option_b": "Publish the vulnerability details",
+      "option_c": "Wait for an attack before responding",
+      "option_d": "Increase the number of employees using the server",
+      "correct_answer": "A",
+      "explanation": "Patching removes or reduces the known software weakness that the attacker could exploit."
+    },
+    {
+      "question": "A company cannot patch an Internet-facing system immediately because of operational constraints. Which approach best follows the lecture's risk-based control model?",
+      "option_a": "Do nothing until an attack occurs",
+      "option_b": "Use a compensating control such as additional monitoring while planning remediation",
+      "option_c": "Publicly expose the vulnerable service",
+      "option_d": "Disable all logging",
+      "correct_answer": "B",
+      "explanation": "The lecture gives additional monitoring as an example of a compensating control when patching is not yet feasible."
+    },
+    {
+      "question": "An attacker compromises thousands of insecure cameras and routers and directs them to flood a target service. Which combination best describes the event?",
+      "option_a": "Botnet-based DDoS targeting availability",
+      "option_b": "Spyware targeting confidentiality",
+      "option_c": "Shoulder surfing targeting authentication",
+      "option_d": "Footprinting targeting integrity",
+      "correct_answer": "A",
+      "explanation": "Compromised IoT devices forming a botnet can generate distributed traffic that overwhelms a service, primarily affecting availability."
+    },
+    {
+      "question": "A security analyst discovers that an employee installed a fake application that secretly records keystrokes and sends credentials to an attacker. Which combination best describes the incident?",
+      "option_a": "Trojan delivery followed by keylogging and credential theft",
+      "option_b": "Worm propagation followed by DDoS",
+      "option_c": "Logic bomb followed by physical intrusion",
+      "option_d": "Adware followed by recovery",
+      "correct_answer": "A",
+      "explanation": "The fake legitimate-looking application matches a Trojan, while recording keystrokes is keylogging and can expose credentials."
+    },
+    {
+      "question": "An attacker sends a highly personalised message to a finance director after researching the director's role and current project. The message requests an urgent credential reset. What is the best classification?",
+      "option_a": "Generic phishing only",
+      "option_b": "Spear phishing, potentially targeting a high-value individual",
+      "option_c": "Tailgating",
+      "option_d": "Port scanning",
+      "correct_answer": "B",
+      "explanation": "Research-based targeting makes it spear phishing; if specifically targeting a senior executive, it may also be classified as whaling."
+    },
+    {
+      "question": "A company's firewall blocks unauthorised inbound connections, but an employee is tricked by a fraudulent phone call into revealing credentials. What does this scenario demonstrate?",
+      "option_a": "A firewall can prevent all forms of social engineering",
+      "option_b": "Different attack categories require different controls",
+      "option_c": "Authentication is unnecessary when a firewall exists",
+      "option_d": "Social engineering is a form of DDoS",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly notes that a firewall does not stop phishing or other human-manipulation attacks."
+    },
+    {
+      "question": "A hospital has backups, malware protection, employee training, network firewalls, and locked server rooms. During an incident, malware bypasses the firewall but is detected by endpoint protection. What does this best illustrate?",
+      "option_a": "Defense in depth",
+      "option_b": "Failure of every security control",
+      "option_c": "Reconnaissance",
+      "option_d": "Single-layer security",
+      "correct_answer": "A",
+      "explanation": "Defense in depth means that if one layer fails, another layer can detect or stop the attack."
+    },
+    {
+      "question": "Which scenario most clearly represents a threat rather than a vulnerability?",
+      "option_a": "An outdated operating system",
+      "option_b": "A missing security patch",
+      "option_c": "A criminal group actively seeking to exploit vulnerable servers",
+      "option_d": "A misconfigured firewall rule",
+      "correct_answer": "C",
+      "explanation": "The criminal group is the threat; the outdated OS, missing patch, and misconfiguration are vulnerabilities."
+    },
+    {
+      "question": "Which scenario most clearly represents an exploit rather than an attack?",
+      "option_a": "A known method that takes advantage of an unpatched web-server flaw",
+      "option_b": "The theft of customer payment data",
+      "option_c": "A criminal group interested in the company",
+      "option_d": "The financial loss resulting from the incident",
+      "correct_answer": "A",
+      "explanation": "The specific method used to take advantage of a vulnerability is the exploit."
+    },
+    {
+      "question": "A company identifies customer payment information as an asset, an unpatched server as a vulnerability, and a financially motivated criminal group as a threat. What should the company determine next when applying the lecture's threat-modeling logic?",
+      "option_a": "The potential exploit or attack path and resulting impact/risk",
+      "option_b": "Whether customers should be removed from the database",
+      "option_c": "Whether physical security is completely unnecessary",
+      "option_d": "Whether every employee should become an administrator",
+      "correct_answer": "A",
+      "explanation": "Threat modeling connects the asset, vulnerability, and threat to possible exploitation, attack, impact, and risk."
+    },
+    {
+      "question": "A security team sees repeated connection attempts against many unused ports on a server. Before any successful login has occurred, what activity is most likely taking place?",
+      "option_a": "Reconnaissance through port scanning",
+      "option_b": "Ransomware encryption",
+      "option_c": "Recovery",
+      "option_d": "Non-repudiation",
+      "correct_answer": "A",
+      "explanation": "Probing ports to identify available services is characteristic of reconnaissance."
+    },
+    {
+      "question": "An organisation discovers that employees reuse passwords leaked from another service. Attackers use those credentials to enter corporate accounts. Which mitigation would most directly reduce this risk?",
+      "option_a": "Strong authentication such as MFA",
+      "option_b": "Visible security cameras",
+      "option_c": "Increasing server-room lighting",
+      "option_d": "Removing all backups",
+      "correct_answer": "A",
+      "explanation": "Strong authentication, particularly MFA, makes stolen passwords alone insufficient for access."
+    },
+    {
+      "question": "A company experiences a ransomware incident. Security staff isolate infected machines, then restore affected systems from backups. Which pair of control functions is represented?",
+      "option_a": "Corrective followed by recovery",
+      "option_b": "Deterrent followed by preventive",
+      "option_c": "Detective followed by deterrent",
+      "option_d": "Preventive followed by reconnaissance",
+      "correct_answer": "A",
+      "explanation": "Isolation addresses the immediate incident, making it corrective; restoring systems is recovery."
+    },
+    {
+      "question": "A company deploys a warning banner stating that unauthorised system access is prohibited. The banner does not technically block an attacker. Which control function best describes it?",
+      "option_a": "Recovery",
+      "option_b": "Deterrent",
+      "option_c": "Corrective",
+      "option_d": "Compensating",
+      "correct_answer": "B",
+      "explanation": "Warning banners are given as examples of deterrent controls because they discourage attacks without necessarily stopping them."
+    },
+    {
+      "question": "Which statement about hacker categories is most accurate according to the lecture?",
+      "option_a": "The term hacker automatically means malicious attacker",
+      "option_b": "Hacker describes someone with skills to find and exploit weaknesses, while intent determines classification",
+      "option_c": "Only government employees can be hackers",
+      "option_d": "All hackers are white hats",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly states that 'hacker' describes skill, not intent."
+    },
+    {
+      "question": "A government-funded group steals intellectual property from a technology company for strategic purposes. Which classification is most appropriate?",
+      "option_a": "State-sponsored hacker motivated by espionage",
+      "option_b": "Script kiddie motivated by curiosity",
+      "option_c": "Hacktivist motivated by financial gain",
+      "option_d": "Green hat motivated by revenge",
+      "correct_answer": "A",
+      "explanation": "Government funding and strategic intelligence theft correspond to state-sponsored activity and espionage."
+    },
+    {
+      "question": "A person uses existing public attack tools with little understanding of how they work and accidentally disrupts a target. Which category best describes the actor?",
+      "option_a": "Script kiddie",
+      "option_b": "State-sponsored hacker",
+      "option_c": "Blue hat",
+      "option_d": "Access broker",
+      "correct_answer": "A",
+      "explanation": "Script kiddies typically rely on tools and scripts created by others and have limited technical skill."
+    },
+    {
+      "question": "Which situation represents a confidentiality attack rather than primarily an availability attack?",
+      "option_a": "A botnet floods a website until users cannot connect",
+      "option_b": "An attacker secretly captures credentials and browsing information using spyware",
+      "option_c": "A server is made unavailable by excessive requests",
+      "option_d": "Network capacity is exhausted by malicious traffic",
+      "correct_answer": "B",
+      "explanation": "Spyware can secretly collect sensitive information, directly threatening confidentiality."
+    },
+    {
+      "question": "Which situation most directly threatens integrity?",
+      "option_a": "An attacker secretly reads customer records",
+      "option_b": "An attacker modifies customer records without authorisation",
+      "option_c": "A DDoS attack prevents customers from connecting",
+      "option_d": "A backup is restored after an outage",
+      "correct_answer": "B",
+      "explanation": "Unauthorised modification of data violates integrity."
+    },
+    {
+      "question": "A company wants to protect against both phishing and DDoS attacks. Which approach best reflects the lecture's layered-defense philosophy?",
+      "option_a": "Deploy only a stronger firewall",
+      "option_b": "Use security-awareness training and email filtering for phishing, plus DDoS protection and rate limiting",
+      "option_c": "Use only employee background checks",
+      "option_d": "Use only backups",
+      "correct_answer": "B",
+      "explanation": "Different attack categories require different controls, so layered technical and administrative defenses are appropriate."
+    },
+    {
+      "question": "An organisation's security team is asked to recommend products before identifying what needs protection, who might attack, and how attacks could occur. According to the lecture, what should they do first?",
+      "option_a": "Build a threat model",
+      "option_b": "Purchase the most expensive firewall",
+      "option_c": "Disable all remote access",
+      "option_d": "Install cameras everywhere",
+      "correct_answer": "A",
+      "explanation": "The lecture states that analysing security requirements should begin with threat modeling rather than a product list."
+    },
+    {
+      "question": "A company has a single Internet firewall but no employee training, endpoint protection, monitoring, or backup strategy. Which conclusion best follows from the lecture?",
+      "option_a": "The company is fully protected because firewalls stop all attacks",
+      "option_b": "The company has significant exposure because one control cannot address all attack categories and impacts",
+      "option_c": "The company only needs stronger passwords",
+      "option_d": "The company has eliminated all vulnerabilities",
+      "correct_answer": "B",
+      "explanation": "Layered defense is necessary because no single control can stop every attack category."
+    },
+    {
+      "question": "Which statement best explains why network security must include people and processes as well as technology?",
+      "option_a": "Many attacks, especially social engineering, exploit human behaviour rather than technical flaws alone",
+      "option_b": "Technology has no security value",
+      "option_c": "Policies automatically eliminate all vulnerabilities",
+      "option_d": "Physical controls cannot affect security",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasises that social engineering and organisational processes are important parts of the security landscape."
+    },
+    {
+      "question": "An attacker gains access after convincing an employee to bypass a normal verification procedure. The organisation then discovers that the attacker stole sensitive records. Which chain best captures the incident?",
+      "option_a": "Social engineering → unauthorised access → confidentiality impact",
+      "option_b": "DDoS → recovery → integrity impact",
+      "option_c": "Footprinting → availability → ransomware",
+      "option_d": "Adware → deterrence → authentication",
+      "correct_answer": "A",
+      "explanation": "The employee was manipulated, access was obtained, and sensitive data was stolen, primarily affecting confidentiality."
+    },
+    {
+      "question": "An attacker scans a network, discovers an outdated service, uses a known exploit to obtain administrator access, and copies a payment database. Which statement is most accurate?",
+      "option_a": "Scanning is reconnaissance, the outdated service is a vulnerability, and the known method is an exploit",
+      "option_b": "The outdated service is the threat and the database is the exploit",
+      "option_c": "The payment database is the threat and the attacker is the vulnerability",
+      "option_d": "The exploit is the resulting financial impact",
+      "correct_answer": "A",
+      "explanation": "The sequence matches reconnaissance, vulnerability discovery, exploitation, unauthorised access, and data theft."
+    },
+    {
+      "question": "A company wants to reduce the risk from a known vulnerability but cannot remove the affected service immediately. Which option most closely follows the lecture's approach?",
+      "option_a": "Prioritise the risk and apply a compensating control while working toward remediation",
+      "option_b": "Ignore the issue because exploitation has not happened",
+      "option_c": "Assume the vulnerability is no longer relevant",
+      "option_d": "Remove all security monitoring",
+      "correct_answer": "A",
+      "explanation": "Risk-based mitigation allows compensating controls when the ideal remediation is not immediately feasible."
+    },
+    {
+      "question": "Why is a DDoS attack often considered an availability attack even if no data is stolen or modified?",
+      "option_a": "Its primary objective is to prevent legitimate users from accessing the service",
+      "option_b": "All DDoS attacks steal passwords",
+      "option_c": "Availability only concerns confidentiality",
+      "option_d": "DDoS always changes stored data",
+      "correct_answer": "A",
+      "explanation": "Availability concerns whether legitimate users can access systems when needed, which DDoS directly disrupts."
+    },
+    {
+      "question": "Which statement about attack categories is most accurate?",
+      "option_a": "Real incidents always contain exactly one category",
+      "option_b": "Different attack categories can be combined within a single real incident",
+      "option_c": "Malware and social engineering cannot occur together",
+      "option_d": "Reconnaissance is never part of larger attacks",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasises that real incidents often combine multiple attack categories."
+    },
+    {
+      "question": "A malicious email persuades a user to install a fake application, which then provides an attacker with privileged access. Which combination of concepts is involved?",
+      "option_a": "Social engineering, Trojan malware, and unauthorised access",
+      "option_b": "DDoS, adware, and recovery",
+      "option_c": "Footprinting, deterrence, and availability",
+      "option_d": "Shoulder surfing, worm propagation, and recovery",
+      "correct_answer": "A",
+      "explanation": "The email manipulates the user, the fake application behaves like a Trojan, and the resulting access is unauthorised."
+    },
+    {
+      "question": "A security team deploys logging and IDS to identify attacks, endpoint protection to detect malware, and backups to restore systems. Which combination of control functions is represented?",
+      "option_a": "Detective, detective, and recovery",
+      "option_b": "Preventive, deterrent, and compensating",
+      "option_c": "Physical, administrative, and technical only",
+      "option_d": "Recovery, preventive, and deterrent",
+      "correct_answer": "A",
+      "explanation": "Logging/IDS and endpoint detection provide detection, while backups support recovery."
+    },
+    {
+      "question": "Which option represents the most complete interpretation of the lecture's overall security philosophy?",
+      "option_a": "Security is achieved by installing one strong firewall",
+      "option_b": "Security is primarily a technology problem",
+      "option_c": "Security requires understanding assets, threats, vulnerabilities, risks, and applying layered controls across people, processes, and technology",
+      "option_d": "Security only matters after an attack occurs",
+      "correct_answer": "C",
+      "explanation": "The lecture presents threat modeling and layered defense across administrative, technical, and physical controls as the foundation of network security."
+    }
+  ]
+}
