@@ -1,0 +1,733 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of a layered network architecture?",
+      "option_a": "To make every layer perform all networking functions",
+      "option_b": "To divide a complex networking problem into manageable pieces",
+      "option_c": "To eliminate the need for network protocols",
+      "option_d": "To ensure all vendors use identical hardware",
+      "correct_answer": "B",
+      "explanation": "Layering breaks the complex task of moving data across a network into independent, manageable functions."
+    },
+    {
+      "question": "According to the OSI model presented in the lecture, which layer is responsible for IP and routing?",
+      "option_a": "Data Link",
+      "option_b": "Transport",
+      "option_c": "Network",
+      "option_d": "Application",
+      "correct_answer": "C",
+      "explanation": "The OSI Network layer (Layer 3) handles IP addressing and routing."
+    },
+    {
+      "question": "Which OSI layer is associated with TCP and UDP?",
+      "option_a": "Layer 2",
+      "option_b": "Layer 3",
+      "option_c": "Layer 4",
+      "option_d": "Layer 7",
+      "correct_answer": "C",
+      "explanation": "TCP and UDP operate at the Transport layer, which is Layer 4 of OSI."
+    },
+    {
+      "question": "Which TCP/IP layer combines the OSI Application, Presentation, and Session layers?",
+      "option_a": "Internet",
+      "option_b": "Transport",
+      "option_c": "Network Access",
+      "option_d": "Application",
+      "correct_answer": "D",
+      "explanation": "The TCP/IP Application layer corresponds broadly to the OSI Application, Presentation, and Session layers."
+    },
+    {
+      "question": "Which statement best describes encapsulation?",
+      "option_a": "Removing headers as data arrives at the receiver",
+      "option_b": "Adding layer-specific information as data moves down the protocol stack",
+      "option_c": "Converting an IP address into a MAC address",
+      "option_d": "Forwarding a packet between routers",
+      "correct_answer": "B",
+      "explanation": "During encapsulation, each lower layer wraps the data with its own header and sometimes a trailer."
+    },
+    {
+      "question": "At the receiver, what is the process called when protocol information is removed as data moves upward through the stack?",
+      "option_a": "Encapsulation",
+      "option_b": "Fragmentation",
+      "option_c": "Decapsulation",
+      "option_d": "Routing",
+      "correct_answer": "C",
+      "explanation": "Decapsulation occurs at the receiver as each layer removes and processes its corresponding header or trailer."
+    },
+    {
+      "question": "Why is understanding encapsulation particularly useful to a security analyst?",
+      "option_a": "It guarantees that packets cannot be modified",
+      "option_b": "It helps identify which protocol-layer information an attack may manipulate",
+      "option_c": "It removes the need for encryption",
+      "option_d": "It prevents routing loops",
+      "correct_answer": "B",
+      "explanation": "Many attacks, including spoofing and injection, involve manipulating information associated with a particular protocol layer."
+    },
+    {
+      "question": "A switch receives a frame whose destination MAC address is already present in its MAC address table. What normally happens?",
+      "option_a": "The frame is sent out every port",
+      "option_b": "The frame is discarded",
+      "option_c": "The frame is forwarded through the port associated with that MAC address",
+      "option_d": "The frame is converted into an IP packet",
+      "correct_answer": "C",
+      "explanation": "A switch uses its learned MAC table to forward a known destination to the appropriate port."
+    },
+    {
+      "question": "How does a switch primarily learn entries for its MAC address table?",
+      "option_a": "By examining source MAC addresses of incoming frames",
+      "option_b": "By examining destination IP addresses",
+      "option_c": "By querying a DNS server",
+      "option_d": "By reading TCP sequence numbers",
+      "correct_answer": "A",
+      "explanation": "Switches learn which MAC address is reachable through a port by examining the source MAC address of incoming frames."
+    },
+    {
+      "question": "What does a switch normally do when it receives a frame destined for an unknown MAC address?",
+      "option_a": "Floods it out all ports except the incoming port",
+      "option_b": "Sends it only to the default gateway",
+      "option_c": "Drops it immediately",
+      "option_d": "Sends it to the DNS server",
+      "correct_answer": "A",
+      "explanation": "For an unknown destination MAC, the switch floods the frame out all other ports."
+    },
+    {
+      "question": "What is a collision domain?",
+      "option_a": "A group of networks connected by routers",
+      "option_b": "A segment in which frames can collide",
+      "option_c": "All devices receiving an IP broadcast",
+      "option_d": "A group of autonomous systems",
+      "correct_answer": "B",
+      "explanation": "A collision domain is a network segment where frame collisions can occur; each switch port forms its own collision domain."
+    },
+    {
+      "question": "By default, what happens to the broadcast domain when multiple devices are connected to a normal switch without VLANs?",
+      "option_a": "Every port becomes a separate broadcast domain",
+      "option_b": "All switch ports share one broadcast domain",
+      "option_c": "Each MAC address becomes a broadcast domain",
+      "option_d": "The switch automatically routes broadcasts",
+      "correct_answer": "B",
+      "explanation": "Without VLAN segmentation, all ports on a switch normally belong to the same broadcast domain."
+    },
+    {
+      "question": "What is the primary security-related benefit of using VLANs?",
+      "option_a": "They encrypt Ethernet frames",
+      "option_b": "They eliminate MAC addresses",
+      "option_c": "They divide a switch into multiple broadcast domains",
+      "option_d": "They replace routers completely",
+      "correct_answer": "C",
+      "explanation": "VLANs provide segmentation by splitting a switch into multiple broadcast domains, creating tighter network boundaries."
+    },
+    {
+      "question": "A company places employee devices, servers, and guest Wi-Fi on one flat switched network. Which problem is most directly addressed by introducing VLANs?",
+      "option_a": "The lack of TCP sequence numbers",
+      "option_b": "The inability to use Ethernet",
+      "option_c": "The lack of segmentation between different groups of devices",
+      "option_d": "The absence of IP addresses",
+      "correct_answer": "C",
+      "explanation": "VLANs can separate employees, servers, and guests into different broadcast domains, improving segmentation."
+    },
+    {
+      "question": "What networking problem is Spanning Tree Protocol primarily intended to prevent?",
+      "option_a": "IP address exhaustion",
+      "option_b": "Switching loops and resulting broadcast storms",
+      "option_c": "TCP retransmissions",
+      "option_d": "DHCP lease expiration",
+      "correct_answer": "B",
+      "explanation": "STP prevents redundant Layer 2 links from creating switching loops that can cause broadcast storms."
+    },
+    {
+      "question": "Which attack attempts to exhaust a switch's MAC address table by sending many fake MAC addresses?",
+      "option_a": "SYN flooding",
+      "option_b": "ARP poisoning",
+      "option_c": "CAM/MAC table exhaustion",
+      "option_d": "DNS tunneling",
+      "correct_answer": "C",
+      "explanation": "An attacker can flood a switch with fake source MAC addresses, exhausting its CAM/MAC table and potentially causing excessive flooding."
+    },
+    {
+      "question": "At which OSI layer does a router primarily operate according to the lecture?",
+      "option_a": "Layer 1",
+      "option_b": "Layer 2",
+      "option_c": "Layer 3",
+      "option_d": "Layer 7",
+      "correct_answer": "C",
+      "explanation": "Routers operate primarily at Layer 3 and forward packets based on destination IP addresses."
+    },
+    {
+      "question": "What does a router's routing table primarily provide?",
+      "option_a": "A mapping from MAC addresses to switch ports",
+      "option_b": "A mapping from networks to appropriate next-hop interfaces",
+      "option_c": "A list of HTTP methods",
+      "option_d": "A list of DHCP clients",
+      "correct_answer": "B",
+      "explanation": "A routing table identifies networks and the best available next-hop interface for reaching them."
+    },
+    {
+      "question": "What is the role of a host's default gateway?",
+      "option_a": "It provides the host's MAC address",
+      "option_b": "It is used to send traffic when the destination is not on the local network",
+      "option_c": "It encrypts all outgoing traffic",
+      "option_d": "It assigns TCP ports",
+      "correct_answer": "B",
+      "explanation": "A host sends traffic to its default gateway when the destination is outside its local network."
+    },
+    {
+      "question": "Which routing approach requires routes to be manually entered by an administrator?",
+      "option_a": "Dynamic routing",
+      "option_b": "Static routing",
+      "option_c": "Path-vector routing",
+      "option_d": "Distance-vector routing",
+      "correct_answer": "B",
+      "explanation": "Static routes are manually configured by an administrator."
+    },
+    {
+      "question": "Which routing approach is generally better suited to larger networks with changing topology?",
+      "option_a": "Static routing",
+      "option_b": "Dynamic routing",
+      "option_c": "Manual MAC learning",
+      "option_d": "ARP routing",
+      "correct_answer": "B",
+      "explanation": "Dynamic routing protocols can automatically learn and adapt routes as network topology changes."
+    },
+    {
+      "question": "Which routing protocol is described as a link-state protocol that is widely used internally?",
+      "option_a": "RIP",
+      "option_b": "OSPF",
+      "option_c": "BGP",
+      "option_d": "EIGRP",
+      "correct_answer": "B",
+      "explanation": "OSPF is a link-state routing protocol commonly used within organizations."
+    },
+    {
+      "question": "Which protocol is described as a path-vector protocol that routes traffic between autonomous systems?",
+      "option_a": "RIP",
+      "option_b": "OSPF",
+      "option_c": "EIGRP",
+      "option_d": "BGP",
+      "correct_answer": "D",
+      "explanation": "BGP is the Internet's path-vector routing protocol and operates between autonomous systems."
+    },
+    {
+      "question": "Which field in an Ethernet frame identifies the receiving device on the local segment?",
+      "option_a": "Source MAC",
+      "option_b": "Destination MAC",
+      "option_c": "FCS",
+      "option_d": "Type",
+      "correct_answer": "B",
+      "explanation": "The destination MAC address identifies the intended receiver on the local Ethernet segment."
+    },
+    {
+      "question": "What is the purpose of the FCS field in an Ethernet frame?",
+      "option_a": "Encryption",
+      "option_b": "Routing",
+      "option_c": "Transmission error detection",
+      "option_d": "Identifying the application",
+      "correct_answer": "C",
+      "explanation": "The Frame Check Sequence contains a CRC-based checksum used to detect transmission errors."
+    },
+    {
+      "question": "Why does Ethernet FCS not provide protection against deliberate frame tampering?",
+      "option_a": "FCS is not transmitted with the frame",
+      "option_b": "FCS provides error detection rather than cryptographic integrity protection",
+      "option_c": "FCS operates at Layer 3",
+      "option_d": "FCS only works with UDP",
+      "correct_answer": "B",
+      "explanation": "FCS detects transmission errors but does not authenticate the sender or cryptographically prevent intentional modification."
+    },
+    {
+      "question": "How long is a standard MAC address?",
+      "option_a": "16 bits",
+      "option_b": "32 bits",
+      "option_c": "48 bits",
+      "option_d": "128 bits",
+      "correct_answer": "C",
+      "explanation": "Ethernet MAC addresses are 48 bits long and are commonly represented as six hexadecimal pairs."
+    },
+    {
+      "question": "What do the first three bytes of a typical MAC address identify?",
+      "option_a": "The TCP port",
+      "option_b": "The manufacturer through the OUI",
+      "option_c": "The IP subnet",
+      "option_d": "The VLAN number",
+      "correct_answer": "B",
+      "explanation": "The first three bytes form the Organizationally Unique Identifier (OUI), identifying the manufacturer."
+    },
+    {
+      "question": "Which Ethernet standard provides a nominal speed of 1 Gbps?",
+      "option_a": "10BASE-T",
+      "option_b": "100BASE-TX",
+      "option_c": "1000BASE-T",
+      "option_d": "10GBASE-T",
+      "correct_answer": "C",
+      "explanation": "1000BASE-T, commonly called Gigabit Ethernet, provides 1 Gbps."
+    },
+    {
+      "question": "Which statement about IPv4 is correct?",
+      "option_a": "IPv4 addresses are 128 bits long",
+      "option_b": "IPv4 addresses are 32 bits long",
+      "option_c": "IPv4 has no network and host portions",
+      "option_d": "IPv4 addresses can only be written in hexadecimal",
+      "correct_answer": "B",
+      "explanation": "IPv4 uses 32-bit addresses represented as four decimal octets."
+    },
+    {
+      "question": "What determines the network and host portions of an IPv4 address?",
+      "option_a": "The TCP header",
+      "option_b": "The subnet mask or CIDR prefix",
+      "option_c": "The MAC OUI",
+      "option_d": "The Ethernet FCS",
+      "correct_answer": "B",
+      "explanation": "The subnet mask or CIDR prefix defines which bits represent the network and which represent hosts."
+    },
+    {
+      "question": "Which of the following is a private IPv4 address range?",
+      "option_a": "8.8.8.0/24",
+      "option_b": "172.16.0.0/12",
+      "option_c": "1.1.1.0/24",
+      "option_d": "203.0.113.0/24",
+      "correct_answer": "B",
+      "explanation": "172.16.0.0/12 is one of the private IPv4 ranges identified in the lecture."
+    },
+    {
+      "question": "How many usable host addresses are available in a /24 IPv4 subnet according to the lecture?",
+      "option_a": "128",
+      "option_b": "126",
+      "option_c": "254",
+      "option_d": "256",
+      "correct_answer": "C",
+      "explanation": "A /24 subnet contains 256 total addresses, with 254 usable host addresses."
+    },
+    {
+      "question": "How many usable host addresses are available in a /26 subnet?",
+      "option_a": "30",
+      "option_b": "62",
+      "option_c": "126",
+      "option_d": "254",
+      "correct_answer": "B",
+      "explanation": "A /26 contains 64 total addresses, of which 62 are usable host addresses."
+    },
+    {
+      "question": "What is the subnet mask corresponding to /26?",
+      "option_a": "255.255.255.0",
+      "option_b": "255.255.255.128",
+      "option_c": "255.255.255.192",
+      "option_d": "255.255.255.252",
+      "correct_answer": "C",
+      "explanation": "The /26 prefix corresponds to 255.255.255.192."
+    },
+    {
+      "question": "A company changes a network from /24 to /26. Which security-related benefit is most directly supported by the lecture?",
+      "option_a": "The network automatically becomes encrypted",
+      "option_b": "The smaller subnet creates a smaller broadcast domain and tighter boundary",
+      "option_c": "All TCP connections become authenticated",
+      "option_d": "ARP becomes authenticated",
+      "correct_answer": "B",
+      "explanation": "Smaller subnets reduce broadcast-domain size and can create tighter security boundaries."
+    },
+    {
+      "question": "Which statement correctly compares IPv4 and IPv6 address lengths?",
+      "option_a": "IPv4 is 128-bit and IPv6 is 32-bit",
+      "option_b": "Both are 32-bit",
+      "option_c": "IPv4 is 32-bit and IPv6 is 128-bit",
+      "option_d": "Both are 128-bit",
+      "correct_answer": "C",
+      "explanation": "IPv4 uses 32-bit addresses, whereas IPv6 uses 128-bit addresses."
+    },
+    {
+      "question": "According to the lecture, what is the key security distinction presented between IPv4 and IPv6?",
+      "option_a": "IPv4 requires TLS while IPv6 cannot use TLS",
+      "option_b": "IPv4 has optional IPsec support while IPsec support is built into the IPv6 standard",
+      "option_c": "IPv6 does not support encryption",
+      "option_d": "IPv4 automatically authenticates packets",
+      "correct_answer": "B",
+      "explanation": "The lecture states that IPv4 has IPsec as optional support, while IPv6 includes IPsec support in the standard."
+    },
+    {
+      "question": "What is the primary purpose of the IPv4 TTL field?",
+      "option_a": "To identify the application",
+      "option_b": "To limit how many hops a packet can traverse",
+      "option_c": "To identify the Ethernet manufacturer",
+      "option_d": "To encrypt the packet",
+      "correct_answer": "B",
+      "explanation": "TTL limits packet lifetime in terms of hops and helps prevent packets from circulating indefinitely."
+    },
+    {
+      "question": "An IPv4 packet has a Protocol field value of 6. What does this indicate?",
+      "option_a": "ICMP is carried inside the packet",
+      "option_b": "UDP is carried inside the packet",
+      "option_c": "TCP is carried inside the packet",
+      "option_d": "ARP is carried inside the packet",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies TCP as protocol number 6, UDP as 17, and ICMP as 1."
+    },
+    {
+      "question": "What is the correct order of the DHCP DORA process?",
+      "option_a": "Discover, Request, Offer, Acknowledge",
+      "option_b": "Discover, Offer, Request, Acknowledge",
+      "option_c": "Offer, Discover, Request, Acknowledge",
+      "option_d": "Request, Discover, Offer, Acknowledge",
+      "correct_answer": "B",
+      "explanation": "DORA stands for Discover, Offer, Request, and Acknowledge."
+    },
+    {
+      "question": "Which UDP ports are used by DHCP according to the lecture?",
+      "option_a": "20 and 21",
+      "option_b": "22 and 23",
+      "option_c": "67 and 68",
+      "option_d": "80 and 443",
+      "correct_answer": "C",
+      "explanation": "DHCP uses UDP port 67 on the server side and UDP port 68 on the client side."
+    },
+    {
+      "question": "What can DHCP provide in addition to an IP address?",
+      "option_a": "Only a MAC address",
+      "option_b": "Gateway and DNS server configuration",
+      "option_c": "TCP sequence numbers",
+      "option_d": "Ethernet FCS values",
+      "correct_answer": "B",
+      "explanation": "DHCP options can provide configuration such as the default gateway and DNS servers."
+    },
+    {
+      "question": "Why is a rogue DHCP server dangerous?",
+      "option_a": "It can physically disable Ethernet cables",
+      "option_b": "It can provide malicious gateway or DNS settings that redirect victim traffic",
+      "option_c": "It automatically breaks TCP sequence numbers",
+      "option_d": "It changes every device's MAC address",
+      "correct_answer": "B",
+      "explanation": "Because DHCP lacks built-in authentication, an attacker can race the legitimate server and provide malicious network configuration."
+    },
+    {
+      "question": "A client broadcasts a DHCP Discover and an attacker's DHCP server responds before the legitimate server. What is the attacker's most direct opportunity?",
+      "option_a": "To change the Ethernet FCS",
+      "option_b": "To provide the victim with a malicious gateway or DNS server",
+      "option_c": "To force IPv6 addressing",
+      "option_d": "To modify TCP acknowledgment numbers",
+      "correct_answer": "B",
+      "explanation": "A rogue DHCP server can influence the victim's network configuration, particularly the gateway and DNS settings."
+    },
+    {
+      "question": "What problem does ARP solve on an IPv4 Ethernet network?",
+      "option_a": "Mapping a MAC address to a TCP port",
+      "option_b": "Mapping an IP address to a MAC address",
+      "option_c": "Mapping a domain name to an IP address",
+      "option_d": "Mapping a port to a process",
+      "correct_answer": "B",
+      "explanation": "ARP allows a host that knows an IPv4 address to discover the corresponding MAC address needed to construct an Ethernet frame."
+    },
+    {
+      "question": "How is an ARP Request normally sent?",
+      "option_a": "As a unicast message",
+      "option_b": "As a broadcast",
+      "option_c": "Through TCP",
+      "option_d": "Through DNS",
+      "correct_answer": "B",
+      "explanation": "An ARP Request is broadcast so devices on the local segment can determine which device owns the requested IP address."
+    },
+    {
+      "question": "How is the corresponding ARP Reply normally sent?",
+      "option_a": "As a broadcast",
+      "option_b": "As a unicast",
+      "option_c": "Through DHCP",
+      "option_d": "Through TCP",
+      "correct_answer": "B",
+      "explanation": "The device owning the requested IP responds directly to the requesting host with its MAC address."
+    },
+    {
+      "question": "Why can ARP spoofing occur?",
+      "option_a": "ARP requires TLS certificates",
+      "option_b": "ARP has no authentication and hosts may accept unsolicited ARP replies",
+      "option_c": "ARP uses TCP retransmission",
+      "option_d": "ARP addresses are 128 bits",
+      "correct_answer": "B",
+      "explanation": "The lecture states that ARP has no authentication, allowing forged replies to update a host's ARP cache."
+    },
+    {
+      "question": "An attacker sends forged ARP replies claiming that the attacker's MAC address belongs to another host's IP address. What can this enable?",
+      "option_a": "A man-in-the-middle attack",
+      "option_b": "Automatic subnetting",
+      "option_c": "STP convergence",
+      "option_d": "DHCP lease renewal",
+      "correct_answer": "A",
+      "explanation": "ARP poisoning can redirect traffic through the attacker, enabling a man-in-the-middle position."
+    },
+    {
+      "question": "Which characteristic distinguishes TCP from UDP most directly?",
+      "option_a": "TCP is connection-oriented while UDP is connectionless",
+      "option_b": "TCP uses ports while UDP does not",
+      "option_c": "UDP guarantees delivery while TCP does not",
+      "option_d": "UDP requires a three-way handshake",
+      "correct_answer": "A",
+      "explanation": "TCP establishes a connection before data transfer, while UDP sends data without establishing a session."
+    },
+    {
+      "question": "What is one mechanism TCP uses to provide reliable delivery?",
+      "option_a": "MAC addresses",
+      "option_b": "Sequence numbers, acknowledgments, and retransmissions",
+      "option_c": "DHCP leases",
+      "option_d": "ARP broadcasts",
+      "correct_answer": "B",
+      "explanation": "TCP tracks data with sequence numbers and acknowledgments and retransmits detected lost segments."
+    },
+    {
+      "question": "What is the purpose of TCP sequence and acknowledgment numbers?",
+      "option_a": "To identify Ethernet manufacturers",
+      "option_b": "To track byte ordering and confirm receipt",
+      "option_c": "To assign IP addresses",
+      "option_d": "To select a DNS server",
+      "correct_answer": "B",
+      "explanation": "TCP sequence numbers track byte ordering, while acknowledgment numbers confirm received data."
+    },
+    {
+      "question": "Which TCP flag is primarily associated with initiating a TCP connection?",
+      "option_a": "FIN",
+      "option_b": "RST",
+      "option_c": "SYN",
+      "option_d": "FCS",
+      "correct_answer": "C",
+      "explanation": "SYN is used during TCP connection establishment."
+    },
+    {
+      "question": "What is the main purpose of TCP's window size field?",
+      "option_a": "Routing between networks",
+      "option_b": "Flow control by indicating how much data the receiver can accept",
+      "option_c": "Mapping IP addresses to MAC addresses",
+      "option_d": "Encrypting HTTP requests",
+      "correct_answer": "B",
+      "explanation": "The TCP window size supports flow control by indicating how much data the receiver can accept."
+    },
+    {
+      "question": "Why is a SYN flood particularly associated with TCP?",
+      "option_a": "TCP has no ports",
+      "option_b": "TCP establishes connection state through a handshake that can consume server resources",
+      "option_c": "TCP uses broadcasts for every packet",
+      "option_d": "TCP cannot use sequence numbers",
+      "correct_answer": "B",
+      "explanation": "A SYN flood sends many connection-initiation requests without completing the handshake, potentially exhausting server resources."
+    },
+    {
+      "question": "An attacker sends thousands of TCP SYN requests but deliberately does not complete the handshakes. What is the attacker attempting to achieve?",
+      "option_a": "Exhaust server resources associated with incomplete connections",
+      "option_b": "Force a DHCP renewal",
+      "option_c": "Change the victim's MAC address",
+      "option_d": "Create additional VLANs",
+      "correct_answer": "A",
+      "explanation": "SYN flooding abuses TCP's connection establishment process by creating many incomplete connection attempts."
+    },
+    {
+      "question": "Which statement about UDP is correct?",
+      "option_a": "UDP guarantees ordered delivery",
+      "option_b": "UDP retransmits lost segments automatically",
+      "option_c": "UDP is connectionless and provides minimal overhead",
+      "option_d": "UDP requires a three-way handshake",
+      "correct_answer": "C",
+      "explanation": "UDP is connectionless and has lower overhead because it does not provide TCP-style reliability, ordering, or flow control."
+    },
+    {
+      "question": "Why is UDP often appropriate for VoIP or video streaming?",
+      "option_a": "It guarantees every packet arrives",
+      "option_b": "It prioritizes low overhead and speed over guaranteed delivery",
+      "option_c": "It requires retransmission of every lost packet",
+      "option_d": "It automatically encrypts voice data",
+      "correct_answer": "B",
+      "explanation": "For real-time applications, avoiding retransmission and connection-management overhead can be preferable to guaranteed delivery."
+    },
+    {
+      "question": "Which application would most strongly favor TCP based on the lecture's examples?",
+      "option_a": "A real-time VoIP stream",
+      "option_b": "A file-transfer application where correctness matters",
+      "option_c": "A DHCP client",
+      "option_d": "A low-overhead streaming application",
+      "correct_answer": "B",
+      "explanation": "File transfer is identified as a TCP use case because reliable and ordered delivery is important."
+    },
+    {
+      "question": "What is a socket according to the lecture?",
+      "option_a": "A MAC address and VLAN combination",
+      "option_b": "An IP address and port combination",
+      "option_c": "A subnet mask and gateway",
+      "option_d": "A DNS name and MAC address",
+      "correct_answer": "B",
+      "explanation": "A socket is described as an IP address plus a port, identifying one end of a network connection."
+    },
+    {
+      "question": "Which port is associated with HTTP in the lecture?",
+      "option_a": "22",
+      "option_b": "53",
+      "option_c": "80",
+      "option_d": "443",
+      "correct_answer": "C",
+      "explanation": "Traditional HTTP operates on TCP port 80."
+    },
+    {
+      "question": "Which port is associated with HTTPS?",
+      "option_a": "22",
+      "option_b": "53",
+      "option_c": "80",
+      "option_d": "443",
+      "correct_answer": "D",
+      "explanation": "HTTPS traditionally uses port 443."
+    },
+    {
+      "question": "Which HTTP method is primarily used to retrieve a resource?",
+      "option_a": "GET",
+      "option_b": "POST",
+      "option_c": "PUT",
+      "option_d": "DELETE",
+      "correct_answer": "A",
+      "explanation": "GET is used to retrieve a resource from an HTTP server."
+    },
+    {
+      "question": "What does it mean that HTTP is stateless by design?",
+      "option_a": "HTTP cannot transfer data",
+      "option_b": "Each request is independent unless mechanisms such as cookies or sessions add state",
+      "option_c": "HTTP cannot use TCP",
+      "option_d": "HTTP does not have methods",
+      "correct_answer": "B",
+      "explanation": "HTTP treats individual requests independently; cookies and sessions can provide application-level state on top of HTTP."
+    },
+    {
+      "question": "A customer enters a username and password on a website using plain HTTP. What is the primary security concern identified in the lecture?",
+      "option_a": "The credentials are automatically converted into MAC addresses",
+      "option_b": "The credentials can be exposed to someone who can observe the traffic",
+      "option_c": "The server cannot receive POST requests",
+      "option_d": "HTTP prevents TCP from working",
+      "correct_answer": "B",
+      "explanation": "Plain HTTP transmits content without encryption, so credentials, cookies, and other content may be visible to traffic observers."
+    },
+    {
+      "question": "What does HTTPS add compared with plain HTTP according to the lecture?",
+      "option_a": "Confidentiality and integrity through TLS/SSL",
+      "option_b": "A new Ethernet MAC address",
+      "option_c": "A DHCP lease",
+      "option_d": "A different IP version",
+      "correct_answer": "A",
+      "explanation": "HTTPS uses TLS/SSL to provide confidentiality and integrity for data in transit."
+    },
+    {
+      "question": "A security analyst sees an Ethernet frame with a correct FCS but suspects that an attacker intentionally modified the frame and recalculated the FCS. What conclusion best follows from the lecture?",
+      "option_a": "The FCS proves the frame is authentic",
+      "option_b": "The FCS only indicates that the frame passes its error-detection check, not that it was not deliberately tampered with",
+      "option_c": "The FCS proves the source IP is genuine",
+      "option_d": "The FCS proves the frame was encrypted",
+      "correct_answer": "B",
+      "explanation": "FCS is an error-detection mechanism rather than an authentication or cryptographic integrity mechanism."
+    },
+    {
+      "question": "A company wants employee laptops, servers, and guest Wi-Fi separated so that broadcasts from one group do not automatically reach the others. Which combination best addresses the requirement?",
+      "option_a": "TCP and UDP",
+      "option_b": "VLANs and appropriate network segmentation",
+      "option_c": "FCS and MAC learning",
+      "option_d": "HTTP and HTTPS",
+      "correct_answer": "B",
+      "explanation": "VLANs divide a switched network into multiple broadcast domains, providing the required segmentation."
+    },
+    {
+      "question": "A host wants to communicate with 192.168.1.5 and knows its IP address but does not know its MAC address. What should occur first on the local Ethernet network?",
+      "option_a": "The host sends an ARP Request",
+      "option_b": "The host sends a TCP FIN",
+      "option_c": "The host sends a DHCP Acknowledge",
+      "option_d": "The host sends an HTTP GET",
+      "correct_answer": "A",
+      "explanation": "ARP is used to resolve the known IP address to the MAC address needed for the Ethernet frame."
+    },
+    {
+      "question": "A host has an ARP cache entry mapping 192.168.1.5 to an attacker's MAC address. Which attack scenario is most consistent with this condition?",
+      "option_a": "ARP poisoning followed by possible man-in-the-middle interception",
+      "option_b": "TCP congestion control",
+      "option_c": "STP loop prevention",
+      "option_d": "DHCP lease renewal",
+      "correct_answer": "A",
+      "explanation": "A forged IP-to-MAC mapping is characteristic of ARP poisoning and can redirect traffic through an attacker."
+    },
+    {
+      "question": "A workstation receives a DHCP configuration specifying an unexpected gateway and DNS server. Which security incident should be investigated first based on the lecture?",
+      "option_a": "Rogue DHCP server activity",
+      "option_b": "Ethernet FCS failure",
+      "option_c": "TCP retransmission",
+      "option_d": "IPv4 fragmentation",
+      "correct_answer": "A",
+      "explanation": "The lecture specifically describes rogue DHCP servers as capable of supplying malicious gateway and DNS configuration."
+    },
+    {
+      "question": "A network administrator needs routing for a small, stable network and wants a predictable configuration with a smaller attack surface. Which approach best matches the lecture?",
+      "option_a": "Static routing",
+      "option_b": "Dynamic routing",
+      "option_c": "ARP routing",
+      "option_d": "DHCP routing",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies static routing as suitable for small, stable networks and notes its predictable configuration and smaller attack surface."
+    },
+    {
+      "question": "A packet is being sent from an application on one host to an application on another host. Which sequence best represents the conceptual encapsulation described in the lecture?",
+      "option_a": "Data → TCP/UDP header → IP header → Ethernet header/trailer",
+      "option_b": "Data → Ethernet header → TCP header → IP header",
+      "option_c": "Data → MAC address → DNS → Ethernet",
+      "option_d": "Data → FCS → DHCP → TCP",
+      "correct_answer": "A",
+      "explanation": "As data moves downward, transport information is added, followed by IP information, then Ethernet framing information."
+    },
+    {
+      "question": "A security analyst needs to identify whether a suspicious communication is being forwarded between different networks. Which device and addressing information are most relevant?",
+      "option_a": "Switch and destination MAC only",
+      "option_b": "Router and destination IP address",
+      "option_c": "DHCP server and FCS",
+      "option_d": "HTTP server and TCP sequence number only",
+      "correct_answer": "B",
+      "explanation": "Routers operate at Layer 3 and forward packets between networks based on destination IP addresses."
+    },
+    {
+      "question": "A company needs a transport protocol for a backup system where losing or reordering data would make the backup unusable. Which choice is most appropriate based on the lecture?",
+      "option_a": "UDP, because it provides no retransmissions",
+      "option_b": "TCP, because it provides reliable and ordered delivery",
+      "option_c": "ARP, because it resolves addresses",
+      "option_d": "DHCP, because it provides leases",
+      "correct_answer": "B",
+      "explanation": "TCP is designed for reliable, ordered delivery and is therefore appropriate when correctness matters more than minimal overhead."
+    },
+    {
+      "question": "A company is designing a voice-call application where a delayed packet is less useful than maintaining timely delivery. Which protocol is the better match according to the lecture?",
+      "option_a": "TCP",
+      "option_b": "UDP",
+      "option_c": "ARP",
+      "option_d": "DHCP",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies VoIP as a typical UDP use case because UDP provides lower overhead and avoids TCP-style retransmission and ordering mechanisms."
+    },
+    {
+      "question": "A packet repeatedly circulates because of a Layer 2 redundant-link loop. Which mechanism is specifically intended to prevent this condition?",
+      "option_a": "DHCP DORA",
+      "option_b": "Spanning Tree Protocol",
+      "option_c": "TCP three-way handshake",
+      "option_d": "HTTP statelessness",
+      "correct_answer": "B",
+      "explanation": "STP prevents Layer 2 switching loops that can result from redundant links."
+    },
+    {
+      "question": "A switch begins flooding frames unusually broadly after an attacker generates a very large number of fake source MAC addresses. Which underlying switch function is being abused?",
+      "option_a": "IP routing",
+      "option_b": "MAC address table learning and capacity",
+      "option_c": "TCP flow control",
+      "option_d": "HTTP session management",
+      "correct_answer": "B",
+      "explanation": "MAC/CAM table exhaustion abuses the switch's MAC learning mechanism and can force it into excessive flooding behavior."
+    },
+    {
+      "question": "A network engineer wants to reduce the number of devices that receive a broadcast and create tighter security boundaries. Which design choice is most directly supported by the lecture?",
+      "option_a": "Use smaller subnets and VLAN segmentation",
+      "option_b": "Replace TCP with UDP everywhere",
+      "option_c": "Increase Ethernet frame size",
+      "option_d": "Disable MAC addresses",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly connects smaller subnets and VLANs with smaller broadcast domains and tighter security boundaries."
+    },
+    {
+      "question": "A web application uses HTTPS but an attacker is investigating whether the certificate trust model can itself be attacked. Which statement is consistent with the lecture?",
+      "option_a": "HTTPS provides no security at all",
+      "option_b": "TLS provides confidentiality and integrity, while certificate trust is a separate security consideration",
+      "option_c": "HTTPS eliminates all possible network attacks",
+      "option_d": "Certificates replace IP addresses",
+      "correct_answer": "B",
+      "explanation": "The lecture states that HTTPS provides confidentiality and integrity while noting that the certificate trust model itself can be attacked."
+    }
+  ]
+}

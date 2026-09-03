@@ -1,0 +1,1147 @@
+{
+  "questions": [
+    {
+      "question": "Why is STP necessary when switches have redundant physical links?",
+      "option_a": "To increase the number of IP addresses available",
+      "option_b": "To prevent Layer 2 loops while preserving link redundancy",
+      "option_c": "To encrypt Ethernet frames",
+      "option_d": "To assign MAC addresses to hosts",
+      "correct_answer": "B",
+      "explanation": "Ethernet frames do not have a hop limit, so redundant Layer 2 paths can create persistent loops. STP logically blocks redundant paths while preserving them for failure recovery."
+    },
+    {
+      "question": "What can happen when a Layer 2 loop exists without STP?",
+      "option_a": "Broadcast storms, duplicate frames, and MAC table instability",
+      "option_b": "Only IP address conflicts",
+      "option_c": "Automatic encryption of all traffic",
+      "option_d": "The switches automatically disable every redundant link",
+      "correct_answer": "A",
+      "explanation": "A Layer 2 loop can cause frames to circulate indefinitely, producing broadcast storms, duplicate delivery, and unstable MAC address tables."
+    },
+    {
+      "question": "What type of frames do STP switches exchange to build a loop-free topology?",
+      "option_a": "ARP requests",
+      "option_b": "ICMP packets",
+      "option_c": "BPDUs",
+      "option_d": "DHCP messages",
+      "correct_answer": "C",
+      "explanation": "STP participants exchange Bridge Protocol Data Units (BPDUs) to communicate the information used to construct the spanning tree."
+    },
+    {
+      "question": "What is the primary logical effect of STP on redundant physical links?",
+      "option_a": "It physically removes the redundant links",
+      "option_b": "It logically blocks enough links to eliminate active Layer 2 loops",
+      "option_c": "It converts all links into routed links",
+      "option_d": "It increases the speed of every link",
+      "correct_answer": "B",
+      "explanation": "STP keeps redundant links physically present but places selected ports into a non-forwarding role so that the active topology is loop-free."
+    },
+    {
+      "question": "Why is STP able to preserve redundancy after blocking a link?",
+      "option_a": "The blocked link is removed permanently",
+      "option_b": "A previously blocked path can be activated after a failure and STP recalculates the topology",
+      "option_c": "The blocked port forwards data only during normal operation",
+      "option_d": "STP duplicates every frame across all paths",
+      "correct_answer": "B",
+      "explanation": "STP blocks redundant paths during normal operation but can recalculate and bring a previously blocked link into use when an active path fails."
+    },
+    {
+      "question": "Which switch becomes the STP Root Bridge?",
+      "option_a": "The switch with the highest Bridge ID",
+      "option_b": "The switch with the lowest Bridge ID",
+      "option_c": "The switch with the most ports",
+      "option_d": "The switch with the fastest interface",
+      "correct_answer": "B",
+      "explanation": "STP elects the switch advertising the numerically lowest Bridge ID as the Root Bridge."
+    },
+    {
+      "question": "What are the three major steps of the classic STP algorithm?",
+      "option_a": "Elect Root Bridge, elect Root Ports, elect Designated Ports",
+      "option_b": "Elect Designated Ports, elect Root Ports, elect VLANs",
+      "option_c": "Assign IP addresses, elect Root Bridge, disable switches",
+      "option_d": "Elect VLANs, calculate MAC addresses, elect Root Ports",
+      "correct_answer": "A",
+      "explanation": "STP first selects the Root Bridge, then the best Root Port on each non-root switch, and finally the Designated Port on each network segment."
+    },
+    {
+      "question": "What fields form the Bridge ID described in the lecture?",
+      "option_a": "IP address and subnet mask",
+      "option_b": "Port number and IP address",
+      "option_c": "Priority followed by MAC address",
+      "option_d": "VLAN number followed by port speed",
+      "correct_answer": "C",
+      "explanation": "The Bridge ID consists of a configurable priority followed by the switch's MAC address."
+    },
+    {
+      "question": "What is the default STP bridge priority stated in the lecture?",
+      "option_a": "4096",
+      "option_b": "8192",
+      "option_c": "16384",
+      "option_d": "32768",
+      "correct_answer": "D",
+      "explanation": "The lecture states that the default bridge priority is 32768 and that it can be configured in increments of 4096."
+    },
+    {
+      "question": "When two switches have the same STP priority, what is used to break the tie?",
+      "option_a": "Port speed",
+      "option_b": "MAC address",
+      "option_c": "IP address",
+      "option_d": "Number of connected hosts",
+      "correct_answer": "B",
+      "explanation": "Priority is compared first. If priorities are equal, the MAC address is used as the tie-breaker."
+    },
+    {
+      "question": "An administrator wants a particular core switch to become Root Bridge. Which change most directly supports this goal?",
+      "option_a": "Increase its STP priority above all other switches",
+      "option_b": "Lower its STP priority below competing switches",
+      "option_c": "Increase the cost of all its ports",
+      "option_d": "Disable all BPDUs on the switch",
+      "correct_answer": "B",
+      "explanation": "Because the lowest Bridge ID wins, deliberately lowering the intended root's priority makes it more likely to win the election."
+    },
+    {
+      "question": "What does a Root Port represent on a non-root switch?",
+      "option_a": "The port with the highest link speed regardless of topology",
+      "option_b": "The port providing the lowest-cost path toward the Root Bridge",
+      "option_c": "The port with the highest MAC address",
+      "option_d": "The port that never forwards traffic",
+      "correct_answer": "B",
+      "explanation": "Each non-root switch selects the port providing its best, lowest-cost path toward the Root Bridge as its Root Port."
+    },
+    {
+      "question": "What is a Designated Port responsible for?",
+      "option_a": "Blocking every BPDU on a segment",
+      "option_b": "Forwarding traffic onto its network segment",
+      "option_c": "Electing the Root Bridge by itself",
+      "option_d": "Assigning IP addresses to hosts",
+      "correct_answer": "B",
+      "explanation": "STP elects one Designated Port per network segment as the forwarding port for that segment."
+    },
+    {
+      "question": "What happens to another port on a segment when a different port wins the Designated Port role?",
+      "option_a": "It becomes the Root Bridge",
+      "option_b": "It becomes a non-designated blocking port",
+      "option_c": "It receives an IP address",
+      "option_d": "It is physically disconnected",
+      "correct_answer": "B",
+      "explanation": "Only the elected Designated Port forwards on that segment; other competing ports become non-designated and do not forward data traffic."
+    },
+    {
+      "question": "A switch has a direct 100 Mbps path to the Root Bridge with cost 19 and an indirect path with costs 4 + 19. What is the indirect Root Path Cost?",
+      "option_a": "4",
+      "option_b": "19",
+      "option_c": "23",
+      "option_d": "38",
+      "correct_answer": "C",
+      "explanation": "Root Path Cost is cumulative, so the indirect path costs 4 + 19 = 23."
+    },
+    {
+      "question": "Using the same scenario, which path becomes the switch's Root Port path?",
+      "option_a": "The direct 100 Mbps path with cost 19",
+      "option_b": "The indirect path with cost 23",
+      "option_c": "Both paths equally",
+      "option_d": "Neither path",
+      "correct_answer": "A",
+      "explanation": "The direct path has the lower Root Path Cost, 19 compared with 23, so the direct link is selected."
+    },
+    {
+      "question": "According to the lecture's example, what are the stated STP costs for 10 Mbps, 100 Mbps, and 1 Gbps links?",
+      "option_a": "10 Mbps = 4, 100 Mbps = 19, 1 Gbps = 100",
+      "option_b": "10 Mbps = 100, 100 Mbps = 19, 1 Gbps = 4",
+      "option_c": "10 Mbps = 19, 100 Mbps = 4, 1 Gbps = 100",
+      "option_d": "10 Mbps = 100, 100 Mbps = 4, 1 Gbps = 19",
+      "correct_answer": "B",
+      "explanation": "The lecture provides the example costs 100 for 10 Mbps, 19 for 100 Mbps, and 4 for 1 Gbps."
+    },
+    {
+      "question": "Switch A reaches the Root Bridge directly with cost 19 or through Switch B with costs 4 + 19. Which path does A prefer?",
+      "option_a": "The path through B because it has more links",
+      "option_b": "The direct path because 19 is less than 23",
+      "option_c": "The path through B because 4 is the smallest individual cost",
+      "option_d": "Both paths because STP always forwards on redundant paths",
+      "correct_answer": "B",
+      "explanation": "STP compares the accumulated cost of each path. The direct path costs 19, while the indirect path costs 23."
+    },
+    {
+      "question": "In the lecture's A-to-B segment example, A advertises a Root Path Cost of 19 and B advertises 4. Which switch wins the Designated Port role?",
+      "option_a": "A",
+      "option_b": "B",
+      "option_c": "The Root Bridge must win",
+      "option_d": "Neither switch",
+      "correct_answer": "B",
+      "explanation": "B advertises the lower Root Path Cost of 4, so B's port becomes Designated on that segment."
+    },
+    {
+      "question": "Which statement best describes a non-designated blocking port in classic STP?",
+      "option_a": "It forwards data but does not receive BPDUs",
+      "option_b": "It receives BPDUs but does not forward data traffic",
+      "option_c": "It forwards all broadcasts and learns MAC addresses",
+      "option_d": "It is physically disconnected from the switch",
+      "correct_answer": "B",
+      "explanation": "A blocking port receives BPDUs so it can monitor STP, but it does not forward data traffic."
+    },
+    {
+      "question": "Which sequence correctly represents the classic STP port states?",
+      "option_a": "Blocking → Listening → Learning → Forwarding",
+      "option_b": "Listening → Blocking → Forwarding → Learning",
+      "option_c": "Learning → Listening → Blocking → Forwarding",
+      "option_d": "Blocking → Learning → Listening → Forwarding",
+      "correct_answer": "A",
+      "explanation": "Classic STP progresses through Blocking, Listening, Learning, and finally Forwarding when a port transitions toward active forwarding."
+    },
+    {
+      "question": "What does a port do in the Learning state?",
+      "option_a": "It forwards normal data frames and learns MAC addresses",
+      "option_b": "It builds the MAC address table but does not yet forward data frames",
+      "option_c": "It ignores all BPDUs",
+      "option_d": "It becomes the Root Bridge",
+      "correct_answer": "B",
+      "explanation": "During Learning, the switch begins building its MAC address table, but the port still does not forward normal data frames."
+    },
+    {
+      "question": "Why was classic 802.1D STP considered slow?",
+      "option_a": "It required IP routing for every frame",
+      "option_b": "Its convergence could take up to approximately 50 seconds",
+      "option_c": "It used only wireless links",
+      "option_d": "It could not use BPDUs",
+      "correct_answer": "B",
+      "explanation": "The lecture states that classic 802.1D STP can take up to about 50 seconds to converge."
+    },
+    {
+      "question": "Which STP version is the original IEEE 802.1D protocol?",
+      "option_a": "RSTP",
+      "option_b": "MSTP",
+      "option_c": "STP",
+      "option_d": "Rapid PVST+",
+      "correct_answer": "C",
+      "explanation": "IEEE 802.1D defines the original Spanning Tree Protocol."
+    },
+    {
+      "question": "What major improvement does RSTP introduce over classic STP?",
+      "option_a": "It removes BPDUs",
+      "option_b": "It adds faster convergence using additional roles and a handshake mechanism",
+      "option_c": "It eliminates the Root Bridge",
+      "option_d": "It requires one tree for every physical cable",
+      "correct_answer": "B",
+      "explanation": "RSTP adds Alternate and Backup roles and a handshake mechanism that allows much faster transition toward forwarding."
+    },
+    {
+      "question": "Which two additional port roles are associated with RSTP in the lecture?",
+      "option_a": "Primary and Secondary",
+      "option_b": "Alternate and Backup",
+      "option_c": "Root and Blocking",
+      "option_d": "Listening and Learning",
+      "correct_answer": "B",
+      "explanation": "RSTP adds Alternate Ports as backup paths toward the root and Backup Ports as backups for designated ports on the same segment."
+    },
+    {
+      "question": "Why can RSTP transition a backup path to forwarding much faster than classic STP?",
+      "option_a": "It does not use any topology information",
+      "option_b": "The standby role is already known, so the path does not need to wait through the classic Listening and Learning process",
+      "option_c": "It physically removes failed links",
+      "option_d": "It disables MAC learning",
+      "correct_answer": "B",
+      "explanation": "RSTP knows the backup role in advance and can transition rapidly instead of waiting through the classic STP timers and states."
+    },
+    {
+      "question": "What is the main characteristic of Cisco PVST+ and Rapid PVST+?",
+      "option_a": "One spanning tree instance for the entire network only",
+      "option_b": "One independent spanning tree instance per VLAN",
+      "option_c": "No spanning tree instances",
+      "option_d": "One instance for every physical port",
+      "correct_answer": "B",
+      "explanation": "PVST+ and Rapid PVST+ run independent spanning-tree instances per VLAN, enabling per-VLAN topology decisions and load balancing."
+    },
+    {
+      "question": "What is the main scalability advantage of MSTP?",
+      "option_a": "It removes VLANs",
+      "option_b": "It maps multiple VLANs to a smaller number of spanning-tree instances",
+      "option_c": "It uses no Root Bridge",
+      "option_d": "It requires a separate tree for every VLAN",
+      "correct_answer": "B",
+      "explanation": "MSTP groups multiple VLANs into a smaller number of spanning-tree instances, making it more scalable than maintaining one instance per VLAN."
+    },
+    {
+      "question": "A network administrator wants different redundant links to be used by different VLANs. Which technology from the lecture most directly supports this design?",
+      "option_a": "Original STP",
+      "option_b": "PVST+ or Rapid PVST+",
+      "option_c": "Loop Guard",
+      "option_d": "BPDU Filter",
+      "correct_answer": "B",
+      "explanation": "PVST+ and Rapid PVST+ maintain independent spanning-tree instances per VLAN, allowing different VLANs to use different forwarding paths."
+    },
+    {
+      "question": "What is the fundamental security weakness that enables the STP attacks covered in the lecture?",
+      "option_a": "Ethernet frames contain an invalid checksum",
+      "option_b": "BPDUs have no authentication",
+      "option_c": "Switches cannot learn MAC addresses",
+      "option_d": "STP does not use Bridge IDs",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies the absence of BPDU authentication as the common root cause of the STP attacks discussed."
+    },
+    {
+      "question": "Why can an attacker connected to an access port potentially influence STP?",
+      "option_a": "Any device can send BPDUs and the switch cannot verify whether the sender is legitimate",
+      "option_b": "Access ports automatically become Root Bridges",
+      "option_c": "Every access port has the lowest Bridge ID",
+      "option_d": "STP ignores BPDUs received from switches",
+      "correct_answer": "A",
+      "explanation": "The lecture explains that BPDUs lack authentication, allowing an attached device to send apparently legitimate STP information."
+    },
+    {
+      "question": "What is the primary objective of Root Bridge Manipulation?",
+      "option_a": "To disable DHCP",
+      "option_b": "To convince the network that the attacker's device should become the Root Bridge",
+      "option_c": "To encrypt traffic",
+      "option_d": "To increase link bandwidth",
+      "correct_answer": "B",
+      "explanation": "Root Bridge manipulation attempts to make the attacker's device win the STP Root Bridge election by advertising a superior Bridge ID."
+    },
+    {
+      "question": "How can an attacker attempt to win the STP Root Bridge election?",
+      "option_a": "Advertise a higher priority value than the legitimate root",
+      "option_b": "Advertise an artificially low priority value",
+      "option_c": "Disable all switch ports",
+      "option_d": "Send only ARP packets",
+      "correct_answer": "B",
+      "explanation": "Because the lowest Bridge ID wins, an attacker can attempt to advertise an artificially low priority."
+    },
+    {
+      "question": "If an attacker successfully becomes the Root Bridge, what is the immediate architectural consequence?",
+      "option_a": "All switches stop forwarding forever",
+      "option_b": "The topology is recalculated around the attacker's device",
+      "option_c": "All VLANs are automatically deleted",
+      "option_d": "Every host receives a new IP address",
+      "correct_answer": "B",
+      "explanation": "Other switches recalculate their STP roles and paths based on the new Root Bridge."
+    },
+    {
+      "question": "Why can successful Root Bridge manipulation create a potential man-in-the-middle position?",
+      "option_a": "The attacker becomes the DHCP server automatically",
+      "option_b": "Traffic that previously followed other paths may be redirected through the attacker's device",
+      "option_c": "The attacker gains the Root Bridge's MAC address automatically",
+      "option_d": "STP encrypts traffic through the attacker",
+      "correct_answer": "B",
+      "explanation": "Changing the root can alter forwarding paths so traffic is redirected through the attacker's location, potentially enabling interception and analysis."
+    },
+    {
+      "question": "What is the main mechanism abused by TC Flooding/Spoofing?",
+      "option_a": "Repeated fabricated topology-change notifications",
+      "option_b": "Repeated DHCP offers",
+      "option_c": "ARP encryption",
+      "option_d": "IP fragmentation",
+      "correct_answer": "A",
+      "explanation": "The attack abuses the unauthenticated topology-change mechanism by causing switches to react to fabricated or repeated topology changes."
+    },
+    {
+      "question": "What happens to MAC address table aging during a topology-change event as described in the lecture?",
+      "option_a": "The aging time is drastically shortened",
+      "option_b": "The aging time becomes infinite",
+      "option_c": "MAC learning is permanently disabled",
+      "option_d": "All MAC addresses are replaced by IP addresses",
+      "correct_answer": "A",
+      "explanation": "Repeated topology-change notifications cause switches to shorten MAC table aging so entries are flushed much faster than normal."
+    },
+    {
+      "question": "Why can TC Flooding lead to increased unknown-unicast flooding?",
+      "option_a": "The switches constantly lose learned MAC-location information",
+      "option_b": "The Root Bridge stops sending IP packets",
+      "option_c": "Port speeds automatically decrease",
+      "option_d": "The switch disables Ethernet",
+      "correct_answer": "A",
+      "explanation": "Frequent MAC table flushing causes switches to lose information about where devices are located, so traffic can be flooded as unknown unicast."
+    },
+    {
+      "question": "Which Week 3 concept does the behavior caused by TC Flooding most closely resemble?",
+      "option_a": "CAM/MAC table attack behavior",
+      "option_b": "DNS poisoning",
+      "option_c": "IP spoofing",
+      "option_d": "TCP congestion control",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly relates the resulting unknown-unicast flooding to the behavior seen with a CAM table attack."
+    },
+    {
+      "question": "Which STP attack attempts to cause denial of service without necessarily becoming Root Bridge?",
+      "option_a": "Root Bridge manipulation",
+      "option_b": "STP DoS through BPDU flooding",
+      "option_c": "MAC learning",
+      "option_d": "PortFast",
+      "correct_answer": "B",
+      "explanation": "STP DoS can flood switches with BPDUs, consuming processing resources and causing repeated topology recalculation without winning the root election."
+    },
+    {
+      "question": "Why can a high-rate BPDU flood consume switch resources?",
+      "option_a": "Switches must process received BPDUs to operate the STP algorithm",
+      "option_b": "BPDUs contain video streams",
+      "option_c": "BPDUs automatically allocate memory to every host",
+      "option_d": "BPDUs increase Ethernet frame size indefinitely",
+      "correct_answer": "A",
+      "explanation": "The lecture states that switches process BPDUs to maintain STP, so sustained high-rate BPDU traffic can consume CPU resources."
+    },
+    {
+      "question": "An attacker repeatedly changes the priority claimed in BPDUs. What additional effect can this have?",
+      "option_a": "It can repeatedly force spanning-tree recalculation",
+      "option_b": "It automatically disables IP routing",
+      "option_c": "It permanently removes redundant links",
+      "option_d": "It changes the physical cable speed",
+      "correct_answer": "A",
+      "explanation": "Changing claimed priorities can repeatedly alter STP's view of the topology and force continual recalculation."
+    },
+    {
+      "question": "Which mitigation is specifically designed to prevent a downstream switch from becoming Root Bridge through a protected port?",
+      "option_a": "Root Guard",
+      "option_b": "Loop Guard",
+      "option_c": "BackboneFast",
+      "option_d": "UplinkFast",
+      "correct_answer": "A",
+      "explanation": "Root Guard protects ports that should never allow a downstream device to become Root Bridge."
+    },
+    {
+      "question": "Where should Root Guard typically be deployed according to the lecture?",
+      "option_a": "On ports facing downstream access switches",
+      "option_b": "Only on end-user PCs",
+      "option_c": "Only on wireless clients",
+      "option_d": "On every host NIC",
+      "correct_answer": "A",
+      "explanation": "Root Guard is placed on designated ports of distribution/core switches that face downstream access switches."
+    },
+    {
+      "question": "What happens when a Root Guard-protected port receives a superior BPDU?",
+      "option_a": "The port immediately becomes the Root Port",
+      "option_b": "The port enters a root-inconsistent state and stops forwarding",
+      "option_c": "The switch accepts the new Root Bridge",
+      "option_d": "The BPDU is forwarded to every host",
+      "correct_answer": "B",
+      "explanation": "Root Guard prevents the superior BPDU from changing the topology through that port by placing the port into a root-inconsistent state."
+    },
+    {
+      "question": "Which mitigation is best associated with an access port that should only ever connect to an end device?",
+      "option_a": "BPDU Guard",
+      "option_b": "BackboneFast",
+      "option_c": "Root Guard",
+      "option_d": "MSTP",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard is designed for end-device-facing access ports where receiving any BPDU is considered suspicious."
+    },
+    {
+      "question": "What does BPDU Guard do when a BPDU is received on a protected port?",
+      "option_a": "It silently ignores the BPDU and leaves the port unchanged",
+      "option_b": "It shuts down the port by placing it into an err-disabled condition",
+      "option_c": "It makes the sender Root Bridge",
+      "option_d": "It converts the port to a routed interface",
+      "correct_answer": "B",
+      "explanation": "BPDU Guard treats any incoming BPDU on the protected access port as a violation and shuts the port down."
+    },
+    {
+      "question": "Why is BPDU Guard considered appropriate for a normal PC-facing access port?",
+      "option_a": "Normal end devices are not expected to send BPDUs",
+      "option_b": "PCs are normally Root Bridges",
+      "option_c": "PCs require STP to forward every frame",
+      "option_d": "BPDU Guard increases PC bandwidth",
+      "correct_answer": "A",
+      "explanation": "The assumption is that legitimate end devices such as PCs and printers do not send BPDUs, so an incoming BPDU is suspicious."
+    },
+    {
+      "question": "What is the key behavioral difference between BPDU Guard and BPDU Filter?",
+      "option_a": "Guard shuts down the port; Filter silently discards BPDUs",
+      "option_b": "Guard changes the Root Bridge; Filter changes the VLAN",
+      "option_c": "Guard increases path cost; Filter decreases it",
+      "option_d": "Guard is switch-wide; Filter is always routed",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard provides an active violation response by shutting the port down, while BPDU Filter silently discards BPDUs and leaves the port forwarding."
+    },
+    {
+      "question": "Why can BPDU Filter be considered weaker as a detective control than BPDU Guard?",
+      "option_a": "It does not generate the same visible shutdown/alert response when a BPDU arrives",
+      "option_b": "It allows all BPDUs to influence the topology",
+      "option_c": "It disables MAC learning",
+      "option_d": "It increases STP convergence time",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes that BPDU Filter silently ignores BPDUs, so a rogue device can remain connected without the visible violation response produced by BPDU Guard."
+    },
+    {
+      "question": "Which mitigation is designed to prevent a blocking port from incorrectly transitioning to forwarding when BPDUs unexpectedly stop arriving?",
+      "option_a": "Root Guard",
+      "option_b": "Loop Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "BackboneFast",
+      "correct_answer": "B",
+      "explanation": "Loop Guard protects against situations such as unidirectional failures where loss of BPDUs could otherwise cause a blocking port to transition incorrectly."
+    },
+    {
+      "question": "Where is Loop Guard typically deployed?",
+      "option_a": "On root ports and alternate/backup non-designated ports",
+      "option_b": "Only on PCs",
+      "option_c": "Only on DHCP servers",
+      "option_d": "Only on routed WAN interfaces",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies root ports and alternate/backup non-designated ports, especially point-to-point distribution/core links, as typical Loop Guard locations."
+    },
+    {
+      "question": "A redundant STP link suffers a unidirectional failure. The switch stops receiving BPDUs and considers its previously blocked path eligible to forward. Which feature addresses this risk?",
+      "option_a": "BPDU Filter",
+      "option_b": "Loop Guard",
+      "option_c": "UplinkFast",
+      "option_d": "Root Guard",
+      "correct_answer": "B",
+      "explanation": "Loop Guard treats unexpected loss of BPDUs as a potential loop condition and prevents the protected port from incorrectly becoming forwarding."
+    },
+    {
+      "question": "What type of failure does BackboneFast optimize for?",
+      "option_a": "An indirect link failure elsewhere in the network",
+      "option_b": "A PC unplugging from an access port",
+      "option_c": "A superior BPDU received from a rogue switch",
+      "option_d": "A direct failure of the access switch's Root Port only",
+      "correct_answer": "A",
+      "explanation": "BackboneFast speeds convergence after indirect failures elsewhere in the network by helping switches discover alternate paths rather than simply waiting for the Max Age timer."
+    },
+    {
+      "question": "What type of failure does UplinkFast optimize for?",
+      "option_a": "An indirect failure in another part of the backbone",
+      "option_b": "Failure of an access switch's direct Root Port uplink",
+      "option_c": "A rogue Root Bridge claim",
+      "option_d": "A topology-change notification flood",
+      "correct_answer": "B",
+      "explanation": "UplinkFast is intended for access switches with redundant uplinks and quickly activates a previously blocked backup uplink when the direct Root Port fails."
+    },
+    {
+      "question": "Why were BackboneFast and UplinkFast originally created?",
+      "option_a": "To add authentication to BPDUs",
+      "option_b": "To compensate for classic STP's slow convergence",
+      "option_c": "To replace Ethernet with IP",
+      "option_d": "To eliminate VLANs",
+      "correct_answer": "B",
+      "explanation": "They were Cisco features designed to improve convergence in classic STP before RSTP incorporated faster convergence mechanisms into the protocol."
+    },
+    {
+      "question": "Which statement about BackboneFast and UplinkFast deployment is correct?",
+      "option_a": "Both are always configured on individual PC-facing ports",
+      "option_b": "BackboneFast is switch-wide on distribution/core switches, while UplinkFast is switch-wide on suitable access switches",
+      "option_c": "Both are BPDU filtering mechanisms",
+      "option_d": "Both are configured only on Root Bridge ports",
+      "correct_answer": "B",
+      "explanation": "The lecture distinguishes these two as switch-wide features rather than per-port features."
+    },
+    {
+      "question": "A distribution switch has a designated port facing an access switch that must never influence the Root Bridge election. Which control is most appropriate?",
+      "option_a": "Root Guard",
+      "option_b": "UplinkFast",
+      "option_c": "BPDU Filter",
+      "option_d": "BackboneFast",
+      "correct_answer": "A",
+      "explanation": "Root Guard belongs on designated ports facing downstream switches where the downstream device must not become the Root Bridge."
+    },
+    {
+      "question": "A corporate PC access port receives a BPDU from a device that was supposed to be only a workstation. The security team wants the port visibly shut down as a violation. Which feature is the strongest fit?",
+      "option_a": "BPDU Filter",
+      "option_b": "BPDU Guard",
+      "option_c": "BackboneFast",
+      "option_d": "MSTP",
+      "correct_answer": "B",
+      "explanation": "BPDU Guard is designed for this exact scenario and shuts the access port down when a BPDU is received."
+    },
+    {
+      "question": "An administrator wants a PC-facing port to silently discard BPDUs and continue forwarding without an error-disabled response. Which feature matches that requirement?",
+      "option_a": "Root Guard",
+      "option_b": "BPDU Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "Loop Guard",
+      "correct_answer": "C",
+      "explanation": "BPDU Filter silently discards BPDUs and allows the port to remain operational."
+    },
+    {
+      "question": "A network uses redundant distribution-to-core links. One link becomes unidirectional and BPDUs stop arriving on a previously blocking path. Which mitigation should prevent that path from incorrectly forwarding and forming a loop?",
+      "option_a": "Loop Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "Root Guard",
+      "option_d": "UplinkFast",
+      "correct_answer": "A",
+      "explanation": "Loop Guard specifically protects against unexpected BPDU loss that could cause a non-designated port to transition toward forwarding."
+    },
+    {
+      "question": "A network administrator configures BPDU Guard on all PC-facing access ports but does nothing on distribution switches. Which attack remains particularly relevant?",
+      "option_a": "A rogue device plugged into those protected PC ports sending a BPDU",
+      "option_b": "Root Bridge manipulation through an unprotected distribution-facing relationship",
+      "option_c": "A PC receiving an IP address",
+      "option_d": "Normal MAC learning",
+      "correct_answer": "B",
+      "explanation": "BPDU Guard protects the specified access ports, but it does not by itself prevent a superior BPDU from an untrusted downstream switch through another unprotected STP relationship."
+    },
+    {
+      "question": "Which statement best describes the security relationship among Root Guard, BPDU Guard/Filter, and Loop Guard?",
+      "option_a": "They all solve exactly the same failure",
+      "option_b": "They protect different STP assumptions at different locations",
+      "option_c": "Only one of them should ever be deployed in a network",
+      "option_d": "They all improve convergence speed only",
+      "correct_answer": "B",
+      "explanation": "The lecture presents them as layered controls: Root Guard limits superior root claims, BPDU Guard/Filter protect edge ports, and Loop Guard protects against dangerous BPDU loss."
+    },
+    {
+      "question": "Consider a switch with two possible paths to the Root Bridge. Path 1 has link costs 4 + 4 + 19, while Path 2 has costs 19 + 19. Which path should STP prefer based solely on Root Path Cost?",
+      "option_a": "Path 1 because its total cost is 27",
+      "option_b": "Path 2 because its total cost is 38",
+      "option_c": "Both paths because STP ignores accumulated cost",
+      "option_d": "Path 2 because it has fewer links",
+      "correct_answer": "A",
+      "explanation": "Path 1 has a total cost of 27, while Path 2 has a total cost of 38. STP prefers the lower accumulated cost."
+    },
+    {
+      "question": "A switch has three possible Root paths with total costs of 12, 17, and 9. Which path should supply the Root Port?",
+      "option_a": "The path with cost 12",
+      "option_b": "The path with cost 17",
+      "option_c": "The path with cost 9",
+      "option_d": "All three paths",
+      "correct_answer": "C",
+      "explanation": "The Root Port is selected using the best path toward the Root Bridge, so the lowest Root Path Cost of 9 wins."
+    },
+    {
+      "question": "Switch A has a Root Path Cost of 12 on one port and participates in another segment where Switch B advertises a Root Path Cost of 8. Which switch wins the Designated Port role on that shared segment, assuming no other tie-breakers are needed?",
+      "option_a": "A",
+      "option_b": "B",
+      "option_c": "The switch with the highest cost",
+      "option_d": "Neither",
+      "correct_answer": "B",
+      "explanation": "The switch advertising the lower Root Path Cost provides the better path to the root and therefore wins the Designated Port decision on that segment."
+    },
+    {
+      "question": "A rogue switch connected below a distribution switch advertises a lower priority than the legitimate Root Bridge. Root Guard is enabled on the distribution switch's downstream-facing designated port. What should happen?",
+      "option_a": "The rogue switch becomes Root Bridge normally",
+      "option_b": "The protected port enters root-inconsistent state instead of accepting the superior claim",
+      "option_c": "The distribution switch becomes a rogue Root Bridge",
+      "option_d": "The port silently ignores all traffic forever",
+      "correct_answer": "B",
+      "explanation": "Root Guard blocks a superior BPDU received on a protected designated port by moving that port into root-inconsistent state."
+    },
+    {
+      "question": "An attacker does not attempt to become Root Bridge. Instead, it sends a sustained stream of BPDUs with varying claimed priorities. Which outcome is most consistent with the lecture?",
+      "option_a": "The attacker can cause repeated STP recalculation and consume switch CPU",
+      "option_b": "The attacker can only affect DNS",
+      "option_c": "The attack automatically encrypts the network",
+      "option_d": "The attack has no effect because only the Root Bridge processes BPDUs",
+      "correct_answer": "A",
+      "explanation": "STP DoS can operate without winning the root election. High-rate or changing BPDUs can consume CPU and repeatedly force topology calculations."
+    },
+    {
+      "question": "A switch repeatedly loses MAC entries and begins flooding unknown unicast traffic throughout the network, but no rogue Root Bridge has been established. Which attack best fits these symptoms?",
+      "option_a": "TC Flooding/Spoofing",
+      "option_b": "Root Bridge manipulation",
+      "option_c": "UplinkFast",
+      "option_d": "Loop Guard",
+      "correct_answer": "A",
+      "explanation": "TC flooding repeatedly forces MAC table aging/flush behavior, resulting in loss of learned locations and increased unknown-unicast flooding."
+    },
+    {
+      "question": "A security engineer wants to stop an untrusted access device from sending any BPDU that could influence STP, while also ensuring the incident is immediately visible because the port should shut down. Which choice is best?",
+      "option_a": "BPDU Filter",
+      "option_b": "BPDU Guard",
+      "option_c": "BackboneFast",
+      "option_d": "Loop Guard",
+      "correct_answer": "B",
+      "explanation": "BPDU Guard treats any BPDU on the protected access port as a violation and places the port into an err-disabled state."
+    },
+    {
+      "question": "A security engineer instead prioritizes keeping the access port operational and silently preventing BPDUs from affecting STP. Which choice best matches that requirement?",
+      "option_a": "BPDU Guard",
+      "option_b": "Root Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "UplinkFast",
+      "correct_answer": "C",
+      "explanation": "BPDU Filter silently discards BPDUs and keeps the port forwarding, although it provides weaker detection."
+    },
+    {
+      "question": "Why would deploying only BPDU Guard on access ports not provide complete STP hardening?",
+      "option_a": "BPDU Guard does not protect every STP relationship or failure condition elsewhere in the topology",
+      "option_b": "BPDU Guard disables the Root Bridge",
+      "option_c": "BPDU Guard only protects IP packets",
+      "option_d": "BPDU Guard prevents MAC learning everywhere",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard is an edge-port control. Root manipulation through other STP relationships, topology-change abuse, and link-failure loop risks require additional controls."
+    },
+    {
+      "question": "A distribution switch receives no BPDUs on a redundant non-designated path because one direction of a link has failed. Without an additional protection mechanism, why is this dangerous?",
+      "option_a": "The port may incorrectly believe the path is safe and transition toward forwarding",
+      "option_b": "The switch automatically becomes Root Bridge",
+      "option_c": "The port permanently loses its MAC address",
+      "option_d": "The Root Bridge is physically disconnected",
+      "correct_answer": "A",
+      "explanation": "Unexpected BPDU loss can cause classic STP logic to consider a blocking path eligible to forward even though the topology may still contain a loop."
+    },
+    {
+      "question": "Which mitigation specifically addresses the slow reaction to an indirect failure elsewhere in a classic STP topology?",
+      "option_a": "BackboneFast",
+      "option_b": "BPDU Guard",
+      "option_c": "Root Guard",
+      "option_d": "BPDU Filter",
+      "correct_answer": "A",
+      "explanation": "BackboneFast accelerates recovery from indirect link failures by helping switches find alternate paths instead of simply waiting for the Max Age timer."
+    },
+    {
+      "question": "An access switch has two uplinks. Its current Root Port fails, but a previously blocked redundant uplink is still available. Which classic Cisco feature is specifically designed to accelerate this recovery?",
+      "option_a": "BackboneFast",
+      "option_b": "UplinkFast",
+      "option_c": "Root Guard",
+      "option_d": "BPDU Filter",
+      "correct_answer": "B",
+      "explanation": "UplinkFast is designed for access switches with redundant uplinks and rapidly activates a backup uplink after the direct Root Port fails."
+    },
+    {
+      "question": "Which comparison between BackboneFast and UplinkFast is most accurate?",
+      "option_a": "BackboneFast handles indirect failures; UplinkFast handles direct Root Port failure on an access switch",
+      "option_b": "BackboneFast protects PC ports; UplinkFast authenticates BPDUs",
+      "option_c": "Both are primarily BPDU filtering mechanisms",
+      "option_d": "UplinkFast is used only on Root Bridges",
+      "correct_answer": "A",
+      "explanation": "BackboneFast targets indirect failures elsewhere in the topology, while UplinkFast targets loss of an access switch's direct Root Port."
+    },
+    {
+      "question": "A network has classic STP and a redundant access-switch uplink. The administrator wants rapid recovery when the direct uplink fails. Which design is most appropriate from the lecture?",
+      "option_a": "Enable UplinkFast on the access switch",
+      "option_b": "Enable Root Guard only on the PC",
+      "option_c": "Enable BPDU Filter on the Root Bridge",
+      "option_d": "Disable the redundant uplink",
+      "correct_answer": "A",
+      "explanation": "UplinkFast is specifically intended to speed recovery when an access switch's direct Root Port uplink fails."
+    },
+    {
+      "question": "A company uses an older classic-STP deployment. A security engineer wants protection against a downstream switch attempting to advertise a superior Root Bridge claim and also wants protection against unidirectional-link loop formation. Which pair best matches these goals?",
+      "option_a": "Root Guard and Loop Guard",
+      "option_b": "BPDU Filter and UplinkFast",
+      "option_c": "BackboneFast and BPDU Guard",
+      "option_d": "PVST+ and MSTP",
+      "correct_answer": "A",
+      "explanation": "Root Guard addresses superior root claims on protected designated ports, while Loop Guard protects against unsafe forwarding after unexpected BPDU loss."
+    },
+    {
+      "question": "A company wants an end-device port to react strongly to any BPDU, while a different special-purpose port should simply exclude itself from STP participation without shutting down when BPDUs arrive. Which pairing best reflects the lecture?",
+      "option_a": "BPDU Guard for the end-device port; BPDU Filter for the STP-excluded port",
+      "option_b": "Loop Guard for both",
+      "option_c": "Root Guard for the end-device port; BackboneFast for the other",
+      "option_d": "UplinkFast for both",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard provides a shutdown response on end-device ports, while BPDU Filter silently discards BPDUs and can be used where STP participation should be excluded."
+    },
+    {
+      "question": "A switch receives a superior BPDU on a port that is configured with Root Guard. Which conclusion is most accurate?",
+      "option_a": "The received BPDU should automatically make that switch the Root Bridge",
+      "option_b": "The port should be prevented from accepting the superior root claim",
+      "option_c": "The port should become a Designated Port for the attacker",
+      "option_d": "The switch should disable all STP globally",
+      "correct_answer": "B",
+      "explanation": "Root Guard specifically prevents a protected port from accepting a superior BPDU that would allow a downstream device to influence the root election."
+    },
+    {
+      "question": "Which statement best explains why STP attacks can be powerful despite STP being designed to prevent loops?",
+      "option_a": "STP's decisions rely on BPDU information, and the protocol trusts received BPDUs without authentication",
+      "option_b": "STP does not use any control messages",
+      "option_c": "STP always selects the physically shortest cable",
+      "option_d": "STP disables all redundant links permanently",
+      "correct_answer": "A",
+      "explanation": "STP depends on BPDUs to establish its logical topology, and the lack of BPDU authentication allows unauthorized devices to inject STP information."
+    },
+    {
+      "question": "Which attack most directly attempts to alter the network's logical topology by changing who is considered the Root Bridge?",
+      "option_a": "TC Flooding",
+      "option_b": "Root Bridge Manipulation",
+      "option_c": "STP DoS",
+      "option_d": "Loop Guard",
+      "correct_answer": "B",
+      "explanation": "Root Bridge manipulation directly targets the STP election and attempts to make the attacker's device the Root Bridge."
+    },
+    {
+      "question": "Which attack focuses primarily on forcing frequent MAC table aging rather than winning the Root Bridge election?",
+      "option_a": "Root Bridge Manipulation",
+      "option_b": "TC Flooding/Spoofing",
+      "option_c": "UplinkFast",
+      "option_d": "Root Guard",
+      "correct_answer": "B",
+      "explanation": "TC flooding abuses topology-change notifications to repeatedly shorten MAC table aging and cause frequent flushing."
+    },
+    {
+      "question": "Which attack focuses primarily on exhausting switch processing resources with large numbers of BPDUs?",
+      "option_a": "STP DoS",
+      "option_b": "Root Guard",
+      "option_c": "TC Flooding only",
+      "option_d": "Loop Guard",
+      "correct_answer": "A",
+      "explanation": "STP DoS floods switches with BPDUs so that processing the control traffic and repeated recalculation consumes resources."
+    },
+    {
+      "question": "A student claims that BPDU Filter is stronger than BPDU Guard because it keeps the port operational. Which response is most consistent with the lecture?",
+      "option_a": "Correct; staying operational always makes it stronger",
+      "option_b": "Incorrect; BPDU Filter is weaker as a detective control because it silently ignores BPDUs",
+      "option_c": "Correct; BPDU Filter authenticates BPDUs",
+      "option_d": "Incorrect; BPDU Filter makes the port the Root Bridge",
+      "correct_answer": "B",
+      "explanation": "BPDU Filter can stop received BPDUs from influencing STP while keeping the port up, but its silent behavior provides less visible detection than BPDU Guard."
+    },
+    {
+      "question": "A student says Loop Guard should be placed on ordinary PC access ports to stop rogue Root Bridge claims. What is the best correction?",
+      "option_a": "Use Root Guard or BPDU Guard depending on the scenario; Loop Guard addresses unexpected BPDU loss on redundant STP paths",
+      "option_b": "Loop Guard is always the correct control for PC ports",
+      "option_c": "Loop Guard is used to elect the Root Bridge",
+      "option_d": "Loop Guard replaces PortFast",
+      "correct_answer": "A",
+      "explanation": "Loop Guard protects redundant STP paths against unsafe forwarding caused by unexpected BPDU loss. Root Guard and BPDU Guard address different threats."
+    },
+    {
+      "question": "A network designer places Root Guard on ports facing downstream access switches, BPDU Guard on PC-facing access ports, and Loop Guard on redundant distribution/core links. What security principle does this configuration demonstrate?",
+      "option_a": "One security feature must be used everywhere",
+      "option_b": "Different controls are placed where the specific STP assumption is at risk",
+      "option_c": "STP should never use redundant links",
+      "option_d": "All BPDUs should be blocked globally",
+      "correct_answer": "B",
+      "explanation": "The lecture presents STP hardening as layered defense, with different controls deployed at different points according to the threat."
+    },
+    {
+      "question": "Which deployment statement is correct?",
+      "option_a": "BackboneFast is configured per PC-facing port",
+      "option_b": "UplinkFast is configured as a switch-wide feature on an access switch with redundant uplinks",
+      "option_c": "Root Guard is always switch-wide",
+      "option_d": "BPDU Guard is only configured on Root Bridges",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies UplinkFast as a switch-wide feature on suitable access-layer switches with redundant uplinks."
+    },
+    {
+      "question": "Which deployment statement about BackboneFast is correct?",
+      "option_a": "It is a switch-wide setting on distribution/core switches",
+      "option_b": "It is a per-PC setting",
+      "option_c": "It is only used on wireless clients",
+      "option_d": "It is a replacement for BPDU Guard",
+      "correct_answer": "A",
+      "explanation": "BackboneFast is described as a switch-wide setting on distribution/core switches for accelerating recovery from indirect failures."
+    },
+    {
+      "question": "A network administrator wants to deliberately choose a stable Root Bridge rather than allowing an arbitrary switch to win. Why is this considered good design?",
+      "option_a": "It avoids relying on chance and gives the topology a deliberately selected reference point",
+      "option_b": "It prevents all physical failures",
+      "option_c": "It removes the need for redundant links",
+      "option_d": "It eliminates BPDUs",
+      "correct_answer": "A",
+      "explanation": "The lecture recommends deliberately lowering the priority of the intended root so the root election is controlled rather than left to the lowest naturally occurring Bridge ID."
+    },
+    {
+      "question": "A switch has a direct 1 Gbps link to the Root Bridge with cost 4 and an indirect route consisting of two 100 Mbps links with costs 19 + 19. Which path should be preferred?",
+      "option_a": "The direct 1 Gbps link",
+      "option_b": "The two 100 Mbps links",
+      "option_c": "Both equally",
+      "option_d": "Neither because STP prefers more hops",
+      "correct_answer": "A",
+      "explanation": "The direct path has Root Path Cost 4, while the indirect path costs 38, so STP selects the direct path."
+    },
+    {
+      "question": "Suppose Switch A has Root Path Cost 15 and Switch B has Root Path Cost 8 on a shared segment. What should normally happen to their ports on that segment?",
+      "option_a": "A becomes Designated because 15 is greater",
+      "option_b": "B becomes Designated because 8 is the lower Root Path Cost",
+      "option_c": "Both become Designated",
+      "option_d": "Both become Root Ports",
+      "correct_answer": "B",
+      "explanation": "The lower Root Path Cost represents the better path toward the root, so B wins the Designated Port role on that segment."
+    },
+    {
+      "question": "Which statement correctly distinguishes a Root Port from a Designated Port?",
+      "option_a": "A Root Port is the best path toward the root for a non-root switch; a Designated Port is the forwarding port for a segment",
+      "option_b": "Both roles always exist on the Root Bridge only",
+      "option_c": "A Root Port always blocks while a Designated Port always receives only",
+      "option_d": "A Root Port elects VLANs while a Designated Port assigns IP addresses",
+      "correct_answer": "A",
+      "explanation": "Root Port selection is made per non-root switch, while Designated Port selection is made per network segment."
+    },
+    {
+      "question": "Which port state is responsible for learning MAC addresses without yet forwarding normal data frames?",
+      "option_a": "Blocking",
+      "option_b": "Listening",
+      "option_c": "Learning",
+      "option_d": "Forwarding",
+      "correct_answer": "C",
+      "explanation": "The Learning state builds the MAC address table while the port still does not forward normal data traffic."
+    },
+    {
+      "question": "Which port state both forwards traffic and learns MAC addresses?",
+      "option_a": "Blocking",
+      "option_b": "Listening",
+      "option_c": "Learning",
+      "option_d": "Forwarding",
+      "correct_answer": "D",
+      "explanation": "Forwarding is the fully operational state in which the port forwards frames and learns MAC addresses."
+    },
+    {
+      "question": "A network engineer wants to reduce the number of spanning-tree instances while still supporting multiple VLANs. Which protocol from the lecture is the strongest match?",
+      "option_a": "Original STP",
+      "option_b": "MSTP",
+      "option_c": "BPDU Guard",
+      "option_d": "UplinkFast",
+      "correct_answer": "B",
+      "explanation": "MSTP maps multiple VLANs to a smaller number of spanning-tree instances, improving scalability."
+    },
+    {
+      "question": "Which protocol specifically uses a single spanning tree for the entire network according to the lecture's comparison?",
+      "option_a": "MSTP",
+      "option_b": "PVST+",
+      "option_c": "Original STP",
+      "option_d": "Rapid PVST+",
+      "correct_answer": "C",
+      "explanation": "The original STP uses one spanning-tree instance for the entire network."
+    },
+    {
+      "question": "A network is running classic STP and experiences an indirect failure elsewhere in the backbone. Which feature would reduce the delay caused by waiting for normal classic-STP behavior?",
+      "option_a": "BackboneFast",
+      "option_b": "BPDU Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "Root Guard",
+      "correct_answer": "A",
+      "explanation": "BackboneFast specifically accelerates recovery after indirect failures elsewhere in the network."
+    },
+    {
+      "question": "A network is running classic STP and an access switch loses its direct Root Port while retaining a blocked redundant uplink. Which feature is most directly relevant?",
+      "option_a": "BackboneFast",
+      "option_b": "UplinkFast",
+      "option_c": "Root Guard",
+      "option_d": "BPDU Filter",
+      "correct_answer": "B",
+      "explanation": "UplinkFast is designed to rapidly activate a backup uplink on an access switch after its direct Root Port fails."
+    },
+    {
+      "question": "Why did RSTP reduce the need for separate BackboneFast and UplinkFast features?",
+      "option_a": "RSTP removed redundant links",
+      "option_b": "RSTP incorporated much of their fast-convergence behavior into the core protocol",
+      "option_c": "RSTP stopped using BPDUs",
+      "option_d": "RSTP uses only one switch",
+      "correct_answer": "B",
+      "explanation": "The lecture explains that RSTP later absorbed much of the functionality these Cisco enhancements originally provided for classic STP."
+    },
+    {
+      "question": "An attacker connects to a PC-facing port and sends a BPDU claiming a superior Root Bridge. Which layered defense should ideally stop the attack at the edge before it can influence the topology?",
+      "option_a": "BPDU Guard",
+      "option_b": "BackboneFast",
+      "option_c": "MSTP",
+      "option_d": "UplinkFast",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard treats any BPDU on an end-device-facing port as a violation and shuts the port down."
+    },
+    {
+      "question": "A rogue downstream switch sends a superior BPDU through a distribution switch's designated port, but the port is not an end-device port. Which control is specifically designed for this location and threat?",
+      "option_a": "BPDU Guard",
+      "option_b": "Root Guard",
+      "option_c": "UplinkFast",
+      "option_d": "MSTP",
+      "correct_answer": "B",
+      "explanation": "Root Guard is intended for designated ports facing downstream switches where a superior BPDU must not change the root."
+    },
+    {
+      "question": "A topology contains a redundant core link and a port remains blocking because it normally receives BPDUs. The port suddenly stops receiving BPDUs due to a unidirectional failure. Which control should keep the port from incorrectly becoming forwarding?",
+      "option_a": "Loop Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "Root Guard",
+      "option_d": "BackboneFast",
+      "correct_answer": "A",
+      "explanation": "Loop Guard protects a blocking/non-designated path against unexpected BPDU loss and the resulting unsafe transition toward forwarding."
+    },
+    {
+      "question": "Which scenario is most directly associated with STP DoS rather than Root Bridge manipulation?",
+      "option_a": "A rogue switch advertises a lower Bridge ID and becomes root",
+      "option_b": "A device continuously floods BPDUs to consume switch processing resources",
+      "option_c": "A switch deliberately lowers the priority of the intended root",
+      "option_d": "An administrator configures Root Guard",
+      "correct_answer": "B",
+      "explanation": "STP DoS focuses on exhausting resources and keeping STP busy processing large volumes of BPDUs rather than necessarily winning the root election."
+    },
+    {
+      "question": "Which scenario is most directly associated with TC Flooding/Spoofing?",
+      "option_a": "Repeated fabricated topology-change notifications cause frequent MAC table flushing",
+      "option_b": "A rogue device wins the Root Bridge election",
+      "option_c": "A switch activates a backup uplink after failure",
+      "option_d": "A port enters root-inconsistent state",
+      "correct_answer": "A",
+      "explanation": "TC Flooding/Spoofing abuses topology-change signaling to repeatedly shorten MAC table aging and cause frequent flushing."
+    },
+    {
+      "question": "Which scenario is most directly associated with Root Bridge Manipulation?",
+      "option_a": "Repeated TCNs flush MAC tables",
+      "option_b": "A rogue device advertises a superior Bridge ID and causes the topology to be recalculated around it",
+      "option_c": "A blocking port stops receiving BPDUs because of a unidirectional failure",
+      "option_d": "A backup uplink rapidly transitions after a Root Port failure",
+      "correct_answer": "B",
+      "explanation": "Root Bridge manipulation targets the election itself and attempts to make the attacker's device the logical root."
+    },
+    {
+      "question": "Which sequence best represents a layered STP defense in a three-tier enterprise topology?",
+      "option_a": "BPDU Guard on PCs, Root Guard toward access switches, Loop Guard on redundant core/distribution links",
+      "option_b": "UplinkFast on PCs, BPDU Filter on the Root Bridge, Root Guard on DHCP servers",
+      "option_c": "Loop Guard on every PC, MSTP on every cable, BPDU Guard only on the Root Bridge",
+      "option_d": "BackboneFast on PCs, UplinkFast on the Root Bridge, BPDU Filter on every routed interface",
+      "correct_answer": "A",
+      "explanation": "The lecture's deployment model places BPDU Guard at the edge, Root Guard on designated ports facing downstream switches, and Loop Guard on redundant STP links."
+    },
+    {
+      "question": "A student says, 'If BPDU Guard is enabled everywhere, Root Guard and Loop Guard are unnecessary.' Which answer best evaluates the claim?",
+      "option_a": "Correct, because BPDU Guard protects every STP failure",
+      "option_b": "Incorrect, because BPDU Guard is an edge-port control and does not address superior root claims or unexpected BPDU loss on redundant infrastructure links",
+      "option_c": "Correct, because BPDU Guard replaces RSTP",
+      "option_d": "Incorrect, because BPDU Guard only works on Root Bridges",
+      "correct_answer": "B",
+      "explanation": "The three controls address different assumptions: BPDU Guard protects end-device ports, Root Guard controls superior root claims, and Loop Guard protects against dangerous BPDU loss."
+    },
+    {
+      "question": "A switch has two paths to the Root Bridge: Path A costs 4 + 19 + 19, while Path B costs 19 + 4. Which path should be preferred?",
+      "option_a": "Path A because it has more links",
+      "option_b": "Path B because its total cost is 23 versus Path A's 42",
+      "option_c": "Path A because the first link has cost 4",
+      "option_d": "Both paths because STP ignores total cost",
+      "correct_answer": "B",
+      "explanation": "Path A costs 42, while Path B costs 23. STP uses accumulated Root Path Cost, so Path B is preferred."
+    },
+    {
+      "question": "An administrator sees a port in root-inconsistent state after a superior BPDU arrives. Which protection feature is most likely responsible?",
+      "option_a": "Root Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "UplinkFast",
+      "option_d": "BackboneFast",
+      "correct_answer": "A",
+      "explanation": "Root Guard moves a protected port into a root-inconsistent state when it receives a superior BPDU."
+    },
+    {
+      "question": "An administrator sees an access port in an err-disabled condition immediately after a BPDU is received. Which feature most likely caused this behavior?",
+      "option_a": "Loop Guard",
+      "option_b": "BPDU Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "BackboneFast",
+      "correct_answer": "B",
+      "explanation": "BPDU Guard shuts down a protected access port when any BPDU is received."
+    },
+    {
+      "question": "A port continues forwarding normally even though an unexpected BPDU was received, because the BPDU was silently discarded. Which feature best explains this behavior?",
+      "option_a": "BPDU Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "Root Guard",
+      "option_d": "Loop Guard",
+      "correct_answer": "B",
+      "explanation": "BPDU Filter silently discards received BPDUs rather than shutting the port down."
+    },
+    {
+      "question": "A previously blocking redundant port enters a loop-inconsistent state after it unexpectedly stops receiving BPDUs. Which feature most likely produced this behavior?",
+      "option_a": "Root Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "Loop Guard",
+      "option_d": "UplinkFast",
+      "correct_answer": "C",
+      "explanation": "Loop Guard places the port into a loop-inconsistent state when expected BPDUs disappear unexpectedly."
+    },
+    {
+      "question": "Which statement about the Root Bridge's role in the STP topology is most accurate?",
+      "option_a": "It serves as the reference point around which the rest of the topology's paths are calculated",
+      "option_b": "It must always be the switch with the highest MAC address",
+      "option_c": "It never sends BPDUs",
+      "option_d": "It always blocks every port",
+      "correct_answer": "A",
+      "explanation": "The Root Bridge is the reference point for STP's topology, and other switches select paths toward it."
+    },
+    {
+      "question": "A network administrator changes only a switch's MAC address while keeping its priority unchanged. What potential STP effect does the lecture's Bridge ID structure imply?",
+      "option_a": "The MAC address can affect the election if priorities are tied",
+      "option_b": "The MAC address is never part of Bridge ID",
+      "option_c": "The switch automatically becomes Root Bridge",
+      "option_d": "The switch stops sending BPDUs",
+      "correct_answer": "A",
+      "explanation": "The MAC address is part of the Bridge ID and can act as the tie-breaker when priorities are equal."
+    },
+    {
+      "question": "Two switches have identical STP priorities. Switch A has a numerically lower MAC address than Switch B. Based on the lecture's election logic, which is preferred?",
+      "option_a": "Switch A",
+      "option_b": "Switch B",
+      "option_c": "Neither can become Root Bridge",
+      "option_d": "Both become Root Bridges",
+      "correct_answer": "A",
+      "explanation": "When priorities tie, the lower MAC address produces the lower Bridge ID and therefore wins the election."
+    },
+    {
+      "question": "Why does STP need to block some redundant paths even though redundancy is desirable?",
+      "option_a": "Ethernet Layer 2 frames lack the IP-style hop limit needed to naturally terminate loops",
+      "option_b": "Redundant links cannot carry Ethernet frames",
+      "option_c": "Switches cannot use more than one physical cable",
+      "option_d": "BPDUs require every link to be disabled",
+      "correct_answer": "A",
+      "explanation": "Ethernet frames do not have a built-in hop limit, so Layer 2 loops can persist indefinitely without a loop-prevention mechanism."
+    },
+    {
+      "question": "A network experiences repeated unknown-unicast flooding because MAC information keeps disappearing. An engineer suspects an STP-related attack. Which mechanism should be investigated first?",
+      "option_a": "Repeated topology-change notifications",
+      "option_b": "UplinkFast activation",
+      "option_c": "Root Guard state",
+      "option_d": "MSTP VLAN mapping",
+      "correct_answer": "A",
+      "explanation": "Repeated topology-change notifications can drastically shorten MAC aging and cause frequent MAC table flushing."
+    },
+    {
+      "question": "A network becomes unstable because switches continually recalculate their spanning trees under a flood of changing BPDUs. Which attack is most likely?",
+      "option_a": "STP DoS",
+      "option_b": "BPDU Filter",
+      "option_c": "Loop Guard",
+      "option_d": "UplinkFast",
+      "correct_answer": "A",
+      "explanation": "A sustained BPDU flood, especially with varying claimed priorities, can consume CPU and keep the topology in a near-permanent reconverging state."
+    },
+    {
+      "question": "Which security control would be most directly appropriate for a port where the organization explicitly states that no switch should ever be allowed to become Root Bridge through that port?",
+      "option_a": "Root Guard",
+      "option_b": "BPDU Filter",
+      "option_c": "UplinkFast",
+      "option_d": "BackboneFast",
+      "correct_answer": "A",
+      "explanation": "Root Guard is specifically designed to enforce the assumption that the protected port must never lead to a new Root Bridge."
+    },
+    {
+      "question": "Which security control is based on the assumption that a legitimate end-user device should never send a BPDU?",
+      "option_a": "BPDU Guard",
+      "option_b": "BackboneFast",
+      "option_c": "MSTP",
+      "option_d": "Loop Guard",
+      "correct_answer": "A",
+      "explanation": "BPDU Guard relies on the assumption that normal end devices such as PCs and printers should not send BPDUs."
+    },
+    {
+      "question": "Which feature is most closely associated with protecting against a loop caused by unexpected loss of BPDUs rather than malicious superior BPDUs?",
+      "option_a": "Root Guard",
+      "option_b": "Loop Guard",
+      "option_c": "BPDU Filter",
+      "option_d": "PVST+",
+      "correct_answer": "B",
+      "explanation": "Loop Guard protects against unsafe transitions caused by unexpected BPDU loss, such as a unidirectional link failure."
+    },
+    {
+      "question": "Which statement best summarizes the difference between the goals of Root Guard and Loop Guard?",
+      "option_a": "Root Guard stops bad root claims; Loop Guard prevents unsafe forwarding after unexpected BPDU loss",
+      "option_b": "Root Guard speeds convergence; Loop Guard elects the root",
+      "option_c": "Root Guard filters VLANs; Loop Guard filters MAC addresses",
+      "option_d": "Both are identical controls with different names",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly distinguishes their purposes: Root Guard handles superior root claims, while Loop Guard handles loop risks caused by unexpected BPDU loss."
+    },
+    {
+      "question": "A company wants to improve classic STP recovery after a failure that occurred somewhere between two other switches rather than on the local switch's directly connected path. Which feature should be considered?",
+      "option_a": "BackboneFast",
+      "option_b": "UplinkFast",
+      "option_c": "BPDU Guard",
+      "option_d": "BPDU Filter",
+      "correct_answer": "A",
+      "explanation": "BackboneFast is intended for indirect failures elsewhere in the network."
+    },
+    {
+      "question": "A company wants to improve classic STP recovery after the access switch's direct uplink to the Root Bridge fails. Which feature should be considered?",
+      "option_a": "BackboneFast",
+      "option_b": "UplinkFast",
+      "option_c": "Root Guard",
+      "option_d": "Loop Guard",
+      "correct_answer": "B",
+      "explanation": "UplinkFast is specifically designed for direct Root Port failure on access switches with redundant uplinks."
+    },
+    {
+      "question": "Which statement is the best overall description of the STP security problem covered in the lecture?",
+      "option_a": "STP is fundamentally broken because it cannot calculate path costs",
+      "option_b": "STP relies on trusted BPDU information, so an unauthorized device able to inject BPDUs can manipulate topology or disrupt operation",
+      "option_c": "STP always creates loops when redundant links exist",
+      "option_d": "STP does not support redundant links",
+      "correct_answer": "B",
+      "explanation": "The lecture's attacks all exploit the trust placed in unauthenticated BPDUs, allowing topology manipulation, MAC-table disruption, or resource exhaustion."
+    }
+  ]
+}

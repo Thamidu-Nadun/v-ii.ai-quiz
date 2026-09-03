@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "question": "Why is Layer 2 considered an attractive target for attackers in modern networks?",
+      "option_a": "A. Layer 2 protocols were designed with strong built-in authentication and encryption.",
+      "option_b": "B. Layer 2 protocols such as Ethernet, ARP, DHCP and VLAN trunking were largely designed for trusted, physically-controlled networks and have little to no built-in authentication.",
+      "option_c": "C. Compromising Layer 2 has no effect on higher-layer security controls.",
+      "option_d": "D. Layer 2 traffic is always encrypted end-to-end by default.",
+      "correct_answer": "B",
+      "explanation": "Layer 2 protocols were built assuming a trusted physical environment, so a compromise at this layer can undermine security controls operating above it."
+    },
+    {
+      "question": "What is the primary security benefit of segmenting a network into VLANs?",
+      "option_a": "A. It increases the size of the broadcast domain.",
+      "option_b": "B. Devices on different VLANs cannot reach each other without going through a router, limiting the impact of a compromise in one segment.",
+      "option_c": "C. It eliminates the need for any Layer 3 security controls.",
+      "option_d": "D. It automatically encrypts all inter-VLAN traffic.",
+      "correct_answer": "B",
+      "explanation": "VLANs create separate logical broadcast domains, so a compromise in one VLAN does not automatically expose devices in other VLANs."
+    },
+    {
+      "question": "What is the native VLAN and why is leaving it as the default (VLAN 1) considered a security risk?",
+      "option_a": "A. The native VLAN carries all tagged traffic; leaving it as VLAN 1 improves compatibility.",
+      "option_b": "B. Frames on the native VLAN are sent untagged across a trunk; using the default VLAN 1 makes double-tagging attacks easier because many access ports also default to VLAN 1.",
+      "option_c": "C. The native VLAN is never used on modern switches.",
+      "option_d": "D. Changing the native VLAN has no security impact.",
+      "correct_answer": "B",
+      "explanation": "The untagged nature of the native VLAN is exactly what the double-tagging attack abuses; keeping it on VLAN 1 aligns it with the default access VLAN."
+    },
+    {
+      "question": "Which protocol automatically negotiates whether a link becomes a trunk and is therefore exploitable for switch spoofing?",
+      "option_a": "A. 802.1Q",
+      "option_b": "B. VTP",
+      "option_c": "C. DTP (Dynamic Trunking Protocol)",
+      "option_d": "D. STP",
+      "correct_answer": "C",
+      "explanation": "DTP automatically negotiates trunk mode with no authentication, allowing an attacker to force a port into trunk mode."
+    },
+    {
+      "question": "How does a CAM-table (MAC-flooding) attack work?",
+      "option_a": "A. The attacker changes its own MAC address to match a legitimate device.",
+      "option_b": "B. The attacker floods the switch with frames carrying different fabricated source MAC addresses until the CAM table fills and the switch begins flooding frames out all ports.",
+      "option_c": "C. The attacker sends double-tagged frames to reach another VLAN.",
+      "option_d": "D. The attacker runs a rogue DHCP server.",
+      "correct_answer": "B",
+      "explanation": "Switches have finite CAM tables and are designed to fail open (flood like a hub) when the table is full, allowing the attacker to receive traffic not intended for them."
+    },
+    {
+      "question": "Why does a switch’s ‘fail-open’ design make a CAM-table attack possible?",
+      "option_a": "A. When the CAM table is full the switch drops all traffic for security.",
+      "option_b": "B. When the CAM table is full the switch prioritises availability and floods unknown-destination frames out every port, turning itself into a hub.",
+      "option_c": "C. The switch always verifies the legitimacy of every source MAC before learning it.",
+      "option_d": "D. Fail-open mode encrypts all flooded frames.",
+      "correct_answer": "B",
+      "explanation": "The design choice prioritises continued forwarding over confidentiality, which an attacker exploits by filling the table."
+    },
+    {
+      "question": "What is the main difference between MAC-address spoofing and a CAM-table attack?",
+      "option_a": "A. Both attacks fill the CAM table with fake addresses.",
+      "option_b": "B. MAC spoofing changes the attacker’s own MAC to impersonate a specific device; a CAM-table attack floods many different MACs to overflow the table.",
+      "option_c": "C. MAC spoofing only works on wireless networks.",
+      "option_d": "D. There is no practical difference.",
+      "correct_answer": "B",
+      "explanation": "MAC spoofing is identity theft of one address; CAM flooding is a denial-of-service / eavesdropping attack that overwhelms the switch’s learning table."
+    },
+    {
+      "question": "Why is relying solely on MAC-based port security (sticky MAC) insufficient against MAC-address spoofing?",
+      "option_a": "A. Sticky MAC permanently locks every possible MAC address.",
+      "option_b": "B. An attacker can wait until the legitimate device disconnects or spoof during an idle window and still present the authorised MAC.",
+      "option_c": "C. Port security automatically uses 802.1X.",
+      "option_d": "D. Sticky MAC prevents any MAC from ever changing.",
+      "correct_answer": "B",
+      "explanation": "MAC addresses are software-configurable; once the legitimate device is offline the attacker can simply claim its MAC."
+    },
+    {
+      "question": "What is the strongest mitigation against MAC-address spoofing?",
+      "option_a": "A. Increasing the CAM-table size.",
+      "option_b": "B. 802.1X / centralised AAA authentication that ties access to a verified credential rather than a MAC address.",
+      "option_c": "C. Disabling all access ports.",
+      "option_d": "D. Using only static ARP entries.",
+      "correct_answer": "B",
+      "explanation": "802.1X authenticates the user or device identity, so simply cloning a MAC is no longer sufficient to gain network access."
+    },
+    {
+      "question": "How does switch-spoofing (VLAN hopping) work?",
+      "option_a": "A. The attacker sends double-tagged frames on an access port.",
+      "option_b": "B. The attacker’s device mimics a switch speaking DTP; if the connected port has DTP enabled it becomes a trunk and the attacker receives traffic for all VLANs on that trunk.",
+      "option_c": "C. The attacker floods DHCP Discover messages.",
+      "option_d": "D. The attacker poisons ARP caches.",
+      "correct_answer": "B",
+      "explanation": "DTP has no authentication, so an attacker can negotiate a trunk and gain visibility into every VLAN carried on that trunk."
+    },
+    {
+      "question": "Why is the command ‘switchport nonegotiate’ an effective, low-cost fix for switch spoofing?",
+      "option_a": "A. It encrypts all trunk traffic.",
+      "option_b": "B. It disables DTP so the port can never auto-negotiate into a trunk, removing the attack surface with a single configuration line.",
+      "option_c": "C. It changes the native VLAN.",
+      "option_d": "D. It enables Dynamic ARP Inspection.",
+      "correct_answer": "B",
+      "explanation": "Disabling DTP completely prevents the automatic trunk negotiation that switch spoofing relies on."
+    },
+    {
+      "question": "Describe the VLAN double-tagging attack.",
+      "option_a": "A. The attacker forces a port into trunk mode with DTP.",
+      "option_b": "B. The attacker on the native VLAN crafts a frame with two 802.1Q tags; the first switch strips the outer (native) tag and the next switch delivers the frame into the target VLAN identified by the inner tag.",
+      "option_c": "C. The attacker floods the CAM table.",
+      "option_d": "D. The attacker runs a rogue DHCP server.",
+      "correct_answer": "B",
+      "explanation": "The attack abuses the fact that native-VLAN frames travel untagged; only the outer tag is stripped, leaving the inner tag for the next switch."
+    },
+    {
+      "question": "Why does the double-tagging attack only work in one direction (attacker to target VLAN)?",
+      "option_a": "A. Because return traffic is always encrypted.",
+      "option_b": "B. There is no symmetric path back through the same untagged native-VLAN mechanism for the reply frames.",
+      "option_c": "C. Because switches drop all return traffic by default.",
+      "option_d": "D. Because the attacker’s port is automatically shut down.",
+      "correct_answer": "B",
+      "explanation": "The attack relies on the one-way stripping of the outer tag; replies do not automatically reverse the same path."
+    },
+    {
+      "question": "Why does moving the native VLAN off VLAN 1 mitigate double-tagging?",
+      "option_a": "A. It encrypts native-VLAN traffic.",
+      "option_b": "B. The attacker’s access port is no longer on the native VLAN by default, so the outer tag no longer matches and the attack fails.",
+      "option_c": "C. It disables 802.1Q entirely.",
+      "option_d": "D. It forces all ports into trunk mode.",
+      "correct_answer": "B",
+      "explanation": "When the native VLAN is an unused VLAN that no access ports belong to, the attacker cannot place the required outer tag."
+    },
+    {
+      "question": "What does a DHCP-starvation attack achieve for the attacker?",
+      "option_a": "A. It allows the attacker to intercept traffic by becoming the default gateway.",
+      "option_b": "B. It exhausts the legitimate DHCP server’s IP address pool so new legitimate clients cannot obtain an address (Denial of Service).",
+      "option_c": "C. It forces all ports into trunk mode.",
+      "option_d": "D. It poisons ARP caches.",
+      "correct_answer": "B",
+      "explanation": "By sending Discover messages with many different spoofed MACs the attacker consumes every available lease."
+    },
+    {
+      "question": "How does DHCP spoofing differ from DHCP starvation?",
+      "option_a": "A. They are identical attacks.",
+      "option_b": "B. Starvation exhausts the address pool (DoS); spoofing runs a rogue DHCP server that answers first and sets the attacker as gateway/DNS, creating a MITM position.",
+      "option_c": "C. Spoofing only works on wireless networks.",
+      "option_d": "D. Starvation requires a trunk port.",
+      "correct_answer": "B",
+      "explanation": "Starvation is a resource-exhaustion attack; spoofing is an impersonation attack that redirects traffic."
+    },
+    {
+      "question": "How does DHCP Snooping mitigate both DHCP starvation and DHCP spoofing?",
+      "option_a": "A. It encrypts all DHCP messages.",
+      "option_b": "B. It classifies ports as trusted or untrusted; server responses are accepted only from trusted ports, and rate-limiting on untrusted ports blunts starvation floods. It also builds a binding table used later by DAI.",
+      "option_c": "C. It disables DHCP entirely.",
+      "option_d": "D. It forces every client to use static IP addresses.",
+      "correct_answer": "B",
+      "explanation": "Trusted/untrusted port distinction stops rogue servers, while rate-limiting and the binding table address starvation and enable further controls."
+    },
+    {
+      "question": "Why must Dynamic ARP Inspection (DAI) be configured after DHCP Snooping?",
+      "option_a": "A. DAI has nothing to do with DHCP Snooping.",
+      "option_b": "B. DAI validates ARP packets against the IP-to-MAC binding table that DHCP Snooping builds; without that table DAI has no trusted data source and cannot function correctly.",
+      "option_c": "C. DHCP Snooping requires DAI to be enabled first.",
+      "option_d": "D. The order does not matter.",
+      "correct_answer": "B",
+      "explanation": "DHCP Snooping populates the binding table that DAI uses to decide whether an ARP claim is legitimate."
+    },
+    {
+      "question": "What would happen if you enabled Dynamic ARP Inspection without DHCP Snooping already running?",
+      "option_a": "A. DAI would automatically create its own binding table.",
+      "option_b": "B. DAI would have no valid binding information and would either drop legitimate ARP traffic or be unable to distinguish forged replies, effectively breaking ARP or providing no protection.",
+      "option_c": "C. All ports would automatically become trusted.",
+      "option_d": "D. The switch would fall back to static ARP only.",
+      "correct_answer": "B",
+      "explanation": "Without the binding table produced by DHCP Snooping, DAI lacks the reference data needed to validate ARP packets."
+    },
+    {
+      "question": "How does ARP spoofing establish a man-in-the-middle position?",
+      "option_a": "A. By flooding the CAM table.",
+      "option_b": "B. The attacker sends forged (gratuitous) ARP replies telling each victim that the other victim’s IP is at the attacker’s MAC, so both victims send traffic through the attacker.",
+      "option_c": "C. By negotiating a trunk with DTP.",
+      "option_d": "D. By exhausting the DHCP pool.",
+      "correct_answer": "B",
+      "explanation": "Hosts accept unsolicited ARP replies and update their caches, allowing the attacker to redirect traffic in both directions."
+    },
+    {
+      "question": "What is the root cause that makes ARP spoofing possible?",
+      "option_a": "A. ARP packets are always encrypted.",
+      "option_b": "B. Hosts accept unsolicited ARP replies and update their ARP cache without verifying that a request was ever sent.",
+      "option_c": "C. Switches never learn MAC addresses.",
+      "option_d": "D. ARP uses TCP instead of UDP.",
+      "correct_answer": "B",
+      "explanation": "The lack of any authentication or request-response binding in ARP is the fundamental vulnerability."
+    },
+    {
+      "question": "A network administrator must choose between leaving port security disabled or enabling it with a maximum of 2 MAC addresses and violation mode ‘restrict’ on every access port. What is the operational cost of the second option and is it worth it?",
+      "option_a": "A. Zero operational cost and it is always worth it.",
+      "option_b": "B. Slightly higher configuration and monitoring effort (tracking legitimate MACs, handling false positives) but the security gain against CAM flooding and basic MAC spoofing is substantial and generally worth the cost.",
+      "option_c": "C. Extremely high cost that outweighs any benefit.",
+      "option_d": "D. It completely eliminates the need for any other Layer-2 controls.",
+      "correct_answer": "B",
+      "explanation": "Port security adds modest operational overhead but closes a major attack vector with a simple, low-cost control."
+    },
+    {
+      "question": "Which two outcomes can a CAM-table attack produce depending on attacker intent?",
+      "option_a": "A. Only eavesdropping.",
+      "option_b": "B. Quiet eavesdropping (when the table is full traffic is flooded to the attacker) or performance-degrading Denial of Service (sustained flooding).",
+      "option_c": "C. Only Denial of Service.",
+      "option_d": "D. Only VLAN hopping.",
+      "correct_answer": "B",
+      "explanation": "The same technique can be used for passive interception or for degrading switch performance, depending on how long the flood continues."
+    },
+    {
+      "question": "Which two plausible outcomes can DHCP spoofing produce?",
+      "option_a": "A. Only Denial of Service.",
+      "option_b": "B. Man-in-the-middle interception (by setting the attacker as gateway/DNS) or Denial of Service (if the rogue server gives invalid configuration).",
+      "option_c": "C. Only trunk negotiation.",
+      "option_d": "D. Only MAC-table overflow.",
+      "correct_answer": "B",
+      "explanation": "A well-configured rogue server yields MITM; a broken one simply cuts victims off."
+    },
+    {
+      "question": "A small company has no Layer-2 security controls configured. Which three mitigations would you prioritise first, considering both risk and ease of implementation?",
+      "option_a": "A. 802.1X everywhere, static ARP on all hosts, and VTP pruning.",
+      "option_b": "B. Port security on access ports, disable DTP (switchport nonegotiate), and move the native VLAN off VLAN 1.",
+      "option_c": "C. Only Dynamic ARP Inspection, only DHCP Snooping, and only 802.1X.",
+      "option_d": "D. Increase CAM-table size, enable VTP, and leave native VLAN as 1.",
+      "correct_answer": "B",
+      "explanation": "These three are high-impact, low-to-medium configuration cost controls that immediately close the most common and easily exploited attack vectors."
+    },
+    {
+      "question": "What does the DHCP Snooping binding table contain and why is it important?",
+      "option_a": "A. Only MAC addresses of trusted ports.",
+      "option_b": "B. Mappings of MAC ↔ IP ↔ VLAN ↔ port learned from legitimate DHCP transactions; it becomes the trusted data source for Dynamic ARP Inspection.",
+      "option_c": "C. Only the IP addresses of rogue servers.",
+      "option_d": "D. Encryption keys for ARP packets.",
+      "correct_answer": "B",
+      "explanation": "The binding table is the foundation that allows DAI to validate ARP claims."
+    },
+    {
+      "question": "In the context of port-security violation actions, what is the functional difference between ‘shutdown’ and ‘restrict’?",
+      "option_a": "A. Both actions are identical.",
+      "option_b": "B. Shutdown disables the port entirely (preventive); restrict drops violating traffic but keeps the port up and generates a log/alert (detective).",
+      "option_c": "C. Restrict disables the port; shutdown only logs.",
+      "option_d": "D. Neither action has any security effect.",
+      "correct_answer": "B",
+      "explanation": "A single keyword change moves the same feature from a purely preventive control to a detective control."
+    },
+    {
+      "question": "Why is physical security an effective complementary control for many Layer-2 attacks?",
+      "option_a": "A. It has no relationship to Layer-2 security.",
+      "option_b": "B. If an attacker cannot physically reach a switch port or cable, CAM flooding, MAC spoofing, rogue DHCP and ARP spoofing are all simultaneously prevented without any configuration.",
+      "option_c": "C. Physical security only protects against Layer-3 attacks.",
+      "option_d": "D. Physical locks automatically enable 802.1X.",
+      "correct_answer": "B",
+      "explanation": "Many Layer-2 attacks require the attacker to be on the local wire; physical access control removes that opportunity."
+    },
+    {
+      "question": "Which of the following is a correct layered-defense baseline for Layer 2?",
+      "option_a": "A. Only port security on trunk ports.",
+      "option_b": "B. Port security on every access port, DTP disabled everywhere, native VLAN moved off VLAN 1, DHCP Snooping enabled, and Dynamic ARP Inspection layered on top.",
+      "option_c": "C. Only static ARP entries and increased CAM-table size.",
+      "option_d": "D. Leaving all defaults and relying on Layer-3 ACLs.",
+      "correct_answer": "B",
+      "explanation": "No single control covers every attack; the listed combination forms a practical, layered baseline."
+    },
+    {
+      "question": "An attacker sits on an access port that belongs to the native VLAN and sends a double-tagged frame. What happens on a correctly hardened switch where the native VLAN has been moved to an unused VLAN?",
+      "option_a": "A. The frame is delivered into the target VLAN.",
+      "option_b": "B. The attack fails because the outer tag no longer matches the native VLAN, so the frame is not treated as untagged native traffic.",
+      "option_c": "C. The switch automatically converts the port to a trunk.",
+      "option_d": "D. The frame is flooded to all VLANs.",
+      "correct_answer": "B",
+      "explanation": "Moving the native VLAN away from any access-port VLAN breaks the outer-tag match required by the attack."
+    },
+    {
+      "question": "Which mitigation technique simultaneously helps against both CAM-table attacks and basic MAC-address spoofing?",
+      "option_a": "A. Disabling DTP only.",
+      "option_b": "B. Port security with a low maximum MAC count and sticky learning plus a violation action.",
+      "option_c": "C. Changing the native VLAN only.",
+      "option_d": "D. Enabling VTP pruning.",
+      "correct_answer": "B",
+      "explanation": "Limiting the number of learned MACs stops flooding; sticky learning plus violation handling makes simple spoofing harder."
+    },
+    {
+      "question": "Why can the same Layer-2 attack technique be aimed at different goals?",
+      "option_a": "A. Because every attack has only one possible outcome.",
+      "option_b": "B. Attacker intent, not a difference in the technique itself, determines whether the result is eavesdropping, DoS, access, or enabling a further attack.",
+      "option_c": "C. Because switches randomly choose the outcome.",
+      "option_d": "D. Because all attacks always produce DoS.",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasises that every attack maps to at least two outcome categories; the technique stays the same while the goal changes."
+    },
+    {
+      "question": "What is the main security implication of the fact that Layer-2 protocols have little or no built-in authentication?",
+      "option_a": "A. Higher-layer controls are automatically protected.",
+      "option_b": "B. A successful Layer-2 attack can become a foothold for traffic interception, credential theft or pivoting to Layer 3, undermining controls that never get a chance to inspect the traffic.",
+      "option_c": "C. Authentication is unnecessary at Layer 2.",
+      "option_d": "D. All Layer-2 traffic is inherently trustworthy.",
+      "correct_answer": "B",
+      "explanation": "Because the ground-floor protocols trust by default, a compromise there can bypass or defeat higher-layer security."
+    },
+    {
+      "question": "In a DHCP Snooping deployment, which ports should be configured as trusted?",
+      "option_a": "A. All access ports where end users connect.",
+      "option_b": "B. Uplink ports that lead toward the legitimate DHCP server.",
+      "option_c": "C. Every port on the switch.",
+      "option_d": "D. Only ports that belong to VLAN 1.",
+      "correct_answer": "B",
+      "explanation": "Only ports that face the real DHCP server (or other trusted infrastructure) should be trusted so that rogue servers on access ports are blocked."
+    },
+    {
+      "question": "An administrator enables port security with sticky MAC and violation mode shutdown on all access ports. What operational risk remains?",
+      "option_a": "A. No operational risk remains.",
+      "option_b": "B. A legitimate device that is replaced or whose NIC is changed will cause the port to shut down until an administrator clears the sticky entry, creating a potential availability issue.",
+      "option_c": "C. The switch will automatically learn unlimited MACs.",
+      "option_d": "D. DTP will still negotiate trunks.",
+      "correct_answer": "B",
+      "explanation": "Sticky MAC permanently binds the first learned address; hardware changes require manual intervention."
+    },
+    {
+      "question": "Which statement correctly describes the relationship between DHCP Snooping and Dynamic ARP Inspection?",
+      "option_a": "A. They are completely independent controls.",
+      "option_b": "B. DHCP Snooping builds the binding table that DAI uses; together they form a clean example of layered defence where one control supplies the trusted data for another.",
+      "option_c": "C. DAI must be enabled before DHCP Snooping.",
+      "option_d": "D. Enabling either one automatically enables the other.",
+      "correct_answer": "B",
+      "explanation": "The dependency is intentional and illustrates layered defence within a single switch."
+    },
+    {
+      "question": "A company relies only on MAC-based port security (sticky MAC, no other authentication). Evaluate why this alone is insufficient against determined MAC-address spoofing and recommend a stronger alternative.",
+      "option_a": "A. It is already sufficient; no further action is needed.",
+      "option_b": "B. An attacker can still spoof the authorised MAC when the legitimate device is offline; the stronger alternative is 802.1X / centralised AAA that authenticates a credential rather than a MAC address.",
+      "option_c": "C. Sticky MAC automatically implements 802.1X.",
+      "option_d": "D. The only solution is to disable all access ports.",
+      "correct_answer": "B",
+      "explanation": "MAC addresses are not strong identities; 802.1X moves the trust decision to a verified credential."
+    },
+    {
+      "question": "Which of the following correctly pairs an attack with a simple configuration mitigation?",
+      "option_a": "A. Switch spoofing → increase CAM-table size.",
+      "option_b": "B. Double tagging → switchport nonegotiate.",
+      "option_c": "C. Switch spoofing → switchport nonegotiate; Double tagging → change native VLAN off VLAN 1.",
+      "option_d": "D. ARP spoofing → disable DTP.",
+      "correct_answer": "C",
+      "explanation": "Each attack has a distinct, low-cost configuration fix that directly removes its enabling condition."
+    },
+    {
+      "question": "What is the primary reason Layer-2 attacks are often cheap to execute?",
+      "option_a": "A. They require expensive specialised hardware.",
+      "option_b": "B. Many need nothing more than a laptop on an access port and freely available tools; the protocols themselves provide no authentication barrier.",
+      "option_c": "C. They can only be performed by highly skilled nation-state actors.",
+      "option_d": "D. They always require physical access to the core router.",
+      "correct_answer": "B",
+      "explanation": "The absence of authentication and the abundance of simple tools make these attacks accessible."
+    },
+    {
+      "question": "When evaluating a Layer-2 mitigation, what does LO2 specifically require a student to consider?",
+      "option_a": "A. Only whether the mitigation has a cool-sounding name.",
+      "option_b": "B. Whether the mitigation actually closes the gap for all plausible outcomes of the attack, and at what cost/complexity (financial, configuration, computational).",
+      "option_c": "C. Only the financial cost.",
+      "option_d": "D. Whether the mitigation is mentioned in the summary slide.",
+      "correct_answer": "B",
+      "explanation": "LO2 is about evaluating trade-offs, not merely naming controls; a mitigation’s value depends on the full range of outcomes it prevents and the real-world cost of deploying it."
+    },
+    {
+      "question": "Which attack is fundamentally a one-way injection attack that cannot easily receive return traffic via the same path?",
+      "option_a": "A. CAM-table flooding.",
+      "option_b": "B. ARP spoofing.",
+      "option_c": "C. VLAN double-tagging.",
+      "option_d": "D. DHCP starvation.",
+      "correct_answer": "C",
+      "explanation": "Double-tagging relies on the one-directional stripping of the outer native-VLAN tag; there is no symmetric return path."
+    },
+    {
+      "question": "An organisation has implemented port security, disabled DTP and moved the native VLAN. Which additional controls are still required to protect against DHCP and ARP attacks?",
+      "option_a": "A. Nothing further is required.",
+      "option_b": "B. DHCP Snooping (with trusted/untrusted ports and rate-limiting) and Dynamic ARP Inspection that uses the resulting binding table.",
+      "option_c": "C. Only increasing the size of the CAM table.",
+      "option_d": "D. Only enabling VTP.",
+      "correct_answer": "B",
+      "explanation": "Port security and trunk/native-VLAN hardening do not address the lack of authentication in DHCP and ARP; DHCP Snooping + DAI close those remaining gaps."
+    }
+  ]
+}
