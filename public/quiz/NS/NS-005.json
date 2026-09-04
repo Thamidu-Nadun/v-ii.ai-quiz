@@ -1,0 +1,724 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of ICMP?",
+      "option_a": "A. Carry application data between web servers",
+      "option_b": "B. Provide network diagnostic and error-reporting information",
+      "option_c": "C. Authenticate IP packet sources",
+      "option_d": "D. Encrypt traffic between hosts",
+      "correct_answer": "B",
+      "explanation": "ICMP is IP's built-in diagnostic and error-reporting mechanism and carries information about network conditions rather than application data."
+    },
+    {
+      "question": "Which ICMP messages are used by the ping utility to test reachability?",
+      "option_a": "A. Redirect and Destination Unreachable",
+      "option_b": "B. Time Exceeded and Redirect",
+      "option_c": "C. Echo Request and Echo Reply",
+      "option_d": "D. Destination Unreachable and Echo Reply",
+      "correct_answer": "C",
+      "explanation": "Ping normally uses ICMP Echo Request messages and receives ICMP Echo Reply messages from reachable hosts."
+    },
+    {
+      "question": "Which ICMP message does traceroute rely on when a packet's TTL reaches zero?",
+      "option_a": "A. Echo Reply",
+      "option_b": "B. Redirect",
+      "option_c": "C. Destination Unreachable",
+      "option_d": "D. Time Exceeded",
+      "correct_answer": "D",
+      "explanation": "A router that decrements a packet's TTL to zero discards the packet and generates an ICMP Time Exceeded message."
+    },
+    {
+      "question": "Why is the lack of ICMP authentication security-relevant?",
+      "option_a": "A. Anyone on the network can send ICMP messages without proving their identity",
+      "option_b": "B. ICMP automatically encrypts messages before transmission",
+      "option_c": "C. Only routers can generate ICMP messages",
+      "option_d": "D. ICMP packets cannot contain network information",
+      "correct_answer": "A",
+      "explanation": "ICMP has no authentication, so hosts are designed to accept and respond to messages without verifying who sent them."
+    },
+    {
+      "question": "Which ICMP message tells a host that a better route exists for a particular destination?",
+      "option_a": "A. Echo Request",
+      "option_b": "B. Redirect",
+      "option_c": "C. Time Exceeded",
+      "option_d": "D. Echo Reply",
+      "correct_answer": "B",
+      "explanation": "An ICMP Redirect is used by a router to tell a host that a better route exists for a destination."
+    },
+    {
+      "question": "Why can ICMP be attractive for reconnaissance?",
+      "option_a": "A. ICMP packets always bypass every firewall",
+      "option_b": "B. ICMP messages are large enough to transfer databases",
+      "option_c": "C. ICMP probes are relatively small and inexpensive to generate",
+      "option_d": "D. ICMP automatically reveals administrator passwords",
+      "correct_answer": "C",
+      "explanation": "ICMP messages are small and cheap to generate, making them useful for sending many quick probes."
+    },
+    {
+      "question": "What is the primary purpose of an ICMP Sweep?",
+      "option_a": "A. Encrypt traffic across a subnet",
+      "option_b": "B. Discover which hosts in an IP range are alive",
+      "option_c": "C. Fragment packets to bypass a firewall",
+      "option_d": "D. Exhaust a router's TTL counter",
+      "correct_answer": "B",
+      "explanation": "An ICMP Sweep sends Echo Requests across an IP range to identify hosts that respond."
+    },
+    {
+      "question": "Why is an ICMP Sweep usually considered reconnaissance rather than the final objective of an attack?",
+      "option_a": "A. It identifies potential live targets for subsequent attacks",
+      "option_b": "B. It permanently disables every discovered host",
+      "option_c": "C. It encrypts the discovered hosts",
+      "option_d": "D. It modifies routing tables automatically",
+      "correct_answer": "A",
+      "explanation": "The sweep builds a list of live hosts that can then be targeted with more specific attacks."
+    },
+    {
+      "question": "Which activity is most characteristic of an ICMP Sweep?",
+      "option_a": "A. Sending malformed overlapping fragments to one host",
+      "option_b": "B. Sending Echo Requests across a sequential IP range",
+      "option_c": "C. Sending low-TTL packets exclusively to a router",
+      "option_d": "D. Sending spoofed packets to a broadcast address",
+      "correct_answer": "B",
+      "explanation": "An ICMP Sweep systematically probes many addresses with ICMP Echo Requests to identify active hosts."
+    },
+    {
+      "question": "Which control is most directly recommended for reducing externally initiated ICMP Sweep reconnaissance?",
+      "option_a": "A. Disable all operating-system patching",
+      "option_b": "B. Increase IP fragmentation",
+      "option_c": "C. Block or rate-limit inbound ICMP Echo Requests at the perimeter",
+      "option_d": "D. Increase the default TTL of every packet",
+      "correct_answer": "C",
+      "explanation": "The lecture recommends blocking or rate-limiting inbound ICMP Echo Requests, particularly from untrusted external sources."
+    },
+    {
+      "question": "An IDS observes a burst of ICMP Echo Requests directed at a large sequential range of addresses within seconds. What is the most likely interpretation?",
+      "option_a": "A. IP fragmentation repair",
+      "option_b": "B. ICMP reconnaissance",
+      "option_c": "C. Normal TCP connection establishment",
+      "option_d": "D. TTL-based packet forwarding",
+      "correct_answer": "B",
+      "explanation": "A burst of Echo Requests against many sequential addresses is identified in the lecture as a strong reconnaissance signal."
+    },
+    {
+      "question": "A company needs ICMP for diagnostics but does not want arbitrary Internet hosts probing its systems. Which approach best matches the lecture's recommendation?",
+      "option_a": "A. Allow unlimited ICMP from every source",
+      "option_b": "B. Disable all IP routing",
+      "option_c": "C. Restrict ICMP to specific trusted source addresses",
+      "option_d": "D. Allow only fragmented ICMP packets",
+      "correct_answer": "C",
+      "explanation": "Where ICMP is needed, the lecture recommends restricting it to trusted source addresses rather than allowing it from anywhere."
+    },
+    {
+      "question": "What distinguishes a Ping of Death attack from a normal ping?",
+      "option_a": "A. It uses deliberately malformed oversized data that becomes problematic during reassembly",
+      "option_b": "B. It only sends valid Echo Requests at a low rate",
+      "option_c": "C. It requires a TCP three-way handshake",
+      "option_d": "D. It relies exclusively on DNS amplification",
+      "correct_answer": "A",
+      "explanation": "Ping of Death involves malformed oversized ICMP packets whose fragments produce an illegally large packet when reassembled."
+    },
+    {
+      "question": "What maximum IP packet size is identified in the lecture as relevant to Ping of Death?",
+      "option_a": "A. 1,024 bytes",
+      "option_b": "B. 8,192 bytes",
+      "option_c": "C. 32,768 bytes",
+      "option_d": "D. 65,535 bytes",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies 65,535 bytes as the maximum legal IP packet size relevant to the historical vulnerability."
+    },
+    {
+      "question": "What is the primary vulnerability exploited by the classic Ping of Death?",
+      "option_a": "A. Failure to authenticate DNS queries",
+      "option_b": "B. Poor handling of oversized packets during reassembly",
+      "option_c": "C. Incorrect TCP sequence numbers",
+      "option_d": "D. Failure to decrement TTL",
+      "correct_answer": "B",
+      "explanation": "Older or poorly implemented network stacks could fail when reassembling fragments that resulted in a packet larger than the maximum allowed size."
+    },
+    {
+      "question": "Which systems are highlighted as still potentially relevant targets for legacy Ping of Death vulnerabilities?",
+      "option_a": "A. Only fully patched modern desktop operating systems",
+      "option_b": "B. Unpatched embedded and IoT devices",
+      "option_c": "C. Only DNS root servers",
+      "option_d": "D. Only application-layer proxies",
+      "correct_answer": "B",
+      "explanation": "Although modern patched systems largely eliminate the classic vulnerability, unpatched embedded and IoT devices may remain exposed."
+    },
+    {
+      "question": "Which mitigation most directly eliminates the classic Ping of Death vulnerability on a modern system?",
+      "option_a": "A. Operating-system and firmware patching",
+      "option_b": "B. Increasing the TTL",
+      "option_c": "C. Disabling TCP",
+      "option_d": "D. Enabling IP spoofing",
+      "correct_answer": "A",
+      "explanation": "The lecture states that the vulnerability was fixed industry-wide and that patching modern systems eliminates the risk."
+    },
+    {
+      "question": "Which firewall behavior can provide additional protection against Ping of Death?",
+      "option_a": "A. Accepting every malformed fragment",
+      "option_b": "B. Enforcing packet-size limits and dropping malformed or illegally fragmented ICMP packets",
+      "option_c": "C. Disabling all routing protocols",
+      "option_d": "D. Increasing the number of ICMP responses",
+      "correct_answer": "B",
+      "explanation": "Firewalls can validate packet sizes and fragmentation and discard malformed traffic before it reaches internal hosts."
+    },
+    {
+      "question": "What is the defining mechanism of a Ping Flood?",
+      "option_a": "A. Sending a high volume of ICMP Echo Requests to overwhelm the target",
+      "option_b": "B. Sending overlapping IP fragments",
+      "option_c": "C. Sending packets with forged DNS records",
+      "option_d": "D. Sending only one packet to a broadcast address",
+      "correct_answer": "A",
+      "explanation": "A Ping Flood overwhelms a target with a continuous, high-rate stream of ICMP Echo Requests."
+    },
+    {
+      "question": "Which CIA security property is most directly affected by a Ping Flood?",
+      "option_a": "A. Confidentiality",
+      "option_b": "B. Integrity",
+      "option_c": "C. Availability",
+      "option_d": "D. Non-repudiation",
+      "correct_answer": "C",
+      "explanation": "A Ping Flood consumes bandwidth or processing capacity and crowds out legitimate traffic, directly affecting availability."
+    },
+    {
+      "question": "How does a Ping Flood differ from an ICMP Sweep?",
+      "option_a": "A. A Sweep seeks live hosts, while a Ping Flood seeks to overwhelm a target",
+      "option_b": "B. A Sweep always uses spoofing, while a Ping Flood never uses ICMP",
+      "option_c": "C. A Sweep attacks fragmentation, while a Ping Flood attacks TTL",
+      "option_d": "D. They are identical attacks with different names",
+      "correct_answer": "A",
+      "explanation": "An ICMP Sweep is primarily reconnaissance, whereas a Ping Flood is a volume-based denial-of-service attack."
+    },
+    {
+      "question": "Which control is specifically suited to limiting a Ping Flood from a single source?",
+      "option_a": "A. ICMP rate limiting",
+      "option_b": "B. Increasing fragment overlap",
+      "option_c": "C. Disabling all IP addresses",
+      "option_d": "D. Removing packet TTL fields",
+      "correct_answer": "A",
+      "explanation": "The lecture recommends rate-limiting ICMP traffic and capping how many ICMP packets per second are accepted from a source."
+    },
+    {
+      "question": "Why might an on-premises firewall alone be insufficient against a large-scale Ping Flood?",
+      "option_a": "A. The firewall cannot inspect IP packets",
+      "option_b": "B. The incoming volume may overwhelm the organization's network infrastructure before filtering can help",
+      "option_c": "C. ICMP cannot cross routers",
+      "option_d": "D. Firewalls cannot rate-limit traffic",
+      "correct_answer": "B",
+      "explanation": "For large-scale floods, the lecture recommends dedicated DDoS protection because on-premises equipment may not be able to absorb the volume."
+    },
+    {
+      "question": "What makes a Smurf attack an amplification attack?",
+      "option_a": "A. One spoofed request can cause many hosts to generate responses toward the victim",
+      "option_b": "A. One victim sends many requests to itself",
+      "option_c": "A. One fragment becomes smaller during reassembly",
+      "option_d": "A. One router silently removes every packet",
+      "correct_answer": "A",
+      "explanation": "A Smurf attack uses a broadcast address and spoofed victim source address so multiple hosts respond to the victim."
+    },
+    {
+      "question": "Which two conditions historically enabled the classic Smurf attack?",
+      "option_a": "A. TCP authentication and encrypted routing",
+      "option_b": "B. Source-address spoofing and networks responding to ICMP Echo Requests sent to broadcast addresses",
+      "option_c": "C. DNSSEC and fragmented TCP",
+      "option_d": "D. Low TTL and overlapping IP fragments",
+      "correct_answer": "B",
+      "explanation": "Smurf combines the ability to spoof a source address with networks that historically allowed broadcast ICMP Echo Requests to be answered by many hosts."
+    },
+    {
+      "question": "In a Smurf attack, what source address does the attacker place in the spoofed ICMP Echo Request?",
+      "option_a": "A. The attacker's own IP address",
+      "option_b": "B. The broadcast address",
+      "option_c": "C. The victim's IP address",
+      "option_d": "D. The router's management address",
+      "correct_answer": "C",
+      "explanation": "The attacker spoofs the victim's address as the source, causing responding hosts to direct their Echo Replies to the victim."
+    },
+    {
+      "question": "What happens after a spoofed ICMP Echo Request is sent to a vulnerable broadcast address in a Smurf attack?",
+      "option_a": "A. Only the attacker receives a reply",
+      "option_b": "B. Every host on the relevant network can reply toward the spoofed victim address",
+      "option_c": "C. The packet is automatically encrypted",
+      "option_d": "D. The TTL is reset by every host",
+      "correct_answer": "B",
+      "explanation": "Historically, hosts receiving the broadcast Echo Request would respond, multiplying traffic toward the victim."
+    },
+    {
+      "question": "Which configuration change is identified as the key modern defense against Smurf attacks?",
+      "option_a": "A. Enable directed broadcast forwarding",
+      "option_b": "B. Disable directed broadcast forwarding",
+      "option_c": "C. Increase ICMP response rates",
+      "option_d": "D. Disable IP address filtering",
+      "correct_answer": "B",
+      "explanation": "Disabling directed broadcast forwarding prevents the broadcast-based amplification mechanism used by classic Smurf attacks."
+    },
+    {
+      "question": "What does BCP 38 contribute to Smurf mitigation?",
+      "option_a": "A. It provides source-address filtering to prevent spoofed traffic",
+      "option_b": "B. It increases the maximum IP packet size",
+      "option_c": "C. It forces all ICMP traffic to use TCP",
+      "option_d": "D. It disables TTL processing",
+      "correct_answer": "A",
+      "explanation": "Ingress and egress filtering based on BCP 38 helps prevent packets with obviously spoofed source addresses from entering or leaving networks."
+    },
+    {
+      "question": "A network disables directed broadcasts but does not implement source-address filtering. Which statement best describes the remaining defense posture?",
+      "option_a": "A. Smurf amplification is reduced, but spoofing-related defenses are still incomplete",
+      "option_b": "B. Every Layer 3 attack is automatically prevented",
+      "option_c": "C. IP spoofing becomes impossible on the Internet",
+      "option_d": "D. Ping Floods are automatically eliminated",
+      "correct_answer": "A",
+      "explanation": "Disabling directed broadcast removes the classic Smurf amplification mechanism, while ingress/egress filtering still provides broader protection against spoofing."
+    },
+    {
+      "question": "What is IP spoofing?",
+      "option_a": "A. Changing the TTL after a packet reaches its destination",
+      "option_b": "B. Sending a packet with a forged source IP address",
+      "option_c": "C. Encrypting the IP header",
+      "option_d": "D. Reassembling fragmented packets in reverse order",
+      "correct_answer": "B",
+      "explanation": "IP spoofing involves placing a source IP address in a packet that does not actually belong to the sender."
+    },
+    {
+      "question": "Why is IP spoofing possible according to the lecture?",
+      "option_a": "A. IP has no built-in mechanism to verify that the claimed source address is genuine",
+      "option_b": "B. Routers authenticate every source address incorrectly",
+      "option_c": "C. TTL prevents source-address verification",
+      "option_d": "D. ICMP encrypts the source address",
+      "correct_answer": "A",
+      "explanation": "The IP protocol does not inherently authenticate the source address, allowing attackers to forge it."
+    },
+    {
+      "question": "Why can spoofing a trusted internal address be dangerous?",
+      "option_a": "A. It can bypass naive source-based access controls that trust the address",
+      "option_b": "B. It automatically grants physical access to the network",
+      "option_c": "C. It disables every router",
+      "option_d": "D. It prevents all responses from being generated",
+      "correct_answer": "A",
+      "explanation": "If a security mechanism naively trusts packets based on source IP, a forged internal address can potentially bypass that control."
+    },
+    {
+      "question": "What does ingress filtering attempt to prevent?",
+      "option_a": "A. Internal systems receiving packets with impossible or unauthorized external source addresses",
+      "option_b": "B. Legitimate packets from leaving a network",
+      "option_c": "C. Routers decrementing TTL",
+      "option_d": "D. Fragmented packets from being reassembled",
+      "correct_answer": "A",
+      "explanation": "Ingress filtering can block inbound packets arriving from an external interface while claiming to originate from the organization's own internal address ranges."
+    },
+    {
+      "question": "What is the primary purpose of egress filtering in the context of IP spoofing?",
+      "option_a": "A. Stop the organization's network from sending packets with unauthorized source addresses",
+      "option_b": "B. Prevent all inbound ICMP traffic",
+      "option_c": "C. Increase the number of outbound routes",
+      "option_d": "D. Force all packets to use maximum TTL",
+      "correct_answer": "A",
+      "explanation": "Egress filtering prevents a network from being used to send traffic with spoofed source addresses, reducing its ability to participate in attacks."
+    },
+    {
+      "question": "What does Unicast Reverse Path Forwarding (uRPF) check?",
+      "option_a": "A. Whether a packet's source address is reachable through the interface on which it arrived",
+      "option_b": "B. Whether the packet contains an HTTP request",
+      "option_c": "C. Whether the destination port is encrypted",
+      "option_d": "D. Whether ICMP Echo Replies are larger than requests",
+      "correct_answer": "A",
+      "explanation": "uRPF checks whether the routing path back to the claimed source makes sense through the interface on which the packet arrived."
+    },
+    {
+      "question": "Which pair of attacks share source-address spoofing as a significant common root cause?",
+      "option_a": "A. Ping of Death and Teardrop",
+      "option_b": "B. ICMP Sweep and Ping Flood",
+      "option_c": "C. Smurf and IP Spoofing",
+      "option_d": "D. TTL Expiry and Teardrop",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly identifies Smurf and IP Spoofing as sharing the common root cause of an unverifiable source address."
+    },
+    {
+      "question": "What is the normal function of the IP TTL field?",
+      "option_a": "A. Encrypt the source address",
+      "option_b": "B. Limit how many router hops a packet can traverse",
+      "option_c": "C. Identify the application protocol",
+      "option_d": "D. Specify the packet's TCP port",
+      "correct_answer": "B",
+      "explanation": "Each router decrements TTL by one, preventing packets from looping indefinitely due to routing errors."
+    },
+    {
+      "question": "What happens when a router decrements a packet's TTL to zero?",
+      "option_a": "A. It forwards the packet indefinitely",
+      "option_b": "B. It encrypts the packet",
+      "option_c": "C. It discards the packet and returns an ICMP Time Exceeded message",
+      "option_d": "D. It changes the destination IP address",
+      "correct_answer": "C",
+      "explanation": "A router discards a packet whose TTL reaches zero and generates an ICMP Time Exceeded message."
+    },
+    {
+      "question": "What is the main objective of a TTL Expiry Attack?",
+      "option_a": "A. Exhaust processing capacity on network infrastructure by forcing ICMP Time Exceeded generation",
+      "option_b": "B. Discover every application running on a host",
+      "option_c": "C. Create overlapping IP fragments",
+      "option_d": "D. Encrypt routing information",
+      "correct_answer": "A",
+      "explanation": "The attacker sends many deliberately low-TTL packets so routers repeatedly generate ICMP Time Exceeded messages, consuming CPU resources."
+    },
+    {
+      "question": "What is the primary target of a TTL Expiry Attack?",
+      "option_a": "A. The application server only",
+      "option_b": "B. The network router or other infrastructure",
+      "option_c": "C. The DNS database",
+      "option_d": "D. The IDS log file only",
+      "correct_answer": "B",
+      "explanation": "Unlike an ordinary host-focused flood, TTL Expiry attacks are aimed specifically at network infrastructure such as routers."
+    },
+    {
+      "question": "Which mitigation most directly addresses CPU exhaustion caused by TTL Expiry attacks?",
+      "option_a": "A. Rate-limit generation of ICMP Time Exceeded messages",
+      "option_b": "B. Enable directed broadcasts",
+      "option_c": "C. Disable all source-address filtering",
+      "option_d": "D. Increase fragment overlap",
+      "correct_answer": "A",
+      "explanation": "Rate-limiting ICMP Time Exceeded generation reduces the CPU resources consumed by repeated expiring packets."
+    },
+    {
+      "question": "What is the primary goal of a TTL-Based Evasion Attack?",
+      "option_a": "A. Cause a permanent router hardware failure",
+      "option_b": "B. Make a security device's view of traffic differ from what the destination host receives",
+      "option_c": "C. Increase the number of broadcast hosts",
+      "option_d": "D. Discover active hosts using Echo Requests",
+      "correct_answer": "B",
+      "explanation": "TTL-based evasion exploits differences in hop counts so an IDS may inspect traffic that does not actually reach the destination, or otherwise see a different traffic stream."
+    },
+    {
+      "question": "In TTL-based evasion, why can placing an IDS far from the protected host create a weakness?",
+      "option_a": "A. The hop-count gap gives an attacker more opportunity to manipulate TTL behavior between the IDS and destination",
+      "option_b": "B. The IDS automatically loses its IP address",
+      "option_c": "C. The destination cannot receive TCP traffic",
+      "option_d": "D. ICMP becomes encrypted between the IDS and host",
+      "correct_answer": "A",
+      "explanation": "A larger hop-count gap allows carefully chosen TTL values to expire after inspection but before reaching the protected host."
+    },
+    {
+      "question": "Which mitigation is specifically recommended for TTL-based evasion?",
+      "option_a": "A. Place IDS/IPS sensors as close to protected hosts as possible",
+      "option_b": "B. Disable all ICMP at every host",
+      "option_c": "C. Increase IP fragmentation",
+      "option_d": "D. Permit all directed broadcasts",
+      "correct_answer": "A",
+      "explanation": "Placing sensors close to the protected host minimizes the hop-count gap that an attacker can exploit."
+    },
+    {
+      "question": "What additional capability should modern IDS technology use to help address TTL evasion?",
+      "option_a": "A. Passive trust in every TTL value",
+      "option_b": "B. TTL-aware tracking and normalization",
+      "option_c": "C. Automatic IP spoofing",
+      "option_d": "D. Directed broadcast forwarding",
+      "correct_answer": "B",
+      "explanation": "The lecture recommends IDS technology that actively tracks and normalizes TTL rather than passively trusting it."
+    },
+    {
+      "question": "Which statement best distinguishes TTL Expiry from TTL-Based Evasion?",
+      "option_a": "A. TTL Expiry targets router resource consumption, while TTL Evasion targets inspection accuracy",
+      "option_b": "B. TTL Expiry targets fragmentation, while TTL Evasion targets ICMP authentication",
+      "option_c": "C. TTL Expiry is reconnaissance, while TTL Evasion is always amplification",
+      "option_d": "D. They have exactly the same objective",
+      "correct_answer": "A",
+      "explanation": "TTL Expiry attacks consume router resources through repeated Time Exceeded generation, whereas TTL Evasion attempts to defeat security inspection."
+    },
+    {
+      "question": "What is the defining characteristic of a Teardrop attack?",
+      "option_a": "A. High-volume valid Echo Requests",
+      "option_b": "B. Deliberately malformed overlapping IP fragments",
+      "option_c": "C. Spoofed DNS responses",
+      "option_d": "D. Low-TTL packets directed at routers",
+      "correct_answer": "B",
+      "explanation": "Teardrop sends fragments with overlapping or contradictory offsets that can break vulnerable reassembly implementations."
+    },
+    {
+      "question": "What information in an IP fragment tells the receiver where the fragment belongs during reassembly?",
+      "option_a": "A. Source port",
+      "option_b": "B. TTL only",
+      "option_c": "C. Fragment offset",
+      "option_d": "D. ICMP message type",
+      "correct_answer": "C",
+      "explanation": "The fragment offset indicates where a fragment belongs in the original packet during reassembly."
+    },
+    {
+      "question": "Why were older systems vulnerable to Teardrop?",
+      "option_a": "A. They did not properly validate whether fragment offsets made sense",
+      "option_b": "B. They could not process any IP packet",
+      "option_c": "C. They encrypted fragment offsets incorrectly",
+      "option_d": "D. They rejected all ICMP messages",
+      "correct_answer": "A",
+      "explanation": "Older or poorly implemented IP stacks could fail when confronted with contradictory or overlapping fragment offsets."
+    },
+    {
+      "question": "Why is Teardrop considered largely a legacy attack against modern systems?",
+      "option_a": "A. Modern IP stacks generally validate fragment offsets and discard malformed fragments",
+      "option_b": "B. Modern networks no longer use IP",
+      "option_c": "C. Fragmentation is impossible on modern networks",
+      "option_d": "D. ICMP no longer exists",
+      "correct_answer": "A",
+      "explanation": "Modern patched systems generally detect malformed fragment offsets and discard them rather than crashing during reassembly."
+    },
+    {
+      "question": "Which firewall capability is recommended for defending against Teardrop?",
+      "option_a": "A. Fragment reassembly and validation",
+      "option_b": "B. Disabling all source-address checks",
+      "option_c": "C. Increasing ICMP response volume",
+      "option_d": "D. Increasing the TTL of every fragment",
+      "correct_answer": "A",
+      "explanation": "A firewall can reassemble and validate fragments and drop packets containing impossible or overlapping offsets."
+    },
+    {
+      "question": "A service never legitimately requires fragmented traffic at the network perimeter. Which additional policy could reduce its exposure to Teardrop-style fragmentation attacks?",
+      "option_a": "A. Allow all malformed fragments",
+      "option_b": "B. Block fragmented traffic at the perimeter",
+      "option_c": "C. Disable ingress filtering",
+      "option_d": "D. Increase the number of ICMP responses",
+      "correct_answer": "B",
+      "explanation": "Where policy permits, blocking fragmented traffic removes fragmentation-based attack surface for services that do not legitimately require it."
+    },
+    {
+      "question": "A security administrator sees thousands of Echo Replies arriving at a victim that did not initiate them. Investigation shows the replies originated from many hosts in another network. Which attack best explains this?",
+      "option_a": "A. ICMP Sweep",
+      "option_b": "B. Smurf Attack",
+      "option_c": "C. Teardrop",
+      "option_d": "D. TTL Expiry Attack",
+      "correct_answer": "B",
+      "explanation": "A Smurf attack causes many hosts to respond to a broadcast Echo Request whose source was forged as the victim's address."
+    },
+    {
+      "question": "A router is experiencing high CPU usage. Packet captures show a large number of packets arriving with TTL values intentionally low enough to expire at that router. Which attack is most likely occurring?",
+      "option_a": "A. TTL Expiry Attack",
+      "option_b": "B. ICMP Sweep",
+      "option_c": "C. Teardrop",
+      "option_d": "D. Ping of Death",
+      "correct_answer": "A",
+      "explanation": "The attacker is deliberately causing packets to expire at the router, forcing repeated ICMP Time Exceeded processing."
+    },
+    {
+      "question": "An IDS is positioned three routers away from a protected server. An attacker crafts packets so the IDS inspects them, but their TTL expires before reaching the server. What weakness is being exploited?",
+      "option_a": "A. ICMP amplification",
+      "option_b": "B. TTL-based evasion",
+      "option_c": "C. Ping Flood",
+      "option_d": "D. IP fragmentation reassembly",
+      "correct_answer": "B",
+      "explanation": "The attacker is exploiting the hop-count difference between the IDS and destination to create a mismatch between inspected and delivered traffic."
+    },
+    {
+      "question": "An organization wants one control that reduces both IP spoofing and Smurf attacks. Which is the strongest choice based on the lecture?",
+      "option_a": "A. Ingress and egress filtering",
+      "option_b": "B. Increasing TTL",
+      "option_c": "C. Fragment reassembly only",
+      "option_d": "D. Patching the operating system only",
+      "correct_answer": "A",
+      "explanation": "Ingress and egress filtering addresses forged source addresses, which are a common root cause of both attacks."
+    },
+    {
+      "question": "A company blocks all inbound ICMP at its perimeter. Which attack is most directly reduced by this policy, assuming external attackers are the source?",
+      "option_a": "A. ICMP Sweep",
+      "option_b": "B. Teardrop caused entirely by internal traffic",
+      "option_c": "C. TTL Evasion occurring entirely inside the network",
+      "option_d": "D. All possible Layer 3 attacks",
+      "correct_answer": "A",
+      "explanation": "Blocking inbound Echo Requests directly limits external ICMP reconnaissance. However, the lecture emphasizes that no single control stops every Layer 3 attack."
+    },
+    {
+      "question": "A security team chooses rate limiting instead of completely blocking inbound ICMP because administrators still need legitimate diagnostics. Which statement best reflects the trade-off?",
+      "option_a": "A. Rate limiting can preserve some legitimate diagnostic capability while reducing excessive ICMP traffic",
+      "option_b": "B. Rate limiting completely prevents spoofing",
+      "option_c": "C. Rate limiting repairs vulnerable fragment reassembly code",
+      "option_d": "D. Rate limiting makes ICMP authenticated",
+      "correct_answer": "A",
+      "explanation": "Rate limiting can reduce reconnaissance and flood volume while preserving some legitimate ICMP functionality, unlike complete blocking."
+    },
+    {
+      "question": "A company has patched its operating systems against classic Ping of Death and Teardrop vulnerabilities. Which conclusion is most accurate?",
+      "option_a": "A. No Layer 3 defenses are needed anymore",
+      "option_b": "B. The classic vulnerabilities are largely neutralized, but fragmentation and malformed-packet techniques can still matter in modern evasion",
+      "option_c": "C. ICMP is now authenticated",
+      "option_d": "D. IP spoofing is automatically prevented",
+      "correct_answer": "B",
+      "explanation": "Patching largely neutralizes the classic crashes, but the lecture notes that fragmentation abuse and malformed packets still appear in modern evasion techniques."
+    },
+    {
+      "question": "An attacker wants reconnaissance, not immediate denial of service, and sends Echo Requests to every address in a subnet. Which attack and detection approach best match the situation?",
+      "option_a": "A. ICMP Sweep; detect bursts of Echo Requests across sequential addresses",
+      "option_b": "B. Ping Flood; detect overlapping fragments",
+      "option_c": "C. Teardrop; detect broadcast amplification",
+      "option_d": "D. TTL Expiry; detect forged internal source addresses",
+      "correct_answer": "A",
+      "explanation": "The behavior matches an ICMP Sweep, and the lecture identifies rapid probing across sequential addresses as a strong IDS reconnaissance signal."
+    },
+    {
+      "question": "A network allows ICMP Echo Requests from the Internet without restriction. Which combination of attacks is most directly enabled by this design weakness?",
+      "option_a": "A. ICMP Sweep and Ping Flood",
+      "option_b": "B. Teardrop and IP Spoofing only",
+      "option_c": "C. TTL Evasion and Teardrop only",
+      "option_d": "D. IP Spoofing and TTL Expiry only",
+      "correct_answer": "A",
+      "explanation": "Unrestricted ICMP Echo handling directly facilitates reconnaissance through ICMP Sweep and volume-based abuse through Ping Flood."
+    },
+    {
+      "question": "A network administrator can deploy only one immediate control for a suspected Ping Flood, while longer-term DDoS protection will come later. Which control should be prioritized?",
+      "option_a": "A. ICMP rate limiting at the perimeter",
+      "option_b": "B. Fragment overlap",
+      "option_c": "C. Directed broadcast forwarding",
+      "option_d": "D. Increasing TTL values",
+      "correct_answer": "A",
+      "explanation": "ICMP rate limiting directly reduces the amount of flood traffic that can consume bandwidth and processing resources."
+    },
+    {
+      "question": "An attacker sends packets claiming to originate from an organization's internal address range through its Internet-facing interface. Which defensive control should detect or block this most directly?",
+      "option_a": "A. Ingress filtering",
+      "option_b": "B. ICMP Echo Reply generation",
+      "option_c": "C. TTL normalization only",
+      "option_d": "D. Fragmentation",
+      "correct_answer": "A",
+      "explanation": "Ingress filtering can reject packets entering externally while claiming to originate from the organization's own internal address ranges."
+    },
+    {
+      "question": "A network is configured with ingress filtering but allows its hosts to send packets with arbitrary source addresses. Which risk remains?",
+      "option_a": "A. The network could still be used to originate spoofed traffic toward other networks",
+      "option_b": "B. Inbound spoofed traffic is guaranteed to increase",
+      "option_c": "C. TTL will stop functioning",
+      "option_d": "D. Ping of Death becomes unavoidable",
+      "correct_answer": "A",
+      "explanation": "Ingress filtering protects incoming traffic, while egress filtering prevents the organization's own network from originating traffic with unauthorized source addresses."
+    },
+    {
+      "question": "Which scenario represents the clearest example of a security control mismatch?",
+      "option_a": "A. Using ICMP rate limiting to reduce a Ping Flood",
+      "option_b": "B. Using patching to address a vulnerable legacy Teardrop implementation",
+      "option_c": "C. Using rate limiting alone to eliminate TTL-based IDS evasion",
+      "option_d": "D. Using ingress filtering to reduce IP spoofing",
+      "correct_answer": "C",
+      "explanation": "Rate limiting addresses traffic volume, whereas TTL-based evasion requires controls such as sensor placement and TTL-aware inspection."
+    },
+    {
+      "question": "A security architect wants to minimize the number of separate controls while maintaining broad Layer 3 protection. Which observation from the lecture supports this strategy?",
+      "option_a": "A. Ingress/egress filtering can help against both IP spoofing and Smurf attacks",
+      "option_b": "B. One control completely prevents every Layer 3 attack",
+      "option_c": "C. Rate limiting eliminates fragmentation vulnerabilities",
+      "option_d": "D. Patching authenticates ICMP",
+      "correct_answer": "A",
+      "explanation": "The lecture highlights control minimization by noting that ingress/egress filtering provides protection against multiple spoofing-related attacks."
+    },
+    {
+      "question": "Which pair is most accurately matched with its primary mitigation?",
+      "option_a": "A. Ping of Death — patching; TTL Expiry — rate-limit ICMP Time Exceeded generation",
+      "option_b": "B. Smurf — increase TTL; Teardrop — allow overlapping fragments",
+      "option_c": "C. ICMP Sweep — enable directed broadcast; IP Spoofing — disable filtering",
+      "option_d": "D. Ping Flood — increase fragment size; TTL Evasion — enable broadcast forwarding",
+      "correct_answer": "A",
+      "explanation": "Patching addresses the legacy Ping of Death vulnerability, while rate-limiting ICMP Time Exceeded generation addresses TTL Expiry resource exhaustion."
+    },
+    {
+      "question": "Which pair of attacks primarily abuses fragmentation-related processing rather than simply generating high volumes of valid ICMP Echo Requests?",
+      "option_a": "A. Ping Flood and ICMP Sweep",
+      "option_b": "B. Ping of Death and Teardrop",
+      "option_c": "C. Smurf and Ping Flood",
+      "option_d": "D. TTL Expiry and ICMP Sweep",
+      "correct_answer": "B",
+      "explanation": "Ping of Death and Teardrop both exploit weaknesses in packet fragmentation and reassembly."
+    },
+    {
+      "question": "A traditional signature-based IDS must identify an attack that deliberately causes the IDS and destination host to observe different traffic. Which attack is the strongest candidate for being difficult to detect using simple signatures?",
+      "option_a": "A. TTL-Based Evasion",
+      "option_b": "B. Ping Flood with an obvious volume spike",
+      "option_c": "C. ICMP Sweep across a clearly sequential range",
+      "option_d": "D. A single obvious malformed fragment",
+      "correct_answer": "A",
+      "explanation": "TTL-Based Evasion is specifically designed to defeat inspection by creating a mismatch between what the IDS sees and what the destination receives."
+    },
+    {
+      "question": "A defender deploys an IDS close to the protected host and enables TTL-aware inspection. Which attack is this defense primarily intended to address?",
+      "option_a": "A. Smurf amplification",
+      "option_b": "B. TTL-Based Evasion",
+      "option_c": "C. Ping Flood",
+      "option_d": "D. ICMP Sweep",
+      "correct_answer": "B",
+      "explanation": "Close sensor placement and TTL-aware inspection are the lecture's specific mitigations for TTL-based evasion."
+    },
+    {
+      "question": "Which statement best captures the layered-defense lesson of the lecture?",
+      "option_a": "A. One security control should be sufficient if correctly configured",
+      "option_b": "B. Filtering, rate limiting, patching, and inspection controls address different attack mechanisms and should complement one another",
+      "option_c": "C. Patching makes network filtering unnecessary",
+      "option_d": "D. Rate limiting solves both spoofing and IDS evasion",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes that no single control covers every attack, so layered defenses are required."
+    },
+    {
+      "question": "Which attack primarily turns a reconnaissance technique into a denial-of-service mechanism through amplification?",
+      "option_a": "A. Smurf",
+      "option_b": "B. Teardrop",
+      "option_c": "C. TTL Evasion",
+      "option_d": "D. ICMP Sweep",
+      "correct_answer": "A",
+      "explanation": "Smurf uses a spoofed source and broadcast destination to multiply responses and direct them toward the victim."
+    },
+    {
+      "question": "A security engineer claims that disabling directed broadcasts alone provides complete protection against all source-spoofing attacks. What is the flaw in this reasoning?",
+      "option_a": "A. Directed broadcasts and source spoofing are unrelated to Layer 3",
+      "option_b": "B. Disabling directed broadcasts removes the classic Smurf amplification mechanism but does not by itself prevent general IP spoofing",
+      "option_c": "C. Directed broadcasts are required for IP spoofing",
+      "option_d": "D. Disabling broadcasts increases spoofing capability",
+      "correct_answer": "B",
+      "explanation": "Directed-broadcast protection addresses Smurf amplification, while ingress/egress filtering and uRPF provide broader source-spoofing defenses."
+    },
+    {
+      "question": "A router generates an ICMP Time Exceeded response for each expiring packet. An attacker increases the rate of low-TTL packets until the router struggles to forward legitimate traffic. Which chain best explains the attack?",
+      "option_a": "A. Low TTL → packet expires → ICMP Time Exceeded generation → router CPU consumption",
+      "option_b": "B. Low TTL → broadcast amplification → victim receives Echo Replies",
+      "option_c": "C. Low TTL → fragment overlap → memory corruption",
+      "option_d": "D. Low TTL → source authentication → spoofing prevention",
+      "correct_answer": "A",
+      "explanation": "TTL Expiry attacks exploit the router's processing of expired packets and the resulting ICMP Time Exceeded messages."
+    },
+    {
+      "question": "A vulnerable embedded device receives several fragments whose offsets overlap and contradict one another. It crashes while attempting to reconstruct the original packet. Which attack and vulnerability are most consistent with this observation?",
+      "option_a": "A. Teardrop; faulty validation of fragment offsets during reassembly",
+      "option_b": "B. Ping Flood; excessive Echo Requests",
+      "option_c": "C. Smurf; broadcast amplification",
+      "option_d": "D. ICMP Sweep; host discovery",
+      "correct_answer": "A",
+      "explanation": "Teardrop exploits poorly implemented fragment reassembly by supplying overlapping or contradictory fragment offsets."
+    },
+    {
+      "question": "A security team argues that because Ping of Death and Teardrop are legacy attacks, no fragmentation defenses are necessary. Which response is best supported by the lecture?",
+      "option_a": "A. Correct, because fragmentation abuse has disappeared completely",
+      "option_b": "B. Incorrect; while classic vulnerabilities are largely fixed by patching, fragmentation and malformed-packet techniques still appear in modern evasion",
+      "option_c": "C. Correct, because IP no longer supports fragmentation",
+      "option_d": "D. Incorrect only because ICMP authentication is missing",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly notes that the classic attacks are largely solved by patching, while their underlying fragmentation-abuse techniques remain relevant to modern evasion."
+    },
+    {
+      "question": "A university network wants to retain ICMP diagnostics internally while reducing Internet-based reconnaissance and floods. Which defense strategy best follows the lecture's layered approach?",
+      "option_a": "A. Allow unlimited ICMP from all sources",
+      "option_b": "B. Restrict inbound ICMP to trusted sources, rate-limit necessary ICMP, use IDS/IPS detection, and retain appropriate patching and filtering",
+      "option_c": "C. Disable all IP routing",
+      "option_d": "D. Only increase the TTL of outbound packets",
+      "correct_answer": "B",
+      "explanation": "A layered approach combines access restriction, rate limiting, detection, and system/network hardening rather than depending on one control."
+    },
+    {
+      "question": "An organization experiences a high-volume ICMP attack from many sources. Simple perimeter rate limiting reduces some traffic but the links remain saturated. Which escalation is most consistent with the lecture?",
+      "option_a": "A. Deploy dedicated DDoS protection capable of absorbing large-scale volume",
+      "option_b": "B. Enable directed broadcasts",
+      "option_c": "C. Disable ingress filtering",
+      "option_d": "D. Increase IP fragment overlap",
+      "correct_answer": "A",
+      "explanation": "The lecture recommends dedicated DDoS protection for large-scale floods that exceed what on-premises equipment can handle."
+    },
+    {
+      "question": "Which statement most accurately summarizes the common security weakness behind the Layer 3 attacks covered in the lecture?",
+      "option_a": "A. Network-layer fields and ICMP behavior are often trusted despite being controllable or unauthenticated",
+      "option_b": "B. All Layer 3 attacks require compromised application servers",
+      "option_c": "C. IP headers are encrypted and therefore impossible to manipulate",
+      "option_d": "D. Routers never process attacker-controlled header information",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes that ICMP is unauthenticated and that important IP header fields such as source address, TTL, and fragmentation information are sender-controlled."
+    }
+  ]
+}

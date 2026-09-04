@@ -1,0 +1,1129 @@
+{
+  "questions": [
+    {
+      "question": "Which type of routing protocol is RIP?",
+      "option_a": "A. Link-state",
+      "option_b": "B. Distance-vector",
+      "option_c": "C. Path-vector",
+      "option_d": "D. Hybrid-only exterior gateway",
+      "correct_answer": "B",
+      "explanation": "RIP is a distance-vector routing protocol. It learns route information from directly connected neighbors."
+    },
+    {
+      "question": "What metric does RIP primarily use when selecting a route?",
+      "option_a": "A. Bandwidth",
+      "option_b": "B. Delay",
+      "option_c": "C. Hop count",
+      "option_d": "D. AS-path length",
+      "correct_answer": "C",
+      "explanation": "RIP uses hop count as its routing metric, with every link counting as one hop."
+    },
+    {
+      "question": "What is the maximum usable hop count in RIP?",
+      "option_a": "A. 10",
+      "option_b": "B. 15",
+      "option_c": "C. 16",
+      "option_d": "D. 255",
+      "correct_answer": "B",
+      "explanation": "RIP supports a maximum distance of 15 hops. A route requiring 16 hops is considered unreachable."
+    },
+    {
+      "question": "Which transport mechanism does RIP use?",
+      "option_a": "A. TCP port 179",
+      "option_b": "B. UDP port 520",
+      "option_c": "C. IP protocol 89",
+      "option_d": "D. IP protocol 88",
+      "correct_answer": "B",
+      "explanation": "RIP runs over UDP port 520."
+    },
+    {
+      "question": "How frequently does RIP normally send unsolicited routing table advertisements?",
+      "option_a": "A. Every 5 seconds",
+      "option_b": "B. Every 10 seconds",
+      "option_c": "C. Every 30 seconds",
+      "option_d": "D. Every 60 seconds",
+      "correct_answer": "C",
+      "explanation": "RIP sends unsolicited Response messages containing routing information every 30 seconds by default."
+    },
+    {
+      "question": "Which statement best describes OSPF?",
+      "option_a": "A. It is a distance-vector protocol that trusts only hop counts.",
+      "option_b": "B. It is a link-state protocol in which routers build a topology map.",
+      "option_c": "C. It is a path-vector protocol used between autonomous systems.",
+      "option_d": "D. It is an application-layer routing protocol running over TCP.",
+      "correct_answer": "B",
+      "explanation": "OSPF is link-state. Routers build a view of the topology within an area and independently calculate paths."
+    },
+    {
+      "question": "What metric does OSPF use for path selection?",
+      "option_a": "A. Hop count only",
+      "option_b": "B. AS-path length only",
+      "option_c": "C. Cost based on interface bandwidth",
+      "option_d": "D. Number of routing updates received",
+      "correct_answer": "C",
+      "explanation": "OSPF calculates cost using a reference bandwidth divided by the interface bandwidth, so faster links generally have lower cost."
+    },
+    {
+      "question": "Which OSPF area serves as the backbone connecting other OSPF areas?",
+      "option_a": "A. Area 1",
+      "option_b": "B. Area 10",
+      "option_c": "C. Area 100",
+      "option_d": "D. Area 0",
+      "correct_answer": "D",
+      "explanation": "Area 0 is the OSPF backbone area and connects the other areas."
+    },
+    {
+      "question": "Which IP protocol number does OSPF use?",
+      "option_a": "A. 6",
+      "option_b": "B. 17",
+      "option_c": "C. 88",
+      "option_d": "D. 89",
+      "correct_answer": "D",
+      "explanation": "OSPF runs directly over IP using protocol number 89 rather than TCP or UDP."
+    },
+    {
+      "question": "Which OSPF message is primarily used to discover and maintain neighbor relationships?",
+      "option_a": "A. LSU",
+      "option_b": "B. LSR",
+      "option_c": "C. Hello",
+      "option_d": "D. LSAck",
+      "correct_answer": "C",
+      "explanation": "OSPF Hello messages establish and maintain neighbor relationships."
+    },
+    {
+      "question": "Which OSPF message carries Link State Advertisements?",
+      "option_a": "A. LSU",
+      "option_b": "B. DBD",
+      "option_c": "C. Hello",
+      "option_d": "D. LSR",
+      "correct_answer": "A",
+      "explanation": "A Link State Update (LSU) carries the actual Link State Advertisements."
+    },
+    {
+      "question": "Which routing protocol uses the DUAL algorithm?",
+      "option_a": "A. RIP",
+      "option_b": "B. OSPF",
+      "option_c": "C. EIGRP",
+      "option_d": "D. BGP",
+      "correct_answer": "C",
+      "explanation": "EIGRP uses DUAL to calculate loop-free paths and converge quickly after topology changes."
+    },
+    {
+      "question": "Which two factors form the default basis of EIGRP's composite metric?",
+      "option_a": "A. Hop count and AS-path length",
+      "option_b": "B. Bandwidth and delay",
+      "option_c": "C. Reliability and load",
+      "option_d": "D. Cost and prefix length",
+      "correct_answer": "B",
+      "explanation": "EIGRP's default composite metric uses bandwidth and delay. Reliability and load are part of the formula but disabled by default."
+    },
+    {
+      "question": "Which IP protocol number is used by EIGRP?",
+      "option_a": "A. 88",
+      "option_b": "B. 89",
+      "option_c": "C. 179",
+      "option_d": "D. 520",
+      "correct_answer": "A",
+      "explanation": "EIGRP runs directly over IP using protocol number 88."
+    },
+    {
+      "question": "Which EIGRP messages are associated with DUAL finding a new loop-free path after a route failure?",
+      "option_a": "A. OPEN and UPDATE",
+      "option_b": "B. Hello and LSU",
+      "option_c": "C. Query and Reply",
+      "option_d": "D. Request and Response",
+      "correct_answer": "C",
+      "explanation": "EIGRP uses Query and Reply messages during DUAL's route recalculation process."
+    },
+    {
+      "question": "Which protocol in the lecture is the only exterior gateway protocol among RIP, OSPF, EIGRP, and BGP?",
+      "option_a": "A. RIP",
+      "option_b": "B. OSPF",
+      "option_c": "C. EIGRP",
+      "option_d": "D. BGP",
+      "correct_answer": "D",
+      "explanation": "BGP is the path-vector protocol used to exchange routing information between Autonomous Systems."
+    },
+    {
+      "question": "Which transport protocol and port does BGP use?",
+      "option_a": "A. UDP 520",
+      "option_b": "B. TCP 179",
+      "option_c": "C. IP protocol 88",
+      "option_d": "D. IP protocol 89",
+      "correct_answer": "B",
+      "explanation": "BGP runs over TCP port 179."
+    },
+    {
+      "question": "Which BGP message advertises new routes or withdraws routes that are no longer valid?",
+      "option_a": "A. OPEN",
+      "option_b": "B. KEEPALIVE",
+      "option_c": "C. UPDATE",
+      "option_d": "D. NOTIFICATION",
+      "correct_answer": "C",
+      "explanation": "BGP UPDATE messages advertise routes and withdraw routes, making them central to prefix-hijacking scenarios."
+    },
+    {
+      "question": "Which BGP path attribute is the simplest way to reason about preference for a shorter AS path?",
+      "option_a": "A. AS-path length",
+      "option_b": "B. Interface bandwidth",
+      "option_c": "C. Hop count",
+      "option_d": "D. OSPF cost",
+      "correct_answer": "A",
+      "explanation": "BGP considers multiple ordered path attributes, with AS-path length being a straightforward example where fewer ASes are generally preferred."
+    },
+    {
+      "question": "Which comparison is correct?",
+      "option_a": "A. RIP uses bandwidth, OSPF uses hop count, EIGRP uses AS-path length, BGP uses delay.",
+      "option_b": "B. RIP uses hop count, OSPF uses bandwidth-based cost, EIGRP uses bandwidth and delay, and BGP uses path attributes including AS-path length.",
+      "option_c": "C. All four protocols use hop count as their primary metric.",
+      "option_d": "D. RIP and OSPF use TCP while EIGRP and BGP use UDP.",
+      "correct_answer": "B",
+      "explanation": "The four protocols use fundamentally different routing approaches and metrics as described in the lecture."
+    },
+    {
+      "question": "Why are routing protocols inherently security-sensitive according to the lecture?",
+      "option_a": "A. Routers never use routing tables.",
+      "option_b": "B. Routing protocols require routers to trust information supplied by neighbors.",
+      "option_c": "C. Routing protocols encrypt every update automatically.",
+      "option_d": "D. Routing protocols only operate on isolated networks.",
+      "correct_answer": "B",
+      "explanation": "Routing automation depends on exchanging information between routers, creating a trust relationship that can be abused."
+    },
+    {
+      "question": "What fundamental verification is generally missing by default in the four routing protocols discussed?",
+      "option_a": "A. Verification that the neighbor's routing claims are authorised and truthful",
+      "option_b": "B. Verification that Ethernet frames contain MAC addresses",
+      "option_c": "C. Verification that IP packets contain source addresses",
+      "option_d": "D. Verification that routers have routing tables",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes that routing protocols do not inherently verify that an advertising neighbor is authorised or that its claims are truthful."
+    },
+    {
+      "question": "An attacker sends a false RIP Response claiming that a target network is only one hop away. What attack best describes this?",
+      "option_a": "A. Routing Table Poisoning",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. Physical port security",
+      "option_d": "D. Route dampening",
+      "correct_answer": "A",
+      "explanation": "Routing Table Poisoning involves injecting false route information into a distance-vector protocol using an attractive metric."
+    },
+    {
+      "question": "Why is a low hop count particularly effective for a poisoning attack against RIP?",
+      "option_a": "A. RIP always chooses the route with the highest bandwidth.",
+      "option_b": "B. RIP selects paths primarily according to hop count.",
+      "option_c": "C. RIP uses AS-path length.",
+      "option_d": "D. RIP ignores metrics completely.",
+      "correct_answer": "B",
+      "explanation": "A low hop count appears attractive because hop count is RIP's routing metric."
+    },
+    {
+      "question": "A rogue device joins a routing domain and establishes an ongoing neighbor relationship before continuously advertising false routes. Which attack is most directly described?",
+      "option_a": "A. Routing Table Poisoning only",
+      "option_b": "B. Unauthorised Route Injection",
+      "option_c": "C. Prefix Hijacking",
+      "option_d": "D. Traffic monitoring",
+      "correct_answer": "B",
+      "explanation": "Unauthorised Route Injection involves a rogue device becoming a full routing neighbor and gaining an ongoing foothold."
+    },
+    {
+      "question": "What is the key distinction between Routing Table Poisoning and Unauthorised Route Injection?",
+      "option_a": "A. Poisoning changes routes, whereas injection never changes routes.",
+      "option_b": "B. Injection involves gaining a full neighbor relationship, whereas poisoning can involve a false route advertisement without that persistent foothold.",
+      "option_c": "C. Poisoning is BGP-specific, whereas injection is OSPF-specific.",
+      "option_d": "D. Injection only affects physical cables.",
+      "correct_answer": "B",
+      "explanation": "The lecture distinguishes poisoning as false route advertisements from unauthorised injection as a rogue device establishing itself as a trusted participant."
+    },
+    {
+      "question": "Which attack is specifically associated with advertising ownership of an IP prefix that the advertising AS is not authorised to originate?",
+      "option_a": "A. Routing DoS",
+      "option_b": "B. Blackhole attack",
+      "option_c": "C. Route/Prefix Hijacking",
+      "option_d": "D. Passive-interface attack",
+      "correct_answer": "C",
+      "explanation": "Route/Prefix Hijacking is the BGP-specific attack in which an AS advertises an unauthorised prefix."
+    },
+    {
+      "question": "Why is Route/Prefix Hijacking considered BGP-specific in this module?",
+      "option_a": "A. BGP is the protocol governing routing between Autonomous Systems and advertising address prefixes.",
+      "option_b": "B. BGP is the only protocol that uses hop count.",
+      "option_c": "C. BGP never uses route advertisements.",
+      "option_d": "D. BGP is the only protocol that supports multicast.",
+      "correct_answer": "A",
+      "explanation": "The attack exploits BGP's role in exchanging prefix reachability between Autonomous Systems."
+    },
+    {
+      "question": "Why can advertising a more-specific prefix be particularly effective in BGP?",
+      "option_a": "A. BGP always rejects longer prefixes.",
+      "option_b": "B. BGP prefers the most specific matching route.",
+      "option_c": "C. BGP ignores prefixes completely.",
+      "option_d": "D. More-specific prefixes are automatically authenticated.",
+      "correct_answer": "B",
+      "explanation": "BGP prefers a more-specific matching prefix, allowing an unauthorised specific announcement to attract traffic."
+    },
+    {
+      "question": "In the 2008 YouTube incident, which factor caused the locally intended route announcement to spread globally?",
+      "option_a": "A. PCCW validated the route using RPKI.",
+      "option_b": "B. PCCW did not validate the advertisement and propagated it.",
+      "option_c": "C. YouTube intentionally redirected traffic to Pakistan.",
+      "option_d": "D. RIP redistributed the route worldwide.",
+      "correct_answer": "B",
+      "explanation": "Pakistan Telecom's announcement was propagated by its upstream provider PCCW without appropriate validation."
+    },
+    {
+      "question": "What was the major consequence of the 2008 YouTube prefix hijack described in the lecture?",
+      "option_a": "A. Only one router in Pakistan stopped forwarding packets.",
+      "option_b": "B. YouTube traffic was globally redirected toward Pakistan Telecom for roughly two hours.",
+      "option_c": "C. All BGP sessions permanently failed.",
+      "option_d": "D. OSPF Area 0 was deleted.",
+      "correct_answer": "B",
+      "explanation": "Because the unauthorised prefix was more specific and propagated globally, much YouTube traffic was redirected to Pakistan Telecom until the route was withdrawn."
+    },
+    {
+      "question": "What is the defining outcome of a blackhole attack?",
+      "option_a": "A. Traffic is silently dropped at a dead end.",
+      "option_b": "B. Traffic is always forwarded through the legitimate destination.",
+      "option_c": "C. Traffic is encrypted end-to-end.",
+      "option_d": "D. Routing updates are converted to DNS queries.",
+      "correct_answer": "A",
+      "explanation": "A blackhole directs traffic to a dead end where it is silently dropped, producing a denial-of-service effect."
+    },
+    {
+      "question": "What makes a sinkhole different from a blackhole?",
+      "option_a": "A. A sinkhole cannot receive traffic.",
+      "option_b": "B. A sinkhole directs traffic to an attacker-controlled device where it can potentially be inspected or modified.",
+      "option_c": "C. A sinkhole only exists in OSPF.",
+      "option_d": "D. A sinkhole requires physical cable damage.",
+      "correct_answer": "B",
+      "explanation": "A sinkhole captures traffic at an attacker-controlled destination, potentially allowing interception or tampering."
+    },
+    {
+      "question": "Which statement best explains why blackhole and sinkhole attacks share a root cause with poisoning and injection?",
+      "option_a": "A. They all depend on unverified routing information being trusted.",
+      "option_b": "B. They all require TCP port 179.",
+      "option_c": "C. They all require RPKI to be disabled.",
+      "option_d": "D. They all depend on DNS cache poisoning.",
+      "correct_answer": "A",
+      "explanation": "The attacker first manipulates routing information; the difference is the desired outcome of the misdirection."
+    },
+    {
+      "question": "What is the primary mechanism of a Routing DoS/Instability attack?",
+      "option_a": "A. Flooding routing updates or repeatedly advertising and withdrawing routes",
+      "option_b": "B. Encrypting all routing updates",
+      "option_c": "C. Increasing interface bandwidth",
+      "option_d": "D. Removing every routing protocol from the network",
+      "correct_answer": "A",
+      "explanation": "The attacker keeps routers processing route changes and recalculating paths, consuming resources and destabilising forwarding."
+    },
+    {
+      "question": "What resource can be exhausted by repeated malicious routing recalculations?",
+      "option_a": "A. Router CPU",
+      "option_b": "B. Optical wavelength only",
+      "option_c": "C. DNS cache only",
+      "option_d": "D. Application database storage only",
+      "correct_answer": "A",
+      "explanation": "Constant route processing and recalculation can consume router CPU and contribute to network-wide instability."
+    },
+    {
+      "question": "Which attack is genuinely BGP-specific according to the lecture's attack comparison?",
+      "option_a": "A. Routing Table Poisoning",
+      "option_b": "B. Unauthorised Route Injection",
+      "option_c": "C. Route/Prefix Hijacking",
+      "option_d": "D. Routing DoS/Instability",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies prefix hijacking as the one attack in the set that is genuinely BGP-specific."
+    },
+    {
+      "question": "Which attack can involve a false attractive metric in EIGRP rather than a false low hop count in RIP?",
+      "option_a": "A. Routing Table Poisoning",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. Physical port security",
+      "option_d": "D. RPKI failure",
+      "correct_answer": "A",
+      "explanation": "Poisoning can be adapted to the metric of the protocol. In EIGRP, an attacker can advertise an attractive false route using its composite metric."
+    },
+    {
+      "question": "A malicious EIGRP advertisement triggers Query/Reply processing similar to what would happen after a genuine route failure. Which attack is most relevant?",
+      "option_a": "A. Routing Table Poisoning",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. RPKI validation",
+      "option_d": "D. Passive-interface",
+      "correct_answer": "A",
+      "explanation": "The lecture specifically notes that false EIGRP advertisements can interact with DUAL's Query/Reply recalculation during routing table poisoning."
+    },
+    {
+      "question": "Which defense directly prevents an unauthenticated rogue device from forming a routing neighbor relationship?",
+      "option_a": "A. Neighbor authentication",
+      "option_b": "B. Traffic monitoring",
+      "option_c": "C. Route dampening",
+      "option_d": "D. RPKI only",
+      "correct_answer": "A",
+      "explanation": "MD5 neighbor authentication requires the device to prove possession of the correct shared key before becoming a trusted neighbor."
+    },
+    {
+      "question": "What is the central purpose of MD5 neighbor authentication in the lecture?",
+      "option_a": "A. To prove that the routing neighbor possesses the correct shared key",
+      "option_b": "B. To guarantee every route advertised by that neighbor is truthful",
+      "option_c": "C. To calculate OSPF cost",
+      "option_d": "D. To replace routing tables with static routes",
+      "correct_answer": "A",
+      "explanation": "Authentication establishes trust in the identity of the neighbor. It does not by itself guarantee that the neighbor's routing claims are sensible."
+    },
+    {
+      "question": "An authenticated router begins advertising an implausible route. Which defense is most directly needed in addition to authentication?",
+      "option_a": "A. Route filtering",
+      "option_b": "B. Increasing hop count",
+      "option_c": "C. Disabling IP addressing",
+      "option_d": "D. Replacing TCP with UDP",
+      "correct_answer": "A",
+      "explanation": "Authentication proves who is speaking, while filtering restricts which routes that authenticated neighbor is allowed to advertise or provide."
+    },
+    {
+      "question": "Which defense removes routing-protocol participation from an interface that does not need to communicate with routers?",
+      "option_a": "A. RPKI",
+      "option_b": "B. Passive-interface",
+      "option_c": "C. Route dampening",
+      "option_d": "D. AS-path manipulation",
+      "correct_answer": "B",
+      "explanation": "Passive-interface prevents routing protocol traffic from being sent and, in most implementations, prevents received routing traffic from being processed on that interface."
+    },
+    {
+      "question": "Why is passive-interface particularly appropriate on an interface connected to ordinary end-user devices?",
+      "option_a": "A. End-user PCs and printers normally have no legitimate need to participate as routing neighbors.",
+      "option_b": "B. Passive-interface increases the bandwidth available to users.",
+      "option_c": "C. It makes all users BGP speakers.",
+      "option_d": "D. It automatically creates an RPKI ROA.",
+      "correct_answer": "A",
+      "explanation": "Access-layer devices normally should not form routing adjacencies, so passive-interface removes an unnecessary attack surface."
+    },
+    {
+      "question": "Which additional control complements passive-interface by preventing a rogue device from physically reaching a routing-capable interface?",
+      "option_a": "A. Physical port security",
+      "option_b": "B. AS-path length",
+      "option_c": "C. DBD messages",
+      "option_d": "D. Route dampening",
+      "correct_answer": "A",
+      "explanation": "Physical port security can prevent unauthorised devices from accessing ports where routing participation could otherwise be attempted."
+    },
+    {
+      "question": "What does route filtering/distribute-list primarily control?",
+      "option_a": "A. Which specific routes are accepted from or advertised to a neighbor",
+      "option_b": "B. Which physical ports receive electrical power",
+      "option_c": "C. Which TCP sessions use port 179",
+      "option_d": "D. Which routers become RIR trust anchors",
+      "correct_answer": "A",
+      "explanation": "Route filtering explicitly restricts the routes that can be learned from or advertised to a given neighbor."
+    },
+    {
+      "question": "Which defense is most directly associated with validating whether a BGP origin AS is authorised to originate a prefix?",
+      "option_a": "A. Passive-interface",
+      "option_b": "B. RPKI",
+      "option_c": "C. EIGRP DUAL",
+      "option_d": "D. RIP hop counting",
+      "correct_answer": "B",
+      "explanation": "RPKI uses signed Route Origin Authorisations to validate the relationship between a prefix and its authorised origin AS."
+    },
+    {
+      "question": "What is route dampening intended to mitigate?",
+      "option_a": "A. Repeated route flapping and the resulting repeated recalculations",
+      "option_b": "B. Physical cable theft",
+      "option_c": "C. Incorrect subnet masks only",
+      "option_d": "D. Lack of DNS records",
+      "correct_answer": "A",
+      "explanation": "Route dampening suppresses routes that repeatedly flap so they do not continually trigger fresh routing calculations."
+    },
+    {
+      "question": "What does rate limiting provide in the context of routing DoS?",
+      "option_a": "A. A backstop limiting how frequently routing updates are processed",
+      "option_b": "B. A replacement for all authentication",
+      "option_c": "C. A way to increase the number of accepted malicious updates",
+      "option_d": "D. A method of generating ROAs",
+      "correct_answer": "A",
+      "explanation": "Rate limiting restricts update-processing frequency and can reduce the effect of an update flood, even if authentication is bypassed or misconfigured."
+    },
+    {
+      "question": "Which single control is described as meaningfully addressing four of the five attacks?",
+      "option_a": "A. Neighbor authentication",
+      "option_b": "B. Traffic monitoring",
+      "option_c": "C. Route dampening",
+      "option_d": "D. RPKI",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies neighbor authentication as the strongest single control because it addresses four of the five attacks."
+    },
+    {
+      "question": "Why is authentication alone insufficient as a complete routing-security solution?",
+      "option_a": "A. Authentication proves who is talking but does not prove that everything they say is plausible.",
+      "option_b": "B. Authentication prevents routers from communicating.",
+      "option_c": "C. Authentication only works on Ethernet switches.",
+      "option_d": "D. Authentication automatically disables route filtering.",
+      "correct_answer": "A",
+      "explanation": "A compromised or misconfigured authenticated neighbor can still advertise incorrect information, which is why filtering is also necessary."
+    },
+    {
+      "question": "Which statement correctly compares OSPF and EIGRP MD5 authentication configuration?",
+      "option_a": "A. OSPF requires a key chain while EIGRP requires only one interface key.",
+      "option_b": "B. OSPF can use an MD5 key per interface or area, while EIGRP uses a key chain plus authentication configuration.",
+      "option_c": "C. Neither protocol supports MD5.",
+      "option_d": "D. Both require exactly the same configuration steps and key-management model.",
+      "correct_answer": "B",
+      "explanation": "OSPF uses area/interface authentication with an MD5 key, whereas EIGRP requires a key chain and authentication mode applied to the interface."
+    },
+    {
+      "question": "What operational advantage do EIGRP key chains provide over OSPF's simpler MD5 mechanism as described?",
+      "option_a": "A. They allow multiple keys with lifetimes, supporting scheduled key rotation.",
+      "option_b": "B. They eliminate the need for authentication.",
+      "option_c": "C. They convert EIGRP into BGP.",
+      "option_d": "D. They make all route advertisements automatically valid.",
+      "correct_answer": "A",
+      "explanation": "EIGRP key chains can contain multiple keys with defined lifetimes, enabling planned key rotation without downtime."
+    },
+    {
+      "question": "Why does the module focus hands-on authentication work on OSPF and EIGRP?",
+      "option_a": "A. They are the only routing protocols that exist.",
+      "option_b": "B. They have confirmed reliable MD5 authentication support in Packet Tracer for the lab.",
+      "option_c": "C. BGP cannot route between Autonomous Systems.",
+      "option_d": "D. RIP has no routing metrics.",
+      "correct_answer": "B",
+      "explanation": "The lecture states that OSPF and EIGRP have reliable MD5 authentication support in Packet Tracer, while RIPv2 support is inconsistent and BGP support is limited."
+    },
+    {
+      "question": "A network administrator applies a distribute-list to an OSPF router and observes that the route is no longer installed in that router's local routing table. What does this prove?",
+      "option_a": "A. The route has definitely stopped being flooded to all other OSPF routers.",
+      "option_b": "B. The route has been filtered from local installation, but this alone does not prove LSA propagation stopped.",
+      "option_c": "C. RPKI has validated the route.",
+      "option_d": "D. OSPF has been converted to distance-vector routing.",
+      "correct_answer": "B",
+      "explanation": "In OSPF, a distribute-list controls local route installation rather than preventing LSAs from being flooded through the area."
+    },
+    {
+      "question": "Why does a distribute-list behave differently in EIGRP than in OSPF?",
+      "option_a": "A. EIGRP is distance-vector, so filtering can directly control routes included in updates to neighbors.",
+      "option_b": "B. EIGRP is link-state, so all LSAs must remain identical.",
+      "option_c": "C. EIGRP does not exchange routing information.",
+      "option_d": "D. OSPF never sends routing information.",
+      "correct_answer": "A",
+      "explanation": "Because EIGRP is distance-vector, a distribute-list can control what routes are accepted or included in updates, affecting propagation."
+    },
+    {
+      "question": "If the objective is to prevent certain OSPF routes from propagating across an area boundary, which approach is more appropriate than relying on a plain OSPF distribute-list?",
+      "option_a": "A. An area filter-list at the area boundary",
+      "option_b": "B. Increasing RIP's hop count",
+      "option_c": "C. Changing BGP to UDP",
+      "option_d": "D. Disabling all OSPF Hello messages globally",
+      "correct_answer": "A",
+      "explanation": "The lecture states that controlling OSPF propagation requires a different mechanism, such as an area filter-list at an area boundary."
+    },
+    {
+      "question": "A company says, 'Our OSPF distribute-list guarantees that no unauthorised route can propagate to other routers.' What is the best evaluation?",
+      "option_a": "A. Correct, because distribute-lists stop all OSPF LSAs.",
+      "option_b": "B. Incorrect, because a plain OSPF distribute-list filters local installation rather than LSA flooding.",
+      "option_c": "C. Correct, but only when BGP is also enabled.",
+      "option_d": "D. Incorrect because OSPF has no filtering mechanisms at all.",
+      "correct_answer": "B",
+      "explanation": "The claim confuses local route-table filtering with control of link-state flooding."
+    },
+    {
+      "question": "What does an RPKI Route Origin Authorisation (ROA) specify?",
+      "option_a": "A. Which physical router must forward every packet",
+      "option_b": "B. Which AS is authorised to originate a prefix and the maximum prefix length allowed",
+      "option_c": "C. Which OSPF router becomes DR",
+      "option_d": "D. Which TCP port BGP must use",
+      "correct_answer": "B",
+      "explanation": "A ROA states which AS is authorised to originate a prefix and specifies the maximum prefix length permitted."
+    },
+    {
+      "question": "In the RPKI trust chain described in the lecture, which organisation acts as a trust anchor by issuing a resource certificate?",
+      "option_a": "A. An ordinary end-user PC",
+      "option_b": "B. A Regional Internet Registry",
+      "option_c": "C. A RIP router",
+      "option_d": "D. A BGP attacker",
+      "correct_answer": "B",
+      "explanation": "Regional Internet Registries such as RIPE NCC, ARIN, and APNIC act as trust anchors in the described RPKI chain."
+    },
+    {
+      "question": "Which RPKI validation result occurs when both the announced AS and prefix length match a ROA?",
+      "option_a": "A. Invalid",
+      "option_b": "B. NotFound",
+      "option_c": "C. Valid",
+      "option_d": "D. Untrusted",
+      "correct_answer": "C",
+      "explanation": "An announcement is Valid when the origin AS and prefix length conform to an applicable ROA."
+    },
+    {
+      "question": "What does RPKI classify an announcement as when a ROA exists but the origin AS or prefix length does not match it?",
+      "option_a": "A. Valid",
+      "option_b": "B. Invalid",
+      "option_c": "C. NotFound",
+      "option_d": "D. Passive",
+      "correct_answer": "B",
+      "explanation": "An existing ROA that is violated makes the announcement Invalid, which can then be rejected."
+    },
+    {
+      "question": "What does an RPKI NotFound result mean?",
+      "option_a": "A. A ROA exists and the route is definitely malicious.",
+      "option_b": "B. No ROA exists for the prefix.",
+      "option_c": "C. The AS-path has been completely validated.",
+      "option_d": "D. The route has been cryptographically rejected.",
+      "correct_answer": "B",
+      "explanation": "NotFound means there is no ROA for the prefix, so the route is treated as normal unvalidated routing."
+    },
+    {
+      "question": "Which limitation of RPKI is explicitly identified in the lecture?",
+      "option_a": "A. It validates the complete AS path and nothing else.",
+      "option_b": "B. It validates origin information but does not validate the full AS path.",
+      "option_c": "C. It only works with RIP.",
+      "option_d": "D. It replaces all BGP UPDATE messages.",
+      "correct_answer": "B",
+      "explanation": "RPKI validates the authorised origin AS for a prefix but does not by itself validate the entire AS path."
+    },
+    {
+      "question": "Suppose a ROA states that AS36561 is authorised to originate 208.65.152.0/22, but another AS announces 208.65.153.0/24. Assuming the ROA does not permit that more-specific length, how should RPKI classify the announcement?",
+      "option_a": "A. Valid",
+      "option_b": "B. Invalid",
+      "option_c": "C. NotFound",
+      "option_d": "D. Passive",
+      "correct_answer": "B",
+      "explanation": "The lecture's example explains that the more-specific announcement would be Invalid when it does not match the authorised origin and permitted prefix length."
+    },
+    {
+      "question": "Which defense most directly addresses the weakness exploited in the 2008 YouTube hijack?",
+      "option_a": "A. RPKI-based origin validation",
+      "option_b": "B. OSPF Hello messages",
+      "option_c": "C. RIP hop-count limitation",
+      "option_d": "D. EIGRP Query messages",
+      "correct_answer": "A",
+      "explanation": "RPKI allows networks to validate whether the AS originating a BGP prefix is authorised to do so."
+    },
+    {
+      "question": "A provider wants to ensure that a customer can announce only the prefixes the provider has agreed that customer may originate. Which control directly matches this requirement?",
+      "option_a": "A. Provider-level route filtering",
+      "option_b": "B. OSPF DBD",
+      "option_c": "C. EIGRP Query",
+      "option_d": "D. RIP Request",
+      "correct_answer": "A",
+      "explanation": "Provider-level route filtering can restrict customer advertisements to explicitly authorised prefixes."
+    },
+    {
+      "question": "An organisation enables MD5 authentication between all routing neighbors. Which attack remains possible if an authenticated but compromised router advertises an unauthorised route?",
+      "option_a": "A. Malicious routing information from the authenticated neighbor can still be accepted unless additional filtering is used.",
+      "option_b": "B. The router can no longer send any routing information.",
+      "option_c": "C. RPKI automatically validates the internal route.",
+      "option_d": "D. The routing table becomes static.",
+      "correct_answer": "A",
+      "explanation": "MD5 authenticates the neighbor but does not establish that every route advertisement from that authenticated neighbor is legitimate."
+    },
+    {
+      "question": "A PC is connected to an access-layer interface and begins sending routing protocol messages. Which configuration most directly removes the interface from routing-protocol participation?",
+      "option_a": "A. Passive-interface",
+      "option_b": "B. RPKI",
+      "option_c": "C. Route dampening",
+      "option_d": "D. BGP OPEN",
+      "correct_answer": "A",
+      "explanation": "Passive-interface prevents routing protocol participation on interfaces that should not form routing relationships."
+    },
+    {
+      "question": "A rogue router has physically connected to a network segment and attempts to impersonate a legitimate routing neighbor. Which combination provides the strongest direct defense described in the lecture?",
+      "option_a": "A. MD5 authentication, passive-interface where appropriate, and physical port security",
+      "option_b": "B. RPKI alone",
+      "option_c": "C. Increasing RIP's maximum hop count",
+      "option_d": "D. Route monitoring alone",
+      "correct_answer": "A",
+      "explanation": "Authentication prevents unauthorised adjacency, passive-interface removes unnecessary routing exposure, and physical port security can prevent physical access."
+    },
+    {
+      "question": "An attacker repeatedly advertises and withdraws routes in BGP, causing continual route changes. Which combination is most appropriate?",
+      "option_a": "A. Authentication, route dampening, and rate limiting",
+      "option_b": "B. RPKI only",
+      "option_c": "C. Passive-interface only",
+      "option_d": "D. Increasing OSPF cost",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies authentication as the primary defense, with route dampening and rate limiting providing additional protection against instability."
+    },
+    {
+      "question": "A security engineer must choose one control that provides broad protection against poisoning, unauthorised injection, blackhole/sinkhole enablement, and routing DoS caused by unauthenticated updates. Which is the best choice?",
+      "option_a": "A. Neighbor authentication",
+      "option_b": "B. RPKI",
+      "option_c": "C. Traffic monitoring",
+      "option_d": "D. Route dampening",
+      "correct_answer": "A",
+      "explanation": "Neighbor authentication meaningfully addresses four of the five attack categories by preventing unauthorised routing participants and updates."
+    },
+    {
+      "question": "A routing update comes from a correctly authenticated neighbor but contains a route outside the prefixes that neighbor should advertise. Which layered defense is designed specifically to reject that information?",
+      "option_a": "A. Route filtering",
+      "option_b": "B. MD5 authentication",
+      "option_c": "C. TCP port 179",
+      "option_d": "D. Passive-interface on an unrelated interface",
+      "correct_answer": "A",
+      "explanation": "Route filtering restricts what an authenticated neighbor is permitted to advertise or what routes may be accepted."
+    },
+    {
+      "question": "An attacker sends a false OSPF LSA throughout an area. Why can this be more complicated than simply sending a false RIP Response?",
+      "option_a": "A. OSPF is link-state and routers maintain a shared link-state database and independently run SPF calculations.",
+      "option_b": "B. OSPF uses only TCP.",
+      "option_c": "C. OSPF never exchanges topology information.",
+      "option_d": "D. OSPF uses AS-path length instead of topology information.",
+      "correct_answer": "A",
+      "explanation": "OSPF distributes link-state information and routers use that information to construct their topology view and calculate paths."
+    },
+    {
+      "question": "An attacker wants to cause routing instability rather than specifically redirect traffic to a chosen destination. Which attack best matches that objective?",
+      "option_a": "A. Routing DoS/Instability",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. Sinkhole only",
+      "option_d": "D. RPKI validation",
+      "correct_answer": "A",
+      "explanation": "Routing DoS/Instability focuses on forcing repeated recalculation and exhausting routing resources rather than selecting one specific traffic destination."
+    },
+    {
+      "question": "A legitimate but misconfigured network accidentally announces a prefix it is not authorised to originate in BGP. Based on the lecture, which attack category does the resulting event resemble?",
+      "option_a": "A. Route/Prefix Hijacking",
+      "option_b": "B. Passive-interface",
+      "option_c": "C. OSPF adjacency maintenance",
+      "option_d": "D. Route dampening",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly notes that prefix hijacking can result from an attacker or a misconfigured legitimate network announcing an unauthorised prefix."
+    },
+    {
+      "question": "Why did the 2008 YouTube event demonstrate a weakness in BGP trust rather than necessarily malicious intent?",
+      "option_a": "A. The original announcement was intended for a local censorship purpose, but an upstream provider propagated it globally without validation.",
+      "option_b": "B. Pakistan Telecom deliberately attacked every Internet service worldwide.",
+      "option_c": "C. RPKI deliberately redirected YouTube traffic.",
+      "option_d": "D. OSPF automatically redistributed the route worldwide.",
+      "correct_answer": "A",
+      "explanation": "The lecture stresses that the event was not intended as a global attack; inadequate validation allowed a local announcement to become globally influential."
+    },
+    {
+      "question": "Consider a network using EIGRP. A rogue device sends routing updates but does not possess the configured MD5 key. What should correctly configured neighbor authentication accomplish?",
+      "option_a": "A. The rogue device's updates should not be accepted as coming from an authenticated neighbor.",
+      "option_b": "B. The rogue device should automatically become the preferred neighbor.",
+      "option_c": "C. The rogue device should receive all routing information.",
+      "option_d": "D. EIGRP should convert the device into an OSPF neighbor.",
+      "correct_answer": "A",
+      "explanation": "MD5 authentication requires the correct shared key, preventing an unauthenticated device from establishing the trusted routing relationship."
+    },
+    {
+      "question": "An organisation uses OSPF and wants a simple MD5 configuration but does not require scheduled key rotation. Which implementation characteristic described in the lecture fits OSPF?",
+      "option_a": "A. A single MD5 key can be configured directly on an interface.",
+      "option_b": "B. A mandatory multi-key EIGRP key chain must be created.",
+      "option_c": "C. Authentication must use TCP port 179.",
+      "option_d": "D. Authentication is impossible in OSPF.",
+      "correct_answer": "A",
+      "explanation": "OSPF's mechanism is simpler, using an MD5 key configured directly on the relevant interface or area."
+    },
+    {
+      "question": "An organisation requires scheduled routing-authentication key rotation without downtime. Based strictly on the implementation trade-off presented, which protocol's mechanism provides the stronger operational capability?",
+      "option_a": "A. RIP",
+      "option_b": "B. OSPF",
+      "option_c": "C. EIGRP",
+      "option_d": "D. None of them",
+      "correct_answer": "C",
+      "explanation": "EIGRP key chains support multiple keys with lifetimes, enabling scheduled key rotation."
+    },
+    {
+      "question": "A router receives an RPKI-validated BGP route marked Invalid. What does that result indicate?",
+      "option_a": "A. A ROA exists, but the announcement's origin AS or prefix length does not comply with it.",
+      "option_b": "B. No ROA exists anywhere.",
+      "option_c": "C. The route is guaranteed to be legitimate.",
+      "option_d": "D. The route has passed full AS-path validation.",
+      "correct_answer": "A",
+      "explanation": "Invalid means a relevant ROA exists but the announcement violates the authorised origin or permitted prefix length."
+    },
+    {
+      "question": "A BGP route has no corresponding ROA. What does the RPKI model described in the lecture normally produce?",
+      "option_a": "A. Invalid",
+      "option_b": "B. Valid",
+      "option_c": "C. NotFound",
+      "option_d": "D. Authenticated-neighbor",
+      "correct_answer": "C",
+      "explanation": "Without a ROA, the announcement is classified NotFound and treated as normal unvalidated routing."
+    },
+    {
+      "question": "Which statement best describes the difference between provider-level filtering and RPKI?",
+      "option_a": "A. Provider filtering restricts customer announcements according to agreed prefixes, while RPKI provides cryptographically verifiable origin authorisation.",
+      "option_b": "B. Both are exactly the same mechanism.",
+      "option_c": "C. RPKI only filters physical ports, while provider filtering authenticates OSPF.",
+      "option_d": "D. Provider filtering applies only to RIP hop counts.",
+      "correct_answer": "A",
+      "explanation": "The lecture presents provider filtering and RPKI as complementary controls addressing unauthorised BGP prefix advertisements."
+    },
+    {
+      "question": "A security team notices that traffic to a legitimate destination suddenly disappears, while routing information indicates a suspicious next hop. Which attack outcome should they investigate first?",
+      "option_a": "A. Blackhole",
+      "option_b": "B. Key rotation",
+      "option_c": "C. RPKI NotFound",
+      "option_d": "D. OSPF DBD synchronisation",
+      "correct_answer": "A",
+      "explanation": "A blackhole attack redirects traffic toward a dead end, producing an unexpected loss of reachability."
+    },
+    {
+      "question": "A security team notices that traffic is being redirected through an unfamiliar device, where packets can be inspected before potentially being forwarded. Which attack outcome is most consistent with this observation?",
+      "option_a": "A. Blackhole",
+      "option_b": "B. Sinkhole",
+      "option_c": "C. Route dampening",
+      "option_d": "D. Passive-interface",
+      "correct_answer": "B",
+      "explanation": "A sinkhole directs traffic to an attacker-controlled device, allowing possible inspection and tampering."
+    },
+    {
+      "question": "An attacker floods a routing domain with false updates. Authentication is absent, so routers repeatedly process the updates. What is the most direct security consequence?",
+      "option_a": "A. Router resources are consumed by repeated routing calculations.",
+      "option_b": "B. All routes become automatically authenticated.",
+      "option_c": "C. RPKI creates a new ROA for the attacker.",
+      "option_d": "D. The attacker loses access to the network immediately.",
+      "correct_answer": "A",
+      "explanation": "Without authentication, malicious updates can be processed, forcing repeated calculations and potentially exhausting router resources."
+    },
+    {
+      "question": "Which scenario most clearly represents Unauthorised Route Injection rather than a one-off poisoning attempt?",
+      "option_a": "A. A rogue router establishes a persistent neighbor relationship and continuously advertises routes.",
+      "option_b": "B. A router receives one legitimate Hello message.",
+      "option_c": "C. A provider validates a ROA.",
+      "option_d": "D. An interface becomes passive.",
+      "correct_answer": "A",
+      "explanation": "The defining feature is the rogue device becoming a full routing participant and maintaining an ongoing foothold."
+    },
+    {
+      "question": "Which scenario best represents Routing Table Poisoning?",
+      "option_a": "A. A device obtains physical access but never sends routing information.",
+      "option_b": "B. A malicious router advertises an attractive false path so legitimate routers select it.",
+      "option_c": "C. An RIR issues a resource certificate.",
+      "option_d": "D. A route is suppressed because it flaps repeatedly.",
+      "correct_answer": "B",
+      "explanation": "Poisoning relies on false routing information designed to make routers install an incorrect path."
+    },
+    {
+      "question": "Which scenario best represents a BGP prefix-hijacking attack rather than ordinary internal routing poisoning?",
+      "option_a": "A. An AS announces a more-specific prefix belonging to another organisation.",
+      "option_b": "B. A RIP router advertises a one-hop path.",
+      "option_c": "C. An EIGRP router sends a Query after a failure.",
+      "option_d": "D. An OSPF router sends a Hello.",
+      "correct_answer": "A",
+      "explanation": "Unauthorised origination of another organisation's address prefix is the BGP-specific prefix-hijacking case."
+    },
+    {
+      "question": "A network operator wants to reduce the chance that a printer connected to an access interface can become a routing neighbor. Which defense should be applied to that interface?",
+      "option_a": "A. Passive-interface",
+      "option_b": "B. RPKI",
+      "option_c": "C. BGP UPDATE",
+      "option_d": "D. Route dampening",
+      "correct_answer": "A",
+      "explanation": "A passive-interface removes routing-protocol participation from an interface that does not legitimately need it."
+    },
+    {
+      "question": "A provider implements route filtering so a customer can announce only its assigned prefixes. What attack does this most directly reduce?",
+      "option_a": "A. Unauthorised prefix hijacking through that provider",
+      "option_b": "B. OSPF Hello discovery",
+      "option_c": "C. EIGRP DUAL convergence",
+      "option_d": "D. RIP's 30-second timer",
+      "correct_answer": "A",
+      "explanation": "Provider-level filtering restricts which prefixes a customer can announce, directly reducing unauthorised prefix advertisements."
+    },
+    {
+      "question": "Why can authentication be described as one layer and filtering as another in routing security?",
+      "option_a": "A. Authentication checks who is communicating, while filtering restricts what that authenticated party may advertise.",
+      "option_b": "B. Authentication controls route content while filtering verifies passwords.",
+      "option_c": "C. Both controls perform exactly the same task.",
+      "option_d": "D. Filtering is only a physical security control.",
+      "correct_answer": "A",
+      "explanation": "The lecture's layered-defense principle is that authentication and filtering close different trust gaps."
+    },
+    {
+      "question": "An administrator wants to protect an OSPF network from an unauthenticated rogue neighbor and also prevent an authenticated neighbor from advertising an implausible route. Which combination best addresses both requirements?",
+      "option_a": "A. MD5 authentication plus route filtering",
+      "option_b": "B. RPKI plus RIP hop count",
+      "option_c": "C. Passive-interface only",
+      "option_d": "D. Route dampening only",
+      "correct_answer": "A",
+      "explanation": "MD5 controls who can participate, while filtering controls which routing information an accepted neighbor is allowed to provide."
+    },
+    {
+      "question": "A network has an interface facing only end-user devices and another interface connecting to a legitimate OSPF neighbor. On which interface should passive-interface normally be applied?",
+      "option_a": "A. The end-user-facing interface",
+      "option_b": "B. The legitimate OSPF neighbor interface",
+      "option_c": "C. Both interfaces regardless of function",
+      "option_d": "D. Neither interface",
+      "correct_answer": "A",
+      "explanation": "Passive-interface is intended for interfaces that do not need routing participation, such as access-layer interfaces."
+    },
+    {
+      "question": "Which statement about OSPF authentication is most accurate according to the module?",
+      "option_a": "A. OSPF authentication can be enabled per area or per interface using MD5.",
+      "option_b": "B. OSPF authentication requires TCP port 179.",
+      "option_c": "C. OSPF cannot authenticate Hello messages.",
+      "option_d": "D. OSPF uses EIGRP key chains by definition.",
+      "correct_answer": "A",
+      "explanation": "OSPF authentication can be enabled per area or interface, and MD5 protects the neighbor relationship beginning with Hello exchanges."
+    },
+    {
+      "question": "Why are OSPF Hello messages particularly important from a security perspective?",
+      "option_a": "A. They are used to establish the neighbor relationship before topology information is exchanged.",
+      "option_b": "B. They contain BGP AS-path attributes.",
+      "option_c": "C. They carry RPKI certificates.",
+      "option_d": "D. They are used only after the full topology database is exchanged.",
+      "correct_answer": "A",
+      "explanation": "OSPF Hello messages establish and maintain neighbor relationships, so authentication must protect this trust-establishment stage."
+    },
+    {
+      "question": "Which statement correctly compares BGP authentication with OSPF/EIGRP authentication as presented?",
+      "option_a": "A. BGP runs over TCP, so its MD5 protection is associated with the TCP session rather than being implemented like OSPF/EIGRP's direct IP-based routing protocols.",
+      "option_b": "B. BGP runs over UDP 520 exactly like RIP.",
+      "option_c": "C. BGP uses IP protocol 89 exactly like OSPF.",
+      "option_d": "D. BGP cannot use MD5 under any circumstances.",
+      "correct_answer": "A",
+      "explanation": "BGP uses TCP port 179, and the lecture describes its MD5 protection as a TCP-level mechanism."
+    },
+    {
+      "question": "A student claims, 'Because BGP uses TCP, its routes are automatically trustworthy.' Which response is correct?",
+      "option_a": "A. Correct; TCP guarantees that route advertisements are truthful.",
+      "option_b": "B. Incorrect; TCP provides transport reliability, but the routing information still requires appropriate trust and validation controls.",
+      "option_c": "C. Correct; TCP automatically creates RPKI ROAs.",
+      "option_d": "D. Incorrect because BGP does not use route advertisements.",
+      "correct_answer": "B",
+      "explanation": "Using TCP does not inherently verify whether a BGP route advertisement is authorised or truthful."
+    },
+    {
+      "question": "A router receives a BGP UPDATE advertising a prefix that has a valid ROA authorising a different AS. What should a validating router do according to the module?",
+      "option_a": "A. Treat the route as Invalid and reject it.",
+      "option_b": "B. Treat it as Valid because the UPDATE arrived over TCP.",
+      "option_c": "C. Treat it as NotFound because the ROA is irrelevant.",
+      "option_d": "D. Automatically change the ROA.",
+      "correct_answer": "A",
+      "explanation": "A ROA authorising another origin means the received announcement does not comply and is classified Invalid."
+    },
+    {
+      "question": "Which attack-defense pairing is most accurate?",
+      "option_a": "A. Prefix hijacking — RPKI and provider-level route filtering",
+      "option_b": "B. Prefix hijacking — RIP hop-count increase",
+      "option_c": "C. Routing DoS — RPKI as the only primary defense",
+      "option_d": "D. Unauthorised injection — AS-path length",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies RPKI and provider-level filtering as the primary mitigations for BGP prefix hijacking."
+    },
+    {
+      "question": "Which attack-defense pairing is most accurate for Routing DoS/Instability?",
+      "option_a": "A. MD5 authentication, route dampening, and rate limiting",
+      "option_b": "B. RPKI only",
+      "option_c": "C. OSPF Area 0 only",
+      "option_d": "D. Increasing BGP AS-path length",
+      "correct_answer": "A",
+      "explanation": "These three controls directly address unauthenticated update floods and repeated route flapping."
+    },
+    {
+      "question": "A company monitors unexpected traffic drops and sudden path changes. Which attack outcome is this monitoring particularly useful for detecting?",
+      "option_a": "A. Blackhole or sinkhole activity",
+      "option_b": "B. Key-chain creation",
+      "option_c": "C. Normal OSPF Hello operation",
+      "option_d": "D. RPKI certificate issuance",
+      "correct_answer": "A",
+      "explanation": "Unexpected traffic drops and unusual path changes can indicate that traffic has been redirected through a blackhole or sinkhole."
+    },
+    {
+      "question": "A security engineer says, 'RPKI will stop every possible BGP routing manipulation because it cryptographically validates BGP.' What is the correct evaluation?",
+      "option_a": "A. Correct; RPKI validates every part of the BGP AS path.",
+      "option_b": "B. Incorrect; RPKI validates route origin information but does not validate the full AS path.",
+      "option_c": "C. Correct; RPKI replaces BGP entirely.",
+      "option_d": "D. Incorrect because RPKI cannot validate prefixes.",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly states that RPKI validates origin AS information but does not stop every manipulation because it does not validate the full AS path."
+    },
+    {
+      "question": "Which sequence best represents the RPKI trust chain described in the lecture?",
+      "option_a": "A. Prefix attacker → ROA → RIR → router",
+      "option_b": "B. RIR trust anchor → resource certificate → prefix holder → signed ROA → repository → validator",
+      "option_c": "C. Router → RIP → DNS → ROA",
+      "option_d": "D. BGP UPDATE → RIR → OSPF Hello → ROA",
+      "correct_answer": "B",
+      "explanation": "RIRs provide the trust anchor and resource certificate; the prefix holder signs a ROA, which is published and later validated."
+    },
+    {
+      "question": "A network has strong MD5 authentication but no route filtering. A legitimate authenticated router is compromised and advertises a false low-cost route. What security gap remains?",
+      "option_a": "A. Authentication does not determine whether the authenticated router's advertised route is plausible or authorised.",
+      "option_b": "B. MD5 cannot authenticate any neighbor.",
+      "option_c": "C. The network has no routing protocol.",
+      "option_d": "D. RPKI must always be enabled for OSPF.",
+      "correct_answer": "A",
+      "explanation": "Authentication establishes the identity of the speaker, but filtering is needed to restrict what that speaker can advertise."
+    },
+    {
+      "question": "A router on an access network should advertise its connected network to other routers but should not form routing adjacencies with end-user devices. Which defense matches this requirement?",
+      "option_a": "A. Passive-interface",
+      "option_b": "B. RPKI",
+      "option_c": "C. Route dampening",
+      "option_d": "D. BGP UPDATE",
+      "correct_answer": "A",
+      "explanation": "Passive-interface allows the network to remain advertised while removing routing-protocol participation on the specified interface."
+    },
+    {
+      "question": "A provider had filtered Pakistan Telecom's BGP advertisements so that only authorised prefixes could be announced. What aspect of the 2008 YouTube incident would this have directly addressed?",
+      "option_a": "A. The unauthorised propagation of the YouTube-related prefix",
+      "option_b": "B. OSPF neighbor discovery",
+      "option_c": "C. EIGRP DUAL convergence",
+      "option_d": "D. RIP's 15-hop maximum",
+      "correct_answer": "A",
+      "explanation": "Provider-level filtering could have prevented PCCW from accepting and propagating the unauthorised prefix advertisement."
+    },
+    {
+      "question": "A routing security design uses MD5 authentication, passive-interface, route filtering, traffic monitoring, and route dampening. What security principle does this design best demonstrate?",
+      "option_a": "A. Layered defense, where different controls address different routing-security gaps",
+      "option_b": "B. Reliance on one control for every attack",
+      "option_c": "C. Elimination of routing protocols",
+      "option_d": "D. Replacement of routing with DNS",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly presents authentication, filtering, passive-interface, monitoring, and dampening as complementary controls rather than substitutes."
+    },
+    {
+      "question": "A network engineer wants to prevent a false OSPF route from being propagated to other routers. They enable only a local distribute-list and observe that the route disappears from the local routing table. What should they conclude?",
+      "option_a": "A. The route is necessarily prevented from being flooded through OSPF.",
+      "option_b": "B. The local routing table is filtered, but the LSA may still be flooded and processed by other routers.",
+      "option_c": "C. The route has been validated by RPKI.",
+      "option_d": "D. OSPF has become distance-vector.",
+      "correct_answer": "B",
+      "explanation": "OSPF distribute-lists operate on local route installation rather than stopping link-state advertisement flooding."
+    },
+    {
+      "question": "An enterprise chooses EIGRP authentication over the simpler OSPF authentication configuration because it needs automatic scheduled key rotation. What trade-off from the lecture explains this choice?",
+      "option_a": "A. EIGRP requires more configuration but its key-chain mechanism provides key lifetimes and rotation capability.",
+      "option_b": "B. EIGRP does not support authentication but is faster.",
+      "option_c": "C. OSPF cannot use MD5.",
+      "option_d": "D. EIGRP uses RPKI instead of MD5.",
+      "correct_answer": "A",
+      "explanation": "EIGRP's extra setup provides operational flexibility through multiple keys and defined lifetimes."
+    },
+    {
+      "question": "A network administrator receives a route from an authenticated EIGRP neighbor and wants to prevent that route from being propagated further. Which property of EIGRP filtering makes a distribute-list useful here?",
+      "option_a": "A. EIGRP is distance-vector, so filtering can affect the routes included in updates sent to neighbors.",
+      "option_b": "B. EIGRP is link-state and requires identical LSAs everywhere.",
+      "option_c": "C. EIGRP never sends updates.",
+      "option_d": "D. EIGRP relies exclusively on RPKI.",
+      "correct_answer": "A",
+      "explanation": "The lecture contrasts EIGRP with OSPF by explaining that EIGRP filtering can directly control route propagation through updates."
+    },
+    {
+      "question": "An organisation has an authenticated BGP session but wants to prevent a customer from advertising a prefix belonging to another organisation. Which additional control most directly addresses this?",
+      "option_a": "A. Provider-level route filtering and/or RPKI validation",
+      "option_b": "B. OSPF passive-interface",
+      "option_c": "C. RIP Request messages",
+      "option_d": "D. EIGRP Query messages",
+      "correct_answer": "A",
+      "explanation": "BGP session authentication does not establish prefix ownership. Provider filtering and RPKI directly address unauthorised prefix origination."
+    },
+    {
+      "question": "Which situation would produce a sinkhole rather than a blackhole?",
+      "option_a": "A. Traffic is routed to an unreachable address and silently discarded.",
+      "option_b": "B. Traffic is routed to an attacker-controlled device that captures it for analysis.",
+      "option_c": "C. Routing updates are rejected due to MD5 failure.",
+      "option_d": "D. A route is suppressed due to flapping.",
+      "correct_answer": "B",
+      "explanation": "A sinkhole directs traffic to an attacker-controlled system, enabling inspection and potentially tampering."
+    },
+    {
+      "question": "A routing attacker repeatedly causes routes to flap. The security team authenticates neighbors but still wants protection if authentication is accidentally bypassed or misconfigured. Which additional control is specifically described as a backstop?",
+      "option_a": "A. Rate limiting",
+      "option_b": "B. Area 0",
+      "option_c": "C. BGP OPEN",
+      "option_d": "D. RIP Request",
+      "correct_answer": "A",
+      "explanation": "The lecture describes rate limiting as a backstop when authentication is bypassed or misconfigured."
+    },
+    {
+      "question": "A security analyst compares a local RIP poisoning event with a BGP prefix hijack. Which difference is most accurate?",
+      "option_a": "A. RIP poisoning primarily affects routing within the relevant local routing domain, whereas BGP prefix hijacking can influence traffic globally.",
+      "option_b": "B. RIP poisoning is always global while BGP hijacking is always local.",
+      "option_c": "C. Both have exactly the same scope.",
+      "option_d": "D. Neither can affect traffic forwarding.",
+      "correct_answer": "A",
+      "explanation": "The lecture highlights that the consequences scale with protocol reach: BGP advertisements can affect networks across the Internet."
+    },
+    {
+      "question": "Which combination correctly maps protocol, transport, and key metric?",
+      "option_a": "A. OSPF — UDP 520 — hop count",
+      "option_b": "B. EIGRP — IP protocol 88 — bandwidth and delay composite",
+      "option_c": "C. BGP — IP protocol 89 — hop count",
+      "option_d": "D. RIP — TCP 179 — AS-path length",
+      "correct_answer": "B",
+      "explanation": "EIGRP runs directly over IP protocol 88 and uses a composite metric based by default on bandwidth and delay."
+    },
+    {
+      "question": "Which combination correctly maps OSPF's transport and multicast information?",
+      "option_a": "A. TCP 179 and 224.0.0.10",
+      "option_b": "B. UDP 520 and 224.0.0.9",
+      "option_c": "C. IP protocol 89 and 224.0.0.5/224.0.0.6",
+      "option_d": "D. IP protocol 88 and 224.0.0.9",
+      "correct_answer": "C",
+      "explanation": "OSPF uses IP protocol 89 and the multicast addresses 224.0.0.5 for all OSPF routers and 224.0.0.6 for designated routers."
+    },
+    {
+      "question": "Which statement about RIP security is most accurate according to the lecture?",
+      "option_a": "A. RIPv1 provides no authentication, while RIPv2 added optional plaintext or MD5 authentication that is frequently disabled.",
+      "option_b": "B. RIPv1 always uses RPKI.",
+      "option_c": "C. RIPv2 requires TCP port 179.",
+      "option_d": "D. RIP authentication is mandatory in all deployments.",
+      "correct_answer": "A",
+      "explanation": "The lecture states that RIPv1 has no authentication and RIPv2 added optional plaintext or MD5 authentication, often left disabled."
+    },
+    {
+      "question": "A student argues that OSPF is safer than RIP solely because OSPF is link-state. Which answer is most accurate?",
+      "option_a": "A. Link-state operation by itself does not eliminate routing trust vulnerabilities; authentication and filtering are still important.",
+      "option_b": "B. OSPF is automatically immune to false routing information.",
+      "option_c": "C. RIP is the only protocol that can be attacked.",
+      "option_d": "D. OSPF does not exchange routing information.",
+      "correct_answer": "A",
+      "explanation": "The lecture describes analogous attacks across protocols and emphasizes that unverified routing trust remains the fundamental problem."
+    },
+    {
+      "question": "An attacker sends a high volume of false OSPF LSAs, causing routers to repeatedly run SPF calculations. Which attack does this most closely represent?",
+      "option_a": "A. Routing DoS/Instability",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. RPKI validation",
+      "option_d": "D. Physical port security",
+      "correct_answer": "A",
+      "explanation": "The attack comparison identifies LSA flooding and repeated SPF runs as the OSPF analogue of Routing DoS/Instability."
+    },
+    {
+      "question": "An attacker sends repeated false EIGRP updates that force repeated DUAL processing. Which attack does this most closely represent?",
+      "option_a": "A. Routing DoS/Instability",
+      "option_b": "B. Prefix Hijacking",
+      "option_c": "C. Passive-interface",
+      "option_d": "D. RPKI NotFound",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies Query flooding and repeated DUAL runs as the EIGRP manifestation of routing DoS/instability."
+    },
+    {
+      "question": "A BGP speaker repeatedly advertises and withdraws routes, causing widespread route recalculation. Which attack pattern does this correspond to?",
+      "option_a": "A. Routing DoS/Instability",
+      "option_b": "B. Passive-interface",
+      "option_c": "C. OSPF authentication",
+      "option_d": "D. RPKI certificate issuance",
+      "correct_answer": "A",
+      "explanation": "Repeated BGP route flapping can cause widespread recalculation and instability, matching the routing DoS/instability category."
+    },
+    {
+      "question": "A security engineer must distinguish between an attacker who simply injects a false route and one who establishes a persistent rogue-router foothold. Which observation is the strongest indicator of the latter?",
+      "option_a": "A. The attacker forms a full neighbor relationship and gains continuing visibility into routing information.",
+      "option_b": "B. One false route appears once.",
+      "option_c": "C. A legitimate route is withdrawn.",
+      "option_d": "D. A ROA is published.",
+      "correct_answer": "A",
+      "explanation": "A persistent neighbor relationship provides an ongoing foothold and topology visibility, which is characteristic of unauthorised route injection."
+    },
+    {
+      "question": "A security team wants one control to stop unauthorised routers from joining an OSPF or EIGRP routing domain, and another to restrict routes advertised by legitimate neighbors. Which pair is most appropriate?",
+      "option_a": "A. MD5 authentication and route filtering",
+      "option_b": "B. RPKI and route dampening",
+      "option_c": "C. Traffic monitoring and RIP hop count",
+      "option_d": "D. BGP TCP and OSPF DBD",
+      "correct_answer": "A",
+      "explanation": "MD5 controls neighbor authentication, while route filtering limits the routing information accepted from or advertised to those neighbors."
+    },
+    {
+      "question": "Which statement best captures the overall security lesson of the module?",
+      "option_a": "A. Routing protocols eliminate the need for trust because all route information is independently verified.",
+      "option_b": "B. Routing protocols automate route construction through neighbor trust, and layered controls are required because that trust can be abused.",
+      "option_c": "C. Only BGP has routing-security concerns.",
+      "option_d": "D. Authentication alone guarantees that all routing information is correct.",
+      "correct_answer": "B",
+      "explanation": "The module's central theme is that routing automation depends on trust, while authentication, filtering, passive-interface, RPKI, monitoring, and other controls address different parts of the resulting attack surface."
+    }
+  ]
+}

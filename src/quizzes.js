@@ -1,4 +1,41 @@
 export default [
+  // Network Security Quizzes
+  {
+    title: "Network Security - 06",
+    path: "quiz/NS/NS-006.json",
+    description: "",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 05",
+    path: "quiz/NS/NS-005.json",
+    description: "",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 04",
+    path: "quiz/NS/NS-004.json",
+    description: "",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 03",
+    path: "quiz/NS/NS-003.json",
+    description: "",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 02",
+    path: "quiz/NS/NS-002.json",
+    description: "",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 01",
+    path: "quiz/NS/NS-001.json",
+    description: "",
+    isAvailable: true,
+  },
   // Modern Enterprise Management Quizzes
   {
     title: "Modern Enterprise Management - 07",
