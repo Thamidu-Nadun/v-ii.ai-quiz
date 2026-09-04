@@ -1,0 +1,391 @@
+{
+  "questions": [
+    {
+      "question": "In asymmetric cryptography, which party has the primary responsibility for protecting the private key?",
+      "option_a": "A. Sender",
+      "option_b": "B. Receiver",
+      "option_c": "C. The owner of the private key",
+      "option_d": "D. Neither party",
+      "correct_answer": "C",
+      "explanation": "The private key must be kept secret by its owner. The public key can be distributed openly."
+    },
+    {
+      "question": "The most common targets of vulnerability brokers are which products?",
+      "option_a": "A. Antivirus software",
+      "option_b": "B. Enterprise firewalls",
+      "option_c": "C. Microsoft products",
+      "option_d": "D. Network switches only",
+      "correct_answer": "C",
+      "explanation": "The source identifies Microsoft products as the correct target category."
+    },
+    {
+      "question": "Which of the following is NOT a buffer associated with network connection or socket handling?",
+      "option_a": "A. Complete Connection Queue",
+      "option_b": "B. Application Buffer",
+      "option_c": "C. Completed Connection Queue",
+      "option_d": "D. Socket Buffer",
+      "correct_answer": "B",
+      "explanation": "The complete and completed connection queues and socket buffers are associated with network connection handling, while the application buffer is not identified as such in the source."
+    },
+    {
+      "question": "Which of the following is NOT categorized as a Layer 3 network-layer attack in the provided material?",
+      "option_a": "A. SYN flood attack",
+      "option_b": "B. Routing attack",
+      "option_c": "C. Header abuse",
+      "option_d": "D. Information gathering",
+      "correct_answer": "A",
+      "explanation": "SYN flood is primarily a transport-layer attack, whereas routing attacks, header abuse, and information gathering can be considered in the network-layer security context presented."
+    },
+    {
+      "question": "A stream cipher encrypts plaintext by processing what unit at a time?",
+      "option_a": "A. A complete sentence",
+      "option_b": "B. One bit at a time",
+      "option_c": "C. A complete paragraph",
+      "option_d": "D. An entire file at once",
+      "correct_answer": "B",
+      "explanation": "A stream cipher encrypts a continuous stream of plaintext, commonly processing individual bits or bytes."
+    },
+    {
+      "question": "Which of the following is a characteristic of TCP?",
+      "option_a": "A. Segmentation",
+      "option_b": "B. IP routing",
+      "option_c": "C. Ethernet frame switching",
+      "option_d": "D. DNS name resolution",
+      "correct_answer": "A",
+      "explanation": "TCP performs segmentation of application data for transport across the network."
+    },
+    {
+      "question": "Which CIA security property ensures that authorized users can access information when required?",
+      "option_a": "A. Confidentiality",
+      "option_b": "B. Availability",
+      "option_c": "C. Integrity",
+      "option_d": "D. Authentication",
+      "correct_answer": "B",
+      "explanation": "Availability ensures that systems and information remain accessible to authorized users when needed."
+    },
+    {
+      "question": "Which of the following is NOT a traditional malware category listed in the provided material?",
+      "option_a": "A. Virus",
+      "option_b": "B. Adware",
+      "option_c": "C. Trojan",
+      "option_d": "D. Warm",
+      "correct_answer": "D",
+      "explanation": "Virus, adware, and Trojan are malware categories; 'Warm' is not the malware term presented in the source."
+    },
+    {
+      "question": "Which ICMP message is generated when a packet's TTL reaches zero before reaching its destination?",
+      "option_a": "A. Communication Prohibited",
+      "option_b": "B. Time Exceeded in Transit",
+      "option_c": "C. Echo Reply",
+      "option_d": "D. Echo Request",
+      "correct_answer": "B",
+      "explanation": "When TTL reaches zero, the router discards the packet and generates an ICMP Time Exceeded message."
+    },
+    {
+      "question": "Which is an example of network accounting?",
+      "option_a": "A. Measuring how long users spend using network resources",
+      "option_b": "B. Changing a user's password",
+      "option_c": "C. Encrypting every network packet",
+      "option_d": "D. Blocking all network connections",
+      "correct_answer": "A",
+      "explanation": "Accounting can be used to measure users' network usage, including the time they spend using network resources."
+    },
+    {
+      "question": "Which of the following is NOT categorized as a network-layer header-abuse attack?",
+      "option_a": "A. ICMP Sweep",
+      "option_b": "B. TTL-based attacks",
+      "option_c": "C. Fragmentation attacks",
+      "option_d": "D. IP Spoofing",
+      "correct_answer": "A",
+      "explanation": "TTL manipulation, fragmentation, and IP spoofing directly abuse IP header fields, whereas ICMP Sweep is primarily an ICMP reconnaissance technique."
+    },
+    {
+      "question": "Which statement correctly describes an external network attack?",
+      "option_a": "A. The attacker targets the network through the Internet",
+      "option_b": "B. The attacker must already have physical access to the network",
+      "option_c": "C. The attack can only originate from an internal employee",
+      "option_d": "D. External attacks cannot affect network availability",
+      "correct_answer": "A",
+      "explanation": "An external attack originates outside the protected network and can target it through external connectivity such as the Internet."
+    },
+    {
+      "question": "Which statement about the Internet is correct?",
+      "option_a": "A. It maintains open protocols for communication",
+      "option_b": "B. It is exclusively a private storage network",
+      "option_c": "C. It is only a local network",
+      "option_d": "D. It does not use standardized communication protocols",
+      "correct_answer": "A",
+      "explanation": "The source identifies the Internet as using open protocols for communication."
+    },
+    {
+      "question": "According to the provided material, what type of information can be identified from a credit card number?",
+      "option_a": "A. The card type, such as VISA",
+      "option_b": "B. The user's password",
+      "option_c": "C. The user's complete transaction history",
+      "option_d": "D. The user's network IP address",
+      "correct_answer": "A",
+      "explanation": "A card number can contain information that identifies the card network or type, such as VISA."
+    },
+    {
+      "question": "Which definition best describes a firewall?",
+      "option_a": "A. A network security device or software that monitors incoming and outgoing traffic",
+      "option_b": "B. A database that stores user passwords",
+      "option_c": "C. A protocol used only for wireless communication",
+      "option_d": "D. A tool used exclusively to encrypt files",
+      "correct_answer": "A",
+      "explanation": "A firewall can be implemented as hardware, software, or both and monitors and controls network traffic."
+    },
+    {
+      "question": "What should security mechanisms ideally be able to do?",
+      "option_a": "A. Prevent attacks only",
+      "option_b": "B. Detect attacks only",
+      "option_c": "C. Recover from attacks only",
+      "option_d": "D. Prevent, detect, and recover from attacks",
+      "correct_answer": "D",
+      "explanation": "Effective security mechanisms should support prevention, detection, and recovery from attacks."
+    },
+    {
+      "question": "What is the key size of the IDEA block cipher?",
+      "option_a": "A. 128 bytes",
+      "option_b": "B. 128 bits",
+      "option_c": "C. 256 bits",
+      "option_d": "D. 256 bytes",
+      "correct_answer": "B",
+      "explanation": "IDEA uses a 128-bit key."
+    },
+    {
+      "question": "What is the primary purpose of Spanning Tree Protocol (STP)?",
+      "option_a": "A. Provide path redundancy while preventing switching loops by forming a spanning tree",
+      "option_b": "B. Encrypt all traffic between switches",
+      "option_c": "C. Replace IP routing on the Internet",
+      "option_d": "D. Assign passwords to network users",
+      "correct_answer": "A",
+      "explanation": "STP provides redundancy while preventing Layer 2 switching loops by constructing a loop-free spanning tree."
+    },
+    {
+      "question": "Which statement correctly describes ransomware?",
+      "option_a": "A. It denies access to a system and typically demands payment to remove the restriction",
+      "option_b": "B. It only displays harmless advertisements",
+      "option_c": "C. It is exclusively a network-routing protocol",
+      "option_d": "D. It is designed only to improve file backups",
+      "correct_answer": "A",
+      "explanation": "Ransomware restricts access to systems or data and commonly demands payment for restoration of access."
+    },
+    {
+      "question": "Which statement is correct about the Data Link Layer?",
+      "option_a": "A. LLC and MAC are two sublayers associated with the Data Link Layer",
+      "option_b": "B. IP is the primary protocol of the Data Link Layer",
+      "option_c": "C. The Data Link Layer exists only in Cisco devices",
+      "option_d": "D. The Data Link Layer provides application-level services",
+      "correct_answer": "A",
+      "explanation": "The Data Link Layer is commonly divided into the Logical Link Control (LLC) and Media Access Control (MAC) sublayers."
+    },
+    {
+      "question": "In a routing table overflow attack, an attacker advertises routes to which type of destinations?",
+      "option_a": "A. Only authorized routers",
+      "option_b": "B. Non-existent destinations",
+      "option_c": "C. Only the default gateway",
+      "option_d": "D. Only authenticated hosts",
+      "correct_answer": "B",
+      "explanation": "Routing table overflow attacks can involve advertising routes to non-existent destinations, causing routing tables to consume excessive resources."
+    },
+    {
+      "question": "Which of the following is NOT an authentication method or authentication-related mechanism?",
+      "option_a": "A. Usernames and passwords",
+      "option_b": "B. Challenge-handshake mechanisms",
+      "option_c": "C. Using credit card details for online payment",
+      "option_d": "D. Verifying credentials before granting access",
+      "correct_answer": "C",
+      "explanation": "Credit card details are primarily payment information rather than an authentication mechanism in the context presented."
+    },
+    {
+      "question": "Which statement about spyware is NOT correct?",
+      "option_a": "A. It can gather information about users",
+      "option_b": "B. It can send collected information to another entity without consent",
+      "option_c": "C. It can gather information about routers",
+      "option_d": "D. It is designed to protect users' privacy by obtaining consent before collecting information",
+      "correct_answer": "D",
+      "explanation": "Spyware is associated with unauthorized monitoring or collection of information rather than privacy protection with user consent."
+    },
+    {
+      "question": "Which of the following is NOT a network-layer protocol or network-layer-related tool in the terminology used by the source?",
+      "option_a": "A. ICMP",
+      "option_b": "B. PING",
+      "option_c": "C. ARP",
+      "option_d": "D. IP",
+      "correct_answer": "C",
+      "explanation": "ARP operates at the boundary between the Data Link and Network layers and is not an Internet Layer protocol in the same sense as IP and ICMP."
+    },
+    {
+      "question": "What does an STP attack primarily attempt to manipulate?",
+      "option_a": "A. The Spanning Tree topology",
+      "option_b": "B. DNS records",
+      "option_c": "C. Application passwords",
+      "option_d": "D. IP packet payload encryption",
+      "correct_answer": "A",
+      "explanation": "STP attacks target the operation or topology decisions of the Spanning Tree Protocol."
+    },
+    {
+      "question": "Which is an advantage of anomaly detection?",
+      "option_a": "A. It can detect previously unseen behavior by identifying deviations from normal activity",
+      "option_b": "B. It requires a signature for every possible attack",
+      "option_c": "C. It can only detect attacks already stored in a ruleset",
+      "option_d": "D. It cannot operate with changing network behavior",
+      "correct_answer": "A",
+      "explanation": "Anomaly detection can identify activity that deviates from an established baseline, potentially detecting previously unknown attacks."
+    },
+    {
+      "question": "Which attack targets the CAM table of a Layer 2 switch?",
+      "option_a": "A. CAM table attack",
+      "option_b": "B. TTL Expiry attack",
+      "option_c": "C. Ping of Death",
+      "option_d": "D. Routing table overflow",
+      "correct_answer": "A",
+      "explanation": "A CAM table attack specifically targets the switch's Content Addressable Memory table."
+    },
+    {
+      "question": "What does a network-layer firewall primarily filter?",
+      "option_a": "A. IP packets",
+      "option_b": "B. Ethernet frames only",
+      "option_c": "C. Application source code",
+      "option_d": "D. User passwords",
+      "correct_answer": "A",
+      "explanation": "Network-layer firewalls primarily make filtering decisions based on IP packets and network-layer information."
+    },
+    {
+      "question": "What is a primary objective of access attacks?",
+      "option_a": "A. To gain unauthorized access to a system or network",
+      "option_b": "B. To improve network performance",
+      "option_c": "C. To update legitimate software",
+      "option_d": "D. To prevent all user authentication",
+      "correct_answer": "A",
+      "explanation": "Access attacks attempt to obtain unauthorized access to systems, resources, or networks."
+    },
+    {
+      "question": "Phishing attempts to ______ people to divulge ______ information.",
+      "option_a": "A. convince; sensitive",
+      "option_b": "B. encrypt; public",
+      "option_c": "C. block; routing",
+      "option_d": "D. monitor; hardware",
+      "correct_answer": "A",
+      "explanation": "Phishing attempts to convince victims to disclose sensitive information, often by pretending to be a trusted organization."
+    },
+    {
+      "question": "Which statement correctly describes malware?",
+      "option_a": "A. Malware is a term for various forms of harmful or intrusive software",
+      "option_b": "B. Malware cannot take the form of executable code",
+      "option_c": "C. Malware is never intentionally harmful",
+      "option_d": "D. Malware refers only to computer viruses",
+      "correct_answer": "A",
+      "explanation": "Malware is a broad term covering various forms of malicious or harmful software."
+    },
+    {
+      "question": "Which characteristic belongs to the Network Layer?",
+      "option_a": "A. Packet fragmentation",
+      "option_b": "B. Physical signal transmission",
+      "option_c": "C. MAC address learning only",
+      "option_d": "D. Application user authentication",
+      "correct_answer": "A",
+      "explanation": "IP packet fragmentation is a function associated with the Network Layer."
+    },
+    {
+      "question": "How should an ICMP Sweep be classified in the context of the provided security material?",
+      "option_a": "A. An ICMP-based network reconnaissance attack",
+      "option_b": "B. A Data Link Layer encryption method",
+      "option_c": "C. A transport-layer authentication protocol",
+      "option_d": "D. A physical-layer troubleshooting cable",
+      "correct_answer": "A",
+      "explanation": "An ICMP Sweep sends ICMP Echo Requests across an address range to discover active hosts and is therefore a reconnaissance attack."
+    },
+    {
+      "question": "Which technology is specifically associated with protecting against spoofed or unauthorized source information at the access layer?",
+      "option_a": "A. Source Guard",
+      "option_b": "B. DNS recursion",
+      "option_c": "C. TTL Expiry",
+      "option_d": "D. ICMP Redirect",
+      "correct_answer": "A",
+      "explanation": "Source Guard is an access-layer security mechanism used to help prevent source-address spoofing."
+    },
+    {
+      "question": "Which statement best describes the Ping of Death attack?",
+      "option_a": "A. It uses malformed or oversized ICMP/IP packets that can cause vulnerable systems to fail during reassembly",
+      "option_b": "B. It only sends normal ICMP Echo Replies",
+      "option_c": "C. It is exclusively a DNS attack",
+      "option_d": "D. It relies on changing Ethernet MAC addresses",
+      "correct_answer": "A",
+      "explanation": "Ping of Death exploits vulnerable packet reassembly by sending fragments that result in an illegally oversized packet."
+    },
+    {
+      "question": "In a classic Smurf attack, what does the attacker spoof when sending traffic to a broadcast address?",
+      "option_a": "A. The victim's IP address as the source of an ICMP Echo Request",
+      "option_b": "B. The broadcast address as the source of an Echo Reply",
+      "option_c": "C. The router's MAC address as the destination",
+      "option_d": "D. The attacker's own address as the victim",
+      "correct_answer": "A",
+      "explanation": "The attacker sends an ICMP Echo Request to a broadcast address while spoofing the victim's IP as the source, causing multiple hosts to reply to the victim."
+    },
+    {
+      "question": "Grey-hat attackers may test networks and computer systems similarly to black-hat attackers, but do so ______ malicious intent.",
+      "option_a": "A. with",
+      "option_b": "B. without",
+      "option_c": "C. exclusively for",
+      "option_d": "D. after demanding",
+      "correct_answer": "B",
+      "explanation": "Grey-hat activity is characterized in the source as being conducted without malicious intent, although it may still occur without authorization."
+    },
+    {
+      "question": "Which is a common method used in password attacks?",
+      "option_a": "A. Dictionary attack",
+      "option_b": "B. Packet fragmentation",
+      "option_c": "C. STP root election",
+      "option_d": "D. ICMP Redirect",
+      "correct_answer": "A",
+      "explanation": "A dictionary attack attempts passwords from a list of likely words or previously known password candidates."
+    },
+    {
+      "question": "Adware ______ annoying pop-ups to generate ______ for its author.",
+      "option_a": "A. displays; revenue",
+      "option_b": "B. encrypts; authentication",
+      "option_c": "C. blocks; confidentiality",
+      "option_d": "D. deletes; integrity",
+      "correct_answer": "A",
+      "explanation": "Adware can display advertising pop-ups and generate revenue for its author by targeting users with advertisements."
+    },
+    {
+      "question": "What packet size is associated with the classic Ping of Death attack?",
+      "option_a": "A. Less than 1,500 bytes",
+      "option_b": "B. Exactly 65,535 bytes",
+      "option_c": "C. More than 65,535 bytes after reassembly",
+      "option_d": "D. Exactly 512 bytes",
+      "correct_answer": "C",
+      "explanation": "The classic attack attempts to create a packet larger than the legal 65,535-byte IP packet limit when fragments are reassembled."
+    },
+    {
+      "question": "Which control can help mitigate ARP attacks by ensuring that only valid ARP requests and replies are relayed?",
+      "option_a": "A. Dynamic ARP Inspection",
+      "option_b": "B. Disabling IP routing",
+      "option_c": "C. Increasing TTL",
+      "option_d": "D. Enabling directed broadcasts",
+      "correct_answer": "A",
+      "explanation": "Dynamic ARP Inspection validates ARP messages and can prevent malicious or invalid ARP traffic from being relayed."
+    },
+    {
+      "question": "Which statement best describes network security architecture involving layered network infrastructure?",
+      "option_a": "A. Network security can involve core, distribution, and access-layer security",
+      "option_b": "B. Network security only concerns personal computers",
+      "option_c": "C. Network security only concerns routers",
+      "option_d": "D. Network security excludes switches and access devices",
+      "correct_answer": "A",
+      "explanation": "The source describes network security as involving core, distributed/distribution, and access layers."
+    },
+    {
+      "question": "Which device is an example of an endpoint that requires endpoint security?",
+      "option_a": "A. Laptop",
+      "option_b": "B. Network switch",
+      "option_c": "C. Ethernet cable",
+      "option_d": "D. Router interface only",
+      "correct_answer": "A",
+      "explanation": "Laptops are endpoint devices and therefore fall within the scope of endpoint security."
+    }
+  ]
+}
