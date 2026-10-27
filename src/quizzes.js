@@ -1,55 +1,90 @@
 export default [
   // Network Security Quizzes
-  {
-    title: "Network Security - 07",
-    path: "quiz/NS/NS-007.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 06",
-    path: "quiz/NS/NS-006.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 05",
-    path: "quiz/NS/NS-005.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 04",
-    path: "quiz/NS/NS-004.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 03",
-    path: "quiz/NS/NS-003.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 02",
-    path: "quiz/NS/NS-002.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
-  {
-    title: "Network Security - 01",
-    path: "quiz/NS/NS-001.json",
-    description:
-      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-    isAvailable: true,
-  },
+  // {
+  //   title: "Network Security - 07",
+  //   path: "quiz/NS/NS-007.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 06",
+  //   path: "quiz/NS/NS-006.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 05",
+  //   path: "quiz/NS/NS-005.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 04",
+  //   path: "quiz/NS/NS-004.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 03",
+  //   path: "quiz/NS/NS-003.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 02",
+  //   path: "quiz/NS/NS-002.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
+  // {
+  //   title: "Network Security - 01",
+  //   path: "quiz/NS/NS-001.json",
+  //   description:
+  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+  //   isAvailable: true,
+  // },
   // Modern Enterprise Management Quizzes
+  {
+    title: "Modern Enterprise Management - 12",
+    path: "quiz/MEM/MEM-012.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 11",
+    path: "quiz/MEM/MEM-011.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 10",
+    path: "quiz/MEM/MEM-010.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 09",
+    path: "quiz/MEM/MEM-009.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
+  {
+    title: "Modern Enterprise Management - 08",
+    path: "quiz/MEM/MEM-008.json",
+    description:
+      "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",
+    isAvailable: true,
+  },
   {
     title: "Modern Enterprise Management - 07",
     path: "quiz/MEM/MEM-007.json",
@@ -58,7 +93,7 @@ export default [
     isAvailable: true,
   },
   {
-    title: "Modern Enterprise Management - 06 (optional)",
+    title: "Modern Enterprise Management - 06",
     path: "quiz/MEM/MEM-006.json",
     description:
       "Test your knowledge of modern enterprise management concepts, including organizational structure, strategy, and operations.",

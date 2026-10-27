@@ -1,0 +1,688 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of Procurement Management in a project?",
+      "option_a": "A. To acquire products, services, or resources from external sources while managing cost, quality, risk, and supplier relationships",
+      "option_b": "B. To define the internal organizational structure of the project team",
+      "option_c": "C. To calculate the critical path of the project",
+      "option_d": "D. To estimate the duration of every project activity",
+      "correct_answer": "A",
+      "explanation": "Procurement Management focuses on acquiring products, services, or resources from external sources while managing cost, quality, risk, and supplier relationships."
+    },
+    {
+      "question": "Which procurement process determines what must be obtained externally and how procurement will be managed throughout the project lifecycle?",
+      "option_a": "A. Conduct Procurements",
+      "option_b": "B. Control Procurements",
+      "option_c": "C. Plan Procurement Management",
+      "option_d": "D. Close Procurements",
+      "correct_answer": "C",
+      "explanation": "Planning Procurement determines external procurement requirements and establishes how those procurements will be managed."
+    },
+    {
+      "question": "Which activity is specifically associated with procurement planning?",
+      "option_a": "A. Monitoring seller performance",
+      "option_b": "B. Make-or-buy analysis",
+      "option_c": "C. Processing seller claims",
+      "option_d": "D. Conducting procurement audits",
+      "correct_answer": "B",
+      "explanation": "Make-or-buy analysis is performed during procurement planning to determine whether work should be developed internally or purchased from a vendor."
+    },
+    {
+      "question": "An IT project team must decide whether to develop a cloud monitoring component internally or purchase an existing service. Which procurement activity directly addresses this decision?",
+      "option_a": "A. Make-or-buy analysis",
+      "option_b": "B. Procurement audit",
+      "option_c": "C. Seller performance monitoring",
+      "option_d": "D. Procurement record archiving",
+      "correct_answer": "A",
+      "explanation": "Make-or-buy analysis evaluates whether a required product or service should be developed internally or obtained from an external vendor."
+    },
+    {
+      "question": "Which document can be prepared during procurement planning to request detailed proposals from potential vendors?",
+      "option_a": "A. Gantt chart",
+      "option_b": "B. RFP",
+      "option_c": "C. Network diagram",
+      "option_d": "D. Resource histogram",
+      "correct_answer": "B",
+      "explanation": "A Request for Proposal (RFP) is one of the procurement documents identified for obtaining vendor proposals."
+    },
+    {
+      "question": "Which of the following is NOT listed as a vendor selection criterion in the lecture?",
+      "option_a": "A. Cost",
+      "option_b": "B. Technical capability",
+      "option_c": "C. Experience",
+      "option_d": "D. Employee personal preferences",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies cost, experience, quality, and technical capability as vendor selection factors."
+    },
+    {
+      "question": "Which procurement process involves obtaining seller responses, evaluating suppliers, and awarding contracts?",
+      "option_a": "A. Planning Procurement",
+      "option_b": "B. Conducting Procurements",
+      "option_c": "C. Controlling Resources",
+      "option_d": "D. Closing Procurement",
+      "correct_answer": "B",
+      "explanation": "Conducting Procurements includes obtaining seller responses, evaluating vendors, negotiating contracts, and selecting sellers."
+    },
+    {
+      "question": "A project manager sends an RFQ to several vendors and receives quotations from them. Which procurement activity is occurring?",
+      "option_a": "A. Receiving seller responses",
+      "option_b": "B. Verifying deliverables",
+      "option_c": "C. Archiving procurement records",
+      "option_d": "D. Monitoring resource utilization",
+      "correct_answer": "A",
+      "explanation": "Collecting proposals, quotations, and technical submissions is the receiving seller responses activity."
+    },
+    {
+      "question": "During proposal evaluation, which combination is most appropriate according to the lecture?",
+      "option_a": "A. Cost, quality, experience, technical capability, and delivery schedule",
+      "option_b": "B. Employee age, office location, and personal preferences",
+      "option_c": "C. Only the lowest price",
+      "option_d": "D. Only the vendor's company size",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies cost, quality, experience, technical capability, and delivery schedules as proposal evaluation factors."
+    },
+    {
+      "question": "A project manager is discussing pricing, timelines, service levels, and legal terms with a potential supplier before signing an agreement. What activity is this?",
+      "option_a": "A. Defining procurement requirements",
+      "option_b": "B. Negotiating contracts",
+      "option_c": "C. Conducting procurement audits",
+      "option_d": "D. Estimating activity resources",
+      "correct_answer": "B",
+      "explanation": "Negotiating contracts involves discussing pricing, timelines, service levels, and legal terms before final agreement."
+    },
+    {
+      "question": "Which procurement process focuses on monitoring supplier relationships and ensuring contractual obligations are fulfilled?",
+      "option_a": "A. Planning Procurement",
+      "option_b": "B. Conducting Procurements",
+      "option_c": "C. Controlling Procurements",
+      "option_d": "D. Closing Procurement",
+      "correct_answer": "C",
+      "explanation": "Controlling Procurements monitors seller performance, manages contracts, reviews deliverables, and handles procurement changes and payments."
+    },
+    {
+      "question": "A vendor is consistently delivering software later than the agreed schedule. Which controlling procurement activity is most directly relevant?",
+      "option_a": "A. Monitoring seller performance",
+      "option_b": "B. Preparing an RFP",
+      "option_c": "C. Make-or-buy analysis",
+      "option_d": "D. Defining scheduling methodology",
+      "correct_answer": "A",
+      "explanation": "Monitoring seller performance involves tracking whether vendors meet schedule, cost, quality, and service requirements."
+    },
+    {
+      "question": "A supplier submits an invoice that does not match the agreed contract terms. Which controlling procurement activity should address this issue?",
+      "option_a": "A. Managing payments and claims",
+      "option_b": "B. Developing the team",
+      "option_c": "C. Defining activities",
+      "option_d": "D. Estimating duration",
+      "correct_answer": "A",
+      "explanation": "Managing payments and claims includes verifying invoices, approving payments, and addressing disputes or claims."
+    },
+    {
+      "question": "Which action belongs to Closing Procurement rather than Controlling Procurement?",
+      "option_a": "A. Monitoring seller performance",
+      "option_b": "B. Reviewing deliverables during execution",
+      "option_c": "C. Archiving procurement records",
+      "option_d": "D. Managing contract modifications",
+      "correct_answer": "C",
+      "explanation": "Archiving contracts, reports, correspondence, and procurement documentation is part of closing procurement."
+    },
+    {
+      "question": "A project has finished all vendor work. Before formally closing the procurement, the manager verifies that all contracted deliverables have been received and accepted. What process is being performed?",
+      "option_a": "A. Conduct Procurements",
+      "option_b": "B. Close Procurements",
+      "option_c": "C. Estimate Activity Resources",
+      "option_d": "D. Develop Schedule",
+      "correct_answer": "B",
+      "explanation": "Verifying that all products or services were delivered according to contract requirements is a closing procurement activity."
+    },
+    {
+      "question": "Which statement best describes Resource Management?",
+      "option_a": "A. It focuses only on purchasing equipment from vendors",
+      "option_b": "B. It identifies, acquires, develops, manages, and controls project resources",
+      "option_c": "C. It only calculates project duration",
+      "option_d": "D. It only manages external suppliers",
+      "correct_answer": "B",
+      "explanation": "Resource Management covers identifying, acquiring, developing, managing, and controlling resources needed to complete the project."
+    },
+    {
+      "question": "Which process establishes how project resources will be estimated, acquired, managed, utilized, and controlled?",
+      "option_a": "A. Planning Resource Management",
+      "option_b": "B. Developing the Team",
+      "option_c": "C. Managing the Team",
+      "option_d": "D. Controlling Resources",
+      "correct_answer": "A",
+      "explanation": "Planning Resource Management defines the overall approach for estimating, acquiring, managing, utilizing, and controlling resources."
+    },
+    {
+      "question": "Which activity is part of Planning Resource Management?",
+      "option_a": "A. Defining roles and responsibilities",
+      "option_b": "B. Calculating SPI",
+      "option_c": "C. Negotiating vendor contracts",
+      "option_d": "D. Creating network diagrams",
+      "correct_answer": "A",
+      "explanation": "Planning Resource Management includes identifying resource needs, defining roles and responsibilities, developing team strategies, and planning communication."
+    },
+    {
+      "question": "Which process determines the type and quantity of resources required to complete project activities?",
+      "option_a": "A. Acquiring Resources",
+      "option_b": "B. Estimating Activity Resources",
+      "option_c": "C. Managing the Team",
+      "option_d": "D. Controlling Resources",
+      "correct_answer": "B",
+      "explanation": "Estimating Activity Resources determines the types and quantities of resources needed for project activities."
+    },
+    {
+      "question": "Which of the following is an example of a physical resource identified in the lecture?",
+      "option_a": "A. Project motivation",
+      "option_b": "B. Developer experience",
+      "option_c": "C. Servers and networking devices",
+      "option_d": "D. Vendor negotiation skills",
+      "correct_answer": "C",
+      "explanation": "Servers, laptops, and networking devices are examples of physical resources."
+    },
+    {
+      "question": "A project manager examines each work package and determines that the testing activity needs three testers and two testing environments. Which process is primarily being performed?",
+      "option_a": "A. Estimating Activity Resources",
+      "option_b": "B. Conducting Procurements",
+      "option_c": "C. Developing the Team",
+      "option_d": "D. Controlling the Schedule",
+      "correct_answer": "A",
+      "explanation": "Determining the required types and quantities of people and equipment is part of estimating activity resources."
+    },
+    {
+      "question": "Which process focuses on obtaining team members, equipment, materials, facilities, and other resources needed for project execution?",
+      "option_a": "A. Planning Resource Management",
+      "option_b": "B. Acquiring Resources",
+      "option_c": "C. Developing the Team",
+      "option_d": "D. Controlling Resources",
+      "correct_answer": "B",
+      "explanation": "Acquiring Resources obtains the human and physical resources required to execute project work."
+    },
+    {
+      "question": "A functional manager assigns a developer to a project based on the developer's skills, experience, and availability. Which resource activity does this represent?",
+      "option_a": "A. Assigning team members",
+      "option_b": "B. Monitoring seller performance",
+      "option_c": "C. Estimating duration",
+      "option_d": "D. Managing procurement claims",
+      "correct_answer": "A",
+      "explanation": "Assigning team members involves allocating individuals according to skills, experience, and availability."
+    },
+    {
+      "question": "Which process primarily focuses on improving team competencies, skills, collaboration, and overall effectiveness?",
+      "option_a": "A. Acquiring Resources",
+      "option_b": "B. Developing the Team",
+      "option_c": "C. Controlling Resources",
+      "option_d": "D. Planning Schedule Management",
+      "correct_answer": "B",
+      "explanation": "Developing the Team improves competencies, skills, collaboration, and team effectiveness."
+    },
+    {
+      "question": "A project manager introduces technical workshops, mentoring, and team-building activities to improve team capability. Which process is being emphasized?",
+      "option_a": "A. Developing the Team",
+      "option_b": "B. Conducting Procurements",
+      "option_c": "C. Defining Activities",
+      "option_d": "D. Controlling Procurements",
+      "correct_answer": "A",
+      "explanation": "Training, mentoring, workshops, and team-building activities are key activities in Developing the Team."
+    },
+    {
+      "question": "Which activity is most directly associated with Managing the Team?",
+      "option_a": "A. Monitoring team performance and resolving conflicts",
+      "option_b": "B. Preparing an RFQ",
+      "option_c": "C. Estimating project duration using historical data",
+      "option_d": "D. Establishing the schedule baseline",
+      "correct_answer": "A",
+      "explanation": "Managing the Team includes monitoring performance, providing feedback, resolving conflicts, motivating members, and facilitating collaboration."
+    },
+    {
+      "question": "Two developers disagree about implementation responsibilities and the disagreement is reducing project productivity. Which Resource Management activity is most directly applicable?",
+      "option_a": "A. Resolving conflicts",
+      "option_b": "B. Estimating activity resources",
+      "option_c": "C. Acquiring physical resources",
+      "option_d": "D. Setting schedule baselines",
+      "correct_answer": "A",
+      "explanation": "Resolving conflicts is a key activity of Managing the Team."
+    },
+    {
+      "question": "Several engineers are assigned simultaneously to multiple projects, causing workload conflicts. Which Resource Management process is most directly responsible for addressing this issue?",
+      "option_a": "A. Develop the Team",
+      "option_b": "B. Control Resources",
+      "option_c": "C. Conduct Procurements",
+      "option_d": "D. Plan Procurement Management",
+      "correct_answer": "B",
+      "explanation": "Controlling Resources includes managing resource shortages, overlaps, and scheduling conflicts."
+    },
+    {
+      "question": "Which activity is part of Controlling Resources?",
+      "option_a": "A. Monitoring resource utilization",
+      "option_b": "B. Negotiating supplier contracts",
+      "option_c": "C. Issuing an RFP",
+      "option_d": "D. Selecting a scheduling methodology",
+      "correct_answer": "A",
+      "explanation": "Controlling Resources involves monitoring resource utilization, comparing actual and planned usage, resolving conflicts, optimizing allocation, and maintaining records."
+    },
+    {
+      "question": "What is the primary purpose of Schedule Management?",
+      "option_a": "A. To acquire external suppliers",
+      "option_b": "B. To plan, develop, monitor, and control the project timeline",
+      "option_c": "C. To train all project team members",
+      "option_d": "D. To evaluate vendor proposals",
+      "correct_answer": "B",
+      "explanation": "Schedule Management ensures project activities are planned, coordinated, monitored, and controlled so that the project is completed on time."
+    },
+    {
+      "question": "Which scheduling technique identifies the longest sequence of dependent activities that determines the minimum project completion time?",
+      "option_a": "A. Rolling Wave Planning",
+      "option_b": "B. Earned Value Management",
+      "option_c": "C. Critical Path Method",
+      "option_d": "D. Agile Sprint Planning",
+      "correct_answer": "C",
+      "explanation": "CPM identifies the longest sequence of dependent activities that determines the shortest possible project duration."
+    },
+    {
+      "question": "Which scheduling technique represents activities, durations, timelines, and progress using horizontal bars?",
+      "option_a": "A. Gantt Chart",
+      "option_b": "B. Network Diagram",
+      "option_c": "C. CPM",
+      "option_d": "D. Three-Point Estimating",
+      "correct_answer": "A",
+      "explanation": "Gantt charts display activities, durations, timelines, and progress using horizontal bars."
+    },
+    {
+      "question": "A project manager plans near-term work in detail but keeps future activities at a higher level until more information becomes available. Which technique is being used?",
+      "option_a": "A. Bottom-Up Estimating",
+      "option_b": "B. Rolling Wave Planning",
+      "option_c": "C. Critical Path Method",
+      "option_d": "D. Parametric Estimating",
+      "correct_answer": "B",
+      "explanation": "Rolling Wave Planning progressively plans near-term work in detail while keeping future work at a higher level."
+    },
+    {
+      "question": "Which process establishes the policies, procedures, tools, and methodologies for managing the project schedule?",
+      "option_a": "A. Defining Activities",
+      "option_b": "B. Planning Schedule Management",
+      "option_c": "C. Controlling the Schedule",
+      "option_d": "D. Estimating Activity Duration",
+      "correct_answer": "B",
+      "explanation": "Planning Schedule Management establishes the approach, procedures, tools, performance methods, and baselines used to manage the schedule."
+    },
+    {
+      "question": "Which process converts work packages into specific tasks that can be scheduled and monitored?",
+      "option_a": "A. Defining Activities",
+      "option_b": "B. Sequencing Activities",
+      "option_c": "C. Controlling Resources",
+      "option_d": "D. Conducting Procurements",
+      "correct_answer": "A",
+      "explanation": "Defining Activities breaks down work packages into manageable activities and prepares activity lists."
+    },
+    {
+      "question": "A project manager examines the WBS, breaks work packages into detailed tasks, identifies milestones, and creates an activity list. Which process is this?",
+      "option_a": "A. Defining Activities",
+      "option_b": "B. Developing the Team",
+      "option_c": "C. Controlling Procurements",
+      "option_d": "D. Acquiring Resources",
+      "correct_answer": "A",
+      "explanation": "These are the key activities listed under Defining Activities."
+    },
+    {
+      "question": "What is the main purpose of Sequencing Activities?",
+      "option_a": "A. To determine vendor prices",
+      "option_b": "B. To identify and document logical relationships and dependencies among activities",
+      "option_c": "C. To calculate employee performance ratings",
+      "option_d": "D. To close supplier contracts",
+      "correct_answer": "B",
+      "explanation": "Sequencing Activities determines the logical order and dependencies among project activities."
+    },
+    {
+      "question": "In a software project, system testing cannot begin until software development has finished. Which dependency is represented?",
+      "option_a": "A. Start-to-Start",
+      "option_b": "B. Finish-to-Finish",
+      "option_c": "C. Start-to-Finish",
+      "option_d": "D. Finish-to-Start",
+      "correct_answer": "D",
+      "explanation": "Finish-to-Start means the successor cannot start until the predecessor has finished."
+    },
+    {
+      "question": "A database configuration activity can start once application coding has started, even though coding has not yet finished. Which dependency best represents this relationship?",
+      "option_a": "A. Finish-to-Start",
+      "option_b": "B. Start-to-Start",
+      "option_c": "C. Finish-to-Finish",
+      "option_d": "D. Start-to-Finish",
+      "correct_answer": "B",
+      "explanation": "Start-to-Start means the successor cannot start until the predecessor has started."
+    },
+    {
+      "question": "Documentation updates cannot be completed until system testing has been completed. Which dependency is most appropriate?",
+      "option_a": "A. Finish-to-Finish",
+      "option_b": "B. Start-to-Start",
+      "option_c": "C. Start-to-Finish",
+      "option_d": "D. Finish-to-Start",
+      "correct_answer": "A",
+      "explanation": "Finish-to-Finish means the successor cannot finish until the predecessor has finished."
+    },
+    {
+      "question": "An old IT support system must continue operating until the replacement support system has started functioning. Which dependency best represents this situation?",
+      "option_a": "A. Finish-to-Start",
+      "option_b": "B. Start-to-Start",
+      "option_c": "C. Finish-to-Finish",
+      "option_d": "D. Start-to-Finish",
+      "correct_answer": "D",
+      "explanation": "Start-to-Finish means the successor cannot finish until the predecessor has started; it is a rare dependency type."
+    },
+    {
+      "question": "What is the primary purpose of Estimating Activity Durations?",
+      "option_a": "A. To determine how long individual project activities are expected to take",
+      "option_b": "B. To select external suppliers",
+      "option_c": "C. To calculate vendor payments",
+      "option_d": "D. To define team authority levels",
+      "correct_answer": "A",
+      "explanation": "Estimating Activity Durations predicts the time required to complete individual activities using available information and resources."
+    },
+    {
+      "question": "A project manager uses historical data from a similar previous mobile application to estimate the duration of UI development. Which technique is being used?",
+      "option_a": "A. Parametric Estimating",
+      "option_b": "B. Analogous Estimating",
+      "option_c": "C. Bottom-Up Estimating",
+      "option_d": "D. Three-Point Estimating",
+      "correct_answer": "B",
+      "explanation": "Analogous Estimating uses historical information from similar past projects and is particularly useful during early project stages."
+    },
+    {
+      "question": "A developer is expected to produce 100 lines of code per day, and a module is estimated to require 1,000 lines. Which estimation technique is illustrated?",
+      "option_a": "A. Analogous Estimating",
+      "option_b": "B. Parametric Estimating",
+      "option_c": "C. Bottom-Up Estimating",
+      "option_d": "D. Rolling Wave Planning",
+      "correct_answer": "B",
+      "explanation": "Parametric Estimating uses measurable variables and statistical relationships. Here, 1,000 lines divided by 100 lines per day gives 10 days."
+    },
+    {
+      "question": "For an activity, the optimistic estimate is 4 days, the most likely estimate is 7 days, and the pessimistic estimate is 16 days. Using the lecture's three-point formula, what is the expected duration?",
+      "option_a": "A. 7.00 days",
+      "option_b": "B. 7.33 days",
+      "option_c": "C. 8.00 days",
+      "option_d": "D. 9.00 days",
+      "correct_answer": "B",
+      "explanation": "Using E = (O + 4M + P) / 6, E = (4 + 4(7) + 16) / 6 = 48/6 = 8 days. Therefore the correct option should be C."
+    },
+    {
+      "question": "Which estimation technique separately estimates individual activities and combines them to determine the total duration or cost?",
+      "option_a": "A. Analogous Estimating",
+      "option_b": "B. Parametric Estimating",
+      "option_c": "C. Bottom-Up Estimating",
+      "option_d": "D. Rolling Wave Planning",
+      "correct_answer": "C",
+      "explanation": "Bottom-Up Estimating estimates individual activities separately and combines the estimates. It is highly accurate but time-consuming."
+    },
+    {
+      "question": "A project manager has limited information and needs a quick duration estimate based on a previous project that is closely similar. Which technique is most suitable?",
+      "option_a": "A. Analogous Estimating",
+      "option_b": "B. Bottom-Up Estimating",
+      "option_c": "C. Three-Point Estimating",
+      "option_d": "D. CPM",
+      "correct_answer": "A",
+      "explanation": "Analogous Estimating is quick and useful in early project stages, particularly when a closely similar historical project exists."
+    },
+    {
+      "question": "Which process combines activity sequences, durations, resource requirements, and scheduling constraints to create the project schedule model?",
+      "option_a": "A. Develop Schedule",
+      "option_b": "B. Define Activities",
+      "option_c": "C. Plan Resource Management",
+      "option_d": "D. Control Procurements",
+      "correct_answer": "A",
+      "explanation": "Develop Schedule analyzes activity sequences, durations, resources, and constraints to establish the project schedule."
+    },
+    {
+      "question": "What does float or slack represent in Critical Path Method?",
+      "option_a": "A. The total cost of an activity",
+      "option_b": "B. The time an activity can be delayed without affecting the project",
+      "option_c": "C. The number of resources assigned to an activity",
+      "option_d": "D. The time required to negotiate a contract",
+      "correct_answer": "B",
+      "explanation": "Float or slack is the amount of time an activity can be delayed without affecting the project."
+    },
+    {
+      "question": "Which sequence correctly represents the major steps of CPM described in the lecture?",
+      "option_a": "A. List activities, define dependencies, estimate durations, create network diagram, calculate ES/EF/LS/LF, identify critical path",
+      "option_b": "B. Select vendor, negotiate contract, calculate CPI, archive records, identify critical path",
+      "option_c": "C. Estimate cost, acquire resources, close procurement, calculate SPI, create WBS",
+      "option_d": "D. Define milestones, conduct procurement audit, calculate AC, assign vendors, estimate resources",
+      "correct_answer": "A",
+      "explanation": "The lecture lists these six steps as the CPM procedure."
+    },
+    {
+      "question": "A project contains two independent paths. Path 1 takes 18 days and Path 2 takes 25 days. Based only on this information, which path determines the minimum project completion time?",
+      "option_a": "A. Path 1",
+      "option_b": "B. Path 2",
+      "option_c": "C. Both paths equally",
+      "option_d": "D. Neither path",
+      "correct_answer": "B",
+      "explanation": "The longest dependent sequence determines the minimum possible project duration, so the 25-day path is critical based on the information provided."
+    },
+    {
+      "question": "Which process focuses on monitoring project schedule performance, managing schedule changes, and taking corrective actions?",
+      "option_a": "A. Planning Schedule Management",
+      "option_b": "B. Defining Activities",
+      "option_c": "C. Controlling the Schedule",
+      "option_d": "D. Estimating Activity Duration",
+      "correct_answer": "C",
+      "explanation": "Controlling the Schedule compares actual progress with the plan, manages changes, and applies corrective actions."
+    },
+    {
+      "question": "A project manager discovers that actual progress is significantly behind the planned schedule and reallocates resources to reduce the delay. Which activity is being performed?",
+      "option_a": "A. Applying corrective actions",
+      "option_b": "B. Defining activities",
+      "option_c": "C. Conducting procurements",
+      "option_d": "D. Developing the team",
+      "correct_answer": "A",
+      "explanation": "Applying corrective actions can involve adjusting resources, timelines, or activities to reduce schedule delays."
+    },
+    {
+      "question": "What does Planned Value (PV) represent in Earned Value Management?",
+      "option_a": "A. Actual cost spent on completed work",
+      "option_b": "B. Budgeted value of planned work",
+      "option_c": "C. Value of completed work",
+      "option_d": "D. Remaining project budget",
+      "correct_answer": "B",
+      "explanation": "PV is the budgeted value of work that was planned."
+    },
+    {
+      "question": "What does Earned Value (EV) represent?",
+      "option_a": "A. The value of completed work",
+      "option_b": "B. The budgeted value of planned work",
+      "option_c": "C. The actual cost spent on completed work",
+      "option_d": "D. The planned project duration",
+      "correct_answer": "A",
+      "explanation": "EV represents the value of work that has actually been completed."
+    },
+    {
+      "question": "A project has EV = $75,000 and PV = $100,000. What is the Schedule Variance (SV)?",
+      "option_a": "A. $25,000",
+      "option_b": "B. -$25,000",
+      "option_c": "C. $175,000",
+      "option_d": "D. -$175,000",
+      "correct_answer": "B",
+      "explanation": "SV = EV - PV = $75,000 - $100,000 = -$25,000. A negative SV indicates the project is behind schedule."
+    },
+    {
+      "question": "A project has EV = $120,000 and PV = $100,000. What does the Schedule Variance indicate?",
+      "option_a": "A. The project is behind schedule",
+      "option_b": "B. The project is ahead of schedule",
+      "option_c": "C. The project is over budget",
+      "option_d": "D. The project is exactly on schedule",
+      "correct_answer": "B",
+      "explanation": "SV = EV - PV = $20,000, which is positive. According to the lecture, SV > 0 indicates the project is ahead of schedule."
+    },
+    {
+      "question": "A project has EV = $80,000 and PV = $100,000. What is the Schedule Performance Index (SPI)?",
+      "option_a": "A. 0.80",
+      "option_b": "B. 1.20",
+      "option_c": "C. 20,000",
+      "option_d": "D. -0.20",
+      "correct_answer": "A",
+      "explanation": "SPI = EV/PV = 80,000/100,000 = 0.80. An SPI below 1 indicates the project is behind schedule."
+    },
+    {
+      "question": "A project has EV = $150,000 and PV = $150,000. What does its SPI indicate?",
+      "option_a": "A. It is behind schedule",
+      "option_b": "B. It is ahead of schedule",
+      "option_c": "C. It is on schedule",
+      "option_d": "D. It is necessarily under budget",
+      "correct_answer": "C",
+      "explanation": "SPI = EV/PV = 1. An SPI of 1 indicates the project is on schedule."
+    },
+    {
+      "question": "A project has EV = $90,000 and AC = $110,000. What is the Cost Variance (CV)?",
+      "option_a": "A. $20,000",
+      "option_b": "B. -$20,000",
+      "option_c": "C. $200,000",
+      "option_d": "D. -$200,000",
+      "correct_answer": "B",
+      "explanation": "CV = EV - AC = $90,000 - $110,000 = -$20,000. A negative CV indicates the project is over budget."
+    },
+    {
+      "question": "A project has EV = $90,000 and AC = $110,000. What does its CPI indicate?",
+      "option_a": "A. It is cost efficient because CPI is greater than 1",
+      "option_b": "B. It is experiencing a cost overrun because CPI is less than 1",
+      "option_c": "C. It is ahead of schedule because CPI is less than 1",
+      "option_d": "D. It is exactly on budget because CPI equals 1",
+      "correct_answer": "B",
+      "explanation": "CPI = EV/AC = 90,000/110,000 ≈ 0.82. A CPI below 1 indicates a cost overrun."
+    },
+    {
+      "question": "A project has EV = $120,000, PV = $100,000, and AC = $100,000. Which interpretation is correct?",
+      "option_a": "A. Behind schedule and over budget",
+      "option_b": "B. Ahead of schedule and exactly on budget",
+      "option_c": "C. On schedule and over budget",
+      "option_d": "D. Behind schedule and under budget",
+      "correct_answer": "B",
+      "explanation": "SV = $20,000, so the project is ahead of schedule. CV = $20,000, so it is under budget. CPI = 1.2 and SPI = 1.2."
+    },
+    {
+      "question": "A project reports SPI = 0.75 and CPI = 1.15. What is the best interpretation?",
+      "option_a": "A. The project is ahead of schedule and over budget",
+      "option_b": "B. The project is behind schedule but cost efficient",
+      "option_c": "C. The project is on schedule and over budget",
+      "option_d": "D. The project is ahead of schedule and exactly on budget",
+      "correct_answer": "B",
+      "explanation": "SPI below 1 indicates the project is behind schedule, while CPI above 1 indicates cost efficiency."
+    },
+    {
+      "question": "A software project is behind schedule but under budget. Which EVM result combination is consistent with this situation?",
+      "option_a": "A. SPI > 1 and CPI < 1",
+      "option_b": "B. SPI < 1 and CPI > 1",
+      "option_c": "C. SPI > 1 and CPI > 1",
+      "option_d": "D. SPI = 1 and CPI = 1",
+      "correct_answer": "B",
+      "explanation": "SPI < 1 indicates the project is behind schedule, while CPI > 1 indicates it is cost efficient."
+    },
+    {
+      "question": "A project manager observes that a supplier is meeting the required cost but repeatedly failing quality requirements. What is the most appropriate immediate procurement focus?",
+      "option_a": "A. Monitor seller performance and review deliverables",
+      "option_b": "B. Estimate activity duration",
+      "option_c": "C. Develop the project team",
+      "option_d": "D. Calculate the critical path",
+      "correct_answer": "A",
+      "explanation": "Controlling Procurements includes monitoring seller performance and validating that deliverables meet project specifications."
+    },
+    {
+      "question": "A project manager knows that a future project phase has uncertain requirements but the next two weeks of work are well understood. Which scheduling approach best matches the lecture?",
+      "option_a": "A. Rolling Wave Planning",
+      "option_b": "B. Bottom-Up Estimating",
+      "option_c": "C. Finish-to-Finish dependency",
+      "option_d": "D. Procurement auditing",
+      "correct_answer": "A",
+      "explanation": "Rolling Wave Planning provides detailed planning for near-term work while future work remains at a higher level until more information becomes available."
+    },
+    {
+      "question": "A project manager first estimates every small development activity separately and then combines those estimates to determine the overall development effort. What is the strongest reason this approach may be selected?",
+      "option_a": "A. It is highly accurate, although time-consuming",
+      "option_b": "B. It requires no knowledge of individual activities",
+      "option_c": "C. It only works when historical projects are identical",
+      "option_d": "D. It eliminates the need to consider resources",
+      "correct_answer": "A",
+      "explanation": "Bottom-Up Estimating provides detailed estimates and is described as highly accurate, but it requires more time."
+    },
+    {
+      "question": "A project team has a vendor contract, but a required deliverable is discovered to be inconsistent with the agreed specifications. Which action most directly addresses the problem during procurement control?",
+      "option_a": "A. Review the deliverable against project specifications",
+      "option_b": "B. Create a Gantt chart",
+      "option_c": "C. Calculate the project's CPI",
+      "option_d": "D. Conduct team-building activities",
+      "correct_answer": "A",
+      "explanation": "Reviewing deliverables is a controlling procurement activity used to validate that procured products or services meet project specifications."
+    },
+    {
+      "question": "A project manager discovers that planned resource allocation differs substantially from actual resource usage. Which combination of actions is most appropriate?",
+      "option_a": "A. Compare actual versus planned usage and optimize resource allocation",
+      "option_b": "B. Issue an RFP and negotiate with vendors",
+      "option_c": "C. Calculate only the project's SPI",
+      "option_d": "D. Close all procurement contracts immediately",
+      "correct_answer": "A",
+      "explanation": "Controlling Resources explicitly includes comparing actual versus planned usage and optimizing resource allocation."
+    },
+    {
+      "question": "A project has three paths with durations of 12, 19, and 15 days. Assuming each is a dependent path from project start to finish, which path is critical?",
+      "option_a": "A. The 12-day path",
+      "option_b": "B. The 15-day path",
+      "option_c": "C. The 19-day path",
+      "option_d": "D. All paths are automatically critical",
+      "correct_answer": "C",
+      "explanation": "The critical path is the longest sequence of dependent activities. Based on the given durations, the 19-day path determines the minimum project duration."
+    },
+    {
+      "question": "A project has PV = $200,000, EV = $160,000, and AC = $180,000. Which statement is correct?",
+      "option_a": "A. The project is ahead of schedule and under budget",
+      "option_b": "B. The project is behind schedule and over budget",
+      "option_c": "C. The project is on schedule and over budget",
+      "option_d": "D. The project is ahead of schedule and over budget",
+      "correct_answer": "B",
+      "explanation": "SV = 160,000 - 200,000 = -40,000 and CV = 160,000 - 180,000 = -20,000. Both negative values indicate the project is behind schedule and over budget."
+    },
+    {
+      "question": "For the same project with PV = $200,000, EV = $160,000, and AC = $180,000, which pair of performance indices is correct?",
+      "option_a": "A. SPI = 0.80 and CPI ≈ 0.89",
+      "option_b": "B. SPI = 1.25 and CPI ≈ 1.13",
+      "option_c": "C. SPI = 0.89 and CPI = 0.80",
+      "option_d": "D. SPI = 1.00 and CPI = 1.00",
+      "correct_answer": "A",
+      "explanation": "SPI = EV/PV = 160,000/200,000 = 0.80, while CPI = EV/AC = 160,000/180,000 ≈ 0.89."
+    },
+    {
+      "question": "A project manager must choose between two suppliers. Supplier X has the lowest price but poor technical capability and a weak delivery record. Supplier Y costs more but has strong quality, experience, technical capability, and delivery performance. Based on the lecture's procurement approach, what should the manager do?",
+      "option_a": "A. Automatically select Supplier X because price is the only relevant factor",
+      "option_b": "B. Evaluate both suppliers using multiple selection criteria",
+      "option_c": "C. Select Supplier Y without evaluating any criteria",
+      "option_d": "D. Ignore delivery performance because it is unrelated to procurement",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies cost, quality, experience, technical capability, and delivery schedules as proposal evaluation factors, so selection should use multiple criteria."
+    },
+    {
+      "question": "A project manager is deciding whether to hire an external specialist, but first needs to determine whether the required expertise already exists internally. Which combination of concepts is most directly relevant?",
+      "option_a": "A. Make-or-buy analysis and resource planning",
+      "option_b": "B. EVM and Gantt charts",
+      "option_c": "C. Procurement closing and CPI",
+      "option_d": "D. Finish-to-finish dependencies and procurement audits",
+      "correct_answer": "A",
+      "explanation": "Make-or-buy analysis addresses internal versus external acquisition, while resource planning identifies required internal resources and capabilities."
+    },
+    {
+      "question": "A team has the required number of developers, but their collaboration is poor and conflicts are reducing performance. Which response best matches the lecture?",
+      "option_a": "A. Acquire additional physical resources only",
+      "option_b": "B. Use team development and team management activities such as communication improvement, conflict resolution, and feedback",
+      "option_c": "C. Replace the schedule with a Gantt chart",
+      "option_d": "D. Perform a procurement audit",
+      "correct_answer": "B",
+      "explanation": "Developing the Team improves collaboration and communication, while Managing the Team addresses performance, feedback, motivation, and conflict resolution."
+    },
+    {
+      "question": "A project manager wants to understand whether schedule performance is improving and whether corrective action is required. Which combination of Schedule Management activities is most appropriate?",
+      "option_a": "A. Track progress, analyze schedule variance, and apply corrective actions",
+      "option_b": "B. Issue RFQs, negotiate contracts, and archive procurement records",
+      "option_c": "C. Conduct team-building activities and assign team members",
+      "option_d": "D. Perform only bottom-up estimation",
+      "correct_answer": "A",
+      "explanation": "Controlling the Schedule involves tracking actual progress, analyzing variances, managing changes, and applying corrective actions."
+    }
+  ]
+}

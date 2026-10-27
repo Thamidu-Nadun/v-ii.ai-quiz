@@ -1,0 +1,913 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best defines project risk according to the lecture?",
+      "option_a": "An event that will definitely delay the project",
+      "option_b": "An uncertain event or condition that may positively or negatively affect project objectives",
+      "option_c": "A defect discovered after deployment",
+      "option_d": "Any decision that increases project expenditure",
+      "correct_answer": "B",
+      "explanation": "Project risk involves uncertainty and can have either a negative effect (threat) or a positive effect (opportunity) on objectives."
+    },
+    {
+      "question": "A project manager discovers that a new API may reduce development time significantly. How should this uncertainty initially be classified?",
+      "option_a": "A threat",
+      "option_b": "A confirmed benefit",
+      "option_c": "An opportunity",
+      "option_d": "A quality defect",
+      "correct_answer": "C",
+      "explanation": "The potential reduction in development time is a positive uncertain outcome, making it an opportunity rather than a guaranteed benefit."
+    },
+    {
+      "question": "Which of the following is a requirements risk?",
+      "option_a": "Users repeatedly change the requested functionality",
+      "option_b": "A server experiences a confirmed hardware failure",
+      "option_c": "A developer completes a task early",
+      "option_d": "A completed feature passes its acceptance tests",
+      "correct_answer": "A",
+      "explanation": "Unclear or changing requirements create uncertainty about the project's scope and the solution that must be delivered."
+    },
+    {
+      "question": "A development team adopts an unfamiliar database technology that may not integrate with its existing systems. Which risk category is most directly involved?",
+      "option_a": "Business",
+      "option_b": "People",
+      "option_c": "External",
+      "option_d": "Technical",
+      "correct_answer": "D",
+      "explanation": "Unfamiliar technology and legacy integration are examples of technical project risks."
+    },
+    {
+      "question": "A cyberattack could expose customer information during development. Which risk category best describes this concern?",
+      "option_a": "Schedule",
+      "option_b": "Security",
+      "option_c": "People",
+      "option_d": "Procurement",
+      "correct_answer": "B",
+      "explanation": "Cyberattacks and data leakage are explicitly identified as security risks in the lecture."
+    },
+    {
+      "question": "The only developer familiar with a critical subsystem resigns unexpectedly. What is the most appropriate risk category?",
+      "option_a": "Business",
+      "option_b": "External",
+      "option_c": "People",
+      "option_d": "Quality",
+      "correct_answer": "C",
+      "explanation": "The departure of a key developer is a people risk because it can remove essential skills and knowledge."
+    },
+    {
+      "question": "A project takes longer than planned because development tasks are more complex than estimated. Which risk category does this illustrate?",
+      "option_a": "Schedule",
+      "option_b": "Vendor",
+      "option_c": "Security",
+      "option_d": "Requirements",
+      "correct_answer": "A",
+      "explanation": "Development taking longer than expected is a schedule risk."
+    },
+    {
+      "question": "A cloud provider experiences an outage that prevents a project team from accessing a required service. Which category most directly describes the dependency?",
+      "option_a": "People",
+      "option_b": "Quality",
+      "option_c": "Scope",
+      "option_d": "Vendor",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies supplier, API, and cloud-service failures as vendor-related risks."
+    },
+    {
+      "question": "A technically successful application receives very few users because it does not address their actual needs. Which risk category is most directly illustrated?",
+      "option_a": "Technical",
+      "option_b": "Business",
+      "option_c": "Schedule",
+      "option_d": "Procurement",
+      "correct_answer": "B",
+      "explanation": "Poor user adoption is a business risk because the delivered solution may fail to achieve its intended business value."
+    },
+    {
+      "question": "A new regulation requires additional controls before an application can be released. Which category most directly captures this uncertainty?",
+      "option_a": "People",
+      "option_b": "Technical",
+      "option_c": "External",
+      "option_d": "Usability",
+      "correct_answer": "C",
+      "explanation": "Regulatory changes are external risks because they originate outside the project team's direct control."
+    },
+    {
+      "question": "Which statement best describes effective project risk management?",
+      "option_a": "It considers both threats and opportunities",
+      "option_b": "It eliminates every possible uncertainty before development begins",
+      "option_c": "It focuses only on risks that have already occurred",
+      "option_d": "It transfers every risk to an external supplier",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes managing both negative and positive uncertainty rather than concentrating exclusively on threats."
+    },
+    {
+      "question": "Which sequence best represents the seven risk-management processes presented in the lecture?",
+      "option_a": "Identify, implement, plan, respond, close, test, monitor",
+      "option_b": "Plan, respond, close, identify, implement, test, monitor",
+      "option_c": "Plan risk management, identify risks, qualitative analysis, quantitative analysis, plan responses, implement responses, monitor risks",
+      "option_d": "Plan, test, deploy, identify, approve, monitor, close",
+      "correct_answer": "C",
+      "explanation": "The lecture presents seven PMBOK-oriented processes in this order, from planning through monitoring."
+    },
+    {
+      "question": "A project manager has not yet decided how risks will be assessed, documented, or monitored. Which process should address this first?",
+      "option_a": "Implement Risk Responses",
+      "option_b": "Plan Risk Management",
+      "option_c": "Monitor Risks",
+      "option_d": "Perform Quantitative Risk Analysis",
+      "correct_answer": "B",
+      "explanation": "Planning risk management establishes how risk activities will be conducted throughout the project."
+    },
+    {
+      "question": "Which technique is particularly appropriate when a project team wants to uncover potential risks by examining why a recurring problem occurs?",
+      "option_a": "User acceptance testing",
+      "option_b": "Project closure",
+      "option_c": "Continuous integration",
+      "option_d": "Root Cause Analysis",
+      "correct_answer": "D",
+      "explanation": "Root Cause Analysis investigates underlying causes rather than merely recording visible symptoms."
+    },
+    {
+      "question": "A project manager interviews experienced developers and security specialists to identify risks that may not appear on a checklist. Which identification approach is being used?",
+      "option_a": "Expert judgment and interviews",
+      "option_b": "Quantitative analysis only",
+      "option_c": "Risk acceptance",
+      "option_d": "Integrated change control",
+      "correct_answer": "A",
+      "explanation": "Interviews and expert judgment are listed risk-identification techniques in the lecture."
+    },
+    {
+      "question": "Which activity is most closely associated with identifying risks rather than responding to them?",
+      "option_a": "Assigning contingency resources",
+      "option_b": "Implementing a mitigation plan",
+      "option_c": "Using brainstorming to identify possible API failures",
+      "option_d": "Accepting a known threat",
+      "correct_answer": "C",
+      "explanation": "Brainstorming helps discover possible risks; the other options describe responses or contingency decisions."
+    },
+    {
+      "question": "A team assumes that a third-party API will remain available throughout development without verifying the assumption. Which risk-identification technique most directly challenges this?",
+      "option_a": "Regression testing",
+      "option_b": "Assumption analysis",
+      "option_c": "Project closure",
+      "option_d": "Risk transfer",
+      "correct_answer": "B",
+      "explanation": "Assumption analysis examines assumptions and identifies uncertainty arising from them."
+    },
+    {
+      "question": "What is the main distinction between qualitative and quantitative risk analysis in the lecture's process framework?",
+      "option_a": "Qualitative analysis implements responses, while quantitative analysis closes the project",
+      "option_b": "Qualitative analysis identifies stakeholders, while quantitative analysis writes requirements",
+      "option_c": "Qualitative analysis tests software, while quantitative analysis reviews code",
+      "option_d": "They are separate analysis processes that contribute to understanding project risks before responses are planned",
+      "correct_answer": "D",
+      "explanation": "The lecture distinguishes qualitative and quantitative analysis as consecutive risk-management processes. It does not provide enough extracted detail to prescribe a specific scoring or calculation method."
+    },
+    {
+      "question": "An AI assistant suggests that a project may face vendor lock-in, unclear requirements, and security weaknesses. What should the project manager do next?",
+      "option_a": "Validate the suggestions against the actual project and investigate relevant risks",
+      "option_b": "Automatically accept all suggestions as confirmed facts",
+      "option_c": "Remove the project team from risk identification",
+      "option_d": "Treat every suggestion as an opportunity",
+      "correct_answer": "A",
+      "explanation": "AI can assist brainstorming, but it does not automatically know the project's context. Human validation is necessary."
+    },
+    {
+      "question": "Which statement best reflects the risk-management cycle?",
+      "option_a": "Risk management ends once the project plan is approved",
+      "option_b": "Risks should be analyzed only after they become incidents",
+      "option_c": "Risk management is continuous, including identifying new risks and monitoring existing ones",
+      "option_d": "A project should identify risks only during project closure",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly describes risk management as continuous rather than a one-time exercise."
+    },
+    {
+      "question": "A team discovers a critical risk after implementing a mitigation plan. What is the most appropriate response?",
+      "option_a": "Ignore the new risk because planning has finished",
+      "option_b": "Return to risk identification and analysis, then determine an appropriate response",
+      "option_c": "Close the project immediately",
+      "option_d": "Automatically transfer the risk to the customer",
+      "correct_answer": "B",
+      "explanation": "The risk-management cycle continues as new information appears, requiring reassessment and potentially new responses."
+    },
+    {
+      "question": "A project faces an unacceptable risk from an unfamiliar database. The manager replaces it with an established technology to remove the cause of that risk. Which response is this?",
+      "option_a": "Accept",
+      "option_b": "Transfer",
+      "option_c": "Mitigate",
+      "option_d": "Avoid",
+      "correct_answer": "D",
+      "explanation": "Avoidance removes the cause of the threat, as illustrated by replacing an untested database with established technology."
+    },
+    {
+      "question": "A team retains an unfamiliar database but builds a prototype and conducts performance tests before committing to full implementation. Which response is most appropriate?",
+      "option_a": "Mitigate",
+      "option_b": "Avoid",
+      "option_c": "Accept",
+      "option_d": "Exploit",
+      "correct_answer": "A",
+      "explanation": "Prototyping and performance testing reduce the probability or impact of the technical threat without eliminating the technology choice."
+    },
+    {
+      "question": "A project contracts a specialist vendor to assume explicitly defined responsibility for a particular technical risk. Which threat response is illustrated?",
+      "option_a": "Avoid",
+      "option_b": "Accept",
+      "option_c": "Transfer",
+      "option_d": "Enhance",
+      "correct_answer": "C",
+      "explanation": "Transfer shifts defined responsibility or financial exposure to another party."
+    },
+    {
+      "question": "A project team decides to proceed despite a low-priority threat and retains contingency resources in case it occurs. Which response is this?",
+      "option_a": "Exploit",
+      "option_b": "Accept",
+      "option_c": "Avoid",
+      "option_d": "Transfer",
+      "correct_answer": "B",
+      "explanation": "Acceptance means proceeding without preventive action beyond appropriate monitoring or contingency arrangements."
+    },
+    {
+      "question": "A manager purchases insurance against a specified financial loss associated with a project threat. Which response does this most closely represent?",
+      "option_a": "Avoid",
+      "option_b": "Enhance",
+      "option_c": "Mitigate",
+      "option_d": "Transfer",
+      "correct_answer": "D",
+      "explanation": "Insurance can transfer specified financial exposure, although it does not necessarily remove the underlying technical or operational risk."
+    },
+    {
+      "question": "A project manager wants to reduce the probability of a security incident but cannot eliminate the underlying exposure. Which response is most suitable?",
+      "option_a": "Mitigate",
+      "option_b": "Accept without monitoring",
+      "option_c": "Exploit",
+      "option_d": "Avoid by default",
+      "correct_answer": "A",
+      "explanation": "Mitigation reduces the probability and/or impact of a threat when the risk cannot or will not be eliminated."
+    },
+    {
+      "question": "A new AI API could reduce development effort by 30%. The team decides to make sure the API is adopted so that the potential benefit is realized. Which opportunity response is this?",
+      "option_a": "Accept",
+      "option_b": "Share",
+      "option_c": "Exploit",
+      "option_d": "Avoid",
+      "correct_answer": "C",
+      "explanation": "Exploitation is intended to ensure that a positive opportunity occurs, rather than merely waiting to see whether it happens."
+    },
+    {
+      "question": "A team cannot guarantee that a new automation tool will save time, but it modifies its approach to increase the likelihood and size of the savings. Which opportunity response is most appropriate?",
+      "option_a": "Transfer",
+      "option_b": "Enhance",
+      "option_c": "Avoid",
+      "option_d": "Accept",
+      "correct_answer": "B",
+      "explanation": "Enhancement increases the probability and/or positive impact of an opportunity without necessarily guaranteeing that it occurs."
+    },
+    {
+      "question": "Two organizations agree to work together so that both can benefit from a potential technological opportunity. Which opportunity response is illustrated?",
+      "option_a": "Mitigate",
+      "option_b": "Accept",
+      "option_c": "Avoid",
+      "option_d": "Share",
+      "correct_answer": "D",
+      "explanation": "Sharing involves allocating ownership or benefits of an opportunity among parties better positioned to realize it."
+    },
+    {
+      "question": "A project team records a potential productivity improvement but decides not to take special action to make it happen. Which opportunity response best matches this decision?",
+      "option_a": "Accept",
+      "option_b": "Exploit",
+      "option_c": "Enhance",
+      "option_d": "Transfer",
+      "correct_answer": "A",
+      "explanation": "Opportunity acceptance means recognizing the potential positive outcome without proactively ensuring or increasing its realization."
+    },
+    {
+      "question": "A project manager chooses a risk response solely because it is the cheapest option, without considering its consequences. Why is this decision inadequate?",
+      "option_a": "Risk responses must always be expensive",
+      "option_b": "Every risk must be avoided",
+      "option_c": "The appropriate response depends on project context and the risk's implications",
+      "option_d": "Risk analysis is unnecessary once costs are known",
+      "correct_answer": "C",
+      "explanation": "The lecture emphasizes that response selection depends on context. Cost alone does not establish which response best protects project objectives."
+    },
+    {
+      "question": "A banking application works correctly during a demonstration but frequently fails during actual transactions. Which assessment of project success is most appropriate?",
+      "option_a": "The project is successful because the demonstration worked",
+      "option_b": "The project is not successful merely because the planned features were implemented; reliable user transactions matter",
+      "option_c": "The project is successful if its budget was fully spent",
+      "option_d": "The project is successful if developers followed the original schedule",
+      "correct_answer": "B",
+      "explanation": "The lecture contrasts traditional project success with a modern view that considers whether users can reliably complete transactions."
+    },
+    {
+      "question": "Which software quality attribute most directly concerns whether a system performs its required functions?",
+      "option_a": "Maintainability",
+      "option_b": "Compatibility",
+      "option_c": "Accessibility",
+      "option_d": "Functionality",
+      "correct_answer": "D",
+      "explanation": "Functionality concerns the capabilities and behavior the software is expected to provide."
+    },
+    {
+      "question": "An application continues to behave correctly over repeated use and does not frequently fail. Which quality attribute is most directly involved?",
+      "option_a": "Reliability",
+      "option_b": "Scalability",
+      "option_c": "Accessibility",
+      "option_d": "Maintainability",
+      "correct_answer": "A",
+      "explanation": "Reliability concerns consistent, dependable operation over time and under expected conditions."
+    },
+    {
+      "question": "Users can complete a payment workflow easily without unnecessary confusion. Which quality attribute is most directly demonstrated?",
+      "option_a": "Compatibility",
+      "option_b": "Availability",
+      "option_c": "Usability",
+      "option_d": "Maintainability",
+      "correct_answer": "C",
+      "explanation": "Usability concerns how effectively and easily users can interact with a system."
+    },
+    {
+      "question": "A service must continue to be accessible when customers need it. Which quality attribute most directly describes this requirement?",
+      "option_a": "Scalability",
+      "option_b": "Availability",
+      "option_c": "Functionality",
+      "option_d": "Maintainability",
+      "correct_answer": "B",
+      "explanation": "Availability concerns whether the system is operational and accessible when required."
+    },
+    {
+      "question": "A web application slows dramatically when thousands of users access it simultaneously. Which quality attribute is most directly challenged?",
+      "option_a": "Accessibility",
+      "option_b": "Compatibility",
+      "option_c": "Functionality",
+      "option_d": "Performance",
+      "correct_answer": "D",
+      "explanation": "Performance concerns responsiveness and resource behavior under specified operating conditions."
+    },
+    {
+      "question": "A system is difficult to modify because its code is tightly coupled and poorly structured. Which quality attribute is most directly affected?",
+      "option_a": "Maintainability",
+      "option_b": "Availability",
+      "option_c": "Usability",
+      "option_d": "Functionality",
+      "correct_answer": "A",
+      "explanation": "Maintainability concerns how readily software can be understood, modified, and maintained."
+    },
+    {
+      "question": "A mobile application must work correctly across several supported operating systems and device environments. Which quality attribute is most relevant?",
+      "option_a": "Availability",
+      "option_b": "Security",
+      "option_c": "Compatibility",
+      "option_d": "Maintainability",
+      "correct_answer": "C",
+      "explanation": "Compatibility concerns the software's ability to work appropriately with specified environments and other systems."
+    },
+    {
+      "question": "An application performs acceptably for 100 users but becomes unusable when the user base grows to 100,000. Which quality attribute is most directly challenged?",
+      "option_a": "Usability",
+      "option_b": "Scalability",
+      "option_c": "Accessibility",
+      "option_d": "Functionality",
+      "correct_answer": "B",
+      "explanation": "Scalability concerns the system's ability to accommodate increasing workloads or demand."
+    },
+    {
+      "question": "A website cannot be operated effectively by a user who relies on a screen reader. Which quality attribute is most directly affected?",
+      "option_a": "Performance",
+      "option_b": "Reliability",
+      "option_c": "Compatibility",
+      "option_d": "Accessibility",
+      "correct_answer": "D",
+      "explanation": "Accessibility concerns whether people with different abilities can access and use the system."
+    },
+    {
+      "question": "Which statement best describes how a project should prioritize software quality attributes?",
+      "option_a": "Security must always be the only quality objective",
+      "option_b": "Performance always overrides reliability",
+      "option_c": "Priority depends on the system and stakeholder requirements",
+      "option_d": "All quality attributes are interchangeable",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly states that the most important quality attribute depends on the system and stakeholder requirements."
+    },
+    {
+      "question": "Which proposed requirement is the most measurable?",
+      "option_a": "The application should be fast",
+      "option_b": "The application should be secure",
+      "option_c": "The application should have excellent usability",
+      "option_d": "Under the defined test workload, 95% of payment requests must complete within two seconds",
+      "correct_answer": "D",
+      "explanation": "The fourth option defines a workload, a measurable proportion, and a response-time threshold. The other statements are too vague to verify directly."
+    },
+    {
+      "question": "A team evaluates an AI-generated quality metric stating that the application must be 'very reliable.' What is the best next step?",
+      "option_a": "Define a measurable reliability target and a method for verifying it",
+      "option_b": "Accept it because AI generated the requirement",
+      "option_c": "Replace all quality metrics with stakeholder opinions",
+      "option_d": "Remove reliability from the quality plan",
+      "correct_answer": "A",
+      "explanation": "A vague quality statement must be converted into a measurable, verifiable requirement before it can guide quality assurance."
+    },
+    {
+      "question": "A mobile banking application supports fund transfers, bill payments, balances, and biometric login. Which is the strongest example of a security quality requirement?",
+      "option_a": "Users should like the application",
+      "option_b": "Sensitive authentication data must be protected according to defined security requirements and tested before release",
+      "option_c": "The interface should look modern",
+      "option_d": "The application should contain many features",
+      "correct_answer": "B",
+      "explanation": "The second option establishes a security-focused requirement and a verification activity. The other choices do not define a testable security objective."
+    },
+    {
+      "question": "A developer changes a shared calculation function. Which test type is most directly suited to checking that the individual function behaves correctly?",
+      "option_a": "User Acceptance Testing",
+      "option_b": "System testing",
+      "option_c": "Unit testing",
+      "option_d": "Usability testing",
+      "correct_answer": "C",
+      "explanation": "Unit testing checks individual components or functions in isolation."
+    },
+    {
+      "question": "A payment service and an account service each pass their individual tests, but they exchange incorrect transaction data when connected. Which test is most directly appropriate?",
+      "option_a": "Usability testing",
+      "option_b": "Unit testing only",
+      "option_c": "Project closure testing",
+      "option_d": "Integration testing",
+      "correct_answer": "D",
+      "explanation": "Integration testing checks whether connected components interact and exchange data correctly."
+    },
+    {
+      "question": "A complete application is tested against its overall functional and non-functional requirements. Which test type best matches this activity?",
+      "option_a": "System testing",
+      "option_b": "Unit testing",
+      "option_c": "Code review",
+      "option_d": "Brainstorming",
+      "correct_answer": "A",
+      "explanation": "System testing evaluates the integrated application as a complete system."
+    },
+    {
+      "question": "A change to the authentication module causes a previously working payment feature to fail. Which test type is most directly intended to detect this kind of unintended consequence?",
+      "option_a": "Acceptance criteria review",
+      "option_b": "Regression testing",
+      "option_c": "Assumption analysis",
+      "option_d": "Risk transfer",
+      "correct_answer": "B",
+      "explanation": "Regression testing checks whether changes have broken previously working functionality."
+    },
+    {
+      "question": "A banking application must be evaluated under a simulated peak transaction workload. Which testing approach is most directly relevant?",
+      "option_a": "Usability testing",
+      "option_b": "Unit testing",
+      "option_c": "Performance testing",
+      "option_d": "Root Cause Analysis",
+      "correct_answer": "C",
+      "explanation": "Performance testing evaluates behavior such as response time and resource usage under specified workloads."
+    },
+    {
+      "question": "Which testing activity most directly examines whether the application has exploitable weaknesses that could compromise data?",
+      "option_a": "Usability testing",
+      "option_b": "Regression testing only",
+      "option_c": "User Acceptance Testing only",
+      "option_d": "Security testing",
+      "correct_answer": "D",
+      "explanation": "Security testing assesses security controls and potential vulnerabilities."
+    },
+    {
+      "question": "A team wants to determine whether customers can navigate a bill-payment workflow without confusion. Which test type is most appropriate?",
+      "option_a": "Usability testing",
+      "option_b": "Integration testing",
+      "option_c": "Quantitative risk analysis",
+      "option_d": "Performance testing",
+      "correct_answer": "A",
+      "explanation": "Usability testing evaluates how effectively users interact with the system and complete tasks."
+    },
+    {
+      "question": "Who is most directly concerned with determining whether a delivered feature satisfies the intended user or business needs during acceptance?",
+      "option_a": "The compiler",
+      "option_b": "The customer or authorized acceptance stakeholder",
+      "option_c": "The database engine",
+      "option_d": "The external hosting provider in every case",
+      "correct_answer": "B",
+      "explanation": "User Acceptance Testing assesses whether the solution meets user and business acceptance needs."
+    },
+    {
+      "question": "Why should quality management not be postponed until the end of an Agile project?",
+      "option_a": "Agile eliminates the need for testing",
+      "option_b": "Only the final release needs quality controls",
+      "option_c": "Frequent feedback and testing help discover defects and quality problems throughout development",
+      "option_d": "Quality is exclusively the Product Owner's responsibility",
+      "correct_answer": "C",
+      "explanation": "The lecture states that Agile quality should not wait until the end and identifies practices such as automated testing, code review, and frequent demonstrations."
+    },
+    {
+      "question": "Which set of practices most closely aligns with the lecture's approach to Agile quality?",
+      "option_a": "One final test, no code reviews, and no demonstrations",
+      "option_b": "Development first, with all acceptance decisions deferred indefinitely",
+      "option_c": "Risk acceptance instead of testing",
+      "option_d": "Acceptance criteria, Definition of Done, code review, automated testing, continuous integration, demonstrations, and retrospectives",
+      "correct_answer": "D",
+      "explanation": "These are the Agile quality practices explicitly listed in the lecture."
+    },
+    {
+      "question": "A developer has completed the code for a user story, but integration tests and security checks have not been performed. The team's Definition of Done requires both. What is the correct status?",
+      "option_a": "The story is not done",
+      "option_b": "The story is done because the code compiles",
+      "option_c": "The story is done if the deadline is near",
+      "option_d": "The story is done if documentation is unnecessary",
+      "correct_answer": "A",
+      "explanation": "The lecture's Definition of Done includes passed integration tests and security checks, alongside other requirements. Coding completion alone is insufficient."
+    },
+    {
+      "question": "Which item is included in the lecture's example Definition of Done?",
+      "option_a": "All future features have been implemented",
+      "option_b": "Acceptance criteria are satisfied",
+      "option_c": "Every possible external risk has been eliminated",
+      "option_d": "The project has no remaining maintenance work",
+      "correct_answer": "B",
+      "explanation": "The example requires acceptance criteria to be satisfied, along with code completion, review, testing, documentation, security checks, and Product Owner acceptance."
+    },
+    {
+      "question": "A team has a vague acceptance criterion: 'Transfers must work well.' Which revision is best?",
+      "option_a": "Transfers should be impressive",
+      "option_b": "Transfers should be implemented quickly",
+      "option_c": "A transfer of valid inputs must produce the specified transaction result and satisfy defined verification criteria",
+      "option_d": "Transfers should be accepted by all developers",
+      "correct_answer": "C",
+      "explanation": "Acceptance criteria should describe verifiable outcomes. The third option can be made measurable by specifying the expected transaction behavior and test conditions."
+    },
+    {
+      "question": "Why is it useful to combine automated testing with continuous integration?",
+      "option_a": "It guarantees that the project has no risks",
+      "option_b": "It eliminates the need for system testing",
+      "option_c": "It makes requirements and stakeholders irrelevant",
+      "option_d": "It helps identify integration and quality problems earlier as code changes are incorporated",
+      "correct_answer": "D",
+      "explanation": "Automated tests and continuous integration support frequent verification and early detection of defects, rather than postponing quality checks."
+    },
+    {
+      "question": "A team repeatedly encounters the same workflow problem during sprints. Which Agile practice is particularly useful for reflecting on the process and identifying improvements?",
+      "option_a": "Retrospective",
+      "option_b": "Risk transfer",
+      "option_c": "Project charter development",
+      "option_d": "User acceptance testing alone",
+      "correct_answer": "A",
+      "explanation": "Retrospectives provide an opportunity for the team to reflect on its working practices and identify improvements."
+    },
+    {
+      "question": "A banking team must select five useful quality metrics. Which approach is most defensible?",
+      "option_a": "Select five adjectives such as excellent, modern, strong, fast, and attractive",
+      "option_b": "Select measurable metrics tied to stakeholder requirements, such as response time, transaction success rate, availability, and security-test results",
+      "option_c": "Choose metrics solely because an AI tool suggests them",
+      "option_d": "Measure only the number of lines of code",
+      "correct_answer": "B",
+      "explanation": "Useful quality metrics are measurable and aligned with the system's requirements. Vague adjectives and unrelated measures provide weak evidence of quality."
+    },
+    {
+      "question": "A banking application passes functional tests but has not undergone security or performance testing. Which conclusion is best?",
+      "option_a": "It is necessarily ready for production",
+      "option_b": "Functional testing automatically proves security",
+      "option_c": "Its quality has not been fully evaluated against all relevant requirements",
+      "option_d": "Only usability testing remains relevant",
+      "correct_answer": "C",
+      "explanation": "Different tests address different risks. Functional success alone does not establish security, performance, or overall quality."
+    },
+    {
+      "question": "What is the central purpose of project integration management?",
+      "option_a": "To manage only the project schedule",
+      "option_b": "To ensure every department works independently",
+      "option_c": "To focus only on software coding",
+      "option_d": "To coordinate interconnected project activities and decisions so the project remains aligned with business objectives",
+      "correct_answer": "D",
+      "explanation": "Integration management combines and coordinates project activities, manages dependencies and trade-offs, and maintains business alignment."
+    },
+    {
+      "question": "Why should scope, schedule, cost, resources, quality, risk, procurement, stakeholders, and communication not be managed entirely in isolation?",
+      "option_a": "A decision in one area can affect several other project areas",
+      "option_b": "Only scope affects the final result",
+      "option_c": "Independent management always reduces total cost",
+      "option_d": "Project plans are unrelated to business objectives",
+      "correct_answer": "A",
+      "explanation": "The lecture stresses that these project components are interconnected and require coordinated decisions."
+    },
+    {
+      "question": "A request to add biometric login appears to involve only a new feature. Which assessment best reflects integration management?",
+      "option_a": "Estimate only the lines of code required",
+      "option_b": "Assess changes to scope, schedule, cost, resources, quality, risks, procurement, and stakeholders",
+      "option_c": "Ask developers to implement it without consultation",
+      "option_d": "Ignore security because the feature is optional",
+      "correct_answer": "B",
+      "explanation": "The lecture uses biometric login to demonstrate that a single scope change can affect multiple project dimensions."
+    },
+    {
+      "question": "A biometric-login feature requires an external SDK and additional security expertise. Which combination of project areas is directly affected?",
+      "option_a": "Only scope and project closure",
+      "option_b": "Only communication and usability",
+      "option_c": "Procurement, resources, cost, security, and risk",
+      "option_d": "Only the number of developers' workstations",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly connects biometric login with third-party procurement, security expertise, additional costs, and authentication and privacy risks."
+    },
+    {
+      "question": "A manager asks only whether developers can implement a requested feature. What important integration questions are missing?",
+      "option_a": "Whether the code editor has enough themes",
+      "option_b": "Whether developers can avoid all documentation",
+      "option_c": "Whether the feature can be added without examining any dependencies",
+      "option_d": "What business benefit it provides, what else changes, what it costs, what risks appear, and whether it remains worthwhile",
+      "correct_answer": "D",
+      "explanation": "Integration management requires evaluating the wider consequences and business value of a decision, not just technical feasibility."
+    },
+    {
+      "question": "Which is the first process in the seven integration-management processes listed in the lecture?",
+      "option_a": "Develop Project Charter",
+      "option_b": "Perform Integrated Change Control",
+      "option_c": "Close Project or Phase",
+      "option_d": "Manage Project Knowledge",
+      "correct_answer": "A",
+      "explanation": "The lecture lists Develop Project Charter first, followed by developing the project management plan and managing the work."
+    },
+    {
+      "question": "Which process most directly establishes the overall plan for managing the project?",
+      "option_a": "Close Project or Phase",
+      "option_b": "Develop Project Management Plan",
+      "option_c": "Monitor and Control Project Work",
+      "option_d": "Manage Project Knowledge",
+      "correct_answer": "B",
+      "explanation": "Develop Project Management Plan is the second integration process and establishes the coordinated management plan."
+    },
+    {
+      "question": "Which integration-management process most directly concerns carrying out the planned project activities?",
+      "option_a": "Develop Project Charter",
+      "option_b": "Perform Integrated Change Control",
+      "option_c": "Direct and Manage Project Work",
+      "option_d": "Close Project or Phase",
+      "correct_answer": "C",
+      "explanation": "Direct and Manage Project Work concerns executing the work defined in the project management plan."
+    },
+    {
+      "question": "A project team wants to capture and use lessons, experience, and knowledge throughout delivery. Which integration process is most relevant?",
+      "option_a": "Develop Project Charter",
+      "option_b": "Perform Integrated Change Control",
+      "option_c": "Close Project or Phase",
+      "option_d": "Manage Project Knowledge",
+      "correct_answer": "D",
+      "explanation": "Manage Project Knowledge focuses on using existing knowledge and creating or sharing knowledge during the project."
+    },
+    {
+      "question": "Which process is most directly concerned with comparing project performance with the plan and taking appropriate corrective action?",
+      "option_a": "Monitor and Control Project Work",
+      "option_b": "Develop Project Charter",
+      "option_c": "Develop Project Management Plan",
+      "option_d": "Close Project or Phase",
+      "correct_answer": "A",
+      "explanation": "Monitor and Control Project Work tracks and reviews performance against project objectives and plans."
+    },
+    {
+      "question": "A proposed change could affect cost, schedule, quality, security, and procurement. Which integration process is most directly responsible for evaluating and coordinating the change decision?",
+      "option_a": "Manage Project Knowledge",
+      "option_b": "Perform Integrated Change Control",
+      "option_c": "Direct and Manage Project Work only",
+      "option_d": "Close Project or Phase",
+      "correct_answer": "B",
+      "explanation": "Integrated change control evaluates change requests and coordinates decisions across affected project areas."
+    },
+    {
+      "question": "Which is the final process in the lecture's seven-process integration-management framework?",
+      "option_a": "Identify Risks",
+      "option_b": "Monitor and Control Project Work",
+      "option_c": "Close Project or Phase",
+      "option_d": "Develop Project Management Plan",
+      "correct_answer": "C",
+      "explanation": "The lecture lists Close Project or Phase as the seventh and final integration-management process."
+    },
+    {
+      "question": "A project manager receives a request for a new feature. What is the best first principle when considering whether to implement it?",
+      "option_a": "Approve every request from a senior stakeholder",
+      "option_b": "Reject every request that changes the baseline",
+      "option_c": "Ask developers to start immediately and evaluate consequences later",
+      "option_d": "Evaluate its business benefit and the effects on the wider project before deciding",
+      "correct_answer": "D",
+      "explanation": "The lecture emphasizes evaluating business value, costs, schedule, skills, risks, testing, approvals, and other consequences before deciding."
+    },
+    {
+      "question": "A change would deliver substantial business value but require more time and specialist resources. What should the project manager do?",
+      "option_a": "Evaluate the trade-offs and determine whether the overall change remains worthwhile",
+      "option_b": "Approve it because business value overrides every constraint",
+      "option_c": "Reject it because all changes increase risk",
+      "option_d": "Ignore the resource impact until deployment",
+      "correct_answer": "A",
+      "explanation": "Integration management requires balancing competing project objectives rather than optimizing one dimension in isolation."
+    },
+    {
+      "question": "Why is stakeholder involvement important when evaluating a change to biometric authentication?",
+      "option_a": "Stakeholders can replace all technical testing",
+      "option_b": "Users, security specialists, and compliance stakeholders may have different requirements and approval responsibilities",
+      "option_c": "Only developers are affected by authentication changes",
+      "option_d": "Stakeholder approval eliminates every possible risk",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies users, security, and compliance as affected stakeholders and emphasizes identifying who must approve changes."
+    },
+    {
+      "question": "A manager approves a new feature without considering its security and privacy implications. Which principle has been most clearly violated?",
+      "option_a": "Code review must occur only after release",
+      "option_b": "All project changes must be rejected",
+      "option_c": "Integration decisions must examine cross-project impacts and new risks",
+      "option_d": "Project quality is independent of project risk",
+      "correct_answer": "C",
+      "explanation": "A single change can introduce new security and privacy risks, so integration requires assessing impacts beyond the immediate scope."
+    },
+    {
+      "question": "A project is behind schedule, and a manager proposes removing security testing to recover time. What is the strongest integration-management response?",
+      "option_a": "Accept the proposal because schedule is always the highest priority",
+      "option_b": "Remove all tests and deploy immediately",
+      "option_c": "Ignore the schedule problem entirely",
+      "option_d": "Assess schedule recovery alternatives alongside quality, security, and business consequences before deciding",
+      "correct_answer": "D",
+      "explanation": "Integration management requires trade-offs across schedule, quality, risk, and business objectives rather than treating schedule as the only consideration."
+    },
+    {
+      "question": "Which statement best characterizes the relationship between risk, quality, and integration management?",
+      "option_a": "They are interconnected management areas that influence project decisions and outcomes",
+      "option_b": "They are independent activities that never affect one another",
+      "option_c": "Quality management eliminates the need for risk management",
+      "option_d": "Integration management begins only after every risk disappears",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly emphasizes the interconnection of risk, quality, and integration management."
+    },
+    {
+      "question": "A team identifies a possible third-party outage, defines mitigation actions, and monitors the provider throughout development. Which interpretation is most accurate?",
+      "option_a": "The team has completed risk management permanently",
+      "option_b": "The team is applying an ongoing risk-management process",
+      "option_c": "The team is performing only project closure",
+      "option_d": "The team has necessarily transferred the risk",
+      "correct_answer": "B",
+      "explanation": "Identifying, responding to, and monitoring a risk are parts of a continuous risk-management cycle."
+    },
+    {
+      "question": "A company wants to deliver a large IT system with stable requirements and substantial formal planning. Which project approach might be appropriate to consider?",
+      "option_a": "An approach that prohibits planning",
+      "option_b": "An approach that ignores documented requirements",
+      "option_c": "Waterfall, while evaluating whether its planning and sequencing suit the project's circumstances",
+      "option_d": "An approach that eliminates testing",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies Waterfall, Agile, and Hybrid as project-management approaches. Selecting one should depend on project circumstances; the extracted text does not prescribe a universal winner."
+    },
+    {
+      "question": "A product team expects requirements and user feedback to evolve during development. Which approach is worth considering?",
+      "option_a": "A fixed process that prohibits feedback",
+      "option_b": "A process with no quality criteria",
+      "option_c": "A process that postpones all testing until the end",
+      "option_d": "Agile, with frequent demonstrations, acceptance criteria, automated testing, and retrospectives",
+      "correct_answer": "D",
+      "explanation": "The lecture associates Agile with continuous quality practices and frequent feedback rather than waiting until project completion."
+    },
+    {
+      "question": "An organization needs formal planning and governance but also wants iterative delivery and frequent feedback. Which approach should it evaluate?",
+      "option_a": "Hybrid",
+      "option_b": "Risk acceptance",
+      "option_c": "Unit testing",
+      "option_d": "Project closure",
+      "correct_answer": "A",
+      "explanation": "Hybrid is identified as a project-management approach in the lecture. Combining practices from different approaches may suit a project with both governance and iterative-delivery needs."
+    },
+    {
+      "question": "Which statement about choosing Waterfall, Agile, or Hybrid is most defensible?",
+      "option_a": "Agile is always best for every IT project",
+      "option_b": "The approach should be considered in relation to project requirements, uncertainty, and management needs",
+      "option_c": "Waterfall never requires risk management",
+      "option_d": "Hybrid removes the need for integration management",
+      "correct_answer": "B",
+      "explanation": "The lecture includes comparing project approaches as a learning outcome, while its broader message emphasizes uncertainty and context-dependent management decisions."
+    },
+    {
+      "question": "A team uses generative AI to brainstorm possible risks and draft initial quality metrics. Which practice is most appropriate?",
+      "option_a": "Treat every generated output as authoritative",
+      "option_b": "Remove human judgment from project decisions",
+      "option_c": "Use AI as an assistant, then validate suggestions against project context and requirements",
+      "option_d": "Allow AI to approve all project changes automatically",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly warns that AI can suggest risks but does not automatically know the project. Critical evaluation remains necessary."
+    },
+    {
+      "question": "An AI tool proposes a response-time target for a banking application without knowing its expected workload or user requirements. What is the main limitation?",
+      "option_a": "AI can never help with quality planning",
+      "option_b": "Response time cannot be measured",
+      "option_c": "All AI-generated metrics are automatically incorrect",
+      "option_d": "The recommendation lacks sufficient project-specific context to establish that the target is appropriate",
+      "correct_answer": "D",
+      "explanation": "AI-generated suggestions must be evaluated against the actual system, stakeholder requirements, and operating conditions."
+    },
+    {
+      "question": "A manager asks AI to list project risks, then uses interviews, expert judgment, and assumption analysis to validate the results. Which assessment is best?",
+      "option_a": "This combines AI-assisted brainstorming with established risk-identification techniques",
+      "option_b": "This is exclusively quantitative risk analysis",
+      "option_c": "This is integrated change control only",
+      "option_d": "This removes the need for risk monitoring",
+      "correct_answer": "A",
+      "explanation": "AI-assisted brainstorming is one of the listed identification techniques, and the lecture encourages understanding the project context rather than treating AI suggestions as facts."
+    },
+    {
+      "question": "An AI assistant recommends accepting a security risk but provides no evidence about probability, impact, or project constraints. What should the project manager do?",
+      "option_a": "Accept it because AI is faster than human analysis",
+      "option_b": "Assess the risk and response options using project evidence before deciding",
+      "option_c": "Remove security requirements",
+      "option_d": "Transfer every security risk to a vendor",
+      "correct_answer": "B",
+      "explanation": "Risk responses depend on project context. An unsupported AI recommendation is not enough to justify a management decision."
+    },
+    {
+      "question": "A team uses AI to generate a Definition of Done for fund transfers. Which next step best supports quality management?",
+      "option_a": "Adopt it without review because it was generated automatically",
+      "option_b": "Replace testing with AI-generated explanations",
+      "option_c": "Check that it includes appropriate measurable acceptance criteria, testing, security checks, documentation, and required approval",
+      "option_d": "Remove stakeholder acceptance from the workflow",
+      "correct_answer": "C",
+      "explanation": "The lecture's example Definition of Done includes completed code, peer review, unit and integration tests, security checks, documentation, acceptance criteria, and Product Owner acceptance."
+    },
+    {
+      "question": "A project team uses AI to create a risk register, but its suggestions omit a critical dependency on a cloud provider. What is the most appropriate conclusion?",
+      "option_a": "The provider dependency is no longer a risk",
+      "option_b": "The project manager must stop all AI use permanently",
+      "option_c": "The risk register should not be reviewed by people",
+      "option_d": "AI-assisted identification is incomplete unless project-specific dependencies are independently considered",
+      "correct_answer": "D",
+      "explanation": "AI does not automatically know the project. The team must validate its suggestions and identify risks specific to actual dependencies."
+    },
+    {
+      "question": "A mobile banking team discovers that a third-party biometric SDK could introduce privacy concerns, licensing costs, and integration delays. Which action best demonstrates integrated decision-making?",
+      "option_a": "Evaluate business value and the combined scope, schedule, cost, security, resource, procurement, quality, and stakeholder impacts before approval",
+      "option_b": "Ask the developer to install the SDK immediately",
+      "option_c": "Consider licensing cost only",
+      "option_d": "Ignore the privacy issue if the feature works",
+      "correct_answer": "A",
+      "explanation": "This scenario combines the lecture's biometric-login example with its principle that project components are interconnected and changes must be evaluated across the project."
+    },
+    {
+      "question": "A project has three concerns: an uncertain API outage, an unclear acceptance requirement, and slow performance under heavy load. Which mapping is correct?",
+      "option_a": "API outage—quality attribute; unclear requirement—vendor response; slow performance—people risk",
+      "option_b": "API outage—vendor risk; unclear acceptance requirement—requirements risk; slow performance—performance quality concern",
+      "option_c": "API outage—opportunity; unclear requirement—project closure; slow performance—procurement process",
+      "option_d": "API outage—accessibility; unclear requirement—security testing; slow performance—stakeholder management",
+      "correct_answer": "B",
+      "explanation": "The lecture classifies supplier/API failures as vendor risks and unclear requirements as requirements risks. Slow response under load is a performance quality concern."
+    },
+    {
+      "question": "A project manager wants to release a feature quickly. The feature passes unit tests but has not been integration-tested, security-tested, or accepted by the Product Owner, despite these being required by the Definition of Done. What is the best decision?",
+      "option_a": "Release because unit testing is sufficient for every quality concern",
+      "option_b": "Declare the feature done if the code is documented",
+      "option_c": "Do not mark it done until the required Definition of Done conditions are satisfied",
+      "option_d": "Replace the Definition of Done with the release deadline",
+      "correct_answer": "C",
+      "explanation": "The lecture defines completion through multiple required checks and acceptance conditions. A deadline does not replace those criteria."
+    },
+    {
+      "question": "A project manager avoids an unfamiliar database, mitigates a cloud outage risk, transfers specified financial exposure to a vendor, and accepts a low-priority residual threat with contingency resources. Which statement is correct?",
+      "option_a": "All four actions are examples of risk avoidance",
+      "option_b": "The manager has used only opportunity responses",
+      "option_c": "The manager has confused quality testing with risk analysis",
+      "option_d": "The manager has applied four distinct threat-response strategies",
+      "correct_answer": "D",
+      "explanation": "Avoid, mitigate, transfer, and accept are distinct threat responses. The described actions match the lecture's definitions and examples."
+    },
+    {
+      "question": "A team selects an AI API that might reduce development effort by 30%, but adoption introduces new integration and security concerns. What is the most balanced management decision?",
+      "option_a": "Evaluate the potential benefit alongside the new risks before choosing whether and how to pursue the opportunity",
+      "option_b": "Exploit the opportunity immediately without testing",
+      "option_c": "Reject every AI-related opportunity automatically",
+      "option_d": "Ignore the new risks because the opportunity is positive",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly advises considering both benefits and new risks when evaluating opportunities."
+    },
+    {
+      "question": "A change request is approved, but nobody updates the relevant project plans, communicates the decision, or coordinates affected teams. What is the principal management failure?",
+      "option_a": "Too much unit testing",
+      "option_b": "Insufficient integration and change coordination",
+      "option_c": "Excessive accessibility",
+      "option_d": "Unnecessary root cause analysis",
+      "correct_answer": "B",
+      "explanation": "Integration management coordinates interdependencies, decisions, communication, and change so that the project remains aligned and its parts continue to work together."
+    },
+    {
+      "question": "A project manager finds that the original plan no longer reflects new technical risks, changing requirements, and stakeholder expectations. Which conclusion best follows from the lecture?",
+      "option_a": "The original plan must never be reconsidered",
+      "option_b": "All changes should be implemented without review",
+      "option_c": "The project needs ongoing risk monitoring and coordinated decisions about changes",
+      "option_d": "Only project closure can address new uncertainty",
+      "correct_answer": "C",
+      "explanation": "IT projects face significant uncertainty. Risk management is continuous, and integration management coordinates decisions when project conditions change."
+    },
+    {
+      "question": "A team reports that its application is successful because it met the budget and schedule. However, users cannot reliably complete bill payments, and security checks have failed. Which conclusion is strongest?",
+      "option_a": "The project is unquestionably successful because cost and schedule are sufficient",
+      "option_b": "Only the visual design needs review",
+      "option_c": "The team should ignore the security failures if payments occasionally work",
+      "option_d": "The team has not demonstrated modern project success because reliable user outcomes and relevant quality requirements remain unmet",
+      "correct_answer": "D",
+      "explanation": "The lecture's modern view emphasizes reliable user transactions, while its quality framework includes security and other stakeholder-relevant attributes."
+    },
+    {
+      "question": "A manager wants to improve project outcomes by connecting risk management, quality management, and integration management. Which plan best reflects their relationship?",
+      "option_a": "Identify and monitor risks, define measurable quality requirements and suitable tests, and evaluate changes across interconnected project areas",
+      "option_b": "Complete risk management first and never revisit it",
+      "option_c": "Let testing replace all project coordination",
+      "option_d": "Approve scope changes without evaluating cost, schedule, or risk",
+      "correct_answer": "A",
+      "explanation": "The three areas are interconnected: risks require ongoing management, quality needs defined requirements and verification, and integration coordinates the resulting decisions across the project."
+    }
+  ]
+}
