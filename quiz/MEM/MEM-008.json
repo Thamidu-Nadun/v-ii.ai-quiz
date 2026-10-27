@@ -1,0 +1,904 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best defines a project according to the lecture?",
+      "option_a": "A. A permanent activity that maintains existing operations",
+      "option_b": "B. A temporary endeavor that creates a unique product, service, or result",
+      "option_c": "C. Any activity that uses a budget",
+      "option_d": "D. A repeated process with no defined end",
+      "correct_answer": "B",
+      "explanation": "A project is temporary and creates a unique product, service, or result."
+    },
+    {
+      "question": "A team completes a new mobile application and disbands after handover. Which project characteristic is most directly illustrated?",
+      "option_a": "A. Temporary nature",
+      "option_b": "B. Continuous operations",
+      "option_c": "C. Fixed stakeholder influence",
+      "option_d": "D. Permanent resource allocation",
+      "correct_answer": "A",
+      "explanation": "The work has a defined beginning and end, consistent with the temporary nature of projects."
+    },
+    {
+      "question": "Two organizations build similar websites, but their requirements, stakeholders, and constraints differ. Which characteristic explains why both can still be projects?",
+      "option_a": "A. No uncertainty",
+      "option_b": "B. Identical deliverables",
+      "option_c": "C. Unique output",
+      "option_d": "D. Ongoing operations",
+      "correct_answer": "C",
+      "explanation": "Even repeated types of work differ in context, stakeholders, or requirements."
+    },
+    {
+      "question": "A project team refines requirements as users provide feedback and more information becomes available. What is this called?",
+      "option_a": "A. Formal closure",
+      "option_b": "B. Progressive elaboration",
+      "option_c": "C. Resource release",
+      "option_d": "D. Phase-gate cancellation",
+      "correct_answer": "B",
+      "explanation": "Progressive elaboration develops project details step by step as knowledge increases."
+    },
+    {
+      "question": "According to the lecture's PMBOK 7 emphasis, which is the strongest indicator of project success?",
+      "option_a": "A. Every task was completed regardless of usefulness",
+      "option_b": "B. The team used the largest possible budget",
+      "option_c": "C. The project produced many documents",
+      "option_d": "D. The outcome delivers value to stakeholders",
+      "correct_answer": "D",
+      "explanation": "Success emphasizes stakeholder value, not merely completing tasks or producing outputs."
+    },
+    {
+      "question": "Which combination best describes project management?",
+      "option_a": "A. Applying knowledge, skills, tools, and techniques to meet requirements and deliver value",
+      "option_b": "B. Writing a schedule and then avoiding all changes",
+      "option_c": "C. Completing work without monitoring results",
+      "option_d": "D. Delivering outputs regardless of requirements",
+      "correct_answer": "A",
+      "explanation": "The lecture defines project management through applying capabilities to meet requirements and deliver value."
+    },
+    {
+      "question": "A manager chooses scheduling tools, risk analysis, communication, and leadership techniques. Which core concept is being applied?",
+      "option_a": "A. Temporary nature",
+      "option_b": "B. Application of capabilities",
+      "option_c": "C. Phase closure",
+      "option_d": "D. Unique output",
+      "correct_answer": "B",
+      "explanation": "Project management combines knowledge, skills, tools, and techniques."
+    },
+    {
+      "question": "A change to a platform's architecture affects budget, training, and deployment. Which core concept should guide the manager's analysis?",
+      "option_a": "A. System thinking",
+      "option_b": "B. Resource release",
+      "option_c": "C. Output uniqueness only",
+      "option_d": "D. Closing documentation",
+      "correct_answer": "A",
+      "explanation": "System thinking recognizes that project decisions can affect interconnected areas."
+    },
+    {
+      "question": "A project manager reports a supplier conflict honestly and uses project funds responsibly. Which principle is most directly demonstrated?",
+      "option_a": "A. Navigate complexity",
+      "option_b": "B. Focus on value",
+      "option_c": "C. Be a diligent, respectful, and caring steward",
+      "option_d": "D. Enable change",
+      "correct_answer": "C",
+      "explanation": "Stewardship emphasizes integrity, accountability, ethical responsibility, and wise resource use."
+    },
+    {
+      "question": "Developers and designers openly share concerns and help one another resolve blockers. Which principle is most evident?",
+      "option_a": "A. Create a collaborative project team environment",
+      "option_b": "B. Optimize risk responses",
+      "option_c": "C. Enable change",
+      "option_d": "D. Build quality into processes only",
+      "correct_answer": "A",
+      "explanation": "Collaboration and trust support a team environment in which people can work effectively."
+    },
+    {
+      "question": "A ministry identifies teachers, students, and policymakers early and regularly gathers their feedback. Which principle is most directly applied?",
+      "option_a": "A. Tailor based on context",
+      "option_b": "B. Effectively engage with stakeholders",
+      "option_c": "C. Navigate complexity",
+      "option_d": "D. Embrace resilience",
+      "correct_answer": "B",
+      "explanation": "The principle calls for identifying stakeholders early and managing engagement and expectations throughout."
+    },
+    {
+      "question": "A platform meets all listed feature requirements, but few schools can use it and the expected benefits are not realized. Which principle has been most neglected?",
+      "option_a": "A. Temporary nature",
+      "option_b": "B. Demonstrate leadership behaviors",
+      "option_c": "C. Focus on value",
+      "option_d": "D. Close contracts",
+      "correct_answer": "C",
+      "explanation": "Delivering outputs alone is insufficient when the intended stakeholder benefits are not achieved."
+    },
+    {
+      "question": "A database migration decision affects security, performance, user training, and operating costs. Which principle best fits?",
+      "option_a": "A. Recognize, evaluate, and respond to system interactions",
+      "option_b": "B. Release resources",
+      "option_c": "C. Use only predictive planning",
+      "option_d": "D. Avoid stakeholder involvement",
+      "correct_answer": "A",
+      "explanation": "This principle requires a holistic view of how decisions affect the larger system."
+    },
+    {
+      "question": "A manager motivates a discouraged team, makes timely decisions, and responds empathetically to conflict. Which principle is demonstrated?",
+      "option_a": "A. Build quality into processes",
+      "option_b": "B. Demonstrate leadership behaviors",
+      "option_c": "C. Focus on value",
+      "option_d": "D. Progressive elaboration",
+      "correct_answer": "B",
+      "explanation": "Leadership includes motivation, decision-making, and emotional intelligence."
+    },
+    {
+      "question": "A small, low-risk internal tool uses lightweight documentation, while a critical national platform uses more formal controls. Which principle supports this difference?",
+      "option_a": "A. Tailor based on context",
+      "option_b": "B. Every project must use identical methods",
+      "option_c": "C. Enable change",
+      "option_d": "D. Closing",
+      "correct_answer": "A",
+      "explanation": "Tailoring adapts practices to project size, complexity, risk, and culture."
+    },
+    {
+      "question": "An IT project has uncertain integrations, dependencies, and evolving technical constraints. The manager uses adaptive thinking and suitable tools to understand them. Which principle fits best?",
+      "option_a": "A. Navigate complexity",
+      "option_b": "B. Formal acceptance",
+      "option_c": "C. Temporary nature",
+      "option_d": "D. Focus on value only",
+      "correct_answer": "A",
+      "explanation": "Navigating complexity involves understanding and managing uncertainty and change with appropriate tools and adaptive thinking."
+    },
+    {
+      "question": "A team continually identifies threats, assesses their impact, and adjusts responses while also pursuing opportunities. Which principle is most directly shown?",
+      "option_a": "A. Enable change",
+      "option_b": "B. Optimize risk responses",
+      "option_c": "C. Unique output",
+      "option_d": "D. Stakeholder register",
+      "correct_answer": "B",
+      "explanation": "Risk responses should be optimized continuously to reduce threats and seize opportunities."
+    },
+    {
+      "question": "After a vendor outage, the team adapts the plan and recovers service quickly. Which principle is most directly demonstrated?",
+      "option_a": "A. Embrace adaptability and resilience",
+      "option_b": "B. Avoid change at all costs",
+      "option_c": "C. Focus on phase gates only",
+      "option_d": "D. Unique output",
+      "correct_answer": "A",
+      "explanation": "Adaptability and resilience mean adjusting to disruption and recovering effectively."
+    },
+    {
+      "question": "A new digital service changes how a government agency delivers services, and the manager actively supports adoption toward the target operating model. Which principle applies?",
+      "option_a": "A. Build quality into processes",
+      "option_b": "B. Enable change to achieve the envisioned future state",
+      "option_c": "C. Temporary nature",
+      "option_d": "D. Work performance data",
+      "correct_answer": "B",
+      "explanation": "Projects enable change and help move stakeholders toward the intended future state."
+    },
+    {
+      "question": "A manager must choose between a rigid standard template and a process suited to a complex, high-risk project in a different organizational culture. What is the best principle-led decision?",
+      "option_a": "A. Always choose the shortest process",
+      "option_b": "B. Tailor based on context while preserving effective controls",
+      "option_c": "C. Ignore organizational culture",
+      "option_d": "D. Use the same process regardless of risk",
+      "correct_answer": "B",
+      "explanation": "Tailoring adapts practices to context rather than applying a one-size-fits-all method."
+    },
+    {
+      "question": "A team passes all acceptance tests but discovers late that the product does not solve the users' central problem. Which pair of principles would most directly have helped prevent this?",
+      "option_a": "A. Focus on value and effectively engage with stakeholders",
+      "option_b": "B. Temporary nature and unique output",
+      "option_c": "C. Release resources and close contracts",
+      "option_d": "D. Navigate complexity and archive documents",
+      "correct_answer": "A",
+      "explanation": "Stakeholder engagement helps reveal needs, while value focus keeps work aligned with intended benefits."
+    },
+    {
+      "question": "A project manager considers only the software team's work and ignores how deployment affects support staff and users. Which principle is most clearly being violated?",
+      "option_a": "A. System interactions",
+      "option_b": "B. Temporary nature",
+      "option_c": "C. Formal closure",
+      "option_d": "D. Resource release",
+      "correct_answer": "A",
+      "explanation": "The manager is failing to consider the broader system and cross-functional effects."
+    },
+    {
+      "question": "Which statement best reflects the lecture's overall view of the 12 principles?",
+      "option_a": "A. They require one rigid process for every project",
+      "option_b": "B. They replace stakeholder needs with schedule compliance",
+      "option_c": "C. They guide flexible, value-driven, people-centered project management",
+      "option_d": "D. They apply only when a project is finished",
+      "correct_answer": "C",
+      "explanation": "The principles emphasize flexible, value-driven, people-centered practice rather than rigid process alone."
+    },
+    {
+      "question": "A team adapts after a major requirement change, but also keeps risk assessments current and maintains product quality. Which interpretation is best?",
+      "option_a": "A. Only one principle can apply at a time",
+      "option_b": "B. Multiple principles can guide the same project response",
+      "option_c": "C. Risk management ends when execution begins",
+      "option_d": "D. Quality is relevant only at closure",
+      "correct_answer": "B",
+      "explanation": "Project principles are complementary and can guide several aspects of a response simultaneously."
+    },
+    {
+      "question": "What does the project lifecycle describe?",
+      "option_a": "A. Only the project manager's daily tasks",
+      "option_b": "B. The series of phases a project goes through from start to finish",
+      "option_c": "C. Only the testing activities",
+      "option_d": "D. The list of stakeholders",
+      "correct_answer": "B",
+      "explanation": "The lifecycle is the overall sequence or structure of phases from beginning to end."
+    },
+    {
+      "question": "Which is the typical lifecycle order shown in the lecture?",
+      "option_a": "A. Planning, Initiation, Closing, Execution, Monitoring",
+      "option_b": "B. Execution, Planning, Initiation, Monitoring, Closing",
+      "option_c": "C. Initiation, Planning, Execution, Monitoring and Controlling, Closing",
+      "option_d": "D. Initiation, Execution, Closing, Planning, Monitoring",
+      "correct_answer": "C",
+      "explanation": "The lecture gives the sequence Initiation → Planning → Execution → Monitoring and Controlling → Closing."
+    },
+    {
+      "question": "A sponsor authorizes a project, defines its purpose, and identifies key stakeholders. Which lifecycle phase is this?",
+      "option_a": "A. Initiation",
+      "option_b": "B. Planning",
+      "option_c": "C. Execution",
+      "option_d": "D. Closing",
+      "correct_answer": "A",
+      "explanation": "Initiation defines and authorizes the project and establishes its objectives and stakeholders."
+    },
+    {
+      "question": "A team estimates the schedule, budget, resources, and risks before development starts. Which phase is most directly represented?",
+      "option_a": "A. Closing",
+      "option_b": "B. Monitoring and Controlling",
+      "option_c": "C. Planning",
+      "option_d": "D. Execution",
+      "correct_answer": "C",
+      "explanation": "Planning develops the detailed approach for scope, schedule, cost, resources, and risks."
+    },
+    {
+      "question": "Developers build the approved system components. Which lifecycle phase is most directly involved?",
+      "option_a": "A. Initiation",
+      "option_b": "B. Execution",
+      "option_c": "C. Closing",
+      "option_d": "D. Phase-gate review",
+      "correct_answer": "B",
+      "explanation": "Execution carries out the project work and produces deliverables."
+    },
+    {
+      "question": "The manager compares actual progress with the plan and initiates corrective action. Which phase is this?",
+      "option_a": "A. Planning only",
+      "option_b": "B. Closing",
+      "option_c": "C. Monitoring and Controlling",
+      "option_d": "D. Initiation",
+      "correct_answer": "C",
+      "explanation": "Monitoring and Controlling tracks performance, manages changes, and keeps the project aligned with its plan."
+    },
+    {
+      "question": "The client accepts the deliverables, the team records lessons learned, and resources are released. Which phase is most directly indicated?",
+      "option_a": "A. Execution",
+      "option_b": "B. Initiation",
+      "option_c": "C. Planning",
+      "option_d": "D. Closing",
+      "correct_answer": "D",
+      "explanation": "Closing formalizes completion, acceptance, handover, documentation, and resource release."
+    },
+    {
+      "question": "What is a phase gate?",
+      "option_a": "A. A tool that prevents all changes",
+      "option_b": "B. A review and approval point used to decide whether to proceed, revise, or stop",
+      "option_c": "C. A permanent team structure",
+      "option_d": "D. A final production server",
+      "correct_answer": "B",
+      "explanation": "Phase gates provide decision points at phase boundaries."
+    },
+    {
+      "question": "When is uncertainty generally highest in the project lifecycle, according to the lecture?",
+      "option_a": "A. At the beginning, when information is limited",
+      "option_b": "B. Only after closing",
+      "option_c": "C. Only during deployment",
+      "option_d": "D. It is always identical in every phase",
+      "correct_answer": "A",
+      "explanation": "The lecture states that uncertainty is highest early, when information is limited."
+    },
+    {
+      "question": "Why can stakeholders often influence a project more during early phases?",
+      "option_a": "A. No decisions have consequences yet",
+      "option_b": "B. All deliverables are already accepted",
+      "option_c": "C. Major directions are still being shaped and changes are generally less costly",
+      "option_d": "D. The project has no objectives",
+      "correct_answer": "C",
+      "explanation": "Early decisions shape the project, and the cost of changing direction typically increases later."
+    },
+    {
+      "question": "A client requests a fundamental architecture change near the end of a predictive project. Why is it likely to be more costly than an early change?",
+      "option_a": "A. Later phases have no stakeholders",
+      "option_b": "B. More work, dependencies, and completed deliverables may need rework",
+      "option_c": "C. The lifecycle forbids all changes",
+      "option_d": "D. Planning is unnecessary in predictive projects",
+      "correct_answer": "B",
+      "explanation": "As the project progresses, changes can affect more completed work and interconnected components."
+    },
+    {
+      "question": "A project phase produces a defined deliverable and is followed by a review before the next phase. Which lifecycle characteristic is illustrated?",
+      "option_a": "A. No control points",
+      "option_b": "B. Undefined outputs",
+      "option_c": "C. Defined phase deliverables and phase gates",
+      "option_d": "D. Continuous operations only",
+      "correct_answer": "C",
+      "explanation": "Lifecycle phases have specific deliverables and may end with a review or approval gate."
+    },
+    {
+      "question": "In the IT project example, which activity comes immediately after system design?",
+      "option_a": "A. Maintenance",
+      "option_b": "B. Development",
+      "option_c": "C. Requirements gathering",
+      "option_d": "D. Deployment",
+      "correct_answer": "B",
+      "explanation": "The lecture's IT sequence is requirements gathering, system design, development, testing, deployment, maintenance."
+    },
+    {
+      "question": "In the IT project lifecycle example, which phase verifies that the system works correctly by identifying and fixing defects?",
+      "option_a": "A. Requirements gathering",
+      "option_b": "B. System design",
+      "option_c": "C. Testing",
+      "option_d": "D. Maintenance",
+      "correct_answer": "C",
+      "explanation": "Testing checks system correctness and identifies defects for fixing."
+    },
+    {
+      "question": "After release, a team provides ongoing support, updates, and improvements. Which IT lifecycle phase is this?",
+      "option_a": "A. System design",
+      "option_b": "B. Maintenance",
+      "option_c": "C. Initiation",
+      "option_d": "D. Requirements gathering",
+      "correct_answer": "B",
+      "explanation": "Maintenance provides support and improvements after deployment."
+    },
+    {
+      "question": "What is the key distinction between a project lifecycle and process groups?",
+      "option_a": "A. Lifecycle is about the overall phase structure; process groups describe project-management activities",
+      "option_b": "B. They are two names for the same thing",
+      "option_c": "C. Process groups describe only technical coding",
+      "option_d": "D. Lifecycle describes only budgets",
+      "correct_answer": "A",
+      "explanation": "The lifecycle provides structure over time, while process groups describe management actions."
+    },
+    {
+      "question": "Which statement about process groups is correct?",
+      "option_a": "A. Each occurs exactly once and never overlaps",
+      "option_b": "B. They are phases that replace the lifecycle",
+      "option_c": "C. They are logical groupings of project-management activities that may repeat and overlap",
+      "option_d": "D. They are used only in Agile projects",
+      "correct_answer": "C",
+      "explanation": "Process groups are activity-based, iterative, and overlapping rather than a one-time linear sequence."
+    },
+    {
+      "question": "A team is in the development phase but revisits the schedule and risk plan after discovering an integration problem. What does this illustrate?",
+      "option_a": "A. Planning must end before execution begins",
+      "option_b": "B. Planning can be revisited and interact with execution throughout the lifecycle",
+      "option_c": "C. The project has automatically entered closing",
+      "option_d": "D. The lifecycle cannot contain overlapping work",
+      "correct_answer": "B",
+      "explanation": "Planning is iterative, and planning and execution can run in parallel as new information emerges."
+    },
+    {
+      "question": "A student argues that Monitoring and Controlling happens only after all execution work is complete. Which correction best matches the lecture?",
+      "option_a": "A. Monitoring and Controlling happens throughout the project to track performance and adjust when needed",
+      "option_b": "B. Monitoring and Controlling is another word for closing",
+      "option_c": "C. It occurs only before initiation",
+      "option_d": "D. It is optional whenever a project has a schedule",
+      "correct_answer": "A",
+      "explanation": "Monitoring and Controlling operates throughout the project, not merely at the end."
+    },
+    {
+      "question": "Why might a process group be repeated within a lifecycle phase?",
+      "option_a": "A. Project activities never produce information",
+      "option_b": "B. New information, changes, or variances may require renewed planning or control",
+      "option_c": "C. The project must restart from scratch every week",
+      "option_d": "D. Stakeholders are excluded after initiation",
+      "correct_answer": "B",
+      "explanation": "Interconnected process groups may recur as new information and changes require adjustments."
+    },
+    {
+      "question": "Which statement about lifecycle phases is supported by the lecture?",
+      "option_a": "A. They must always be completely sequential",
+      "option_b": "B. They can be sequential or overlapping depending on the approach",
+      "option_c": "C. They have no deliverables",
+      "option_d": "D. They cannot be reviewed",
+      "correct_answer": "B",
+      "explanation": "Phases may run in order or overlap depending on the project approach."
+    },
+    {
+      "question": "A team uses process-group names as if they were fixed technical development stages such as coding and testing. What is the conceptual error?",
+      "option_a": "A. Process groups are management-activity groupings, not the same as technical lifecycle stages",
+      "option_b": "B. Testing is never part of an IT project",
+      "option_c": "C. Coding is a stakeholder register output",
+      "option_d": "D. Every lifecycle phase is a performance domain",
+      "correct_answer": "A",
+      "explanation": "The lecture distinguishes phase-based lifecycle structure from activity-based management process groups."
+    },
+    {
+      "question": "Which statement best describes the relationship between process groups?",
+      "option_a": "A. Each group's output can inform another, and the groups are interconnected",
+      "option_b": "B. Each group operates in isolation",
+      "option_c": "C. Closing outputs must be created before planning begins",
+      "option_d": "D. Monitoring eliminates the need for planning",
+      "correct_answer": "A",
+      "explanation": "Process-group outputs often feed into other groups, and the groups interact continuously."
+    },
+    {
+      "question": "A team finishes a phase but receives approval to revise the design before proceeding. Which lifecycle mechanism most directly supports this decision?",
+      "option_a": "A. Maintenance window",
+      "option_b": "B. Phase gate",
+      "option_c": "C. Work performance data",
+      "option_d": "D. Resource register",
+      "correct_answer": "B",
+      "explanation": "A phase gate is a review point where stakeholders decide whether to proceed, revise, or stop."
+    },
+    {
+      "question": "Which is a primary output of the Initiating Process Group in the lecture?",
+      "option_a": "A. Project charter",
+      "option_b": "B. Final lessons-learned archive only",
+      "option_c": "C. Work performance reports",
+      "option_d": "D. Project forecasts",
+      "correct_answer": "A",
+      "explanation": "The project charter authorizes the project and defines its scope, objectives, and PM authority."
+    },
+    {
+      "question": "What is the main purpose of the stakeholder register?",
+      "option_a": "A. To record source-code defects",
+      "option_b": "B. To identify stakeholders and their influence",
+      "option_c": "C. To approve every budget payment",
+      "option_d": "D. To list only completed deliverables",
+      "correct_answer": "B",
+      "explanation": "The stakeholder register records who the stakeholders are and their influence."
+    },
+    {
+      "question": "Which output is most directly associated with the Planning Process Group?",
+      "option_a": "A. Formal stakeholder acceptance",
+      "option_b": "B. Project management plan",
+      "option_c": "C. Archived closure documents only",
+      "option_d": "D. Released team resources",
+      "correct_answer": "B",
+      "explanation": "The project management plan guides project execution and control."
+    },
+    {
+      "question": "A document defines project scope and deliverables. Which planning output is it?",
+      "option_a": "A. Scope statement",
+      "option_b": "B. Issue log",
+      "option_c": "C. Forecast",
+      "option_d": "D. Stakeholder register",
+      "correct_answer": "A",
+      "explanation": "The scope statement describes project scope and deliverables."
+    },
+    {
+      "question": "Which planning output identifies activities and deadlines?",
+      "option_a": "A. Issue log",
+      "option_b": "B. Project schedule",
+      "option_c": "C. Project charter",
+      "option_d": "D. Work performance report",
+      "correct_answer": "B",
+      "explanation": "The project schedule organizes activities and deadlines."
+    },
+    {
+      "question": "Which planning output records risks, their impact, and responses?",
+      "option_a": "A. Risk register",
+      "option_b": "B. Project deliverable",
+      "option_c": "C. Acceptance record",
+      "option_d": "D. Contract closure",
+      "correct_answer": "A",
+      "explanation": "The risk register captures risks, impacts, and planned responses."
+    },
+    {
+      "question": "A project manager estimates and obtains approval for project costs. Which output is most relevant?",
+      "option_a": "A. Stakeholder register",
+      "option_b": "B. Project budget",
+      "option_c": "C. Issue log",
+      "option_d": "D. Lessons-learned record",
+      "correct_answer": "B",
+      "explanation": "The project budget contains estimated and approved costs."
+    },
+    {
+      "question": "Which plan explains how project information will be shared?",
+      "option_a": "A. Resource management plan",
+      "option_b": "B. Communication plan",
+      "option_c": "C. Scope statement",
+      "option_d": "D. Project charter only",
+      "correct_answer": "B",
+      "explanation": "The communication plan specifies how information is shared."
+    },
+    {
+      "question": "Which process group coordinates people and resources to carry out planned work and produce deliverables?",
+      "option_a": "A. Initiating",
+      "option_b": "B. Planning",
+      "option_c": "C. Executing",
+      "option_d": "D. Closing",
+      "correct_answer": "C",
+      "explanation": "Executing completes work in the project plan and produces deliverables."
+    },
+    {
+      "question": "According to the lecture, progress, time, and cost data are examples of which output?",
+      "option_a": "A. Work performance data",
+      "option_b": "B. Stakeholder register",
+      "option_c": "C. Final acceptance",
+      "option_d": "D. Project charter",
+      "correct_answer": "A",
+      "explanation": "Work performance data captures information about progress, time, cost, and similar execution details."
+    },
+    {
+      "question": "A team records a problem, its status, and how it is being resolved. Which output is most relevant?",
+      "option_a": "A. Project schedule",
+      "option_b": "B. Issue log",
+      "option_c": "C. Project charter",
+      "option_d": "D. Communication plan",
+      "correct_answer": "B",
+      "explanation": "The issue log records problems and resolutions."
+    },
+    {
+      "question": "A project team proposes modifying the agreed scope after discovering a missing requirement. Which output may be raised?",
+      "option_a": "A. Change request",
+      "option_b": "B. Stakeholder register only",
+      "option_c": "C. Resource release",
+      "option_d": "D. Final archive",
+      "correct_answer": "A",
+      "explanation": "Change requests document proposed modifications that may need review and approval."
+    },
+    {
+      "question": "Which process group tracks performance, identifies variances, and manages changes and risks?",
+      "option_a": "A. Initiating",
+      "option_b": "B. Planning",
+      "option_c": "C. Monitoring and Controlling",
+      "option_d": "D. Closing",
+      "correct_answer": "C",
+      "explanation": "Monitoring and Controlling keeps the project aligned with its plan and desired outcomes."
+    },
+    {
+      "question": "Which output summarizes project status and progress for stakeholders?",
+      "option_a": "A. Work performance report",
+      "option_b": "B. Project charter",
+      "option_c": "C. Scope statement",
+      "option_d": "D. Resource management plan",
+      "correct_answer": "A",
+      "explanation": "Work performance reports provide a status and progress summary."
+    },
+    {
+      "question": "Which output predicts future project performance?",
+      "option_a": "A. Stakeholder register",
+      "option_b": "B. Forecast",
+      "option_c": "C. Issue log",
+      "option_d": "D. Project charter",
+      "correct_answer": "B",
+      "explanation": "Forecasts predict likely future performance."
+    },
+    {
+      "question": "A manager approves an updated plan after evaluating a change. Which Monitoring and Controlling output may be updated?",
+      "option_a": "A. Project management plan updates",
+      "option_b": "B. Original stakeholder identities only",
+      "option_c": "C. Team recruitment advertisement",
+      "option_d": "D. Initial project proposal only",
+      "correct_answer": "A",
+      "explanation": "Plan updates reflect approved revisions to the project's management approach."
+    },
+    {
+      "question": "Which activity belongs most directly to the Closing Process Group?",
+      "option_a": "A. Creating the initial risk register",
+      "option_b": "B. Obtaining formal stakeholder acceptance and transferring deliverables",
+      "option_c": "C. Estimating the original budget",
+      "option_d": "D. Identifying initial stakeholders only",
+      "correct_answer": "B",
+      "explanation": "Closing confirms acceptance, hands over outputs, and formalizes project completion."
+    },
+    {
+      "question": "Which is a closing activity listed in the lecture?",
+      "option_a": "A. Release resources",
+      "option_b": "B. Create the first project charter",
+      "option_c": "C. Begin requirements gathering",
+      "option_d": "D. Estimate all initial risks",
+      "correct_answer": "A",
+      "explanation": "Closing includes releasing the team and project resources."
+    },
+    {
+      "question": "Why archive project documents during closing?",
+      "option_a": "A. To conceal project decisions",
+      "option_b": "B. To preserve records for future reference",
+      "option_c": "C. To prevent stakeholder acceptance",
+      "option_d": "D. To restart execution automatically",
+      "correct_answer": "B",
+      "explanation": "Archiving records supports future reference and organizational learning."
+    },
+    {
+      "question": "A vendor's work is complete, but the agreement remains unsettled. Which closing activity is still needed?",
+      "option_a": "A. Close contracts",
+      "option_b": "B. Gather requirements",
+      "option_c": "C. Create a stakeholder register",
+      "option_d": "D. Begin system design",
+      "correct_answer": "A",
+      "explanation": "The lecture includes settling vendor and supplier agreements as a closing activity."
+    },
+    {
+      "question": "What do performance domains primarily focus on, according to the lecture?",
+      "option_a": "A. A fixed sequence of paperwork",
+      "option_b": "B. Key outcome areas needed to manage and deliver a project",
+      "option_c": "C. Only technical code quality",
+      "option_d": "D. The exact order of project phases",
+      "correct_answer": "B",
+      "explanation": "Performance domains are areas of focus and emphasize outcomes rather than processes."
+    },
+    {
+      "question": "Which performance domain focuses on identifying, understanding, and engaging stakeholders?",
+      "option_a": "A. Measurement",
+      "option_b": "B. Stakeholder",
+      "option_c": "C. Project Work",
+      "option_d": "D. Uncertainty",
+      "correct_answer": "B",
+      "explanation": "The Stakeholder Performance Domain centers on stakeholder identification, understanding, and engagement."
+    },
+    {
+      "question": "Building and leading a high-performing team is the focus of which domain?",
+      "option_a": "A. Team",
+      "option_b": "B. Delivery",
+      "option_c": "C. Planning",
+      "option_d": "D. Measurement",
+      "correct_answer": "A",
+      "explanation": "The Team Performance Domain focuses on building and leading a high-performing team."
+    },
+    {
+      "question": "Choosing the development approach and lifecycle belongs to which domain?",
+      "option_a": "A. Uncertainty",
+      "option_b": "B. Stakeholder",
+      "option_c": "C. Development Approach and Life Cycle",
+      "option_d": "D. Delivery",
+      "correct_answer": "C",
+      "explanation": "This domain concerns the selected development approach and lifecycle."
+    },
+    {
+      "question": "Organizing and coordinating project activities is the focus of which domain?",
+      "option_a": "A. Planning",
+      "option_b": "B. Delivery",
+      "option_c": "C. Team",
+      "option_d": "D. Stakeholder",
+      "correct_answer": "A",
+      "explanation": "The Planning Performance Domain focuses on organizing and coordinating activities."
+    },
+    {
+      "question": "Which domain focuses on executing project work effectively?",
+      "option_a": "A. Measurement",
+      "option_b": "B. Project Work",
+      "option_c": "C. Stakeholder",
+      "option_d": "D. Uncertainty",
+      "correct_answer": "B",
+      "explanation": "The Project Work Performance Domain concerns effective execution of project work."
+    },
+    {
+      "question": "Ensuring that a solution delivers valuable outcomes and benefits is most closely associated with which domain?",
+      "option_a": "A. Delivery",
+      "option_b": "B. Team",
+      "option_c": "C. Planning",
+      "option_d": "D. Measurement",
+      "correct_answer": "A",
+      "explanation": "The Delivery Performance Domain emphasizes valuable outcomes and benefits."
+    },
+    {
+      "question": "Tracking, assessing, and reporting project performance is the focus of which domain?",
+      "option_a": "A. Stakeholder",
+      "option_b": "B. Development Approach and Life Cycle",
+      "option_c": "C. Measurement",
+      "option_d": "D. Team",
+      "correct_answer": "C",
+      "explanation": "The Measurement Performance Domain concerns performance tracking, assessment, and reporting."
+    },
+    {
+      "question": "Managing risks and uncertainty is the focus of which domain?",
+      "option_a": "A. Delivery",
+      "option_b": "B. Uncertainty",
+      "option_c": "C. Project Work",
+      "option_d": "D. Planning only",
+      "correct_answer": "B",
+      "explanation": "The Uncertainty Performance Domain addresses risk and uncertainty."
+    },
+    {
+      "question": "Which statement best distinguishes process groups from performance domains?",
+      "option_a": "A. Process groups describe activities; performance domains focus on outcomes",
+      "option_b": "B. Process groups are outcomes; domains are project phases",
+      "option_c": "C. They are identical concepts",
+      "option_d": "D. Domains are only used during closing",
+      "correct_answer": "A",
+      "explanation": "The lecture presents process groups as activity-focused and domains as outcome-focused."
+    },
+    {
+      "question": "A project dashboard tracks adoption, system performance, and progress against targets. Which domain is most directly represented?",
+      "option_a": "A. Team",
+      "option_b": "B. Measurement",
+      "option_c": "C. Stakeholder only",
+      "option_d": "D. Development Approach and Life Cycle",
+      "correct_answer": "B",
+      "explanation": "Tracking and assessing project performance is the Measurement domain's focus."
+    },
+    {
+      "question": "A project manager coordinates teachers, developers, designers, and policymakers to sustain engagement. Which domain is most directly represented?",
+      "option_a": "A. Stakeholder",
+      "option_b": "B. Measurement",
+      "option_c": "C. Project Work only",
+      "option_d": "D. Uncertainty only",
+      "correct_answer": "A",
+      "explanation": "The Stakeholder domain emphasizes identifying and engaging relevant stakeholders."
+    },
+    {
+      "question": "Which description best matches a Traditional (Predictive) lifecycle?",
+      "option_a": "A. Requirements change freely every day with incremental delivery",
+      "option_b": "B. Sequential phases, early requirements definition, and more difficult late changes",
+      "option_c": "C. No upfront planning",
+      "option_d": "D. Delivery only in small increments with continuous feedback",
+      "correct_answer": "B",
+      "explanation": "The lecture describes predictive lifecycles as sequential, with requirements defined early and late changes more costly."
+    },
+    {
+      "question": "Which description best matches an Agile (Adaptive) lifecycle?",
+      "option_a": "A. Sequential work with no feedback",
+      "option_b": "B. A single delivery only at the end",
+      "option_c": "C. Iterative and incremental work with evolving requirements and continuous feedback",
+      "option_d": "D. No planning of any kind",
+      "correct_answer": "C",
+      "explanation": "Agile uses small cycles, incremental delivery, and ongoing feedback."
+    },
+    {
+      "question": "A product team releases a small feature every two weeks and adjusts its backlog using user feedback. Which approach best fits?",
+      "option_a": "A. Predictive only",
+      "option_b": "B. Agile / adaptive",
+      "option_c": "C. Closing process group",
+      "option_d": "D. A phase gate without iteration",
+      "correct_answer": "B",
+      "explanation": "Incremental delivery and continuous adaptation are characteristic of Agile."
+    },
+    {
+      "question": "A construction-like IT procurement project has stable, well-defined requirements and requires a sequential approval path. Which approach does the lecture suggest may fit best?",
+      "option_a": "A. Traditional / predictive",
+      "option_b": "B. Agile in every case",
+      "option_c": "C. No lifecycle",
+      "option_d": "D. Maintenance only",
+      "correct_answer": "A",
+      "explanation": "The lecture says Traditional is suitable for stable, well-defined projects."
+    },
+    {
+      "question": "A new digital service has uncertain requirements and frequent stakeholder feedback. Which approach is generally more suitable according to the lecture?",
+      "option_a": "A. A rigid sequential lifecycle in all circumstances",
+      "option_b": "B. Agile / adaptive",
+      "option_c": "C. Closing before execution",
+      "option_d": "D. No monitoring",
+      "correct_answer": "B",
+      "explanation": "Agile is suitable for dynamic environments where requirements evolve."
+    },
+    {
+      "question": "Uncontrolled requirement growth causes schedule delays and additional cost. What challenge is this?",
+      "option_a": "A. Scope creep",
+      "option_b": "B. Resource release",
+      "option_c": "C. Formal acceptance",
+      "option_d": "D. Progressive elaboration necessarily",
+      "correct_answer": "A",
+      "explanation": "Scope creep is uncontrolled growth in requirements that can increase cost and delay delivery."
+    },
+    {
+      "question": "A project lacks enough engineers, time, and funding to complete its scope. Which challenge is most directly involved?",
+      "option_a": "A. Unique output",
+      "option_b": "B. Resource constraints",
+      "option_c": "C. Phase gate",
+      "option_d": "D. Stakeholder register",
+      "correct_answer": "B",
+      "explanation": "Resource constraints include limited people, time, or budget."
+    },
+    {
+      "question": "A team uses new technology that creates integration problems. Which challenge from the lecture best matches?",
+      "option_a": "A. Technology risks",
+      "option_b": "B. Formal closure",
+      "option_c": "C. Project charter",
+      "option_d": "D. Resource release",
+      "correct_answer": "A",
+      "explanation": "New or complex technologies can introduce integration issues and risks."
+    },
+    {
+      "question": "Users and developers misunderstand decisions because updates are unclear and late. Which challenge is most directly involved?",
+      "option_a": "A. Communication gaps",
+      "option_b": "B. Unique output",
+      "option_c": "C. Phase gate",
+      "option_d": "D. Delivery domain only",
+      "correct_answer": "A",
+      "explanation": "Poor communication can cause misunderstandings and coordination problems."
+    },
+    {
+      "question": "Which practice most directly helps reduce defects and rework?",
+      "option_a": "A. Inspect quality only after final delivery",
+      "option_b": "B. Build quality into processes and deliverables",
+      "option_c": "C. Avoid testing until closure",
+      "option_d": "D. Remove stakeholder feedback",
+      "correct_answer": "B",
+      "explanation": "Proactive quality management reduces defects and avoids costly rework."
+    },
+    {
+      "question": "In the national e-learning platform case, which stakeholder set is explicitly relevant to initiation?",
+      "option_a": "A. Only external software vendors",
+      "option_b": "B. Students, teachers, and government",
+      "option_c": "C. Only the development team",
+      "option_d": "D. Only internet service providers",
+      "correct_answer": "B",
+      "explanation": "The case identifies students, teachers, and government among the key stakeholders."
+    },
+    {
+      "question": "The e-learning project uses Agile for platform development but a predictive approach for rollout. What does this illustrate?",
+      "option_a": "A. A hybrid development approach and lifecycle choice",
+      "option_b": "B. A prohibition on tailoring",
+      "option_c": "C. That process groups are identical to domains",
+      "option_d": "D. That monitoring is unnecessary",
+      "correct_answer": "A",
+      "explanation": "The lecture's case explicitly proposes Agile development with a predictive rollout."
+    },
+    {
+      "question": "Rural schools have poor connectivity, so the team tracks the issue, assesses its effects, and plans responses. Which combination best fits?",
+      "option_a": "A. Uncertainty domain and proactive risk management",
+      "option_b": "B. Closing domain and resource release",
+      "option_c": "C. Team domain and contract closure only",
+      "option_d": "D. Delivery domain with no planning",
+      "correct_answer": "A",
+      "explanation": "Connectivity limitations are a project uncertainty/risk and should be actively managed."
+    },
+    {
+      "question": "The platform is technically complete, but teachers resist using it. Which response best aligns with the lecture's best practices?",
+      "option_a": "A. Ignore adoption because software has been delivered",
+      "option_b": "B. Engage teachers continuously, communicate clearly, and focus on educational value",
+      "option_c": "C. Close the project immediately without acceptance",
+      "option_d": "D. Stop collecting feedback",
+      "correct_answer": "B",
+      "explanation": "Stakeholder engagement, effective communication, and value delivery help address adoption resistance."
+    },
+    {
+      "question": "A late request changes assessment functionality. The team assesses impacts on schedule, budget, quality, and deployment before deciding what to do. Which approach is best supported by the lecture?",
+      "option_a": "A. Implement every request immediately without review",
+      "option_b": "B. Use monitoring and control to evaluate change and update plans when appropriate",
+      "option_c": "C. Reject all changes automatically",
+      "option_d": "D. Treat the request as a closing activity",
+      "correct_answer": "B",
+      "explanation": "Monitoring and Controlling evaluates changes and variances and supports appropriate adjustments."
+    },
+    {
+      "question": "The team creates a project charter and stakeholder register, then develops scope, schedule, and risk plans. Which interpretation is correct?",
+      "option_a": "A. Both sets of activities belong exclusively to Closing",
+      "option_b": "B. The first outputs are associated with Initiating; the detailed plans are associated with Planning",
+      "option_c": "C. All outputs are generated only during Execution",
+      "option_d": "D. The stakeholder register is a forecast",
+      "correct_answer": "B",
+      "explanation": "The lecture associates the charter and stakeholder register with Initiating and detailed plans with Planning."
+    },
+    {
+      "question": "At the end of a project, all features are delivered, but the customer has not accepted them and operations has not received the handover. What is the best conclusion?",
+      "option_a": "A. The project is necessarily fully closed because coding is done",
+      "option_b": "B. Closing activities remain, including acceptance and transfer of deliverables",
+      "option_c": "C. The project should return automatically to Initiation",
+      "option_d": "D. Stakeholder acceptance is a planning output only",
+      "correct_answer": "B",
+      "explanation": "Closing includes formal acceptance and transfer of outputs; finishing development alone is insufficient."
+    },
+    {
+      "question": "A project manager treats process groups as a rigid one-time sequence and refuses to revisit plans after a major dependency changes. What is the most accurate criticism?",
+      "option_a": "A. This matches the lecture because process groups cannot overlap",
+      "option_b": "B. This ignores iterative planning and the overlapping, interconnected nature of process groups",
+      "option_c": "C. This is required by all Agile approaches",
+      "option_d": "D. This means the project has no lifecycle",
+      "correct_answer": "B",
+      "explanation": "The lecture says process groups interact, overlap, and may repeat as information changes."
+    },
+    {
+      "question": "A team meets its deadline and budget but delivers a service that does not improve access to education. Which evaluation best reflects the lecture?",
+      "option_a": "A. Success is guaranteed by schedule compliance",
+      "option_b": "B. Value delivery must be considered; completing outputs alone does not establish stakeholder benefit",
+      "option_c": "C. Only the project charter matters after delivery",
+      "option_d": "D. Stakeholder needs are irrelevant once execution ends",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes value to stakeholders, not merely completing tasks or producing outputs."
+    },
+    {
+      "question": "A project manager is deciding whether to use extensive formal controls for a high-risk national platform or lightweight practices for a small internal tool. Which answer best integrates the lecture?",
+      "option_a": "A. Use the same controls for both to avoid tailoring",
+      "option_b": "B. Tailor practices to context, consider system interactions and risks, and maintain focus on stakeholder value",
+      "option_c": "C. Choose based only on team preference",
+      "option_d": "D. Avoid monitoring because both are IT projects",
+      "correct_answer": "B",
+      "explanation": "Tailoring should reflect context, while systems thinking, risk responses, and value remain important across projects."
+    }
+  ]
+}

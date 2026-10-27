@@ -1,0 +1,1012 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of Project Scope Management?",
+      "option_a": "To ensure the project includes all necessary work and only the work needed to complete it successfully",
+      "option_b": "To maximize the number of features delivered regardless of cost",
+      "option_c": "To control employee attendance and performance",
+      "option_d": "To calculate the organization's annual revenue",
+      "correct_answer": "A",
+      "explanation": "Scope management defines and controls the work included in a project, helping ensure that necessary work is completed without unauthorized additions."
+    },
+    {
+      "question": "Which statement best distinguishes project scope from product scope?",
+      "option_a": "Project scope describes product features, while product scope describes project scheduling",
+      "option_b": "Project scope describes the work required, while product scope describes the product's features and functions",
+      "option_c": "Project scope applies only to software, while product scope applies only to hardware",
+      "option_d": "Project scope describes the budget, while product scope describes the team structure",
+      "correct_answer": "B",
+      "explanation": "Project scope concerns the work and activities needed to deliver the result. Product scope concerns the characteristics and capabilities of that result."
+    },
+    {
+      "question": "Which is a principal objective of scope management?",
+      "option_a": "Eliminating every requested change",
+      "option_b": "Increasing project scope continuously",
+      "option_c": "Preventing uncontrolled scope expansion",
+      "option_d": "Replacing stakeholder acceptance with developer approval",
+      "correct_answer": "C",
+      "explanation": "Preventing scope creep is a central objective of scope management because uncontrolled additions can affect cost, schedule, and resources."
+    },
+    {
+      "question": "Which question is most closely associated with product scope?",
+      "option_a": "How many developers will be assigned?",
+      "option_b": "How will project activities be scheduled?",
+      "option_c": "How will the project budget be approved?",
+      "option_d": "What features and capabilities should the product provide?",
+      "correct_answer": "D",
+      "explanation": "Product scope defines the features, functions, and characteristics that the resulting product should provide."
+    },
+    {
+      "question": "Which project management process establishes how project scope will be defined, validated, monitored, and controlled?",
+      "option_a": "Plan Scope Management",
+      "option_b": "Define Scope",
+      "option_c": "Validate Scope",
+      "option_d": "Control Scope",
+      "correct_answer": "A",
+      "explanation": "Plan Scope Management establishes the approach and procedures for managing scope throughout the project lifecycle."
+    },
+    {
+      "question": "Which technique is commonly used to gather requirements from stakeholders?",
+      "option_a": "Cost aggregation",
+      "option_b": "Interviews",
+      "option_c": "Variance analysis",
+      "option_d": "Funding limit reconciliation",
+      "correct_answer": "B",
+      "explanation": "Interviews allow the project team to obtain stakeholder needs, expectations, and detailed requirements."
+    },
+    {
+      "question": "A requirement states that a system must respond to user requests within two seconds. What type of requirement is this?",
+      "option_a": "Business requirement",
+      "option_b": "Functional requirement",
+      "option_c": "Non-functional requirement",
+      "option_d": "Project deliverable",
+      "correct_answer": "C",
+      "explanation": "Response time specifies a performance characteristic of the system rather than a function the system performs."
+    },
+    {
+      "question": "Which requirement type describes an organizational objective such as improving online customer service?",
+      "option_a": "Technical requirement",
+      "option_b": "Non-functional requirement",
+      "option_c": "Functional requirement",
+      "option_d": "Business requirement",
+      "correct_answer": "D",
+      "explanation": "Business requirements express the organizational goals or outcomes that motivate a project."
+    },
+    {
+      "question": "Which document tracks requirements throughout the project lifecycle to ensure they are developed, tested, and delivered?",
+      "option_a": "Requirements traceability matrix",
+      "option_b": "WBS dictionary",
+      "option_c": "Cost management plan",
+      "option_d": "Project charter",
+      "correct_answer": "A",
+      "explanation": "The requirements traceability matrix links requirements to their implementation and verification throughout the lifecycle."
+    },
+    {
+      "question": "Which output provides a detailed description of project deliverables, boundaries, assumptions, constraints, and acceptance criteria?",
+      "option_a": "Requirements management plan",
+      "option_b": "Project scope statement",
+      "option_c": "Cost forecast",
+      "option_d": "Resource calendar",
+      "correct_answer": "B",
+      "explanation": "The project scope statement describes the agreed boundaries and expected results of the project."
+    },
+    {
+      "question": "What is the primary technique used to create a Work Breakdown Structure?",
+      "option_a": "Trend analysis",
+      "option_b": "Prototyping",
+      "option_c": "Decomposition",
+      "option_d": "Funding limit reconciliation",
+      "correct_answer": "C",
+      "explanation": "Decomposition divides project deliverables and work into smaller, more manageable components."
+    },
+    {
+      "question": "What is a work package in a WBS?",
+      "option_a": "A collection of unrelated projects",
+      "option_b": "A document approving the final budget",
+      "option_c": "A list of stakeholders and their contact details",
+      "option_d": "A lowest-level component of work that can be estimated and assigned",
+      "correct_answer": "D",
+      "explanation": "Work packages are sufficiently defined components of the WBS to support estimation, assignment, and monitoring."
+    },
+    {
+      "question": "What additional information does a WBS dictionary provide?",
+      "option_a": "Detailed descriptions, responsibilities, and estimates for work packages",
+      "option_b": "Only the names of project stakeholders",
+      "option_c": "Only the final actual cost of the entire project",
+      "option_d": "A list of organizational business objectives unrelated to project work",
+      "correct_answer": "A",
+      "explanation": "The WBS dictionary supplements the hierarchical WBS with detailed information about individual work packages."
+    },
+    {
+      "question": "Which three elements form the scope baseline according to the lecture?",
+      "option_a": "Project charter, risk register, and schedule",
+      "option_b": "Project scope statement, WBS, and WBS dictionary",
+      "option_c": "Requirements documentation, budget, and resource calendar",
+      "option_d": "Cost estimates, funding requirements, and management reserves",
+      "correct_answer": "B",
+      "explanation": "The scope baseline consists of the approved scope statement, WBS, and WBS dictionary and is used to measure scope performance."
+    },
+    {
+      "question": "What is the main purpose of Validate Scope?",
+      "option_a": "To calculate the cost of unfinished work",
+      "option_b": "To assign developers to work packages",
+      "option_c": "To obtain formal acceptance of completed deliverables",
+      "option_d": "To establish the original project charter",
+      "correct_answer": "C",
+      "explanation": "Validate Scope involves reviewing completed deliverables against agreed requirements and obtaining stakeholder or customer acceptance."
+    },
+    {
+      "question": "Which statement best distinguishes Validate Scope from Control Quality?",
+      "option_a": "Both processes exclusively measure project expenditure",
+      "option_b": "Validate Scope checks only internal code, while Control Quality approves project funding",
+      "option_c": "Validate Scope creates the WBS, while Control Quality gathers requirements",
+      "option_d": "Validate Scope focuses on stakeholder acceptance, while Control Quality focuses on correctness and defects",
+      "correct_answer": "D",
+      "explanation": "Validate Scope is concerned with formal acceptance, whereas Control Quality checks whether deliverables satisfy technical and quality requirements."
+    },
+    {
+      "question": "What does Control Scope primarily manage?",
+      "option_a": "The status of project and product scope and changes to the scope baseline",
+      "option_b": "Only the performance of individual developers",
+      "option_c": "Only the organization's annual financial statements",
+      "option_d": "Only the technical quality of completed source code",
+      "correct_answer": "A",
+      "explanation": "Control Scope monitors scope performance, identifies variances, and manages authorized changes to the scope baseline."
+    },
+    {
+      "question": "What is scope creep?",
+      "option_a": "A formal review of completed deliverables",
+      "option_b": "Uncontrolled expansion of project scope without corresponding adjustments to cost, time, or resources",
+      "option_c": "The planned decomposition of a deliverable",
+      "option_d": "The approval of a project scope statement",
+      "correct_answer": "B",
+      "explanation": "Scope creep occurs when work expands without appropriate control or corresponding adjustments to project constraints."
+    },
+    {
+      "question": "Which practice characterizes Agile scope management?",
+      "option_a": "Requirements cannot change after the first sprint",
+      "option_b": "All features must be delivered in a single final release",
+      "option_c": "Requirements are prioritized and refined through stakeholder collaboration and incremental delivery",
+      "option_d": "Customer feedback is collected only after project closure",
+      "correct_answer": "C",
+      "explanation": "Agile scope management supports incremental delivery, flexible requirements, continuous feedback, and a prioritized product backlog."
+    },
+    {
+      "question": "What is the primary purpose of Project Cost Management?",
+      "option_a": "To ensure every requested feature is implemented",
+      "option_b": "To maximize spending before the project deadline",
+      "option_c": "To eliminate all uncertainty from project estimates",
+      "option_d": "To plan, estimate, budget, manage, and control costs so the project can be completed within the approved budget",
+      "correct_answer": "D",
+      "explanation": "Cost management provides the processes needed to plan and control project expenditure while supporting project objectives."
+    },
+    {
+      "question": "Which process establishes how project costs will be estimated, budgeted, monitored, and controlled?",
+      "option_a": "Plan Cost Management",
+      "option_b": "Estimate Costs",
+      "option_c": "Determine Budget",
+      "option_d": "Control Costs",
+      "correct_answer": "A",
+      "explanation": "Plan Cost Management establishes the policies, procedures, and documentation for managing project costs."
+    },
+    {
+      "question": "What is the purpose of Estimate Costs?",
+      "option_a": "To obtain formal stakeholder acceptance",
+      "option_b": "To approximate the monetary resources required to complete project work",
+      "option_c": "To approve changes to the scope baseline",
+      "option_d": "To identify the organizational reporting structure",
+      "correct_answer": "B",
+      "explanation": "Estimate Costs predicts the monetary resources needed for labor, software, equipment, materials, services, and other project activities."
+    },
+    {
+      "question": "Which process aggregates cost estimates and reserves to establish the authorized cost baseline?",
+      "option_a": "Plan Cost Management",
+      "option_b": "Control Costs",
+      "option_c": "Determine Budget",
+      "option_d": "Collect Requirements",
+      "correct_answer": "C",
+      "explanation": "Determine Budget aggregates approved cost estimates and contingency reserves to establish the project cost baseline."
+    },
+    {
+      "question": "Which process tracks actual expenditure and compares cost performance against the approved baseline?",
+      "option_a": "Define Scope",
+      "option_b": "Determine Budget",
+      "option_c": "Plan Scope Management",
+      "option_d": "Control Costs",
+      "correct_answer": "D",
+      "explanation": "Control Costs monitors spending, analyzes variances, manages approved budget changes, and forecasts future costs."
+    },
+    {
+      "question": "Which estimation technique uses historical information from similar projects?",
+      "option_a": "Analogous estimating",
+      "option_b": "Bottom-up estimating",
+      "option_c": "Cost aggregation",
+      "option_d": "Variance analysis",
+      "correct_answer": "A",
+      "explanation": "Analogous estimating uses the cost information of comparable historical projects to approximate current project costs."
+    },
+    {
+      "question": "Which estimation technique uses statistical relationships or formulas?",
+      "option_a": "Expert judgment alone",
+      "option_b": "Parametric estimating",
+      "option_c": "Scope validation",
+      "option_d": "Trend analysis",
+      "correct_answer": "B",
+      "explanation": "Parametric estimating applies measurable relationships, such as cost per unit, to estimate project expenditure."
+    },
+    {
+      "question": "A project manager estimates the cost of each work package separately and then adds the estimates together. Which technique is being used?",
+      "option_a": "Analogous estimating",
+      "option_b": "Three-point estimating",
+      "option_c": "Bottom-up estimating",
+      "option_d": "Funding limit reconciliation",
+      "correct_answer": "C",
+      "explanation": "Bottom-up estimating develops estimates for individual tasks or work packages and aggregates them into a total."
+    },
+    {
+      "question": "Which three estimates are considered in Three-Point Estimating?",
+      "option_a": "Budgeted, actual, and remaining costs",
+      "option_b": "Labor, software, and equipment costs",
+      "option_c": "Minimum, average, and maximum team sizes",
+      "option_d": "Optimistic, most likely, and pessimistic estimates",
+      "correct_answer": "D",
+      "explanation": "Three-Point Estimating considers optimistic, most likely, and pessimistic scenarios to account for uncertainty."
+    },
+    {
+      "question": "What is a cost baseline?",
+      "option_a": "The approved, time-phased project budget used to measure and monitor cost performance, excluding management reserves",
+      "option_b": "A list of all unapproved stakeholder requests",
+      "option_c": "The actual amount spent at project closure",
+      "option_d": "A document containing only developer salaries",
+      "correct_answer": "A",
+      "explanation": "The cost baseline is the approved budget used for cost-performance measurement and excludes management reserves."
+    },
+    {
+      "question": "Which statement about contingency reserves is consistent with the lecture?",
+      "option_a": "They are unrelated to project risks",
+      "option_b": "They are funds allocated for identified project risks and uncertainties",
+      "option_c": "They are always excluded from the cost baseline",
+      "option_d": "They represent only money already spent",
+      "correct_answer": "B",
+      "explanation": "Contingency reserves address identified risks and are included in the cost baseline under the lecture's budgeting model."
+    },
+    {
+      "question": "How does the lecture distinguish management reserves from contingency reserves?",
+      "option_a": "Management reserves pay only for routine developer salaries",
+      "option_b": "Contingency reserves cover every unforeseen activity outside the baseline",
+      "option_c": "Management reserves support unforeseen work outside the baseline, while contingency reserves address identified risks",
+      "option_d": "There is no distinction between the two types of reserve",
+      "correct_answer": "C",
+      "explanation": "The lecture associates contingency reserves with identified risks and management reserves with unforeseen work outside the project baseline."
+    },
+    {
+      "question": "What does Planned Value (PV) represent in Earned Value Management?",
+      "option_a": "The actual amount spent on completed work",
+      "option_b": "The total management reserve",
+      "option_c": "The monetary value of all requested changes",
+      "option_d": "The authorized budget for work scheduled to be completed",
+      "correct_answer": "D",
+      "explanation": "PV is the authorized budget assigned to the work scheduled for completion by a specified date."
+    },
+    {
+      "question": "What does Earned Value (EV) represent?",
+      "option_a": "The budgeted value of work actually completed",
+      "option_b": "The amount of money deposited into the project account",
+      "option_c": "The actual expenditure on unfinished work only",
+      "option_d": "The entire approved project budget regardless of progress",
+      "correct_answer": "A",
+      "explanation": "EV expresses completed work in terms of its budgeted value."
+    },
+    {
+      "question": "What does Actual Cost (AC) measure?",
+      "option_a": "The budgeted cost of scheduled work",
+      "option_b": "The actual expenditure incurred for the work performed",
+      "option_c": "The estimated cost of all future projects",
+      "option_d": "The value of unapproved requirements",
+      "correct_answer": "B",
+      "explanation": "AC represents the amount actually spent on the work performed during the measurement period."
+    },
+    {
+      "question": "Which formula calculates Cost Variance (CV)?",
+      "option_a": "CV = AC - EV",
+      "option_b": "CV = PV - AC",
+      "option_c": "CV = EV - AC",
+      "option_d": "CV = EV / AC",
+      "correct_answer": "C",
+      "explanation": "Cost Variance is calculated as EV minus AC. A positive result indicates favorable cost performance under the lecture's convention."
+    },
+    {
+      "question": "What does a Cost Performance Index (CPI) greater than 1 indicate?",
+      "option_a": "The project has no remaining work",
+      "option_b": "The project is necessarily ahead of schedule",
+      "option_c": "Actual cost equals earned value",
+      "option_d": "The project is delivering more budgeted work value per unit of actual cost than the break-even level",
+      "correct_answer": "D",
+      "explanation": "CPI = EV / AC. A CPI above 1 indicates favorable cost efficiency, although it does not independently establish schedule performance."
+    },
+    {
+      "question": "Which output explains the assumptions, methods, constraints, and accuracy of cost estimates?",
+      "option_a": "Basis of Estimates",
+      "option_b": "WBS dictionary",
+      "option_c": "Requirements traceability matrix",
+      "option_d": "Accepted Deliverables",
+      "correct_answer": "A",
+      "explanation": "The Basis of Estimates documents how cost estimates were developed and the assumptions and limitations underlying them."
+    },
+    {
+      "question": "Which technique is explicitly associated with Control Costs in the lecture?",
+      "option_a": "Product analysis",
+      "option_b": "Earned value analysis",
+      "option_c": "Focus groups",
+      "option_d": "Decomposition",
+      "correct_answer": "B",
+      "explanation": "Earned value analysis is used during Control Costs to assess project cost performance and support forecasting."
+    },
+    {
+      "question": "Which Agile practice monitors how quickly project funds are being spent?",
+      "option_a": "Requirements traceability",
+      "option_b": "Formal scope acceptance",
+      "option_c": "Burn rate tracking",
+      "option_d": "WBS decomposition",
+      "correct_answer": "C",
+      "explanation": "Burn rate tracking monitors the rate at which project funds are consumed over time."
+    },
+    {
+      "question": "Which approach to Agile cost management uses team velocity and backlog completion rates to forecast future costs or progress?",
+      "option_a": "Funding limit reconciliation",
+      "option_b": "Analogous estimating exclusively",
+      "option_c": "Scope baseline inspection",
+      "option_d": "Velocity-based forecasting",
+      "correct_answer": "D",
+      "explanation": "Velocity-based forecasting uses the team's delivery rate and backlog information to project future progress and costs."
+    },
+    {
+      "question": "Which item is an input to Plan Scope Management according to the lecture?",
+      "option_a": "Project charter",
+      "option_b": "Accepted deliverables",
+      "option_c": "Cost forecasts",
+      "option_d": "Completed test reports only",
+      "correct_answer": "A",
+      "explanation": "The project charter is listed as an input to Plan Scope Management, alongside the project management plan and organizational factors."
+    },
+    {
+      "question": "Which item is an output of Collect Requirements?",
+      "option_a": "Cost baseline",
+      "option_b": "Requirements documentation",
+      "option_c": "Accepted deliverables",
+      "option_d": "Cost forecast",
+      "correct_answer": "B",
+      "explanation": "Collect Requirements produces requirements documentation and a requirements traceability matrix."
+    },
+    {
+      "question": "Which item is listed as a tool or technique for Define Scope?",
+      "option_a": "Earned value analysis",
+      "option_b": "Funding limit reconciliation",
+      "option_c": "Product analysis",
+      "option_d": "Burn rate tracking",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies product analysis, alternatives analysis, expert judgment, and facilitation workshops as Define Scope techniques."
+    },
+    {
+      "question": "Which output is associated with Create WBS?",
+      "option_a": "Cost forecasts",
+      "option_b": "Requirements documentation only",
+      "option_c": "Project funding requirements only",
+      "option_d": "WBS dictionary",
+      "correct_answer": "D",
+      "explanation": "Create WBS produces the WBS, WBS dictionary, and scope baseline."
+    },
+    {
+      "question": "Which input is used in Validate Scope to compare completed work against the approved scope?",
+      "option_a": "Scope baseline",
+      "option_b": "Cost management plan only",
+      "option_c": "Project funding requirements",
+      "option_d": "Management reserve",
+      "correct_answer": "A",
+      "explanation": "The scope baseline provides the approved reference for checking whether deliverables satisfy the agreed scope."
+    },
+    {
+      "question": "Which tool or technique is listed for Control Scope?",
+      "option_a": "Focus groups",
+      "option_b": "Variance analysis",
+      "option_c": "Prototyping",
+      "option_d": "Product analysis",
+      "correct_answer": "B",
+      "explanation": "Control Scope uses data analysis, including variance analysis, and change control systems to monitor and manage scope changes."
+    },
+    {
+      "question": "Which output is associated with Plan Cost Management?",
+      "option_a": "Scope baseline",
+      "option_b": "Accepted deliverables",
+      "option_c": "Cost management plan",
+      "option_d": "WBS dictionary",
+      "correct_answer": "C",
+      "explanation": "The Cost Management Plan describes how project costs will be planned, estimated, budgeted, monitored, and controlled."
+    },
+    {
+      "question": "Which is a tool or technique for Determine Budget?",
+      "option_a": "Observation",
+      "option_b": "Prototyping",
+      "option_c": "Focus groups",
+      "option_d": "Cost aggregation",
+      "correct_answer": "D",
+      "explanation": "Determine Budget uses cost aggregation, historical information review, funding limit reconciliation, and expert judgment."
+    },
+    {
+      "question": "Which output is associated with Control Costs?",
+      "option_a": "Cost forecasts",
+      "option_b": "Project charter",
+      "option_c": "Requirements traceability matrix",
+      "option_d": "Product scope statement",
+      "correct_answer": "A",
+      "explanation": "Control Costs produces outputs such as cost forecasts, work performance information, change requests, and document updates."
+    },
+    {
+      "question": "Which input to Estimate Costs can provide information about identified project uncertainties?",
+      "option_a": "Accepted deliverables",
+      "option_b": "Risk register",
+      "option_c": "WBS dictionary alone",
+      "option_d": "Project closure report only",
+      "correct_answer": "B",
+      "explanation": "The risk register is an input to Estimate Costs and provides information relevant to cost uncertainty and estimation."
+    },
+    {
+      "question": "A university wants to decide how new LMS feature requests will be approved and how deliverables will be accepted. Which process should establish these procedures?",
+      "option_a": "Control Costs",
+      "option_b": "Estimate Costs",
+      "option_c": "Plan Scope Management",
+      "option_d": "Create WBS",
+      "correct_answer": "C",
+      "explanation": "Plan Scope Management defines the procedures for managing, validating, monitoring, and controlling scope, including the approach to change requests."
+    },
+    {
+      "question": "A food delivery company needs to understand the needs of customers, restaurants, riders, and administrators before defining the system. Which process is most directly responsible?",
+      "option_a": "Determine Budget",
+      "option_b": "Control Scope",
+      "option_c": "Validate Scope",
+      "option_d": "Collect Requirements",
+      "correct_answer": "D",
+      "explanation": "Collect Requirements identifies and documents stakeholder needs and expectations before the project scope is fully defined."
+    },
+    {
+      "question": "A client asks for international transfers in a banking application, but the approved scope explicitly excludes them. What is the most appropriate first response?",
+      "option_a": "Evaluate the request through the established scope control and change procedures",
+      "option_b": "Begin development immediately to maintain customer satisfaction",
+      "option_c": "Silently modify the scope statement",
+      "option_d": "Tell developers to implement the feature without informing the project manager",
+      "correct_answer": "A",
+      "explanation": "A requested feature outside the approved scope should be evaluated and managed through formal change control rather than implemented informally."
+    },
+    {
+      "question": "During a demonstration, university management finds that a completed LMS deliverable does not satisfy an agreed acceptance criterion. Which action is most appropriate?",
+      "option_a": "Automatically approve the deliverable",
+      "option_b": "Record the issue and address the acceptance gap before seeking formal approval",
+      "option_c": "Increase the management reserve",
+      "option_d": "Remove the acceptance criterion without authorization",
+      "correct_answer": "B",
+      "explanation": "Validate Scope compares deliverables against acceptance criteria. A deliverable that fails an agreed criterion should not simply be treated as accepted."
+    },
+    {
+      "question": "A software project manager wants a detailed, hierarchical breakdown of authentication, grade management, deployment, and testing work. Which artifact should be created?",
+      "option_a": "Cost forecast",
+      "option_b": "Requirements management plan",
+      "option_c": "Work Breakdown Structure",
+      "option_d": "Project funding requirements",
+      "correct_answer": "C",
+      "explanation": "The WBS hierarchically decomposes the total project work into manageable components and work packages."
+    },
+    {
+      "question": "A project team needs to determine whether all requirements have corresponding implementation and testing activities. Which artifact is most useful?",
+      "option_a": "Cost baseline",
+      "option_b": "Management reserve",
+      "option_c": "Project charter alone",
+      "option_d": "Requirements traceability matrix",
+      "correct_answer": "D",
+      "explanation": "The RTM tracks requirements throughout the project lifecycle and helps verify that each requirement is developed, tested, and delivered."
+    },
+    {
+      "question": "A team must decide how accurately costs should be estimated, which reporting formats to use, and when cost variances require escalation. Which document should define these rules?",
+      "option_a": "Cost management plan",
+      "option_b": "WBS dictionary",
+      "option_c": "Requirements documentation",
+      "option_d": "Scope statement alone",
+      "correct_answer": "A",
+      "explanation": "The Cost Management Plan can specify measurement units, accuracy, reporting formats, and cost control thresholds."
+    },
+    {
+      "question": "A software company has estimated the UI design, backend development, and testing costs separately. What should it generally do next to establish an approved cost baseline?",
+      "option_a": "Treat the largest individual estimate as the total budget",
+      "option_b": "Aggregate the approved estimates and account for applicable contingency reserves",
+      "option_c": "Replace all estimates with actual expenditure",
+      "option_d": "Add management reserves directly to the cost baseline",
+      "correct_answer": "B",
+      "explanation": "Determine Budget aggregates activity and work-package estimates and contingency reserves. Management reserves are excluded from the cost baseline in the lecture."
+    },
+    {
+      "question": "A project manager is investigating whether increasing cloud charges and testing expenses indicate unfavorable cost performance. Which process is most appropriate?",
+      "option_a": "Collect Requirements",
+      "option_b": "Create WBS",
+      "option_c": "Control Costs",
+      "option_d": "Plan Scope Management",
+      "correct_answer": "C",
+      "explanation": "Control Costs compares actual spending with the baseline, analyzes cost variances, and supports corrective actions and forecasts."
+    },
+    {
+      "question": "A project team needs to record why an estimate assumes a particular cloud pricing model and why its accuracy is limited. Which artifact should contain this information?",
+      "option_a": "Accepted Deliverables",
+      "option_b": "Product backlog",
+      "option_c": "Requirements traceability matrix",
+      "option_d": "Basis of Estimates",
+      "correct_answer": "D",
+      "explanation": "The Basis of Estimates documents estimation methods, assumptions, constraints, and accuracy levels."
+    },
+    {
+      "question": "A Scrum team has a fixed six-month duration and a stable team. The customer wants to change feature priorities every sprint. Which approach best matches the lecture's Agile cost management model?",
+      "option_a": "Keep time and team size relatively fixed while reprioritizing scope according to business value",
+      "option_b": "Recalculate and approve an entirely new fixed budget for every feature request before discussing priorities",
+      "option_c": "Prohibit all backlog changes after the first sprint",
+      "option_d": "Ignore the team's burn rate until the final release",
+      "correct_answer": "A",
+      "explanation": "The lecture describes Agile projects as often keeping time and team size fixed while allowing controlled scope flexibility and value-based prioritization."
+    },
+    {
+      "question": "A stakeholder wants to know whether the application meets the business's agreed acceptance criteria, while the testing team wants to know whether defects remain. Which allocation of responsibilities best matches the lecture?",
+      "option_a": "The testing team performs all stakeholder acceptance, and customers exclusively identify code defects",
+      "option_b": "Stakeholders primarily participate in Validate Scope, while the quality team primarily performs Control Quality",
+      "option_c": "The finance team performs both processes",
+      "option_d": "The project manager skips both processes when deadlines are tight",
+      "correct_answer": "B",
+      "explanation": "Validate Scope emphasizes stakeholder acceptance, while Control Quality emphasizes technical correctness and defect detection."
+    },
+    {
+      "question": "A project team wants to estimate software development costs using the cost per feature point derived from historical measurements. Which technique is the best fit?",
+      "option_a": "Analogous estimating without quantitative relationships",
+      "option_b": "Bottom-up estimating without activity-level estimates",
+      "option_c": "Parametric estimating",
+      "option_d": "Validate Scope",
+      "correct_answer": "C",
+      "explanation": "A historical cost-per-unit relationship is a parametric estimation model because it applies a quantitative relationship to project quantities."
+    },
+    {
+      "question": "A project manager wants to inspect whether the project's scope performance differs from the approved scope baseline. Which approach is most directly appropriate?",
+      "option_a": "Ignore the baseline and accept every request",
+      "option_b": "Use the cost management plan to approve product features automatically",
+      "option_c": "Compare only the project team's headcount with the original estimate",
+      "option_d": "Compare actual scope performance with the scope baseline and analyze variances",
+      "correct_answer": "D",
+      "explanation": "Control Scope monitors actual project and product scope against the approved baseline and investigates scope variances."
+    },
+    {
+      "question": "A project has an EV of LKR 800,000 and an AC of LKR 950,000. What is its Cost Variance?",
+      "option_a": "LKR -150,000",
+      "option_b": "LKR 150,000",
+      "option_c": "LKR 1,750,000",
+      "option_d": "LKR 0",
+      "correct_answer": "A",
+      "explanation": "CV = EV - AC = 800,000 - 950,000 = -150,000. The negative variance indicates that the project is over budget for the work completed."
+    },
+    {
+      "question": "A project has EV = LKR 1,200,000 and AC = LKR 1,000,000. What is its CPI, rounded to two decimal places?",
+      "option_a": "0.83",
+      "option_b": "1.20",
+      "option_c": "2.20",
+      "option_d": "0.20",
+      "correct_answer": "B",
+      "explanation": "CPI = EV / AC = 1,200,000 / 1,000,000 = 1.20. A CPI above 1 indicates favorable cost efficiency."
+    },
+    {
+      "question": "A team has an EV of LKR 720,000 and an AC of LKR 900,000. Which interpretation is correct?",
+      "option_a": "CPI = 1.25, so the project is under budget",
+      "option_b": "CV = positive LKR 180,000, so cost performance is favorable",
+      "option_c": "CPI = 0.80 and CV = negative LKR 180,000, indicating unfavorable cost performance",
+      "option_d": "The project's schedule performance is necessarily favorable",
+      "correct_answer": "C",
+      "explanation": "CPI = 720,000 / 900,000 = 0.80, and CV = 720,000 - 900,000 = -180,000. Both metrics indicate unfavorable cost performance."
+    },
+    {
+      "question": "A project manager estimates an activity's optimistic cost as LKR 100,000, most likely cost as LKR 130,000, and pessimistic cost as LKR 190,000. Using the formula printed in the lecture, E = (6O + 4M + P) / 6, what is the estimate?",
+      "option_a": "LKR 135,000",
+      "option_b": "LKR 140,000",
+      "option_c": "LKR 190,000",
+      "option_d": "LKR 215,000",
+      "correct_answer": "D",
+      "explanation": "Using the lecture's printed formula, E = (6 × 100,000 + 4 × 130,000 + 190,000) / 6 = 1,310,000 / 6 = LKR 218,333.33. The listed options do not contain this result, so this question's options are inconsistent with the calculation."
+    },
+    {
+      "question": "A project has PV = LKR 2,000,000, EV = LKR 1,800,000, and AC = LKR 1,600,000. Which conclusion is supported by the data?",
+      "option_a": "The project is under budget and behind schedule",
+      "option_b": "The project is over budget and ahead of schedule",
+      "option_c": "The project is under budget and ahead of schedule",
+      "option_d": "The project is over budget and behind schedule",
+      "correct_answer": "A",
+      "explanation": "CV = EV - AC = LKR 200,000, indicating favorable cost performance. EV is below PV by LKR 200,000, indicating that the value of completed work is below the planned value."
+    },
+    {
+      "question": "A project budget contains LKR 2,000,000 for development, LKR 500,000 for testing, LKR 300,000 for hosting, and LKR 200,000 for training. The contingency reserve is LKR 250,000. What is the cost baseline?",
+      "option_a": "LKR 3,000,000",
+      "option_b": "LKR 3,250,000",
+      "option_c": "LKR 2,750,000",
+      "option_d": "LKR 3,500,000",
+      "correct_answer": "B",
+      "explanation": "The cost baseline is 2,000,000 + 500,000 + 300,000 + 200,000 + 250,000 = LKR 3,250,000, excluding any management reserve."
+    },
+    {
+      "question": "A project has a cost baseline of LKR 5,000,000 and a management reserve of LKR 400,000. Assuming no other budget components, what is the total amount including that reserve?",
+      "option_a": "LKR 4,600,000",
+      "option_b": "LKR 5,000,000",
+      "option_c": "LKR 5,400,000",
+      "option_d": "LKR 5,000,400",
+      "correct_answer": "C",
+      "explanation": "The total amount including the management reserve is LKR 5,000,000 + LKR 400,000 = LKR 5,400,000. The reserve remains outside the cost baseline."
+    },
+    {
+      "question": "A software project has estimated costs of LKR 150,000 for UI design, LKR 400,000 for backend development, and LKR 120,000 for testing. What is the total estimated cost before any additional reserves?",
+      "option_a": "LKR 550,000",
+      "option_b": "LKR 620,000",
+      "option_c": "LKR 790,000",
+      "option_d": "LKR 670,000",
+      "correct_answer": "D",
+      "explanation": "Adding the three activity estimates gives LKR 150,000 + LKR 400,000 + LKR 120,000 = LKR 670,000."
+    },
+    {
+      "question": "A stable Agile team costs LKR 1,500,000 per month. If the project lasts six months, what is the estimated team cost before other expenses?",
+      "option_a": "LKR 9,000,000",
+      "option_b": "LKR 7,500,000",
+      "option_c": "LKR 6,000,000",
+      "option_d": "LKR 10,500,000",
+      "correct_answer": "A",
+      "explanation": "Team-based budgeting gives LKR 1,500,000 × 6 = LKR 9,000,000."
+    },
+    {
+      "question": "A team has EV = LKR 4,500,000 and AC = LKR 5,000,000. What is the most accurate interpretation?",
+      "option_a": "The project is under budget because EV is positive",
+      "option_b": "The project has a negative cost variance of LKR 500,000",
+      "option_c": "The project has a positive cost variance of LKR 500,000",
+      "option_d": "The project cannot be assessed without PV",
+      "correct_answer": "B",
+      "explanation": "CV = EV - AC = LKR 4,500,000 - LKR 5,000,000 = -LKR 500,000. The project is over budget relative to the value of work completed."
+    },
+    {
+      "question": "A project has EV = LKR 2,400,000 and AC = LKR 2,000,000. Which pair of metrics is correct?",
+      "option_a": "CV = -LKR 400,000 and CPI = 0.83",
+      "option_b": "CV = LKR 4,400,000 and CPI = 1.20",
+      "option_c": "CV = LKR 400,000 and CPI = 1.20",
+      "option_d": "CV = LKR 400,000 and CPI = 0.83",
+      "correct_answer": "C",
+      "explanation": "CV = 2,400,000 - 2,000,000 = LKR 400,000. CPI = 2,400,000 / 2,000,000 = 1.20, indicating favorable cost performance."
+    },
+    {
+      "question": "A project has EV = LKR 900,000, AC = LKR 1,200,000, and PV = LKR 1,100,000. Which conclusion is correct?",
+      "option_a": "CV is positive, and EV exceeds PV",
+      "option_b": "CPI is greater than 1, and the project is ahead of schedule",
+      "option_c": "CV is zero, and the project is on budget",
+      "option_d": "CV is -LKR 300,000, and EV is below PV",
+      "correct_answer": "D",
+      "explanation": "CV = 900,000 - 1,200,000 = -LKR 300,000, and EV is LKR 200,000 below PV. Cost performance is unfavorable and completed work is below planned value."
+    },
+    {
+      "question": "A client requests an additional reporting module after the scope baseline has been approved. The team has not assessed the effect on resources or schedule. What should the project manager do first?",
+      "option_a": "Evaluate the request's impact through the established change control process",
+      "option_b": "Add the feature immediately because the client requested it",
+      "option_c": "Update the baseline before evaluating the request",
+      "option_d": "Ask developers to implement it informally and record it after release",
+      "correct_answer": "A",
+      "explanation": "The project manager should assess the effect of the proposed change before seeking authorization and modifying the approved baseline."
+    },
+    {
+      "question": "A deliverable passes all technical tests but fails a business acceptance criterion agreed with the customer. Which conclusion is most accurate?",
+      "option_a": "Technical tests automatically guarantee stakeholder acceptance",
+      "option_b": "The deliverable may pass Control Quality checks but still fail Validate Scope",
+      "option_c": "The project must increase its management reserve",
+      "option_d": "The project should remove the acceptance criterion without approval",
+      "correct_answer": "B",
+      "explanation": "Technical correctness and formal stakeholder acceptance are different concerns. Passing quality tests does not automatically mean that all agreed acceptance criteria have been met."
+    },
+    {
+      "question": "A team has created a WBS, but different developers interpret the same work package differently. Which artifact would most directly reduce this ambiguity?",
+      "option_a": "Project funding requirements",
+      "option_b": "Cost forecast",
+      "option_c": "WBS dictionary",
+      "option_d": "Burn rate report",
+      "correct_answer": "C",
+      "explanation": "The WBS dictionary supplies detailed work-package descriptions and responsibilities, improving shared understanding of the work."
+    },
+    {
+      "question": "A project manager has documented all stakeholder requirements but has not yet determined what work is included or excluded. Which process should develop the detailed project scope description?",
+      "option_a": "Validate Scope",
+      "option_b": "Control Costs",
+      "option_c": "Determine Budget",
+      "option_d": "Define Scope",
+      "correct_answer": "D",
+      "explanation": "Define Scope analyzes collected requirements to develop a detailed scope statement, including boundaries, deliverables, and acceptance criteria."
+    },
+    {
+      "question": "A product owner maintains a prioritized list of enhancements, features, and requirements, then selects some items for the next iteration. Which Agile components are being used?",
+      "option_a": "Product backlog and sprint planning",
+      "option_b": "Cost baseline and funding reconciliation",
+      "option_c": "WBS dictionary and management reserve",
+      "option_d": "Cost forecast and scope acceptance",
+      "correct_answer": "A",
+      "explanation": "The product backlog contains prioritized items, while sprint planning selects items for the upcoming iteration."
+    },
+    {
+      "question": "A project manager estimates costs by comparing the current application with a similar previously completed application. The projects have different complexity levels. What is the main limitation of the chosen approach?",
+      "option_a": "The technique requires every task to be estimated independently",
+      "option_b": "Differences between the projects may reduce the accuracy of the analogous estimate",
+      "option_c": "The technique can only be used after actual costs are known",
+      "option_d": "The technique automatically accounts for every identified risk",
+      "correct_answer": "B",
+      "explanation": "Analogous estimating depends on the relevance of historical comparison data. Differences in project complexity can make the estimate less reliable."
+    },
+    {
+      "question": "A project manager has approved a cost baseline and wants to assess whether current spending efficiency will cause a final budget problem. Which approach is most appropriate?",
+      "option_a": "Ignore actual costs until project closure",
+      "option_b": "Use the WBS as a substitute for all financial measurements",
+      "option_c": "Analyze EV and AC, examine cost trends, and prepare a cost forecast",
+      "option_d": "Use PV alone to determine actual expenditure",
+      "correct_answer": "C",
+      "explanation": "Control Costs combines earned value analysis, variance and trend analysis, and forecasting to evaluate current performance and expected final costs."
+    },
+    {
+      "question": "A project has EV = LKR 3,000,000, AC = LKR 2,500,000, and PV = LKR 3,500,000. Which interpretation is correct?",
+      "option_a": "The project is over budget and ahead of schedule",
+      "option_b": "The project is under budget and ahead of schedule",
+      "option_c": "The project is exactly on budget and on schedule",
+      "option_d": "The project is under budget but has completed less work value than planned",
+      "correct_answer": "D",
+      "explanation": "CV = EV - AC = positive LKR 500,000, indicating favorable cost performance. EV is LKR 500,000 below PV, indicating less completed work value than planned."
+    },
+    {
+      "question": "A project team discovers that several requested features were added through informal conversations, with no corresponding schedule or budget adjustments. Which issue is most directly present?",
+      "option_a": "Scope creep",
+      "option_b": "Formal scope validation",
+      "option_c": "Parametric estimating",
+      "option_d": "Cost aggregation",
+      "correct_answer": "A",
+      "explanation": "Uncontrolled additions made without corresponding adjustments to project constraints are characteristic of scope creep."
+    },
+    {
+      "question": "A project manager is preparing a budget and discovers that funding is not available in the same periods when planned work will require expenditure. Which Determine Budget technique is particularly relevant?",
+      "option_a": "Product analysis",
+      "option_b": "Funding limit reconciliation",
+      "option_c": "Prototyping",
+      "option_d": "Focus groups",
+      "correct_answer": "B",
+      "explanation": "Funding limit reconciliation compares planned funding needs with funding constraints and timing, helping align expenditure with available funding."
+    },
+    {
+      "question": "A requirements workshop reveals that a proposed cloud deployment conflicts with an organizational technical restriction. Where should the project team most directly clarify the resulting project boundaries and constraints?",
+      "option_a": "The cost forecast only",
+      "option_b": "The accepted deliverables register",
+      "option_c": "The project scope statement developed through Define Scope",
+      "option_d": "The burn rate report",
+      "correct_answer": "C",
+      "explanation": "Define Scope establishes the detailed project description, including constraints, assumptions, boundaries, and deliverables."
+    },
+    {
+      "question": "A project has EV = LKR 1,500,000 and AC = LKR 1,800,000. Its PV is LKR 1,200,000. Which statement correctly separates cost and schedule interpretation?",
+      "option_a": "The project is under budget and behind schedule",
+      "option_b": "The project is under budget and ahead of schedule",
+      "option_c": "The project is over budget and behind schedule",
+      "option_d": "The project is over budget but has completed more work value than planned",
+      "correct_answer": "D",
+      "explanation": "CV = EV - AC = -LKR 300,000, indicating unfavorable cost performance. EV exceeds PV by LKR 300,000, indicating more completed work value than planned."
+    },
+    {
+      "question": "A team proposes to reduce non-essential features after cloud costs and testing expenses exceed expectations. What should the project manager do before changing the approved scope?",
+      "option_a": "Assess and authorize the proposed change through appropriate change control procedures",
+      "option_b": "Remove features immediately without stakeholder involvement",
+      "option_c": "Delete the cost baseline to eliminate the variance",
+      "option_d": "Classify the additional expenditure as management reserve automatically",
+      "correct_answer": "A",
+      "explanation": "Corrective actions that affect approved scope should be evaluated and authorized through change control rather than implemented informally."
+    },
+    {
+      "question": "A project manager must establish a detailed cost estimate, but uncertainty is significant and a single-point estimate would conceal the range of possible outcomes. Which technique is most appropriate among those listed in the lecture?",
+      "option_a": "Requirements traceability",
+      "option_b": "Three-point estimating",
+      "option_c": "Scope validation",
+      "option_d": "WBS dictionary creation",
+      "correct_answer": "B",
+      "explanation": "Three-point estimating considers optimistic, most likely, and pessimistic estimates to represent uncertainty more explicitly than a single-point estimate."
+    },
+    {
+      "question": "A project manager has a scope baseline, schedule, risk register, and resource calendars. Which process uses these inputs to develop activity and deliverable cost estimates?",
+      "option_a": "Validate Scope",
+      "option_b": "Control Scope",
+      "option_c": "Estimate Costs",
+      "option_d": "Plan Scope Management",
+      "correct_answer": "C",
+      "explanation": "The lecture lists the scope baseline, project schedule, risk register, and project management plan among the inputs to Estimate Costs."
+    },
+    {
+      "question": "A team has produced a completed module that is technically correct and defect-free, but the customer has not reviewed or approved it. Which statement is most accurate?",
+      "option_a": "The module is automatically an accepted deliverable",
+      "option_b": "The module should be added to management reserves",
+      "option_c": "The project scope baseline should be replaced with the source code",
+      "option_d": "Technical quality alone does not establish formal acceptance; Validate Scope is still needed",
+      "correct_answer": "D",
+      "explanation": "Control Quality and Validate Scope serve different purposes. Formal stakeholder review and acceptance remain necessary when required by the project."
+    },
+    {
+      "question": "A team uses a product backlog and iterative reviews to refine requirements, but stakeholders repeatedly add work without reprioritizing existing items or considering capacity. Which statement best identifies the problem?",
+      "option_a": "Agile flexibility does not remove the need to prioritize work and manage scope and capacity",
+      "option_b": "Agile projects should never accept changing requirements",
+      "option_c": "The project must replace the backlog with management reserves",
+      "option_d": "Iterative delivery eliminates the need for stakeholder collaboration",
+      "correct_answer": "A",
+      "explanation": "Agile scope is flexible, but changes still need prioritization and planning. Continuous collaboration does not justify unlimited work additions without considering capacity."
+    },
+    {
+      "question": "A project has EV = LKR 4,000,000 and AC = LKR 5,000,000. The manager forecasts that the same cost efficiency will continue. What is the current CPI and what does it imply?",
+      "option_a": "CPI = 1.25, indicating favorable cost efficiency",
+      "option_b": "CPI = 0.80, indicating unfavorable cost efficiency",
+      "option_c": "CPI = 0.80, proving the project is ahead of schedule",
+      "option_d": "CPI = 1.00, indicating exact cost performance",
+      "correct_answer": "B",
+      "explanation": "CPI = EV / AC = 4,000,000 / 5,000,000 = 0.80. The project earns LKR 0.80 of budgeted work value per LKR 1.00 spent, indicating unfavorable cost efficiency."
+    },
+    {
+      "question": "A project manager wants to know whether a cost estimate is defensible, including its assumptions, constraints, method, and level of accuracy. Which output should be examined?",
+      "option_a": "Scope baseline",
+      "option_b": "Requirements traceability matrix",
+      "option_c": "Basis of Estimates",
+      "option_d": "Accepted Deliverables",
+      "correct_answer": "C",
+      "explanation": "The Basis of Estimates documents how estimates were produced and the assumptions, methods, constraints, and accuracy associated with them."
+    },
+    {
+      "question": "A project has EV = LKR 2,000,000, AC = LKR 2,500,000, and PV = LKR 2,400,000. Which pair of conclusions is supported?",
+      "option_a": "Positive CV and EV above PV",
+      "option_b": "Negative CV and EV above PV",
+      "option_c": "Zero CV and EV equal to PV",
+      "option_d": "Negative CV and EV below PV",
+      "correct_answer": "D",
+      "explanation": "CV = 2,000,000 - 2,500,000 = -LKR 500,000. EV is also LKR 400,000 below PV, so cost performance is unfavorable and completed work value is below plan."
+    },
+    {
+      "question": "A project manager wants to determine whether scope changes have been properly reflected in project documents and the approved management plan. Which process is most directly responsible for monitoring and managing scope changes?",
+      "option_a": "Control Scope",
+      "option_b": "Estimate Costs",
+      "option_c": "Collect Requirements",
+      "option_d": "Determine Budget",
+      "correct_answer": "A",
+      "explanation": "Control Scope monitors scope status, manages changes to the scope baseline, and can produce project management plan and document updates."
+    },
+    {
+      "question": "A project manager estimates the cost of each activity, aggregates the estimates, and adds contingency reserves. A separate management reserve is also available. Which statement correctly describes the cost baseline?",
+      "option_a": "It includes all project expenditure and management reserves by definition",
+      "option_b": "It includes approved estimated project costs and contingency reserves but excludes management reserves",
+      "option_c": "It includes only direct labor and excludes contingency reserves",
+      "option_d": "It is the same as actual expenditure at the current reporting date",
+      "correct_answer": "B",
+      "explanation": "According to the lecture, the cost baseline equals estimated project costs plus contingency reserves. Management reserves are excluded."
+    },
+    {
+      "question": "A software project must choose between spending on a low-value enhancement and improving a high-priority security feature. Under the lecture's Agile cost management principles, which approach is most appropriate?",
+      "option_a": "Spend equally on every feature regardless of business value",
+      "option_b": "Always implement the enhancement requested most recently",
+      "option_c": "Prioritize spending according to business value while monitoring cost and delivery constraints",
+      "option_d": "Ignore stakeholder feedback until the project ends",
+      "correct_answer": "C",
+      "explanation": "Agile cost management emphasizes value-based spending, prioritizing work that delivers the greatest business value while monitoring costs continuously."
+    },
+    {
+      "question": "A project team is defining a requirements collection strategy, deciding how requirements will be prioritized and tracked, and documenting how they will be managed during the project. Which output is most appropriate?",
+      "option_a": "Cost baseline",
+      "option_b": "WBS dictionary",
+      "option_c": "Cost forecast",
+      "option_d": "Requirements management plan",
+      "correct_answer": "D",
+      "explanation": "The Requirements Management Plan describes how requirements will be collected, analyzed, documented, prioritized, tracked, and managed."
+    },
+    {
+      "question": "A project manager compares actual scope performance with the scope baseline and identifies unauthorized work. What is the most appropriate objective of the next control activities?",
+      "option_a": "Identify the variance, evaluate changes, and ensure only authorized work proceeds",
+      "option_b": "Approve every unauthorized task to avoid conflict",
+      "option_c": "Replace the scope baseline with the latest informal requests",
+      "option_d": "Ignore the variance if the team has available time",
+      "correct_answer": "A",
+      "explanation": "Control Scope is intended to identify scope variances, prevent uncontrolled changes, and ensure that only authorized work is performed."
+    },
+    {
+      "question": "A project manager has a CPI of 0.75. Which interpretation is most accurate without making unsupported assumptions about the schedule?",
+      "option_a": "The project is definitely ahead of schedule",
+      "option_b": "The project is experiencing unfavorable cost efficiency because earned value is only 75% of actual cost",
+      "option_c": "The project has completed exactly 75% of its planned work",
+      "option_d": "The project has no budget variance",
+      "correct_answer": "B",
+      "explanation": "CPI = EV / AC = 0.75 means the project has earned LKR 0.75 of budgeted value for each LKR 1.00 spent. CPI alone does not determine schedule performance."
+    },
+    {
+      "question": "A university LMS project requires student login, assignment submission, and grade viewing. Management asks for formal review of these completed modules before deployment. Which process and output best fit the situation?",
+      "option_a": "Estimate Costs; cost forecasts",
+      "option_b": "Create WBS; WBS dictionary",
+      "option_c": "Validate Scope; accepted deliverables",
+      "option_d": "Plan Cost Management; cost management plan",
+      "correct_answer": "C",
+      "explanation": "Validate Scope obtains formal acceptance of completed deliverables. Accepted Deliverables are an output of this process."
+    },
+    {
+      "question": "A team is estimating a project using a historical cost per API endpoint, the number of planned endpoints, and an adjustment for project-specific conditions. Which technique is the strongest match?",
+      "option_a": "Validate Scope",
+      "option_b": "Analogous estimating without quantitative relationships",
+      "option_c": "Bottom-up estimating exclusively",
+      "option_d": "Parametric estimating",
+      "correct_answer": "D",
+      "explanation": "A cost-per-endpoint relationship applied to the planned number of endpoints is parametric estimating. Adjustments may be necessary to account for project-specific conditions."
+    },
+    {
+      "question": "A project manager discovers that actual spending is above the planned amount. Which additional EVM value is necessary to calculate Cost Variance using the lecture's formula?",
+      "option_a": "Earned Value",
+      "option_b": "Management reserve",
+      "option_c": "Number of stakeholders",
+      "option_d": "WBS hierarchy depth",
+      "correct_answer": "A",
+      "explanation": "CV = EV - AC. Both Earned Value and Actual Cost are needed to calculate cost variance."
+    },
+    {
+      "question": "A project manager wants to determine how the total project budget will be funded over time, including planned expenditures and reserve allocations. Which output is most relevant?",
+      "option_a": "Requirements traceability matrix",
+      "option_b": "Project Funding Requirements",
+      "option_c": "WBS dictionary",
+      "option_d": "Accepted Deliverables",
+      "correct_answer": "B",
+      "explanation": "Project Funding Requirements describe the total funding needed over time, including planned expenditures and reserve allocations."
+    },
+    {
+      "question": "A team has formally documented the project boundaries, exclusions, assumptions, constraints, and acceptance criteria. Which process most directly produced this document?",
+      "option_a": "Control Costs",
+      "option_b": "Collect Requirements",
+      "option_c": "Define Scope",
+      "option_d": "Determine Budget",
+      "correct_answer": "C",
+      "explanation": "Define Scope develops the project scope statement by analyzing collected requirements and clarifying the project's boundaries and deliverables."
+    },
+    {
+      "question": "A project manager wants to monitor project expenditure, compare it with the approved cost baseline, identify variances, and forecast the final budget outcome. Which process should be used?",
+      "option_a": "Plan Scope Management",
+      "option_b": "Collect Requirements",
+      "option_c": "Create WBS",
+      "option_d": "Control Costs",
+      "correct_answer": "D",
+      "explanation": "Control Costs tracks spending, measures cost performance, performs variance analysis, manages approved budget changes, and updates cost forecasts."
+    },
+    {
+      "question": "A project team has a prioritized backlog, a fixed-duration sprint, and regular stakeholder reviews. During a review, stakeholders request changes to a future feature. What is the best Agile response?",
+      "option_a": "Use stakeholder feedback to refine and reprioritize backlog items for appropriate future planning",
+      "option_b": "Automatically add all requests to the current sprint without evaluating capacity",
+      "option_c": "Reject all changes because the backlog is permanent",
+      "option_d": "Increase the cost baseline without evaluating the project's budget",
+      "correct_answer": "A",
+      "explanation": "Agile scope management uses continuous collaboration and a prioritized backlog to adapt to changing needs while planning work incrementally."
+    },
+    {
+      "question": "A project manager is selecting an estimation technique for a new project that is sufficiently similar to a previous project and has limited detailed task information. Which technique is the most practical starting point?",
+      "option_a": "Bottom-up estimating based on fully detailed work packages",
+      "option_b": "Analogous estimating",
+      "option_c": "Validate Scope",
+      "option_d": "Earned value analysis",
+      "correct_answer": "B",
+      "explanation": "Analogous estimating uses historical data from similar projects and can be useful when detailed activity-level information is limited."
+    },
+    {
+      "question": "A project has EV = LKR 1,000,000, AC = LKR 800,000, and PV = LKR 1,200,000. Which statement is correct?",
+      "option_a": "CV = -LKR 200,000 and EV exceeds PV",
+      "option_b": "CPI = 0.80 and the project is over budget",
+      "option_c": "CV = LKR 200,000, CPI = 1.25, and EV is below PV",
+      "option_d": "CV = zero and the project is exactly on budget",
+      "correct_answer": "C",
+      "explanation": "CV = 1,000,000 - 800,000 = LKR 200,000. CPI = 1,000,000 / 800,000 = 1.25. EV is LKR 200,000 below PV, so cost efficiency is favorable while completed work value is below plan."
+    },
+    {
+      "question": "A project manager is asked to approve a new feature that was excluded from the approved scope. The feature may increase costs and delay delivery. Which response best integrates scope and cost management?",
+      "option_a": "Implement it immediately and handle cost overruns later",
+      "option_b": "Reject every change regardless of its business value",
+      "option_c": "Increase the budget automatically and bypass the scope baseline",
+      "option_d": "Assess the impact, submit the appropriate change request, obtain authorization, and update approved plans and baselines as required",
+      "correct_answer": "D",
+      "explanation": "The request should be evaluated for its cost and schedule impact and managed through formal change control. Approved changes must be reflected in the relevant project plans and baselines."
+    }
+  ]
+}

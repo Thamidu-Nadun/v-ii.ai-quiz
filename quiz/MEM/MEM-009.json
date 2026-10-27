@@ -1,0 +1,859 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of stakeholder management in a project?",
+      "option_a": "To control the project's financial transactions exclusively",
+      "option_b": "To identify, analyze, and engage individuals or groups who affect or are affected by the project",
+      "option_c": "To eliminate all changes to the project scope",
+      "option_d": "To replace project communication with formal documentation",
+      "correct_answer": "B",
+      "explanation": "Stakeholder management systematically identifies stakeholders, understands their expectations and influence, and develops appropriate engagement strategies throughout the project lifecycle."
+    },
+    {
+      "question": "Which of the following is an example of an internal stakeholder?",
+      "option_a": "A government regulator",
+      "option_b": "An external software vendor",
+      "option_c": "A member of the project team",
+      "option_d": "A customer organization",
+      "correct_answer": "C",
+      "explanation": "Project team members and organizational management are internal stakeholders, whereas clients, vendors, and regulators are examples of external stakeholders."
+    },
+    {
+      "question": "Which stakeholder management process establishes the initial understanding of project stakeholders?",
+      "option_a": "Identify Stakeholders",
+      "option_b": "Manage Stakeholder Engagement",
+      "option_c": "Monitor Stakeholder Engagement",
+      "option_d": "Plan Stakeholder Engagement",
+      "correct_answer": "A",
+      "explanation": "Identify Stakeholders is the foundational process for recognizing affected or influential individuals, groups, and organizations."
+    },
+    {
+      "question": "Which document typically records stakeholder names, roles, influence, interests, concerns, and communication preferences?",
+      "option_a": "Communications Management Plan",
+      "option_b": "Issue log",
+      "option_c": "Project status report",
+      "option_d": "Stakeholder Register",
+      "correct_answer": "D",
+      "explanation": "The Stakeholder Register documents relevant stakeholder information, including roles, influence, expectations, concerns, and communication preferences."
+    },
+    {
+      "question": "Which technique can be used to identify stakeholders during the initial stages of a project?",
+      "option_a": "Code compilation",
+      "option_b": "Brainstorming with the project team",
+      "option_c": "Database normalization",
+      "option_d": "Software performance benchmarking",
+      "correct_answer": "B",
+      "explanation": "Brainstorming, interviews, and stakeholder mapping are techniques used to identify and understand project stakeholders."
+    },
+    {
+      "question": "What is the main purpose of planning stakeholder engagement?",
+      "option_a": "To ensure that every stakeholder attends every project meeting",
+      "option_b": "To prevent stakeholders from requesting changes",
+      "option_c": "To develop engagement strategies suited to stakeholders' needs and influence",
+      "option_d": "To distribute identical reports to all stakeholders",
+      "correct_answer": "C",
+      "explanation": "Planning stakeholder engagement involves analyzing stakeholder expectations and attitudes and selecting suitable approaches for different groups."
+    },
+    {
+      "question": "Which document records strategies for engaging stakeholders and managing their expectations?",
+      "option_a": "Stakeholder Engagement Plan",
+      "option_b": "Meeting minutes",
+      "option_c": "Software test report",
+      "option_d": "Communications performance information",
+      "correct_answer": "A",
+      "explanation": "The Stakeholder Engagement Plan describes engagement strategies, communication approaches, expectation management, and conflict resolution methods."
+    },
+    {
+      "question": "Which activity is most closely associated with managing stakeholder engagement?",
+      "option_a": "Identifying stakeholders for the first time only",
+      "option_b": "Creating a stakeholder classification model without implementing it",
+      "option_c": "Defining communication requirements before any engagement strategy is developed",
+      "option_d": "Communicating with stakeholders, addressing concerns, and resolving conflicts",
+      "correct_answer": "D",
+      "explanation": "Manage Stakeholder Engagement implements planned strategies through communication, feedback handling, expectation management, negotiation, and conflict resolution."
+    },
+    {
+      "question": "Which of the following may be an output of managing stakeholder engagement?",
+      "option_a": "A guarantee that no future scope changes will occur",
+      "option_b": "Change requests and updates to project documents",
+      "option_c": "A permanent elimination of stakeholder conflicts",
+      "option_d": "A requirement that every stakeholder has equal authority",
+      "correct_answer": "B",
+      "explanation": "Stakeholder discussions and feedback may lead to change requests, project document updates, issue logs, and feedback records."
+    },
+    {
+      "question": "Why is monitoring stakeholder engagement necessary?",
+      "option_a": "Stakeholders' attitudes and engagement can change throughout the project",
+      "option_b": "Stakeholder analysis is never required after project initiation",
+      "option_c": "All stakeholders eventually obtain identical levels of power",
+      "option_d": "It eliminates the need to communicate with stakeholders",
+      "correct_answer": "A",
+      "explanation": "Continuous monitoring helps evaluate engagement effectiveness, detect changing stakeholder dynamics, and adjust strategies before problems escalate."
+    },
+    {
+      "question": "Which stakeholder analysis model classifies stakeholders using power and interest?",
+      "option_a": "Salience Model",
+      "option_b": "Influence–Impact Grid",
+      "option_c": "Power–Interest Grid",
+      "option_d": "Communication Model",
+      "correct_answer": "C",
+      "explanation": "The Power–Interest Grid categorizes stakeholders according to their ability to influence project outcomes and their level of concern or involvement."
+    },
+    {
+      "question": "A stakeholder has high power and high interest in a project. What is the recommended Power–Interest Grid strategy?",
+      "option_a": "Monitor",
+      "option_b": "Keep Satisfied",
+      "option_c": "Keep Informed",
+      "option_d": "Manage Closely",
+      "correct_answer": "D",
+      "explanation": "Stakeholders with both high power and high interest require frequent communication, regular status meetings, and involvement in major decisions."
+    },
+    {
+      "question": "How should a stakeholder with high power but low interest generally be managed under the Power–Interest Grid?",
+      "option_a": "Keep Satisfied",
+      "option_b": "Manage Closely through daily detailed meetings",
+      "option_c": "Monitor without providing any updates",
+      "option_d": "Keep Informed through intensive operational demonstrations",
+      "correct_answer": "A",
+      "explanation": "High-power, low-interest stakeholders should be kept satisfied through suitable summarized updates and by meeting their expectations without overwhelming them with unnecessary detail."
+    },
+    {
+      "question": "What is the recommended strategy for a stakeholder with low power and high interest?",
+      "option_a": "Keep Satisfied",
+      "option_b": "Keep Informed",
+      "option_c": "Monitor only",
+      "option_d": "Exclude from project communication",
+      "correct_answer": "B",
+      "explanation": "Low-power, high-interest stakeholders should receive regular updates and opportunities to provide feedback and participate."
+    },
+    {
+      "question": "Which strategy is most appropriate for stakeholders with both low power and low interest?",
+      "option_a": "Manage Closely",
+      "option_b": "Keep Informed through daily meetings",
+      "option_c": "Monitor",
+      "option_d": "Require participation in major decisions",
+      "correct_answer": "C",
+      "explanation": "These stakeholders generally require minimal engagement effort, although changes in their interest or influence should still be monitored."
+    },
+    {
+      "question": "What is the main distinction between power and influence in the Power–Influence Grid?",
+      "option_a": "Power concerns project duration, while influence concerns project cost",
+      "option_b": "Power means stakeholder interest, while influence means stakeholder impact",
+      "option_c": "Power and influence always represent exactly the same attribute",
+      "option_d": "Power refers to formal authority or control, while influence refers to the ability to shape opinions, decisions, or project direction",
+      "correct_answer": "D",
+      "explanation": "The Power–Influence Grid distinguishes formal authority from the ability to affect opinions and decisions, helping identify informal leaders."
+    },
+    {
+      "question": "Which model is particularly useful when employees are heavily affected by a new system but have little authority over its implementation?",
+      "option_a": "Influence–Impact Grid",
+      "option_b": "Power–Interest Grid only",
+      "option_c": "Salience Model only",
+      "option_d": "Basic Communication Model",
+      "correct_answer": "A",
+      "explanation": "The Influence–Impact Grid considers both a stakeholder's ability to affect project activities and the degree to which the project affects that stakeholder."
+    },
+    {
+      "question": "Which three attributes are used by the Salience Model?",
+      "option_a": "Cost, schedule, and quality",
+      "option_b": "Power, legitimacy, and urgency",
+      "option_c": "Interest, impact, and communication frequency",
+      "option_d": "Authority, budget, and technical expertise",
+      "correct_answer": "B",
+      "explanation": "The Salience Model evaluates stakeholders using power, legitimacy, and urgency to help determine engagement priorities."
+    },
+    {
+      "question": "Which Salience Model category describes a stakeholder who possesses all three attributes?",
+      "option_a": "Dormant",
+      "option_b": "Dominant",
+      "option_c": "Definitive",
+      "option_d": "Discretionary",
+      "correct_answer": "C",
+      "explanation": "Definitive stakeholders possess power, legitimacy, and urgency and receive the highest priority for engagement and communication."
+    },
+    {
+      "question": "Which Salience Model category describes a stakeholder who has legitimacy but limited power?",
+      "option_a": "Dangerous",
+      "option_b": "Dormant",
+      "option_c": "Demanding",
+      "option_d": "Discretionary",
+      "correct_answer": "D",
+      "explanation": "Discretionary stakeholders possess legitimacy but have limited power; the lecture describes informing them as a courtesy."
+    },
+    {
+      "question": "A stakeholder is aware of a project but neither supports nor opposes it. Which engagement level applies?",
+      "option_a": "Neutral",
+      "option_b": "Unaware",
+      "option_c": "Resistant",
+      "option_d": "Leading",
+      "correct_answer": "A",
+      "explanation": "Neutral stakeholders know about the project but neither actively support nor resist it."
+    },
+    {
+      "question": "Which engagement level describes stakeholders who actively promote a project and encourage others to support it?",
+      "option_a": "Supportive",
+      "option_b": "Leading",
+      "option_c": "Neutral",
+      "option_d": "Unaware",
+      "correct_answer": "B",
+      "explanation": "Leading stakeholders demonstrate high engagement, contribute to decisions, and actively promote project goals."
+    },
+    {
+      "question": "Which stakeholder engagement level describes people who oppose project changes despite being aware of the project?",
+      "option_a": "Supportive",
+      "option_b": "Leading",
+      "option_c": "Resistant",
+      "option_d": "Unaware",
+      "correct_answer": "C",
+      "explanation": "Resistant stakeholders are aware of the project but oppose it or show negative attitudes toward its changes or decisions."
+    },
+    {
+      "question": "What is the main purpose of communication management?",
+      "option_a": "To ensure that every project message is delivered exclusively through email",
+      "option_b": "To restrict project information to the project manager",
+      "option_c": "To eliminate the need for stakeholder feedback",
+      "option_d": "To ensure the right information reaches the right stakeholders at the right time",
+      "correct_answer": "D",
+      "explanation": "Communication management plans, creates, distributes, monitors, and manages project information to support collaboration and effective decision-making."
+    },
+    {
+      "question": "Which is a key activity in planning communication management?",
+      "option_a": "Defining communication methods, frequency, responsibilities, and reporting procedures",
+      "option_b": "Resolving every technical defect in the software",
+      "option_c": "Implementing all stakeholder feedback without evaluation",
+      "option_d": "Replacing stakeholder identification with status reports",
+      "correct_answer": "A",
+      "explanation": "Plan Communication Management determines stakeholder communication requirements, channels, frequency, responsibilities, and reporting formats."
+    },
+    {
+      "question": "Which document specifies what information will be communicated, who receives it, when it is delivered, and who is responsible?",
+      "option_a": "Issue log",
+      "option_b": "Communications Management Plan",
+      "option_c": "Stakeholder Register alone",
+      "option_d": "Software defect report",
+      "correct_answer": "B",
+      "explanation": "The Communications Management Plan defines the project's information-sharing arrangements, including audiences, timing, delivery methods, and responsibilities."
+    },
+    {
+      "question": "Which communication management process involves creating, collecting, distributing, and storing project information?",
+      "option_a": "Monitor Communications",
+      "option_b": "Plan Communication Management",
+      "option_c": "Manage Communications",
+      "option_d": "Identify Stakeholders",
+      "correct_answer": "C",
+      "explanation": "Manage Communications executes the communication arrangements by producing and distributing information and maintaining its flow."
+    },
+    {
+      "question": "Which is a typical output of managing communications?",
+      "option_a": "A stakeholder's formal authority",
+      "option_b": "A guarantee of perfect stakeholder understanding",
+      "option_c": "A permanent prohibition on communication changes",
+      "option_d": "Meeting minutes and status reports",
+      "correct_answer": "D",
+      "explanation": "Project communications, status reports, meeting minutes, and performance reports are typical outputs of Manage Communications."
+    },
+    {
+      "question": "Which process evaluates whether communication activities are effective and stakeholder information needs are being met?",
+      "option_a": "Monitor Communications",
+      "option_b": "Manage Stakeholder Engagement",
+      "option_c": "Identify Stakeholders",
+      "option_d": "Plan Stakeholder Engagement",
+      "correct_answer": "A",
+      "explanation": "Monitor Communications assesses communication effectiveness, gathers feedback, identifies gaps, and adjusts communication strategies."
+    },
+    {
+      "question": "Which communication method provides a real-time exchange between two or more parties?",
+      "option_a": "Push communication",
+      "option_b": "Interactive communication",
+      "option_c": "Pull communication",
+      "option_d": "Archived communication",
+      "correct_answer": "B",
+      "explanation": "Interactive communication allows immediate discussion and feedback, making it useful for complex or sensitive information."
+    },
+    {
+      "question": "Which communication method involves sending information directly to specific recipients?",
+      "option_a": "Pull communication",
+      "option_b": "Interactive communication",
+      "option_c": "Push communication",
+      "option_d": "Passive stakeholder monitoring",
+      "correct_answer": "C",
+      "explanation": "Push communication sends information directly to intended recipients through methods such as emails, reports, memos, and notifications."
+    },
+    {
+      "question": "Which communication method allows stakeholders to retrieve information independently from a shared location?",
+      "option_a": "Interactive communication",
+      "option_b": "Push communication",
+      "option_c": "Face-to-face communication",
+      "option_d": "Pull communication",
+      "correct_answer": "D",
+      "explanation": "Pull communication stores information in a central location, such as a repository or dashboard, where stakeholders access it when needed."
+    },
+    {
+      "question": "Which statement describes a limitation of push communication?",
+      "option_a": "Sending a message does not guarantee that the recipient has received or understood it",
+      "option_b": "It cannot distribute information to multiple recipients",
+      "option_c": "It always requires a real-time conversation",
+      "option_d": "It can only be used for confidential information",
+      "correct_answer": "A",
+      "explanation": "Push communication efficiently distributes information but does not guarantee that recipients receive or understand the message."
+    },
+    {
+      "question": "In a basic communication model, what is encoding?",
+      "option_a": "The receiver's response to the sender",
+      "option_b": "Converting ideas into understandable language or symbols",
+      "option_c": "Storing project information in a repository",
+      "option_d": "Measuring stakeholder power",
+      "correct_answer": "B",
+      "explanation": "Encoding is the process of expressing ideas through language or symbols so they can be transmitted to a receiver."
+    },
+    {
+      "question": "What is decoding in a communication model?",
+      "option_a": "Selecting stakeholders for a power-interest grid",
+      "option_b": "Sending information through a communication channel",
+      "option_c": "Interpreting and understanding the received message",
+      "option_d": "Creating a communication schedule",
+      "correct_answer": "C",
+      "explanation": "Decoding occurs when the receiver interprets the message and attempts to understand its meaning."
+    },
+    {
+      "question": "What is the role of feedback in communication?",
+      "option_a": "To eliminate the need for a receiver",
+      "option_b": "To replace the original message with a project plan",
+      "option_c": "To ensure that all communication is written",
+      "option_d": "To confirm understanding or request clarification",
+      "correct_answer": "D",
+      "explanation": "Feedback provides a response from the receiver, helping confirm understanding or reveal a need for clarification."
+    },
+    {
+      "question": "Which of the following is a communication barrier identified in the lecture?",
+      "option_a": "Language differences",
+      "option_b": "A logically organized message",
+      "option_c": "Accurate project reporting",
+      "option_d": "Appropriate stakeholder mapping",
+      "correct_answer": "A",
+      "explanation": "Language differences, cultural differences, noise, misinterpretation, poor channels, and lack of feedback can impede effective communication."
+    },
+    {
+      "question": "Which of the following is NOT one of the 5 Cs of effective communication?",
+      "option_a": "Clear",
+      "option_b": "Complex",
+      "option_c": "Coherent",
+      "option_d": "Correct",
+      "correct_answer": "B",
+      "explanation": "The five principles are Clear, Concise, Correct, Coherent, and Controlled. Complex is not one of them."
+    },
+    {
+      "question": "A project status report contains unnecessary paragraphs and irrelevant details. Which of the 5 Cs should be improved most directly?",
+      "option_a": "Correct",
+      "option_b": "Controlled",
+      "option_c": "Concise",
+      "option_d": "Coherent",
+      "correct_answer": "C",
+      "explanation": "Concise communication is brief and focused, avoiding unnecessary information."
+    },
+    {
+      "question": "A report presents accurate facts but organizes them in a confusing sequence. Which of the 5 Cs is most directly violated?",
+      "option_a": "Clear",
+      "option_b": "Controlled",
+      "option_c": "Correct",
+      "option_d": "Coherent",
+      "correct_answer": "D",
+      "explanation": "Coherent communication is logical, organized, and consistent. Accuracy alone does not ensure coherence."
+    },
+    {
+      "question": "A project manager shares confidential project information only with authorized stakeholders. Which of the 5 Cs does this best demonstrate?",
+      "option_a": "Controlled",
+      "option_b": "Concise",
+      "option_c": "Coherent",
+      "option_d": "Clear",
+      "correct_answer": "A",
+      "explanation": "Controlled communication is managed appropriately to preserve confidentiality, professionalism, and relevance."
+    },
+    {
+      "question": "A project team provides a stakeholder with incorrect budget figures. Which of the 5 Cs is directly violated?",
+      "option_a": "Concise",
+      "option_b": "Correct",
+      "option_c": "Coherent",
+      "option_d": "Controlled",
+      "correct_answer": "B",
+      "explanation": "Correct communication requires accurate information that is free from errors."
+    },
+    {
+      "question": "A project manager explains a technical feature using simple language suitable for non-technical staff. Which of the 5 Cs is most directly demonstrated?",
+      "option_a": "Controlled",
+      "option_b": "Concise",
+      "option_c": "Clear",
+      "option_d": "Correct",
+      "correct_answer": "C",
+      "explanation": "Clear communication is simple, direct, and easy for the intended audience to understand."
+    },
+    {
+      "question": "In the lecture's LMS case study, who is identified as the primary end user group?",
+      "option_a": "The CEO and academic management",
+      "option_b": "The external software vendor",
+      "option_c": "Higher education authorities",
+      "option_d": "Students",
+      "correct_answer": "D",
+      "explanation": "The LMS stakeholder table identifies students as the primary end users, while lecturers provide requirements and use the system."
+    },
+    {
+      "question": "In the LMS case study, what is the stated project duration?",
+      "option_a": "Eight months",
+      "option_b": "Three months",
+      "option_c": "One year",
+      "option_d": "Two years",
+      "correct_answer": "A",
+      "explanation": "The lecture's LMS case study describes an eight-month project involving the institute's IT division and an external development company."
+    },
+    {
+      "question": "According to the LMS case study, which engagement activity is planned for lecturers?",
+      "option_a": "Monthly regulatory inspections",
+      "option_b": "Requirement-gathering workshops",
+      "option_c": "No involvement until deployment",
+      "option_d": "Financial approval meetings only",
+      "correct_answer": "B",
+      "explanation": "The lecture proposes requirement-gathering workshops for lecturers because they are important system users and requirement providers."
+    },
+    {
+      "question": "In the LMS communication plan, what method and frequency are specified for sprint updates to the development team?",
+      "option_a": "Weekly email reports",
+      "option_b": "Monthly online sessions",
+      "option_c": "Daily stand-up meetings",
+      "option_d": "Quarterly regulatory reviews",
+      "correct_answer": "C",
+      "explanation": "The example communication plan assigns daily stand-up meetings for sprint updates to the development team, with the Scrum Master as sender."
+    },
+    {
+      "question": "In the LMS case study, what is the proposed method for communicating technical issues to the IT Division?",
+      "option_a": "Monthly online demonstrations",
+      "option_b": "Daily email reports from students",
+      "option_c": "Informal discussions with academic management only",
+      "option_d": "An issue-tracking system, as needed",
+      "correct_answer": "D",
+      "explanation": "The communication plan specifies an issue-tracking system for technical issues communicated to the IT Division as needed."
+    },
+    {
+      "question": "In the LMS case study, what is the recommended approach for students who have low power and high interest?",
+      "option_a": "Keep Informed",
+      "option_b": "Keep Satisfied",
+      "option_c": "Manage Closely",
+      "option_d": "Ignore unless they gain formal authority",
+      "correct_answer": "A",
+      "explanation": "The LMS power-interest analysis classifies students as low-power, high-interest stakeholders and recommends keeping them informed."
+    },
+    {
+      "question": "Which statement best describes the relationship between stakeholder management and communication management?",
+      "option_a": "They are unrelated because stakeholders do not require project information",
+      "option_b": "Communication supports stakeholder engagement, expectation management, and collaboration",
+      "option_c": "Communication management replaces the need to identify stakeholders",
+      "option_d": "Stakeholder management applies only after communication management is completed",
+      "correct_answer": "B",
+      "explanation": "The lecture treats stakeholder engagement and effective communication as interconnected activities that support collaboration and project success."
+    },
+    {
+      "question": "A project manager has identified all stakeholders but has not assessed their attitudes or determined appropriate engagement approaches. Which process should be emphasized next?",
+      "option_a": "Monitor Communications",
+      "option_b": "Manage Communications",
+      "option_c": "Plan Stakeholder Engagement",
+      "option_d": "Monitor Stakeholder Engagement",
+      "correct_answer": "C",
+      "explanation": "Plan Stakeholder Engagement analyzes expectations and attitudes and defines tailored approaches, including how often and how stakeholders should be involved."
+    },
+    {
+      "question": "A stakeholder requests a feature that could change the approved project scope during a meeting. Which outcome is consistent with the lecture's description of managing stakeholder engagement?",
+      "option_a": "Automatically implement the feature without evaluation",
+      "option_b": "Remove the stakeholder from the register",
+      "option_c": "Reject all stakeholder requests as a standard policy",
+      "option_d": "Record the concern and consider a change request where appropriate",
+      "correct_answer": "D",
+      "explanation": "Managing stakeholder engagement may produce change requests when stakeholder needs lead to potential scope or plan changes; a request is not automatically approved."
+    },
+    {
+      "question": "A project team discovers that an influential employee who was previously supportive has become resistant following a change in system requirements. What is the most appropriate monitoring response?",
+      "option_a": "Reassess the stakeholder's attitude and adjust the engagement approach",
+      "option_b": "Continue the original approach without reviewing the change",
+      "option_c": "Assume the employee's influence has disappeared",
+      "option_d": "Stop collecting stakeholder feedback",
+      "correct_answer": "A",
+      "explanation": "Monitoring stakeholder engagement tracks changing attitudes and evaluates whether existing strategies remain effective, enabling appropriate adjustments."
+    },
+    {
+      "question": "A senior architect has little formal authority but strongly shapes technical decisions and the opinions of developers. Which model is especially suitable for analyzing this stakeholder?",
+      "option_a": "Influence–Impact Grid",
+      "option_b": "Power–Influence Grid",
+      "option_c": "Power–Interest Grid only",
+      "option_d": "Basic Communication Model",
+      "correct_answer": "B",
+      "explanation": "The Power–Influence Grid is particularly useful for identifying informal leaders whose ability to shape decisions exceeds their formal authority."
+    },
+    {
+      "question": "An enterprise system will significantly change employees' daily work. Employees have little authority over the project's direction, but the change affects them greatly. Which analysis model most directly highlights this situation?",
+      "option_a": "Salience Model",
+      "option_b": "Power–Influence Grid",
+      "option_c": "Influence–Impact Grid",
+      "option_d": "Communication Model",
+      "correct_answer": "C",
+      "explanation": "The Influence–Impact Grid identifies stakeholders who are heavily affected by the project even when they have limited influence over project activities."
+    },
+    {
+      "question": "A stakeholder has legitimacy and urgency but lacks power. According to the Salience Model, which category applies?",
+      "option_a": "Dormant",
+      "option_b": "Dangerous",
+      "option_c": "Dominant",
+      "option_d": "Dependent",
+      "correct_answer": "D",
+      "explanation": "Dependent stakeholders possess legitimacy and urgency but little power, so they often rely on others to advocate for them."
+    },
+    {
+      "question": "A stakeholder possesses power and urgency but has limited legitimacy. Which Salience Model category best fits?",
+      "option_a": "Dangerous",
+      "option_b": "Definitive",
+      "option_c": "Discretionary",
+      "option_d": "Dependent",
+      "correct_answer": "A",
+      "explanation": "Dangerous stakeholders have power and urgency but limited legitimacy and may create project risks or conflicts."
+    },
+    {
+      "question": "A project team identifies a stakeholder with power but little interest or urgency. Which Salience Model category describes this stakeholder?",
+      "option_a": "Demanding",
+      "option_b": "Dormant",
+      "option_c": "Dependent",
+      "option_d": "Discretionary",
+      "correct_answer": "B",
+      "explanation": "Dormant stakeholders have power but little interest or urgency and generally require monitoring."
+    },
+    {
+      "question": "A stakeholder urgently demands attention but has little power or legitimacy. Which category best matches the lecture's Salience Model?",
+      "option_a": "Definitive",
+      "option_b": "Dominant",
+      "option_c": "Demanding",
+      "option_d": "Dangerous",
+      "correct_answer": "C",
+      "explanation": "Demanding stakeholders have urgency but little power; the lecture indicates that they require acknowledgment but generally limited effort."
+    },
+    {
+      "question": "A project manager is choosing between the Power–Interest Grid and the Influence–Impact Grid. The main concern is identifying groups that may resist a system because it changes their work, even though they cannot make project decisions. Which model best addresses this concern?",
+      "option_a": "Power–Influence Grid, because it measures only formal authority",
+      "option_b": "Salience Model, because all affected users necessarily possess all three attributes",
+      "option_c": "Power–Interest Grid, because it measures the impact of project changes directly",
+      "option_d": "Influence–Impact Grid, because it highlights how strongly the project affects stakeholders",
+      "correct_answer": "D",
+      "explanation": "The Influence–Impact Grid focuses on the ability to affect project activities and the degree to which the project affects stakeholders, supporting change management and adoption."
+    },
+    {
+      "question": "A project sponsor has high power, high interest, and an urgent legitimate concern about a release that is at risk. Which analysis provides the strongest basis for prioritizing this stakeholder using all three attributes?",
+      "option_a": "Salience Model",
+      "option_b": "Influence–Impact Grid",
+      "option_c": "Power–Interest Grid alone",
+      "option_d": "Power–Influence Grid alone",
+      "correct_answer": "A",
+      "explanation": "The Salience Model considers power, legitimacy, and urgency together. A stakeholder possessing all three is classified as definitive and receives the highest engagement priority."
+    },
+    {
+      "question": "A project manager classifies a department head as high power and low interest. The manager sends lengthy technical reports every day, causing the department head to disengage. What is the best correction under the Power–Interest Grid?",
+      "option_a": "Stop all communication because the stakeholder has low interest",
+      "option_b": "Provide suitable summarized updates and ensure expectations are met",
+      "option_c": "Require daily detailed participation in technical decisions",
+      "option_d": "Reclassify the stakeholder as low power without further analysis",
+      "correct_answer": "B",
+      "explanation": "High-power, low-interest stakeholders should be kept satisfied with appropriate summarized updates rather than overloaded with unnecessary detail."
+    },
+    {
+      "question": "A project manager treats students, the software vendor, academic management, and regulators identically by sending each the same detailed technical report. Which principle is most directly being neglected?",
+      "option_a": "Stakeholders should never receive written information",
+      "option_b": "All stakeholders should have identical decision-making authority",
+      "option_c": "Engagement and communication should be tailored to stakeholder needs and influence",
+      "option_d": "Stakeholder analysis should occur only after project completion",
+      "correct_answer": "C",
+      "explanation": "The lecture emphasizes that a one-size-fits-all approach does not work. Stakeholders differ in influence, interests, responsibilities, and communication needs."
+    },
+    {
+      "question": "A stakeholder is currently resistant because they fear that a new information system will disrupt their work. Which approach best aligns with the lecture's engagement principles?",
+      "option_a": "Exclude the stakeholder from all demonstrations",
+      "option_b": "Send only automated notifications and assume resistance will disappear",
+      "option_c": "Classify the stakeholder as leading without gathering feedback",
+      "option_d": "Explain the changes, invite feedback, address concerns, and involve the stakeholder appropriately",
+      "correct_answer": "D",
+      "explanation": "Communication, involvement, relationship building, and addressing concerns can help move stakeholders toward supportive or leading engagement."
+    },
+    {
+      "question": "During a project, a previously unaware group discovers that a new system will affect its responsibilities. What should the project manager recognize?",
+      "option_a": "Stakeholder engagement levels can change, and the group may need identification, analysis, and an updated engagement approach",
+      "option_b": "The group must remain unaware because the project has already started",
+      "option_c": "The group automatically becomes a leading stakeholder",
+      "option_d": "The group cannot be a stakeholder unless it controls the project budget",
+      "correct_answer": "A",
+      "explanation": "Stakeholders may emerge or change their engagement during the project lifecycle. Monitoring and updating stakeholder information helps the project respond appropriately."
+    },
+    {
+      "question": "A project manager is preparing a communications plan for a distributed team. Stakeholders require different reports, delivery frequencies, and channels. Which process should establish these arrangements?",
+      "option_a": "Manage Communications",
+      "option_b": "Plan Communication Management",
+      "option_c": "Monitor Stakeholder Engagement",
+      "option_d": "Manage Stakeholder Engagement",
+      "correct_answer": "B",
+      "explanation": "Plan Communication Management identifies communication requirements and defines methods, channels, frequencies, responsibilities, and reporting procedures."
+    },
+    {
+      "question": "A team has an approved communications plan but fails to distribute scheduled reports and record meeting minutes. Which process is not being carried out effectively?",
+      "option_a": "Identify Stakeholders",
+      "option_b": "Plan Stakeholder Engagement",
+      "option_c": "Manage Communications",
+      "option_d": "Monitor Stakeholder Engagement",
+      "correct_answer": "C",
+      "explanation": "Manage Communications executes the communications plan by collecting, creating, distributing, and storing project information, including reports and meeting records."
+    },
+    {
+      "question": "Stakeholders repeatedly report that they receive project information too late to make decisions. The project manager investigates communication effectiveness and proposes changes to reporting schedules. Which process is most directly involved?",
+      "option_a": "Identify Stakeholders",
+      "option_b": "Manage Stakeholder Engagement only",
+      "option_c": "Plan Stakeholder Engagement only",
+      "option_d": "Monitor Communications",
+      "correct_answer": "D",
+      "explanation": "Monitor Communications identifies communication gaps, gathers feedback, evaluates effectiveness, and may result in change requests or updated plans."
+    },
+    {
+      "question": "A project team must discuss a complex and sensitive disagreement about system requirements and needs immediate clarification from several stakeholders. Which communication method is most appropriate?",
+      "option_a": "Interactive communication through a meeting or workshop",
+      "option_b": "Pull communication through an unattended repository",
+      "option_c": "Push communication through a single lengthy email",
+      "option_d": "A static project website without discussion",
+      "correct_answer": "A",
+      "explanation": "Interactive communication supports real-time discussion, clarification, feedback, and decision-making, making it suitable for complex or sensitive topics."
+    },
+    {
+      "question": "A project manager emails a weekly progress report to academic management. The email is sent successfully, but the manager does not know whether the recipients understood it. Which interpretation is correct?",
+      "option_a": "The email is pull communication because it contains a report",
+      "option_b": "The email is push communication, which does not guarantee understanding",
+      "option_c": "The email is interactive communication because recipients can read it",
+      "option_d": "The email is not a communication method unless recipients reply",
+      "correct_answer": "B",
+      "explanation": "Emailing a report is push communication. Delivery to intended recipients does not by itself establish that the message was received or understood."
+    },
+    {
+      "question": "A development organization stores thousands of manuals, project documents, and reference materials in a central portal that authorized stakeholders can access whenever needed. Which method best describes this arrangement?",
+      "option_a": "Interactive communication",
+      "option_b": "Push communication",
+      "option_c": "Pull communication",
+      "option_d": "Feedback communication only",
+      "correct_answer": "C",
+      "explanation": "Pull communication is appropriate for large volumes of information because stakeholders retrieve stored information independently from shared repositories or portals."
+    },
+    {
+      "question": "A project manager must announce an urgent change to a specific group, discuss its implications immediately, and retain detailed reference material for later access. Which approach best combines the lecture's communication methods?",
+      "option_a": "Use only a shared repository and assume everyone will access it immediately",
+      "option_b": "Use only an email and assume the discussion and reference needs are fully satisfied",
+      "option_c": "Use only a meeting and discard all written information afterward",
+      "option_d": "Push the urgent notice, use interactive discussion for clarification, and store detailed material for pull access",
+      "correct_answer": "D",
+      "explanation": "Push communication distributes the notice, interactive communication enables immediate discussion, and pull communication provides continuing access to detailed reference material."
+    },
+    {
+      "question": "A team member writes an accurate requirement but uses an ambiguous term that the recipient interprets differently. Which part of the communication process is most directly implicated?",
+      "option_a": "Encoding, because the sender did not express the intended meaning clearly",
+      "option_b": "Stakeholder power classification",
+      "option_c": "The stakeholder register's influence field",
+      "option_d": "Pull communication, because all ambiguity results from repositories",
+      "correct_answer": "A",
+      "explanation": "Encoding converts ideas into language or symbols. If the message is expressed ambiguously, the receiver may interpret a meaning different from the sender's intention."
+    },
+    {
+      "question": "A lecturer receives a clearly written requirement but interprets a technical term differently from the development team. What would most directly help reveal and resolve the misunderstanding?",
+      "option_a": "Increasing the number of unrelated status reports",
+      "option_b": "Obtaining feedback and discussing the interpretation with the lecturer",
+      "option_c": "Removing the lecturer from the stakeholder register",
+      "option_d": "Changing the project's stakeholder analysis model",
+      "correct_answer": "B",
+      "explanation": "Feedback reveals how the receiver understood the message and allows the sender to clarify differences in interpretation."
+    },
+    {
+      "question": "A project meeting takes place in a noisy environment, and several participants miss important details. Which communication barrier is most directly responsible?",
+      "option_a": "Legitimacy",
+      "option_b": "Stakeholder urgency",
+      "option_c": "Noise or distractions",
+      "option_d": "Stakeholder interest",
+      "correct_answer": "C",
+      "explanation": "Noise and distractions can interfere with message transmission and understanding, making them recognized communication barriers."
+    },
+    {
+      "question": "A project manager communicates confidential budget details to a broad audience that does not need them. The figures are accurate, logically organized, and brief. Which 5 C principle is most clearly neglected?",
+      "option_a": "Correct",
+      "option_b": "Concise",
+      "option_c": "Coherent",
+      "option_d": "Controlled",
+      "correct_answer": "D",
+      "explanation": "Controlled communication requires appropriate management of confidentiality, professionalism, and relevance. Accurate and concise information can still be shared inappropriately."
+    },
+    {
+      "question": "A project manager must choose between a written status report and a live workshop. The audience needs a concise record of progress for later reference, not immediate debate. Which choice is most appropriate?",
+      "option_a": "A push communication status report",
+      "option_b": "An interactive workshop as the only record",
+      "option_c": "An informal conversation with no documentation",
+      "option_d": "A stakeholder power-interest analysis instead of communicating progress",
+      "correct_answer": "A",
+      "explanation": "Push communication through a report is efficient for distributing standard information and retaining documentation. A workshop is more appropriate when discussion and immediate feedback are needed."
+    },
+    {
+      "question": "In the LMS project, academic management has high power and high interest, while higher education authorities have high power and low interest. Which paired strategies match the lecture's Power–Interest Grid analysis?",
+      "option_a": "Monitor academic management; keep authorities informed",
+      "option_b": "Manage academic management closely; keep authorities satisfied",
+      "option_c": "Keep academic management informed; manage authorities closely",
+      "option_d": "Keep both groups under minimal monitoring",
+      "correct_answer": "B",
+      "explanation": "The LMS case study classifies academic management as high-power, high-interest and higher education authorities as high-power, low-interest, recommending Manage Closely and Keep Satisfied respectively."
+    },
+    {
+      "question": "In the LMS project, lecturers need to provide requirements, students need opportunities to test the system, and the IT Division needs to coordinate technical work. Which engagement plan best reflects the lecture?",
+      "option_a": "Send all three groups the same monthly email and prohibit feedback",
+      "option_b": "Require students to approve technical architecture and exclude lecturers from requirement discussions",
+      "option_c": "Use requirement workshops for lecturers, feedback surveys and pilot testing for students, and regular technical meetings for the IT Division",
+      "option_d": "Consult these groups only after the LMS has been deployed",
+      "correct_answer": "C",
+      "explanation": "The lecture proposes tailored engagement: workshops for lecturers, surveys and pilot testing for students, and weekly technical meetings for the IT Division."
+    },
+    {
+      "question": "An LMS team sends a weekly email report to academic management, holds daily stand-ups for sprint updates, and stores manuals in a shared portal. Which classification is correct?",
+      "option_a": "The email is pull, stand-ups are push, and the portal is interactive",
+      "option_b": "The email is interactive, stand-ups are pull, and the portal is push",
+      "option_c": "All three are push communication because the project manager initiated them",
+      "option_d": "The email is push, stand-ups are interactive, and the portal is pull communication",
+      "correct_answer": "D",
+      "explanation": "Email reports push information to recipients, stand-ups support real-time interactive exchange, and a shared portal allows stakeholders to retrieve information when needed."
+    },
+    {
+      "question": "An LMS project manager notices that lecturers misunderstand technical requirements communicated only through email. Which response best follows the lecture's practical lesson?",
+      "option_a": "Arrange interactive meetings or demonstrations to clarify requirements and obtain immediate feedback",
+      "option_b": "Send longer emails without inviting questions",
+      "option_c": "Move all requirements into an archive and avoid discussing them",
+      "option_d": "Assume that email delivery proves that the requirements were understood",
+      "correct_answer": "A",
+      "explanation": "The LMS case study explains that email-only communication can lead to different interpretations when feedback is unavailable. Interactive discussions and demonstrations help clarify complex requirements."
+    },
+    {
+      "question": "An LMS project manager is designing a communication plan. Academic management needs weekly progress reports, the development team needs daily sprint updates, and lecturers and students need monthly demonstrations. Which plan best matches the lecture?",
+      "option_a": "Monthly reports for academic management, weekly stand-ups for developers, and daily demonstrations for users",
+      "option_b": "Weekly email progress reports for academic management, daily stand-ups for developers, and monthly online demonstrations for lecturers and students",
+      "option_c": "Daily email reports for all groups, with no demonstrations",
+      "option_d": "A single annual report distributed after deployment",
+      "correct_answer": "B",
+      "explanation": "These methods and frequencies match the example communication plan: weekly email reports, daily stand-ups, and monthly online demonstrations for the respective audiences."
+    },
+    {
+      "question": "Students are supportive of a new online examination system, but lecturers resist because they fear technical difficulties during examinations. Which response best addresses the situation?",
+      "option_a": "Classify both groups as resistant because the project involves change",
+      "option_b": "Ignore lecturer concerns because students are supportive",
+      "option_c": "Recognize students as supportive and lecturers as resistant, then use demonstrations, discussion, and opportunities to raise concerns",
+      "option_d": "Stop communicating with lecturers until the system is deployed",
+      "correct_answer": "C",
+      "explanation": "The engagement levels are determined by each group's actual attitude. Demonstrations, feedback, and addressing concerns can help reduce lecturer resistance."
+    },
+    {
+      "question": "A project manager identifies a new regulatory stakeholder late in development. The stakeholder can delay approval but has shown little interest in routine project details. What is the most appropriate response?",
+      "option_a": "Ignore the stakeholder because identification should happen only once",
+      "option_b": "Treat the stakeholder as low power because interest is low",
+      "option_c": "Send every internal technical message to the stakeholder",
+      "option_d": "Update the stakeholder register, assess power and interest, and provide suitable summarized updates to keep the stakeholder satisfied",
+      "correct_answer": "D",
+      "explanation": "The stakeholder register should reflect newly identified stakeholders. Under the Power–Interest Grid, high power and low interest call for keeping the stakeholder satisfied through appropriate updates."
+    },
+    {
+      "question": "During a system rollout, employees are significantly affected, a senior architect strongly influences technical decisions, and the sponsor has formal authority and an urgent legitimate concern. Which sequence of models best matches these three analytical needs?",
+      "option_a": "Influence–Impact Grid; Power–Influence Grid; Salience Model",
+      "option_b": "Power–Interest Grid; Salience Model; Influence–Impact Grid",
+      "option_c": "Salience Model; Influence–Impact Grid; Power–Interest Grid",
+      "option_d": "Communication Model; Power–Interest Grid; Influence–Impact Grid",
+      "correct_answer": "A",
+      "explanation": "The Influence–Impact Grid highlights affected employees, the Power–Influence Grid captures the architect's informal influence, and the Salience Model evaluates the sponsor's power, legitimacy, and urgency."
+    },
+    {
+      "question": "A project manager receives stakeholder feedback that communication is frequent but confusing, sometimes inaccurate, poorly organized, and shared with unauthorized recipients. Which corrective approach best addresses the 5 Cs?",
+      "option_a": "Increase message volume without changing message quality",
+      "option_b": "Make messages clear, concise, correct, coherent, and appropriately controlled",
+      "option_c": "Replace all communication with informal conversations",
+      "option_d": "Use only pull communication and stop reviewing stakeholder needs",
+      "correct_answer": "B",
+      "explanation": "The 5 Cs address clarity, brevity, accuracy, logical organization, and appropriate control of information. Improving these qualities tackles the reported issues directly."
+    },
+    {
+      "question": "A project team has identified stakeholders, planned engagement, and begun communication. Halfway through the project, feedback shows that the current methods are ineffective and stakeholder attitudes have changed. Which response best reflects the lecture's overall process model?",
+      "option_a": "Continue the original plans because the processes must occur only once and in a strict sequence",
+      "option_b": "Replace stakeholder management with communication management",
+      "option_c": "Monitor engagement and communication, revise relevant plans and registers, and implement suitable adjustments",
+      "option_d": "Wait until project closure before responding to feedback",
+      "correct_answer": "C",
+      "explanation": "The lecture states that stakeholder and communication processes are interconnected, continuous, and revisited as the project evolves. Monitoring can lead to changes in engagement approaches and communication plans."
+    },
+    {
+      "question": "A project manager must resolve a dispute between stakeholders, but the underlying issue is unclear and each party interprets the requirements differently. Which combination is most appropriate?",
+      "option_a": "Publish a dashboard and assume all interpretations will become identical",
+      "option_b": "Classify both parties as low-interest stakeholders and stop engaging them",
+      "option_c": "Send a final decision by email without gathering information",
+      "option_d": "Use interactive discussion to clarify requirements, gather feedback, and apply negotiation or conflict-resolution skills",
+      "correct_answer": "D",
+      "explanation": "Interactive communication enables clarification and feedback, while interpersonal skills, negotiation, and conflict resolution support effective management of stakeholder disagreements."
+    },
+    {
+      "question": "A university's LMS project has missed feedback from students, whose daily activities will be significantly affected. Students have limited decision-making authority. What is the most appropriate interpretation and response?",
+      "option_a": "Use the Influence–Impact Grid to recognize their high impact, and provide opportunities such as feedback surveys and pilot testing",
+      "option_b": "Exclude students because stakeholders without formal power cannot affect adoption",
+      "option_c": "Use the Salience Model to automatically classify every student as definitive",
+      "option_d": "Treat students as high-power, low-interest stakeholders and keep them satisfied only through summaries",
+      "correct_answer": "A",
+      "explanation": "The Influence–Impact Grid helps identify stakeholders who are heavily affected despite limited authority. The LMS case study specifically recommends student feedback surveys and pilot testing."
+    },
+    {
+      "question": "A project manager must determine whether a new communication strategy has improved understanding. Which evidence and action most directly fit Monitor Communications?",
+      "option_a": "Assume the strategy works because the number of emails has increased",
+      "option_b": "Gather stakeholder feedback, examine communication gaps, evaluate effectiveness, and update the strategy if needed",
+      "option_c": "Update stakeholder power ratings without assessing communication",
+      "option_d": "Distribute the same message more frequently without measuring results",
+      "correct_answer": "B",
+      "explanation": "Monitor Communications evaluates communication effectiveness through feedback and analysis, identifies gaps, and may result in updated plans or change requests."
+    },
+    {
+      "question": "A project sponsor has high power and interest, a regulator has high power but low interest, and students have low power but high interest. Which Power–Interest Grid strategy set is correct?",
+      "option_a": "Monitor the sponsor, manage the regulator closely, and keep students satisfied",
+      "option_b": "Keep the sponsor informed, monitor the regulator, and manage students closely",
+      "option_c": "Manage the sponsor closely, keep the regulator satisfied, and keep students informed",
+      "option_d": "Keep all three groups satisfied because all are stakeholders",
+      "correct_answer": "C",
+      "explanation": "The Power–Interest Grid recommends Manage Closely for high-power, high-interest stakeholders; Keep Satisfied for high-power, low-interest stakeholders; and Keep Informed for low-power, high-interest stakeholders."
+    },
+    {
+      "question": "A project team has a stakeholder register but no documented schedule of reports, audiences, delivery channels, or communication responsibilities. Which missing artifact would most directly address the gap?",
+      "option_a": "A second stakeholder register containing identical information",
+      "option_b": "A software test report",
+      "option_c": "A list of stakeholder engagement levels without communication details",
+      "option_d": "A Communications Management Plan",
+      "correct_answer": "D",
+      "explanation": "The Communications Management Plan specifies what information is communicated, who receives it, when and how it is delivered, and who is responsible."
+    },
+    {
+      "question": "A project team maintains a central repository of manuals, emails key decisions to named stakeholders, and holds live workshops for complex requirement discussions. Which statement best evaluates this design?",
+      "option_a": "It combines pull, push, and interactive communication to meet different information needs",
+      "option_b": "It incorrectly uses three methods because a project must select only one communication method",
+      "option_c": "It uses only push communication because the project team creates all the information",
+      "option_d": "It uses only interactive communication because stakeholders can access the repository",
+      "correct_answer": "A",
+      "explanation": "The lecture presents interactive, push, and pull communication as complementary methods whose selection depends on stakeholder needs, urgency, complexity, project structure, and technology."
+    },
+    {
+      "question": "A stakeholder is highly affected by a project, has legitimate concerns, and needs immediate attention but has no authority to change the project. The project manager must identify the model that explicitly considers urgency and legitimacy, rather than relying solely on influence and impact. Which model should be used?",
+      "option_a": "Power–Influence Grid",
+      "option_b": "Salience Model",
+      "option_c": "Power–Interest Grid",
+      "option_d": "Influence–Impact Grid",
+      "correct_answer": "B",
+      "explanation": "The Salience Model explicitly assesses power, legitimacy, and urgency. The Influence–Impact Grid emphasizes influence and the degree to which stakeholders are affected, but does not directly classify legitimacy and urgency."
+    },
+    {
+      "question": "A project manager finds that the team has created a detailed communication plan, but no one checks whether stakeholders understand the messages. Which conclusion is most accurate?",
+      "option_a": "Planning alone guarantees effective communication",
+      "option_b": "Feedback is unnecessary when the communication channel is push-based",
+      "option_c": "The team must also manage and monitor communications, using feedback to assess understanding and improve effectiveness",
+      "option_d": "The stakeholder register should replace the communication plan",
+      "correct_answer": "C",
+      "explanation": "Effective communication is more than planning and distributing messages. Managing communications delivers information, while monitoring communications evaluates effectiveness and identifies the need for adjustments."
+    }
+  ]
+}
