@@ -1,391 +1,958 @@
 {
   "questions": [
     {
-      "question": "In asymmetric cryptography, which party has the primary responsibility for protecting the private key?",
-      "option_a": "A. Sender",
-      "option_b": "B. Receiver",
-      "option_c": "C. The owner of the private key",
-      "option_d": "D. Neither party",
+      "question": "Which of the following correctly describes the primary purpose of the transport layer (Layer 4)?",
+      "option_a": "Routing packets between different networks",
+      "option_b": "Delivering data between application processes on different hosts",
+      "option_c": "Converting domain names into IP addresses",
+      "option_d": "Encrypting all transmitted application data",
+      "correct_answer": "B",
+      "explanation": "The transport layer provides end-to-end delivery between processes. IP delivers packets between hosts, while Layer 4 uses port numbers to identify the correct application."
+    },
+    {
+      "question": "Which of the following is NOT one of the five mandatory tasks shared by TCP and UDP?",
+      "option_a": "Segmentation",
+      "option_b": "Multiplexing and demultiplexing",
+      "option_c": "Congestion control",
+      "option_d": "Basic error detection",
       "correct_answer": "C",
-      "explanation": "The private key must be kept secret by its owner. The public key can be distributed openly."
+      "explanation": "Congestion control is an additional TCP capability. The five shared tasks include segmentation, multiplexing and demultiplexing, end-to-end process delivery, and basic error detection."
     },
     {
-      "question": "The most common targets of vulnerability brokers are which products?",
-      "option_a": "A. Antivirus software",
-      "option_b": "B. Enterprise firewalls",
-      "option_c": "C. Microsoft products",
-      "option_d": "D. Network switches only",
-      "correct_answer": "C",
-      "explanation": "The source identifies Microsoft products as the correct target category."
-    },
-    {
-      "question": "Which of the following is NOT a buffer associated with network connection or socket handling?",
-      "option_a": "A. Complete Connection Queue",
-      "option_b": "B. Application Buffer",
-      "option_c": "C. Completed Connection Queue",
-      "option_d": "D. Socket Buffer",
-      "correct_answer": "B",
-      "explanation": "The complete and completed connection queues and socket buffers are associated with network connection handling, while the application buffer is not identified as such in the source."
-    },
-    {
-      "question": "Which of the following is NOT categorized as a Layer 3 network-layer attack in the provided material?",
-      "option_a": "A. SYN flood attack",
-      "option_b": "B. Routing attack",
-      "option_c": "C. Header abuse",
-      "option_d": "D. Information gathering",
+      "question": "What is the primary purpose of segmentation at the transport layer?",
+      "option_a": "To divide application data into transportable units",
+      "option_b": "To assign IP addresses to individual applications",
+      "option_c": "To encrypt data before transmission",
+      "option_d": "To determine the shortest network route",
       "correct_answer": "A",
-      "explanation": "SYN flood is primarily a transport-layer attack, whereas routing attacks, header abuse, and information gathering can be considered in the network-layer security context presented."
+      "explanation": "Segmentation divides application data into smaller transportable units that can be passed down to the network layer."
     },
     {
-      "question": "A stream cipher encrypts plaintext by processing what unit at a time?",
-      "option_a": "A. A complete sentence",
-      "option_b": "B. One bit at a time",
-      "option_c": "C. A complete paragraph",
-      "option_d": "D. An entire file at once",
-      "correct_answer": "B",
-      "explanation": "A stream cipher encrypts a continuous stream of plaintext, commonly processing individual bits or bytes."
-    },
-    {
-      "question": "Which of the following is a characteristic of TCP?",
-      "option_a": "A. Segmentation",
-      "option_b": "B. IP routing",
-      "option_c": "C. Ethernet frame switching",
-      "option_d": "D. DNS name resolution",
-      "correct_answer": "A",
-      "explanation": "TCP performs segmentation of application data for transport across the network."
-    },
-    {
-      "question": "Which CIA security property ensures that authorized users can access information when required?",
-      "option_a": "A. Confidentiality",
-      "option_b": "B. Availability",
-      "option_c": "C. Integrity",
-      "option_d": "D. Authentication",
-      "correct_answer": "B",
-      "explanation": "Availability ensures that systems and information remain accessible to authorized users when needed."
-    },
-    {
-      "question": "Which of the following is NOT a traditional malware category listed in the provided material?",
-      "option_a": "A. Virus",
-      "option_b": "B. Adware",
-      "option_c": "C. Trojan",
-      "option_d": "D. Warm",
+      "question": "How do port numbers support multiplexing and demultiplexing?",
+      "option_a": "They identify the physical network interface",
+      "option_b": "They determine the encryption algorithm",
+      "option_c": "They replace destination IP addresses",
+      "option_d": "They allow multiple applications to share an IP address and direct received data to the correct process",
       "correct_answer": "D",
-      "explanation": "Virus, adware, and Trojan are malware categories; 'Warm' is not the malware term presented in the source."
+      "explanation": "Port numbers distinguish application processes, allowing multiple applications to communicate through the same host IP address."
     },
     {
-      "question": "Which ICMP message is generated when a packet's TTL reaches zero before reaching its destination?",
-      "option_a": "A. Communication Prohibited",
-      "option_b": "B. Time Exceeded in Transit",
-      "option_c": "C. Echo Reply",
-      "option_d": "D. Echo Request",
+      "question": "Which statement best describes the relationship between IP and Layer 4 delivery?",
+      "option_a": "IP guarantees delivery to the correct application",
+      "option_b": "IP provides host-to-host delivery, while Layer 4 provides process-to-process delivery",
+      "option_c": "Layer 4 performs all network routing",
+      "option_d": "IP and Layer 4 perform identical delivery functions",
       "correct_answer": "B",
-      "explanation": "When TTL reaches zero, the router discards the packet and generates an ICMP Time Exceeded message."
+      "explanation": "IP identifies the destination host, while the transport layer uses port numbers to deliver data to the appropriate application process."
     },
     {
-      "question": "Which is an example of network accounting?",
-      "option_a": "A. Measuring how long users spend using network resources",
-      "option_b": "B. Changing a user's password",
-      "option_c": "C. Encrypting every network packet",
-      "option_d": "D. Blocking all network connections",
+      "question": "Which error-detection mechanism is present in both TCP and UDP according to the lecture?",
+      "option_a": "Acknowledgment numbers",
+      "option_b": "Retransmission timers",
+      "option_c": "Checksum fields",
+      "option_d": "Sliding windows",
+      "correct_answer": "C",
+      "explanation": "Both TCP and UDP include checksum fields for basic error detection."
+    },
+    {
+      "question": "Which combination represents capabilities added by TCP beyond the mandatory Layer 4 tasks?",
+      "option_a": "Connection establishment, reliability, ordering, flow control and congestion control",
+      "option_b": "IP routing, encryption, authentication and fragmentation",
+      "option_c": "DNS resolution, addressing and packet forwarding",
+      "option_d": "Segmentation, multiplexing, checksums and process delivery only",
       "correct_answer": "A",
-      "explanation": "Accounting can be used to measure users' network usage, including the time they spend using network resources."
+      "explanation": "TCP adds five major capabilities: connection establishment and termination, reliability, ordered delivery, flow control and congestion control."
     },
     {
-      "question": "Which of the following is NOT categorized as a network-layer header-abuse attack?",
-      "option_a": "A. ICMP Sweep",
-      "option_b": "B. TTL-based attacks",
-      "option_c": "C. Fragmentation attacks",
-      "option_d": "D. IP Spoofing",
-      "correct_answer": "A",
-      "explanation": "TTL manipulation, fragmentation, and IP spoofing directly abuse IP header fields, whereas ICMP Sweep is primarily an ICMP reconnaissance technique."
-    },
-    {
-      "question": "Which statement correctly describes an external network attack?",
-      "option_a": "A. The attacker targets the network through the Internet",
-      "option_b": "B. The attacker must already have physical access to the network",
-      "option_c": "C. The attack can only originate from an internal employee",
-      "option_d": "D. External attacks cannot affect network availability",
-      "correct_answer": "A",
-      "explanation": "An external attack originates outside the protected network and can target it through external connectivity such as the Internet."
-    },
-    {
-      "question": "Which statement about the Internet is correct?",
-      "option_a": "A. It maintains open protocols for communication",
-      "option_b": "B. It is exclusively a private storage network",
-      "option_c": "C. It is only a local network",
-      "option_d": "D. It does not use standardized communication protocols",
-      "correct_answer": "A",
-      "explanation": "The source identifies the Internet as using open protocols for communication."
-    },
-    {
-      "question": "According to the provided material, what type of information can be identified from a credit card number?",
-      "option_a": "A. The card type, such as VISA",
-      "option_b": "B. The user's password",
-      "option_c": "C. The user's complete transaction history",
-      "option_d": "D. The user's network IP address",
-      "correct_answer": "A",
-      "explanation": "A card number can contain information that identifies the card network or type, such as VISA."
-    },
-    {
-      "question": "Which definition best describes a firewall?",
-      "option_a": "A. A network security device or software that monitors incoming and outgoing traffic",
-      "option_b": "B. A database that stores user passwords",
-      "option_c": "C. A protocol used only for wireless communication",
-      "option_d": "D. A tool used exclusively to encrypt files",
-      "correct_answer": "A",
-      "explanation": "A firewall can be implemented as hardware, software, or both and monitors and controls network traffic."
-    },
-    {
-      "question": "What should security mechanisms ideally be able to do?",
-      "option_a": "A. Prevent attacks only",
-      "option_b": "B. Detect attacks only",
-      "option_c": "C. Recover from attacks only",
-      "option_d": "D. Prevent, detect, and recover from attacks",
+      "question": "What is the primary purpose of TCP acknowledgments?",
+      "option_a": "To assign destination port numbers",
+      "option_b": "To encrypt transmitted segments",
+      "option_c": "To prevent all forms of packet interception",
+      "option_d": "To confirm received data and support retransmission when data is lost",
       "correct_answer": "D",
-      "explanation": "Effective security mechanisms should support prevention, detection, and recovery from attacks."
+      "explanation": "Acknowledgments allow TCP to track successful reception and retransmit data that has not been acknowledged."
     },
     {
-      "question": "What is the key size of the IDEA block cipher?",
-      "option_a": "A. 128 bytes",
-      "option_b": "B. 128 bits",
-      "option_c": "C. 256 bits",
-      "option_d": "D. 256 bytes",
+      "question": "Which TCP mechanism prevents a fast sender from overwhelming a slow receiver?",
+      "option_a": "Congestion control",
+      "option_b": "Flow control",
+      "option_c": "Port filtering",
+      "option_d": "Sequence-number randomization",
       "correct_answer": "B",
-      "explanation": "IDEA uses a 128-bit key."
+      "explanation": "TCP flow control uses a sliding window to regulate how much data a sender can transmit before receiving acknowledgments."
     },
     {
-      "question": "What is the primary purpose of Spanning Tree Protocol (STP)?",
-      "option_a": "A. Provide path redundancy while preventing switching loops by forming a spanning tree",
-      "option_b": "B. Encrypt all traffic between switches",
-      "option_c": "C. Replace IP routing on the Internet",
-      "option_d": "D. Assign passwords to network users",
-      "correct_answer": "A",
-      "explanation": "STP provides redundancy while preventing Layer 2 switching loops by constructing a loop-free spanning tree."
-    },
-    {
-      "question": "Which statement correctly describes ransomware?",
-      "option_a": "A. It denies access to a system and typically demands payment to remove the restriction",
-      "option_b": "B. It only displays harmless advertisements",
-      "option_c": "C. It is exclusively a network-routing protocol",
-      "option_d": "D. It is designed only to improve file backups",
-      "correct_answer": "A",
-      "explanation": "Ransomware restricts access to systems or data and commonly demands payment for restoration of access."
-    },
-    {
-      "question": "Which statement is correct about the Data Link Layer?",
-      "option_a": "A. LLC and MAC are two sublayers associated with the Data Link Layer",
-      "option_b": "B. IP is the primary protocol of the Data Link Layer",
-      "option_c": "C. The Data Link Layer exists only in Cisco devices",
-      "option_d": "D. The Data Link Layer provides application-level services",
-      "correct_answer": "A",
-      "explanation": "The Data Link Layer is commonly divided into the Logical Link Control (LLC) and Media Access Control (MAC) sublayers."
-    },
-    {
-      "question": "In a routing table overflow attack, an attacker advertises routes to which type of destinations?",
-      "option_a": "A. Only authorized routers",
-      "option_b": "B. Non-existent destinations",
-      "option_c": "C. Only the default gateway",
-      "option_d": "D. Only authenticated hosts",
-      "correct_answer": "B",
-      "explanation": "Routing table overflow attacks can involve advertising routes to non-existent destinations, causing routing tables to consume excessive resources."
-    },
-    {
-      "question": "Which of the following is NOT an authentication method or authentication-related mechanism?",
-      "option_a": "A. Usernames and passwords",
-      "option_b": "B. Challenge-handshake mechanisms",
-      "option_c": "C. Using credit card details for online payment",
-      "option_d": "D. Verifying credentials before granting access",
+      "question": "Which TCP mechanism adjusts the transmission rate in response to network conditions?",
+      "option_a": "Multiplexing",
+      "option_b": "Flow control",
+      "option_c": "Congestion control",
+      "option_d": "Demultiplexing",
       "correct_answer": "C",
-      "explanation": "Credit card details are primarily payment information rather than an authentication mechanism in the context presented."
+      "explanation": "Congestion control adjusts TCP's sending rate to reduce network congestion and protect the network."
     },
     {
-      "question": "Which statement about spyware is NOT correct?",
-      "option_a": "A. It can gather information about users",
-      "option_b": "B. It can send collected information to another entity without consent",
-      "option_c": "C. It can gather information about routers",
-      "option_d": "D. It is designed to protect users' privacy by obtaining consent before collecting information",
+      "question": "Which statement correctly compares TCP and UDP connection establishment?",
+      "option_a": "TCP requires a three-way handshake, while UDP has no connection-establishment handshake",
+      "option_b": "Both require a three-way handshake",
+      "option_c": "UDP requires a four-way handshake",
+      "option_d": "Neither protocol supports communication without application authentication",
+      "correct_answer": "A",
+      "explanation": "TCP establishes a connection through a three-way handshake. UDP sends datagrams without protocol-level connection establishment."
+    },
+    {
+      "question": "What is the minimum TCP header size and the UDP header size stated in the lecture?",
+      "option_a": "TCP 8 bytes, UDP 20 bytes",
+      "option_b": "TCP 16 bytes, UDP 12 bytes",
+      "option_c": "TCP 40 bytes, UDP 20 bytes",
+      "option_d": "TCP 20 bytes, UDP 8 bytes",
       "correct_answer": "D",
-      "explanation": "Spyware is associated with unauthorized monitoring or collection of information rather than privacy protection with user consent."
+      "explanation": "The lecture identifies TCP's minimum header as 20 bytes and UDP's header as 8 bytes."
     },
     {
-      "question": "Which of the following is NOT a network-layer protocol or network-layer-related tool in the terminology used by the source?",
-      "option_a": "A. ICMP",
-      "option_b": "B. PING",
-      "option_c": "C. ARP",
-      "option_d": "D. IP",
-      "correct_answer": "C",
-      "explanation": "ARP operates at the boundary between the Data Link and Network layers and is not an Internet Layer protocol in the same sense as IP and ICMP."
-    },
-    {
-      "question": "What does an STP attack primarily attempt to manipulate?",
-      "option_a": "A. The Spanning Tree topology",
-      "option_b": "B. DNS records",
-      "option_c": "C. Application passwords",
-      "option_d": "D. IP packet payload encryption",
-      "correct_answer": "A",
-      "explanation": "STP attacks target the operation or topology decisions of the Spanning Tree Protocol."
-    },
-    {
-      "question": "Which is an advantage of anomaly detection?",
-      "option_a": "A. It can detect previously unseen behavior by identifying deviations from normal activity",
-      "option_b": "B. It requires a signature for every possible attack",
-      "option_c": "C. It can only detect attacks already stored in a ruleset",
-      "option_d": "D. It cannot operate with changing network behavior",
-      "correct_answer": "A",
-      "explanation": "Anomaly detection can identify activity that deviates from an established baseline, potentially detecting previously unknown attacks."
-    },
-    {
-      "question": "Which attack targets the CAM table of a Layer 2 switch?",
-      "option_a": "A. CAM table attack",
-      "option_b": "B. TTL Expiry attack",
-      "option_c": "C. Ping of Death",
-      "option_d": "D. Routing table overflow",
-      "correct_answer": "A",
-      "explanation": "A CAM table attack specifically targets the switch's Content Addressable Memory table."
-    },
-    {
-      "question": "What does a network-layer firewall primarily filter?",
-      "option_a": "A. IP packets",
-      "option_b": "B. Ethernet frames only",
-      "option_c": "C. Application source code",
-      "option_d": "D. User passwords",
-      "correct_answer": "A",
-      "explanation": "Network-layer firewalls primarily make filtering decisions based on IP packets and network-layer information."
-    },
-    {
-      "question": "What is a primary objective of access attacks?",
-      "option_a": "A. To gain unauthorized access to a system or network",
-      "option_b": "B. To improve network performance",
-      "option_c": "C. To update legitimate software",
-      "option_d": "D. To prevent all user authentication",
-      "correct_answer": "A",
-      "explanation": "Access attacks attempt to obtain unauthorized access to systems, resources, or networks."
-    },
-    {
-      "question": "Phishing attempts to ______ people to divulge ______ information.",
-      "option_a": "A. convince; sensitive",
-      "option_b": "B. encrypt; public",
-      "option_c": "C. block; routing",
-      "option_d": "D. monitor; hardware",
-      "correct_answer": "A",
-      "explanation": "Phishing attempts to convince victims to disclose sensitive information, often by pretending to be a trusted organization."
-    },
-    {
-      "question": "Which statement correctly describes malware?",
-      "option_a": "A. Malware is a term for various forms of harmful or intrusive software",
-      "option_b": "B. Malware cannot take the form of executable code",
-      "option_c": "C. Malware is never intentionally harmful",
-      "option_d": "D. Malware refers only to computer viruses",
-      "correct_answer": "A",
-      "explanation": "Malware is a broad term covering various forms of malicious or harmful software."
-    },
-    {
-      "question": "Which characteristic belongs to the Network Layer?",
-      "option_a": "A. Packet fragmentation",
-      "option_b": "B. Physical signal transmission",
-      "option_c": "C. MAC address learning only",
-      "option_d": "D. Application user authentication",
-      "correct_answer": "A",
-      "explanation": "IP packet fragmentation is a function associated with the Network Layer."
-    },
-    {
-      "question": "How should an ICMP Sweep be classified in the context of the provided security material?",
-      "option_a": "A. An ICMP-based network reconnaissance attack",
-      "option_b": "B. A Data Link Layer encryption method",
-      "option_c": "C. A transport-layer authentication protocol",
-      "option_d": "D. A physical-layer troubleshooting cable",
-      "correct_answer": "A",
-      "explanation": "An ICMP Sweep sends ICMP Echo Requests across an address range to discover active hosts and is therefore a reconnaissance attack."
-    },
-    {
-      "question": "Which technology is specifically associated with protecting against spoofed or unauthorized source information at the access layer?",
-      "option_a": "A. Source Guard",
-      "option_b": "B. DNS recursion",
-      "option_c": "C. TTL Expiry",
-      "option_d": "D. ICMP Redirect",
-      "correct_answer": "A",
-      "explanation": "Source Guard is an access-layer security mechanism used to help prevent source-address spoofing."
-    },
-    {
-      "question": "Which statement best describes the Ping of Death attack?",
-      "option_a": "A. It uses malformed or oversized ICMP/IP packets that can cause vulnerable systems to fail during reassembly",
-      "option_b": "B. It only sends normal ICMP Echo Replies",
-      "option_c": "C. It is exclusively a DNS attack",
-      "option_d": "D. It relies on changing Ethernet MAC addresses",
-      "correct_answer": "A",
-      "explanation": "Ping of Death exploits vulnerable packet reassembly by sending fragments that result in an illegally oversized packet."
-    },
-    {
-      "question": "In a classic Smurf attack, what does the attacker spoof when sending traffic to a broadcast address?",
-      "option_a": "A. The victim's IP address as the source of an ICMP Echo Request",
-      "option_b": "B. The broadcast address as the source of an Echo Reply",
-      "option_c": "C. The router's MAC address as the destination",
-      "option_d": "D. The attacker's own address as the victim",
-      "correct_answer": "A",
-      "explanation": "The attacker sends an ICMP Echo Request to a broadcast address while spoofing the victim's IP as the source, causing multiple hosts to reply to the victim."
-    },
-    {
-      "question": "Grey-hat attackers may test networks and computer systems similarly to black-hat attackers, but do so ______ malicious intent.",
-      "option_a": "A. with",
-      "option_b": "B. without",
-      "option_c": "C. exclusively for",
-      "option_d": "D. after demanding",
+      "question": "Which application category is most suitable for UDP according to the lecture?",
+      "option_a": "Reliable file transfer",
+      "option_b": "Latency-sensitive, loss-tolerant communication such as VoIP and gaming",
+      "option_c": "Applications requiring guaranteed ordered delivery",
+      "option_d": "Applications requiring automatic retransmission of every lost segment",
       "correct_answer": "B",
-      "explanation": "Grey-hat activity is characterized in the source as being conducted without malicious intent, although it may still occur without authorization."
+      "explanation": "UDP's low overhead makes it suitable for latency-sensitive applications that can tolerate some packet loss."
     },
     {
-      "question": "Which is a common method used in password attacks?",
-      "option_a": "A. Dictionary attack",
-      "option_b": "B. Packet fragmentation",
-      "option_c": "C. STP root election",
-      "option_d": "D. ICMP Redirect",
-      "correct_answer": "A",
-      "explanation": "A dictionary attack attempts passwords from a list of likely words or previously known password candidates."
-    },
-    {
-      "question": "Adware ______ annoying pop-ups to generate ______ for its author.",
-      "option_a": "A. displays; revenue",
-      "option_b": "B. encrypts; authentication",
-      "option_c": "C. blocks; confidentiality",
-      "option_d": "D. deletes; integrity",
-      "correct_answer": "A",
-      "explanation": "Adware can display advertising pop-ups and generate revenue for its author by targeting users with advertisements."
-    },
-    {
-      "question": "What packet size is associated with the classic Ping of Death attack?",
-      "option_a": "A. Less than 1,500 bytes",
-      "option_b": "B. Exactly 65,535 bytes",
-      "option_c": "C. More than 65,535 bytes after reassembly",
-      "option_d": "D. Exactly 512 bytes",
+      "question": "What is a socket?",
+      "option_a": "A physical connection between two network devices",
+      "option_b": "An encryption key assigned to a network connection",
+      "option_c": "A communication endpoint identified by an IP address and a port number",
+      "option_d": "A routing table entry containing a destination network",
       "correct_answer": "C",
-      "explanation": "The classic attack attempts to create a packet larger than the legal 65,535-byte IP packet limit when fragments are reassembled."
+      "explanation": "A socket is a communication endpoint represented by an IP address paired with a port number."
     },
     {
-      "question": "Which control can help mitigate ARP attacks by ensuring that only valid ARP requests and replies are relayed?",
-      "option_a": "A. Dynamic ARP Inspection",
-      "option_b": "B. Disabling IP routing",
-      "option_c": "C. Increasing TTL",
-      "option_d": "D. Enabling directed broadcasts",
+      "question": "Which four values uniquely identify a TCP connection according to the lecture?",
+      "option_a": "Source IP, source port, destination IP and destination port",
+      "option_b": "Source MAC, destination MAC, protocol and TTL",
+      "option_c": "Source IP, destination IP, sequence number and acknowledgment number",
+      "option_d": "Source port, destination port, subnet mask and gateway",
       "correct_answer": "A",
-      "explanation": "Dynamic ARP Inspection validates ARP messages and can prevent malicious or invalid ARP traffic from being relayed."
+      "explanation": "The four-tuple consists of source IP, source port, destination IP and destination port."
     },
     {
-      "question": "Which statement best describes network security architecture involving layered network infrastructure?",
-      "option_a": "A. Network security can involve core, distribution, and access-layer security",
-      "option_b": "B. Network security only concerns personal computers",
-      "option_c": "C. Network security only concerns routers",
-      "option_d": "D. Network security excludes switches and access devices",
-      "correct_answer": "A",
-      "explanation": "The source describes network security as involving core, distributed/distribution, and access layers."
+      "question": "A browser opens multiple connections to the same web server. Why can the server distinguish these connections?",
+      "option_a": "Each browser tab uses a different destination IP address",
+      "option_b": "Each tab uses a different TCP version",
+      "option_c": "The server assigns a different MAC address to every tab",
+      "option_d": "Different source ports allow the connections to have distinct four-tuples",
+      "correct_answer": "D",
+      "explanation": "Different source ports distinguish simultaneous connections to the same destination when considered with the other four-tuple values."
     },
     {
-      "question": "Which device is an example of an endpoint that requires endpoint security?",
-      "option_a": "A. Laptop",
-      "option_b": "B. Network switch",
-      "option_c": "C. Ethernet cable",
-      "option_d": "D. Router interface only",
+      "question": "What is the correct sequence of the TCP three-way handshake?",
+      "option_a": "ACK, SYN, FIN",
+      "option_b": "SYN, SYN-ACK, ACK",
+      "option_c": "SYN, FIN, ACK",
+      "option_d": "SYN-ACK, ACK, SYN",
+      "correct_answer": "B",
+      "explanation": "The client sends SYN, the server responds with SYN-ACK, and the client completes the handshake with ACK."
+    },
+    {
+      "question": "What information does the client communicate through its initial SYN?",
+      "option_a": "Its final acknowledgment number",
+      "option_b": "Its encryption password",
+      "option_c": "Its initial sequence number",
+      "option_d": "Its final connection termination time",
+      "correct_answer": "C",
+      "explanation": "The initial SYN carries the client's initial sequence number, which is used to synchronize TCP communication."
+    },
+    {
+      "question": "What is the purpose of the SYN-ACK message?",
+      "option_a": "To acknowledge the client's initial sequence number and communicate the server's own initial sequence number",
+      "option_b": "To terminate the connection",
+      "option_c": "To allocate the client's IP address",
+      "option_d": "To confirm that all application data has been received",
       "correct_answer": "A",
-      "explanation": "Laptops are endpoint devices and therefore fall within the scope of endpoint security."
+      "explanation": "The server acknowledges the client's SYN and sends its own initial sequence number in the SYN-ACK."
+    },
+    {
+      "question": "At which point does the server receive confirmation that the client has received its SYN-ACK?",
+      "option_a": "When the initial SYN arrives",
+      "option_b": "When the server transmits SYN-ACK",
+      "option_c": "When the client sends FIN",
+      "option_d": "When the final ACK arrives",
+      "correct_answer": "D",
+      "explanation": "The final ACK acknowledges the server's sequence number and completes the three-way handshake."
+    },
+    {
+      "question": "What resource does the server reserve when it receives an initial SYN?",
+      "option_a": "A fully established application session with all working buffers",
+      "option_b": "A half-open backlog entry holding connection state, including a Transmission Control Block",
+      "option_c": "A permanent destination IP address",
+      "option_d": "A dedicated physical network interface",
+      "correct_answer": "B",
+      "explanation": "The server creates a half-open connection entry containing state information before it has verified that the client is genuine."
+    },
+    {
+      "question": "When does a TCP connection move from the half-open backlog into the established connection table?",
+      "option_a": "Immediately after receiving SYN",
+      "option_b": "Immediately after transmitting SYN-ACK",
+      "option_c": "After receiving the final ACK",
+      "option_d": "After receiving the first FIN",
+      "correct_answer": "C",
+      "explanation": "The final ACK completes the handshake. The server then moves the connection into its established connection table and allocates the required working buffers."
+    },
+    {
+      "question": "What is the typical TCP connection termination sequence?",
+      "option_a": "FIN, ACK, FIN, ACK",
+      "option_b": "SYN, SYN-ACK, ACK",
+      "option_c": "RST, SYN, FIN, ACK",
+      "option_d": "ACK, ACK, FIN",
+      "correct_answer": "A",
+      "explanation": "A typical close involves FIN, acknowledgment of that FIN, the other side's FIN, and a final ACK."
+    },
+    {
+      "question": "Why can TCP connection termination sometimes appear to involve only three packets?",
+      "option_a": "TCP skips the acknowledgment of the first FIN",
+      "option_b": "The second endpoint is not required to close its connection",
+      "option_c": "TCP replaces FIN with SYN",
+      "option_d": "The middle ACK and FIN can be combined into one FIN-ACK",
+      "correct_answer": "D",
+      "explanation": "If the receiving side has nothing more to send, it can acknowledge the first FIN and send its own FIN together."
+    },
+    {
+      "question": "What is the main purpose of the TCP TIME_WAIT state?",
+      "option_a": "To keep a connection permanently open",
+      "option_b": "To retain connection resources temporarily so delayed duplicate segments do not interfere with future connections",
+      "option_c": "To retransmit every previously acknowledged segment",
+      "option_d": "To prevent all new connections from being established",
+      "correct_answer": "B",
+      "explanation": "TIME_WAIT allows delayed duplicate segments to expire before the connection's resources are fully released."
+    },
+    {
+      "question": "Which category best describes TCP port scanning?",
+      "option_a": "Connection resource exhaustion",
+      "option_b": "Cryptographic compromise",
+      "option_c": "Information gathering",
+      "option_d": "Physical-layer disruption",
+      "correct_answer": "C",
+      "explanation": "TCP port scanning is reconnaissance used to discover which services are open, closed or filtered."
+    },
+    {
+      "question": "What response does a typical open TCP port send after receiving a SYN scan probe?",
+      "option_a": "SYN-ACK",
+      "option_b": "FIN-ACK",
+      "option_c": "ICMP Echo Reply",
+      "option_d": "DHCP Offer",
+      "correct_answer": "A",
+      "explanation": "An open TCP port typically responds to a SYN with SYN-ACK, indicating that a service is listening."
+    },
+    {
+      "question": "What response does a typical closed TCP port send after receiving a SYN probe?",
+      "option_a": "SYN-ACK",
+      "option_b": "FIN",
+      "option_c": "ICMP Echo Reply",
+      "option_d": "RST",
+      "correct_answer": "D",
+      "explanation": "A closed TCP port typically responds with RST to indicate that no service is listening."
+    },
+    {
+      "question": "How does a SYN scan differ from a TCP connect scan?",
+      "option_a": "A SYN scan uses UDP while a connect scan uses TCP",
+      "option_b": "A SYN scan does not complete the handshake, while a connect scan completes the full handshake",
+      "option_c": "A connect scan never communicates with the target",
+      "option_d": "A SYN scan requires an established application session",
+      "correct_answer": "B",
+      "explanation": "A SYN scan reads the initial response without completing the handshake, whereas a connect scan establishes the complete TCP connection."
+    },
+    {
+      "question": "Why might an attacker prefer a SYN scan over a connect scan?",
+      "option_a": "It guarantees that the target cannot detect the scan",
+      "option_b": "It encrypts all reconnaissance traffic",
+      "option_c": "It avoids completing the full handshake and is generally less likely to create full connection logs",
+      "option_d": "It bypasses every type of firewall",
+      "correct_answer": "C",
+      "explanation": "A SYN scan does not complete the handshake, making it quieter than a full connect scan, although it is not guaranteed to be undetectable."
+    },
+    {
+      "question": "Which statement about TCP connect scans is correct?",
+      "option_a": "They complete the full TCP handshake and do not require special privileges in the way raw SYN scanning often does",
+      "option_b": "They send only malformed TCP packets",
+      "option_c": "They never establish a connection",
+      "option_d": "They rely exclusively on ICMP Port Unreachable messages",
+      "correct_answer": "A",
+      "explanation": "A connect scan uses the normal TCP connection-establishment process and is generally more detectable than a SYN scan."
+    },
+    {
+      "question": "What is the purpose of FIN, Xmas and NULL scans?",
+      "option_a": "To establish encrypted TCP sessions",
+      "option_b": "To flood a server's connection backlog",
+      "option_c": "To identify the physical location of a server",
+      "option_d": "To infer port states by sending unusual TCP flag combinations",
+      "correct_answer": "D",
+      "explanation": "These scans exploit differences in how operating systems respond to unusual TCP flag combinations."
+    },
+    {
+      "question": "In the scan behavior described in the lecture, what response is expected from a closed port receiving an unusual FIN, Xmas or NULL probe?",
+      "option_a": "SYN-ACK",
+      "option_b": "RST",
+      "option_c": "FIN-ACK",
+      "option_d": "DHCP ACK",
+      "correct_answer": "B",
+      "explanation": "A closed port should respond with RST, while many operating systems simply drop these unusual probes when the port is open."
+    },
+    {
+      "question": "Why can FIN, Xmas and NULL scans sometimes evade a firewall that primarily watches for SYN packets?",
+      "option_a": "They change the destination IP address automatically",
+      "option_b": "They use an encrypted handshake",
+      "option_c": "They use unusual flag combinations rather than conventional SYN probes",
+      "option_d": "They disable the target's TCP stack",
+      "correct_answer": "C",
+      "explanation": "A firewall rule focused on SYN traffic may fail to identify unusual TCP flag combinations used by these scanning techniques."
+    },
+    {
+      "question": "What does a TCP host sweep attempt to discover?",
+      "option_a": "Which hosts in an IP address range are alive and reachable",
+      "option_b": "Which files are stored on a server",
+      "option_c": "Which encryption keys are installed",
+      "option_d": "Which users are currently logged in",
+      "correct_answer": "A",
+      "explanation": "A host sweep checks a range of addresses to identify active hosts rather than discovering every open port on one host."
+    },
+    {
+      "question": "Which technique is commonly used in a TCP host sweep?",
+      "option_a": "Sending a different FIN packet to every application process",
+      "option_b": "Establishing a complete connection to every port",
+      "option_c": "Sending ICMP Timestamp Requests exclusively",
+      "option_d": "Sending SYN probes to the same commonly used port across an address range",
+      "correct_answer": "D",
+      "explanation": "A TCP host sweep commonly sends SYN probes to one port across multiple destination addresses."
+    },
+    {
+      "question": "Why can a TCP host sweep identify active hosts even when ICMP Echo Requests are blocked?",
+      "option_a": "TCP automatically converts SYN packets into ICMP messages",
+      "option_b": "A host may respond to TCP probes with SYN-ACK or RST independently of ICMP Echo",
+      "option_c": "Blocking ICMP disables TCP filtering",
+      "option_d": "TCP host sweeps use DNS exclusively",
+      "correct_answer": "B",
+      "explanation": "An active host can respond to a TCP probe on an open or closed port, allowing reconnaissance without ICMP Echo."
+    },
+    {
+      "question": "Which mitigation is particularly useful against TCP host sweeps across an internal network?",
+      "option_a": "Disabling all TCP sequence numbers",
+      "option_b": "Increasing the UDP header size",
+      "option_c": "Network segmentation",
+      "option_d": "Removing all IP addresses",
+      "correct_answer": "C",
+      "explanation": "Network segmentation limits the address space that a compromised system can reach, reducing the impact of horizontal reconnaissance."
+    },
+    {
+      "question": "What does OS fingerprinting attempt to identify?",
+      "option_a": "The operating system and version running on a target",
+      "option_b": "The physical MAC address of every router",
+      "option_c": "The user's application password",
+      "option_d": "The encryption key used by a VPN",
+      "correct_answer": "A",
+      "explanation": "OS fingerprinting analyzes network-stack behavior to infer the operating system and potentially its version."
+    },
+    {
+      "question": "Which combination of characteristics can help an attacker perform OS fingerprinting?",
+      "option_a": "File permissions and database schemas",
+      "option_b": "Usernames and application passwords",
+      "option_c": "DNS record expiration and browser cookies",
+      "option_d": "Default TTL, TCP window size, TCP options ordering and responses to unusual packets",
+      "correct_answer": "D",
+      "explanation": "Different operating systems exhibit characteristic TCP/IP stack behaviors that can be compared against known fingerprints."
+    },
+    {
+      "question": "Why is identifying a target's operating system valuable to an attacker?",
+      "option_a": "It automatically provides administrator privileges",
+      "option_b": "It helps the attacker identify vulnerabilities associated with that operating system and version",
+      "option_c": "It disables the target's firewall",
+      "option_d": "It reveals the target's complete source code",
+      "correct_answer": "B",
+      "explanation": "Knowing the OS and version helps attackers select vulnerabilities and techniques relevant to the target."
+    },
+    {
+      "question": "According to the lecture, what is the most important mitigation against OS fingerprinting leading to compromise?",
+      "option_a": "Disabling every network protocol",
+      "option_b": "Increasing the TCP minimum header size",
+      "option_c": "Keeping systems patched",
+      "option_d": "Disabling all application services permanently",
+      "correct_answer": "C",
+      "explanation": "Patching ensures that identifying a particular operating system does not automatically give an attacker an exploitable known vulnerability."
+    },
+    {
+      "question": "What is the central vulnerability exploited by TCP session hijacking?",
+      "option_a": "TCP tracks session state using sequence numbers without cryptographically authenticating subsequent packets",
+      "option_b": "TCP does not use port numbers",
+      "option_c": "TCP automatically encrypts all application data",
+      "option_d": "TCP cannot detect packet loss",
+      "correct_answer": "A",
+      "explanation": "TCP sequence numbers track session state, but TCP itself does not cryptographically verify that later packets genuinely originate from the legitimate endpoint."
+    },
+    {
+      "question": "What does an attacker need to inject a forged packet into an established TCP session successfully?",
+      "option_a": "The target's physical MAC address only",
+      "option_b": "The server's DNS cache",
+      "option_c": "The client's operating system installation media",
+      "option_d": "A valid current sequence number and a packet that the receiver accepts as part of the session",
+      "correct_answer": "D",
+      "explanation": "The attacker needs appropriate sequence-number information to make the receiver accept the injected packet as valid session traffic."
+    },
+    {
+      "question": "Which technique can help an attacker obtain the sequence numbers needed for TCP hijacking?",
+      "option_a": "Reading the target's routing table through DNS",
+      "option_b": "Sniffing traffic on a shared or compromised network segment",
+      "option_c": "Sending DHCP Discover messages",
+      "option_d": "Changing the target's subnet mask",
+      "correct_answer": "B",
+      "explanation": "An attacker who can observe traffic on a shared or compromised network segment may learn the current sequence-number information."
+    },
+    {
+      "question": "Why did predictable initial TCP sequence numbers historically make session hijacking easier?",
+      "option_a": "They allowed attackers to bypass all IP routing",
+      "option_b": "They eliminated the need for TCP ports",
+      "option_c": "Attackers could predict sequence numbers and construct acceptable forged packets",
+      "option_d": "They forced every connection to use UDP",
+      "correct_answer": "C",
+      "explanation": "Predictable sequence-number generation made it easier to guess the state expected by the receiver. Modern operating systems randomize initial sequence numbers."
+    },
+    {
+      "question": "Which mitigation protects TCP sessions against injected packets that lack the required cryptographic authentication?",
+      "option_a": "TLS encryption and authentication",
+      "option_b": "Increasing the server's backlog",
+      "option_c": "Blocking all DNS responses",
+      "option_d": "Reducing the UDP header size",
+      "correct_answer": "A",
+      "explanation": "TLS protects the session's application data through cryptographic authentication and integrity checks, preventing unauthenticated injected content from being accepted as valid protected data."
+    },
+    {
+      "question": "What distinguishes TCP RST injection from TCP session hijacking?",
+      "option_a": "RST injection targets only UDP connections",
+      "option_b": "RST injection establishes a new TCP connection",
+      "option_c": "Session hijacking only changes a destination port",
+      "option_d": "RST injection attempts to terminate an existing connection, while hijacking aims to take over the session or inject content",
+      "correct_answer": "D",
+      "explanation": "Both attacks exploit insufficient authentication of TCP state, but their objectives differ: one terminates a connection, while the other takes it over."
+    },
+    {
+      "question": "What type of packet does an attacker forge during a TCP RST injection attack?",
+      "option_a": "SYN",
+      "option_b": "RST",
+      "option_c": "FIN",
+      "option_d": "DHCP ACK",
+      "correct_answer": "B",
+      "explanation": "The attacker forges a TCP Reset packet to terminate an existing connection prematurely."
+    },
+    {
+      "question": "What must a forged TCP RST packet satisfy to be accepted by the receiver according to the lecture?",
+      "option_a": "It must contain a valid DNS response",
+      "option_b": "It must use a larger UDP payload",
+      "option_c": "Its sequence number must fall within the receiver's current valid sequence-number window",
+      "option_d": "It must contain a valid ICMP Echo identifier",
+      "correct_answer": "C",
+      "explanation": "The receiver accepts a RST packet when its sequence number falls within the current valid sequence-number window."
+    },
+    {
+      "question": "What is a limitation of TLS as a defense against TCP RST injection?",
+      "option_a": "TLS protects session content, but the underlying TCP connection may still be reset by a valid forged RST",
+      "option_b": "TLS disables all TCP acknowledgments",
+      "option_c": "TLS makes TCP use UDP",
+      "option_d": "TLS automatically prevents every network-layer denial-of-service attack",
+      "correct_answer": "A",
+      "explanation": "TLS protects application data, but it does not prevent the underlying TCP connection from being terminated by a forged RST accepted by TCP."
+    },
+    {
+      "question": "Which application-level capability can help recover from a TCP connection terminated by RST injection?",
+      "option_a": "Disabling the operating system's network stack",
+      "option_b": "Increasing the UDP header length",
+      "option_c": "Removing the application's IP address",
+      "option_d": "Automatic reconnection logic",
+      "correct_answer": "D",
+      "explanation": "Applications that need resilience can implement automatic reconnection logic above TCP to recover from unexpected connection termination."
+    },
+    {
+      "question": "What is the primary target of a TCP SYN flood?",
+      "option_a": "The target's DNS database",
+      "option_b": "The server's half-open connection backlog",
+      "option_c": "The client's browser cache",
+      "option_d": "The destination's routing table",
+      "correct_answer": "B",
+      "explanation": "A SYN flood exploits the resources reserved for connections that have received SYN but have not completed the handshake."
+    },
+    {
+      "question": "What happens to a server when it receives a SYN during normal TCP connection establishment?",
+      "option_a": "It immediately establishes a fully authenticated application session",
+      "option_b": "It permanently reserves all available memory",
+      "option_c": "It creates a half-open connection entry and sends SYN-ACK",
+      "option_d": "It terminates all existing TCP connections",
+      "correct_answer": "C",
+      "explanation": "The server reserves a half-open backlog entry before receiving confirmation that the client is genuine."
+    },
+    {
+      "question": "Why are spoofed source IP addresses useful in a SYN flood?",
+      "option_a": "They can cause SYN-ACK responses to be sent to unrelated or unreachable addresses, preventing completion of the handshake",
+      "option_b": "They automatically increase the server's backlog",
+      "option_c": "They encrypt the SYN packets",
+      "option_d": "They make the server complete the handshake immediately",
+      "correct_answer": "A",
+      "explanation": "Spoofed addresses prevent the server's SYN-ACK from reaching the actual attacker in many cases, so the final ACK never arrives and half-open entries remain until timeout."
+    },
+    {
+      "question": "What is the likely consequence when a SYN flood fills the server's half-open backlog?",
+      "option_a": "All existing connections are immediately encrypted",
+      "option_b": "The server changes all TCP ports to UDP",
+      "option_c": "The server automatically increases its network bandwidth",
+      "option_d": "The server becomes unable to accept new connections normally",
+      "correct_answer": "D",
+      "explanation": "When the backlog is full, new legitimate connection attempts may be denied. Existing established connections are typically unaffected."
+    },
+    {
+      "question": "Which defense is specifically designed to reduce the resource-reservation weakness exploited by SYN floods?",
+      "option_a": "OS fingerprinting",
+      "option_b": "SYN cookies",
+      "option_c": "UDP port scanning",
+      "option_d": "TIME_WAIT expansion",
+      "correct_answer": "B",
+      "explanation": "SYN cookies encode the information needed to reconstruct connection state into the SYN-ACK sequence number, delaying allocation of real connection resources until the final ACK arrives."
+    },
+    {
+      "question": "How do SYN cookies differ from simply increasing the backlog size?",
+      "option_a": "SYN cookies increase the physical network interface speed",
+      "option_b": "Increasing the backlog removes the need for a handshake",
+      "option_c": "SYN cookies avoid allocating normal backlog state for every initial SYN, while increasing backlog only increases available capacity",
+      "option_d": "Both methods completely eliminate the underlying resource-reservation asymmetry",
+      "correct_answer": "C",
+      "explanation": "SYN cookies address the underlying resource asymmetry by delaying real allocation. A larger backlog only allows more half-open entries before exhaustion."
+    },
+    {
+      "question": "Which of the following is a supplementary mitigation for SYN floods rather than a complete removal of the underlying weakness?",
+      "option_a": "Increasing the backlog size",
+      "option_b": "Replacing TCP with DNS",
+      "option_c": "Disabling all sequence numbers",
+      "option_d": "Removing all server ports",
+      "correct_answer": "A",
+      "explanation": "Increasing backlog capacity raises the amount of traffic required to exhaust resources but does not eliminate the underlying weakness."
+    },
+    {
+      "question": "What is the purpose of reducing the SYN-RECEIVED timeout during a SYN flood?",
+      "option_a": "To make established connections terminate immediately",
+      "option_b": "To disable the TCP checksum",
+      "option_c": "To increase the number of application processes",
+      "option_d": "To release abandoned half-open connection entries sooner",
+      "correct_answer": "D",
+      "explanation": "A shorter timeout reduces the time that incomplete connections occupy backlog resources, although it does not remove the underlying vulnerability."
+    },
+    {
+      "question": "Which defense is most appropriate when a SYN flood exceeds the capacity of a single organization's on-site network equipment?",
+      "option_a": "Increasing browser cache size",
+      "option_b": "Dedicated DDoS protection services",
+      "option_c": "Disabling TCP checksums",
+      "option_d": "Using only local password policies",
+      "correct_answer": "B",
+      "explanation": "Dedicated DDoS protection services can absorb traffic volumes that an individual server or on-site firewall cannot handle."
+    },
+    {
+      "question": "Which statement accurately describes UDP?",
+      "option_a": "It requires a three-way handshake before every transmission",
+      "option_b": "It guarantees ordered delivery",
+      "option_c": "It is connectionless and maintains no protocol-level connection state",
+      "option_d": "It automatically retransmits every lost packet",
+      "correct_answer": "C",
+      "explanation": "UDP sends datagrams without connection establishment and does not maintain TCP-style connection state."
+    },
+    {
+      "question": "Which feature is absent from UDP according to the lecture?",
+      "option_a": "A checksum field",
+      "option_b": "Source and destination ports",
+      "option_c": "A transport-layer header",
+      "option_d": "Built-in reliability and retransmission",
+      "correct_answer": "D",
+      "explanation": "UDP has a checksum and port fields but does not provide built-in reliability or automatic retransmission."
+    },
+    {
+      "question": "What happens when UDP datagrams arrive out of order?",
+      "option_a": "UDP automatically rearranges them using TCP sequence numbers",
+      "option_b": "UDP itself does not guarantee their ordering",
+      "option_c": "The receiver always retransmits all datagrams",
+      "option_d": "The sender is automatically disconnected",
+      "correct_answer": "B",
+      "explanation": "UDP provides no built-in ordering guarantee. If ordering is needed, the application must implement it."
+    },
+    {
+      "question": "Why can UDP be cheaper for latency-sensitive applications?",
+      "option_a": "It eliminates all network-layer processing",
+      "option_b": "It guarantees that packets never get lost",
+      "option_c": "It avoids connection establishment and has a smaller header",
+      "option_d": "It encrypts packets without additional processing",
+      "correct_answer": "C",
+      "explanation": "UDP has no handshake and an 8-byte header, reducing overhead for applications such as VoIP, gaming and video."
+    },
+    {
+      "question": "Which statement about UDP application state is correct?",
+      "option_a": "If an application needs to track a conversation, it must implement that logic itself",
+      "option_b": "UDP automatically stores every connection in a Transmission Control Block",
+      "option_c": "UDP uses the TCP half-open backlog",
+      "option_d": "UDP guarantees that each datagram belongs to a previously established connection",
+      "correct_answer": "A",
+      "explanation": "UDP itself maintains no connection state, so any required conversation tracking must be implemented by the application."
+    },
+    {
+      "question": "Which of the following lists all four UDP-based attacks identified in the lecture?",
+      "option_a": "SYN flood, RST injection, TCP hijacking and UDP flood",
+      "option_b": "DNS poisoning, ARP spoofing, UDP flood and session hijacking",
+      "option_c": "TCP port scan, UDP host sweep, SYN flood and UDP bomb",
+      "option_d": "UDP port scan, UDP host sweep, UDP bomb attack and UDP flood",
+      "correct_answer": "D",
+      "explanation": "The four UDP attacks covered are UDP port scans, UDP host sweeps, UDP bomb attacks and UDP floods."
+    },
+    {
+      "question": "Why is UDP port scanning inherently more ambiguous than TCP port scanning?",
+      "option_a": "UDP uses encrypted headers",
+      "option_b": "An open UDP port may remain silent, while a closed port typically generates ICMP Port Unreachable",
+      "option_c": "UDP ports cannot be identified",
+      "option_d": "Every UDP packet requires a SYN-ACK response",
+      "correct_answer": "B",
+      "explanation": "UDP has no handshake. Silence may indicate an open service, a filtered packet or a lost probe, making port-state identification difficult."
+    },
+    {
+      "question": "What does an ICMP Port Unreachable response usually indicate during UDP port scanning?",
+      "option_a": "The UDP port is definitely open",
+      "option_b": "The host is using TCP",
+      "option_c": "The probed UDP port is closed",
+      "option_d": "The target has completed a TCP handshake",
+      "correct_answer": "C",
+      "explanation": "A closed UDP port typically generates an ICMP Port Unreachable response."
+    },
+    {
+      "question": "During UDP port scanning, what does receiving no response from the target indicate?",
+      "option_a": "The port is definitely open",
+      "option_b": "The target is definitely offline",
+      "option_c": "The target has accepted an authenticated connection",
+      "option_d": "The port may be open, or the probe or response may have been filtered or lost",
+      "correct_answer": "D",
+      "explanation": "UDP silence is ambiguous. A port may be open without responding, but filtering or packet loss can produce the same result."
+    },
+    {
+      "question": "Why might an attacker send a real DNS query to UDP port 53 during reconnaissance?",
+      "option_a": "To obtain a service-specific response that helps determine whether the UDP service is open",
+      "option_b": "To complete a TCP three-way handshake",
+      "option_c": "To force the target into TIME_WAIT",
+      "option_d": "To disable ICMP Port Unreachable messages",
+      "correct_answer": "A",
+      "explanation": "A valid application-specific payload may cause a listening DNS service to respond, reducing the ambiguity caused by silent UDP ports."
+    },
+    {
+      "question": "Which mitigation directly reduces the usefulness of ICMP Port Unreachable responses to UDP scanners?",
+      "option_a": "Increasing TCP receive windows",
+      "option_b": "Rate-limiting ICMP Port Unreachable generation",
+      "option_c": "Enabling TCP TIME_WAIT",
+      "option_d": "Increasing UDP header size",
+      "correct_answer": "B",
+      "explanation": "Rate-limiting ICMP Port Unreachable responses reduces the scanner's clearest signal for identifying closed UDP ports."
+    },
+    {
+      "question": "What is a UDP host sweep designed to discover?",
+      "option_a": "The exact operating system version of every host",
+      "option_b": "The encryption algorithm used by every service",
+      "option_c": "Which hosts are alive across an address range",
+      "option_d": "Which TCP connections are in TIME_WAIT",
+      "correct_answer": "C",
+      "explanation": "A UDP host sweep probes multiple IP addresses to determine which hosts are active."
+    },
+    {
+      "question": "How can a host reveal its existence during a UDP host sweep?",
+      "option_a": "By responding with a UDP service response or an ICMP Port Unreachable message",
+      "option_b": "By sending a TCP SYN-ACK for every UDP datagram",
+      "option_c": "By automatically assigning the scanner an IP address",
+      "option_d": "By transmitting its complete routing table",
+      "correct_answer": "A",
+      "explanation": "A live host may respond through an active UDP service or generate ICMP Port Unreachable when the destination port is closed."
+    },
+    {
+      "question": "Why is completely disabling ICMP not a sufficient defense against Layer 4 reconnaissance?",
+      "option_a": "TCP automatically disables all firewalls when ICMP is blocked",
+      "option_b": "ICMP filtering increases UDP header size",
+      "option_c": "All reconnaissance requires ICMP Echo Requests",
+      "option_d": "TCP host sweeps can use SYN probes, and UDP services may still respond through application traffic",
+      "correct_answer": "D",
+      "explanation": "TCP host sweeps can identify hosts through SYN-ACK or RST responses, while UDP services may respond independently of ICMP Echo."
+    },
+    {
+      "question": "What is the vulnerability exploited by a UDP bomb attack?",
+      "option_a": "Predictable TCP initial sequence numbers",
+      "option_b": "Insufficient validation of malformed UDP header fields by vulnerable network stacks",
+      "option_c": "An excessively large TCP backlog",
+      "option_d": "Incorrect DNS domain ownership",
+      "correct_answer": "B",
+      "explanation": "A UDP bomb exploits implementations that fail to validate fields such as the UDP length field correctly."
+    },
+    {
+      "question": "Which UDP header field is specifically mentioned in the lecture as an example of malformed packet construction?",
+      "option_a": "Destination MAC address",
+      "option_b": "TCP acknowledgment number",
+      "option_c": "UDP length field",
+      "option_d": "IP default gateway",
+      "correct_answer": "C",
+      "explanation": "The lecture describes a malformed UDP packet whose length field does not match the actual payload size."
+    },
+    {
+      "question": "What is the potential impact of a successful UDP bomb attack?",
+      "option_a": "Crashing or destabilizing a vulnerable network stack",
+      "option_b": "Automatically completing a TCP handshake",
+      "option_c": "Increasing the server's backlog capacity",
+      "option_d": "Encrypting all network traffic",
+      "correct_answer": "A",
+      "explanation": "A malformed UDP packet may cause a vulnerable network stack to crash or become unstable, resulting in denial of service."
+    },
+    {
+      "question": "Which defense is particularly important against UDP bomb attacks targeting embedded and IoT devices?",
+      "option_a": "Disabling all application-layer protocols",
+      "option_b": "Increasing the number of TCP ports",
+      "option_c": "Enabling TIME_WAIT on every UDP socket",
+      "option_d": "Keeping operating systems and device firmware patched",
+      "correct_answer": "D",
+      "explanation": "Unpatched embedded and IoT devices may retain legacy network-stack vulnerabilities, making firmware updates especially important."
+    },
+    {
+      "question": "What is the primary purpose of firewall and IPS packet validation against UDP bombs?",
+      "option_a": "To increase the attacker's available bandwidth",
+      "option_b": "To reject malformed UDP packets before they reach vulnerable systems",
+      "option_c": "To convert UDP into TCP",
+      "option_d": "To establish a connection before every datagram",
+      "correct_answer": "B",
+      "explanation": "Packet validation can identify and drop malformed UDP packets at the network boundary before they reach vulnerable hosts."
+    },
+    {
+      "question": "What is the main target of a UDP flood?",
+      "option_a": "The TCP connection sequence number",
+      "option_b": "The DNS root zone",
+      "option_c": "The target's bandwidth and processing capacity",
+      "option_d": "The TCP half-open backlog exclusively",
+      "correct_answer": "C",
+      "explanation": "UDP floods send large volumes of datagrams to exhaust network bandwidth or the target's processing resources."
+    },
+    {
+      "question": "Why can an attacker start a UDP flood without establishing a connection?",
+      "option_a": "UDP has no connection-establishment handshake",
+      "option_b": "UDP requires a valid TCP session",
+      "option_c": "UDP automatically authenticates every sender",
+      "option_d": "UDP uses a three-way handshake internally",
+      "correct_answer": "A",
+      "explanation": "UDP is connectionless, allowing attackers to transmit datagrams without completing a connection-establishment process."
+    },
+    {
+      "question": "Why can UDP flooding be cheaper for an attacker than an equivalent TCP-based connection flood?",
+      "option_a": "UDP automatically compresses attack traffic",
+      "option_b": "UDP guarantees that every packet reaches the target",
+      "option_c": "UDP uses a larger header and requires more state",
+      "option_d": "UDP avoids handshake requirements and has no built-in congestion control",
+      "correct_answer": "D",
+      "explanation": "UDP allows immediate datagram transmission without establishing connections, and it does not provide built-in congestion control."
+    },
+    {
+      "question": "What secondary resource-consumption effect can occur during a UDP flood targeting closed ports?",
+      "option_a": "The server automatically creates TCP sessions",
+      "option_b": "The victim may generate ICMP Port Unreachable messages for incoming datagrams",
+      "option_c": "The victim's operating system changes to UDP-only mode",
+      "option_d": "Every datagram is converted into a DNS query",
+      "correct_answer": "B",
+      "explanation": "When packets target closed UDP ports, the victim may generate ICMP Port Unreachable messages, creating additional processing overhead."
+    },
+    {
+      "question": "Which combination is most appropriate for mitigating UDP floods?",
+      "option_a": "Increase TCP TIME_WAIT and enable OS fingerprinting",
+      "option_b": "Disable all application authentication and increase the UDP header",
+      "option_c": "Rate-limit UDP traffic, close unnecessary UDP ports and rate-limit ICMP Port Unreachable generation",
+      "option_d": "Increase the TCP initial sequence number",
+      "correct_answer": "C",
+      "explanation": "UDP flood mitigation includes perimeter rate-limiting, closing unnecessary UDP ports and reducing secondary ICMP processing."
+    },
+    {
+      "question": "What is UDP amplification in the context of large-scale DDoS attacks?",
+      "option_a": "Using application protocols that return much larger responses than the original requests to amplify traffic toward a victim",
+      "option_b": "Increasing the UDP header from 8 bytes to 20 bytes",
+      "option_c": "Combining two TCP handshakes into one",
+      "option_d": "Using SYN cookies to allocate additional UDP connections",
+      "correct_answer": "A",
+      "explanation": "Amplification exploits UDP-based application protocols that produce responses much larger than requests, allowing attackers to increase the traffic directed at victims."
+    },
+    {
+      "question": "Which protocols are given as examples of UDP-based amplification attacks in the lecture?",
+      "option_a": "HTTP, HTTPS and FTP",
+      "option_b": "SSH, Telnet and SMTP",
+      "option_c": "ARP, Ethernet and VLAN",
+      "option_d": "DNS, NTP and memcached",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies DNS, NTP and memcached as examples of application protocols that can be abused for UDP amplification."
+    },
+    {
+      "question": "Which statement best explains the common underlying design assumption behind TCP and UDP vulnerabilities?",
+      "option_a": "Both protocols assume that every packet is encrypted",
+      "option_b": "The transport layer was designed with an assumption of a trusted network, providing limited sender verification by default",
+      "option_c": "Both protocols require application authentication before transmitting packets",
+      "option_d": "Both protocols were designed to prevent all denial-of-service attacks",
+      "correct_answer": "B",
+      "explanation": "The lecture explains that Layer 4 was designed with a trusted-network assumption, resulting in minimal or absent verification at the transport layer."
+    },
+    {
+      "question": "Which statement best distinguishes the principal TCP and UDP security weaknesses?",
+      "option_a": "TCP has no ports, while UDP has no checksum",
+      "option_b": "TCP is always encrypted, while UDP is always authenticated",
+      "option_c": "TCP has predictable, unauthenticated connection state, while UDP has no protocol-level connection state or sender verification",
+      "option_d": "TCP only suffers from amplification, while UDP only suffers from session hijacking",
+      "correct_answer": "C",
+      "explanation": "TCP's weakness concerns its unauthenticated sequence-number-based state and premature resource allocation. UDP's weakness comes from its lack of connection state and verification."
+    },
+    {
+      "question": "Why is source IP spoofing a recurring factor in many Layer 4 attacks?",
+      "option_a": "Layer 4 itself does not cryptographically verify the true origin of packets",
+      "option_b": "TCP and UDP automatically encrypt source IP addresses",
+      "option_c": "IP addresses cannot be used by routers",
+      "option_d": "Port numbers always reveal the physical identity of a sender",
+      "correct_answer": "A",
+      "explanation": "Layer 4 does not independently authenticate the source of incoming traffic. Filtering and authentication must be provided by other layers or systems."
+    },
+    {
+      "question": "Which security mechanism can help address spoofed source addresses at network boundaries?",
+      "option_a": "Increasing TIME_WAIT duration",
+      "option_b": "Changing TCP port numbers randomly",
+      "option_c": "Disabling TCP checksums",
+      "option_d": "Ingress and egress filtering",
+      "correct_answer": "D",
+      "explanation": "Ingress and egress filtering can reduce the ability of attackers to send packets with forged source addresses."
+    },
+    {
+      "question": "A company disables ICMP Echo Requests, believing this completely prevents host discovery. An attacker sends SYN probes to TCP port 80 across the company's address range. Active systems respond with SYN-ACK or RST. Which conclusion is correct?",
+      "option_a": "The attack cannot work because TCP requires ICMP Echo",
+      "option_b": "The attacker is performing a TCP host sweep, which can bypass defenses relying exclusively on ICMP Echo filtering",
+      "option_c": "The attacker is performing a UDP bomb attack",
+      "option_d": "The attacker is performing a TCP RST injection attack",
+      "correct_answer": "B",
+      "explanation": "TCP host sweeps identify active hosts through TCP responses. Blocking ICMP Echo alone does not prevent this form of reconnaissance."
+    },
+    {
+      "question": "A security analyst observes a large number of SYN packets arriving at a server. Many apparent source addresses never complete the handshake, and legitimate new connections begin failing. Which explanation best fits the evidence?",
+      "option_a": "An OS fingerprinting attack has modified the TCP window size",
+      "option_b": "A UDP port scan has exhausted the DNS cache",
+      "option_c": "A TCP SYN flood has exhausted the half-open connection backlog",
+      "option_d": "A TCP FIN scan has terminated every established session",
+      "correct_answer": "C",
+      "explanation": "The incomplete handshakes consume half-open backlog entries. When these entries accumulate, the server may be unable to accept new legitimate connections."
+    },
+    {
+      "question": "A server has a half-open backlog capacity of 500 entries. An attacker sends 700 SYN packets using spoofed source addresses. Assume the entries do not expire during the attack. What is the most likely outcome?",
+      "option_a": "The backlog becomes exhausted, and new connection attempts may be denied",
+      "option_b": "All 700 connections become fully established automatically",
+      "option_c": "The server automatically increases its backlog to 700",
+      "option_d": "Only UDP traffic is affected",
+      "correct_answer": "A",
+      "explanation": "The first 500 incomplete connection attempts can occupy the available backlog. Additional attempts arrive when the resource is already exhausted."
+    },
+    {
+      "question": "A network administrator enables SYN cookies but does not increase the backlog size. Why can this still significantly improve protection?",
+      "option_a": "SYN cookies encrypt all application data",
+      "option_b": "SYN cookies block all SYN packets",
+      "option_c": "SYN cookies prevent all UDP floods",
+      "option_d": "SYN cookies allow the server to avoid normal backlog allocation for incomplete connections until the final ACK is received",
+      "correct_answer": "D",
+      "explanation": "SYN cookies encode connection information in the SYN-ACK sequence number and defer normal resource allocation until the client proves reachability with the final ACK."
+    },
+    {
+      "question": "An attacker sends a crafted TCP packet to an established session. The receiver accepts it because its sequence number is valid. The attacker wants to inject application data. Which attack is being performed?",
+      "option_a": "TCP SYN flood",
+      "option_b": "TCP session hijacking",
+      "option_c": "TCP host sweep",
+      "option_d": "TCP port scan",
+      "correct_answer": "B",
+      "explanation": "TCP hijacking involves injecting traffic into an existing session by exploiting the lack of cryptographic authentication of TCP packets."
+    },
+    {
+      "question": "An attacker has the same sequence-number information used in TCP hijacking but sends a forged RST packet instead of application data. What is the attack's primary objective?",
+      "option_a": "Discovering open UDP ports",
+      "option_b": "Establishing an additional TCP connection",
+      "option_c": "Prematurely terminating a specific existing TCP connection",
+      "option_d": "Increasing the victim's connection backlog",
+      "correct_answer": "C",
+      "explanation": "RST injection uses a forged Reset packet to terminate a specific existing connection rather than taking over the session to inject application content."
+    },
+    {
+      "question": "A company deploys TLS to protect application traffic. An attacker can still inject a valid TCP RST packet into the underlying connection. Which assessment is most accurate?",
+      "option_a": "TLS prevents the attacker from reading or modifying protected content, but the connection can still be terminated at the TCP level",
+      "option_b": "TLS guarantees that no TCP packet can be reset",
+      "option_c": "TLS disables TCP sequence numbers",
+      "option_d": "TLS converts the connection into UDP",
+      "correct_answer": "A",
+      "explanation": "TLS protects the session content and its integrity, but TCP connection termination remains a separate transport-layer operation."
+    },
+    {
+      "question": "A scanner sends UDP probes to 100 ports. Some ports return ICMP Port Unreachable, while others remain silent. Which interpretation is the most accurate?",
+      "option_a": "Every silent port is confirmed open",
+      "option_b": "Every ICMP response indicates an open port",
+      "option_c": "Every silent port belongs to an offline host",
+      "option_d": "ICMP Port Unreachable indicates closed ports, while silence remains ambiguous",
+      "correct_answer": "D",
+      "explanation": "UDP port scanning is inherently ambiguous because open services may not respond and filtering or packet loss can also produce silence."
+    },
+    {
+      "question": "A company blocks ICMP Echo Requests and rate-limits ICMP Port Unreachable messages. Which conclusion is most appropriate?",
+      "option_a": "All TCP and UDP reconnaissance is now impossible",
+      "option_b": "These controls reduce some reconnaissance signals, but TCP probes and application-specific UDP responses may still reveal hosts and services",
+      "option_c": "The controls automatically prevent TCP session hijacking",
+      "option_d": "The controls eliminate the need for patch management",
+      "correct_answer": "B",
+      "explanation": "ICMP filtering and rate-limiting reduce some discovery signals but cannot replace broader service exposure controls, segmentation and scan detection."
+    },
+    {
+      "question": "A vulnerable IoT device crashes when it receives a UDP datagram whose length field is inconsistent with the actual payload. Which attack and mitigation best match this situation?",
+      "option_a": "TCP hijacking; enable SYN cookies",
+      "option_b": "UDP flood; increase TCP TIME_WAIT",
+      "option_c": "UDP bomb; patch the firmware and validate malformed packets at the firewall or IPS",
+      "option_d": "OS fingerprinting; disable DNS",
+      "correct_answer": "C",
+      "explanation": "The malformed UDP length field identifies a UDP bomb-style attack. Patching and packet validation address the vulnerable implementation."
+    },
+    {
+      "question": "A server receives a UDP flood directed at a closed port. Its CPU usage increases further because it generates ICMP Port Unreachable responses for incoming datagrams. What is the most appropriate additional mitigation?",
+      "option_a": "Rate-limit or disable excessive ICMP Port Unreachable generation",
+      "option_b": "Increase the TCP initial sequence number",
+      "option_c": "Enable additional TCP acknowledgments",
+      "option_d": "Increase the number of DNS records",
+      "correct_answer": "A",
+      "explanation": "Limiting ICMP Port Unreachable generation removes the secondary resource drain caused by responding to large volumes of packets targeting closed UDP ports."
+    },
+    {
+      "question": "A small business wants to reduce its exposure to port scans with almost no security budget. Which combination is most proportionate?",
+      "option_a": "Purchase expensive deep packet inspection equipment immediately",
+      "option_b": "Replace all computers and disable all networking",
+      "option_c": "Increase the number of exposed services and rely on passwords",
+      "option_d": "Disable unnecessary services, use existing firewall or IDS scan detection, and rate-limit connection attempts",
+      "correct_answer": "D",
+      "explanation": "Reducing exposed services and using existing firewall or IDS capabilities provide meaningful protection without requiring expensive new infrastructure."
+    },
+    {
+      "question": "A company has almost no security budget and is concerned about spoofed-source attacks. Which initial control provides useful protection at relatively low cost?",
+      "option_a": "Increasing TCP header size",
+      "option_b": "Enabling ingress and egress filtering at network boundaries",
+      "option_c": "Replacing all TCP services with UDP",
+      "option_d": "Increasing TIME_WAIT duration",
+      "correct_answer": "B",
+      "explanation": "Ingress and egress filtering can reduce spoofed-source traffic using network configuration rather than expensive dedicated equipment."
+    },
+    {
+      "question": "A company experiences port scans, host sweeps and SYN floods. Which strategy best demonstrates defense in depth?",
+      "option_a": "Rely exclusively on blocking ICMP Echo Requests",
+      "option_b": "Use TLS alone to prevent every Layer 4 attack",
+      "option_c": "Combine service minimization, scan detection, network segmentation, SYN cookies and appropriate rate-limiting",
+      "option_d": "Increase the number of listening TCP and UDP services",
+      "correct_answer": "C",
+      "explanation": "Different attacks exploit different weaknesses, so a combination of preventive, detective and resource-protection controls is more effective than relying on one defense."
+    },
+    {
+      "question": "A security team has limited funds. Which implementation order most closely follows the lecture's cost-effective mitigation strategy?",
+      "option_a": "Start with free controls such as disabling unnecessary services, enabling SYN cookies and filtering spoofed sources, then introduce low-cost rate-limiting and existing IDS/IPS capabilities before considering expensive dedicated protection",
+      "option_b": "Purchase dedicated DDoS protection before checking whether unnecessary services are exposed",
+      "option_c": "Install deep packet inspection equipment and ignore existing firewall capabilities",
+      "option_d": "Disable all TCP and UDP communication regardless of business requirements",
+      "correct_answer": "A",
+      "explanation": "The lecture recommends starting with free configuration improvements, progressing to low-cost controls and investing in dedicated protection only when the risk justifies the expense."
     }
   ]
 }

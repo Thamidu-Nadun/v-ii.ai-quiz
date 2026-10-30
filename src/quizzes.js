@@ -1,54 +1,96 @@
 export default [
   // Network Security Quizzes
-  // {
-  //   title: "Network Security - 07",
-  //   path: "quiz/NS/NS-007.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 06",
-  //   path: "quiz/NS/NS-006.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 05",
-  //   path: "quiz/NS/NS-005.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 04",
-  //   path: "quiz/NS/NS-004.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 03",
-  //   path: "quiz/NS/NS-003.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 02",
-  //   path: "quiz/NS/NS-002.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
-  // {
-  //   title: "Network Security - 01",
-  //   path: "quiz/NS/NS-001.json",
-  //   description:
-  //     "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
-  //   isAvailable: true,
-  // },
+  {
+    title: "Network Security - 13",
+    path: "quiz/NS/NS-013.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 12",
+    path: "quiz/NS/NS-012.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 11",
+    path: "quiz/NS/NS-011.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 10",
+    path: "quiz/NS/NS-010.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 09",
+    path: "quiz/NS/NS-009.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 08",
+    path: "quiz/NS/NS-008.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 07",
+    path: "quiz/NS/NS-007.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 06",
+    path: "quiz/NS/NS-006.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 05",
+    path: "quiz/NS/NS-005.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 04",
+    path: "quiz/NS/NS-004.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 03",
+    path: "quiz/NS/NS-003.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 02",
+    path: "quiz/NS/NS-002.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
+  {
+    title: "Network Security - 01",
+    path: "quiz/NS/NS-001.json",
+    description:
+      "Test your knowledge of network security concepts, including firewalls, intrusion detection systems, and encryption.",
+    isAvailable: true,
+  },
   // Modern Enterprise Management Quizzes
   {
     title: "Modern Enterprise Management - 12",

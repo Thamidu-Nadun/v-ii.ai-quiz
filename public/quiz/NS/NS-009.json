@@ -1,0 +1,661 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of a Demilitarised Zone (DMZ) in network security?",
+      "option_a": "To provide a separate network segment for public-facing services while protecting the internal network from direct exposure.",
+      "option_b": "To encrypt all communication between internal and external networks.",
+      "option_c": "To allow unrestricted communication between the Internet and internal servers.",
+      "option_d": "To replace the need for firewalls at the network perimeter.",
+      "correct_answer": "A",
+      "explanation": "A DMZ is a buffer network segment that hosts externally accessible services without directly exposing the trusted internal network."
+    },
+    {
+      "question": "A company hosts a public web server inside its DMZ. An attacker successfully compromises the server. What is the main security benefit provided by the DMZ?",
+      "option_a": "The compromised server automatically loses its Internet connectivity.",
+      "option_b": "The attacker cannot execute any additional commands on the compromised server.",
+      "option_c": "The attacker does not automatically obtain a direct path into the internal network.",
+      "option_d": "The firewall automatically restores the compromised server to its original state.",
+      "correct_answer": "C",
+      "explanation": "A DMZ contains the potential damage by separating public-facing systems from the internal network. It does not prevent the initial compromise."
+    },
+    {
+      "question": "Which of the following services would most appropriately be hosted in a DMZ?",
+      "option_a": "An internal employee payroll database accessible only to finance staff.",
+      "option_b": "A public-facing web server that must accept connections from Internet users.",
+      "option_c": "An internal domain controller responsible for employee authentication.",
+      "option_d": "A private workstation used by the network administrator.",
+      "correct_answer": "B",
+      "explanation": "Public-facing services such as web, email, and DNS servers are appropriate DMZ candidates because they need external accessibility."
+    },
+    {
+      "question": "Which statement best describes the relationship between a DMZ and the internal network?",
+      "option_a": "The DMZ is a trusted extension of the internal network with unrestricted access.",
+      "option_b": "The DMZ eliminates the need to control traffic entering the internal network.",
+      "option_c": "The DMZ and internal network must always share the same subnet.",
+      "option_d": "The DMZ acts as a buffer between the untrusted external network and the trusted internal network.",
+      "correct_answer": "D",
+      "explanation": "The DMZ separates externally exposed services from internal resources, reducing the impact of a compromised public-facing system."
+    },
+    {
+      "question": "Which statement accurately describes the security objective of a DMZ?",
+      "option_a": "Preventing every possible attack against public-facing servers.",
+      "option_b": "Allowing public-facing servers to access all internal resources.",
+      "option_c": "Containing potential damage by restricting access from compromised DMZ systems to the internal network.",
+      "option_d": "Replacing internal network segmentation with a single perimeter firewall.",
+      "correct_answer": "C",
+      "explanation": "A DMZ is designed to limit the consequences of compromise through network separation and restricted traffic paths."
+    },
+    {
+      "question": "What is the primary purpose of a Zone-Based Firewall (ZBF)?",
+      "option_a": "To introduce a completely new packet inspection technology.",
+      "option_b": "To organise firewall policies around logical network zones rather than individual interface pairs.",
+      "option_c": "To eliminate the requirement for access control policies.",
+      "option_d": "To assign dynamic IP addresses to devices in different network segments.",
+      "correct_answer": "B",
+      "explanation": "ZBF is a configuration model that organises security policies around logical zones such as INSIDE, OUTSIDE, and DMZ."
+    },
+    {
+      "question": "In a typical Zone-Based Firewall configuration, what happens to traffic moving between two different zones when no explicit zone-pair policy permits it?",
+      "option_a": "It is denied by default.",
+      "option_b": "It is automatically permitted if the destination is reachable.",
+      "option_c": "It is forwarded only if both zones use the same subnet.",
+      "option_d": "It is permitted when the source zone is INSIDE.",
+      "correct_answer": "A",
+      "explanation": "Traffic between different zones is denied by default unless an explicit zone-pair policy allows it."
+    },
+    {
+      "question": "Which statement describes the default behaviour of traffic within the same Zone-Based Firewall zone according to the lecture?",
+      "option_a": "All traffic is denied regardless of its destination.",
+      "option_b": "Traffic must pass through an OUTSIDE-to-INSIDE policy.",
+      "option_c": "Traffic is permitted only when a Named ACL is configured.",
+      "option_d": "Traffic within the same zone is typically allowed by default.",
+      "correct_answer": "D",
+      "explanation": "The lecture states that traffic within the same zone is typically allowed by default, unlike traffic between different zones."
+    },
+    {
+      "question": "Which of the following is a valid example of a Zone-Based Firewall configuration?",
+      "option_a": "Creating separate logical zones named INSIDE, OUTSIDE, and DMZ and assigning interfaces to them.",
+      "option_b": "Assigning every network interface a separate public IP address without defining policies.",
+      "option_c": "Replacing all firewall inspection mechanisms with subnet masks.",
+      "option_d": "Allowing communication between all zones without defining zone-pair policies.",
+      "correct_answer": "A",
+      "explanation": "ZBF groups interfaces into logical zones and applies policies between those zones."
+    },
+    {
+      "question": "Could a Packet Filtering firewall be configured using the Zone-Based Firewall model?",
+      "option_a": "No, because ZBF requires a dedicated application-layer firewall.",
+      "option_b": "No, because packet filtering cannot operate between different network zones.",
+      "option_c": "Yes, because ZBF organises policies and does not define a new inspection technology.",
+      "option_d": "Yes, but only when all interfaces belong to the same zone.",
+      "correct_answer": "C",
+      "explanation": "ZBF is a configuration model rather than an inspection technology. Any of the seven firewall types discussed in the earlier lecture can operate underneath it."
+    },
+    {
+      "question": "Which firewall placement architecture uses a single firewall positioned after the border router?",
+      "option_a": "Dual firewall with the router between both firewalls.",
+      "option_b": "Single firewall behind the border router.",
+      "option_c": "Single firewall in front of the border router.",
+      "option_d": "Dual firewall with the router before both firewalls.",
+      "correct_answer": "B",
+      "explanation": "In this architecture, traffic passes from the Internet through the border router before reaching the single firewall."
+    },
+    {
+      "question": "Which is a major advantage of placing a single firewall in front of the border router?",
+      "option_a": "It eliminates the possibility of firewall failure.",
+      "option_b": "It removes the need for routing protocols.",
+      "option_c": "It automatically provides two independent security boundaries.",
+      "option_d": "It filters Internet traffic before it reaches the router, protecting the router itself.",
+      "correct_answer": "D",
+      "explanation": "The firewall inspects and filters traffic before it reaches the border router, providing direct protection to the router."
+    },
+    {
+      "question": "Which placement architecture provides defence in depth using two firewalls with the router positioned before both firewalls?",
+      "option_a": "Dual firewall, router before both.",
+      "option_b": "Single firewall behind the border router.",
+      "option_c": "Single firewall in front of the border router.",
+      "option_d": "Dual firewall, router between the two firewalls.",
+      "correct_answer": "A",
+      "explanation": "This screened-subnet architecture uses two separate firewalls, with the router positioned before both security devices."
+    },
+    {
+      "question": "Which architecture places the router between two firewalls?",
+      "option_a": "Single firewall behind the border router.",
+      "option_b": "Dual firewall, router before both.",
+      "option_c": "Dual firewall, router between the two.",
+      "option_d": "Single firewall in front of the border router.",
+      "correct_answer": "C",
+      "explanation": "In this design, traffic encounters Firewall 1, then the router, and subsequently Firewall 2."
+    },
+    {
+      "question": "What is a major disadvantage of using a single firewall behind the border router?",
+      "option_a": "It requires two separate firewall devices.",
+      "option_b": "The firewall cannot filter traffic based on network policies.",
+      "option_c": "The router must always be positioned between two firewalls.",
+      "option_d": "The firewall becomes a single point of failure for the network.",
+      "correct_answer": "D",
+      "explanation": "If the only firewall fails, the network loses its primary firewall security boundary."
+    },
+    {
+      "question": "Which is a potential weakness of placing a single firewall in front of the border router?",
+      "option_a": "The firewall cannot inspect inbound Internet traffic.",
+      "option_b": "Router management and routing-protocol traffic must also pass through firewall policy, increasing complexity.",
+      "option_c": "It requires three separate firewall devices.",
+      "option_d": "The router is completely isolated from the Internet and cannot perform routing.",
+      "correct_answer": "B",
+      "explanation": "The router's own management and routing-protocol traffic must pass through the firewall, adding policy complexity."
+    },
+    {
+      "question": "Which is a key advantage of the dual-firewall screened-subnet architecture?",
+      "option_a": "It eliminates all configuration and management overhead.",
+      "option_b": "It allows the DMZ to communicate freely with the internal network.",
+      "option_c": "An attacker must compromise two separate firewalls to reach the internal network through the intended path.",
+      "option_d": "It requires only one security device to protect the entire network.",
+      "correct_answer": "C",
+      "explanation": "The architecture provides defence in depth through two separate firewall boundaries and an isolated DMZ."
+    },
+    {
+      "question": "Which statement describes a disadvantage of the dual-firewall architecture with the router between both firewalls?",
+      "option_a": "The router may be exposed if Firewall 1 is bypassed because there is no second firewall immediately in front of it.",
+      "option_b": "It does not provide a second firewall for the internal network.",
+      "option_c": "It cannot separate the DMZ from the Internet.",
+      "option_d": "It requires all internal traffic to bypass both firewalls.",
+      "correct_answer": "A",
+      "explanation": "Firewall 1 is the first security boundary. If it is bypassed, the router is exposed before traffic reaches Firewall 2."
+    },
+    {
+      "question": "How are ACL statements evaluated when a packet is processed?",
+      "option_a": "From bottom to top until every statement has been checked.",
+      "option_b": "Randomly based on the packet protocol.",
+      "option_c": "In numerical order, regardless of their configured sequence.",
+      "option_d": "From top to bottom, stopping at the first matching statement.",
+      "correct_answer": "D",
+      "explanation": "ACLs are ordered lists. The first matching permit or deny statement determines the packet's treatment."
+    },
+    {
+      "question": "What happens when a packet does not match any explicitly configured statement in an ACL?",
+      "option_a": "The packet is permitted if its destination is reachable.",
+      "option_b": "The packet is denied by the implicit deny rule.",
+      "option_c": "The router forwards the packet to another ACL automatically.",
+      "option_d": "The packet is permitted when the ACL contains at least one permit statement.",
+      "correct_answer": "B",
+      "explanation": "Every ACL ends with an invisible implicit deny. Packets that match no explicit statement are dropped."
+    },
+    {
+      "question": "Which fields can a Standard ACL use to filter traffic?",
+      "option_a": "Source IP address only.",
+      "option_b": "Source and destination IP addresses.",
+      "option_c": "Source IP address, destination IP address, protocol, and port.",
+      "option_d": "Destination IP address and destination port only.",
+      "correct_answer": "A",
+      "explanation": "Standard ACLs evaluate only the source IP address and cannot distinguish destinations, protocols, or ports."
+    },
+    {
+      "question": "Which information can an Extended ACL examine when filtering packets?",
+      "option_a": "Source IP address only.",
+      "option_b": "Destination IP address only.",
+      "option_c": "Source and destination IP addresses, protocol, and source and destination ports.",
+      "option_d": "MAC addresses and physical switch port numbers only.",
+      "correct_answer": "C",
+      "explanation": "Extended ACLs provide more precise matching by supporting source and destination addresses, protocols, and TCP/UDP ports."
+    },
+    {
+      "question": "What is the primary difference between a Named ACL and a numbered ACL?",
+      "option_a": "A Named ACL can filter application-layer traffic while numbered ACLs cannot.",
+      "option_b": "A Named ACL automatically permits established TCP connections.",
+      "option_c": "A Named ACL supports destination filtering while numbered ACLs only support source filtering.",
+      "option_d": "A Named ACL uses a descriptive identifier instead of a number and is easier to maintain.",
+      "correct_answer": "D",
+      "explanation": "Named ACLs are functionally Standard or Extended ACLs. Their main advantage is readability and easier maintenance."
+    },
+    {
+      "question": "Which number range identifies a Standard ACL?",
+      "option_a": "100–199 and 2000–2699.",
+      "option_b": "1–99 and 1300–1999.",
+      "option_c": "200–299 and 3000–3999.",
+      "option_d": "500–599 and 4000–4999.",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies 1–99 and 1300–1999 as the numbered Standard ACL ranges."
+    },
+    {
+      "question": "Which number range identifies an Extended ACL?",
+      "option_a": "100–199 and 2000–2699.",
+      "option_b": "1–99 and 1300–1999.",
+      "option_c": "300–399 and 2700–2999.",
+      "option_d": "10–99 and 1000–1299.",
+      "correct_answer": "A",
+      "explanation": "Extended ACLs use the numbered ranges 100–199 and 2000–2699."
+    },
+    {
+      "question": "What is the purpose of a wildcard mask in an ACL?",
+      "option_a": "To encrypt the source IP address.",
+      "option_b": "To specify which destination port should be blocked.",
+      "option_c": "To define the protocol used by a packet.",
+      "option_d": "To identify which IP address bits must match exactly and which bits can vary.",
+      "correct_answer": "D",
+      "explanation": "A wildcard mask is the inverse of a subnet mask. A 0 requires an exact bit match, while a 1 allows that bit to vary."
+    },
+    {
+      "question": "What does the host keyword represent in Standard or Extended ACL syntax?",
+      "option_a": "Any IP address within a network.",
+      "option_b": "A wildcard mask of 255.255.255.255.",
+      "option_c": "A single exact IP address using a wildcard mask of 0.0.0.0.",
+      "option_d": "A destination address with an automatically assigned subnet mask.",
+      "correct_answer": "C",
+      "explanation": "The host keyword is shorthand for matching one exact IP address, equivalent to a wildcard mask of 0.0.0.0."
+    },
+    {
+      "question": "Which placement rule is recommended for Standard ACLs?",
+      "option_a": "As close to the source as possible.",
+      "option_b": "As close to the destination as possible.",
+      "option_c": "Only on the Internet-facing border router.",
+      "option_d": "Only between two firewalls.",
+      "correct_answer": "B",
+      "explanation": "Standard ACLs match only source IP addresses. Placing them near the destination reduces the risk of blocking traffic to unintended destinations."
+    },
+    {
+      "question": "Which placement rule is recommended for Extended ACLs?",
+      "option_a": "As close to the source as possible.",
+      "option_b": "As close to the destination as possible.",
+      "option_c": "Only on the destination server.",
+      "option_d": "Only on interfaces connecting the DMZ to the Internet.",
+      "correct_answer": "A",
+      "explanation": "Extended ACLs can precisely match source, destination, protocol, and ports, so unwanted traffic can be stopped close to its source."
+    },
+    {
+      "question": "Which operator would be used in an Extended ACL to match TCP traffic destined for port 23?",
+      "option_a": "host",
+      "option_b": "established",
+      "option_c": "range",
+      "option_d": "eq",
+      "correct_answer": "D",
+      "explanation": "The eq operator matches a specified port number or service name. For Telnet, the destination port is 23."
+    },
+    {
+      "question": "What does the established keyword check in an Extended ACL?",
+      "option_a": "Whether a TCP packet contains a SYN flag.",
+      "option_b": "Whether a TCP packet has an ACK or RST flag set.",
+      "option_c": "Whether a UDP session has already completed a handshake.",
+      "option_d": "Whether the source and destination belong to the same subnet.",
+      "correct_answer": "B",
+      "explanation": "The established keyword is TCP-specific and matches packets with ACK or RST set. A fresh SYN without ACK does not match."
+    },
+    {
+      "question": "What is the purpose of a sequence number in a Named ACL?",
+      "option_a": "To identify the destination port of a packet.",
+      "option_b": "To determine which protocol is inspected first.",
+      "option_c": "To specify the exact position of an ACL statement and allow insertion or management of individual entries.",
+      "option_d": "To assign a unique IP address to every ACL entry.",
+      "correct_answer": "C",
+      "explanation": "Sequence numbers allow administrators to insert or remove individual entries at specific positions without rebuilding the entire Named ACL."
+    },
+    {
+      "question": "Which of the following is a valid advantage of using a Named ACL?",
+      "option_a": "It automatically has a higher priority than numbered ACLs.",
+      "option_b": "It eliminates the implicit deny rule.",
+      "option_c": "It supports matching additional protocols unavailable to numbered ACLs.",
+      "option_d": "It allows administrators to use descriptive names and manage individual entries more easily.",
+      "correct_answer": "D",
+      "explanation": "Named ACLs improve readability and maintainability. Their matching capabilities remain identical to their underlying Standard or Extended type."
+    },
+    {
+      "question": "Which statement correctly describes the effect of applying an ACL to an interface?",
+      "option_a": "An ACL can be applied to an interface in an inbound or outbound direction, affecting which packets are evaluated.",
+      "option_b": "An ACL always filters traffic in both directions automatically.",
+      "option_c": "An ACL can only be applied to an interface in the outbound direction.",
+      "option_d": "An ACL application direction does not affect packet processing.",
+      "correct_answer": "A",
+      "explanation": "ACLs are applied per interface and per direction. Inbound and outbound application can produce different filtering behaviour."
+    },
+    {
+      "question": "A network administrator wants to block Telnet traffic from 192.168.10.0/24 to the specific server 192.168.20.5 while permitting all other traffic. Which ACL type is most appropriate?",
+      "option_a": "Standard ACL.",
+      "option_b": "Extended ACL.",
+      "option_c": "Standard Named ACL only.",
+      "option_d": "A Standard ACL with a destination port condition.",
+      "correct_answer": "B",
+      "explanation": "The policy requires matching source subnet, destination host, TCP protocol, and destination port 23. Only an Extended ACL supports all these conditions."
+    },
+    {
+      "question": "A router administrator needs to allow only the subnet 192.168.50.0/28 through an interface while denying all other source addresses. Which ACL type is sufficient?",
+      "option_a": "Extended ACL with TCP port matching.",
+      "option_b": "Extended ACL with destination host matching.",
+      "option_c": "Standard ACL matching the source subnet.",
+      "option_d": "Named ACL that permits all IP traffic.",
+      "correct_answer": "C",
+      "explanation": "The policy depends only on the source address, so a Standard ACL is sufficient. The /28 wildcard mask is 0.0.0.15."
+    },
+    {
+      "question": "A network administrator configures the following ACL: access-list 10 permit 192.168.100.0 0.0.0.31. What range of source addresses does this statement match?",
+      "option_a": "192.168.100.0 to 192.168.100.31.",
+      "option_b": "192.168.100.1 to 192.168.100.255.",
+      "option_c": "192.168.100.0 to 192.168.100.255.",
+      "option_d": "192.168.100.32 to 192.168.100.63.",
+      "correct_answer": "A",
+      "explanation": "The wildcard mask 0.0.0.31 allows the final five bits to vary, matching the address block 192.168.100.0/27."
+    },
+    {
+      "question": "A network administrator configures the following ACL: access-list 101 deny tcp 192.168.10.0 0.0.0.255 host 192.168.20.5 eq 23. What traffic is denied?",
+      "option_a": "All TCP traffic from 192.168.20.5 to the 192.168.10.0/24 subnet.",
+      "option_b": "All UDP traffic from 192.168.10.0/24 to 192.168.20.5.",
+      "option_c": "All IP traffic between the two networks.",
+      "option_d": "TCP traffic from 192.168.10.0/24 to 192.168.20.5 with destination port 23.",
+      "correct_answer": "D",
+      "explanation": "The ACL matches TCP traffic from the specified source subnet to the exact destination host, with destination port 23."
+    },
+    {
+      "question": "A network administrator creates an Extended ACL containing only access-list 101 deny tcp 192.168.10.0 0.0.0.255 host 192.168.20.5 eq 23. What happens to other traffic processed by this ACL?",
+      "option_a": "It is automatically permitted because the deny statement is specific.",
+      "option_b": "It is denied by the implicit deny rule.",
+      "option_c": "It is forwarded without being evaluated.",
+      "option_d": "It is permitted only if it uses UDP.",
+      "correct_answer": "B",
+      "explanation": "Without an explicit permit statement, all traffic that does not match the Telnet deny rule is also dropped by the implicit deny."
+    },
+    {
+      "question": "A company needs to prevent devices on 192.168.77.0/24 from initiating new TCP connections to 10.1.1.100 while allowing replies to connections initiated by the server. Which keyword is required by the lecture's ACL approach?",
+      "option_a": "host",
+      "option_b": "range",
+      "option_c": "established",
+      "option_d": "any",
+      "correct_answer": "C",
+      "explanation": "The established keyword matches TCP packets with ACK or RST set, allowing qualifying return packets while excluding fresh SYN packets without ACK."
+    },
+    {
+      "question": "A company uses a Standard ACL to block a particular source subnet. The administrator places the ACL near the source network. What is the main risk?",
+      "option_a": "The ACL may block traffic from that source to destinations that were never intended to be restricted.",
+      "option_b": "The ACL will automatically allow traffic to all public servers.",
+      "option_c": "The ACL will inspect destination ports and accidentally permit Telnet.",
+      "option_d": "The ACL will become an Extended ACL because of its placement.",
+      "correct_answer": "A",
+      "explanation": "A Standard ACL cannot distinguish destinations. Applying it near the source can affect traffic to multiple destinations unnecessarily."
+    },
+    {
+      "question": "A company wants external users to access a public web server in its DMZ, but the DMZ server must not initiate unrestricted connections to internal systems. Which policy design best follows the lecture?",
+      "option_a": "Permit all traffic between OUTSIDE, DMZ, and INSIDE.",
+      "option_b": "Allow OUTSIDE-to-INSIDE traffic but deny all OUTSIDE-to-DMZ traffic.",
+      "option_c": "Allow DMZ-to-INSIDE traffic without restrictions and block INSIDE-to-DMZ traffic.",
+      "option_d": "Permit specific OUTSIDE-to-DMZ services and deny or extremely restrict DMZ-to-INSIDE traffic.",
+      "correct_answer": "D",
+      "explanation": "The three-zone design allows required public services to reach the DMZ while restricting movement from the exposed DMZ into the trusted internal network."
+    },
+    {
+      "question": "A company uses a Zone-Based Firewall with INSIDE and OUTSIDE zones. It permits INSIDE-to-OUTSIDE communication. An administrator assumes this automatically permits OUTSIDE-to-INSIDE communication. What is wrong with this assumption?",
+      "option_a": "Zone policies are always bidirectional when one direction is permitted.",
+      "option_b": "Zone-pair policies are directional, and the reverse direction requires its own explicit policy.",
+      "option_c": "OUTSIDE-to-INSIDE traffic is controlled only by Standard ACLs.",
+      "option_d": "The INSIDE and OUTSIDE zones must be merged before communication is possible.",
+      "correct_answer": "B",
+      "explanation": "ZBF zone-pair policies are directional and do not have to be symmetric. Permitting one direction does not automatically create an equivalent reverse-direction policy."
+    },
+    {
+      "question": "A financial institution has sufficient budget and requires strong defence in depth for a public-facing DMZ. Which architecture is the strongest recommendation among the four designs covered in the lecture?",
+      "option_a": "Single firewall behind the border router.",
+      "option_b": "Single firewall in front of the border router.",
+      "option_c": "Dual firewall with the router before both firewalls.",
+      "option_d": "Single firewall positioned directly inside the DMZ.",
+      "correct_answer": "C",
+      "explanation": "The dual-firewall screened-subnet design provides two separate security boundaries and genuine DMZ isolation, making it appropriate when defence in depth is the priority."
+    },
+    {
+      "question": "A small business has a limited security budget and only one IT administrator. It wants a simple architecture with centralised firewall policy management. Which architecture is the most appropriate?",
+      "option_a": "Single firewall behind the border router.",
+      "option_b": "Dual firewall with the router before both firewalls.",
+      "option_c": "Dual firewall with the router between both firewalls.",
+      "option_d": "A design using three separate firewall devices.",
+      "correct_answer": "A",
+      "explanation": "A single firewall behind the border router offers lower cost, simpler management, and one central point for policy management, although it introduces a single point of failure."
+    },
+    {
+      "question": "An organisation chooses the dual-firewall architecture with the router positioned between both firewalls. Firewall 1 is successfully bypassed. Which component is directly exposed before traffic reaches the second firewall?",
+      "option_a": "The internal database server.",
+      "option_b": "The router.",
+      "option_c": "The internal employee workstation.",
+      "option_d": "The second firewall's management interface.",
+      "correct_answer": "B",
+      "explanation": "In this architecture, the router sits between Firewall 1 and Firewall 2. If Firewall 1 is bypassed, the router is exposed before the second firewall."
+    },
+    {
+      "question": "An administrator configures an ACL in the following order: 10 deny tcp any host 192.168.1.10 eq 23; 20 permit ip any any. A Telnet packet matches the first statement. What happens?",
+      "option_a": "The packet is permitted because the second statement allows all IP traffic.",
+      "option_b": "The packet is evaluated against both statements before a decision is made.",
+      "option_c": "The packet is denied immediately, and the second statement is not evaluated.",
+      "option_d": "The packet is denied only if the destination server is in the DMZ.",
+      "correct_answer": "C",
+      "explanation": "ACLs use first-match processing. Once the Telnet packet matches the first deny statement, processing stops."
+    },
+    {
+      "question": "An administrator wants to deny traffic from 10.10.30.0/24 to TCP destination port 23 on host 172.16.5.10 while allowing every other type of traffic. Which configuration correctly implements the policy?",
+      "option_a": "access-list 10 deny 10.10.30.0 0.0.0.255 followed by access-list 10 permit any.",
+      "option_b": "access-list 101 permit tcp 10.10.30.0 0.0.0.255 host 172.16.5.10 eq 23 followed by access-list 101 deny ip any any.",
+      "option_c": "access-list 101 deny udp 10.10.30.0 0.0.0.255 host 172.16.5.10 eq 23 followed by access-list 101 permit ip any any.",
+      "option_d": "access-list 101 deny tcp 10.10.30.0 0.0.0.255 host 172.16.5.10 eq 23 followed by access-list 101 permit ip any any.",
+      "correct_answer": "D",
+      "explanation": "The Extended ACL matches the correct source subnet, destination host, TCP protocol, and Telnet port. The explicit permit statement allows all remaining traffic."
+    },
+    {
+      "question": "An administrator needs to permit only source addresses in 192.168.50.0/28 through an interface. Which Standard ACL configuration correctly represents this requirement?",
+      "option_a": "access-list 10 permit 192.168.50.0 0.0.0.15",
+      "option_b": "access-list 10 permit 192.168.50.0 255.255.255.240",
+      "option_c": "access-list 110 permit tcp 192.168.50.0 0.0.0.15 any",
+      "option_d": "access-list 10 deny 192.168.50.0 0.0.0.15",
+      "correct_answer": "A",
+      "explanation": "A /28 subnet has a wildcard mask of 0.0.0.15. The permit statement allows that source subnet, while the implicit deny blocks other sources."
+    },
+    {
+      "question": "A numbered Extended ACL contains: access-list 110 deny tcp 192.168.40.0 0.0.0.255 host 10.0.0.50 eq 21; access-list 110 permit ip any any. Which Named ACL correctly preserves its behaviour?",
+      "option_a": "ip access-list standard DENY_FTP_ADMIN; deny 192.168.40.0 0.0.0.255; permit any",
+      "option_b": "ip access-list extended DENY_FTP_ADMIN; 10 deny tcp 192.168.40.0 0.0.0.255 host 10.0.0.50 eq 21; 20 permit ip any any",
+      "option_c": "ip access-list extended DENY_FTP_ADMIN; 10 permit tcp 192.168.40.0 0.0.0.255 host 10.0.0.50 eq 21; 20 deny ip any any",
+      "option_d": "ip access-list standard DENY_FTP_ADMIN; 10 deny tcp 192.168.40.0 0.0.0.255 host 10.0.0.50 eq 21; 20 permit ip any any",
+      "correct_answer": "B",
+      "explanation": "The Named ACL must be extended because it matches TCP, source and destination addresses, and port 21. Preserving the original deny and permit order preserves its behaviour."
+    },
+    {
+      "question": "A network administrator writes the following Extended ACL: access-list 101 deny tcp 192.168.77.0 0.0.0.255 host 10.1.1.100 established. What is the main logical error if the objective is to block new connections while allowing established return traffic?",
+      "option_a": "The established keyword can only be used with UDP.",
+      "option_b": "The ACL uses an invalid wildcard mask for a /24 network.",
+      "option_c": "The ACL denies qualifying established TCP packets instead of denying new SYN packets.",
+      "option_d": "The destination host must be specified using the any keyword.",
+      "correct_answer": "C",
+      "explanation": "The established keyword matches TCP packets with ACK or RST set. Using deny with established blocks qualifying return traffic rather than specifically blocking new connection attempts."
+    },
+    {
+      "question": "A network administrator wants to prevent new TCP connections from 192.168.77.0/24 to 10.1.1.100 while allowing replies to connections initiated by the server. Which ACL best implements the lecture's intended policy?",
+      "option_a": "access-list 101 permit tcp 192.168.77.0 0.0.0.255 host 10.1.1.100 established; access-list 101 deny tcp 192.168.77.0 0.0.0.255 host 10.1.1.100",
+      "option_b": "access-list 101 deny tcp 192.168.77.0 0.0.0.255 host 10.1.1.100 established; access-list 101 permit ip any any",
+      "option_c": "access-list 101 permit ip any any; access-list 101 deny tcp 192.168.77.0 0.0.0.255 host 10.1.1.100",
+      "option_d": "access-list 101 deny udp 192.168.77.0 0.0.0.255 host 10.1.1.100; access-list 101 permit tcp any any established",
+      "correct_answer": "A",
+      "explanation": "The first statement permits qualifying TCP packets with ACK or RST set. The second denies other matching TCP traffic, including fresh SYN packets without ACK. The order is essential."
+    },
+    {
+      "question": "A router has an Extended ACL applied inbound on the gateway interface of subnet 192.168.10.0/24. The ACL blocks Telnet traffic from that subnet to a particular server. Why is this placement appropriate?",
+      "option_a": "Extended ACLs can only operate on inbound interfaces.",
+      "option_b": "The ACL can stop unwanted traffic close to its source before it travels further into the network.",
+      "option_c": "Inbound ACLs automatically filter packets based on destination MAC addresses.",
+      "option_d": "The destination server must be connected directly to the same gateway interface.",
+      "correct_answer": "B",
+      "explanation": "Extended ACLs can identify the exact destination, protocol, and port. Applying one near the source prevents unwanted traffic from travelling further into the network."
+    },
+    {
+      "question": "A router has the following ACL entries: 10 deny ip 192.168.1.0 0.0.0.255 any; 20 permit tcp host 192.168.1.5 host 192.168.2.10 eq 80. What happens to an HTTP packet from 192.168.1.5 to 192.168.2.10?",
+      "option_a": "It is permitted because the second statement specifically allows HTTP traffic.",
+      "option_b": "It is evaluated against the second statement before the first statement.",
+      "option_c": "It is permitted only if the destination server is in the same zone.",
+      "option_d": "It is denied because it matches the first statement, and ACL processing stops.",
+      "correct_answer": "D",
+      "explanation": "The first statement denies all IP traffic from 192.168.1.0/24. The more specific HTTP permit statement is never reached because first-match processing stops at entry 10."
+    },
+    {
+      "question": "A company has three firewall zones: INSIDE, OUTSIDE, and DMZ. It wants internal employees to access Internet services and public users to access only the company's web server in the DMZ. Which policy arrangement best satisfies these requirements?",
+      "option_a": "Permit INSIDE-to-OUTSIDE traffic, permit only required OUTSIDE-to-DMZ services, and deny or tightly restrict OUTSIDE-to-INSIDE traffic.",
+      "option_b": "Permit all OUTSIDE-to-INSIDE traffic and deny INSIDE-to-OUTSIDE traffic.",
+      "option_c": "Permit all traffic between all three zones because the DMZ is already isolated.",
+      "option_d": "Permit DMZ-to-INSIDE traffic and deny all communication between INSIDE and OUTSIDE.",
+      "correct_answer": "A",
+      "explanation": "This design provides required employee Internet access and public access to DMZ services while preserving the separation between the external and internal networks."
+    },
+    {
+      "question": "A company uses a single firewall behind its border router. The firewall fails. Which architectural weakness is demonstrated by this failure?",
+      "option_a": "The router automatically becomes the second independent firewall.",
+      "option_b": "The DMZ becomes physically separated from the internal network.",
+      "option_c": "The only firewall represents a single point of failure for the network.",
+      "option_d": "The network gains stronger defence in depth because one device is unavailable.",
+      "correct_answer": "C",
+      "explanation": "A single-firewall architecture depends on one security device. Its failure removes the network's primary firewall boundary."
+    },
+    {
+      "question": "An organisation deploys two firewalls to separate its DMZ from the internal network. During an audit, the administrator discovers that the two devices have inconsistent policies. What risk does this create?",
+      "option_a": "The two firewalls automatically merge their configurations.",
+      "option_b": "The inconsistent policies may create unintended traffic paths or security gaps despite the intended defence in depth.",
+      "option_c": "The router automatically corrects the policies using NAT.",
+      "option_d": "The DMZ becomes a trusted internal zone by default.",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies policy inconsistency between two firewalls as a real risk. Separate devices must be carefully coordinated to preserve the intended security boundaries."
+    },
+    {
+      "question": "An administrator configures a Named Extended ACL with the name BLOCK_TELNET_TO_SERVER. Which configuration statement correctly enters the configuration sub-mode for this ACL?",
+      "option_a": "access-list extended BLOCK_TELNET_TO_SERVER",
+      "option_b": "ip access-list standard BLOCK_TELNET_TO_SERVER",
+      "option_c": "access-list 101 BLOCK_TELNET_TO_SERVER",
+      "option_d": "ip access-list extended BLOCK_TELNET_TO_SERVER",
+      "correct_answer": "D",
+      "explanation": "The correct command is ip access-list extended followed by the ACL name. This enters the configuration sub-mode for a Named Extended ACL."
+    },
+    {
+      "question": "An administrator creates a Named Extended ACL with entries numbered 10 and 30. A new deny statement must be inserted between them without deleting the existing entries. Which approach is most appropriate?",
+      "option_a": "Delete the entire ACL and recreate it with the new statement.",
+      "option_b": "Convert the ACL into a Standard ACL and add the statement.",
+      "option_c": "Insert a new statement using a sequence number such as 20.",
+      "option_d": "Change the ACL name to the number 20.",
+      "correct_answer": "C",
+      "explanation": "Named ACL sequence numbers allow individual entries to be inserted at specific positions without rebuilding the entire ACL."
+    },
+    {
+      "question": "A security administrator needs to block TCP traffic from subnet 192.168.10.0/24 to server 192.168.20.5 on destination port 23. Which option correctly identifies all required matching parameters?",
+      "option_a": "Source subnet 192.168.10.0/24, destination host 192.168.20.5, protocol TCP, destination port 23, action deny.",
+      "option_b": "Source host 192.168.20.5, destination subnet 192.168.10.0/24, protocol UDP, destination port 23, action permit.",
+      "option_c": "Source subnet 192.168.10.0/24, destination host 192.168.20.5, protocol IP, source port 23, action permit.",
+      "option_d": "Source subnet 192.168.10.0/24, destination host 192.168.20.5, protocol ICMP, destination port 23, action deny.",
+      "correct_answer": "A",
+      "explanation": "The requirement specifies the source network, destination server, TCP protocol, and Telnet destination port. All these parameters must be matched by an Extended ACL."
+    },
+    {
+      "question": "An administrator wants to allow TCP traffic from 192.168.1.0/24 to destination ports 20 through 25 on server 192.168.2.10. Which ACL parameter correctly represents the destination port range?",
+      "option_a": "eq 20 25",
+      "option_b": "range 20 25",
+      "option_c": "neq 20 25",
+      "option_d": "gt 20 lt 25",
+      "correct_answer": "B",
+      "explanation": "The range operator matches an inclusive range of port numbers. The correct syntax is range 20 25."
+    },
+    {
+      "question": "An Extended ACL contains the statement: access-list 101 deny tcp any host 192.168.10.10 eq 80. An administrator expects this to block every type of web communication to the server. What is the limitation of this statement?",
+      "option_a": "It blocks only UDP traffic on port 80.",
+      "option_b": "It blocks all IP traffic regardless of protocol.",
+      "option_c": "It blocks only packets originating from the destination server.",
+      "option_d": "It matches TCP traffic to destination port 80 only, not other protocols or ports.",
+      "correct_answer": "D",
+      "explanation": "The statement explicitly matches TCP and destination port 80. Other protocols and destination ports are not matched by this particular deny entry."
+    },
+    {
+      "question": "A company configures a Standard ACL to permit source subnet 192.168.100.0/27. It then applies the ACL to an interface through which traffic travels to several different destination networks. What is the key limitation of this configuration?",
+      "option_a": "The ACL can permit traffic only when the destination uses TCP.",
+      "option_b": "The ACL automatically permits traffic to all networks outside the subnet.",
+      "option_c": "The ACL cannot distinguish between the intended destination and other destinations, so its source-based filtering may affect more traffic than intended.",
+      "option_d": "The ACL becomes an Extended ACL when applied to multiple destination networks.",
+      "correct_answer": "C",
+      "explanation": "A Standard ACL matches only source addresses. It cannot selectively permit or deny traffic based on destination, which is why placement near the destination is recommended."
+    },
+    {
+      "question": "A network administrator wants to deny all UDP traffic from 10.0.0.0/8 to host 172.16.1.5 while permitting all remaining IP traffic. Which configuration is correct?",
+      "option_a": "access-list 101 deny tcp 10.0.0.0 0.255.255.255 host 172.16.1.5; access-list 101 permit ip any any",
+      "option_b": "access-list 101 deny udp 10.0.0.0 0.255.255.255 host 172.16.1.5; access-list 101 permit ip any any",
+      "option_c": "access-list 10 deny 10.0.0.0 0.255.255.255; access-list 10 permit any",
+      "option_d": "access-list 101 permit udp 10.0.0.0 0.255.255.255 host 172.16.1.5; access-list 101 deny ip any any",
+      "correct_answer": "B",
+      "explanation": "The Extended ACL uses UDP, the correct /8 wildcard mask, and the destination host. The final permit statement allows all other IP traffic."
+    },
+    {
+      "question": "A network administrator applies an ACL inbound on GigabitEthernet0/1. Which packets are evaluated by this ACL?",
+      "option_a": "Packets entering the router through GigabitEthernet0/1.",
+      "option_b": "Packets leaving the router through GigabitEthernet0/1.",
+      "option_c": "All packets entering and leaving every router interface.",
+      "option_d": "Only packets generated by the router itself.",
+      "correct_answer": "A",
+      "explanation": "An inbound ACL evaluates packets as they enter the router through the interface to which the ACL is applied."
+    },
+    {
+      "question": "A router has an ACL applied outbound on GigabitEthernet0/1. A packet arrives through GigabitEthernet0/0 and is routed toward GigabitEthernet0/1. At which point is the outbound ACL evaluated?",
+      "option_a": "Before the packet enters GigabitEthernet0/0.",
+      "option_b": "Immediately after the packet reaches the router, regardless of its route.",
+      "option_c": "Only after the packet reaches its final destination host.",
+      "option_d": "As the packet leaves the router through GigabitEthernet0/1.",
+      "correct_answer": "D",
+      "explanation": "An outbound ACL evaluates packets as they leave the router through the interface where the ACL is applied."
+    },
+    {
+      "question": "An organisation wants its public-facing web server in the DMZ to be reachable from the Internet, but the internal database must remain inaccessible directly from external networks. Which design principle is most important?",
+      "option_a": "Place both servers in the same publicly accessible network segment.",
+      "option_b": "Use separate zones and explicitly control traffic between OUTSIDE, DMZ, and INSIDE.",
+      "option_c": "Permit unrestricted traffic from OUTSIDE to INSIDE and rely on server passwords.",
+      "option_d": "Remove the firewall between the DMZ and internal network.",
+      "correct_answer": "B",
+      "explanation": "Zone separation and tailored directional policies allow public services to be exposed without directly exposing internal resources."
+    },
+    {
+      "question": "A company wants a firewall architecture that filters inbound Internet traffic before it reaches the border router and also has a second firewall protecting the internal network. Which of the four architectures provides this arrangement?",
+      "option_a": "Single firewall behind the border router.",
+      "option_b": "Single firewall in front of the border router.",
+      "option_c": "Dual firewall with the router positioned between the two firewalls.",
+      "option_d": "Dual firewall with the router before both firewalls.",
+      "correct_answer": "C",
+      "explanation": "The dual-firewall router-between design places Firewall 1 before the router and Firewall 2 after it, providing the specified filtering arrangement."
+    },
+    {
+      "question": "An administrator configures a Standard ACL numbered 10 with the statement access-list 10 permit host 192.168.1.5. Which other statement is functionally equivalent for matching that exact source address?",
+      "option_a": "access-list 10 permit 192.168.1.5 0.0.0.0",
+      "option_b": "access-list 10 permit 192.168.1.5 255.255.255.255",
+      "option_c": "access-list 10 permit 192.168.1.0 0.0.0.255",
+      "option_d": "access-list 10 permit any 192.168.1.5",
+      "correct_answer": "A",
+      "explanation": "The host keyword represents an exact single-address match, equivalent to explicitly using the wildcard mask 0.0.0.0."
+    },
+    {
+      "question": "A company uses the dual-firewall screened-subnet architecture. During a review, the security team argues that using two firewalls guarantees that the internal network cannot be compromised. Which assessment is most accurate?",
+      "option_a": "The claim is correct because two firewalls make all attacks impossible.",
+      "option_b": "The claim is correct only if both firewalls use identical configurations.",
+      "option_c": "The claim is incorrect because the architecture provides no security benefit over a single firewall.",
+      "option_d": "The architecture strengthens defence in depth, but does not eliminate all attack possibilities or configuration risks.",
+      "correct_answer": "D",
+      "explanation": "Two firewalls provide separate security boundaries, but security still depends on correct policies and implementation. The lecture also highlights policy inconsistency as a potential weakness."
+    },
+    {
+      "question": "An administrator needs to create a Named ACL that permits only TCP traffic from 192.168.10.0/24 to host 192.168.20.5 on port 443, while denying all other traffic. Which configuration correctly expresses this policy?",
+      "option_a": "ip access-list standard ALLOW_HTTPS; permit 192.168.10.0 0.0.0.255; deny any",
+      "option_b": "ip access-list extended ALLOW_HTTPS; deny tcp 192.168.10.0 0.0.0.255 host 192.168.20.5 eq 443; permit ip any any",
+      "option_c": "ip access-list extended ALLOW_HTTPS; permit tcp 192.168.10.0 0.0.0.255 host 192.168.20.5 eq 443",
+      "option_d": "ip access-list extended ALLOW_HTTPS; permit tcp 192.168.10.0 0.0.0.255 host 192.168.20.5 eq 443; deny ip any any",
+      "correct_answer": "D",
+      "explanation": "The Extended Named ACL precisely permits the required TCP source, destination, and port combination. The explicit deny statement blocks all remaining traffic."
+    },
+    {
+      "question": "A network administrator configures the following entries: 10 permit tcp any host 192.168.1.10 eq 80; 20 deny ip any any. A packet from 10.0.0.5 to 192.168.1.10 uses TCP destination port 443. What happens?",
+      "option_a": "The packet is permitted because TCP is allowed by the first statement.",
+      "option_b": "The packet is denied because it does not match the first statement and matches the second statement.",
+      "option_c": "The packet is permitted because it originates from a valid IP address.",
+      "option_d": "The packet is evaluated against the implicit deny instead of statement 20.",
+      "correct_answer": "B",
+      "explanation": "The first statement permits only TCP traffic to destination port 80. Port 443 does not match, so the packet reaches statement 20 and is denied."
+    },
+    {
+      "question": "An administrator wants to block all traffic from source subnet 192.168.10.0/24 to a particular server, regardless of protocol or destination port. Which ACL approach is most appropriate?",
+      "option_a": "Standard ACL matching only the source subnet, placed near the destination.",
+      "option_b": "Extended ACL matching TCP destination port 23 only.",
+      "option_c": "Named ACL using the established keyword without any address matching.",
+      "option_d": "Standard ACL applied at the Internet-facing interface without considering other destinations.",
+      "correct_answer": "A",
+      "explanation": "A Standard ACL can match the source subnet without protocol or port restrictions. Placing it near the intended destination minimises unintended effects on traffic to other networks."
+    }
+  ]
+}

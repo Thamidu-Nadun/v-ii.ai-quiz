@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "question": "At which layer of the OSI model does IPsec natively operate, and what is a primary consequence of this architectural placement?",
+      "option_a": "A. Application layer; it requires explicit integration into every application to function properly.",
+      "option_b": "B. Transport layer; it manages end-to-end reliability and port multiplexing securely.",
+      "option_c": "C. Network layer; it secures all IP traffic transparently without requiring individual applications to be aware of it.",
+      "option_d": "D. Data link layer; it only secures frames traveling across a single physical local area network segment.",
+      "correct_answer": "C",
+      "explanation": "IPsec operates at the network layer (Layer 3), allowing it to protect all IP traffic automatically and transparently, regardless of the upper-layer application generating the data."
+    },
+    {
+      "question": "Within the IPsec framework, which protocol provides both confidentiality and integrity protection for data packets?",
+      "option_a": "A. Authentication Header (AH)",
+      "option_b": "B. Encapsulating Security Payload (ESP)",
+      "option_c": "C. Internet Key Exchange (IKE)",
+      "option_d": "D. Generic Routing Encapsulation (GRE)",
+      "correct_answer": "B",
+      "explanation": "ESP provides data confidentiality (encryption) along with optional authentication and integrity, whereas AH provides integrity and authentication only, without encrypting the packet payload."
+    },
+    {
+      "question": "Which of the following describes the primary function of IKE Phase 1?",
+      "option_a": "A. Encrypting the actual data payload packets using a fast symmetric bulk cipher.",
+      "option_b": "B. Establishing a secure, authenticated channel (the ISAKMP SA) between peers to protect future negotiation messages.",
+      "option_c": "C. Translating private internal IP addresses into public routable IP addresses across NAT boundaries.",
+      "option_d": "D. Defining the interesting traffic access control list for site-to-site data flow.",
+      "correct_answer": "B",
+      "explanation": "IKE Phase 1 establishes an ISAKMP Security Association (SA), which provides a secure, authenticated control channel used to securely negotiate Phase 2 parameters."
+    },
+    {
+      "question": "What is the key difference between IPsec Transport Mode and Tunnel Mode?",
+      "option_a": "A. Transport mode encrypts the entire original IP packet and adds a new header; tunnel mode encrypts only the payload.",
+      "option_b": "B. Transport mode encrypts only the payload of the original IP packet leaving the header intact; tunnel mode encrypts the entire original packet and wraps it inside a new IP packet.",
+      "option_c": "C. Transport mode is exclusively used for site-to-site VPNs; tunnel mode is used exclusively for host-to-host connections.",
+      "option_d": "D. Transport mode uses public-key certificates; tunnel mode uses pre-shared keys only.",
+      "correct_answer": "B",
+      "explanation": "Transport mode leaves the original IP header intact and encrypts only the payload (ideal for host-to-host), while tunnel mode encapsulates the entire original packet within a new IP header (ideal for site-to-site VPNs)."
+    },
+    {
+      "question": "Why does the Authentication Header (AH) protocol notoriously struggle to cross Network Address Translation (NAT) devices?",
+      "option_a": "A. Because AH operates on UDP port 500, which is universally blocked by firewalls.",
+      "option_b": "B. Because NAT modifies the IP header fields to translate addresses, which breaks the cryptographic integrity checksum calculated by AH across the entire packet header.",
+      "option_c": "C. Because AH encrypts the source IP address, preventing NAT routers from reading the port numbers.",
+      "option_d": "D. Because AH requires asymmetric RSA keys that are incompatible with NAT routing tables.",
+      "correct_answer": "B",
+      "explanation": "AH protects integrity across the IP packet header itself; because NAT modifies source/destination IP addresses during translation, the packet's integrity check fails at the receiving end."
+    },
+    {
+      "question": "Which protocol layer underlies SSL VPNs, differentiating them from IPsec?",
+      "option_a": "A. Data Link Layer (Layer 2)",
+      "option_b": "B. Network Layer (Layer 3)",
+      "option_c": "C. Transport/Session Layer via TLS, sitting above transport",
+      "option_d": "D. Physical Layer (Layer 1)",
+      "correct_answer": "C",
+      "explanation": "SSL VPNs are built on top of the Transport Layer Security (TLS) protocol, functioning above the transport layer rather than directly at the network layer like IPsec."
+    },
+    {
+      "question": "What is a major administrative and operational advantage of SSL VPNs over traditional IPsec client software?",
+      "option_a": "A. SSL VPNs completely eliminate the need for any encryption algorithms.",
+      "option_b": "B. SSL VPNs can operate via clientless portal mode using standard web browsers without requiring complex dedicated client software installations.",
+      "option_c": "C. SSL VPNs operate exclusively at Layer 3, making them transparent to all applications.",
+      "option_d": "D. SSL VPNs are immune to weak cipher selection issues.",
+      "correct_answer": "B",
+      "explanation": "SSL VPNs offer clientless (portal) access via ordinary web browsers, making them much easier to deploy for remote users compared to installing specialized IPsec client agents."
+    },
+    {
+      "question": "Which of the following building blocks in an SSL/TLS cipher suite provides forward secrecy?",
+      "option_a": "A. RSA key exchange",
+      "option_b": "B. MD5 integrity hashing",
+      "option_c": "C. Ephemeral Diffie-Hellman (DHE or ECDHE)",
+      "option_d": "D. RC4 bulk encryption",
+      "correct_answer": "C",
+      "explanation": "Ephemeral Diffie-Hellman (DHE and ECDHE) key exchanges generate unique per-session keys, ensuring that compromise of long-term private keys does not decrypt past recorded sessions (forward secrecy)."
+    },
+    {
+      "question": "Which SSL VPN client access mode provides full network-layer access using a complete agent like Cisco AnyConnect?",
+      "option_a": "A. Clientless (portal) mode",
+      "option_b": "B. Thin-client port-forwarding mode",
+      "option_c": "C. Full tunnel client mode",
+      "option_d": "D. Static routing mode",
+      "correct_answer": "C",
+      "explanation": "Full tunnel client mode utilizes a complete software agent (such as Cisco AnyConnect) to establish a virtual network adapter, granting full network-layer access over TLS."
+    },
+    {
+      "question": "Which statement best characterizes the traffic scope difference between IPsec VPN and SSL VPN?",
+      "option_a": "A. IPsec VPNs can only secure single web URLs, whereas SSL VPNs secure entire corporate subnets automatically.",
+      "option_b": "B. IPsec VPNs typically provide broad, network-level all-or-nothing scope per tunnel, while SSL VPNs can offer highly granular access down to specific applications or URLs.",
+      "option_c": "C. IPsec VPNs are restricted to browser traffic only.",
+      "option_d": "D. SSL VPNs do not support encrypted data transmission across public internets.",
+      "correct_answer": "B",
+      "explanation": "IPsec creates network-level tunnels covering all matching traffic, whereas SSL VPNs excel at providing fine-grained, application-level or portal-based access control."
+    },
+    {
+      "question": "What is the primary characteristic of a Generic Routing Encapsulation (GRE) tunnel when configured on a Cisco router?",
+      "option_a": "A. It natively encrypts all encapsulated payload data using AES-256.",
+      "option_b": "B. It operates as a logical point-to-point tunnel interface that encapsulates various network layer protocols but provides zero encryption by default.",
+      "option_c": "C. It replaces physical Ethernet interfaces completely.",
+      "option_d": "D. It requires an active IKE Phase 1 ISAKMP policy to pass any packets.",
+      "correct_answer": "B",
+      "explanation": "GRE creates a logical point-to-point link capable of carrying diverse protocols, but it provides no inherent confidentiality or security; all data inside GRE flows in the clear."
+    },
+    {
+      "question": "In Cisco IOS CLI configuration for IPsec site-to-site tunnels, what purpose does the transform set serve?",
+      "option_a": "A. It defines the peer router's public IP address.",
+      "option_b": "B. It specifies the Phase 2 security parameters, defining which encryption and authentication algorithms protect actual data traffic.",
+      "option_c": "C. It configures the pre-shared key for peer authentication.",
+      "option_d": "D. It defines the interesting traffic access control list.",
+      "correct_answer": "B",
+      "explanation": "The transform set defines the Phase 2 cryptographic algorithms (such as ESP encryption and hashing) applied to secure the data traffic traversing the VPN."
+    },
+    {
+      "question": "When configuring an IPsec site-to-site VPN on a Cisco router, what role does the access control list (ACL) play in defining 'interesting traffic'?",
+      "option_a": "A. It blocks malicious denial-of-service packets from entering the router.",
+      "option_b": "B. It identifies exactly which source and destination subnet traffic must be intercepted, encrypted, and sent through the VPN tunnel.",
+      "option_c": "C. It establishes the management administrative password.",
+      "option_d": "D. It specifies which physical interface connects to the internet service provider.",
+      "correct_answer": "B",
+      "explanation": "The interesting traffic ACL defines matching criteria; only packets meeting these rule parameters trigger IPsec encryption and routing through the crypto map tunnel."
+    },
+    {
+      "question": "What is the correct order of components tied together by a Cisco crypto map before it is applied to an outbound physical interface?",
+      "option_a": "A. Peer address, transform set, and interesting traffic ACL",
+      "option_b": "B. ISAKMP policy lifetime, GRE source, and routing table metrics",
+      "option_c": "C. Certificate Authority chain, TLS version, and port number 443",
+      "option_d": "D. DES encryption key, MD5 hash, and loopback IP address",
+      "correct_answer": "A",
+      "explanation": "A crypto map binds the remote peer address, the IPsec transform set (Phase 2), and the interesting traffic ACL together before being bound to the physical outbound interface."
+    },
+    {
+      "question": "Why is 'GRE over IPsec' a common real-world network design pattern?",
+      "option_a": "A. Because GRE alone provides strong encryption while IPsec provides routing flexibility.",
+      "option_b": "B. Because GRE provides encapsulation for non-IP traffic and dynamic routing protocols over point-to-point links, while IPsec wraps that GRE stream in strong encryption.",
+      "option_c": "C. Because IPsec cannot function without a GRE interface configured first.",
+      "option_d": "D. Because GRE over IPsec bypasses all firewall packet filtering automatically.",
+      "correct_answer": "B",
+      "explanation": "GRE supports multicast and dynamic routing protocols (like OSPF/EIGRP) that standard IPsec virtual private networks struggle with; wrapping GRE inside IPsec combines routing flexibility with robust encryption."
+    },
+    {
+      "question": "Which Diffie-Hellman cryptographic group is generally considered a realistic minimum standard for secure production networks today?",
+      "option_a": "A. DH Group 1 (765-bit)",
+      "option_b": "B. DH Group 2 (1024-bit)",
+      "option_c": "C. DH Group 14 (2048-bit) or higher",
+      "option_d": "D. DES Group 56-bit",
+      "correct_answer": "C",
+      "explanation": "Older groups like DH1 and DH2 use insufficient key lengths vulnerable to modern cryptanalytic attacks, making DH Group 14 (2048-bit) or higher the recommended production baseline."
+    },
+    {
+      "question": "Which of the following bulk encryption algorithms represents the weakest and most insecure option in modern security frameworks?",
+      "option_a": "A. AES-GCM",
+      "option_b": "B. RC4",
+      "option_c": "C. ChaCha20",
+      "option_d": "D. AES-CBC",
+      "correct_answer": "B",
+      "explanation": "RC4 has severe cryptographic biases and vulnerabilities, making it completely insecure for modern TLS and VPN deployments."
+    },
+    {
+      "question": "In SSL VPN architecture, what is the role of the Integrity/MAC block when using non-AEAD ciphers (such as AES-CBC)?",
+      "option_a": "A. To compress packet sizes for faster transmission across slow links.",
+      "option_b": "B. To compute a cryptographic hash (such as SHA-256) verifying that data has not been tampered with in transit.",
+      "option_c": "C. To establish the public key certificate chain.",
+      "option_d": "D. To translate private IP addresses to public IPs.",
+      "correct_answer": "B",
+      "explanation": "Non-AEAD ciphers require a separate Message Authentication Code (MAC) algorithm like SHA-256 to ensure data integrity and detect tampering."
+    },
+    {
+      "question": "Which corporate firewall behavior explains why SSL VPNs frequently traverse firewalls more easily than IPsec VPNs?",
+      "option_a": "A. Firewalls drop all UDP traffic unconditionally.",
+      "option_b": "B. Corporate firewalls almost universally allow outbound HTTPS traffic on TCP port 443, allowing SSL VPN traffic to blend in seamlessly.",
+      "option_c": "C. SSL VPNs use non-standard ports that security scanners cannot inspect.",
+      "option_d": "D. IPsec traffic is encrypted using plaintext signatures.",
+      "correct_answer": "B",
+      "explanation": "Because SSL VPN rides over standard HTTPS (TCP port 443), it piggybacks on traffic already permitted by almost all corporate egress firewall policies."
+    },
+    {
+      "question": "What is the primary purpose of splitting IKE negotiation into Phase 1 and Phase 2?",
+      "option_a": "A. To allow two different vendors to supply encryption keys simultaneously.",
+      "option_b": "B. To establish a secure authenticated peer channel once (Phase 1) so data security keys can be negotiated and refreshed frequently without repeating full peer authentication (Phase 2).",
+      "option_c": "C. To ensure that AH and ESP protocols run concurrently on separate physical interfaces.",
+      "option_d": "D. To eliminate the need for pre-shared keys or certificates.",
+      "correct_answer": "B",
+      "explanation": "Separating peer authentication (Phase 1) from data SA negotiation (Phase 2) optimizes performance and security by allowing frequent data key rotations without heavy re-authentication overhead."
+    },
+    {
+      "question": "Scenario: An enterprise network engineer is configuring a site-to-site VPN between two branch offices across the public internet. Branch A uses dynamic IP addressing provided by a consumer ISP, while Branch B has a static IP address. Which peer authentication method is most practical and robust under these dynamic addressing conditions?",
+      "option_a": "A. Pre-Shared Keys (PSK) combined with aggressive mode or certificate-based RSA authentication with dynamic identifier matching.",
+      "option_b": "B. Hardcoded static IP bindings inside every routing table.",
+      "option_c": "C. Disabling authentication entirely to allow quick packet passage.",
+      "option_d": "D. Using unencrypted GRE tunnels without IPsec.",
+      "correct_answer": "A",
+      "explanation": "When endpoints have dynamic IPs, certificate-based RSA authentication or PSK with dynamic peer identification (Aggressive Mode) allows successful connection establishment without static IP dependencies."
+    },
+    {
+      "question": "Scenario: You notice that an IPsec site-to-site tunnel is established in Phase 1, but Phase 2 security associations fail to complete. Reviewing the router debug logs reveals a 'mismatch transform set' error. What is the root cause of this failure?",
+      "option_a": "A. The pre-shared keys configured on both routers do not match.",
+      "option_b": "B. The cryptographic encryption or integrity algorithms defined in the Phase 2 transform set (e.g., ESP-AES vs. ESP-3DES) differ between the two peer routers.",
+      "option_c": "C. The physical interface Ethernet cable is unplugged.",
+      "option_d": "D. The interesting traffic ACL permits ICMP ping traffic instead of TCP.",
+      "correct_answer": "B",
+      "explanation": "A transform set mismatch indicates that the two peers disagree on the Phase 2 encryption/integrity algorithms (transform set parameters), causing Phase 2 negotiation to fail."
+    },
+    {
+      "question": "Scenario: A security auditor evaluates an SSL VPN gateway and discovers it is configured to accept TLS 1.0 and RC4 cipher suites. Why is this configuration flagged as a high-risk vulnerability?",
+      "option_a": "A. TLS 1.0 lacks any form of session establishment, and RC4 suffers from severe statistical plaintext leakage vulnerabilities.",
+      "option_b": "B. TLS 1.0 and RC4 consume excessive CPU cycles, causing router denial-of-service.",
+      "option_c": "C. RC4 is a hashing algorithm that cannot verify message integrity.",
+      "option_d": "D. TLS 1.0 requires physical smart cards for authentication.",
+      "correct_answer": "A",
+      "explanation": "TLS 1.0 is deprecated due to protocol-level weaknesses, and RC4 has known cryptographic biases allowing attackers to recover plaintext streams over repeated captures."
+    },
+    {
+      "question": "Scenario: A network administrator configures a GRE over IPsec tunnel. However, when examining the IPsec interesting traffic ACL, they write a rule matching IP traffic between the internal subnets (e.g., 192.168.10.0 to 192.168.20.0) instead of the tunnel endpoints. What will happen to the traffic?",
+      "option_a": "A. The tunnel will encrypt packets twice for maximum security.",
+      "option_b": "B. IPsec will fail to match or encrypt the packets properly because raw interior packets bypass the GRE encapsulation header, causing routing and packet encapsulation mismatches.",
+      "option_c": "C. The configuration will automatically correct itself via dynamic routing protocols.",
+      "option_d": "D. Plaintext traffic will flow across the GRE tunnel without interruption.",
+      "correct_answer": "B",
+      "explanation": "In GRE over IPsec, the interesting traffic ACL must match the GRE packet headers (Protocol 47) between the tunnel source and destination endpoints, not the internal payload subnets."
+    },
+    {
+      "question": "Scenario: An organization requires secure remote access for traveling sales staff who frequently use restrictive hotel Wi-Fi networks that block UDP ports 500 and 4500. Which VPN technology and mode should be recommended to ensure reliable connectivity?",
+      "option_a": "A. IPsec Tunnel Mode with AH protocol",
+      "option_b": "B. SSL VPN operating in full-tunnel or portal mode over TCP port 443",
+      "option_c": "C. Unencrypted GRE tunneling",
+      "option_d": "D. IPsec Transport Mode with DES encryption",
+      "correct_answer": "B",
+      "explanation": "Restrictive hotel networks often block IPsec ports (UDP 500/4500). SSL VPNs utilize TCP port 443 (HTTPS), which successfully traverses restrictive firewalls and proxies."
+    },
+    {
+      "question": "Scenario: Two Cisco routers are attempting to establish an IPsec site-to-site VPN. Router A sends an ISAKMP policy proposal with AES-256 encryption and SHA-256 hash, while Router B's policy specifies AES-128 encryption and SHA-1 hash. What will occur?",
+      "option_a": "A. Phase 1 negotiation will succeed by automatically negotiating down to the weaker algorithm.",
+      "option_b": "B. Phase 1 negotiation will fail because neither router's ISAKMP policy parameters match the other's proposal.",
+      "option_c": "C. The routers will establish an unencrypted connection as a fallback.",
+      "option_d": "D. GRE tunnel encapsulation will bypass the ISAKMP failure.",
+      "correct_answer": "B",
+      "explanation": "ISAKMP (Phase 1) policies must match identically on both peers; conflicting encryption and hash parameters will cause negotiation to fail outright."
+    },
+    {
+      "question": "Scenario: A forensic network analysis captures an IPsec packet header in transit and observes that the original IP header fields (source and destination IP) are completely hidden inside a new outer IP header. Which IPsec mode and protocol combination was utilized?",
+      "option_a": "A. Transport Mode with AH",
+      "option_b": "B. Tunnel Mode with ESP",
+      "option_c": "C. Transport Mode with ESP",
+      "option_d": "D. Cleartext GRE tunneling",
+      "correct_answer": "B",
+      "explanation": "IPsec Tunnel Mode encapsulates and encrypts the entire original packet (including its header) inside a new outer IP header, a characteristic behavior of ESP in tunnel mode."
+    },
+    {
+      "question": "Scenario: An engineer deploys an SSL VPN supporting both RSA and ECDHE key exchanges. A client connects, but due to legacy browser restrictions, the session negotiates RSA key exchange. What security property is lost in this session compared to ECDHE?",
+      "option_a": "A. Confidentiality of bulk data encryption",
+      "option_b": "B. Forward secrecy",
+      "option_c": "C. Server certificate validation",
+      "option_d": "D. Integrity hash verification",
+      "correct_answer": "B",
+      "explanation": "RSA key exchange does not provide forward secrecy because if the server's long-term private key is later compromised, all previously intercepted sessions recorded in transit can be decrypted."
+    },
+    {
+      "question": "Scenario: A Cisco router is configured with a GRE tunnel interface (`interface Tunnel0`). A network administrator issues a ping from Router A's tunnel IP to Router B's tunnel IP, but the packets are dropped. Examination reveals that the physical interface MTU is 1500 bytes, and GRE encapsulation adds 24 bytes of overhead, causing fragmentation when packets are near maximum size and the Don't Fragment (DF) bit is set. Which Cisco configuration command resolves this issue?",
+      "option_a": "A. `crypto isakmp retry limit 5`",
+      "option_b": "B. `ip tcp adjust-mss 1360`",
+      "option_c": "C. `crypto map MYMAP 10 ipsec-isakmp`",
+      "option_d": "D. `tunnel source GigabitEthernet0/0`",
+      "correct_answer": "B",
+      "explanation": "Adjusting the TCP Maximum Segment Size (`ip tcp adjust-mss 1360`) on the tunnel interface ensures TCP segments fit within the reduced MTU caused by GRE/IPsec encapsulation headers without fragmentation issues."
+    },
+    {
+      "question": "Scenario: During an IPsec security audit, an administrator notices that Diffie-Hellman Group 1 (765-bit modulus) is active in the ISAKMP policy. Why is this considered a critical vulnerability?",
+      "option_a": "A. DH Group 1 uses symmetric keys that can be easily guessed.",
+      "option_b": "B. DH Group 1 key exchange modulus is too small and vulnerable to discrete logarithm attacks by well-funded attackers or national intelligence agencies.",
+      "option_c": "C. DH Group 1 requires AES-256 encryption to function.",
+      "option_d": "D. DH Group 1 only supports clientless web browsers.",
+      "correct_answer": "B",
+      "explanation": "DH Group 1 uses a weak 765-bit prime modulus, making the discrete logarithm problem computationally feasible to crack, compromising the shared secret."
+    },
+    {
+      "question": "Which of the following best contrasts IPsec and SSL VPN regarding client environment dependencies?",
+      "option_a": "A. IPsec requires zero configuration, whereas SSL VPN requires extensive client OS modifications.",
+      "option_b": "B. IPsec frequently requires specialized client software or pre-configured OS VPN dialers, whereas SSL VPN can leverage native web browsers for clientless access.",
+      "option_c": "C. SSL VPN requires dedicated hardware cryptographic accelerator cards on every client.",
+      "option_d": "D. IPsec and SSL VPN have identical client software requirements.",
+      "correct_answer": "B",
+      "explanation": "IPsec typically demands dedicated client software or native OS VPN configurations, whereas SSL VPN's portal mode requires only a standard web browser."
+    },
+    {
+      "question": "What is the primary function of the X.509 Certificate block in SSL VPN architecture?",
+      "option_a": "A. To encrypt bulk data streams at high speeds.",
+      "option_b": "B. To verify the identity of the server (and optionally the client) through a trusted Certificate Authority (CA) chain.",
+      "option_c": "C. To compute the message authentication code (MAC).",
+      "option_d": "D. To perform Diffie-Hellman key exchange calculations.",
+      "correct_answer": "B",
+      "explanation": "X.509 certificates establish public key infrastructure (PKI) identity verification, allowing clients to authenticate servers (and vice versa) via trusted CA signatures."
+    },
+    {
+      "question": "In Cisco IOS configuration, what does the command `crypto isakmp key MySharedKey address 203.0.113.10` accomplish?",
+      "option_a": "A. It defines the transform set name for Phase 2 data encryption.",
+      "option_b": "B. It configures the Pre-Shared Key (PSK) authentication secret associated with the specific peer IP address 203.0.113.10.",
+      "option_c": "C. It sets the interface MTU size for GRE encapsulation.",
+      "option_d": "D. It creates the interesting traffic access control list number 10.",
+      "correct_answer": "B",
+      "explanation": "This command binds the pre-shared key 'MySharedKey' to the peer IP address '203.0.113.10' for ISAKMP authentication during Phase 1."
+    },
+    {
+      "question": "When comparing cryptographic algorithm strengths in IPsec and SSL VPN frameworks, which cipher mode combines encryption and authentication into a single efficient operation (Authenticated Encryption with Associated Data)?",
+      "option_a": "A. AES-CBC with MD5",
+      "option_b": "B. AES-GCM (Galois/Counter Mode)",
+      "option_c": "C. 3DES with SHA-1",
+      "option_d": "D. RC4 with SHA-256",
+      "correct_answer": "B",
+      "explanation": "AES-GCM is an AEAD (Authenticated Encryption with Associated Data) cipher that provides both confidentiality and integrity simultaneously within the cipher design itself."
+    },
+    {
+      "question": "Scenario: An engineer troubleshooting a site-to-site VPN observes that Phase 1 succeeds, but Phase 2 packets fail. The crypto access list on Router A matches source 192.168.1.0/24 to destination 10.0.1.0/24, while Router B's access list matches source 10.0.1.0/24 to destination 192.168.1.0/24 (exact mirror image). What does this configuration indicate?",
+      "option_a": "A. The access lists are incorrectly configured and will cause an immediate crash.",
+      "option_b": "B. The interesting traffic access lists are correctly mirrored between the peers.",
+      "option_c": "C. Router B's ACL must match Router A's exact subnet without reversing source and destination.",
+      "option_d": "D. The crypto map must use pre-shared keys instead of ACLs.",
+      "correct_answer": "B",
+      "explanation": "Site-to-site IPsec interesting traffic ACLs must be exact mirror images of each other (source/destination reversed on the peer) so that outbound traffic on one router matches inbound traffic on the other."
+    },
+    {
+      "question": "What is the primary architectural limitation of IPsec regarding application-specific access control compared to SSL VPN?",
+      "option_a": "A. IPsec cannot encrypt TCP packets.",
+      "option_b": "B. IPsec operates at Layer 3, making it difficult to restrict users to specific individual web URLs or single applications without complex firewall rules behind the tunnel.",
+      "option_c": "C. IPsec requires TLS 1.3 to function.",
+      "option_d": "D. IPsec only supports clientless web access.",
+      "correct_answer": "B",
+      "explanation": "Because IPsec operates at the network layer and grants subnet-wide access once connected, restricting users to specific applications or URLs is far more cumbersome than with SSL VPN."
+    },
+    {
+      "question": "In the context of SSL VPN modular building blocks, why are SSLv3, TLS 1.0, and TLS 1.1 classified as deprecated and insecure?",
+      "option_a": "A. They require excessive memory overhead.",
+      "option_b": "B. They suffer from protocol-level cryptographic flaws (such as POODLE, BEAST, and vulnerability to CBC padding oracle attacks).",
+      "option_c": "C. They only support DES encryption.",
+      "option_d": "D. They cannot be implemented on routers.",
+      "correct_answer": "B",
+      "explanation": "Older protocol versions like SSLv3 and TLS 1.0/1.1 have severe structural weaknesses and cryptographic vulnerabilities, necessitating the mandatory adoption of TLS 1.2 or TLS 1.3."
+    },
+    {
+      "question": "Scenario: A company security policy mandates that remote contractors must only be allowed to access a single internal web-based bug-tracking application, with zero network-level access to other corporate servers. Which technology is best suited for this requirement?",
+      "option_a": "A. IPsec Site-to-Site VPN in Tunnel Mode",
+      "option_b": "B. SSL VPN in Clientless (Portal) or Thin-Client mode configured for the specific application URL",
+      "option_c": "C. Unencrypted GRE tunnel",
+      "option_d": "D. IPsec Transport Mode with AH",
+      "correct_answer": "B",
+      "explanation": "SSL VPN clientless portal or port-forwarding modes allow precise, fine-grained access limited strictly to designated web applications or ports, fulfilling the principle of least privilege."
+    },
+    {
+      "question": "What is the specific function of the command `crypto map MYMAP 10 ipsec-isakmp` in Cisco IOS?",
+      "option_a": "A. It defines a dynamic crypto map entry using IKE negotiation to bind peers, transform sets, and ACLs.",
+      "option_b": "B. It sets the global password for router login.",
+      "option_c": "C. It establishes the physical interface MTU size.",
+      "option_d": "D. It disables NAT traversal on the router.",
+      "correct_answer": "A",
+      "explanation": "This command creates a crypto map entry (`MYMAP` sequence 10) utilizing IKE to manage IPsec security associations, tying together the peer, transform set, and interesting traffic."
+    },
+    {
+      "question": "When comparing NAT traversal challenges between IPsec and SSL VPN, why does SSL VPN experience significantly fewer NAT issues?",
+      "option_a": "A. SSL VPN replaces IP addresses with MAC addresses.",
+      "option_b": "B. SSL VPN operates over standard HTTPS (TCP port 443), which stateful NAT routers handle transparently without requiring special UDP encapsulation extensions.",
+      "option_c": "C. SSL VPN requires AH protocol, which bypasses NAT automatically.",
+      "option_d": "D. SSL VPN does not use IP packets.",
+      "correct_answer": "B",
+      "explanation": "Because SSL VPN rides over standard TCP port 443 (HTTPS), stateful NAT gateways translate outbound connections naturally without requiring specialized NAT-Traversal (NAT-T) UDP port 4500 encapsulations like IPsec."
+    }
+  ]
+}
