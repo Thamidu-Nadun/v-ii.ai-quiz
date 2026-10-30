@@ -1,0 +1,670 @@
+{
+  "questions": [
+    {
+      "question": "Why does the internet require additional security mechanisms such as VPNs?",
+      "option_a": "The internet was designed primarily for connectivity and reachability rather than privacy.",
+      "option_b": "The internet automatically encrypts all packets but cannot route them correctly.",
+      "option_c": "The internet only supports communication between trusted devices.",
+      "option_d": "The internet prevents packets from crossing multiple networks.",
+      "correct_answer": "A",
+      "explanation": "The internet is a public packet-switched network designed primarily for connectivity. Confidentiality and trust must be added through additional security mechanisms."
+    },
+    {
+      "question": "What is the primary security concern when data travels through multiple intermediate networks?",
+      "option_a": "Packets automatically lose their source IP addresses.",
+      "option_b": "Intermediate networks may be untrusted and could intercept or modify transmitted data.",
+      "option_c": "Routers cannot forward packets containing sensitive information.",
+      "option_d": "Every intermediate router must decrypt the packet before forwarding it.",
+      "correct_answer": "B",
+      "explanation": "Data can pass through networks controlled by different parties. Attackers positioned along the communication path may intercept or alter unprotected traffic."
+    },
+    {
+      "question": "Which of the following best describes confidentiality in network communication?",
+      "option_a": "Ensuring that packets always arrive in the correct order.",
+      "option_b": "Ensuring that only authenticated administrators can configure routers.",
+      "option_c": "Ensuring that only intended recipients can read transmitted data.",
+      "option_d": "Ensuring that communication always uses the shortest network path.",
+      "correct_answer": "C",
+      "explanation": "Confidentiality ensures that information remains unreadable to unauthorized parties, even if they capture it during transmission."
+    },
+    {
+      "question": "Which of the following attacks demonstrates the risks of communicating over untrusted network segments?",
+      "option_a": "ARP spoofing, TCP hijacking and traffic sniffing.",
+      "option_b": "Subnetting, VLAN configuration and DHCP allocation.",
+      "option_c": "DNS caching, NAT translation and packet fragmentation.",
+      "option_d": "Load balancing, routing convergence and port forwarding.",
+      "correct_answer": "A",
+      "explanation": "ARP spoofing, TCP hijacking and traffic sniffing demonstrate how attackers can intercept or manipulate network communications."
+    },
+    {
+      "question": "What is a Virtual Private Network (VPN)?",
+      "option_a": "A physical private network that must be installed between two buildings.",
+      "option_b": "A network protocol that replaces IP addressing with encrypted identifiers.",
+      "option_c": "A mechanism that allows devices to communicate without using routers.",
+      "option_d": "A secure, encrypted connection across a public network that allows connected parties to communicate as though using a private network.",
+      "correct_answer": "D",
+      "explanation": "A VPN establishes secure communication over an untrusted public network, providing private-network-like connectivity."
+    },
+    {
+      "question": "Which three mechanisms work together to establish the security of a VPN?",
+      "option_a": "Routing, switching and subnetting.",
+      "option_b": "Tunneling, encryption and authentication.",
+      "option_c": "NAT, DHCP and DNS.",
+      "option_d": "Encapsulation, compression and packet fragmentation.",
+      "correct_answer": "B",
+      "explanation": "Tunneling encapsulates traffic, encryption protects confidentiality, and authentication verifies the communicating parties."
+    },
+    {
+      "question": "Which combination of security properties does a VPN typically provide?",
+      "option_a": "Availability, routing and scalability.",
+      "option_b": "Compression, anonymity and bandwidth optimization.",
+      "option_c": "Confidentiality, integrity and authentication.",
+      "option_d": "Address translation, segmentation and redundancy.",
+      "correct_answer": "C",
+      "explanation": "A VPN typically provides confidentiality, integrity and authentication, protecting communication across an untrusted network."
+    },
+    {
+      "question": "What is the first major step when a VPN client establishes a connection with a VPN server?",
+      "option_a": "It establishes a secure session through authentication and agreement on cryptographic parameters.",
+      "option_b": "It immediately transmits the original application data in plaintext.",
+      "option_c": "It removes the destination IP address from every packet.",
+      "option_d": "It permanently changes the physical network configuration of the client.",
+      "correct_answer": "A",
+      "explanation": "The VPN client and server first establish a secure session, typically involving authentication and a key exchange process."
+    },
+    {
+      "question": "What happens to an original IP packet during VPN encapsulation?",
+      "option_a": "Its destination address is permanently deleted.",
+      "option_b": "Its application payload is converted into a DNS request.",
+      "option_c": "It is divided into separate packets without additional headers.",
+      "option_d": "It is placed inside a new packet with an outer header suitable for transmission across the public network.",
+      "correct_answer": "D",
+      "explanation": "Encapsulation places the original packet inside another packet, adding an outer header that enables transmission across the public network."
+    },
+    {
+      "question": "Which operation is performed by the receiving VPN device?",
+      "option_a": "It permanently replaces the original packet with the outer packet.",
+      "option_b": "It decrypts the received data, removes the outer encapsulation and delivers the original packet.",
+      "option_c": "It forwards the encrypted packet directly to the original application without processing.",
+      "option_d": "It converts the VPN tunnel into a physical network connection.",
+      "correct_answer": "B",
+      "explanation": "The receiving VPN device decrypts the encapsulated traffic, removes the additional packet header and forwards the recovered original packet."
+    },
+    {
+      "question": "What is a network tunnel?",
+      "option_a": "A dedicated physical cable between two routers.",
+      "option_b": "A mechanism that guarantees encrypted communication between two networks.",
+      "option_c": "A mechanism that encapsulates one protocol's packets inside another protocol's packets.",
+      "option_d": "A firewall rule that prevents external devices from accessing a network.",
+      "correct_answer": "C",
+      "explanation": "A tunnel encapsulates packets inside another protocol's packets, allowing traffic to travel through a network that might not otherwise support it directly."
+    },
+    {
+      "question": "Does a basic GRE tunnel inherently provide encryption?",
+      "option_a": "Yes, because all GRE packets use encrypted IP headers.",
+      "option_b": "Yes, because encapsulation automatically provides confidentiality.",
+      "option_c": "Only when the tunnel connects two different autonomous systems.",
+      "option_d": "No, GRE provides encapsulation but does not inherently provide encryption.",
+      "correct_answer": "D",
+      "explanation": "GRE is an encapsulation mechanism. Without an additional security mechanism, its encapsulated traffic can travel in plaintext."
+    },
+    {
+      "question": "Which protocol is identified in the lecture as a classic example of a tunneling mechanism?",
+      "option_a": "GRE (Generic Routing Encapsulation).",
+      "option_b": "HTTP (Hypertext Transfer Protocol).",
+      "option_c": "DHCP (Dynamic Host Configuration Protocol).",
+      "option_d": "ARP (Address Resolution Protocol).",
+      "correct_answer": "A",
+      "explanation": "GRE encapsulates different types of network traffic inside IP packets and is a classic example of a tunneling protocol."
+    },
+    {
+      "question": "Which statement correctly distinguishes a VPN from a basic tunnel?",
+      "option_a": "A tunnel always provides stronger security than a VPN.",
+      "option_b": "A VPN adds security mechanisms such as encryption and authentication to tunneling.",
+      "option_c": "A VPN does not use encapsulation, whereas a tunnel does.",
+      "option_d": "A tunnel and a VPN are technically identical in every situation.",
+      "correct_answer": "B",
+      "explanation": "A tunnel provides encapsulation, while a VPN combines tunneling with security mechanisms that protect communication."
+    },
+    {
+      "question": "Which statement about the relationship between VPNs and tunnels is correct?",
+      "option_a": "Every tunnel is a VPN, but not every VPN uses tunneling.",
+      "option_b": "Neither VPNs nor tunnels use encapsulation.",
+      "option_c": "Every VPN relies on some form of tunneling, but not every tunnel is a VPN.",
+      "option_d": "VPNs and tunnels are unrelated networking technologies.",
+      "correct_answer": "C",
+      "explanation": "Tunneling is a fundamental transport mechanism used by VPNs, but a tunnel alone does not guarantee the security properties of a VPN."
+    },
+    {
+      "question": "What is the primary purpose of combining GRE with IPsec in a GRE over IPsec architecture?",
+      "option_a": "To eliminate the need for IP addressing.",
+      "option_b": "To replace encryption with packet compression.",
+      "option_c": "To allow GRE to authenticate users without additional security mechanisms.",
+      "option_d": "To use GRE for flexible encapsulation and IPsec to secure the encapsulated traffic.",
+      "correct_answer": "D",
+      "explanation": "GRE provides encapsulation and supports traffic such as dynamic routing protocols and multicast, while IPsec adds encryption and security."
+    },
+    {
+      "question": "Which two independent dimensions are used to classify VPNs in the lecture?",
+      "option_a": "Deployment form and connection purpose.",
+      "option_b": "Encryption algorithm and IP addressing scheme.",
+      "option_c": "Bandwidth and geographic distance.",
+      "option_d": "Operating system and routing protocol.",
+      "correct_answer": "A",
+      "explanation": "VPNs are classified by deployment form (software or hardware) and connection purpose (Remote Access or Site-to-Site and their variants)."
+    },
+    {
+      "question": "Which pair represents the two deployment forms of VPNs?",
+      "option_a": "Personal and Mobile.",
+      "option_b": "Remote Access and Cloud.",
+      "option_c": "Software and Hardware.",
+      "option_d": "Site-to-Site and Personal.",
+      "correct_answer": "C",
+      "explanation": "Deployment form identifies whether VPN functionality is implemented using software or dedicated hardware."
+    },
+    {
+      "question": "Which statement correctly describes the classification of Personal and Mobile VPNs?",
+      "option_a": "Both are variants of Site-to-Site VPNs.",
+      "option_b": "Both are variants of Remote Access VPNs.",
+      "option_c": "Personal VPN is a Site-to-Site variant, while Mobile VPN is a Cloud VPN variant.",
+      "option_d": "Neither belongs to the Remote Access or Site-to-Site categories.",
+      "correct_answer": "B",
+      "explanation": "Personal and Mobile VPNs are variants of Remote Access VPNs, whereas Cloud VPN is primarily a Site-to-Site variant."
+    },
+    {
+      "question": "Which VPN category is primarily a variant of Site-to-Site VPN?",
+      "option_a": "Personal VPN.",
+      "option_b": "Mobile VPN.",
+      "option_c": "Remote Access VPN.",
+      "option_d": "Cloud VPN.",
+      "correct_answer": "D",
+      "explanation": "Cloud VPN extends the Site-to-Site model by connecting an organisation's on-premises network to resources hosted in a public cloud."
+    },
+    {
+      "question": "Which characteristic is most strongly associated with a software VPN?",
+      "option_a": "It runs as an application or software-based functionality on general-purpose devices or servers.",
+      "option_b": "It requires a dedicated cryptographic appliance for every user.",
+      "option_c": "It always provides higher throughput than hardware VPNs.",
+      "option_d": "It can only establish connections between branch office routers.",
+      "correct_answer": "A",
+      "explanation": "Software VPNs operate through applications or software-based functionality on general-purpose computing devices."
+    },
+    {
+      "question": "Which of the following is an example of VPN client software mentioned in the lecture?",
+      "option_a": "Cisco ISR hardware.",
+      "option_b": "Dedicated VPN concentrator.",
+      "option_c": "OpenVPN client.",
+      "option_d": "ASA physical firewall.",
+      "correct_answer": "C",
+      "explanation": "OpenVPN client software is an example of a software VPN implementation. Cisco AnyConnect and built-in operating system VPN clients are other examples."
+    },
+    {
+      "question": "Why can a software VPN experience performance limitations on an underpowered device?",
+      "option_a": "It cannot establish an encrypted connection without a physical router.",
+      "option_b": "Encryption processing relies on the host device's own processor.",
+      "option_c": "It requires all packets to travel through a dedicated leased line.",
+      "option_d": "It cannot encapsulate IP packets.",
+      "correct_answer": "B",
+      "explanation": "Software VPNs rely on the host device's CPU for encryption, which can become a performance bottleneck when processing resources are limited."
+    },
+    {
+      "question": "What distinguishes a hardware VPN implementation?",
+      "option_a": "It operates exclusively through browser extensions.",
+      "option_b": "It does not require encryption or authentication.",
+      "option_c": "It is implemented only on individual employee laptops.",
+      "option_d": "It uses dedicated physical appliances or network devices with VPN capabilities, often including cryptographic acceleration.",
+      "correct_answer": "D",
+      "explanation": "Hardware VPNs use dedicated appliances, routers or firewalls with VPN functionality, often benefiting from specialized cryptographic acceleration."
+    },
+    {
+      "question": "Which is a typical example of hardware VPN equipment mentioned in the lecture?",
+      "option_a": "A standard web browser.",
+      "option_b": "A JavaScript VPN application.",
+      "option_c": "Cisco ISR or ASR routers with VPN support.",
+      "option_d": "A mobile operating system's built-in VPN client.",
+      "correct_answer": "C",
+      "explanation": "Cisco ISR and ASR routers with VPN support, dedicated VPN concentrators and ASA firewalls are examples of hardware-based VPN implementations."
+    },
+    {
+      "question": "Which statement best describes the performance and cost trade-off between software and hardware VPNs?",
+      "option_a": "Software VPNs generally have lower upfront costs, while hardware VPNs offer higher sustained throughput at higher initial cost.",
+      "option_b": "Hardware VPNs are always cheaper and slower than software VPNs.",
+      "option_c": "Software VPNs require dedicated cryptographic appliances, while hardware VPNs use ordinary CPUs.",
+      "option_d": "Both implementations have identical performance and deployment costs.",
+      "correct_answer": "A",
+      "explanation": "Software VPNs are relatively inexpensive and flexible, whereas hardware VPNs have higher upfront costs but benefit from dedicated cryptographic processing."
+    },
+    {
+      "question": "Which VPN type connects an individual remote user's device to a private organisational network?",
+      "option_a": "Cloud VPN.",
+      "option_b": "Site-to-Site VPN.",
+      "option_c": "Personal VPN.",
+      "option_d": "Remote Access VPN.",
+      "correct_answer": "D",
+      "explanation": "Remote Access VPN allows an individual user to securely connect to an organisation's private network from a remote location."
+    },
+    {
+      "question": "How does a typical Remote Access VPN connection begin?",
+      "option_a": "The user's device automatically becomes a physical part of the organisation's LAN.",
+      "option_b": "The user runs VPN client software and authenticates to the organisation's VPN gateway.",
+      "option_c": "The organisation installs a dedicated VPN router in the user's home.",
+      "option_d": "The user manually encrypts every application packet.",
+      "correct_answer": "B",
+      "explanation": "A Remote Access VPN normally uses client software on the remote device, which authenticates to a central organisational VPN gateway."
+    },
+    {
+      "question": "What is split tunneling in a Remote Access VPN?",
+      "option_a": "Dividing one encrypted packet into two separate packets.",
+      "option_b": "Connecting two VPN gateways through different internet service providers.",
+      "option_c": "Routing only traffic destined for the organisation's network through the VPN while other traffic uses the normal internet connection.",
+      "option_d": "Allowing two users to share one VPN authentication credential.",
+      "correct_answer": "C",
+      "explanation": "Split tunneling routes selected organisational traffic through the VPN while other traffic can access the internet directly."
+    },
+    {
+      "question": "Which factor is particularly important when sizing the gateway of a Remote Access VPN deployment?",
+      "option_a": "The total number of physical office buildings.",
+      "option_b": "The number of public DNS servers.",
+      "option_c": "The number of routers used by each employee's home network.",
+      "option_d": "The aggregate capacity required to support simultaneous user connections.",
+      "correct_answer": "D",
+      "explanation": "Although individual user throughput may be modest, the gateway must support the combined traffic of all concurrent VPN users."
+    },
+    {
+      "question": "Which is a limitation of Remote Access VPNs identified in the lecture?",
+      "option_a": "They cannot connect users from different geographic locations.",
+      "option_b": "They are entirely independent of the user's internet connection.",
+      "option_c": "They require dedicated hardware in every employee's home.",
+      "option_d": "A compromised remote endpoint can extend trust into the organisation's internal network.",
+      "correct_answer": "D",
+      "explanation": "A compromised remote device may introduce security risks into the organisational network because the VPN extends network access to that endpoint."
+    },
+    {
+      "question": "Which VPN type is most appropriate for connecting two entire networks, such as a branch office and headquarters?",
+      "option_a": "Site-to-Site VPN.",
+      "option_b": "Personal VPN.",
+      "option_c": "Mobile VPN.",
+      "option_d": "Individual Remote Access VPN.",
+      "correct_answer": "A",
+      "explanation": "Site-to-Site VPN connects entire networks through VPN gateways, allowing devices at both locations to communicate securely."
+    },
+    {
+      "question": "In a typical Site-to-Site VPN architecture, where is the VPN functionality implemented?",
+      "option_a": "On every individual employee's laptop.",
+      "option_b": "Only inside the cloud provider's web browser.",
+      "option_c": "On VPN gateways at each connected site.",
+      "option_d": "Inside the applications running on the end-user devices.",
+      "correct_answer": "C",
+      "explanation": "VPN gateways at both sites establish and maintain the encrypted tunnel, making encryption transparent to individual end-user devices."
+    },
+    {
+      "question": "Why is a Site-to-Site VPN generally more suitable than Remote Access VPN for connecting multiple permanent branch offices?",
+      "option_a": "It eliminates the need for internet connectivity.",
+      "option_b": "It provides persistent gateway-to-gateway connectivity for entire networks without requiring individual client connections.",
+      "option_c": "It guarantees that every branch has unlimited bandwidth.",
+      "option_d": "It automatically prevents all internal network attacks.",
+      "correct_answer": "B",
+      "explanation": "Site-to-Site VPN is designed for persistent network-to-network communication and provides transparent connectivity for devices across entire sites."
+    },
+    {
+      "question": "Which is a significant limitation of Site-to-Site VPN deployments?",
+      "option_a": "They cannot encrypt traffic.",
+      "option_b": "They are designed only for individual mobile users.",
+      "option_c": "They cannot connect a branch office to a data centre.",
+      "option_d": "They require configuration at every site and may introduce a single point of failure without redundancy.",
+      "correct_answer": "D",
+      "explanation": "Each site needs VPN gateway configuration, and a failure of a gateway or connection can interrupt connectivity unless redundancy is implemented."
+    },
+    {
+      "question": "Why can Site-to-Site VPNs be cost-effective when an organisation has many users at each branch?",
+      "option_a": "They eliminate all equipment and maintenance costs.",
+      "option_b": "They use individual consumer subscriptions for every employee.",
+      "option_c": "The cost of shared gateway infrastructure can be distributed across many users.",
+      "option_d": "They do not require encryption processing.",
+      "correct_answer": "C",
+      "explanation": "Although upfront costs per site are higher, shared gateway infrastructure can be more economical per user at scale than individual connections."
+    },
+    {
+      "question": "What is the primary purpose of a Personal VPN?",
+      "option_a": "To connect multiple corporate branch offices permanently.",
+      "option_b": "To connect on-premises databases to cloud-hosted servers.",
+      "option_c": "To maintain uninterrupted connections while switching between mobile networks.",
+      "option_d": "To encrypt an individual's internet traffic and potentially mask their apparent geographic location.",
+      "correct_answer": "D",
+      "explanation": "Personal VPNs are commercial services intended for individual privacy, traffic protection and sometimes geographic location masking."
+    },
+    {
+      "question": "What is an important trust limitation of using a commercial Personal VPN?",
+      "option_a": "The VPN provider can potentially observe traffic after it leaves its servers, unless the destination separately protects it, for example with HTTPS.",
+      "option_b": "The VPN provider cannot receive packets from the internet.",
+      "option_c": "The VPN provider must install physical hardware in the user's home.",
+      "option_d": "The VPN provider automatically encrypts all traffic between the final destination and every other internet user.",
+      "correct_answer": "A",
+      "explanation": "A personal VPN shifts trust toward the commercial provider. Traffic leaving the provider's servers may be readable if the destination connection is not separately encrypted."
+    },
+    {
+      "question": "Which situation best represents a Personal VPN use case?",
+      "option_a": "A company connecting 15 retail branches to a headquarters database.",
+      "option_b": "A journalist using public Wi-Fi who wants to protect personal browsing traffic and use servers in different countries.",
+      "option_c": "A manufacturing company connecting factory sensors to cloud analytics.",
+      "option_d": "A hospital connecting its headquarters to a permanent branch network.",
+      "correct_answer": "B",
+      "explanation": "Personal VPNs are intended for individuals who want additional privacy and protection when using public or untrusted networks."
+    },
+    {
+      "question": "What is the defining characteristic of a Mobile VPN?",
+      "option_a": "It connects multiple permanent office networks through dedicated gateways.",
+      "option_b": "It encrypts traffic only when a device is connected to public Wi-Fi.",
+      "option_c": "It maintains a persistent VPN session while the device changes underlying network connections.",
+      "option_d": "It connects a personal computer to a commercial VPN provider for geographic location masking.",
+      "correct_answer": "C",
+      "explanation": "Mobile VPNs are designed to preserve secure sessions while devices move between different network connections, such as Wi-Fi and cellular networks."
+    },
+    {
+      "question": "Which feature is particularly important for a Mobile VPN?",
+      "option_a": "A permanent physical connection to one wireless access point.",
+      "option_b": "A persistent virtual identity that does not depend on a fixed underlying network path.",
+      "option_c": "A requirement to establish a new authentication session after every network change.",
+      "option_d": "A dedicated VPN appliance installed inside every mobile device.",
+      "correct_answer": "B",
+      "explanation": "Maintaining a persistent virtual identity allows the VPN session to continue despite changes in the device's underlying network connection."
+    },
+    {
+      "question": "Which is a limitation associated with Mobile VPNs?",
+      "option_a": "They cannot operate over cellular connections.",
+      "option_b": "They cannot maintain encrypted sessions.",
+      "option_c": "They require permanent wired connections.",
+      "option_d": "They introduce implementation complexity and may consume additional device battery power.",
+      "correct_answer": "D",
+      "explanation": "Maintaining persistent connectivity across changing networks is more complex and can increase battery consumption on mobile devices."
+    },
+    {
+      "question": "What does a Cloud VPN primarily connect?",
+      "option_a": "An individual's laptop to a commercial VPN service.",
+      "option_b": "A mobile device to different wireless networks.",
+      "option_c": "An organisation's on-premises network to resources hosted in a public cloud.",
+      "option_d": "Two personal computers using a browser extension.",
+      "correct_answer": "C",
+      "explanation": "Cloud VPN extends the Site-to-Site model by securely connecting an organisation's on-premises network with its cloud environment."
+    },
+    {
+      "question": "Which cloud-side component typically establishes the Cloud VPN connection?",
+      "option_a": "A managed virtual VPN gateway provided by the cloud provider.",
+      "option_b": "A physical router installed and maintained inside the customer's home.",
+      "option_c": "A VPN application running on every cloud-hosted user device.",
+      "option_d": "A public DNS resolver.",
+      "correct_answer": "A",
+      "explanation": "Cloud providers offer managed VPN gateway services, such as AWS Site-to-Site VPN and Azure VPN Gateway."
+    },
+    {
+      "question": "Which is a typical cost consideration associated with Cloud VPN services?",
+      "option_a": "Only a one-time physical router purchase.",
+      "option_b": "A fixed gateway charge combined with data transfer fees.",
+      "option_c": "A mandatory consumer subscription for every employee.",
+      "option_d": "No recurring cost because cloud gateways are always free.",
+      "correct_answer": "B",
+      "explanation": "Cloud VPN costs commonly include a fixed gateway charge and data transfer fees that increase with usage."
+    },
+    {
+      "question": "Which of the following is a common use case for Cloud VPN?",
+      "option_a": "Masking an individual's location when browsing the internet.",
+      "option_b": "Maintaining an uninterrupted connection while travelling between cellular networks.",
+      "option_c": "Connecting an employee's home laptop to internal resources.",
+      "option_d": "Extending an on-premises data centre into a public cloud environment.",
+      "correct_answer": "D",
+      "explanation": "Cloud VPN is commonly used in hybrid cloud architectures to securely extend on-premises networks into cloud environments."
+    },
+    {
+      "question": "A university wants to allow lecturers to access internal research servers from home. Each lecturer uses their own laptop, and the university wants centralised authentication. Which solution is most appropriate?",
+      "option_a": "Site-to-Site VPN between every lecturer's home router and the university.",
+      "option_b": "Personal VPN subscriptions for all lecturers.",
+      "option_c": "Remote Access VPN with client software and a central university gateway.",
+      "option_d": "A Mobile VPN designed exclusively for switching between cellular networks.",
+      "correct_answer": "C",
+      "explanation": "Remote Access VPN is designed for individual users connecting from unpredictable locations. A central gateway can authenticate and manage their connections."
+    },
+    {
+      "question": "A company has 15 retail branches. Every branch requires continuous access to a central inventory database, and employees should not need to start VPN software individually. Which solution is most suitable?",
+      "option_a": "A Personal VPN at each branch.",
+      "option_b": "A Site-to-Site VPN using gateways at each branch and headquarters.",
+      "option_c": "A Remote Access VPN account for every employee.",
+      "option_d": "A Mobile VPN for every point-of-sale terminal.",
+      "correct_answer": "B",
+      "explanation": "Site-to-Site VPN provides persistent gateway-to-gateway connectivity, allowing all devices at each branch to communicate transparently."
+    },
+    {
+      "question": "A journalist frequently uses public Wi-Fi and wants to encrypt personal internet traffic while occasionally appearing to browse from another country. She does not need access to an organisation's internal network. Which VPN type is most appropriate?",
+      "option_a": "Personal VPN.",
+      "option_b": "Site-to-Site VPN.",
+      "option_c": "Cloud VPN.",
+      "option_d": "Mobile VPN.",
+      "correct_answer": "A",
+      "explanation": "Personal VPN services provide individual traffic protection and access to exit servers in different countries without requiring corporate network access."
+    },
+    {
+      "question": "A healthcare worker uses a tablet while travelling between patients' homes, switching between Wi-Fi and cellular connections. Patient record access must continue without forcing repeated logins. Which VPN type should be considered?",
+      "option_a": "Personal VPN.",
+      "option_b": "Site-to-Site VPN.",
+      "option_c": "Cloud VPN.",
+      "option_d": "Mobile VPN.",
+      "correct_answer": "D",
+      "explanation": "Mobile VPN is specifically designed to maintain persistent sessions while devices move between different underlying network connections."
+    },
+    {
+      "question": "A manufacturing company stores factory sensor data on-premises but runs analytics applications in a public cloud. It needs continuous secure communication between the two environments without managing physical VPN hardware in the cloud. What should it deploy?",
+      "option_a": "Personal VPN.",
+      "option_b": "Cloud VPN with an on-premises gateway and managed cloud VPN gateway.",
+      "option_c": "Mobile VPN for every factory sensor.",
+      "option_d": "Individual Remote Access VPN connections for each analytics request.",
+      "correct_answer": "B",
+      "explanation": "Cloud VPN connects on-premises infrastructure to cloud-hosted resources using a managed cloud-side gateway, typically through an IPsec-based tunnel."
+    },
+    {
+      "question": "An administrator configures GRE between two branch routers. A security audit reveals that sensitive business traffic can be read by someone capturing packets on the internet. The administrator argues that GRE is a VPN because it creates a tunnel. Which evaluation is correct?",
+      "option_a": "The administrator is correct because every tunnel inherently encrypts traffic.",
+      "option_b": "The administrator is correct because GRE automatically authenticates both routers.",
+      "option_c": "The administrator is incorrect because GRE provides encapsulation but not inherent encryption or confidentiality; an additional security mechanism such as IPsec is required.",
+      "option_d": "The administrator is incorrect because GRE cannot transport traffic over the internet.",
+      "correct_answer": "C",
+      "explanation": "A tunnel is not automatically a VPN. GRE encapsulates packets but does not inherently provide encryption. IPsec can be added to secure GRE traffic."
+    },
+    {
+      "question": "An organisation needs to transport multicast traffic and dynamic routing protocol traffic between two branch networks while ensuring confidentiality over the internet. Which architecture best satisfies these requirements according to the lecture?",
+      "option_a": "GRE over IPsec, using GRE for encapsulation and IPsec for security.",
+      "option_b": "Plain GRE, because multicast traffic is automatically encrypted.",
+      "option_c": "Personal VPN, because commercial providers automatically transport all routing protocols.",
+      "option_d": "A software VPN client installed on every router interface without tunneling.",
+      "correct_answer": "A",
+      "explanation": "GRE supports traffic such as multicast and dynamic routing protocols, while IPsec protects the GRE traffic with encryption and other security mechanisms."
+    },
+    {
+      "question": "An enterprise is comparing software and hardware VPN solutions for a large network carrying sustained high traffic volumes. Which evaluation is most accurate?",
+      "option_a": "Software VPN is always preferable because it uses dedicated cryptographic acceleration.",
+      "option_b": "Hardware VPN is generally more appropriate because dedicated cryptographic acceleration can provide higher sustained throughput, although upfront costs are greater.",
+      "option_c": "Software VPN is always faster because it does not require encryption.",
+      "option_d": "Both solutions necessarily provide identical throughput regardless of hardware specifications.",
+      "correct_answer": "B",
+      "explanation": "Hardware VPNs are suited to higher sustained traffic volumes because dedicated cryptographic processing can improve throughput. Their trade-off is higher initial cost."
+    },
+    {
+      "question": "An organisation allows employees to use split tunneling. An employee accesses an internal file server through the VPN while simultaneously browsing an external website through their ordinary internet connection. Which interpretation is correct?",
+      "option_a": "Both connections must travel through the VPN because split tunneling only changes packet headers.",
+      "option_b": "The employee has established two independent Site-to-Site VPN tunnels.",
+      "option_c": "The VPN encrypts all traffic on the employee's device regardless of routing configuration.",
+      "option_d": "The internal server traffic travels through the VPN, while the external website traffic can use the normal internet route.",
+      "correct_answer": "D",
+      "explanation": "Split tunneling allows selected traffic, such as traffic destined for internal resources, to use the VPN while other traffic uses the normal internet connection."
+    },
+    {
+      "question": "An organisation has deployed Remote Access VPN for its employees. An attacker compromises an employee's laptop and obtains access to the employee's active VPN session. Which security concern is most relevant?",
+      "option_a": "The VPN gateway automatically becomes a Personal VPN provider.",
+      "option_b": "The compromised endpoint can potentially be used as an entry point into internal organisational resources.",
+      "option_c": "The VPN tunnel automatically converts into a Site-to-Site VPN.",
+      "option_d": "The attack becomes impossible because VPN encryption protects against compromised endpoints.",
+      "correct_answer": "B",
+      "explanation": "VPN encryption protects traffic in transit but does not guarantee endpoint security. A compromised remote device may expose internal resources through its authenticated connection."
+    },
+    {
+      "question": "A company deploys a Site-to-Site VPN between headquarters and a branch office. The VPN gateway at the branch fails, and the branch loses connectivity to headquarters. Which design weakness does this illustrate?",
+      "option_a": "The inherent inability of Site-to-Site VPNs to use encryption.",
+      "option_b": "The inability of VPN gateways to support multiple devices.",
+      "option_c": "A potential single point of failure when gateway redundancy is not implemented.",
+      "option_d": "The inability of Site-to-Site VPNs to connect permanent locations.",
+      "correct_answer": "C",
+      "explanation": "A Site-to-Site VPN may have a single point of failure if its gateway or connection is not designed with redundancy."
+    },
+    {
+      "question": "A company has 500 employees distributed across several cities. Employees work from unpredictable locations and need secure access to internal applications. The organisation wants to minimise infrastructure costs at individual employee locations. Which design is most appropriate?",
+      "option_a": "Deploy dedicated hardware VPN appliances at every employee's home.",
+      "option_b": "Create a permanent Site-to-Site VPN between the company and every employee's home network.",
+      "option_c": "Require every employee to purchase a separate commercial Personal VPN subscription.",
+      "option_d": "Deploy Remote Access VPN clients on employee devices and centralise authentication at organisational gateways.",
+      "correct_answer": "D",
+      "explanation": "Remote Access VPN supports individual users connecting from unpredictable locations. Software clients and centralised gateways avoid the need for dedicated VPN appliances at every home."
+    },
+    {
+      "question": "A company wants to provide secure connectivity between two entire office networks. It chooses Remote Access VPN because employees at both offices need access to shared applications. What is the main architectural weakness of this decision?",
+      "option_a": "Remote Access VPN cannot provide encryption.",
+      "option_b": "It introduces unnecessary individual client-based connections when persistent gateway-to-gateway connectivity is more suitable for entire networks.",
+      "option_c": "Remote Access VPN can only be used by individuals on public Wi-Fi.",
+      "option_d": "Remote Access VPN cannot authenticate users.",
+      "correct_answer": "B",
+      "explanation": "Remote Access VPN is designed for individual users, whereas Site-to-Site VPN provides persistent connectivity between entire networks without requiring individual client sessions."
+    },
+    {
+      "question": "An organisation purchases a Personal VPN service to protect its employees' traffic on public Wi-Fi. Management claims that this guarantees complete privacy because the VPN provider cannot read any traffic. Which assessment is correct?",
+      "option_a": "The claim is correct because VPN encryption remains active between the provider and every destination automatically.",
+      "option_b": "The claim is correct because commercial VPN providers cannot inspect outbound traffic.",
+      "option_c": "The claim is incorrect because the provider becomes a party that must be trusted; traffic leaving its servers may be readable unless separately protected, such as by HTTPS.",
+      "option_d": "The claim is incorrect because Personal VPNs cannot encrypt traffic on public Wi-Fi.",
+      "correct_answer": "C",
+      "explanation": "A Personal VPN protects traffic between the user and the provider, but the provider may observe unencrypted traffic after it exits its servers. HTTPS can provide additional end-to-end protection."
+    },
+    {
+      "question": "A hospital implements a standard Remote Access VPN for healthcare workers. However, staff repeatedly lose their secure sessions when moving from hospital Wi-Fi to vehicle cellular connections. Which design change is most appropriate?",
+      "option_a": "Replace the deployment with a Personal VPN to mask the hospital's location.",
+      "option_b": "Use a Site-to-Site VPN between every mobile device and the hospital.",
+      "option_c": "Remove authentication so that sessions do not need to restart.",
+      "option_d": "Use a Mobile VPN with persistent-session support and a compatible gateway.",
+      "correct_answer": "D",
+      "explanation": "Mobile VPNs are designed to preserve sessions during network transitions. The gateway must also support the required mobile VPN functionality."
+    },
+    {
+      "question": "A company plans to move its analytics infrastructure to a public cloud while keeping its factory control systems on-premises. It wants to avoid managing physical VPN equipment inside the cloud provider's infrastructure. Which architecture and deployment arrangement is correct?",
+      "option_a": "Cloud VPN with a hardware gateway on-premises and a managed virtual VPN gateway in the cloud.",
+      "option_b": "Personal VPN with commercial servers located near the cloud provider.",
+      "option_c": "Mobile VPN with a software client installed on each cloud server.",
+      "option_d": "Remote Access VPN with a separate user account for every factory sensor.",
+      "correct_answer": "A",
+      "explanation": "Cloud VPN typically uses customer-managed hardware or gateway infrastructure on-premises and a provider-managed virtual gateway in the cloud."
+    },
+    {
+      "question": "An organisation chooses Cloud VPN to connect its data centre to a public cloud. After deployment, data transfer costs increase significantly as traffic grows. Which explanation best accounts for this?",
+      "option_a": "Cloud VPN gateways charge exclusively according to the number of employee laptops.",
+      "option_b": "Cloud VPN costs can include a fixed gateway charge and data transfer fees that increase with traffic volume.",
+      "option_c": "Cloud VPN automatically converts data transfer into a consumer subscription.",
+      "option_d": "Cloud VPN requires a separate physical VPN appliance for every transmitted packet.",
+      "correct_answer": "B",
+      "explanation": "Cloud VPN pricing commonly includes a gateway fee and usage-related data transfer charges, making traffic volume an important cost consideration."
+    },
+    {
+      "question": "An enterprise is deciding between Site-to-Site VPN and Cloud VPN for a hybrid cloud deployment. Which statement most accurately describes their relationship?",
+      "option_a": "They are completely unrelated because Cloud VPN does not use tunneling.",
+      "option_b": "Cloud VPN is a variant of Personal VPN because cloud resources are accessed over the internet.",
+      "option_c": "Cloud VPN is primarily a Site-to-Site variant in which one connected environment is hosted by a public cloud provider.",
+      "option_d": "Site-to-Site VPN only connects mobile users, while Cloud VPN only connects personal devices.",
+      "correct_answer": "C",
+      "explanation": "Cloud VPN follows the Site-to-Site model but connects an organisation's on-premises network to a cloud-hosted environment using a managed cloud gateway."
+    },
+    {
+      "question": "A company uses a hardware VPN gateway at headquarters and software VPN clients on employees' laptops. An administrator claims that the entire deployment must be classified as either a software VPN or a hardware VPN, but cannot be both. Which statement best evaluates this claim?",
+      "option_a": "The administrator is correct because deployment form must be identical at every endpoint.",
+      "option_b": "The administrator is correct because VPNs cannot combine software clients with hardware gateways.",
+      "option_c": "The administrator is incorrect because the deployment form and connection purpose are independent classification dimensions, and VPN functionality can use software and hardware components together.",
+      "option_d": "The administrator is incorrect because all VPNs are classified exclusively as Cloud VPNs.",
+      "correct_answer": "C",
+      "explanation": "Deployment form and connection purpose are separate classification dimensions. A Remote Access deployment can use software clients with a dedicated hardware gateway."
+    },
+    {
+      "question": "A security engineer must choose between Remote Access and Site-to-Site VPN for an organisation with both permanent branch offices and employees who travel internationally. Which architecture best satisfies both requirements?",
+      "option_a": "Use only Personal VPN because it supports every organisational connectivity requirement.",
+      "option_b": "Use Site-to-Site VPN for permanent branch connectivity and Remote Access VPN for individual travelling employees.",
+      "option_c": "Use only Mobile VPN because it is designed for every permanent and temporary network connection.",
+      "option_d": "Use GRE without encryption for both branch and employee connectivity.",
+      "correct_answer": "B",
+      "explanation": "Site-to-Site VPN is appropriate for permanent network-to-network connections, while Remote Access VPN supports individual employees connecting from different locations."
+    },
+    {
+      "question": "A network architect proposes using a basic GRE tunnel to connect two offices because the offices need dynamic routing and multicast support. The organisation also requires confidentiality, integrity and authentication across the public internet. Which design best satisfies all requirements?",
+      "option_a": "GRE alone, because routing support automatically implies security.",
+      "option_b": "A Personal VPN installed on the employees' computers.",
+      "option_c": "GRE over IPsec, because GRE supports the required encapsulation while IPsec provides the security layer.",
+      "option_d": "A plain IP-in-IP tunnel without any additional security.",
+      "correct_answer": "C",
+      "explanation": "GRE supports flexible traffic encapsulation, including dynamic routing and multicast. IPsec adds the required security protection to the GRE traffic."
+    },
+    {
+      "question": "An organisation has 15 branch offices and needs continuous connectivity between all branches and headquarters. It is evaluating a Site-to-Site VPN but is concerned about gateway failure. Which recommendation provides the most appropriate architectural improvement?",
+      "option_a": "Install a Personal VPN client on each employee's device.",
+      "option_b": "Disable authentication so that gateways can reconnect automatically.",
+      "option_c": "Replace all gateway connections with unencrypted GRE tunnels.",
+      "option_d": "Introduce redundant VPN gateways or connections to reduce single points of failure.",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies single-point-of-failure risk as a Site-to-Site limitation unless redundancy is deliberately designed into the architecture."
+    },
+    {
+      "question": "A software VPN is deployed across thousands of low-powered employee devices. During peak usage, encryption processing becomes a bottleneck. Which explanation and potential architectural response are most appropriate?",
+      "option_a": "The problem occurs because software VPNs cannot perform encryption; the organisation should remove encryption entirely.",
+      "option_b": "The problem is related to host CPU limitations; the organisation could evaluate dedicated hardware VPN gateways for centralised processing where the architecture permits.",
+      "option_c": "The problem is caused by the absence of DNS records; replacing DNS will eliminate encryption overhead.",
+      "option_d": "The problem proves that hardware VPNs cannot support simultaneous users.",
+      "correct_answer": "B",
+      "explanation": "Software VPN performance can be limited by the host processor. Hardware VPN appliances can provide dedicated cryptographic acceleration and centralised processing, although the overall architecture must still support the required endpoints."
+    },
+    {
+      "question": "A company uses a Personal VPN and believes that connecting to a server in another country means its traffic is completely anonymous and cannot be observed by any party. Which conclusion is most technically accurate?",
+      "option_a": "The assumption is correct because changing the apparent location removes all identifying information.",
+      "option_b": "The assumption is correct because VPN providers cannot inspect traffic after authentication.",
+      "option_c": "The assumption is incorrect because the VPN provider becomes a trusted intermediary, and geographic location masking does not guarantee complete anonymity or eliminate all privacy risks.",
+      "option_d": "The assumption is incorrect because Personal VPNs cannot change the apparent geographic location.",
+      "correct_answer": "C",
+      "explanation": "Personal VPNs can mask the apparent location by routing traffic through provider servers, but users must trust the provider and cannot assume complete anonymity."
+    },
+    {
+      "question": "An organisation wants to connect a headquarters network to a cloud analytics environment. The cloud provider offers a managed VPN gateway whose throughput depends on the selected pricing tier. Which factor should be included in the organisation's evaluation?",
+      "option_a": "Only the number of mobile devices connected to the headquarters Wi-Fi.",
+      "option_b": "Whether the cloud gateway requires every employee to install a Personal VPN.",
+      "option_c": "Whether the cloud gateway can eliminate all data transfer charges.",
+      "option_d": "The relationship between throughput requirements, gateway pricing tiers, data transfer charges and provider-specific configuration limitations.",
+      "correct_answer": "D",
+      "explanation": "Cloud VPN throughput and costs depend on provider pricing tiers and data transfer usage. Organisations must also consider provider-specific gateway configurations and limitations."
+    },
+    {
+      "question": "An enterprise has three requirements: permanent connectivity between its branch networks, secure access for travelling employees, and uninterrupted sessions for field workers who frequently switch networks. Which combination correctly maps each requirement to a VPN type?",
+      "option_a": "Personal VPN, Cloud VPN and Site-to-Site VPN.",
+      "option_b": "Site-to-Site VPN, Remote Access VPN and Mobile VPN.",
+      "option_c": "Mobile VPN, Personal VPN and Cloud VPN.",
+      "option_d": "Remote Access VPN, Site-to-Site VPN and Personal VPN.",
+      "correct_answer": "B",
+      "explanation": "Site-to-Site VPN connects permanent networks, Remote Access VPN supports individual remote employees, and Mobile VPN maintains sessions during network transitions."
+    },
+    {
+      "question": "A company has a public-facing cloud analytics platform and an on-premises factory network. It wants to connect both environments securely. Management argues that because the cloud VPN uses a virtual gateway, the on-premises side does not need any VPN infrastructure. Which assessment is correct?",
+      "option_a": "Management is correct because virtual cloud gateways eliminate the need for on-premises gateways.",
+      "option_b": "Management is correct because cloud VPNs operate only through web browsers.",
+      "option_c": "Management is incorrect because Cloud VPN typically requires an on-premises gateway to establish the connection with the managed cloud-side virtual gateway.",
+      "option_d": "Management is incorrect because Cloud VPN cannot connect on-premises and public cloud networks.",
+      "correct_answer": "C",
+      "explanation": "Cloud VPN generally uses a gateway on the on-premises side and a managed virtual gateway on the cloud side to establish secure network-to-network connectivity."
+    },
+    {
+      "question": "A security analyst observes that an organisation's VPN encrypts packets while they travel across the internet. The analyst concludes that the VPN also guarantees that the destination application and remote endpoint are free from compromise. Which statement best identifies the flaw in this reasoning?",
+      "option_a": "Encryption is only a transport mechanism and cannot protect any network traffic.",
+      "option_b": "A VPN guarantees endpoint security whenever authentication is enabled.",
+      "option_c": "VPNs provide only availability and cannot provide confidentiality.",
+      "option_d": "VPN security protects communication in transit but does not automatically guarantee the security of endpoints or applications.",
+      "correct_answer": "D",
+      "explanation": "VPNs provide protection for communication across untrusted networks, but they do not automatically prevent malware, endpoint compromise or application vulnerabilities."
+    }
+  ]
+}

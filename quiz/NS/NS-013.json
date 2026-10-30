@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following security services is primarily provided by symmetric and asymmetric encryption algorithms?",
+      "option_a": "A. Integrity",
+      "option_b": "B. Confidentiality",
+      "option_c": "C. Non-repudiation",
+      "option_d": "D. Authentication",
+      "correct_answer": "B",
+      "explanation": "Encryption transforms plaintext into ciphertext to ensure data confidentiality, ensuring unauthorized parties cannot read it[cite: 5, 6]."
+    },
+    {
+      "question": "According to Kerckhoffs's principle, what part of a cryptosystem must remain secret while everything else is public knowledge?",
+      "option_a": "A. The encryption algorithm",
+      "option_b": "B. The block size",
+      "option_c": "C. The key",
+      "option_d": "D. The padding scheme",
+      "correct_answer": "C",
+      "explanation": "Kerckhoffs's principle states that a cryptosystem should remain secure even if all details except the key are public knowledge[cite: 8]."
+    },
+    {
+      "question": "Why are classical ciphers like Caesar and Vigenere unsuitable for modern secure communications?",
+      "option_a": "A. They require excessive computational power to encrypt data.",
+      "option_b": "B. They have tiny key spaces and leak statistical patterns like letter frequencies.",
+      "option_c": "C. They rely exclusively on asymmetric key pairs.",
+      "option_d": "D. They cannot be decrypted on modern hardware.",
+      "correct_answer": "B",
+      "explanation": "Classical ciphers suffer from small key spaces susceptible to brute-force attacks and retain structural/frequency patterns exploitable by cryptanalysis[cite: 14]."
+    },
+    {
+      "question": "In Claude Shannon's terminology, what cryptographic property ensures that the relationship between the key and the ciphertext is as complex as possible?",
+      "option_a": "A. Diffusion",
+      "option_b": "B. Confusion",
+      "option_c": "C. Avalanche effect",
+      "option_d": "D. Preimage resistance",
+      "correct_answer": "B",
+      "explanation": "Confusion makes the relationship between the key and ciphertext complex, typically provided by substitution[cite: 15]."
+    },
+    {
+      "question": "If an organization has 100 users and every unique pair requires its own shared secret key for symmetric communication, how many total keys are needed?",
+      "option_a": "A. 100",
+      "option_b": "B. 4,950",
+      "option_c": "C. 5,000",
+      "option_d": "D. 9,900",
+      "correct_answer": "B",
+      "explanation": "The key count for n users is calculated using the formula n(n-1)/2. For 100 users, this equals 100(99)/2 = 4,950[cite: 18]."
+    },
+    {
+      "question": "What is the primary operational difference between a block cipher and a stream cipher?",
+      "option_a": "A. Block ciphers use public keys while stream ciphers use shared secrets.",
+      "option_b": "B. Block ciphers process fixed-size chunks of data, whereas stream ciphers process data one bit or byte at a time.",
+      "option_c": "C. Stream ciphers require extensive padding while block ciphers never use padding.",
+      "option_d": "D. Stream ciphers are exclusively used for full-disk encryption.",
+      "correct_answer": "B",
+      "explanation": "Block ciphers operate on fixed-size blocks (e.g., 64 or 128 bits), while stream ciphers generate a keystream to encrypt data bit or byte by bit[cite: 22, 27, 31]."
+    },
+    {
+      "question": "Which block cipher mode of operation encrypts each block independently with the same key, causing identical plaintext blocks to yield identical ciphertext blocks?",
+      "option_a": "A. Cipher Block Chaining (CBC)",
+      "option_b": "B. Counter Mode (CTR)",
+      "option_c": "C. Electronic Codebook (ECB)",
+      "option_d": "D. Galois/Counter Mode (GCM)",
+      "correct_answer": "C",
+      "explanation": "In ECB mode, identical plaintext blocks are encrypted into identical ciphertext blocks, leaking visual or structural patterns[cite: 23]."
+    },
+    {
+      "question": "Why is reusing a nonce or counter value catastrophic when using Counter (CTR) or Galois/Counter Mode (GCM)?",
+      "option_a": "A. It causes infinite loops in hardware instruction pipelines.",
+      "option_b": "B. It invalidates the certificate chain.",
+      "option_c": "C. It allows an attacker to cancel out the keystream by XORing ciphertexts, compromising confidentiality.",
+      "option_d": "D. It automatically triggers a public key revocation.",
+      "correct_answer": "C",
+      "explanation": "Reusing a nonce in stream-like modes produces the same keystream twice; XORing the two ciphertexts cancels out the keystream and exposes the plaintexts[cite: 24, 29]."
+    },
+    {
+      "question": "Which of the following algorithms is currently the standard symmetric block cipher approved by NIST with a 128-bit block size?",
+      "option_a": "A. DES",
+      "option_b": "B. 3DES",
+      "option_c": "C. RC4",
+      "option_d": "D. AES",
+      "correct_answer": "D",
+      "explanation": "AES (Advanced Encryption Standard) uses 128-bit blocks and key sizes of 128, 192, or 256 bits, standardizing in 2001 (FIPS 197)[cite: 25]."
+    },
+    {
+      "question": "What security vulnerability led to RC4 being formally prohibited in TLS via RFC 7465?",
+      "option_a": "A. It requires 4096-bit prime number factorizations.",
+      "option_b": "B. Statistical biases in its keystream allowed attackers to recover plaintext.",
+      "option_c": "C. Its block size was restricted to exactly 64 bits.",
+      "option_d": "D. It lacked any mechanism for hardware acceleration.",
+      "correct_answer": "B",
+      "explanation": "RC4 exhibits statistical biases in its generated keystream, making practical plaintext recovery feasible[cite: 28]."
+    },
+    {
+      "question": "What is the primary purpose of asymmetric cryptography in hybrid cryptosystems like TLS?",
+      "option_a": "A. To handle high-speed bulk data encryption efficiently",
+      "option_b": "B. To solve the key distribution problem and authenticate handshake parameters",
+      "option_c": "C. To eliminate the need for hash functions and digital signatures",
+      "option_d": "D. To provide padding for stream cipher generators",
+      "correct_answer": "B",
+      "explanation": "Asymmetric cryptography is computationally expensive for bulk data but solves key distribution and peer authentication during the handshake phase[cite: 40, 43]."
+    },
+    {
+      "question": "Upon which hard mathematical problem does RSA public-key encryption base its security?",
+      "option_a": "A. Discrete logarithm problem on elliptic curves",
+      "option_b": "B. Factoring the product of two very large prime numbers",
+      "option_c": "C. Finding SHA-256 collision preimages",
+      "option_d": "D. Solving modular matrix inversions",
+      "correct_answer": "B",
+      "explanation": "RSA security rests on the computational difficulty of factoring the product of two large prime numbers[cite: 35]."
+    },
+    {
+      "question": "What key advantage does Elliptic Curve Cryptography (ECC) offer over traditional RSA?",
+      "option_a": "A. It provides equivalent security with significantly smaller key sizes and faster computation.",
+      "option_b": "B. It does not require public and private key pairs.",
+      "option_c": "C. It is completely immune to quantum computer attacks.",
+      "option_d": "D. It operates natively as a symmetric stream cipher.",
+      "correct_answer": "A",
+      "explanation": "ECC achieves security comparable to large RSA keys (e.g., a 256-bit ECC key matches a 3072-bit RSA key) with smaller keys and faster processing[cite: 38, 39]."
+    },
+    {
+      "question": "What is the security feature achieved when a key agreement protocol generates fresh session keys for every connection, ensuring past sessions are not compromised if a long-term key is stolen?",
+      "option_a": "A. Non-repudiation",
+      "option_b": "B. Forward secrecy",
+      "option_c": "C. Preimage resistance",
+      "option_d": "D. Avalanche effect",
+      "correct_answer": "B",
+      "explanation": "Ephemeral key exchanges (like ECDHE) provide forward secrecy, protecting historical sessions even if a long-term private key is later compromised[cite: 36, 39]."
+    },
+    {
+      "question": "Which hash function property dictates that given a specific input, it is infeasible to find a *different* input that produces the exact same hash digest?",
+      "option_a": "A. Deterministic property",
+      "option_b": "B. Second-preimage resistance",
+      "option_c": "C. Fixed-size output",
+      "option_d": "D. Preimage resistance",
+      "correct_answer": "B",
+      "explanation": "Second-preimage resistance means given one input, an attacker cannot find a different input producing the same digest, preventing document forgery[cite: 52]."
+    },
+    {
+      "question": "What phenomenon describes how changing a single character in a message results in approximately half of the bits changing in a cryptographic hash digest?",
+      "option_a": "A. Birthday paradox",
+      "option_b": "B. The avalanche effect",
+      "option_c": "C. Key stretching",
+      "option_d": "D. Code divergence",
+      "correct_answer": "B",
+      "explanation": "The avalanche effect ensures that small, targeted edits to an input completely alter the output hash digest unpredictably[cite: 53]."
+    },
+    {
+      "question": "Why are fast cryptographic hash functions like MD5 or SHA-256 dangerous when used directly for storing user passwords?",
+      "option_a": "A. They produce digests that are too long to store in databases.",
+      "option_b": "B. Their high computation speed allows attackers to perform rapid brute-force guessing and rainbow table lookups.",
+      "option_c": "C. They lack deterministic outputs.",
+      "option_d": "D. They require a shared secret symmetric key.",
+      "correct_answer": "B",
+      "explanation": "Because fast hashes compute instantly, attackers can exhaustively test millions of password guesses per second unless slow password hashing functions (like bcrypt or Argon2) with salts are used[cite: 55]."
+    },
+    {
+      "question": "What is the primary limitation of using a bare hash function (like SHA-256) for verifying message integrity across an untrusted network?",
+      "option_a": "A. The hash digest is too large to transmit.",
+      "option_b": "B. Anyone can intercept the message, modify its content, and recompute a valid hash digest without detection.",
+      "option_c": "C. Hashes cannot detect accidental bit flips.",
+      "option_d": "D. Hashes require both parties to establish an elliptic curve key pair.",
+      "correct_answer": "B",
+      "explanation": "Because hashes contain no secret, an active attacker can alter data and recalculate the digest, fooling a receiver who checks only the hash[cite: 57, 59]."
+    },
+    {
+      "question": "How does a Message Authentication Code (MAC), such as HMAC, solve the vulnerability of bare hash functions?",
+      "option_a": "A. By encrypting the entire message using RSA private keys",
+      "option_b": "B. By incorporating a shared secret key into the tag calculation so only key holders can generate or verify valid tags",
+      "option_c": "C. By expanding the digest size to 2048 bits",
+      "option_d": "D. By eliminating the need for message hashing",
+      "correct_answer": "B",
+      "explanation": "HMAC mixes a shared secret key into the hash computation, ensuring that an attacker without the key cannot forge a valid authentication tag[cite: 60]."
+    },
+    {
+      "question": "Which security service is provided by digital signatures that is *not* provided by a standard shared-key MAC?",
+      "option_a": "A. Confidentiality",
+      "option_b": "B. Integrity",
+      "option_c": "C. Non-repudiation",
+      "option_d": "D. Origin authentication among key holders",
+      "correct_answer": "C",
+      "explanation": "Because digital signatures use asymmetric key pairs (where only the signer holds the private key), a third party can verify who signed it, establishing non-repudiation[cite: 66]."
+    },
+    {
+      "question": "When creating a digital signature, what part of the message is actually signed with the sender's private key for efficiency?",
+      "option_a": "A. The entire message block by block in ECB mode",
+      "option_b": "B. A short cryptographic hash digest of the message",
+      "option_c": "C. The initialisation vector (IV)",
+      "option_d": "D. The X.509 extension fields",
+      "correct_answer": "B",
+      "explanation": "Asymmetric signing operations are computationally intensive, so senders sign the short cryptographic hash digest of the message rather than the full payload[cite: 63]."
+    },
+    {
+      "question": "What is the primary vulnerability exploited during a Man-in-the-Middle (MitM) attack when relying solely on raw public keys or Diffie-Hellman exchanges?",
+      "option_a": "A. Ciphertext block chaining failures",
+      "option_b": "B. Lack of identity verification, allowing an attacker to substitute their own public key and impersonate endpoints",
+      "option_c": "C. Excessive key length leading to memory buffer overflows",
+      "option_d": "D. Weak random number generators in hash functions",
+      "correct_answer": "B",
+      "explanation": "Without binding identities to public keys, an attacker can position themselves in the middle and perform key exchanges independently with each party[cite: 36, 69, 71]."
+    },
+    {
+      "question": "What standard format defines the structure of digital public-key certificates used across the internet?",
+      "option_a": "A. RFC 2104",
+      "option_b": "B. X.509",
+      "option_c": "C. FIPS 197",
+      "option_d": "D. IEEE 802.1X",
+      "correct_answer": "B",
+      "explanation": "X.509 is the standard public-key infrastructure data structure defining certificate fields, extensions, and signatures[cite: 72, 73]."
+    },
+    {
+      "question": "During certificate path validation, what does a client check to confirm the authenticity of a server's leaf certificate?",
+      "option_a": "A. Whether the server's private key is stored in local browser cache",
+      "option_b": "B. Validity dates, subject name matching, CA signature verification, trust chain integrity, and revocation status",
+      "option_c": "C. Whether the symmetric session key uses 64-bit blocks",
+      "option_d": "D. If the domain controller uses RC4 encryption",
+      "correct_answer": "B",
+      "explanation": "Certificate verification steps require validating date windows, matching hostnames, verifying issuer signatures up to a trusted root, and checking revocation lists[cite: 74]."
+    },
+    {
+      "question": "What is the primary architectural purpose of an Intermediate Certificate Authority (CA) in a PKI hierarchy?",
+      "option_a": "A. To eliminate the need for OCSP responders",
+      "option_b": "B. To keep the Root CA's high-value private key offline and secure while handling day-to-day certificate issuance",
+      "option_c": "C. To encrypt bulk application data during TLS sessions",
+      "option_d": "D. To convert symmetric keys into asymmetric key pairs",
+      "correct_answer": "B",
+      "explanation": "Root CAs are kept offline for maximum security; intermediate CAs perform day-to-day certificate signing so that if an intermediate is compromised, only it needs revocation[cite: 78]."
+    },
+    {
+      "question": "What is the key functional difference between a Certificate Revocation List (CRL) and Online Certificate Status Protocol (OCSP)?",
+      "option_a": "A. CRLs provide near real-time status, while OCSP lists are downloaded periodically in bulk.",
+      "option_b": "B. CRLs involve downloading a signed list of revoked serial numbers, whereas OCSP provides real-time per-certificate queries.",
+      "option_c": "C. OCSP requires no network connectivity, while CRLs require active HTTP requests for every check.",
+      "option_d": "D. CRLs are used exclusively for SSH, while OCSP is restricted to IPsec.",
+      "correct_answer": "B",
+      "explanation": "CRL is a downloaded static list of revoked serial numbers, whereas OCSP queries a CA responder interactively for real-time validation status[cite: 80]."
+    },
+    {
+      "question": "What major security lesson was learned from the 2011 DigiNotar certificate authority breach?",
+      "option_a": "A. Symmetric encryption keys must never exceed 128 bits.",
+      "option_b": "B. The entire web PKI system is only as strong as its weakest trusted CA, since any compromised CA can forge valid certificates for any domain.",
+      "option_c": "C. SHA-1 is completely immune to collision attacks.",
+      "option_d": "D. Self-signed certificates are safer than commercial CA certificates.",
+      "correct_answer": "B",
+      "explanation": "Because browsers trust every root CA, the compromise of DigiNotar allowed attackers to issue fraudulent Google certificates, proving the entire ecosystem depends on every CA's integrity[cite: 82]."
+    },
+    {
+      "question": "In a modern TLS 1.3 handshake, what cryptographic mechanism is executed first to establish shared secret keys before application data flows?",
+      "option_a": "A. ECB mode block decryption",
+      "option_b": "B. Ephemeral Diffie-Hellman Key Agreement (ECDHE)",
+      "option_c": "C. MD5 password hashing with rainbow tables",
+      "option_d": "D. Static DES key transport",
+      "correct_answer": "B",
+      "explanation": "TLS 1.3 relies on ECDHE during the initial handshake flights to establish session keys with forward secrecy[cite: 44, 85]."
+    },
+    {
+      "question": "Which of the following correctly pairs a security service with its standard cryptographic primitive?",
+      "option_a": "A. Confidentiality -> SHA-256 Hash",
+      "option_b": "B. Non-repudiation -> Digital Signature",
+      "option_c": "C. Integrity alone -> RSA Private Key Encryption",
+      "option_d": "D. Peer Authentication -> ECB Cipher Mode",
+      "correct_answer": "B",
+      "explanation": "Digital signatures provide integrity, authentication, and non-repudiation because only the private key holder could have signed the data[cite: 6, 64, 66]."
+    },
+    {
+      "question": "What is the primary function of a Registration Authority (RA) within a Public Key Infrastructure?",
+      "option_a": "A. To generate symmetric session keys for TLS bulk traffic",
+      "option_b": "B. To verify an applicant's identity on behalf of the CA so the CA's signing key can remain isolated",
+      "option_c": "C. To publish CRL files on public web servers",
+      "option_d": "D. To execute OCSP stapling for client browsers",
+      "correct_answer": "B",
+      "explanation": "The RA handles identity verification and vetting for certificate applicants, insulating the highly sensitive CA signing infrastructure[cite: 77]."
+    },
+    {
+      "question": "If an administrator configures IPsec ESP to provide both confidentiality and integrity in a single efficient operation, which mode/algorithm combination is typically chosen?",
+      "option_a": "A. AES in Galois/Counter Mode (AES-GCM)",
+      "option_b": "B. DES in Electronic Codebook mode (DES-ECB)",
+      "option_c": "C. RC4 with MD5 hashing",
+      "option_d": "D. Caesar Cipher with Vigenere shifting",
+      "correct_answer": "A",
+      "explanation": "AES-GCM provides authenticated encryption (both confidentiality and integrity simultaneously) and is standard in modern IPsec ESP and TLS[cite: 24, 44]."
+    },
+    {
+      "question": "What role does padding play when utilizing block ciphers like AES in CBC mode?",
+      "option_a": "A. It expands the key size from 128 bits to 256 bits.",
+      "option_b": "B. It fills the final incomplete plaintext block to match the required block size before encryption.",
+      "option_c": "C. It generates random nonces to prevent keystream reuse.",
+      "option_d": "D. It converts asymmetric public keys into shared symmetric secrets.",
+      "correct_answer": "B",
+      "explanation": "Because real messages rarely match exact block size multiples, padding is appended to the final block so the block cipher can process it[cite: 22, 23]."
+    },
+    {
+      "question": "Which certificate validation type involves the most rigorous vetting of a legal entity's identity by the CA, historically resulting in specialized browser address bar highlights?",
+      "option_a": "A. Domain Validated (DV)",
+      "option_b": "B. Self-signed",
+      "option_c": "C. Extended Validation (EV)",
+      "option_d": "D. Intermediate Validated (IV)",
+      "correct_answer": "C",
+      "explanation": "Extended Validation (EV) certificates involve strict organizational identity checks, though browsers have streamlined how they display them over time[cite: 75]."
+    },
+    {
+      "question": "Why is a 64-bit block cipher size (such as original DES or 3DES) considered risky when encrypting massive volumes of continuous data under a single key?",
+      "option_a": "A. It exceeds the processing limits of modern CPU caches.",
+      "option_b": "B. Birthday attacks (such as Sweet32) can compromise confidentiality after processing large amounts of data due to block collision probabilities.",
+      "option_c": "C. It automatically forces the cipher into ECB mode.",
+      "option_d": "D. It prevents the use of digital signatures.",
+      "correct_answer": "B",
+      "explanation": "Small 64-bit block sizes increase collision likelihood across massive data volumes under the birthday paradox, prompting the transition to 128-bit blocks like AES[cite: 25]."
+    },
+    {
+      "question": "In asymmetric cryptography, if Alice wants to send a confidential message to Bob using public key encryption, whose key does she use to encrypt the message?",
+      "option_a": "A. Alice's private key",
+      "option_b": "B. Alice's public key",
+      "option_c": "C. Bob's public key",
+      "option_d": "D. Bob's private key",
+      "correct_answer": "C",
+      "explanation": "To ensure confidentiality, data is encrypted with the intended recipient's public key so that only the recipient's private key can decrypt it[cite: 34]."
+    },
+    {
+      "question": "What happens if a digital signature is verified using the wrong public key or if the message was altered in transit?",
+      "option_a": "A. The hashing algorithm converts the message into a symmetric stream.",
+      "option_b": "B. The computed message digest will not match the decrypted signature digest, causing verification to fail.",
+      "option_c": "C. The recipient's private key is automatically revoked.",
+      "option_d": "D. The certificate chain defaults to a self-signed state.",
+      "correct_answer": "B",
+      "explanation": "Verification compares the freshly hashed message digest against the digest recovered from the signature using the public key; any mismatch results in rejection[cite: 63, 64]."
+    },
+    {
+      "question": "Which stream cipher algorithm designed by Daniel Bernstein is widely recommended in modern protocols like TLS 1.3 and WireGuard for fast software-based execution on mobile devices?",
+      "option_a": "A. RC4",
+      "option_b": "B. A5/1",
+      "option_c": "C. ChaCha20",
+      "option_d": "D. DES",
+      "correct_answer": "C",
+      "explanation": "ChaCha20 is a high-performance stream cipher designed by Daniel Bernstein that operates efficiently in software without specialized hardware instructions[cite: 28, 30]."
+    },
+    {
+      "question": "What does OCSP Stapling solve in the context of web browser certificate validation?",
+      "option_a": "A. It prevents private keys from leaking during RSA enforcements.",
+      "option_b": "B. It removes the performance bottleneck and privacy leaks of clients querying CA OCSP responders directly by having the server attach the signed status response.",
+      "option_c": "C. It replaces X.509 certificates entirely with symmetric pre-shared keys.",
+      "option_d": "D. It automates domain-validated certificate generation every 24 hours.",
+      "correct_answer": "B",
+      "explanation": "OCSP stapling allows the web server to fetch and attach a signed OCSP response during the handshake, improving client performance and privacy[cite: 80]."
+    },
+    {
+      "question": "When configuring a Cisco router PKI trustpoint for device authentication, what is the correct chronological order of execution?",
+      "option_a": "A. Enrol first, generate RSA keys second, authenticate third.",
+      "option_b": "B. Generate RSA key pair first, define trustpoint and authenticate CA second, then enrol for the router's certificate.",
+      "option_c": "C. Revoke certificates first, generate trustpoints second, encrypt bulk traffic third.",
+      "option_d": "D. Execute OCSP checks first, install self-signed root templates second.",
+      "correct_answer": "B",
+      "explanation": "Cisco PKI configuration requires generating the RSA key pair first, setting up the trustpoint, authenticating the CA (fetching its certificate), and finally enrolling[cite: 88]."
+    },
+    {
+      "question": "Which of the following hash algorithms is currently considered broken or deprecated due to practical collision demonstrations (such as SHAttered)?",
+      "option_a": "A. SHA-256",
+      "option_b": "B. SHA-3",
+      "option_c": "C. SHA-1",
+      "option_d": "D. BLAKE2",
+      "correct_answer": "C",
+      "explanation": "SHA-1 has demonstrated practical collisions (such as the 2017 SHAttered attack) and is deprecated across modern browsers and CAs[cite: 54]."
+    },
+    {
+      "question": "What is the primary purpose of a salt when storing user passwords with a cryptographic hash function?",
+      "option_a": "A. To lengthen the password string so it matches block cipher sizes",
+      "option_b": "B. To add a unique random value to each password before hashing, rendering precomputed rainbow tables useless",
+      "option_c": "C. To enable asymmetric key recovery if the user forgets their password",
+      "option_d": "D. To provide non-repudiation during database logins",
+      "correct_answer": "B",
+      "explanation": "Salts ensure that identical passwords across different users result in entirely different hash digests, completely neutralizing rainbow table precomputation attacks[cite: 55]."
+    },
+    {
+      "question": "In hybrid encryption architectures, why is symmetric encryption used for bulk data transmission after an asymmetric handshake?",
+      "option_a": "A. Symmetric encryption provides digital signatures and non-repudiation.",
+      "option_b": "B. Symmetric encryption is orders of magnitude faster and more efficient for high-speed data streams than asymmetric math.",
+      "option_c": "C. Symmetric encryption does not require secret keys.",
+      "option_d": "D. Asymmetric encryption cannot be used over IP networks.",
+      "correct_answer": "B",
+      "explanation": "While asymmetric cryptography securely bootstraps session keys, symmetric ciphers handle bulk data because they are exceptionally fast in hardware and software[cite: 19, 43]."
+    }
+  ]
+}

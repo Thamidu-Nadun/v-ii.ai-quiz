@@ -1,0 +1,365 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary security question answered by the Authentication component in a AAA framework?",
+      "option_a": "A. What resources and actions is the user allowed to access?",
+      "option_b": "B. Who is the user claiming to be, and is that identity verified?",
+      "option_c": "C. What specific commands or changes did the user execute during their session?",
+      "option_d": "D. How much bandwidth or data volume did the user consume?",
+      "correct_answer": "B",
+      "explanation": "Authentication verifies the identity of an entity, answering the question 'Who are you?', whereas authorization determines what they are allowed to do."
+    },
+    {
+      "question": "Why do enterprise networks maintain Authentication, Authorization, and Accounting as three distinct, separate stages rather than a single pass/fail check?",
+      "option_a": "A. Merging them into one check prevents network routers from using TCP.",
+      "option_b": "B. A user can be successfully authenticated without being authorized for every resource, and accounting must record both successful and denied attempts[cite: 6].",
+      "option_c": "C. Authorization must always occur prior to gathering authentication credentials.",
+      "option_d": "D. Accounting logs are required to generate dynamic passwords for authentication.",
+      "correct_answer": "B",
+      "explanation": "Real systems keep AAA separate because authentication alone does not grant universal access, and accounting records activity regardless of authorization outcomes[cite: 6]."
+    },
+    {
+      "question": "In what way is AAA structured similarly to IPsec, as discussed in the networking curriculum?",
+      "option_a": "A. Both operate strictly at the transport layer using UDP port 500.",
+      "option_b": "B. Both act as a modular framework where components like authentication, authorization, and accounting can be independently selected[cite: 7].",
+      "option_c": "C. Both mandate the use of Cisco-proprietary encryption algorithms.",
+      "option_d": "D. Both combine authentication and encryption into a single mandatory protocol suite.",
+      "correct_answer": "B",
+      "explanation": "Like IPsec's modular menu of interchangeable choices, AAA is a modular framework where authentication methods, authorization models, and accounting mechanisms are independently selectable[cite: 7]."
+    },
+    {
+      "question": "Which of the following best exemplifies the 'Something You Have' authentication category?",
+      "option_a": "A. A user answering a secret security question about their first pet[cite: 9]",
+      "option_b": "B. A fingerprint scan matched against an enrolment template[cite: 11]",
+      "option_c": "C. An authenticator app generating a time-based one-time password code[cite: 10]",
+      "option_d": "D. Keystroke dynamics measuring typing rhythm and pressure[cite: 12]",
+      "option_e": "E. Combining a password with a PIN code",
+      "correct_answer": "C",
+      "explanation": "Authenticator apps, hardware tokens, and smart cards represent 'Something You Have' because the user proves possession of a physical or digital item[cite: 10]."
+    },
+    {
+      "question": "What is a major inherent weakness of physical biometrics (such as fingerprint or iris scans) compared to passwords?",
+      "option_a": "A. They are easily guessed through shoulder-surfing.",
+      "option_b": "B. If the biometric trait is ever compromised, it is permanent and cannot be reissued[cite: 11].",
+      "option_c": "C. They require continuous background observation over a session.",
+      "option_d": "D. They cannot be used for smartphone unlocks.",
+      "correct_answer": "B",
+      "explanation": "Unlike passwords or hardware tokens that can be changed or replaced immediately if compromised, an individual's physical biometric trait is permanent[cite: 11]."
+    },
+    {
+      "question": "How does behavioural biometrics differ fundamentally from physical biometrics?",
+      "option_a": "A. Behavioural biometrics measures fixed anatomical characteristics like retina patterns.",
+      "option_b": "B. Behavioural biometrics measures action patterns over time (e.g., keystroke dynamics or gait) rather than static body features[cite: 12].",
+      "option_c": "C. Behavioural biometrics cannot be used for continuous session authentication.",
+      "option_d": "D. Behavioural biometrics requires specialized forensic DNA laboratories.",
+      "correct_answer": "B",
+      "explanation": "Behavioural biometrics evaluates how a person performs actions (typing rhythm, gait, signature speed) rather than unchanging anatomical structures[cite: 12]."
+    },
+    {
+      "question": "Which scenario constitutes true Multi-Factor Authentication (MFA)?",
+      "option_a": "A. Entering two different text-based passwords sequentially.",
+      "option_b": "B. Entering a PIN code and then answering a security question.",
+      "option_c": "C. Entering a static password and providing a code generated by a hardware token[cite: 13].",
+      "option_d": "D. Scanning your right index fingerprint and then your left index fingerprint.",
+      "correct_answer": "C",
+      "explanation": "True MFA requires combining factors from genuinely different categories (e.g., knowledge + possession). Entering two passwords is just repeating the same factor type[cite: 13]."
+    },
+    {
+      "question": "On Cisco IOS devices, what does numeric privilege level 15 grant to a user?",
+      "option_a": "A. Basic user EXEC mode with no configuration rights",
+      "option_b": "B. Zero access to the command line interface",
+      "option_c": "C. Full privileged, administrative access[cite: 16]",
+      "option_d": "D. Permission to run only show commands",
+      "correct_answer": "C",
+      "explanation": "Cisco IOS uses a numeric privilege scale from 0 to 15, where level 0 has almost no access, level 1 is basic user EXEC, and level 15 is full administrative access[cite: 16]."
+    },
+    {
+      "question": "Which access control model relies on the resource's individual owner to grant or revoke access at their own discretion?",
+      "option_a": "A. Mandatory Access Control (MAC)",
+      "option_b": "B. Role-Based Access Control (RBAC)",
+      "option_c": "C. Discretionary Access Control (DAC)[cite: 18]",
+      "option_d": "D. Rule-Based Access Control (RuBAC)",
+      "correct_answer": "C",
+      "explanation": "In Discretionary Access Control (DAC), the owner of a resource decides who else can access it, as seen in standard Windows and Linux file permissions[cite: 18]."
+    },
+    {
+      "question": "What is the primary disadvantage of Mandatory Access Control (MAC) in an organization?",
+      "option_a": "A. Control is scattered across individual resource owners, making organization-wide policy difficult to audit.",
+      "option_b": "B. It is highly inflexible, carrying significant administrative overhead to manage fixed classification labels correctly[cite: 19].",
+      "option_c": "C. Users can easily override system labels to share files.",
+      "option_d": "D. It lacks compatibility with government classified systems.",
+      "correct_answer": "B",
+      "explanation": "MAC enforces strict centralized classification labels (e.g., Top Secret, Secret), which provides high consistency but makes the model rigid and administratively burdensome[cite: 19]."
+    },
+    {
+      "question": "Why is Role-Based Access Control (RBAC) the dominant model in modern enterprise networks?",
+      "option_a": "A. It ties permissions to job roles rather than individuals, making personnel changes easy to manage at scale[cite: 20].",
+      "option_b": "B. It allows every individual employee to choose their own file permissions.",
+      "option_c": "C. It evaluates conditional rules like time-of-day for every packet.",
+      "option_d": "D. It requires no central administration or role definitions.",
+      "correct_answer": "A",
+      "explanation": "RBAC maps permissions to job roles, ensuring that when an employee changes roles, administrative updates occur at the role level rather than touching individual permissions[cite: 20]."
+    },
+    {
+      "question": "Which access control mechanism evaluates conditional statements such as time-of-day, source IP address, or device type at the exact moment of a request?",
+      "option_a": "A. Discretionary Access Control (DAC)",
+      "option_b": "B. Role-Based Access Control (RBAC)",
+      "option_c": "C. Mandatory Access Control (MAC)",
+      "option_d": "D. Rule-Based Access Control (RuBAC)[cite: 21]",
+      "correct_answer": "D",
+      "explanation": "RuBAC decides access dynamically by evaluating if-then conditional rules (like time or location) at request time, akin to packet-filtering ACL logic[cite: 21]."
+    },
+    {
+      "question": "What type of accounting record captures the exact login timestamp, logout timestamp, and total session duration?",
+      "option_a": "A. Command Accounting",
+      "option_b": "B. Resource Accounting",
+      "option_c": "C. Session Accounting[cite: 24]",
+      "option_d": "D. Packet Accounting",
+      "correct_answer": "C",
+      "explanation": "Session accounting records login and logout timestamps to track session duration and basic audit trails[cite: 24, 27]."
+    },
+    {
+      "question": "Why is Command Accounting considered essential for achieving non-repudiation during forensic investigations?",
+      "option_a": "A. It records data volume transferred for billing purposes.",
+      "option_b": "B. It logs every individual CLI command executed by a specific authenticated identity, proving precisely who made a change[cite: 25, 28].",
+      "option_c": "C. It encrypts the UDP packet headers.",
+      "option_d": "D. It automatically blocks unauthorized IP addresses.",
+      "correct_answer": "B",
+      "explanation": "Command accounting logs every individual command executed, enabling non-repudiation by ensuring an administrator cannot deny performing a specific configuration change[cite: 25, 28]."
+    },
+    {
+      "question": "What is a key limitation of relying solely on Resource Accounting?",
+      "option_a": "A. It records too many individual CLI commands, overloading log storage.",
+      "option_b": "B. It measures data volume and bandwidth consumed but cannot reveal what specific commands or actions were performed[cite: 26].",
+      "option_c": "C. It only records session start and stop timestamps.",
+      "option_d": "D. It is only supported by TACACS+.",
+      "correct_answer": "B",
+      "explanation": "Resource accounting tracks scale and volume (megabytes transferred), but cannot distinguish between legitimate large backups and unauthorized data exfiltration without session or command context[cite: 26]."
+    },
+    {
+      "question": "What is the primary operational trade-off of deploying Local AAA versus Server-Based AAA?",
+      "option_a": "A. Local AAA scales effortlessly across thousands of enterprise switches.",
+      "option_b": "B. Local AAA requires no external network dependency but does not scale because credentials must be managed per device[cite: 36, 38].",
+      "option_c": "C. Server-Based AAA eliminates all single points of failure.",
+      "option_d": "D. Local AAA provides centralized audit logs across all enterprise nodes.",
+      "correct_answer": "B",
+      "explanation": "Local AAA is self-contained and resilient during network outages, but fails to scale since user additions require manual updates on every individual device[cite: 36, 38]."
+    },
+    {
+      "question": "Which protocol is traditionally engineered for Device Administration AAA (controlling CLI access and per-command authorization on routers and switches)?",
+      "option_a": "A. RADIUS[cite: 44]",
+      "option_b": "B. TACACS+[cite: 46]",
+      "option_c": "C. DNS",
+      "option_d": "D. SNMP",
+      "correct_answer": "B",
+      "explanation": "TACACS+ is Cisco's proprietary protocol specifically designed for device administration, offering granular per-command authorization[cite: 40, 46]."
+    },
+    {
+      "question": "Which protocol is traditionally engineered for Network Access AAA (handling high-volume simultaneous connections for WiFi, VPNs, and 802.1X)?",
+      "option_a": "A. TACACS+",
+      "option_b": "B. RADIUS[cite: 44]",
+      "option_c": "C. Telnet",
+      "option_d": "D. SSH",
+      "correct_answer": "B",
+      "explanation": "RADIUS is the dominant protocol for network access, optimized for fast, lightweight handling of high-volume simultaneous connections like WiFi and VPNs[cite: 41, 44]."
+    },
+    {
+      "question": "What transport layer protocol and port numbers are officially utilized by RADIUS?",
+      "option_a": "A. TCP on port 49",
+      "option_b": "B. UDP on ports 1812 (authentication/authorization) and 1813 (accounting)[cite: 44]",
+      "option_c": "C. TCP on ports 80 and 443",
+      "option_d": "D. UDP on port 53",
+      "correct_answer": "B",
+      "explanation": "RADIUS operates over UDP, using ports 1812 for authentication/authorization and 1813 for accounting[cite: 44]."
+    },
+    {
+      "question": "What transport layer protocol and port number does TACACS+ utilize?",
+      "option_a": "A. UDP on port 1812",
+      "option_b": "B. TCP on port 49[cite: 46]",
+      "option_c": "C. UDP on port 49",
+      "option_d": "D. TCP on port 22",
+      "correct_answer": "B",
+      "explanation": "TACACS+ rides on TCP (port 49), ensuring reliable packet delivery that UDP does not inherently guarantee[cite: 46, 48]."
+    },
+    {
+      "question": "How does the encryption mechanism of RADIUS differ from that of TACACS+?",
+      "option_a": "A. RADIUS encrypts the entire packet body, while TACACS+ encrypts only the password field.",
+      "option_b": "B. RADIUS encrypts only the password field in the packet, leaving usernames and attributes in plaintext, whereas TACACS+ encrypts the entire packet body[cite: 45, 46].",
+      "option_c": "C. Both protocols encrypt all packet fields using AES-256.",
+      "option_d": "D. Neither protocol provides any packet encryption.",
+      "correct_answer": "B",
+      "explanation": "RADIUS has a known security gap where only the password is encrypted, whereas TACACS+ encrypts the entire packet for enhanced confidentiality[cite: 45, 46, 48]."
+    },
+    {
+      "question": "How do RADIUS and TACACS+ handle the separation of authentication and authorization functions?",
+      "option_a": "A. RADIUS bundles authentication and authorization into a single response, while TACACS+ cleanly separates all three AAA functions[cite: 45, 46].",
+      "option_b": "B. TACACS+ bundles authentication and authorization, while RADIUS separates them.",
+      "option_c": "C. Both protocols combine all three functions into one monolithic exchange.",
+      "option_d": "D. Both protocols maintain independent exchanges for every single A.",
+      "correct_answer": "A",
+      "explanation": "RADIUS combines authentication and authorization in its response exchange, whereas TACACS+ treats authentication, authorization, and accounting as independent exchanges[cite: 45, 46, 48]."
+    },
+    {
+      "question": "What is the function of a AAA 'method list' on a network device?",
+      "option_a": "A. It defines a prioritized, ordered sequence of AAA methods to try successively until one succeeds or the list is exhausted[cite: 50].",
+      "option_b": "B. It lists all active IPsec security associations in a routing table.",
+      "option_c": "C. It restricts packet forwarding based on MAC addresses.",
+      "option_d": "D. It automatically generates encryption keys for TACACS+ servers.",
+      "correct_answer": "A",
+      "explanation": "A method list specifies an ordered fallback sequence (e.g., try central TACACS+, fall back to local database if unreachable) to prevent total lockout[cite: 50, 57]."
+    },
+    {
+      "question": "Under what condition does a AAA method list trigger a fall-through to the next method in its sequence?",
+      "option_a": "A. Whenever a user enters an incorrect password.",
+      "option_b": "B. When the primary AAA server is completely unavailable or unreachable[cite: 51].",
+      "option_c": "C. Whenever accounting logs reach maximum capacity.",
+      "option_d": "D. Automatically after every successful login session.",
+      "correct_answer": "B",
+      "explanation": "Fall-through to subsequent methods occurs when the primary method is unavailable (e.g., server not responding), not merely when a user is denied by valid credentials[cite: 51]."
+    },
+    {
+      "question": "Which Cisco IOS command is mandatory before any other AAA configuration commands can be executed on a device?",
+      "option_a": "A. `aaa authorization exec default`",
+      "option_b": "B. `aaa new-model`[cite: 53]",
+      "option_c": "C. `tacacs server`",
+      "option_d": "D. `radius-server host`",
+      "correct_answer": "B",
+      "explanation": "`aaa new-model` explicitly enables the AAA architecture engine on a Cisco IOS device[cite: 53]."
+    },
+    {
+      "question": "Analyze the following configuration snippet: `aaa authentication login default group tacacs+ local`. What is the operational behavior of this method list?",
+      "option_a": "A. It tries the local database first, and if that fails, tries TACACS+.",
+      "option_b": "B. It attempts authentication via the TACACS+ server group first, and falls back to the local database only if TACACS+ is unreachable[cite: 55, 56].",
+      "option_c": "C. It performs simultaneous dual-factor authentication using both TACACS+ and local databases.",
+      "option_d": "D. It disables TACACS+ and enforces local authentication exclusively.",
+      "correct_answer": "B",
+      "explanation": "Method lists read left-to-right (top-to-bottom logic), meaning TACACS+ is tried first, with local serving as the ordered fallback[cite: 55, 56]."
+    },
+    {
+      "question": "What is the primary distinction in vendor support between RADIUS and TACACS+?",
+      "option_a": "A. RADIUS is an open, multi-standard protocol (RFC 2865/2866), whereas TACACS+ is Cisco-proprietary[cite: 45, 47].",
+      "option_b": "B. TACACS+ is an open standard, while RADIUS is proprietary to Microsoft.",
+      "option_c": "C. Both protocols are strictly proprietary to Cisco Systems.",
+      "option_d": "D. Neither protocol is supported across multi-vendor network equipment.",
+      "correct_answer": "A",
+      "explanation": "RADIUS is an open multi-vendor standard defined in RFCs 2865 and 2866, whereas TACACS+ is proprietary to Cisco[cite: 45, 47, 48]."
+    },
+    {
+      "question": "Why might an enterprise choose RADIUS over TACACS+ for wireless 802.1X authentication?",
+      "option_a": "A. RADIUS provides command-level authorization for wireless clients.",
+      "option_b": "B. RADIUS encrypts the entire packet body using TCP.",
+      "option_c": "C. RADIUS's lightweight UDP design and multi-vendor support suit high-volume, simultaneous connection handling effectively[cite: 45, 48].",
+      "option_d": "D. RADIUS requires no shared secret keys.",
+      "correct_answer": "C",
+      "explanation": "RADIUS's lighter UDP transport and combined response mechanism handle massive simultaneous client connections with lower overhead than TACACS+[cite: 45, 48]."
+    },
+    {
+      "question": "Which access control model would be most appropriate for a top-secret government defense facility where security officers must enforce strict clearance labels that individuals cannot override?",
+      "option_a": "A. Discretionary Access Control (DAC)",
+      "option_b": "B. Mandatory Access Control (MAC)[cite: 19]",
+      "option_c": "C. Role-Based Access Control (RBAC)",
+      "option_d": "D. Rule-Based Access Control (RuBAC)",
+      "correct_answer": "B",
+      "explanation": "MAC utilizes fixed central classification labels (Top Secret, Secret) that individual users cannot alter, matching government and military security requirements[cite: 19]."
+    },
+    {
+      "question": "An administrator observes that a network router is logging every single CLI configuration command executed by junior engineers, including timestamps and interface selections. What AAA function is primarily responsible for this?",
+      "option_a": "A. Session Accounting",
+      "option_b": "B. Command Accounting[cite: 25, 27]",
+      "option_c": "C. Resource Accounting",
+      "option_d": "D. Mandatory Access Control",
+      "correct_answer": "B",
+      "explanation": "Command accounting records every individual command executed during a session, providing detailed forensic audits and non-repudiation[cite: 25, 27]."
+    },
+    {
+      "question": "What is a major security risk associated with prompt bombing in Multi-Factor Authentication?",
+      "option_a": "A. It forces the authentication server to downgrade from TCP to UDP.",
+      "option_b": "B. It overwhelms a user with repeated push notifications until they accidentally or out of annoyance approve an unauthorized login request[cite: 13].",
+      "option_c": "C. It intercepts SMS text messages via SIM-swapping.",
+      "option_d": "D. It permanently locks out legitimate biometric sensors.",
+      "correct_answer": "B",
+      "explanation": "Prompt bombing (MFA fatigue) floods a user's device with push notification prompts to trick or wear them down into tapping 'approve'[cite: 13]."
+    },
+    {
+      "question": "How does SIM-swapping compromise 'Something You Have' authentication mechanisms?",
+      "option_a": "A. Attackers socially engineer mobile carriers to port the victim's phone number to a SIM card they control, intercepting SMS-based OTP codes[cite: 10, 13].",
+      "option_b": "B. Attackers clone the physical fingerprint template of the user.",
+      "option_c": "C. Attackers decrypt the TCP session keys of a TACACS+ server.",
+      "option_d": "D. Attackers guess the user's password through brute force.",
+      "correct_answer": "A",
+      "explanation": "SIM-swapping exploits mobile carrier vulnerabilities to take over a victim's phone number, thereby intercepting SMS-delivered second-factor codes[cite: 10, 13]."
+    },
+    {
+      "question": "In a scenario where a Linux file creator grants read-only permission to a colleague using standard file chmod/chown permissions, which access control model is being applied?",
+      "option_a": "A. Mandatory Access Control",
+      "option_b": "B. Discretionary Access Control (DAC)[cite: 18]",
+      "option_c": "C. Rule-Based Access Control",
+      "option_d": "D. Role-Based Access Control",
+      "correct_answer": "B",
+      "explanation": "Standard file systems (Linux/Windows) use DAC where the resource creator/owner directly dictates access rights[cite: 18]."
+    },
+    {
+      "question": "What is the primary architectural advantage of TCP transport in TACACS+ over UDP transport in RADIUS?",
+      "option_a": "A. TCP guarantees reliable packet delivery and session retransmission, whereas UDP does not[cite: 46, 48].",
+      "option_b": "B. TCP operates on port 1812 which is faster than UDP.",
+      "option_c": "C. TCP encrypts only the password field.",
+      "option_d": "D. TCP eliminates the need for shared secret keys.",
+      "correct_answer": "A",
+      "explanation": "TCP provides reliable, connection-oriented delivery with built-in retransmission guarantees that UDP lacks[cite: 46, 48]."
+    },
+    {
+      "question": "When configuring a TACACS+ server on a Cisco router, which command correctly specifies the server's IPv4 address?",
+      "option_a": "A. `radius server TACACS-SERVER1`",
+      "option_b": "B. `tacacs server TACACS-SERVER1` followed by `address ipv4 192.168.1.100`[cite: 55]",
+      "option_c": "C. `ip tacacs server 192.168.1.100`",
+      "option_d": "D. `aaa new-model tacacs 192.168.1.100`",
+      "correct_answer": "B",
+      "explanation": "Cisco IOS defines TACACS+ servers using the `tacacs server <name>` configuration block containing the `address ipv4 <ip>` subcommand[cite: 55]."
+    },
+    {
+      "question": "Suppose an enterprise network experiences a total WAN outage disconnecting switches from their central RADIUS server. If a method list is configured as `aaa authentication login default group radius local`, what will occur when an administrator attempts to log in?",
+      "option_a": "A. The switch will lock everyone out permanently.",
+      "option_b": "B. The switch will time out on the unreachable RADIUS server and fall back to authenticating against the local database[cite: 50, 56].",
+      "option_c": "C. Authentication will be bypassed entirely.",
+      "option_d": "D. The switch will automatically convert RADIUS packets into TACACS+.",
+      "correct_answer": "B",
+      "explanation": "When the primary server is unreachable, the method list falls back to the next configured method (`local`), preventing total lockout[cite: 50, 56]."
+    },
+    {
+      "question": "Which of the following best describes continuous authentication using behavioural biometrics?",
+      "option_a": "A. Verifying a user's fingerprint once at system startup.",
+      "option_b": "B. Running background checks on typing rhythm and interaction patterns throughout an active session to detect session hijacking[cite: 12].",
+      "option_c": "C. Forcing users to re-enter their passwords every 60 seconds.",
+      "option_d": "D. Logging session start and stop timestamps.",
+      "correct_answer": "B",
+      "explanation": "Behavioural biometrics enables continuous authentication by monitoring ongoing traits (keystroke dynamics, cadence) throughout an entire session[cite: 12]."
+    },
+    {
+      "question": "Why does TACACS+ incur higher protocol overhead than RADIUS?",
+      "option_a": "A. Because TACACS+ encrypts the entire packet body and rides on connection-oriented TCP[cite: 47, 48].",
+      "option_b": "B. Because TACACS+ only encrypts the password field.",
+      "option_c": "C. Because TACACS+ uses UDP port 1812.",
+      "option_d": "D. Because TACACS+ bundles authentication and authorization together.",
+      "correct_answer": "A",
+      "explanation": "TACACS+'s full-packet encryption and TCP transport overhead make it heavier than RADIUS, which is justified by its fine-grained administrative control[cite: 47, 48]."
+    },
+    {
+      "question": "In Cisco IOS AAA configuration, what does the command `aaa authorization exec default group tacacs+ local` accomplish?",
+      "option_a": "A. It configures accounting logs for packet transfers.",
+      "option_b": "B. It sets up an authorization method list for EXEC sessions, trying TACACS+ first and falling back to local[cite: 55].",
+      "option_c": "C. It restricts CLI commands to privilege level 0.",
+      "option_d": "D. It defines the shared encryption key for RADIUS.",
+      "correct_answer": "B",
+      "explanation": "This command configures the EXEC authorization method list (`default`), directing the device to query TACACS+ first with local as the fallback[cite: 55]."
+    },
+    {
+      "question": "How do access control lists (ACLs) relate conceptually to Rule-Based Access Control (RuBAC)?",
+      "option_a": "A. ACLs are packet-filtering mechanisms that use top-to-bottom conditional rule evaluation, representing the networking implementation of RuBAC logic[cite: 21].",
+      "option_b": "B. ACLs rely exclusively on file ownership discretion (DAC).",
+      "option_c": "C. ACLs replace authentication entirely with biometrics.",
+      "option_d": "D. ACLs operate on static government classification labels (MAC).",
+      "correct_answer": "A",
+      "explanation": "An ACL evaluates rules top-to-bottom based on conditions like source/destination IP and ports; RuBAC extends this same conditional rule logic to general authorization[cite: 21]."
+    }
+  ]
+}
