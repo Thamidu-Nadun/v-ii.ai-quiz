@@ -1,4 +1,68 @@
 export default [
+  // DevOps Quizzes
+  {
+    title: "DevOps - 09",
+    path: "quiz/DEVOPS/DEVOPS-009.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 08",
+    path: "quiz/DEVOPS/DEVOPS-008.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 07",
+    path: "quiz/DEVOPS/DEVOPS-007.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 06",
+    path: "quiz/DEVOPS/DEVOPS-006.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 05",
+    path: "quiz/DEVOPS/DEVOPS-005.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 04",
+    path: "quiz/DEVOPS/DEVOPS-004.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 03",
+    path: "quiz/DEVOPS/DEVOPS-003.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 02",
+    path: "quiz/DEVOPS/DEVOPS-002.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
+  {
+    title: "DevOps - 01",
+    path: "quiz/DEVOPS/DEVOPS-001.json",
+    description:
+      "Test your knowledge of DevOps principles, practices, and tools for continuous integration and delivery.",
+    isAvailable: true,
+  },
   // Network Security Quizzes
   {
     title: "Network Security - 13",

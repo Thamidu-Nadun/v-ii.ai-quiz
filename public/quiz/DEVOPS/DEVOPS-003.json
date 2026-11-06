@@ -1,0 +1,760 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of secure design in software development?",
+      "option_a": "To incorporate security considerations into system architecture before implementation",
+      "option_b": "To identify programming errors after deployment",
+      "option_c": "To replace security testing with architectural documentation",
+      "option_d": "To improve application performance by reducing security checks",
+      "correct_answer": "A",
+      "explanation": "Secure design incorporates security into the architecture and structure of a system before implementation begins, allowing weaknesses to be identified early."
+    },
+    {
+      "question": "Which of the following best explains why secure design is considered important in the SDLC?",
+      "option_a": "It eliminates the need for secure coding practices",
+      "option_b": "It reduces the cost and effort required to fix security issues by identifying weaknesses early",
+      "option_c": "It guarantees that the deployed application will never contain vulnerabilities",
+      "option_d": "It allows developers to postpone security decisions until testing",
+      "correct_answer": "B",
+      "explanation": "Identifying vulnerabilities during design is generally less expensive than fixing architectural weaknesses after implementation or deployment."
+    },
+    {
+      "question": "Which activity is primarily associated with secure design rather than secure coding?",
+      "option_a": "Escaping output before displaying user-generated content",
+      "option_b": "Using parameterized SQL queries",
+      "option_c": "Designing a Role-Based Access Control architecture",
+      "option_d": "Validating user input in a backend function",
+      "correct_answer": "C",
+      "explanation": "Designing RBAC establishes the system's authorization architecture, whereas the other activities are implementation-level secure coding practices."
+    },
+    {
+      "question": "Which of the following is an important consideration during secure system design?",
+      "option_a": "Only the programming language used by developers",
+      "option_b": "Only the graphical appearance of the application",
+      "option_c": "Only the database storage format",
+      "option_d": "Trust boundaries, data flows, access control, component interactions, failure behavior, attack surface and security assumptions",
+      "correct_answer": "D",
+      "explanation": "Secure design considers the overall architecture, including trust boundaries, data flows, access control, interactions, failure behavior, attack surface and assumptions."
+    },
+    {
+      "question": "Which statement correctly describes the relationship between secure design and secure coding?",
+      "option_a": "Secure design establishes the system architecture, while secure coding implements security practices in source code",
+      "option_b": "Secure coding determines the architecture, while secure design handles syntax errors",
+      "option_c": "Both activities are performed exclusively after deployment",
+      "option_d": "Secure design and secure coding are identical activities",
+      "correct_answer": "A",
+      "explanation": "Secure design focuses on architectural decisions during the design phase, while secure coding focuses on implementing secure source code."
+    },
+    {
+      "question": "A banking application requires MFA for high-value transactions. Which category does this requirement primarily represent?",
+      "option_a": "Secure coding implementation",
+      "option_b": "Secure design decision",
+      "option_c": "Database optimization",
+      "option_d": "Application performance testing",
+      "correct_answer": "B",
+      "explanation": "Requiring MFA for sensitive transactions is an architectural security decision. Its actual implementation may involve secure coding."
+    },
+    {
+      "question": "Which secure design principle recommends implementing multiple independent security controls so that failure of one control does not completely compromise the system?",
+      "option_a": "Economy of Mechanism",
+      "option_b": "Complete Mediation",
+      "option_c": "Defence in Depth",
+      "option_d": "Open Design",
+      "correct_answer": "C",
+      "explanation": "Defence in Depth uses multiple layers of security controls to ensure that other controls continue providing protection if one fails."
+    },
+    {
+      "question": "Which principle requires a system to remain in a secure state when an error or failure occurs?",
+      "option_a": "Psychological Acceptability",
+      "option_b": "Least Common Mechanism",
+      "option_c": "Separation of Duties",
+      "option_d": "Fail Securely",
+      "correct_answer": "D",
+      "explanation": "Fail Securely ensures that system failures do not result in unauthorized access or information leakage."
+    },
+    {
+      "question": "An employee is granted permission to access only the database tables necessary for their daily responsibilities. Which principle is being applied?",
+      "option_a": "Least Privilege",
+      "option_b": "Open Design",
+      "option_c": "Defence in Depth",
+      "option_d": "Economy of Mechanism",
+      "correct_answer": "A",
+      "explanation": "Least Privilege limits users, applications and processes to the minimum permissions necessary to perform their tasks."
+    },
+    {
+      "question": "A newly registered user is denied access to administrative functionality until an administrator explicitly grants the required permissions. Which principle does this demonstrate?",
+      "option_a": "Secure Defaults",
+      "option_b": "Fail-Safe Defaults",
+      "option_c": "Separation of Duties",
+      "option_d": "Psychological Acceptability",
+      "correct_answer": "B",
+      "explanation": "Fail-Safe Defaults means access is denied by default and granted only when explicitly authorized."
+    },
+    {
+      "question": "An application is installed with HTTPS enabled, strong authentication requirements and restrictive security settings by default. Which principle does this represent?",
+      "option_a": "Complete Mediation",
+      "option_b": "Least Privilege",
+      "option_c": "Secure Defaults",
+      "option_d": "Least Common Mechanism",
+      "correct_answer": "C",
+      "explanation": "Secure Defaults configures a system with its most secure settings by default rather than requiring users to enable them manually."
+    },
+    {
+      "question": "A development team removes unused network services, unnecessary API endpoints and deprecated application features. Which principle are they applying?",
+      "option_a": "Open Design",
+      "option_b": "Fail Securely",
+      "option_c": "Complete Mediation",
+      "option_d": "Minimize Attack Surface",
+      "correct_answer": "D",
+      "explanation": "Minimizing the attack surface reduces the number of entry points, services, features and interfaces available for attackers to exploit."
+    },
+    {
+      "question": "A financial institution requires one employee to initiate a payment and another employee to approve it. Which principle is demonstrated?",
+      "option_a": "Separation of Duties",
+      "option_b": "Least Common Mechanism",
+      "option_c": "Economy of Mechanism",
+      "option_d": "Fail-Safe Defaults",
+      "correct_answer": "A",
+      "explanation": "Separation of Duties divides critical responsibilities among multiple individuals or systems to reduce fraud, misuse and errors."
+    },
+    {
+      "question": "An application verifies a user's authorization every time they attempt to access a protected resource. Which principle is being applied?",
+      "option_a": "Defence in Depth",
+      "option_b": "Complete Mediation",
+      "option_c": "Secure Defaults",
+      "option_d": "Open Design",
+      "correct_answer": "B",
+      "explanation": "Complete Mediation requires authorization to be checked every time access to a protected resource is attempted."
+    },
+    {
+      "question": "A security team redesigns an overly complicated authentication mechanism into a simpler implementation with fewer components. Which principle does this support?",
+      "option_a": "Separation of Duties",
+      "option_b": "Psychological Acceptability",
+      "option_c": "Economy of Mechanism",
+      "option_d": "Least Privilege",
+      "correct_answer": "C",
+      "explanation": "Economy of Mechanism recommends keeping system designs simple to reduce complexity, implementation errors and security vulnerabilities."
+    },
+    {
+      "question": "A software vendor publishes the design of its encryption algorithm but keeps the cryptographic keys secret. Which principle is demonstrated?",
+      "option_a": "Fail Securely",
+      "option_b": "Minimize Attack Surface",
+      "option_c": "Defence in Depth",
+      "option_d": "Open Design",
+      "correct_answer": "D",
+      "explanation": "Open Design means security should not depend on hiding the system design. It should depend on protecting secrets such as cryptographic keys."
+    },
+    {
+      "question": "A multi-user application is redesigned so that users do not unnecessarily share temporary files, memory resources or communication mechanisms. Which principle is being applied?",
+      "option_a": "Least Common Mechanism",
+      "option_b": "Complete Mediation",
+      "option_c": "Fail-Safe Defaults",
+      "option_d": "Separation of Duties",
+      "correct_answer": "A",
+      "explanation": "Least Common Mechanism minimizes shared resources and mechanisms to reduce unintended information sharing and attack opportunities."
+    },
+    {
+      "question": "An organization introduces a simple password recovery process and understandable MFA instructions to encourage users to follow security requirements. Which principle does this demonstrate?",
+      "option_a": "Open Design",
+      "option_b": "Psychological Acceptability",
+      "option_c": "Economy of Mechanism",
+      "option_d": "Least Privilege",
+      "correct_answer": "B",
+      "explanation": "Psychological Acceptability focuses on making security controls understandable and convenient so users are less likely to bypass them."
+    },
+    {
+      "question": "What is the primary purpose of threat modeling?",
+      "option_a": "To measure the performance of software components",
+      "option_b": "To identify programming language compatibility issues",
+      "option_c": "To systematically identify, analyze and address potential threats before they become exploitable vulnerabilities",
+      "option_d": "To replace all forms of penetration testing",
+      "correct_answer": "C",
+      "explanation": "Threat modeling is a structured process for identifying and analyzing potential threats and deciding how to address them before they become exploitable vulnerabilities."
+    },
+    {
+      "question": "Which sequence correctly represents the four fundamental questions associated with threat modeling?",
+      "option_a": "Who developed the application? What language is used? How fast is it? When will it be deployed?",
+      "option_b": "What is the budget? Who is the developer? What is the database? How many users exist?",
+      "option_c": "What can be tested? What can be deployed? What can be monitored? What can be optimized?",
+      "option_d": "What are we building? What can go wrong? What will we do about it? Did we address the identified threats properly?",
+      "correct_answer": "D",
+      "explanation": "These four questions establish the foundation of threat modeling by examining the system, potential threats, mitigations and effectiveness of the response."
+    },
+    {
+      "question": "Which of the following is an important benefit of performing threat modeling early?",
+      "option_a": "It helps identify threats, understand assets and trust boundaries, prioritize security requirements and reduce expensive redesign",
+      "option_b": "It automatically removes all vulnerabilities from source code",
+      "option_c": "It eliminates the need for access control",
+      "option_d": "It guarantees that attackers cannot discover system weaknesses",
+      "correct_answer": "A",
+      "explanation": "Early threat modeling helps teams understand security risks, select appropriate controls and avoid expensive architectural redesign."
+    },
+    {
+      "question": "In threat modeling, what is an asset?",
+      "option_a": "A weakness that attackers can exploit",
+      "option_b": "Something valuable that must be protected",
+      "option_c": "A person who attempts to attack a system",
+      "option_d": "A security control used to prevent unauthorized access",
+      "correct_answer": "B",
+      "explanation": "An asset is something valuable that requires protection, such as customer information, financial records or authentication credentials."
+    },
+    {
+      "question": "Which statement correctly distinguishes a threat from a vulnerability?",
+      "option_a": "A threat is always a software bug, while a vulnerability is an attacker",
+      "option_b": "A threat is a security control, while a vulnerability is an asset",
+      "option_c": "A threat is a potential cause of harm, while a vulnerability is a weakness that can be exploited",
+      "option_d": "A threat and vulnerability have exactly the same meaning",
+      "correct_answer": "C",
+      "explanation": "A threat represents a potential cause of harm, whereas a vulnerability is a weakness that may be exploited to cause that harm."
+    },
+    {
+      "question": "What is an attack vector in threat modeling?",
+      "option_a": "A security requirement that must be implemented",
+      "option_b": "The financial value of an affected asset",
+      "option_c": "A method used to calculate application performance",
+      "option_d": "The path used by an attacker to exploit a vulnerability",
+      "correct_answer": "D",
+      "explanation": "An attack vector describes the path or method through which an attacker exploits a vulnerability."
+    },
+    {
+      "question": "Which threat modeling approach primarily focuses on targets of value?",
+      "option_a": "Asset-Centric",
+      "option_b": "Software-Centric",
+      "option_c": "Security-Centric",
+      "option_d": "Code-Centric",
+      "correct_answer": "A",
+      "explanation": "Asset-Centric threat modeling focuses on valuable targets that require protection."
+    },
+    {
+      "question": "Which threat modeling methodology is primarily focused on privacy threats?",
+      "option_a": "STRIDE",
+      "option_b": "LINDDUN",
+      "option_c": "DREAD",
+      "option_d": "Attack Trees",
+      "correct_answer": "B",
+      "explanation": "LINDDUN is a threat modeling methodology that primarily focuses on identifying privacy-related threats."
+    },
+    {
+      "question": "Which methodology represents different paths an attacker may use to achieve a particular goal?",
+      "option_a": "DREAD",
+      "option_b": "PASTA",
+      "option_c": "Attack Trees",
+      "option_d": "LINDDUN",
+      "correct_answer": "C",
+      "explanation": "Attack Trees visually represent different attack paths and possible ways an attacker can achieve a defined goal."
+    },
+    {
+      "question": "Which statement best describes the purpose of the PASTA methodology?",
+      "option_a": "It focuses exclusively on privacy-related threats",
+      "option_b": "It measures only the financial impact of vulnerabilities",
+      "option_c": "It categorizes threats according to six technical security properties",
+      "option_d": "It is a risk-focused, attack-oriented threat modeling methodology",
+      "correct_answer": "D",
+      "explanation": "PASTA is described in the lecture as a risk-focused and attack-oriented threat modeling methodology."
+    },
+    {
+      "question": "Which statement correctly describes STRIDE?",
+      "option_a": "A Microsoft-developed threat modeling methodology that categorizes technical security threats",
+      "option_b": "A framework used exclusively to measure financial losses",
+      "option_c": "A maturity model for evaluating organizational DevSecOps capabilities",
+      "option_d": "A method for measuring application execution performance",
+      "correct_answer": "A",
+      "explanation": "STRIDE was developed by Microsoft to help identify different categories of technical security threats in software systems."
+    },
+    {
+      "question": "Which STRIDE category is associated with the violation of authentication?",
+      "option_a": "Tampering",
+      "option_b": "Spoofing",
+      "option_c": "Repudiation",
+      "option_d": "Information Disclosure",
+      "correct_answer": "B",
+      "explanation": "Spoofing involves an attacker pretending to be another user or system, thereby violating authentication."
+    },
+    {
+      "question": "An attacker modifies the transaction amount in a banking application without authorization. Which STRIDE category is most directly involved?",
+      "option_a": "Spoofing",
+      "option_b": "Denial of Service",
+      "option_c": "Tampering",
+      "option_d": "Repudiation",
+      "correct_answer": "C",
+      "explanation": "Tampering involves unauthorized modification of data or software and primarily affects integrity."
+    },
+    {
+      "question": "A student claims they never submitted an assignment, and the university has no records proving that the submission occurred. Which STRIDE threat is represented?",
+      "option_a": "Spoofing",
+      "option_b": "Elevation of Privilege",
+      "option_c": "Information Disclosure",
+      "option_d": "Repudiation",
+      "correct_answer": "D",
+      "explanation": "Repudiation occurs when a user denies performing an action because sufficient evidence is unavailable to establish accountability."
+    },
+    {
+      "question": "An attacker obtains sensitive customer records from a database due to insufficient access controls. Which STRIDE category is involved?",
+      "option_a": "Information Disclosure",
+      "option_b": "Tampering",
+      "option_c": "Spoofing",
+      "option_d": "Denial of Service",
+      "correct_answer": "A",
+      "explanation": "Information Disclosure occurs when sensitive information becomes accessible to unauthorized users, violating confidentiality."
+    },
+    {
+      "question": "A web server becomes unavailable because an attacker sends an excessive number of requests. Which STRIDE threat is demonstrated?",
+      "option_a": "Repudiation",
+      "option_b": "Denial of Service",
+      "option_c": "Tampering",
+      "option_d": "Elevation of Privilege",
+      "correct_answer": "B",
+      "explanation": "Denial of Service prevents legitimate users from accessing services, typically by exhausting system resources or overwhelming infrastructure."
+    },
+    {
+      "question": "A normal university student successfully accesses administrative functionality because of an authorization flaw. Which STRIDE category does this represent?",
+      "option_a": "Information Disclosure",
+      "option_b": "Spoofing",
+      "option_c": "Elevation of Privilege",
+      "option_d": "Repudiation",
+      "correct_answer": "C",
+      "explanation": "Elevation of Privilege occurs when an attacker gains permissions beyond those originally assigned, violating authorization."
+    },
+    {
+      "question": "Which pairing between a STRIDE category and its affected security property is correct?",
+      "option_a": "Tampering — Confidentiality",
+      "option_b": "Repudiation — Availability",
+      "option_c": "Spoofing — Integrity",
+      "option_d": "Information Disclosure — Confidentiality",
+      "correct_answer": "D",
+      "explanation": "Information Disclosure violates confidentiality. Tampering affects integrity, Repudiation affects accountability, and Spoofing affects authentication."
+    },
+    {
+      "question": "Which combination provides an appropriate mitigation for a spoofing threat?",
+      "option_a": "Multi-Factor Authentication, strong password policies and digital certificates",
+      "option_b": "Load balancing, database indexing and caching",
+      "option_c": "Data masking, encryption and database backups",
+      "option_d": "Rate limiting, firewalls and traffic distribution",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies MFA, strong password policies and digital certificates as possible controls against spoofing."
+    },
+    {
+      "question": "Which control combination is most appropriate for addressing repudiation?",
+      "option_a": "Load balancing and rate limiting",
+      "option_b": "Audit logs, digital signatures and timestamps",
+      "option_c": "Password complexity and MFA",
+      "option_d": "Encryption and data masking",
+      "correct_answer": "B",
+      "explanation": "Audit logs, digital signatures and timestamps provide evidence of actions and support accountability."
+    },
+    {
+      "question": "Which of the following is a suitable mitigation for information disclosure?",
+      "option_a": "Load balancing and resource scaling",
+      "option_b": "Digital signatures and timestamps only",
+      "option_c": "Encryption, access control and data masking",
+      "option_d": "MFA and strong password policies only",
+      "correct_answer": "C",
+      "explanation": "Encryption, access control and data masking help protect sensitive information from unauthorized access or exposure."
+    },
+    {
+      "question": "Which combination of controls is most directly associated with preventing denial-of-service attacks?",
+      "option_a": "Digital signatures, password hashing and timestamps",
+      "option_b": "RBAC, least privilege and database encryption",
+      "option_c": "Data masking, input validation and password policies",
+      "option_d": "Rate limiting, firewalls and load balancing",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies rate limiting, firewalls and load balancing as possible controls against denial-of-service threats."
+    },
+    {
+      "question": "Which controls are most appropriate for mitigating elevation-of-privilege threats?",
+      "option_a": "Least Privilege, RBAC and server-side authorization",
+      "option_b": "Load balancing, firewalls and rate limiting",
+      "option_c": "Encryption, data masking and timestamps",
+      "option_d": "Password complexity, digital certificates and caching",
+      "correct_answer": "A",
+      "explanation": "Least Privilege, RBAC and server-side authorization restrict users to their permitted operations and help prevent unauthorized privilege escalation."
+    },
+    {
+      "question": "A banking system uses MFA for customer accounts, digital signatures for transaction integrity, audit logs for transaction history, encryption for personal information, rate limiting for its banking server and RBAC for its admin portal. Which mapping is correct?",
+      "option_a": "MFA — Tampering; Digital signatures — Spoofing; Audit logs — Denial of Service",
+      "option_b": "MFA — Spoofing; Digital signatures — Tampering; Audit logs — Repudiation; Encryption — Information Disclosure; Rate limiting — Denial of Service; RBAC — Elevation of Privilege",
+      "option_c": "MFA — Repudiation; Digital signatures — Information Disclosure; Audit logs — Tampering",
+      "option_d": "MFA — Elevation of Privilege; Digital signatures — Denial of Service; Audit logs — Spoofing",
+      "correct_answer": "B",
+      "explanation": "Each control maps to the STRIDE category it is intended to mitigate: authentication, integrity, accountability, confidentiality, availability and authorization respectively."
+    },
+    {
+      "question": "What is the primary purpose of DREAD in threat assessment?",
+      "option_a": "To identify the architectural components of a system",
+      "option_b": "To categorize vulnerabilities according to programming languages",
+      "option_c": "To estimate the severity of identified threats",
+      "option_d": "To replace threat identification methodologies such as STRIDE",
+      "correct_answer": "C",
+      "explanation": "DREAD estimates the severity of threats that have already been identified. It complements threat identification methodologies such as STRIDE."
+    },
+    {
+      "question": "Which of the following lists all five DREAD factors correctly?",
+      "option_a": "Damage, Reliability, Execution, Authorization and Discovery",
+      "option_b": "Detection, Risk, Exploitation, Access and Distribution",
+      "option_c": "Damage, Repetition, Exposure, Availability and Duration",
+      "option_d": "Damage Potential, Reproducibility, Exploitability, Affected Users and Discoverability",
+      "correct_answer": "D",
+      "explanation": "DREAD evaluates threats using Damage Potential, Reproducibility, Exploitability, Affected Users and Discoverability."
+    },
+    {
+      "question": "Which DREAD factor evaluates the amount of harm an attacker can cause?",
+      "option_a": "Damage Potential",
+      "option_b": "Reproducibility",
+      "option_c": "Affected Users",
+      "option_d": "Discoverability",
+      "correct_answer": "A",
+      "explanation": "Damage Potential measures the impact of an attack, including data loss, financial loss and reputation damage."
+    },
+    {
+      "question": "A vulnerability can be exploited repeatedly with the same procedure and produces consistent results. Which DREAD factor is most directly associated with this observation?",
+      "option_a": "Affected Users",
+      "option_b": "Reproducibility",
+      "option_c": "Discoverability",
+      "option_d": "Damage Potential",
+      "correct_answer": "B",
+      "explanation": "Reproducibility evaluates how easily an attack can be repeated. Vulnerabilities that work consistently receive higher scores."
+    },
+    {
+      "question": "A security assessment determines that exploiting a vulnerability requires advanced technical knowledge and specialized tools. Which DREAD factor is being evaluated?",
+      "option_a": "Damage Potential",
+      "option_b": "Affected Users",
+      "option_c": "Exploitability",
+      "option_d": "Discoverability",
+      "correct_answer": "C",
+      "explanation": "Exploitability evaluates how difficult it is to perform an attack, including the required knowledge and tools."
+    },
+    {
+      "question": "A vulnerability affects every employee in an organization rather than a single user. Which DREAD factor captures this difference?",
+      "option_a": "Reproducibility",
+      "option_b": "Damage Potential",
+      "option_c": "Discoverability",
+      "option_d": "Affected Users",
+      "correct_answer": "D",
+      "explanation": "Affected Users measures how many users or organizational units could be impacted by a threat."
+    },
+    {
+      "question": "A vulnerability is publicly visible and can easily be identified by attackers. Which DREAD factor is most relevant?",
+      "option_a": "Discoverability",
+      "option_b": "Exploitability",
+      "option_c": "Damage Potential",
+      "option_d": "Reproducibility",
+      "correct_answer": "A",
+      "explanation": "Discoverability measures how easily an attacker can discover a vulnerability. Publicly visible weaknesses receive higher scores."
+    },
+    {
+      "question": "A SQL injection vulnerability receives DREAD scores of 9, 10, 8, 9 and 7 respectively. What is its average score?",
+      "option_a": "8.0",
+      "option_b": "8.6",
+      "option_c": "9.0",
+      "option_d": "8.8",
+      "correct_answer": "B",
+      "explanation": "The average is (9 + 10 + 8 + 9 + 7) / 5 = 43 / 5 = 8.6."
+    },
+    {
+      "question": "Which statement correctly compares STRIDE and DREAD?",
+      "option_a": "STRIDE calculates financial damage, while DREAD identifies six security properties",
+      "option_b": "Both methodologies exclusively identify privacy threats",
+      "option_c": "STRIDE identifies threat categories, while DREAD evaluates the severity of identified threats",
+      "option_d": "DREAD is used before system design, while STRIDE is used exclusively after deployment",
+      "correct_answer": "C",
+      "explanation": "STRIDE answers what can go wrong by categorizing threats, while DREAD answers how serious an identified threat is."
+    },
+    {
+      "question": "Why does the lecture mention that organizations may use CVSS or organization-specific risk models instead of relying exclusively on DREAD?",
+      "option_a": "DREAD cannot evaluate any technical vulnerabilities",
+      "option_b": "DREAD is designed exclusively for privacy threats",
+      "option_c": "DREAD cannot be applied to software systems",
+      "option_d": "DREAD scoring can be subjective, making other risk assessment frameworks useful alternatives",
+      "correct_answer": "D",
+      "explanation": "The lecture notes that DREAD is useful for learning risk prioritization, but its subjective scoring can lead organizations to adopt CVSS or organization-specific models."
+    },
+    {
+      "question": "What is the primary role of OWASP in DevSecOps?",
+      "option_a": "To provide open standards, tools and guidance for integrating security throughout the DevSecOps lifecycle",
+      "option_b": "To provide a commercial operating system for secure deployments",
+      "option_c": "To replace the software development lifecycle with security auditing",
+      "option_d": "To provide a single vulnerability scanner for all programming languages",
+      "correct_answer": "A",
+      "explanation": "OWASP provides open standards, tools and guidance that support security integration throughout software development and delivery."
+    },
+    {
+      "question": "Which of the following is an OWASP DevSecOps recommendation for the design stage of the CI/CD lifecycle?",
+      "option_a": "Dynamic Application Security Testing",
+      "option_b": "Threat modeling and secure architecture",
+      "option_c": "Continuous monitoring and incident response",
+      "option_d": "Security approval and release policy checks",
+      "correct_answer": "B",
+      "explanation": "The lecture associates threat modeling and secure architecture with the design stage of the DevSecOps lifecycle."
+    },
+    {
+      "question": "Which security activity is primarily associated with the build stage in the OWASP DevSecOps guidance?",
+      "option_a": "Incident response",
+      "option_b": "API testing",
+      "option_c": "Static Application Security Testing (SAST)",
+      "option_d": "Security requirements definition",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies SAST as a security activity associated with the build stage."
+    },
+    {
+      "question": "Which activity is associated with the test stage of the OWASP DevSecOps lifecycle?",
+      "option_a": "Defining security requirements",
+      "option_b": "Threat modeling and secure architecture",
+      "option_c": "Secrets management and secure configuration",
+      "option_d": "Dynamic Application Security Testing (DAST) and API testing",
+      "correct_answer": "D",
+      "explanation": "The test stage includes DAST and API testing to identify security weaknesses during application testing."
+    },
+    {
+      "question": "Which of the following is a primary responsibility associated with the operate stage?",
+      "option_a": "Continuous monitoring, vulnerability management and incident response",
+      "option_b": "Defining initial security requirements",
+      "option_c": "Performing architectural threat modeling",
+      "option_d": "Conducting peer reviews during implementation",
+      "correct_answer": "A",
+      "explanation": "The operate stage focuses on maintaining security after deployment through monitoring, vulnerability management and incident response."
+    },
+    {
+      "question": "An organization has implemented basic manual security activities but has not established repeatable automated processes. Which DSOMM maturity level best describes this organization?",
+      "option_a": "Level 3",
+      "option_b": "Level 1",
+      "option_c": "Level 4",
+      "option_d": "Level 2",
+      "correct_answer": "B",
+      "explanation": "DSOMM Level 1 represents basic, manual security activities. Level 2 introduces repeatable processes with partial automation."
+    },
+    {
+      "question": "Which DSOMM maturity level represents security integrated across the CI/CD pipeline?",
+      "option_a": "Level 1",
+      "option_b": "Level 2",
+      "option_c": "Level 3",
+      "option_d": "Level 4",
+      "correct_answer": "C",
+      "explanation": "Level 3 represents security integration across the CI/CD pipeline, whereas Level 4 emphasizes continuous measurement and optimization."
+    },
+    {
+      "question": "Which set correctly represents the six assessment areas of the OWASP DevSecOps Maturity Model described in the lecture?",
+      "option_a": "Authentication, Authorization, Encryption, Firewalls, Logging and Monitoring",
+      "option_b": "Requirements, Design, Development, Build, Release and Deployment",
+      "option_c": "People, Processes, Hardware, Networks, Databases and Applications",
+      "option_d": "Build and Deployment, Implementation (Secure Coding), Information Gathering, Test and Verification, Operations, Culture and Training",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies six DSOMM assessment areas covering build and deployment, secure coding, information gathering, testing, operations, and culture and training."
+    },
+    {
+      "question": "A development team designs an application with a shared administrator account used by all developers. The account has unrestricted access to production databases, and the team does not maintain individual activity records. Which combination of secure design principles is most directly violated?",
+      "option_a": "Least Privilege, Separation of Duties and Complete Mediation",
+      "option_b": "Open Design, Psychological Acceptability and Economy of Mechanism",
+      "option_c": "Defence in Depth, Secure Defaults and Fail Securely",
+      "option_d": "Minimize Attack Surface, Fail-Safe Defaults and Open Design",
+      "correct_answer": "A",
+      "explanation": "Unrestricted shared administrator access violates Least Privilege. A shared account weakens separation of responsibilities and individual accountability, while inadequate per-user authorization checks undermine Complete Mediation."
+    },
+    {
+      "question": "An application checks a user's permissions when a session is established. The user is subsequently allowed to access protected resources without further authorization checks. An administrator later revokes the user's permission, but the existing session can still access the resources. Which principle is most directly violated?",
+      "option_a": "Open Design",
+      "option_b": "Complete Mediation",
+      "option_c": "Psychological Acceptability",
+      "option_d": "Economy of Mechanism",
+      "correct_answer": "B",
+      "explanation": "Complete Mediation requires authorization to be verified every time a protected resource is accessed. Reusing an earlier authorization decision can allow revoked permissions to remain effective."
+    },
+    {
+      "question": "A payment application encounters an internal authorization service failure. Instead of rejecting the payment request, it automatically approves the transaction to maintain availability. Which secure design principle is most directly violated?",
+      "option_a": "Open Design",
+      "option_b": "Least Common Mechanism",
+      "option_c": "Fail Securely",
+      "option_d": "Economy of Mechanism",
+      "correct_answer": "C",
+      "explanation": "Fail Securely requires the system to remain secure during failures. Automatically approving a transaction when authorization cannot be verified creates an insecure failure condition."
+    },
+    {
+      "question": "A web application allows a user to change a request parameter from account_id=101 to account_id=102. The application verifies that the user is authenticated but does not verify whether account 102 belongs to that user. Which STRIDE threat and mitigation are most appropriate?",
+      "option_a": "Spoofing; implement stronger password policies",
+      "option_b": "Repudiation; implement timestamps only",
+      "option_c": "Denial of Service; introduce load balancing",
+      "option_d": "Elevation of Privilege; implement server-side authorization and appropriate RBAC",
+      "correct_answer": "D",
+      "explanation": "The user accesses a resource beyond their assigned permissions. This is an authorization failure associated with Elevation of Privilege, and server-side authorization is an appropriate mitigation."
+    },
+    {
+      "question": "An attacker steals a valid session token and uses it to impersonate a legitimate banking customer. The attacker does not modify any data or exploit an authorization flaw. Which STRIDE category is the primary threat?",
+      "option_a": "Spoofing",
+      "option_b": "Tampering",
+      "option_c": "Repudiation",
+      "option_d": "Information Disclosure",
+      "correct_answer": "A",
+      "explanation": "The attacker uses stolen authentication material to impersonate a legitimate customer, which is Spoofing and affects authentication."
+    },
+    {
+      "question": "A university system has no reliable audit trail for grade modifications. A lecturer changes a student's grade and later denies making the modification. Which security property is primarily missing, and which STRIDE category describes the threat?",
+      "option_a": "Confidentiality; Information Disclosure",
+      "option_b": "Accountability; Repudiation",
+      "option_c": "Availability; Denial of Service",
+      "option_d": "Authentication; Spoofing",
+      "correct_answer": "B",
+      "explanation": "The lack of reliable evidence prevents accountability and allows the lecturer to deny the action. This is a Repudiation threat."
+    },
+    {
+      "question": "An attacker discovers an API key accidentally committed to a public GitHub repository and uses it to access sensitive customer information. Which STRIDE category most directly describes the exposure of the API key?",
+      "option_a": "Tampering",
+      "option_b": "Elevation of Privilege",
+      "option_c": "Information Disclosure",
+      "option_d": "Denial of Service",
+      "correct_answer": "C",
+      "explanation": "The API key has been exposed to unauthorized parties, making this an Information Disclosure threat. Its subsequent misuse may also enable other attacks."
+    },
+    {
+      "question": "Two vulnerabilities are evaluated using DREAD. Vulnerability A has scores (10, 10, 2, 10, 2), while Vulnerability B has scores (7, 8, 9, 8, 9). Which vulnerability receives the higher average score?",
+      "option_a": "Vulnerability A, because its Damage Potential is highest",
+      "option_b": "Both vulnerabilities have the same average score",
+      "option_c": "Vulnerability A, because it affects more users",
+      "option_d": "Vulnerability B, because its average DREAD score is higher",
+      "correct_answer": "D",
+      "explanation": "A has an average of 34/5 = 6.8, while B has an average of 41/5 = 8.2. Therefore, Vulnerability B receives the higher average score."
+    },
+    {
+      "question": "A vulnerability has the following DREAD scores: Damage Potential = 8, Reproducibility = 9, Exploitability = 7, Affected Users = 10 and Discoverability = 6. What is the average score, and which interpretation is most appropriate?",
+      "option_a": "8.0; the average is high and indicates a serious threat requiring attention",
+      "option_b": "7.0; the average indicates a low-risk vulnerability",
+      "option_c": "9.0; the vulnerability is automatically critical",
+      "option_d": "40; the total represents a percentage of affected users",
+      "correct_answer": "A",
+      "explanation": "The average is (8 + 9 + 7 + 10 + 6) / 5 = 40 / 5 = 8.0. This is a high score, suggesting that the threat deserves significant attention."
+    },
+    {
+      "question": "A security team has identified six threats using STRIDE. It then assigns DREAD scores to estimate their severity. Which statement best explains why these methodologies are used together?",
+      "option_a": "DREAD identifies the six STRIDE categories, while STRIDE calculates their average risk",
+      "option_b": "STRIDE identifies what can go wrong, while DREAD helps determine which identified threats are more serious",
+      "option_c": "STRIDE replaces security controls, while DREAD performs secure coding",
+      "option_d": "Both methodologies are used only for measuring application performance",
+      "correct_answer": "B",
+      "explanation": "STRIDE categorizes threats, while DREAD evaluates their severity. Using both helps teams identify threats and prioritize their mitigation."
+    },
+    {
+      "question": "A company performs threat modeling during design, SAST during build, DAST during testing, security approval before release, secure configuration during deployment and continuous monitoring after deployment. Which statement best evaluates this pipeline against the lecture?",
+      "option_a": "It is incorrect because all security activities must occur during the testing stage",
+      "option_b": "It is incorrect because threat modeling should only be performed after deployment",
+      "option_c": "It aligns with the OWASP DevSecOps guidance by integrating appropriate security activities across the lifecycle",
+      "option_d": "It is incorrect because SAST and DAST must be performed exclusively during deployment",
+      "correct_answer": "C",
+      "explanation": "The activities align with the lecture's OWASP lifecycle mapping: threat modeling in design, SAST in build, DAST in test, security approval in release, secure configuration in deployment and monitoring in operation."
+    },
+    {
+      "question": "A company performs manual security reviews occasionally, has introduced repeatable security checks with partial automation, but has not integrated security across its entire CI/CD pipeline. Which DSOMM level best describes its current maturity?",
+      "option_a": "Level 1",
+      "option_b": "Level 3",
+      "option_c": "Level 4",
+      "option_d": "Level 2",
+      "correct_answer": "D",
+      "explanation": "Level 2 represents repeatable security processes with partial automation. Level 3 requires security integration across the CI/CD pipeline."
+    },
+    {
+      "question": "An organization has integrated security throughout its CI/CD pipeline and performs continuous measurement, optimization and improvements to its DevSecOps culture. Which DSOMM maturity level does this represent?",
+      "option_a": "Level 4",
+      "option_b": "Level 1",
+      "option_c": "Level 2",
+      "option_d": "Level 3",
+      "correct_answer": "A",
+      "explanation": "Level 4 represents continuous measurement, optimization and a mature DevSecOps culture."
+    },
+    {
+      "question": "A development team completes the following activities: identifies valuable assets, models trust boundaries, identifies technical threats using STRIDE, calculates severity using DREAD and selects appropriate OWASP DevSecOps practices. Which sequence best represents the methodology described in the lecture?",
+      "option_a": "DREAD → Secure Coding → STRIDE → System Design → OWASP",
+      "option_b": "System Design → Threat Modeling → STRIDE → DREAD → OWASP DevSecOps Practices",
+      "option_c": "OWASP → DREAD → System Design → Secure Coding → STRIDE",
+      "option_d": "Secure Deployment → STRIDE → OWASP → Threat Modeling → DREAD",
+      "correct_answer": "B",
+      "explanation": "The lecture presents a sequence beginning with system design, followed by threat modeling, STRIDE threat identification, DREAD risk assessment and the application of OWASP DevSecOps practices."
+    },
+    {
+      "question": "A company wants to protect a customer database. It identifies unauthorized access as a potential threat, discovers that an API endpoint lacks proper authorization checks, and introduces server-side authorization as a mitigation. Which sequence correctly classifies these elements?",
+      "option_a": "Threat: customer database; Vulnerability: attacker; Mitigation: unauthorized access",
+      "option_b": "Threat: authorization check; Vulnerability: customer data; Mitigation: attacker",
+      "option_c": "Asset: customer database; Threat: unauthorized access; Vulnerability: missing authorization checks; Mitigation: server-side authorization",
+      "option_d": "Asset: missing authorization checks; Threat: server-side authorization; Vulnerability: customer database",
+      "correct_answer": "C",
+      "explanation": "The customer database is the asset, unauthorized access is the potential threat, missing authorization checks are the vulnerability, and server-side authorization is the mitigation."
+    },
+    {
+      "question": "A software company publishes its authentication architecture and security implementation details. However, it protects cryptographic keys and credentials using appropriate security controls. Which principle justifies this approach?",
+      "option_a": "Minimize Attack Surface",
+      "option_b": "Fail-Safe Defaults",
+      "option_c": "Least Common Mechanism",
+      "option_d": "Open Design",
+      "correct_answer": "D",
+      "explanation": "Open Design states that system security should not depend on hiding the design itself. Security should rely on protecting critical secrets such as cryptographic keys."
+    },
+    {
+      "question": "A web application provides users with a complex security workflow that causes frequent mistakes. Users begin disabling security features to complete their tasks. Which secure design principle would most directly address this problem?",
+      "option_a": "Psychological Acceptability",
+      "option_b": "Least Privilege",
+      "option_c": "Complete Mediation",
+      "option_d": "Separation of Duties",
+      "correct_answer": "A",
+      "explanation": "Psychological Acceptability recommends security controls that are easy to understand and use, reducing the likelihood that users will bypass them."
+    },
+    {
+      "question": "A security team identifies a large number of threats in an application. It wants to represent the different attack paths that could lead to unauthorized access to an administrator account. Which methodology would be most suitable?",
+      "option_a": "DREAD",
+      "option_b": "Attack Trees",
+      "option_c": "LINDDUN",
+      "option_d": "DSOMM",
+      "correct_answer": "B",
+      "explanation": "Attack Trees represent different paths an attacker may take to reach a defined goal, making them suitable for analyzing ways to compromise an administrator account."
+    },
+    {
+      "question": "A company is concerned primarily about threats involving user tracking, information linkage and privacy violations rather than traditional technical security threats. Which methodology from the lecture is most relevant?",
+      "option_a": "STRIDE",
+      "option_b": "DREAD",
+      "option_c": "LINDDUN",
+      "option_d": "PASTA",
+      "correct_answer": "C",
+      "explanation": "LINDDUN focuses primarily on privacy threats, making it the most appropriate methodology among the listed options."
+    },
+    {
+      "question": "A security architect wants to reduce the possibility of unauthorized information sharing between different application components. The architect decides to minimize shared resources and mechanisms. Which principle is being applied?",
+      "option_a": "Economy of Mechanism",
+      "option_b": "Open Design",
+      "option_c": "Defence in Depth",
+      "option_d": "Least Common Mechanism",
+      "correct_answer": "D",
+      "explanation": "Least Common Mechanism reduces unnecessary shared resources and mechanisms to minimize unintended information sharing and security risks."
+    },
+    {
+      "question": "An application is designed with restrictive permissions by default. However, a user can explicitly enable less secure features when required. Which principle is most directly demonstrated?",
+      "option_a": "Secure Defaults",
+      "option_b": "Complete Mediation",
+      "option_c": "Separation of Duties",
+      "option_d": "Repudiation",
+      "correct_answer": "A",
+      "explanation": "Secure Defaults configures the system with its most secure settings initially, requiring users to intentionally enable less secure options when necessary."
+    },
+    {
+      "question": "A development team identifies that an application's login service can be overwhelmed by repeated authentication requests. Which combination of STRIDE classification and possible mitigation is most appropriate?",
+      "option_a": "Spoofing; use digital certificates",
+      "option_b": "Denial of Service; use rate limiting and firewalls",
+      "option_c": "Repudiation; use audit logs and timestamps",
+      "option_d": "Tampering; use digital signatures",
+      "correct_answer": "B",
+      "explanation": "Repeated requests can exhaust available resources and prevent legitimate access, representing Denial of Service. Rate limiting and firewalls are appropriate controls."
+    },
+    {
+      "question": "An organization wants to evaluate whether its security practices are improving over time across build and deployment, secure coding, information gathering, testing, operations and organizational culture. Which framework should it use?",
+      "option_a": "STRIDE",
+      "option_b": "DREAD",
+      "option_c": "OWASP DevSecOps Maturity Model (DSOMM)",
+      "option_d": "Attack Trees",
+      "correct_answer": "C",
+      "explanation": "DSOMM evaluates organizational DevSecOps maturity across the six assessment areas and provides guidance for continuous improvement."
+    },
+    {
+      "question": "A team has completed secure design, threat identification, risk assessment and secure coding. Which sequence best represents the remaining security activities in the lecture's overall workflow?",
+      "option_a": "Deploy → Threat Modeling → System Design → Release → SAST",
+      "option_b": "Continuous Monitoring → System Design → DREAD → Secure Coding",
+      "option_c": "OWASP → System Design → Threat Identification → Deployment",
+      "option_d": "SAST / DAST / Code Review → Secure Deployment → Continuous Monitoring",
+      "correct_answer": "D",
+      "explanation": "After secure coding, the lecture's workflow proceeds through SAST, DAST and code review, followed by secure deployment and continuous monitoring."
+    }
+  ]
+}

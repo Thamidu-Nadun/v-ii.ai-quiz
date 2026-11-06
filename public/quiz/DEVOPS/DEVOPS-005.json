@@ -1,0 +1,1336 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of containerization?",
+      "option_a": "A. To virtualize physical hardware for multiple operating systems",
+      "option_b": "B. To package an application with its dependencies and runtime into an isolated unit",
+      "option_c": "C. To replace application source code with executable binaries",
+      "option_d": "D. To eliminate the need for operating system kernels",
+      "correct_answer": "B",
+      "explanation": "Containerization packages an application with its dependencies, libraries, configuration and runtime so it can execute consistently across environments."
+    },
+    {
+      "question": "A developer's application works on their laptop but fails in production because of different library versions. Which containerization benefit directly addresses this problem?",
+      "option_a": "A. Hardware virtualization",
+      "option_b": "B. Network segmentation",
+      "option_c": "C. Environment consistency",
+      "option_d": "D. Load balancing",
+      "correct_answer": "C",
+      "explanation": "Containers package the application's dependencies and runtime, reducing inconsistencies between development, testing and production."
+    },
+    {
+      "question": "Why are containers generally more lightweight than virtual machines?",
+      "option_a": "A. Containers share the host operating system kernel",
+      "option_b": "B. Containers do not require application dependencies",
+      "option_c": "C. Containers always run without an operating system",
+      "option_d": "D. Containers use dedicated physical hardware",
+      "correct_answer": "A",
+      "explanation": "Containers use OS-level virtualization and share the host kernel rather than running a separate guest operating system."
+    },
+    {
+      "question": "Which containerization characteristic makes containers particularly suitable for dynamic workloads?",
+      "option_a": "A. Hardware-level isolation",
+      "option_b": "B. Permanent allocation of physical resources",
+      "option_c": "C. Independent guest operating systems",
+      "option_d": "D. Fast creation and destruction",
+      "correct_answer": "D",
+      "explanation": "Containers can be created and destroyed quickly, making them suitable for applications that need frequent scaling."
+    },
+    {
+      "question": "Which statement best describes containerization's contribution to DevSecOps?",
+      "option_a": "A. It removes the need for security testing",
+      "option_b": "B. It allows security controls to be integrated throughout the application lifecycle",
+      "option_c": "C. It guarantees that applications cannot be compromised",
+      "option_d": "D. It eliminates the need for production monitoring",
+      "correct_answer": "B",
+      "explanation": "Container security can be integrated into building, testing, deploying, running and monitoring applications."
+    },
+    {
+      "question": "Which statement correctly compares virtual machines and containers?",
+      "option_a": "A. Both always require independent guest operating systems",
+      "option_b": "B. Containers provide hardware-level virtualization while VMs provide OS-level virtualization",
+      "option_c": "C. VMs generally provide stronger isolation, while containers generally use fewer resources",
+      "option_d": "D. Containers always consume more resources than VMs",
+      "correct_answer": "C",
+      "explanation": "VMs virtualize hardware and run separate operating systems, while containers share the host kernel and typically have lower resource overhead."
+    },
+    {
+      "question": "An organization requires several workloads to run different operating system kernels on the same physical server. Which technology is more appropriate?",
+      "option_a": "A. Virtual machines",
+      "option_b": "B. Docker image layers",
+      "option_c": "C. Kubernetes Pods alone",
+      "option_d": "D. Container registries",
+      "correct_answer": "A",
+      "explanation": "Virtual machines can run separate guest operating systems and kernels, whereas ordinary containers share the host kernel."
+    },
+    {
+      "question": "What is a significant security implication of containers sharing the host kernel?",
+      "option_a": "A. Every container automatically receives administrator privileges",
+      "option_b": "B. Containers cannot communicate over networks",
+      "option_c": "C. Images cannot contain vulnerable packages",
+      "option_d": "D. A kernel vulnerability may affect multiple containers and the host",
+      "correct_answer": "D",
+      "explanation": "Because containers share the host kernel, kernel vulnerabilities can potentially undermine the isolation of multiple containers."
+    },
+    {
+      "question": "Which component is responsible for receiving user commands and interacting with the Docker environment?",
+      "option_a": "A. Docker Registry",
+      "option_b": "B. Docker Client",
+      "option_c": "C. Docker Image",
+      "option_d": "D. Container Filesystem",
+      "correct_answer": "B",
+      "explanation": "The Docker Client provides the interface through which users interact with Docker."
+    },
+    {
+      "question": "Which Docker component runs and manages containers?",
+      "option_a": "A. Dockerfile",
+      "option_b": "B. Docker Registry",
+      "option_c": "C. Docker Engine",
+      "option_d": "D. Docker Image",
+      "correct_answer": "C",
+      "explanation": "Docker Engine is responsible for running and managing containers."
+    },
+    {
+      "question": "A developer writes instructions specifying the base image, dependencies and application files. Which Docker component is being created?",
+      "option_a": "A. Dockerfile",
+      "option_b": "B. Container Registry",
+      "option_c": "C. Docker Container",
+      "option_d": "D. Docker Daemon API",
+      "correct_answer": "A",
+      "explanation": "A Dockerfile is a text file containing instructions used to build a Docker image."
+    },
+    {
+      "question": "Which statement correctly describes the relationship between a Docker image and a Docker container?",
+      "option_a": "A. An image is a running process and a container is a registry",
+      "option_b": "B. An image manages Docker commands and a container stores source code",
+      "option_c": "C. A container is a read-only template used to create images",
+      "option_d": "D. An image is a read-only template from which containers are created",
+      "correct_answer": "D",
+      "explanation": "A Docker image is a packaged template, while a container is a running instance of that image."
+    },
+    {
+      "question": "An organization needs a centralized location to store and distribute Docker images. Which component should it use?",
+      "option_a": "A. Docker Client",
+      "option_b": "B. Docker Registry",
+      "option_c": "C. Dockerfile",
+      "option_d": "D. Docker Container",
+      "correct_answer": "B",
+      "explanation": "Docker registries store and distribute container images. Examples include Docker Hub, Amazon ECR and Azure Container Registry."
+    },
+    {
+      "question": "Which of the following represents a potential Docker architecture security weakness?",
+      "option_a": "A. Using a Dockerfile to define an image",
+      "option_b": "B. Creating multiple application containers",
+      "option_c": "C. Exposing an unauthenticated Docker API",
+      "option_d": "D. Distributing images through a trusted registry",
+      "correct_answer": "C",
+      "explanation": "An exposed Docker API can allow unauthorized parties to control Docker and potentially access host resources."
+    },
+    {
+      "question": "A container image contains outdated OpenSSL and vulnerable application libraries. Which threat does this represent?",
+      "option_a": "A. Vulnerable images",
+      "option_b": "B. Network segmentation",
+      "option_c": "C. Secure artifact management",
+      "option_d": "D. Image signing",
+      "correct_answer": "A",
+      "explanation": "Outdated operating system packages and application dependencies can introduce known vulnerabilities into container images."
+    },
+    {
+      "question": "An attacker publishes a Docker image containing malicious code disguised as a legitimate application. What is the primary threat?",
+      "option_a": "A. Resource exhaustion",
+      "option_b": "B. Container scalability",
+      "option_c": "C. Network isolation",
+      "option_d": "D. Malicious container images",
+      "correct_answer": "D",
+      "explanation": "Malicious images may be distributed through registries to compromise systems that deploy them."
+    },
+    {
+      "question": "A developer accidentally includes a database password in a Docker image. Which security threat has occurred?",
+      "option_a": "A. Container escape",
+      "option_b": "B. Secrets exposure",
+      "option_c": "C. Network sniffing",
+      "option_d": "D. Resource exhaustion",
+      "correct_answer": "B",
+      "explanation": "Credentials included in images may be exposed through image layers and distributed to unauthorized parties."
+    },
+    {
+      "question": "What does container escape mean?",
+      "option_a": "A. Moving a container between worker nodes",
+      "option_b": "B. Deleting an unused container",
+      "option_c": "C. Breaking container isolation to access the underlying host or other resources",
+      "option_d": "D. Restarting a failed container",
+      "correct_answer": "C",
+      "explanation": "Container escape occurs when an attacker breaks out of the container's isolation boundary and gains access to the host or other resources."
+    },
+    {
+      "question": "A container is configured with excessive privileges and can access host resources unnecessarily. Which security weakness is demonstrated?",
+      "option_a": "A. Excessive container privileges",
+      "option_b": "B. Image version pinning",
+      "option_c": "C. Secure registry authentication",
+      "option_d": "D. Dependency scanning",
+      "correct_answer": "A",
+      "explanation": "Excessive privileges increase the impact of a compromised container and can facilitate access to host resources."
+    },
+    {
+      "question": "Which situation best represents a container supply-chain attack?",
+      "option_a": "A. A developer uses a read-only filesystem",
+      "option_b": "B. An administrator limits container CPU usage",
+      "option_c": "C. A network policy blocks unnecessary communication",
+      "option_d": "D. An attacker compromises a third-party image that is subsequently deployed by an organization",
+      "correct_answer": "D",
+      "explanation": "Supply-chain attacks exploit compromised dependencies, images, registries or other components used to build and deploy applications."
+    },
+    {
+      "question": "Which combination provides the most appropriate container image security approach?",
+      "option_a": "A. Use outdated base images and disable vulnerability scanning",
+      "option_b": "B. Use trusted minimal base images, update dependencies and scan images regularly",
+      "option_c": "C. Run every image as root to simplify permissions",
+      "option_d": "D. Store passwords directly in image layers",
+      "correct_answer": "B",
+      "explanation": "Trusted, minimal and updated base images combined with regular vulnerability scanning reduce the attack surface."
+    },
+    {
+      "question": "Why should containers generally run as non-root users?",
+      "option_a": "A. To prevent all application vulnerabilities",
+      "option_b": "B. To increase the number of available Linux capabilities",
+      "option_c": "C. To reduce the privileges available to an attacker if the application is compromised",
+      "option_d": "D. To eliminate the host operating system",
+      "correct_answer": "C",
+      "explanation": "Running as a non-root user follows least privilege and limits the potential impact of a container compromise."
+    },
+    {
+      "question": "Which security measure limits the Linux kernel capabilities available to a container?",
+      "option_a": "A. Dropping unnecessary Linux capabilities",
+      "option_b": "B. Increasing the container's CPU allocation",
+      "option_c": "C. Publishing all container ports",
+      "option_d": "D. Disabling image verification",
+      "correct_answer": "A",
+      "explanation": "Dropping unnecessary capabilities reduces the kernel-level privileges available to container processes."
+    },
+    {
+      "question": "Which configuration best supports filesystem security in a container?",
+      "option_a": "A. Give every process unrestricted write access",
+      "option_b": "B. Mount the host filesystem without restrictions",
+      "option_c": "C. Disable all filesystem monitoring",
+      "option_d": "D. Use a read-only filesystem where possible and restrict writable directories",
+      "correct_answer": "D",
+      "explanation": "Read-only filesystems and restricted writable directories reduce opportunities for unauthorized modification."
+    },
+    {
+      "question": "An application only requires access to one directory, but its container has full host filesystem access. Which principle is being violated?",
+      "option_a": "A. Defense through obscurity",
+      "option_b": "B. Principle of least privilege",
+      "option_c": "C. Continuous delivery",
+      "option_d": "D. Image immutability",
+      "correct_answer": "B",
+      "explanation": "Least privilege requires providing only the permissions and resources necessary for an application to function."
+    },
+    {
+      "question": "Which combination is most effective for reducing the impact of a compromised container?",
+      "option_a": "A. Root execution, privileged mode and unrestricted host mounts",
+      "option_b": "B. Public exposure and unrestricted container communication",
+      "option_c": "C. Non-root execution, restricted capabilities and limited host access",
+      "option_d": "D. Disabling monitoring and resource limits",
+      "correct_answer": "C",
+      "explanation": "These controls reduce the privileges available to compromised processes and limit their ability to affect the host."
+    },
+    {
+      "question": "What is the primary purpose of a container image?",
+      "option_a": "A. To provide an immutable packaged template containing the application and required components",
+      "option_b": "B. To act as a live monitoring service",
+      "option_c": "C. To manage Kubernetes RBAC permissions",
+      "option_d": "D. To replace the Docker Engine",
+      "correct_answer": "A",
+      "explanation": "A container image packages application code, runtime, libraries, dependencies, configuration and potentially OS components."
+    },
+    {
+      "question": "Which sequence correctly represents the basic process of creating and running a container?",
+      "option_a": "A. Docker Run → Dockerfile → Registry → Build",
+      "option_b": "B. Registry → Container → Dockerfile → Build",
+      "option_c": "C. Container → Dockerfile → Image → Build",
+      "option_d": "D. Dockerfile → Docker Build → Container Image → Docker Run → Running Container",
+      "correct_answer": "D",
+      "explanation": "A Dockerfile provides build instructions, Docker Build produces an image, and Docker Run creates a running container."
+    },
+    {
+      "question": "How are container images commonly structured?",
+      "option_a": "A. As independent virtual machines",
+      "option_b": "B. As multiple stacked layers",
+      "option_c": "C. As a single mandatory executable file",
+      "option_d": "D. As Kubernetes network policies",
+      "correct_answer": "B",
+      "explanation": "Container images are composed of stacked layers, with Dockerfile instructions contributing to the image structure."
+    },
+    {
+      "question": "A vulnerable package exists in an underlying image layer. What is the security implication?",
+      "option_a": "A. The vulnerability automatically disappears when the container starts",
+      "option_b": "B. The vulnerability affects only the Docker Client",
+      "option_c": "C. The vulnerable component may remain part of the final image",
+      "option_d": "D. The container becomes isolated from the host kernel",
+      "correct_answer": "C",
+      "explanation": "Insecure packages in underlying layers can introduce vulnerabilities into the final image."
+    },
+    {
+      "question": "Which base image selection is most appropriate for a production application?",
+      "option_a": "A. A trusted, maintained and minimal base image containing only required components",
+      "option_b": "B. An unknown image downloaded from an unverified source",
+      "option_c": "C. An outdated image with unnecessary development tools",
+      "option_d": "D. An image with disabled integrity verification",
+      "correct_answer": "A",
+      "explanation": "Trusted and minimal base images reduce unnecessary components and the potential attack surface."
+    },
+    {
+      "question": "Why should organizations regularly update their base images?",
+      "option_a": "A. To increase the number of image layers",
+      "option_b": "B. To eliminate the need for runtime monitoring",
+      "option_c": "C. To prevent containers from sharing the host kernel",
+      "option_d": "D. To obtain security fixes and reduce exposure to known vulnerabilities",
+      "correct_answer": "D",
+      "explanation": "Updating base images helps incorporate security patches and address known vulnerabilities in their components."
+    },
+    {
+      "question": "What is the primary function of a container image vulnerability scanner?",
+      "option_a": "A. To automatically rewrite all application source code",
+      "option_b": "B. To identify known vulnerabilities in packages, libraries and dependencies",
+      "option_c": "C. To manage container network routing",
+      "option_d": "D. To authenticate Kubernetes users",
+      "correct_answer": "B",
+      "explanation": "Image scanners compare image components against vulnerability information to identify known security issues."
+    },
+    {
+      "question": "Which sequence correctly represents the image vulnerability assessment process?",
+      "option_a": "A. Deploy → Delete → Build → Monitor",
+      "option_b": "B. Registry → Deployment → Build → Testing",
+      "option_c": "C. Scan image → Compare with vulnerability database → Assess findings → Fix → Rescan",
+      "option_d": "D. Build → Deploy → Disable scanner → Release",
+      "correct_answer": "C",
+      "explanation": "Image scanning identifies vulnerabilities, which must be assessed, remediated and checked again through rescanning."
+    },
+    {
+      "question": "Which of the following is a container image vulnerability scanning tool?",
+      "option_a": "A. Trivy",
+      "option_b": "B. Wireshark",
+      "option_c": "C. Nmap",
+      "option_d": "D. Metasploit",
+      "correct_answer": "A",
+      "explanation": "Trivy is a container image vulnerability scanner. Other lecture examples include Grype, Docker Scout and Clair."
+    },
+    {
+      "question": "A scanner reports a HIGH-severity OpenSSL vulnerability with an available fix. What is the most appropriate next step?",
+      "option_a": "A. Ignore the finding because the application is already running",
+      "option_b": "B. Remove the vulnerability report from the registry",
+      "option_c": "C. Disable all future vulnerability scans",
+      "option_d": "D. Assess the risk, update the affected component and rescan the image",
+      "correct_answer": "D",
+      "explanation": "Findings should be assessed and remediated where appropriate, followed by another scan to verify the fix."
+    },
+    {
+      "question": "Which security control helps prevent unauthorized parties from uploading images to a container registry?",
+      "option_a": "A. Resource limits",
+      "option_b": "B. Registry authentication and role-based access control",
+      "option_c": "C. Read-only container filesystems",
+      "option_d": "D. Kubernetes health checks",
+      "correct_answer": "B",
+      "explanation": "Authentication verifies identities, while role-based access restricts registry operations to authorized users."
+    },
+    {
+      "question": "Why should container images be signed and verified?",
+      "option_a": "A. To reduce the size of the container image",
+      "option_b": "B. To eliminate all vulnerabilities in image dependencies",
+      "option_c": "C. To establish image origin and integrity and detect unauthorized modification",
+      "option_d": "D. To automatically grant administrator privileges",
+      "correct_answer": "C",
+      "explanation": "Image signatures help verify provenance and integrity, reducing the risk of deploying unauthorized or tampered images."
+    },
+    {
+      "question": "An organization uses a private registry but allows every developer to upload images. What is the main security concern?",
+      "option_a": "A. Excessively broad registry permissions may allow unauthorized or malicious image uploads",
+      "option_b": "B. Private registries cannot store container images",
+      "option_c": "C. Container images cannot be scanned in private registries",
+      "option_d": "D. Docker images automatically become virtual machines",
+      "correct_answer": "A",
+      "explanation": "Private registries still require appropriate authentication and role-based access controls to prevent unauthorized uploads."
+    },
+    {
+      "question": "Which approach is insecure for managing application credentials?",
+      "option_a": "A. Using Docker secrets",
+      "option_b": "B. Using an external secrets manager",
+      "option_c": "C. Using an appropriately secured Kubernetes Secret",
+      "option_d": "D. Hard-coding passwords in a Dockerfile",
+      "correct_answer": "D",
+      "explanation": "Hard-coded credentials may become embedded in image layers and exposed through distributed images."
+    },
+    {
+      "question": "A company needs to manage database passwords without embedding them in application images. Which approach is most appropriate?",
+      "option_a": "A. Add passwords to Dockerfile instructions",
+      "option_b": "B. Use a dedicated secrets management solution",
+      "option_c": "C. Commit credentials to a public Git repository",
+      "option_d": "D. Store credentials in application comments",
+      "correct_answer": "B",
+      "explanation": "Dedicated secret management systems provide a safer way to store and manage sensitive credentials."
+    },
+    {
+      "question": "Which of the following is an example of an external secrets management solution mentioned in the lecture?",
+      "option_a": "A. Docker Client",
+      "option_b": "B. Trivy",
+      "option_c": "C. HashiCorp Vault",
+      "option_d": "D. Kubernetes Scheduler",
+      "correct_answer": "C",
+      "explanation": "HashiCorp Vault is an external secret management solution. Other examples include AWS Secrets Manager and Azure Key Vault."
+    },
+    {
+      "question": "Why can storing a password in an image through an ENV instruction be dangerous?",
+      "option_a": "A. The password may be exposed through image layers or image inspection",
+      "option_b": "B. The password automatically becomes encrypted by the host kernel",
+      "option_c": "C. The password is immediately deleted after Docker Build",
+      "option_d": "D. The instruction prevents the container from starting",
+      "correct_answer": "A",
+      "explanation": "Credentials included in Dockerfile instructions can become part of image metadata or layers and may be exposed to image users."
+    },
+    {
+      "question": "Which combination represents the main areas of container runtime security?",
+      "option_a": "A. Source code formatting, documentation and version control",
+      "option_b": "B. Image creation, repository naming and software licensing",
+      "option_c": "C. Hardware procurement, employee training and budgeting",
+      "option_d": "D. User security, filesystem security, resource security, network security and monitoring",
+      "correct_answer": "D",
+      "explanation": "Runtime security protects the container while executing through restrictions on users, filesystems, resources, networking and behavior."
+    },
+    {
+      "question": "A container consumes all available memory and causes other workloads to become unavailable. Which control would best mitigate this risk?",
+      "option_a": "A. Image signing",
+      "option_b": "B. CPU and memory resource limits",
+      "option_c": "C. Registry authentication",
+      "option_d": "D. Dependency version pinning",
+      "correct_answer": "B",
+      "explanation": "Resource limits restrict container resource consumption and help prevent resource exhaustion."
+    },
+    {
+      "question": "Which of the following is a possible cause of container escape?",
+      "option_a": "A. Using an authenticated private registry",
+      "option_b": "B. Applying network segmentation",
+      "option_c": "C. A vulnerable container runtime or operating system kernel",
+      "option_d": "D. Scanning images before deployment",
+      "correct_answer": "C",
+      "explanation": "Kernel and container runtime vulnerabilities can undermine isolation and enable an attacker to access host resources."
+    },
+    {
+      "question": "A containerized application is compromised. The attacker then exploits an outdated host kernel and accesses the underlying operating system. Which attack sequence is demonstrated?",
+      "option_a": "A. Application compromise followed by container escape",
+      "option_b": "B. Image signing followed by image verification",
+      "option_c": "C. Registry authentication followed by deployment",
+      "option_d": "D. Network segmentation followed by load balancing",
+      "correct_answer": "A",
+      "explanation": "A compromised container can become a stepping stone for exploiting kernel vulnerabilities and breaking out to the host."
+    },
+    {
+      "question": "Which preventive control directly addresses excessive container privileges that could facilitate container escape?",
+      "option_a": "A. Increasing the number of exposed ports",
+      "option_b": "B. Running all containers in privileged mode",
+      "option_c": "C. Disabling host security updates",
+      "option_d": "D. Applying least privilege and restricting Linux capabilities",
+      "correct_answer": "D",
+      "explanation": "Least privilege and capability restrictions reduce the permissions available to container processes."
+    },
+    {
+      "question": "A web container exposes several unnecessary ports to the public internet. Which security principle should guide remediation?",
+      "option_a": "A. Maximum connectivity",
+      "option_b": "B. Expose only the ports required by the application",
+      "option_c": "C. Disable all container isolation",
+      "option_d": "D. Allow unrestricted inbound and outbound communication",
+      "correct_answer": "B",
+      "explanation": "Exposing only required ports reduces the attack surface and limits unnecessary network access."
+    },
+    {
+      "question": "Why is network segmentation important for container security?",
+      "option_a": "A. It guarantees that images contain no vulnerabilities",
+      "option_b": "B. It replaces the need for authentication",
+      "option_c": "C. It restricts unnecessary communication and reduces opportunities for lateral movement",
+      "option_d": "D. It gives every container access to the host network",
+      "correct_answer": "C",
+      "explanation": "Segmentation limits communication between workloads and reduces the ability of an attacker to move laterally."
+    },
+    {
+      "question": "A compromised application container can communicate with every other container, including unrelated services. Which security control would most directly reduce this risk?",
+      "option_a": "A. Restrict container-to-container communication using network segmentation",
+      "option_b": "B. Increase image layer count",
+      "option_c": "C. Disable vulnerability scanning",
+      "option_d": "D. Use larger base images",
+      "correct_answer": "A",
+      "explanation": "Restricting unnecessary communication limits lateral movement and reduces the impact of a compromised container."
+    },
+    {
+      "question": "An organization operates hundreds of containers across multiple servers. Which technology addresses the complexity of managing these workloads?",
+      "option_a": "A. Dockerfile",
+      "option_b": "B. Image signing",
+      "option_c": "C. Static code analysis",
+      "option_d": "D. Container orchestration",
+      "correct_answer": "D",
+      "explanation": "Container orchestration automates deployment, scaling, networking, load balancing, health monitoring and recovery."
+    },
+    {
+      "question": "Which of the following is NOT identified as a core container orchestration responsibility in the lecture?",
+      "option_a": "A. Automated scaling",
+      "option_b": "B. Manual source-code vulnerability remediation",
+      "option_c": "C. Service discovery",
+      "option_d": "D. Health monitoring",
+      "correct_answer": "B",
+      "explanation": "Orchestration manages container workloads and their operations; manual source-code remediation is a development and security activity."
+    },
+    {
+      "question": "What is Kubernetes?",
+      "option_a": "A. A container image vulnerability database",
+      "option_b": "B. A programming language for writing Dockerfiles",
+      "option_c": "C. An open-source container orchestration platform",
+      "option_d": "D. A replacement for every operating system",
+      "correct_answer": "C",
+      "explanation": "Kubernetes deploys, manages, scales and operates containerized applications."
+    },
+    {
+      "question": "A Kubernetes deployment has several failed containers. Which capability can help maintain the desired workload state?",
+      "option_a": "A. Automatically restarting failed containers",
+      "option_b": "B. Disabling the container runtime",
+      "option_c": "C. Removing all application replicas",
+      "option_d": "D. Storing credentials in Dockerfiles",
+      "correct_answer": "A",
+      "explanation": "Kubernetes can automatically restart failed containers and manage workloads to maintain the desired state."
+    },
+    {
+      "question": "Which Kubernetes capability allows applications to handle increasing workloads by adding more instances?",
+      "option_a": "A. Image signing",
+      "option_b": "B. Secret encryption",
+      "option_c": "C. Container escape prevention",
+      "option_d": "D. Scaling",
+      "correct_answer": "D",
+      "explanation": "Kubernetes scaling allows workloads to increase or decrease their running instances based on requirements."
+    },
+    {
+      "question": "Which two major parts form the basic Kubernetes cluster architecture?",
+      "option_a": "A. Docker Client and Docker Registry",
+      "option_b": "B. Control Plane and Worker Nodes",
+      "option_c": "C. Image Scanner and Security Gate",
+      "option_d": "D. Source Repository and Artifact Repository",
+      "correct_answer": "B",
+      "explanation": "A Kubernetes cluster consists primarily of a Control Plane and Worker Nodes."
+    },
+    {
+      "question": "Which Kubernetes component is responsible for exposing the cluster API?",
+      "option_a": "A. Scheduler",
+      "option_b": "B. Kubelet",
+      "option_c": "C. API Server",
+      "option_d": "D. Container Runtime",
+      "correct_answer": "C",
+      "explanation": "The API Server provides the Kubernetes API and acts as the main interface for cluster operations."
+    },
+    {
+      "question": "A newly created Pod must be assigned to an appropriate worker node. Which Control Plane component performs this responsibility?",
+      "option_a": "A. Scheduler",
+      "option_b": "B. Kubelet",
+      "option_c": "C. Container Runtime",
+      "option_d": "D. Docker Registry",
+      "correct_answer": "A",
+      "explanation": "The Kubernetes Scheduler selects an appropriate worker node for Pods that have not yet been assigned."
+    },
+    {
+      "question": "Which Kubernetes component maintains the cluster's configuration and state data?",
+      "option_a": "A. Kubelet",
+      "option_b": "B. Scheduler",
+      "option_c": "C. Container Runtime",
+      "option_d": "D. etcd",
+      "correct_answer": "D",
+      "explanation": "etcd is the distributed key-value store used by Kubernetes to store cluster state and configuration data."
+    },
+    {
+      "question": "Which component runs on worker nodes and communicates with the Kubernetes Control Plane to manage node workloads?",
+      "option_a": "A. API Server",
+      "option_b": "B. Kubelet",
+      "option_c": "C. Controller Manager",
+      "option_d": "D. etcd",
+      "correct_answer": "B",
+      "explanation": "Kubelet is the node agent responsible for ensuring that the containers described by Pod specifications are running."
+    },
+    {
+      "question": "Which of the following is a Kubernetes security challenge?",
+      "option_a": "A. Automatically restarting failed Pods",
+      "option_b": "B. Using service discovery",
+      "option_c": "C. An exposed API Server",
+      "option_d": "D. Performing rolling updates",
+      "correct_answer": "C",
+      "explanation": "An exposed or inadequately secured API Server can provide attackers with an entry point into cluster management."
+    },
+    {
+      "question": "What is the primary purpose of Kubernetes Role-Based Access Control (RBAC)?",
+      "option_a": "A. To control which identities can access resources and which actions they can perform",
+      "option_b": "B. To scan container images for vulnerabilities",
+      "option_c": "C. To automatically encrypt all application traffic",
+      "option_d": "D. To schedule Pods across worker nodes",
+      "correct_answer": "A",
+      "explanation": "RBAC manages access to Kubernetes resources by associating identities with permissions."
+    },
+    {
+      "question": "A developer needs to view Pods and deploy applications but must not delete namespaces or access unrelated application secrets. Which RBAC approach is appropriate?",
+      "option_a": "A. Assign unrestricted cluster-admin permissions",
+      "option_b": "B. Disable authentication for the developer",
+      "option_c": "C. Give the developer access to every namespace",
+      "option_d": "D. Grant only the specific permissions required for the developer's responsibilities",
+      "correct_answer": "D",
+      "explanation": "Least-privilege RBAC provides only the resource permissions required for the developer's job."
+    },
+    {
+      "question": "Why should development and production Kubernetes access be separated?",
+      "option_a": "A. To make every developer a cluster administrator",
+      "option_b": "B. To reduce the risk that development credentials or mistakes affect production",
+      "option_c": "C. To eliminate the need for role-based access control",
+      "option_d": "D. To allow unrestricted access to production secrets",
+      "correct_answer": "B",
+      "explanation": "Separating environments limits access and reduces the potential impact of compromised credentials or accidental changes."
+    },
+    {
+      "question": "A user can deploy applications but also modify cluster-wide security policies. What is the most likely problem?",
+      "option_a": "A. Insufficient image layers",
+      "option_b": "B. Missing container resource limits",
+      "option_c": "C. Excessive RBAC permissions",
+      "option_d": "D. Incorrect image signing",
+      "correct_answer": "C",
+      "explanation": "The user has permissions beyond their application deployment responsibilities, violating least privilege."
+    },
+    {
+      "question": "Which Kubernetes object is designed to store sensitive configuration such as passwords, tokens and API keys?",
+      "option_a": "A. Secret",
+      "option_b": "B. Deployment",
+      "option_c": "C. Service",
+      "option_d": "D. Node",
+      "correct_answer": "A",
+      "explanation": "Kubernetes provides Secret objects for storing sensitive configuration used by applications."
+    },
+    {
+      "question": "Why should Kubernetes Secrets not automatically be considered equivalent to dedicated enterprise secret managers?",
+      "option_a": "A. Kubernetes cannot use credentials",
+      "option_b": "B. Kubernetes Secrets are always stored in public registries",
+      "option_c": "C. Kubernetes Secrets cannot be accessed by applications",
+      "option_d": "D. They still require appropriate access restrictions, encryption and security configuration",
+      "correct_answer": "D",
+      "explanation": "Kubernetes Secrets require appropriate RBAC restrictions and encryption at rest and may benefit from integration with external secret-management solutions."
+    },
+    {
+      "question": "Which measure should be applied to protect Kubernetes Secrets?",
+      "option_a": "A. Give all namespaces unrestricted access",
+      "option_b": "B. Restrict access through RBAC and encrypt secrets at rest",
+      "option_c": "C. Commit secrets to source control",
+      "option_d": "D. Expose secrets through public application endpoints",
+      "correct_answer": "B",
+      "explanation": "RBAC restrictions and encryption at rest reduce the risk of unauthorized access to Kubernetes Secrets."
+    },
+    {
+      "question": "An organization wants centralized enterprise-level management of Kubernetes application credentials. Which option is appropriate?",
+      "option_a": "A. A public Docker registry",
+      "option_b": "B. A Kubernetes Scheduler",
+      "option_c": "C. HashiCorp Vault",
+      "option_d": "D. A container health check",
+      "correct_answer": "C",
+      "explanation": "HashiCorp Vault is an external secret-management solution that can be used alongside Kubernetes."
+    },
+    {
+      "question": "What is the purpose of Kubernetes NetworkPolicy?",
+      "option_a": "A. To control which Pods, namespaces and traffic are allowed to communicate",
+      "option_b": "B. To assign CPU limits to worker nodes",
+      "option_c": "C. To manage container image versions",
+      "option_d": "D. To replace Kubernetes RBAC",
+      "correct_answer": "A",
+      "explanation": "NetworkPolicy defines network traffic restrictions between workloads and namespaces."
+    },
+    {
+      "question": "A security team wants to enforce the communication path Frontend → Backend → Database, preventing direct Frontend → Database access. Which control is most appropriate?",
+      "option_a": "A. Docker image signing",
+      "option_b": "B. Kubernetes Scheduler configuration",
+      "option_c": "C. Container resource limits",
+      "option_d": "D. Kubernetes NetworkPolicy",
+      "correct_answer": "D",
+      "explanation": "NetworkPolicy can restrict Pod-to-Pod communication so that only explicitly permitted network paths are available."
+    },
+    {
+      "question": "How does restricting Pod-to-Pod communication reduce the impact of a compromised Pod?",
+      "option_a": "A. It guarantees the compromised Pod will immediately stop running",
+      "option_b": "B. It reduces unnecessary access to other workloads and limits lateral movement",
+      "option_c": "C. It automatically repairs vulnerable application dependencies",
+      "option_d": "D. It prevents all external network communication by default in every cluster",
+      "correct_answer": "B",
+      "explanation": "Restricting communication limits the destinations a compromised Pod can reach and reduces opportunities for lateral movement."
+    },
+    {
+      "question": "Which Kubernetes security mechanism defines settings such as users, Linux capabilities, filesystem permissions and privilege escalation?",
+      "option_a": "A. Docker Registry",
+      "option_b": "B. Kubernetes Scheduler",
+      "option_c": "C. Security Context",
+      "option_d": "D. Container Image Scanner",
+      "correct_answer": "C",
+      "explanation": "Security Context defines security-related settings for Pods and containers."
+    },
+    {
+      "question": "A container in Kubernetes does not require elevated permissions. Which configuration is most appropriate?",
+      "option_a": "A. Run as non-root and prevent privilege escalation",
+      "option_b": "B. Enable privileged mode",
+      "option_c": "C. Grant every Linux capability",
+      "option_d": "D. Mount the entire host filesystem",
+      "correct_answer": "A",
+      "explanation": "Non-root execution and preventing privilege escalation enforce least privilege."
+    },
+    {
+      "question": "Why should Kubernetes workloads define resource limits?",
+      "option_a": "A. To allow unlimited CPU and memory consumption",
+      "option_b": "B. To automatically sign container images",
+      "option_c": "C. To provide access to all cluster secrets",
+      "option_d": "D. To prevent individual workloads from consuming excessive resources",
+      "correct_answer": "D",
+      "explanation": "Resource limits constrain CPU and memory consumption, helping protect cluster availability."
+    },
+    {
+      "question": "A Kubernetes administrator allows a workload to run in privileged mode, use all Linux capabilities and access host resources. What is the most serious concern?",
+      "option_a": "A. Increased image portability",
+      "option_b": "B. Reduced isolation and an increased risk of host compromise",
+      "option_c": "C. Faster vulnerability remediation",
+      "option_d": "D. Improved RBAC separation",
+      "correct_answer": "B",
+      "explanation": "Privileged workloads have substantially expanded access, which can make container escape and host compromise more likely."
+    },
+    {
+      "question": "Which statement best describes container security within DevSecOps?",
+      "option_a": "A. Security should only be evaluated after production deployment",
+      "option_b": "B. Only container images require security controls",
+      "option_c": "C. Security controls should be integrated throughout the container lifecycle",
+      "option_d": "D. Runtime monitoring replaces build-time security",
+      "correct_answer": "C",
+      "explanation": "Container security should cover development, build, testing, storage, deployment, runtime and monitoring."
+    },
+    {
+      "question": "Which security activity is most appropriate during the container build stage?",
+      "option_a": "A. Secure Dockerfile validation and image vulnerability scanning",
+      "option_b": "B. Employee payroll auditing",
+      "option_c": "C. Production incident response only",
+      "option_d": "D. Manual deletion of all registry images",
+      "correct_answer": "A",
+      "explanation": "The build stage is an appropriate point to validate Dockerfiles and scan container images."
+    },
+    {
+      "question": "Which control is most appropriate at the registry stage of a secure container delivery lifecycle?",
+      "option_a": "A. Manual application debugging",
+      "option_b": "B. Developer source-code formatting",
+      "option_c": "C. Production CPU allocation",
+      "option_d": "D. Image signing and registry access control",
+      "correct_answer": "D",
+      "explanation": "Image signing, verification and access control protect stored images and their distribution."
+    },
+    {
+      "question": "What is Continuous Integration (CI)?",
+      "option_a": "A. Automatically deploying every change to production without testing",
+      "option_b": "B. Frequently integrating code changes into a shared repository and automatically building and testing them",
+      "option_c": "C. Performing security testing only after production deployment",
+      "option_d": "D. Manually installing applications on individual servers",
+      "correct_answer": "B",
+      "explanation": "CI involves frequent code integration supported by automated build and testing processes."
+    },
+    {
+      "question": "What is the main distinction between Continuous Delivery and Continuous Deployment?",
+      "option_a": "A. Continuous Delivery eliminates testing, while Continuous Deployment requires manual testing",
+      "option_b": "B. Both require every deployment to be manually approved",
+      "option_c": "C. Continuous Delivery prepares validated software for release, while Continuous Deployment automatically deploys validated changes to production",
+      "option_d": "D. Continuous Deployment applies only to container image creation",
+      "correct_answer": "C",
+      "explanation": "Continuous Delivery keeps software ready for release, whereas Continuous Deployment automatically releases validated changes to production."
+    },
+    {
+      "question": "A company performs security testing only after completing development and deployment preparation. What is the major disadvantage?",
+      "option_a": "A. Vulnerabilities may be discovered late, increasing remediation effort and cost",
+      "option_b": "B. Developers receive security feedback too early",
+      "option_c": "C. Every dependency becomes automatically secure",
+      "option_d": "D. Security checks become unnecessary",
+      "correct_answer": "A",
+      "explanation": "Late security testing allows vulnerabilities to progress through development and can make remediation more expensive."
+    },
+    {
+      "question": "Which is a major benefit of integrating security into CI/CD?",
+      "option_a": "A. Removing all developer responsibilities",
+      "option_b": "B. Eliminating the need for application testing",
+      "option_c": "C. Guaranteeing that no vulnerabilities will ever exist",
+      "option_d": "D. Earlier vulnerability detection and faster feedback",
+      "correct_answer": "D",
+      "explanation": "Automated security testing provides earlier feedback, reducing remediation costs and improving consistency."
+    },
+    {
+      "question": "Which security activity is most appropriate during the source-code stage of a CI/CD pipeline?",
+      "option_a": "A. Production infrastructure monitoring",
+      "option_b": "B. SAST and secret scanning",
+      "option_c": "C. Container runtime behavior monitoring only",
+      "option_d": "D. Artifact deployment",
+      "correct_answer": "B",
+      "explanation": "SAST and secret scanning can identify source-code weaknesses and exposed credentials early in development."
+    },
+    {
+      "question": "Which security activity is most appropriate during the infrastructure stage?",
+      "option_a": "A. Image signing",
+      "option_b": "B. Session management testing",
+      "option_c": "C. Infrastructure as Code scanning",
+      "option_d": "D. Container restart management",
+      "correct_answer": "C",
+      "explanation": "IaC scanning checks infrastructure configuration files for insecure settings before provisioning."
+    },
+    {
+      "question": "What does Shift-Left Security mean?",
+      "option_a": "A. Moving security activities earlier in the software development lifecycle",
+      "option_b": "B. Moving all security activities to production",
+      "option_c": "C. Removing security testing from development",
+      "option_d": "D. Performing security checks only after deployment",
+      "correct_answer": "A",
+      "explanation": "Shift-left security moves security testing and controls toward earlier development stages."
+    },
+    {
+      "question": "A developer adds a vulnerable third-party dependency. An automated scan detects it before the application is built. Which concept is demonstrated?",
+      "option_a": "A. Container escape",
+      "option_b": "B. Runtime monitoring",
+      "option_c": "C. Artifact signing",
+      "option_d": "D. Shift-left security",
+      "correct_answer": "D",
+      "explanation": "Detecting dependency vulnerabilities early allows developers to fix them before they progress further through the pipeline."
+    },
+    {
+      "question": "Why does Shift-Left Security generally reduce remediation costs?",
+      "option_a": "A. It prevents developers from writing code",
+      "option_b": "B. It eliminates the need for security tools",
+      "option_c": "C. Issues are identified earlier, before they become more expensive to fix",
+      "option_d": "D. It transfers every security issue to production teams",
+      "correct_answer": "C",
+      "explanation": "Earlier detection reduces the time and effort required to correct vulnerabilities later in the development lifecycle."
+    },
+    {
+      "question": "What is Static Application Security Testing (SAST)?",
+      "option_a": "A. Testing a running application by sending simulated attacks",
+      "option_b": "B. Analyzing source code or compiled code without executing the application",
+      "option_c": "C. Scanning only container registries",
+      "option_d": "D. Monitoring production network traffic",
+      "correct_answer": "B",
+      "explanation": "SAST analyzes application code without executing the application to identify potential security weaknesses."
+    },
+    {
+      "question": "Which vulnerability can SAST potentially identify?",
+      "option_a": "A. Hardcoded credentials",
+      "option_b": "B. A compromised physical server",
+      "option_c": "C. An unauthorized external network connection observed in production",
+      "option_d": "D. A stolen laptop",
+      "correct_answer": "A",
+      "explanation": "SAST can identify hardcoded credentials, SQL injection weaknesses, insecure functions and weak cryptography in code."
+    },
+    {
+      "question": "Which tool is an example of SAST?",
+      "option_a": "A. OWASP ZAP",
+      "option_b": "B. Docker Scout",
+      "option_c": "C. Kubernetes Scheduler",
+      "option_d": "D. Semgrep",
+      "correct_answer": "D",
+      "explanation": "Semgrep is a static analysis tool. Other lecture examples include SonarQube, Checkmarx and Fortify."
+    },
+    {
+      "question": "What is Software Composition Analysis (SCA)?",
+      "option_a": "A. Testing application authentication through simulated attacks",
+      "option_b": "B. Monitoring container processes",
+      "option_c": "C. Identifying vulnerabilities and other risks in third-party software dependencies",
+      "option_d": "D. Encrypting Kubernetes network traffic",
+      "correct_answer": "C",
+      "explanation": "SCA analyzes application dependencies, including versions, known vulnerabilities, licenses and dependency relationships."
+    },
+    {
+      "question": "An application depends on Flask, Requests and OpenSSL. The security team wants to identify known vulnerabilities in these libraries. Which tool category should be used?",
+      "option_a": "A. DAST",
+      "option_b": "B. SCA",
+      "option_c": "C. NetworkPolicy",
+      "option_d": "D. Container orchestration",
+      "correct_answer": "B",
+      "explanation": "SCA identifies vulnerabilities and outdated packages in third-party libraries and dependencies."
+    },
+    {
+      "question": "Which of the following is an SCA tool mentioned in the lecture?",
+      "option_a": "A. Snyk",
+      "option_b": "B. Nmap",
+      "option_c": "C. Wireshark",
+      "option_d": "D. OWASP ZAP",
+      "correct_answer": "A",
+      "explanation": "Snyk is an SCA tool. Other lecture examples include OWASP Dependency-Check and Dependabot."
+    },
+    {
+      "question": "Which type of information can SCA provide in addition to known dependency vulnerabilities?",
+      "option_a": "A. Physical server temperature",
+      "option_b": "B. Container process memory usage",
+      "option_c": "C. Kubernetes Pod scheduling decisions",
+      "option_d": "D. Software license information and dependency relationships",
+      "correct_answer": "D",
+      "explanation": "SCA can examine dependency versions, vulnerability information, license details and dependency relationships."
+    },
+    {
+      "question": "A developer accidentally commits an AWS access key to a Git repository. Which automated security control should detect this?",
+      "option_a": "A. DAST",
+      "option_b": "B. Network segmentation",
+      "option_c": "C. Secret scanning",
+      "option_d": "D. Container resource monitoring",
+      "correct_answer": "C",
+      "explanation": "Secret scanning detects exposed credentials such as AWS access keys, API tokens and database passwords."
+    },
+    {
+      "question": "An automated secret scanner detects a committed cloud credential. What should happen immediately?",
+      "option_a": "A. Rotate or revoke the exposed credential and prevent its further use",
+      "option_b": "B. Ignore the finding because the repository is private",
+      "option_c": "C. Copy the credential into another source file",
+      "option_d": "D. Disable secret scanning permanently",
+      "correct_answer": "A",
+      "explanation": "Exposed credentials should be rotated or revoked immediately because removing them from the latest commit does not guarantee that they are no longer accessible."
+    },
+    {
+      "question": "Which tool is specifically associated with secret scanning in the lecture?",
+      "option_a": "A. Grype",
+      "option_b": "B. Gitleaks",
+      "option_c": "C. Checkov",
+      "option_d": "D. Clair",
+      "correct_answer": "B",
+      "explanation": "Gitleaks is a secret scanning tool. Other examples include GitHub Secret Scanning and TruffleHog."
+    },
+    {
+      "question": "What is Dynamic Application Security Testing (DAST)?",
+      "option_a": "A. Analyzing source code without executing it",
+      "option_b": "B. Examining third-party dependency licenses",
+      "option_c": "C. Checking infrastructure configuration files",
+      "option_d": "D. Testing a running application from the outside to identify vulnerabilities",
+      "correct_answer": "D",
+      "explanation": "DAST evaluates an application while it is running, simulating attacks from an external perspective."
+    },
+    {
+      "question": "Which vulnerability can DAST potentially identify?",
+      "option_a": "A. An outdated library version in an unused source repository",
+      "option_b": "B. A hardcoded password in an unexecuted source file",
+      "option_c": "C. An authentication weakness in a running web application",
+      "option_d": "D. A license conflict in a third-party dependency",
+      "correct_answer": "C",
+      "explanation": "DAST can identify runtime vulnerabilities such as authentication weaknesses, SQL injection, XSS and session management problems."
+    },
+    {
+      "question": "Which tool is identified in the lecture as an example of DAST?",
+      "option_a": "A. OWASP ZAP",
+      "option_b": "B. Semgrep",
+      "option_c": "C. Dependabot",
+      "option_d": "D. Checkov",
+      "correct_answer": "A",
+      "explanation": "OWASP ZAP is a dynamic application security testing tool."
+    },
+    {
+      "question": "Which statement correctly distinguishes SAST from DAST?",
+      "option_a": "A. SAST only scans networks, while DAST only scans registries",
+      "option_b": "B. SAST analyzes code without execution, while DAST tests a running application",
+      "option_c": "C. SAST manages secrets, while DAST manages Kubernetes RBAC",
+      "option_d": "D. Both exclusively analyze third-party dependencies",
+      "correct_answer": "B",
+      "explanation": "SAST examines application code without running it, whereas DAST evaluates the behavior of a running application."
+    },
+    {
+      "question": "An application contains an insecure input-validation function in its source code, but the vulnerable endpoint has not yet been deployed. Which approach is most suitable for detecting the weakness?",
+      "option_a": "A. Runtime network monitoring",
+      "option_b": "B. Kubernetes NetworkPolicy",
+      "option_c": "C. Registry image signing",
+      "option_d": "D. SAST",
+      "correct_answer": "D",
+      "explanation": "SAST can analyze source code and identify insecure input-validation patterns without requiring a running application."
+    },
+    {
+      "question": "A web application is running in a test environment. A security tester wants to discover exploitable authentication and session management weaknesses by interacting with it. Which approach is most appropriate?",
+      "option_a": "A. SCA",
+      "option_b": "B. IaC scanning",
+      "option_c": "C. DAST",
+      "option_d": "D. Image signing",
+      "correct_answer": "C",
+      "explanation": "DAST interacts with a running application and can identify authentication and session management weaknesses."
+    },
+    {
+      "question": "What is Infrastructure as Code (IaC)?",
+      "option_a": "A. Defining infrastructure through configuration files and code",
+      "option_b": "B. Writing only application frontend components",
+      "option_c": "C. Managing container processes manually",
+      "option_d": "D. Storing passwords directly in source code",
+      "correct_answer": "A",
+      "explanation": "IaC defines infrastructure using code or configuration, with examples including Terraform, AWS CloudFormation and Azure Bicep."
+    },
+    {
+      "question": "Which of the following is a potential IaC misconfiguration?",
+      "option_a": "A. Using a private artifact repository",
+      "option_b": "B. Creating an unrestricted public storage resource",
+      "option_c": "C. Restricting firewall access",
+      "option_d": "D. Encrypting infrastructure resources",
+      "correct_answer": "B",
+      "explanation": "Publicly exposed storage can result from insecure infrastructure configuration and is a common IaC security concern."
+    },
+    {
+      "question": "Which tool is identified in the lecture as an IaC security scanner?",
+      "option_a": "A. TruffleHog",
+      "option_b": "B. OWASP ZAP",
+      "option_c": "C. SonarQube",
+      "option_d": "D. Checkov",
+      "correct_answer": "D",
+      "explanation": "Checkov scans infrastructure configuration for security misconfigurations. Other examples include tfsec and KICS."
+    },
+    {
+      "question": "A Terraform configuration opens a firewall to all internet addresses and grants excessive permissions. When should these issues ideally be identified?",
+      "option_a": "A. Only after a production breach",
+      "option_b": "B. During runtime monitoring",
+      "option_c": "C. Before infrastructure provisioning through IaC scanning",
+      "option_d": "D. Only when deleting the infrastructure",
+      "correct_answer": "C",
+      "explanation": "IaC scanning can identify insecure firewall rules and excessive permissions before infrastructure is deployed."
+    },
+    {
+      "question": "A CI/CD pipeline builds a Docker image but does not scan it before deployment. Which security activity is missing?",
+      "option_a": "A. Container image vulnerability scanning",
+      "option_b": "B. Employee identity verification",
+      "option_c": "C. Source-code formatting",
+      "option_d": "D. Kubernetes node scheduling",
+      "correct_answer": "A",
+      "explanation": "Container images should be scanned for vulnerabilities before they are approved for deployment."
+    },
+    {
+      "question": "What is an SBOM?",
+      "option_a": "A. A Kubernetes network access policy",
+      "option_b": "B. A Docker container runtime",
+      "option_c": "C. A static application security scanner",
+      "option_d": "D. A Software Bill of Materials describing software components and dependencies",
+      "correct_answer": "D",
+      "explanation": "An SBOM provides an inventory of software components and dependencies, supporting software supply-chain visibility."
+    },
+    {
+      "question": "Which collection of checks is most appropriate before approving a container image for deployment?",
+      "option_a": "A. Only verify that the container starts successfully",
+      "option_b": "B. Scan vulnerabilities and dependencies, detect secrets, validate the Dockerfile and verify image signatures",
+      "option_c": "C. Check only the application's user interface",
+      "option_d": "D. Disable all image security controls after building",
+      "correct_answer": "B",
+      "explanation": "A secure container pipeline should include image and dependency scanning, secret detection, Dockerfile validation and image signature verification."
+    },
+    {
+      "question": "A container image contains a critical vulnerability. The pipeline's policy states that critical vulnerabilities are prohibited. What should happen?",
+      "option_a": "A. The image should be deployed because the build succeeded",
+      "option_b": "B. The scanner should be disabled",
+      "option_c": "C. The pipeline should fail and deployment should be blocked",
+      "option_d": "D. The vulnerability should be hidden from the report",
+      "correct_answer": "C",
+      "explanation": "A security gate should block the pipeline when a defined security policy is violated."
+    },
+    {
+      "question": "What is a security gate in CI/CD?",
+      "option_a": "A. An automated condition determining whether a build can proceed to the next stage",
+      "option_b": "B. A physical firewall installed in a data center",
+      "option_c": "C. A manual code editor",
+      "option_d": "D. A container image registry",
+      "correct_answer": "A",
+      "explanation": "Security gates enforce predefined security requirements and allow or block pipeline progression."
+    },
+    {
+      "question": "A pipeline policy allows at most five medium vulnerabilities but prohibits any critical vulnerability or exposed secret. Which result should pass?",
+      "option_a": "A. One critical vulnerability and zero secrets",
+      "option_b": "B. Six medium vulnerabilities and zero critical vulnerabilities",
+      "option_c": "C. Zero vulnerabilities and one exposed secret",
+      "option_d": "D. Four medium vulnerabilities, zero critical vulnerabilities and no exposed secrets",
+      "correct_answer": "D",
+      "explanation": "Four medium vulnerabilities satisfy the maximum of five, while no critical vulnerabilities or exposed secrets are present."
+    },
+    {
+      "question": "Which security activity should be automated whenever new code is committed?",
+      "option_a": "A. Manual production database modification",
+      "option_b": "B. Automated code scanning",
+      "option_c": "C. Physical server replacement",
+      "option_d": "D. Manual deletion of dependency repositories",
+      "correct_answer": "B",
+      "explanation": "Automated code scanning on commits provides continuous security feedback."
+    },
+    {
+      "question": "What is the purpose of automated compliance checking in CI/CD?",
+      "option_a": "A. To replace all security policies with developer preferences",
+      "option_b": "B. To remove security requirements from deployment",
+      "option_c": "C. To evaluate configurations and builds against defined security policies",
+      "option_d": "D. To automatically approve every build",
+      "correct_answer": "C",
+      "explanation": "Automated compliance checks verify that configurations and software satisfy defined security requirements."
+    },
+    {
+      "question": "A CI/CD platform uses shared administrative credentials for all developers and pipeline operations. Which security improvement is most appropriate?",
+      "option_a": "A. Strong authentication, MFA and least-privilege access",
+      "option_b": "B. Publishing the credentials in the source repository",
+      "option_c": "C. Disabling audit logs",
+      "option_d": "D. Allowing anonymous pipeline modifications",
+      "correct_answer": "A",
+      "explanation": "Strong authentication, MFA and least privilege reduce the risk of credential compromise and unauthorized pipeline access."
+    },
+    {
+      "question": "Why are protected branches and code reviews important for CI/CD pipeline security?",
+      "option_a": "A. They eliminate the need for vulnerability scanning",
+      "option_b": "B. They automatically encrypt every artifact",
+      "option_c": "C. They prevent all third-party dependency vulnerabilities",
+      "option_d": "D. They reduce the risk of unauthorized or malicious changes entering the pipeline",
+      "correct_answer": "D",
+      "explanation": "Protected branches and code reviews help prevent unauthorized pipeline changes and malicious code commits."
+    },
+    {
+      "question": "A build server is compromised, and an attacker modifies the generated application package before deployment. Which security area is directly affected?",
+      "option_a": "A. Container scalability",
+      "option_b": "B. CI/CD pipeline and software supply-chain security",
+      "option_c": "C. Application user-interface design",
+      "option_d": "D. Kubernetes service discovery",
+      "correct_answer": "B",
+      "explanation": "Compromised build systems can produce tampered artifacts and undermine the integrity of the software supply chain."
+    },
+    {
+      "question": "Which control is most appropriate for protecting CI/CD-generated artifacts against unauthorized modification?",
+      "option_a": "A. Disabling registry authentication",
+      "option_b": "B. Running containers as root",
+      "option_c": "C. Artifact signing and integrity verification",
+      "option_d": "D. Removing version history",
+      "correct_answer": "C",
+      "explanation": "Signing and verifying artifacts helps establish their integrity and detect unauthorized changes."
+    },
+    {
+      "question": "What is software supply-chain security primarily concerned with?",
+      "option_a": "A. Protecting the external and internal components, tools and processes used to build and distribute software",
+      "option_b": "B. Protecting only the application's graphical interface",
+      "option_c": "C. Replacing all open-source dependencies",
+      "option_d": "D. Managing only production server hardware",
+      "correct_answer": "A",
+      "explanation": "Software supply-chain security protects dependencies, container images, build systems, APIs, package repositories and related components."
+    },
+    {
+      "question": "Which of the following could be a target of a software supply-chain attack?",
+      "option_a": "A. Only the final production user interface",
+      "option_b": "B. Only the developer's computer monitor",
+      "option_c": "C. Only the organization's physical office",
+      "option_d": "D. Open-source packages, container images, build tools and package repositories",
+      "correct_answer": "D",
+      "explanation": "Attackers may compromise any component involved in creating, distributing or deploying software."
+    },
+    {
+      "question": "How does an SBOM help an organization respond to a newly discovered vulnerability in a widely used library?",
+      "option_a": "A. It automatically removes every vulnerable package",
+      "option_b": "B. It provides an inventory that helps identify affected applications and dependencies",
+      "option_c": "C. It prevents all future dependency vulnerabilities",
+      "option_d": "D. It replaces application security testing",
+      "correct_answer": "B",
+      "explanation": "An SBOM provides visibility into software components, helping organizations identify where a vulnerable dependency is used."
+    },
+    {
+      "question": "Why is version pinning useful for software supply-chain security?",
+      "option_a": "A. It allows dependencies to change without developer awareness",
+      "option_b": "B. It disables all dependency scanning",
+      "option_c": "C. It makes dependency versions more predictable and reduces unexpected changes",
+      "option_d": "D. It automatically encrypts application source code",
+      "correct_answer": "C",
+      "explanation": "Version pinning helps control which dependency versions are used, reducing unexpected changes from external packages."
+    },
+    {
+      "question": "Which combination provides a stronger software supply-chain security strategy?",
+      "option_a": "A. Dependency scanning, SBOM generation, trusted repositories, version pinning and artifact verification",
+      "option_b": "B. Anonymous package downloads and disabled scanning",
+      "option_c": "C. Unverified images and unrestricted build-server access",
+      "option_d": "D. Hardcoded credentials and mutable artifacts",
+      "correct_answer": "A",
+      "explanation": "These controls improve component visibility, trust, integrity and the ability to identify vulnerable dependencies."
+    },
+    {
+      "question": "What is a software artifact in the context of the build process?",
+      "option_a": "A. A Kubernetes user account",
+      "option_b": "B. A security policy document only",
+      "option_c": "C. A network firewall rule",
+      "option_d": "D. A file produced during software building, such as an executable, package or container image",
+      "correct_answer": "D",
+      "explanation": "Artifacts are outputs of the build process, including executables, packages, libraries, container images and deployment packages."
+    },
+    {
+      "question": "Which practice helps protect artifacts stored in an artifact repository?",
+      "option_a": "A. Allowing unrestricted modification by anonymous users",
+      "option_b": "B. Access control, scanning, signing, integrity verification and version history",
+      "option_c": "C. Disabling authentication",
+      "option_d": "D. Removing all previous artifact versions",
+      "correct_answer": "B",
+      "explanation": "Secure artifact management requires access restrictions, scanning, integrity verification, signing and version history."
+    },
+    {
+      "question": "Why should artifacts be verified before deployment?",
+      "option_a": "A. To guarantee that the application has no programming errors",
+      "option_b": "B. To remove the need for production monitoring",
+      "option_c": "C. To confirm artifact integrity and reduce the risk of deploying unauthorized or modified files",
+      "option_d": "D. To allow every user to modify deployment packages",
+      "correct_answer": "C",
+      "explanation": "Artifact verification helps ensure that the deployed package is the intended and unmodified build output."
+    },
+    {
+      "question": "Which sequence most closely represents the complete DevSecOps CI/CD pipeline described in the lecture?",
+      "option_a": "A. Source Code → SAST → Dependency Scan → Build → Container Build → Container Scan → DAST → IaC Scan → Security Gate → Artifact Repository → Deploy → Monitor",
+      "option_b": "B. Deploy → Monitor → Source Code → Disable Security → Build",
+      "option_c": "C. Source Code → Deploy → Build → Delete Artifacts → Test",
+      "option_d": "D. Build → Deploy → Source Code → Dependency Scan → Remove Monitoring",
+      "correct_answer": "A",
+      "explanation": "The lecture describes a pipeline integrating source-code analysis, dependency scanning, build, container scanning, DAST, IaC scanning, security gates, artifact storage, deployment and monitoring."
+    },
+    {
+      "question": "In the online shopping application example, which security activity is associated with the Terraform configuration?",
+      "option_a": "A. DAST",
+      "option_b": "B. Secret rotation",
+      "option_c": "C. Container runtime monitoring",
+      "option_d": "D. IaC scanning",
+      "correct_answer": "D",
+      "explanation": "The Terraform configuration is checked for infrastructure misconfigurations through IaC scanning."
+    },
+    {
+      "question": "An online shopping application passes SAST, SCA, container scanning and IaC scanning. However, its authentication mechanism has not been tested while the application is running. Which additional activity is most appropriate?",
+      "option_a": "A. Image signing",
+      "option_b": "B. DAST",
+      "option_c": "C. Dependency version pinning",
+      "option_d": "D. Registry authentication",
+      "correct_answer": "B",
+      "explanation": "DAST tests the running application and can identify authentication and session management weaknesses that static and dependency scanning may not detect."
+    },
+    {
+      "question": "A pipeline scans source code but does not scan third-party dependencies, container images or infrastructure configurations. Which statement best describes its security coverage?",
+      "option_a": "A. It provides complete DevSecOps coverage because SAST detects every vulnerability",
+      "option_b": "B. It provides complete supply-chain protection",
+      "option_c": "C. It has significant security coverage gaps because different scanning techniques address different risk areas",
+      "option_d": "D. It makes runtime monitoring unnecessary",
+      "correct_answer": "C",
+      "explanation": "SAST alone cannot replace SCA, container scanning, IaC scanning, DAST, secret detection and runtime monitoring."
+    },
+    {
+      "question": "A company deploys a signed container image that contains a known critical vulnerability. The signature is valid, but the vulnerability policy prohibits critical findings. What should the pipeline do?",
+      "option_a": "A. Block deployment because signature validity does not establish vulnerability-free content",
+      "option_b": "B. Deploy the image because a valid signature guarantees complete security",
+      "option_c": "C. Ignore the vulnerability because image signing replaces vulnerability scanning",
+      "option_d": "D. Disable the security gate because the registry is trusted",
+      "correct_answer": "A",
+      "explanation": "Image signing establishes provenance and integrity, not the absence of vulnerabilities. The critical vulnerability policy must still be enforced."
+    },
+    {
+      "question": "A compromised frontend Pod can directly access a database. The organization wants to ensure that only the backend can communicate with the database. Which combination is most appropriate?",
+      "option_a": "A. Give the frontend Pod cluster-admin permissions",
+      "option_b": "B. Increase database container privileges",
+      "option_c": "C. Disable Kubernetes RBAC",
+      "option_d": "D. Apply NetworkPolicy rules restricting database access to authorized backend Pods",
+      "correct_answer": "D",
+      "explanation": "NetworkPolicy can restrict communication so that only authorized workloads, such as the backend, can reach the database."
+    },
+    {
+      "question": "A developer has permission to deploy an application but can also read Secrets belonging to unrelated production applications. Which remediation is most appropriate?",
+      "option_a": "A. Give all developers additional cluster-admin permissions",
+      "option_b": "B. Redesign RBAC to separate deployment permissions from access to unrelated Secrets",
+      "option_c": "C. Expose the Secrets through environment variables in public repositories",
+      "option_d": "D. Remove all authentication from the cluster",
+      "correct_answer": "B",
+      "explanation": "RBAC should follow least privilege and restrict access to secrets according to application and user responsibilities."
+    },
+    {
+      "question": "An organization uses a minimal container image, but a vulnerable package is present in an inherited base-image layer. What should the security team conclude?",
+      "option_a": "A. Minimal images cannot contain vulnerabilities",
+      "option_b": "B. The vulnerability is irrelevant because it is not in the application layer",
+      "option_c": "C. The final image may still be vulnerable and should be assessed, remediated and rescanned",
+      "option_d": "D. Image signing will automatically patch the package",
+      "correct_answer": "C",
+      "explanation": "Vulnerabilities in underlying layers may remain in the final image. Minimal images reduce attack surface but do not guarantee security."
+    },
+    {
+      "question": "A developer removes a leaked AWS key from the latest Git commit. The key was previously committed and may have been accessed by others. What is the correct response?",
+      "option_a": "A. Rotate or revoke the key immediately, investigate exposure and use secret management going forward",
+      "option_b": "B. Consider the issue resolved because the latest commit no longer contains the key",
+      "option_c": "C. Disable repository auditing",
+      "option_d": "D. Store the same key in a Dockerfile instead",
+      "correct_answer": "A",
+      "explanation": "Removing a secret from the latest commit does not invalidate copies in previous history. The exposed credential must be rotated or revoked."
+    },
+    {
+      "question": "A CI/CD pipeline detects six medium vulnerabilities, one critical vulnerability and no exposed secrets. Its policy allows at most five medium vulnerabilities and prohibits critical vulnerabilities. What is the correct decision?",
+      "option_a": "A. Pass because no secrets were detected",
+      "option_b": "B. Pass because only one critical vulnerability exists",
+      "option_c": "C. Pass because the application successfully builds",
+      "option_d": "D. Fail because both the medium-vulnerability limit and critical-vulnerability rule are violated",
+      "correct_answer": "D",
+      "explanation": "Six medium findings exceed the allowed maximum, and the critical vulnerability independently violates the policy."
+    },
+    {
+      "question": "A security team wants to identify a vulnerable open-source library, find every application using it, verify the affected container images and block unsafe releases. Which approach best supports this objective?",
+      "option_a": "A. Use only DAST against the production web application",
+      "option_b": "B. Use SCA and SBOM information, scan affected images and enforce a security gate",
+      "option_c": "C. Use only Kubernetes resource limits",
+      "option_d": "D. Disable dependency version tracking",
+      "correct_answer": "B",
+      "explanation": "SCA identifies vulnerable dependencies, SBOMs help locate affected applications, image scanning validates packaged components and security gates block non-compliant releases."
+    },
+    {
+      "question": "An attacker steals a CI/CD token and modifies the deployment pipeline to use a malicious container image. Which set of controls would provide the strongest protection?",
+      "option_a": "A. Public repositories and unrestricted deployment permissions",
+      "option_b": "B. Disable code review and artifact verification",
+      "option_c": "C. Strong authentication and MFA, least privilege, protected branches, secure build agents, secret management and artifact signing",
+      "option_d": "D. Run every build using shared administrator credentials",
+      "correct_answer": "C",
+      "explanation": "These controls protect identities, pipeline configuration, build infrastructure, secrets and the integrity of deployment artifacts."
+    },
+    {
+      "question": "An application passes SAST and SCA, but a penetration tester discovers SQL injection in the deployed application. Why might the vulnerability have escaped the earlier checks?",
+      "option_a": "A. SAST and SCA address different risk areas, and runtime testing through DAST can reveal exploitable behavior that earlier checks did not identify",
+      "option_b": "B. SCA guarantees that application input validation is secure",
+      "option_c": "C. SAST automatically tests every production endpoint",
+      "option_d": "D. Dependency scanning replaces dynamic security testing",
+      "correct_answer": "A",
+      "explanation": "SAST examines code and SCA examines dependencies. DAST adds testing of the running application's externally observable behavior."
+    },
+    {
+      "question": "A containerized application experiences a compromise. The attacker cannot reach other application containers because network policies restrict communication, but the compromised container is running as root with unnecessary Linux capabilities. Which assessment is most accurate?",
+      "option_a": "A. The application is fully secure because network policies are enabled",
+      "option_b": "B. The container cannot be compromised because it runs inside Kubernetes",
+      "option_c": "C. Network restrictions provide no security benefit once a container is compromised",
+      "option_d": "D. Network segmentation limits lateral movement, but excessive privileges still increase the potential impact of the compromise",
+      "correct_answer": "D",
+      "explanation": "NetworkPolicy limits communication, while non-root execution and capability restrictions reduce local privileges. These controls address different attack paths and should be used together."
+    },
+    {
+      "question": "An organization verifies image signatures and uses a trusted registry, but allows unrestricted image uploads and does not scan images for vulnerabilities. Which statement best identifies the remaining risks?",
+      "option_a": "A. Image signatures make registry access control unnecessary",
+      "option_b": "B. Registry authentication alone would eliminate all vulnerabilities",
+      "option_c": "C. The organization still needs appropriate registry permissions and vulnerability scanning because provenance and integrity do not guarantee secure image contents",
+      "option_d": "D. The organization should disable image verification",
+      "correct_answer": "C",
+      "explanation": "Image signing verifies origin and integrity, whereas registry access controls restrict uploads and vulnerability scanning identifies known weaknesses. All three controls serve different purposes."
+    },
+    {
+      "question": "A company wants to secure its online shopping application from development through production. Which design provides the most complete approach?",
+      "option_a": "A. Perform only a final penetration test immediately before release",
+      "option_b": "B. Integrate secret scanning, SAST, SCA, secure builds, container scanning, DAST, IaC scanning, security gates, artifact verification and runtime monitoring",
+      "option_c": "C. Use a private registry and assume all uploaded images are secure",
+      "option_d": "D. Perform vulnerability scanning only after a production incident",
+      "correct_answer": "B",
+      "explanation": "A comprehensive DevSecOps pipeline integrates automated security controls across code, dependencies, builds, containers, infrastructure, deployment and runtime."
+    },
+    {
+      "question": "A team argues that running containers as non-root eliminates the need to update the host kernel and container runtime. Which response is most accurate?",
+      "option_a": "A. The team is correct because non-root execution prevents kernel vulnerabilities",
+      "option_b": "B. The team is correct because container isolation is absolute",
+      "option_c": "C. Updating the host kernel is only necessary for virtual machines",
+      "option_d": "D. Non-root execution reduces privileges, but kernel and runtime vulnerabilities remain possible and must still be addressed",
+      "correct_answer": "D",
+      "explanation": "Non-root execution is one defense-in-depth control. Host kernel and runtime updates remain necessary to reduce container escape risks."
+    },
+    {
+      "question": "A company wants to deploy only approved container images. The pipeline verifies signatures, but an attacker can modify the image after verification and before deployment. Which additional security requirement is most important?",
+      "option_a": "A. Use a larger container image",
+      "option_b": "B. Disable the deployment security gate",
+      "option_c": "C. Ensure deployment uses the verified immutable image digest and protects the artifact throughout its lifecycle",
+      "option_d": "D. Allow unrestricted registry write access",
+      "correct_answer": "C",
+      "explanation": "Verification must be tied to the exact artifact being deployed. Using the verified image digest and protecting artifact integrity helps prevent substitution after verification."
+    },
+    {
+      "question": "A Kubernetes cluster has secure RBAC, restricted network policies and non-root Pods. However, the API Server is publicly exposed without adequate access protection. What is the best security assessment?",
+      "option_a": "A. The cluster remains at risk because an exposed API Server can provide an attack path despite other security controls",
+      "option_b": "B. The cluster is fully secure because Pod security is configured",
+      "option_c": "C. API Server exposure is irrelevant when using container images",
+      "option_d": "D. Network policies automatically protect every Kubernetes control-plane component",
+      "correct_answer": "A",
+      "explanation": "Kubernetes security must protect the control plane as well as workloads. An exposed API Server remains a significant attack surface."
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes software development?",
+      "option_a": "The process of writing source code without considering deployment.",
+      "option_b": "The process of designing, building, testing, deploying, and maintaining software systems to satisfy user requirements.",
+      "option_c": "The process of managing servers and network infrastructure.",
+      "option_d": "The process of testing software after deployment only.",
+      "correct_answer": "B",
+      "explanation": "Software development encompasses the complete process of designing, building, testing, deploying, and maintaining software to satisfy user requirements."
+    },
+    {
+      "question": "Which of the following represents the correct traditional Software Development Life Cycle (SDLC) sequence?",
+      "option_a": "Requirements → Development → Design → Deployment → Testing → Maintenance",
+      "option_b": "Design → Requirements → Testing → Development → Maintenance → Deployment",
+      "option_c": "Requirements → Design → Development → Testing → Deployment → Maintenance",
+      "option_d": "Requirements → Testing → Development → Design → Deployment → Maintenance",
+      "correct_answer": "C",
+      "explanation": "The traditional SDLC follows six sequential phases: Requirements Analysis, System Design, Development, Testing, Deployment, and Maintenance."
+    },
+    {
+      "question": "In traditional software development, when is security typically addressed?",
+      "option_a": "Near the end of development, usually just before deployment.",
+      "option_b": "Continuously from requirements analysis.",
+      "option_c": "Only during system maintenance.",
+      "option_d": "Before requirements analysis begins.",
+      "correct_answer": "A",
+      "explanation": "Traditional development commonly treats security as a separate activity performed near the end of the development process."
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of traditional software development?",
+      "option_a": "Sequential development phases.",
+      "option_b": "Independent teams with limited communication.",
+      "option_c": "Manual testing.",
+      "option_d": "Continuous automated security integration throughout the SDLC.",
+      "correct_answer": "D",
+      "explanation": "Continuous automated security integration is a characteristic associated with DevSecOps rather than traditional development."
+    },
+    {
+      "question": "Which of the following is a potential consequence of a software security breach?",
+      "option_a": "Guaranteed improvement in customer trust.",
+      "option_b": "Financial losses and reputational damage.",
+      "option_c": "Elimination of software vulnerabilities.",
+      "option_d": "Reduced need for security monitoring.",
+      "correct_answer": "B",
+      "explanation": "Security breaches can cause financial losses, loss of customer trust, legal penalties, service disruption, and reputational damage."
+    },
+    {
+      "question": "Why do modern connected software systems have increased security requirements?",
+      "option_a": "They eliminate the need for user authentication.",
+      "option_b": "They operate without external communication.",
+      "option_c": "Their connectivity and complexity increase the number of potential attack surfaces.",
+      "option_d": "They are automatically protected by cloud infrastructure.",
+      "correct_answer": "C",
+      "explanation": "Cloud systems, web applications, APIs, microservices, IoT devices, and AI-powered systems increase connectivity and potential attack surfaces."
+    },
+    {
+      "question": "Which statement best describes DevOps?",
+      "option_a": "A culture, set of practices, and collection of tools that enable collaboration between Development and Operations teams.",
+      "option_b": "A security testing methodology used exclusively before deployment.",
+      "option_c": "A software development model that eliminates testing.",
+      "option_d": "A framework that replaces development teams with automated systems.",
+      "correct_answer": "A",
+      "explanation": "DevOps promotes collaboration between Development and Operations to deliver software faster and more reliably."
+    },
+    {
+      "question": "What is the primary objective of Continuous Integration (CI)?",
+      "option_a": "To perform security testing only after deployment.",
+      "option_b": "To eliminate the need for software development teams.",
+      "option_c": "To replace system maintenance with manual operations.",
+      "option_d": "To integrate code changes regularly as part of the software delivery process.",
+      "correct_answer": "D",
+      "explanation": "Continuous Integration is one of the key DevOps objectives and supports frequent integration of development changes."
+    },
+    {
+      "question": "Which of the following is included in the DevOps lifecycle?",
+      "option_a": "Requirements, procurement, auditing, and retirement only.",
+      "option_b": "Plan, Code, Build, Test, Release, Deploy, Operate, and Monitor.",
+      "option_c": "Design, Purchase, Manufacture, and Distribution.",
+      "option_d": "Code, Deploy, and Terminate.",
+      "correct_answer": "B",
+      "explanation": "The DevOps lifecycle is represented as a continuous loop containing Plan, Code, Build, Test, Release, Deploy, Operate, and Monitor."
+    },
+    {
+      "question": "Which of the following is a major benefit of DevOps?",
+      "option_a": "Complete elimination of software defects.",
+      "option_b": "Removal of all security responsibilities from developers.",
+      "option_c": "Faster releases, improved collaboration, and continuous feedback.",
+      "option_d": "Elimination of the software testing phase.",
+      "correct_answer": "C",
+      "explanation": "DevOps improves delivery speed, collaboration, automation, continuous feedback, and software quality while reducing deployment failures."
+    },
+    {
+      "question": "Why is DevOps alone not necessarily sufficient to ensure software security?",
+      "option_a": "DevOps does not support software deployment.",
+      "option_b": "DevOps prevents organizations from using automated testing.",
+      "option_c": "DevOps eliminates the need for security engineers.",
+      "option_d": "Security may still be treated as a separate activity rather than integrated throughout development.",
+      "correct_answer": "D",
+      "explanation": "DevOps improves delivery and collaboration, but security can remain separate. DevSecOps addresses this gap by integrating security throughout the lifecycle."
+    },
+    {
+      "question": "What is DevSecOps?",
+      "option_a": "A practice that integrates security into every stage of the SDLC while combining Development, Security, and Operations.",
+      "option_b": "A security testing process performed after deployment.",
+      "option_c": "A replacement for the traditional software development lifecycle.",
+      "option_d": "A development methodology that focuses exclusively on network security.",
+      "correct_answer": "A",
+      "explanation": "DevSecOps integrates security into every stage of the Software Development Life Cycle and promotes collaboration among Development, Security, and Operations."
+    },
+    {
+      "question": "What does the term Shift Left Security mean?",
+      "option_a": "Moving security activities exclusively to system maintenance.",
+      "option_b": "Moving security activities to the earliest stages of development.",
+      "option_c": "Performing security testing only after deployment.",
+      "option_d": "Transferring all security responsibilities to the Operations team.",
+      "correct_answer": "B",
+      "explanation": "Shift Left Security means considering and implementing security from the earliest stages of the software development process."
+    },
+    {
+      "question": "Which statement represents the shared responsibility principle of DevSecOps?",
+      "option_a": "Only security engineers are responsible for software security.",
+      "option_b": "Developers are responsible for security only during coding.",
+      "option_c": "Every stakeholder involved in software delivery contributes to security.",
+      "option_d": "Security responsibilities belong exclusively to project managers.",
+      "correct_answer": "C",
+      "explanation": "DevSecOps considers security everyone's responsibility, including developers, testers, operations engineers, security engineers, and project managers."
+    },
+    {
+      "question": "Which activity is an example of security automation in DevSecOps?",
+      "option_a": "Manually reviewing every source code file before each release.",
+      "option_b": "Performing vulnerability assessments only once a year.",
+      "option_c": "Allowing developers to approve their own production infrastructure without checks.",
+      "option_d": "Automatically scanning dependencies for known vulnerabilities during the build process.",
+      "correct_answer": "D",
+      "explanation": "Dependency checking is one of the repetitive security tasks that can be automated in a DevSecOps pipeline."
+    },
+    {
+      "question": "What is the primary purpose of continuous security?",
+      "option_a": "To apply security practices throughout coding, building, testing, and deployment.",
+      "option_b": "To perform a single security assessment before the first release.",
+      "option_c": "To restrict security activities to the testing phase.",
+      "option_d": "To replace continuous monitoring with periodic manual inspections.",
+      "correct_answer": "A",
+      "explanation": "Continuous security ensures that security is applied throughout the software lifecycle rather than being limited to one phase."
+    },
+    {
+      "question": "Which of the following should organizations continuously monitor according to DevSecOps principles?",
+      "option_a": "Only application source code.",
+      "option_b": "System logs, user activity, network traffic, security events, and threats.",
+      "option_c": "Only the number of software releases.",
+      "option_d": "Only employee attendance and project deadlines.",
+      "correct_answer": "B",
+      "explanation": "Continuous monitoring involves observing system logs, user activity, security events, network traffic, and potential threats."
+    },
+    {
+      "question": "During which SDLC phase is threat modeling primarily performed?",
+      "option_a": "Maintenance.",
+      "option_b": "Deployment.",
+      "option_c": "Design.",
+      "option_d": "Build.",
+      "correct_answer": "C",
+      "explanation": "Threat modeling is associated with the design phase, where potential threats and security weaknesses can be identified before implementation."
+    },
+    {
+      "question": "Which security activity is most directly associated with the development phase?",
+      "option_a": "Secure coding.",
+      "option_b": "Infrastructure security.",
+      "option_c": "Continuous monitoring.",
+      "option_d": "Compliance verification after deployment.",
+      "correct_answer": "A",
+      "explanation": "Secure coding is the primary security activity associated with the development phase."
+    },
+    {
+      "question": "Which security activity is associated with the build phase in the DevSecOps SDLC integration model?",
+      "option_a": "Threat modeling.",
+      "option_b": "Penetration testing.",
+      "option_c": "Monitoring login attempts.",
+      "option_d": "Dependency scanning.",
+      "correct_answer": "D",
+      "explanation": "Dependency scanning is performed during the build phase to identify vulnerable third-party components."
+    },
+    {
+      "question": "Which security activity is most directly associated with deployment?",
+      "option_a": "Requirements analysis.",
+      "option_b": "Infrastructure security.",
+      "option_c": "Secure coding.",
+      "option_d": "Threat modeling.",
+      "correct_answer": "B",
+      "explanation": "Infrastructure security is the security activity associated with deployment in the lecture's SDLC integration model."
+    },
+    {
+      "question": "Which activity is most appropriate during the operations phase?",
+      "option_a": "Defining initial security requirements.",
+      "option_b": "Performing initial system design.",
+      "option_c": "Continuously monitoring system activity and security events.",
+      "option_d": "Writing the initial source code.",
+      "correct_answer": "C",
+      "explanation": "Continuous monitoring is associated with operations and helps organizations identify suspicious activities and emerging threats."
+    },
+    {
+      "question": "Which of the following is a stated goal of DevSecOps?",
+      "option_a": "Eliminating all development costs.",
+      "option_b": "Reducing collaboration between technical teams.",
+      "option_c": "Replacing automated security testing with manual reviews.",
+      "option_d": "Detecting vulnerabilities early.",
+      "correct_answer": "D",
+      "explanation": "DevSecOps aims to detect vulnerabilities early, deliver secure software, reduce development costs, improve collaboration, and achieve compliance."
+    },
+    {
+      "question": "Which stakeholder is primarily responsible for implementing secure coding practices?",
+      "option_a": "Developers.",
+      "option_b": "Customers.",
+      "option_c": "External auditors.",
+      "option_d": "End users.",
+      "correct_answer": "A",
+      "explanation": "Developers contribute to software security by implementing secure coding practices and addressing vulnerabilities in application code."
+    },
+    {
+      "question": "Which statement best distinguishes DevSecOps from DevOps?",
+      "option_a": "DevSecOps eliminates collaboration between development and operations.",
+      "option_b": "DevSecOps focuses on speed and security by integrating security throughout the lifecycle.",
+      "option_c": "DevSecOps uses only manual testing.",
+      "option_d": "DevSecOps removes automation from software delivery.",
+      "correct_answer": "B",
+      "explanation": "DevOps emphasizes speed and collaboration, while DevSecOps additionally integrates security throughout the software delivery lifecycle."
+    },
+    {
+      "question": "What is the main purpose of continuous delivery in DevOps?",
+      "option_a": "To prevent developers from integrating code changes.",
+      "option_b": "To perform vulnerability scanning only during maintenance.",
+      "option_c": "To keep software changes in a state where they can be delivered reliably.",
+      "option_d": "To eliminate the need for deployment planning.",
+      "correct_answer": "C",
+      "explanation": "Continuous Delivery is a DevOps objective that supports reliable and frequent software delivery."
+    },
+    {
+      "question": "Which of the following best describes the traditional team structure presented in the lecture?",
+      "option_a": "Development, Testing, Operations, and Security teams work in a sequential arrangement with limited communication.",
+      "option_b": "All teams continuously collaborate through a shared automated pipeline.",
+      "option_c": "Security engineers lead every development activity.",
+      "option_d": "Operations teams perform all software development and testing.",
+      "correct_answer": "A",
+      "explanation": "Traditional development commonly involves independent teams working sequentially, often with limited communication."
+    },
+    {
+      "question": "Which of the following is NOT a stated goal of DevSecOps?",
+      "option_a": "Improving collaboration.",
+      "option_b": "Increasing automation.",
+      "option_c": "Building customer trust.",
+      "option_d": "Delaying vulnerability detection until deployment.",
+      "correct_answer": "D",
+      "explanation": "DevSecOps aims to detect vulnerabilities early, not delay their detection until deployment."
+    },
+    {
+      "question": "Why is secure password hashing relevant during the development of an online shopping system?",
+      "option_a": "It prevents all network-based attacks.",
+      "option_b": "It helps protect stored passwords if the password database is compromised.",
+      "option_c": "It removes the need for user authentication.",
+      "option_d": "It automatically prevents infrastructure misconfiguration.",
+      "correct_answer": "B",
+      "explanation": "Secure password hashing protects password storage by avoiding the storage of plaintext passwords."
+    },
+    {
+      "question": "What is the primary purpose of security requirements?",
+      "option_a": "To define the visual appearance of an application.",
+      "option_b": "To specify how software should be deployed.",
+      "option_c": "To identify security expectations that the system must satisfy.",
+      "option_d": "To determine how frequently developers should write code.",
+      "correct_answer": "C",
+      "explanation": "Security requirements define the security needs and expectations that should be considered from the requirements phase."
+    },
+    {
+      "question": "Which of the following best describes continuous monitoring in DevSecOps?",
+      "option_a": "Observing systems continuously to identify suspicious activities, security events, and potential threats.",
+      "option_b": "Performing a single penetration test before release.",
+      "option_c": "Reviewing source code only when a customer reports a problem.",
+      "option_d": "Monitoring development team productivity without considering system security.",
+      "correct_answer": "A",
+      "explanation": "Continuous monitoring helps organizations identify threats and security events throughout system operation."
+    },
+    {
+      "question": "A development team uses automated tools to check application dependencies during every build. Which DevSecOps principle is being demonstrated?",
+      "option_a": "Sequential development.",
+      "option_b": "Independent team management.",
+      "option_c": "Manual security testing.",
+      "option_d": "Automation.",
+      "correct_answer": "D",
+      "explanation": "Automated dependency checking is an example of automating repetitive security activities."
+    },
+    {
+      "question": "Which statement best describes the relationship between DevOps and security?",
+      "option_a": "DevOps automatically guarantees that every deployed application is secure.",
+      "option_b": "DevOps improves delivery and collaboration, while DevSecOps explicitly integrates security into that process.",
+      "option_c": "Security is unrelated to software delivery.",
+      "option_d": "DevOps and DevSecOps are identical approaches with no differences.",
+      "correct_answer": "B",
+      "explanation": "DevSecOps builds on the collaborative delivery approach of DevOps by making security an integrated and continuous concern."
+    },
+    {
+      "question": "A company discovers SQL injection, weak password storage, broken authentication, and sensitive data exposure during its final security assessment. What is the most likely underlying process weakness?",
+      "option_a": "The company performed too much continuous monitoring.",
+      "option_b": "The company integrated security into requirements and design too early.",
+      "option_c": "Security was treated as a late-stage activity rather than being integrated throughout development.",
+      "option_d": "The company used too many automated security tools.",
+      "correct_answer": "C",
+      "explanation": "The scenario reflects the traditional development problem of introducing security only near deployment, allowing vulnerabilities to remain undiscovered until late in the process."
+    },
+    {
+      "question": "A financial application requires secure payment processing. During which SDLC phase should this security expectation initially be identified?",
+      "option_a": "Requirements.",
+      "option_b": "Build.",
+      "option_c": "Operations.",
+      "option_d": "Deployment.",
+      "correct_answer": "A",
+      "explanation": "Security requirements should be established during requirements analysis so that security expectations guide subsequent design and implementation."
+    },
+    {
+      "question": "An organization performs threat modeling during design but does not implement secure coding practices or security testing afterward. Which statement best evaluates its approach?",
+      "option_a": "The organization has fully implemented continuous security.",
+      "option_b": "The organization has eliminated the need for security monitoring.",
+      "option_c": "Threat modeling alone guarantees that the final application is secure.",
+      "option_d": "The organization has introduced one security activity but has not integrated security throughout the SDLC.",
+      "correct_answer": "D",
+      "explanation": "DevSecOps requires continuous security across multiple lifecycle stages. Threat modeling alone cannot replace secure coding, testing, deployment security, and monitoring."
+    },
+    {
+      "question": "A company releases software rapidly using CI/CD pipelines. However, developers never perform security reviews, and vulnerabilities are addressed only when customers report them. Which conclusion is most accurate?",
+      "option_a": "The company has achieved complete DevSecOps because it uses CI/CD.",
+      "option_b": "The company demonstrates DevOps automation but has not adequately integrated security.",
+      "option_c": "The company follows the Shift Left Security principle.",
+      "option_d": "The company has implemented continuous security through customer feedback.",
+      "correct_answer": "B",
+      "explanation": "CI/CD supports DevOps, but using delivery automation does not automatically establish DevSecOps. Security must also be integrated into the lifecycle."
+    },
+    {
+      "question": "An organization introduces security testing only after eight months of development. The assessment identifies serious vulnerabilities that require architectural changes. Why is this particularly expensive?",
+      "option_a": "Late security testing always requires purchasing additional cloud infrastructure.",
+      "option_b": "Security vulnerabilities cannot be fixed after development.",
+      "option_c": "Late discovery can require reworking completed implementation and design decisions, increasing remediation costs and delaying delivery.",
+      "option_d": "Traditional development does not permit software modifications.",
+      "correct_answer": "C",
+      "explanation": "When vulnerabilities are discovered late, fixing them may require extensive rework across completed development activities, increasing cost and delaying release."
+    },
+    {
+      "question": "A hospital is developing a patient management system. Which approach best follows DevSecOps principles?",
+      "option_a": "Define security requirements, perform threat modeling, use secure coding, scan dependencies, conduct security testing, secure infrastructure, and monitor operations.",
+      "option_b": "Complete the application first and ask security engineers to review it before deployment.",
+      "option_c": "Perform penetration testing once and ignore security after deployment.",
+      "option_d": "Allow only the Operations team to manage security.",
+      "correct_answer": "A",
+      "explanation": "The correct approach integrates security activities into every relevant SDLC phase, from requirements through operations."
+    },
+    {
+      "question": "A software company wants to reduce the time required to discover vulnerabilities in third-party libraries. Which solution best matches the lecture's DevSecOps model?",
+      "option_a": "Increase the number of manual deployment approvals.",
+      "option_b": "Move dependency checking to the maintenance phase.",
+      "option_c": "Perform threat modeling after deployment.",
+      "option_d": "Integrate automated dependency scanning into the build process.",
+      "correct_answer": "D",
+      "explanation": "Dependency scanning during the build phase can automatically identify vulnerable third-party components earlier in the delivery process."
+    },
+    {
+      "question": "A development team argues that security is exclusively the responsibility of the security engineering team. Which DevSecOps principle does this contradict?",
+      "option_a": "Continuous Delivery.",
+      "option_b": "Security as a shared responsibility.",
+      "option_c": "Sequential development.",
+      "option_d": "Infrastructure deployment.",
+      "correct_answer": "B",
+      "explanation": "DevSecOps distributes security responsibility across developers, testers, operations engineers, security engineers, and project managers."
+    },
+    {
+      "question": "A developer discovers that an application accepts unvalidated user input. Which response best aligns with the online shopping security example?",
+      "option_a": "Wait until customers report an exploitation incident.",
+      "option_b": "Address the issue only during infrastructure deployment.",
+      "option_c": "Implement appropriate input validation during development.",
+      "option_d": "Disable continuous monitoring.",
+      "correct_answer": "C",
+      "explanation": "Input validation is identified as a development-phase security activity in the online shopping system example."
+    },
+    {
+      "question": "A company has automated code scanning, vulnerability scanning, dependency checking, and compliance verification. However, it performs no security monitoring after deployment. Which principle is still inadequately addressed?",
+      "option_a": "Continuous monitoring.",
+      "option_b": "Automation.",
+      "option_c": "Security as a shared responsibility.",
+      "option_d": "Shift Left Security.",
+      "correct_answer": "A",
+      "explanation": "Automated security checks during development do not replace continuous monitoring of deployed systems, user activity, logs, network traffic, and threats."
+    },
+    {
+      "question": "A project manager removes all security-related tasks from the project schedule to achieve an earlier release date. Which consequence is most consistent with the lecture?",
+      "option_a": "The software automatically becomes more reliable.",
+      "option_b": "The organization eliminates the need for compliance.",
+      "option_c": "The number of potential attack surfaces decreases.",
+      "option_d": "Security weaknesses may remain undetected, resulting in breaches, additional remediation costs, and loss of customer trust.",
+      "correct_answer": "D",
+      "explanation": "Removing security activities increases the likelihood of vulnerabilities reaching production and can cause financial losses, service disruption, and reputational damage."
+    },
+    {
+      "question": "A company has separate Development, Testing, Operations, and Security teams. Each team completes its work independently and passes the result to the next team. What is the most significant organizational limitation?",
+      "option_a": "The teams perform too much continuous integration.",
+      "option_b": "Limited communication and collaboration can delay feedback and security issue resolution.",
+      "option_c": "The organization cannot perform software testing.",
+      "option_d": "Independent teams automatically prevent vulnerabilities.",
+      "correct_answer": "B",
+      "explanation": "Traditional development often involves isolated teams with limited communication, which can delay feedback and the identification and resolution of problems."
+    },
+    {
+      "question": "A company wants to implement Shift Left Security. Which proposed change provides the strongest example?",
+      "option_a": "Move penetration testing exclusively to the end of deployment.",
+      "option_b": "Allow security engineers to inspect applications only after production release.",
+      "option_c": "Introduce security requirements and threat modeling before implementation, followed by secure coding and security testing.",
+      "option_d": "Perform vulnerability scanning only during annual maintenance.",
+      "correct_answer": "C",
+      "explanation": "Shift Left Security moves security activities earlier, beginning with requirements and design rather than waiting until the application is complete."
+    },
+    {
+      "question": "An organization identifies security requirements, conducts threat modeling, and implements secure coding. However, it does not scan dependencies during builds. Which specific SDLC activity is missing?",
+      "option_a": "Dependency scanning during the build phase.",
+      "option_b": "Security requirements during requirements analysis.",
+      "option_c": "Threat modeling during design.",
+      "option_d": "Secure coding during development.",
+      "correct_answer": "A",
+      "explanation": "The lecture explicitly associates dependency scanning with the build phase, making it the missing security activity."
+    },
+    {
+      "question": "A cloud-based application uses multiple microservices and external APIs. An attacker can potentially exploit vulnerabilities in several interconnected components. Which lecture concept best explains why this architecture requires increased security attention?",
+      "option_a": "Sequential software development.",
+      "option_b": "Manual testing.",
+      "option_c": "Continuous Delivery.",
+      "option_d": "Increased attack surface due to modern software connectivity.",
+      "correct_answer": "D",
+      "explanation": "Connected systems such as cloud applications, APIs, and microservices increase the number of potential attack surfaces."
+    },
+    {
+      "question": "An online shopping platform wants to improve security across its entire lifecycle. Which mapping of security activities is correct?",
+      "option_a": "Requirements: penetration testing; Design: password hashing; Development: infrastructure security; Operations: threat modeling.",
+      "option_b": "Requirements: authentication and payment security requirements; Development: input validation and password hashing; Testing: vulnerability scanning and penetration testing; Deployment: secure cloud configuration; Operations: monitoring login attempts and patching vulnerabilities.",
+      "option_c": "Requirements: dependency scanning; Design: login monitoring; Development: compliance verification; Testing: cloud configuration; Operations: threat modeling.",
+      "option_d": "Requirements: infrastructure security; Development: continuous monitoring; Testing: secure coding; Deployment: password hashing; Operations: security requirements.",
+      "correct_answer": "B",
+      "explanation": "This mapping follows the online shopping example in the lecture, placing security requirements, secure development, security testing, infrastructure security, and monitoring in their appropriate phases."
+    },
+    {
+      "question": "A company performs vulnerability scanning, compliance verification, and dependency checking automatically. Security engineers review the results and developers fix identified problems. Which interpretation is most accurate?",
+      "option_a": "Automation eliminates the need for human responsibility.",
+      "option_b": "The company has replaced continuous security with manual testing.",
+      "option_c": "The company combines automated security activities with shared responsibility.",
+      "option_d": "The company is following traditional development because security engineers are involved.",
+      "correct_answer": "C",
+      "explanation": "DevSecOps uses automation to improve efficiency while retaining shared responsibility among stakeholders for interpreting and addressing security findings."
+    },
+    {
+      "question": "An organization wants to achieve both faster software delivery and improved security. Which approach best addresses this objective?",
+      "option_a": "Integrate automated security checks into the delivery pipeline and continuously monitor deployed systems.",
+      "option_b": "Remove security testing to minimize deployment time.",
+      "option_c": "Perform all security assessments immediately before release.",
+      "option_d": "Separate security engineers completely from development activities.",
+      "correct_answer": "A",
+      "explanation": "DevSecOps integrates security into the delivery lifecycle through automation and continuous security practices, supporting both speed and security."
+    },
+    {
+      "question": "A company performs security testing only before deployment. A critical vulnerability is found, and the development team must redesign an important component. Which combination of DevSecOps practices would most directly reduce the likelihood of this situation?",
+      "option_a": "Continuous monitoring and operations management alone.",
+      "option_b": "Faster deployment and fewer testing activities.",
+      "option_c": "Independent teams and sequential development.",
+      "option_d": "Shift Left Security, threat modeling, secure coding, and continuous security testing.",
+      "correct_answer": "D",
+      "explanation": "These practices help identify and address security weaknesses earlier, reducing the likelihood of expensive late-stage redesign."
+    },
+    {
+      "question": "A financial organization has introduced automated security testing during development. However, its operations team does not monitor network traffic, system logs, or suspicious user activities. What is the strongest criticism?",
+      "option_a": "The organization should eliminate automated security testing.",
+      "option_b": "Its approach addresses development security but neglects continuous monitoring during operations.",
+      "option_c": "Continuous monitoring should only happen before system design.",
+      "option_d": "Network traffic monitoring is unrelated to software security.",
+      "correct_answer": "B",
+      "explanation": "DevSecOps requires both security integration during development and continuous monitoring during operations. Automated development checks cannot replace operational monitoring."
+    },
+    {
+      "question": "A company claims to have implemented DevSecOps because it employs a dedicated security team. However, developers, testers, and operations engineers have no security responsibilities. Which statement best evaluates this claim?",
+      "option_a": "The claim is correct because DevSecOps requires only a security team.",
+      "option_b": "The claim is correct if the security team performs annual penetration testing.",
+      "option_c": "The implementation is incomplete because DevSecOps treats security as a shared responsibility.",
+      "option_d": "The implementation is complete if deployment is automated.",
+      "correct_answer": "C",
+      "explanation": "DevSecOps requires security ownership across all relevant stakeholders rather than isolating security within a single team."
+    },
+    {
+      "question": "A hospital's patient management application is already deployed. Continuous monitoring detects suspicious login attempts and a vulnerability in an application component. Which response best reflects DevSecOps?",
+      "option_a": "Investigate the security events, address the vulnerability through appropriate fixes and patching, and continue monitoring.",
+      "option_b": "Ignore the events because security should only be addressed during development.",
+      "option_c": "Wait until the next major software redesign before taking action.",
+      "option_d": "Disable monitoring to avoid generating unnecessary security alerts.",
+      "correct_answer": "A",
+      "explanation": "DevSecOps extends security into operations through continuous monitoring and ongoing vulnerability remediation, including patching."
+    },
+    {
+      "question": "A software organization has achieved faster releases and fewer deployment failures after implementing DevOps. However, customer data is exposed because sensitive information was not adequately protected. What does this scenario demonstrate?",
+      "option_a": "DevOps is ineffective for software delivery.",
+      "option_b": "Deployment failures are the only security concern in software development.",
+      "option_c": "Customer data exposure cannot be addressed through development practices.",
+      "option_d": "Improved delivery speed and reliability do not automatically guarantee secure software.",
+      "correct_answer": "D",
+      "explanation": "The lecture emphasizes that fast software can still be insecure. DevSecOps closes this gap by integrating security into the delivery lifecycle."
+    },
+    {
+      "question": "An organization wants to reduce development costs while improving software security. Which strategy most directly supports both goals?",
+      "option_a": "Delay security assessments until after customer deployment.",
+      "option_b": "Detect vulnerabilities early and automate repetitive security activities.",
+      "option_c": "Reduce communication between development and security teams.",
+      "option_d": "Replace security testing with customer feedback.",
+      "correct_answer": "B",
+      "explanation": "Early vulnerability detection reduces expensive late-stage remediation, while automation improves the efficiency of repetitive security activities."
+    },
+    {
+      "question": "A development organization performs security requirements analysis, threat modeling, secure coding, dependency scanning, security testing, infrastructure security, and continuous monitoring. What is the strongest conclusion?",
+      "option_a": "It follows traditional development because it uses multiple SDLC phases.",
+      "option_b": "It has eliminated the need for collaboration between stakeholders.",
+      "option_c": "It demonstrates comprehensive integration of security throughout the SDLC, consistent with DevSecOps.",
+      "option_d": "It is implementing only Continuous Delivery.",
+      "correct_answer": "C",
+      "explanation": "The organization incorporates the security activities identified in the lecture across the entire SDLC, which is the central principle of DevSecOps."
+    },
+    {
+      "question": "A project team must choose between two approaches. Approach X releases software quickly but performs security testing only at the end. Approach Y integrates security requirements, automated checks, and monitoring throughout delivery. Which approach better reflects the central purpose of DevSecOps?",
+      "option_a": "Approach Y, because it combines secure software delivery with continuous security integration.",
+      "option_b": "Approach X, because faster delivery is the only objective of DevSecOps.",
+      "option_c": "Both approaches are equivalent because both produce deployable software.",
+      "option_d": "Neither approach, because DevSecOps eliminates the need for deployment.",
+      "correct_answer": "A",
+      "explanation": "DevSecOps aims to deliver software quickly and reliably without sacrificing security by integrating security throughout the delivery lifecycle."
+    },
+    {
+      "question": "A company has separate development and security teams. Developers introduce new features frequently, but security engineers receive the completed application only once every several months. What is the most effective organizational improvement?",
+      "option_a": "Reduce the number of developers so security engineers can inspect every line of code manually.",
+      "option_b": "Move all security testing to the end of each development cycle.",
+      "option_c": "Allow only security engineers to approve requirements and write application code.",
+      "option_d": "Establish continuous collaboration among development, security, and operations teams, with security checks integrated into development workflows.",
+      "correct_answer": "D",
+      "explanation": "DevSecOps encourages continuous collaboration and shared responsibility, avoiding isolated teams and delayed security involvement."
+    },
+    {
+      "question": "A company uses automated vulnerability scanning in its CI/CD pipeline. A scan detects a critical vulnerability, but the pipeline continues deployment without any review or remediation. Which statement is most accurate?",
+      "option_a": "The company has achieved complete DevSecOps because scanning is automated.",
+      "option_b": "Automation alone is insufficient; security findings must be evaluated and addressed as part of the security process.",
+      "option_c": "The company should remove vulnerability scanning because it slows delivery.",
+      "option_d": "Critical vulnerabilities are relevant only during system maintenance.",
+      "correct_answer": "B",
+      "explanation": "Automation helps detect vulnerabilities, but effective security also requires appropriate responses. Merely generating scan results does not make software secure."
+    },
+    {
+      "question": "An organization is reviewing its DevSecOps implementation. Which situation most clearly demonstrates that security is being treated as a continuous process rather than a one-time activity?",
+      "option_a": "A penetration test is conducted once before the first production release.",
+      "option_b": "Security engineers review the architecture during initial design and never participate again.",
+      "option_c": "Security checks are performed during coding, building, testing, deployment, and monitoring, with findings addressed throughout the lifecycle.",
+      "option_d": "The organization performs security testing only when customers report vulnerabilities.",
+      "correct_answer": "C",
+      "explanation": "Continuous security requires security activities throughout the lifecycle, including development, testing, deployment, and monitoring."
+    },
+    {
+      "question": "A company develops a system that processes financial transactions, personal information, and medical records. Management argues that security can be postponed until the system becomes successful. Which argument best challenges this decision using the lecture?",
+      "option_a": "Sensitive information increases the consequences of security breaches, including financial losses, legal penalties, service disruption, and loss of trust.",
+      "option_b": "Security becomes relevant only when a company reaches a large customer base.",
+      "option_c": "Personal and financial information cannot be exposed through software vulnerabilities.",
+      "option_d": "Security is primarily an operational concern and does not affect software development.",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies personal, financial, medical, business, and government information as valuable data. Breaches can produce significant organizational and customer consequences."
+    },
+    {
+      "question": "An organization performs threat modeling during design and security testing during testing. However, it has no security requirements during requirements analysis. Why is this a weakness in its DevSecOps implementation?",
+      "option_a": "Threat modeling must only occur during maintenance.",
+      "option_b": "Security requirements are unnecessary when penetration testing is available.",
+      "option_c": "Requirements analysis should be performed after deployment.",
+      "option_d": "Security expectations should be established from the beginning so they can guide design and implementation.",
+      "correct_answer": "D",
+      "explanation": "Security requirements belong in the requirements phase. Starting security activities only during design means security expectations may not adequately guide the initial system requirements."
+    },
+    {
+      "question": "A team argues that continuous monitoring and continuous security mean exactly the same thing. Which explanation best identifies the difference based on the lecture?",
+      "option_a": "Continuous monitoring applies only during coding, while continuous security applies only during operations.",
+      "option_b": "Continuous security applies security throughout the lifecycle, whereas continuous monitoring focuses on observing system activity, security events, and threats.",
+      "option_c": "Continuous monitoring is a traditional development practice, while continuous security is unrelated to DevSecOps.",
+      "option_d": "Both concepts refer exclusively to automated dependency scanning.",
+      "correct_answer": "B",
+      "explanation": "Continuous security is the broader practice of applying security throughout the lifecycle. Continuous monitoring specifically involves ongoing observation of systems, users, traffic, events, and threats."
+    },
+    {
+      "question": "A software organization wants to improve collaboration, detect vulnerabilities early, achieve compliance, increase automation, and build customer trust. Which approach most directly combines all these objectives?",
+      "option_a": "Traditional sequential software development.",
+      "option_b": "Manual testing performed exclusively before deployment.",
+      "option_c": "DevSecOps implementation with shared responsibility and continuous security integration.",
+      "option_d": "A delivery process that prioritizes release speed without security activities.",
+      "correct_answer": "C",
+      "explanation": "These objectives are explicitly identified as goals of DevSecOps and are supported by continuous security, automation, and collaboration."
+    },
+    {
+      "question": "A company deploys a cloud-based application with secure infrastructure configuration. However, its developers use insecure coding practices, its build process does not scan dependencies, and its testing team performs no security testing. Which conclusion is most appropriate?",
+      "option_a": "Infrastructure security alone is insufficient because DevSecOps requires security integration across all relevant SDLC phases.",
+      "option_b": "The company has fully implemented DevSecOps because cloud infrastructure is secure.",
+      "option_c": "Security testing is unnecessary when infrastructure is correctly configured.",
+      "option_d": "The company only needs continuous monitoring to resolve every security weakness.",
+      "correct_answer": "A",
+      "explanation": "DevSecOps requires multiple complementary security activities across requirements, design, development, build, testing, deployment, and operations. Securing infrastructure alone does not address application and dependency vulnerabilities."
+    },
+    {
+      "question": "A company faces two major problems: security vulnerabilities are discovered late, and development teams frequently experience delays because security engineers are involved only after implementation. Which combination of DevSecOps principles best addresses both problems?",
+      "option_a": "Sequential development and manual testing.",
+      "option_b": "Continuous Delivery and independent team management.",
+      "option_c": "Continuous monitoring and delayed security assessments.",
+      "option_d": "Shift Left Security, shared responsibility, collaboration, and automation.",
+      "correct_answer": "D",
+      "explanation": "Shift Left Security identifies vulnerabilities earlier, shared responsibility improves team involvement, collaboration reduces communication barriers, and automation accelerates repetitive security activities."
+    },
+    {
+      "question": "A software company develops an online banking application over eight months. Testing lasts three weeks, and security testing occurs immediately before deployment. The final assessment identifies SQL injection, weak password storage, broken authentication, and sensitive data exposure. Which proposed transformation provides the most complete solution?",
+      "option_a": "Increase the duration of final security testing while keeping the existing team structure unchanged.",
+      "option_b": "Integrate security requirements, threat modeling, secure coding, dependency scanning, security testing, infrastructure security, and continuous monitoring into the SDLC.",
+      "option_c": "Replace the testing team with an Operations team and deploy the application faster.",
+      "option_d": "Perform penetration testing only after customers begin using the application.",
+      "correct_answer": "B",
+      "explanation": "The scenario demonstrates the limitations of late security testing. A complete DevSecOps transformation integrates security activities throughout the lifecycle rather than relying on a final assessment."
+    },
+    {
+      "question": "An organization has introduced DevSecOps but wants to evaluate whether its implementation achieves the intended outcome. Which result provides the strongest evidence of successful implementation?",
+      "option_a": "The organization deploys more frequently but ignores vulnerabilities detected during development.",
+      "option_b": "Security engineers perform more manual assessments without collaborating with other teams.",
+      "option_c": "The organization delivers secure software more efficiently through early vulnerability detection, automation, collaboration, continuous security, and monitoring.",
+      "option_d": "The organization reduces the number of security requirements to simplify development.",
+      "correct_answer": "C",
+      "explanation": "Successful DevSecOps combines secure software delivery with collaboration, early vulnerability detection, automation, continuous security, and monitoring."
+    }
+  ]
+}

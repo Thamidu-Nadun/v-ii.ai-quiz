@@ -1,0 +1,841 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of Continuous Integration (CI)?",
+      "option_a": "To automatically deploy every code change directly to production",
+      "option_b": "To frequently integrate code changes into a shared repository and automatically build and test the application",
+      "option_c": "To replace software developers with automated testing tools",
+      "option_d": "To perform security testing only after an application is deployed",
+      "correct_answer": "B",
+      "explanation": "Continuous Integration involves frequently integrating code changes into a shared repository and automatically building and testing the application."
+    },
+    {
+      "question": "Which statement correctly describes Continuous Delivery?",
+      "option_a": "Validated software is automatically deployed to production without human intervention",
+      "option_b": "Software is prepared and validated so that it is ready for release",
+      "option_c": "Developers manually compile applications without automated testing",
+      "option_d": "Security testing is performed exclusively after deployment",
+      "correct_answer": "B",
+      "explanation": "Continuous Delivery prepares validated software for release. Actual production deployment may still require manual approval."
+    },
+    {
+      "question": "What distinguishes Continuous Deployment from Continuous Delivery?",
+      "option_a": "Continuous Deployment automatically deploys validated changes to production",
+      "option_b": "Continuous Deployment eliminates the need for automated testing",
+      "option_c": "Continuous Delivery always deploys directly to production",
+      "option_d": "Continuous Deployment only performs source-code compilation",
+      "correct_answer": "A",
+      "explanation": "Continuous Deployment automatically deploys validated changes to production, whereas Continuous Delivery prepares software for release."
+    },
+    {
+      "question": "Which of the following is NOT identified as a typical CI activity in the lecture?",
+      "option_a": "Unit testing",
+      "option_b": "Integration testing",
+      "option_c": "Code quality analysis",
+      "option_d": "Manually approving every production deployment",
+      "correct_answer": "D",
+      "explanation": "CI includes activities such as compilation, unit testing, integration testing, code quality analysis, and security scanning. Manual deployment approval is not a defining CI activity."
+    },
+    {
+      "question": "Which sequence best represents the typical CI/CD pipeline presented in the lecture?",
+      "option_a": "Developer → Git Repository → Build → Test → Security Checks → Package → Deploy → Production",
+      "option_b": "Developer → Production → Build → Test → Git Repository → Deploy",
+      "option_c": "Git Repository → Production → Security Checks → Developer → Build",
+      "option_d": "Developer → Deploy → Test → Build → Security Checks → Production",
+      "correct_answer": "A",
+      "explanation": "The lecture presents a pipeline beginning with developer code changes and repository integration, followed by building, testing, security checks, packaging, and deployment."
+    },
+    {
+      "question": "Why is integrating security into CI/CD preferable to traditional late-stage security testing?",
+      "option_a": "It eliminates all software vulnerabilities",
+      "option_b": "It identifies vulnerabilities earlier, reducing remediation costs and providing faster feedback",
+      "option_c": "It removes the need for developers to review their code",
+      "option_d": "It ensures that every application is automatically compliant with all regulations",
+      "correct_answer": "B",
+      "explanation": "Integrating security throughout CI/CD enables earlier vulnerability detection, faster feedback, and lower remediation costs."
+    },
+    {
+      "question": "What does Shift-Left Security mean?",
+      "option_a": "Moving security activities toward the end of the deployment process",
+      "option_b": "Moving security activities earlier in the software development lifecycle",
+      "option_c": "Moving all security responsibilities to a separate security team",
+      "option_d": "Performing security testing only on production systems",
+      "correct_answer": "B",
+      "explanation": "Shift-Left Security means incorporating security activities earlier in the software development lifecycle rather than waiting until the final stages."
+    },
+    {
+      "question": "A developer introduces a third-party dependency containing a known vulnerability. Which approach best demonstrates Shift-Left Security?",
+      "option_a": "Wait until customers report exploitation",
+      "option_b": "Perform a dependency scan immediately after the dependency is introduced",
+      "option_c": "Wait until the application reaches production",
+      "option_d": "Remove all automated testing from the pipeline",
+      "correct_answer": "B",
+      "explanation": "An early SCA scan identifies vulnerable dependencies before they progress further through the development lifecycle."
+    },
+    {
+      "question": "Which of the following is a benefit of security automation in CI/CD?",
+      "option_a": "Increased dependence on manual security reviews",
+      "option_b": "Reduced consistency between builds",
+      "option_c": "Reduced human error through automated and repeatable security checks",
+      "option_d": "Elimination of the need for vulnerability remediation",
+      "correct_answer": "C",
+      "explanation": "Automated security checks reduce manual effort and human error while applying consistent security controls across builds."
+    },
+    {
+      "question": "Which statement best describes the DevSecOps approach presented in the lecture?",
+      "option_a": "Security is an activity performed exclusively after deployment",
+      "option_b": "Security is continuously integrated into the software delivery process",
+      "option_c": "Security responsibilities belong only to infrastructure administrators",
+      "option_d": "Security testing should be separated from development and operations",
+      "correct_answer": "B",
+      "explanation": "DevSecOps integrates security throughout development, testing, deployment, and runtime monitoring rather than treating it as a final-stage activity."
+    },
+    {
+      "question": "What is the primary purpose of Static Application Security Testing (SAST)?",
+      "option_a": "To analyze running applications by simulating external attacks",
+      "option_b": "To analyze source code or compiled code without executing the application",
+      "option_c": "To monitor network traffic after production deployment",
+      "option_d": "To identify only vulnerabilities in third-party packages",
+      "correct_answer": "B",
+      "explanation": "SAST examines source code or compiled code without executing the application to identify potential security weaknesses."
+    },
+    {
+      "question": "Which vulnerability can be identified by SAST according to the lecture?",
+      "option_a": "Hardcoded credentials",
+      "option_b": "Physical server theft",
+      "option_c": "Unauthorized access to a data center",
+      "option_d": "Network cable damage",
+      "correct_answer": "A",
+      "explanation": "SAST can identify hardcoded credentials, SQL injection risks, weak cryptography, insecure functions, and input validation issues."
+    },
+    {
+      "question": "Which of the following is an example of a SAST tool?",
+      "option_a": "OWASP ZAP",
+      "option_b": "Semgrep",
+      "option_c": "TruffleHog",
+      "option_d": "Dependabot",
+      "correct_answer": "B",
+      "explanation": "Semgrep is identified as a SAST tool. OWASP ZAP is used for DAST, TruffleHog for secret scanning, and Dependabot for dependency-related security."
+    },
+    {
+      "question": "What is the primary purpose of Software Composition Analysis (SCA)?",
+      "option_a": "To analyze application behavior during runtime",
+      "option_b": "To identify vulnerabilities and risks in third-party dependencies",
+      "option_c": "To detect unauthorized changes in production databases",
+      "option_d": "To analyze source-code formatting",
+      "correct_answer": "B",
+      "explanation": "SCA examines third-party libraries and dependencies to identify known vulnerabilities, outdated packages, licensing information, and dependency relationships."
+    },
+    {
+      "question": "Which of the following is NOT a typical SCA check?",
+      "option_a": "Dependency versions",
+      "option_b": "Known vulnerabilities",
+      "option_c": "License information",
+      "option_d": "Live user authentication behavior",
+      "correct_answer": "D",
+      "explanation": "SCA examines software dependencies, including versions, vulnerabilities, licenses, and dependency relationships. Live authentication behavior is more relevant to application security testing."
+    },
+    {
+      "question": "Which tool is identified in the lecture as an example of SCA?",
+      "option_a": "Checkmarx",
+      "option_b": "OWASP ZAP",
+      "option_c": "OWASP Dependency-Check",
+      "option_d": "Gitleaks",
+      "correct_answer": "C",
+      "explanation": "OWASP Dependency-Check is an SCA tool that helps identify known vulnerabilities in application dependencies."
+    },
+    {
+      "question": "What is the primary purpose of secret scanning?",
+      "option_a": "To identify outdated operating systems",
+      "option_b": "To detect sensitive credentials accidentally exposed in source-code repositories",
+      "option_c": "To identify SQL injection vulnerabilities in running applications",
+      "option_d": "To validate container networking configurations",
+      "correct_answer": "B",
+      "explanation": "Secret scanning identifies exposed sensitive information such as AWS access keys, API tokens, database passwords, and private keys."
+    },
+    {
+      "question": "A developer accidentally commits an AWS access key to a public Git repository. Which action is the most appropriate immediate response?",
+      "option_a": "Rename the repository and continue development",
+      "option_b": "Delete the local copy of the repository only",
+      "option_c": "Rotate the exposed credential immediately and investigate the exposure",
+      "option_d": "Wait for the next scheduled security audit",
+      "correct_answer": "C",
+      "explanation": "The lecture recommends immediately rotating exposed credentials. Removing the visible secret alone does not invalidate a potentially compromised credential."
+    },
+    {
+      "question": "Which tool is specifically identified as an example of secret scanning?",
+      "option_a": "Gitleaks",
+      "option_b": "Checkov",
+      "option_c": "SonarQube",
+      "option_d": "OWASP ZAP",
+      "correct_answer": "A",
+      "explanation": "Gitleaks is identified as a secret-scanning tool. It helps detect exposed credentials in repositories."
+    },
+    {
+      "question": "What distinguishes Dynamic Application Security Testing (DAST) from SAST?",
+      "option_a": "DAST analyzes source code without execution, while SAST requires a running application",
+      "option_b": "DAST tests a running application externally, while SAST analyzes code without executing the application",
+      "option_c": "Both exclusively analyze third-party dependencies",
+      "option_d": "DAST only analyzes Dockerfiles, while SAST analyzes network configurations",
+      "correct_answer": "B",
+      "explanation": "DAST tests a running application from the outside, whereas SAST analyzes source or compiled code without executing the application."
+    },
+    {
+      "question": "Which vulnerability is particularly relevant to DAST testing?",
+      "option_a": "Cross-Site Scripting in a running web application",
+      "option_b": "An outdated package version in a dependency manifest",
+      "option_c": "A hardcoded API key in source code",
+      "option_d": "An unencrypted Terraform storage resource",
+      "correct_answer": "A",
+      "explanation": "DAST can identify runtime web application vulnerabilities such as Cross-Site Scripting, SQL injection, authentication weaknesses, and session management problems."
+    },
+    {
+      "question": "Which tool is identified in the lecture as an example of DAST?",
+      "option_a": "Semgrep",
+      "option_b": "Gitleaks",
+      "option_c": "OWASP ZAP",
+      "option_d": "Dependabot",
+      "correct_answer": "C",
+      "explanation": "OWASP ZAP is identified as an example of Dynamic Application Security Testing."
+    },
+    {
+      "question": "What is the primary purpose of Infrastructure as Code (IaC) security scanning?",
+      "option_a": "To identify security misconfigurations in infrastructure configuration files",
+      "option_b": "To execute application unit tests",
+      "option_c": "To inspect user authentication requests",
+      "option_d": "To identify formatting problems in application source code",
+      "correct_answer": "A",
+      "explanation": "IaC scanning examines infrastructure definitions, such as Terraform and CloudFormation files, to identify insecure configurations before deployment."
+    },
+    {
+      "question": "Which of the following is an example of an IaC security issue?",
+      "option_a": "A missing unit test",
+      "option_b": "A public storage resource that should be private",
+      "option_c": "An outdated JavaScript dependency",
+      "option_d": "A hardcoded password in application source code",
+      "correct_answer": "B",
+      "explanation": "Public storage, open firewall rules, excessive permissions, and unencrypted resources are examples of IaC misconfigurations."
+    },
+    {
+      "question": "Which tool is identified as an example of IaC security scanning?",
+      "option_a": "Checkov",
+      "option_b": "TruffleHog",
+      "option_c": "OWASP ZAP",
+      "option_d": "Fortify",
+      "correct_answer": "A",
+      "explanation": "Checkov is an IaC security scanning tool. The lecture also identifies tfsec and KICS."
+    },
+    {
+      "question": "Which CI/CD stage is primarily associated with Software Composition Analysis in the lecture?",
+      "option_a": "Runtime",
+      "option_b": "Dependencies",
+      "option_c": "Deployment",
+      "option_d": "Infrastructure provisioning",
+      "correct_answer": "B",
+      "explanation": "The lecture associates SCA with the Dependencies stage, where third-party libraries and packages are analyzed."
+    },
+    {
+      "question": "Which security activity is associated with the runtime stage of the CI/CD security model?",
+      "option_a": "Secret scanning",
+      "option_b": "SAST",
+      "option_c": "Monitoring and threat detection",
+      "option_d": "Infrastructure as Code scanning",
+      "correct_answer": "C",
+      "explanation": "Runtime security focuses on monitoring deployed systems and detecting potential threats during operation."
+    },
+    {
+      "question": "Which security activity is most directly associated with the deployment stage?",
+      "option_a": "Policy checks",
+      "option_b": "Source-code compilation",
+      "option_c": "Dependency version identification",
+      "option_d": "Unit testing",
+      "correct_answer": "A",
+      "explanation": "The lecture associates deployment with policy checks to ensure that deployment conditions and security requirements are satisfied."
+    },
+    {
+      "question": "A development team wants to detect weak cryptographic functions before running the application. Which security technique should they use?",
+      "option_a": "DAST",
+      "option_b": "SAST",
+      "option_c": "Runtime monitoring",
+      "option_d": "Artifact repository scanning",
+      "correct_answer": "B",
+      "explanation": "SAST analyzes code without executing the application and can identify weak cryptography and insecure function usage."
+    },
+    {
+      "question": "A company wants to discover whether its application uses a vulnerable version of the Requests Python library. Which security activity is most appropriate?",
+      "option_a": "SCA",
+      "option_b": "DAST",
+      "option_c": "Secret scanning",
+      "option_d": "Runtime threat detection",
+      "correct_answer": "A",
+      "explanation": "SCA examines dependency versions and known vulnerabilities in third-party libraries such as Requests."
+    },
+    {
+      "question": "A security engineer wants to test whether an application has weak session management by interacting with its running web interface. Which technique should be selected?",
+      "option_a": "SAST",
+      "option_b": "SCA",
+      "option_c": "DAST",
+      "option_d": "IaC scanning",
+      "correct_answer": "C",
+      "explanation": "DAST tests running applications externally and can identify authentication weaknesses and session management problems."
+    },
+    {
+      "question": "What is the purpose of scanning infrastructure configuration before provisioning resources?",
+      "option_a": "To identify insecure configurations before they become deployed infrastructure",
+      "option_b": "To verify the application's user interface",
+      "option_c": "To replace runtime monitoring",
+      "option_d": "To automatically rotate every application dependency",
+      "correct_answer": "A",
+      "explanation": "IaC scanning identifies misconfigurations such as open firewall rules and excessive permissions before infrastructure is provisioned."
+    },
+    {
+      "question": "What is the primary purpose of container image scanning in a CI/CD pipeline?",
+      "option_a": "To verify that developers have completed their code reviews",
+      "option_b": "To identify vulnerabilities and security issues in container images before deployment",
+      "option_c": "To monitor end-user application behavior",
+      "option_d": "To automatically increase container resource allocation",
+      "correct_answer": "B",
+      "explanation": "Container image scanning examines images for vulnerabilities, dependency risks, exposed secrets, and other security issues before deployment."
+    },
+    {
+      "question": "Which of the following is a security check specifically mentioned for container images?",
+      "option_a": "Verify base images",
+      "option_b": "Check employee attendance",
+      "option_c": "Validate customer billing records",
+      "option_d": "Measure website search rankings",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies base-image verification as one of the security checks performed during container security validation."
+    },
+    {
+      "question": "What does SBOM stand for?",
+      "option_a": "Secure Build Operation Management",
+      "option_b": "Software Bill of Materials",
+      "option_c": "System Backup Operation Method",
+      "option_d": "Software Binary Optimization Mechanism",
+      "correct_answer": "B",
+      "explanation": "SBOM stands for Software Bill of Materials. The lecture identifies SBOM generation as a container and software supply-chain security activity."
+    },
+    {
+      "question": "What is the primary purpose of generating an SBOM?",
+      "option_a": "To provide visibility into the software components included in an application or artifact",
+      "option_b": "To replace all application security testing",
+      "option_c": "To automatically deploy an application to production",
+      "option_d": "To encrypt every file in a container image",
+      "correct_answer": "A",
+      "explanation": "An SBOM documents software components and helps organizations understand the components included in their software supply chain."
+    },
+    {
+      "question": "Why should container images be signed?",
+      "option_a": "To increase the number of packages inside the image",
+      "option_b": "To provide a means of verifying image authenticity and integrity",
+      "option_c": "To eliminate the need for container registries",
+      "option_d": "To automatically patch all vulnerabilities",
+      "correct_answer": "B",
+      "explanation": "Image signing supports verification that an image is authentic and has not been modified without authorization."
+    },
+    {
+      "question": "What should happen when a container image scan identifies a critical vulnerability under the example pipeline policy?",
+      "option_a": "The image should automatically be deployed",
+      "option_b": "The security scan should be ignored",
+      "option_c": "The pipeline should fail and deployment should be blocked",
+      "option_d": "Only the image name should be changed",
+      "correct_answer": "C",
+      "explanation": "The lecture illustrates that a critical vulnerability can cause the pipeline to fail and prevent the vulnerable image from reaching production."
+    },
+    {
+      "question": "Which of the following is NOT listed as a container security check in the lecture?",
+      "option_a": "Scanning image vulnerabilities",
+      "option_b": "Detecting secrets",
+      "option_c": "Checking Dockerfile security",
+      "option_d": "Performing employee background verification",
+      "correct_answer": "D",
+      "explanation": "Container security checks include vulnerability scanning, dependency scanning, secret detection, base-image verification, Dockerfile checks, SBOM generation, and signature verification."
+    },
+    {
+      "question": "Which sequence best represents the container security process shown in the lecture?",
+      "option_a": "Code → Build Image → Image Scan → Vulnerability Check → Image Signing → Registry → Deployment",
+      "option_b": "Code → Deployment → Registry → Image Signing → Build Image",
+      "option_c": "Image Scan → Code → Production → Build Image → Registry",
+      "option_d": "Code → Image Signing → Deployment → Build Image → Vulnerability Check",
+      "correct_answer": "A",
+      "explanation": "The presented process builds the container image, scans it, evaluates vulnerabilities, signs the image, stores it in a registry, and then proceeds toward deployment."
+    },
+    {
+      "question": "What is a security gate in a CI/CD pipeline?",
+      "option_a": "A physical security device protecting a development office",
+      "option_b": "An automated condition determining whether a build can proceed to the next pipeline stage",
+      "option_c": "A manual process for creating source-code repositories",
+      "option_d": "A mechanism for increasing application execution speed",
+      "correct_answer": "B",
+      "explanation": "A security gate evaluates automated conditions and determines whether the build is allowed to continue through the pipeline."
+    },
+    {
+      "question": "Which condition is included in the example security gate policy from the lecture?",
+      "option_a": "Allow unlimited critical vulnerabilities",
+      "option_b": "Allow exposed secrets if the application passes unit tests",
+      "option_c": "No critical vulnerabilities",
+      "option_d": "Allow all high-risk IaC misconfigurations",
+      "correct_answer": "C",
+      "explanation": "The example policy requires no critical vulnerabilities, no exposed secrets, a maximum of five medium vulnerabilities, and no high-risk IaC misconfigurations."
+    },
+    {
+      "question": "Under the example security gate policy, how many medium vulnerabilities are permitted at most?",
+      "option_a": "Zero",
+      "option_b": "Three",
+      "option_c": "Five",
+      "option_d": "Ten",
+      "correct_answer": "C",
+      "explanation": "The lecture's example policy allows a maximum of five medium vulnerabilities."
+    },
+    {
+      "question": "What happens when a build fails a security gate?",
+      "option_a": "It automatically skips all remaining security checks and deploys",
+      "option_b": "It is stopped from proceeding to deployment",
+      "option_c": "It is automatically signed as a trusted artifact",
+      "option_d": "It is transferred directly to runtime monitoring",
+      "correct_answer": "B",
+      "explanation": "A failed security gate prevents the build from proceeding to the next stage, including deployment when the failed gate precedes deployment."
+    },
+    {
+      "question": "Which of the following best describes automated compliance checking?",
+      "option_a": "Checking software against defined security policies automatically",
+      "option_b": "Manually inspecting application screenshots",
+      "option_c": "Replacing source-code repositories with spreadsheets",
+      "option_d": "Automatically accepting every deployment",
+      "correct_answer": "A",
+      "explanation": "Automated compliance checking evaluates configurations and systems against established security policies."
+    },
+    {
+      "question": "Which activity is performed when every code commit is automatically analyzed for security weaknesses?",
+      "option_a": "Automated code scanning",
+      "option_b": "Manual artifact approval",
+      "option_c": "Runtime backup verification",
+      "option_d": "Infrastructure provisioning",
+      "correct_answer": "A",
+      "explanation": "Automated code scanning checks code changes for security issues whenever commits are introduced."
+    },
+    {
+      "question": "When should automated container scanning ideally occur according to the lecture?",
+      "option_a": "Only after the application has been running in production for several months",
+      "option_b": "Before container images are deployed",
+      "option_c": "Only when a customer reports a vulnerability",
+      "option_d": "Before developers write source code",
+      "correct_answer": "B",
+      "explanation": "The lecture specifies that container images should be scanned before deployment to prevent vulnerable images from reaching production."
+    },
+    {
+      "question": "Which security threat is associated with compromised developer credentials?",
+      "option_a": "An attacker may gain unauthorized access to development resources",
+      "option_b": "An application automatically loses its database schema",
+      "option_c": "A container image automatically becomes smaller",
+      "option_d": "The CI pipeline automatically becomes compliant",
+      "correct_answer": "A",
+      "explanation": "Compromised developer credentials can allow attackers to access repositories and development systems, potentially enabling malicious changes."
+    },
+    {
+      "question": "Which control is specifically recommended to protect against compromised developer credentials?",
+      "option_a": "Disable all code reviews",
+      "option_b": "Strong authentication and MFA",
+      "option_c": "Use outdated dependencies",
+      "option_d": "Allow unrestricted repository access",
+      "correct_answer": "B",
+      "explanation": "Strong authentication and multi-factor authentication reduce the risk of unauthorized access through compromised credentials."
+    },
+    {
+      "question": "Which control helps reduce the risk of unauthorized pipeline modifications?",
+      "option_a": "Protected branches",
+      "option_b": "Publicly exposing CI/CD tokens",
+      "option_c": "Disabling audit logs",
+      "option_d": "Allowing all users to modify pipeline configurations",
+      "correct_answer": "A",
+      "explanation": "Protected branches help prevent unauthorized modifications to important code branches and pipeline-related changes."
+    },
+    {
+      "question": "Which security measure is recommended for protecting CI/CD artifacts?",
+      "option_a": "Artifact signing",
+      "option_b": "Disabling integrity verification",
+      "option_c": "Allowing anonymous modifications",
+      "option_d": "Removing artifact version history",
+      "correct_answer": "A",
+      "explanation": "Artifact signing provides a way to verify artifact authenticity and integrity before deployment."
+    },
+    {
+      "question": "Why are secure build agents important?",
+      "option_a": "They reduce the need for software dependencies",
+      "option_b": "They help protect the build environment from compromise",
+      "option_c": "They automatically guarantee that application code is vulnerability-free",
+      "option_d": "They eliminate the need for repository authentication",
+      "correct_answer": "B",
+      "explanation": "Secure build agents help protect the build infrastructure, which is a valuable target for attackers attempting to compromise software artifacts."
+    },
+    {
+      "question": "Which of the following is a CI/CD pipeline security threat identified in the lecture?",
+      "option_a": "Malicious code commits",
+      "option_b": "Automatic unit test execution",
+      "option_c": "Version history maintenance",
+      "option_d": "Dependency vulnerability scanning",
+      "correct_answer": "A",
+      "explanation": "Malicious code commits are a pipeline security threat because attackers or malicious insiders may introduce harmful changes into the software."
+    },
+    {
+      "question": "What is the primary purpose of audit logging in CI/CD security?",
+      "option_a": "To hide unauthorized pipeline changes",
+      "option_b": "To maintain records that support tracking and investigating activities",
+      "option_c": "To automatically resolve every vulnerability",
+      "option_d": "To eliminate the need for access control",
+      "correct_answer": "B",
+      "explanation": "Audit logging records activities and changes, supporting accountability, investigation, and detection of suspicious pipeline behavior."
+    },
+    {
+      "question": "Why is software supply-chain security important?",
+      "option_a": "Applications are built exclusively from internally written code",
+      "option_b": "Modern applications depend on external components that may introduce security risks",
+      "option_c": "Third-party components cannot contain vulnerabilities",
+      "option_d": "Supply-chain attacks only affect physical manufacturing systems",
+      "correct_answer": "B",
+      "explanation": "Modern software depends on libraries, container images, build tools, APIs, services, and package repositories, each of which may introduce security risks."
+    },
+    {
+      "question": "Which of the following is identified as a potential supply-chain attack target?",
+      "option_a": "Open-source packages",
+      "option_b": "Only end-user monitors",
+      "option_c": "Only physical network cables",
+      "option_d": "Only application documentation",
+      "correct_answer": "A",
+      "explanation": "Attackers may compromise open-source packages, container images, build systems, CI/CD pipelines, and package repositories."
+    },
+    {
+      "question": "What is the purpose of dependency version pinning?",
+      "option_a": "To allow dependencies to change versions without control",
+      "option_b": "To control which dependency versions are used during builds",
+      "option_c": "To eliminate the need for dependency scanning",
+      "option_d": "To automatically remove all third-party libraries",
+      "correct_answer": "B",
+      "explanation": "Version pinning helps make dependency selection predictable and controlled, reducing risks associated with unexpected dependency changes."
+    },
+    {
+      "question": "Which combination contains only supply-chain security measures listed in the lecture?",
+      "option_a": "Dependency scanning, SBOM, trusted repositories, and image signing",
+      "option_b": "Disabling version history, anonymous access, and unrestricted permissions",
+      "option_c": "Removing dependency checks, disabling logging, and allowing unsigned images",
+      "option_d": "Manual compilation, public credentials, and unverified artifacts",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies dependency scanning, SBOM generation, trusted repositories, image signing, artifact verification, version pinning, and continuous monitoring as supply-chain security measures."
+    },
+    {
+      "question": "What is a software artifact in the context of the lecture?",
+      "option_a": "A file produced during the software build process",
+      "option_b": "A physical server used exclusively for testing",
+      "option_c": "A developer's personal authentication credential",
+      "option_d": "A network firewall rule",
+      "correct_answer": "A",
+      "explanation": "Artifacts are files produced during builds, including executables, packages, container images, libraries, and deployment packages."
+    },
+    {
+      "question": "Which of the following is an example of a software artifact?",
+      "option_a": "A compiled application package",
+      "option_b": "A developer's personal identification document",
+      "option_c": "A physical office access card",
+      "option_d": "A network cable",
+      "correct_answer": "A",
+      "explanation": "Compiled application packages are build outputs and therefore qualify as software artifacts."
+    },
+    {
+      "question": "Why should software artifacts be stored in trusted repositories?",
+      "option_a": "To make artifacts publicly modifiable",
+      "option_b": "To support secure storage and controlled access to build outputs",
+      "option_c": "To eliminate the need for deployment verification",
+      "option_d": "To allow anonymous replacement of application packages",
+      "correct_answer": "B",
+      "explanation": "Trusted artifact repositories help securely store build outputs and control access to artifacts before deployment."
+    },
+    {
+      "question": "Which practice helps prevent unauthorized modification of stored artifacts?",
+      "option_a": "Allowing unrestricted write permissions",
+      "option_b": "Disabling artifact verification",
+      "option_c": "Controlling access and verifying artifact integrity",
+      "option_d": "Deleting all artifact version information",
+      "correct_answer": "C",
+      "explanation": "Access control and integrity verification help prevent unauthorized modification and allow artifact authenticity to be checked."
+    },
+    {
+      "question": "Why should artifact version history be maintained?",
+      "option_a": "To make it impossible to identify previous builds",
+      "option_b": "To preserve records of artifact versions and support traceability",
+      "option_c": "To allow old artifacts to overwrite new artifacts without approval",
+      "option_d": "To replace all security scanning activities",
+      "correct_answer": "B",
+      "explanation": "Maintaining version history supports traceability and helps identify which artifact versions were produced, stored, and used."
+    },
+    {
+      "question": "Which statement best describes the secure artifact management process?",
+      "option_a": "Artifacts are stored anywhere and deployed without verification",
+      "option_b": "Artifacts are securely stored, scanned, verified, signed, and protected against unauthorized modification",
+      "option_c": "Artifacts are deployed before they are generated",
+      "option_d": "Artifacts are modified directly in production without maintaining versions",
+      "correct_answer": "B",
+      "explanation": "Secure artifact management includes trusted repositories, access control, scanning, integrity verification, signing, version history, and protection against unauthorized modification."
+    },
+    {
+      "question": "In the complete DevSecOps pipeline presented in the lecture, which activity follows source-code analysis and dependency scanning before the container build?",
+      "option_a": "Runtime monitoring",
+      "option_b": "Build",
+      "option_c": "Production deployment",
+      "option_d": "Artifact deletion",
+      "correct_answer": "B",
+      "explanation": "The pipeline places SAST and dependency scanning before the build stage, where the application is packaged."
+    },
+    {
+      "question": "In the online shopping application worked example, which security activity checks Terraform configuration for misconfigurations?",
+      "option_a": "SAST",
+      "option_b": "SCA",
+      "option_c": "IaC scanning",
+      "option_d": "Secret rotation",
+      "correct_answer": "C",
+      "explanation": "The worked example uses IaC scanning to examine Terraform configurations for security misconfigurations."
+    },
+    {
+      "question": "In the online shopping application example, which activity ensures that only artifacts satisfying security policies can proceed?",
+      "option_a": "Security gate",
+      "option_b": "Dependency installation",
+      "option_c": "Source-code compilation",
+      "option_d": "Runtime monitoring",
+      "correct_answer": "A",
+      "explanation": "The security gate evaluates whether security policies are satisfied before the pipeline proceeds to deployment."
+    },
+    {
+      "question": "Which activity is performed after deployment in the online shopping application example?",
+      "option_a": "SAST",
+      "option_b": "Runtime monitoring",
+      "option_c": "Dependency installation",
+      "option_d": "Container compilation",
+      "correct_answer": "B",
+      "explanation": "The worked example performs continuous monitoring of the application and infrastructure after deployment."
+    },
+    {
+      "question": "Which statement best represents the key message of the complete DevSecOps pipeline?",
+      "option_a": "Security should be performed only after all development activities are complete",
+      "option_b": "Security activities should be continuously integrated throughout the delivery pipeline",
+      "option_c": "Security scanning should replace all functional testing",
+      "option_d": "Only production systems require security controls",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes continuous integration of security activities rather than treating security as a final stage."
+    },
+    {
+      "question": "A company discovers that its developers frequently introduce vulnerable third-party libraries. The vulnerabilities are usually identified only after deployment. Which change most directly addresses this problem?",
+      "option_a": "Introduce automated SCA checks when dependencies are added or updated",
+      "option_b": "Increase the frequency of production database backups",
+      "option_c": "Perform secret scanning only on deployment credentials",
+      "option_d": "Move all security testing to the runtime monitoring stage",
+      "correct_answer": "A",
+      "explanation": "Early SCA checks identify vulnerable dependencies during development, demonstrating Shift-Left Security and reducing late-stage remediation."
+    },
+    {
+      "question": "A security team must identify SQL injection vulnerabilities in both source code and a running web application. Which combination of techniques is most appropriate?",
+      "option_a": "SCA and secret scanning",
+      "option_b": "SAST and DAST",
+      "option_c": "IaC scanning and image signing",
+      "option_d": "SBOM generation and artifact versioning",
+      "correct_answer": "B",
+      "explanation": "SAST can identify potential SQL injection weaknesses through code analysis, while DAST tests the running application externally to identify exploitable behavior."
+    },
+    {
+      "question": "A developer commits an API token into a repository. The pipeline detects it, but the developer removes the token from the latest commit and immediately retries the build. What is the most important additional security action?",
+      "option_a": "Generate a new container image without changing the credential",
+      "option_b": "Rotate or revoke the exposed token because it may already have been compromised",
+      "option_c": "Disable secret scanning for future commits",
+      "option_d": "Move the token into a different source-code file",
+      "correct_answer": "B",
+      "explanation": "Removing a secret from the latest commit does not guarantee that it was never accessed. The exposed credential must be rotated or revoked."
+    },
+    {
+      "question": "A company uses SAST, SCA, DAST, and IaC scanning but performs all four checks immediately before production deployment. Which principle is it failing to implement effectively?",
+      "option_a": "Artifact versioning",
+      "option_b": "Shift-Left Security",
+      "option_c": "Runtime monitoring",
+      "option_d": "Container portability",
+      "correct_answer": "B",
+      "explanation": "Although the company uses appropriate security techniques, delaying all checks until the final stage contradicts Shift-Left Security, which encourages earlier security activities."
+    },
+    {
+      "question": "A container image passes application tests but contains a known critical vulnerability in one of its underlying packages. The organization's policy prohibits critical vulnerabilities. What should the CI/CD pipeline do?",
+      "option_a": "Deploy the image because functional tests passed",
+      "option_b": "Ignore the vulnerability because it exists in the base image",
+      "option_c": "Fail the security gate and block deployment",
+      "option_d": "Generate an SBOM and automatically approve the image",
+      "correct_answer": "C",
+      "explanation": "Functional testing does not override security policies. A critical vulnerability violates the example security gate policy and should block deployment."
+    },
+    {
+      "question": "An organization wants to establish which third-party libraries are included in a container image so that it can assess the impact of newly discovered vulnerabilities. Which security measure is most useful?",
+      "option_a": "SBOM generation",
+      "option_b": "Protected branches",
+      "option_c": "MFA",
+      "option_d": "Session management testing",
+      "correct_answer": "A",
+      "explanation": "An SBOM provides visibility into software components, helping organizations identify whether newly discovered vulnerabilities affect their software."
+    },
+    {
+      "question": "A company scans its source code for hardcoded credentials but does not scan its Git repository for exposed API tokens in configuration files or historical commits. Which security activity should be strengthened?",
+      "option_a": "Secret scanning",
+      "option_b": "DAST",
+      "option_c": "IaC scanning",
+      "option_d": "Runtime monitoring",
+      "correct_answer": "A",
+      "explanation": "Secret scanning is specifically intended to identify sensitive credentials exposed in repositories. It complements SAST rather than being replaced by it."
+    },
+    {
+      "question": "A developer updates a dependency manifest to use the latest version of a third-party package. However, the package repository has been compromised and the new version contains malicious code. Which combination of measures would best help reduce this supply-chain risk?",
+      "option_a": "Trusted repositories, dependency scanning, version pinning, and artifact verification",
+      "option_b": "Disabling dependency scanning and allowing automatic updates",
+      "option_c": "Using only DAST and disabling source-code reviews",
+      "option_d": "Removing runtime monitoring and increasing deployment frequency",
+      "correct_answer": "A",
+      "explanation": "Trusted repositories, dependency scanning, controlled versions, and artifact verification provide complementary protections against compromised dependencies and malicious software components."
+    },
+    {
+      "question": "A CI/CD pipeline allows every developer to modify deployment configurations and pipeline credentials. An attacker compromises one developer account and changes the pipeline to deploy malicious code. Which combination of controls most directly addresses this attack?",
+      "option_a": "Protected branches, MFA, least privilege, and audit logging",
+      "option_b": "SBOM generation, image compression, and unit testing",
+      "option_c": "DAST, dependency version updates, and application caching",
+      "option_d": "Runtime monitoring alone",
+      "correct_answer": "A",
+      "explanation": "MFA reduces credential compromise risk, least privilege limits access, protected branches restrict unauthorized modifications, and audit logs support investigation."
+    },
+    {
+      "question": "A company uses a secure artifact repository, but deployment servers download artifacts without verifying their signatures or integrity. What is the primary remaining risk?",
+      "option_a": "The application cannot execute unit tests",
+      "option_b": "A modified or substituted artifact could be deployed without being detected",
+      "option_c": "The repository cannot store multiple versions",
+      "option_d": "The source-code repository will automatically become public",
+      "correct_answer": "B",
+      "explanation": "Secure storage alone does not guarantee that the artifact received by a deployment system is authentic and unchanged. Signature and integrity verification are also necessary."
+    },
+    {
+      "question": "An infrastructure team uses Terraform to provision cloud storage. The configuration accidentally makes a storage resource publicly accessible. Which action provides the earliest opportunity to prevent this misconfiguration?",
+      "option_a": "Use IaC scanning before infrastructure deployment",
+      "option_b": "Use DAST after users access the storage resource",
+      "option_c": "Generate an application SBOM",
+      "option_d": "Use secret scanning on application source code",
+      "correct_answer": "A",
+      "explanation": "IaC scanning can identify public storage configurations before resources are provisioned, preventing the misconfiguration from reaching the deployed environment."
+    },
+    {
+      "question": "A company performs container vulnerability scanning and generates an SBOM but does not verify the authenticity of images before deployment. Which security requirement is missing?",
+      "option_a": "Image signature verification",
+      "option_b": "Dependency version discovery",
+      "option_c": "Container vulnerability identification",
+      "option_d": "SBOM generation",
+      "correct_answer": "A",
+      "explanation": "Image scanning and SBOM generation provide vulnerability and component visibility, but signature verification is separately needed to establish image authenticity and integrity."
+    },
+    {
+      "question": "A pipeline uses the following security policy: zero critical vulnerabilities, no exposed secrets, no high-risk IaC misconfigurations, and a maximum of five medium vulnerabilities. A build contains zero critical vulnerabilities, one exposed API key, zero high-risk IaC issues, and three medium vulnerabilities. What should happen?",
+      "option_a": "Pass because the number of medium vulnerabilities is below five",
+      "option_b": "Pass because no critical vulnerabilities exist",
+      "option_c": "Fail because the exposed API key violates the security policy",
+      "option_d": "Pass because only production credentials need to be checked",
+      "correct_answer": "C",
+      "explanation": "Every security gate condition must be satisfied. Even though the other conditions pass, the exposed API key violates the explicit no-exposed-secrets requirement."
+    },
+    {
+      "question": "A build has two critical vulnerabilities, no exposed secrets, four medium vulnerabilities, and no high-risk IaC misconfigurations. According to the example policy, what is the correct decision?",
+      "option_a": "Pass because the number of medium vulnerabilities is acceptable",
+      "option_b": "Fail because critical vulnerabilities are prohibited",
+      "option_c": "Pass because no secrets were exposed",
+      "option_d": "Pass if the image has been signed",
+      "correct_answer": "B",
+      "explanation": "The policy explicitly prohibits critical vulnerabilities. Passing other conditions or signing the image does not override this requirement."
+    },
+    {
+      "question": "A company wants to detect authentication and session management weaknesses in its shopping application. It also wants to identify insecure functions in its source code. Which testing arrangement is correct?",
+      "option_a": "SAST for runtime authentication behavior and DAST for source-code analysis",
+      "option_b": "DAST for runtime authentication and session behavior, and SAST for insecure source-code functions",
+      "option_c": "SCA for both activities",
+      "option_d": "IaC scanning for both activities",
+      "correct_answer": "B",
+      "explanation": "DAST tests running applications and can identify authentication and session weaknesses. SAST analyzes source code and can identify insecure functions."
+    },
+    {
+      "question": "A company uses an artifact repository with access controls and version history. An attacker compromises a build server and replaces a package with a malicious version before it is uploaded. Which additional measure is most directly useful for detecting unauthorized artifact modification?",
+      "option_a": "Artifact integrity verification and signing",
+      "option_b": "Increasing the number of application unit tests",
+      "option_c": "Disabling artifact version history",
+      "option_d": "Allowing all developers to approve deployments",
+      "correct_answer": "A",
+      "explanation": "Artifact integrity verification and signing help establish whether an artifact has been altered and whether it originates from a trusted source."
+    },
+    {
+      "question": "A development team uses a vulnerable third-party library. The library is included in a container image, which is scanned only after production deployment. Which combination of improvements most directly applies Shift-Left Security?",
+      "option_a": "Perform SCA when dependencies are introduced and container scanning before deployment",
+      "option_b": "Perform runtime monitoring only after customer complaints",
+      "option_c": "Disable container scanning and depend on application availability tests",
+      "option_d": "Generate artifact version numbers without examining dependencies",
+      "correct_answer": "A",
+      "explanation": "Early SCA detects vulnerable dependencies before the build progresses, while pre-deployment container scanning checks the packaged image before it reaches production."
+    },
+    {
+      "question": "An attacker compromises a CI/CD token and uses it to access a build system. The attacker modifies a pipeline to upload a malicious container image to a registry. Which controls provide the most comprehensive defense against this scenario?",
+      "option_a": "Secret management, least privilege, secure build agents, artifact signing, and audit logging",
+      "option_b": "Application formatting, unit testing, and interface validation only",
+      "option_c": "Dependency version pinning without pipeline access controls",
+      "option_d": "DAST alone",
+      "correct_answer": "A",
+      "explanation": "The attack targets credentials, pipeline infrastructure, and build artifacts. Protecting secrets, restricting privileges, securing build agents, signing artifacts, and logging activities address different parts of the attack."
+    },
+    {
+      "question": "A team uses SAST and SCA successfully, but an attacker exploits a vulnerability in the deployed application that becomes visible only through its runtime behavior. Which security activity should complement the existing checks?",
+      "option_a": "DAST and runtime monitoring",
+      "option_b": "Artifact version history alone",
+      "option_c": "Secret scanning alone",
+      "option_d": "Dependency version pinning alone",
+      "correct_answer": "A",
+      "explanation": "DAST tests running applications for externally observable vulnerabilities, while runtime monitoring helps detect threats after deployment. These complement SAST and SCA."
+    },
+    {
+      "question": "An organization wants to prevent a compromised package from silently changing between builds. It also wants to know which software components were included in each released version. Which combination best supports these requirements?",
+      "option_a": "Version pinning and SBOM generation",
+      "option_b": "DAST and session management testing",
+      "option_c": "MFA and protected branches only",
+      "option_d": "Runtime monitoring and firewall configuration only",
+      "correct_answer": "A",
+      "explanation": "Version pinning controls which dependency versions are used, while SBOM generation records the software components included in a build."
+    },
+    {
+      "question": "A company blocks deployment when a container vulnerability scan fails. However, the pipeline allows the same artifact to be replaced in the registry after approval without another verification. What is the most significant weakness?",
+      "option_a": "The pipeline lacks continuous unit testing",
+      "option_b": "The approved artifact could be modified or substituted after the security gate",
+      "option_c": "The company performs too many security checks",
+      "option_d": "The pipeline cannot generate source code",
+      "correct_answer": "B",
+      "explanation": "A security gate only establishes that the evaluated artifact satisfied the policy at that point. Artifact signing, integrity verification, and access controls help ensure that the approved artifact is the one eventually deployed."
+    },
+    {
+      "question": "A company wants to enforce that every build follows the same security requirements and that developers receive immediate feedback about security problems. Which approach best satisfies both objectives?",
+      "option_a": "Perform security audits manually once per year",
+      "option_b": "Integrate automated security scans and security gates into the CI/CD pipeline",
+      "option_c": "Perform security testing only after production incidents",
+      "option_d": "Allow individual developers to decide whether security checks are necessary",
+      "correct_answer": "B",
+      "explanation": "Automated scans provide fast feedback, while security gates enforce consistent security requirements across builds."
+    },
+    {
+      "question": "A software company uses third-party APIs, open-source libraries, container images, and external build tools. Which statement best describes its supply-chain security responsibility?",
+      "option_a": "It only needs to secure source code written by its own developers",
+      "option_b": "It must consider risks introduced by external components and services throughout the software supply chain",
+      "option_c": "It only needs to secure the production database",
+      "option_d": "It can trust every dependency because it comes from a public repository",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies libraries, container images, build tools, APIs, third-party services, and package repositories as potential supply-chain attack targets."
+    },
+    {
+      "question": "A development organization has introduced automated code scanning, dependency scanning, container scanning, IaC scanning, and compliance checks. Which major DevSecOps benefit is most directly demonstrated?",
+      "option_a": "Security becomes a one-time activity",
+      "option_b": "Security controls are applied continuously and consistently throughout development and delivery",
+      "option_c": "All vulnerabilities are guaranteed to be eliminated",
+      "option_d": "Developers no longer need to understand security",
+      "correct_answer": "B",
+      "explanation": "The lecture emphasizes continuous security integration, consistency, reduced human error, faster feedback, and shared responsibility across development, security, and operations."
+    }
+  ]
+}
