@@ -1,94 +1,365 @@
 {
   "questions": [
     {
-      "question": "Within the Governance, Risk, and Compliance (GRC) model, which statement accurately describes the primary role of Information Security Governance?",
-      "option_a": "A. Identifying specific system threats and vulnerabilities and selecting technical patches to treat them",
-      "option_b": "B. Establishing direction, responsibilities, accountability, and decision-making structures that align security objectives with business objectives",
-      "option_c": "C. Conducting independent external regulatory audits to certify an organization against international standards",
-      "option_d": "D. Executing automated vulnerability scans within CI/CD pipelines as an isolated technical task",
+      "question": "What is the primary purpose of information security governance within an organization?",
+      "option_a": "A. To physically secure server rooms and restrict perimeter building access",
+      "option_b": "B. To direct, control, and oversee security activities while aligning them with business objectives and risk appetite",
+      "option_c": "C. To independently test software code for vulnerabilities prior to a production deployment",
+      "option_d": "D. To guarantee that an organization never experiences a data breach or security incident",
       "correct_answer": "B",
-      "explanation": "Information security governance is the system used to direct, control, and oversee security activities by establishing direction, responsibilities, accountability, and decision-making structures while aligning security objectives with business objectives, legal obligations, and risk appetite[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span). In contrast, risk management identifies threats and vulnerabilities to select treatments, and compliance demonstrates that laws, regulations, policies, and standards are followed[span_2](start_span)[span_2](end_span)."
+      "explanation": "Information security governance provides the structural system to direct, control, and oversee security activities, ensuring alignment with legal obligations, risk appetite, and business goals."
     },
     {
-      "question": "How are ISO/IEC 27001 and the NIST Cybersecurity Framework categorized in relation to regulations, standards, frameworks, and guidance?",
-      "option_a": "A. Both ISO/IEC 27001 and the NIST Cybersecurity Framework are legally enforceable EU regulations",
-      "option_b": "B. ISO/IEC 27001 is a sector-specific U.S. healthcare rule, whereas the NIST Cybersecurity Framework is an EU agency regulation",
-      "option_c": "C. ISO/IEC 27001 is a standard providing structured requirements or best practices, whereas the NIST Cybersecurity Framework is an organized approach for managing cybersecurity",
-      "option_d": "D. ISO/IEC 27001 is non-binding ENISA guidance, whereas the NIST Cybersecurity Framework is a legally enforceable federal law",
+      "question": "In the context of GRC, how does 'Compliance' differ fundamentally from 'Risk Management'?",
+      "option_a": "A. Compliance identifies threats and vulnerabilities, whereas Risk Management selects technical treatments.",
+      "option_b": "B. Compliance establishes decision-making structures, whereas Risk Management enforces legally binding contracts.",
+      "option_c": "C. Compliance demonstrates that required laws, regulations, standards, and policies are being followed, whereas Risk Management identifies threats, evaluates risk, and selects treatments.",
+      "option_d": "D. Compliance focuses exclusively on physical asset security, whereas Risk Management focuses purely on cloud infrastructure.",
       "correct_answer": "C",
-      "explanation": "Standards such as ISO/IEC 27001 provide structured requirements or best practices, whereas frameworks such as the NIST Cybersecurity Framework provide organized approaches for managing cybersecurity[span_3](start_span)[span_3](end_span). By comparison, the GDPR is a legally enforceable regulation, HIPAA is a sector-specific rule in the U.S. healthcare sector, and ENISA publishes cybersecurity guidance and recommendations[span_4](start_span)[span_4](end_span)."
+      "explanation": "Compliance is about demonstrating adherence to required laws, regulations, contracts, and standards, while risk management deals with identifying threats/vulnerabilities, evaluating risk, and implementing treatments."
     },
     {
-      "question": "Which core data protection principle of the General Data Protection Regulation (GDPR) requires an organization to collect only the personal data that is necessary for its stated purpose?",
-      "option_a": "A. Storage limitation",
+      "question": "Which of the following best exemplifies a sector-specific regulatory rule rather than a general law or standard?",
+      "option_a": "A. ISO/IEC 27001",
+      "option_b": "B. The General Data Protection Regulation (GDPR)",
+      "option_c": "C. The Health Insurance Portability and Accountability Act (HIPAA)",
+      "option_d": "D. The NIST Cybersecurity Framework",
+      "option_<answer>": "C",
+      "correct_answer": "C",
+      "explanation": "HIPAA is a U.S. federal rule specifically targeting the healthcare sector and protected health information (PHI), whereas GDPR is a broad cross-sector regulation, ISO 27001 is a standard, and NIST is a framework."
+    },
+    {
+      "question": "An e-commerce company based in Tokyo, Japan, processes online orders and user profiles for citizens living permanently in Paris, France. Does the GDPR apply to this organization?",
+      "option_a": "A. No, because the company is physically established outside of the European Union.",
+      "option_b": "B. Yes, because GDPR applies to organizations outside the EU when offering goods or services to, or monitoring, individuals residing in the EU.",
+      "option_c": "C. No, unless the company opens a physical brick-and-mortar storefront within an EU member state.",
+      "option_d": "D. Yes, but only if the data being processed involves health information or biometric identifiers.",
+      "correct_answer": "B",
+      "explanation": "GDPR applies not only to organizations established in the EU/EEA but also to non-EU organizations that offer goods/services to or monitor individuals within the EU."
+    },
+    {
+      "question": "Under GDPR Core Data Protection Principles, which principle dictates that organizations should collect personal data only for specified, explicit, and legitimate purposes and not further process it in a manner incompatible with those purposes?",
+      "option_a": "A. Data minimization",
+      "option_b": "B. Storage limitation",
+      "option_c": "C. Purpose limitation",
+      "option_d": "D. Integrity and confidentiality",
+      "correct_answer": "C",
+      "explanation": "Purpose limitation explicitly requires that data be collected for specified, explicit, and legitimate purposes and restricted from incompatible subsequent processing."
+    },
+    {
+      "question": "An online retail platform collects customer names, shipping addresses, credit card numbers, and employee shoe sizes on its signup form just in case it is useful later. Which GDPR principle is directly violated by collecting the shoe size?",
+      "option_a": "A. Accuracy",
       "option_b": "B. Data minimization",
-      "option_c": "C. Integrity and confidentiality",
-      "option_d": "D. Accuracy",
+      "option_c": "C. Accountability",
+      "option_d": "D. Lawfulness, fairness, and transparency",
       "correct_answer": "B",
-      "explanation": "Under the seven core data protection principles of the GDPR, data minimization requires organizations to collect only what is necessary[span_5](start_span)[span_5](end_span). Storage limitation requires retaining data only as long as necessary, accuracy requires keeping personal data accurate and up to date, and integrity and confidentiality require protecting against unauthorized access, loss, or damage[span_6](start_span)[span_6](end_span)."
+      "explanation": "The data minimization principle dictates that personal data collected must be adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed."
     },
     {
-      "question": "Under the General Data Protection Regulation (GDPR), what are the territorial scope and personal-data breach notification requirements?",
-      "option_a": "A. It applies only to companies physically headquartered in the EU and requires breach notification within 24 hours",
-      "option_b": "B. It applies only to U.S. healthcare covered entities and requires breach notification within 30 days",
-      "option_c": "C. It applies to EU-established organizations as well as non-EU organizations offering goods/services to or monitoring people in the EU, and requires notifying the supervisory authority of certain breaches within 72 hours of becoming aware",
-      "option_d": "D. It applies globally to all organizations regardless of data subjects, and requires notifying ENISA within 48 hours of a breach",
+      "question": "Under GDPR Article 33, within what timeframe must a qualifying personal-data breach be notified to the relevant supervisory authority?",
+      "option_a": "A. Within 24 hours",
+      "option_b": "B. Within 48 hours",
+      "option_c": "C. Within 72 hours of becoming aware of it",
+      "option_d": "D. Within 30 calendar days",
       "correct_answer": "C",
-      "explanation": "The GDPR applies to organizations established in the EU and can also apply to organizations outside the EU when offering goods or services to, or monitoring, people in the EU[span_7](start_span)[span_7](end_span). Furthermore, under Article 33, certain personal-data breaches must be notified to the supervisory authority within 72 hours of becoming aware[span_8](start_span)[span_8](end_span)."
+      "explanation": "Article 33 of the GDPR requires that certain personal-data breaches be notified to the supervisory authority within 72 hours of becoming aware of the breach, where required."
     },
     {
-      "question": "Which component of the Health Insurance Portability and Accountability Act (HIPAA) specifically establishes administrative, physical, and technical safeguards for protecting electronic protected health information (ePHI)?",
-      "option_a": "A. The HIPAA Security Rule",
-      "option_b": "B. The HIPAA Privacy Rule",
-      "option_c": "C. The HIPAA Breach Notification Rule",
-      "option_d": "D. The HIPAA Data Minimization Directive",
+      "question": "Which of the following components of HIPAA establishes required safeguards specifically for electronic protected health information (ePHI)?",
+      "option_a": "A. The Privacy Rule",
+      "option_b": "B. The Security Rule",
+      "option_c": "C. The Breach Notification Rule",
+      "option_d": "D. The Transactions and Code Sets Rule",
+      "correct_answer": "B",
+      "explanation": "The HIPAA Security Rule establishes structured safeguards specifically designed to protect electronic protected health information (ePHI), whereas the Privacy Rule covers permitted uses/disclosures generally."
+    },
+    {
+      "question": "Which of the following represents an administrative safeguard under HIPAA security regulations?",
+      "option_a": "A. Workstation use policies and workforce security training",
+      "option_b": "B. Biometric locks on server room doors",
+      "option_c": "C. Transmission security encryption across public networks",
+      "option_d": "D. Device and media controls for hardware disposal",
       "correct_answer": "A",
-      "explanation": "Under HIPAA, the Security Rule establishes administrative, physical, and technical safeguards specifically for electronic protected health information (ePHI)[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span). The Privacy Rule addresses permitted uses/disclosures and individual rights relating to PHI, while the Breach Notification Rule establishes notification requirements for certain breaches of unsecured PHI[span_12](start_span)[span_12](end_span)."
+      "explanation": "Administrative safeguards include security management processes, risk analysis, assigned security responsibilities, and workforce security training and policies."
     },
     {
-      "question": "How does the European Union Agency for Cybersecurity (ENISA) differ from the GDPR and HIPAA in terms of its nature and how organizations typically respond to it?",
-      "option_a": "A. ENISA is an international standards certification body that issues mandatory compliance fines to cloud providers",
-      "option_b": "B. ENISA is an EU cybersecurity agency rather than a legally enforceable regulation, and organizations use its guidance and good practices to strengthen cybersecurity practices alongside legal requirements",
-      "option_c": "C. ENISA is a U.S. federal law focused on financial auditing, requiring organizations to submit quarterly tax and access logs",
-      "option_d": "D. ENISA replaces the GDPR for technology companies and mandates a 72-hour incident reporting window",
-      "correct_answer": "B",
-      "explanation": "ENISA is the European Union Agency for Cybersecurity and is not a regulation like the GDPR or a U.S. federal health-information law like HIPAA[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span). It publishes cybersecurity guidance, good practices, threat landscape reports, and implementation resources that organizations use to interpret risks and strengthen cybersecurity practices alongside applicable legal requirements[span_15](start_span)[span_15](end_span)[span_16](start_span)[span_16](end_span)."
-    },
-    {
-      "question": "Security controls are classified by implementation (administrative, technical, physical) and by purpose (preventive, detective, corrective, compensating). How should centralized SIEM alerting and restoring systems from clean backups be classified?",
-      "option_a": "A. SIEM alerting is Technical and Preventive; restoring from backups is Administrative and Detective",
-      "option_b": "B. SIEM alerting is Administrative and Detective; restoring from backups is Physical and Preventive",
-      "option_c": "C. SIEM alerting is Technical and Detective; restoring from backups is Corrective in purpose",
-      "option_d": "D. SIEM alerting is Physical and Compensating; restoring from backups is Technical and Preventive",
+      "question": "How does the European Union Agency for Cybersecurity (ENISA) fundamentally differ in nature from the GDPR?",
+      "option_a": "A. ENISA is an enforcement court with powers to fine organizations up to 4% of global turnover.",
+      "option_b": "B. ENISA is a regulatory law enforced across U.S. federal healthcare institutions.",
+      "option_c": "C. ENISA is an EU agency that supports policy, publishes guidance, threat landscapes, and good practices, rather than being an enforceable regulation itself.",
+      "option_d": "D. ENISA focuses exclusively on patent protection and intellectual property rights.",
       "correct_answer": "C",
-      "explanation": "Centralized logging and SIEM alerting are technical controls by implementation and detective controls by purpose because they use technology to identify suspicious events or control failures[span_17](start_span)[span_17](end_span)[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span). Restoring systems from clean backups addresses causes and restores systems after an event, making it a corrective control by purpose[span_20](start_span)[span_20](end_span)[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)."
+      "explanation": "ENISA is an EU cybersecurity agency that provides guidance, good practices, and threat landscape reports to support member states and organizations, but it is not a binding regulation like GDPR."
     },
     {
-      "question": "An online fitness and health application stores account credentials and health data for users in both the EU and the U.S. When mapping security controls to compliance objectives, which pairing of control, purpose, and audit evidence is completely accurate?",
-      "option_a": "A. Control: Encryption | Purpose: Detective | Evidence: Incident tickets and exercise results",
-      "option_b": "B. Control: Multi-Factor Authentication (MFA) and role-based access | Purpose: Preventive | Evidence: Access lists and authentication logs",
-      "option_c": "C. Control: Patch management | Purpose: Detective | Evidence: Key-management records",
-      "option_d": "D. Control: Incident response plan | Purpose: Preventive | Evidence: Vulnerability scan reports",
+      "question": "An enterprise deploys continuous CCTV surveillance in its data center. How should this control be classified according to its implementation and purpose?",
+      "option_a": "A. Implementation: Technical | Purpose: Preventive",
+      "option_b": "B. Implementation: Physical | Purpose: Detective",
+      "option_c": "C. Implementation: Administrative | Purpose: Corrective",
+      "option_d": "D. Implementation: Physical | Purpose: Compensating",
       "correct_answer": "B",
-      "explanation": "To restrict unauthorized access, MFA combined with role-based access serves as a preventive control verified through access lists and authentication logs[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span). Encryption is a preventive control verified by configuration and key-management records, centralized logging/SIEM is a detective control verified by alert and log records, patch management is a preventive/corrective control verified by scan reports and patch records, and an incident response plan is a corrective control verified by the plan, exercise results, and incident tickets[span_25](start_span)[span_25](end_span)."
+      "explanation": "CCTV is a physical implementation control (hardware deployed in a physical environment) and serves a detective purpose by identifying suspicious events or unauthorized access attempts."
     },
     {
-      "question": "How do DevSecOps practices support ongoing regulatory compliance across software development and cloud deployment lifecycles?",
-      "option_a": "A. By treating compliance as a one-time checklist that is completed as soon as an external audit is passed",
-      "option_b": "B. By hardcoding credentials directly into source code repositories so auditors can easily inspect them",
-      "option_c": "C. By translating policies into repeatable controls, integrating automated security checks into CI/CD pipelines, managing secrets securely, recording deployment evidence, and using continuous monitoring to detect configuration drift",
-      "option_d": "D. By replacing all administrative policies, periodic access reviews, and incident response plans with static code analysis",
+      "question": "What is the primary purpose of deploying a compensating security control?",
+      "option_a": "A. To completely replace the primary control with a cheaper administrative policy",
+      "option_b": "B. To serve as an alternative security mechanism when the preferred, ideal control is not feasible or practical to implement",
+      "option_c": "C. To automatically correct operational errors found during an external audit",
+      "option_d": "D. To act as a secondary detective log for SIEM event correlation",
+      "correct_answer": "B",
+      "explanation": "Compensating controls are alternative security measures put in place when the preferred standard control is not feasible, achieving the same security objective through different means."
+    },
+    {
+      "question": "When implementing access control and identity management, which principle ensures that users receive only the minimum permissions necessary to perform their specific job functions?",
+      "option_a": "A. Separation of Duties",
+      "option_b": "B. Defense in Depth",
+      "option_c": "C. Principle of Least Privilege",
+      "option_d": "D. Mandatory Access Control",
       "correct_answer": "C",
-      "explanation": "DevSecOps translates policies and compliance requirements into repeatable development and deployment controls through secure coding standards, automated CI/CD security checks, secure secret management instead of storing credentials in source code, recorded deployment evidence, and continuous monitoring to identify configuration drift and control failures[span_26](start_span)[span_26](end_span). Compliance is not a one-time checklist; it requires continuous governance, risk-based controls, evidence, assessment, remediation, and monitoring[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span)."
+      "explanation": "The principle of least privilege dictates that users and processes are granted only the minimum access rights and permissions required to perform their authorized tasks."
     },
     {
-      "question": "During the six stages of a typical compliance audit lifecycle, what is the exact sequence of stages and what occurs immediately after the 'Collect Evidence' stage?",
-      "option_a": "A. Define Scope & Criteria -> Plan the Audit -> Collect Evidence -> Test Controls (determining whether controls are designed appropriately and operating as intended) -> Document Findings -> Remediate & Follow Up",
-      "option_b": "B. Plan the Audit -> Define Scope & Criteria -> Collect Evidence -> Remediate & Follow Up -> Test Controls -> Document Findings",
-      "option_c": "C. Collect Evidence -> Define Scope & Criteria -> Test Controls -> Plan the Audit -> Document Findings -> Remediate & Follow Up",
-      "option_d": "D. Define Scope & Criteria -> Collect Evidence -> Document Findings -> Plan the Audit -> Test Controls -> Remediate & Follow Up",
+      "question": "Which operational security control is primarily designed to reduce exposure to known software weaknesses and vulnerabilities across operating systems and cloud services?",
+      "option_a": "A. Patch and vulnerability management",
+      "option_b": "B. Multi-factor authentication (MFA)",
+      "option_c": "C. Data pseudonymization and tokenization",
+      "option_d": "D. Incident response tabletop exercises",
       "correct_answer": "A",
-      "explanation": "The six sequential stages of a typical audit lifecycle are: (1) Define Scope & Criteria, (2) Plan the Audit, (3) Collect Evidence, (4) Test Controls, (5) Document Findings, and (6) Remediate & Follow Up[span_29](start_span)[span_29](end_span). Immediately after collecting evidence (such as policies, logs, configurations, tickets, reports, interviews, and observations), auditors perform the 'Test Controls' stage to determine whether controls are designed appropriately and operating as intended[span_30](start_span)[span_30](end_span)."
+      "explanation": "Patch and vulnerability management involves scanning systems for known weaknesses and applying updates or patches to reduce exposure to exploits."
+    },
+    {
+      "question": "In a DevSecOps pipeline, what is the primary risk mitigation benefit of implementing automated security checks and secure secret management?",
+      "option_a": "A. It eliminates the need for any manual code reviews by senior engineers.",
+      "option_b": "B. It prevents credentials and API secrets from being hardcoded into source code repositories and flags security flaws early in development.",
+      "option_c": "C. It ensures that external regulatory auditors can directly modify production database schemas.",
+      "option_d": "D. It automatically renews TLS certificates without requiring administrative oversight.",
+      "correct_answer": "B",
+      "explanation": "Secure secret management keeps credentials out of source code repositories, and automated CI/CD security checks catch vulnerabilities early before code reaches production."
+    },
+    {
+      "question": "What is the key structural difference between an internal audit and an external audit?",
+      "option_a": "A. Internal audits review financial records only, whereas external audits review technical code.",
+      "option_b": "B. Internal audits are performed by or on behalf of the organization to find gaps proactively, while external audits are conducted by independent, objective third parties or regulatory bodies.",
+      "option_c": "C. Internal audits carry legally binding financial fines, whereas external audits are purely advisory.",
+      "option_d": "D. Internal audits test physical security safeguards, whereas external audits focus exclusively on cloud IAM configurations.",
+      "correct_answer": "B",
+      "explanation": "Internal audits are internal assurance reviews conducted to find weaknesses before formal review, while external audits are independent evaluations conducted by outside bodies or regulators."
+    },
+    {
+      "question": "Order the following stages of a typical audit lifecycle correctly from start to finish:",
+      "option_a": "A. Test Controls -> Define Scope -> Collect Evidence -> Plan Audit -> Document Findings -> Remediate",
+      "option_b": "B. Define Scope & Criteria -> Plan the Audit -> Collect Evidence -> Test Controls -> Document Findings -> Remediate & Follow Up",
+      "option_c": "C. Plan the Audit -> Remediate -> Collect Evidence -> Test Controls -> Define Scope -> Document Findings",
+      "option_d": "D. Collect Evidence -> Define Scope -> Test Controls -> Document Findings -> Plan Audit -> Remediate",
+      "correct_answer": "B",
+      "explanation": "The typical audit lifecycle moves sequentially from defining scope and criteria, planning the audit, collecting evidence, testing controls, documenting findings, to remediation and follow-up."
+    },
+    {
+      "question": "Which of the following is considered a common audit finding rather than strong compliance evidence?",
+      "option_a": "A. Signed policy documents and training completion records",
+      "option_b": "B. Up-to-date system configuration screenshots and SIEM export logs",
+      "option_c": "C. Excessive or outdated user privileges and missing patches on production assets",
+      "option_d": "D. Vulnerability scan reports showing verified remediation tickets",
+      "correct_answer": "C",
+      "explanation": "Excessive privileges, missing patches, and incomplete logs are common negative audit findings, whereas the other options represent standard forms of audit evidence."
+    },
+    {
+      "question": "Why is compliance considered a continuous governance process rather than a 'one-time checklist' completed after passing an audit?",
+      "option_a": "A. Because regulations never change once enacted by legislative bodies.",
+      "option_b": "B. Because organizational environments, threat landscapes, software configurations, and user access rights constantly drift and change over time.",
+      "option_c": "C. Because external auditors legally require daily re-testing of physical door locks.",
+      "option_d": "D. Because GDPR requires companies to undergo quarterly bankruptcy filings.",
+      "correct_answer": "B",
+      "explanation": "Compliance is ongoing because configuration drift, new vulnerabilities, personnel changes, and evolving business operations mean controls can fail or degrade over time."
+    },
+    {
+      "question": "An online healthcare service stores patient profiles and medical records in a cloud environment. If an auditor requests verification that unauthorized access is prevented, which combination of controls and evidence is most appropriate?",
+      "option_a": "A. Control: Multi-Factor Authentication and Role-Based Access Control | Evidence: Access lists and authentication logs",
+      "option_b": "B. Control: Continuous CCTV recording | Evidence: Employee cafeteria purchase receipts",
+      "option_c": "C. Control: Automated database backups | Evidence: Network firewall hardware invoices",
+      "option_d": "D. Control: Incident response plan document | Evidence: Annual budget allocation spreadsheet",
+      "correct_answer": "A",
+      "explanation": "Preventing unauthorized access relies on technical controls like MFA and RBAC, verified by audit evidence such as access control lists and authentication logs."
+    },
+    {
+      "question": "Which of the following best describes the accountability principle under GDPR compliance?",
+      "option_a": "A. Organizations must pay a flat annual fee to ENISA regardless of data processing volumes.",
+      "option_b": "B. Organizations must not only comply with data protection rules but be able to actively demonstrate compliance with documentation, records, and measures.",
+      "option_c": "C. Organizations are legally forbidden from delegating data processing tasks to external cloud vendors.",
+      "option_d": "D. Organizations must appoint a chief financial officer to sign off on all security incidents.",
+      "correct_answer": "B",
+      "explanation": "Accountability requires organizations to implement appropriate technical/organizational measures and be able to demonstrate that their data processing activities comply with GDPR."
+    },
+    {
+      "question": "In security control categorization by purpose, how do 'preventive' controls differ from 'detective' controls?",
+      "option_a": "A. Preventive controls restore systems after an attack, whereas detective controls isolate network ports.",
+      "option_b": "B. Preventive controls stop or reduce incidents before they occur, whereas detective controls identify suspicious events or control failures after or as they happen.",
+      "option_c": "C. Preventive controls are purely physical locks, whereas detective controls are strictly administrative policies.",
+      "option_d": "D. Preventive controls apply only to HIPAA data, whereas detective controls apply only to GDPR data.",
+      "correct_answer": "B",
+      "explanation": "Preventive controls aim to stop incidents proactively, whereas detective controls discover suspicious activities, anomalies, or control failures when they occur."
+    },
+    {
+      "question": "What is the primary role of data pseudonymization and tokenization in data protection compliance?",
+      "option_a": "A. To permanently destroy backup tapes after the retention period expires",
+      "option_b": "B. To replace sensitive identifiable data fields with artificial identifiers or tokens to reduce exposure risk",
+      "option_c": "C. To encrypt network transport layers against man-in-the-middle sniffing",
+      "option_d": "D. To authenticate system administrators using hardware tokens",
+      "correct_answer": "B",
+      "explanation": "Pseudonymization and tokenization replace direct identifiers with artificial tokens or pseudonyms, minimizing exposure of sensitive personal data."
+    },
+    {
+      "question": "Which of the following sections would typically NOT be included in a formal compliance report?",
+      "option_a": "A. Executive Summary and Assessment Scope",
+      "option_b": "B. Control Status, Findings, and Corrective Actions",
+      "option_c": "C. Personal employee salary reviews and stock option portfolios",
+      "option_d": "D. Methodology and Risk/Severity Ratings",
+      "correct_answer": "C",
+      "explanation": "Compliance reports focus on executive summaries, scope, methodology, control status, findings, evidence, risk ratings, and corrective actions, not private employee financial portfolios."
+    },
+    {
+      "question": "When mapping security controls to compliance requirements, which control is best suited to address the objective of detecting suspicious lateral movement and anomalous network activity?",
+      "option_a": "A. Centralized logging, monitoring, and SIEM alerting",
+      "option_b": "B. Annual security awareness training for interns",
+      "option_c": "C. Physical badge readers at the main facility entrance",
+      "option_d": "D. Automated data destruction policies for old invoices",
+      "correct_answer": "A",
+      "explanation": "Centralized logging, monitoring, and Security Information and Event Management (SIEM) systems provide detective capabilities to spot suspicious activity and lateral movement."
+    },
+    {
+      "question": "If a healthcare organization covered by HIPAA experiences a security incident involving unsecured electronic protected health information (ePHI), what rule governs their obligation to report the incident?",
+      "option_a": "A. The HIPAA Privacy Rule",
+      "option_b": "B. The HIPAA Breach Notification Rule",
+      "option_c": "C. The ENISA Incident Directive",
+      "option_d": "D. The GDPR Article 33 Regulation",
+      "correct_answer": "B",
+      "explanation": "The HIPAA Breach Notification Rule establishes the specific requirements for notifying individuals, HHS, and media regarding breaches of unsecured PHI."
+    },
+    {
+      "question": "Why is separating privileged administrator accounts from normal user accounts considered an essential access control practice?",
+      "option_a": "A. It ensures that administrators cannot send emails to external clients.",
+      "option_b": "B. It limits the blast radius if a standard user account is compromised via phishing, preventing attackers from instantly gaining root or domain-wide control.",
+      "option_c": "C. It allows cloud providers to bill administrator accounts at a lower tax rate.",
+      "option_d": "D. It eliminates the need to perform periodic access reviews.",
+      "correct_answer": "B",
+      "explanation": "Separating privileged and normal accounts prevents attackers who compromise a standard user credential from immediately inheriting full administrative privileges."
+    },
+    {
+      "question": "In the context of data protection controls, what is the distinction between encrypting data in transit versus data at rest?",
+      "option_a": "A. Data in transit uses TLS protocols across networks, while data at rest refers to stored data secured via storage encryption and key management.",
+      "option_b": "B. Data in transit applies only to EU citizens under GDPR, while data at rest applies only to US citizens under HIPAA.",
+      "option_c": "C. Data in transit is an administrative control, while data at rest is a physical control.",
+      "option_d": "D. Data in transit requires biometric locks, while data at rest requires CCTV cameras.",
+      "correct_answer": "A",
+      "explanation": "Data in transit is protected across networks using secure protocols like TLS, whereas data at rest is secured on disk/storage using encryption algorithms and protected encryption keys."
+    },
+    {
+      "question": "What is the primary function of establishing a lawful basis for processing under GDPR Article 6?",
+      "option_a": "A. To prove that the organization has paid all required municipal taxes in an EU member state",
+      "option_b": "B. To legally justify why personal data processing is occurring (such as consent, contract fulfillment, or legal obligation)",
+      "option_c": "C. To ensure that developers use Python rather than JavaScript for backend microservices",
+      "option_d": "D. To verify that hardware encryption keys are rotated every 90 days",
+      "correct_answer": "B",
+      "explanation": "Under GDPR, processing personal data is unlawful unless at least one valid lawful basis (such as explicit consent, contract, or legal obligation) is established beforehand."
+    },
+    {
+      "question": "How do frameworks (such as the NIST Cybersecurity Framework) assist organizations in their GRC efforts compared to strict regulations?",
+      "option_a": "A. Frameworks impose legally enforceable multi-million dollar fines for non-compliance.",
+      "option_b": "B. Frameworks provide structured, organized approaches and best-practice guidelines for managing cybersecurity risk without being legally binding statutes themselves.",
+      "option_c": "C. Frameworks replace the need for corporate governance committees entirely.",
+      "option_d": "D. Frameworks apply solely to physical HVAC security in data centers.",
+      "correct_answer": "B",
+      "explanation": "Frameworks offer organized structured guidance and voluntary approaches for building cybersecurity programs, contrasting with statutory regulations which carry direct legal enforceability."
+    },
+    {
+      "question": "An auditor testing the design and operating effectiveness of an incident response control would most likely examine which of the following pieces of evidence?",
+      "option_a": "A. The incident response plan document, recent tabletop exercise results, and post-incident review tickets",
+      "option_b": "B. Employee cafeteria menus and quarterly parking pass renewals",
+      "option_c": "C. Printer toner purchase invoices and office lease agreements",
+      "option_d": "D. Customer marketing feedback surveys from social media",
+      "correct_answer": "A",
+      "explanation": "To verify incident response capabilities, auditors inspect the formal incident response plan, records of simulated exercises/drill results, and actual incident ticket histories."
+    },
+    {
+      "question": "What does 'storage limitation' mean as a core GDPR principle?",
+      "option_a": "A. Cloud providers must limit database storage size to 500 gigabytes per tenant.",
+      "option_b": "B. Personal data must be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed.",
+      "option_c": "C. Organizations must store all user passwords in plain text for easy retrieval.",
+      "option_d": "D. Backups must be retained indefinitely across three geographic locations.",
+      "correct_answer": "B",
+      "explanation": "Storage limitation requires that personal data not be retained longer than necessary for the specific purposes for which it was collected."
+    },
+    {
+      "question": "Which of the following security control categories is specifically intended to restore systems, remediate root causes, and bring an environment back to a secure state after an adverse event?",
+      "option_a": "A. Preventive controls",
+      "option_b": "B. Detective controls",
+      "option_c": "C. Corrective controls",
+      "option_d": "D. Compensating controls",
+      "correct_answer": "C",
+      "explanation": "Corrective controls focus on remediation, restoring systems from backups, patching root causes, and returning compromised environments to normal operation after an incident."
+    },
+    {
+      "question": "What is the primary purpose of conducting periodic access reviews within an organization?",
+      "option_a": "A. To verify that all employees are working 40 hours per week",
+      "option_b": "B. To identify and promptly remove unnecessary user accounts, dormant credentials, and outdated excessive privileges",
+      "option_c": "C. To test the physical resilience of office building entry turnstiles",
+      "option_d": "D. To calculate annual bonuses for executive leadership",
+      "correct_answer": "B",
+      "explanation": "Periodic access reviews ensure that user permissions remain aligned with current roles and that orphaned, outdated, or excessive privileges are revoked."
+    },
+    {
+      "question": "How do data protection by design and by default requirements manifest in software engineering and architecture?",
+      "option_a": "A. By embedding privacy protections directly into system design from inception and ensuring strictest privacy settings are automatically applied without user intervention",
+      "option_b": "B. By encrypting database passwords only after a security breach has been reported",
+      "option_c": "C. By allowing users to opt-out of data collection by mailing physical letters to headquarters",
+      "option_d": "D. By outsourcing all software testing to external regulatory bodies",
+      "correct_answer": "A",
+      "explanation": "Privacy by design embeds security/privacy into architecture from the start, while privacy by default ensures that default settings provide maximum privacy without requiring manual user configuration."
+    },
+    {
+      "question": "Which of the following best describes the role of ENISA in relation to national cybersecurity strategies across EU Member States?",
+      "option_a": "A. ENISA mandates uniform firewall rules for every commercial router sold in Europe.",
+      "option_b": "B. ENISA acts as a central operational police force arresting cybercriminals across borders.",
+      "option_c": "C. ENISA assists EU institutions and Member States in strengthening capabilities and sharing good practices to elevate overall European cybersecurity maturity.",
+      "option_d": "D. ENISA collects corporate income taxes from multinational tech companies.",
+      "correct_answer": "C",
+      "explanation": "ENISA supports Member States, EU bodies, and organizations by providing capability-building resources, threat insights, and cooperative security frameworks."
+    },
+    {
+      "question": "In the context of audit evidence collection, why are system configuration screenshots, automated export logs, and cryptographically signed audit trails preferred over verbal staff interviews?",
+      "option_a": "A. Because verbal interviews are illegal under international compliance standards.",
+      "option_b": "B. Because objective, traceable electronic artifacts provide verifiable, tamper-evident proof that controls are actually operating as designed.",
+      "option_c": "C. Because automated tools generate fewer pages of documentation for auditors to read.",
+      "option_d": "D. Because employees are forbidden from speaking directly with external auditors.",
+      "correct_answer": "B",
+      "explanation": "Verifiable electronic evidence (logs, configuration exports, system artifacts) offers tangible, objective proof of control operational effectiveness compared to subjective verbal statements."
+    },
+    {
+      "question": "What is the primary compliance risk associated with configuration drift in cloud environments?",
+      "option_a": "A. Software source code will automatically compile into machine language.",
+      "option_b": "B. Systems that were initially secure and compliant may gradually drift into insecure states (e.g., open S3 buckets, disabled logging), leading to control failures and compliance breaches.",
+      "option_c": "C. Employees will forget their multi-factor authentication passcodes.",
+      "option_d": "D. Regulatory authorities will automatically revoke the company's business license within 24 hours.",
+      "correct_answer": "B",
+      "explanation": "Configuration drift occurs when environments diverge from approved baselines over time, quietly reintroducing vulnerabilities and breaking compliance mandates."
+    },
+    {
+      "question": "When an auditor evaluates a compliance report, how should partial compliance and unresolved gaps be handled?",
+      "option_a": "A. They should be omitted from the report so management does not face penalties.",
+      "option_b": "B. They must be explicitly distinguished and documented alongside assigned corrective actions, risk severity levels, and remediation owners.",
+      "option_c": "C. They should be automatically categorized as fully compliant controls if the risk is deemed low.",
+      "option_d": "D. They should be forwarded immediately to law enforcement agencies for criminal prosecution.",
+      "correct_answer": "B",
+      "explanation": "Compliance reports must transparently distinguish compliant controls, partial compliance, and gaps, pairing them with clear remediation plans, risk ratings, and accountable owners."
+    },
+    {
+      "question": "Which of the following scenarios represents a direct violation of the HIPAA Privacy Rule?",
+      "option_a": "A. Encrypting all electronic protected health information stored on mobile tablets.",
+      "option_b": "B. Disclosing patient medical records to an unauthorized third party without the patient's consent or a valid statutory exemption.",
+      "option_c": "C. Conducting annual workforce security awareness training for hospital staff.",
+      "option_d": "D. Implementing role-based access control for electronic health record databases.",
+      "correct_answer": "B",
+      "explanation": "The Privacy Rule governs permitted uses and disclosures of PHI; disclosing patient medical records without valid authorization or statutory exemption violates patient privacy rights."
     }
   ]
 }
