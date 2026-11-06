@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "Within the Governance, Risk, and Compliance (GRC) model, which statement accurately describes the primary role of Information Security Governance?",
+      "option_a": "A. Identifying specific system threats and vulnerabilities and selecting technical patches to treat them",
+      "option_b": "B. Establishing direction, responsibilities, accountability, and decision-making structures that align security objectives with business objectives",
+      "option_c": "C. Conducting independent external regulatory audits to certify an organization against international standards",
+      "option_d": "D. Executing automated vulnerability scans within CI/CD pipelines as an isolated technical task",
+      "correct_answer": "B",
+      "explanation": "Information security governance is the system used to direct, control, and oversee security activities by establishing direction, responsibilities, accountability, and decision-making structures while aligning security objectives with business objectives, legal obligations, and risk appetite[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span). In contrast, risk management identifies threats and vulnerabilities to select treatments, and compliance demonstrates that laws, regulations, policies, and standards are followed[span_2](start_span)[span_2](end_span)."
+    },
+    {
+      "question": "How are ISO/IEC 27001 and the NIST Cybersecurity Framework categorized in relation to regulations, standards, frameworks, and guidance?",
+      "option_a": "A. Both ISO/IEC 27001 and the NIST Cybersecurity Framework are legally enforceable EU regulations",
+      "option_b": "B. ISO/IEC 27001 is a sector-specific U.S. healthcare rule, whereas the NIST Cybersecurity Framework is an EU agency regulation",
+      "option_c": "C. ISO/IEC 27001 is a standard providing structured requirements or best practices, whereas the NIST Cybersecurity Framework is an organized approach for managing cybersecurity",
+      "option_d": "D. ISO/IEC 27001 is non-binding ENISA guidance, whereas the NIST Cybersecurity Framework is a legally enforceable federal law",
+      "correct_answer": "C",
+      "explanation": "Standards such as ISO/IEC 27001 provide structured requirements or best practices, whereas frameworks such as the NIST Cybersecurity Framework provide organized approaches for managing cybersecurity[span_3](start_span)[span_3](end_span). By comparison, the GDPR is a legally enforceable regulation, HIPAA is a sector-specific rule in the U.S. healthcare sector, and ENISA publishes cybersecurity guidance and recommendations[span_4](start_span)[span_4](end_span)."
+    },
+    {
+      "question": "Which core data protection principle of the General Data Protection Regulation (GDPR) requires an organization to collect only the personal data that is necessary for its stated purpose?",
+      "option_a": "A. Storage limitation",
+      "option_b": "B. Data minimization",
+      "option_c": "C. Integrity and confidentiality",
+      "option_d": "D. Accuracy",
+      "correct_answer": "B",
+      "explanation": "Under the seven core data protection principles of the GDPR, data minimization requires organizations to collect only what is necessary[span_5](start_span)[span_5](end_span). Storage limitation requires retaining data only as long as necessary, accuracy requires keeping personal data accurate and up to date, and integrity and confidentiality require protecting against unauthorized access, loss, or damage[span_6](start_span)[span_6](end_span)."
+    },
+    {
+      "question": "Under the General Data Protection Regulation (GDPR), what are the territorial scope and personal-data breach notification requirements?",
+      "option_a": "A. It applies only to companies physically headquartered in the EU and requires breach notification within 24 hours",
+      "option_b": "B. It applies only to U.S. healthcare covered entities and requires breach notification within 30 days",
+      "option_c": "C. It applies to EU-established organizations as well as non-EU organizations offering goods/services to or monitoring people in the EU, and requires notifying the supervisory authority of certain breaches within 72 hours of becoming aware",
+      "option_d": "D. It applies globally to all organizations regardless of data subjects, and requires notifying ENISA within 48 hours of a breach",
+      "correct_answer": "C",
+      "explanation": "The GDPR applies to organizations established in the EU and can also apply to organizations outside the EU when offering goods or services to, or monitoring, people in the EU[span_7](start_span)[span_7](end_span). Furthermore, under Article 33, certain personal-data breaches must be notified to the supervisory authority within 72 hours of becoming aware[span_8](start_span)[span_8](end_span)."
+    },
+    {
+      "question": "Which component of the Health Insurance Portability and Accountability Act (HIPAA) specifically establishes administrative, physical, and technical safeguards for protecting electronic protected health information (ePHI)?",
+      "option_a": "A. The HIPAA Security Rule",
+      "option_b": "B. The HIPAA Privacy Rule",
+      "option_c": "C. The HIPAA Breach Notification Rule",
+      "option_d": "D. The HIPAA Data Minimization Directive",
+      "correct_answer": "A",
+      "explanation": "Under HIPAA, the Security Rule establishes administrative, physical, and technical safeguards specifically for electronic protected health information (ePHI)[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span). The Privacy Rule addresses permitted uses/disclosures and individual rights relating to PHI, while the Breach Notification Rule establishes notification requirements for certain breaches of unsecured PHI[span_12](start_span)[span_12](end_span)."
+    },
+    {
+      "question": "How does the European Union Agency for Cybersecurity (ENISA) differ from the GDPR and HIPAA in terms of its nature and how organizations typically respond to it?",
+      "option_a": "A. ENISA is an international standards certification body that issues mandatory compliance fines to cloud providers",
+      "option_b": "B. ENISA is an EU cybersecurity agency rather than a legally enforceable regulation, and organizations use its guidance and good practices to strengthen cybersecurity practices alongside legal requirements",
+      "option_c": "C. ENISA is a U.S. federal law focused on financial auditing, requiring organizations to submit quarterly tax and access logs",
+      "option_d": "D. ENISA replaces the GDPR for technology companies and mandates a 72-hour incident reporting window",
+      "correct_answer": "B",
+      "explanation": "ENISA is the European Union Agency for Cybersecurity and is not a regulation like the GDPR or a U.S. federal health-information law like HIPAA[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span). It publishes cybersecurity guidance, good practices, threat landscape reports, and implementation resources that organizations use to interpret risks and strengthen cybersecurity practices alongside applicable legal requirements[span_15](start_span)[span_15](end_span)[span_16](start_span)[span_16](end_span)."
+    },
+    {
+      "question": "Security controls are classified by implementation (administrative, technical, physical) and by purpose (preventive, detective, corrective, compensating). How should centralized SIEM alerting and restoring systems from clean backups be classified?",
+      "option_a": "A. SIEM alerting is Technical and Preventive; restoring from backups is Administrative and Detective",
+      "option_b": "B. SIEM alerting is Administrative and Detective; restoring from backups is Physical and Preventive",
+      "option_c": "C. SIEM alerting is Technical and Detective; restoring from backups is Corrective in purpose",
+      "option_d": "D. SIEM alerting is Physical and Compensating; restoring from backups is Technical and Preventive",
+      "correct_answer": "C",
+      "explanation": "Centralized logging and SIEM alerting are technical controls by implementation and detective controls by purpose because they use technology to identify suspicious events or control failures[span_17](start_span)[span_17](end_span)[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span). Restoring systems from clean backups addresses causes and restores systems after an event, making it a corrective control by purpose[span_20](start_span)[span_20](end_span)[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)."
+    },
+    {
+      "question": "An online fitness and health application stores account credentials and health data for users in both the EU and the U.S. When mapping security controls to compliance objectives, which pairing of control, purpose, and audit evidence is completely accurate?",
+      "option_a": "A. Control: Encryption | Purpose: Detective | Evidence: Incident tickets and exercise results",
+      "option_b": "B. Control: Multi-Factor Authentication (MFA) and role-based access | Purpose: Preventive | Evidence: Access lists and authentication logs",
+      "option_c": "C. Control: Patch management | Purpose: Detective | Evidence: Key-management records",
+      "option_d": "D. Control: Incident response plan | Purpose: Preventive | Evidence: Vulnerability scan reports",
+      "correct_answer": "B",
+      "explanation": "To restrict unauthorized access, MFA combined with role-based access serves as a preventive control verified through access lists and authentication logs[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span). Encryption is a preventive control verified by configuration and key-management records, centralized logging/SIEM is a detective control verified by alert and log records, patch management is a preventive/corrective control verified by scan reports and patch records, and an incident response plan is a corrective control verified by the plan, exercise results, and incident tickets[span_25](start_span)[span_25](end_span)."
+    },
+    {
+      "question": "How do DevSecOps practices support ongoing regulatory compliance across software development and cloud deployment lifecycles?",
+      "option_a": "A. By treating compliance as a one-time checklist that is completed as soon as an external audit is passed",
+      "option_b": "B. By hardcoding credentials directly into source code repositories so auditors can easily inspect them",
+      "option_c": "C. By translating policies into repeatable controls, integrating automated security checks into CI/CD pipelines, managing secrets securely, recording deployment evidence, and using continuous monitoring to detect configuration drift",
+      "option_d": "D. By replacing all administrative policies, periodic access reviews, and incident response plans with static code analysis",
+      "correct_answer": "C",
+      "explanation": "DevSecOps translates policies and compliance requirements into repeatable development and deployment controls through secure coding standards, automated CI/CD security checks, secure secret management instead of storing credentials in source code, recorded deployment evidence, and continuous monitoring to identify configuration drift and control failures[span_26](start_span)[span_26](end_span). Compliance is not a one-time checklist; it requires continuous governance, risk-based controls, evidence, assessment, remediation, and monitoring[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span)."
+    },
+    {
+      "question": "During the six stages of a typical compliance audit lifecycle, what is the exact sequence of stages and what occurs immediately after the 'Collect Evidence' stage?",
+      "option_a": "A. Define Scope & Criteria -> Plan the Audit -> Collect Evidence -> Test Controls (determining whether controls are designed appropriately and operating as intended) -> Document Findings -> Remediate & Follow Up",
+      "option_b": "B. Plan the Audit -> Define Scope & Criteria -> Collect Evidence -> Remediate & Follow Up -> Test Controls -> Document Findings",
+      "option_c": "C. Collect Evidence -> Define Scope & Criteria -> Test Controls -> Plan the Audit -> Document Findings -> Remediate & Follow Up",
+      "option_d": "D. Define Scope & Criteria -> Collect Evidence -> Document Findings -> Plan the Audit -> Test Controls -> Remediate & Follow Up",
+      "correct_answer": "A",
+      "explanation": "The six sequential stages of a typical audit lifecycle are: (1) Define Scope & Criteria, (2) Plan the Audit, (3) Collect Evidence, (4) Test Controls, (5) Document Findings, and (6) Remediate & Follow Up[span_29](start_span)[span_29](end_span). Immediately after collecting evidence (such as policies, logs, configurations, tickets, reports, interviews, and observations), auditors perform the 'Test Controls' stage to determine whether controls are designed appropriately and operating as intended[span_30](start_span)[span_30](end_span)."
+    }
+  ]
+}

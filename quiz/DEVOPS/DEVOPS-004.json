@@ -1,0 +1,454 @@
+{
+  "questions": [
+    {
+      "question": "How does Infrastructure Security fundamentally differ from Application Security within a DevSecOps environment?",
+      "option_a": "A. Infrastructure security focuses exclusively on source code vulnerabilities, whereas application security protects physical data centers.",
+      "option_b": "B. Infrastructure security safeguards the underlying physical and virtual execution environment, whereas application security focuses on protecting the software applications themselves.",
+      "option_c": "C. Infrastructure security is managed entirely by third-party cloud providers, while application security is managed solely by end users.",
+      "option_d": "D. Infrastructure security only applies to on-premises hardware, whereas application security applies to cloud-native microservices.",
+      "correct_answer": "B",
+      "explanation": "Unlike application security, which focuses on protecting software applications, infrastructure security protects the physical and virtual environment (servers, networks, OS, cloud, and containers) where those applications are deployed and executed[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)."
+    },
+    {
+      "question": "Which of the following combinations accurately pairs a core component protected by infrastructure security with one of its primary strategic objectives?",
+      "option_a": "A. Protecting container orchestrators and identity management systems to maintain system availability and support regulatory compliance.",
+      "option_b": "B. Optimizing frontend UI rendering speed to eliminate vendor lock-in across public cloud providers.",
+      "option_c": "C. Writing unit tests for business logic to reduce software licensing costs.",
+      "option_d": "D. Replacing all virtual machines with physical servers to eliminate the need for network firewalls.",
+      "correct_answer": "A",
+      "explanation": "Infrastructure security protects components including containers, VMs, networks, databases, and identity management systems in order to prevent unauthorized access, maintain availability, ensure business continuity, and support regulatory compliance[span_6](start_span)[span_6](end_span)."
+    },
+    {
+      "question": "Modern IT infrastructure is organized into six distinct layers. Which sequence correctly orders these layers from the foundational bottom layer up to the top layer?",
+      "option_a": "A. Network Infrastructure -> Physical Infrastructure -> Operating Systems -> Cloud Infrastructure -> Containers & VMs -> Applications",
+      "option_b": "B. Physical Infrastructure -> Network Infrastructure -> Cloud Infrastructure -> Operating Systems -> Containers & VMs -> Applications",
+      "option_c": "C. Cloud Infrastructure -> Physical Infrastructure -> Network Infrastructure -> Containers & VMs -> Operating Systems -> Applications",
+      "option_d": "D. Physical Infrastructure -> Operating Systems -> Network Infrastructure -> Cloud Infrastructure -> Applications -> Containers & VMs",
+      "correct_answer": "B",
+      "explanation": "The six infrastructure layers progress upward from Physical Infrastructure, Network Infrastructure, Cloud Infrastructure, Operating Systems, and Containers & VMs to Applications at the top[span_7](start_span)[span_7](end_span)."
+    },
+    {
+      "question": "What is the primary rationale behind implementing the Principle of Defense in Depth across infrastructure layers?",
+      "option_a": "A. To consolidate all security spending into a single perimeter firewall so internal traffic remains unrestricted.",
+      "option_b": "B. To layer multiple independent security controls across different tiers so that a single vulnerability cannot compromise the entire infrastructure.",
+      "option_c": "C. To transfer all operational security duties from the internal DevSecOps team to an external cloud service provider.",
+      "option_d": "D. To replace encryption and Multi-Factor Authentication with automated load balancing.",
+      "correct_answer": "B",
+      "explanation": "Defense in Depth implements multiple security controls (firewalls, network segmentation, IAM, encryption, MFA, IDS, secure configurations, and continuous monitoring) across layers so a single vulnerability will not compromise the entire system[span_8](start_span)[span_8](end_span)."
+    },
+    {
+      "question": "An attacker exploits an unpatched kernel vulnerability on a Linux host running multiple Docker containers for an e-commerce platform. Even though the web application code inside the containers is free of bugs, the attacker extracts customer payment records from memory. Which architectural concept best explains this breach and its appropriate mitigation?",
+      "option_a": "A. Because higher layers depend on lower layers, a weakness in the Operating System layer compromises the Containers and Applications layers above it; Defense in Depth mitigates this via host hardening, container isolation, encryption, and continuous monitoring.",
+      "option_b": "B. The breach occurred because application security controls override operating system controls; deploying a Web Application Firewall (WAF) at the perimeter would have prevented kernel exploitation.",
+      "option_c": "C. Container virtualization completely isolates memory from the host operating system, meaning this attack could only happen via a physical data center breach.",
+      "option_d": "D. Under the Shared Responsibility Model, the cloud provider is always responsible for patching guest operating systems inside customer IaaS instances.",
+      "correct_answer": "A",
+      "explanation": "In modern multi-layered infrastructure, a weakness in any foundational layer (such as the Operating System) can compromise the Containers & VMs and Applications layers above it, requiring Defense in Depth across all layers[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span)."
+    },
+    {
+      "question": "During a security audit of a microservice platform, the engineering team demonstrates that all REST APIs validate user input against SQL injection. However, the underlying Kubernetes cluster nodes share a flat network with the production database and use default administrative credentials. Which domain gap does this represent?",
+      "option_a": "A. Strong infrastructure security coupled with weak application security.",
+      "option_b": "B. Strong application-level input validation undermined by critical failures in infrastructure security (lack of network segmentation and weak IAM/configuration).",
+      "option_c": "C. A violation of the NIST Measured Service characteristic.",
+      "option_d": "D. Over-reliance on corrective controls at the expense of application availability.",
+      "correct_answer": "B",
+      "explanation": "While input validation protects the software application layer, leaving Kubernetes nodes on a flat network with default credentials violates core infrastructure security controls including network segmentation, IAM, and secure configurations[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span)."
+    },
+    {
+      "question": "According to the NIST definition and essential characteristics of cloud computing, which characteristic allows a multi-tenant cloud provider to dynamically share physical hardware among multiple customers using virtualization while dynamically scaling resources up or down based on traffic spikes?",
+      "option_a": "A. On-Demand Self-Service for hardware sharing, and Broad Network Access for scaling.",
+      "option_b": "B. Resource Pooling for multi-tenant virtualization sharing, and Rapid Elasticity for automatic scaling based on demand.",
+      "option_c": "C. Measured Service for virtualization sharing, and Resource Pooling for pay-as-you-go billing.",
+      "option_d": "D. Broad Network Access for multi-tenant isolation, and On-Demand Self-Service for automatic elasticity.",
+      "correct_answer": "B",
+      "explanation": "Resource Pooling enables physical resources to be shared among multiple customers using virtualization, while Rapid Elasticity allows resources to automatically scale up or down based on demand[span_15](start_span)[span_15](end_span)[span_16](start_span)[span_16](end_span)."
+    },
+    {
+      "question": "When an enterprise migrates legacy workloads to the cloud, which of the following pairs correctly distinguishes an operational benefit from a recognized cloud security challenge?",
+      "option_a": "A. Benefit: Vendor lock-in; Challenge: Rapid application deployment.",
+      "option_b": "B. Benefit: Automatic scalability and disaster recovery capabilities; Challenge: Cloud misconfigurations and security of customer-managed resources.",
+      "option_c": "C. Benefit: Complete elimination of compliance requirements; Challenge: High availability.",
+      "option_d": "D. Benefit: Guaranteed data privacy by default; Challenge: Measured pay-as-you-go billing.",
+      "correct_answer": "B",
+      "explanation": "Cloud computing provides benefits such as reduced costs, faster deployment, high availability, automatic scalability, and disaster recovery, while introducing challenges like data privacy concerns, cloud misconfigurations, vendor lock-in, compliance, IAM, and securing customer-managed resources[span_17](start_span)[span_17](end_span)."
+    },
+    {
+      "question": "A software team wants to deploy a custom Python web application without provisioning virtual machines or patching the underlying Linux operating system, while still retaining full control over their application code and database records. Which cloud service model and example service should they select?",
+      "option_a": "A. Infrastructure as a Service (IaaS) using AWS EC2 or Google Compute Engine.",
+      "option_b": "B. Platform as a Service (PaaS) using AWS Elastic Beanstalk, Azure App Service, or Google App Engine.",
+      "option_c": "C. Software as a Service (SaaS) using Microsoft 365 or Salesforce.",
+      "option_d": "D. Private Cloud IaaS using dedicated on-premises hypervisors.",
+      "correct_answer": "B",
+      "explanation": "PaaS (such as Azure App Service, Google App Engine, or AWS Elastic Beanstalk) provides a complete application platform without managing underlying servers or OS, leaving the customer responsible for application code, data, and user access[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span)[span_20](start_span)[span_20](end_span)."
+    },
+    {
+      "question": "How does customer control and responsibility compare across IaaS, PaaS, and SaaS models according to the cloud service responsibility matrix?",
+      "option_a": "A. In IaaS, the customer manages servers, OS, applications, and data (highest control); in PaaS, the customer deploys applications and manages data (medium control); in SaaS, the customer has limited data/user management (lowest control).",
+      "option_b": "B. In IaaS, the provider manages the OS; in PaaS, the customer manages physical servers; in SaaS, the customer deploys custom application binaries.",
+      "option_c": "C. Customer control is highest in SaaS, medium in IaaS, and lowest in PaaS.",
+      "option_d": "D. Across all three models, the customer is responsible for patching the operating system and managing hypervisors.",
+      "correct_answer": "A",
+      "explanation": "Under IaaS, customers manage servers (VMs), OS, applications, and data with the highest control; under PaaS, customers deploy applications and manage data with medium control; under SaaS, customers only have limited data and user access management with the lowest control[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)[span_23](start_span)[span_23](end_span)."
+    },
+    {
+      "question": "A financial institution keeps its core customer ledger on dedicated private infrastructure to satisfy strict regulatory mandates, while simultaneously using AWS for elastic compute, Microsoft Azure for enterprise identity, and Google Cloud for machine learning analytics. Which deployment models are being combined here?",
+      "option_a": "A. Pure Public Cloud only.",
+      "option_b": "B. Both Hybrid Cloud (combining private infrastructure for sensitive data with public cloud workloads) and Multi-Cloud (leveraging best-of-breed services across AWS, Azure, and Google Cloud to reduce vendor lock-in).",
+      "option_c": "C. Community Cloud with single-vendor lock-in.",
+      "option_d": "D. SaaS-only deployment model.",
+      "correct_answer": "B",
+      "explanation": "Keeping sensitive data on a private cloud while running workloads on public clouds defines a Hybrid Cloud, and deliberately combining services from multiple providers (AWS for compute, Azure for identity, Google Cloud for AI) defines a Multi-Cloud strategy[span_24](start_span)[span_24](end_span)."
+    },
+    {
+      "question": "Under the Shared Responsibility Model, which set of items falls strictly under 'Security OF the Cloud' (Cloud Provider responsibility) as opposed to 'Security IN the Cloud' (Customer responsibility)?",
+      "option_a": "A. IAM policies, security group rules, customer data encryption, and guest operating systems.",
+      "option_b": "B. Physical data centers, physical servers, storage hardware, networking infrastructure, and hypervisors.",
+      "option_c": "C. Web application source code, user account passwords, and database schema configurations.",
+      "option_d": "D. Virtual machine firewall rules, Multi-Factor Authentication settings, and API token rotation.",
+      "correct_answer": "B",
+      "explanation": "The Cloud Provider is responsible for 'Security OF the Cloud,' which encompasses physical data centers, physical servers, storage hardware, networking infrastructure, hypervisors, and cloud platform services[span_25](start_span)[span_25](end_span)[span_26](start_span)[span_26](end_span)."
+    },
+    {
+      "question": "An enterprise migrates its customer records to a cloud storage bucket. During deployment, an engineer accidentally sets the bucket policy to public read access, resulting in a massive data breach. The company's CEO claims the cloud provider is legally and operationally at fault because the data was hosted in their cloud. How should a DevSecOps architect evaluate this claim?",
+      "option_a": "A. The CEO is correct; moving to the cloud transfers all security responsibilities, including storage permissions, to the cloud provider.",
+      "option_b": "B. The CEO is incorrect; under the Shared Responsibility Model, storage bucket access policies, IAM configurations, and data protection are 'Security IN the Cloud' duties belonging to the customer.",
+      "option_c": "C. Responsibility is split 50/50 because the cloud provider failed to physically unplug the storage hardware during the data exfiltration.",
+      "option_d": "D. The cloud provider is responsible under IaaS and PaaS, and the customer is only responsible under SaaS.",
+      "correct_answer": "B",
+      "explanation": "Under the Shared Responsibility Model, publicly accessible storage buckets are a classic customer misconfiguration under 'Security IN the Cloud,' where the customer is responsible for data, IAM policies, network configurations, and encryption settings[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span)[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span)."
+    },
+    {
+      "question": "Which pairing accurately matches a major cloud security challenge with the primary Cloud Security Principle best suited to mitigate it?",
+      "option_a": "A. Excessive permissions and insider threats -> Mitigated by the Principle of Least Privilege; Cloud misconfigurations and unpatched workloads -> Mitigated by Secure by Default and Automation.",
+      "option_b": "B. Account hijacking -> Mitigated by disabling encryption; Denial of Service -> Mitigated by granting Administrator access to all users.",
+      "option_c": "C. Insecure APIs -> Mitigated by removing continuous monitoring; Data breaches -> Mitigated by storing plaintext backups.",
+      "option_d": "D. Compliance & regulatory risk (GDPR, HIPAA, PCI DSS) -> Mitigated by sharing a single root account across contractors.",
+      "correct_answer": "A",
+      "explanation": "Weak IAM and insider threats from excessive permissions are mitigated by Least Privilege, while misconfigurations and patching delays are mitigated by Secure by Default and Automation (automated patching, config validation, and compliance checks)[span_31](start_span)[span_31](end_span)[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span)[span_34](start_span)[span_34](end_span)."
+    },
+    {
+      "question": "An attacker compromises a cloud web application by exploiting an endpoint that lacks token validation and input sanitization, and subsequently uses stolen session tokens to hijack an administrator's cloud console session. Which two specific cloud security challenges occurred in this attack chain?",
+      "option_a": "A. Vendor Lock-in followed by Physical Data Center Breach.",
+      "option_b": "B. Insecure APIs (weak authentication and poor input validation) followed by Account Hijacking (stealing credentials or session tokens for unauthorized access).",
+      "option_c": "C. Denial of Service (DoS) followed by Resource Pooling exhaustion.",
+      "option_d": "D. Shadow IT followed by Hypervisor failure.",
+      "correct_answer": "B",
+      "explanation": "Exploiting endpoints with weak authentication, improper authorization, or poor input validation represents Insecure APIs, while stealing credentials or session tokens to gain unauthorized access represents Account Hijacking[span_35](start_span)[span_35](end_span)."
+    },
+    {
+      "question": "Which statement accurately explains why the 'Secure by Default' and 'Encryption Everywhere' principles are essential in dynamic DevSecOps cloud environments?",
+      "option_a": "A. Secure by Default ensures newly provisioned resources disable unnecessary services and open ports automatically, while Encryption Everywhere protects data at rest, in transit, and during backups even if perimeter controls fail.",
+      "option_b": "B. Secure by Default allows developers to bypass IAM authentication during testing, while Encryption Everywhere only encrypts data stored on local USB drives.",
+      "option_c": "C. Secure by Default transfers compliance audits (GDPR, HIPAA, PCI DSS) to the cloud provider, while Encryption Everywhere prevents Denial of Service attacks.",
+      "option_d": "D. Both principles exist solely to reduce monthly pay-as-you-go cloud compute bills.",
+      "correct_answer": "A",
+      "explanation": "Secure by Default configures resources with secure defaults and disables unnecessary services, while Encryption Everywhere ensures data is protected at rest, in transit, and inside backups[span_36](start_span)[span_36](end_span)."
+    },
+    {
+      "question": "In Amazon Web Services (AWS), a security engineer needs to: (1) audit all API calls made by users, (2) continuously scan EC2 workloads for software vulnerabilities, and (3) securely rotate database passwords and API keys. Which trio of AWS services should be deployed?",
+      "option_a": "A. (1) Amazon CloudWatch, (2) AWS KMS, (3) AWS Shield",
+      "option_b": "B. (1) AWS CloudTrail, (2) Amazon Inspector, (3) AWS Secrets Manager",
+      "option_c": "C. (1) Amazon GuardDuty, (2) AWS IAM, (3) AWS Security Hub",
+      "option_d": "D. (1) AWS Security Hub, (2) AWS CloudTrail, (3) Amazon CloudWatch",
+      "correct_answer": "B",
+      "explanation": "AWS CloudTrail records and audits API activities, Amazon Inspector scans workloads for vulnerabilities and configuration issues, and AWS Secrets Manager securely stores and manages passwords, API keys, and secrets[span_37](start_span)[span_37](end_span)[span_38](start_span)[span_38](end_span)[span_39](start_span)[span_39](end_span)."
+    },
+    {
+      "question": "Students and engineers often confuse AWS CloudTrail, Amazon CloudWatch, Amazon GuardDuty, and AWS Security Hub. Which statement accurately distinguishes their specific roles?",
+      "option_a": "A. CloudTrail monitors CPU utilization metrics; CloudWatch records API audit logs; GuardDuty manages encryption keys; Security Hub blocks SQL injection.",
+      "option_b": "B. CloudTrail records and audits API activities; CloudWatch monitors infrastructure performance, logs, and events; GuardDuty uses machine learning and threat intelligence to detect malicious activity; Security Hub centralizes security findings across multiple AWS services.",
+      "option_c": "C. GuardDuty is a physical firewall; CloudTrail is a password vault; CloudWatch is an identity provider; Security Hub is a backup service.",
+      "option_d": "D. All four services perform identical functions but are billed under different pricing models.",
+      "correct_answer": "B",
+      "explanation": "CloudTrail records API activity and user actions, CloudWatch monitors infrastructure performance and logs, GuardDuty detects malicious activity via ML and threat intelligence, and Security Hub centralizes security findings from multiple AWS services[span_40](start_span)[span_40](end_span)[span_41](start_span)[span_41](end_span)."
+    },
+    {
+      "question": "Microsoft Azure structures its cloud security architecture around three foundational pillars. What are these three core principles, and which Azure service specifically enforces organizational security and compliance rules across resources?",
+      "option_a": "A. Principles: Cost Reduction, Rapid Elasticity, Broad Access; Service: Azure Monitor.",
+      "option_b": "B. Principles: Protect Identities, Protect Data, Protect Infrastructure; Service: Azure Policy.",
+      "option_c": "C. Principles: Public Cloud, Private Cloud, Hybrid Cloud; Service: Azure Key Vault.",
+      "option_d": "D. Principles: IaaS, PaaS, SaaS; Service: Microsoft Sentinel.",
+      "correct_answer": "B",
+      "explanation": "Microsoft Azure builds security around three main principles—Protect Identities, Protect Data, and Protect Infrastructure—and uses Azure Policy to enforce organizational security and compliance policies[span_42](start_span)[span_42](end_span)[span_43](start_span)[span_43](end_span)."
+    },
+    {
+      "question": "A multi-cloud security architect is mapping AWS security controls to their closest functional equivalents in Microsoft Azure for Tutorial 04 Question 05. Which cross-cloud mapping is completely accurate?",
+      "option_a": "A. IAM -> Azure Firewall; AWS KMS & Secrets Manager -> Azure Monitor; AWS CloudTrail -> Azure Policy; Amazon GuardDuty -> Azure Active Directory.",
+      "option_b": "B. AWS IAM -> Microsoft Entra ID (Azure AD); AWS KMS & Secrets Manager -> Azure Key Vault; Amazon CloudWatch/CloudTrail -> Azure Monitor; Amazon GuardDuty & Security Hub -> Microsoft Defender for Cloud & Microsoft Sentinel.",
+      "option_c": "C. AWS Inspector -> Azure Key Vault; AWS KMS -> Microsoft Sentinel; AWS Secrets Manager -> Microsoft Entra ID.",
+      "option_d": "D. AWS CloudWatch -> Azure Firewall; AWS IAM -> Microsoft Defender for Cloud; AWS Security Hub -> Azure Key Vault.",
+      "correct_answer": "B",
+      "explanation": "AWS IAM maps to Microsoft Entra ID (Azure AD) for identity management; AWS KMS and Secrets Manager map to Azure Key Vault for keys and secrets; CloudTrail/CloudWatch map to Azure Monitor for logging/metrics; and GuardDuty/Inspector/Security Hub map to Microsoft Defender for Cloud and Microsoft Sentinel (SIEM/SOAR) for threat detection and posture management[span_44](start_span)[span_44](end_span)[span_45](start_span)[span_45](end_span)[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span)."
+    },
+    {
+      "question": "How should an organization implement comprehensive data encryption across the cloud lifecycle?",
+      "option_a": "A. Use HTTPS/TLS to encrypt data at rest on storage disks, and use AWS KMS or Azure Key Vault to encrypt network packets in transit.",
+      "option_b": "B. Enforce Encryption at Rest for stored data and backups using key management services like AWS KMS or Azure Key Vault, and enforce Encryption in Transit for data crossing networks using HTTPS, TLS, or VPNs.",
+      "option_c": "C. Encrypt only public website assets while leaving internal databases in plaintext to maximize query performance.",
+      "option_d": "D. Rely solely on Role-Based Access Control (RBAC) because access control converts readable plaintext into ciphertext.",
+      "correct_answer": "B",
+      "explanation": "Data encryption converts readable data into ciphertext: Encryption at Rest protects stored data using services like AWS KMS and Azure Key Vault, while Encryption in Transit protects data crossing networks using HTTPS, TLS, and VPNs[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span)[span_50](start_span)[span_50](end_span)."
+    },
+    {
+      "question": "According to the standard four-tier Data Classification model taught in Lecture 04, which set of organizational information is correctly matched to its sensitivity level?",
+      "option_a": "A. Public: Employee handbook; Internal: Customer database; Confidential: Company website; Highly Confidential: Marketing brochures.",
+      "option_b": "B. Public: Company website; Internal: Employee handbook; Confidential: Customer database; Highly Confidential: Credit card data and medical records.",
+      "option_c": "C. Public: Medical records; Internal: Credit card data; Confidential: Employee handbook; Highly Confidential: Company website.",
+      "option_d": "D. All data stored in a public cloud is automatically classified as Public regardless of content.",
+      "correct_answer": "B",
+      "explanation": "Data classification categorizes information by sensitivity: Public (company website), Internal (employee handbook), Confidential (customer database), and Highly Confidential (credit card data, medical records)[span_51](start_span)[span_51](end_span)[span_52](start_span)[span_52](end_span)."
+    },
+    {
+      "question": "A hospital plans to migrate three datasets to Azure: (1) patient electronic medical records, (2) internal clinic appointment schedules and staff policies, and (3) public health awareness web pages. Following Tutorial 04 Question 06, how should these datasets be classified and protected?",
+      "option_a": "A. Classify (1) as Highly Confidential, (2) as Internal/Confidential, and (3) as Public; protect sensitive data at rest using Azure Key Vault encryption and in transit using TLS/HTTPS, coupled with strict RBAC and MFA.",
+      "option_b": "B. Classify all three as Internal; protect them solely by hiding the storage URL without encryption.",
+      "option_c": "C. Classify (1) as Public, (2) as Confidential, and (3) as Highly Confidential; use Azure Firewall to encrypt database tables at rest.",
+      "option_d": "D. Store patient medical records in unencrypted blobs to meet a faster Recovery Time Objective (RTO).",
+      "correct_answer": "A",
+      "explanation": "Medical records are Highly Confidential, internal schedules/policies are Internal (or Confidential if containing patient PII), and website content is Public; sensitive data requires encryption at rest (Azure Key Vault / AWS KMS), encryption in transit (TLS/HTTPS), and strict access controls (IAM, RBAC, MFA, Least Privilege)[span_53](start_span)[span_53](end_span)[span_54](start_span)[span_54](end_span)[span_55](start_span)[span_55](end_span)."
+    },
+    {
+      "question": "During a live cyber attack on an enterprise cloud environment, an attacker triggers 500 failed login attempts, escalates privileges on a compromised account, modifies a security group to open port 22 to 0.0.0.0/0, and begins exfiltrating data via API calls. Which cloud monitoring capability is specifically designed to correlate these disparate events and orchestrate an automated response?",
+      "option_a": "A. A static packet filtering firewall.",
+      "option_b": "B. Continuous security monitoring tracking failed authentications, administrative actions, security group changes, and API requests, integrated into a cloud-native SIEM/SOAR platform like Microsoft Sentinel or AWS GuardDuty/Security Hub.",
+      "option_c": "C. Manual quarterly compliance spreadsheets.",
+      "option_d": "D. Disabling API logging to preserve server bandwidth during the attack.",
+      "correct_answer": "B",
+      "explanation": "Organizations must monitor user logins, failed authentications, administrative actions, security group/configuration changes, network traffic, and API requests using services like CloudTrail, GuardDuty, and Microsoft Sentinel (cloud-native SIEM and SOAR) for early threat detection and faster incident response[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span)[span_58](start_span)[span_58](end_span)."
+    },
+    {
+      "question": "A ransomware group compromises a company's primary cloud production environment and attempts to encrypt or delete its backup snapshots so the company is forced to pay the ransom. Which combination of backup best practices from Lecture 04 directly neutralizes this ransomware strategy?",
+      "option_a": "A. Storing unencrypted backups in the same directory as production data and granting all developers backup deletion privileges.",
+      "option_b": "B. Performing regular backups, encrypting backup data, storing backups in multiple isolated locations, restricting access to backup repositories, monitoring backup jobs, and regularly testing restoration procedures.",
+      "option_c": "C. Relying exclusively on an Intrusion Detection System (IDS) to automatically restore deleted files.",
+      "option_d": "D. Performing backups once a year without testing restoration to minimize storage costs.",
+      "correct_answer": "B",
+      "explanation": "Resilient backup practices against ransomware and disasters require regular backups, encrypting backup data, storing backups in multiple locations, testing restoration procedures regularly, restricting access to backup repositories, and monitoring backup jobs[span_59](start_span)[span_59](end_span)[span_60](start_span)[span_60](end_span)[span_61](start_span)[span_61](end_span)."
+    },
+    {
+      "question": "A hospital sets a Recovery Time Objective (RTO) of 1 hour and a Recovery Point Objective (RPO) of 10 minutes for its cloud-based patient record system (Tutorial 04 Question 06d). Which disaster recovery architecture satisfies both metrics?",
+      "option_a": "A. Nightly tape backups taken every 24 hours, with a manual server rebuild process that takes 8 hours.",
+      "option_b": "B. Continuous or near-real-time database replication/snapshots at least every 10 minutes (so data loss never exceeds 10 minutes) paired with automated failover infrastructure capable of restoring full system operations within 60 minutes.",
+      "option_c": "C. Hourly backups taken every 60 minutes, with an automated failover that restores the application in 10 minutes.",
+      "option_d": "D. Keeping the system offline for up to 10 hours while losing no more than 1 hour of patient data.",
+      "correct_answer": "B",
+      "explanation": "RTO (1 hour) is the maximum acceptable time to restore the system after a disruption, while RPO (10 minutes) is the maximum acceptable amount of data loss measured in time—requiring backups/replication at least every 10 minutes and system recovery within 1 hour[span_62](start_span)[span_62](end_span)[span_63](start_span)[span_63](end_span)."
+    },
+    {
+      "question": "Why is network security particularly critical in modern cloud-native DevSecOps architectures compared to monolithic legacy systems?",
+      "option_a": "A. Because cloud-native applications consist of distributed microservices, containers, VMs, APIs, and databases that constantly communicate over networks; without proper network security, attackers can intercept traffic or move laterally across the infrastructure.",
+      "option_b": "B. Because microservices do not use operating systems or identity management.",
+      "option_c": "C. Because network security eliminates the need to encrypt data at rest.",
+      "option_d": "D. Because cloud networks are immune to Denial of Service (DoS) and Man-in-the-Middle (MitM) attacks.",
+      "correct_answer": "A",
+      "explanation": "In a DevSecOps environment, distributed applications across cloud, containers, APIs, and microservices rely on network security to protect communication channels and prevent attackers from intercepting data, disrupting services, or moving laterally through the infrastructure[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span)."
+    },
+    {
+      "question": "Following Tutorial 04 Question 07, how does the CIA Triad map to specific network threats and their corresponding protective controls?",
+      "option_a": "A. Confidentiality is threatened by DDoS and protected by hashing; Integrity is threatened by packet sniffing and protected by load balancers; Availability is threatened by MitM tampering and protected by VPNs.",
+      "option_b": "B. Confidentiality (threatened by packet sniffing/unauthorized interception) is enforced via encryption and access control; Integrity (threatened by MitM data alteration/IP spoofing) is enforced via hashing, checksums, and digital signatures; Availability (threatened by DoS/DDoS) is enforced via redundancy and DDoS mitigation controls.",
+      "option_c": "C. Confidentiality, Integrity, and Availability are all enforced exclusively by Discretionary Access Control (DAC).",
+      "option_d": "D. Integrity ensures network resources remain accessible during power outages, while Availability ensures packets are not altered in transit.",
+      "correct_answer": "B",
+      "explanation": "In the CIA Triad, Confidentiality prevents unauthorized viewing in transit via encryption and access control; Integrity prevents unauthorized alteration via hashing, checksums, and digital signatures; and Availability keeps network resources accessible against DoS/DDoS and outages[span_66](start_span)[span_66](end_span)[span_67](start_span)[span_67](end_span)[span_68](start_span)[span_68](end_span)."
+    },
+    {
+      "question": "In Tutorial 04 Question 08b, you are asked to classify six security controls into Preventive, Detective, or Corrective categories: (1) Firewall rule blocking a port, (2) SIEM alert for repeated failed logins, (3) Restoring systems from backup after ransomware, (4) Patch management, (5) Access Control List (ACL), and (6) Incident response plan. Which classification is strictly accurate according to Lecture 04?",
+      "option_a": "A. Preventive: (1), (5); Detective: (2); Corrective: (3), (4), (6).",
+      "option_b": "B. Preventive: (2), (3); Detective: (1), (4); Corrective: (5), (6).",
+      "option_c": "C. Preventive: (1), (2), (3); Detective: (4), (5); Corrective: (6).",
+      "option_d": "D. Preventive: (3), (6); Detective: (5); Corrective: (1), (2), (4).",
+      "correct_answer": "A",
+      "explanation": "According to Lecture 04 Slide 32, Firewalls and Access Control Lists are Preventive controls (stop attacks before they occur); SIEM and log monitoring alerts are Detective controls (identify attacks during or after occurrence); and Backup/Recovery, Patch Management, and Incident Response are Corrective controls (reduce impact and restore normal operations)[span_69](start_span)[span_69](end_span)[span_70](start_span)[span_70](end_span)."
+    },
+    {
+      "question": "How do Packet Filtering, Stateful, Next-Generation (NGFW), and Web Application Firewalls (WAF) differ in their inspection capabilities?",
+      "option_a": "A. Packet filtering inspects HTTP payloads for SQLi; Stateful firewalls cannot track active connections; NGFWs only check source IPs; WAFs only filter physical MAC addresses.",
+      "option_b": "B. Packet filtering checks individual packet headers (IP, port, protocol); Stateful firewalls track active connection states; NGFWs add application awareness, IPS, malware detection, user identity, and SSL inspection; WAFs inspect HTTP/HTTPS traffic to block web exploits like SQLi and XSS.",
+      "option_c": "C. Stateful firewalls are less secure than stateless packet filters because they ignore TCP handshakes.",
+      "option_d": "D. NGFWs and WAFs operate solely as passive detective controls that cannot block malicious traffic.",
+      "correct_answer": "B",
+      "explanation": "Packet filtering examines individual packets by IP/port/protocol; Stateful firewalls track active connection states; NGFWs add application awareness, IPS, malware detection, user identity, and SSL inspection; and WAFs inspect HTTP/HTTPS traffic to protect web applications against SQL injection, XSS, command injection, and file inclusion[span_71](start_span)[span_71](end_span)[span_72](start_span)[span_72](end_span)[span_73](start_span)[span_73](end_span)."
+    },
+    {
+      "question": "What is the primary operational difference between an Intrusion Detection System (IDS) and an Intrusion Prevention System (IPS)?",
+      "option_a": "A. An IDS is deployed inline to automatically drop malicious packets in real time, whereas an IPS passively monitors traffic and only generates alerts.",
+      "option_b": "B. An IDS passively monitors network traffic and generates alerts without stopping the attack or interrupting traffic, whereas an IPS is deployed inline to actively block malicious activity and drop malicious packets in real time.",
+      "option_c": "C. An IDS uses anomaly detection exclusively, while an IPS uses signature detection exclusively.",
+      "option_d": "D. An IDS encrypts remote employee traffic, whereas an IPS manages cloud IAM roles.",
+      "correct_answer": "B",
+      "explanation": "An IDS performs passive monitoring to detect attacks and generate alerts without interrupting traffic, whereas an IPS is deployed inline to provide active protection by automatically blocking attacks and dropping malicious packets in real time[span_74](start_span)[span_74](end_span)[span_75](start_span)[span_75](end_span)[span_76](start_span)[span_76](end_span)."
+    },
+    {
+      "question": "When configuring an IDS/IPS, a security architect must choose between Signature-Based Detection and Anomaly-Based Detection. Which statement accurately captures the trade-off between the two methods?",
+      "option_a": "A. Signature-based detection easily catches zero-day attacks but has a high false-positive rate; Anomaly-based detection only catches known malware with zero false positives.",
+      "option_b": "B. Signature-based detection is highly accurate for known threats using predefined signatures but cannot detect new/unknown attacks; Anomaly-based detection compares behavior against a normal baseline to detect unknown (zero-day) attacks but suffers from a higher false-positive rate.",
+      "option_c": "C. Anomaly-based detection requires no baseline training and never alerts on legitimate traffic spikes.",
+      "option_d": "D. Signature-based detection is a corrective control, while Anomaly-based detection is a physical control.",
+      "correct_answer": "B",
+      "explanation": "Signature-based detection matches predefined attack signatures (accurate for known threats, unable to detect new attacks), while anomaly-based detection identifies abnormal deviations from a baseline (capable of detecting unknown attacks, but with a higher false-positive rate)[span_77](start_span)[span_77](end_span)[span_78](start_span)[span_78](end_span)."
+    },
+    {
+      "question": "How does a Virtual Private Network (VPN) protect data traversing untrusted networks like public Wi-Fi or the Internet, and which protocols are commonly used to implement it?",
+      "option_a": "A. It converts untrusted networks into physical private fiber lines using HTTP and FTP protocols.",
+      "option_b": "B. It establishes an encrypted communication channel that protects transmitted data from interception and packet sniffing, commonly using IPsec, SSL VPN, WireGuard, or OpenVPN.",
+      "option_c": "C. It inspects web application forms for Cross-Site Scripting (XSS) using DNS Security.",
+      "option_d": "D. It replaces Multi-Factor Authentication by assigning static public IP addresses to all users.",
+      "correct_answer": "B",
+      "explanation": "A VPN creates an encrypted communication channel over an untrusted network such as the Internet—preventing packet sniffing and protecting remote work and public Wi-Fi connections—using technologies like IPsec, SSL VPN, WireGuard, and OpenVPN[span_79](start_span)[span_79](end_span)[span_80](start_span)[span_80](end_span)."
+    },
+    {
+      "question": "A global retail company hosts a public e-commerce web application in the cloud that processes customer search queries and login forms over HTTPS. Recently, attackers attempted to extract database records by injecting `' OR 1=1 --` into the login field and embedding malicious `<script>` tags in product reviews. Which firewall technology is specifically required to stop these attacks, and why?",
+      "option_a": "A. A traditional Packet Filtering Firewall, because blocking TCP port 80 will stop HTTPS injection attacks.",
+      "option_b": "B. A Stateful Firewall, because tracking the TCP three-way handshake prevents malicious SQL syntax inside valid HTTP requests.",
+      "option_c": "C. A Web Application Firewall (WAF), because it inspects Layer 7 HTTP/HTTPS traffic payloads to detect and block application-layer attacks such as SQL injection, Cross-Site Scripting (XSS), command injection, and file inclusion.",
+      "option_d": "D. A Site-to-Site VPN gateway, because it encrypts traffic between branch offices.",
+      "correct_answer": "C",
+      "explanation": "Packet filtering and stateful firewalls allow traffic on open web ports (80/443) if the connection state is valid; only a Web Application Firewall (WAF) (or an NGFW with WAF/SSL inspection capabilities) inspects HTTP/HTTPS payloads to block SQL injection, XSS, command injection, and file inclusion[span_81](start_span)[span_81](end_span)[span_82](start_span)[span_82](end_span)."
+    },
+    {
+      "question": "A financial firm wants to protect its core cloud network against a newly discovered, previously unknown (zero-day) exploit that has no published attack signature. Furthermore, management requires that any detected attack be blocked automatically in real time without waiting for a human analyst to respond to an alert. Which architecture meets both requirements, and what operational challenge must the team prepare to tune?",
+      "option_a": "A. A Signature-Based IDS; the team must prepare for dropped legitimate packets.",
+      "option_b": "B. An inline Anomaly-Based IPS; the team must carefully tune behavioral baselines because anomaly-based detection carries a higher false-positive rate that could inadvertently block legitimate traffic.",
+      "option_c": "C. A passive Anomaly-Based IDS; it will automatically drop malicious packets with zero false positives.",
+      "option_d": "D. A Signature-Based IPS; it can detect unknown zero-day attacks using predefined virus definitions.",
+      "correct_answer": "B",
+      "explanation": "Stopping attacks automatically in real time requires an inline IPS rather than a passive IDS, and detecting a previously unknown attack requires Anomaly-Based Detection rather than Signature-Based Detection—meaning the team must manage the higher false-positive rate inherent to anomaly detection[span_83](start_span)[span_83](end_span)[span_84](start_span)[span_84](end_span)[span_85](start_span)[span_85](end_span)[span_86](start_span)[span_86](end_span)."
+    },
+    {
+      "question": "In Tutorial 04 Question 08c and Question 09c, an enterprise has remote employees working from home laptops and three regional branch offices that need permanent encrypted connectivity to the corporate headquarters network. Why must this enterprise combine Remote Access VPNs, Site-to-Site VPNs, and all three categories of network controls (Preventive, Detective, Corrective)?",
+      "option_a": "A. Remote Access VPNs connect individual work-from-home users while Site-to-Site VPNs connect separate branch networks to headquarters; combining Preventive, Detective, and Corrective controls ensures that if an attacker bypasses preventive barriers (like VPNs/firewalls), detective tools (IDS/SIEM) spot the intrusion early and corrective procedures (backups/incident response) restore operations.",
+      "option_b": "B. Site-to-Site VPNs are designed for individual mobile phones, while Remote Access VPNs connect data centers; relying solely on Preventive controls guarantees 100% immunity from cyber attacks.",
+      "option_c": "C. VPNs are Corrective controls that restore deleted files after a ransomware attack.",
+      "option_d": "D. Combining all three control categories allows the organization to disable encryption and hashing on internal networks.",
+      "correct_answer": "A",
+      "explanation": "Remote Access VPNs securely connect individual remote workers while Site-to-Site VPNs connect geographically separate branch networks to headquarters[span_87](start_span)[span_87](end_span)[span_88](start_span)[span_88](end_span); combining Preventive, Detective, and Corrective controls implements Defense in Depth because preventing every attack is impossible, requiring detection and recovery capabilities[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span)[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span)."
+    },
+    {
+      "question": "Why is Identity and Access Management (IAM) considered one of the most critical security mechanisms in cloud computing, and what types of identities does it govern?",
+      "option_a": "A. Because cloud resources are accessible over the Internet and environments are highly dynamic; IAM centrally governs both human identities (employees, administrators, customers) and non-human identities (applications, VMs, APIs, services).",
+      "option_b": "B. Because IAM physically locks data center server racks and only governs human employees.",
+      "option_c": "C. Because IAM replaces the need for network firewalls and only governs non-human API keys.",
+      "option_d": "D. Because cloud environments are static and rarely create or remove resources.",
+      "correct_answer": "A",
+      "explanation": "In dynamic cloud environments accessible over the Internet, IAM provides centralized control over both human identities (employees, administrators, customers) and non-human identities (applications, VMs, APIs, services) to ensure the right entity has the right access to the right resource at the right time[span_93](start_span)[span_93](end_span)[span_94](start_span)[span_94](end_span)[span_95](start_span)[span_95](end_span)."
+    },
+    {
+      "question": "Using the core IAM components defined in Lecture 04 and Tutorial 04 Question 10, which statement accurately distinguishes between (1) Authentication vs. Authorization, (2) Users vs. Groups, and (3) Roles vs. Policies?",
+      "option_a": "A. Authentication determines what actions are allowed, whereas Authorization verifies identity; Users are collections of Groups; Roles are JSON rules, whereas Policies are job functions.",
+      "option_b": "B. Authentication verifies the identity of a user or service (e.g., logging in with password + MFA), while Authorization determines what that authenticated identity is allowed to do; Users are individual identities with credentials, while Groups are collections of users sharing permissions; Roles are sets of temporary permissions assigned to job functions or services, while Policies are rules (such as JSON documents) defining allowed or denied actions.",
+      "option_c": "C. Authentication applies only to human users, while Authorization applies only to virtual machines.",
+      "option_d": "D. Groups are used to store encryption keys, whereas Policies are individual user passwords.",
+      "correct_answer": "B",
+      "explanation": "Authentication verifies identity while Authorization determines permitted actions; Users are individual credentialed identities while Groups organize users with similar permissions; and Roles represent job-based or temporary permission sets (for users or services) governed by Policies (JSON rules defining allowed/denied actions)[span_96](start_span)[span_96](end_span)[span_97](start_span)[span_97](end_span)[span_98](start_span)[span_98](end_span)."
+    },
+    {
+      "question": "In a university cloud portal, permissions are assigned to three predefined profiles—`Student` (view own results), `Lecturer` (update module marks), and `Administrator` (manage users)—rather than granting permissions individually to each of the 15,000 user accounts. Which access control model is being used, and what are its primary advantages?",
+      "option_a": "A. Discretionary Access Control (DAC); it allows students to share gradebooks with peers.",
+      "option_b": "B. Role-Based Access Control (RBAC); it simplifies management, supports the Principle of Least Privilege, and is widely used in cloud environments.",
+      "option_c": "C. Mandatory Access Control (MAC); it relies on military top-secret clearance labels.",
+      "option_d": "D. Attribute-Based Access Control (ABAC); it evaluates GPS coordinates and time of day exclusively.",
+      "correct_answer": "B",
+      "explanation": "Role-Based Access Control (RBAC) assigns permissions to roles (`Student`, `Lecturer`, `Administrator`) rather than individual users, offering easy management and support for least privilege across cloud environments[span_99](start_span)[span_99](end_span)[span_100](start_span)[span_100](end_span)."
+    },
+    {
+      "question": "How do Attribute-Based Access Control (ABAC), Discretionary Access Control (DAC), and Mandatory Access Control (MAC) differ in how access decisions are determined?",
+      "option_a": "A. ABAC evaluates contextual attributes (department, location, time, device, job title); DAC allows the resource owner to decide who can access a resource (e.g., sharing a document with colleagues); MAC enforces access based on predefined security classifications set by a central authority (e.g., government classified data).",
+      "option_b": "B. DAC is used for military classified secrets; MAC allows any user to share files publicly; ABAC ignores time of day and device posture.",
+      "option_c": "C. ABAC is the oldest static model, whereas DAC prohibits resource owners from modifying permissions.",
+      "option_d": "D. All three models are identical to RBAC in cloud platforms.",
+      "correct_answer": "A",
+      "explanation": "ABAC makes access decisions using attributes (department, location, time, device, job title), DAC lets the resource owner decide access (such as sharing a document), and MAC enforces strict predefined security classifications (such as government classified information)[span_101](start_span)[span_101](end_span)[span_102](start_span)[span_102](end_span)."
+    },
+    {
+      "question": "To enforce the Principle of Least Privilege (PoLP) for a software developer working on an AWS application, coupled with strong Multi-Factor Authentication (MFA), which configuration is correct?",
+      "option_a": "A. Grant the developer `AdministratorAccess` to delete production databases and modify IAM policies; require two passwords ('Something You Know' twice) for MFA.",
+      "option_b": "B. Grant only minimum required permissions (read EC2 instances, deploy applications, restart application services) while denying database deletion, IAM policy modification, and billing management; require MFA combining two or more independent factors ('Something You Know' like a password, 'Something You Have' like a security token/phone, or 'Something You Are' like a fingerprint).",
+      "option_c": "C. Deny the developer access to deploy applications, and use a single PIN code as Multi-Factor Authentication.",
+      "option_d": "D. Allow the developer to modify IAM policies temporarily every day using the AWS root account.",
+      "correct_answer": "B",
+      "explanation": "Under Least Privilege, a developer should only receive permissions needed for their tasks (read EC2, deploy apps, restart services) and be denied destructive/admin actions (delete databases, modify IAM policies, manage billing)[span_103](start_span)[span_103](end_span); MFA requires two or more independent factors across Something You Know, Something You Have, and Something You Are[span_104](start_span)[span_104](end_span)."
+    },
+    {
+      "question": "What is the distinction between Identity Federation and Single Sign-On (SSO), and how do they work together in an enterprise or university environment?",
+      "option_a": "A. Identity Federation forces users to create separate passwords for every external cloud vendor, whereas SSO disables centralized identity management.",
+      "option_b": "B. Identity Federation enables users to access external systems using identities managed by another trusted organization (e.g., using university credentials to access Azure or Google Workspace), while SSO allows users to authenticate once and access multiple applications (e.g., LMS, Email, Teams, Library Portal) without logging in repeatedly, reducing password fatigue.",
+      "option_c": "C. SSO only works for on-premises servers, whereas Identity Federation is a type of network firewall.",
+      "option_d": "D. Identity Federation encrypts database backups, while SSO scans for malware.",
+      "correct_answer": "B",
+      "explanation": "Identity Federation allows users to access systems across trust boundaries using their home organization's identity, while SSO allows users to authenticate once to access multiple applications—improving user experience, reducing password fatigue, and centralizing identity management[span_105](start_span)[span_105](end_span)[span_106](start_span)[span_106](end_span)."
+    },
+    {
+      "question": "Which set of practices accurately reflects AWS IAM best practices and Microsoft Entra ID (Azure AD) security capabilities?",
+      "option_a": "A. In AWS IAM, use the root account for daily development and embed long-term access keys in code; in Entra ID, disable Conditional Access.",
+      "option_b": "B. In AWS IAM, avoid using the root account for daily activities, enable MFA, apply least privilege, rotate credentials regularly, and use Roles (temporary permissions) instead of long-term access keys; in Microsoft Entra ID, leverage Conditional Access, Identity Protection, risk-based authentication, device authentication, and regular access reviews.",
+      "option_c": "C. In AWS IAM, policies are written in YAML and roles provide permanent unrevocable access; in Entra ID, Multi-Factor Authentication is not supported.",
+      "option_d": "D. Both AWS IAM and Microsoft Entra ID recommend sharing a single administrator account across the DevSecOps team to simplify audit logging.",
+      "correct_answer": "B",
+      "explanation": "AWS IAM best practices prohibit daily root account usage and require MFA, least privilege, credential rotation, and temporary roles instead of long-lived keys[span_107](start_span)[span_107](end_span); Microsoft Entra ID provides Conditional Access, Identity Protection, risk-based authentication, device authentication, and access reviews[span_108](start_span)[span_108](end_span)."
+    },
+    {
+      "question": "In Tutorial 04 Question 11, an online retailer operates a cloud platform used by three distinct job functions: Customer Service Agents, Warehouse Managers, and Finance Staff. Which access control model is most suitable as the primary framework for this platform, and how could it be enhanced if Finance Staff should only access payroll data during office hours from corporate laptops?",
+      "option_a": "A. Discretionary Access Control (DAC) alone, so customer service agents can freely grant warehouse permissions to customers.",
+      "option_b": "B. Role-Based Access Control (RBAC) as the primary model because permissions align cleanly with the three job functions (`Customer Service`, `Warehouse Manager`, `Finance`), enhanced with Attribute-Based Access Control (ABAC) / Conditional Access rules to enforce time-of-day (office hours) and device attributes for Finance staff.",
+      "option_c": "C. Mandatory Access Control (MAC) alone, because online retail inventory requires military nuclear classification labels.",
+      "option_d": "D. Granting all three departments identical Administrator permissions to avoid access denied errors.",
+      "correct_answer": "B",
+      "explanation": "RBAC is ideal for cloud platforms where permissions map directly to organizational job functions (Customer Service, Warehouse, Finance)[span_109](start_span)[span_109](end_span)[span_110](start_span)[span_110](end_span), while ABAC (or Entra ID Conditional Access) adds fine-grained contextual checks based on attributes like job title, time (office hours), location, and device[span_111](start_span)[span_111](end_span)[span_112](start_span)[span_112](end_span)[span_113](start_span)[span_113](end_span)."
+    },
+    {
+      "question": "In Tutorial 04 Question 12, a cloud start-up gives every developer administrator permissions, shares a single administrator account among the team, uses long-lived access keys for scripts, and does not enable MFA. Which combination accurately identifies the resulting security risks and the required remediation plan?",
+      "option_a": "A. Risks: Improved accountability and zero insider threat; Remediation: Keep shared accounts but change the password annually.",
+      "option_b": "B. Risks: Loss of individual accountability in audit logs, severe vulnerability to credential theft/phishing and account hijacking (due to missing MFA and long-lived keys), privilege escalation, and catastrophic blast radius from insider threats or accidental deletion; Remediation: Enforce individual user accounts with RBAC and Least Privilege, enable MFA, replace long-lived keys with short-lived IAM Roles, separate admin accounts, and deploy SSO.",
+      "option_c": "C. Risks: High cloud billing from MFA tokens; Remediation: Switch from RBAC to Discretionary Access Control (DAC).",
+      "option_d": "D. Risks: Denial of Service on the hypervisor; Remediation: Ask the cloud provider to manage the start-up's IAM policies under 'Security OF the Cloud'.",
+      "correct_answer": "B",
+      "explanation": "Universal admin permissions, shared admin accounts, long-lived keys, and missing MFA are classic IAM misconfigurations that enable credential theft, account hijacking, insider threats, privilege escalation, and loss of audit accountability; they are remediated via Least Privilege, individual accounts, MFA, temporary IAM Roles, regular permission reviews, and SSO[span_114](start_span)[span_114](end_span)[span_115](start_span)[span_115](end_span)[span_116](start_span)[span_116](end_span)[span_117](start_span)[span_117](end_span)[span_118](start_span)[span_118](end_span)."
+    },
+    {
+      "question": "Aligned with Learning Outcome 5 ('Identify secure configuration management practices and system hardening techniques'), which set of actions represents effective operating system and virtual machine hardening in a DevSecOps pipeline?",
+      "option_a": "A. Enabling all default network services, running application processes as the `root` user, and leaving SSH port 22 open to `0.0.0.0/0` for easy debugging.",
+      "option_b": "B. Building immutable 'golden images' aligned with CIS Benchmarks, removing unnecessary packages and default accounts, closing unused network ports, disabling root SSH login, enforcing automated patch management, and running services under non-privileged service accounts.",
+      "option_c": "C. Disabling host firewalls and OS audit logging to improve container startup speed.",
+      "option_d": "D. Relying exclusively on perimeter Web Application Firewalls so guest operating systems never require security updates.",
+      "correct_answer": "B",
+      "explanation": "System hardening and secure configuration management (Learning Outcome 5 and Principle of 'Secure by Default' / 'Automation') require minimizing the attack surface by disabling unnecessary services and ports, removing default accounts, enforcing least privilege at the OS level, and automating patching and configuration validation[span_119](start_span)[span_119](end_span)[span_120](start_span)[span_120](end_span)[span_121](start_span)[span_121](end_span)."
+    },
+    {
+      "question": "In a cloud-native DevSecOps environment, engineers provision infrastructure using Infrastructure as Code (IaC) templates (e.g., Terraform, AWS CloudFormation, Azure Bicep). How should secure configuration management prevent both pre-deployment misconfigurations and post-deployment 'configuration drift'?",
+      "option_a": "A. Allow engineers to manually edit production firewall rules in the cloud console without updating the IaC repository.",
+      "option_b": "B. Integrate automated static IaC security scanning into the CI/CD pipeline before deployment to catch misconfigurations (like open buckets or permissive security groups), and enforce continuous configuration compliance in production using services like Azure Policy, AWS Security Hub, and Amazon Inspector.",
+      "option_c": "C. Perform manual configuration audits once every three years.",
+      "option_d": "D. Disable API logging so manual console changes are not recorded.",
+      "correct_answer": "B",
+      "explanation": "Secure configuration management combines the Cloud Security Principle of Automation (automated config validation, security scanning, and compliance checks in CI/CD) with native posture enforcement tools like Azure Policy, Microsoft Defender for Cloud, AWS Inspector, and AWS Security Hub[span_122](start_span)[span_122](end_span)[span_123](start_span)[span_123](end_span)[span_124](start_span)[span_124](end_span)[span_125](start_span)[span_125](end_span)."
+    },
+    {
+      "question": "An AWS IAM user belongs to the `Developers` group, which has an attached JSON policy explicitly allowing `s3:*` on all buckets. However, to protect a sensitive `finance-payroll-bucket`, the security architect attaches a policy containing an explicit `\"Effect\": \"Deny\"` for `s3:DeleteBucket` and `s3:GetObject` on `finance-payroll-bucket` for everyone except the `FinanceAdmin` role. When the developer attempts to download a file from `finance-payroll-bucket`, what happens under AWS IAM policy evaluation logic?",
+      "option_a": "A. The request succeeds because the `s3:*` Allow statement in the `Developers` group overrides any Deny statement.",
+      "option_b": "B. The request is denied because in AWS IAM evaluation logic, an explicit `Deny` in any applicable policy always overrides an explicit `Allow`.",
+      "option_c": "C. AWS prompts the developer to enter their MFA code twice to bypass the Deny rule.",
+      "option_d": "D. The request succeeds if the developer uses a long-lived access key instead of the console.",
+      "correct_answer": "B",
+      "explanation": "AWS IAM policies are JSON documents defining allowed or denied actions[span_126](start_span)[span_126](end_span)[span_127](start_span)[span_127](end_span); in real-world AWS policy evaluation logic, default evaluation starts at implicit deny, an explicit `Allow` grants access, and an explicit `Deny` always overrides any `Allow` statement to enforce strict Least Privilege boundaries[span_128](start_span)[span_128](end_span)[span_129](start_span)[span_129](end_span)."
+    },
+    {
+      "question": "A cloud network engineer is securing an AWS Virtual Private Cloud (VPC) using both Security Groups (instance-level) and Network Access Control Lists / NACLs (subnet-level). An external client connects to an EC2 web server on TCP port 443. Why does the engineer NOT need to write an explicit outbound rule for ephemeral return ports on the Security Group, whereas a NACL requires explicit outbound ephemeral port rules?",
+      "option_a": "A. Because Security Groups are stateful firewalls (automatically allowing return traffic for established inbound connections), whereas NACLs are stateless packet filters (evaluating inbound and outbound packets independently without tracking connection state).",
+      "option_b": "B. Because Security Groups are stateless packet filters and NACLs are Next-Generation Firewalls (NGFWs).",
+      "option_c": "C. Because Security Groups operate at Layer 7 like a WAF, while NACLs operate as VPN gateways.",
+      "option_d": "D. Because TCP port 443 does not send return packets to clients.",
+      "correct_answer": "A",
+      "explanation": "Applying the firewall architectures from Lecture 04 to real-world cloud networking, cloud Security Groups act as Stateful Firewalls that track active connection states and automatically permit return traffic, whereas subnet NACLs act as stateless Packet Filtering Firewalls that check each inbound and outbound packet independently[span_130](start_span)[span_130](end_span)[span_131](start_span)[span_131](end_span)."
+    },
+    {
+      "question": "In a containerized Kubernetes production environment, a DevSecOps architect wants to enforce Defense in Depth and Least Privilege so that even if a microservice container is compromised via an application zero-day, the attacker cannot gain root access to the host node, modify the container binary, or scan internal database pods in other namespaces. Which combination of hardening controls achieves all three objectives?",
+      "option_a": "A. Running the container with `privileged: true`, mounting the host root filesystem, and using a flat cluster network.",
+      "option_b": "B. Enforcing container hardening (`runAsNonRoot: true`, dropping Linux capabilities, and setting `readOnlyRootFilesystem: true`) combined with Kubernetes `NetworkPolicy` segmentation that restricts pod-to-pod traffic strictly to authorized microservice ports.",
+      "option_c": "C. Replacing all container RBAC policies with Discretionary Access Control (DAC) and disabling TLS between microservices.",
+      "option_d": "D. Exposing the Kubernetes API server publicly without authentication so monitoring tools can scrape logs faster.",
+      "correct_answer": "B",
+      "explanation": "Securing the Containers & VMs layer through Defense in Depth, Least Privilege, and Network Segmentation requires hardening the container runtime (non-root execution, read-only root filesystem) and enforcing microservice network segmentation via Kubernetes NetworkPolicies to prevent lateral movement[span_132](start_span)[span_132](end_span)[span_133](start_span)[span_133](end_span)[span_134](start_span)[span_134](end_span)[span_135](start_span)[span_135](end_span)[span_136](start_span)[span_136](end_span)."
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best defines a cloud-native application?",
+      "option_a": "A. An application that requires no network connection to operate",
+      "option_b": "B. An application that can only run on serverless platforms",
+      "option_c": "C. An application designed to take advantage of cloud computing models and services",
+      "option_d": "D. Any application that is hosted on a cloud provider's virtual machines",
+      "correct_answer": "C",
+      "explanation": "Cloud-native refers to applications designed to exploit cloud capabilities such as elastic scaling, managed services, containers, microservices, APIs, automation, IaC, and serverless computing - not merely being hosted in the cloud."
+    },
+    {
+      "question": "Which of the following is NOT one of the eight cloud-native capabilities presented in the lecture?",
+      "option_a": "A. Elastic scaling",
+      "option_b": "B. Manual server provisioning",
+      "option_c": "C. Infrastructure as Code",
+      "option_d": "D. Managed services",
+      "correct_answer": "B",
+      "explanation": "The eight capabilities are elastic scaling, managed services, containers, microservices, APIs, automation, Infrastructure as Code, and serverless computing. Manual provisioning is the opposite of the automation and IaC capabilities."
+    },
+    {
+      "question": "A company moves its legacy monolithic application onto rented cloud virtual machines without redesigning it, and claims the application is now cloud-native. Which argument correctly evaluates this claim?",
+      "option_a": "A. The claim is incorrect - cloud-native applications are forbidden from using virtual machines",
+      "option_b": "B. The claim is correct - hosting an application in the cloud is sufficient to make it cloud-native",
+      "option_c": "C. The claim is incorrect - cloud-native requires designing the application to exploit cloud models such as elastic scaling, managed services, and microservices; simply hosting a traditional architecture is not cloud-native",
+      "option_d": "D. The claim is correct - any application running on a VM is by definition cloud-native",
+      "correct_answer": "C",
+      "explanation": "Cloud-native is about design, not location. A traditional architecture simply hosted on cloud VMs does not take advantage of cloud computing models and services."
+    },
+    {
+      "question": "The statement serverless does not mean there are no servers means that:",
+      "option_a": "A. Servers still exist, but the cloud provider manages them and developers do not directly provision or manage them",
+      "option_b": "B. Serverless platforms run entirely on hardware owned by the customer",
+      "option_c": "C. Serverless functions execute without any underlying hardware",
+      "option_d": "D. Servers are only used during the first invocation of a function",
+      "correct_answer": "A",
+      "explanation": "Serverless is an execution model where the provider manages the underlying servers, operating systems, runtime infrastructure, and much of the scaling; the servers still physically exist."
+    },
+    {
+      "question": "Which of the following is NOT a documented benefit of serverless computing?",
+      "option_a": "A. Automatic scaling of functions with incoming requests or events",
+      "option_b": "B. Direct customer control over operating system patching",
+      "option_c": "C. Pay-per-use billing based on actual execution and resource consumption",
+      "option_d": "D. High availability managed by the provider",
+      "correct_answer": "B",
+      "explanation": "In serverless, the provider manages the operating systems and runtime infrastructure, so customers give up direct control over OS patching in exchange for reduced infrastructure management."
+    },
+    {
+      "question": "An image-processing pipeline is implemented as a FaaS function that runs whenever a customer uploads an image. Which of the following would NOT cause the function to execute?",
+      "option_a": "A. A continuously running background polling thread inside the function",
+      "option_b": "B. An HTTP/API request routed through an API gateway",
+      "option_c": "C. A file upload event raised by object storage",
+      "option_d": "D. A message arriving in a queue",
+      "correct_answer": "A",
+      "explanation": "FaaS functions execute in response to specific events and do not rely on a continuously running application server; there is no persistent background thread to poll."
+    },
+    {
+      "question": "Why does every event source become part of a serverless function's trust boundary and attack surface?",
+      "option_a": "A. Because event sources are always located in the same data center as the function",
+      "option_b": "B. Because event sources physically store the function's code",
+      "option_c": "C. Because a malicious or unauthorized event can trigger function execution, so the function must verify who generated the event, whether it is authorized, whether the input can be trusted, and what permissions the function has",
+      "option_d": "D. Because cloud providers automatically validate and authorize all events before delivery",
+      "correct_answer": "C",
+      "explanation": "Each event source (HTTP request, file upload, queue message, scheduled event, etc.) is a potential entry point for malicious input, so the function must treat event provenance and content as security concerns."
+    },
+    {
+      "question": "Which of the following is NOT a typical AWS Lambda trigger?",
+      "option_a": "A. Amazon S3",
+      "option_b": "B. Amazon DynamoDB",
+      "option_c": "C. Amazon API Gateway",
+      "option_d": "D. AWS IAM policy evaluation",
+      "correct_answer": "D",
+      "explanation": "Lambda is triggered by services such as API Gateway, S3, DynamoDB, EventBridge, SQS, and SNS. IAM policy evaluation is an authorization mechanism, not an event source."
+    },
+    {
+      "question": "A team builds an Azure Functions solution in which every new record written to Azure Cosmos DB must automatically trigger processing logic. Which trigger type should they configure?",
+      "option_a": "A. Service Bus trigger",
+      "option_b": "B. Cosmos DB trigger based on the change feed",
+      "option_c": "C. HTTP trigger",
+      "option_d": "D. Timer trigger",
+      "correct_answer": "B",
+      "explanation": "Azure Functions supports Cosmos DB triggers that respond to changes in the container's change feed, enabling database-change-driven event processing without polling."
+    },
+    {
+      "question": "Under the shared responsibility model for serverless computing, which duty remains with the customer?",
+      "option_a": "A. Securing application code, IAM permissions, data, and secrets",
+      "option_b": "B. Maintaining physical hardware",
+      "option_c": "C. Ensuring platform availability",
+      "option_d": "D. Patching the host operating environment",
+      "correct_answer": "A",
+      "explanation": "The provider handles physical infrastructure, hardware, host OS, managed execution infrastructure, and availability; the customer retains responsibility for code, identity and permissions, data and secrets, dependencies, API security, business logic, and monitoring configuration."
+    },
+    {
+      "question": "After migrating to AWS Lambda, a developer states: AWS handles security now, so we no longer need vulnerability scanning or access reviews. Which response is correct?",
+      "option_a": "A. The developer is right - the provider secures everything above the hypervisor",
+      "option_b": "B. The developer is wrong - the customer must now also patch the provider's execution infrastructure",
+      "option_c": "C. The developer is wrong - the customer still owns application code, identity and permissions, data and secrets, dependencies, API security, business logic, and monitoring configuration, so scanning and reviews remain essential",
+      "option_d": "D. The developer is right - vulnerability scanning is only needed for physical servers",
+      "correct_answer": "C",
+      "explanation": "Moving to serverless removes some infrastructure management responsibilities but does not remove security responsibility; the customer must still secure code, IAM, APIs, dependencies, secrets, data, event sources, and configuration."
+    },
+    {
+      "question": "Which of the following is the cloud provider responsible for in a serverless model?",
+      "option_a": "A. Physical infrastructure and hardware",
+      "option_b": "B. Application business logic",
+      "option_c": "C. Secrets rotation policy",
+      "option_d": "D. Function dependencies",
+      "correct_answer": "A",
+      "explanation": "The provider manages physical infrastructure, hardware, the host operating environment, managed execution infrastructure, and platform availability; business logic, dependencies, and secrets governance belong to the customer."
+    },
+    {
+      "question": "Which of the following is NOT one of the eight common serverless security risks presented in the lecture?",
+      "option_a": "A. Insufficient logging",
+      "option_b": "B. Excessive permissions",
+      "option_c": "C. Event injection",
+      "option_d": "D. Patching the host operating system",
+      "correct_answer": "D",
+      "explanation": "The eight risks are insecure function code, excessive permissions, insecure APIs, vulnerable dependencies, exposed secrets, event injection, security misconfiguration, and insufficient logging. Host OS patching is the provider's duty, not a customer application risk."
+    },
+    {
+      "question": "A malicious message is placed in a queue and consumed by a serverless function, which executes unintended commands because the payload was trusted blindly. Which risk does this represent, and what is the primary mitigation?",
+      "option_a": "A. Security misconfiguration - enable storage encryption",
+      "option_b": "B. Insufficient logging - enable more detailed logging",
+      "option_c": "C. Event injection - validate and sanitize event input and treat all event sources as untrusted",
+      "option_d": "D. Excessive permissions - remove database write access",
+      "correct_answer": "C",
+      "explanation": "Malicious input entering via event sources is event injection. Since every event source is part of the trust boundary, functions must validate type, length, and format of event data and reject unexpected input."
+    },
+    {
+      "question": "Compared with traditional server-based architectures, which threat is emphasized or newly prominent in serverless environments?",
+      "option_a": "A. Denial of Wallet - attackers driving massive numbers of function executions to exhaust concurrency and inflate cloud costs",
+      "option_b": "B. SQL injection against a self-managed database server",
+      "option_c": "C. Unpatched host operating systems",
+      "option_d": "D. Physical theft of server hardware",
+      "correct_answer": "A",
+      "explanation": "Serverless reduces some infrastructure risks but introduces or emphasizes others; the pay-per-execution model creates a unique cost-based attack where mass invocations consume resources and money even without a traditional service outage."
+    },
+    {
+      "question": "Why is input validation still necessary in serverless functions?",
+      "option_a": "A. Validation is only required for user-facing web pages",
+      "option_b": "B. It is unnecessary because the provider sanitizes all inputs",
+      "option_c": "C. Serverless does not eliminate traditional application vulnerabilities such as SQL injection, so untrusted input from APIs, files, databases, queues, and cloud events must still be validated",
+      "option_d": "D. Functions are too short-lived for injection attacks to succeed",
+      "correct_answer": "C",
+      "explanation": "Functions receive input from many sources (APIs, files, databases, message queues, cloud events, users, external systems); each is a potential injection vector, so type, length, and format validation, allowlists, and parameterized queries remain essential."
+    },
+    {
+      "question": "A serverless API returns the following error to callers: Database connection failed: username=admin, host=db.internal.company, password=.... Which statement best describes the problem and the fix?",
+      "option_a": "A. The fix is to disable HTTPS so errors cannot be intercepted",
+      "option_b": "B. The response is acceptable because the password was masked, so no change is needed",
+      "option_c": "C. This is insecure error handling - user-facing errors should be generic, while detailed diagnostics belong in internal logs that still must never record secrets",
+      "option_d": "D. The fix is to grant the function AdministratorAccess so it can reconnect",
+      "correct_answer": "C",
+      "explanation": "Error messages must not expose internal architecture or credentials. Best practice is generic user-facing errors, appropriate diagnostic detail in internal logs, and never logging passwords, tokens, or other secrets."
+    },
+    {
+      "question": "According to the principle of least privilege applied to serverless functions:",
+      "option_a": "A. All functions in an application should share one role to simplify management",
+      "option_b": "B. Every function should receive AdministratorAccess by default for flexibility",
+      "option_c": "C. Permission management is entirely the cloud provider's responsibility",
+      "option_d": "D. Each function should be granted only the permissions necessary for its intended task",
+      "correct_answer": "D",
+      "explanation": "Least privilege means scoping each function's identity to exactly what its task requires; a function should not automatically receive AdministratorAccess."
+    },
+    {
+      "question": "An upload function stores incoming files in a specific S3 bucket and performs no other cloud operations. Which IAM permission set best follows least privilege?",
+      "option_a": "A. Full access to every resource in the cloud account",
+      "option_b": "B. Write access limited to the specific bucket the function needs",
+      "option_c": "C. Read and write access to all S3 buckets and all DynamoDB tables in the account",
+      "option_d": "D. AdministratorAccess, to keep the function future-proof",
+      "correct_answer": "B",
+      "explanation": "Permissions should be scoped to the exact resources and actions the function requires; broad or administrator-level rights violate least privilege and magnify the impact of compromise."
+    },
+    {
+      "question": "Three functions - upload, payment, and report - share a single administrator role. The report function is compromised through a code vulnerability. Compared with a design using separate scoped roles per function, what is the key difference in impact?",
+      "option_a": "A. There is no difference, because the attacker already had access either way",
+      "option_b": "B. Scoped roles increase privilege escalation opportunities for the attacker",
+      "option_c": "C. With the shared role the compromised function can access every resource, while with scoped roles the damage is confined to the report function's read-only database permissions, limiting the blast radius",
+      "option_d": "D. The shared role actually reduces lateral movement because there is only one identity",
+      "correct_answer": "C",
+      "explanation": "A broad shared role means one compromised function risks everything. Separate scoped roles (upload gets storage write, payment gets payment service, report gets read-only database) confine what any single compromised function can do."
+    },
+    {
+      "question": "Which of the following is a documented benefit of applying least privilege to serverless functions?",
+      "option_a": "A. It removes the need for API authentication",
+      "option_b": "B. It guarantees faster function execution",
+      "option_c": "C. It eliminates the need for secrets management",
+      "option_d": "D. It limits damage if a function is compromised, reduces privilege escalation opportunities, reduces unauthorized access, and limits lateral movement",
+      "correct_answer": "D",
+      "explanation": "The lecture lists these four concrete benefits of least privilege; it is a damage-limitation control, not a performance or replacement control for authentication or secrets management."
+    },
+    {
+      "question": "In serverless API security, the distinction between authentication and authorization is that:",
+      "option_a": "A. Authentication asks whether you are permitted, while authorization asks who you are",
+      "option_b": "B. The two terms are synonyms in cloud API design",
+      "option_c": "C. Authentication asks who you are, while authorization asks whether you are permitted to perform this action - and both are required",
+      "option_d": "D. Strong authorization makes TLS unnecessary",
+      "correct_answer": "C",
+      "explanation": "Authentication establishes identity; authorization enforces what that identity may do. Securing an API requires strong authentication plus proper authorization - one without the other leaves the API exposed."
+    },
+    {
+      "question": "An API gateway authenticates every caller via a validated JWT, yet any authenticated user can read any customer's records simply by changing the record ID in the request. Which security control is missing?",
+      "option_a": "A. Rate limiting at the gateway",
+      "option_b": "B. Request size limits",
+      "option_c": "C. TLS/HTTPS encryption of the channel",
+      "option_d": "D. Proper authorization checks on each requested resource",
+      "correct_answer": "D",
+      "explanation": "Authentication succeeded, but the API never verifies that the caller is permitted to access the specific record - a broken authorization (IDOR-style) flaw. Each request needs an authorization decision, not just identity validation."
+    },
+    {
+      "question": "Which option lists ONLY security controls appropriate for a serverless API?",
+      "option_a": "A. Disabling API logging to reduce costs",
+      "option_b": "B. Hard-coded API keys in the client, a shared administrator role, plaintext HTTP",
+      "option_c": "C. Strong authentication, proper authorization, TLS/HTTPS, input validation, rate limiting, request size limits, API logging, secure error handling, and WAF where appropriate",
+      "option_d": "D. Disabling authentication, unrestricted CORS, unlimited request sizes",
+      "correct_answer": "C",
+      "explanation": "These are exactly the API security controls from the lecture's request-flow diagram; the other options each remove or invert a required control."
+    },
+    {
+      "question": "Secrets such as database passwords, API keys, tokens, and certificates should not be hard-coded into function source code primarily because:",
+      "option_a": "A. Compiled function code cannot contain string literals",
+      "option_b": "B. Code and configuration are copied into repositories, CI/CD logs, build artifacts, and deployments, so a hard-coded secret is exposed everywhere the code travels",
+      "option_c": "C. Hard-coded secrets expire automatically after deployment",
+      "option_d": "D. Cloud providers forbid all string literals in function code",
+      "correct_answer": "B",
+      "explanation": "Hard-coded secrets spread through source repositories and pipeline logs and remain visible to anyone who can read the code; managed secret storage (AWS Secrets Manager, Systems Manager Parameter Store, Azure Key Vault) is the better approach."
+    },
+    {
+      "question": "At runtime, a debugging routine accidentally writes the function's full environment dump to application logs, revealing an API key stored in an environment variable. Which set of practices would have prevented or limited this incident?",
+      "option_a": "A. Disable all logging permanently so nothing can leak",
+      "option_b": "B. Store high-value secrets in a dedicated secret manager, restrict access to function configuration, encrypt sensitive configuration where supported, never log secrets, and rotate exposed credentials",
+      "option_c": "C. Grant the function administrator rights so it can protect itself",
+      "option_d": "D. Move the key into the source code where it is harder to find",
+      "correct_answer": "B",
+      "explanation": "Environment variables carry risks including accidental exposure through logs and debugging output; best practices are not logging secrets, restricting configuration access, encrypting sensitive configuration, preferring dedicated secret managers, and rotating credentials."
+    },
+    {
+      "question": "Which set of supply-chain controls reduces the risk that third-party packages introduce vulnerabilities into serverless functions?",
+      "option_a": "A. Installing packages from unverified links shared in forums",
+      "option_b": "B. Always depending on floating latest versions without pinning",
+      "option_c": "C. Ignoring vulnerability reports for small or obscure packages",
+      "option_d": "D. Maintaining dependency inventories, using Software Composition Analysis (SCA), pinning dependency versions, using trusted package repositories, removing unused packages, generating an SBOM where required, and verifying artifact integrity",
+      "correct_answer": "D",
+      "explanation": "A vulnerability in one dependency can make the entire function vulnerable, so the lecture prescribes inventory, SCA, pinning, trusted repositories, removal of unused packages, SBOM, and artifact verification."
+    },
+    {
+      "question": "An attacker never touches the running function directly. Instead, they compromise a package in the build pipeline so that every deployed function artifact contains malicious code. Which control most directly addresses this compromise path?",
+      "option_a": "A. Generic user-facing error messages",
+      "option_b": "B. Rate limiting on the API gateway",
+      "option_c": "C. Input validation inside the function",
+      "option_d": "D. Artifact integrity verification together with protected source-code repositories, a secured build pipeline, and secured CI/CD credentials",
+      "correct_answer": "D",
+      "explanation": "The lecture emphasizes that an attacker does not need to attack the running function directly - they can compromise the dependency, package repository, source repository, build pipeline, or deployment credentials, so integrity verification and pipeline protection are the matching controls."
+    },
+    {
+      "question": "Serverless data protection spans four dimensions. Which of the following is NOT one of them?",
+      "option_a": "A. Duplicating data across multiple regions",
+      "option_b": "B. Encryption of data at rest",
+      "option_c": "C. Controlling access to data",
+      "option_d": "D. Protection of data in transit",
+      "correct_answer": "A",
+      "explanation": "The four dimensions are at rest (encrypt databases, object storage, queues, backups), in transit (HTTPS/TLS), access (IAM, least privilege, resource policies, strong authentication), and data minimization - not duplication."
+    },
+    {
+      "question": "A report function queries an entire customer table but only ever uses each record's email field. From a data-protection standpoint, which critique is most accurate?",
+      "option_a": "A. The fix is to grant the function table-level administrator rights",
+      "option_b": "B. The function violates data minimization; it should access only the data it actually requires, reducing exposure if the function is compromised",
+      "option_c": "C. The fix is to disable TLS so queries run faster",
+      "option_d": "D. Nothing is wrong - reading extra columns improves performance",
+      "correct_answer": "B",
+      "explanation": "Data minimization requires functions to access only the data they actually require; over-fetching sensitive data expands what an attacker can steal through a single compromised function."
+    },
+    {
+      "question": "Denial of Wallet refers to:",
+      "option_a": "A. Blocking a customer's payment card at the bank",
+      "option_b": "B. Malicious activity that primarily causes excessive cloud consumption and cost, such as flooding functions to drive thousands of billable executions",
+      "option_c": "C. Encrypting data until a ransom is paid",
+      "option_d": "D. Stealing a customer's cryptocurrency wallet",
+      "correct_answer": "B",
+      "explanation": "Because serverless billing is pay-per-execution, mass requests can exhaust concurrency limits, overload downstream services, and inflate costs - an availability and financial attack unique to consumption-based models."
+    },
+    {
+      "question": "An attacker floods a public API, causing thousands of function executions, exhaustion of concurrency limits, and overload of a downstream database. Which combination of controls best mitigates this attack?",
+      "option_a": "A. Increasing the function's timeout and memory allocation",
+      "option_b": "B. Removing resource limits so the function can scale freely",
+      "option_c": "C. Logging the attack more verbosely",
+      "option_d": "D. Rate limiting, API quotas, request throttling, concurrency controls, authentication, budget and cost alerts, and WAF/DDoS protection where appropriate",
+      "correct_answer": "D",
+      "explanation": "These are the controls listed in the lecture's denial-of-service pattern table; resource limits (execution time, memory, concurrency, request size) contribute to availability, cost control, resilience, and abuse prevention."
+    },
+    {
+      "question": "Why do serverless functions need configured timeouts and resource limits?",
+      "option_a": "A. To deliberately slow functions down so attacks cannot proceed",
+      "option_b": "B. A configured timeout terminates unexpectedly long execution before it causes wider impact, and limits contribute to availability, cost control, resilience, and abuse prevention",
+      "option_c": "C. Limits exist only to reduce the provider's own costs",
+      "option_d": "D. Limits replace the need for request authentication",
+      "correct_answer": "B",
+      "explanation": "Functions need limits on execution time, memory, concurrency, and request size; a timeout stops abnormal execution (e.g., 10 minutes instead of an expected 2 seconds) before it causes wider damage."
+    },
+    {
+      "question": "An auditor reviews a serverless payment application and finds: (1) hard-coded database credentials in the function source, (2) an IAM role with AdministratorAccess shared by all functions, (3) three unused npm packages with known vulnerabilities, and (4) no function logging enabled. The team can fix only ONE finding this sprint. Based on the best-practice checklist, which finding should be remediated FIRST and why?",
+      "option_a": "A. Finding 4 - logging is always the highest priority control in every architecture",
+      "option_b": "B. Finding 3 - unused packages are the most urgent because they increase bundle size",
+      "option_c": "C. Finding 2 - the shared role is acceptable because the functions trust each other",
+      "option_d": "D. Finding 1 - exposed secrets are directly exploitable and copyable through every repository, build log, and deployment; moving them to managed secret storage and rotating them is the most urgent leak to close",
+      "correct_answer": "D",
+      "explanation": "All four findings violate the checklist (secrets, IAM least privilege, dependency hygiene, monitoring). Live, hard-coded credentials are the most directly exploitable: they are exposed wherever code travels and grant immediate database access, so secret manager migration plus rotation outranks the others for this sprint."
+    },
+    {
+      "question": "Why is traditional server monitoring alone insufficient for serverless applications?",
+      "option_a": "A. Servers are never involved in serverless computing",
+      "option_b": "B. Serverless platforms generate no telemetry at all",
+      "option_c": "C. Monitoring is entirely the cloud provider's responsibility",
+      "option_d": "D. Functions start automatically, execute for milliseconds or seconds, scale rapidly, and stop after completing work, so organizations need visibility into invocations, authentication activity, errors, IAM changes, configuration changes, data access, and unusual execution patterns",
+      "correct_answer": "D",
+      "explanation": "Serverless infrastructure is highly dynamic, so monitoring must establish what normal behavior looks like - across function invocations, authentication, API requests, IAM and configuration changes, and data access - to identify unusual behavior."
+    },
+    {
+      "question": "Which pairing of AWS monitoring service to purpose is correct?",
+      "option_a": "A. CloudTrail records AWS API and account activity for security auditing and investigation, while CloudWatch provides logs, metrics, alarms, and function performance information",
+      "option_b": "B. GuardDuty provides distributed tracing across distributed applications",
+      "option_c": "C. X-Ray is a threat detection service that analyzes data-source signals",
+      "option_d": "D. CloudWatch records AWS API and account activity for auditing, while CloudTrail collects function logs and metrics",
+      "correct_answer": "A",
+      "explanation": "CloudWatch handles logs, metrics, and alarms; CloudTrail records API and account activity for auditing; X-Ray provides distributed tracing; GuardDuty provides threat detection - each offers a different type of visibility rather than serving the same purpose."
+    },
+    {
+      "question": "Which of the following must NEVER be written to serverless function logs?",
+      "option_a": "A. Authentication results and actions performed",
+      "option_b": "B. Function identifiers and error status",
+      "option_c": "C. Passwords, access tokens, private keys, full payment-card data, and sensitive personal information unless explicitly required and properly protected",
+      "option_d": "D. Timestamps and request/event identifiers",
+      "correct_answer": "C",
+      "explanation": "A good log entry includes timestamp, function and request identifiers, authentication result, action performed, error status, and security context - but must avoid secrets and sensitive data that would turn logs into a liability."
+    },
+    {
+      "question": "A payment function normally runs 50 invocations per hour during business hours. Monitoring shows a 20x invocation spike at 03:00 together with outbound network connections to an unknown external host. Which interpretation and response is most appropriate?",
+      "option_a": "A. The pattern indicates a provider-side patch in progress",
+      "option_b": "B. The pattern proves the provider is at fault and the customer has no role",
+      "option_c": "C. This is normal autoscaling behavior and requires no action",
+      "option_d": "D. These are abnormal indicators - unusual execution timing and unexpected outbound connections - that should generate an investigation using cloud logs, detection rules, and threat-detection services",
+      "correct_answer": "D",
+      "explanation": "Both a sudden increase in invocations and unexpected outbound connections (e.g., payment function contacting an unknown external host instead of the payment database) are listed indicators of suspicious serverless behavior that warrant investigation."
+    },
+    {
+      "question": "A detection rule fires with the signal administrator role assigned unexpectedly, while a second rule reports a large number of failed API requests. Which alerting principle should the security team apply?",
+      "option_a": "A. Prioritize alerts according to severity and risk to avoid overwhelming the security team - unexpected privilege assignment is a high-severity signal compared with noisy failed-request failures",
+      "option_b": "B. Disable rules that fire during nighttime hours",
+      "option_c": "C. Treat every alert with identical priority and respond in arrival order",
+      "option_d": "D. Monitor only cloud costs, since IAM signals are false positives",
+      "correct_answer": "A",
+      "explanation": "Alert conditions include unexpected administrator role assignment, unusual secret access, functions modified outside the approved deployment process, and spikes in executions - these must be prioritized by severity and risk so teams are not overwhelmed."
+    },
+    {
+      "question": "Place the serverless incident response lifecycle stages in the correct order:",
+      "option_a": "A. Containment -> Preparation -> Recovery -> Detection -> Eradication",
+      "option_b": "B. Recovery -> Eradication -> Detection -> Containment -> Preparation",
+      "option_c": "C. Preparation -> Detection and Analysis -> Containment -> Eradication -> Recovery -> Lessons Learned",
+      "option_d": "D. Detection -> Recovery -> Containment -> Eradication -> Preparation",
+      "correct_answer": "C",
+      "explanation": "The lifecycle is Preparation, then Detection and Analysis, Containment, Eradication, Recovery, and Lessons Learned; serverless changes how evidence is collected and how containment is performed, but not the overall lifecycle."
+    },
+    {
+      "question": "Scenario (Tutorial Q9): An Azure Function that processes loan applications is modified by an attacker who stole deployment credentials; the modified function sends customer data to an unknown external host. Which three are plausible ways this incident might FIRST be detected?",
+      "option_a": "A. An unexpected function modification, unusual administrator activity, and unexpected outbound communication",
+      "option_b": "B. A routine patch notification from the cloud provider",
+      "option_c": "C. Faster response times, lower cloud costs, and fewer invocations",
+      "option_d": "D. End users reporting improved application performance",
+      "correct_answer": "A",
+      "explanation": "The lecture lists first-detection signals: unexpected function modification, unusual administrator activity, unexpected outbound communication, increased data access, security alerts, and abnormal API activity - these should trigger investigation questions such as who modified the function and when."
+    },
+    {
+      "question": "In the same loan-application incident, which option lists ONLY valid containment actions?",
+      "option_a": "A. Disable the compromised credentials, revoke active sessions and tokens where supported, restrict IAM permissions, rotate exposed secrets, block malicious API access, restrict access to affected data, disable or isolate the affected function or event source where appropriate, and preserve relevant logs and evidence",
+      "option_b": "B. Delete all logs immediately to free storage and hide the breach",
+      "option_c": "C. Grant the incident responders administrator rights permanently for speed",
+      "option_d": "D. Redeploy the function right away without investigation to restore service first",
+      "correct_answer": "A",
+      "explanation": "Containment aims to stop the attack and prevent additional damage; actions must be chosen carefully to balance security and service availability, and evidence must be preserved for the investigation and forensics stages."
+    },
+    {
+      "question": "Why do serverless investigations differ from traditional digital forensics, and which evidence would prove WHO modified the loan-processing function and WHEN?",
+      "option_a": "A. They do not differ - investigators simply image the provider's disks; the current source code alone proves everything",
+      "option_b": "B. The provider manages the execution infrastructure and function instances may be short-lived, so investigations rely on cloud-native evidence; CloudTrail events, IAM activity records, and function configuration and deployment history answer who modified the function and when",
+      "option_c": "C. Serverless evidence is impossible to collect, so no investigation is possible",
+      "option_d": "D. Customer support tickets are the primary evidence source for function modifications",
+      "correct_answer": "B",
+      "explanation": "Unlike imaging physical disks of a persistent server, serverless forensics depends on function logs, cloud audit logs, IAM logs, configuration and deployment history, CI/CD pipeline logs, and distributed traces - and logging must be configured before an incident because evidence never collected cannot be reconstructed."
+    },
+    {
+      "question": "After an incident in which an API key was found exposed in CI/CD build logs, the security team applies the DevSecOps feedback loop. Which improvement is the correct mapping for this incident?",
+      "option_a": "A. Add more administrator accounts so keys are easier to rotate",
+      "option_b": "B. Add secret scanning and improve secret management in the pipeline",
+      "option_c": "C. Disable authentication on the API so keys are no longer needed",
+      "option_d": "D. Remove CI/CD auditing to reduce the log volume",
+      "correct_answer": "B",
+      "explanation": "The feedback loop maps each incident type to a control improvement: vulnerable dependency exploited leads to better SCA and dependency policies; excessive IAM permission abused leads to better least-privilege policies; secret leaked leads to secret scanning and improved secret management; malicious function modification leads to stronger CI/CD deployment controls and audit alerts."
+    },
+    {
+      "question": "In the serverless security lifecycle (Plan, Code, Build, Deploy, Run, Respond, Improve), where do IAM validation and configuration checks primarily belong, and why?",
+      "option_a": "A. Respond - because IAM is only fixed after an incident",
+      "option_b": "B. Deploy - because identity and configuration must be validated as part of the deployment process before the function reaches production, where runtime logging and monitoring take over",
+      "option_c": "C. Plan - because identity is only a design-time concern",
+      "option_d": "D. Improve - because validation happens only in the lessons-learned stage",
+      "correct_answer": "B",
+      "explanation": "The lifecycle places threat modeling in Plan; secure coding, SAST, and secret scanning in Code; SCA and dependency verification in Build; IAM validation and configuration checks in Deploy; logging, monitoring, and threat detection in Run; containment, investigation, and recovery in Respond; and feeding findings back in Improve."
+    },
+    {
+      "question": "Evaluate this statement using lecture concepts: Serverless applications are more secure than traditional server-based applications because the cloud provider manages the servers.",
+      "option_a": "A. Partially agree - provider management removes some infrastructure risks, but customers remain responsible for code, IAM, data, secrets, dependencies, APIs, configuration, and monitoring; serverless also emphasizes risks like event injection and Denial of Wallet, so security responsibility is reduced in scope, not removed",
+      "option_b": "B. Disagree completely - serverless is always less secure than traditional servers",
+      "option_c": "C. Agree completely - provider management of servers removes all security concerns",
+      "option_d": "D. Agree - shared responsibility ends entirely at the provider's hypervisor",
+      "correct_answer": "A",
+      "explanation": "The lecture's core principle is that serverless reduces some infrastructure management responsibilities but does not remove security responsibility; the customer still secures code, identity, data, secrets, dependencies, APIs, event sources, and configuration."
+    },
+    {
+      "question": "An attack chain is reconstructed: stolen credentials -> cloud account access -> Lambda function modified -> malicious code added -> customer data accessed -> data sent externally. Which evidence source is the MOST direct for reconstructing each link of this chain?",
+      "option_a": "A. CloudTrail events and IAM activity for account access, Lambda configuration history for the modification, CloudWatch function logs for execution, API activity and storage-access logs for data access, and network telemetry where available for exfiltration",
+      "option_b": "B. The function's current source code, which records the entire history of the attack",
+      "option_c": "C. Marketing analytics showing page views during the incident window",
+      "option_d": "D. A single CloudWatch alarm, which captures all six stages automatically",
+      "correct_answer": "A",
+      "explanation": "The lecture's attack-chain table maps each stage to its evidence: CloudTrail events, Lambda configuration history, CloudWatch logs, IAM activity, API activity, storage-access logs, and network telemetry - no single source covers the whole chain, which is why multiple logging types must be enabled in advance."
+    },
+    {
+      "question": "Challenge question (beyond the lecture slides): A latency-sensitive serverless API suffers repeated cold starts after idle periods, adding hundreds of milliseconds to some requests. Which AWS mechanism keeps function execution environments initialized and ready to eliminate cold starts?",
+      "option_a": "A. Amazon GuardDuty",
+      "option_b": "B. AWS CloudTrail",
+      "option_c": "C. API Gateway request size limits",
+      "option_d": "D. Provisioned concurrency, which reserves pre-initialized execution environments for the function",
+      "correct_answer": "D",
+      "explanation": "This question extends beyond the lecture: provisioned concurrency keeps execution environments warm so requests avoid initialization delays, while GuardDuty is threat detection and CloudTrail is audit logging. Understanding platform mechanics like this complements the lecture's security concepts for real-world serverless work."
+    }
+  ]
+}

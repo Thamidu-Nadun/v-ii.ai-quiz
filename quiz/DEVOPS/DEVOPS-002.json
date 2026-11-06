@@ -1,0 +1,589 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of DevSecOps?",
+      "option_a": "A. To replace software testing with automated security tools",
+      "option_b": "B. To integrate security into every stage of the Software Development Lifecycle",
+      "option_c": "C. To perform security assessments only before deployment",
+      "option_d": "D. To transfer all security responsibilities to the security team",
+      "correct_answer": "B",
+      "explanation": "DevSecOps integrates security throughout the SDLC rather than treating it as a separate activity performed at the end. Security becomes a shared responsibility."
+    },
+    {
+      "question": "What does the principle of shifting security left mean?",
+      "option_a": "A. Moving security activities to the maintenance phase",
+      "option_b": "B. Performing security assessments only after deployment",
+      "option_c": "C. Introducing security activities earlier in the development lifecycle",
+      "option_d": "D. Reducing the number of security tests during development",
+      "correct_answer": "C",
+      "explanation": "Shifting security left means addressing security concerns as early as possible, particularly during requirements, design and implementation."
+    },
+    {
+      "question": "Which statement best describes security responsibility in a DevSecOps environment?",
+      "option_a": "A. Security is a shared responsibility across development and operations teams",
+      "option_b": "B. Only penetration testers are responsible for security",
+      "option_c": "C. Developers are responsible only for functionality",
+      "option_d": "D. Security responsibility begins after software deployment",
+      "correct_answer": "A",
+      "explanation": "DevSecOps establishes shared security responsibility across the teams involved in developing, deploying and maintaining software."
+    },
+    {
+      "question": "A company discovers that security vulnerabilities are repeatedly identified immediately before production deployment. Which DevSecOps improvement would most directly address this problem?",
+      "option_a": "A. Increase the number of production servers",
+      "option_b": "B. Remove security testing from the development process",
+      "option_c": "C. Assign all security responsibilities to the operations team",
+      "option_d": "D. Integrate automated security checks and secure coding practices throughout development",
+      "correct_answer": "D",
+      "explanation": "Integrating security throughout development identifies vulnerabilities earlier, reducing the likelihood of discovering major issues immediately before deployment."
+    },
+    {
+      "question": "Which sequence correctly represents the Secure Software Development Lifecycle presented in the lecture?",
+      "option_a": "A. Design → Requirements → Testing → Development → Maintenance → Deployment",
+      "option_b": "B. Requirements → Design → Development → Testing → Deployment → Maintenance",
+      "option_c": "C. Requirements → Development → Deployment → Design → Testing → Maintenance",
+      "option_d": "D. Development → Requirements → Design → Maintenance → Testing → Deployment",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies six lifecycle phases in this order: Requirements, Design, Development, Testing, Deployment and Maintenance."
+    },
+    {
+      "question": "During which SDLC phase should a team primarily identify how a proposed feature could be abused?",
+      "option_a": "A. Requirements",
+      "option_b": "B. Deployment",
+      "option_c": "C. Maintenance",
+      "option_d": "D. Operations",
+      "correct_answer": "A",
+      "explanation": "During requirements, teams identify potential feature abuse and classify data. Abuse cases and data classification are important artifacts."
+    },
+    {
+      "question": "Which security artifact is primarily produced during the design phase?",
+      "option_a": "A. Hardened deployment configuration",
+      "option_b": "B. SAST and DAST results",
+      "option_c": "C. Threat model",
+      "option_d": "D. Security incident alerts",
+      "correct_answer": "C",
+      "explanation": "The design phase examines structural weaknesses and produces a threat model to identify potential threats and security risks."
+    },
+    {
+      "question": "A development team wants to determine whether its running application can be broken by an attacker. Which SDLC phase and security activities are most appropriate?",
+      "option_a": "A. Requirements phase using data classification",
+      "option_b": "B. Design phase using architectural diagrams",
+      "option_c": "C. Deployment phase using secret management",
+      "option_d": "D. Testing phase using SAST and DAST",
+      "correct_answer": "D",
+      "explanation": "Testing evaluates the security of the application. SAST and DAST results help identify vulnerabilities in source code and running applications."
+    },
+    {
+      "question": "A company has successfully deployed an application. Which activity most directly supports the security objectives of the maintenance phase?",
+      "option_a": "A. Creating initial abuse cases",
+      "option_b": "B. Monitoring security logs, generating alerts and maintaining a patch process",
+      "option_c": "C. Designing the original database schema",
+      "option_d": "D. Writing the initial functional requirements",
+      "correct_answer": "B",
+      "explanation": "Maintenance and operations involve detecting attacks, monitoring logs and alerts, and maintaining a process for applying security patches."
+    },
+    {
+      "question": "Which statement most accurately defines secure coding?",
+      "option_a": "A. Writing code that executes as quickly as possible regardless of security",
+      "option_b": "B. Writing software that prevents users from accessing all sensitive functionality",
+      "option_c": "C. Writing software that protects against security vulnerabilities and attacks",
+      "option_d": "D. Writing code that requires manual security testing before every execution",
+      "correct_answer": "C",
+      "explanation": "Secure coding is the practice of writing software that protects against vulnerabilities and attacks while improving reliability and resilience."
+    },
+    {
+      "question": "Which vulnerability occurs when an attacker manipulates a database query through specially crafted user input?",
+      "option_a": "A. SQL Injection",
+      "option_b": "B. Cross-Site Request Forgery",
+      "option_c": "C. Buffer Overflow",
+      "option_d": "D. Broken Authentication",
+      "correct_answer": "A",
+      "explanation": "SQL injection occurs when untrusted input is interpreted as part of an SQL command, potentially allowing an attacker to manipulate database operations."
+    },
+    {
+      "question": "A malicious script is inserted into a webpage and executes in another user's browser. Which vulnerability does this describe?",
+      "option_a": "A. Command Injection",
+      "option_b": "B. Cross-Site Request Forgery",
+      "option_c": "C. Sensitive Data Exposure",
+      "option_d": "D. Cross-Site Scripting",
+      "correct_answer": "D",
+      "explanation": "Cross-Site Scripting (XSS) occurs when attacker-controlled content is executed as script in a victim's browser."
+    },
+    {
+      "question": "Which of the following is NOT identified as a common software vulnerability in the lecture?",
+      "option_a": "A. Buffer Overflow",
+      "option_b": "B. Cross-Site Request Forgery",
+      "option_c": "C. Database Normalization",
+      "option_d": "D. Command Injection",
+      "correct_answer": "C",
+      "explanation": "Database normalization is a database design technique, not a security vulnerability. The lecture identifies SQL injection, XSS, CSRF, buffer overflow, command injection, broken authentication and sensitive data exposure."
+    },
+    {
+      "question": "Which combination represents secure coding best practices?",
+      "option_a": "A. Trust user input, store passwords in plaintext and use administrator accounts",
+      "option_b": "B. Validate inputs, encode outputs, use parameterized queries and apply least privilege",
+      "option_c": "C. Disable error handling, hard-code credentials and avoid software updates",
+      "option_d": "D. Allow unrestricted database access and rely exclusively on frontend validation",
+      "correct_answer": "B",
+      "explanation": "These practices directly reduce common application vulnerabilities, protect data and limit the impact of security compromises."
+    },
+    {
+      "question": "A web application accepts data through forms, URL parameters, uploaded files and API requests. Which approach best represents secure input handling?",
+      "option_a": "A. Validate only data received through web forms",
+      "option_b": "B. Assume API requests are trustworthy because they originate from authenticated clients",
+      "option_c": "C. Validate inputs only when database errors occur",
+      "option_d": "D. Validate all externally originating data before using it",
+      "correct_answer": "D",
+      "explanation": "All externally originating data must be checked against expected requirements, regardless of whether it comes from forms, URLs, files or API requests."
+    },
+    {
+      "question": "Which validation rule determines whether a quantity falls between 1 and 100?",
+      "option_a": "A. Format validation",
+      "option_b": "B. Length validation",
+      "option_c": "C. Range validation",
+      "option_d": "D. Allowed-character validation",
+      "correct_answer": "C",
+      "explanation": "Range validation checks whether a value falls within an acceptable minimum and maximum. The lecture uses a quantity range of 1 to 100."
+    },
+    {
+      "question": "A registration system accepts usernames containing only letters, numbers and underscores, with a length between 3 and 20 characters. Which validation approach is most appropriate?",
+      "option_a": "A. Allowlist validation using an explicit pattern and length restriction",
+      "option_b": "B. Blocklist validation that removes apostrophes",
+      "option_c": "C. Output encoding without input validation",
+      "option_d": "D. Accept all input and depend on database constraints",
+      "correct_answer": "A",
+      "explanation": "An allowlist explicitly defines permitted characters and length. A pattern such as [A-Za-z0-9_]{3,20} rejects inputs outside the expected format."
+    },
+    {
+      "question": "What is the main weakness of blocklist-based input validation?",
+      "option_a": "A. It rejects every valid input by default",
+      "option_b": "B. It cannot validate the length of an input",
+      "option_c": "C. It requires all inputs to be converted into SQL statements",
+      "option_d": "D. It may fail against new attack variations that are not included in the blocklist",
+      "correct_answer": "D",
+      "explanation": "Blocklists enumerate known malicious inputs. Attackers can bypass them using variations, encoding tricks or previously unknown patterns."
+    },
+    {
+      "question": "Why is allowlist validation generally considered safer than blocklist validation?",
+      "option_a": "A. It automatically encrypts all incoming data",
+      "option_b": "B. It defines acceptable input and rejects everything outside that definition",
+      "option_c": "C. It automatically removes every malicious character",
+      "option_d": "D. It eliminates the need for output encoding",
+      "correct_answer": "B",
+      "explanation": "Allowlist validation fails closed by accepting only explicitly permitted input. Unknown or unexpected values are rejected by default."
+    },
+    {
+      "question": "Consider the following validation implementation: username = input.replace(\"'\", \"\").replace(\"--\", \"\"). What is its primary security weakness?",
+      "option_a": "A. It performs excessive output encoding",
+      "option_b": "B. It prevents all usernames from being stored",
+      "option_c": "C. It attempts to remove known dangerous patterns instead of defining valid input",
+      "option_d": "D. It automatically grants excessive database privileges",
+      "correct_answer": "C",
+      "explanation": "Removing known dangerous characters is a blocklist-style approach. Attackers may bypass it using alternative representations or unanticipated input variations."
+    },
+    {
+      "question": "A registration system receives the username <script>alert(\"XSS\")</script>. The application expects usernames containing only letters, numbers and underscores. What should happen?",
+      "option_a": "A. Reject the input because it violates the allowed-character rule",
+      "option_b": "B. Accept the input and execute the script to check its behavior",
+      "option_c": "C. Remove the script tag and automatically accept the remaining value",
+      "option_d": "D. Store the input as an administrator username",
+      "correct_answer": "A",
+      "explanation": "The input violates the defined username allowlist. The lecture explicitly recommends rejecting invalid input rather than correcting it and using it."
+    },
+    {
+      "question": "A registration system receives the following values: Name = John123, Email = john.gmail.com, Age = -15, Quantity = 5000 and Username = <script>alert(\"XSS\")</script>. Which assessment is most accurate?",
+      "option_a": "A. Every value should be accepted because the fields contain non-empty data",
+      "option_b": "B. Only the email should be rejected because the other fields are syntactically valid",
+      "option_c": "C. Age and quantity should be accepted because they are numerical values",
+      "option_d": "D. The email, age, quantity and username violate expected validation rules, while the name requires an explicitly defined name policy",
+      "correct_answer": "D",
+      "explanation": "The email has an invalid format, age violates a reasonable positive-age range, quantity exceeds the specified acceptable range, and the username violates the allowed-character policy. John123 cannot be judged without a defined name policy."
+    },
+    {
+      "question": "What is the main purpose of canonicalization before input validation?",
+      "option_a": "A. To encrypt input before database insertion",
+      "option_b": "B. To convert input into a single standard representation before applying security checks",
+      "option_c": "C. To replace parameterized queries with string concatenation",
+      "option_d": "D. To convert all input into executable code",
+      "correct_answer": "B",
+      "explanation": "Canonicalization converts input into a standard representation so validation cannot be bypassed through alternative encodings or representations."
+    },
+    {
+      "question": "An application checks a URL parameter for prohibited characters before decoding percent-encoded content. What security problem can occur?",
+      "option_a": "A. The database automatically rejects all requests",
+      "option_b": "B. The application becomes unable to generate security logs",
+      "option_c": "C. Encoded characters may bypass validation and become dangerous after decoding",
+      "option_d": "D. Password hashing algorithms become ineffective",
+      "correct_answer": "C",
+      "explanation": "Validation before canonicalization can miss encoded representations. The lecture specifies the order: decode and normalize first, then validate, then use."
+    },
+    {
+      "question": "Which sequence correctly represents secure input processing according to the lecture?",
+      "option_a": "A. Decode and normalize → Validate → Use",
+      "option_b": "B. Validate → Use → Decode",
+      "option_c": "C. Encode → Execute → Validate",
+      "option_d": "D. Use → Normalize → Validate",
+      "correct_answer": "A",
+      "explanation": "Input must first be converted into a canonical representation, then validated against expectations, and finally used."
+    },
+    {
+      "question": "Why should developers prefer established framework security mechanisms over manually implemented security controls?",
+      "option_a": "A. Frameworks eliminate the need for security testing",
+      "option_b": "B. Frameworks guarantee that every application is vulnerability-free",
+      "option_c": "C. Frameworks automatically remove the need for authentication",
+      "option_d": "D. Established frameworks provide maintained and reviewed implementations of security functionality",
+      "correct_answer": "D",
+      "explanation": "Established frameworks provide validated and maintained implementations for validation, encoding, authentication and session handling. Handwritten security code may receive less review and fewer updates."
+    },
+    {
+      "question": "A developer uses a template engine that automatically escapes HTML output but explicitly disables escaping for one user-controlled field. What is the most important security concern?",
+      "option_a": "A. The database will automatically reject the field",
+      "option_b": "B. The application may expose users to cross-site scripting through unencoded output",
+      "option_c": "C. The application will automatically enforce least privilege",
+      "option_d": "D. The application will prevent all session-related attacks",
+      "correct_answer": "B",
+      "explanation": "Disabling automatic output escaping can allow attacker-controlled content to be interpreted as executable browser code. Framework security controls should not be bypassed without a valid reason and appropriate safeguards."
+    },
+    {
+      "question": "What is the defining characteristic of a parameterized SQL query?",
+      "option_a": "A. User input is appended directly to the SQL command",
+      "option_b": "B. User input is encrypted before being concatenated into SQL",
+      "option_c": "C. SQL command structure and user-supplied values are transmitted separately",
+      "option_d": "D. SQL commands are executed using unrestricted database privileges",
+      "correct_answer": "C",
+      "explanation": "Parameterized queries separate the SQL command structure from user-supplied values, ensuring that input is treated as data rather than SQL instructions."
+    },
+    {
+      "question": "Consider the following query: SELECT * FROM users WHERE username = '\" + username + \"'; What is its main security weakness?",
+      "option_a": "A. It concatenates untrusted input into the SQL command",
+      "option_b": "B. It automatically encrypts the username",
+      "option_c": "C. It uses a prepared statement",
+      "option_d": "D. It prevents attackers from modifying query logic",
+      "correct_answer": "A",
+      "explanation": "Direct concatenation allows attacker-controlled input to change the SQL query structure, creating an SQL injection vulnerability."
+    },
+    {
+      "question": "Which implementation correctly uses parameterized SQL in Python according to the lecture?",
+      "option_a": "A. cursor.execute(\"SELECT * FROM users WHERE name = '\" + name + \"'\")",
+      "option_b": "B. cursor.execute(\"SELECT * FROM users WHERE name = % name\")",
+      "option_c": "C. cursor.execute(\"SELECT * FROM users WHERE name = '\" + escape(name) + \"'\")",
+      "option_d": "D. cursor.execute(\"SELECT * FROM users WHERE name = ?\", (name,))",
+      "correct_answer": "D",
+      "explanation": "The placeholder and separately supplied parameter ensure that the database treats the username as data rather than part of the SQL command."
+    },
+    {
+      "question": "An application constructs a login query by concatenating user input. An attacker supplies admin'-- as the username. What is the intended effect of this input in a vulnerable SQL query?",
+      "option_a": "A. It automatically creates a new administrator account",
+      "option_b": "B. It attempts to terminate the username condition and comment out the remaining SQL query",
+      "option_c": "C. It encrypts the password comparison",
+      "option_d": "D. It forces the database to execute a prepared statement",
+      "correct_answer": "B",
+      "explanation": "In the vulnerable query pattern shown in the lecture, the apostrophe can terminate the string and the SQL comment marker can cause the remaining query, including a password check, to be ignored."
+    },
+    {
+      "question": "An attacker submits ' OR '1'='1 as a username to an application using SQL string concatenation. Why can this attack return multiple database records?",
+      "option_a": "A. It automatically grants SELECT permission to the attacker",
+      "option_b": "B. It disables the database authentication mechanism",
+      "option_c": "C. It can modify the WHERE condition into a logically true expression",
+      "option_d": "D. It converts the database into an unrestricted file server",
+      "correct_answer": "C",
+      "explanation": "The injected expression can cause the WHERE condition to evaluate as true for multiple rows, potentially returning all matching records."
+    },
+    {
+      "question": "A developer claims that removing apostrophes and SQL comment markers is sufficient to protect an application against SQL injection. Which response is most accurate?",
+      "option_a": "A. The approach is sufficient if the database contains fewer than 1,000 records",
+      "option_b": "B. The approach is sufficient if input comes from authenticated users",
+      "option_c": "C. The approach is sufficient when the application uses HTTPS",
+      "option_d": "D. The approach is unreliable because input filtering cannot guarantee separation of SQL commands and data; parameterized queries should be used",
+      "correct_answer": "D",
+      "explanation": "The definitive SQL injection defense presented in the lecture is parameterization. Filtering known dangerous characters does not reliably prevent query manipulation."
+    },
+    {
+      "question": "What is the fundamental difference between authentication and authorization?",
+      "option_a": "A. Authentication determines identity, while authorization determines permitted access",
+      "option_b": "B. Authentication determines database structure, while authorization encrypts passwords",
+      "option_c": "C. Authentication controls logging, while authorization controls software updates",
+      "option_d": "D. Authentication validates input, while authorization performs output encoding",
+      "correct_answer": "A",
+      "explanation": "Authentication answers who a user is. Authorization determines what that authenticated user is allowed to access or perform."
+    },
+    {
+      "question": "Which combination represents authentication best practices identified in the lecture?",
+      "option_a": "A. Hard-coded passwords, unlimited login attempts and shared sessions",
+      "option_b": "B. Administrator access for all users and plaintext password storage",
+      "option_c": "C. MFA, strong password policies, secure password hashing, failed-login limits and secure session management",
+      "option_d": "D. Output encoding, SQL parameterization and database normalization",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies MFA, strong password policies, secure password hashing, limiting failed login attempts and secure session management as authentication best practices."
+    },
+    {
+      "question": "A university portal has Student, Lecturer, Department Head and System Administrator roles. Which access-control approach is most appropriate for managing their different permissions?",
+      "option_a": "A. Giving every user identical permissions",
+      "option_b": "B. Role-Based Access Control",
+      "option_c": "C. Allowing users to define their own permissions",
+      "option_d": "D. Disabling authorization after successful login",
+      "correct_answer": "B",
+      "explanation": "RBAC assigns permissions according to predefined roles. It is suitable for systems with distinct user categories and different access requirements."
+    },
+    {
+      "question": "A student successfully logs into a university portal but attempts to access a lecturer-only endpoint. Which security control should prevent this operation?",
+      "option_a": "A. Password hashing",
+      "option_b": "B. Input length validation",
+      "option_c": "C. Multi-factor authentication alone",
+      "option_d": "D. Authorization and permission verification for the requested resource",
+      "correct_answer": "D",
+      "explanation": "Successful authentication does not grant permission to access every resource. The application must verify authorization for each protected request."
+    },
+    {
+      "question": "A university system implements RBAC but checks permissions only when users log in. A student logs in and later changes a URL to access another student's private results. What is the primary weakness?",
+      "option_a": "A. The application fails to verify permissions for every request and resource",
+      "option_b": "B. The application uses an unnecessarily strong password policy",
+      "option_c": "C. The application performs excessive output encoding",
+      "option_d": "D. The application stores security events in a log file",
+      "correct_answer": "A",
+      "explanation": "Authorization must be verified for every request. A successful login or initial role check must not be treated as permanent permission to access arbitrary resources."
+    },
+    {
+      "question": "Which statement best describes the principle of least privilege in authorization?",
+      "option_a": "A. Every authenticated user receives administrative access",
+      "option_b": "B. Users should receive additional permissions whenever they request them",
+      "option_c": "C. Users and components should receive only the permissions necessary to perform their functions",
+      "option_d": "D. Permissions should be checked only during account creation",
+      "correct_answer": "C",
+      "explanation": "Least privilege limits access to the minimum permissions required for a particular function, reducing opportunities for unauthorized actions."
+    },
+    {
+      "question": "An online banking application wants to investigate suspicious activities. Which collection of events is most valuable for security logging?",
+      "option_a": "A. Only successful customer registrations",
+      "option_b": "B. Only application startup and shutdown times",
+      "option_c": "C. Every database record, including passwords and authentication secrets",
+      "option_d": "D. Failed login attempts, authentication failures, access violations and relevant security events",
+      "correct_answer": "D",
+      "explanation": "Security logs should capture meaningful events that support detection and accountability, including failed authentication attempts and unauthorized access."
+    },
+    {
+      "question": "Which information should never be recorded in ordinary application security logs?",
+      "option_a": "A. Failed authentication timestamps",
+      "option_b": "B. Plaintext passwords, session tokens and full payment card security data",
+      "option_c": "C. Access violation events",
+      "option_d": "D. Security event identifiers",
+      "correct_answer": "B",
+      "explanation": "Sensitive credentials and authentication secrets should not be exposed through logs. This is a general secure logging practice; the lecture identifies logging events but does not enumerate prohibited log contents."
+    },
+    {
+      "question": "Why is secure logging important during incident investigations?",
+      "option_a": "A. It automatically prevents every security vulnerability",
+      "option_b": "B. It eliminates the need for authentication",
+      "option_c": "C. It provides evidence of security events that helps investigators understand and reconstruct suspicious activities",
+      "option_d": "D. It ensures that attackers cannot access the application",
+      "correct_answer": "C",
+      "explanation": "Security logs provide evidence of events, supporting detection, accountability and investigation of security incidents."
+    },
+    {
+      "question": "Which of the following is NOT listed as an OWASP Secure Coding Practices focus area in the lecture?",
+      "option_a": "A. Password management",
+      "option_b": "B. Communication security",
+      "option_c": "C. File management",
+      "option_d": "D. Increasing processor clock speed",
+      "correct_answer": "D",
+      "explanation": "OWASP focus areas in the lecture include password management, communication security, file management, input validation, output encoding, access control, cryptography and several other security practices. Processor clock speed is unrelated."
+    },
+    {
+      "question": "Which mapping correctly associates a secure coding habit with the vulnerability or risk it addresses?",
+      "option_a": "A. Input validation — SQL injection, logic abuse and overflow; parameterization — SQL injection; output encoding — XSS; least privilege — escalation after compromise",
+      "option_b": "B. Input validation — password hashing; parameterization — CSRF; output encoding — buffer overflow; least privilege — XSS",
+      "option_c": "C. Input validation — session management; parameterization — broken authentication; output encoding — SQL injection; least privilege — CSRF",
+      "option_d": "D. Input validation — encryption; parameterization — memory management; output encoding — database normalization; least privilege — input formatting",
+      "correct_answer": "A",
+      "explanation": "This mapping follows the lecture's summary table connecting the four secure coding habits to the vulnerabilities they prevent."
+    },
+    {
+      "question": "A company wants to identify important assets in its Learning Management System. Which set contains five appropriate assets?",
+      "option_a": "A. Phishing, malware, SQL injection, XSS and CSRF",
+      "option_b": "B. Students, lecturers, attackers, administrators and competitors",
+      "option_c": "C. Student records, examination results, authentication credentials, course materials and financial records",
+      "option_d": "D. Weak passwords, missing patches, excessive permissions, insecure APIs and outdated software",
+      "correct_answer": "C",
+      "explanation": "Assets are valuable resources that require protection. The listed records, credentials and educational materials are examples of valuable LMS assets."
+    },
+    {
+      "question": "Which option correctly distinguishes a threat from a vulnerability?",
+      "option_a": "A. A threat is always a software defect, while a vulnerability is always a person",
+      "option_b": "B. A threat is a potential source of harm, while a vulnerability is a weakness that can be exploited",
+      "option_c": "C. A threat is a valuable resource, while a vulnerability is a security control",
+      "option_d": "D. A threat and a vulnerability are identical concepts",
+      "correct_answer": "B",
+      "explanation": "A threat represents a potential source of harm, whereas a vulnerability is a weakness that may allow that threat to affect a system."
+    },
+    {
+      "question": "Which of the following is an example of a threat actor targeting a university LMS?",
+      "option_a": "A. An unpatched software library",
+      "option_b": "B. An exposed database password",
+      "option_c": "C. A missing input validation mechanism",
+      "option_d": "D. A malicious student attempting to obtain unauthorized examination results",
+      "correct_answer": "D",
+      "explanation": "A threat actor is an individual or group capable of carrying out an attack. A malicious student attempting unauthorized access is an example."
+    },
+    {
+      "question": "A university LMS stores examination results in a database. An attacker exploits a SQL injection vulnerability to retrieve confidential records. Which classification is most accurate?",
+      "option_a": "A. Examination results are an asset, the attacker is a threat actor, SQL injection is a vulnerability, and unauthorized data disclosure is the resulting threat impact",
+      "option_b": "B. Examination results are a threat actor, SQL injection is an asset, and the attacker is a vulnerability",
+      "option_c": "C. The attacker is an asset, examination results are a vulnerability, and SQL injection is a mitigation",
+      "option_d": "D. SQL injection is a threat actor, the database is a vulnerability, and the attacker is an asset",
+      "correct_answer": "A",
+      "explanation": "The database records are valuable assets, the malicious attacker is the threat actor, and the SQL injection weakness provides a path to unauthorized data disclosure."
+    },
+    {
+      "question": "Which mitigation most directly addresses unauthorized access caused by weak application permissions?",
+      "option_a": "A. Increasing the number of application servers",
+      "option_b": "B. Disabling security logging",
+      "option_c": "C. Implementing least privilege and enforcing authorization checks",
+      "option_d": "D. Allowing users to access resources through direct URLs",
+      "correct_answer": "C",
+      "explanation": "Least privilege and permission verification limit access to authorized users and reduce the potential impact of compromised accounts."
+    },
+    {
+      "question": "A university performs a security assessment of its LMS. Which set correctly represents five different threat categories or sources that could affect the system?",
+      "option_a": "A. Weak passwords, outdated libraries, insecure APIs, missing patches and excessive privileges",
+      "option_b": "B. Phishing, unauthorized account access, malware, denial-of-service attacks and insider misuse",
+      "option_c": "C. Student records, lecturer records, examination results, course materials and credentials",
+      "option_d": "D. Input validation, output encoding, password hashing, logging and MFA",
+      "correct_answer": "B",
+      "explanation": "The items in option B describe potential threats or attack activities. Option A describes vulnerabilities, option C describes assets and option D describes security controls."
+    },
+    {
+      "question": "A web application validates an input using an allowlist but stores the value and later displays it in an HTML page. Which statement best describes the application's remaining security requirement?",
+      "option_a": "A. Input validation alone guarantees that the value cannot execute as a script in every output context",
+      "option_b": "B. Output encoding is unnecessary when the input has been stored in a database",
+      "option_c": "C. The application should disable all template escaping to preserve the original input",
+      "option_d": "D. The application should also apply appropriate output encoding when displaying the value",
+      "correct_answer": "D",
+      "explanation": "Input validation and output encoding are complementary. Even validated input should be encoded appropriately for its destination context when displayed."
+    },
+    {
+      "question": "What is the main purpose of output encoding in preventing XSS?",
+      "option_a": "A. To convert special characters into harmless representations so the browser displays them rather than executing them",
+      "option_b": "B. To remove all user-generated content from the database",
+      "option_c": "C. To encrypt the entire HTML document before it reaches the browser",
+      "option_d": "D. To prevent users from submitting HTTP requests",
+      "correct_answer": "A",
+      "explanation": "Output encoding replaces characters with safe representations appropriate to the destination context, preventing attacker-controlled text from being interpreted as executable code."
+    },
+    {
+      "question": "An application stores the string <script>alert(1)</script> in a database. Later, it displays the value without encoding it. What is the most likely result?",
+      "option_a": "A. The database automatically removes the script element",
+      "option_b": "B. The browser displays the string as harmless text in every case",
+      "option_c": "C. The browser may interpret the value as HTML and execute the script",
+      "option_d": "D. The application automatically converts the script into a parameterized SQL query",
+      "correct_answer": "C",
+      "explanation": "Unencoded attacker-controlled HTML can be parsed by the browser, potentially resulting in script execution and XSS."
+    },
+    {
+      "question": "An application correctly encodes user input in HTML body content but inserts the same input into a JavaScript string without JavaScript-context encoding. What is the primary problem?",
+      "option_a": "A. HTML body encoding automatically protects every other output context",
+      "option_b": "B. Output encoding must match the destination context; HTML encoding alone is insufficient for JavaScript contexts",
+      "option_c": "C. The application needs to replace all parameterized queries with concatenation",
+      "option_d": "D. The application must disable authentication before displaying JavaScript",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies HTML body, HTML attribute, JavaScript and URL as different output contexts. Encoding must be appropriate to the context in which the data is used."
+    },
+    {
+      "question": "A user submits a malicious script to a university discussion forum. The application stores the input and displays it to other students. Which security combination is most appropriate?",
+      "option_a": "A. Database administrator privileges and unrestricted HTML rendering",
+      "option_b": "B. Blocklist filtering alone and disabled browser security",
+      "option_c": "C. Authentication alone and unrestricted output rendering",
+      "option_d": "D. Validate incoming data and encode the stored value appropriately when displayed",
+      "correct_answer": "D",
+      "explanation": "Input validation rejects data outside the application's requirements, while context-appropriate output encoding prevents accepted or stored data from being interpreted as executable script."
+    },
+    {
+      "question": "What does least privilege mean when applied to an application's database account?",
+      "option_a": "A. The application should connect using the database administrator account",
+      "option_b": "B. The application should receive all permissions so future development becomes easier",
+      "option_c": "C. The application should receive only the database permissions required for its actual operations",
+      "option_d": "D. The application should use a different database account for every individual query",
+      "correct_answer": "C",
+      "explanation": "A restricted database account should have only the permissions needed to perform its functions, reducing the impact of a compromise."
+    },
+    {
+      "question": "An application only reads product information and creates customer orders. Which database permission configuration most closely follows least privilege?",
+      "option_a": "A. GRANT ALL PRIVILEGES ON shop.* TO 'app'@'%'",
+      "option_b": "B. Grant SELECT on products and the necessary SELECT and INSERT permissions on orders, without administrative or unrelated privileges",
+      "option_c": "C. Grant DROP, DELETE and ALTER on every database table",
+      "option_d": "D. Grant unrestricted access to administrator accounts and customer credentials",
+      "correct_answer": "B",
+      "explanation": "Permissions should match actual application functionality. The account needs only the relevant read and write operations, not unrestricted database access."
+    },
+    {
+      "question": "A compromised application account has SELECT, INSERT and UPDATE permissions on shop.orders and SELECT permissions on shop.products. It has no access to shop.admin_users and cannot DROP tables. What security benefit does this configuration provide?",
+      "option_a": "A. It guarantees that SQL injection is impossible",
+      "option_b": "B. It prevents every form of unauthorized access",
+      "option_c": "C. It eliminates the need for database backups",
+      "option_d": "D. It limits the attacker's capabilities and reduces the potential damage of a compromise",
+      "correct_answer": "D",
+      "explanation": "Restricted database privileges limit the blast radius. Even if an attacker exploits the application, the compromised account cannot perform operations for which it lacks permission."
+    },
+    {
+      "question": "An application uses parameterized queries correctly but runs its database connection with full administrative privileges. Which statement best evaluates this architecture?",
+      "option_a": "A. Parameterization and least privilege address different security risks; the application should still use restricted database permissions",
+      "option_b": "B. Parameterized queries automatically remove all database privileges",
+      "option_c": "C. Administrative privileges are required for every parameterized query",
+      "option_d": "D. Least privilege applies only to operating system users, not database accounts",
+      "correct_answer": "A",
+      "explanation": "Parameterized queries prevent SQL injection through query structure and data separation. Least privilege limits the impact of a compromise. Both controls are necessary because they address different risks."
+    },
+    {
+      "question": "Which tool combination is associated with checking parameterized query and output encoding practices in the lecture?",
+      "option_a": "A. Parameterized queries: ZAP only; output encoding: IAM audit only",
+      "option_b": "B. Parameterized queries: manual review only; output encoding: database backups",
+      "option_c": "C. Parameterized queries: Semgrep and SonarQube; output encoding: Semgrep and ZAP",
+      "option_d": "D. Parameterized queries: IAM audit; output encoding: password hashing",
+      "correct_answer": "C",
+      "explanation": "The lecture maps parameterized query checks to Semgrep and SonarQube, while output encoding checks are associated with Semgrep and ZAP."
+    },
+    {
+      "question": "A security team wants to assess whether an application follows all four secure coding habits. Which combination of review activities best matches the lecture?",
+      "option_a": "A. Check input validation, parameterized queries, output encoding and least-privilege permissions",
+      "option_b": "B. Check application colors, page loading speed, database size and user interface layout",
+      "option_c": "C. Check only password complexity and server uptime",
+      "option_d": "D. Check only whether the application uses HTTPS and a firewall",
+      "correct_answer": "A",
+      "explanation": "The four foundational secure coding habits are validating all input, using parameterized queries, encoding output and applying least privilege."
+    },
+    {
+      "question": "A company is developing an online healthcare management system. During requirements, the team identifies patient records as highly sensitive and documents possible abuse of appointment and medical-record features. Which statement best describes the security work being performed?",
+      "option_a": "A. Deployment hardening and secret management",
+      "option_b": "B. Maintenance monitoring and patch management",
+      "option_c": "C. Dynamic application security testing",
+      "option_d": "D. Requirements-phase abuse-case identification and data classification",
+      "correct_answer": "D",
+      "explanation": "The requirements phase identifies how features could be abused and classifies sensitive data. These activities guide security decisions in later phases."
+    },
+    {
+      "question": "A banking application records successful and failed login attempts, but it also writes users' plaintext passwords and session tokens into the same log files. Which assessment is most accurate?",
+      "option_a": "A. The logging implementation is fully secure because it records authentication events",
+      "option_b": "B. The logging implementation is unsafe because sensitive authentication information is exposed in logs",
+      "option_c": "C. Logging should be disabled because security events are not useful",
+      "option_d": "D. Session tokens should be logged in plaintext to improve accountability",
+      "correct_answer": "B",
+      "explanation": "Security events should be logged for detection and accountability, but sensitive credentials and session secrets must not be exposed in logs."
+    },
+    {
+      "question": "A university LMS has the following weaknesses: outdated software, weak passwords, unrestricted database privileges, missing input validation and inadequate access controls. Which approach represents the most comprehensive mitigation strategy?",
+      "option_a": "A. Increase server capacity and leave existing security controls unchanged",
+      "option_b": "B. Disable logging to reduce operational complexity",
+      "option_c": "C. Apply software updates, strengthen authentication, validate inputs, restrict database permissions and enforce authorization",
+      "option_d": "D. Allow unrestricted access to all university users after login",
+      "correct_answer": "C",
+      "explanation": "The proposed mitigations directly address the identified vulnerabilities through secure coding, authentication, authorization, least privilege and software maintenance."
+    },
+    {
+      "question": "A developer implements the following controls: (1) accepts only usernames matching an allowlist, (2) uses prepared statements, (3) HTML-encodes displayed user content, and (4) connects to the database using restricted permissions. Which option correctly identifies the main security purpose of each control?",
+      "option_a": "A. (1) XSS prevention only, (2) password protection, (3) SQL injection prevention, (4) session management",
+      "option_b": "B. (1) Authentication, (2) authorization, (3) database normalization, (4) input validation",
+      "option_c": "C. (1) Data encryption, (2) access logging, (3) password hashing, (4) CSRF prevention",
+      "option_d": "D. (1) Input validation, (2) SQL injection prevention, (3) XSS prevention, (4) limiting compromise impact through least privilege",
+      "correct_answer": "D",
+      "explanation": "The four controls correspond directly to the four foundational secure coding habits and their associated security objectives."
+    }
+  ]
+}

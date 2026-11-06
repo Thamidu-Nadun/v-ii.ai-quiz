@@ -1,0 +1,428 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following best defines Continuous Security Monitoring (CSM)?",
+      "option_a": "Running SAST and DAST scans once before deployment",
+      "option_b": "The ongoing observation and analysis of applications, infrastructure, networks, identities, configurations, and security events to identify threats continuously",
+      "option_c": "The manual review of source code for vulnerabilities on a quarterly basis",
+      "option_d": "A one-time audit performed after a security incident has occurred",
+      "correct_answer": "B",
+      "explanation": "CSM is continuous observation and analysis of systems and security events to detect threats, vulnerabilities, and incidents in (near) real time, not a one-time activity."
+    },
+    {
+      "question": "Why does security NOT end when an application is successfully deployed, even if it passed SAST, SCA, DAST, and container scanning?",
+      "option_a": "Because CI/CD pipelines automatically introduce new vulnerabilities after deployment",
+      "option_b": "Because pre-deployment testing only finds code and dependency flaws, while production faces runtime threats like stolen credentials, insider threats, and unauthorized logins",
+      "option_c": "Because compliance regulations prohibit relying on pre-deployment testing",
+      "option_d": "Because DAST tools cannot scan web applications at all",
+      "correct_answer": "B",
+      "explanation": "Pre-deployment testing cannot predict runtime threats such as credential theft, malware infections, privilege escalation, and insider attacks that occur only in production."
+    },
+    {
+      "question": "Which of the following is NOT listed in the lecture as a new threat that can occur after deployment?",
+      "option_a": "Insider threats",
+      "option_b": "Privilege escalation",
+      "option_c": "A buffer overflow in the source code introduced during coding",
+      "option_d": "Attacks against APIs",
+      "correct_answer": "C",
+      "explanation": "A coding-phase buffer overflow would be caught by SAST/testing; post-deployment threats listed are stolen credentials, malware, insider threats, unauthorized logins, privilege escalation, and API attacks."
+    },
+    {
+      "question": "In the DevSecOps view, what happens to findings from the Monitor, Detect, Respond, and Learn & Improve stages?",
+      "option_a": "They are archived and never reused",
+      "option_b": "They feed back into development, creating a continuous security feedback loop",
+      "option_c": "They are sent only to management for annual review",
+      "option_d": "They automatically roll back the deployment",
+      "correct_answer": "B",
+      "explanation": "Unlike the traditional view where Deploy is the end, DevSecOps loops production findings back into development to drive continuous improvement."
+    },
+    {
+      "question": "Which of the following is a main objective of continuous security monitoring?",
+      "option_a": "Guaranteeing that zero vulnerabilities exist in production",
+      "option_b": "Reducing the time attackers remain undetected in the environment",
+      "option_c": "Replacing the need for incident response planning",
+      "option_d": "Eliminating the need for SIEM platforms",
+      "correct_answer": "B",
+      "explanation": "Key CSM objectives include early threat detection, real-time alerts, and reducing attacker dwell time; it cannot guarantee zero vulnerabilities."
+    },
+    {
+      "question": "A rapid sequence of failed logins (10:35:21, :23, :25, :27, :29) for the same account most likely indicates:",
+      "option_a": "A user who forgot their password and is retrying normally",
+      "option_b": "A brute-force attack against the account",
+      "option_c": "A misconfigured NTP server causing timestamp errors",
+      "option_d": "Routine automated backup activity",
+      "correct_answer": "B",
+      "explanation": "One failed login may be normal, but a rapid, repeated sequence of failures is a classic brute-force pattern identified during log analysis."
+    },
+    {
+      "question": "Which set of fields would a typical log entry NOT contain?",
+      "option_a": "Timestamp, user/account, source IP address",
+      "option_b": "Event type, resource accessed, success/failure status",
+      "option_c": "The attacker's real name, home address, and motive",
+      "option_d": "Action performed and error information",
+      "correct_answer": "C",
+      "explanation": "Logs record observable technical facts (time, user, IP, action, outcome); they do not contain an attacker's identity or motive."
+    },
+    {
+      "question": "Which type of log would record IAM changes, resource creation/deletion, and administrative API calls?",
+      "option_a": "Application logs",
+      "option_b": "Operating system logs",
+      "option_c": "Cloud audit logs",
+      "option_d": "Container/Kubernetes logs",
+      "correct_answer": "C",
+      "explanation": "Cloud audit logs capture cloud control-plane activity: resource lifecycle events, IAM changes, and administrative actions."
+    },
+    {
+      "question": "An organization wants to detect suspicious processes inside containers and pod events in a cluster. Which log sources are most relevant?",
+      "option_a": "Network firewall logs and email logs",
+      "option_b": "Container/Kubernetes logs",
+      "option_c": "Cloud billing logs",
+      "option_d": "Print server logs",
+      "correct_answer": "B",
+      "explanation": "Container/Kubernetes logs record container activity, pod events, and Kubernetes API requests — exactly what is needed here."
+    },
+    {
+      "question": "What is log management?",
+      "option_a": "The process of deleting old logs to save disk space",
+      "option_b": "The process of collecting, centralizing, storing, protecting, analyzing, and retaining logs from different systems",
+      "option_c": "Writing application code that produces log messages",
+      "option_d": "The rotation of passwords stored in logs",
+      "correct_answer": "B",
+      "explanation": "Log management covers the full lifecycle of logs — collection through retention — with centralization being the preferred approach."
+    },
+    {
+      "question": "Why is a centralized log management approach preferable to logs kept on individual systems?",
+      "option_a": "It eliminates the need to configure logging on each host",
+      "option_b": "It provides centralized visibility, easier threat detection, event correlation, faster investigation, compliance support, and audit-trail preservation",
+      "option_c": "It makes logs impossible for attackers to read",
+      "option_d": "It reduces log volume by deduplication guaranteed by law",
+      "correct_answer": "B",
+      "explanation": "Centralization enables correlation across sources and faster investigation; keeping logs only on individual systems fragments visibility."
+    },
+    {
+      "question": "Why must logs be specifically protected against unauthorized deletion or modification?",
+      "option_a": "Because modified logs cause applications to crash",
+      "option_b": "Because attackers may try to remove evidence of their activities, destroying the audit trail",
+      "option_c": "Because log files consume excessive network bandwidth when altered",
+      "option_d": "Because regulators require logs to be stored on encrypted paper",
+      "correct_answer": "B",
+      "explanation": "Logs are primary evidence; attackers who delete or tamper with them hide their tracks, so integrity and retention protections are essential."
+    },
+    {
+      "question": "Which of the following is NOT a benefit of centralized log management?",
+      "option_a": "Event correlation across multiple systems",
+      "option_b": "Faster incident investigation",
+      "option_c": "Guaranteed prevention of all attacks",
+      "option_d": "Compliance and audit-trail support",
+      "correct_answer": "C",
+      "explanation": "Centralized logging supports detection and investigation but cannot guarantee attack prevention; no monitoring control can."
+    },
+    {
+      "question": "What is the correct order of stages in a SIEM pipeline?",
+      "option_a": "Alert → Collection → Normalization → Correlation",
+      "option_b": "Collection → Normalization → Correlation & Analysis → Threat Detected → Alert → Security Team",
+      "option_c": "Normalization → Alert → Collection → Correlation",
+      "option_d": "Correlation → Collection → Alert → Normalization",
+      "correct_answer": "B",
+      "explanation": "A SIEM collects logs from sources, normalizes them into a common format, correlates and analyzes them, detects threats, and alerts the security team."
+    },
+    {
+      "question": "What is the key value of event correlation in a SIEM, as illustrated by '20 failed logins + successful login + new admin created + sensitive data downloaded'?",
+      "option_a": "Each event is stored more cheaply when grouped",
+      "option_b": "Individually harmless events, when combined, reveal a likely account compromise",
+      "option_c": "Correlation automatically blocks the attacker's IP address",
+      "option_d": "It reduces false negatives to exactly zero",
+      "correct_answer": "B",
+      "explanation": "Correlation links related events across systems to expose attack patterns that no single log entry would reveal."
+    },
+    {
+      "question": "Which of the following is an example SIEM platform mentioned in the lecture?",
+      "option_a": "Microsoft Sentinel",
+      "option_b": "Wireshark",
+      "option_c": "Nmap",
+      "option_d": "Burp Suite",
+      "correct_answer": "A",
+      "explanation": "Example SIEM platforms given are Microsoft Sentinel, Splunk, IBM QRadar, and Elastic Security; Wireshark and Nmap are network tools, Burp Suite is a web proxy."
+    },
+    {
+      "question": "In DevSecOps, runtime monitoring repeatedly detects attacks against a particular API endpoint. The best 'shift-right' response is to:",
+      "option_a": "Ignore it, since the endpoint already passed pre-deployment testing",
+      "option_b": "Feed the production finding back to developers so the API's security controls can be improved",
+      "option_c": "Permanently shut down the entire application",
+      "option_d": "Disable all logging on that endpoint to reduce noise",
+      "correct_answer": "B",
+      "explanation": "'Shift-right' means using production monitoring feedback to continuously improve code and security controls upstream."
+    },
+    {
+      "question": "What is an intrusion?",
+      "option_a": "Any authorized login by a legitimate administrator",
+      "option_b": "Unauthorized or malicious activity that attempts to compromise a system, network, or data",
+      "option_c": "A hardware failure that causes a server outage",
+      "option_d": "The scheduled deployment of a security patch",
+      "correct_answer": "B",
+      "explanation": "An intrusion is unauthorized/malicious activity such as port scanning, exploitation, brute-force attempts, or malware communication."
+    },
+    {
+      "question": "The key characteristic that distinguishes an IDS from an IPS is that an IDS:",
+      "option_a": "Detects and alerts but normally does not automatically block the attack",
+      "option_b": "Sits in-line and drops all malicious packets",
+      "option_c": "Only monitors application-layer traffic",
+      "option_d": "Requires no monitoring rules to function",
+      "correct_answer": "A",
+      "explanation": "An IDS is typically passive — it detects and alerts. An IPS is active/in-line and can block traffic automatically."
+    },
+    {
+      "question": "Which of the following is NOT an action an IPS may take?",
+      "option_a": "Dropping malicious packets",
+      "option_b": "Blocking an IP address",
+      "option_c": "Guaranteeing the attacker is arrested",
+      "option_d": "Resetting a connection and generating an alert",
+      "correct_answer": "C",
+      "explanation": "An IPS can drop packets, block IPs/connections, reset connections, and alert — but it cannot guarantee law-enforcement outcomes."
+    },
+    {
+      "question": "An e-commerce site must block SQL-injection packets in real time before they reach the database server. Which solution fits best?",
+      "option_a": "Passive IDS sending alerts to the SOC",
+      "option_b": "An in-line IPS that drops malicious packets automatically",
+      "option_c": "Periodic manual log review once a week",
+      "option_d": "A SIEM that only stores firewall logs",
+      "correct_answer": "B",
+      "explanation": "Real-time blocking requires an active, in-line IPS; a passive IDS would only alert after the traffic arrives."
+    },
+    {
+      "question": "Using the lecture's analogy, an IDS is best compared to ____ while an IPS is best compared to ____.",
+      "option_a": "a security guard; a security alarm",
+      "option_b": "a security alarm; a security guard",
+      "option_c": "a firewall; a router",
+      "option_d": "a backup system; a SIEM",
+      "correct_answer": "B",
+      " explanation": "An IDS is like a security alarm (detects and raises alert); an IPS is like a security guard (detects and attempts to stop the intruder).",
+      "correct_answer_fixed": "B"
+    },
+    {
+      "question": "Which statement correctly contrasts signature-based and anomaly-based detection?",
+      "option_a": "Signature-based uses behavior baselines; anomaly-based uses known attack patterns",
+      "option_b": "Signature-based compares activity against known attack patterns and has low false positives for known attacks, but may miss unknown attacks; anomaly-based builds a normal-behavior baseline and can catch unknown attacks, but may produce more false positives",
+      "option_c": "Signature-based detection cannot identify any attacks",
+      "option_d": "Anomaly-based detection requires no understanding of normal behavior",
+      "correct_answer": "B",
+      "explanation": "Signature detection is strong for known attacks but blind to novel ones; anomaly detection generalizes to unknown attacks at the cost of more false positives."
+    },
+    {
+      "question": "A company deploys a brand-new, never-before-seen attack against your network. Which detection technique is most likely to flag it?",
+      "option_a": "Signature-based detection with an updated rule set",
+      "option_b": "Anomaly-based detection, because the attack deviates from the baseline of normal behavior",
+      "option_c": "Checking the attack against yesterday's antivirus signatures",
+      "option_d": "Manual review of last year's firewall logs",
+      "correct_answer": "B",
+      "explanation": "Since no signature exists for a brand-new attack, only anomaly-based detection — which flags deviations from normal behavior — has a chance of catching it."
+    },
+    {
+      "question": "Which is a known limitation of anomaly-based detection?",
+      "option_a": "It cannot detect any attacks",
+      "option_b": "It may produce more false positives and requires understanding of normal behavior",
+      "option_c": "It only works against DDoS attacks",
+      "option_d": "It is always slower than manual review",
+      "correct_answer": "B",
+      "explanation": "Anomaly detection's weaknesses are higher false-positive rates and the need to accurately model normal behavior."
+    },
+    {
+      "question": "Which of the following is a security EVENT but NOT necessarily a security INCIDENT?",
+      "option_a": "Ransomware encrypting production databases",
+      "option_b": "A firewall denying a single connection attempt, which is an observable occurrence that may or may not compromise security",
+      "option_c": "An attacker exfiltrating customer data",
+      "option_d": "A compromised container running cryptominers",
+      "correct_answer": "B",
+      "explanation": "A security event is any observable occurrence; only when it actually or potentially compromises security or violates policy does it become an incident."
+    },
+    {
+      "question": "Which sequence correctly orders the six Incident Response lifecycle phases?",
+      "option_a": "Detection → Preparation → Containment → Recovery → Eradication → Lessons Learned",
+      "option_b": "Preparation → Detection & Analysis → Containment → Eradication → Recovery → Lessons Learned",
+      "option_c": "Containment → Preparation → Detection → Recovery → Eradication → Lessons Learned",
+      "option_d": "Preparation → Containment → Detection → Eradication → Lessons Learned → Recovery",
+      "correct_answer": "B",
+      "explanation": "The canonical IR lifecycle is: prepare first, then detect/analyze, contain, eradicate, recover, and finally capture lessons learned."
+    },
+    {
+      "question": "During the Preparation phase, an organization should primarily:",
+      "option_a": "Delete all logs to save storage",
+      "option_b": "Establish the IR plan, roles, communication procedures, monitoring, backups, and security controls",
+      "option_c": "Announce the incident to the public",
+      "option_d": "Rebuild all servers from scratch",
+      "correct_answer": "B",
+      "explanation": "Preparation builds readiness before any incident: plans, roles, playbooks, monitoring, and backups."
+    },
+    {
+      "question": "A host is isolated from the network to stop malware from spreading, but the malware is still on the disk. Which phase is the team in, and what comes next?",
+      "option_a": "Eradication; next step is containment",
+      "option_b": "Containment; next step is eradication (removing malware, patching, deleting malicious accounts)",
+      "option_c": "Recovery; next step is lessons learned",
+      "option_d": "Detection; next step is preparation",
+      "correct_answer": "B",
+      "explanation": "Isolation is containment (limiting spread); eradication then removes the root cause — malware removal, patching, and deleting malicious accounts."
+    },
+    {
+      "question": "What is the main purpose of the Lessons Learned phase?",
+      "option_a": "To assign blame to individual employees",
+      "option_b": "To review the incident and improve security so it does not recur",
+      "option_c": "To restore systems from the most recent backup",
+      "option_d": "To contain the attacker's lateral movement",
+      "correct_answer": "B",
+      "explanation": "Lessons learned closes the loop by improving plans, controls, and monitoring based on what the incident revealed."
+    },
+    {
+      "question": "Which statement about the Recovery phase is correct?",
+      "option_a": "Systems are restored from clean backups, reconnected, and monitored for further issues",
+      "option_b": "All evidence is permanently deleted",
+      "option_c": "The IR plan is discarded",
+      "option_d": "The attacker is given read-only access for verification",
+      "correct_answer": "A",
+      "explanation": "Recovery restores normal operations from clean backups, reconnects systems carefully, and watches for signs of reinfection."
+    },
+    {
+      "question": "In an incident response process, what is the primary responsibility of System/Cloud Administrators?",
+      "option_a": "Writing press releases for the media",
+      "option_b": "Isolating and restoring infrastructure",
+      "option_c": "Deciding regulatory fines",
+      "option_d": "Designing the company logo for incident reports",
+      "correct_answer": "B",
+      "explanation": "Admins isolate compromised infrastructure and restore systems; analysts investigate, developers fix code/pipeline issues, and management makes business decisions."
+    },
+    {
+      "question": "A developer whose code introduced the vulnerability works with security staff during the incident. Which IR role best describes this, and why does DevSecOps improve IR?",
+      "option_a": "Legal/Compliance; because lawyers write better firewall rules",
+      "option_b": "Developer/DevOps Engineer; because developers, operations, and security collaborate rather than operating in silos",
+      "option_c": "Communication team; because they can patch faster",
+      "option_d": "Management; because executives can reverse-engineer malware",
+      "correct_answer": "B",
+      "explanation": "Developers/DevOps engineers fix application and pipeline issues; DevSecOps improves IR precisely because these groups collaborate."
+    },
+    {
+      "question": "A security incident investigation attempts to determine all of the following EXCEPT:",
+      "option_a": "How the attacker gained access and which systems/accounts were affected",
+      "option_b": "What actions the attacker performed and whether data was stolen",
+      "option_c": "The attacker's favorite programming language and personal hobbies",
+      "option_d": "Whether the attacker is still present and what vulnerability caused the incident",
+      "correct_answer": "C",
+      "explanation": "Investigation reconstructs how, when, what, and which — not personal preferences unrelated to the attack."
+    },
+    {
+      "question": "Which combination of evidence sources is used to reconstruct an attack into an incident timeline leading to root cause?",
+      "option_a": "Network data, system evidence, cloud audit records, and application evidence",
+      "option_b": "Employee attendance records and cafeteria receipts",
+      "option_c": "Only the contents of the company's public website",
+      "option_d": "Social media posts from the attacker's account",
+      "correct_answer": "A",
+      "explanation": "Reconstruction combines network data, system evidence, cloud audit records, and application evidence into a timeline and root cause."
+    },
+    {
+      "question": "Digital forensics is best defined as:",
+      "option_a": "The systematic process of identifying, collecting, preserving, examining, analyzing, and reporting digital evidence related to a security incident",
+      "option_b": "The automated patching of vulnerable systems",
+      "option_c": "The encryption of all company databases",
+      "option_d": "The penetration testing of web applications",
+      "correct_answer": "A",
+      "explanation": "Forensics follows a disciplined evidence lifecycle — identification through reporting — to support investigation and potential legal action."
+    },
+    {
+      "question": "Which of the following is NOT a possible source of digital evidence listed in the lecture?",
+      "option_a": "Memory and disk images",
+      "option_b": "Emails and network captures",
+      "option_c": "Cloud audit logs and container logs",
+      "option_d": "Handwritten sticky notes on a monitor",
+      "correct_answer": "D",
+      "explanation": "Listed evidence includes system/application logs, network captures, files, memory, disk images, emails, cloud audit logs, authentication records, and container logs."
+    },
+    {
+      "question": "Place the basic digital forensics process in the correct order:",
+      "option_a": "Analysis → Identification → Collection → Preservation → Examination → Reporting",
+      "option_b": "Identification → Collection → Preservation → Examination → Analysis → Reporting",
+      "option_c": "Reporting → Preservation → Collection → Identification → Analysis → Examination",
+      "option_d": "Collection → Reporting → Analysis → Identification → Preservation → Examination",
+      "correct_answer": "B",
+      "explanation": "The forensic process flows: identify evidence sources, collect, preserve integrity, examine, analyze, and report findings."
+    },
+    {
+      "question": "What is the chain of custody?",
+      "option_a": "A hardware device that physically locks server racks",
+      "option_b": "The documented record showing how digital evidence was collected, handled, transferred, stored, and analyzed",
+      "option_c": "The network path an attacker used to move between systems",
+      "option_d": "A list of employees authorized to use the SIEM",
+      "correct_answer": "B",
+      "explanation": "Chain of custody documents every handling step of evidence to demonstrate it was not improperly altered."
+    },
+    {
+      "question": "A chain-of-custody record may contain all of the following EXCEPT:",
+      "option_a": "Description of evidence, evidence identifier, and date/time collected",
+      "option_b": "Person who collected it, collection location/source, and storage information",
+      "option_c": "Transfers between individuals and actions performed on the evidence",
+      "option_d": "The collector's personal opinion of who the attacker probably is",
+      "correct_answer": "D",
+      "explanation": "Chain of custody records factual handling details; speculation about the attacker's identity is not part of it."
+    },
+    {
+      "question": "Why is the chain of custody especially important when an incident leads to legal or disciplinary action?",
+      "option_a": "Because without it, evidence cannot be encrypted",
+      "option_b": "Because without proper evidence handling, it may be difficult to demonstrate the integrity and reliability of the digital evidence",
+      "option_c": "Because courts require evidence to be stored in the cloud",
+      "option_d": "Because it guarantees the attacker will be convicted",
+      "correct_answer": "B",
+      "explanation": "Courts demand proof of evidence integrity; a documented chain of custody establishes that evidence was not tampered with."
+    },
+    {
+      "question": "Log analysis shows: 09:01 multiple failed logins → 09:06 successful login from unusual IP → 09:08 privilege changed to Administrator → 09:12 database accessed → 09:15 large data download → 09:18 logout. The best interpretation is:",
+      "option_a": "A routine administrator performing scheduled maintenance",
+      "option_b": "A credential attack, account compromise, privilege escalation, database access, and possible data exfiltration",
+      "option_c": "A failed backup job that should be ignored",
+      "option_d": "A misconfigured monitoring agent",
+      "correct_answer": "B",
+      "explanation": "Correlated in sequence, these log entries form a complete attack timeline: brute force → compromise → escalation → access → exfiltration."
+    },
+    {
+      "question": "HARD: A SOC analyst sees 500 failed logins from one IP against many different user accounts, then a few successful logins from that IP. Individually each event looks minor. Which capability turns this into a meaningful detection, and on what principle?",
+      "option_a": "An IDS signature, because each failed login matches a known rule",
+      "option_b": "SIEM correlation across time and sources, because the combined pattern (password spraying + successful compromise) reveals an attack no single log shows",
+      "option_c": "Log deletion, because removing noise reveals attacks",
+      "option_d": "Container scanning, because it detects runtime attacks",
+      "correct_answer": "B",
+      "explanation": "Password spraying distributes failures across accounts to evade per-account lockouts; only cross-source, temporal correlation exposes the coordinated campaign."
+    },
+    {
+      "question": "HARD: During containment of a ransomware outbreak, an administrator is tempted to power off all infected servers immediately and wipe them. What is the primary risk of this approach from an incident response/forensics standpoint?",
+      "option_a": "It violates the containment phase, which forbids any action",
+      "option_b": "Powered-off or wiped systems can destroy volatile evidence (memory, running processes, network connections) needed to determine root cause and scope",
+      "option_c": "It will automatically trigger a second ransomware infection",
+      "option_d": "It makes the chain of custody stronger",
+      "correct_answer": "B",
+      "explanation": "Eradication and recovery must be preceded by evidence capture; memory and live state are lost on shutdown, undermining investigation and lessons learned."
+    },
+    {
+      "question": "HARD: An attacker uses a compromised legitimate account, stays within normal working hours, and mimics typical admin activity to avoid anomaly detection. Which defense-in-depth combination best addresses this?",
+      "option_a": "Signature-based IDS alone, since it has the fewest false positives",
+      "option_b": "Layered monitoring: SIEM correlation of IAM, cloud audit, and application logs plus anomaly detection with tight baselines, so low-and-slow abuse still stands out when events are combined",
+      "option_c": "Disabling all alerting to reduce noise",
+      "option_d": "Relying solely on employees reporting suspicious behavior",
+      "correct_answer": "B",
+      "explanation": "Living-off-the-land attacks evade single controls; correlating identity, cloud, and application events exposes subtle patterns that evade isolated baselines."
+    },
+    {
+      "question": "HARD: A startup argues that formal incident response planning is unnecessary because 'our monitoring will catch everything.' Which response best reflects the lecture's concepts?",
+      "option_a": "They are right; monitoring replaces incident response entirely",
+      "option_b": "Without an IR plan, organizations respond slowly or inconsistently when incidents occur — monitoring detects, but IR plans, roles, containment, eradication, recovery, and lessons learned handle and learn from the incident",
+      "option_c": "They should only prepare the recovery phase and ignore the rest",
+      "option_d": "Incident response is only needed for companies with more than 10,000 employees",
+      "correct_answer": "B",
+      "explanation": "Detection alone is insufficient; the lecture stresses that organizations without IR plans respond slowly or inconsistently during incidents."
+    },
+    {
+      "question": "HARD: After an incident is closed, which feedback actions best align with 'an incident is not fixed and forgotten'?",
+      "option_a": "Updating secure coding practices, threat models, CI/CD security controls, cloud configuration, container security, IAM policies, monitoring rules, and security tests",
+      "option_b": "Deleting all logs from the incident to save storage",
+      "option_c": "Blaming a single employee and changing nothing else",
+      "option_d": "Disabling monitoring alerts that fired during the incident",
+      "correct_answer": "A",
+      "explanation": "Findings must feed back into code, configs, pipeline controls, IAM, and monitoring to create continuous security improvement."
+    }
+  ]
+}
