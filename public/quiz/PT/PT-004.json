@@ -1,0 +1,643 @@
+{
+  "questions": [
+    {
+      "question": "What is the fundamental mechanism behind Cross-Site Scripting (XSS)?",
+      "option_a": "A. The attacker executes SQL commands directly against the database.",
+      "option_b": "B. The attacker causes JavaScript to execute in another user's browser within the trusted website's origin.",
+      "option_c": "C. The attacker modifies the server's operating system configuration.",
+      "option_d": "D. The attacker intercepts encrypted network traffic.",
+      "correct_answer": "B",
+      "explanation": "XSS occurs when attacker-controlled input is interpreted as executable script by the victim's browser within the trusted site's origin."
+    },
+    {
+      "question": "Which statement correctly distinguishes reflected XSS from stored XSS?",
+      "option_a": "A. Reflected XSS requires database storage, while stored XSS exists only in URL fragments.",
+      "option_b": "B. Reflected XSS executes only for administrators, while stored XSS executes only for ordinary users.",
+      "option_c": "C. Reflected XSS is echoed from a request, while stored XSS is persisted by the application and delivered to later visitors.",
+      "option_d": "D. Reflected XSS executes on the server, while stored XSS executes on the database.",
+      "correct_answer": "C",
+      "explanation": "Reflected XSS returns attacker input directly in the response. Stored XSS saves the payload server-side and executes it whenever users view the affected content."
+    },
+    {
+      "question": "A website displays search results using the following vulnerable PHP code: echo 'Results for ' . $_GET['q'];. What is the primary security issue?",
+      "option_a": "A. The application executes SQL queries without prepared statements.",
+      "option_b": "B. User-controlled input is reflected into HTML without context-aware output encoding.",
+      "option_c": "C. The application exposes its database credentials.",
+      "option_d": "D. The application accepts unauthorized HTTP methods.",
+      "correct_answer": "B",
+      "explanation": "The search parameter is inserted directly into the response. If it contains HTML or JavaScript, the browser may interpret it as executable content."
+    },
+    {
+      "question": "Which XSS vulnerability is entirely implemented in client-side JavaScript, without requiring the payload to reach the server?",
+      "option_a": "A. Stored XSS",
+      "option_b": "B. Reflected XSS",
+      "option_c": "C. Blind XSS",
+      "option_d": "D. DOM-based XSS",
+      "correct_answer": "D",
+      "explanation": "DOM-based XSS occurs when client-side JavaScript takes attacker-controlled data from a source and places it into a dangerous sink."
+    },
+    {
+      "question": "Which of the following is a common dangerous sink associated with DOM-based XSS?",
+      "option_a": "A. innerHTML",
+      "option_b": "B. textContent",
+      "option_c": "C. encodeURIComponent",
+      "option_d": "D. JSON.stringify",
+      "correct_answer": "A",
+      "explanation": "innerHTML interprets supplied content as HTML and may execute event-handler payloads. textContent treats supplied content as text instead."
+    },
+    {
+      "question": "Why can DOM-based XSS remain undetected by server-side request inspection and WAF filtering?",
+      "option_a": "A. DOM-based XSS always uses encrypted JavaScript.",
+      "option_b": "B. DOM-based XSS only works when the server disables authentication.",
+      "option_c": "C. The vulnerable processing can occur entirely in the browser, and URL fragments are not transmitted to the server.",
+      "option_d": "D. DOM-based XSS does not require attacker-controlled input.",
+      "correct_answer": "C",
+      "explanation": "Client-side sources such as location.hash can be processed locally. URL fragments are not included in HTTP requests, so server-side inspection cannot directly see their contents."
+    },
+    {
+      "question": "What is Blind XSS?",
+      "option_a": "A. XSS that only works when JavaScript is disabled.",
+      "option_b": "B. Stored XSS that executes in a location the tester cannot directly observe, such as an administrator dashboard.",
+      "option_c": "C. XSS that requires the attacker to access the victim's physical device.",
+      "option_d": "D. XSS that can only modify database records.",
+      "correct_answer": "B",
+      "explanation": "Blind XSS is commonly stored and executes later in an unseen back-office interface. Out-of-band callbacks can confirm execution."
+    },
+    {
+      "question": "Why is Self-XSS generally not considered a valid security finding?",
+      "option_a": "A. It cannot execute JavaScript.",
+      "option_b": "B. It only affects websites using HTTP.",
+      "option_c": "C. It requires the victim to execute the code themselves, without an attacker-controlled delivery path.",
+      "option_d": "D. It always requires administrator privileges.",
+      "correct_answer": "C",
+      "explanation": "Self-XSS lacks a meaningful attacker-controlled exploitation path. It can become a genuine finding if chained with another vulnerability, such as CSRF."
+    },
+    {
+      "question": "An application reflects user input inside an HTML attribute enclosed in double quotes. Why might a payload designed for the HTML body fail?",
+      "option_a": "A. JavaScript cannot execute inside HTML attributes.",
+      "option_b": "B. The browser automatically removes all attacker-controlled characters.",
+      "option_c": "C. HTML attributes are always protected by CSP.",
+      "option_d": "D. The payload must first escape the surrounding attribute context before introducing executable content.",
+      "correct_answer": "D",
+      "explanation": "XSS payloads are context-dependent. A payload must break out of the current syntactic context, such as a quoted attribute, before introducing executable HTML or JavaScript."
+    },
+    {
+      "question": "Which security mechanism allows a website to specify which script sources the browser is permitted to execute?",
+      "option_a": "A. Content Security Policy (CSP)",
+      "option_b": "B. Cross-Origin Resource Sharing (CORS)",
+      "option_c": "C. HTTP Strict Transport Security (HSTS)",
+      "option_d": "D. DNSSEC",
+      "correct_answer": "A",
+      "explanation": "CSP is a response-header-based security mechanism that restricts permitted script sources and can block unauthorized inline scripts."
+    },
+    {
+      "question": "What is the primary purpose of setting the HttpOnly attribute on a session cookie?",
+      "option_a": "A. It prevents all cross-site requests.",
+      "option_b": "B. It prevents JavaScript from directly accessing the cookie through browser scripting APIs.",
+      "option_c": "C. It encrypts the cookie value using AES.",
+      "option_d": "D. It prevents the browser from sending the cookie over HTTPS.",
+      "correct_answer": "B",
+      "explanation": "HttpOnly prevents JavaScript from reading the cookie through interfaces such as document.cookie. It does not prevent XSS from performing authenticated actions."
+    },
+    {
+      "question": "Which approach provides the primary defence against XSS when user-controlled content is included in an HTML page?",
+      "option_a": "A. Blocking all requests containing the word script.",
+      "option_b": "B. Validating input only on the client side.",
+      "option_c": "C. Applying context-aware output encoding at the point where data is inserted.",
+      "option_d": "D. Disabling database write permissions.",
+      "correct_answer": "C",
+      "explanation": "Context-aware output encoding ensures untrusted data is treated as data rather than executable content in its specific output context."
+    },
+    {
+      "question": "Which statement about CSP is most accurate?",
+      "option_a": "A. CSP replaces the need for output encoding.",
+      "option_b": "B. CSP prevents every form of client-side vulnerability.",
+      "option_c": "C. CSP only protects websites from SQL injection.",
+      "option_d": "D. CSP is defence in depth, and a weak policy may provide little protection.",
+      "correct_answer": "D",
+      "explanation": "CSP provides an additional browser-side security layer, but it does not replace proper output encoding. Wildcard sources and unsafe directives can weaken its effectiveness."
+    },
+    {
+      "question": "A developer uses React to display user-provided comments. Which implementation choice is more likely to introduce XSS?",
+      "option_a": "A. Rendering the comment using normal JSX text interpolation.",
+      "option_b": "B. Rendering the comment using dangerouslySetInnerHTML without appropriate sanitization.",
+      "option_c": "C. Storing the comment as a database string.",
+      "option_d": "D. Displaying the comment using a text-only element.",
+      "correct_answer": "B",
+      "explanation": "React normally escapes interpolated text. dangerouslySetInnerHTML bypasses this protection and can introduce XSS when unsafe HTML is supplied."
+    },
+    {
+      "question": "An attacker injects the payload <scr<script>ipt>alert(1)</script> into an application that removes the first occurrence of the string script only once. Why might this bypass the filter?",
+      "option_a": "A. The browser ignores all HTML tags containing nested tags.",
+      "option_b": "B. JavaScript automatically decodes every blocked keyword.",
+      "option_c": "C. Removing the inner matching text can reconstruct a valid script tag.",
+      "option_d": "D. CSP automatically converts malformed tags into executable scripts.",
+      "correct_answer": "C",
+      "explanation": "A strip-once blocklist can be bypassed using nested keyword construction. Removing the inner script substring can leave a valid script element."
+    },
+    {
+      "question": "A tester submits an XSS payload that uses <img src=x onerror=alert(document.domain)> because the application blocks script tags. What principle does this demonstrate?",
+      "option_a": "A. JavaScript can only execute through script elements.",
+      "option_b": "B. HTML event handlers can execute JavaScript without using a script element.",
+      "option_c": "C. Image elements execute SQL commands when loading fails.",
+      "option_d": "D. The browser ignores event handlers on image elements.",
+      "correct_answer": "B",
+      "explanation": "Event-handler attributes such as onerror provide alternative JavaScript execution contexts, so blocking script tags alone is insufficient."
+    },
+    {
+      "question": "A tester discovers that a user-controlled value is placed inside a JavaScript string: var name = 'USER_INPUT';. Which property makes a JavaScript-string-specific XSS payload necessary?",
+      "option_a": "A. The browser treats the input as a URL.",
+      "option_b": "B. JavaScript strings cannot contain quotation marks.",
+      "option_c": "C. The input must escape the surrounding string context before introducing executable JavaScript.",
+      "option_d": "D. HTML attribute encoding automatically protects JavaScript strings.",
+      "correct_answer": "C",
+      "explanation": "The payload must account for the surrounding JavaScript syntax. Escaping the string context is different from escaping an HTML body or attribute."
+    },
+    {
+      "question": "Which statement best describes Cross-Site Request Forgery (CSRF)?",
+      "option_a": "A. An attacker injects JavaScript into a database query.",
+      "option_b": "B. An attacker tricks an authenticated victim's browser into sending an unintended state-changing request.",
+      "option_c": "C. An attacker directly extracts passwords from the server's memory.",
+      "option_d": "D. An attacker executes operating system commands through a template engine.",
+      "correct_answer": "B",
+      "explanation": "CSRF abuses the browser's authenticated session to perform an action that the victim did not intend."
+    },
+    {
+      "question": "Why can a malicious website initiate a CSRF attack against a victim who is already logged into another website?",
+      "option_a": "A. Browsers automatically attach applicable authentication cookies to requests sent to their associated website.",
+      "option_b": "B. Browsers automatically disclose the victim's password to every visited website.",
+      "option_c": "C. The Same-Origin Policy disables all authentication checks.",
+      "option_d": "D. The malicious website can directly read the victim's database session.",
+      "correct_answer": "A",
+      "explanation": "Browsers can automatically attach applicable cookies to requests. CSRF exploits this behaviour to make the target server receive authenticated requests."
+    },
+    {
+      "question": "Which statement correctly distinguishes XSS from CSRF?",
+      "option_a": "A. XSS forges requests, while CSRF injects executable JavaScript into the target page.",
+      "option_b": "B. XSS executes attacker-controlled script in the victim's browser, while CSRF causes the browser to send an unintended authenticated request.",
+      "option_c": "C. Both vulnerabilities require database access.",
+      "option_d": "D. CSRF always provides the attacker with the ability to read the server's response.",
+      "correct_answer": "B",
+      "explanation": "XSS executes attacker-controlled script within the target origin. CSRF abuses authenticated browser requests and generally does not allow the attacker to read the response."
+    },
+    {
+      "question": "Which security control is specifically designed to prevent CSRF by requiring an unpredictable secret associated with the user's session?",
+      "option_a": "A. Output encoding",
+      "option_b": "B. Content Security Policy",
+      "option_c": "C. Anti-CSRF token",
+      "option_d": "D. SQL parameterization",
+      "correct_answer": "C",
+      "explanation": "A properly validated anti-CSRF token is a secret value that an attacker-controlled external page should not be able to obtain or predict."
+    },
+    {
+      "question": "Why should an application avoid performing state-changing operations through HTTP GET requests?",
+      "option_a": "A. GET requests cannot contain URL parameters.",
+      "option_b": "B. GET requests are automatically encrypted.",
+      "option_c": "C. GET requests cannot be authenticated.",
+      "option_d": "D. GET requests can be triggered through links and embedded resources, making unintended state changes easier to forge.",
+      "correct_answer": "D",
+      "explanation": "GET should be reserved for retrieving resources. State-changing GET endpoints can be triggered through navigation or elements such as images, creating CSRF opportunities."
+    },
+    {
+      "question": "A web application generates an anti-CSRF token and includes it in every form. However, the server still accepts requests when the token is removed. What is the actual security problem?",
+      "option_a": "A. The token is too long.",
+      "option_b": "B. The application does not enforce server-side token validation.",
+      "option_c": "C. The application uses HTTPS.",
+      "option_d": "D. The application has enabled SameSite cookies.",
+      "correct_answer": "B",
+      "explanation": "Generating and displaying a token provides no protection if the server does not verify it on state-changing requests."
+    },
+    {
+      "question": "Which combination provides a stronger defence against CSRF?",
+      "option_a": "A. Client-side validation and JavaScript obfuscation.",
+      "option_b": "B. CSP and HttpOnly cookies alone.",
+      "option_c": "C. Validated anti-CSRF tokens, SameSite cookies, and avoiding state changes through GET.",
+      "option_d": "D. Disabling database transactions and enabling verbose logging.",
+      "correct_answer": "C",
+      "explanation": "CSRF protection should combine unpredictable server-validated tokens, appropriate SameSite cookie settings, and safe HTTP method design."
+    },
+    {
+      "question": "A banking application accepts a JSON state-changing endpoint but also accepts requests using text/plain. Why might this be a security concern?",
+      "option_a": "A. The browser cannot submit text/plain requests.",
+      "option_b": "B. Some simple cross-origin request mechanisms may reach the endpoint without triggering a CORS preflight.",
+      "option_c": "C. text/plain automatically encrypts the request body.",
+      "option_d": "D. JSON endpoints are always vulnerable to SQL injection.",
+      "correct_answer": "B",
+      "explanation": "An endpoint that accepts simple content types such as text/plain may be reachable through cross-origin form-like requests. Correct CSRF protection and content-type validation remain important."
+    },
+    {
+      "question": "A user is authenticated to a banking application. An attacker sends the user a page containing an automatically submitting form that transfers money. The browser sends the session cookie, and the transfer succeeds. Which condition most directly enabled the attack?",
+      "option_a": "A. The bank allowed the attacker to read its HTML source.",
+      "option_b": "B. The request was predictable and authenticated using automatically attached cookies without an effective CSRF defence.",
+      "option_c": "C. The browser disabled JavaScript.",
+      "option_d": "D. The bank stored the user's password in plaintext.",
+      "correct_answer": "B",
+      "explanation": "The victim's browser supplied the authentication cookie, while the application accepted a predictable state-changing request without an effective unpredictable CSRF token."
+    },
+    {
+      "question": "A security tester finds that a website uses SameSite=Lax cookies. Which statement about this configuration is accurate according to the lecture?",
+      "option_a": "A. It blocks every cross-site request, including all top-level navigations.",
+      "option_b": "B. It prevents XSS from executing JavaScript.",
+      "option_c": "C. It can still allow cookies on top-level cross-site GET navigations, so GET-based state changes remain dangerous.",
+      "option_d": "D. It makes anti-CSRF tokens unnecessary in every application.",
+      "correct_answer": "C",
+      "explanation": "SameSite=Lax generally restricts cross-site cookie sending but allows certain top-level safe-method navigations. A state-changing GET can therefore create a CSRF weakness."
+    },
+    {
+      "question": "What is Server-Side Template Injection (SSTI)?",
+      "option_a": "A. A vulnerability where JavaScript executes in the victim's browser through an HTML event handler.",
+      "option_b": "B. A vulnerability where attacker-controlled input is embedded into a server-side template and evaluated as a template expression.",
+      "option_c": "C. A vulnerability where a browser sends an authenticated request without permission.",
+      "option_d": "D. A vulnerability caused exclusively by weak database passwords.",
+      "correct_answer": "B",
+      "explanation": "SSTI occurs when user input becomes part of the template source rather than being passed as ordinary data."
+    },
+    {
+      "question": "A tester submits {{7*7}} into a display-name field and receives 49 in the response. What does this most strongly indicate?",
+      "option_a": "A. The application is vulnerable to SQL injection.",
+      "option_b": "B. The application has successfully encoded the input.",
+      "option_c": "C. The application may be evaluating user-controlled template expressions.",
+      "option_d": "D. The application is vulnerable to CSRF.",
+      "correct_answer": "C",
+      "explanation": "The mathematical expression was evaluated instead of displayed literally, indicating possible server-side template injection."
+    },
+    {
+      "question": "Which template syntax is associated with Jinja2 and Twig in the lecture's SSTI fingerprinting table?",
+      "option_a": "A. {{7*7}}",
+      "option_b": "B. ${7*7}",
+      "option_c": "C. <%= 7*7 %>",
+      "option_d": "D. #{7*7}",
+      "correct_answer": "A",
+      "explanation": "The lecture associates {{7*7}} with Jinja2 and Twig. If evaluated as 49, it indicates that the corresponding template expression syntax may be supported."
+    },
+    {
+      "question": "Which statement correctly differentiates SSTI from XSS?",
+      "option_a": "A. SSTI executes on the server, while XSS executes in the victim's browser.",
+      "option_b": "B. SSTI always requires an administrator session, while XSS does not.",
+      "option_c": "C. SSTI is exclusively a database vulnerability, while XSS is a network vulnerability.",
+      "option_d": "D. Both vulnerabilities only affect browser cookies.",
+      "correct_answer": "A",
+      "explanation": "SSTI occurs during server-side template evaluation and can lead to host-level command execution. XSS executes attacker-controlled JavaScript in the browser."
+    },
+    {
+      "question": "Why can SSTI potentially lead to remote code execution?",
+      "option_a": "A. Template expressions always contain encrypted passwords.",
+      "option_b": "B. Template engines can expose the underlying programming language's object model and capabilities, potentially allowing access to operating system functions.",
+      "option_c": "C. HTML automatically executes operating system commands.",
+      "option_d": "D. Template engines bypass every operating system permission.",
+      "correct_answer": "B",
+      "explanation": "Certain template engines expose language objects and methods. An attacker may traverse these objects to access functions capable of executing operating system commands."
+    },
+    {
+      "question": "A Python application constructs templates using this pattern: template = 'Hello ' + user_input; render(template). What is the main security problem?",
+      "option_a": "A. User input is concatenated into the template source, allowing expressions to be evaluated.",
+      "option_b": "B. The application always produces invalid HTML.",
+      "option_c": "C. Python automatically converts every input into a database query.",
+      "option_d": "D. The application cannot process strings.",
+      "correct_answer": "A",
+      "explanation": "Concatenating untrusted input into the template source creates SSTI. The safer design is to use a fixed template and pass user input as a variable."
+    },
+    {
+      "question": "A developer uses a sandboxed template engine to reduce SSTI risk. Which statement best reflects the lecture's security guidance?",
+      "option_a": "A. Sandboxing makes all template expressions completely harmless.",
+      "option_b": "B. Sandboxing is a mitigation, but sandbox escapes have historically occurred.",
+      "option_c": "C. Sandboxing eliminates the need for application updates.",
+      "option_d": "D. Sandboxing prevents CSRF automatically.",
+      "correct_answer": "B",
+      "explanation": "Sandboxing raises the difficulty of exploitation but is not a guarantee. The structural defence is to keep user input as data and use fixed templates."
+    },
+    {
+      "question": "Which implementation is the most appropriate defence against SSTI?",
+      "option_a": "A. Remove every occurrence of curly braces from user input.",
+      "option_b": "B. Allow users to construct templates but disable JavaScript.",
+      "option_c": "C. Concatenate user input into templates and rely on output encoding.",
+      "option_d": "D. Use fixed templates, pass user input through template variables, and keep the engine patched.",
+      "correct_answer": "D",
+      "explanation": "Separating template code from user data is the primary defence. Sandboxing and patching provide additional protection."
+    },
+    {
+      "question": "What does insecure deserialization involve?",
+      "option_a": "A. Converting HTML into CSS without validation.",
+      "option_b": "B. Reconstructing objects from attacker-controlled serialized data, potentially triggering unintended behaviour.",
+      "option_c": "C. Sending encrypted network packets without TLS.",
+      "option_d": "D. Executing SQL statements through prepared queries.",
+      "correct_answer": "B",
+      "explanation": "Deserialization reconstructs objects from serialized data. If that data is attacker-controlled, object creation and method execution can trigger unintended operations."
+    },
+    {
+      "question": "What is a gadget chain in the context of insecure deserialization?",
+      "option_a": "A. A sequence of existing application classes and methods that can be combined to perform unintended actions.",
+      "option_b": "B. A sequence of firewall rules used to block malicious requests.",
+      "option_c": "C. A collection of encrypted session cookies.",
+      "option_d": "D. A series of HTML elements used to render templates.",
+      "correct_answer": "A",
+      "explanation": "Gadget chains connect existing classes and methods during deserialization to produce harmful behaviour, potentially including remote code execution."
+    },
+    {
+      "question": "Which serialized-data indicator is associated with Java serialization in the lecture?",
+      "option_a": "A. O:4:\"User\":..",
+      "option_b": "B. {{7*7}}",
+      "option_c": "C. rO0AB..",
+      "option_d": "D. ${jndi:ldap://...}",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies the base64 prefix rO0 as a common indicator of Java serialized data."
+    },
+    {
+      "question": "Which Python deserialization mechanism is specifically highlighted as dangerous when used on untrusted data?",
+      "option_a": "A. json.loads()",
+      "option_b": "B. pickle.loads()",
+      "option_c": "C. html.escape()",
+      "option_d": "D. urllib.parse.quote()",
+      "correct_answer": "B",
+      "explanation": "Python pickle.loads() reconstructs serialized Python objects and can invoke attacker-controlled behaviour through mechanisms such as __reduce__."
+    },
+    {
+      "question": "Which security measure should be performed before deserializing signed serialized data when an integrity mechanism is used?",
+      "option_a": "A. Execute all object constructors and verify the output afterward.",
+      "option_b": "B. Decode the object and allow all available classes.",
+      "option_c": "C. Verify the HMAC or signature before performing deserialization.",
+      "option_d": "D. Convert the serialized object into HTML.",
+      "correct_answer": "C",
+      "explanation": "Integrity must be verified before deserialization so tampered data is rejected before object reconstruction can trigger malicious behaviour."
+    },
+    {
+      "question": "Which approach is generally preferable when an application needs to exchange ordinary data with clients?",
+      "option_a": "A. Use native object serialization and allow arbitrary object reconstruction.",
+      "option_b": "B. Use simple data formats such as JSON with data-only parsing.",
+      "option_c": "C. Accept arbitrary PHP serialized objects in cookies.",
+      "option_d": "D. Deserialize all incoming objects before checking their origin.",
+      "correct_answer": "B",
+      "explanation": "Simple formats such as JSON with plain data-only parsers avoid the risks associated with reconstructing arbitrary native objects from untrusted input."
+    },
+    {
+      "question": "A penetration tester discovers that a PHP application accepts a client-controlled serialized object containing an object type and property data. Which function and format are most relevant to investigate?",
+      "option_a": "A. PHP unserialize() and the O: object notation.",
+      "option_b": "B. Python pickle.loads() and the rO0AB prefix.",
+      "option_c": "C. JavaScript innerHTML and the {{7*7}} syntax.",
+      "option_d": "D. SQL SELECT and the ${jndi:ldap} syntax.",
+      "correct_answer": "A",
+      "explanation": "The lecture associates PHP serialized objects with notation such as O:4:\"User\":.. and the unserialize() function. Attacker-controlled object reconstruction can lead to object injection and potentially RCE."
+    },
+    {
+      "question": "Which statement best defines a business-logic vulnerability?",
+      "option_a": "A. An application crashes whenever a user enters an invalid SQL query.",
+      "option_b": "B. An application correctly executes its code but enforces rules that do not match the intended business requirements.",
+      "option_c": "C. An application uses an outdated encryption algorithm.",
+      "option_d": "D. An attacker executes JavaScript inside a browser.",
+      "correct_answer": "B",
+      "explanation": "Business-logic flaws abuse legitimate functionality. Requests may be technically valid, but the application permits actions that violate intended business rules."
+    },
+    {
+      "question": "Why are business-logic vulnerabilities difficult for automated security scanners to identify?",
+      "option_a": "A. They always require administrator credentials.",
+      "option_b": "B. They only exist in mobile applications.",
+      "option_c": "C. They require understanding the intended business process and rules, rather than simply identifying known technical patterns.",
+      "option_d": "D. They cannot be reproduced using HTTP requests.",
+      "correct_answer": "C",
+      "explanation": "Automated scanners generally lack the business context needed to determine whether an operation violates intended rules, such as quantity limits or payment workflow requirements."
+    },
+    {
+      "question": "An e-commerce application accepts the following request: POST /cart {\"item\":42,\"qty\":-3}. The application calculates a negative total and credits the customer's account. What type of vulnerability is demonstrated?",
+      "option_a": "A. Stored XSS",
+      "option_b": "B. HTTP request smuggling",
+      "option_c": "C. Insecure deserialization",
+      "option_d": "D. Negative quantity business-logic abuse",
+      "correct_answer": "D",
+      "explanation": "The application fails to enforce a valid quantity range. A negative quantity manipulates the business calculation and causes an unintended financial benefit."
+    },
+    {
+      "question": "A checkout endpoint accepts {\"item\":42,\"price\":1} and calculates the purchase using the submitted price instead of retrieving the actual product price. What is the primary weakness?",
+      "option_a": "A. The server trusts a client-controlled business value.",
+      "option_b": "B. The server uses an insecure template engine.",
+      "option_c": "C. The browser has disabled SameSite cookies.",
+      "option_d": "D. The application has a missing Content Security Policy.",
+      "correct_answer": "A",
+      "explanation": "The client must not determine authoritative product prices. The server should retrieve the actual price and calculate the total independently."
+    },
+    {
+      "question": "A shopping application permits customers to submit the same single-use discount voucher multiple times. Which security control most directly addresses this issue?",
+      "option_a": "A. HTML output encoding.",
+      "option_b": "B. Server-side enforcement of one-use voucher rules.",
+      "option_c": "C. Enabling directory listing.",
+      "option_d": "D. Disabling HTTP POST requests.",
+      "correct_answer": "B",
+      "explanation": "Voucher usage limits must be enforced by the server. The application should track redemption state and prevent repeated use."
+    },
+    {
+      "question": "A multi-step checkout process is intended to follow cart → payment → confirmation. A tester directly submits a request to the confirmation endpoint without completing payment, and the order is confirmed. What is the underlying vulnerability?",
+      "option_a": "A. Missing HTTP response compression.",
+      "option_b": "B. Reflected XSS.",
+      "option_c": "C. Workflow or process-step bypass.",
+      "option_d": "D. Weak password hashing.",
+      "correct_answer": "C",
+      "explanation": "The application trusts the client to follow the intended workflow. A server-side state machine should verify that the required previous steps have been completed."
+    },
+    {
+      "question": "What does TOCTOU stand for in the context of race conditions?",
+      "option_a": "A. Time of Cookie to Time of User",
+      "option_b": "B. Transfer of Control to Transfer of Ownership",
+      "option_c": "C. Type of Check to Type of Output",
+      "option_d": "D. Time of Check to Time of Use",
+      "correct_answer": "D",
+      "explanation": "TOCTOU describes a vulnerability where a condition is checked and an action is performed later, leaving a window in which the underlying state can change."
+    },
+    {
+      "question": "An application checks whether a voucher has been redeemed and then marks it as used in a separate operation. Multiple parallel requests arrive before the voucher status is updated. What can happen?",
+      "option_a": "A. All requests are automatically rejected because HTTP is stateless.",
+      "option_b": "B. Several requests may pass the initial check and redeem the supposedly single-use voucher multiple times.",
+      "option_c": "C. The browser automatically encrypts the voucher.",
+      "option_d": "D. The database automatically detects all business-logic violations.",
+      "correct_answer": "B",
+      "explanation": "The check and update are not atomic. Multiple concurrent requests may observe the same unused state and successfully redeem the voucher."
+    },
+    {
+      "question": "Which approach most directly prevents race conditions involving shared balances or single-use vouchers?",
+      "option_a": "A. Perform the check and state-changing operation atomically using database transactions or appropriate locking.",
+      "option_b": "B. Increase the number of frontend validation rules.",
+      "option_c": "C. Add a Content Security Policy header.",
+      "option_d": "D. Hide the redemption button after the first click.",
+      "correct_answer": "A",
+      "explanation": "Atomic transactions or locks ensure that checking and updating shared state occur as one protected operation, preventing competing requests from exploiting the gap."
+    },
+    {
+      "question": "A penetration tester wants to identify business-logic flaws in an online payment system. Which testing strategy is most appropriate?",
+      "option_a": "A. Only scan for known CVEs in JavaScript libraries.",
+      "option_b": "B. Only enumerate open TCP ports.",
+      "option_c": "C. Map the intended payment workflow and test impossible values, out-of-order actions, repeated operations, and parallel requests.",
+      "option_d": "D. Only search the HTML source for script tags.",
+      "correct_answer": "C",
+      "explanation": "Business-logic testing requires understanding the intended process and challenging its assumptions through invalid values, workflow manipulation, and concurrency testing."
+    },
+    {
+      "question": "A web application uses a server-side state machine for checkout. What should happen when a client submits a confirmation request before completing payment?",
+      "option_a": "A. The server should accept the request because the client is authenticated.",
+      "option_b": "B. The server should verify the required previous state and reject the invalid transition.",
+      "option_c": "C. The server should execute the confirmation request twice.",
+      "option_d": "D. The server should redirect the request to the homepage without checking payment status.",
+      "correct_answer": "B",
+      "explanation": "A server-side state machine enforces valid workflow transitions independently of the client's navigation sequence."
+    },
+    {
+      "question": "What is security misconfiguration?",
+      "option_a": "A. A vulnerability caused exclusively by incorrect database normalization.",
+      "option_b": "B. A situation where an application or its supporting infrastructure is deployed with insecure settings.",
+      "option_c": "C. A vulnerability where client input is interpreted as a template expression.",
+      "option_d": "D. A problem caused only by weak session identifiers.",
+      "correct_answer": "B",
+      "explanation": "Security misconfiguration includes insecure defaults, exposed debugging features, excessive permissions, missing security headers, and improperly configured infrastructure."
+    },
+    {
+      "question": "Which of the following is an example of security misconfiguration?",
+      "option_a": "A. An application using parameterized SQL queries.",
+      "option_b": "B. An application implementing server-side output encoding.",
+      "option_c": "C. A production server exposing verbose stack traces and debug mode.",
+      "option_d": "D. An application enforcing transaction atomicity.",
+      "correct_answer": "C",
+      "explanation": "Exposing debug mode and verbose error information in production can disclose internal implementation details and assist attackers."
+    },
+    {
+      "question": "Which combination contains only examples of security misconfiguration discussed in the lecture?",
+      "option_a": "A. Default credentials, directory listing, exposed admin consoles, and world-readable cloud storage.",
+      "option_b": "B. SQL parameterization, output encoding, HMAC verification, and atomic transactions.",
+      "option_c": "C. Stored XSS, DOM XSS, SSTI, and reflected XSS.",
+      "option_d": "D. Race conditions, coupon stacking, negative quantities, and workflow bypass.",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies default credentials, directory listing, exposed administrative interfaces, and insecure cloud storage permissions as common misconfigurations."
+    },
+    {
+      "question": "An application developer discovers that the application code is secure but a third-party dependency contains a publicly documented vulnerability. Which OWASP category is most directly associated with this issue in the lecture?",
+      "option_a": "A. A05: Security Misconfiguration",
+      "option_b": "B. A06: Vulnerable and Outdated Components",
+      "option_c": "C. A03: Injection",
+      "option_d": "D. A01: Broken Access Control",
+      "correct_answer": "B",
+      "explanation": "A06 concerns vulnerable and outdated components. Third-party dependencies can introduce known vulnerabilities even when the application's own code is secure."
+    },
+    {
+      "question": "What is the primary purpose of an SBOM in dependency security?",
+      "option_a": "A. To list all users who have authenticated to the application.",
+      "option_b": "B. To store session cookies and encryption keys.",
+      "option_c": "C. To provide an inventory of software components and dependencies used by an application.",
+      "option_d": "D. To automatically remove all vulnerable application code.",
+      "correct_answer": "C",
+      "explanation": "A Software Bill of Materials provides visibility into the components and dependencies included in software, helping identify exposure to known vulnerabilities."
+    },
+    {
+      "question": "Which statement accurately describes Log4Shell (CVE-2021-44228) as presented in the lecture?",
+      "option_a": "A. It was an XSS vulnerability caused by unsafe HTML rendering.",
+      "option_b": "B. It affected a logging library that could resolve attacker-controlled JNDI lookups, potentially resulting in unauthenticated remote code execution.",
+      "option_c": "C. It was a CSRF vulnerability caused by missing SameSite cookies.",
+      "option_d": "D. It was a race condition in Java database transactions.",
+      "correct_answer": "B",
+      "explanation": "Log4Shell affected Log4j and allowed attacker-controlled JNDI lookups to trigger remote class retrieval and execution under vulnerable conditions."
+    },
+    {
+      "question": "Why can a malicious Log4Shell payload be supplied through a User-Agent header?",
+      "option_a": "A. The User-Agent header is always interpreted as JavaScript by browsers.",
+      "option_b": "B. HTTP headers are automatically converted into SQL statements.",
+      "option_c": "C. Application components may log attacker-controlled header values, triggering vulnerable Log4j lookup processing.",
+      "option_d": "D. The User-Agent header bypasses all network authentication mechanisms.",
+      "correct_answer": "C",
+      "explanation": "If a vulnerable application logs attacker-controlled values such as User-Agent, Log4j may process the malicious JNDI lookup during logging."
+    },
+    {
+      "question": "Which tools are specifically mentioned in the lecture for identifying vulnerable or outdated dependencies?",
+      "option_a": "A. Nmap and Hydra",
+      "option_b": "B. XSStrike and Turbo Intruder",
+      "option_c": "C. Wireshark and tcpdump",
+      "option_d": "D. retire.js and OWASP Dependency-Check",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies retire.js and OWASP Dependency-Check as tools for detecting vulnerable dependencies and outdated components."
+    },
+    {
+      "question": "What is the fundamental cause of HTTP request smuggling?",
+      "option_a": "A. A browser automatically sends session cookies to every website.",
+      "option_b": "B. A front-end proxy and back-end server disagree about where an HTTP request ends.",
+      "option_c": "C. An application accepts negative product quantities.",
+      "option_d": "D. A server executes untrusted template expressions.",
+      "correct_answer": "B",
+      "explanation": "Request smuggling occurs when HTTP request boundaries are interpreted differently by front-end and back-end components, allowing hidden requests to pass through."
+    },
+    {
+      "question": "Which HTTP headers are central to the classic CL.TE and TE.CL request-smuggling techniques?",
+      "option_a": "A. Host and Cookie",
+      "option_b": "B. Referer and User-Agent",
+      "option_c": "C. Content-Length and Transfer-Encoding",
+      "option_d": "D. Authorization and Accept",
+      "correct_answer": "C",
+      "explanation": "CL.TE and TE.CL arise from disagreements over Content-Length and Transfer-Encoding when determining HTTP request boundaries."
+    },
+    {
+      "question": "In a CL.TE request-smuggling scenario, which parsing behaviour does the name describe?",
+      "option_a": "A. The front-end uses Content-Length while the back-end uses Transfer-Encoding.",
+      "option_b": "B. The front-end uses Transfer-Encoding while the back-end uses Content-Length.",
+      "option_c": "C. Both servers exclusively use Content-Length.",
+      "option_d": "D. Both servers exclusively use Transfer-Encoding.",
+      "correct_answer": "A",
+      "explanation": "CL.TE means the front-end uses Content-Length and the back-end uses Transfer-Encoding, potentially causing the two systems to disagree about request boundaries."
+    },
+    {
+      "question": "What is a possible consequence of successful HTTP request smuggling?",
+      "option_a": "A. Automatic correction of all HTTP request headers.",
+      "option_b": "B. Prevention of all cache-related vulnerabilities.",
+      "option_c": "C. Automatic encryption of requests between users.",
+      "option_d": "D. Front-end security bypass, cache poisoning, or interference with another user's request.",
+      "correct_answer": "D",
+      "explanation": "Request smuggling can bypass front-end controls and cause the back-end to process unintended requests, potentially affecting subsequent users."
+    },
+    {
+      "question": "An HTTP request contains both Content-Length and Transfer-Encoding. What is a suitable mitigation against ambiguity in request parsing?",
+      "option_a": "A. Allow every intermediary to interpret the request independently.",
+      "option_b": "B. Reject ambiguous requests and ensure consistent parsing across the entire proxy and server chain.",
+      "option_c": "C. Disable authentication on the back-end server.",
+      "option_d": "D. Increase the Content-Length value until both servers accept the request.",
+      "correct_answer": "B",
+      "explanation": "The request-processing chain should agree on message boundaries. Rejecting ambiguous Content-Length and Transfer-Encoding combinations reduces desynchronisation risks."
+    },
+    {
+      "question": "Which activity belongs primarily to the Design phase of the secure SDLC described in the lecture?",
+      "option_a": "A. Threat modelling, secure requirements, and abuse cases.",
+      "option_b": "B. Dependency scanning and secret scanning.",
+      "option_c": "C. Penetration testing and DAST.",
+      "option_d": "D. Logging, alerting, and incident response.",
+      "correct_answer": "A",
+      "explanation": "The Design phase establishes security requirements, performs threat modelling, and identifies abuse cases before implementation."
+    },
+    {
+      "question": "Which sequence correctly represents the secure SDLC phases presented in the lecture?",
+      "option_a": "A. Build → Design → Deploy → Code → Monitor → Test",
+      "option_b": "B. Design → Code → Build → Test → Deploy → Monitor",
+      "option_c": "C. Code → Build → Design → Monitor → Deploy → Test",
+      "option_d": "D. Test → Deploy → Design → Code → Build → Monitor",
+      "correct_answer": "B",
+      "explanation": "The lecture presents the sequence Design, Code, Build, Test, Deploy, and Monitor, with security controls integrated throughout."
+    },
+    {
+      "question": "Which security activity is most closely associated with the Build phase of the secure SDLC?",
+      "option_a": "A. Threat modelling and secure requirements.",
+      "option_b": "B. Penetration testing and dynamic application testing.",
+      "option_c": "C. Dependency scanning and secret scanning.",
+      "option_d": "D. Incident response and security alerting.",
+      "correct_answer": "C",
+      "explanation": "The Build phase includes Software Composition Analysis (SCA) and secret scanning to identify vulnerable dependencies and exposed credentials."
+    },
+    {
+      "question": "A company discovers XSS vulnerabilities during a production penetration test. It wants to prevent similar vulnerabilities from being introduced in future development. Which SDLC activities are most directly relevant?",
+      "option_a": "A. Code-stage secure coding, output encoding, SAST, and code review.",
+      "option_b": "B. Monitor-stage logging and incident response only.",
+      "option_c": "C. Deploy-stage firewall configuration only.",
+      "option_d": "D. Build-stage dependency scanning only.",
+      "correct_answer": "A",
+      "explanation": "The Code phase includes secure coding, output encoding, static analysis, and code review, helping prevent XSS before deployment."
+    },
+    {
+      "question": "Which statement best captures the central security principle connecting the three parts of the Web Application Security lecture?",
+      "option_a": "A. Every web vulnerability can be eliminated by installing a WAF.",
+      "option_b": "B. All vulnerabilities originate from weak password hashing.",
+      "option_c": "C. Web security depends primarily on hiding application source code.",
+      "option_d": "D. Applications repeatedly become vulnerable when they trust client-controlled identity, input, browser behaviour, or business values.",
+      "correct_answer": "D",
+      "explanation": "The lecture's synthesis identifies misplaced trust in client-controlled information as a common root cause across access-control, injection, browser-side, and business-logic vulnerabilities."
+    }
+  ]
+}

@@ -1,0 +1,1300 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary purpose of penetration testing?",
+      "option_a": "To monitor employee productivity",
+      "option_b": "To proactively assess security by simulating attacks",
+      "option_c": "To improve network performance",
+      "option_d": "To automatically repair operating system vulnerabilities",
+      "correct_answer": "B",
+      "explanation": "Penetration testing is a proactive security assessment that simulates attacks against systems to identify vulnerabilities and evaluate security controls."
+    },
+    {
+      "question": "Which activity is an important objective of penetration testing?",
+      "option_a": "Increasing the number of network services",
+      "option_b": "Replacing all existing security policies",
+      "option_c": "Identifying threats and vulnerabilities affecting organizational assets",
+      "option_d": "Eliminating the need for security monitoring",
+      "correct_answer": "C",
+      "explanation": "Penetration testing identifies threats and vulnerabilities so organizations can implement remediation before attackers exploit them."
+    },
+    {
+      "question": "Which statement best describes Blue Teaming?",
+      "option_a": "A security approach focused on analyzing security controls, detecting attacks and mitigating them",
+      "option_b": "An approach focused exclusively on exploiting external networks",
+      "option_c": "A technique for gathering publicly available information",
+      "option_d": "A method of obtaining administrator privileges",
+      "correct_answer": "A",
+      "explanation": "Blue Teams evaluate the efficiency of security controls and detect and mitigate attacks, including those performed by Red Teams."
+    },
+    {
+      "question": "What is the primary responsibility of a Red Team?",
+      "option_a": "Managing employee access requests",
+      "option_b": "Installing operating system updates",
+      "option_c": "Monitoring security logs exclusively",
+      "option_d": "Simulating attacks to identify vulnerabilities from an attacker's perspective",
+      "correct_answer": "D",
+      "explanation": "Red Teams simulate adversarial activities, often with limited or no prior access, to evaluate an organization's security."
+    },
+    {
+      "question": "A penetration tester receives no information about the target organization, its network or its infrastructure. Which testing approach is being used?",
+      "option_a": "White box testing",
+      "option_b": "Black box testing",
+      "option_c": "Grey box testing",
+      "option_d": "Blue Team testing",
+      "correct_answer": "B",
+      "explanation": "Black box testing is conducted without prior knowledge of the target system, simulating an external attacker's initial perspective."
+    },
+    {
+      "question": "A security auditor receives the target's network architecture, source code, operating system information and complete system documentation. Which testing approach is most appropriate?",
+      "option_a": "Black box testing",
+      "option_b": "Grey box testing",
+      "option_c": "White box testing",
+      "option_d": "External footprinting",
+      "correct_answer": "C",
+      "explanation": "White box testing provides the tester with complete knowledge of the target system and its infrastructure."
+    },
+    {
+      "question": "A tester receives only the target's IP addresses and limited operating system information. Which approach does this represent?",
+      "option_a": "Grey box testing",
+      "option_b": "White box testing",
+      "option_c": "Black box testing",
+      "option_d": "Blue Teaming",
+      "correct_answer": "A",
+      "explanation": "Grey box testing provides limited prior knowledge, representing a situation where an attacker may possess some insider information."
+    },
+    {
+      "question": "Which of the following is NOT explicitly identified as a security assessment target in the lecture?",
+      "option_a": "Wireless networks",
+      "option_b": "Network devices",
+      "option_c": "Applications and databases",
+      "option_d": "Employee salary structures",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies network devices, email and web interfaces, wireless networks, applications and databases as assessment targets."
+    },
+    {
+      "question": "Which option contains only attack surfaces identified in the lecture?",
+      "option_a": "Software, databases, encryption and backups",
+      "option_b": "Software, hardware, network and users",
+      "option_c": "Hardware, firewalls, passwords and databases",
+      "option_d": "Users, operating systems, policies and procedures",
+      "correct_answer": "B",
+      "explanation": "The four attack surfaces identified are software, hardware, network and users."
+    },
+    {
+      "question": "Ethical hackers are commonly known by which name?",
+      "option_a": "Black hat hackers",
+      "option_b": "Grey hat hackers",
+      "option_c": "White hat hackers",
+      "option_d": "Script-only hackers",
+      "correct_answer": "C",
+      "explanation": "Ethical hackers are also known as white hat hackers. They use techniques similar to malicious hackers to identify security weaknesses."
+    },
+    {
+      "question": "Which sequence correctly represents the seven stages of penetration testing presented in the lecture?",
+      "option_a": "Pre-engagement, information-gathering, threat-modeling, vulnerability analysis, exploitation, post-exploitation, reporting",
+      "option_b": "Information-gathering, exploitation, pre-engagement, reporting, threat-modeling, scanning, mitigation",
+      "option_c": "Pre-engagement, exploitation, reporting, information-gathering, vulnerability analysis, threat-modeling, post-exploitation",
+      "option_d": "Threat-modeling, pre-engagement, scanning, reporting, exploitation, information-gathering, post-exploitation",
+      "correct_answer": "A",
+      "explanation": "The lecture defines seven stages in this order, beginning with pre-engagement and ending with reporting."
+    },
+    {
+      "question": "During which penetration testing stage should the tester understand the client's business goals and testing expectations?",
+      "option_a": "Exploitation",
+      "option_b": "Post-exploitation",
+      "option_c": "Vulnerability analysis",
+      "option_d": "Pre-engagement",
+      "correct_answer": "D",
+      "explanation": "Pre-engagement establishes mutual understanding of the client's business goals, concerns, requirements and expectations."
+    },
+    {
+      "question": "Which item should be agreed upon during pre-engagement?",
+      "option_a": "The attacker's preferred operating system",
+      "option_b": "Testing scope and testing window",
+      "option_c": "The exact vulnerabilities that must be discovered",
+      "option_d": "The attacker's personal social media accounts",
+      "correct_answer": "B",
+      "explanation": "Scope and testing windows are important pre-engagement agreements that define what can be tested and when."
+    },
+    {
+      "question": "What is the primary purpose of agreeing on a testing scope before conducting a penetration test?",
+      "option_a": "To guarantee that every system contains vulnerabilities",
+      "option_b": "To eliminate the need for client communication",
+      "option_c": "To establish which systems and activities are authorized for testing",
+      "option_d": "To allow unrestricted access to all organizational resources",
+      "correct_answer": "C",
+      "explanation": "The scope defines the authorized boundaries of the engagement and helps prevent testing outside the client's permission."
+    },
+    {
+      "question": "Why should a penetration tester identify fragile devices during pre-engagement?",
+      "option_a": "To avoid causing unexpected disruption or damage during testing",
+      "option_b": "To ensure that fragile devices are always exploited first",
+      "option_c": "To exclude all network devices from the assessment",
+      "option_d": "To determine the client's payment method",
+      "correct_answer": "A",
+      "explanation": "Identifying fragile devices allows testers to adjust their activities and avoid damaging sensitive or critical infrastructure."
+    },
+    {
+      "question": "Which of the following is NOT listed as an important pre-engagement discussion item?",
+      "option_a": "Nondisclosure agreement clause",
+      "option_b": "Contact information",
+      "option_c": "Payment terms",
+      "option_d": "Guaranteed discovery of every vulnerability",
+      "correct_answer": "D",
+      "explanation": "The lecture lists scope, testing window, contact information, a get-out-of-jail-free card, payment terms and nondisclosure agreements."
+    },
+    {
+      "question": "What is the main purpose of the information-gathering stage?",
+      "option_a": "To immediately install malware on the target",
+      "option_b": "To learn as much as possible about the target's internal and external security architecture",
+      "option_c": "To produce the final executive summary",
+      "option_d": "To permanently remove vulnerable services",
+      "correct_answer": "B",
+      "explanation": "Information gathering, also called footprinting, collects information about the target's internal and external security architecture."
+    },
+    {
+      "question": "Why can information gathering take weeks or months?",
+      "option_a": "Because it requires rebuilding the target network",
+      "option_b": "Because it is performed only after reporting",
+      "option_c": "Because comprehensive information collection and analysis can be time-consuming",
+      "option_d": "Because all information must be obtained through exploitation",
+      "correct_answer": "C",
+      "explanation": "Footprinting can require extensive research to understand the target's infrastructure, services, security mechanisms and exposure."
+    },
+    {
+      "question": "Which activity is most closely associated with the scanning stage?",
+      "option_a": "Identifying network information, specific IP addresses and available services",
+      "option_b": "Agreeing on payment terms",
+      "option_c": "Preparing an executive summary",
+      "option_d": "Training employees about social engineering",
+      "correct_answer": "A",
+      "explanation": "Scanning investigates the target network more deeply and helps identify specific IP addresses, valuable data and running services."
+    },
+    {
+      "question": "What is the primary objective of threat modeling?",
+      "option_a": "To replace all vulnerability scanners",
+      "option_b": "To calculate employee productivity",
+      "option_c": "To automatically exploit every discovered weakness",
+      "option_d": "To identify and analyze threats and vulnerabilities against security objectives",
+      "correct_answer": "D",
+      "explanation": "Threat modeling identifies, diagnoses and evaluates potential threats and vulnerabilities to support risk management."
+    },
+    {
+      "question": "What distinguishes vulnerability analysis from exploitation?",
+      "option_a": "Vulnerability analysis is performed only after reporting",
+      "option_b": "Vulnerability analysis identifies weaknesses, whereas exploitation attempts to take advantage of them",
+      "option_c": "Exploitation is used only for collecting public information",
+      "option_d": "Both activities are exclusively related to employee training",
+      "correct_answer": "B",
+      "explanation": "Vulnerability analysis examines security weaknesses, while exploitation attempts to use an identified vulnerability against the target."
+    },
+    {
+      "question": "Which activity is associated with gaining access and post-exploitation?",
+      "option_a": "Agreeing on the testing window",
+      "option_b": "Identifying the client's business goals",
+      "option_c": "Maintaining access and escalating privileges",
+      "option_d": "Collecting initial WHOIS information",
+      "correct_answer": "C",
+      "explanation": "The lecture associates gaining access with maintaining access and escalating privileges to administrator level."
+    },
+    {
+      "question": "Which of the following is an example of exploitation mentioned in the lecture?",
+      "option_a": "Cross-site scripting",
+      "option_b": "WHOIS lookup",
+      "option_c": "Network mapping",
+      "option_d": "Email header analysis",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies web server attacks, buffer overflows and cross-site scripting as examples of exploitation."
+    },
+    {
+      "question": "What is the primary purpose of the reporting stage?",
+      "option_a": "To discover the client's IP address",
+      "option_b": "To establish the testing scope",
+      "option_c": "To perform privilege escalation",
+      "option_d": "To present penetration testing results and identified vulnerabilities",
+      "correct_answer": "D",
+      "explanation": "Reporting is the final penetration testing stage and communicates the results, including vulnerability classifications and an executive summary."
+    },
+    {
+      "question": "Which vulnerability severity classifications are specifically mentioned in the lecture?",
+      "option_a": "Critical, Urgent and Informational",
+      "option_b": "High, Medium and Low",
+      "option_c": "Severe, Moderate and Negligible",
+      "option_d": "Level 1, Level 2 and Level 3",
+      "correct_answer": "B",
+      "explanation": "The lecture states that vulnerabilities may be categorized as High, Medium and Low in the final report."
+    },
+    {
+      "question": "Which of the following is a security practice mentioned in the lecture?",
+      "option_a": "Disabling all endpoint protection",
+      "option_b": "Keeping unnecessary services active",
+      "option_c": "Patch and configuration management",
+      "option_d": "Avoiding employee security training",
+      "correct_answer": "C",
+      "explanation": "Patch and configuration management is one of the recommended practices for maintaining security."
+    },
+    {
+      "question": "What is an asset in the context of organizational risk management?",
+      "option_a": "A tangible or intangible item that can be assigned a value",
+      "option_b": "Only a physical computer owned by an organization",
+      "option_c": "An individual attempting to attack a network",
+      "option_d": "A security weakness in an application",
+      "correct_answer": "A",
+      "explanation": "Assets include tangible and intangible items that have organizational value and need protection."
+    },
+    {
+      "question": "Which option contains only intangible assets?",
+      "option_a": "Laptop and printer",
+      "option_b": "Printer and trade secret",
+      "option_c": "Laptop and organizational data",
+      "option_d": "Organizational data and trade secrets",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies data and trade secrets as intangible assets, whereas laptops and printers are tangible assets."
+    },
+    {
+      "question": "According to the risk relationship presented in the lecture, how is risk calculated?",
+      "option_a": "Risk = Threats + Assets",
+      "option_b": "Risk = Threats × Vulnerability",
+      "option_c": "Risk = Assets × Security Controls",
+      "option_d": "Risk = Vulnerability − Threats",
+      "correct_answer": "B",
+      "explanation": "The lecture presents the relationship Risk = Threats × Vulnerability, showing that risk depends on both factors."
+    },
+    {
+      "question": "What is a threat?",
+      "option_a": "A security policy that protects an organization",
+      "option_b": "A weakness that exists in an application",
+      "option_c": "Anything that can intentionally or accidentally exploit a vulnerability and damage an asset",
+      "option_d": "A method of assigning monetary value to assets",
+      "correct_answer": "C",
+      "explanation": "A threat is something capable of exploiting a vulnerability and causing harm or destruction to an asset."
+    },
+    {
+      "question": "Which of the following is an example of a vulnerability?",
+      "option_a": "An unpatched internet-connected system",
+      "option_b": "A hacker attempting unauthorized access",
+      "option_c": "A natural disaster",
+      "option_d": "A disgruntled employee",
+      "correct_answer": "A",
+      "explanation": "An unpatched internet-connected system can contain security weaknesses that a threat may exploit."
+    },
+    {
+      "question": "Which option correctly matches the concepts?",
+      "option_a": "Threat: security flaw; Vulnerability: attacker; Asset: security policy",
+      "option_b": "Threat: printer; Vulnerability: data; Asset: hacker",
+      "option_c": "Threat: security control; Vulnerability: valuable information; Asset: attacker",
+      "option_d": "Threat: potential source of harm; Vulnerability: security weakness; Asset: valuable resource",
+      "correct_answer": "D",
+      "explanation": "Threats can exploit vulnerabilities, and the resulting harm affects assets that have organizational value."
+    },
+    {
+      "question": "According to the lecture's simplified risk model, what happens when a threat exists but there is no vulnerability?",
+      "option_a": "Risk automatically becomes critical",
+      "option_b": "There is no risk according to the stated relationship",
+      "option_c": "The asset becomes intangible",
+      "option_d": "The threat becomes a security control",
+      "correct_answer": "B",
+      "explanation": "The lecture explains that if a threat exists without a vulnerability, there is no risk under its simplified Risk = Threats × Vulnerability model."
+    },
+    {
+      "question": "What is footprinting?",
+      "option_a": "The process of removing malware from an operating system",
+      "option_b": "The process of encrypting network traffic",
+      "option_c": "A thorough information-gathering exercise about a target",
+      "option_d": "A method of creating employee accounts",
+      "correct_answer": "C",
+      "explanation": "Footprinting is a thorough information-gathering exercise and is identified as the first phase of ethical hacking."
+    },
+    {
+      "question": "Which of the following is an objective of footprinting?",
+      "option_a": "Understanding the target's security posture",
+      "option_b": "Guaranteeing administrator access",
+      "option_c": "Disabling all security mechanisms",
+      "option_d": "Replacing the target's network infrastructure",
+      "correct_answer": "A",
+      "explanation": "Footprinting helps understand security posture, reduce the focus area, identify vulnerabilities and draw a network map."
+    },
+    {
+      "question": "Which sequence correctly represents the footprinting steps described in the lecture?",
+      "option_a": "Discover active machines, gather information, exploit systems, determine OS, map network",
+      "option_b": "Map network, determine OS, gather information, locate network range, discover active machines",
+      "option_c": "Gather information, discover services, exploit vulnerabilities, locate network range, report",
+      "option_d": "Gather information, locate network range, discover active machines, determine operating systems, define running services, map the network",
+      "correct_answer": "D",
+      "explanation": "The lecture presents this ordered sequence, starting with information gathering and ending with network mapping."
+    },
+    {
+      "question": "Which source can provide information about an organization's domain registration?",
+      "option_a": "Ping",
+      "option_b": "WHOIS",
+      "option_c": "Traceroute",
+      "option_d": "ICMP",
+      "correct_answer": "B",
+      "explanation": "WHOIS services provide domain registration information that can contribute to footprinting."
+    },
+    {
+      "question": "Which of the following is a public information source useful for reconnaissance?",
+      "option_a": "A private encrypted memory register",
+      "option_b": "An unconnected hardware component",
+      "option_c": "Job postings",
+      "option_d": "A locally stored random number",
+      "correct_answer": "C",
+      "explanation": "Job postings can reveal technologies and infrastructure used by an organization, including operating systems and networking products."
+    },
+    {
+      "question": "What is competitive intelligence in the context of footprinting?",
+      "option_a": "A nontechnical approach to gathering information about an organization",
+      "option_b": "A technique for physically stealing company documents",
+      "option_c": "A process of exploiting database vulnerabilities",
+      "option_d": "A method of transferring DNS zones",
+      "correct_answer": "A",
+      "explanation": "The lecture describes competitive intelligence as a useful nontechnical reconnaissance approach and distinguishes it from industrial espionage."
+    },
+    {
+      "question": "Which question is NOT among the initial reconnaissance questions presented in the lecture?",
+      "option_a": "Who is the target?",
+      "option_b": "What is the target?",
+      "option_c": "Where is the target?",
+      "option_d": "What is the target's administrator password?",
+      "correct_answer": "D",
+      "explanation": "The initial questions include who, what, where, when and how. The how becomes evident after reconnaissance."
+    },
+    {
+      "question": "Why should reconnaissance findings be documented?",
+      "option_a": "To eliminate the requirement for vulnerability analysis",
+      "option_b": "To support the development of an effective testing approach and maintain organized findings",
+      "option_c": "To ensure that all discovered information is publicly disclosed",
+      "option_d": "To replace the final penetration testing report",
+      "correct_answer": "B",
+      "explanation": "Documenting findings organizes collected intelligence and helps develop an appropriate approach to the assessment."
+    },
+    {
+      "question": "Which information could be included in a footprinting documentation template?",
+      "option_a": "Only the organization's annual revenue",
+      "option_b": "Only the tester's personal contact details",
+      "option_c": "Physical location, website URL, social networking data, IP ranges and email address schema",
+      "option_d": "Only the final vulnerability severity ratings",
+      "correct_answer": "C",
+      "explanation": "The lecture lists these details, along with defensive devices, as useful information to record during footprinting."
+    },
+    {
+      "question": "What are Googlebots?",
+      "option_a": "Google's web crawling bots that detect new and updated web pages",
+      "option_b": "Automated DNS zone transfer servers",
+      "option_c": "Google's email encryption mechanisms",
+      "option_d": "Tools for scanning physical network devices",
+      "correct_answer": "A",
+      "explanation": "Googlebots crawl the web and detect new and updated pages for Google's search infrastructure."
+    },
+    {
+      "question": "What is the Google Hacking Database (GHDB) associated with?",
+      "option_a": "DNS security configuration",
+      "option_b": "Email header validation",
+      "option_c": "Network routing information",
+      "option_d": "Google search techniques and specialized search queries used to discover exposed information",
+      "correct_answer": "D",
+      "explanation": "The GHDB, popularized by Johnny Long, is associated with specialized Google search techniques for discovering exposed information."
+    },
+    {
+      "question": "Which Google search operator restricts results to a specified domain?",
+      "option_a": "related:",
+      "option_b": "site:",
+      "option_c": "cache:",
+      "option_d": "allintext:",
+      "correct_answer": "B",
+      "explanation": "The site: operator restricts search results to a specified domain."
+    },
+    {
+      "question": "Which operator is used to find similar web pages?",
+      "option_a": "inurl:",
+      "option_b": "allintitle:",
+      "option_c": "related:",
+      "option_d": "filetype:",
+      "correct_answer": "C",
+      "explanation": "The related: operator searches for web pages similar to the specified page or domain."
+    },
+    {
+      "question": "What is the purpose of the cache: operator according to the lecture?",
+      "option_a": "To display web pages stored in Google's cache",
+      "option_b": "To identify active IP addresses",
+      "option_c": "To identify DNS mail servers",
+      "option_d": "To retrieve email authentication records",
+      "correct_answer": "A",
+      "explanation": "The cache: operator is described as a way to display cached versions of web pages."
+    },
+    {
+      "question": "Which operator searches for websites containing a specified keyword in their title?",
+      "option_a": "allinurl:",
+      "option_b": "allintext:",
+      "option_c": "intext:",
+      "option_d": "allintitle:",
+      "correct_answer": "D",
+      "explanation": "The allintitle: operator searches for pages containing the specified keyword or keywords in their titles."
+    },
+    {
+      "question": "Which operator is specifically associated with finding documents containing a particular keyword?",
+      "option_a": "related:",
+      "option_b": "intext:",
+      "option_c": "cache:",
+      "option_d": "site:",
+      "correct_answer": "B",
+      "explanation": "The lecture describes intext: as searching for documents containing a specific keyword."
+    },
+    {
+      "question": "What is the purpose of the allinurl: operator?",
+      "option_a": "To search for a keyword in cached web pages",
+      "option_b": "To identify a website's mail server",
+      "option_c": "To find websites containing a specified keyword in their URLs",
+      "option_d": "To retrieve a website's historical snapshot",
+      "correct_answer": "C",
+      "explanation": "The allinurl: operator searches for specified keywords within website URLs."
+    },
+    {
+      "question": "Which statement about Google search queries is correct according to the lecture?",
+      "option_a": "Searches are not case-sensitive",
+      "option_b": "Searches always require uppercase keywords",
+      "option_c": "Spaces cannot be used in search queries",
+      "option_d": "Combined search terms are not supported",
+      "correct_answer": "A",
+      "explanation": "The lecture states that Google searches are not case-sensitive and demonstrates combining search terms."
+    },
+    {
+      "question": "What is the primary purpose of the query 'intitle:index.of inurl:ftp' in the lecture's examples?",
+      "option_a": "To identify mail exchange records",
+      "option_b": "To discover historical website snapshots",
+      "option_c": "To find documents containing employee email addresses",
+      "option_d": "To search for FTP-related directory listings",
+      "correct_answer": "D",
+      "explanation": "The lecture uses this combination to demonstrate searching for FTP servers and directory listings."
+    },
+    {
+      "question": "Which search query is most appropriate for searching publicly indexed environment files containing a database password-related keyword?",
+      "option_a": "related:database site:password",
+      "option_b": "db_password filetype:env",
+      "option_c": "cache:database intext:password",
+      "option_d": "allintitle:database filetype:pdf",
+      "correct_answer": "B",
+      "explanation": "The lecture specifically demonstrates db_password filetype:env as an example of locating potentially exposed environment files. Such searches should only be conducted for authorized security research."
+    },
+    {
+      "question": "What is social engineering?",
+      "option_a": "A process of identifying network topology",
+      "option_b": "A method of encrypting organizational communication",
+      "option_c": "Influencing someone into revealing information",
+      "option_d": "A technique for identifying operating system versions",
+      "correct_answer": "C",
+      "explanation": "Social engineering manipulates people into disclosing information and can result in identity theft and data leakage."
+    },
+    {
+      "question": "Which of the following is a social engineering technique mentioned in the lecture?",
+      "option_a": "Shoulder surfing",
+      "option_b": "DNS zone transfer",
+      "option_c": "IP fragmentation",
+      "option_d": "Operating system fingerprinting",
+      "correct_answer": "A",
+      "explanation": "Shoulder surfing is one of the techniques mentioned, alongside telephone manipulation, online attacks, dumpster diving and persuasion."
+    },
+    {
+      "question": "Which group contains only information-gathering techniques associated with social engineering in the lecture?",
+      "option_a": "DNS, ICMP, traceroute and ping",
+      "option_b": "WHOIS, Shodan, Maltego and FOCA",
+      "option_c": "Port scanning, subnetting, routing and switching",
+      "option_d": "Eavesdropping, persuasion, phishing and impersonation",
+      "correct_answer": "D",
+      "explanation": "The lecture lists eavesdropping, persuasion, phishing, pharming, impersonation and social media under information gathering."
+    },
+    {
+      "question": "What is a major security consequence of compromised email accounts?",
+      "option_a": "Automatic DNS zone transfers",
+      "option_b": "Identity theft and spear-phishing attacks",
+      "option_c": "Improved email authentication",
+      "option_d": "Automatic removal of malware",
+      "correct_answer": "B",
+      "explanation": "The lecture explains that compromised email addresses can support identity theft and spear phishing and can threaten the account owner's contacts."
+    },
+    {
+      "question": "What is email spoofing?",
+      "option_a": "Encrypting the email subject",
+      "option_b": "Removing all email headers",
+      "option_c": "Manipulating the From field so a message appears to originate from a legitimate source",
+      "option_d": "Creating a backup of an email account",
+      "correct_answer": "C",
+      "explanation": "Email forgery or spoofing involves falsifying the From field to make a message appear to come from a valid source."
+    },
+    {
+      "question": "What is the primary purpose of Sender Policy Framework (SPF) as described in the lecture?",
+      "option_a": "To help prevent unauthorized senders from forging email From fields",
+      "option_b": "To encrypt all email attachments",
+      "option_c": "To hide the originating IP address from email servers",
+      "option_d": "To automatically delete phishing emails",
+      "correct_answer": "A",
+      "explanation": "The lecture describes SPF as an extension of SMTP that helps prevent spammers from forging the From field."
+    },
+    {
+      "question": "How should email headers be examined according to the lecture?",
+      "option_a": "Only the subject field should be examined",
+      "option_b": "Only the first header line is relevant",
+      "option_c": "Headers should be read from the top down",
+      "option_d": "Headers should be read from the bottom up to investigate the message journey",
+      "correct_answer": "D",
+      "explanation": "Email headers contain information about the message's journey and validation checks. The lecture specifically recommends reading them from the bottom up."
+    },
+    {
+      "question": "What is website mirroring?",
+      "option_a": "Changing a website's DNS records",
+      "option_b": "Downloading an entire website for offline examination",
+      "option_c": "Monitoring the website's live traffic",
+      "option_d": "Transferring a DNS zone to another server",
+      "correct_answer": "B",
+      "explanation": "Website mirroring downloads the entire website, allowing researchers to examine its content, information and concealed comments."
+    },
+    {
+      "question": "Which pair of tools is specifically mentioned for website mirroring?",
+      "option_a": "Shodan and Maltego",
+      "option_b": "Nslookup and dig",
+      "option_c": "HTTrack and Wget",
+      "option_d": "Ping and Tracert",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies HTTrack, Wget and Web Data Extracter as website mirroring tools."
+    },
+    {
+      "question": "What is the primary purpose of website traffic monitoring during reconnaissance?",
+      "option_a": "To understand website rankings, geographical users and traffic statistics",
+      "option_b": "To identify the organization's employee passwords",
+      "option_c": "To perform DNS zone transfers",
+      "option_d": "To automatically discover all application vulnerabilities",
+      "correct_answer": "A",
+      "explanation": "Traffic monitoring can reveal rankings, geographical distribution, worldwide users and daily time spent on a website."
+    },
+    {
+      "question": "What does OSINT stand for?",
+      "option_a": "Operating System Internal Network Technology",
+      "option_b": "Online Security Information Network Testing",
+      "option_c": "Open System Integration and Network Tracking",
+      "option_d": "Open-Source Intelligence",
+      "correct_answer": "D",
+      "explanation": "OSINT stands for Open-Source Intelligence and involves gathering intelligence from publicly available sources."
+    },
+    {
+      "question": "Which tool is associated with harvesting domain names, WHOIS information and IP addresses?",
+      "option_a": "HTTrack",
+      "option_b": "Maltego",
+      "option_c": "Traceroute",
+      "option_d": "Nslookup",
+      "correct_answer": "B",
+      "explanation": "The lecture describes Maltego as an OSINT tool that can harvest domain names, WHOIS information and IP addresses, among other information."
+    },
+    {
+      "question": "Which tool is specifically designed to discover devices connected to the Internet?",
+      "option_a": "Metagoofil",
+      "option_b": "FOCA",
+      "option_c": "Shodan",
+      "option_d": "HTTrack",
+      "correct_answer": "C",
+      "explanation": "Shodan is identified in the lecture as a tool for discovering devices connected to the Internet."
+    },
+    {
+      "question": "What is the primary purpose of Metagoofil?",
+      "option_a": "Extracting metadata from publicly available documents belonging to a target organization",
+      "option_b": "Monitoring DNS cache poisoning",
+      "option_c": "Tracing network routes",
+      "option_d": "Analyzing email authentication records",
+      "correct_answer": "A",
+      "explanation": "Metagoofil extracts metadata from public documents such as PDF, DOC, XLS and PPT files associated with a target organization."
+    },
+    {
+      "question": "What does FOCA primarily investigate?",
+      "option_a": "Live network traffic",
+      "option_b": "DNS flooding activity",
+      "option_c": "Email routing paths",
+      "option_d": "Metadata and hidden information in collected documents",
+      "correct_answer": "D",
+      "explanation": "FOCA, or Fingerprinting Organizations with Collected Archives, analyzes documents to identify metadata and hidden information."
+    },
+    {
+      "question": "Which tool is specifically described as harvesting information from public sources?",
+      "option_a": "Shodan",
+      "option_b": "theHarvester",
+      "option_c": "HTTrack",
+      "option_d": "FOCA",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies theHarvester as a Kali Linux information-gathering tool that harvests information from public sources."
+    },
+    {
+      "question": "What is the primary function of the Domain Name System (DNS)?",
+      "option_a": "To encrypt all network packets",
+      "option_b": "To assign passwords to domain administrators",
+      "option_c": "To convert hostnames into IP addresses",
+      "option_d": "To identify physical network locations",
+      "correct_answer": "C",
+      "explanation": "DNS translates human-readable hostnames into IP addresses so systems can locate network resources."
+    },
+    {
+      "question": "Which port is used by DNS?",
+      "option_a": "Port 53",
+      "option_b": "Port 25",
+      "option_c": "Port 80",
+      "option_d": "Port 443",
+      "correct_answer": "A",
+      "explanation": "DNS uses port 53 over UDP or TCP according to the lecture."
+    },
+    {
+      "question": "According to the lecture, when is TCP used for DNS?",
+      "option_a": "Only for normal web browsing",
+      "option_b": "Only for ICMP communication",
+      "option_c": "Only for email authentication",
+      "option_d": "For zone transfers",
+      "correct_answer": "D",
+      "explanation": "The lecture states that DNS uses TCP for zone transfers, while DNS also uses UDP for regular queries."
+    },
+    {
+      "question": "Which DNS record maps a hostname to its IPv4 address?",
+      "option_a": "MX",
+      "option_b": "A",
+      "option_c": "PTR",
+      "option_d": "CNAME",
+      "correct_answer": "B",
+      "explanation": "An A record contains the IPv4 address associated with a hostname."
+    },
+    {
+      "question": "Which DNS record identifies a domain's mail server?",
+      "option_a": "NS",
+      "option_b": "PTR",
+      "option_c": "MX",
+      "option_d": "SRV",
+      "correct_answer": "C",
+      "explanation": "An MX record identifies the mail server responsible for receiving email for a domain."
+    },
+    {
+      "question": "Which DNS record identifies a domain's authoritative name server?",
+      "option_a": "NS",
+      "option_b": "A",
+      "option_c": "HINFO",
+      "option_d": "CNAME",
+      "correct_answer": "A",
+      "explanation": "An NS record identifies the name servers responsible for a DNS domain."
+    },
+    {
+      "question": "What is the purpose of a CNAME record?",
+      "option_a": "To identify a domain's mail server",
+      "option_b": "To map an IP address to a hostname",
+      "option_c": "To provide administrative zone information",
+      "option_d": "To create an alias for another hostname",
+      "correct_answer": "D",
+      "explanation": "CNAME stands for Canonical Name and allows one hostname to act as an alias for another hostname."
+    },
+    {
+      "question": "Which DNS record contains administrative information about a DNS zone?",
+      "option_a": "PTR",
+      "option_b": "SOA",
+      "option_c": "MX",
+      "option_d": "A",
+      "correct_answer": "B",
+      "explanation": "The Start of Authority record contains administrative information about a DNS zone, including information relevant to zone transfers."
+    },
+    {
+      "question": "Which DNS record is associated with service information?",
+      "option_a": "A",
+      "option_b": "PTR",
+      "option_c": "SRV",
+      "option_d": "HINFO",
+      "correct_answer": "C",
+      "explanation": "SRV records provide information about services, including their locations and connection details."
+    },
+    {
+      "question": "Which DNS record provides IP-to-hostname mapping?",
+      "option_a": "PTR",
+      "option_b": "MX",
+      "option_c": "CNAME",
+      "option_d": "NS",
+      "correct_answer": "A",
+      "explanation": "A PTR record provides reverse DNS mapping, associating an IP address with a hostname."
+    },
+    {
+      "question": "Which DNS record is associated with host information?",
+      "option_a": "SOA",
+      "option_b": "SRV",
+      "option_c": "MX",
+      "option_d": "HINFO",
+      "correct_answer": "D",
+      "explanation": "HINFO is the DNS record type identified in the lecture as containing host information."
+    },
+    {
+      "question": "What is DNS footprinting primarily used for?",
+      "option_a": "Encrypting network communications",
+      "option_b": "Identifying hosts and information managed by the target's DNS infrastructure",
+      "option_c": "Installing security patches",
+      "option_d": "Monitoring employee behavior",
+      "correct_answer": "B",
+      "explanation": "DNS footprinting uses DNS lookup information and records to identify hosts and gather information about a target network."
+    },
+    {
+      "question": "Which of the following is a DNS threat identified in the lecture?",
+      "option_a": "Shoulder surfing",
+      "option_b": "Buffer overflow",
+      "option_c": "DNS cache poisoning",
+      "option_d": "Email mirroring",
+      "correct_answer": "C",
+      "explanation": "DNS cache poisoning is one of the DNS threats listed alongside zone file compromise and flooding attacks."
+    },
+    {
+      "question": "What is the main security concern associated with an unauthorized DNS zone transfer?",
+      "option_a": "It may expose DNS zone information and details about the target's infrastructure",
+      "option_b": "It automatically encrypts all domain records",
+      "option_c": "It disables all IP addresses on the network",
+      "option_d": "It prevents the use of UDP port 53",
+      "correct_answer": "A",
+      "explanation": "A zone transfer can disclose DNS records and infrastructure details. Restricting transfers to authorized servers is a recommended security practice."
+    },
+    {
+      "question": "Which security practice is recommended for DNS zone transfers?",
+      "option_a": "Allow transfers from every external host",
+      "option_b": "Disable all DNS records",
+      "option_c": "Allow unrestricted inbound TCP port 53 connections",
+      "option_d": "Restrict zone transfers to authorized servers",
+      "correct_answer": "D",
+      "explanation": "The lecture explicitly recommends restricting zone transfers to authorized servers to reduce unauthorized information disclosure."
+    },
+    {
+      "question": "Which utility is used to test network reachability through ICMP?",
+      "option_a": "Dig",
+      "option_b": "Ping",
+      "option_c": "Nslookup",
+      "option_d": "WHOIS",
+      "correct_answer": "B",
+      "explanation": "Ping uses ICMP to test whether a destination is reachable."
+    },
+    {
+      "question": "Which statement correctly compares Tracert and Traceroute?",
+      "option_a": "Both are exclusively DNS record extraction tools",
+      "option_b": "Tracert is Linux-only, while Traceroute is Windows-only",
+      "option_c": "Tracert is the Windows utility, while Traceroute is commonly used on Linux",
+      "option_d": "Both are email authentication protocols",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies Tracert as the Windows utility and Traceroute as the Linux equivalent."
+    },
+    {
+      "question": "What information can Traceroute provide?",
+      "option_a": "The network path and transit times through gateways",
+      "option_b": "The administrator's password",
+      "option_c": "The contents of encrypted email messages",
+      "option_d": "The complete contents of a DNS zone file",
+      "correct_answer": "A",
+      "explanation": "Traceroute identifies the path through intermediate gateways and provides transit-time information."
+    },
+    {
+      "question": "What is the primary purpose of nslookup?",
+      "option_a": "Extracting metadata from PDF files",
+      "option_b": "Monitoring online reputation",
+      "option_c": "Scanning wireless networks",
+      "option_d": "Diagnosing DNS-related information",
+      "correct_answer": "D",
+      "explanation": "Nslookup is an operating-system utility used for DNS diagnosis and supports interactive and non-interactive modes."
+    },
+    {
+      "question": "Which statement about dig is correct?",
+      "option_a": "It is exclusively a Windows graphical tool",
+      "option_b": "It is a DNS query utility native to Linux",
+      "option_c": "It is a website mirroring application",
+      "option_d": "It is used to analyze email headers",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies Domain Information Groper (dig) as a Linux-native DNS utility."
+    },
+    {
+      "question": "What is the primary purpose of the Wayback Machine?",
+      "option_a": "Discovering live network devices",
+      "option_b": "Extracting DNS records",
+      "option_c": "Viewing historical snapshots of websites",
+      "option_d": "Monitoring current email traffic",
+      "correct_answer": "C",
+      "explanation": "The Wayback Machine allows users to examine archived snapshots of websites from particular dates."
+    },
+    {
+      "question": "Which action is recommended to reduce the risk of exposing location information through photographs?",
+      "option_a": "Disable geotagging when posting pictures",
+      "option_b": "Publish photographs with full GPS metadata",
+      "option_c": "Share confidential photographs publicly",
+      "option_d": "Enable location tracking on every social account",
+      "correct_answer": "A",
+      "explanation": "Disabling geotagging helps prevent photographs from unintentionally exposing location information."
+    },
+    {
+      "question": "An organization discovers that an attacker has collected employee information from social media, job advertisements and publicly available documents. Which activity best describes the attacker's initial approach?",
+      "option_a": "Post-exploitation",
+      "option_b": "DNS cache poisoning",
+      "option_c": "Privilege escalation",
+      "option_d": "Footprinting and reconnaissance",
+      "correct_answer": "D",
+      "explanation": "The attacker is collecting publicly available information about the organization, which is the central purpose of footprinting and reconnaissance."
+    },
+    {
+      "question": "A company hires a penetration tester to evaluate its internet-facing systems. The tester receives only the organization's domain name and must discover the remaining infrastructure independently. Which approach best describes this engagement?",
+      "option_a": "White box testing",
+      "option_b": "Black box testing",
+      "option_c": "Grey box testing",
+      "option_d": "Internal configuration auditing",
+      "correct_answer": "B",
+      "explanation": "The tester has no prior infrastructure knowledge and must independently discover the target's information, which is characteristic of black box testing."
+    },
+    {
+      "question": "A penetration tester is about to scan a production network containing fragile industrial devices. The client has not provided any information about those devices. What is the most appropriate action?",
+      "option_a": "Immediately run aggressive scans against every device",
+      "option_b": "Exploit the devices to determine their operating systems",
+      "option_c": "Return to pre-engagement discussions and identify fragile systems and testing limitations",
+      "option_d": "Ignore the devices because scanning is always harmless",
+      "correct_answer": "C",
+      "explanation": "The lecture specifically identifies fragile devices as an important pre-engagement concern. Testing methods should be agreed upon to prevent unintended disruption."
+    },
+    {
+      "question": "During a penetration test, a tester discovers an outdated application containing a known weakness. Before attempting to exploit it, which stage is most directly responsible for examining and identifying that weakness?",
+      "option_a": "Vulnerability analysis",
+      "option_b": "Reporting",
+      "option_c": "Pre-engagement",
+      "option_d": "Post-exploitation",
+      "correct_answer": "A",
+      "explanation": "Vulnerability analysis examines system and application weaknesses and determines which weaknesses may be exploitable."
+    },
+    {
+      "question": "An attacker discovers an unpatched server exposed to the internet. A malicious actor capable of exploiting the weakness is also present. According to the lecture's risk model, which interpretation is most appropriate?",
+      "option_a": "There is no risk because the server is a tangible asset",
+      "option_b": "There is no risk because internet connectivity is not a threat",
+      "option_c": "Risk depends only on the server's financial value",
+      "option_d": "A threat and an exploitable vulnerability are both present, creating risk",
+      "correct_answer": "D",
+      "explanation": "The lecture's model states that risk depends on the presence of threats and vulnerabilities. An exposed unpatched server presents a potential weakness that a threat may exploit."
+    },
+    {
+      "question": "A company has an outdated server with a known vulnerability, but assume no threat capable of exploiting it exists in the scenario. What does the lecture's simplified risk model suggest?",
+      "option_a": "The vulnerability automatically becomes a threat",
+      "option_b": "There is no risk according to the simplified model because the threat factor is absent",
+      "option_c": "The server becomes an intangible asset",
+      "option_d": "The vulnerability must be classified as High",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly states that a vulnerability without a threat produces no risk under its simplified Risk = Threats × Vulnerability relationship."
+    },
+    {
+      "question": "A security team has identified an attacker, several vulnerable systems and a collection of valuable databases. Which combination correctly identifies the concepts?",
+      "option_a": "Attacker: asset; vulnerable systems: threats; databases: vulnerabilities",
+      "option_b": "Attacker: vulnerability; systems: assets; databases: threats",
+      "option_c": "Attacker: threat; vulnerable systems: vulnerabilities; databases: assets",
+      "option_d": "Attacker: security control; systems: threats; databases: security policies",
+      "correct_answer": "C",
+      "explanation": "An attacker represents a potential threat, vulnerable systems contain weaknesses, and valuable databases are assets requiring protection."
+    },
+    {
+      "question": "A tester is collecting the target's network range, active hosts, operating systems and running services. Which activity should logically follow the identification of the network range in the footprinting sequence?",
+      "option_a": "Discover active machines",
+      "option_b": "Write the final report",
+      "option_c": "Perform privilege escalation",
+      "option_d": "Agree on payment terms",
+      "correct_answer": "A",
+      "explanation": "The footprinting sequence proceeds from locating the network range to discovering active machines, then identifying operating systems and services."
+    },
+    {
+      "question": "An organization wants to identify the technologies used by a competitor without directly interacting with its internal network. Which source mentioned in the lecture could reveal relevant technical information?",
+      "option_a": "The competitor's private memory",
+      "option_b": "An unconnected network switch",
+      "option_c": "The tester's local DNS cache",
+      "option_d": "Public job advertisements",
+      "correct_answer": "D",
+      "explanation": "Job postings can reveal technologies and infrastructure requirements, making them useful sources of competitive intelligence and footprinting information."
+    },
+    {
+      "question": "A tester wants to identify publicly indexed pages on example.com that contain a specific keyword. Which query is most appropriate?",
+      "option_a": "related:example.com cache:keyword",
+      "option_b": "site:example.com intext:keyword",
+      "option_c": "PTR:example.com MX:keyword",
+      "option_d": "traceroute example.com keyword",
+      "correct_answer": "B",
+      "explanation": "The site: operator restricts results to example.com, while intext: searches for the specified keyword within page content."
+    },
+    {
+      "question": "A tester wants to search for publicly indexed documents whose titles contain the phrase 'security report'. Which operator is most appropriate?",
+      "option_a": "allinurl:",
+      "option_b": "allintext:",
+      "option_c": "allintitle:",
+      "option_d": "related:",
+      "correct_answer": "C",
+      "explanation": "The allintitle: operator searches for pages containing specified keywords in their titles."
+    },
+    {
+      "question": "A reconnaissance analyst discovers an exposed directory listing through a search engine. What is the most appropriate interpretation?",
+      "option_a": "The search result may reveal publicly accessible directory contents and information exposure",
+      "option_b": "The result proves that the target's DNS is protected",
+      "option_c": "The result confirms that the directory is encrypted",
+      "option_d": "The result automatically establishes administrator access",
+      "correct_answer": "A",
+      "explanation": "An exposed directory listing may reveal files and information that should not be publicly accessible. Discovery does not itself establish system access."
+    },
+    {
+      "question": "An attacker impersonates an IT support employee over the telephone and persuades a staff member to reveal internal information. Which combination best describes the technique?",
+      "option_a": "DNS footprinting and cache poisoning",
+      "option_b": "Website mirroring and metadata extraction",
+      "option_c": "Network mapping and tracerouting",
+      "option_d": "Social engineering through impersonation and persuasion",
+      "correct_answer": "D",
+      "explanation": "The attacker manipulates a person into revealing information by impersonating a trusted employee, which is a social engineering attack."
+    },
+    {
+      "question": "A company receives an email that appears to originate from its finance department. Investigation shows that the sender manipulated the From field. Which security mechanism mentioned in the lecture can help prevent this type of forgery?",
+      "option_a": "ICMP",
+      "option_b": "SPF",
+      "option_c": "CNAME",
+      "option_d": "Traceroute",
+      "correct_answer": "B",
+      "explanation": "SPF helps prevent unauthorized mail servers from sending messages that falsely claim to originate from a domain."
+    },
+    {
+      "question": "A security analyst is investigating a suspicious email and wants to reconstruct the route it followed through mail servers. Which evidence should be examined first?",
+      "option_a": "The email's font size",
+      "option_b": "The recipient's desktop wallpaper",
+      "option_c": "The email headers, read from the bottom upward",
+      "option_d": "The email attachment's file size only",
+      "correct_answer": "C",
+      "explanation": "Email headers record the message's journey and validation checks. Reading them from the bottom upward helps reconstruct its route."
+    },
+    {
+      "question": "A tester downloads a target website and discovers email addresses, telephone numbers and sensitive-looking comments in its source files. Which technique and tool category were most likely involved?",
+      "option_a": "Website mirroring using tools such as HTTrack or Wget",
+      "option_b": "DNS flooding using dig",
+      "option_c": "Network tracing using Tracert",
+      "option_d": "Email authentication using SPF",
+      "correct_answer": "A",
+      "explanation": "Website mirroring downloads website content for offline examination, potentially exposing contact information and concealed comments."
+    },
+    {
+      "question": "An analyst needs to extract metadata from a collection of publicly available PDF, DOCX and XLSX files. Which tool is the most appropriate according to the lecture?",
+      "option_a": "Shodan",
+      "option_b": "Nslookup",
+      "option_c": "HTTrack",
+      "option_d": "Metagoofil",
+      "correct_answer": "D",
+      "explanation": "Metagoofil is specifically designed to extract metadata from public documents belonging to target organizations."
+    },
+    {
+      "question": "A tester wants to examine hidden metadata in documents collected from a company's web pages. Which tool is specifically associated with this task?",
+      "option_a": "Traceroute",
+      "option_b": "FOCA",
+      "option_c": "Ping",
+      "option_d": "Shodan",
+      "correct_answer": "B",
+      "explanation": "FOCA analyzes collected documents to identify metadata and hidden information."
+    },
+    {
+      "question": "An organization wants to discover internet-connected devices associated with its publicly exposed infrastructure. Which tool from the lecture is most relevant?",
+      "option_a": "Maltego",
+      "option_b": "Metagoofil",
+      "option_c": "Shodan",
+      "option_d": "Wget",
+      "correct_answer": "C",
+      "explanation": "Shodan specializes in discovering devices connected to the Internet and can assist with understanding an organization's exposed infrastructure."
+    },
+    {
+      "question": "An investigator wants to connect information about a person, associated companies, domains, WHOIS details and IP addresses. Which tool is most suitable?",
+      "option_a": "Maltego",
+      "option_b": "Ping",
+      "option_c": "HTTrack",
+      "option_d": "Tracert",
+      "correct_answer": "A",
+      "explanation": "Maltego supports OSINT investigations involving relationships between people, companies, domains and network information."
+    },
+    {
+      "question": "A security engineer discovers that an organization has exposed its DNS zone information to unauthorized external systems. Which countermeasure directly addresses this problem?",
+      "option_a": "Allowing unrestricted DNS zone transfers",
+      "option_b": "Increasing the number of public DNS records",
+      "option_c": "Disabling employee awareness programs",
+      "option_d": "Restricting zone transfers to authorized servers",
+      "correct_answer": "D",
+      "explanation": "The lecture specifically recommends restricting zone transfers to authorized servers to prevent unauthorized disclosure of zone information."
+    },
+    {
+      "question": "A tester examines a DNS response and discovers that mail.example.com is listed as the mail server for example.com. Which DNS record should contain this information?",
+      "option_a": "PTR",
+      "option_b": "MX",
+      "option_c": "CNAME",
+      "option_d": "HINFO",
+      "correct_answer": "B",
+      "explanation": "MX records identify the mail servers responsible for receiving messages for a domain."
+    },
+    {
+      "question": "An organization uses an alias called portal.example.com that points to another hostname. Which DNS record type is most appropriate for this configuration?",
+      "option_a": "SOA",
+      "option_b": "PTR",
+      "option_c": "CNAME",
+      "option_d": "MX",
+      "correct_answer": "C",
+      "explanation": "A CNAME record creates an alias from one hostname to another canonical hostname."
+    },
+    {
+      "question": "A reverse DNS investigation attempts to identify the hostname associated with the IP address 192.0.2.15. Which record type should the analyst investigate?",
+      "option_a": "PTR",
+      "option_b": "MX",
+      "option_c": "SRV",
+      "option_d": "A",
+      "correct_answer": "A",
+      "explanation": "PTR records provide reverse mappings from IP addresses to hostnames."
+    },
+    {
+      "question": "An analyst needs to identify the authoritative name servers responsible for a domain. Which DNS record should be queried?",
+      "option_a": "HINFO",
+      "option_b": "CNAME",
+      "option_c": "MX",
+      "option_d": "NS",
+      "correct_answer": "D",
+      "explanation": "NS records identify the name servers responsible for a domain's DNS information."
+    },
+    {
+      "question": "A penetration tester observes that a DNS server accepts zone transfer requests from an unauthorized external server. Which conclusion is most accurate?",
+      "option_a": "The server is correctly enforcing the lecture's recommended DNS security practice",
+      "option_b": "The DNS server may expose its zone information because transfers are not properly restricted",
+      "option_c": "The DNS server has automatically enabled DNSSEC",
+      "option_d": "The DNS server cannot communicate over TCP",
+      "correct_answer": "B",
+      "explanation": "Unauthorized zone transfers may disclose DNS records and infrastructure details. The lecture recommends restricting zone transfers to authorized servers."
+    },
+    {
+      "question": "An administrator observes repeated requests targeting a DNS server, causing service disruption. Which DNS threat mentioned in the lecture is most relevant?",
+      "option_a": "Website mirroring",
+      "option_b": "Email spoofing",
+      "option_c": "DNS flooding attack",
+      "option_d": "Shoulder surfing",
+      "correct_answer": "C",
+      "explanation": "A DNS flooding attack involves overwhelming DNS infrastructure with requests, potentially disrupting its availability."
+    },
+    {
+      "question": "A security analyst wants to identify the administrative information and zone-related details associated with a DNS domain. Which record is particularly important?",
+      "option_a": "SOA",
+      "option_b": "MX",
+      "option_c": "PTR",
+      "option_d": "HINFO",
+      "correct_answer": "A",
+      "explanation": "The SOA record contains administrative information about the DNS zone and is particularly relevant to zone management and transfers."
+    },
+    {
+      "question": "A network analyst runs ping against a server but receives no response. What is the most accurate conclusion?",
+      "option_a": "The server definitely does not exist",
+      "option_b": "The server must be vulnerable to remote exploitation",
+      "option_c": "The DNS server has been compromised",
+      "option_d": "The target did not respond to the ICMP reachability test, but this alone does not prove the host is offline",
+      "correct_answer": "D",
+      "explanation": "Ping tests reachability through ICMP. A missing response can result from filtering or disabled ICMP, so it does not conclusively prove that the host is offline."
+    },
+    {
+      "question": "A tester wants to understand the path packets take through intermediate network gateways and examine transit times. Which utility should be used?",
+      "option_a": "Nslookup",
+      "option_b": "Traceroute",
+      "option_c": "Metagoofil",
+      "option_d": "FOCA",
+      "correct_answer": "B",
+      "explanation": "Traceroute identifies the network path through intermediate gateways and reports transit times."
+    },
+    {
+      "question": "A penetration tester needs to perform DNS diagnosis from a Windows machine without installing a separate Linux utility. Which tool mentioned in the lecture is appropriate?",
+      "option_a": "FOCA",
+      "option_b": "Maltego",
+      "option_c": "Nslookup",
+      "option_d": "theHarvester",
+      "correct_answer": "C",
+      "explanation": "Nslookup is included with operating systems and supports interactive and non-interactive DNS queries."
+    },
+    {
+      "question": "A tester wants to inspect how a company's website appeared three years ago to identify previously exposed information. Which resource is most appropriate?",
+      "option_a": "Wayback Machine",
+      "option_b": "Shodan",
+      "option_c": "Googlebots",
+      "option_d": "Ping",
+      "correct_answer": "A",
+      "explanation": "The Wayback Machine provides historical website snapshots that can be selected by date."
+    },
+    {
+      "question": "An organization wants to reduce the amount of sensitive information available to attackers through public sources. Which combination represents appropriate footprinting countermeasures?",
+      "option_a": "Publish internal network diagrams and employee contact details",
+      "option_b": "Enable geotagging and reuse personal email addresses for business",
+      "option_c": "Keep unnecessary services running and ignore scanning activity",
+      "option_d": "Avoid discussing confidential information online, disable geotagging and shut down unnecessary services",
+      "correct_answer": "D",
+      "explanation": "The lecture recommends limiting confidential information disclosure, disabling geotagging, monitoring scanning activity and shutting down unnecessary services."
+    },
+    {
+      "question": "A company discovers that employees frequently reveal internal information through social media and informal online conversations. Which mitigation is most appropriate?",
+      "option_a": "Publish additional internal infrastructure information",
+      "option_b": "Provide employees with education, training and awareness about footprinting risks",
+      "option_c": "Disable all network monitoring",
+      "option_d": "Allow employees to share confidential information without restrictions",
+      "correct_answer": "B",
+      "explanation": "Employee education, training and awareness help reduce information disclosure and the risks associated with footprinting."
+    },
+    {
+      "question": "A security team wants to identify unnecessary services running on organizational systems. Which activity directly supports this objective?",
+      "option_a": "Monitoring historical website snapshots only",
+      "option_b": "Analyzing employee social media profiles only",
+      "option_c": "Scanning and assessing running network services",
+      "option_d": "Reviewing only the organization's annual financial report",
+      "correct_answer": "C",
+      "explanation": "Penetration testing and network scanning help identify unnecessary services that may increase an organization's attack surface."
+    },
+    {
+      "question": "A tester has completed exploitation and post-exploitation activities. What should happen next according to the seven-stage methodology?",
+      "option_a": "Reporting",
+      "option_b": "Pre-engagement",
+      "option_c": "Information gathering",
+      "option_d": "Threat modeling",
+      "correct_answer": "A",
+      "explanation": "Reporting is the seventh and final stage of the methodology, following post-exploitation."
+    },
+    {
+      "question": "An organization has several internet-facing systems, public employee information, exposed document metadata and poorly configured DNS records. Which approach would provide the most comprehensive initial understanding of its exposure?",
+      "option_a": "Immediately exploit the first vulnerable server",
+      "option_b": "Investigate only the organization's website homepage",
+      "option_c": "Perform only a ping test against the domain",
+      "option_d": "Combine public-source reconnaissance, document metadata analysis, DNS footprinting and network discovery",
+      "correct_answer": "D",
+      "explanation": "Combining multiple reconnaissance techniques provides a broader understanding of an organization's external exposure and attack surface."
+    },
+    {
+      "question": "A tester discovers that a company uses an outdated operating system, exposes unnecessary services and has employees vulnerable to phishing. Which interpretation best reflects the lecture's attack-surface model?",
+      "option_a": "Only the outdated operating system represents an attack surface",
+      "option_b": "Software, network services and users all contribute to the organization's attack surface",
+      "option_c": "The phishing issue is unrelated to organizational security",
+      "option_d": "Only physical hardware can be considered an attack surface",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies software, hardware, networks and users as attack surfaces. The scenario involves software, network and human-related exposure."
+    },
+    {
+      "question": "A tester discovers a vulnerable web application, obtains access through an authorized exploit, maintains access and elevates privileges. Which statement best describes the activities?",
+      "option_a": "All activities belong to pre-engagement",
+      "option_b": "All activities belong to information gathering",
+      "option_c": "The tester has performed exploitation and access-related post-exploitation activities",
+      "option_d": "The tester has completed only reporting",
+      "correct_answer": "C",
+      "explanation": "Exploitation uses vulnerabilities to gain access, while maintaining access and privilege escalation are access-related activities described in the lecture."
+    },
+    {
+      "question": "A security analyst finds that a public document contains metadata revealing internal usernames and software information. Which conclusion is most appropriate?",
+      "option_a": "Public documents can unintentionally disclose useful reconnaissance information through metadata",
+      "option_b": "Metadata is always encrypted and cannot be examined",
+      "option_c": "The discovery proves that the document's author has administrator access",
+      "option_d": "The information can only be discovered through DNS flooding",
+      "correct_answer": "A",
+      "explanation": "The lecture describes tools such as Metagoofil and FOCA for extracting metadata and hidden information from public documents."
+    },
+    {
+      "question": "A tester uses Shodan to discover exposed internet-connected devices, Maltego to investigate relationships between domains and organizations, and Metagoofil to examine public document metadata. Which statement best describes this workflow?",
+      "option_a": "All three tools perform identical DNS zone transfers",
+      "option_b": "All three tools are exclusively used for privilege escalation",
+      "option_c": "The workflow represents exploitation rather than reconnaissance",
+      "option_d": "Different OSINT tools can complement one another by collecting different types of target intelligence",
+      "correct_answer": "D",
+      "explanation": "The lecture assigns different information-gathering purposes to these tools. Combining them can provide a more comprehensive reconnaissance picture."
+    },
+    {
+      "question": "A tester identifies an organization's mail server, authoritative DNS servers, aliases and reverse DNS mappings. Which combination of DNS records would be most relevant?",
+      "option_a": "A, HINFO, SOA and SRV only",
+      "option_b": "MX, NS, CNAME and PTR",
+      "option_c": "SOA, HINFO, SRV and A only",
+      "option_d": "PTR, HINFO, CNAME and SRV only",
+      "correct_answer": "B",
+      "explanation": "MX identifies mail servers, NS identifies authoritative name servers, CNAME identifies aliases and PTR provides reverse IP-to-hostname mapping."
+    },
+    {
+      "question": "A DNS administrator blocks every inbound TCP port 53 connection but allows unrestricted zone transfers from external hosts through another permitted path. What is the most important security concern?",
+      "option_a": "DNS records automatically become encrypted",
+      "option_b": "The DNS hierarchy changes from a tree into a graph",
+      "option_c": "Unauthorized zone transfers may still expose zone information if transfer authorization is not properly enforced",
+      "option_d": "All UDP DNS queries are automatically disabled",
+      "correct_answer": "C",
+      "explanation": "The lecture recommends both restricting zone transfers to authorized servers and controlling inbound TCP port 53. Blocking a port alone does not replace proper authorization of zone transfers."
+    },
+    {
+      "question": "An analyst wants to establish whether a server is reachable, discover the network path to it, and investigate its DNS information. Which sequence correctly matches the tools to the tasks?",
+      "option_a": "Ping for reachability, Traceroute for network path, Nslookup or dig for DNS diagnosis",
+      "option_b": "Metagoofil for reachability, FOCA for network paths, Shodan for DNS diagnosis",
+      "option_c": "WHOIS for reachability, HTTrack for network paths, SPF for DNS diagnosis",
+      "option_d": "CNAME for reachability, PTR for network paths, MX for DNS diagnosis",
+      "correct_answer": "A",
+      "explanation": "Ping tests reachability using ICMP, Traceroute identifies the network path, and Nslookup or dig supports DNS investigation."
+    },
+    {
+      "question": "A company wants to minimize information available to an attacker before any direct technical interaction. Which combination is most effective based on the lecture's footprinting mitigation recommendations?",
+      "option_a": "Expose employee email patterns, publish network details and retain unnecessary services",
+      "option_b": "Disable network monitoring and allow unrestricted document publication",
+      "option_c": "Use personal email addresses for every business activity and enable photograph geotagging",
+      "option_d": "Limit confidential online disclosures, separate business and personal email, remove geotags, monitor scanning and securely dispose of printed information",
+      "correct_answer": "D",
+      "explanation": "The lecture recommends all these practices as footprinting countermeasures. Together they reduce information leakage through online, technical and physical sources."
+    },
+    {
+      "question": "A penetration testing team discovers several vulnerabilities during an engagement. The technical team understands the findings, but senior management needs to understand the business impact and remediation priorities. What should the final report include?",
+      "option_a": "Only raw scanner output without explanations",
+      "option_b": "An executive summary and categorized vulnerability findings",
+      "option_c": "Only a list of tools used during reconnaissance",
+      "option_d": "Only the tester's network configuration",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies an executive summary and vulnerability severity categories such as High, Medium and Low as components of reporting."
+    },
+    {
+      "question": "A security team is evaluating whether to conduct a black box or white box assessment. Its primary objective is to simulate an external attacker who has no prior knowledge of the organization's internal infrastructure. Which testing approach best matches that objective?",
+      "option_a": "White box testing because complete information provides more visibility",
+      "option_b": "Grey box testing because all infrastructure details are known",
+      "option_c": "Black box testing because the tester begins without prior knowledge",
+      "option_d": "Blue Teaming because defenders simulate external attackers",
+      "correct_answer": "C",
+      "explanation": "Black box testing best simulates an attacker with no prior knowledge of the target's internal systems or infrastructure."
+    },
+    {
+      "question": "A tester finds a DNS server with exposed zone information, public documents containing metadata and employees sharing confidential information online. Which option correctly maps each discovery to a relevant reconnaissance or security concept?",
+      "option_a": "DNS footprinting, document metadata analysis and social engineering exposure",
+      "option_b": "Website traffic monitoring, ICMP and privilege escalation",
+      "option_c": "Email SPF, network routing and buffer overflow",
+      "option_d": "Traceroute, DNS flooding and operating system patching",
+      "correct_answer": "A",
+      "explanation": "DNS records reveal infrastructure information, document metadata can disclose hidden details, and employee information disclosure creates human-related security exposure."
+    },
+    {
+      "question": "An organization has completed a penetration test but has not corrected any discovered vulnerabilities. Which statement best reflects the purpose of penetration testing described in the lecture?",
+      "option_a": "The organization is fully secure because testing has been completed",
+      "option_b": "The organization no longer needs monitoring or patch management",
+      "option_c": "The discovered vulnerabilities cannot be exploited after reporting",
+      "option_d": "Testing identifies weaknesses and supports remediation, but security improvements still need to be implemented",
+      "correct_answer": "D",
+      "explanation": "Penetration testing identifies vulnerabilities and provides remediation actions. The organization must implement those actions and maintain ongoing security practices."
+    },
+    {
+      "question": "A company wants to understand its exposure through historical website content, currently indexed search results, public documents and internet-connected devices. Which combination of resources best matches these objectives?",
+      "option_a": "Ping, Traceroute, SPF and ICMP",
+      "option_b": "Wayback Machine, Google Advanced Search, Metagoofil and Shodan",
+      "option_c": "SOA, MX, PTR and CNAME",
+      "option_d": "Nslookup, Tracert, Wget and SMTP only",
+      "correct_answer": "B",
+      "explanation": "The Wayback Machine provides historical snapshots, Google Advanced Search finds indexed content, Metagoofil extracts document metadata, and Shodan discovers internet-connected devices."
+    },
+    {
+      "question": "A tester identifies a publicly accessible server, determines its operating system, discovers its running services, identifies a vulnerable application and then prepares to exploit it. Which statement correctly distinguishes the stages?",
+      "option_a": "All these activities belong exclusively to reporting",
+      "option_b": "The entire process belongs to pre-engagement because the target is external",
+      "option_c": "Discovery and service identification are reconnaissance activities, vulnerability identification is vulnerability analysis, and taking advantage of the weakness is exploitation",
+      "option_d": "Identifying an operating system is equivalent to post-exploitation",
+      "correct_answer": "C",
+      "explanation": "Reconnaissance gathers target information, vulnerability analysis identifies weaknesses, and exploitation attempts to take advantage of those weaknesses."
+    },
+    {
+      "question": "An organization wants to validate whether its security controls can detect and mitigate simulated attacks. Which approach best represents the relationship between Red Teaming and Blue Teaming?",
+      "option_a": "The Red Team simulates attacks while the Blue Team detects and mitigates them",
+      "option_b": "The Blue Team performs all attacks while the Red Team only writes policies",
+      "option_c": "Both teams are responsible exclusively for collecting WHOIS information",
+      "option_d": "The Red Team and Blue Team perform identical administrative activities",
+      "correct_answer": "A",
+      "explanation": "The lecture describes Red Teams as ethical attackers and Blue Teams as defenders responsible for detecting and mitigating Red Team attacks."
+    },
+    {
+      "question": "A tester discovers that an organization publishes confidential details in annual reports and press releases. Which mitigation directly addresses this information-disclosure risk?",
+      "option_a": "Increase the number of public documents",
+      "option_b": "Disable DNS queries",
+      "option_c": "Use aggressive network scanning against employees",
+      "option_d": "Avoid revealing sensitive information in annual reports and press releases",
+      "correct_answer": "D",
+      "explanation": "The lecture explicitly recommends avoiding disclosure of sensitive information through annual reports and press releases."
+    }
+  ]
+}
