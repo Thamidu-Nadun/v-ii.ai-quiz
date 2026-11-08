@@ -1,0 +1,463 @@
+{
+  "questions": [
+    {
+      "question": "[Lecture] What is the primary purpose of the IE3132 module's learning outcomes?",
+      "option_a": "To develop skills in penetration testing concepts, information gathering, tool evaluation, exploitation, and reporting",
+      "option_b": "To focus exclusively on network administration",
+      "option_c": "To train students only in software development",
+      "option_d": "To teach general computer maintenance",
+      "correct_answer": "A",
+      "explanation": "The learning outcomes cover penetration testing concepts, information gathering, evaluating tools and techniques, exploitation development, and communicating findings."
+    },
+    {
+      "question": "[Lecture] Which of the following is explicitly identified as a learning outcome?",
+      "option_a": "Developing commercial operating systems",
+      "option_b": "Developing exploitation code to facilitate penetration testing",
+      "option_c": "Designing computer processors",
+      "option_d": "Managing enterprise financial systems",
+      "correct_answer": "B",
+      "explanation": "Developing exploitation code to facilitate penetration testing is one of the stated module learning outcomes."
+    },
+    {
+      "question": "[Lecture] What percentage of the module assessment is allocated to continuous assessments?",
+      "option_a": "25%",
+      "option_b": "40%",
+      "option_c": "50%",
+      "option_d": "60%",
+      "correct_answer": "C",
+      "explanation": "Continuous assessments account for 50% of the overall module assessment."
+    },
+    {
+      "question": "[Lecture] What percentage of the overall module assessment is allocated to the final examination?",
+      "option_a": "10%",
+      "option_b": "25%",
+      "option_c": "40%",
+      "option_d": "50%",
+      "correct_answer": "D",
+      "explanation": "The final examination contributes 50% of the overall assessment."
+    },
+    {
+      "question": "[Lecture] What is the contribution of the Project Presentation Viva to the overall module assessment?",
+      "option_a": "10%",
+      "option_b": "20%",
+      "option_c": "40%",
+      "option_d": "50%",
+      "correct_answer": "C",
+      "explanation": "The Project Presentation Viva contributes 40% of the overall module assessment."
+    },
+    {
+      "question": "[Lecture] Which assessment component contributes 10% to the overall module grade?",
+      "option_a": "Final examination",
+      "option_b": "Project Initiation",
+      "option_c": "Project Presentation Viva",
+      "option_d": "Laboratory examination",
+      "correct_answer": "B",
+      "explanation": "Project Initiation contributes 10%, while the presentation viva and final examination contribute 40% and 50%, respectively."
+    },
+    {
+      "question": "[Lecture] Which of the following is NOT explicitly listed as a module content area?",
+      "option_a": "Mobile Application Security",
+      "option_b": "Social Engineering",
+      "option_c": "Database Administration",
+      "option_d": "AI in Pen Testing",
+      "correct_answer": "C",
+      "explanation": "Database Administration is not explicitly listed among the ten module content areas."
+    },
+    {
+      "question": "[Lecture] Which module area focuses specifically on identifying and assessing weaknesses in web-based systems?",
+      "option_a": "Web Application Security",
+      "option_b": "Social Engineering",
+      "option_c": "Operating Systems Security",
+      "option_d": "Reporting and Documentation",
+      "correct_answer": "A",
+      "explanation": "Web Application Security is the module area dedicated to security assessment of web applications."
+    },
+    {
+      "question": "[Lecture] Which reference book is recommended for the module?",
+      "option_a": "Computer Networking: A Top-Down Approach",
+      "option_b": "The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws",
+      "option_c": "Operating System Concepts",
+      "option_d": "Artificial Intelligence: A Modern Approach",
+      "correct_answer": "B",
+      "explanation": "The lecture recommends The Web Application Hacker's Handbook by D. Stuttard and M. Pinto."
+    },
+    {
+      "question": "[Lecture] What is the scheduled lecture and tutorial arrangement?",
+      "option_a": "One hour lecture and two hours tutorial",
+      "option_b": "Three hours lecture without tutorials",
+      "option_c": "Two hours lecture and one hour tutorial",
+      "option_d": "One hour lecture and one hour tutorial",
+      "correct_answer": "C",
+      "explanation": "The lecture specifies two hours of lecture and one hour of tutorial."
+    },
+    {
+      "question": "[Extension] What best distinguishes penetration testing from a general vulnerability assessment?",
+      "option_a": "Penetration testing attempts to validate the exploitability and potential impact of identified weaknesses",
+      "option_b": "Penetration testing only identifies outdated software",
+      "option_c": "Vulnerability assessment always requires exploiting every discovered weakness",
+      "option_d": "Penetration testing focuses exclusively on physical security",
+      "correct_answer": "A",
+      "explanation": "Penetration testing goes beyond identifying weaknesses by attempting controlled exploitation to establish their practical impact."
+    },
+    {
+      "question": "[Extension] An organization hires a security professional to assess its infrastructure. Which condition is essential before active testing begins?",
+      "option_a": "The tester must obtain unrestricted access to every employee's personal device",
+      "option_b": "The tester must publicly disclose the organization's vulnerabilities",
+      "option_c": "The tester must obtain appropriate authorization and establish the testing scope",
+      "option_d": "The tester must disable the organization's security monitoring",
+      "correct_answer": "C",
+      "explanation": "Penetration testing requires appropriate authorization and a defined scope to establish which systems and activities are permitted."
+    },
+    {
+      "question": "[Extension] During an engagement, a tester discovers that an IP address belongs to a third-party service provider that is not included in the approved scope. What should the tester do?",
+      "option_a": "Exploit the system to determine whether it is vulnerable",
+      "option_b": "Avoid unauthorized testing and seek clarification or additional authorization",
+      "option_c": "Perform a denial-of-service test to assess its resilience",
+      "option_d": "Attempt to obtain administrator credentials",
+      "correct_answer": "B",
+      "explanation": "Testing systems outside the authorized scope can create legal and operational risks. Additional authorization is required before testing them."
+    },
+    {
+      "question": "[Extension] Which sequence most appropriately represents a simplified penetration testing workflow?",
+      "option_a": "Exploitation, reporting, authorization, reconnaissance",
+      "option_b": "Reporting, exploitation, reconnaissance, scoping",
+      "option_c": "Reconnaissance, exploitation, scoping, authorization",
+      "option_d": "Planning and scoping, information gathering, vulnerability analysis, exploitation, reporting",
+      "correct_answer": "D",
+      "explanation": "A simplified workflow starts with authorization and scope definition, followed by information gathering, analysis, controlled exploitation, and reporting."
+    },
+    {
+      "question": "[Extension] What is the main purpose of information gathering during penetration testing?",
+      "option_a": "To understand the target environment and identify potential attack surfaces",
+      "option_b": "To immediately modify the target system",
+      "option_c": "To delete unnecessary user accounts",
+      "option_d": "To generate the final report without conducting testing",
+      "correct_answer": "A",
+      "explanation": "Information gathering establishes knowledge about the target, its technologies, infrastructure, and potential attack surfaces."
+    },
+    {
+      "question": "[Extension] Which activity is an example of passive reconnaissance?",
+      "option_a": "Performing an aggressive port scan against a target",
+      "option_b": "Attempting to exploit an exposed service",
+      "option_c": "Reviewing publicly available DNS records and organizational information",
+      "option_d": "Executing commands on a compromised server",
+      "correct_answer": "C",
+      "explanation": "Passive reconnaissance collects information from existing sources without directly interacting with target systems in an intrusive manner."
+    },
+    {
+      "question": "[Extension] A tester discovers an exposed administrative login page. Which action most appropriately follows?",
+      "option_a": "Immediately attempt unlimited password combinations",
+      "option_b": "Document the discovery and evaluate the page using authorized testing procedures",
+      "option_c": "Delete the administrative account",
+      "option_d": "Publish the URL on social media",
+      "correct_answer": "B",
+      "explanation": "The discovery should be documented and assessed within the authorized scope using controlled testing procedures."
+    },
+    {
+      "question": "[Extension] Which security property is primarily violated when an attacker obtains confidential customer records without authorization?",
+      "option_a": "Availability",
+      "option_b": "Integrity",
+      "option_c": "Non-repudiation",
+      "option_d": "Confidentiality",
+      "correct_answer": "D",
+      "explanation": "Unauthorized access to confidential information violates confidentiality."
+    },
+    {
+      "question": "[Extension] Which of the following is the most appropriate example of a web application security testing activity?",
+      "option_a": "Checking whether user input can manipulate database queries",
+      "option_b": "Measuring the physical temperature of a server room",
+      "option_c": "Replacing damaged network cables",
+      "option_d": "Testing the battery capacity of a mobile phone",
+      "correct_answer": "A",
+      "explanation": "Testing whether user input can manipulate database queries is an example of assessing web application injection vulnerabilities."
+    },
+    {
+      "question": "[Extension] A penetration tester discovers that an application uses an outdated library containing a known vulnerability. What should the tester establish before reporting it as a confirmed exploitable vulnerability?",
+      "option_a": "Whether the library has a popular name",
+      "option_b": "Whether the application has an attractive user interface",
+      "option_c": "Whether the vulnerable component is actually present in an affected configuration and the weakness is applicable",
+      "option_d": "Whether the application has more than one administrator",
+      "correct_answer": "C",
+      "explanation": "A version match alone does not establish exploitability. The affected component, configuration, and vulnerability conditions must be verified."
+    },
+    {
+      "question": "[Extension] What is the primary objective of network penetration testing?",
+      "option_a": "To redesign the organization's website",
+      "option_b": "To identify and validate security weaknesses in network infrastructure and exposed services",
+      "option_c": "To increase the bandwidth of all network connections",
+      "option_d": "To replace every network device",
+      "correct_answer": "B",
+      "explanation": "Network penetration testing evaluates the security of network infrastructure, services, configurations, and accessible attack surfaces."
+    },
+    {
+      "question": "[Extension] A tester performs a port scan and discovers TCP ports 22, 80, and 443 open. What is the most reasonable initial interpretation?",
+      "option_a": "The target is definitely compromised",
+      "option_b": "The target has no security vulnerabilities",
+      "option_c": "The target is running only database services",
+      "option_d": "The target may expose SSH and web services that require further investigation",
+      "correct_answer": "D",
+      "explanation": "Ports 22, 80, and 443 are commonly associated with SSH, HTTP, and HTTPS. Open ports indicate accessible services, not confirmed vulnerabilities."
+    },
+    {
+      "question": "[Extension] What is the primary difference between authentication and authorization?",
+      "option_a": "Authentication determines identity, while authorization determines permitted actions",
+      "option_b": "Authentication determines permissions, while authorization determines identity",
+      "option_c": "Both terms refer exclusively to encryption",
+      "option_d": "Authorization is required only for external network connections",
+      "correct_answer": "A",
+      "explanation": "Authentication verifies who a user is, whereas authorization determines what that authenticated user is allowed to do."
+    },
+    {
+      "question": "[Extension] An application allows a standard user to access an administrator-only function by modifying a request parameter. Which security weakness is most directly indicated?",
+      "option_a": "Insufficient encryption",
+      "option_b": "Cross-site scripting",
+      "option_c": "Broken access control",
+      "option_d": "Denial of service",
+      "correct_answer": "C",
+      "explanation": "The application fails to enforce authorization correctly, allowing a user to access functionality beyond their assigned privileges."
+    },
+    {
+      "question": "[Extension] Which situation best demonstrates a privilege escalation vulnerability?",
+      "option_a": "A user changes the theme of an application",
+      "option_b": "A standard user obtains unauthorized administrative privileges",
+      "option_c": "A web server responds slowly",
+      "option_d": "A user forgets their password",
+      "correct_answer": "B",
+      "explanation": "Privilege escalation occurs when an attacker obtains higher privileges than those originally assigned."
+    },
+    {
+      "question": "[Extension] A mobile application stores an authentication token in an insecure location. What is the most significant potential consequence?",
+      "option_a": "Improved application performance",
+      "option_b": "Automatic protection against malware",
+      "option_c": "Increased network availability",
+      "option_d": "Unauthorized access if an attacker obtains the token",
+      "correct_answer": "D",
+      "explanation": "An exposed authentication token may allow an attacker to impersonate the legitimate user or access protected resources."
+    },
+    {
+      "question": "[Extension] Which testing approach is most appropriate for identifying insecure data transmission in a mobile application?",
+      "option_a": "Inspecting application network traffic under an authorized testing setup",
+      "option_b": "Measuring the device's screen resolution",
+      "option_c": "Testing only the application's installation process",
+      "option_d": "Checking the physical dimensions of the device",
+      "correct_answer": "A",
+      "explanation": "Network traffic inspection can reveal whether sensitive information is transmitted insecurely or without adequate protection."
+    },
+    {
+      "question": "[Extension] An employee receives an email impersonating the organization's IT department and requesting their password. Which attack technique does this represent?",
+      "option_a": "ARP spoofing",
+      "option_b": "SQL injection",
+      "option_c": "Phishing",
+      "option_d": "Buffer overflow",
+      "correct_answer": "C",
+      "explanation": "Phishing uses deceptive communications to manipulate individuals into revealing sensitive information or performing unsafe actions."
+    },
+    {
+      "question": "[Extension] Which factor makes social engineering particularly effective?",
+      "option_a": "It always requires exploiting an operating system vulnerability",
+      "option_b": "It exploits human psychology, trust, authority, urgency, or curiosity",
+      "option_c": "It can only target network administrators",
+      "option_d": "It requires direct physical access to a server",
+      "correct_answer": "B",
+      "explanation": "Social engineering exploits human behavior and psychological manipulation rather than relying exclusively on technical vulnerabilities."
+    },
+    {
+      "question": "[Extension] What is the main purpose of exploitation during an authorized penetration test?",
+      "option_a": "To establish the practical impact of an identified vulnerability",
+      "option_b": "To permanently damage the target system",
+      "option_c": "To eliminate the need for vulnerability analysis",
+      "option_d": "To automatically generate a compliance certificate",
+      "correct_answer": "A",
+      "explanation": "Controlled exploitation demonstrates whether a vulnerability can be abused and helps establish its practical security impact."
+    },
+    {
+      "question": "[Extension] Which of the following best describes a buffer overflow vulnerability?",
+      "option_a": "An application stores passwords using weak encryption",
+      "option_b": "A network receives more DNS queries than expected",
+      "option_c": "A database contains duplicate records",
+      "option_d": "A program writes more data into a memory buffer than it can accommodate",
+      "correct_answer": "D",
+      "explanation": "A buffer overflow occurs when data exceeds the capacity of an allocated memory buffer, potentially corrupting adjacent memory."
+    },
+    {
+      "question": "[Extension] What is the primary difference between local and remote exploitation?",
+      "option_a": "Local exploitation always requires internet access, while remote exploitation never does",
+      "option_b": "Local exploitation targets databases, while remote exploitation targets files",
+      "option_c": "Local exploitation generally requires access to the target environment, while remote exploitation is performed through an accessible interface over a network or other remote channel",
+      "option_d": "There is no meaningful difference",
+      "correct_answer": "C",
+      "explanation": "Local exploitation typically requires an existing presence or access on the target system, whereas remote exploitation targets a vulnerability reachable through a remote interface."
+    },
+    {
+      "question": "[Extension] How can AI assist a penetration tester?",
+      "option_a": "By guaranteeing that every vulnerability is discovered",
+      "option_b": "By assisting with code analysis, information processing, test generation, and report drafting",
+      "option_c": "By eliminating the need for authorization",
+      "option_d": "By independently guaranteeing that exploitation is safe",
+      "correct_answer": "B",
+      "explanation": "AI can support several penetration testing activities, but its outputs require human verification and appropriate security controls."
+    },
+    {
+      "question": "[Extension] An AI-assisted security tool identifies a possible SQL injection vulnerability. What should the penetration tester do next?",
+      "option_a": "Accept the result as unquestionably correct",
+      "option_b": "Immediately publish the finding",
+      "option_c": "Ignore the result because AI tools are never useful",
+      "option_d": "Manually validate the finding using controlled and authorized testing",
+      "correct_answer": "D",
+      "explanation": "AI-generated findings can contain false positives. Manual validation is necessary before confirming and reporting a vulnerability."
+    },
+    {
+      "question": "[Extension] Which information is most important in a professional penetration testing report?",
+      "option_a": "Vulnerability description, affected assets, evidence, impact, severity, and remediation recommendations",
+      "option_b": "Only the names of the tools used",
+      "option_c": "The tester's personal opinions about the organization",
+      "option_d": "Only a list of successful login attempts",
+      "correct_answer": "A",
+      "explanation": "A useful report communicates what was discovered, how it was verified, why it matters, and how the organization can address it."
+    },
+    {
+      "question": "[Extension] A penetration tester identifies a critical vulnerability but provides no reproduction steps or supporting evidence. What is the main weakness of this finding?",
+      "option_a": "The vulnerability automatically becomes low severity",
+      "option_b": "The organization is no longer responsible for remediation",
+      "option_c": "The finding is difficult for stakeholders and technical teams to independently verify",
+      "option_d": "The penetration test becomes a vulnerability scan",
+      "correct_answer": "C",
+      "explanation": "Reproducible evidence helps stakeholders validate findings, understand the risk, and implement appropriate remediation."
+    },
+    {
+      "question": "[Hard] A penetration testing engagement has a limited time window. The tester discovers a critical vulnerability during reconnaissance that could expose sensitive customer information. Which action is most appropriate?",
+      "option_a": "Continue testing without informing anyone until the engagement ends",
+      "option_b": "Follow the agreed escalation procedure and notify the appropriate contact while preserving evidence",
+      "option_c": "Exploit every connected system to determine the full extent of the vulnerability",
+      "option_d": "Publish the vulnerability immediately to demonstrate its severity",
+      "correct_answer": "B",
+      "explanation": "Critical discoveries should be escalated according to the agreed engagement procedures. Evidence should be preserved without exceeding the authorized scope."
+    },
+    {
+      "question": "[Hard] A company requests a penetration test of its web application. During testing, the tester discovers that the application communicates with an external payment gateway. Exploiting the gateway is not included in the authorization. What is the best course of action?",
+      "option_a": "Attempt to exploit the payment gateway because it is connected to the application",
+      "option_b": "Perform a denial-of-service test against the gateway",
+      "option_c": "Obtain credentials from the payment gateway's employees",
+      "option_d": "Document the dependency and seek explicit authorization before testing the external gateway",
+      "correct_answer": "D",
+      "explanation": "A connection to an in-scope application does not automatically authorize testing a third-party system. Additional authorization is necessary."
+    },
+    {
+      "question": "[Hard] During a penetration test, a scanner reports 100 potential vulnerabilities. Manual verification establishes that only 12 are genuine. What does this situation primarily demonstrate?",
+      "option_a": "Automated vulnerability scanning can generate false positives and requires validation",
+      "option_b": "Manual verification is unnecessary when automated tools are available",
+      "option_c": "All vulnerabilities must be exploited before they can be reported",
+      "option_d": "The scanner has successfully compromised 100 systems",
+      "correct_answer": "A",
+      "explanation": "Automated scanners identify potential weaknesses but can produce false positives. Manual verification helps establish which findings are genuine."
+    },
+    {
+      "question": "[Hard] A tester identifies a vulnerability that allows an authenticated user to access another user's private records by changing an identifier in the request. Authentication is functioning correctly. What is the most accurate conclusion?",
+      "option_a": "The authentication mechanism is necessarily broken",
+      "option_b": "The server has experienced a denial-of-service attack",
+      "option_c": "The application likely has an object-level authorization vulnerability",
+      "option_d": "The application is vulnerable only to phishing",
+      "correct_answer": "C",
+      "explanation": "Successful authentication does not guarantee permission to access every object. Failure to enforce object-level authorization can expose other users' records."
+    },
+    {
+      "question": "[Hard] An organization wants to assess whether an attacker could move from an initially compromised workstation to a sensitive server. Which penetration testing objective is most relevant?",
+      "option_a": "Testing website responsiveness",
+      "option_b": "Evaluating lateral movement and internal network segmentation",
+      "option_c": "Measuring mobile application battery consumption",
+      "option_d": "Assessing the organization's visual identity",
+      "correct_answer": "B",
+      "explanation": "Lateral movement testing evaluates whether an attacker can move between systems and whether network segmentation restricts unauthorized access."
+    },
+    {
+      "question": "[Hard] A penetration tester obtains limited access to a Linux server. The server contains a misconfigured scheduled task that executes a script with elevated privileges. Which security issue should be investigated?",
+      "option_a": "Cross-site request forgery",
+      "option_b": "DNS cache poisoning",
+      "option_c": "Insecure direct object reference",
+      "option_d": "Potential local privilege escalation through a privileged scheduled task",
+      "correct_answer": "D",
+      "explanation": "A writable or otherwise manipulable script executed by a privileged scheduled task may allow a lower-privileged user to obtain elevated privileges."
+    },
+    {
+      "question": "[Hard] A mobile application encrypts its local database but stores the encryption key directly inside the application package. What is the most significant concern?",
+      "option_a": "The encryption may provide limited protection because an attacker who extracts the key can decrypt the database",
+      "option_b": "The database automatically becomes tamper-proof",
+      "option_c": "The application becomes immune to reverse engineering",
+      "option_d": "The application can no longer communicate over HTTPS",
+      "correct_answer": "A",
+      "explanation": "Embedding a cryptographic key in an application package creates an extraction risk. Encryption is ineffective against an attacker who obtains the key."
+    },
+    {
+      "question": "[Hard] An organization conducts a phishing simulation. Employees report suspicious emails, but several employees still submit credentials to the simulated login page. Which conclusion is most appropriate?",
+      "option_a": "The organization has no security awareness program",
+      "option_b": "The email gateway must be completely disabled",
+      "option_c": "The results indicate that reporting behavior has improved in some users, but credential-handling awareness still needs improvement",
+      "option_d": "The simulation proves that the organization's entire network is compromised",
+      "correct_answer": "C",
+      "explanation": "Security awareness results should be interpreted across multiple behaviors. Reporting suspicious emails is positive, but credential submission indicates a remaining weakness."
+    },
+    {
+      "question": "[Hard] A tester uses an AI model to generate an exploit script. The generated script contains an incorrect payload and could disrupt the target application. What is the most responsible approach?",
+      "option_a": "Execute the script against production immediately",
+      "option_b": "Review and understand the generated code, validate it in a controlled environment, and assess its potential impact before authorized use",
+      "option_c": "Assume that AI-generated code is always safe",
+      "option_d": "Disable all monitoring before execution",
+      "correct_answer": "B",
+      "explanation": "AI-generated exploitation code can be incorrect or dangerous. Human review, controlled validation, and impact assessment are essential."
+    },
+    {
+      "question": "[Hard] A penetration tester discovers a critical vulnerability that is difficult to exploit but could expose highly sensitive information if successfully exploited. Which approach is best when assigning severity?",
+      "option_a": "Always assign the lowest severity because exploitation is difficult",
+      "option_b": "Ignore the sensitivity of the affected information",
+      "option_c": "Assign severity based only on the number of affected computers",
+      "option_d": "Evaluate exploitability alongside impact, including confidentiality, integrity, availability, and the relevant organizational context",
+      "correct_answer": "D",
+      "explanation": "Severity assessment should consider both the likelihood or difficulty of exploitation and the potential consequences. Sensitive information exposure can have significant impact."
+    },
+    {
+      "question": "[Hard] A penetration test demonstrates that an attacker can exploit a web application vulnerability to obtain access to an internal server. The tester then discovers that network segmentation prevents access to the database server. What is the strongest conclusion?",
+      "option_a": "The web application vulnerability is harmless because the database remains protected",
+      "option_b": "The entire infrastructure is fully compromised",
+      "option_c": "The application vulnerability creates a real security risk, while network segmentation provides an additional defensive boundary",
+      "option_d": "The tester should bypass segmentation without authorization",
+      "correct_answer": "C",
+      "explanation": "A vulnerability can have meaningful impact even when other security controls limit its consequences. Both the initial weakness and the effectiveness of segmentation should be reported."
+    },
+    {
+      "question": "[Hard] A penetration tester discovers multiple vulnerabilities: an exposed administrative interface, weak access controls, and an outdated software component. Which reporting strategy is most effective?",
+      "option_a": "Prioritize findings by assessed risk, provide supporting evidence, explain potential attack paths, and recommend actionable remediation",
+      "option_b": "List vulnerabilities alphabetically without describing their impact",
+      "option_c": "Report only the outdated software component",
+      "option_d": "Provide raw scanner output without analysis",
+      "correct_answer": "A",
+      "explanation": "Risk-based reporting helps stakeholders prioritize remediation and understand how individual weaknesses may combine into a larger attack path."
+    },
+    {
+      "question": "[Hard] An organization asks a penetration tester to demonstrate the maximum possible impact of a vulnerability. The tester determines that further exploitation could cause permanent data loss. What should the tester do?",
+      "option_a": "Continue exploiting because the client requested maximum impact",
+      "option_b": "Stop before causing unacceptable damage, preserve evidence, and communicate the demonstrated impact and limitations",
+      "option_c": "Delete the affected data to prove the vulnerability",
+      "option_d": "Ignore the risk because penetration testing is inherently destructive",
+      "correct_answer": "B",
+      "explanation": "Authorization does not remove the responsibility to minimize harm. A tester should use safe proof-of-concept methods and communicate the demonstrated impact without causing unnecessary damage."
+    },
+    {
+      "question": "[Hard] A security team uses an AI-based penetration testing assistant that recommends scanning an IP address discovered in a public repository. The IP address may belong to an unrelated organization. What is the most important control before scanning?",
+      "option_a": "Confirm that the AI model has a high accuracy rating",
+      "option_b": "Check whether the IP address responds to ping",
+      "option_c": "Determine whether the IP address has open ports",
+      "option_d": "Verify ownership, authorization, and engagement scope before performing active testing",
+      "correct_answer": "D",
+      "explanation": "AI-generated recommendations do not establish permission to test a system. Ownership, authorization, and scope must be verified independently."
+    },
+    {
+      "question": "[Hard] A penetration testing report contains technically accurate findings, but the executive team cannot understand the risks or determine which vulnerabilities to address first. Which improvement would most directly solve the problem?",
+      "option_a": "Replace all explanations with command-line output",
+      "option_b": "Remove the severity ratings",
+      "option_c": "Provide an executive summary with business impact, prioritized risks, and clear remediation recommendations",
+      "option_d": "Include additional screenshots without explanations",
+      "correct_answer": "C",
+      "explanation": "Effective stakeholder communication requires translating technical findings into business-relevant risks and actionable priorities."
+    }
+  ]
+}

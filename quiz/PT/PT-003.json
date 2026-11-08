@@ -1,0 +1,1084 @@
+{
+  "questions": [
+    {
+      "question": "Why is client-side validation insufficient as a security control?",
+      "option_a": "A browser user can modify or bypass client-side checks before sending a request.",
+      "option_b": "Client-side validation encrypts data too early.",
+      "option_c": "The server cannot receive form data after validation.",
+      "option_d": "Browsers automatically remove malicious requests.",
+      "correct_answer": "A",
+      "explanation": "The client is controlled by the user. The server must validate and authorise every request independently."
+    },
+    {
+      "question": "Which sequence best represents a typical web interaction?",
+      "option_a": "A response is sent before the browser makes a request.",
+      "option_b": "The browser sends an HTTP request and the server returns an HTTP response.",
+      "option_c": "The database sends an HTTP request directly to the browser.",
+      "option_d": "The browser executes the server database query locally.",
+      "correct_answer": "B",
+      "explanation": "The browser/client initiates an HTTP request; the server processes it and returns a response."
+    },
+    {
+      "question": "A tester changes a hidden form field from role=user to role=admin. What is the key security question?",
+      "option_a": "Whether the field is visually hidden.",
+      "option_b": "Whether the browser accepts the modified value.",
+      "option_c": "Whether the server independently verifies the requested privilege.",
+      "option_d": "Whether the field is encoded in Base64.",
+      "correct_answer": "C",
+      "explanation": "Hidden fields are client-controlled state. The server must not trust them to establish permissions."
+    },
+    {
+      "question": "Which HTTP status most directly indicates that the server understood the request but refused access?",
+      "option_a": "200 OK",
+      "option_b": "302 Found",
+      "option_c": "403 Forbidden",
+      "option_d": "500 Internal Server Error",
+      "correct_answer": "C",
+      "explanation": "403 indicates the server understood the request but refuses to authorise it."
+    },
+    {
+      "question": "A protected endpoint redirects an unauthenticated user to the login page. Which status might commonly accompany this behaviour?",
+      "option_a": "302 Found",
+      "option_b": "201 Created",
+      "option_c": "204 No Content",
+      "option_d": "418 I'm a teapot",
+      "correct_answer": "A",
+      "explanation": "A 302 redirect can send the browser to a login page; the status alone does not prove access control is correctly implemented."
+    },
+    {
+      "question": "Which statement about a bearer token is correct?",
+      "option_a": "It is safe to expose because it contains no password.",
+      "option_b": "Possession of the token can be sufficient to exercise the associated authority.",
+      "option_c": "It is valid only when stored in localStorage.",
+      "option_d": "It cannot be replayed by another client.",
+      "correct_answer": "B",
+      "explanation": "Bearer credentials are usable by whoever possesses them, so they must be protected against disclosure and replay."
+    },
+    {
+      "question": "A tester can alter a request body but the page UI prevents selecting another account ID. What is the most reliable test approach?",
+      "option_a": "Trust the UI and stop testing that field.",
+      "option_b": "Inspect and modify the raw HTTP request, then observe the server response.",
+      "option_c": "Disable JavaScript and assume the endpoint is secure.",
+      "option_d": "Change only the browser theme.",
+      "correct_answer": "B",
+      "explanation": "The server consumes the HTTP request, not the UI’s intended controls. Raw request tampering tests the actual trust boundary."
+    },
+    {
+      "question": "An endpoint returns 200 for a modified request, but the response contains the same user data as before. What can be concluded?",
+      "option_a": "A vulnerability is proven because the status is 200.",
+      "option_b": "The request definitely bypassed authorisation.",
+      "option_c": "The status alone is insufficient; compare response content and application behaviour to establish impact.",
+      "option_d": "The server must be using JWT.",
+      "correct_answer": "C",
+      "explanation": "A successful HTTP status does not prove unauthorised access. The actual returned data or action must be examined."
+    },
+    {
+      "question": "What is the primary purpose of application mapping during a web penetration test?",
+      "option_a": "To identify pages, endpoints, parameters, technologies and application behaviour.",
+      "option_b": "To immediately exploit every discovered endpoint.",
+      "option_c": "To replace authorisation testing.",
+      "option_d": "To modify the production database.",
+      "correct_answer": "A",
+      "explanation": "Mapping builds an understanding of the application attack surface before targeted testing."
+    },
+    {
+      "question": "Which source is most useful for discovering links and routes embedded in client-side JavaScript?",
+      "option_a": "A password hash list.",
+      "option_b": "JavaScript files and their referenced endpoints.",
+      "option_c": "The operating system event log only.",
+      "option_d": "A database backup unrelated to the application.",
+      "correct_answer": "B",
+      "explanation": "Client-side scripts can reveal API routes, hidden functionality and parameter names."
+    },
+    {
+      "question": "What is the main difference between passive mapping and active content discovery?",
+      "option_a": "Passive mapping never observes application responses.",
+      "option_b": "Active discovery sends requests to candidate paths; passive mapping observes available traffic and content.",
+      "option_c": "Passive mapping requires brute force.",
+      "option_d": "Active discovery is always invisible to the server.",
+      "correct_answer": "B",
+      "explanation": "Active tools probe candidate paths, while passive techniques infer structure from observed application content and traffic."
+    },
+    {
+      "question": "A tester wants to discover hidden directories using a wordlist. Which tool category is appropriate?",
+      "option_a": "Directory/content discovery tools such as ffuf or gobuster.",
+      "option_b": "JWT signing libraries.",
+      "option_c": "Database migration tools.",
+      "option_d": "Packet capture replay only.",
+      "correct_answer": "A",
+      "explanation": "ffuf and gobuster can request candidate paths from a wordlist and identify interesting responses."
+    },
+    {
+      "question": "Why should an application be mapped both while logged out and while authenticated?",
+      "option_a": "Authentication changes the HTTP protocol.",
+      "option_b": "Authenticated users may expose additional pages, endpoints and functions unavailable to anonymous visitors.",
+      "option_c": "Unauthenticated mapping is prohibited.",
+      "option_d": "The two maps must always be identical.",
+      "correct_answer": "B",
+      "explanation": "Different roles and session states can expose different parts of the attack surface."
+    },
+    {
+      "question": "A content-discovery scan reports many paths with identical response lengths and status codes. What is the best next step?",
+      "option_a": "Treat every result as a confirmed vulnerability.",
+      "option_b": "Tune filtering or baseline comparisons to distinguish default/error responses from meaningful content.",
+      "option_c": "Delete the wordlist.",
+      "option_d": "Assume the server has no endpoints.",
+      "correct_answer": "B",
+      "explanation": "Response status and length need contextual interpretation; generic fallback pages can create false positives."
+    },
+    {
+      "question": "Which statement best describes the relationship between OWASP WSTG and OWASP Top 10?",
+      "option_a": "They are interchangeable lists of the same ten vulnerabilities.",
+      "option_b": "The Top 10 is an awareness-level risk overview; WSTG provides more detailed testing guidance.",
+      "option_c": "WSTG is a browser plugin.",
+      "option_d": "The Top 10 replaces the need for methodology.",
+      "correct_answer": "B",
+      "explanation": "The lecture positions the Top 10 as a shared risk vocabulary and WSTG as a more exhaustive testing methodology."
+    },
+    {
+      "question": "A tester finds /admin in a wordlist scan. Which conclusion is justified before testing access?",
+      "option_a": "The application has Broken Access Control.",
+      "option_b": "The endpoint is definitely exploitable.",
+      "option_c": "A potentially sensitive endpoint exists; its access restrictions and actions must be tested.",
+      "option_d": "The endpoint must be removed from the report.",
+      "correct_answer": "C",
+      "explanation": "Discovery alone does not establish a vulnerability. The tester must check whether unauthorised users can access the page or its functions."
+    },
+    {
+      "question": "What is Burp Suite Proxy primarily used for?",
+      "option_a": "Intercepting, inspecting and modifying HTTP requests and responses.",
+      "option_b": "Compiling server-side source code.",
+      "option_c": "Encrypting the database.",
+      "option_d": "Replacing the web server.",
+      "correct_answer": "A",
+      "explanation": "Burp Proxy sits between browser and server so traffic can be inspected and modified."
+    },
+    {
+      "question": "What is the default Burp listener address and port shown in the lecture setup?",
+      "option_a": "0.0.0.0:443",
+      "option_b": "127.0.0.1:8080",
+      "option_c": "192.168.1.1:80",
+      "option_d": "127.0.0.1:3306",
+      "correct_answer": "B",
+      "explanation": "The lecture configures the Burp listener at 127.0.0.1:8080."
+    },
+    {
+      "question": "Why is Burp’s CA certificate installed in the browser for HTTPS interception?",
+      "option_a": "To let Burp decrypt database backups.",
+      "option_b": "To make the browser trust Burp’s certificate when Burp intercepts TLS connections.",
+      "option_c": "To disable HTTPS on the target server.",
+      "option_d": "To authenticate the tester as an administrator.",
+      "correct_answer": "B",
+      "explanation": "The browser must trust Burp’s CA to avoid certificate errors when Burp generates certificates for intercepted HTTPS sites."
+    },
+    {
+      "question": "Which Burp tool is best suited to manually edit and resend one captured request repeatedly?",
+      "option_a": "Comparer",
+      "option_b": "Repeater",
+      "option_c": "Decoder",
+      "option_d": "Dashboard",
+      "correct_answer": "B",
+      "explanation": "Repeater is designed for manual request modification and resending."
+    },
+    {
+      "question": "Which Burp tool automates sending many requests while changing marked payload positions?",
+      "option_a": "Intruder",
+      "option_b": "Target",
+      "option_c": "Comparer",
+      "option_d": "Proxy history",
+      "correct_answer": "A",
+      "explanation": "Intruder inserts payloads at marked positions and sends repeated requests."
+    },
+    {
+      "question": "Which Intruder attack type uses one payload set and inserts the same payload into all marked positions?",
+      "option_a": "Sniper",
+      "option_b": "Battering ram",
+      "option_c": "Pitchfork",
+      "option_d": "Cluster bomb",
+      "correct_answer": "B",
+      "explanation": "Battering ram applies the same payload value to every marked position for each request."
+    },
+    {
+      "question": "Two Intruder payload positions each have their own list, and the tester wants corresponding first, second, third entries paired together. Which mode fits?",
+      "option_a": "Cluster bomb",
+      "option_b": "Pitchfork",
+      "option_c": "Sniper",
+      "option_d": "Battering ram",
+      "correct_answer": "B",
+      "explanation": "Pitchfork iterates through multiple payload sets in parallel, pairing corresponding positions."
+    },
+    {
+      "question": "A tester has 20 usernames and 50 passwords and wants every possible username-password combination. Which Intruder mode and request count are expected?",
+      "option_a": "Pitchfork; 70 requests",
+      "option_b": "Cluster bomb; 1,000 combinations",
+      "option_c": "Sniper; 20 requests",
+      "option_d": "Battering ram; 50 requests",
+      "correct_answer": "B",
+      "explanation": "Cluster bomb tests all combinations; 20 × 50 = 1,000 requests."
+    },
+    {
+      "question": "What is the purpose of Burp Comparer?",
+      "option_a": "To compare two responses and identify differences.",
+      "option_b": "To discover DNS records.",
+      "option_c": "To brute-force a JWT secret.",
+      "option_d": "To generate a TLS certificate for the server.",
+      "correct_answer": "A",
+      "explanation": "Comparer provides word- or byte-level differences between selected messages."
+    },
+    {
+      "question": "In the lecture’s login workflow, why is a successful response compared with a failed response?",
+      "option_a": "To prove that the password is encrypted.",
+      "option_b": "To identify response differences that distinguish successful authentication from failure.",
+      "option_c": "To remove the session cookie.",
+      "option_d": "To determine the server’s physical location.",
+      "correct_answer": "B",
+      "explanation": "Comparing responses can reveal a reliable success indicator such as a different length or content."
+    },
+    {
+      "question": "Which OWASP Top 10 edition is the examination baseline stated in the lecture?",
+      "option_a": "2017",
+      "option_b": "2021",
+      "option_c": "2023",
+      "option_d": "2025",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly says the course is examined on the OWASP Top 10:2021 list."
+    },
+    {
+      "question": "Which category is A01 in OWASP Top 10:2021?",
+      "option_a": "Cryptographic Failures",
+      "option_b": "Broken Access Control",
+      "option_c": "Injection",
+      "option_d": "Security Misconfiguration",
+      "correct_answer": "B",
+      "explanation": "A01:2021 is Broken Access Control."
+    },
+    {
+      "question": "Which category is A10 in OWASP Top 10:2021?",
+      "option_a": "Server-Side Request Forgery (SSRF)",
+      "option_b": "Identification and Authentication Failures",
+      "option_c": "Vulnerable and Outdated Components",
+      "option_d": "Insecure Design",
+      "correct_answer": "A",
+      "explanation": "A10:2021 is Server-Side Request Forgery."
+    },
+    {
+      "question": "Which statement about the OWASP Top 10 is most accurate according to the lecture?",
+      "option_a": "It is a complete testing checklist.",
+      "option_b": "It is an awareness document and shared risk vocabulary, not an exhaustive checklist.",
+      "option_c": "It replaces application-specific threat modelling.",
+      "option_d": "It is updated every month.",
+      "correct_answer": "B",
+      "explanation": "The lecture distinguishes the Top 10 awareness overview from exhaustive testing guidance such as WSTG."
+    },
+    {
+      "question": "Authentication answers which question?",
+      "option_a": "What are you allowed to do?",
+      "option_b": "Who are you?",
+      "option_c": "Which database is running?",
+      "option_d": "Where is the server hosted?",
+      "correct_answer": "B",
+      "explanation": "Authentication establishes identity; authorisation determines permitted actions and resources."
+    },
+    {
+      "question": "Authorisation should be checked at what point?",
+      "option_a": "Only when the user logs in.",
+      "option_b": "Only when the page is rendered.",
+      "option_c": "On every request for the requested resource or function.",
+      "option_d": "Only after a database error.",
+      "correct_answer": "C",
+      "explanation": "The lecture stresses checking authorisation for each request and resource."
+    },
+    {
+      "question": "A normal user accesses an administrator-only function. What type of access-control failure is this?",
+      "option_a": "Horizontal privilege escalation",
+      "option_b": "Vertical privilege escalation",
+      "option_c": "Session fixation",
+      "option_d": "SQL injection",
+      "correct_answer": "B",
+      "explanation": "Vertical access-control failure occurs when a user reaches a higher privilege level."
+    },
+    {
+      "question": "A user accesses another user’s invoice while remaining at the same privilege level. What is this?",
+      "option_a": "Vertical access-control failure",
+      "option_b": "Horizontal access-control failure",
+      "option_c": "Authentication bypass only",
+      "option_d": "XXE",
+      "correct_answer": "B",
+      "explanation": "Horizontal access control concerns access to another user’s resources at the same privilege level."
+    },
+    {
+      "question": "What does IDOR stand for?",
+      "option_a": "Insecure Direct Object Reference",
+      "option_b": "Internal Data Operation Request",
+      "option_c": "Identity Disclosure of Roles",
+      "option_d": "Internet Directory Object Routing",
+      "correct_answer": "A",
+      "explanation": "IDOR means Insecure Direct Object Reference."
+    },
+    {
+      "question": "A request uses GET /api/orders?id=1042. Changing the ID returns another customer’s order while keeping the original user token. What is the likely flaw?",
+      "option_a": "IDOR caused by missing ownership authorisation.",
+      "option_b": "CSRF caused by missing SameSite.",
+      "option_c": "XXE caused by external entities.",
+      "option_d": "A TLS downgrade.",
+      "correct_answer": "A",
+      "explanation": "The server accepted a client-controlled object reference without verifying that the authenticated user owns the order."
+    },
+    {
+      "question": "Which test setup is recommended for systematically testing IDOR in the lecture?",
+      "option_a": "One administrator account only.",
+      "option_b": "Two accounts, A and B, with known object references for each.",
+      "option_c": "A random unauthenticated scanner only.",
+      "option_d": "A production customer account without permission.",
+      "correct_answer": "B",
+      "explanation": "Two accounts let the tester attempt cross-account access and compare it with legitimate access."
+    },
+    {
+      "question": "Why is a same-account positive control important during IDOR testing?",
+      "option_a": "It increases the number of requests.",
+      "option_b": "It confirms the request works for the rightful owner, so a failed cross-account attempt is meaningful.",
+      "option_c": "It bypasses rate limiting.",
+      "option_d": "It proves the identifier is unpredictable.",
+      "correct_answer": "B",
+      "explanation": "The positive control distinguishes an authorisation denial from a malformed or otherwise broken request."
+    },
+    {
+      "question": "A normal user receives 403 for /admin, but POST /api/user/delete succeeds for the same user. What does this suggest?",
+      "option_a": "The page is protected but the underlying action endpoint may lack function-level access control.",
+      "option_b": "The user has no valid session.",
+      "option_c": "The endpoint is protected because /admin returned 403.",
+      "option_d": "The issue is only a browser rendering bug.",
+      "correct_answer": "A",
+      "explanation": "The lecture warns that testers must examine actions and API endpoints, not only the hidden page."
+    },
+    {
+      "question": "Why is relying on a hidden navigation link not sufficient to protect an administrative function?",
+      "option_a": "URLs cannot be guessed.",
+      "option_b": "An attacker may discover or directly request the endpoint without using the UI.",
+      "option_c": "Hidden links are encrypted.",
+      "option_d": "Browsers enforce role permissions on links.",
+      "correct_answer": "B",
+      "explanation": "Security by obscurity fails when a user directly requests a known or discovered URL."
+    },
+    {
+      "question": "Which server-side rule most directly prevents IDOR?",
+      "option_a": "Use longer sequential numeric IDs.",
+      "option_b": "Verify that the authenticated principal is authorised to access the specific object on every request.",
+      "option_c": "Hide object IDs with CSS.",
+      "option_d": "Base64-encode object identifiers.",
+      "correct_answer": "B",
+      "explanation": "Unpredictable IDs are not a substitute for checking ownership and permissions."
+    },
+    {
+      "question": "A tester changes an invoice ID; the server returns 404 for another user’s invoice but 200 for their own. What is the strongest interpretation?",
+      "option_a": "The application is definitely vulnerable because 404 reveals existence.",
+      "option_b": "The observed behaviour is consistent with an ownership check or concealed denial; further authorised tests are needed before claiming a bypass.",
+      "option_c": "404 means authentication is disabled.",
+      "option_d": "The tester has proven vertical escalation.",
+      "correct_answer": "B",
+      "explanation": "A 404 can be used to conceal resource existence. The evidence shown does not establish unauthorised access."
+    },
+    {
+      "question": "Which option best describes credential stuffing?",
+      "option_a": "Trying one common password against many accounts.",
+      "option_b": "Reusing username-password pairs leaked from other services to attempt logins.",
+      "option_c": "Guessing every possible password for one account.",
+      "option_d": "Changing an account ID in an API request.",
+      "correct_answer": "B",
+      "explanation": "Credential stuffing uses previously exposed credential pairs, often at scale."
+    },
+    {
+      "question": "How does password spraying differ from brute-forcing one account?",
+      "option_a": "Password spraying tries a small set of common passwords across many accounts.",
+      "option_b": "Password spraying changes the URL path only.",
+      "option_c": "Brute force never guesses passwords.",
+      "option_d": "They are identical terms.",
+      "correct_answer": "A",
+      "explanation": "Password spraying distributes guesses across accounts to reduce the chance of triggering per-account lockouts."
+    },
+    {
+      "question": "An application reveals “username does not exist” for one input and “wrong password” for another. What weakness may this create?",
+      "option_a": "Username enumeration",
+      "option_b": "Path traversal",
+      "option_c": "SSRF",
+      "option_d": "XXE",
+      "correct_answer": "A",
+      "explanation": "Different responses can reveal which usernames are registered."
+    },
+    {
+      "question": "Which cookie attribute prevents JavaScript from reading a cookie through document.cookie?",
+      "option_a": "Secure",
+      "option_b": "HttpOnly",
+      "option_c": "SameSite=None",
+      "option_d": "Path",
+      "correct_answer": "B",
+      "explanation": "HttpOnly restricts access to the cookie from client-side scripts."
+    },
+    {
+      "question": "What is the purpose of the Secure cookie attribute?",
+      "option_a": "Send the cookie only over secure HTTPS connections.",
+      "option_b": "Prevent the server from reading the cookie.",
+      "option_c": "Encrypt the cookie payload using JWT.",
+      "option_d": "Make the cookie available to every domain.",
+      "correct_answer": "A",
+      "explanation": "Secure instructs the browser to send the cookie over secure connections."
+    },
+    {
+      "question": "What does SameSite primarily help mitigate?",
+      "option_a": "Cross-site request contexts, including some CSRF scenarios.",
+      "option_b": "SQL injection.",
+      "option_c": "Weak TLS ciphers.",
+      "option_d": "Directory traversal.",
+      "correct_answer": "A",
+      "explanation": "SameSite controls when cookies are sent in cross-site contexts and can reduce CSRF exposure."
+    },
+    {
+      "question": "Which statement about JWT payloads is correct?",
+      "option_a": "They are always encrypted.",
+      "option_b": "They are commonly Base64url-encoded and can be decoded; encoding is not encryption.",
+      "option_c": "They cannot contain claims.",
+      "option_d": "They are stored only in HTTP headers by definition.",
+      "correct_answer": "B",
+      "explanation": "A typical signed JWT payload is readable after Base64url decoding; the signature protects integrity, not confidentiality."
+    },
+    {
+      "question": "A JWT verifier accepts a token after the algorithm is changed to none and the signature is removed. What is the likely issue?",
+      "option_a": "Improper JWT algorithm/signature validation.",
+      "option_b": "A cookie Path error.",
+      "option_c": "A DNS rebinding attack.",
+      "option_d": "An Intruder payload-position error.",
+      "correct_answer": "A",
+      "explanation": "The verifier must enforce an allowed signing algorithm and require valid signature verification."
+    },
+    {
+      "question": "Why should session identifiers be invalidated after logout or a security-sensitive account change?",
+      "option_a": "To reduce the chance that a previously issued session remains usable.",
+      "option_b": "To make the cookie persistent.",
+      "option_c": "To reveal the user’s password.",
+      "option_d": "To enable URL rewriting.",
+      "correct_answer": "A",
+      "explanation": "Session invalidation prevents continued use of credentials that should no longer be trusted."
+    },
+    {
+      "question": "A login endpoint returns identical messages for valid and invalid usernames, but response times consistently differ. What should the tester consider?",
+      "option_a": "Timing-based username enumeration may still be possible.",
+      "option_b": "The endpoint is proven secure.",
+      "option_c": "The issue must be SSRF.",
+      "option_d": "Timing cannot leak information.",
+      "correct_answer": "A",
+      "explanation": "Even when messages match, measurable timing differences can reveal account existence or processing paths."
+    },
+    {
+      "question": "Which principle best addresses both client-controlled role fields and client-controlled object IDs?",
+      "option_a": "Trust the browser after login.",
+      "option_b": "Treat client input as untrusted and enforce identity, ownership and permissions server-side.",
+      "option_c": "Use hidden form fields.",
+      "option_d": "Encode all IDs with Base64.",
+      "correct_answer": "B",
+      "explanation": "Both issues arise when the server trusts client-controlled values instead of enforcing server-side security decisions."
+    },
+    {
+      "question": "A tester finds a valid session token can read another user’s record. Which control is missing even though authentication works?",
+      "option_a": "TLS encryption",
+      "option_b": "Object-level authorisation",
+      "option_c": "Password complexity",
+      "option_d": "HTTP compression",
+      "correct_answer": "B",
+      "explanation": "A valid session proves identity, not permission to access every object."
+    },
+    {
+      "question": "What is the root cause of SQL injection?",
+      "option_a": "User input is concatenated into SQL in a way that changes the query’s intended structure.",
+      "option_b": "The database uses indexes.",
+      "option_c": "The browser stores cookies.",
+      "option_d": "The server uses HTTPS.",
+      "correct_answer": "A",
+      "explanation": "SQLi occurs when untrusted input is interpreted as part of SQL syntax rather than as data."
+    },
+    {
+      "question": "Which input is a common first probe for detecting string-context SQL injection?",
+      "option_a": "A single quote (')",
+      "option_b": "A PNG header",
+      "option_c": "A JWT signature",
+      "option_d": "An IPv6 address",
+      "correct_answer": "A",
+      "explanation": "A single quote can expose syntax errors or alter a quoted SQL expression."
+    },
+    {
+      "question": "In a login form, why can an input such as admin'-- - alter a vulnerable SQL query?",
+      "option_a": "It changes the page CSS.",
+      "option_b": "It may close a quoted string and comment out the remainder of the SQL statement.",
+      "option_c": "It forces TLS renegotiation.",
+      "option_d": "It creates a new database user automatically.",
+      "correct_answer": "B",
+      "explanation": "The quote can terminate a string literal and the SQL comment can neutralise the remaining predicate, depending on query syntax and database behaviour."
+    },
+    {
+      "question": "What is the purpose of testing a Boolean condition that should be true and one that should be false?",
+      "option_a": "To identify a Boolean-based SQL injection by observing different application behaviour.",
+      "option_b": "To enumerate DNS names.",
+      "option_c": "To bypass SameSite.",
+      "option_d": "To upload a web shell.",
+      "correct_answer": "A",
+      "explanation": "A vulnerable application may behave differently when the injected SQL predicate evaluates true versus false."
+    },
+    {
+      "question": "What does UNION-based SQL injection attempt to do?",
+      "option_a": "Combine results from an attacker-controlled SELECT with the original query’s result set.",
+      "option_b": "Start a new TCP connection.",
+      "option_c": "Change the browser proxy.",
+      "option_d": "Create an XML external entity.",
+      "correct_answer": "A",
+      "explanation": "UNION can make the database return data from another SELECT when column counts and compatible types align."
+    },
+    {
+      "question": "Why might a tester use ORDER BY with increasing column indexes during UNION testing?",
+      "option_a": "To discover how many columns the original query returns.",
+      "option_b": "To determine the server’s MAC address.",
+      "option_c": "To change the user’s role.",
+      "option_d": "To test cookie expiry.",
+      "correct_answer": "A",
+      "explanation": "An out-of-range ORDER BY column can trigger an error, helping infer the result-set column count."
+    },
+    {
+      "question": "A UNION payload fails because the injected SELECT has a different number of columns from the original query. What must be done?",
+      "option_a": "Match the original result column count, using suitable placeholder values where needed.",
+      "option_b": "Change the HTTP method to TRACE.",
+      "option_c": "Disable browser cookies.",
+      "option_d": "Use a longer password.",
+      "correct_answer": "A",
+      "explanation": "UNION queries generally need compatible column counts and data types across the SELECT statements."
+    },
+    {
+      "question": "The application displays no database errors or query results, but its response changes when a predicate is true versus false. Which technique is indicated?",
+      "option_a": "Boolean-based blind SQL injection",
+      "option_b": "In-band UNION extraction",
+      "option_c": "Path traversal",
+      "option_d": "Command injection",
+      "correct_answer": "A",
+      "explanation": "Boolean-based blind SQLi infers information from observable differences in application responses."
+    },
+    {
+      "question": "A tester observes a deliberate delay only when an injected SQL condition is true. What technique is being used?",
+      "option_a": "Time-based blind SQL injection",
+      "option_b": "Horizontal IDOR",
+      "option_c": "Forced browsing",
+      "option_d": "XXE",
+      "correct_answer": "A",
+      "explanation": "Time-based blind SQLi uses conditional database delays as an inference channel."
+    },
+    {
+      "question": "What is a stacked-query injection?",
+      "option_a": "Submitting multiple SQL statements where the database driver and context permit them.",
+      "option_b": "Combining two HTTP cookies.",
+      "option_c": "Using multiple Intruder payload lists.",
+      "option_d": "Sending two DNS queries.",
+      "correct_answer": "A",
+      "explanation": "Stacked queries attempt to execute an additional SQL statement after the original one; support depends on the database and driver."
+    },
+    {
+      "question": "What is second-order SQL injection?",
+      "option_a": "Input is stored first and later used unsafely in a SQL query, triggering injection at a later stage.",
+      "option_b": "An attack that requires two database servers.",
+      "option_c": "A UNION query with exactly two columns.",
+      "option_d": "An SQL error that appears twice.",
+      "correct_answer": "A",
+      "explanation": "The payload may be accepted and stored safely at first, then become dangerous when later incorporated into dynamic SQL."
+    },
+    {
+      "question": "Which mitigation is the primary structural defence against SQL injection?",
+      "option_a": "Prepared statements / parameterised queries.",
+      "option_b": "Removing every apostrophe from input.",
+      "option_c": "Hiding database error messages only.",
+      "option_d": "Changing the database port.",
+      "correct_answer": "A",
+      "explanation": "Parameterisation keeps user-supplied values separate from SQL syntax."
+    },
+    {
+      "question": "Why is escaping special characters alone generally weaker than parameterised queries?",
+      "option_a": "Escaping can be context- and encoding-dependent, while parameterisation separates data from query structure.",
+      "option_b": "Escaping always disables the database.",
+      "option_c": "Prepared statements require users to be administrators.",
+      "option_d": "Escaping makes input longer.",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasises structural separation rather than relying on character blocklists or ad hoc escaping."
+    },
+    {
+      "question": "What is the role of least privilege for a database account?",
+      "option_a": "Limit damage if the application is compromised through SQL injection.",
+      "option_b": "Prevent all SQL syntax errors.",
+      "option_c": "Make every user a database administrator.",
+      "option_d": "Replace parameterised queries.",
+      "correct_answer": "A",
+      "explanation": "A minimally privileged database account limits the actions and data available to an attacker."
+    },
+    {
+      "question": "A WAF blocks the string SELECT but an attacker uses an alternative encoding or syntax. What does this illustrate?",
+      "option_a": "A WAF blocklist is not a substitute for fixing unsafe query construction.",
+      "option_b": "SQL injection is impossible through encoded input.",
+      "option_c": "The database has no parser.",
+      "option_d": "Prepared statements are ineffective.",
+      "correct_answer": "A",
+      "explanation": "Blocklists can often be bypassed and do not correct the underlying data/code mixing flaw."
+    },
+    {
+      "question": "Which statement about SQLi database fingerprinting is most accurate?",
+      "option_a": "Different database engines may expose different syntax, functions and error behaviour.",
+      "option_b": "Every database supports exactly the same functions.",
+      "option_c": "Fingerprinting is only possible with source code.",
+      "option_d": "Database fingerprinting proves exploitation automatically.",
+      "correct_answer": "A",
+      "explanation": "Engine-specific syntax and behaviour can help identify the backend, but fingerprinting alone is not proof of data extraction."
+    },
+    {
+      "question": "A search field returns no visible data and no errors. A tester sees a consistent conditional delay when a guessed character matches. What is the most defensible conclusion?",
+      "option_a": "A time-based blind SQLi inference channel may exist; confirm carefully with repeatable controls.",
+      "option_b": "The database is definitely PostgreSQL.",
+      "option_c": "The application is vulnerable to XXE.",
+      "option_d": "A 500 error is required to prove SQLi.",
+      "correct_answer": "A",
+      "explanation": "Conditional timing differences can indicate time-based blind SQLi, but repeatability and controls are important to rule out noise."
+    },
+    {
+      "question": "A value is safely inserted using a parameterised INSERT, but a later report concatenates the stored value into dynamic SQL. What is the correct assessment?",
+      "option_a": "The initial parameterised insert guarantees the value can never cause SQLi.",
+      "option_b": "The later unsafe query can still create second-order SQL injection.",
+      "option_c": "Only browser-side XSS is possible.",
+      "option_d": "The database automatically escapes all stored data forever.",
+      "correct_answer": "B",
+      "explanation": "Parameterising one query does not make a stored value safe for every later query context."
+    },
+    {
+      "question": "What is sqlmap primarily designed to do?",
+      "option_a": "Automate detection and exploitation of SQL injection in authorised testing.",
+      "option_b": "Intercept TLS certificates.",
+      "option_c": "Discover hidden web directories only.",
+      "option_d": "Decode JWTs only.",
+      "correct_answer": "A",
+      "explanation": "sqlmap automates SQL injection testing and related database enumeration tasks."
+    },
+    {
+      "question": "Which sqlmap option supplies a target URL?",
+      "option_a": "-u",
+      "option_b": "-r",
+      "option_c": "-D",
+      "option_d": "--batch",
+      "correct_answer": "A",
+      "explanation": "The -u option specifies the target URL."
+    },
+    {
+      "question": "What does sqlmap’s -r option commonly specify?",
+      "option_a": "A file containing a raw HTTP request.",
+      "option_b": "The database name.",
+      "option_c": "The request retry count only.",
+      "option_d": "A directory wordlist.",
+      "correct_answer": "A",
+      "explanation": "The -r option lets sqlmap read a captured raw HTTP request, including headers and body."
+    },
+    {
+      "question": "Which sqlmap option is used to enumerate database names?",
+      "option_a": "--tables",
+      "option_b": "--dbs",
+      "option_c": "--dump",
+      "option_d": "--current-user",
+      "correct_answer": "B",
+      "explanation": "--dbs enumerates available databases."
+    },
+    {
+      "question": "What is the purpose of --tables in sqlmap?",
+      "option_a": "List tables in the selected database.",
+      "option_b": "List all HTTP headers.",
+      "option_c": "Extract every file on the server.",
+      "option_d": "Disable parameter testing.",
+      "correct_answer": "A",
+      "explanation": "--tables enumerates tables, typically in a database selected with -D."
+    },
+    {
+      "question": "Which statement correctly distinguishes sqlmap --level from --risk?",
+      "option_a": "Level affects the breadth of tests and payloads; risk affects potentially dangerous tests.",
+      "option_b": "Level sets database privileges; risk sets the URL.",
+      "option_c": "They are identical options.",
+      "option_d": "Risk controls output formatting only.",
+      "correct_answer": "A",
+      "explanation": "The lecture treats level as test coverage and risk as the potential impact/danger of tests."
+    },
+    {
+      "question": "Why should a tester understand and manually validate SQL injection before relying on sqlmap?",
+      "option_a": "Automation can produce false positives or miss context; manual understanding helps interpret and verify results.",
+      "option_b": "sqlmap cannot send HTTP requests.",
+      "option_c": "Manual testing is always prohibited.",
+      "option_d": "sqlmap only works on local files.",
+      "correct_answer": "A",
+      "explanation": "The lecture’s message is to understand the vulnerability first and use automation as an aid, not a replacement for reasoning."
+    },
+    {
+      "question": "A sqlmap run is producing disruptive requests against a shared production service. What is the appropriate response?",
+      "option_a": "Increase --risk and continue.",
+      "option_b": "Stop and ensure explicit authorisation, scope, rate limits and Rules of Engagement before resuming.",
+      "option_c": "Use --os-shell immediately.",
+      "option_d": "Ignore service impact because automated tools are safe.",
+      "correct_answer": "B",
+      "explanation": "Automated exploitation can affect availability and data. Testing must remain within authorised scope and agreed limits."
+    },
+    {
+      "question": "What is OS command injection?",
+      "option_a": "Untrusted input is incorporated into an operating-system command and interpreted by a shell.",
+      "option_b": "A browser sends a SQL query.",
+      "option_c": "An XML parser resolves an entity.",
+      "option_d": "A user changes an object ID.",
+      "correct_answer": "A",
+      "explanation": "Command injection occurs when input becomes part of a command interpreted by the operating system or shell."
+    },
+    {
+      "question": "A network diagnostic page accepts a host value. Which input feature may allow command chaining in a vulnerable shell context?",
+      "option_a": "Shell metacharacters such as ; or &&.",
+      "option_b": "A CSS class name.",
+      "option_c": "A cookie Expires attribute.",
+      "option_d": "A JPEG dimension.",
+      "correct_answer": "A",
+      "explanation": "Shell metacharacters can separate or conditionally chain commands when input is passed unsafely to a shell."
+    },
+    {
+      "question": "What is the key difference between SQL injection and OS command injection?",
+      "option_a": "They target different interpreters: a database SQL parser versus an operating-system shell/command interpreter.",
+      "option_b": "SQLi targets browsers and command injection targets CSS.",
+      "option_c": "There is no difference.",
+      "option_d": "Command injection only changes HTTP status codes.",
+      "correct_answer": "A",
+      "explanation": "Both involve data becoming instructions, but the interpreter and resulting impact differ."
+    },
+    {
+      "question": "A command-injection payload produces no visible output. Which approach may help confirm blind execution in an authorised lab?",
+      "option_a": "A controlled time delay or out-of-band interaction.",
+      "option_b": "Changing the page font.",
+      "option_c": "Reading the cookie Path attribute.",
+      "option_d": "Using an unrelated SQL UNION payload.",
+      "correct_answer": "A",
+      "explanation": "Blind command injection can be inferred through timing or a controlled external callback when direct output is absent."
+    },
+    {
+      "question": "Which tool is specifically mentioned in the lecture for automating OS command injection testing?",
+      "option_a": "commix",
+      "option_b": "Arjun",
+      "option_c": "WhatWeb",
+      "option_d": "jwt_tool",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies commix as a command-injection testing tool."
+    },
+    {
+      "question": "Why is passing an argument array safer than constructing a shell command string?",
+      "option_a": "It keeps arguments separate and avoids shell interpretation of metacharacters.",
+      "option_b": "It automatically encrypts the command.",
+      "option_c": "It disables all operating-system processes.",
+      "option_d": "It makes every argument an administrator command.",
+      "correct_answer": "A",
+      "explanation": "Argument arrays avoid unnecessary shell parsing and reduce the chance that input becomes executable shell syntax."
+    },
+    {
+      "question": "A developer removes semicolons from a user-supplied hostname but still concatenates it into a shell command. What is the best assessment?",
+      "option_a": "The application is secure because one metacharacter is blocked.",
+      "option_b": "A character blocklist is fragile; use safe APIs/argument arrays and validate the input.",
+      "option_c": "Only SQL injection remains possible.",
+      "option_d": "The server must reject all DNS names.",
+      "correct_answer": "B",
+      "explanation": "Many shell constructs and encodings exist; structural separation is the robust mitigation."
+    },
+    {
+      "question": "A tester sees a DNS callback after submitting input to a diagnostic endpoint, but no output appears in the response. What does this evidence most strongly support?",
+      "option_a": "A possible out-of-band blind command injection or other server-side callback; isolate the sink and confirm with controls.",
+      "option_b": "A proven IDOR.",
+      "option_c": "A confirmed SQL UNION extraction.",
+      "option_d": "A successful login.",
+      "correct_answer": "A",
+      "explanation": "An external interaction can indicate server-side execution or fetching, but the exact vulnerability requires controlled attribution."
+    },
+    {
+      "question": "What does XXE stand for?",
+      "option_a": "XML External Entity",
+      "option_b": "Extended Exchange Encoding",
+      "option_c": "External Execution Endpoint",
+      "option_d": "XML Encryption Extension",
+      "correct_answer": "A",
+      "explanation": "XXE is XML External Entity injection."
+    },
+    {
+      "question": "Which XML feature is central to a typical XXE attack?",
+      "option_a": "DOCTYPE declarations and external entity references.",
+      "option_b": "CSS selectors.",
+      "option_c": "HTTP cache-control directives.",
+      "option_d": "JWT claims.",
+      "correct_answer": "A",
+      "explanation": "XXE abuses XML parser handling of external entities declared through document type definitions."
+    },
+    {
+      "question": "What can a vulnerable XML parser disclose through a file-based XXE payload?",
+      "option_a": "Files readable by the application process, subject to parser and system restrictions.",
+      "option_b": "Any file on the internet regardless of access.",
+      "option_c": "Only browser cookies.",
+      "option_d": "Only DNS zone transfers.",
+      "correct_answer": "A",
+      "explanation": "External entities may cause the parser to read local resources accessible to the process."
+    },
+    {
+      "question": "Why can XXE sometimes lead to SSRF?",
+      "option_a": "An external entity can cause the XML parser/server to request an attacker-selected external or internal resource.",
+      "option_b": "XXE automatically changes the user’s role.",
+      "option_c": "Both vulnerabilities require a JWT.",
+      "option_d": "SSRF is a type of CSS injection.",
+      "correct_answer": "A",
+      "explanation": "The parser’s external-resource resolution can make server-side requests, overlapping with SSRF behaviour."
+    },
+    {
+      "question": "Which input formats or document types may contain XML that a server processes, as mentioned in the lecture?",
+      "option_a": "SAML, SVG, DOCX and XLSX.",
+      "option_b": "JPEG, MP3 and plain PNG only.",
+      "option_c": "SQL dump files only.",
+      "option_d": "CSS and JavaScript only.",
+      "correct_answer": "A",
+      "explanation": "The lecture notes XML can be encountered in APIs, SAML, SVG and Office Open XML document formats."
+    },
+    {
+      "question": "A vulnerable parser does not return file contents in its HTTP response. What technique may still reveal an XXE issue?",
+      "option_a": "Blind XXE using an external DTD or out-of-band interaction.",
+      "option_b": "Changing the HTTP status manually.",
+      "option_c": "Using Intruder Battering Ram on a password field.",
+      "option_d": "Changing the CSS.",
+      "correct_answer": "A",
+      "explanation": "Blind XXE can use external interactions to signal parser behaviour or exfiltrate data out of band."
+    },
+    {
+      "question": "Which mitigation most directly removes the common XXE attack mechanism?",
+      "option_a": "Disable DTD processing and external entity resolution in the XML parser.",
+      "option_b": "Block the word SYSTEM in the browser.",
+      "option_c": "Use a longer session cookie.",
+      "option_d": "Move the XML file into the web root.",
+      "correct_answer": "A",
+      "explanation": "Disabling DTDs/external entities prevents the parser from resolving attacker-controlled external resources."
+    },
+    {
+      "question": "What is Server-Side Request Forgery?",
+      "option_a": "An attacker causes the server to make an HTTP request to a destination selected or influenced by the attacker.",
+      "option_b": "An attacker makes the browser send a request to itself.",
+      "option_c": "A database accepts an invalid SQL query.",
+      "option_d": "A user reads another user’s invoice.",
+      "correct_answer": "A",
+      "explanation": "SSRF abuses server-side URL-fetching functionality to reach destinations from the server’s network position."
+    },
+    {
+      "question": "Which feature is a plausible SSRF entry point?",
+      "option_a": "A link-preview or import-from-URL feature.",
+      "option_b": "A local password strength meter that never sends data.",
+      "option_c": "A static CSS file.",
+      "option_d": "A client-only calculator.",
+      "correct_answer": "A",
+      "explanation": "Features that fetch user-supplied URLs can become SSRF sinks."
+    },
+    {
+      "question": "Why is localhost an interesting SSRF target?",
+      "option_a": "The server may expose internal services on loopback that external users cannot reach directly.",
+      "option_b": "Localhost always contains cloud credentials.",
+      "option_c": "It disables the HTTP protocol.",
+      "option_d": "It is always the public internet gateway.",
+      "correct_answer": "A",
+      "explanation": "A server-side fetch to localhost can access services from the server’s own network context."
+    },
+    {
+      "question": "Which IPv4 address is the AWS instance metadata endpoint highlighted in the lecture?",
+      "option_a": "8.8.8.8",
+      "option_b": "169.254.169.254",
+      "option_c": "127.0.0.1",
+      "option_d": "192.168.0.1",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies 169.254.169.254 as the AWS metadata endpoint."
+    },
+    {
+      "question": "What is the key protection added by AWS IMDSv2 compared with IMDSv1?",
+      "option_a": "A token is required before metadata requests are made.",
+      "option_b": "Metadata is moved to a public DNS name.",
+      "option_c": "It disables all instance roles.",
+      "option_d": "It replaces HTTP with SMTP.",
+      "correct_answer": "A",
+      "explanation": "IMDSv2 requires a session token obtained through a PUT request and supplied in subsequent metadata requests."
+    },
+    {
+      "question": "Which header is shown in the lecture for GCP metadata access?",
+      "option_a": "X-aws-ec2-metadata-token",
+      "option_b": "Metadata-Flavor: Google",
+      "option_c": "Authorization: Basic",
+      "option_d": "Content-Type: image/png",
+      "correct_answer": "B",
+      "explanation": "The lecture shows the required GCP metadata header as Metadata-Flavor: Google."
+    },
+    {
+      "question": "A naive SSRF filter blocks the literal string 127.0.0.1. Which technique could bypass such a string-only filter?",
+      "option_a": "An alternate IP representation such as decimal 2130706433.",
+      "option_b": "A longer password.",
+      "option_c": "A SameSite cookie.",
+      "option_d": "A SQL prepared statement.",
+      "correct_answer": "A",
+      "explanation": "Alternate representations of the same IP can evade simple string blocklists."
+    },
+    {
+      "question": "A URL passes a hostname check because it resolves to a public IP, but resolves to an internal IP when fetched later. What is this technique?",
+      "option_a": "DNS rebinding",
+      "option_b": "Session fixation",
+      "option_c": "Credential stuffing",
+      "option_d": "Path canonicalisation",
+      "correct_answer": "A",
+      "explanation": "DNS rebinding exploits a time-of-check/time-of-use gap between validation and the actual request."
+    },
+    {
+      "question": "Which SSRF defence is strongest according to the lecture’s structural approach?",
+      "option_a": "Block the text localhost and 169.254 only.",
+      "option_b": "Allowlist exact permitted destinations, validate resolved/final IPs after redirects, block private/link-local ranges and enforce IMDSv2.",
+      "option_c": "Accept any HTTPS URL.",
+      "option_d": "Return raw fetched responses to users.",
+      "correct_answer": "B",
+      "explanation": "A positive destination allowlist plus post-resolution/redirect validation and metadata protections addresses common bypasses."
+    },
+    {
+      "question": "What does ../ typically do in a filesystem path?",
+      "option_a": "Move one directory upward.",
+      "option_b": "Create a new user.",
+      "option_c": "Start an HTTP redirect.",
+      "option_d": "Decode Base64.",
+      "correct_answer": "A",
+      "explanation": "The parent-directory sequence moves traversal one directory upward."
+    },
+    {
+      "question": "A parameter ?file=report.pdf is concatenated directly into a filesystem path. What is the principal risk?",
+      "option_a": "The input may escape the intended directory and access other files.",
+      "option_b": "It automatically causes SQL injection.",
+      "option_c": "It prevents all file access.",
+      "option_d": "It changes the TLS cipher.",
+      "correct_answer": "A",
+      "explanation": "Unchecked path construction can allow directory traversal and arbitrary file reads within process permissions."
+    },
+    {
+      "question": "Which payload illustrates URL-encoded traversal?",
+      "option_a": "..%2f..%2fetc%2fpasswd",
+      "option_b": "admin'-- -",
+      "option_c": "<script>alert(1)</script>",
+      "option_d": "169.254.169.254",
+      "correct_answer": "A",
+      "explanation": "%2f encodes a slash, so the sequence represents encoded ../ traversal components."
+    },
+    {
+      "question": "Why can a single-pass filter that removes ../ be bypassed by a nested sequence such as ....//?",
+      "option_a": "After one stripping pass, the remaining characters can form ../.",
+      "option_b": "The payload is a valid JWT.",
+      "option_c": "The filesystem ignores all periods.",
+      "option_d": "The browser converts it to SQL.",
+      "correct_answer": "A",
+      "explanation": "A naive single-pass replacement can leave a traversal sequence behind after removing the middle characters."
+    },
+    {
+      "question": "Which mitigation best prevents path traversal when serving a file from a permitted base directory?",
+      "option_a": "Canonicalise/resolve the final path and verify it remains inside the allowed base directory; preferably allowlist filenames.",
+      "option_b": "Remove only the first occurrence of ../.",
+      "option_c": "Base64-encode the path.",
+      "option_d": "Trust the file extension.",
+      "correct_answer": "A",
+      "explanation": "Canonicalisation followed by a containment check prevents alternate encodings from escaping the intended directory."
+    },
+    {
+      "question": "What is the dangerous combination that makes an uploaded file capable of becoming a web shell?",
+      "option_a": "The file is executable by the server and stored somewhere the attacker can reach.",
+      "option_b": "The file has a long name and a small size.",
+      "option_c": "The file is uploaded over HTTPS.",
+      "option_d": "The file has a valid image extension only.",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies server execution plus attacker reachability as the critical combination."
+    },
+    {
+      "question": "Why is the Content-Type header not reliable proof that an uploaded file is an image?",
+      "option_a": "The client can set or spoof the header.",
+      "option_b": "The server always ignores it.",
+      "option_c": "It is encrypted by the browser.",
+      "option_d": "It contains the file’s cryptographic signature.",
+      "correct_answer": "A",
+      "explanation": "Content-Type is supplied as part of the request and can be controlled by an attacker."
+    },
+    {
+      "question": "What is a double-extension upload bypass example from the lecture?",
+      "option_a": "shell.php.jpg",
+      "option_b": "shell.jpg.png.exe.txt only",
+      "option_c": "admin.jwt",
+      "option_d": "../../etc/passwd",
+      "correct_answer": "A",
+      "explanation": "A weak extension filter may accept a filename such as shell.php.jpg while server handling may still execute it depending on configuration."
+    },
+    {
+      "question": "What is the purpose of a polyglot upload such as a file beginning with GIF89a followed by PHP code?",
+      "option_a": "To satisfy a superficial image magic-byte check while retaining executable content.",
+      "option_b": "To encrypt the PHP code.",
+      "option_c": "To prevent the server from storing the file.",
+      "option_d": "To create a valid JWT.",
+      "correct_answer": "A",
+      "explanation": "A polyglot can begin with valid image bytes and also contain content interpreted as code if stored and served unsafely."
+    },
+    {
+      "question": "Which mitigation most strongly prevents a stored upload from executing as a server-side script?",
+      "option_a": "Store files outside the web root and serve them through a non-executing handler with no-execute permissions.",
+      "option_b": "Only check the browser-supplied Content-Type.",
+      "option_c": "Rename every file to image.php.",
+      "option_d": "Allow uploads to the application source directory.",
+      "correct_answer": "A",
+      "explanation": "Outside-webroot storage and non-executable serving remove the execution path even if validation checks fail."
+    },
+    {
+      "question": "Which pairing correctly matches the vulnerable interpreter or sink?",
+      "option_a": "SQL injection—database SQL parser; command injection—OS shell.",
+      "option_b": "SQL injection—XML parser; command injection—browser CSS.",
+      "option_c": "SQL injection—filesystem; command injection—JWT verifier.",
+      "option_d": "SQL injection—DNS resolver; command injection—TLS certificate.",
+      "correct_answer": "A",
+      "explanation": "SQLi targets SQL interpretation, while OS command injection targets shell/command interpretation."
+    },
+    {
+      "question": "Which mapping best captures the lecture’s common injection theme?",
+      "option_a": "SQLi and command injection turn data into instructions; XXE and SSRF can turn input into destinations; traversal and upload can turn input into paths or executable content.",
+      "option_b": "All six attacks are caused only by weak passwords.",
+      "option_c": "All six attacks require browser JavaScript.",
+      "option_d": "All six are prevented by hiding URLs.",
+      "correct_answer": "A",
+      "explanation": "The lecture’s through-line is failure to separate untrusted data from code, destinations, paths or executable files."
+    },
+    {
+      "question": "A developer proposes blocking quotes, semicolons, angle brackets and ../ across all input fields. What is the strongest response?",
+      "option_a": "This is a complete universal fix.",
+      "option_b": "Blocklists are fragile and can break legitimate input; use structural controls appropriate to each sink.",
+      "option_c": "Only add more blocked characters.",
+      "option_d": "Disable all user input.",
+      "correct_answer": "B",
+      "explanation": "The lecture contrasts blocklists with parameterised queries, argument arrays, disabled XML entities and destination/path allowlists."
+    },
+    {
+      "question": "Which mitigation set is correctly matched to the vulnerability family?",
+      "option_a": "SQLi—parameterised queries; command injection—argument arrays; XXE—disable external entities; SSRF—destination allowlist.",
+      "option_b": "SQLi—HttpOnly; command injection—SameSite; XXE—UUIDs; SSRF—password spraying.",
+      "option_c": "SQLi—file extension allowlist; command injection—CORS; XXE—MFA; SSRF—SQL comments.",
+      "option_d": "SQLi—robots.txt; command injection—CSS; XXE—TLS; SSRF—JWT encoding.",
+      "correct_answer": "A",
+      "explanation": "Each control structurally prevents untrusted input from becoming executable syntax or an unapproved destination."
+    },
+    {
+      "question": "A URL-import endpoint fetches an internal metadata address, then the application returns the fetched response to the user. Which risk chain is most concerning?",
+      "option_a": "SSRF may expose cloud metadata and temporary instance-role credentials.",
+      "option_b": "A horizontal IDOR is guaranteed.",
+      "option_c": "The request must be SQL injection.",
+      "option_d": "The only risk is an HTTP 302 redirect.",
+      "correct_answer": "A",
+      "explanation": "The lecture describes SSRF to metadata as a chain that can expose cloud credentials and potentially compromise the cloud account."
+    },
+    {
+      "question": "A web application uses raw input in a SQL query, a shell command and a filesystem path. Which design principle addresses the shared root cause across all three?",
+      "option_a": "Keep data separate from instructions and destinations using parameterised APIs, argument arrays and canonicalised/allowlisted paths.",
+      "option_b": "Use one global blacklist of suspicious characters.",
+      "option_c": "Rely on the browser to validate all fields.",
+      "option_d": "Obfuscate the source code.",
+      "correct_answer": "A",
+      "explanation": "The common failure is allowing untrusted input to cross into a code or path interpretation context; structural separation is the shared remedy."
+    }
+  ]
+}
