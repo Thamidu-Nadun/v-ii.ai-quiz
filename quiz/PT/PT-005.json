@@ -1,0 +1,787 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes network scanning in penetration testing?",
+      "option_a": "The process of encrypting network communications",
+      "option_b": "The process of discovering hosts, ports, services, and potential vulnerabilities on a network",
+      "option_c": "The process of creating user accounts on remote systems",
+      "option_d": "The process of installing operating systems on network devices",
+      "correct_answer": "B",
+      "explanation": "Network scanning helps identify active hosts, accessible ports, running services, and potential security weaknesses."
+    },
+    {
+      "question": "Which of the following represents the three primary types of scanning discussed in the lecture?",
+      "option_a": "Network scanning, port scanning, and vulnerability scanning",
+      "option_b": "TCP scanning, UDP scanning, and ICMP scanning",
+      "option_c": "Passive scanning, active scanning, and wireless scanning",
+      "option_d": "Host scanning, packet scanning, and application scanning",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies network scanning, port scanning, and vulnerability scanning as the three primary types."
+    },
+    {
+      "question": "What is the primary objective of a port scan?",
+      "option_a": "To identify the physical location of network devices",
+      "option_b": "To determine the encryption algorithm used by a host",
+      "option_c": "To identify responding ports and the services associated with them",
+      "option_d": "To modify the firewall configuration of a target",
+      "correct_answer": "C",
+      "explanation": "Port scanning identifies which ports respond and helps determine the services accessible through those ports."
+    },
+    {
+      "question": "What is the primary purpose of vulnerability scanning?",
+      "option_a": "To identify potential threats and vulnerabilities affecting applications and operating systems",
+      "option_b": "To establish TCP connections with every network device",
+      "option_c": "To identify all users connected to a wireless network",
+      "option_d": "To automatically patch every vulnerable application",
+      "correct_answer": "A",
+      "explanation": "Vulnerability scanning proactively identifies potential security weaknesses in applications and operating systems."
+    },
+    {
+      "question": "Which tool is specifically associated with identifying network topology?",
+      "option_a": "Nessus",
+      "option_b": "InSSIDer",
+      "option_c": "SolarWinds Network Topology Mapper",
+      "option_d": "Exploit-DB",
+      "correct_answer": "C",
+      "explanation": "SolarWinds Network Topology Mapper is listed in the lecture as a network scanning and topology discovery tool."
+    },
+    {
+      "question": "Which TCP characteristic distinguishes it from UDP?",
+      "option_a": "TCP is connectionless",
+      "option_b": "TCP provides delivery acknowledgements and retransmission",
+      "option_c": "TCP does not maintain packet ordering",
+      "option_d": "TCP uses an 8-byte header",
+      "correct_answer": "B",
+      "explanation": "TCP provides reliable communication through acknowledgements, retransmission, error detection, and in-order delivery."
+    },
+    {
+      "question": "What is the minimum standard TCP header size mentioned in the lecture?",
+      "option_a": "8 bytes",
+      "option_b": "12 bytes",
+      "option_c": "16 bytes",
+      "option_d": "20 bytes",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies the TCP header as having a minimum size of 20 bytes."
+    },
+    {
+      "question": "Which statement correctly describes UDP communication?",
+      "option_a": "It requires a three-way handshake before transmitting data",
+      "option_b": "It guarantees in-order delivery",
+      "option_c": "It is connectionless and message-oriented",
+      "option_d": "It always retransmits lost packets",
+      "correct_answer": "C",
+      "explanation": "UDP is connectionless and message-oriented and does not provide TCP-style delivery acknowledgements or retransmission."
+    },
+    {
+      "question": "What is the UDP header size?",
+      "option_a": "8 bytes",
+      "option_b": "12 bytes",
+      "option_c": "20 bytes",
+      "option_d": "32 bytes",
+      "correct_answer": "A",
+      "explanation": "UDP uses an 8-byte header, which is smaller than the minimum 20-byte TCP header."
+    },
+    {
+      "question": "Which TCP feature helps prevent network congestion?",
+      "option_a": "Message orientation",
+      "option_b": "Congestion control",
+      "option_c": "Connectionless transmission",
+      "option_d": "Reduced header size",
+      "correct_answer": "B",
+      "explanation": "TCP implements congestion control to regulate transmission according to network conditions."
+    },
+    {
+      "question": "Which TCP flag is associated with synchronization during connection establishment?",
+      "option_a": "FIN",
+      "option_b": "RST",
+      "option_c": "SYN",
+      "option_d": "URG",
+      "correct_answer": "C",
+      "explanation": "SYN stands for Synchronization and is used during TCP connection establishment."
+    },
+    {
+      "question": "What does the TCP ACK flag represent?",
+      "option_a": "Acknowledgement",
+      "option_b": "Connection termination",
+      "option_c": "Urgent data",
+      "option_d": "Connection reset",
+      "correct_answer": "A",
+      "explanation": "ACK indicates that the acknowledgement field is significant in the TCP segment."
+    },
+    {
+      "question": "Which TCP flag is primarily associated with terminating a connection gracefully?",
+      "option_a": "PSH",
+      "option_b": "URG",
+      "option_c": "SYN",
+      "option_d": "FIN",
+      "correct_answer": "D",
+      "explanation": "FIN indicates that a sender has finished transmitting data and is used in TCP connection termination."
+    },
+    {
+      "question": "Which TCP flag is used to reset a connection?",
+      "option_a": "ACK",
+      "option_b": "RST",
+      "option_c": "PSH",
+      "option_d": "FIN",
+      "correct_answer": "B",
+      "explanation": "RST stands for Reset and is used to reset or reject a TCP connection."
+    },
+    {
+      "question": "Which TCP flag is associated with urgent data?",
+      "option_a": "URG",
+      "option_b": "SYN",
+      "option_c": "FIN",
+      "option_d": "ACK",
+      "correct_answer": "A",
+      "explanation": "URG indicates that the urgent pointer field is significant."
+    },
+    {
+      "question": "What is the correct order of packets in a standard TCP three-way handshake?",
+      "option_a": "ACK, SYN, FIN",
+      "option_b": "SYN, FIN, ACK",
+      "option_c": "SYN, SYN-ACK, ACK",
+      "option_d": "FIN, SYN-ACK, RST",
+      "correct_answer": "C",
+      "explanation": "The initiating host sends SYN, the receiving host responds with SYN-ACK, and the initiator completes the handshake with ACK."
+    },
+    {
+      "question": "Which utility can perform an ICMP sweep to help identify active hosts?",
+      "option_a": "Exploit-DB",
+      "option_b": "Angry IP Scanner",
+      "option_c": "Ndiff",
+      "option_d": "Ncat",
+      "correct_answer": "B",
+      "explanation": "Angry IP Scanner is identified in the lecture as a tool that can perform ICMP sweeps."
+    },
+    {
+      "question": "Which Nmap option performs host discovery while disabling port scanning?",
+      "option_a": "-sV",
+      "option_b": "-sU",
+      "option_c": "-A",
+      "option_d": "-sn",
+      "correct_answer": "D",
+      "explanation": "The -sn option performs a ping scan and disables the port scanning phase."
+    },
+    {
+      "question": "What does Nmap stand for?",
+      "option_a": "Network Mapping",
+      "option_b": "Network Management Protocol",
+      "option_c": "Network Mapper",
+      "option_d": "Node Mapping",
+      "correct_answer": "C",
+      "explanation": "Nmap stands for Network Mapper and is an open-source tool used for network discovery and security auditing."
+    },
+    {
+      "question": "Which of the following is NOT a capability of Nmap described in the lecture?",
+      "option_a": "Automatically guaranteeing the exploitation of every vulnerability",
+      "option_b": "Discovering available hosts",
+      "option_c": "Identifying services and their versions",
+      "option_d": "Detecting operating systems and possible packet filters",
+      "correct_answer": "A",
+      "explanation": "Nmap can discover hosts, services, operating systems, and packet filters, but it does not guarantee successful exploitation of vulnerabilities."
+    },
+    {
+      "question": "Which Nmap component provides an advanced graphical interface and results viewer?",
+      "option_a": "Ncat",
+      "option_b": "Nping",
+      "option_c": "Ndiff",
+      "option_d": "Zenmap",
+      "correct_answer": "D",
+      "explanation": "Zenmap is the graphical interface and results viewer included in the Nmap suite."
+    },
+    {
+      "question": "Which Nmap suite component is designed for data transfer, redirection, and debugging?",
+      "option_a": "Ndiff",
+      "option_b": "Ncat",
+      "option_c": "Zenmap",
+      "option_d": "Nping",
+      "correct_answer": "B",
+      "explanation": "Ncat is a flexible networking utility used for data transfer, redirection, and debugging."
+    },
+    {
+      "question": "Which Nmap component is used to compare scan results?",
+      "option_a": "Ncat",
+      "option_b": "Zenmap",
+      "option_c": "Ndiff",
+      "option_d": "Nping",
+      "correct_answer": "C",
+      "explanation": "Ndiff compares Nmap scan results and helps identify changes between scans."
+    },
+    {
+      "question": "Which Nmap suite component is used for packet generation and response analysis?",
+      "option_a": "Nping",
+      "option_b": "Ndiff",
+      "option_c": "Zenmap",
+      "option_d": "Ncat",
+      "correct_answer": "A",
+      "explanation": "Nping is designed for packet generation and response analysis."
+    },
+    {
+      "question": "Which command excludes a particular host from an Nmap subnet scan?",
+      "option_a": "nmap 192.168.0.0/24 -p 192.168.0.200",
+      "option_b": "nmap 192.168.0.0/24 --exclude 192.168.0.200",
+      "option_c": "nmap 192.168.0.0/24 -sn 192.168.0.200",
+      "option_d": "nmap 192.168.0.0/24 -iL 192.168.0.200",
+      "correct_answer": "B",
+      "explanation": "The --exclude option removes specified systems from the scan target list."
+    },
+    {
+      "question": "Which Nmap option allows targets to be supplied through a text file?",
+      "option_a": "-oN",
+      "option_b": "-p",
+      "option_c": "-iL",
+      "option_d": "-vv",
+      "correct_answer": "C",
+      "explanation": "The -iL option reads a list of hosts or networks from an input file."
+    },
+    {
+      "question": "Which Nmap timing template represents the most aggressive and fastest timing option?",
+      "option_a": "-T0",
+      "option_b": "-T1",
+      "option_c": "-T3",
+      "option_d": "-T5",
+      "correct_answer": "D",
+      "explanation": "T5 is the fastest and most aggressive timing template, while T3 is the default."
+    },
+    {
+      "question": "Which timing template is the default according to the lecture?",
+      "option_a": "-T3",
+      "option_b": "-T5",
+      "option_c": "-T1",
+      "option_d": "-T0",
+      "correct_answer": "A",
+      "explanation": "Nmap uses T3 as its default timing template."
+    },
+    {
+      "question": "What is the purpose of the --min-hostgroup option?",
+      "option_a": "To exclude a minimum number of hosts from scanning",
+      "option_b": "To specify the minimum number of targets scanned in parallel",
+      "option_c": "To identify the minimum number of open ports",
+      "option_d": "To limit the scan to a minimum number of TCP connections",
+      "correct_answer": "B",
+      "explanation": "The --min-hostgroup option controls the minimum number of targets grouped for parallel scanning."
+    },
+    {
+      "question": "Which Nmap option scans only specified ports?",
+      "option_a": "-O",
+      "option_b": "-A",
+      "option_c": "-p",
+      "option_d": "-sn",
+      "correct_answer": "C",
+      "explanation": "The -p option allows a tester to specify individual ports or port ranges."
+    },
+    {
+      "question": "Which command scans all TCP ports from 1 to 65535 on a target?",
+      "option_a": "nmap -p 1-65535 192.168.0.110",
+      "option_b": "nmap -F 192.168.0.110",
+      "option_c": "nmap -p 1-1023 192.168.0.110",
+      "option_d": "nmap -sn 192.168.0.110",
+      "correct_answer": "A",
+      "explanation": "The specified range includes every TCP port from 1 through 65535."
+    },
+    {
+      "question": "Which Nmap option performs operating system detection?",
+      "option_a": "-sV",
+      "option_b": "-sU",
+      "option_c": "-O",
+      "option_d": "-PR",
+      "correct_answer": "C",
+      "explanation": "The -O option enables OS fingerprinting based on responses received from the target."
+    },
+    {
+      "question": "Which Nmap option identifies service names and version information?",
+      "option_a": "-sN",
+      "option_b": "-sV",
+      "option_c": "-sn",
+      "option_d": "-F",
+      "correct_answer": "B",
+      "explanation": "The -sV option probes open ports to identify the services and their versions."
+    },
+    {
+      "question": "Which command attempts to force Nmap to guess an operating system when normal fingerprinting is unsuccessful?",
+      "option_a": "nmap -sV --reason 192.168.57.110",
+      "option_b": "nmap -sU -A 192.168.57.110",
+      "option_c": "nmap -F -O 192.168.57.110",
+      "option_d": "nmap -O --osscan-guess 192.168.57.110",
+      "correct_answer": "D",
+      "explanation": "The --osscan-guess option makes Nmap attempt additional OS guesses, although the lecture warns that accuracy is not guaranteed."
+    },
+    {
+      "question": "Which Nmap option performs a FIN scan?",
+      "option_a": "-sF",
+      "option_b": "-sX",
+      "option_c": "-sN",
+      "option_d": "-sS",
+      "correct_answer": "A",
+      "explanation": "The -sF option performs a FIN scan by setting the FIN flag in TCP packets."
+    },
+    {
+      "question": "Which Nmap option performs an Xmas scan?",
+      "option_a": "-sN",
+      "option_b": "-sS",
+      "option_c": "-sX",
+      "option_d": "-sU",
+      "correct_answer": "C",
+      "explanation": "The -sX option performs an Xmas scan using the URG, FIN, and PSH flags."
+    },
+    {
+      "question": "Which command allows a tester to manually specify TCP flags?",
+      "option_a": "-sV",
+      "option_b": "--scanflags",
+      "option_c": "--reason",
+      "option_d": "--traceroute",
+      "correct_answer": "B",
+      "explanation": "The --scanflags option allows custom TCP flag combinations to be constructed."
+    },
+    {
+      "question": "What is the primary difference between an Nmap fast scan and a full port scan?",
+      "option_a": "A fast scan checks UDP ports while a full scan checks TCP ports",
+      "option_b": "A fast scan performs OS detection while a full scan does not",
+      "option_c": "A fast scan checks only the top 10 ports",
+      "option_d": "A fast scan checks approximately 100 ports, while a full port scan can check all 65535 ports",
+      "correct_answer": "D",
+      "explanation": "The lecture describes -F as checking 100 ports instead of the 1000 commonly checked by a standard scan, while a full range can be specified using -p1-65535."
+    },
+    {
+      "question": "Which Nmap option displays a summary of packets sent and received during a scan?",
+      "option_a": "--packet-trace",
+      "option_b": "--exclude",
+      "option_c": "--min-hostgroup",
+      "option_d": "--osscan-guess",
+      "correct_answer": "A",
+      "explanation": "The --packet-trace option displays a summary of network traffic sent and received during scanning."
+    },
+    {
+      "question": "Which option increases the amount of information displayed during an Nmap scan?",
+      "option_a": "-O",
+      "option_b": "-p",
+      "option_c": "-v",
+      "option_d": "-PR",
+      "correct_answer": "C",
+      "explanation": "The -v option increases verbosity, and additional levels such as -vv provide more detailed output."
+    },
+    {
+      "question": "Which Nmap option displays the reason a port has been assigned a particular state?",
+      "option_a": "--open",
+      "option_b": "--reason",
+      "option_c": "--traceroute",
+      "option_d": "-iL",
+      "correct_answer": "B",
+      "explanation": "The --reason option displays the response or observation responsible for the reported port state."
+    },
+    {
+      "question": "Which option displays only open or possibly open ports?",
+      "option_a": "-A",
+      "option_b": "-sU",
+      "option_c": "-sn",
+      "option_d": "--open",
+      "correct_answer": "D",
+      "explanation": "The --open option filters the output to show open or possibly open ports."
+    },
+    {
+      "question": "Which Nmap option performs a UDP scan?",
+      "option_a": "-sU",
+      "option_b": "-sS",
+      "option_c": "-sF",
+      "option_d": "-sN",
+      "correct_answer": "A",
+      "explanation": "The -sU option enables UDP port scanning."
+    },
+    {
+      "question": "Which output option saves Nmap results in XML format?",
+      "option_a": "-oN",
+      "option_b": "-oG",
+      "option_c": "-oX",
+      "option_d": "-oS",
+      "correct_answer": "C",
+      "explanation": "The -oX option saves results in XML format. The lecture also identifies -oN, -oG, and -oS for other output formats."
+    },
+    {
+      "question": "Which Nmap option performs an ARP ping scan?",
+      "option_a": "-n",
+      "option_b": "-PR",
+      "option_c": "-sn",
+      "option_d": "-sU",
+      "correct_answer": "B",
+      "explanation": "The -PR option performs an ARP ping scan and can improve host discovery performance on local networks."
+    },
+    {
+      "question": "What is the purpose of the -n option in Nmap?",
+      "option_a": "To disable operating system detection",
+      "option_b": "To scan only network ports",
+      "option_c": "To disable reverse DNS resolution",
+      "option_d": "To enable UDP scanning",
+      "correct_answer": "C",
+      "explanation": "The -n option disables reverse DNS resolution, which can reduce unnecessary delays during scanning."
+    },
+    {
+      "question": "Which Nmap option enables traceroute functionality?",
+      "option_a": "--traceroute",
+      "option_b": "--packet-trace",
+      "option_c": "--exclude",
+      "option_d": "--reason",
+      "correct_answer": "A",
+      "explanation": "The --traceroute option attempts to identify the network path to the target."
+    },
+    {
+      "question": "Which command performs a TCP SYN scan?",
+      "option_a": "nmap -sF 192.168.0.110",
+      "option_b": "nmap -sN 192.168.0.110",
+      "option_c": "nmap -sU 192.168.0.110",
+      "option_d": "nmap -sS 192.168.0.110",
+      "correct_answer": "D",
+      "explanation": "The -sS option performs a TCP SYN scan, commonly called a half-open or stealth scan."
+    },
+    {
+      "question": "What is the purpose of the -A option in Nmap?",
+      "option_a": "To perform only an ICMP ping sweep",
+      "option_b": "To enable OS detection, version detection, script scanning, and traceroute",
+      "option_c": "To scan only the first 100 ports",
+      "option_d": "To disable service detection and packet tracing",
+      "correct_answer": "B",
+      "explanation": "The -A option enables a collection of advanced detection features, including OS detection, version detection, script scanning, and traceroute."
+    },
+    {
+      "question": "A tester needs to scan only TCP ports 22 and 443 on a target. Which command is appropriate?",
+      "option_a": "nmap -sn 192.168.1.10",
+      "option_b": "nmap -sU 192.168.1.10",
+      "option_c": "nmap -p 22,443 192.168.1.10",
+      "option_d": "nmap -F 192.168.1.10",
+      "correct_answer": "C",
+      "explanation": "The -p option accepts comma-separated port numbers, allowing the tester to scan only ports 22 and 443."
+    },
+    {
+      "question": "A penetration tester needs to scan a subnet but must avoid a business-critical server at 192.168.0.200. Which command is the most suitable?",
+      "option_a": "nmap 192.168.0.0/24 --exclude 192.168.0.200",
+      "option_b": "nmap 192.168.0.200 -p 1-65535",
+      "option_c": "nmap -A 192.168.0.0/24",
+      "option_d": "nmap -sn 192.168.0.200",
+      "correct_answer": "A",
+      "explanation": "The --exclude option allows the tester to scan the subnet while leaving the specified business-critical server out of the target list."
+    },
+    {
+      "question": "An organization detects that its IDS frequently identifies default Nmap scans. A tester has authorization to conduct a slower assessment and wants to reduce scan aggressiveness. Which approach best matches the lecture?",
+      "option_a": "Use -T5 to maximize scanning speed",
+      "option_b": "Use -F to guarantee that the IDS cannot detect the scan",
+      "option_c": "Use --packet-trace to bypass the firewall",
+      "option_d": "Consider using a slower timing template such as -T1",
+      "correct_answer": "D",
+      "explanation": "The lecture recommends slower timing options such as T1 when attempting to reduce the aggressiveness of scanning. Slower scanning does not guarantee evasion."
+    },
+    {
+      "question": "A tester must scan 30 or more targets in parallel when assessing a subnet. Which Nmap command best satisfies this requirement?",
+      "option_a": "nmap --exclude 30 192.168.0.0/24",
+      "option_b": "nmap --min-hostgroup 30 192.168.0.0/24",
+      "option_c": "nmap -p 30 192.168.0.0/24",
+      "option_d": "nmap -T0 192.168.0.0/24",
+      "correct_answer": "B",
+      "explanation": "The --min-hostgroup 30 option specifies a minimum host group size of 30 targets for parallel scanning."
+    },
+    {
+      "question": "A tester wants to identify whether an unknown service running on port 8080 is Apache, nginx, or another web server. Which Nmap option should be prioritized?",
+      "option_a": "-sn",
+      "option_b": "-PR",
+      "option_c": "-sV",
+      "option_d": "-sN",
+      "correct_answer": "C",
+      "explanation": "The -sV option probes open ports to identify the service and its version, which helps determine the software running on port 8080."
+    },
+    {
+      "question": "A penetration tester runs nmap -O 192.168.1.20 but receives no reliable OS identification. What is the most appropriate next step based on the lecture?",
+      "option_a": "Try -O --osscan-guess while recognizing that the result may be inaccurate",
+      "option_b": "Use -sU because UDP always identifies operating systems accurately",
+      "option_c": "Use -F because fast scans automatically identify operating systems",
+      "option_d": "Use --exclude to force operating system detection",
+      "correct_answer": "A",
+      "explanation": "The lecture suggests using --osscan-guess when Nmap does not recognize an OS, but warns that forced guesses may not be accurate."
+    },
+    {
+      "question": "A tester wants to scan the most common TCP ports quickly rather than every available port. Which option from the lecture is specifically associated with a fast scan?",
+      "option_a": "-p 1-65535",
+      "option_b": "-F",
+      "option_c": "-sU",
+      "option_d": "-A",
+      "correct_answer": "B",
+      "explanation": "The -F option performs a fast scan of approximately 100 ports rather than the 1000 ports checked by a standard scan described in the lecture."
+    },
+    {
+      "question": "A tester needs to determine why Nmap classified a particular port as open or filtered. Which option provides the most directly relevant information?",
+      "option_a": "-iL",
+      "option_b": "-n",
+      "option_c": "-O",
+      "option_d": "--reason",
+      "correct_answer": "D",
+      "explanation": "The --reason option reports the reason behind the port-state determination, helping the tester interpret scan results."
+    },
+    {
+      "question": "A tester wants to compare the results of a network scan conducted today with a scan performed last week. Which tool from the Nmap suite should be used?",
+      "option_a": "Nping",
+      "option_b": "Ncat",
+      "option_c": "Ndiff",
+      "option_d": "Zenmap",
+      "correct_answer": "C",
+      "explanation": "Ndiff is specifically designed to compare Nmap scan results and identify differences between assessments."
+    },
+    {
+      "question": "A penetration tester wants to inspect the actual packet activity generated by an Nmap scan to understand the requests and responses. Which option should be selected?",
+      "option_a": "--packet-trace",
+      "option_b": "--exclude",
+      "option_c": "--min-hostgroup",
+      "option_d": "-iL",
+      "correct_answer": "A",
+      "explanation": "The --packet-trace option provides a summary of traffic sent and received, making it useful for examining scan behavior."
+    },
+    {
+      "question": "A tester executes nmap -sS 192.168.1.50. Which statement best describes this scanning technique?",
+      "option_a": "It sends UDP datagrams without using TCP flags",
+      "option_b": "It establishes a complete TCP connection for every discovered port",
+      "option_c": "It performs an ICMP-only host discovery operation",
+      "option_d": "It sends TCP SYN probes and normally does not complete the full TCP three-way handshake",
+      "correct_answer": "D",
+      "explanation": "A SYN scan is a half-open scanning technique. It examines TCP responses without normally completing the entire handshake."
+    },
+    {
+      "question": "A penetration tester performs a full TCP connection scan. What distinguishes this from a half-open SYN scan?",
+      "option_a": "A full scan uses only UDP packets",
+      "option_b": "A full scan completes the TCP three-way handshake",
+      "option_c": "A full scan does not send SYN packets",
+      "option_d": "A full scan cannot identify open ports",
+      "correct_answer": "B",
+      "explanation": "A full TCP connect scan establishes the connection through the three-way handshake, whereas a SYN scan normally stops before completing it."
+    },
+    {
+      "question": "A tester sends a TCP packet containing FIN, PSH, and URG flags together. Which scanning technique is being performed?",
+      "option_a": "NULL scan",
+      "option_b": "FIN scan",
+      "option_c": "Xmas scan",
+      "option_d": "SYN scan",
+      "correct_answer": "C",
+      "explanation": "An Xmas scan activates the FIN, PSH, and URG flags simultaneously."
+    },
+    {
+      "question": "A firewall investigation reveals TCP probes containing no flags. Which scanning technique most likely generated these packets?",
+      "option_a": "NULL scan",
+      "option_b": "Xmas scan",
+      "option_c": "FIN scan",
+      "option_d": "SYN scan",
+      "correct_answer": "A",
+      "explanation": "A NULL scan sends TCP packets without setting any TCP flags."
+    },
+    {
+      "question": "Which statement correctly describes a FIN scan?",
+      "option_a": "It activates SYN and ACK flags together",
+      "option_b": "It sends packets containing only the URG flag",
+      "option_c": "It performs a complete TCP connection establishment",
+      "option_d": "It sets the FIN flag in the TCP packet",
+      "correct_answer": "D",
+      "explanation": "A FIN scan uses TCP packets with the FIN flag activated and is one of the scanning techniques covered in the lecture."
+    },
+    {
+      "question": "Why is a UDP scan fundamentally different from a TCP SYN scan?",
+      "option_a": "UDP uses a three-way handshake, while SYN scanning does not",
+      "option_b": "UDP scanning does not use the TCP three-way handshake",
+      "option_c": "UDP scanning always establishes a reliable connection",
+      "option_d": "UDP scanning requires FIN, PSH, and URG flags",
+      "correct_answer": "B",
+      "explanation": "UDP is connectionless and does not require the TCP three-way handshake."
+    },
+    {
+      "question": "A penetration tester needs to identify services on UDP ports of an authorized target. Which command is appropriate?",
+      "option_a": "nmap -sF 192.168.1.10",
+      "option_b": "nmap -sS 192.168.1.10",
+      "option_c": "nmap -sU 192.168.1.10",
+      "option_d": "nmap -sX 192.168.1.10",
+      "correct_answer": "C",
+      "explanation": "The -sU option specifically performs UDP scanning."
+    },
+    {
+      "question": "A tester notices that a TCP SYN scan is being detected by an organization's monitoring systems. Which scanning technique is another TCP technique covered in the lecture that uses unusual flag combinations?",
+      "option_a": "Xmas scanning",
+      "option_b": "ARP ping scanning",
+      "option_c": "ICMP sweep",
+      "option_d": "Traceroute",
+      "correct_answer": "A",
+      "explanation": "Xmas scanning uses an unusual combination of FIN, PSH, and URG flags. It may be detected by security monitoring and does not guarantee stealth."
+    },
+    {
+      "question": "A network administrator wants to understand why UDP scanning can be useful during a penetration test. Which statement is consistent with the lecture?",
+      "option_a": "UDP scanning always provides exact service versions",
+      "option_b": "UDP scanning completes a reliable connection before sending data",
+      "option_c": "UDP scanning is identical to TCP full connection scanning",
+      "option_d": "UDP scanning avoids TCP connection overhead because UDP is connectionless",
+      "correct_answer": "D",
+      "explanation": "UDP does not establish a TCP connection, so it avoids TCP three-way handshake overhead."
+    },
+    {
+      "question": "A tester wants to perform an Internet-scale port discovery assessment and needs a tool designed for extremely high-speed scanning. Which tool from the lecture is most appropriate?",
+      "option_a": "Ndiff",
+      "option_b": "Masscan",
+      "option_c": "Zenmap",
+      "option_d": "InSSIDer",
+      "correct_answer": "B",
+      "explanation": "Masscan is presented as a high-speed, Internet-scale port scanner capable of transmitting large numbers of packets per second."
+    },
+    {
+      "question": "Which Masscan command scans TCP port 22 across the subnet 192.168.57.0/24?",
+      "option_a": "masscan -sS 192.168.57.0/24",
+      "option_b": "masscan -p 22 192.168.57.0/24 --exclude",
+      "option_c": "sudo masscan -p22 192.168.57.0/24",
+      "option_d": "masscan -sn 192.168.57.0/24",
+      "correct_answer": "C",
+      "explanation": "The lecture demonstrates sudo masscan -p22 192.168.57.0/24 for scanning port 22 across the subnet."
+    },
+    {
+      "question": "Which Masscan option is used to enable banner checking?",
+      "option_a": "--banners",
+      "option_b": "--packet-trace",
+      "option_c": "--osscan-guess",
+      "option_d": "--traceroute",
+      "correct_answer": "A",
+      "explanation": "Masscan supports the --banners option for banner checking."
+    },
+    {
+      "question": "Which website is identified in the lecture as a resource for discovering existing vulnerabilities and exploits?",
+      "option_a": "Nmap.org",
+      "option_b": "NirSoft CountryIP",
+      "option_c": "Scanme.nmap.org",
+      "option_d": "Exploit-DB",
+      "correct_answer": "D",
+      "explanation": "Exploit-DB is identified as a useful resource for finding existing vulnerabilities and related exploits."
+    },
+    {
+      "question": "What is the primary purpose of banner grabbing?",
+      "option_a": "To modify the service configuration remotely",
+      "option_b": "To collect information exposed by a running network service",
+      "option_c": "To establish an encrypted VPN connection",
+      "option_d": "To disable operating system fingerprinting",
+      "correct_answer": "B",
+      "explanation": "Banner grabbing collects identifying information exposed by services, which can help determine the software and potentially its version."
+    },
+    {
+      "question": "What is the primary purpose of OS fingerprinting?",
+      "option_a": "To identify the physical manufacturer of a network cable",
+      "option_b": "To discover the passwords stored on a host",
+      "option_c": "To estimate the operating system running on a target by examining packet behavior and responses",
+      "option_d": "To identify the geographical location of a remote user",
+      "correct_answer": "C",
+      "explanation": "OS fingerprinting analyzes network responses and packet characteristics to estimate the operating system running on a host."
+    },
+    {
+      "question": "A web server exposes a banner identifying an outdated software version. Why is this information valuable to a penetration tester?",
+      "option_a": "It can help identify potentially applicable vulnerabilities and guide further investigation",
+      "option_b": "It automatically grants administrator privileges",
+      "option_c": "It proves that the server has already been compromised",
+      "option_d": "It guarantees that a publicly available exploit will work",
+      "correct_answer": "A",
+      "explanation": "Service and version information can be compared with known vulnerabilities to identify potential attack paths, although it does not prove exploitability."
+    },
+    {
+      "question": "A penetration tester discovers that an older operating system is more accurately identified by Nmap than a newer, less familiar operating system. Which explanation best matches the lecture?",
+      "option_a": "Older operating systems always expose more open ports",
+      "option_b": "Nmap does not support newer operating systems",
+      "option_c": "OS detection depends entirely on the target's hostname",
+      "option_d": "Older operating system versions are typically better recognized by Nmap's fingerprinting techniques",
+      "correct_answer": "D",
+      "explanation": "The lecture notes that older OS versions are typically better recognized during Nmap OS detection."
+    },
+    {
+      "question": "An organization wants to prevent unauthorized network scanning from revealing unnecessary information. Which general defensive approach is most appropriate?",
+      "option_a": "Expose every service to the public network",
+      "option_b": "Minimize unnecessary exposed services and use firewalls and monitoring to control and detect scanning",
+      "option_c": "Disable all network logging",
+      "option_d": "Allow all incoming TCP and UDP traffic",
+      "correct_answer": "B",
+      "explanation": "Reducing exposed services and using appropriate filtering and monitoring helps reduce the information available to unauthorized scanners and supports detection."
+    },
+    {
+      "question": "A penetration tester is about to scan an organization's SCADA network. What is the most important precaution emphasized in the lecture?",
+      "option_a": "Use T5 to finish before the administrator notices",
+      "option_b": "Scan every port without checking the system's stability",
+      "option_c": "Obtain written authorization and consider that aggressive scanning may crash sensitive systems",
+      "option_d": "Use Masscan because it cannot affect industrial systems",
+      "correct_answer": "C",
+      "explanation": "The lecture explicitly warns that scanning without written permission is prohibited and that aggressive scanning may crash systems, particularly SCADA environments."
+    },
+    {
+      "question": "A tester is conducting an assessment against a target that does not respond to ordinary ping requests. Which conclusion is most accurate?",
+      "option_a": "The target must be powered off",
+      "option_b": "The target cannot have any open ports",
+      "option_c": "The target is definitely running UDP services",
+      "option_d": "The target may still be active because firewalls or security policies can block ICMP or ping traffic",
+      "correct_answer": "D",
+      "explanation": "The lecture notes that systems with suitable firewalls and cautious security policies may ignore ping requests. Lack of a ping response does not prove a host is offline."
+    },
+    {
+      "question": "A tester needs to assess a network where several important servers cannot tolerate aggressive probing. Which strategy best combines the scanning considerations in the lecture?",
+      "option_a": "Identify critical systems, exclude them where necessary, obtain authorization, and use suitable timing settings",
+      "option_b": "Use T5 across the entire network and ignore server availability",
+      "option_c": "Run Masscan against every port without restrictions",
+      "option_d": "Disable the firewall before beginning the assessment",
+      "correct_answer": "A",
+      "explanation": "A responsible assessment considers business-critical systems, uses target exclusions where appropriate, obtains authorization, and selects suitable scan intensity."
+    },
+    {
+      "question": "A tester discovers an open TCP port but does not know which application is listening on it. Which sequence of actions is the most appropriate?",
+      "option_a": "Immediately execute an exploit without identifying the service",
+      "option_b": "Use service/version detection, examine available banner information, and investigate relevant vulnerabilities",
+      "option_c": "Run only an ICMP sweep because it identifies application versions",
+      "option_d": "Use -sn because it automatically retrieves service banners",
+      "correct_answer": "B",
+      "explanation": "Identifying the service and its version provides a foundation for researching possible vulnerabilities before attempting further testing."
+    },
+    {
+      "question": "A tester runs an Nmap assessment and saves the results in XML format. The team later wants to process those results using another security tool. Why is XML output useful?",
+      "option_a": "XML automatically exploits discovered services",
+      "option_b": "XML prevents the scan from being detected",
+      "option_c": "XML provides a structured representation that can be consumed by other tools",
+      "option_d": "XML guarantees that every port has been scanned",
+      "correct_answer": "C",
+      "explanation": "XML provides structured scan data that can be parsed and integrated into other tools and workflows."
+    },
+    {
+      "question": "A tester observes that a NULL scan receives different responses depending on the target's firewall and operating system. What is the most appropriate interpretation?",
+      "option_a": "NULL scans always produce identical results on every operating system",
+      "option_b": "A NULL scan is equivalent to a complete TCP handshake",
+      "option_c": "The target must be using UDP",
+      "option_d": "The interpretation of unusual TCP scan responses can depend on the target's TCP implementation and filtering behavior",
+      "correct_answer": "D",
+      "explanation": "NULL, FIN, and Xmas scan behavior can vary depending on operating system implementations and firewall responses, so results must be interpreted carefully."
+    },
+    {
+      "question": "Additional challenge: A tester receives no response from a UDP probe sent to a target port. What is the most accurate conclusion?",
+      "option_a": "The port is definitely open",
+      "option_b": "The port is definitely closed",
+      "option_c": "The result may be classified as open or filtered because silence alone does not establish whether the port is open or blocked",
+      "option_d": "The target must have completed a TCP handshake",
+      "correct_answer": "C",
+      "explanation": "UDP services may not respond to empty or unexpected probes, and filtering can also suppress responses. Additional probing may be necessary."
+    },
+    {
+      "question": "Additional challenge: A tester scans a target with -sS and receives a TCP RST response to a SYN probe. What does this normally indicate?",
+      "option_a": "The port is closed",
+      "option_b": "The port is definitely open",
+      "option_c": "The TCP three-way handshake has completed",
+      "option_d": "The target is running a UDP service",
+      "correct_answer": "A",
+      "explanation": "In a typical TCP SYN scan, a RST response indicates that the target port is closed."
+    },
+    {
+      "question": "Additional challenge: A tester sends a SYN packet and receives SYN-ACK from the target. What should the tester normally infer?",
+      "option_a": "The target has rejected the connection",
+      "option_b": "The port is open and is willing to establish a TCP connection",
+      "option_c": "The port is necessarily filtered",
+      "option_d": "The target is using a NULL scan",
+      "correct_answer": "B",
+      "explanation": "A SYN-ACK response indicates that the target is accepting the initial connection request, suggesting that the TCP port is open."
+    },
+    {
+      "question": "Additional challenge: A security team wants to determine whether a scan is occurring by examining network behavior rather than relying only on the scan's final results. Which approach is most appropriate?",
+      "option_a": "Examine only the target's desktop wallpaper",
+      "option_b": "Disable network monitoring during the assessment",
+      "option_c": "Ignore repeated connection attempts because they cannot indicate scanning",
+      "option_d": "Analyze network traffic for unusual patterns of probes across multiple ports and hosts",
+      "correct_answer": "D",
+      "explanation": "Scanning can produce recognizable traffic patterns, such as repeated probes against multiple ports or hosts. Network monitoring and traffic analysis can help identify such behavior."
+    }
+  ]
+}

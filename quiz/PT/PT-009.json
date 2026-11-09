@@ -1,0 +1,670 @@
+{
+  "questions": [
+    {
+      "question": "Which characteristic most fundamentally distinguishes mobile application penetration testing from traditional web application penetration testing?",
+      "option_a": "Mobile applications do not communicate with remote servers.",
+      "option_b": "The mobile client is compiled code that can be extracted, decompiled, and analyzed.",
+      "option_c": "Mobile applications cannot implement authentication mechanisms.",
+      "option_d": "Mobile applications exclusively use encrypted network protocols.",
+      "correct_answer": "B",
+      "explanation": "Unlike typical browser-based clients, mobile applications distribute compiled binaries containing application logic, resources, and potentially sensitive information that attackers can extract and reverse engineer."
+    },
+    {
+      "question": "Which of the following represents a security concern specifically emphasized by the mobile threat landscape?",
+      "option_a": "The inability to execute JavaScript in mobile applications.",
+      "option_b": "The absence of server-side authentication in mobile environments.",
+      "option_c": "The impossibility of intercepting mobile network traffic.",
+      "option_d": "Third-party SDKs potentially introducing vulnerabilities or leaking sensitive information.",
+      "correct_answer": "D",
+      "explanation": "Third-party SDKs, including advertising and analytics libraries, can introduce additional attack surfaces, leak information, or contain outdated vulnerable dependencies."
+    },
+    {
+      "question": "What is the primary purpose of OWASP MASVS?",
+      "option_a": "To provide a structured verification standard for mobile application security.",
+      "option_b": "To automatically decompile Android applications.",
+      "option_c": "To provide a runtime instrumentation framework.",
+      "option_d": "To replace penetration testing with automated vulnerability scanning.",
+      "correct_answer": "A",
+      "explanation": "MASVS defines mobile application security verification requirements and organizes them into security control categories that guide assessments."
+    },
+    {
+      "question": "What is the primary relationship between OWASP MASVS and MASTG?",
+      "option_a": "MASVS performs dynamic testing, while MASTG performs static testing exclusively.",
+      "option_b": "MASTG defines security requirements, while MASVS provides exploitation scripts.",
+      "option_c": "MASVS describes what security requirements should be verified, while MASTG explains how to test them.",
+      "option_d": "Both frameworks exclusively address Android application vulnerabilities.",
+      "correct_answer": "C",
+      "explanation": "MASVS provides the verification standard, whereas MASTG provides practical testing procedures and test cases for evaluating its controls."
+    },
+    {
+      "question": "Which MASVS category primarily addresses sensitive information stored on a mobile device?",
+      "option_a": "V3 - Cryptography",
+      "option_b": "V2 - Storage",
+      "option_c": "V5 - Network",
+      "option_d": "V8 - Resiliency",
+      "correct_answer": "B",
+      "explanation": "MASVS V2 focuses on what an application persists, where information is stored, and how effectively that information is protected."
+    },
+    {
+      "question": "An application uses AES encryption with a hardcoded encryption key. Which MASVS category is most directly associated with evaluating the algorithm and key-management weaknesses?",
+      "option_a": "V1 - Architecture",
+      "option_b": "V6 - Platform",
+      "option_c": "V7 - Code Quality",
+      "option_d": "V3 - Cryptography",
+      "correct_answer": "D",
+      "explanation": "V3 evaluates cryptographic algorithm selection, key management, and randomness. Hardcoded cryptographic keys directly undermine secure key management."
+    },
+    {
+      "question": "Which MASVS category addresses TLS configuration and certificate or public-key pinning?",
+      "option_a": "V5 - Network",
+      "option_b": "V4 - Authentication",
+      "option_c": "V2 - Storage",
+      "option_d": "V8 - Resiliency",
+      "correct_answer": "A",
+      "explanation": "MASVS V5 covers network communication security, including TLS configuration and certificate or public-key pinning."
+    },
+    {
+      "question": "A production Android application is shipped with debugging enabled. Which MASVS category most directly covers this issue?",
+      "option_a": "V2 - Storage",
+      "option_b": "V4 - Authentication",
+      "option_c": "V7 - Code Quality",
+      "option_d": "V5 - Network",
+      "correct_answer": "C",
+      "explanation": "V7 addresses code quality and build hardening, including insecure production configurations such as debuggable applications."
+    },
+    {
+      "question": "Which of the following best describes the purpose of the OWASP UnCrackable applications?",
+      "option_a": "To provide production-ready authentication libraries.",
+      "option_b": "To provide deliberately vulnerable mobile applications for authorized security practice.",
+      "option_c": "To automatically generate secure Android manifests.",
+      "option_d": "To demonstrate vulnerabilities exclusively in iOS applications.",
+      "correct_answer": "B",
+      "explanation": "OWASP MAS Crackmes provide intentionally vulnerable applications that allow students to practice reverse engineering and mobile security testing in controlled environments."
+    },
+    {
+      "question": "What is the primary objective of solving UnCrackable App Level 1?",
+      "option_a": "To extract the application's signing certificate.",
+      "option_b": "To bypass Android application installation restrictions.",
+      "option_c": "To discover the server's database credentials.",
+      "option_d": "To recover the hidden secret string using static and dynamic analysis.",
+      "correct_answer": "D",
+      "explanation": "The challenge hides a secret string behind weak cryptography and basic root/debug detection. The objective is to recover it through two independent approaches."
+    },
+    {
+      "question": "What is the Android APK format fundamentally based on?",
+      "option_a": "A ZIP archive containing compiled application code, manifests, resources, and other files.",
+      "option_b": "A standalone Linux executable containing only native machine code.",
+      "option_c": "An encrypted database containing application configuration.",
+      "option_d": "A Java source-code project requiring a compiler before installation.",
+      "correct_answer": "A",
+      "explanation": "An APK is a package archive containing components such as AndroidManifest.xml, classes.dex, resources, native libraries, and application assets."
+    },
+    {
+      "question": "Which APK component contains compiled Dalvik/ART bytecode?",
+      "option_a": "resources.arsc",
+      "option_b": "AndroidManifest.xml",
+      "option_c": "classes.dex",
+      "option_d": "META-INF/",
+      "correct_answer": "C",
+      "explanation": "The classes.dex file contains compiled application bytecode, which can be analyzed using tools such as JADX and apktool."
+    },
+    {
+      "question": "Which tool is primarily suitable for converting DEX bytecode into readable Java-like source code?",
+      "option_a": "drozer",
+      "option_b": "JADX",
+      "option_c": "Burp Suite",
+      "option_d": "Frida",
+      "correct_answer": "B",
+      "explanation": "JADX decompiles DEX bytecode into a Java-like representation that makes application logic easier to inspect."
+    },
+    {
+      "question": "Which Android application component represents a UI screen that another application may directly launch when appropriately exported?",
+      "option_a": "Content Provider",
+      "option_b": "Broadcast Receiver",
+      "option_c": "Native Library",
+      "option_d": "Activity",
+      "correct_answer": "D",
+      "explanation": "Activities represent application screens. An exported activity may be launched directly by other applications, creating a potential attack surface."
+    },
+    {
+      "question": "Which Android component is specifically designed to expose structured data to other applications?",
+      "option_a": "Content Provider",
+      "option_b": "Activity",
+      "option_c": "Broadcast Receiver",
+      "option_d": "Service",
+      "correct_answer": "A",
+      "explanation": "Content Providers expose structured application data and can introduce risks such as unauthorized data access, leakage, and SQL injection."
+    },
+    {
+      "question": "What is a major security concern associated with an unsafe WebView JavaScript bridge?",
+      "option_a": "It automatically disables TLS encryption.",
+      "option_b": "It prevents applications from accessing local resources.",
+      "option_c": "Exposed JavaScript interfaces may allow untrusted web content to invoke application functionality.",
+      "option_d": "It converts JavaScript into native Android bytecode.",
+      "correct_answer": "C",
+      "explanation": "Unsafe use of addJavascriptInterface can expose application methods to JavaScript, potentially allowing malicious content to invoke privileged functionality."
+    },
+    {
+      "question": "Which Android component reacts to system or application broadcast events?",
+      "option_a": "Activity",
+      "option_b": "Broadcast Receiver",
+      "option_c": "Content Provider",
+      "option_d": "Native Library",
+      "correct_answer": "B",
+      "explanation": "Broadcast Receivers respond to system or application events. Insufficiently protected receivers may be triggered by external applications."
+    },
+    {
+      "question": "Which statement correctly describes the role of Android intents?",
+      "option_a": "They exclusively encrypt communication between applications.",
+      "option_b": "They are used only for storing persistent application data.",
+      "option_c": "They replace Android application signing.",
+      "option_d": "They facilitate inter-component and inter-application messaging, but implicit intents may be intercepted or spoofed.",
+      "correct_answer": "D",
+      "explanation": "Intents communicate between Android components and applications. Implicit intent resolution can expose information or allow unintended components to receive messages."
+    },
+    {
+      "question": "Which Android component is most directly associated with background operations and may expose privileged functionality through Binder or AIDL?",
+      "option_a": "Service",
+      "option_b": "Activity",
+      "option_c": "Broadcast Receiver",
+      "option_d": "Content Provider",
+      "correct_answer": "A",
+      "explanation": "Services perform background operations and may expose functionality through inter-process communication mechanisms such as Binder and AIDL."
+    },
+    {
+      "question": "An analyst discovers an exported activity in AndroidManifest.xml. What is the most appropriate initial security assessment?",
+      "option_a": "Immediately assume the application contains SQL injection.",
+      "option_b": "Assume that the activity is protected by the operating system.",
+      "option_c": "Investigate whether external applications can launch it and whether appropriate permission and authorization checks exist.",
+      "option_d": "Modify the APK signing certificate before continuing.",
+      "correct_answer": "C",
+      "explanation": "An exported activity can be externally accessible. The analyst should determine whether its functionality exposes sensitive operations or lacks suitable access controls."
+    },
+    {
+      "question": "Which statement correctly compares Android and iOS application packages according to the lecture?",
+      "option_a": "Android applications use IPA packages, while iOS applications use APK packages.",
+      "option_b": "Android APKs contain DEX bytecode, while iOS IPAs contain a Mach-O binary and Info.plist.",
+      "option_c": "Both platforms use DEX bytecode and AndroidManifest.xml.",
+      "option_d": "iOS applications cannot be analyzed using reverse-engineering tools.",
+      "correct_answer": "B",
+      "explanation": "Android applications are distributed as APKs containing DEX bytecode and a manifest, whereas iOS IPAs contain a Mach-O binary and Info.plist."
+    },
+    {
+      "question": "Which tool is primarily used to communicate with Android devices for installation, shell access, and log streaming?",
+      "option_a": "MobSF",
+      "option_b": "Objection",
+      "option_c": "TruffleHog",
+      "option_d": "ADB",
+      "correct_answer": "D",
+      "explanation": "Android Debug Bridge provides device communication capabilities, including application installation, shell access, and log streaming."
+    },
+    {
+      "question": "Why must the Frida server version match the host frida-tools version?",
+      "option_a": "Version mismatches can cause communication or instrumentation failures, sometimes without an obvious error.",
+      "option_b": "Android refuses to install applications when Frida versions differ.",
+      "option_c": "The Frida server controls the Android package signing certificate.",
+      "option_d": "The host version determines the application's encryption algorithm.",
+      "correct_answer": "A",
+      "explanation": "The lecture emphasizes matching the Frida server and host tool versions exactly because mismatches can cause silent failures."
+    },
+    {
+      "question": "What is the purpose of installing a proxy CA certificate as a trusted root on a test device?",
+      "option_a": "To grant the proxy root access to the Android filesystem.",
+      "option_b": "To disable all application certificate validation automatically.",
+      "option_c": "To allow the device to trust certificates generated by the interception proxy when establishing proxied TLS connections.",
+      "option_d": "To replace the application's signing certificate.",
+      "correct_answer": "C",
+      "explanation": "Installing the proxy CA as a trusted root allows the device to trust certificates presented by the interception proxy, subject to the application's certificate-validation behavior."
+    },
+    {
+      "question": "Which tool provides automated static and dynamic mobile application scanning for initial security triage?",
+      "option_a": "drozer",
+      "option_b": "MobSF",
+      "option_c": "JADX",
+      "option_d": "ADB",
+      "correct_answer": "B",
+      "explanation": "MobSF provides automated static and dynamic security scanning and is useful for identifying potential issues during an initial assessment."
+    },
+    {
+      "question": "Which tool is specifically designed to enumerate and attack exported Android IPC components?",
+      "option_a": "Burp Suite",
+      "option_b": "apktool",
+      "option_c": "TruffleHog",
+      "option_d": "drozer",
+      "correct_answer": "D",
+      "explanation": "drozer is used to investigate and interact with Android IPC components, including exported activities, providers, and receivers."
+    },
+    {
+      "question": "What is the primary purpose of Objection in mobile application penetration testing?",
+      "option_a": "To provide a Frida-powered interactive CLI with convenient mobile exploration and bypass capabilities.",
+      "option_b": "To compile Java source code into DEX bytecode.",
+      "option_c": "To replace Android Debug Bridge.",
+      "option_d": "To generate application signing certificates.",
+      "correct_answer": "A",
+      "explanation": "Objection builds on Frida and provides convenient interactive capabilities, including Android root and SSL-pinning bypass recipes."
+    },
+    {
+      "question": "Which tools are specifically mentioned for automated regex and entropy-based detection of hardcoded secrets?",
+      "option_a": "Burp Suite and mitmproxy",
+      "option_b": "JADX and apktool",
+      "option_c": "apkleaks and TruffleHog",
+      "option_d": "Frida and Objection",
+      "correct_answer": "C",
+      "explanation": "apkleaks and TruffleHog are mentioned as tools for automated scanning that can identify potentially exposed secrets using patterns and entropy."
+    },
+    {
+      "question": "Which sequence correctly represents the lecture's static analysis methodology?",
+      "option_a": "Intercept traffic, bypass pinning, hook methods, and inspect runtime values.",
+      "option_b": "Decompile the APK, review the manifest, search for secrets, inspect cryptography, and perform automated triage.",
+      "option_c": "Install the APK, bypass root detection, invoke exported components, and inspect network requests.",
+      "option_d": "Create a signing certificate, modify the Android kernel, and reinstall the operating system.",
+      "correct_answer": "B",
+      "explanation": "The static workflow begins with decompilation, followed by manifest inspection, secret hunting, cryptographic review, and automated scanning."
+    },
+    {
+      "question": "Which activity is specifically part of Android manifest review during static analysis?",
+      "option_a": "Monitoring live method arguments.",
+      "option_b": "Modifying HTTP responses.",
+      "option_c": "Observing runtime database queries.",
+      "option_d": "Inspecting exported components, requested permissions, debuggable status, allowBackup, and deep links.",
+      "correct_answer": "D",
+      "explanation": "Manifest review identifies application configuration and exposed components, including permissions, exported flags, debuggable configuration, backup settings, and deep links."
+    },
+    {
+      "question": "Why is Base64 encoding not sufficient to protect a secret stored inside an APK?",
+      "option_a": "Base64 is an encoding mechanism rather than a cryptographic protection mechanism.",
+      "option_b": "Base64 automatically generates publicly accessible encryption keys.",
+      "option_c": "Base64 prevents applications from being decompiled.",
+      "option_d": "Base64 can only encode network packets.",
+      "correct_answer": "A",
+      "explanation": "Base64 transforms data into a textual representation but does not provide confidentiality. Anyone can decode it without a secret key."
+    },
+    {
+      "question": "Which cryptographic implementation is explicitly identified as a weakness in the lecture's illustrative code?",
+      "option_a": "AES-GCM with randomly generated keys.",
+      "option_b": "RSA with an appropriate padding scheme.",
+      "option_c": "AES-ECB with a hardcoded key and no IV.",
+      "option_d": "TLS with certificate validation.",
+      "correct_answer": "C",
+      "explanation": "The illustrative CodeCheck implementation uses AES-ECB with a hardcoded key and no IV, making the secret recoverable from the distributed application."
+    },
+    {
+      "question": "An analyst has recovered a Base64-encoded ciphertext and its hardcoded AES key from decompiled Java code. Which approach follows the lecture's static exploitation method?",
+      "option_a": "Launch the application and repeatedly guess the secret.",
+      "option_b": "Reproduce the application's AES-ECB decryption operation offline using Python.",
+      "option_c": "Use drozer to invoke every exported activity.",
+      "option_d": "Install a proxy CA certificate and capture encrypted packets.",
+      "correct_answer": "B",
+      "explanation": "The lecture demonstrates extracting the ciphertext and key from decompiled source and reproducing AES-ECB decryption in a standalone Python script without launching the application."
+    },
+    {
+      "question": "What is the main reason for reviewing application code for static IVs and keys derived from constants?",
+      "option_a": "They increase the APK file size.",
+      "option_b": "They prevent JADX from reconstructing source code.",
+      "option_c": "They automatically trigger Android root detection.",
+      "option_d": "Predictable or embedded cryptographic parameters can undermine confidentiality and make encrypted data recoverable.",
+      "correct_answer": "D",
+      "explanation": "Cryptographic security depends on appropriate key management and secure parameter generation. Static or hardcoded values can allow attackers to reproduce decryption."
+    },
+    {
+      "question": "A tester wants to inspect application logic without installing the application on an emulator. Which analysis approach is most appropriate?",
+      "option_a": "Static analysis",
+      "option_b": "Dynamic analysis",
+      "option_c": "Network interception",
+      "option_d": "Runtime instrumentation",
+      "correct_answer": "A",
+      "explanation": "Static analysis examines the application binary and its contents without executing the application."
+    },
+    {
+      "question": "Which workflow most accurately represents dynamic analysis in the lecture?",
+      "option_a": "Decompile, inspect the manifest, extract constants, and decrypt offline.",
+      "option_b": "Generate an APK, sign it, and upload it to an application store.",
+      "option_c": "Intercept traffic, address certificate pinning, instrument runtime behavior, bypass testing defenses, and probe IPC.",
+      "option_d": "Inspect only the APK resources without running the application.",
+      "correct_answer": "C",
+      "explanation": "Dynamic analysis involves observing and manipulating a running application through network interception, instrumentation, defense bypasses, and IPC probing."
+    },
+    {
+      "question": "What is the primary purpose of certificate pinning in a mobile application?",
+      "option_a": "To prevent application decompilation.",
+      "option_b": "To restrict trusted server certificates or public keys beyond ordinary certificate-chain validation.",
+      "option_c": "To encrypt locally stored database records.",
+      "option_d": "To prevent unauthorized installation of APK files.",
+      "correct_answer": "B",
+      "explanation": "Certificate or public-key pinning adds a trust restriction to server authentication. The application rejects connections that do not satisfy its configured pinning requirements."
+    },
+    {
+      "question": "Which Frida API is used as the entry point for hooking managed Java or Kotlin code?",
+      "option_a": "Java.perform()",
+      "option_b": "Interceptor.attach()",
+      "option_c": "Java.enumerateLoadedClasses()",
+      "option_d": "Java.available()",
+      "correct_answer": "A",
+      "explanation": "Java.perform() executes Java instrumentation code in an appropriate Java runtime context and is the entry point used in the lecture's hooking examples."
+    },
+    {
+      "question": "Which Frida API provides access to a Java class so that its methods can be inspected or overridden?",
+      "option_a": "Java.perform()",
+      "option_b": "Interceptor.attach()",
+      "option_c": "Java.use()",
+      "option_d": "Process.enumerateModules()",
+      "correct_answer": "C",
+      "explanation": "Java.use() obtains a live wrapper for a Java class, allowing the tester to interact with and override its methods."
+    },
+    {
+      "question": "What is the primary purpose of Frida's Interceptor.attach()?",
+      "option_a": "To decompile Android DEX files.",
+      "option_b": "To configure an interception proxy.",
+      "option_c": "To modify AndroidManifest.xml.",
+      "option_d": "To hook native functions and inspect or modify their arguments and return values.",
+      "correct_answer": "D",
+      "explanation": "Interceptor.attach() is used for native-level instrumentation, allowing examination and modification of function arguments and return values."
+    },
+    {
+      "question": "What does the command `frida -U -f <pkg> -l x.js` primarily accomplish?",
+      "option_a": "It statically decompiles the APK into Java source.",
+      "option_b": "It communicates with a USB-connected device, spawns the target package, and loads a Frida script.",
+      "option_c": "It installs the proxy CA certificate into Android.",
+      "option_d": "It scans the APK for hardcoded credentials.",
+      "correct_answer": "B",
+      "explanation": "The -U option targets a USB-connected device, -f specifies the package to spawn, and -l loads the instrumentation script."
+    },
+    {
+      "question": "Which statement best describes the difference between static and dynamic analysis?",
+      "option_a": "Static analysis always requires root access, whereas dynamic analysis never does.",
+      "option_b": "Static analysis only identifies network vulnerabilities, while dynamic analysis only identifies storage vulnerabilities.",
+      "option_c": "Static analysis examines application code without execution, while dynamic analysis observes actual behavior during execution.",
+      "option_d": "Both approaches require identical tools and produce identical results.",
+      "correct_answer": "C",
+      "explanation": "Static analysis reveals implementation logic and weaknesses without running the app. Dynamic analysis reveals actual runtime behavior and values."
+    },
+    {
+      "question": "A tester wants to invoke an exported Content Provider directly without navigating through the application's UI. Which tool is most suitable according to the lecture?",
+      "option_a": "drozer",
+      "option_b": "TruffleHog",
+      "option_c": "JADX",
+      "option_d": "MobSF static scanner",
+      "correct_answer": "A",
+      "explanation": "drozer is designed to investigate Android IPC components and can interact with exported providers and other exposed components directly."
+    },
+    {
+      "question": "An application force-closes immediately after installation on a rooted emulator. The decompiled source reveals a method that returns true when root access is detected. What is the most appropriate dynamic testing strategy?",
+      "option_a": "Delete classes.dex and reinstall the original APK.",
+      "option_b": "Replace the application's database with an empty database.",
+      "option_c": "Disable all network interfaces and repeat installation.",
+      "option_d": "Use Frida to override the relevant root-detection method so it returns a benign value during authorized testing.",
+      "correct_answer": "D",
+      "explanation": "The lecture demonstrates identifying root-detection methods through static inspection and overriding them at runtime using Frida."
+    },
+    {
+      "question": "A tester successfully intercepts ordinary HTTP traffic but cannot inspect HTTPS requests from the target application. The proxy CA is already trusted by the device. What is a likely remaining obstacle?",
+      "option_a": "The APK does not contain resources.arsc.",
+      "option_b": "The application may implement certificate pinning.",
+      "option_c": "The application must be converted into an IPA.",
+      "option_d": "ADB does not support encrypted network connections.",
+      "correct_answer": "B",
+      "explanation": "Certificate pinning may reject proxy-generated certificates even when the device trusts the proxy CA. The tester may need to examine and address the application's pinning checks."
+    },
+    {
+      "question": "A developer claims that an encrypted secret is secure because the ciphertext is stored in the APK rather than as plaintext. During assessment, the analyst discovers that both the ciphertext and decryption key are hardcoded in classes.dex. Which conclusion is most accurate?",
+      "option_a": "The secret remains secure because AES is a standardized algorithm.",
+      "option_b": "The secret is protected because DEX bytecode cannot be inspected.",
+      "option_c": "The confidentiality assumption is broken because an attacker can extract both values and reproduce the decryption operation offline.",
+      "option_d": "The secret can only be recovered through network traffic interception.",
+      "correct_answer": "C",
+      "explanation": "A distributed application cannot reliably keep a hardcoded decryption key secret from someone who can inspect its binary. The lecture demonstrates recovering the secret entirely offline."
+    },
+    {
+      "question": "A tester uses Frida to override a verifier method. The replacement implementation calls `this.check_pin(input)` to obtain the original result. What potential problem must the tester consider?",
+      "option_a": "The call may invoke the overridden implementation again, causing recursive execution.",
+      "option_b": "The call automatically removes the APK signing certificate.",
+      "option_c": "The call converts the application into native machine code.",
+      "option_d": "The call disables the Android sandbox.",
+      "correct_answer": "A",
+      "explanation": "Calling the same hooked method through its ordinary method interface can re-enter the replacement implementation and cause recursion. A safe hook must explicitly invoke the original implementation appropriately."
+    },
+    {
+      "question": "A Frida script attempts to hook a Java class but fails because the class is not yet available when the script executes. Which approach is most consistent with the lecture's instrumentation methodology?",
+      "option_a": "Use Base64 decoding to reconstruct the class.",
+      "option_b": "Replace Frida with Burp Suite.",
+      "option_c": "Modify the proxy CA certificate.",
+      "option_d": "Use Java.perform() to execute the Java hooking logic in the appropriate runtime context, then verify the class and method names.",
+      "correct_answer": "D",
+      "explanation": "Java.perform() provides the Java runtime context for managed-code instrumentation. The analyst must also verify the actual class and method names against the decompiled application."
+    },
+    {
+      "question": "A tester must determine whether a secret is recoverable from an application that has not yet been executed. Which evidence would provide the strongest support for a successful static attack?",
+      "option_a": "A screenshot of the application's login screen.",
+      "option_b": "The extracted ciphertext and key, together with successful offline decryption of the expected secret.",
+      "option_c": "A list of installed Android applications.",
+      "option_d": "A successful ADB connection to the emulator.",
+      "correct_answer": "B",
+      "explanation": "Successful offline decryption demonstrates that the application exposes sufficient cryptographic material for secret recovery without runtime execution."
+    },
+    {
+      "question": "A security team wants to understand why an application is insecure and also confirm the values used during actual execution. Which assessment strategy is most appropriate?",
+      "option_a": "Use dynamic analysis exclusively because static analysis cannot reveal implementation logic.",
+      "option_b": "Use static analysis exclusively because runtime values are always identical to source-code constants.",
+      "option_c": "Combine static analysis to understand implementation weaknesses with dynamic analysis to confirm runtime behavior and values.",
+      "option_d": "Use automated scanning exclusively because manual analysis is unnecessary.",
+      "correct_answer": "C",
+      "explanation": "The lecture treats static and dynamic analysis as complementary. Static analysis explains why an implementation is insecure, while dynamic analysis confirms actual runtime behavior."
+    },
+    {
+      "question": "An application stores authentication tokens in SharedPreferences, writes sensitive information to logs, and allows unencrypted backups. Which MASVS category should be the primary focus of the finding?",
+      "option_a": "V2 - Storage",
+      "option_b": "V3 - Cryptography",
+      "option_c": "V5 - Network",
+      "option_d": "V8 - Resiliency",
+      "correct_answer": "A",
+      "explanation": "SharedPreferences, logs, and unencrypted backups are all storage-related exposure points explicitly discussed under MASVS V2."
+    },
+    {
+      "question": "A mobile application communicates with a server using cleartext HTTP, and its certificate pinning implementation can be bypassed trivially. Which MASVS category most directly covers these weaknesses?",
+      "option_a": "V7 - Code Quality",
+      "option_b": "V4 - Authentication",
+      "option_c": "V6 - Platform",
+      "option_d": "V5 - Network",
+      "correct_answer": "D",
+      "explanation": "Cleartext traffic and inadequate certificate-pinning protection are network security issues covered by MASVS V5."
+    },
+    {
+      "question": "A tester discovers that an exported component allows another application to execute privileged functionality without appropriate permission checks. Which MASVS category is most directly relevant?",
+      "option_a": "V3 - Cryptography",
+      "option_b": "V6 - Platform",
+      "option_c": "V2 - Storage",
+      "option_d": "V8 - Resiliency",
+      "correct_answer": "B",
+      "explanation": "MASVS V6 covers platform interaction, including IPC and the secure configuration of exposed Android components."
+    },
+    {
+      "question": "An application implements root detection and debugger detection. However, both checks can be bypassed by overriding their methods through Frida. Which security area is most directly affected?",
+      "option_a": "V1 - Architecture",
+      "option_b": "V5 - Network",
+      "option_c": "V8 - Resiliency",
+      "option_d": "V2 - Storage",
+      "correct_answer": "C",
+      "explanation": "MASVS V8 addresses resiliency measures such as anti-tampering, root detection, jailbreak detection, and debugger detection."
+    },
+    {
+      "question": "A penetration tester discovers an exposed Content Provider that appears vulnerable to SQL injection. The tester wants to reproduce the issue on a controlled application. Which approach best aligns with the lecture's recommended practice?",
+      "option_a": "Use an authorized lab application and investigate the provider through direct IPC interaction, potentially using drozer.",
+      "option_b": "Immediately exploit an unrelated production application to compare results.",
+      "option_c": "Modify the Android operating system without documenting the changes.",
+      "option_d": "Assume that Content Providers cannot be tested without application source code.",
+      "correct_answer": "A",
+      "explanation": "The lecture's stretch goal recommends reproducing exported Content Provider SQL injection in a lab application, and drozer is intended for investigating Android IPC components."
+    },
+    {
+      "question": "An organization wants to assess an application that includes an outdated third-party analytics SDK. Which reasoning best explains why this dependency should be included in the security assessment?",
+      "option_a": "Third-party SDKs are automatically trusted because they are distributed with the application.",
+      "option_b": "Third-party SDKs cannot access application information.",
+      "option_c": "Only the application's own source code can introduce vulnerabilities.",
+      "option_d": "Third-party SDKs can introduce additional vulnerabilities, outdated dependencies, and sensitive data leakage paths.",
+      "correct_answer": "D",
+      "explanation": "The mobile threat landscape highlights supply-chain risks from third-party SDKs, including advertising and analytics components that may leak data or expose vulnerable functionality."
+    },
+    {
+      "question": "A security analyst is preparing to assess a real third-party mobile application. Which condition must be satisfied before conducting penetration testing?",
+      "option_a": "The application must be available in a public application store.",
+      "option_b": "Written authorization and a clearly defined testing scope must be established.",
+      "option_c": "The tester must first publish the application's APK online.",
+      "option_d": "The tester must obtain the application's original signing private key.",
+      "correct_answer": "B",
+      "explanation": "The lecture explicitly requires written authorization and defined scope before testing. Curiosity or public availability does not establish permission."
+    },
+    {
+      "question": "During an authorized assessment, a tester discovers real user credentials and personal information. What is the most appropriate handling procedure?",
+      "option_a": "Publish the credentials to demonstrate the severity of the vulnerability.",
+      "option_b": "Use the credentials to investigate unrelated applications.",
+      "option_c": "Handle the discovered information with strict confidentiality and follow responsible disclosure procedures.",
+      "option_d": "Share the credentials with other testers without informing the application owner.",
+      "correct_answer": "C",
+      "explanation": "The lecture requires strict confidentiality when handling real secrets and personal data, alongside responsible or coordinated disclosure."
+    },
+    {
+      "question": "A tester has permission to assess an application's login functionality but begins examining unrelated production services belonging to the same organization. What is the primary problem?",
+      "option_a": "The tester may have exceeded the explicitly authorized testing scope.",
+      "option_b": "The tester is performing static analysis instead of dynamic analysis.",
+      "option_c": "The tester is using an incorrect cryptographic algorithm.",
+      "option_d": "The tester has violated the Android application package format.",
+      "correct_answer": "A",
+      "explanation": "Authorization is limited by the agreed scope. Testing unrelated systems without permission is scope creep and may constitute unauthorized access."
+    },
+    {
+      "question": "Which statement best summarizes the relationship between mobile penetration testing and traditional web penetration testing?",
+      "option_a": "Mobile penetration testing completely replaces web security testing.",
+      "option_b": "Mobile applications eliminate server-side vulnerabilities such as IDOR and injection.",
+      "option_c": "Mobile penetration testing only focuses on reversing application binaries.",
+      "option_d": "Mobile penetration testing retains web testing techniques while adding client-side reverse engineering, device storage, IPC, and platform-specific defenses.",
+      "correct_answer": "D",
+      "explanation": "The lecture explains that web penetration testing skills carry over, but mobile testing introduces additional attack surfaces such as compiled client code, persistent device storage, IPC, and OS-level protections."
+    },
+    {
+      "question": "A security report identifies a hardcoded API key, insecure local storage, and weak certificate validation. Why should these findings be mapped to MASVS control categories?",
+      "option_a": "To guarantee that all vulnerabilities can be exploited remotely.",
+      "option_b": "To provide a consistent security verification vocabulary and connect findings to relevant security requirements.",
+      "option_c": "To eliminate the need for technical evidence.",
+      "option_d": "To automatically patch the application.",
+      "correct_answer": "B",
+      "explanation": "MASVS provides a shared vocabulary for mobile security findings, allowing vulnerabilities to be organized according to relevant verification areas."
+    },
+    {
+      "question": "A tester wants to analyze native Android functionality implemented in shared libraries under lib/<abi>/*.so. Which tool category is most appropriate according to the lecture?",
+      "option_a": "Browser developer tools.",
+      "option_b": "JADX exclusively, because it reconstructs all native code as Java.",
+      "option_c": "Native reverse-engineering tools such as Ghidra or IDA.",
+      "option_d": "Email interception tools.",
+      "correct_answer": "C",
+      "explanation": "Native shared libraries contain compiled native code that is harder to reverse engineer than DEX bytecode. The lecture identifies Ghidra and IDA for this purpose."
+    },
+    {
+      "question": "An application has multiple security mechanisms: root detection, debugger detection, and integrity checks. The tester disables only root detection, but the application still terminates. What is the best next step?",
+      "option_a": "Investigate the remaining debugger and integrity checks, identify their execution paths, and evaluate them individually.",
+      "option_b": "Assume that Frida cannot instrument Android applications.",
+      "option_c": "Delete all application resources before restarting.",
+      "option_d": "Replace the APK with an iOS IPA.",
+      "correct_answer": "A",
+      "explanation": "The lecture's dynamic methodology includes neutralizing root detection, debugger detection, and integrity or tamper checks. Bypassing only one defense may not be sufficient."
+    },
+    {
+      "question": "A tester finds that static analysis reveals the secret-decryption logic, but a more advanced application uses native code and strong obfuscation. Which conclusion best reflects the lecture's comparison of analysis methods?",
+      "option_a": "Static analysis is always superior because obfuscation cannot affect it.",
+      "option_b": "Dynamic analysis cannot examine applications that use native libraries.",
+      "option_c": "Both methods become useless when an application is obfuscated.",
+      "option_d": "Static analysis can become more difficult with strong obfuscation or native code, while dynamic analysis can still reveal actual runtime behavior but may encounter anti-instrumentation defenses.",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies strong obfuscation and native code as limitations of static analysis, while dynamic analysis can reveal runtime values but may trigger anti-instrumentation protections."
+    },
+    {
+      "question": "A company wants to reproduce a vulnerability involving a WebView JavaScript bridge, which is listed as a stretch-goal topic in the lecture. Which security concern should the assessment investigate?",
+      "option_a": "Whether the WebView automatically converts JavaScript into encrypted DEX files.",
+      "option_b": "Whether untrusted web content can access exposed Java application methods through the JavaScript bridge.",
+      "option_c": "Whether the application uses a valid APK filename.",
+      "option_d": "Whether the Android device supports native SQLite databases.",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies unsafe WebView JavaScript bridges, particularly addJavascriptInterface, as a high-risk platform interaction that can expose application functionality to untrusted content."
+    },
+    {
+      "question": "An analyst has access to an APK but not the original source code. Which statement most accurately describes the feasibility of the proposed assessment?",
+      "option_a": "Static analysis is impossible without the original source code.",
+      "option_b": "Only network traffic can be inspected without source code.",
+      "option_c": "The analyst can still decompile DEX bytecode, inspect resources and the manifest, and perform both static and dynamic testing in an authorized environment.",
+      "option_d": "The APK must be converted into a web application before testing.",
+      "correct_answer": "C",
+      "explanation": "The lecture demonstrates that APK contents can be examined through reverse engineering, and the application can also be installed and instrumented in a controlled environment."
+    },
+    {
+      "question": "A tester is preparing a repeatable mobile penetration-testing environment. Which combination represents the most complete initial readiness check described in the lecture?",
+      "option_a": "A rooted emulator or device, matching Frida server, trusted proxy configuration, staged target APK, and successful ADB and Frida connectivity checks.",
+      "option_b": "A web browser, public DNS server, and a database administration tool.",
+      "option_c": "An iOS simulator, a Java compiler, and an Android signing certificate.",
+      "option_d": "A proxy server alone, because it provides all required testing capabilities.",
+      "correct_answer": "A",
+      "explanation": "The lab checklist includes a rooted environment, matching Frida versions, trusted proxy configuration, target APK, and connectivity checks using adb devices and frida-ps -U."
+    },
+    {
+      "question": "A tester executes `frida-ps -U` and successfully lists running application processes. What does this most directly indicate?",
+      "option_a": "The target application has no security vulnerabilities.",
+      "option_b": "The application has disabled certificate pinning.",
+      "option_c": "All exported Android components are protected.",
+      "option_d": "Frida can communicate with the connected device and enumerate its running processes.",
+      "correct_answer": "D",
+      "explanation": "frida-ps -U is a connectivity sanity check that lists processes on a USB-connected device. It does not establish that the application is secure."
+    },
+    {
+      "question": "An application uses an encryption algorithm that appears strong, but its token-generation mechanism uses predictable randomness. Which security conclusion is most appropriate?",
+      "option_a": "The application is secure because the encryption algorithm is standardized.",
+      "option_b": "Predictable randomness can undermine token security even when the selected cryptographic algorithm is strong.",
+      "option_c": "Randomness is relevant only to network bandwidth.",
+      "option_d": "Predictable randomness automatically prevents reverse engineering.",
+      "correct_answer": "B",
+      "explanation": "MASVS V3 includes randomness and key management. Weak random-number generation can make security tokens predictable and compromise otherwise strong cryptographic designs."
+    },
+    {
+      "question": "An application contains a sensitive API endpoint inside its resources and a hardcoded password inside classes.dex. Which statement is the most accurate assessment?",
+      "option_a": "Only the password matters because application resources cannot be inspected.",
+      "option_b": "The endpoint is protected because it is stored in resources.arsc.",
+      "option_c": "Both resources and compiled code should be inspected because sensitive endpoints and credentials may be embedded in different APK locations.",
+      "option_d": "Neither item can be discovered without intercepting live traffic.",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies resources and DEX bytecode as important inspection targets. Hardcoded secrets and endpoints may be exposed in either location."
+    },
+    {
+      "question": "A mobile application uses a weakly implemented root-detection mechanism. Which statement best explains why simply implementing root detection does not guarantee application security?",
+      "option_a": "Runtime checks can potentially be bypassed through instrumentation, so they should not be treated as an absolute security boundary.",
+      "option_b": "Root detection automatically encrypts all local storage.",
+      "option_c": "Root detection prevents APK extraction.",
+      "option_d": "Runtime checks eliminate the need for server-side authorization.",
+      "correct_answer": "A",
+      "explanation": "The lecture demonstrates that root and debugger checks can be overridden using Frida. Resiliency mechanisms should not be treated as substitutes for fundamental security controls."
+    },
+    {
+      "question": "An application owner asks a tester to prove that the hidden secret in UnCrackable Level 1 is recoverable without interacting with the running application. Which evidence best satisfies this requirement?",
+      "option_a": "A successful root-detection bypass.",
+      "option_b": "A screenshot showing the application installed.",
+      "option_c": "A Frida process listing.",
+      "option_d": "A decompiled verification method, extracted cryptographic constants, and a successful offline decryption result.",
+      "correct_answer": "D",
+      "explanation": "The static exploitation path requires no interaction with a running application. Decompilation and offline decryption provide direct evidence that the secret is recoverable."
+    },
+    {
+      "question": "Which statement correctly describes the progression of OWASP UnCrackable application levels according to the lecture?",
+      "option_a": "Levels 2–4 remove native code and simplify anti-debugging protections.",
+      "option_b": "Levels 2–4 progressively introduce native code, stronger obfuscation, and anti-Frida techniques.",
+      "option_c": "All levels use exactly the same static decryption approach.",
+      "option_d": "Levels 2–4 focus exclusively on iOS Keychain vulnerabilities.",
+      "correct_answer": "B",
+      "explanation": "The lecture describes progressively more advanced challenges involving native code, stronger obfuscation, and anti-Frida techniques."
+    },
+    {
+      "question": "A penetration-testing team has discovered several vulnerabilities and wants to prepare findings that align with the lecture's recommended methodology. Which approach is most appropriate?",
+      "option_a": "Report vulnerabilities without technical evidence because MASVS already explains them.",
+      "option_b": "Include only the tool names used during the assessment.",
+      "option_c": "Document each finding with supporting technical evidence and map it to the relevant MASVS control area.",
+      "option_d": "Avoid discussing security impact to prevent misunderstandings.",
+      "correct_answer": "C",
+      "explanation": "The lecture emphasizes mapping findings to MASVS control IDs. Clear evidence and appropriate security categorization make findings more useful and consistent."
+    }
+  ]
+}

@@ -1,0 +1,967 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes a desktop application?",
+      "option_a": "A program that executes exclusively inside a web browser",
+      "option_b": "A program installed and executed directly on an operating system",
+      "option_c": "A program that can only execute on mobile devices",
+      "option_d": "A program that requires a remote server for every operation",
+      "correct_answer": "B",
+      "explanation": "A desktop application is installed and runs directly on the operating system rather than exclusively inside a browser or mobile environment."
+    },
+    {
+      "question": "Which application type commonly uses the Common Language Runtime (CLR) or Java Virtual Machine (JVM)?",
+      "option_a": "Native applications",
+      "option_b": "Electron applications",
+      "option_c": "Managed applications",
+      "option_d": "Interpreted applications packaged with PyInstaller",
+      "correct_answer": "C",
+      "explanation": "Managed applications, such as .NET and Java applications, execute within runtime environments such as the CLR or JVM."
+    },
+    {
+      "question": "What is a defining characteristic of Electron applications?",
+      "option_a": "They bundle a browser engine and Node.js",
+      "option_b": "They execute exclusively as native machine code",
+      "option_c": "They require the Java Virtual Machine",
+      "option_d": "They cannot access local operating system resources",
+      "correct_answer": "A",
+      "explanation": "Electron combines a browser environment with Node.js, allowing developers to build desktop applications using web technologies."
+    },
+    {
+      "question": "Which application type is particularly associated with memory-corruption vulnerabilities in the lecture?",
+      "option_a": "Managed Java applications",
+      "option_b": "Electron applications",
+      "option_c": "PyInstaller applications",
+      "option_d": "Native C/C++ applications",
+      "correct_answer": "D",
+      "explanation": "Native C/C++ applications operate closer to system memory, where programming errors can introduce memory-corruption vulnerabilities."
+    },
+    {
+      "question": "Which tool is commonly associated with packaging Python applications into executable desktop applications?",
+      "option_a": "dnSpy",
+      "option_b": "PyInstaller",
+      "option_c": "Ghidra",
+      "option_d": "Frida",
+      "correct_answer": "B",
+      "explanation": "PyInstaller packages Python applications and their dependencies into distributable executable applications."
+    },
+    {
+      "question": "What is the attack surface of a desktop application?",
+      "option_a": "Only the network ports opened by the application",
+      "option_b": "Only the application's executable file",
+      "option_c": "Every location where the application accepts input or interacts with external resources",
+      "option_d": "Only the graphical user interface",
+      "correct_answer": "C",
+      "explanation": "The attack surface includes files, network communication, IPC, GUI inputs, plugins, installers and other external interaction points."
+    },
+    {
+      "question": "Which of the following is an example of a desktop application's attack surface?",
+      "option_a": "A drag-and-drop file import feature",
+      "option_b": "A private function that never processes external input",
+      "option_c": "An unused local variable",
+      "option_d": "A comment inside the source code",
+      "correct_answer": "A",
+      "explanation": "A drag-and-drop feature accepts external input and therefore represents an interaction point that could be abused."
+    },
+    {
+      "question": "What does a security boundary represent?",
+      "option_a": "A physical separation between two computers",
+      "option_b": "A restriction preventing applications from using network connections",
+      "option_c": "A boundary separating different programming languages",
+      "option_d": "A separation between entities with different levels of trust or privilege",
+      "correct_answer": "D",
+      "explanation": "Security boundaries separate different trust levels, such as normal users and SYSTEM processes, and should be enforced through appropriate security mechanisms."
+    },
+    {
+      "question": "Which mechanism can enforce security boundaries in an operating system?",
+      "option_a": "Application color themes",
+      "option_b": "File and registry access control lists",
+      "option_c": "Source-code comments",
+      "option_d": "User interface animations",
+      "correct_answer": "B",
+      "explanation": "Access control lists, process isolation, user accounts and sandboxing enforce restrictions between different security contexts."
+    },
+    {
+      "question": "What does STRIDE stand for in threat modeling?",
+      "option_a": "Security, Tracking, Reliability, Inspection, Detection, Encryption",
+      "option_b": "Spoofing, Tracking, Replication, Information, Denial, Execution",
+      "option_c": "Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege",
+      "option_d": "Scanning, Testing, Reverse Engineering, Identification, Debugging, Exploitation",
+      "correct_answer": "C",
+      "explanation": "STRIDE represents six threat categories: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege."
+    },
+    {
+      "question": "An attacker pretends to be a legitimate application or user to gain access to a desktop service. Which STRIDE category describes this threat?",
+      "option_a": "Spoofing",
+      "option_b": "Tampering",
+      "option_c": "Repudiation",
+      "option_d": "Denial of Service",
+      "correct_answer": "A",
+      "explanation": "Spoofing involves pretending to be another identity or entity to deceive a system."
+    },
+    {
+      "question": "A desktop application allows an attacker to modify its configuration files without authorization. Which STRIDE category is most directly applicable?",
+      "option_a": "Repudiation",
+      "option_b": "Information Disclosure",
+      "option_c": "Spoofing",
+      "option_d": "Tampering",
+      "correct_answer": "D",
+      "explanation": "Tampering involves unauthorized modification of data, configuration, or code."
+    },
+    {
+      "question": "An application exposes confidential user information to an unauthorized process. Which STRIDE category applies?",
+      "option_a": "Elevation of Privilege",
+      "option_b": "Information Disclosure",
+      "option_c": "Denial of Service",
+      "option_d": "Repudiation",
+      "correct_answer": "B",
+      "explanation": "Information Disclosure occurs when sensitive information becomes accessible to unauthorized parties."
+    },
+    {
+      "question": "An attacker prevents legitimate users from accessing a desktop application's services by exhausting its resources. Which threat category applies?",
+      "option_a": "Spoofing",
+      "option_b": "Tampering",
+      "option_c": "Denial of Service",
+      "option_d": "Repudiation",
+      "correct_answer": "C",
+      "explanation": "Denial of Service involves disrupting or degrading availability for legitimate users."
+    },
+    {
+      "question": "Which STRIDE category describes an attacker gaining SYSTEM-level permissions through a vulnerable desktop helper service?",
+      "option_a": "Elevation of Privilege",
+      "option_b": "Information Disclosure",
+      "option_c": "Repudiation",
+      "option_d": "Spoofing",
+      "correct_answer": "A",
+      "explanation": "Elevation of Privilege occurs when an attacker gains capabilities or permissions beyond those originally authorized."
+    },
+    {
+      "question": "A system records no reliable evidence of which user performed a sensitive operation. Which STRIDE category is most relevant?",
+      "option_a": "Spoofing",
+      "option_b": "Tampering",
+      "option_c": "Denial of Service",
+      "option_d": "Repudiation",
+      "correct_answer": "D",
+      "explanation": "Repudiation concerns the ability of an entity to deny performing an action when reliable evidence or accountability is absent."
+    },
+    {
+      "question": "What was the primary architectural weakness in the 2019 Zoom Mac application incident described in the lecture?",
+      "option_a": "The application used an outdated Java Virtual Machine",
+      "option_b": "A hidden local web server accepted requests without verifying who was making them",
+      "option_c": "The application stored its source code in plaintext",
+      "option_d": "The application allowed unrestricted DLL loading",
+      "correct_answer": "B",
+      "explanation": "The hidden local web server did not verify the origin of requests, allowing websites to trigger actions such as automatically starting video calls."
+    },
+    {
+      "question": "What was the central security lesson from the SolarWinds supply chain attack?",
+      "option_a": "Encryption is unnecessary for desktop applications",
+      "option_b": "Managed applications cannot be compromised",
+      "option_c": "A legitimate digital signature does not guarantee that software is safe if the signing or build environment is compromised",
+      "option_d": "Local IPC is always more dangerous than network communication",
+      "correct_answer": "C",
+      "explanation": "Attackers compromised the build environment and inserted malicious code into a legitimately signed update. Trust in the signer was insufficient when the signing environment itself was compromised."
+    },
+    {
+      "question": "What was the significant security weakness in the LastPass incident discussed in the lecture?",
+      "option_a": "A compromised engineer's personal computer exposed credentials that provided access to a shared cloud environment",
+      "option_b": "An attacker exploited an SQL injection vulnerability in the LastPass desktop application",
+      "option_c": "An attacker modified the Java bytecode of the password manager",
+      "option_d": "The company disabled all encryption in its customer applications",
+      "correct_answer": "A",
+      "explanation": "A compromised personal computer captured an engineer's master password, which enabled access to a shared cloud environment containing encryption keys for customer vault backups."
+    },
+    {
+      "question": "Which tool provides a quick way to identify the file type of an unknown executable?",
+      "option_a": "strings",
+      "option_b": "Frida",
+      "option_c": "Wireshark",
+      "option_d": "file",
+      "correct_answer": "D",
+      "explanation": "The file command identifies a file's type and provides a useful first step when examining an unknown binary."
+    },
+    {
+      "question": "What is the primary purpose of the strings command during initial binary analysis?",
+      "option_a": "To execute embedded machine code",
+      "option_b": "To extract readable text embedded in a binary",
+      "option_c": "To modify executable memory",
+      "option_d": "To intercept network communication",
+      "correct_answer": "B",
+      "explanation": "The strings command extracts readable sequences from binaries, potentially revealing URLs, file paths, error messages, passwords and API keys."
+    },
+    {
+      "question": "Which information would be particularly valuable when examining a binary using strings?",
+      "option_a": "The physical dimensions of the executable file",
+      "option_b": "The screen resolution of the development computer",
+      "option_c": "Embedded URLs, file paths and hardcoded credentials",
+      "option_d": "The user's keyboard layout",
+      "correct_answer": "C",
+      "explanation": "Readable strings may reveal useful application information, including service endpoints, local paths and secrets accidentally embedded in the executable."
+    },
+    {
+      "question": "What is disassembly?",
+      "option_a": "Converting machine code into assembly instructions",
+      "option_b": "Converting source code into a database schema",
+      "option_c": "Converting assembly instructions into a high-level programming language",
+      "option_d": "Encrypting an executable before distribution",
+      "correct_answer": "A",
+      "explanation": "Disassembly translates machine instructions into assembly language, preserving a low-level representation of program behavior."
+    },
+    {
+      "question": "What is decompilation?",
+      "option_a": "Converting an executable into a network packet capture",
+      "option_b": "Converting source code into machine-readable strings",
+      "option_c": "Removing all executable instructions from a binary",
+      "option_d": "Reconstructing a higher-level representation or pseudocode from compiled code",
+      "correct_answer": "D",
+      "explanation": "Decompilation attempts to reconstruct a more readable high-level representation from compiled code or lower-level instructions."
+    },
+    {
+      "question": "Which tool is particularly suitable for reverse engineering .NET applications?",
+      "option_a": "Wireshark",
+      "option_b": "dnSpy",
+      "option_c": "Process Explorer",
+      "option_d": "mitmproxy",
+      "correct_answer": "B",
+      "explanation": "dnSpy is a .NET reverse-engineering tool that can inspect and decompile managed assemblies."
+    },
+    {
+      "question": "Which tool is commonly used to decompile Java applications?",
+      "option_a": "x64dbg",
+      "option_b": "ProcMon",
+      "option_c": "jadx",
+      "option_d": "Burp Suite",
+      "correct_answer": "C",
+      "explanation": "jadx is used to decompile Android and Java bytecode into a more readable representation."
+    },
+    {
+      "question": "Which tool is commonly used to extract the app.asar archive from an Electron application?",
+      "option_a": "asar",
+      "option_b": "strace",
+      "option_c": "checksec",
+      "option_d": "WinDbg",
+      "correct_answer": "A",
+      "explanation": "Electron applications commonly package their application resources into an app.asar archive, which can be extracted using asar."
+    },
+    {
+      "question": "Which pair of tools is associated with disassembly and decompilation of native binaries?",
+      "option_a": "Burp Suite and mitmproxy",
+      "option_b": "Process Monitor and Process Explorer",
+      "option_c": "dnSpy and jadx exclusively",
+      "option_d": "Ghidra and IDA",
+      "correct_answer": "D",
+      "explanation": "Ghidra and IDA support reverse engineering through disassembly and decompilation capabilities."
+    },
+    {
+      "question": "What does ASLR accomplish?",
+      "option_a": "It encrypts all executable instructions",
+      "option_b": "It randomizes memory addresses between executions",
+      "option_c": "It prevents all unauthorized DLL loading",
+      "option_d": "It authenticates application users",
+      "correct_answer": "B",
+      "explanation": "Address Space Layout Randomization changes memory locations between executions, making memory-based exploits less reliable."
+    },
+    {
+      "question": "What is the primary purpose of DEP/NX?",
+      "option_a": "To randomize executable memory locations",
+      "option_b": "To verify the publisher of a binary",
+      "option_c": "To mark certain memory regions as non-executable",
+      "option_d": "To encrypt sensitive application files",
+      "correct_answer": "C",
+      "explanation": "DEP/NX prevents execution from memory regions designated as data-only, making certain injected-code attacks more difficult."
+    },
+    {
+      "question": "What does code signing primarily establish?",
+      "option_a": "The identity of the signer and the integrity of signed content",
+      "option_b": "That the application contains no vulnerabilities",
+      "option_c": "That the executable cannot be reverse-engineered",
+      "option_d": "That the application cannot communicate with malicious servers",
+      "correct_answer": "A",
+      "explanation": "Code signing provides a way to verify the signer and detect changes to signed content, but it does not guarantee that the software is safe."
+    },
+    {
+      "question": "What is the purpose of a software packer?",
+      "option_a": "To authenticate users before application execution",
+      "option_b": "To replace the operating system's memory manager",
+      "option_c": "To intercept API calls from other processes",
+      "option_d": "To compress or obfuscate executable content and potentially unpack it at runtime",
+      "correct_answer": "D",
+      "explanation": "Packers compress or scramble executable content to make static analysis more difficult, often unpacking the original code during execution."
+    },
+    {
+      "question": "What did researchers discover about the UNACEV2.DLL library used by WinRAR?",
+      "option_a": "It contained a weak HTTPS certificate",
+      "option_b": "It failed to validate archive extraction paths, allowing files to be placed in sensitive locations",
+      "option_c": "It stored user passwords in Windows DPAPI",
+      "option_d": "It allowed remote users to install printer drivers",
+      "correct_answer": "B",
+      "explanation": "The vulnerable library failed to validate file paths inside ACE archives, allowing malicious archives to extract files into locations such as the Windows Startup folder."
+    },
+    {
+      "question": "What was the primary response taken by WinRAR to address the UNACEV2.DLL vulnerability?",
+      "option_a": "It replaced all native components with Java",
+      "option_b": "It disabled all archive extraction features",
+      "option_c": "It dropped ACE archive support",
+      "option_d": "It introduced a new authentication server",
+      "correct_answer": "C",
+      "explanation": "WinRAR addressed the issue by removing ACE archive support rather than continuing to bundle the vulnerable library."
+    },
+    {
+      "question": "Which incident involved malicious code being inserted into an official, correctly signed installer distributed to millions of users?",
+      "option_a": "CCleaner supply chain attack",
+      "option_b": "Zoom local web server incident",
+      "option_c": "LastPass breach",
+      "option_d": "WinRAR ACE vulnerability",
+      "correct_answer": "A",
+      "explanation": "Attackers compromised Piriform's build environment and inserted malware into the official signed CCleaner installer."
+    },
+    {
+      "question": "What was a notable characteristic of the CCleaner supply chain attack's second-stage payload?",
+      "option_a": "It automatically encrypted every infected machine",
+      "option_b": "It exploited a named pipe to install printer drivers",
+      "option_c": "It modified the Windows Startup folder through ACE archives",
+      "option_d": "It targeted selected high-value organizations after fingerprinting infected machines",
+      "correct_answer": "D",
+      "explanation": "The malware fingerprinted infected machines and delivered a second-stage payload to a selected group of high-value technology organizations."
+    },
+    {
+      "question": "Which Windows utility is particularly useful for monitoring file operations, registry activity and process behavior?",
+      "option_a": "jadx",
+      "option_b": "Process Monitor",
+      "option_c": "Ghidra",
+      "option_d": "asar",
+      "correct_answer": "B",
+      "explanation": "Process Monitor provides real-time visibility into filesystem, registry and process-related activity."
+    },
+    {
+      "question": "Which tools provide Linux and macOS alternatives for observing system calls and library calls?",
+      "option_a": "Burp Suite and Wireshark",
+      "option_b": "x64dbg and WinDbg",
+      "option_c": "strace, ltrace and dtruss",
+      "option_d": "dnSpy and ILSpy",
+      "correct_answer": "C",
+      "explanation": "strace, ltrace and dtruss are tools used to observe system calls or library calls on Linux and macOS."
+    },
+    {
+      "question": "What does an unexpected NAME NOT FOUND result for a DLL load in Process Monitor potentially indicate?",
+      "option_a": "An opportunity to investigate a possible DLL search-order hijacking condition",
+      "option_b": "Successful execution of a malicious DLL",
+      "option_c": "Successful certificate validation",
+      "option_d": "An encrypted network connection",
+      "correct_answer": "A",
+      "explanation": "A failed DLL lookup can reveal a dependency and search path that should be investigated for potential DLL hijacking."
+    },
+    {
+      "question": "What is the primary purpose of a debugger?",
+      "option_a": "To generate cryptographic certificates",
+      "option_b": "To monitor network bandwidth exclusively",
+      "option_c": "To extract Electron application archives",
+      "option_d": "To pause execution and inspect or modify program state",
+      "correct_answer": "D",
+      "explanation": "A debugger allows an analyst to set breakpoints, inspect memory and registers, modify execution state and resume the program."
+    },
+    {
+      "question": "Which debugger is described in the lecture as beginner-friendly for Windows debugging?",
+      "option_a": "GDB",
+      "option_b": "x64dbg",
+      "option_c": "LLDB",
+      "option_d": "strace",
+      "correct_answer": "B",
+      "explanation": "x64dbg is identified as a beginner-friendly Windows debugger, while WinDbg is described as a more powerful alternative."
+    },
+    {
+      "question": "What is runtime memory patching?",
+      "option_a": "Changing the application's source code before compilation",
+      "option_b": "Replacing the executable with a newly signed version",
+      "option_c": "Modifying memory or register values while a program is running",
+      "option_d": "Encrypting the application's local database",
+      "correct_answer": "C",
+      "explanation": "Runtime memory patching modifies a running process's memory or register state without necessarily changing the executable stored on disk."
+    },
+    {
+      "question": "What is API hooking?",
+      "option_a": "Intercepting a function call at runtime and executing custom logic before, instead of, or after the original function",
+      "option_b": "Converting machine code into assembly",
+      "option_c": "Scanning an executable for hardcoded URLs",
+      "option_d": "Encrypting application network traffic",
+      "correct_answer": "A",
+      "explanation": "API hooking intercepts function calls and allows an analyst or instrumented program to observe or modify their behavior."
+    },
+    {
+      "question": "Which framework provides cross-platform, JavaScript-based runtime instrumentation and API hooking?",
+      "option_a": "Ghidra",
+      "option_b": "Process Explorer",
+      "option_c": "Wireshark",
+      "option_d": "Frida",
+      "correct_answer": "D",
+      "explanation": "Frida is a cross-platform dynamic instrumentation framework that supports JavaScript-based runtime hooking."
+    },
+    {
+      "question": "How can Frida be used to investigate certificate pinning?",
+      "option_a": "By deleting all certificates from the operating system",
+      "option_b": "By hooking certificate-validation functions and observing or modifying their behavior",
+      "option_c": "By converting HTTPS traffic into raw machine code",
+      "option_d": "By replacing the application's network adapter",
+      "correct_answer": "B",
+      "explanation": "Frida can hook certificate-validation functions to inspect or modify how an application handles certificate validation."
+    },
+    {
+      "question": "What is DLL hijacking?",
+      "option_a": "A process that decrypts DLL files using DPAPI",
+      "option_b": "A technique that modifies the Windows registry to disable ASLR",
+      "option_c": "A technique where an application loads an attacker-controlled DLL instead of the intended library",
+      "option_d": "A technique that prevents applications from loading DLL files",
+      "correct_answer": "C",
+      "explanation": "DLL hijacking occurs when an application loads a malicious library because an attacker can influence the DLL search path or loading process."
+    },
+    {
+      "question": "Why can loading DLLs by name rather than using a secure absolute path create security risks?",
+      "option_a": "The operating system searches locations in a defined order, potentially finding an attacker-controlled DLL first",
+      "option_b": "The application automatically disables code signing",
+      "option_c": "The application becomes a managed Java process",
+      "option_d": "The DLL is always executed with SYSTEM privileges",
+      "correct_answer": "A",
+      "explanation": "DLL search-order hijacking exploits the possibility that an application will load a malicious same-named DLL from an earlier searched location."
+    },
+    {
+      "question": "Which Linux mechanism is identified as an equivalent technique to DLL injection or hijacking?",
+      "option_a": "DPAPI",
+      "option_b": "ASLR",
+      "option_c": "RPC",
+      "option_d": "LD_PRELOAD",
+      "correct_answer": "D",
+      "explanation": "LD_PRELOAD allows shared libraries to be loaded before others, making it relevant to library injection techniques."
+    },
+    {
+      "question": "Which macOS mechanism is associated with dynamic library hijacking?",
+      "option_a": "Named pipes",
+      "option_b": "dylib hijacking through @rpath",
+      "option_c": "DPAPI",
+      "option_d": "DEP/NX",
+      "correct_answer": "B",
+      "explanation": "The lecture identifies dylib hijacking through @rpath as a macOS equivalent of library-loading attacks."
+    },
+    {
+      "question": "What was the important trust-related technique used by Stuxnet according to the lecture?",
+      "option_a": "It bypassed all operating system security using DPAPI",
+      "option_b": "It used an unsigned driver that Windows automatically trusted",
+      "option_c": "It used stolen but legitimately valid code-signing certificates",
+      "option_d": "It exploited the Zoom local web server",
+      "correct_answer": "C",
+      "explanation": "Stuxnet used stolen, legitimately valid signing certificates to make malicious drivers appear trusted."
+    },
+    {
+      "question": "What does IPC stand for?",
+      "option_a": "Inter-Process Communication",
+      "option_b": "Internal Program Compilation",
+      "option_c": "Integrated Protection Configuration",
+      "option_d": "Internet Protocol Control",
+      "correct_answer": "A",
+      "explanation": "IPC refers to mechanisms that allow separate running processes to communicate and exchange information."
+    },
+    {
+      "question": "Which is a common IPC architecture in desktop applications?",
+      "option_a": "Two unrelated processes communicating only through source-code comments",
+      "option_b": "A browser communicating with a remote DNS server exclusively",
+      "option_c": "A compiler communicating with a text editor through a stylesheet",
+      "option_d": "A normal-user GUI communicating with a privileged helper service",
+      "correct_answer": "D",
+      "explanation": "Desktop applications often use a normal-user interface that communicates with a privileged helper to perform administrative operations."
+    },
+    {
+      "question": "What is a named pipe?",
+      "option_a": "A TCP connection that always uses HTTPS",
+      "option_b": "A named, file-like communication channel between processes",
+      "option_c": "A database table shared between applications",
+      "option_d": "An encrypted file stored in the Windows registry",
+      "correct_answer": "B",
+      "explanation": "Named pipes provide a communication channel that processes can use to exchange messages, commonly between clients and services."
+    },
+    {
+      "question": "Which security property should be examined when assessing a named pipe?",
+      "option_a": "The graphical appearance of the pipe's client application",
+      "option_b": "The number of source-code comments in its implementation",
+      "option_c": "The access permissions controlling which processes can connect",
+      "option_d": "The file extension of the application executable",
+      "correct_answer": "C",
+      "explanation": "Named pipe ACLs determine which processes are allowed to establish connections and should be examined for unauthorized access."
+    },
+    {
+      "question": "Which is a Linux IPC equivalent to Windows named pipes?",
+      "option_a": "Unix domain sockets",
+      "option_b": "DPAPI",
+      "option_c": "ASLR",
+      "option_d": "DEP",
+      "correct_answer": "A",
+      "explanation": "Unix domain sockets provide local inter-process communication on Unix-like operating systems."
+    },
+    {
+      "question": "Which macOS IPC mechanism is mentioned in the lecture?",
+      "option_a": "Win32 RPC",
+      "option_b": "DPAPI",
+      "option_c": "LD_PRELOAD",
+      "option_d": "XPC",
+      "correct_answer": "D",
+      "explanation": "XPC is an inter-process communication mechanism used in macOS."
+    },
+    {
+      "question": "Why might the standard Burp Suite or mitmproxy workflow not directly work with a desktop application's custom binary protocol?",
+      "option_a": "Desktop applications cannot establish TCP connections",
+      "option_b": "The application may communicate through raw TCP or UDP rather than HTTP or HTTPS",
+      "option_c": "Binary protocols are always encrypted using AES",
+      "option_d": "Wireshark cannot capture desktop application traffic",
+      "correct_answer": "B",
+      "explanation": "Standard web proxies are designed primarily for HTTP-based communication, while custom binary protocols may require a generic TCP or UDP relay."
+    },
+    {
+      "question": "Which tool is recommended for identifying the protocol and port used by a desktop application?",
+      "option_a": "dnSpy",
+      "option_b": "Ghidra",
+      "option_c": "Wireshark",
+      "option_d": "x64dbg",
+      "correct_answer": "C",
+      "explanation": "Wireshark allows analysts to capture and inspect network traffic to identify communication protocols and ports."
+    },
+    {
+      "question": "What is the purpose of positioning a generic TCP/UDP relay between a desktop client and its server?",
+      "option_a": "To intercept and observe communication between the endpoints",
+      "option_b": "To automatically decompile the client executable",
+      "option_c": "To disable the operating system's process isolation",
+      "option_d": "To replace the server's authentication database",
+      "correct_answer": "A",
+      "explanation": "A generic relay positions the analyst between the client and server, allowing communication to be captured and examined."
+    },
+    {
+      "question": "Which tool combination is appropriate for inspecting HTTPS traffic from a desktop application?",
+      "option_a": "Ghidra and dnSpy",
+      "option_b": "Process Monitor and Process Explorer",
+      "option_c": "x64dbg and WinDbg",
+      "option_d": "Burp Suite or mitmproxy",
+      "correct_answer": "D",
+      "explanation": "Burp Suite and mitmproxy can intercept HTTPS traffic when the application trusts the proxy certificate and other interception conditions are satisfied."
+    },
+    {
+      "question": "Where did the Discord desktop client historically store its authentication token according to the lecture?",
+      "option_a": "Inside the Windows bootloader",
+      "option_b": "In local storage under the user's %AppData% directory",
+      "option_c": "Exclusively in the system BIOS",
+      "option_d": "Inside a remote database that could not be accessed locally",
+      "correct_answer": "B",
+      "explanation": "The lecture describes Discord's historical storage of authentication tokens in local storage files under %AppData%, making them attractive targets for information-stealing malware."
+    },
+    {
+      "question": "Why was the historical Discord token storage approach dangerous?",
+      "option_a": "The token automatically expired every second",
+      "option_b": "The token could only be used on Linux",
+      "option_c": "Malware could read the locally stored token and use it to hijack the account without obtaining the password",
+      "option_d": "The token was stored exclusively in encrypted network packets",
+      "correct_answer": "C",
+      "explanation": "A stolen authentication token can act as an authentication credential, potentially allowing account access without knowing the user's password."
+    },
+    {
+      "question": "What is the purpose of Windows DPAPI?",
+      "option_a": "To encrypt and protect data using keys associated with the logged-in user or system",
+      "option_b": "To inspect network packets",
+      "option_c": "To decompile native applications",
+      "option_d": "To intercept DLL loading operations",
+      "correct_answer": "A",
+      "explanation": "DPAPI provides Windows applications with a built-in mechanism for protecting sensitive data using cryptographic keys tied to a user or system context."
+    },
+    {
+      "question": "Which statement correctly distinguishes Base64 encoding from encryption?",
+      "option_a": "Base64 requires a private encryption key",
+      "option_b": "Base64 is stronger than AES",
+      "option_c": "Base64 provides confidentiality through cryptographic keys",
+      "option_d": "Base64 is an encoding scheme that does not provide confidentiality",
+      "correct_answer": "D",
+      "explanation": "Base64 is a reversible data encoding format, not encryption. Anyone can decode it without a secret key."
+    },
+    {
+      "question": "Which technology is identified as a cryptographic protection mechanism in the lecture's comparison?",
+      "option_a": "Base64",
+      "option_b": "AES through DPAPI",
+      "option_c": "Plaintext storage",
+      "option_d": "XOR obfuscation",
+      "correct_answer": "B",
+      "explanation": "AES is an encryption algorithm, while DPAPI provides an operating-system mechanism for protecting application secrets. The lecture contrasts this with encoding and simple obfuscation."
+    },
+    {
+      "question": "Which statement best describes the storage issue discussed in the Signal Desktop case study?",
+      "option_a": "Signal stored all messages in an unprotected remote SQL database",
+      "option_b": "Signal allowed unauthenticated remote users to install Windows drivers",
+      "option_c": "The SQLite database decryption key was stored in plaintext in a nearby configuration file",
+      "option_d": "Signal used Base64 as its only network encryption mechanism",
+      "correct_answer": "C",
+      "explanation": "The lecture describes a case where Signal Desktop stored the SQLite decryption key in plaintext in a configuration file next to the encrypted database."
+    },
+    {
+      "question": "Which sequence best represents the sample attack chain described in the lecture?",
+      "option_a": "Identify a privileged helper, inspect its binary, monitor execution and use IPC to send a crafted message",
+      "option_b": "Encrypt the database, disable Wireshark, modify a browser and restart the operating system",
+      "option_c": "Install an Electron application, extract an image, compile Java and inspect DNS",
+      "option_d": "Scan a website, modify a CSS file, install a browser extension and change the desktop theme",
+      "correct_answer": "A",
+      "explanation": "The sample chain progresses from identifying a SYSTEM-privileged helper through static analysis, dynamic observation and IPC exploitation."
+    },
+    {
+      "question": "A developer wants to inspect an unfamiliar Windows executable before executing it. Which initial approach best follows the lecture's methodology?",
+      "option_a": "Immediately attach Frida and modify its functions",
+      "option_b": "Install the application as Administrator and inspect its GUI",
+      "option_c": "Connect the application to a production server",
+      "option_d": "Use file to identify the binary type and strings to inspect embedded readable content",
+      "correct_answer": "D",
+      "explanation": "The lecture recommends beginning static inspection with file and strings because these provide inexpensive initial information about an unknown binary."
+    },
+    {
+      "question": "A reverse engineer needs to understand the control flow of a native executable at the instruction level. Which approach is most appropriate?",
+      "option_a": "Use Burp Suite to inspect HTTP headers",
+      "option_b": "Disassemble the executable using Ghidra or IDA",
+      "option_c": "Use DPAPI to decrypt the executable",
+      "option_d": "Use Process Explorer to reconstruct the original source code",
+      "correct_answer": "B",
+      "explanation": "Disassembly with Ghidra or IDA provides assembly instructions that help an analyst examine low-level program behavior and control flow."
+    },
+    {
+      "question": "An analyst receives a .NET desktop application and wants to inspect its original program structure. Which approach is most suitable?",
+      "option_a": "Capture its network packets using Wireshark",
+      "option_b": "Use only Process Monitor to recover its source",
+      "option_c": "Use dnSpy or ILSpy to decompile its managed assemblies",
+      "option_d": "Use asar to extract the application",
+      "correct_answer": "C",
+      "explanation": "The lecture notes that .NET applications can often be decompiled with near-original structure using tools such as dnSpy and ILSpy."
+    },
+    {
+      "question": "A security analyst examines an Electron application and finds an app.asar archive. What is the most appropriate next step for static inspection?",
+      "option_a": "Extract the archive and examine its JavaScript resources",
+      "option_b": "Execute the archive as a Windows service",
+      "option_c": "Convert the archive into a TCP packet capture",
+      "option_d": "Use DEP to reconstruct its source code",
+      "correct_answer": "A",
+      "explanation": "Electron applications commonly contain readable JavaScript resources inside app.asar, which can be extracted and inspected without traditional native-code decompilation."
+    },
+    {
+      "question": "A developer claims that enabling ASLR completely prevents memory exploitation. Which assessment is most accurate?",
+      "option_a": "Correct, because ASLR encrypts every memory address",
+      "option_b": "Correct, because ASLR prevents all malicious code execution",
+      "option_c": "Incorrect, because ASLR only protects network communication",
+      "option_d": "Incorrect, because ASLR makes memory-based exploitation less reliable but does not eliminate all vulnerabilities",
+      "correct_answer": "D",
+      "explanation": "ASLR randomizes memory addresses to make exploitation harder, but it is a mitigation rather than a guarantee that vulnerabilities cannot be exploited."
+    },
+    {
+      "question": "An application uses DEP/NX but contains a buffer overflow vulnerability. Which statement best explains the security implications?",
+      "option_a": "DEP/NX guarantees that the buffer overflow cannot be exploited",
+      "option_b": "DEP/NX restricts execution from non-executable memory regions, but other exploitation techniques may still be possible",
+      "option_c": "DEP/NX automatically validates all user inputs",
+      "option_d": "DEP/NX prevents attackers from modifying application data",
+      "correct_answer": "B",
+      "explanation": "DEP/NX prevents execution from memory regions marked as data, but it does not eliminate the underlying memory corruption or every possible exploitation technique."
+    },
+    {
+      "question": "An organization receives an executable signed by a trusted publisher. Which additional security conclusion is justified?",
+      "option_a": "The executable is guaranteed to be free from malware",
+      "option_b": "The executable cannot have been produced through a compromised build system",
+      "option_c": "The signature provides evidence of signer identity and content integrity, but the executable still requires security assessment",
+      "option_d": "The executable cannot contain hardcoded credentials",
+      "correct_answer": "C",
+      "explanation": "Code signing helps establish the identity of the signer and detect unauthorized modifications, but a compromised or malicious signer can still distribute dangerous software."
+    },
+    {
+      "question": "A reverse engineer encounters a packed executable whose readable strings are limited. What is a reasonable investigation strategy?",
+      "option_a": "Consider runtime unpacking and dynamic analysis because the executable may unpack its contents during execution",
+      "option_b": "Assume the executable contains no functionality",
+      "option_c": "Conclude that ASLR has encrypted all its strings",
+      "option_d": "Immediately classify the executable as harmless",
+      "correct_answer": "A",
+      "explanation": "Packers can compress or scramble executable contents, so observing the program after runtime unpacking may expose code that is difficult to inspect statically."
+    },
+    {
+      "question": "A malicious ACE archive causes an application to write an executable into the Windows Startup folder. Which vulnerability characteristic does this most closely demonstrate?",
+      "option_a": "Certificate pinning failure",
+      "option_b": "Incorrect IPC message authentication",
+      "option_c": "Failure to encrypt local storage",
+      "option_d": "Insufficient validation of archive extraction paths",
+      "correct_answer": "D",
+      "explanation": "The WinRAR case involved inadequate path validation inside ACE archives, allowing an archive to extract files into sensitive filesystem locations."
+    },
+    {
+      "question": "A security researcher wants to understand which registry keys and files a desktop application accesses while installing a new component. Which tool is the best initial choice?",
+      "option_a": "jadx",
+      "option_b": "Process Monitor",
+      "option_c": "ILSpy",
+      "option_d": "asar",
+      "correct_answer": "B",
+      "explanation": "Process Monitor provides visibility into filesystem and registry operations, making it useful for examining installation behavior."
+    },
+    {
+      "question": "While monitoring an application, an analyst notices an unexpected child process being created. Why is this important?",
+      "option_a": "It proves that the application is encrypted",
+      "option_b": "It proves that the application uses DPAPI",
+      "option_c": "It may indicate unexpected execution behavior or an additional component that requires investigation",
+      "option_d": "It automatically confirms a DLL hijacking vulnerability",
+      "correct_answer": "C",
+      "explanation": "Unexpected child processes can reveal suspicious execution chains, helper components or behavior outside the application's expected functionality."
+    },
+    {
+      "question": "During the PrintNightmare investigation, researchers discovered that a low-privileged user could use a Windows RPC interface to install a driver executing as SYSTEM. What was the underlying security problem?",
+      "option_a": "Insufficient authorization checks on a privileged IPC interface",
+      "option_b": "Weak Base64 encoding in the printer configuration",
+      "option_c": "A missing Electron app.asar archive",
+      "option_d": "A vulnerable Java decompiler",
+      "correct_answer": "A",
+      "explanation": "The RPC interface did not adequately authorize requests to install drivers that would execute with SYSTEM privileges."
+    },
+    {
+      "question": "A debugger pauses immediately after a license-check function returns false. An analyst changes the return value in a register and resumes execution. What technique is being demonstrated?",
+      "option_a": "Static decompilation",
+      "option_b": "DLL search-order hijacking",
+      "option_c": "Packet fragmentation",
+      "option_d": "Runtime memory or register patching",
+      "correct_answer": "D",
+      "explanation": "Changing a register while the program is paused alters its runtime execution state, potentially changing the behavior of the license check without modifying the executable on disk."
+    },
+    {
+      "question": "A tester wants to observe the arguments passed to a CheckLicenseKey function without recompiling the application. Which approach is most suitable?",
+      "option_a": "Use file to identify the executable format",
+      "option_b": "Use Frida to hook the function at runtime",
+      "option_c": "Use DPAPI to encrypt its return value",
+      "option_d": "Use Wireshark to decompile its instructions",
+      "correct_answer": "B",
+      "explanation": "Frida supports runtime instrumentation and function hooking, allowing an analyst to inspect function arguments and return values without recompiling the application."
+    },
+    {
+      "question": "A desktop application rejects an intercepting proxy's certificate because it performs certificate pinning. Which testing strategy is most consistent with the lecture?",
+      "option_a": "Disable ASLR on the entire operating system",
+      "option_b": "Extract the app.asar archive and delete all network functions",
+      "option_c": "Investigate the certificate-validation function and use runtime instrumentation such as Frida in an authorized test environment",
+      "option_d": "Replace the application's SQLite database with a plaintext file",
+      "correct_answer": "C",
+      "explanation": "The lecture describes using Frida to hook certificate-validation functions so that certificate-pinning behavior can be investigated during authorized testing."
+    },
+    {
+      "question": "A Windows application attempts to load a DLL but repeatedly generates NAME NOT FOUND events in Process Monitor. What is the best next investigative step?",
+      "option_a": "Identify the DLL name and determine the search locations and permissions before assessing hijacking opportunities",
+      "option_b": "Immediately conclude that the application has been compromised",
+      "option_c": "Assume that the missing DLL is encrypted using DPAPI",
+      "option_d": "Disable the application's network connection",
+      "correct_answer": "A",
+      "explanation": "Failed DLL lookups can reveal potential search-order hijacking opportunities, but the analyst must examine the actual search sequence and directory permissions before drawing conclusions."
+    },
+    {
+      "question": "A desktop application runs with Administrator privileges and loads a library from a directory writable by normal users. What is the primary security concern?",
+      "option_a": "The application cannot access the Windows registry",
+      "option_b": "The application will automatically enable ASLR",
+      "option_c": "The library will always be rejected by DEP/NX",
+      "option_d": "An attacker may place a malicious same-named DLL in the writable location and have it loaded with the application's privileges",
+      "correct_answer": "D",
+      "explanation": "If a privileged application loads an attacker-controlled DLL from a writable search location, the malicious code may execute with the application's elevated privileges."
+    },
+    {
+      "question": "Which statement correctly distinguishes DLL hijacking from LD_PRELOAD injection?",
+      "option_a": "DLL hijacking only affects Java, while LD_PRELOAD only affects Windows",
+      "option_b": "DLL hijacking abuses Windows DLL loading and search behavior, while LD_PRELOAD influences shared-library loading on Unix-like systems",
+      "option_c": "Both techniques require a named pipe",
+      "option_d": "Both techniques exclusively modify network packets",
+      "correct_answer": "B",
+      "explanation": "The techniques target dynamic library loading mechanisms on different operating systems: Windows DLL resolution and Unix-like LD_PRELOAD behavior."
+    },
+    {
+      "question": "A malicious driver has a valid digital signature, but the certificate was stolen from its legitimate owner. Why might the operating system still trust the driver?",
+      "option_a": "Because valid signatures automatically remove all security restrictions",
+      "option_b": "Because DEP/NX disables certificate validation",
+      "option_c": "Because the signing certificate appears legitimate even though it has been misused",
+      "option_d": "Because DLL files cannot be signed",
+      "correct_answer": "C",
+      "explanation": "Stuxnet demonstrated how stolen, legitimately valid signing certificates can be abused to make malicious drivers appear trustworthy."
+    },
+    {
+      "question": "A normal-user GUI sends commands to a SYSTEM service through a named pipe. The service checks neither the caller's identity nor the requested operation. What is the most serious design flaw?",
+      "option_a": "The privileged service trusts unvalidated IPC requests and fails to enforce authorization",
+      "option_b": "The GUI is implemented using a managed language",
+      "option_c": "The named pipe uses a file-like interface",
+      "option_d": "The application communicates locally instead of through HTTPS",
+      "correct_answer": "A",
+      "explanation": "The service must authenticate callers, authorize requested operations and validate messages. Otherwise, an unprivileged process may abuse its elevated capabilities."
+    },
+    {
+      "question": "Which combination represents the most complete security review of a privileged named-pipe service?",
+      "option_a": "Check its icon, filename and user interface",
+      "option_b": "Check only whether the pipe uses a unique name",
+      "option_c": "Check only whether the service executable is digitally signed",
+      "option_d": "Review pipe ACLs, caller authentication, authorization and message validation",
+      "correct_answer": "D",
+      "explanation": "A secure IPC design requires appropriate connection permissions, caller verification, operation-level authorization and validation of incoming messages."
+    },
+    {
+      "question": "An antivirus product exposes a named pipe to normal users. Its SYSTEM service accepts messages and performs file operations without validating their contents. What is the likely impact?",
+      "option_a": "Only a denial of network access",
+      "option_b": "A low-privileged attacker may abuse the service to perform unauthorized privileged operations",
+      "option_c": "The antivirus product automatically becomes a Java application",
+      "option_d": "The operating system permanently disables named pipes",
+      "correct_answer": "B",
+      "explanation": "A privileged service that trusts unvalidated messages can become a confused deputy, allowing low-privileged callers to misuse its SYSTEM-level capabilities."
+    },
+    {
+      "question": "An analyst is investigating a proprietary desktop application that sends binary messages over raw TCP. Which sequence is most appropriate?",
+      "option_a": "Use dnSpy, disable DPAPI and extract app.asar",
+      "option_b": "Modify the Windows registry and reinstall the application",
+      "option_c": "Identify traffic with Wireshark, place a TCP relay between endpoints and compare captured messages",
+      "option_d": "Use Process Explorer to convert binary messages into Java source code",
+      "correct_answer": "C",
+      "explanation": "The lecture recommends identifying the protocol and port, positioning a generic TCP/UDP relay and comparing captured messages to understand the proprietary protocol."
+    },
+    {
+      "question": "An analyst captures two application messages and notices that a particular field changes when a user performs a different operation. What is the most useful next step?",
+      "option_a": "Compare additional messages and correlate field changes with application actions to infer the message format",
+      "option_b": "Immediately conclude that the changing field is an AES key",
+      "option_c": "Delete the application's local storage",
+      "option_d": "Assume the application uses HTTP because it communicates over TCP",
+      "correct_answer": "A",
+      "explanation": "Comparing messages generated by different operations helps identify fields, structures and possible meanings within a custom binary protocol."
+    },
+    {
+      "question": "A desktop application uses HTTPS, but an interception proxy cannot read its traffic. The analyst discovers certificate pinning. Which statement is correct?",
+      "option_a": "HTTPS cannot be intercepted under any circumstances",
+      "option_b": "Wireshark can automatically recover the application's private signing key",
+      "option_c": "The application must be using a custom UDP protocol",
+      "option_d": "The application may reject the proxy certificate because it checks a specific trusted certificate or public key",
+      "correct_answer": "D",
+      "explanation": "Certificate pinning restricts which certificates or public keys an application accepts, potentially preventing interception even when a proxy certificate is trusted by the operating system."
+    },
+    {
+      "question": "A developer stores an authentication token in plaintext local storage. Malware running under the same user's account reads the file and obtains the token. Which security property has primarily failed?",
+      "option_a": "Availability",
+      "option_b": "Confidentiality",
+      "option_c": "Non-repudiation",
+      "option_d": "Memory address randomization",
+      "correct_answer": "B",
+      "explanation": "The authentication token was exposed to an unauthorized process, resulting in an information disclosure and potential account takeover."
+    },
+    {
+      "question": "Why can stealing a session or authentication token be more dangerous than stealing a username?",
+      "option_a": "A token always contains the user's operating system password",
+      "option_b": "A token automatically provides SYSTEM privileges",
+      "option_c": "A valid token may allow an attacker to authenticate as the user without knowing the password",
+      "option_d": "A token cannot be revoked once issued",
+      "correct_answer": "C",
+      "explanation": "Authentication tokens can act as bearer credentials. Anyone who obtains a valid token may be able to use it to access the associated account."
+    },
+    {
+      "question": "An application stores an encrypted SQLite database but keeps the decryption key in plaintext in the same directory. What is the main security weakness?",
+      "option_a": "The encryption provides limited protection if an attacker can obtain both the database and its decryption key",
+      "option_b": "SQLite databases cannot store encrypted information",
+      "option_c": "Plaintext configuration files automatically enable ASLR",
+      "option_d": "The application cannot use IPC while a database exists",
+      "correct_answer": "A",
+      "explanation": "Encryption is ineffective against an attacker who can obtain both the encrypted data and the plaintext key needed to decrypt it."
+    },
+    {
+      "question": "A developer chooses Base64 to protect stored API credentials because the encoded string is not immediately readable. Which assessment is correct?",
+      "option_a": "Base64 provides equivalent protection to DPAPI",
+      "option_b": "Base64 prevents malware from reading the credentials",
+      "option_c": "Base64 provides confidentiality as long as the encoded value is stored in a hidden directory",
+      "option_d": "Base64 only changes the representation of data and does not protect secrets from someone who can decode it",
+      "correct_answer": "D",
+      "explanation": "Base64 is reversible encoding, not encryption. It does not provide confidentiality or require a secret key."
+    },
+    {
+      "question": "An application uses XOR with a fixed key to hide an API token. Why should this not be considered strong encryption?",
+      "option_a": "XOR cannot modify binary data",
+      "option_b": "A fixed, simple XOR transformation is obfuscation and can often be reversed if the method or key is recovered",
+      "option_c": "XOR automatically provides operating-system-level user isolation",
+      "option_d": "XOR is a form of certificate signing",
+      "correct_answer": "B",
+      "explanation": "The lecture distinguishes XOR obfuscation from cryptographic encryption. A simple fixed-key XOR transformation does not provide the security guarantees of a properly implemented encryption system."
+    },
+    {
+      "question": "A developer wants to protect a user's locally stored credentials on Windows without implementing an independent key-management system. Which technology is most appropriate according to the lecture?",
+      "option_a": "Base64",
+      "option_b": "XOR obfuscation",
+      "option_c": "DPAPI",
+      "option_d": "Strings",
+      "correct_answer": "C",
+      "explanation": "DPAPI allows applications to protect sensitive data using cryptographic keys associated with the logged-in user or system, reducing the need to manage application encryption keys independently."
+    },
+    {
+      "question": "A security tester discovers that an application communicates with a SYSTEM service through RPC. Static analysis reveals the RPC endpoint, and runtime monitoring confirms that it accepts requests from normal users. What should the tester investigate next?",
+      "option_a": "Whether the service correctly authenticates callers, authorizes operations and validates RPC messages",
+      "option_b": "Whether the application has a dark-mode interface",
+      "option_c": "Whether its JavaScript bundle contains CSS source maps",
+      "option_d": "Whether the desktop monitor supports a higher refresh rate",
+      "correct_answer": "A",
+      "explanation": "The key security question is whether the privileged service properly validates who can request operations and what those callers are allowed to do."
+    },
+    {
+      "question": "A low-privileged process can send a crafted named-pipe message that causes a SYSTEM service to write a file into a protected directory. Which description best explains this vulnerability?",
+      "option_a": "A normal file-format parsing error without a privilege boundary",
+      "option_b": "A certificate-pinning failure",
+      "option_c": "A memory randomization failure",
+      "option_d": "An IPC authorization and input-validation failure that enables elevation of privilege",
+      "correct_answer": "D",
+      "explanation": "The service performs a privileged operation on behalf of an untrusted caller without adequate authorization and message validation, crossing a security boundary."
+    },
+    {
+      "question": "An analyst performs static analysis of a privileged helper and discovers a named-pipe endpoint. ProcMon confirms that the helper creates the pipe, while Frida is used to understand the expected message structure. What is the next logical stage in the lecture's sample attack chain?",
+      "option_a": "Assume the pipe is vulnerable without further testing",
+      "option_b": "In an authorized test environment, assess whether crafted messages are properly validated and whether the service performs unauthorized privileged operations",
+      "option_c": "Delete the Windows registry",
+      "option_d": "Replace the helper's executable with an unrelated Electron application",
+      "correct_answer": "B",
+      "explanation": "The sample chain proceeds from architecture identification to static inspection, runtime observation and understanding the IPC message format before testing whether the service validates requests."
+    },
+    {
+      "question": "An enterprise desktop application has a normal-user interface, a SYSTEM-level background service and a local named pipe. Which architectural property should receive the highest priority during threat modeling?",
+      "option_a": "The visual design of the interface",
+      "option_b": "The programming language used by the GUI",
+      "option_c": "The trust boundary between the unprivileged client and privileged service",
+      "option_d": "The size of the application's installation directory",
+      "correct_answer": "C",
+      "explanation": "The client-to-service boundary is critical because the service can perform operations with privileges unavailable to the normal user. Its IPC interface must enforce authorization and validation."
+    },
+    {
+      "question": "An organization trusts every update signed by its vendor. An attacker compromises the vendor's build server and injects malicious code before the update is signed. Which security lesson is most applicable?",
+      "option_a": "Code signing alone cannot protect against compromise of the software production and signing process",
+      "option_b": "ASLR automatically detects malicious updates",
+      "option_c": "DPAPI prevents compromised build systems from distributing software",
+      "option_d": "Disassembly guarantees that every update is safe",
+      "correct_answer": "A",
+      "explanation": "The SolarWinds case demonstrates that a trusted signature is not sufficient when the trusted build or signing environment has been compromised."
+    },
+    {
+      "question": "A security team wants to evaluate a desktop application's attack surface comprehensively. Which assessment provides the broadest coverage based on the lecture?",
+      "option_a": "Inspect only the executable's file size and digital signature",
+      "option_b": "Review only the application's visible login screen",
+      "option_c": "Capture only HTTPS traffic to the vendor's website",
+      "option_d": "Examine file inputs, network communication, IPC, GUI inputs, plugins and installer behavior",
+      "correct_answer": "D",
+      "explanation": "The lecture defines attack surface broadly, covering every location where an application accepts input or interacts with external resources."
+    },
+    {
+      "question": "A researcher identifies six possible security threats in a desktop application. Why is STRIDE useful during this assessment?",
+      "option_a": "It guarantees that only six vulnerabilities can exist",
+      "option_b": "It provides six structured threat categories that help organize threat identification without limiting the total number of possible threats",
+      "option_c": "It automatically discovers and exploits all vulnerabilities",
+      "option_d": "It replaces static and dynamic analysis",
+      "correct_answer": "B",
+      "explanation": "STRIDE is a threat-classification framework. Its six categories help organize potential threats, but an application can contain many individual threats within and beyond those categories."
+    },
+    {
+      "question": "A desktop application uses a local web server to expose privileged functionality. Any website can send requests to that server, and the server does not validate request origins. Which combination of analysis areas would be most valuable?",
+      "option_a": "Only binary packing and decompilation",
+      "option_b": "Only local database encryption",
+      "option_c": "Attack-surface identification, security-boundary analysis and request authentication",
+      "option_d": "Only memory address randomization",
+      "correct_answer": "C",
+      "explanation": "The issue involves an externally reachable local service and a missing trust check. Understanding the attack surface and the boundary between website-originated requests and privileged local actions is essential."
+    },
+    {
+      "question": "A security engineer is asked to investigate an unfamiliar application that may contain both static secrets and runtime vulnerabilities. Which overall methodology best matches the lecture?",
+      "option_a": "Understand architecture and trust boundaries, inspect the binary, monitor and manipulate runtime behavior, then examine IPC, network traffic and local storage",
+      "option_b": "Begin by exploiting every network connection before identifying the application",
+      "option_c": "Use only strings because dynamic analysis is unnecessary",
+      "option_d": "Use only Wireshark because all desktop vulnerabilities involve network communication",
+      "correct_answer": "A",
+      "explanation": "The lecture follows four stages: understand the architecture, read the application through static analysis, run and observe it dynamically, and investigate its IPC and network communication."
+    }
+  ]
+}

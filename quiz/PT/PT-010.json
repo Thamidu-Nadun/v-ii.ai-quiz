@@ -1,0 +1,832 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary objective of social engineering in cybersecurity?",
+      "option_a": "Exploiting human psychology to bypass security controls and gain unauthorized access",
+      "option_b": "Exploiting processor vulnerabilities to execute arbitrary instructions",
+      "option_c": "Improving employee awareness of organizational security policies",
+      "option_d": "Discovering network routing inefficiencies",
+      "correct_answer": "A",
+      "explanation": "Social engineering manipulates human psychology to bypass technical security controls and obtain unauthorized enterprise access."
+    },
+    {
+      "question": "According to the lecture, approximately what percentage of corporate data breaches involve human-element exploitation?",
+      "option_a": "Approximately 15%",
+      "option_b": "Approximately 35%",
+      "option_c": "Over 68%",
+      "option_d": "Approximately 95%",
+      "correct_answer": "C",
+      "explanation": "The lecture states that over 68% of corporate data breaches involve human-element exploitation rather than direct zero-day software exploits."
+    },
+    {
+      "question": "Which statement best describes the human vulnerability vector?",
+      "option_a": "Employees always have excessive administrative privileges",
+      "option_b": "Human behavior can be manipulated to circumvent otherwise effective technical security controls",
+      "option_c": "Human users are responsible for discovering all software vulnerabilities",
+      "option_d": "Organizations cannot implement technical controls against human-related attacks",
+      "correct_answer": "B",
+      "explanation": "Attackers exploit human trust, behavior, and psychological responses to circumvent technical defenses."
+    },
+    {
+      "question": "Which activity is most closely associated with reconnaissance during a social engineering attack?",
+      "option_a": "Deleting system audit logs",
+      "option_b": "Escalating privileges using compromised credentials",
+      "option_c": "Transferring money from corporate accounts",
+      "option_d": "Collecting employee information from LinkedIn, social media, and domain records",
+      "correct_answer": "D",
+      "explanation": "Reconnaissance involves gathering information about the target organization and its employees through OSINT and other sources."
+    },
+    {
+      "question": "What is the primary purpose of pretexting?",
+      "option_a": "Creating a believable identity or scenario to manipulate a target",
+      "option_b": "Executing malware on a compromised endpoint",
+      "option_c": "Moving stolen data outside the organization",
+      "option_d": "Establishing encrypted communication between servers",
+      "correct_answer": "A",
+      "explanation": "Pretexting involves constructing a believable persona, such as an IT help desk employee, external auditor, or CEO."
+    },
+    {
+      "question": "Which sequence correctly represents the five-stage social engineering attack lifecycle?",
+      "option_a": "Engagement, Reconnaissance, Exploitation, Pretexting, Exfiltration",
+      "option_b": "Reconnaissance, Engagement, Pretexting, Exfiltration, Exploitation",
+      "option_c": "Reconnaissance, Pretexting, Engagement, Exploitation, Exfiltration",
+      "option_d": "Pretexting, Reconnaissance, Engagement, Exploitation, Exfiltration",
+      "correct_answer": "C",
+      "explanation": "The lecture defines the lifecycle as Reconnaissance, Pretexting, Engagement, Exploitation, and Exfiltration."
+    },
+    {
+      "question": "Which stage involves initiating contact with a target through email, phone, SMS, or physical entry?",
+      "option_a": "Reconnaissance",
+      "option_b": "Engagement",
+      "option_c": "Exploitation",
+      "option_d": "Exfiltration",
+      "correct_answer": "B",
+      "explanation": "Engagement is the stage in which attackers establish contact with their victims through a selected communication channel."
+    },
+    {
+      "question": "Which activity is most characteristic of the exploitation stage?",
+      "option_a": "Searching public employee profiles",
+      "option_b": "Constructing a fake IT employee identity",
+      "option_c": "Initiating a deceptive telephone conversation",
+      "option_d": "Convincing a victim to disclose credentials or execute malicious code",
+      "correct_answer": "D",
+      "explanation": "Exploitation occurs when the victim performs the action that gives the attacker access or another intended advantage."
+    },
+    {
+      "question": "Which activity belongs primarily to the exfiltration stage described in the lecture?",
+      "option_a": "Lateral movement, privilege escalation, and erasing log trails",
+      "option_b": "Gathering employee information from LinkedIn",
+      "option_c": "Creating a fake executive identity",
+      "option_d": "Sending an initial deceptive SMS",
+      "correct_answer": "A",
+      "explanation": "The lecture associates exfiltration with post-compromise activities such as lateral movement, privilege escalation, and erasing log trails."
+    },
+    {
+      "question": "An attacker studies an organization's employees, identifies its IT support staff, and discovers the company's domain structure. Which stage is being performed?",
+      "option_a": "Pretexting",
+      "option_b": "Engagement",
+      "option_c": "Reconnaissance",
+      "option_d": "Exploitation",
+      "correct_answer": "C",
+      "explanation": "Collecting organizational and employee intelligence before contacting victims is reconnaissance."
+    },
+    {
+      "question": "An attacker creates a fake identity as an external compliance auditor before contacting a company's finance department. Which stage does this represent?",
+      "option_a": "Exploitation",
+      "option_b": "Pretexting",
+      "option_c": "Engagement",
+      "option_d": "Exfiltration",
+      "correct_answer": "B",
+      "explanation": "Creating a convincing persona to establish credibility is pretexting."
+    },
+    {
+      "question": "A victim has already provided their credentials, allowing an attacker to access the organization's internal systems. What is the most appropriate description of the attack progression?",
+      "option_a": "The attacker is still performing reconnaissance",
+      "option_b": "The attacker is only developing a pretext",
+      "option_c": "The attacker has not yet engaged the victim",
+      "option_d": "The attacker has successfully exploited the victim and may proceed to post-compromise activities",
+      "correct_answer": "D",
+      "explanation": "Credential disclosure provides the attacker with the intended opportunity for exploitation and subsequent post-compromise operations."
+    },
+    {
+      "question": "Which psychological lever is exploited when an attacker impersonates a CEO or law enforcement official?",
+      "option_a": "Authority",
+      "option_b": "Curiosity",
+      "option_c": "Helpfulness",
+      "option_d": "Greed",
+      "correct_answer": "A",
+      "explanation": "Authority exploits the tendency to comply with individuals perceived as holding senior or legitimate positions."
+    },
+    {
+      "question": "Why do attackers create artificial deadlines such as a 15-minute payment window?",
+      "option_a": "To increase the technical complexity of the attack",
+      "option_b": "To encourage victims to inspect email headers",
+      "option_c": "To suppress critical thinking by creating urgency",
+      "option_d": "To prevent network reconnaissance",
+      "correct_answer": "C",
+      "explanation": "Urgency pressures victims into acting quickly without adequately evaluating the legitimacy of a request."
+    },
+    {
+      "question": "An attacker threatens an employee with account suspension and legal consequences unless credentials are provided. Which psychological lever is primarily exploited?",
+      "option_a": "Curiosity",
+      "option_b": "Fear and intimidation",
+      "option_c": "Helpfulness",
+      "option_d": "Greed",
+      "correct_answer": "B",
+      "explanation": "Threats involving legal action, account suspension, or disciplinary consequences exploit fear and intimidation."
+    },
+    {
+      "question": "An attacker sends an employee a document labeled Executive Salary Restructure 2026 to encourage opening it. Which psychological lever is primarily exploited?",
+      "option_a": "Authority",
+      "option_b": "Helpfulness",
+      "option_c": "Urgency",
+      "option_d": "Curiosity",
+      "correct_answer": "D",
+      "explanation": "Confidential or interesting documents can exploit curiosity and encourage victims to interact with malicious content."
+    },
+    {
+      "question": "An attacker pretends to be an IT technician and asks an employee to cooperate in resolving a fake connectivity issue. Which psychological lever is being exploited?",
+      "option_a": "Helpfulness",
+      "option_b": "Fear",
+      "option_c": "Greed",
+      "option_d": "Curiosity",
+      "correct_answer": "A",
+      "explanation": "The attacker exploits an employee's willingness to assist someone who appears to be resolving an organizational problem."
+    },
+    {
+      "question": "An attacker promises free software licenses in exchange for an employee's login credentials. Which psychological lever is primarily involved?",
+      "option_a": "Authority",
+      "option_b": "Fear",
+      "option_c": "Greed or quid pro quo",
+      "option_d": "Urgency",
+      "correct_answer": "C",
+      "explanation": "Offering a reward or benefit in exchange for information or access is an example of greed or quid pro quo manipulation."
+    },
+    {
+      "question": "Which of the following correctly matches a psychological lever with its mechanism?",
+      "option_a": "Curiosity — threatening an employee with disciplinary action",
+      "option_b": "Authority — impersonating a senior executive",
+      "option_c": "Helpfulness — creating an artificial payment deadline",
+      "option_d": "Urgency — offering free gift cards for credentials",
+      "correct_answer": "B",
+      "explanation": "Authority manipulation relies on perceived organizational hierarchy and legitimate power, such as impersonating a senior executive."
+    },
+    {
+      "question": "A victim receives a message claiming that their account will be permanently disabled unless they respond within ten minutes. Which combination most directly explains the psychological manipulation?",
+      "option_a": "Curiosity and helpfulness",
+      "option_b": "Greed and authority",
+      "option_c": "Helpfulness and curiosity",
+      "option_d": "Urgency and fear",
+      "correct_answer": "D",
+      "explanation": "The short deadline creates urgency, while the threat of permanent account suspension creates fear."
+    },
+    {
+      "question": "An employee receives an urgent request from someone claiming to be the CEO. The request demands an immediate confidential financial transfer. Which two psychological levers are most directly combined?",
+      "option_a": "Authority and urgency",
+      "option_b": "Curiosity and helpfulness",
+      "option_c": "Greed and curiosity",
+      "option_d": "Fear and helpfulness",
+      "correct_answer": "A",
+      "explanation": "The impersonated executive exploits authority, while the immediate deadline creates urgency."
+    },
+    {
+      "question": "Which attack vector primarily involves deceptive mass emails impersonating trusted brands to harvest login credentials?",
+      "option_a": "Vishing",
+      "option_b": "Quishing",
+      "option_c": "Phishing",
+      "option_d": "Smishing",
+      "correct_answer": "C",
+      "explanation": "Phishing uses deceptive emails, frequently impersonating trusted organizations, to manipulate users into disclosing credentials."
+    },
+    {
+      "question": "An attacker telephones an employee while impersonating an internal IT help desk technician. Which attack vector is this?",
+      "option_a": "Smishing",
+      "option_b": "Vishing",
+      "option_c": "Quishing",
+      "option_d": "Watering hole",
+      "correct_answer": "B",
+      "explanation": "Vishing is voice-based social engineering, commonly conducted through telephone calls."
+    },
+    {
+      "question": "Which attack vector uses urgent SMS messages containing shortened malicious URLs?",
+      "option_a": "Phishing",
+      "option_b": "Vishing",
+      "option_c": "Tailgating",
+      "option_d": "Smishing",
+      "correct_answer": "D",
+      "explanation": "Smishing uses SMS messages to deliver deceptive content and links to malicious destinations."
+    },
+    {
+      "question": "What makes quishing particularly relevant to modern email security?",
+      "option_a": "Malicious QR codes can direct victims to fraudulent destinations while bypassing traditional email security gateways",
+      "option_b": "QR codes automatically disable endpoint protection",
+      "option_c": "QR codes eliminate the need for user interaction",
+      "option_d": "QR codes exclusively exploit telephone communication",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies malicious QR codes as a method of bypassing traditional email security gateways and stealing tokens."
+    },
+    {
+      "question": "Which option correctly differentiates phishing, vishing, smishing, and quishing?",
+      "option_a": "Phishing uses SMS, vishing uses QR codes, smishing uses phone calls, and quishing uses physical entry",
+      "option_b": "Phishing uses phone calls, vishing uses email, smishing uses USB devices, and quishing uses QR codes",
+      "option_c": "Phishing uses deceptive emails, vishing uses voice calls, smishing uses SMS, and quishing uses malicious QR codes",
+      "option_d": "All four are exclusively physical social engineering techniques",
+      "correct_answer": "C",
+      "explanation": "These four attack vectors are differentiated primarily by their communication or delivery channels."
+    },
+    {
+      "question": "An employee scans a QR code displayed in an apparently legitimate corporate email and is redirected to a fraudulent authentication portal. Which attack vector is most directly involved?",
+      "option_a": "Vishing",
+      "option_b": "Quishing",
+      "option_c": "Tailgating",
+      "option_d": "Dumpster diving",
+      "correct_answer": "B",
+      "explanation": "Quishing uses malicious QR codes to direct victims to fraudulent websites or authentication portals."
+    },
+    {
+      "question": "A bank customer receives an SMS warning that suspicious transactions have been detected and requesting immediate login through a shortened URL. Which attack technique is being used?",
+      "option_a": "Phishing through an email attachment",
+      "option_b": "Vishing through an automated telephone call",
+      "option_c": "Quishing through a QR code",
+      "option_d": "Smishing through a deceptive SMS",
+      "correct_answer": "D",
+      "explanation": "The deceptive warning and malicious shortened URL are delivered through SMS, making this smishing."
+    },
+    {
+      "question": "An attacker sends an employee a fraudulent email containing a QR code. The employee scans it using a smartphone and enters credentials on a fake portal. Which statement best describes the attack?",
+      "option_a": "The initial delivery uses phishing, while the QR-code-based credential harvesting is quishing",
+      "option_b": "It is exclusively vishing because the employee uses a smartphone",
+      "option_c": "It is exclusively tailgating because the employee interacts with another device",
+      "option_d": "It is a watering hole because the employee accesses a website",
+      "correct_answer": "A",
+      "explanation": "The email is the delivery channel, while the malicious QR code is the defining quishing mechanism."
+    },
+    {
+      "question": "What is tailgating or piggybacking?",
+      "option_a": "Stealing credentials through a fraudulent website",
+      "option_b": "Observing confidential information on a public screen",
+      "option_c": "Following an authorized person into a restricted area by exploiting social courtesy",
+      "option_d": "Searching discarded documents for passwords",
+      "correct_answer": "C",
+      "explanation": "Tailgating exploits human politeness or courtesy to gain unauthorized physical access behind an authorized individual."
+    },
+    {
+      "question": "An attacker leaves a malware-loaded USB drive labeled Executive Salaries 2026 in a corporate parking lot. Which attack technique is demonstrated?",
+      "option_a": "Shoulder surfing",
+      "option_b": "USB baiting",
+      "option_c": "Dumpster diving",
+      "option_d": "Quishing",
+      "correct_answer": "B",
+      "explanation": "USB baiting uses an attractive or interesting label to encourage someone to connect a malicious USB device."
+    },
+    {
+      "question": "Which physical social engineering technique involves observing someone entering a passcode in a public place?",
+      "option_a": "Tailgating",
+      "option_b": "Dumpster diving",
+      "option_c": "USB baiting",
+      "option_d": "Shoulder surfing",
+      "correct_answer": "D",
+      "explanation": "Shoulder surfing involves observing confidential information, such as passcodes, from nearby locations."
+    },
+    {
+      "question": "An attacker searches an organization's discarded waste and discovers unshredded organizational charts and passwords. Which technique is involved?",
+      "option_a": "Dumpster diving",
+      "option_b": "Tailgating",
+      "option_c": "Vishing",
+      "option_d": "Shoulder surfing",
+      "correct_answer": "A",
+      "explanation": "Dumpster diving involves searching discarded materials for confidential organizational information."
+    },
+    {
+      "question": "Which security measure most directly addresses unauthorized entry through tailgating?",
+      "option_a": "DMARC enforcement",
+      "option_b": "FIDO2 hardware authentication",
+      "option_c": "Anti-passback turnstiles and mandatory visitor escorts",
+      "option_d": "Email external-sender banners",
+      "correct_answer": "C",
+      "explanation": "Physical access controls such as anti-passback turnstiles and visitor escort requirements directly address tailgating."
+    },
+    {
+      "question": "In the $25 million AI deepfake fraud incident, what was the primary mechanism used to deceive the finance employee?",
+      "option_a": "A malicious USB drive containing ransomware",
+      "option_b": "An AI-generated video conference impersonating company executives",
+      "option_c": "A fraudulent SMS requesting banking credentials",
+      "option_d": "A compromised physical access control system",
+      "correct_answer": "B",
+      "explanation": "Attackers used AI-cloned executive voices and interactive video avatars during a video conference to deceive the employee."
+    },
+    {
+      "question": "According to the lecture, how did attackers reconstruct the identities used in the deepfake fraud?",
+      "option_a": "By exploiting a hardware authentication vulnerability",
+      "option_b": "By stealing physical identity cards from executives",
+      "option_c": "By obtaining passwords from discarded documents",
+      "option_d": "By using publicly available media clips to reconstruct executive voices and appearances",
+      "correct_answer": "D",
+      "explanation": "The attackers used public media clips to reconstruct CFO voice and video characteristics for interactive AI-generated impersonation."
+    },
+    {
+      "question": "What is the most important security lesson from the $25 million deepfake incident?",
+      "option_a": "Visual and acoustic confirmation alone are insufficient to establish identity for high-value financial transactions",
+      "option_b": "Video conferencing should replace all financial approval processes",
+      "option_c": "Employees should trust video calls from senior executives",
+      "option_d": "Changing email passwords eliminates deepfake fraud",
+      "correct_answer": "A",
+      "explanation": "AI-generated audio and video can convincingly imitate legitimate people, so independent verification is necessary."
+    },
+    {
+      "question": "Which defense most directly reduces the risk of fraudulent financial transfers requested through deepfake executive impersonation?",
+      "option_a": "Installing additional USB ports on employee workstations",
+      "option_b": "Allowing executives to approve transfers through video calls alone",
+      "option_c": "Implementing independent out-of-band verification and dual-authorization wire rules",
+      "option_d": "Disabling all organizational email notifications",
+      "correct_answer": "C",
+      "explanation": "Independent verification and dual authorization ensure that high-value transactions are not approved solely based on an apparently genuine voice or video."
+    },
+    {
+      "question": "An organization requires employees to recognize executives through their faces and voices before approving payments. What fundamental weakness does the deepfake case expose in this policy?",
+      "option_a": "It does not provide physical visitor management",
+      "option_b": "It relies on sensory identity signals that attackers can synthetically reproduce",
+      "option_c": "It prevents the organization from implementing email authentication",
+      "option_d": "It increases the effectiveness of anti-passback controls",
+      "correct_answer": "B",
+      "explanation": "Deepfake technology can reproduce visual and acoustic identity signals, making appearance and voice alone unreliable for high-risk authorization."
+    },
+    {
+      "question": "What was the primary attack technique used by Scattered Spider against organizational help desks?",
+      "option_a": "Installing malware through malicious QR codes",
+      "option_b": "Exploiting an unpatched web server",
+      "option_c": "Searching employee waste bins for passwords",
+      "option_d": "Impersonating employees through telephone calls to request password resets and MFA re-registration",
+      "correct_answer": "D",
+      "explanation": "Scattered Spider used help desk vishing to impersonate employees and manipulate IT personnel into resetting authentication mechanisms."
+    },
+    {
+      "question": "Which authentication systems were targeted or bypassed in the Scattered Spider case described in the lecture?",
+      "option_a": "Okta SSO and multi-factor authentication",
+      "option_b": "DMARC and SPF",
+      "option_c": "Anti-passback and visitor management",
+      "option_d": "TLS certificate authorities and DNSSEC",
+      "correct_answer": "A",
+      "explanation": "The lecture explains that the attackers bypassed Okta single sign-on and MFA through manipulated help desk procedures."
+    },
+    {
+      "question": "What was the core organizational weakness that enabled the Scattered Spider help desk attack?",
+      "option_a": "Insufficient protection against malicious QR codes",
+      "option_b": "Lack of visitor escort policies",
+      "option_c": "Absence of strict out-of-band identity verification during credential resets",
+      "option_d": "Insufficient physical shredding of organizational documents",
+      "correct_answer": "C",
+      "explanation": "Help desk personnel did not enforce strict independent identity verification when processing credential resets and MFA device changes."
+    },
+    {
+      "question": "Which action would most effectively address the weakness demonstrated in the Scattered Spider incident?",
+      "option_a": "Allowing callers to reset MFA devices using publicly available employee details",
+      "option_b": "Requiring independent verification through a previously registered and trusted communication channel",
+      "option_c": "Removing all multi-factor authentication requirements",
+      "option_d": "Sending reset links to the telephone number supplied during the suspicious call",
+      "correct_answer": "B",
+      "explanation": "A previously registered independent channel reduces reliance on information supplied by an unverified caller."
+    },
+    {
+      "question": "Which statement best explains why the Scattered Spider attack was particularly damaging?",
+      "option_a": "The attackers only obtained access to public company websites",
+      "option_b": "The attackers exclusively exploited a physical security weakness",
+      "option_c": "The attack was limited to stealing discarded organizational documents",
+      "option_d": "Manipulating help desk processes enabled attackers to compromise enterprise identity and authentication mechanisms",
+      "correct_answer": "D",
+      "explanation": "The attack exploited trusted identity recovery processes, potentially granting access through enterprise SSO and MFA mechanisms."
+    },
+    {
+      "question": "What was the primary mechanism behind the Toyota Boshoku Business Email Compromise incident?",
+      "option_a": "Attackers manipulated finance employees into changing supplier bank account details through spoofed executive correspondence",
+      "option_b": "Attackers physically entered the organization's server room",
+      "option_c": "Attackers used malicious USB devices to encrypt the company's databases",
+      "option_d": "Attackers exploited an OAuth consent screen to access employee API tokens",
+      "correct_answer": "A",
+      "explanation": "The lecture describes attackers spoofing executive correspondence to convince finance staff to alter supplier banking details."
+    },
+    {
+      "question": "What was the reported financial loss associated with the Toyota Boshoku BEC case?",
+      "option_a": "$25 million",
+      "option_b": "$300 million",
+      "option_c": "$37 million",
+      "option_d": "$10 million",
+      "correct_answer": "C",
+      "explanation": "The lecture reports a $37 million loss in the Toyota Boshoku financial wire fraud incident."
+    },
+    {
+      "question": "Which combination of techniques was associated with the Toyota Boshoku attack?",
+      "option_a": "QR-code manipulation and USB baiting",
+      "option_b": "Lookalike domain spoofing and compromised legitimate vendor email accounts",
+      "option_c": "Shoulder surfing and physical tailgating",
+      "option_d": "MFA fatigue and malicious browser extensions",
+      "correct_answer": "B",
+      "explanation": "The case involved lookalike domain spoofing together with compromised legitimate vendor email accounts during active payment cycles."
+    },
+    {
+      "question": "What systemic control failure contributed to the Toyota Boshoku incident?",
+      "option_a": "Absence of anti-passback turnstiles",
+      "option_b": "Lack of employee security awareness posters",
+      "option_c": "Failure to implement FIDO2 for physical visitor access",
+      "option_d": "Absence of dual-signoff authorization rules for modifying supplier banking details in ERP systems",
+      "correct_answer": "D",
+      "explanation": "Dual-signoff authorization could have prevented a single manipulated finance employee from independently changing supplier banking details."
+    },
+    {
+      "question": "A finance employee receives a legitimate-looking email from a supplier whose account may have been compromised. The message requests a change to banking details during an active payment cycle. Which response best addresses the attack demonstrated by Toyota Boshoku?",
+      "option_a": "Accept the request if the email uses the supplier's familiar display name",
+      "option_b": "Approve the change if the request includes an invoice number",
+      "option_c": "Independently verify the request and require dual authorization before modifying banking details",
+      "option_d": "Disable all supplier email communications permanently",
+      "correct_answer": "C",
+      "explanation": "Independent verification and dual authorization address both impersonation risk and the lack of financial change-control procedures."
+    },
+    {
+      "question": "What was the initial delivery mechanism in the RSA SecurID incident described in the lecture?",
+      "option_a": "A spear-phishing email titled 2011 Recruitment Plan containing a Flash zero-day",
+      "option_b": "A malicious QR code distributed through SMS",
+      "option_c": "A fake video conference involving cloned executives",
+      "option_d": "A physical USB device left in a parking lot",
+      "correct_answer": "A",
+      "explanation": "The lecture describes a spear-phishing email titled 2011 Recruitment Plan that contained a Flash zero-day exploit."
+    },
+    {
+      "question": "What was the significant security impact of the RSA SecurID incident?",
+      "option_a": "The attackers obtained access exclusively to publicly available company information",
+      "option_b": "The attackers bypassed physical turnstiles",
+      "option_c": "The attackers compromised only employee email signatures",
+      "option_d": "The compromise affected 2FA seed keys globally",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies the compromise of 2FA seed keys globally as the major consequence of the RSA SecurID incident."
+    },
+    {
+      "question": "What is OAuth consent grant phishing?",
+      "option_a": "Tricking users into revealing passwords through a telephone call",
+      "option_b": "Tricking users into authorizing a malicious application that receives persistent API access",
+      "option_c": "Convincing employees to enter restricted physical areas",
+      "option_d": "Using QR codes to disable authentication servers",
+      "correct_answer": "B",
+      "explanation": "OAuth consent phishing manipulates users into granting an application permissions that can provide attackers with persistent API access."
+    },
+    {
+      "question": "Why might changing a password be insufficient after an OAuth consent phishing incident?",
+      "option_a": "Password changes always disable multi-factor authentication",
+      "option_b": "OAuth applications cannot access organizational data",
+      "option_c": "Previously granted OAuth permissions and associated tokens may continue to provide API access",
+      "option_d": "Changing passwords automatically grants attackers administrative privileges",
+      "correct_answer": "C",
+      "explanation": "OAuth authorization grants and access or refresh tokens can provide access independently of the user's current password. The malicious grant and tokens must also be addressed."
+    },
+    {
+      "question": "What is the most important security lesson connecting the RSA SecurID incident and modern OAuth consent phishing?",
+      "option_a": "Attackers can target authentication seeds, tokens, and API permissions rather than only conventional passwords",
+      "option_b": "Password length is the only important authentication security property",
+      "option_c": "Physical access controls eliminate identity-based attacks",
+      "option_d": "Email filtering prevents every form of authentication compromise",
+      "correct_answer": "A",
+      "explanation": "Both incidents demonstrate that authentication-related secrets and authorization mechanisms are valuable attack targets beyond ordinary passwords."
+    },
+    {
+      "question": "An employee authorizes a seemingly legitimate productivity application in Microsoft 365. The application subsequently accesses organizational data without requiring the employee's password again. Which mechanism best explains this behavior?",
+      "option_a": "Tailgating through an authorized network gateway",
+      "option_b": "Dumpster diving through application logs",
+      "option_c": "Shoulder surfing through an authentication screen",
+      "option_d": "An OAuth authorization grant providing API access",
+      "correct_answer": "D",
+      "explanation": "OAuth authorization grants allow applications to access permitted resources through tokens rather than repeatedly requesting the user's password."
+    },
+    {
+      "question": "What is the first major step in a watering hole attack?",
+      "option_a": "Immediately encrypting all organizational databases",
+      "option_b": "Identifying websites frequently visited by the intended target group",
+      "option_c": "Requesting MFA device re-registration through a help desk",
+      "option_d": "Changing supplier bank account information",
+      "correct_answer": "B",
+      "explanation": "The attacker first profiles the target group and identifies websites frequently visited by its members."
+    },
+    {
+      "question": "What happens during the drive-by exploitation stage of a watering hole attack?",
+      "option_a": "The attacker collects employee salary information",
+      "option_b": "The attacker calls the organization's IT department",
+      "option_c": "A compromised target website delivers browser exploits or fake browser update prompts",
+      "option_d": "The attacker changes banking details in the ERP system",
+      "correct_answer": "C",
+      "explanation": "The attacker compromises a website visited by the target group and uses it to deliver malicious content or browser exploits."
+    },
+    {
+      "question": "Why is a watering hole attack particularly dangerous to users who visit trusted websites?",
+      "option_a": "A compromised legitimate website may silently deliver malware to visitors without requiring an active click",
+      "option_b": "Trusted websites automatically disable all endpoint security controls",
+      "option_c": "The victim must manually download an unknown USB driver",
+      "option_d": "It requires every visitor to provide their administrator password",
+      "correct_answer": "A",
+      "explanation": "The lecture describes silent endpoint compromise when victims visit compromised websites, potentially without actively clicking malicious content."
+    },
+    {
+      "question": "Which sequence correctly represents the watering hole attack process?",
+      "option_a": "Exploit employee credentials, create a QR code, identify a website",
+      "option_b": "Send a help desk call, reset MFA, compromise a supplier account",
+      "option_c": "Deploy ransomware, change passwords, publish a malicious website",
+      "option_d": "Profile the target group, compromise a frequently visited website, deliver exploits or fake updates, and compromise endpoints",
+      "correct_answer": "D",
+      "explanation": "The watering hole attack progresses from target profiling to website compromise and finally to endpoint compromise."
+    },
+    {
+      "question": "What is a major characteristic of LLM-assisted spear phishing?",
+      "option_a": "It can only generate random, grammatically incorrect emails",
+      "option_b": "It produces highly personalized phishing emails that may lack traditional grammatical errors and typos",
+      "option_c": "It requires attackers to physically access employee computers",
+      "option_d": "It prevents attackers from using organizational information",
+      "correct_answer": "B",
+      "explanation": "The lecture explains that generative AI can create highly personalized spear-phishing messages without the traditional grammatical warning signs."
+    },
+    {
+      "question": "According to the lecture, how much audio may be sufficient for attackers to synthesize convincing executive voice patterns?",
+      "option_a": "Several hours",
+      "option_b": "At least thirty minutes",
+      "option_c": "As little as three seconds",
+      "option_d": "At least one full day",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies three-second audio samples as potentially sufficient for real-time voice cloning."
+    },
+    {
+      "question": "What is MFA fatigue or prompt bombing?",
+      "option_a": "Flooding a user's device with repeated authentication requests until the user approves one",
+      "option_b": "Replacing an employee's hardware security key",
+      "option_c": "Disabling an organization's email authentication policies",
+      "option_d": "Observing authentication codes over an employee's shoulder",
+      "correct_answer": "A",
+      "explanation": "MFA fatigue involves repeatedly sending authentication push requests in the hope that the victim eventually approves one."
+    },
+    {
+      "question": "An employee receives over 100 unexpected MFA push notifications. The employee eventually approves one to stop the interruptions. Which attack has occurred?",
+      "option_a": "OAuth consent phishing",
+      "option_b": "Watering hole",
+      "option_c": "Quishing",
+      "option_d": "MFA fatigue",
+      "correct_answer": "D",
+      "explanation": "Repeated push notifications exploit user frustration and fatigue to obtain an unintended authentication approval."
+    },
+    {
+      "question": "Which emerging threat combines publicly available executive audio with urgent telephone requests for financial action?",
+      "option_a": "Dumpster diving",
+      "option_b": "Real-time voice cloning used for vishing",
+      "option_c": "Tailgating",
+      "option_d": "OAuth consent phishing",
+      "correct_answer": "B",
+      "explanation": "AI-generated voice patterns can be used to impersonate executives in real-time vishing attacks."
+    },
+    {
+      "question": "Which statement best distinguishes traditional phishing from modern LLM-assisted spear phishing?",
+      "option_a": "Traditional phishing always uses physical devices, while LLM phishing only uses SMS",
+      "option_b": "LLM-assisted phishing cannot exploit authority or urgency",
+      "option_c": "LLM-assisted spear phishing can produce personalized and grammatically convincing messages that reduce traditional warning signs",
+      "option_d": "Traditional phishing requires OAuth authorization, while LLM phishing requires physical entry",
+      "correct_answer": "C",
+      "explanation": "LLM-assisted phishing improves personalization and language quality, making conventional indicators such as spelling mistakes less reliable."
+    },
+    {
+      "question": "What is the primary security benefit of FIDO2 or passkey hardware keys in the lecture's defense framework?",
+      "option_a": "Providing phishing-resistant authentication that prevents credential harvesting and OTP theft through conventional phishing",
+      "option_b": "Preventing employees from physically entering restricted areas",
+      "option_c": "Replacing all organizational network segmentation",
+      "option_d": "Automatically verifying every supplier banking change",
+      "correct_answer": "A",
+      "explanation": "FIDO2 and passkeys provide phishing-resistant authentication and protect against conventional credential harvesting and OTP theft."
+    },
+    {
+      "question": "What is the main purpose of out-of-band verification?",
+      "option_a": "Sending all authentication requests through the same email account",
+      "option_b": "Allowing help desk staff to trust callers who know employee details",
+      "option_c": "Reducing the number of security logs generated",
+      "option_d": "Confirming high-risk requests through an independent secondary communication channel",
+      "correct_answer": "D",
+      "explanation": "OOB verification independently confirms sensitive requests, reducing reliance on the communication channel used by a potential attacker."
+    },
+    {
+      "question": "Which principle is central to Zero-Trust access control?",
+      "option_a": "Granting unrestricted access after the first successful login",
+      "option_b": "Applying least privilege to limit the impact of compromised accounts",
+      "option_c": "Trusting all devices connected to the corporate network",
+      "option_d": "Disabling identity verification for internal users",
+      "correct_answer": "B",
+      "explanation": "Zero-Trust access control uses least-privilege policies to reduce the potential damage caused by compromised identities."
+    },
+    {
+      "question": "Which set of technologies is primarily associated with email domain authentication in the lecture?",
+      "option_a": "FIDO2, WebAuthn, and OAuth",
+      "option_b": "Nmap, DNS, and SSH",
+      "option_c": "DMARC, DKIM, and SPF",
+      "option_d": "TLS, SSH, and VPN",
+      "correct_answer": "C",
+      "explanation": "DMARC, DKIM, and SPF are the email authentication mechanisms listed in the lecture's countermeasure matrix."
+    },
+    {
+      "question": "Which process control is specifically recommended for help desk vishing?",
+      "option_a": "Manager callback verification",
+      "option_b": "Mandatory USB encryption",
+      "option_c": "Anti-passback turnstiles",
+      "option_d": "External email banners",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies manager callback verification as a process control for help desk vishing."
+    },
+    {
+      "question": "Which defense is most directly associated with deepfake audio and video attacks in the lecture's countermeasure matrix?",
+      "option_a": "Anti-passback turnstiles and visitor escorts",
+      "option_b": "External email banner tags",
+      "option_c": "Mandatory USB device registration",
+      "option_d": "Acoustic watermark detection and dual-authorization wire rules",
+      "correct_answer": "D",
+      "explanation": "Acoustic watermark detection provides a technical detection mechanism, while dual-authorization rules protect financial transactions."
+    },
+    {
+      "question": "An organization implements least-privilege access, independent verification for password resets, and phishing-resistant authentication. Which defensive strategy does this combination best represent?",
+      "option_a": "Single-layer perimeter security",
+      "option_b": "Defense in depth",
+      "option_c": "Unrestricted internal trust",
+      "option_d": "Physical-only security",
+      "correct_answer": "B",
+      "explanation": "Defense in depth combines multiple complementary controls to reduce the likelihood and impact of successful attacks."
+    },
+    {
+      "question": "Which control pairing correctly matches the attack type with its technical mitigation?",
+      "option_a": "Tailgating — DMARC enforcement",
+      "option_b": "Phishing — anti-passback turnstiles",
+      "option_c": "Help desk vishing — FIDO2 WebAuthn hardware keys",
+      "option_d": "Deepfake fraud — external email banners",
+      "correct_answer": "C",
+      "explanation": "The lecture specifically maps FIDO2 WebAuthn hardware keys to help desk vishing countermeasures."
+    },
+    {
+      "question": "An organization deploys DMARC, DKIM, and SPF but does not independently verify supplier banking changes. What conclusion is most accurate?",
+      "option_a": "Email authentication reduces certain domain impersonation risks but does not replace financial authorization controls or verification of legitimate compromised accounts",
+      "option_b": "Email authentication guarantees that every message comes from a trustworthy human",
+      "option_c": "Email authentication automatically prevents all Business Email Compromise attacks",
+      "option_d": "Email authentication makes dual-signoff procedures unnecessary",
+      "correct_answer": "A",
+      "explanation": "Email authentication is valuable against certain email spoofing techniques, but it cannot independently prevent compromised legitimate accounts or unauthorized financial changes."
+    },
+    {
+      "question": "An attacker calls the help desk and requests an MFA reset. The caller knows the employee's full name, department, and manager. Which response provides the strongest protection?",
+      "option_a": "Approve the request because the caller knows internal employee information",
+      "option_b": "Send an MFA approval notification to the device requested by the caller",
+      "option_c": "Reset the account after checking the caller's telephone number",
+      "option_d": "Require independent verification using a previously registered trusted channel and an established authorization procedure",
+      "correct_answer": "D",
+      "explanation": "Publicly available or previously obtained employee details do not establish identity. Independent verification must use a trusted channel not controlled by the caller."
+    },
+    {
+      "question": "A SOC team discovers that employees repeatedly approve unexpected authentication notifications. Which combination of controls most directly addresses the underlying risk?",
+      "option_a": "External email banners and visitor escort policies",
+      "option_b": "Phishing-resistant FIDO2 authentication and procedures for reporting unexpected authentication requests",
+      "option_c": "Anti-passback turnstiles and document shredding",
+      "option_d": "Supplier banking dual-signoff and QR-code scanning restrictions",
+      "correct_answer": "B",
+      "explanation": "Phishing-resistant authentication reduces dependence on approval-based authentication prompts, while reporting procedures help organizations respond to suspicious requests."
+    },
+    {
+      "question": "An organization uses SMS-based MFA and standard email verification for password recovery. An attacker operates an adversary-in-the-middle phishing page that relays the victim's authentication interaction. Which concern is most relevant?",
+      "option_a": "The attacker must physically enter the server room before obtaining credentials",
+      "option_b": "SMS messages automatically invalidate malicious OAuth grants",
+      "option_c": "Traditional SMS or email MFA may not adequately resist real-time phishing and session interception",
+      "option_d": "The attack can only succeed through dumpster diving",
+      "correct_answer": "C",
+      "explanation": "The lecture raises the weakness of traditional SMS or email MFA against modern adversary-in-the-middle phishing. Phishing-resistant authentication is a stronger approach."
+    },
+    {
+      "question": "A company wants to design a three-step out-of-band identity verification workflow for help desk credential resets. Which design is the strongest?",
+      "option_a": "Identify the employee, contact a previously registered trusted channel independently, and approve the reset only after verification and authorization",
+      "option_b": "Ask the caller for their employee name, accept their explanation, and immediately reset MFA",
+      "option_c": "Send a reset link to the telephone number provided during the call, then approve the request",
+      "option_d": "Ask the caller to provide their current password and a new password",
+      "correct_answer": "A",
+      "explanation": "A secure workflow independently contacts a previously registered channel, verifies the request, and authorizes the reset before making authentication changes."
+    },
+    {
+      "question": "A finance department receives an urgent bank-account modification request from a known supplier. The sender uses a legitimate compromised vendor mailbox, and the organization has SPF, DKIM, and DMARC enabled. What is the strongest conclusion?",
+      "option_a": "The message must be fraudulent because email authentication is enabled",
+      "option_b": "The message is safe because all three email authentication mechanisms are enabled",
+      "option_c": "The organization should approve the change if the supplier's display name matches",
+      "option_d": "Email authentication may not detect abuse of a legitimate compromised mailbox, so independent verification and dual authorization remain necessary",
+      "correct_answer": "D",
+      "explanation": "Email authentication cannot establish that the legitimate account owner actually initiated a request. Independent banking verification and dual authorization address this gap."
+    },
+    {
+      "question": "An organization introduces FIDO2 hardware keys, but its help desk still allows MFA device re-registration after callers provide publicly available employee information. What is the most important remaining weakness?",
+      "option_a": "FIDO2 cannot protect any user authentication",
+      "option_b": "The identity recovery process can undermine the security benefits of strong authentication by allowing attackers to re-register authentication devices",
+      "option_c": "FIDO2 automatically disables all physical access controls",
+      "option_d": "Public employee information cannot be used in social engineering",
+      "correct_answer": "B",
+      "explanation": "Strong authentication can be bypassed through weak account recovery procedures. Device re-registration must be protected by strict independent identity verification."
+    },
+    {
+      "question": "An organization applies least-privilege access to employee accounts. One employee is successfully compromised through phishing. What is the main expected security benefit?",
+      "option_a": "The compromised employee can no longer receive emails",
+      "option_b": "The attacker is automatically identified through acoustic watermark detection",
+      "option_c": "The attacker's potential access and impact are limited by the permissions assigned to the compromised account",
+      "option_d": "The employee's credentials cannot be reused",
+      "correct_answer": "C",
+      "explanation": "Least privilege limits the resources and operations available to a compromised account, reducing the attack's potential blast radius."
+    },
+    {
+      "question": "A company experiences a watering hole attack. Employees visit a frequently used industry portal that has been compromised, and malware executes without users clicking a download. Which security assumption has failed?",
+      "option_a": "That visiting a familiar or trusted website is sufficient to establish the safety of its content",
+      "option_b": "That every social engineering attack requires a telephone call",
+      "option_c": "That MFA device re-registration must always be performed by finance staff",
+      "option_d": "That email domain authentication can prevent all browser exploits",
+      "correct_answer": "A",
+      "explanation": "A legitimate website can itself be compromised. Familiarity with a website does not guarantee that its content remains safe."
+    },
+    {
+      "question": "An attacker creates a convincing AI-generated voice of a CFO and telephones an employee requesting an immediate wire transfer. The employee recognizes the voice and approves the transaction. Which combination of controls provides the most direct protection?",
+      "option_a": "SPF enforcement and external email banners only",
+      "option_b": "Anti-passback turnstiles and visitor escorts",
+      "option_c": "USB device scanning and document shredding",
+      "option_d": "Independent OOB verification and dual-authorization wire approval",
+      "correct_answer": "D",
+      "explanation": "Independent verification confirms the request through a separate trusted channel, while dual authorization prevents a single employee from completing a high-risk transfer."
+    },
+    {
+      "question": "An employee receives a highly personalized phishing email with correct grammar, accurate organizational details, and a realistic request from a manager. Which defensive conclusion is most appropriate?",
+      "option_a": "The email can be trusted because it contains no spelling mistakes",
+      "option_b": "Grammar and writing quality are insufficient indicators of legitimacy, so identity and request verification are necessary",
+      "option_c": "The email must be generated manually because AI cannot personalize messages",
+      "option_d": "The email is safe if it contains the employee's correct job title",
+      "correct_answer": "B",
+      "explanation": "LLM-assisted spear phishing can produce convincing and personalized messages, making grammar and spelling unreliable as primary security indicators."
+    },
+    {
+      "question": "A malicious application receives Microsoft 365 permissions after an employee selects Authorize App. The organization responds by changing the employee's password but does not investigate the application's permissions. What is the most significant unresolved risk?",
+      "option_a": "The attacker may continue accessing permitted resources through existing OAuth authorization grants or tokens",
+      "option_b": "The employee's physical access card automatically becomes invalid",
+      "option_c": "The organization loses its ability to use SPF",
+      "option_d": "The application automatically becomes a legitimate organizational service",
+      "correct_answer": "A",
+      "explanation": "Changing a password does not necessarily revoke existing OAuth authorization grants or tokens. The organization must investigate and revoke malicious application access and associated tokens."
+    },
+    {
+      "question": "A SOC analyst investigates a social engineering incident. The attacker collected employee information, created a fake IT identity, contacted the victim, obtained credentials, and then moved laterally through internal systems. Which interpretation correctly maps the attack progression?",
+      "option_a": "Engagement, Exfiltration, Reconnaissance, Pretexting, Exploitation",
+      "option_b": "Pretexting, Exploitation, Reconnaissance, Exfiltration, Engagement",
+      "option_c": "Reconnaissance, Pretexting, Engagement, Exploitation, Exfiltration",
+      "option_d": "Reconnaissance, Engagement, Exfiltration, Exploitation, Pretexting",
+      "correct_answer": "C",
+      "explanation": "The sequence follows the five-stage lifecycle. Lateral movement occurs after the attacker has successfully exploited the victim and obtained access."
+    },
+    {
+      "question": "A company has strong email filtering, FIDO2 authentication, and endpoint protection. However, finance employees can modify supplier bank accounts without a second approval. Which security improvement is most important in addressing the specific remaining weakness?",
+      "option_a": "Increasing the number of external email banners",
+      "option_b": "Introducing mandatory USB encryption",
+      "option_c": "Replacing all employee passwords with longer passwords",
+      "option_d": "Implementing independent verification and dual-signoff controls for supplier banking changes",
+      "correct_answer": "D",
+      "explanation": "The missing control is financial authorization. Dual-signoff and independent verification directly address unauthorized supplier banking modifications."
+    },
+    {
+      "question": "A university employee sees someone carrying equipment behind an authorized staff member into a restricted server room. The authorized employee holds the door open without checking identification. Which control combination best addresses this risk?",
+      "option_a": "DMARC enforcement and FIDO2",
+      "option_b": "Anti-passback physical access controls and mandatory visitor escort procedures",
+      "option_c": "OAuth token revocation and email filtering",
+      "option_d": "Acoustic watermark detection and dual-signoff payments",
+      "correct_answer": "B",
+      "explanation": "The scenario represents tailgating. Physical entry controls and visitor escort requirements directly address unauthorized access behind authorized personnel."
+    },
+    {
+      "question": "An organization introduces strict OOB verification but uses the telephone number supplied by the caller as the verification destination. Why is this procedure insufficient?",
+      "option_a": "It relies on a communication endpoint controlled or selected by the unverified requester rather than an independently established trusted channel",
+      "option_b": "OOB verification can only be used for email accounts",
+      "option_c": "Telephone communication is never suitable for identity verification",
+      "option_d": "OOB verification automatically disables employee authentication",
+      "correct_answer": "A",
+      "explanation": "A verification channel must be independently established and previously trusted. Contacting a number supplied by an unverified caller does not provide independent verification."
+    },
+    {
+      "question": "An enterprise wants to minimize operational friction for remote employees while resisting help desk vishing. Which design best balances usability and security?",
+      "option_a": "Permit all password reset requests from employee email accounts without further checks",
+      "option_b": "Require employees to visit the physical office for every authentication issue",
+      "option_c": "Use a predefined remote verification process involving previously registered trusted channels, appropriate authorization, and phishing-resistant authentication",
+      "option_d": "Allow help desk personnel to reset MFA whenever the caller provides a manager's name",
+      "correct_answer": "C",
+      "explanation": "A predefined independent remote verification process protects account recovery without requiring every employee to attend the office."
+    },
+    {
+      "question": "An attacker obtains employee credentials through a fraudulent authentication portal, gains access to the enterprise, escalates privileges, and attempts to erase evidence. Which statement best identifies the broader security significance?",
+      "option_a": "Credential theft is the only meaningful stage of a social engineering attack",
+      "option_b": "Social engineering attacks end immediately after a victim enters a password",
+      "option_c": "Technical defenses are unnecessary once employee awareness training is introduced",
+      "option_d": "A successful human-targeted compromise can develop into a broader enterprise intrusion involving lateral movement, privilege escalation, and evidence removal",
+      "correct_answer": "D",
+      "explanation": "Social engineering can serve as an initial access method for subsequent technical compromise and post-exploitation activities."
+    },
+    {
+      "question": "A security team must prioritize controls after reviewing the lecture's case studies. Which strategy provides the strongest overall defense against the different human-targeted attack categories?",
+      "option_a": "Rely exclusively on employee awareness training",
+      "option_b": "Combine phishing-resistant authentication, OOB verification, least-privilege access, email authentication, and appropriate physical and financial process controls",
+      "option_c": "Deploy only a stronger firewall and perimeter intrusion detection system",
+      "option_d": "Disable all remote access and eliminate employee email",
+      "correct_answer": "B",
+      "explanation": "Defense in depth combines technical, identity, process, and physical controls to address different attack vectors and reduce the impact of successful compromises."
+    }
+  ]
+}
