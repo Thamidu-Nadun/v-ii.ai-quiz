@@ -1,6 +1,48 @@
 export default [
   // Penetration Testing Quizzes
   {
+    title: "Penetration Testing - 09",
+    path: "quiz/PT/PT-010.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
+    title: "Penetration Testing - 08",
+    path: "quiz/PT/PT-009.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
+    title: "Penetration Testing - 07",
+    path: "quiz/PT/PT-008.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
+    title: "Penetration Testing - 06",
+    path: "quiz/PT/PT-007.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
+    title: "Penetration Testing - 05",
+    path: "quiz/PT/PT-006.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
+    title: "Penetration Testing - 04",
+    path: "quiz/PT/PT-005.json",
+    description:
+      "Test your knowledge of penetration testing concepts, methodologies, and tools.",
+    isAvailable: true,
+  },
+  {
     title: "Penetration Testing - 03 - II",
     path: "quiz/PT/PT-004.json",
     description:

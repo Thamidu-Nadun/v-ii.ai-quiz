@@ -1,0 +1,796 @@
+{
+  "questions": [
+    {
+      "question": "Which statement best describes penetration testing?",
+      "option_a": "An automated process that identifies vulnerabilities without attempting exploitation",
+      "option_b": "An authorized simulated attack designed to evaluate security by attempting to demonstrate real impact",
+      "option_c": "Continuous monitoring of network traffic to identify suspicious activity",
+      "option_d": "An unauthorized attempt to gain access to a computer system",
+      "correct_answer": "B",
+      "explanation": "Penetration testing is an authorized, simulated attack that goes beyond vulnerability scanning by actively attempting exploitation to demonstrate real security impact."
+    },
+    {
+      "question": "What is the primary difference between vulnerability scanning and penetration testing?",
+      "option_a": "Vulnerability scanning requires written authorization, whereas penetration testing does not",
+      "option_b": "Penetration testing is entirely automated, whereas vulnerability scanning is manual",
+      "option_c": "Vulnerability scanning identifies potential issues, whereas penetration testing attempts to prove exploitability",
+      "option_d": "Vulnerability scanning focuses only on operating systems, whereas penetration testing focuses only on networks",
+      "correct_answer": "C",
+      "explanation": "Vulnerability scanning provides automated, breadth-first discovery of potential weaknesses, while penetration testing actively attempts exploitation to establish actual impact."
+    },
+    {
+      "question": "Which document establishes the boundaries and conditions of an authorized penetration test?",
+      "option_a": "Rules of Engagement (RoE)",
+      "option_b": "Common Vulnerabilities and Exposures (CVE)",
+      "option_c": "Common Vulnerability Scoring System (CVSS)",
+      "option_d": "Security Incident Report",
+      "correct_answer": "A",
+      "explanation": "Rules of Engagement define the authorized scope, testing techniques, time window, and emergency contacts."
+    },
+    {
+      "question": "Which CIA triad component is primarily affected when an attacker obtains unauthorized access to confidential customer records?",
+      "option_a": "Availability",
+      "option_b": "Integrity",
+      "option_c": "Authentication",
+      "option_d": "Confidentiality",
+      "correct_answer": "D",
+      "explanation": "Confidentiality protects information against unauthorized disclosure. Accessing private customer records violates this principle."
+    },
+    {
+      "question": "Which activity most closely represents a red team exercise?",
+      "option_a": "Running an automated vulnerability scanner against a server",
+      "option_b": "Conducting a stealthy, goal-driven adversary simulation over an extended period",
+      "option_c": "Checking whether a particular software version has a published CVE",
+      "option_d": "Generating a report of outdated packages",
+      "correct_answer": "B",
+      "explanation": "Red teaming involves broader, stealthier, goal-driven adversary simulation rather than simply identifying individual vulnerabilities."
+    },
+    {
+      "question": "According to the lecture, which condition must be established before penetration testing begins?",
+      "option_a": "A successful exploit must already be available",
+      "option_b": "The tester must obtain root access to the target",
+      "option_c": "Written authorization and an agreed testing scope must exist",
+      "option_d": "The target must have at least one known vulnerability",
+      "correct_answer": "C",
+      "explanation": "Written authorization is essential. The Rules of Engagement establish the permitted scope, techniques, and testing window."
+    },
+    {
+      "question": "Which sequence correctly represents the six phases of the OS penetration testing methodology?",
+      "option_a": "Reconnaissance, Scan/Enumerate, Vulnerability Analysis, Exploitation, Post-Exploitation, Reporting",
+      "option_b": "Scanning, Exploitation, Reconnaissance, Reporting, Privilege Escalation, Enumeration",
+      "option_c": "Reconnaissance, Exploitation, Scanning, Reporting, Vulnerability Analysis, Post-Exploitation",
+      "option_d": "Enumeration, Reporting, Reconnaissance, Exploitation, Vulnerability Analysis, Post-Exploitation",
+      "correct_answer": "A",
+      "explanation": "The lecture presents six sequential phases: reconnaissance, scanning and enumeration, vulnerability analysis, exploitation, post-exploitation, and reporting."
+    },
+    {
+      "question": "According to the lecture, which phases often account for approximately 70% of real-world penetration testing effort?",
+      "option_a": "Exploitation and post-exploitation",
+      "option_b": "Post-exploitation and reporting",
+      "option_c": "Exploitation and reporting",
+      "option_d": "Reconnaissance, scanning/enumeration, and vulnerability analysis",
+      "correct_answer": "D",
+      "explanation": "The lecture emphasizes that the first three phases often consume approximately 70% of real-world effort because understanding the target is more demanding than executing an exploit."
+    },
+    {
+      "question": "What is the primary purpose of reconnaissance?",
+      "option_a": "To establish persistence on the target",
+      "option_b": "To gather information about the target before attempting exploitation",
+      "option_c": "To remove evidence of unauthorized activity",
+      "option_d": "To crack password hashes",
+      "correct_answer": "B",
+      "explanation": "Reconnaissance gathers information about the target environment to guide subsequent scanning, vulnerability identification, and exploitation."
+    },
+    {
+      "question": "Which activity is an example of passive reconnaissance according to the lecture?",
+      "option_a": "Performing an Nmap port scan",
+      "option_b": "Sending service probes to a target",
+      "option_c": "Collecting WHOIS information and public DNS records",
+      "option_d": "Establishing a TCP connection to enumerate services",
+      "correct_answer": "C",
+      "explanation": "Passive reconnaissance collects publicly available information without directly interacting with the target."
+    },
+    {
+      "question": "Which activity represents active reconnaissance?",
+      "option_a": "Examining publicly available metadata",
+      "option_b": "Reviewing public WHOIS records",
+      "option_c": "Collecting publicly accessible DNS records",
+      "option_d": "Sending network probes to identify open ports",
+      "correct_answer": "D",
+      "explanation": "Active reconnaissance directly interacts with the target through activities such as port scanning and service probing."
+    },
+    {
+      "question": "Which Nmap option performs host discovery without performing a port scan?",
+      "option_a": "-sn",
+      "option_b": "-sV",
+      "option_c": "-O",
+      "option_d": "-A",
+      "correct_answer": "A",
+      "explanation": "The -sn option performs host discovery and disables the port scan phase."
+    },
+    {
+      "question": "What is the primary purpose of the Nmap -sV option?",
+      "option_a": "To discover operating systems",
+      "option_b": "To detect service versions running on open ports",
+      "option_c": "To save scan output in normal format",
+      "option_d": "To increase scanning speed using aggressive timing",
+      "correct_answer": "B",
+      "explanation": "The -sV option performs service and version detection, helping identify the software and versions running on discovered ports."
+    },
+    {
+      "question": "Which Nmap option is specifically used for operating system fingerprinting?",
+      "option_a": "-sn",
+      "option_b": "-sV",
+      "option_c": "-O",
+      "option_d": "-oN",
+      "correct_answer": "C",
+      "explanation": "The -O option enables operating system detection by analyzing characteristics of the target's network stack."
+    },
+    {
+      "question": "Which combination of operating system characteristics can help identify a target OS?",
+      "option_a": "File names, user passwords, and directory permissions",
+      "option_b": "HTTP page titles, HTML comments, and website themes",
+      "option_c": "Database table names and application usernames",
+      "option_d": "TTL values, TCP window sizes, and TCP option ordering",
+      "correct_answer": "D",
+      "explanation": "Different operating systems can exhibit distinct TCP/IP stack characteristics, including TTL values, window sizes, and TCP option ordering."
+    },
+    {
+      "question": "What does CVE primarily provide?",
+      "option_a": "A catalog of publicly known cybersecurity vulnerabilities",
+      "option_b": "A standardized severity score for every security incident",
+      "option_c": "An automated network scanning engine",
+      "option_d": "A framework for executing remote payloads",
+      "correct_answer": "A",
+      "explanation": "Common Vulnerabilities and Exposures (CVE) provides identifiers and records for publicly known cybersecurity vulnerabilities."
+    },
+    {
+      "question": "What is the primary purpose of CVSS?",
+      "option_a": "To identify active network hosts",
+      "option_b": "To assign severity scores to vulnerabilities",
+      "option_c": "To automatically exploit vulnerable services",
+      "option_d": "To maintain a database of penetration testing reports",
+      "correct_answer": "B",
+      "explanation": "CVSS provides a standardized vulnerability severity scoring system ranging from 0 to 10."
+    },
+    {
+      "question": "Which pair contains automated vulnerability scanning tools mentioned in the lecture?",
+      "option_a": "Nmap and John the Ripper",
+      "option_b": "Metasploit and SearchSploit",
+      "option_c": "Nessus and OpenVAS/GVM",
+      "option_d": "Kali Linux and VirtualBox",
+      "correct_answer": "C",
+      "explanation": "Nessus and OpenVAS/GVM are automated vulnerability scanners used for broad vulnerability discovery."
+    },
+    {
+      "question": "Which statement correctly describes a limitation of automated vulnerability scanners?",
+      "option_a": "They cannot identify any operating system vulnerabilities",
+      "option_b": "They only work after root access has been obtained",
+      "option_c": "They cannot scan network services",
+      "option_d": "They can produce false positives and false negatives",
+      "correct_answer": "D",
+      "explanation": "Automated scanners can incorrectly report vulnerabilities or fail to detect actual weaknesses, so their findings require validation."
+    },
+    {
+      "question": "What is the purpose of the SearchSploit command `searchsploit -u`?",
+      "option_a": "To update the local exploit database",
+      "option_b": "To execute the latest available exploit",
+      "option_c": "To upgrade the Metasploit Framework",
+      "option_d": "To update the target operating system",
+      "correct_answer": "A",
+      "explanation": "The -u option updates the local SearchSploit exploit database."
+    },
+    {
+      "question": "Which sequence represents the Metasploit workflow described in the lecture?",
+      "option_a": "run → search → set → use → show options",
+      "option_b": "search → use → show options → set → run",
+      "option_c": "use → run → search → show options → set",
+      "option_d": "show options → set → search → run → use",
+      "correct_answer": "B",
+      "explanation": "The lecture describes the workflow as searching for an exploit, selecting it, examining its options, configuring the required values, and running it."
+    },
+    {
+      "question": "In exploitation terminology, what is an exploit?",
+      "option_a": "A mechanism used to maintain access after a reboot",
+      "option_b": "A tool that only detects outdated software",
+      "option_c": "Code or a technique that leverages a specific vulnerability",
+      "option_d": "A password hash generated from user credentials",
+      "correct_answer": "C",
+      "explanation": "An exploit is the code or technique used to take advantage of a specific vulnerability."
+    },
+    {
+      "question": "What is the role of a payload in an exploitation process?",
+      "option_a": "To identify the target operating system",
+      "option_b": "To update the local vulnerability database",
+      "option_c": "To determine the CVSS severity score",
+      "option_d": "To specify what executes after successful exploitation",
+      "correct_answer": "D",
+      "explanation": "A payload is the code or functionality executed after successful exploitation, such as establishing a reverse shell."
+    },
+    {
+      "question": "What is the purpose of an encoder in the exploitation context described in the lecture?",
+      "option_a": "To reshape payload bytes to evade simple filters",
+      "option_b": "To identify open TCP ports",
+      "option_c": "To determine the operating system version",
+      "option_d": "To generate vulnerability severity reports",
+      "correct_answer": "A",
+      "explanation": "An encoder reshapes payload bytes in an attempt to evade simple filters. It does not guarantee bypassing modern security controls."
+    },
+    {
+      "question": "In Metasploit, what does the RHOSTS setting identify?",
+      "option_a": "The local machine's listening port",
+      "option_b": "The remote target host or hosts",
+      "option_c": "The payload encoding algorithm",
+      "option_d": "The attacker's network interface",
+      "correct_answer": "B",
+      "explanation": "RHOSTS specifies the remote target system or systems against which the selected module operates."
+    },
+    {
+      "question": "What does LHOST represent in the Samba reverse-shell demonstration?",
+      "option_a": "The target's hostname",
+      "option_b": "The target's listening service",
+      "option_c": "The attacker's local IP address used for the callback",
+      "option_d": "The target's operating system identifier",
+      "correct_answer": "C",
+      "explanation": "LHOST identifies the local address on which the attacker expects to receive the reverse connection."
+    },
+    {
+      "question": "Which vulnerability was demonstrated using the Metasploit module `exploit/unix/ftp/vsftpd_234_backdoor`?",
+      "option_a": "A Samba usermap_script vulnerability",
+      "option_b": "A Linux kernel privilege escalation vulnerability",
+      "option_c": "An SSH authorized_keys vulnerability",
+      "option_d": "The vsftpd 2.3.4 backdoor",
+      "correct_answer": "D",
+      "explanation": "The lecture demonstrates exploitation of the vsftpd 2.3.4 backdoor using the corresponding Metasploit module."
+    },
+    {
+      "question": "Which privilege escalation technique involves exploiting executables with the setuid permission bit?",
+      "option_a": "SUID binary abuse",
+      "option_b": "DNS enumeration",
+      "option_c": "Service version detection",
+      "option_d": "Offline password cracking",
+      "correct_answer": "A",
+      "explanation": "SUID executables run with the effective privileges of their file owner, which can create privilege escalation opportunities when misconfigured."
+    },
+    {
+      "question": "What information does the command `sudo -l` reveal?",
+      "option_a": "All active network connections",
+      "option_b": "The user's permitted sudo commands",
+      "option_c": "All SUID binaries on the filesystem",
+      "option_d": "The target's kernel version",
+      "correct_answer": "B",
+      "explanation": "The sudo -l command lists the commands a user is permitted to execute through sudo, including potentially dangerous NOPASSWD entries."
+    },
+    {
+      "question": "What is a writable cron job a potential privilege escalation vector?",
+      "option_a": "Cron automatically disables authentication",
+      "option_b": "Cron grants every local user root access",
+      "option_c": "An attacker may modify a scheduled script that executes with elevated privileges",
+      "option_d": "Cron automatically exposes password hashes",
+      "correct_answer": "C",
+      "explanation": "If a low-privilege user can modify a script executed by a privileged scheduled task, the modified script may execute with those elevated privileges."
+    },
+    {
+      "question": "Why are kernel exploits considered potentially fragile during live demonstrations?",
+      "option_a": "They only work against Windows systems",
+      "option_b": "They cannot produce elevated privileges",
+      "option_c": "They require a public DNS record",
+      "option_d": "They are OS-version-specific and can have unpredictable effects",
+      "correct_answer": "D",
+      "explanation": "Kernel exploits depend on specific operating system versions and configurations and can cause instability, making them risky for live demonstrations."
+    },
+    {
+      "question": "Which command from the lecture enumerates SUID executables across a Linux filesystem?",
+      "option_a": "find / -perm -u=s -type f 2>/dev/null",
+      "option_b": "sudo -l",
+      "option_c": "nmap -O",
+      "option_d": "searchsploit -u",
+      "correct_answer": "A",
+      "explanation": "The find command searches for regular files with the user SUID permission bit set while redirecting permission errors to /dev/null."
+    },
+    {
+      "question": "Which file contains Linux password hash information that was targeted in the lecture's credential harvesting demonstration?",
+      "option_a": "/etc/hostname",
+      "option_b": "/etc/shadow",
+      "option_c": "/etc/hosts",
+      "option_d": "/etc/resolv.conf",
+      "correct_answer": "B",
+      "explanation": "The /etc/shadow file stores password hash information and is a sensitive target during post-exploitation."
+    },
+    {
+      "question": "Which tools were identified for offline password hash cracking?",
+      "option_a": "Nmap and Nessus",
+      "option_b": "Metasploit and OpenVAS",
+      "option_c": "John the Ripper and Hashcat",
+      "option_d": "SearchSploit and VirtualBox",
+      "correct_answer": "C",
+      "explanation": "John the Ripper and Hashcat are password recovery and cracking tools that can attempt to recover passwords from captured hashes."
+    },
+    {
+      "question": "Which option represents a persistence mechanism discussed in the lecture?",
+      "option_a": "Nmap service detection",
+      "option_b": "CVSS scoring",
+      "option_c": "Passive WHOIS enumeration",
+      "option_d": "Adding an SSH public key to authorized_keys",
+      "correct_answer": "D",
+      "explanation": "Injecting an SSH public key into authorized_keys can allow continued SSH access, provided the account and SSH configuration permit it."
+    },
+    {
+      "question": "Which information should be included in a penetration testing finding?",
+      "option_a": "Title, severity, description, evidence, impact, and remediation",
+      "option_b": "Only the attacker's IP address and operating system",
+      "option_c": "Only the vulnerability name and exploit command",
+      "option_d": "Only a list of tools used during testing",
+      "correct_answer": "A",
+      "explanation": "The lecture identifies the finding title, CVSS severity, description, evidence, impact, and remediation as essential reporting elements."
+    },
+    {
+      "question": "What is the primary role of Metasploitable2 in the lecture's practical environment?",
+      "option_a": "To act as the attacker's operating system",
+      "option_b": "To serve as an intentionally vulnerable target for controlled testing",
+      "option_c": "To provide automated CVSS scoring",
+      "option_d": "To store the penetration testing report",
+      "correct_answer": "B",
+      "explanation": "Metasploitable2 is an intentionally vulnerable machine used as the target in the isolated practical penetration testing environment."
+    },
+    {
+      "question": "A tester discovers an open FTP port and identifies the service as vsftpd 2.3.4. What is the most appropriate next step in the lecture's methodology?",
+      "option_a": "Immediately attempt kernel privilege escalation",
+      "option_b": "Modify the FTP service configuration",
+      "option_c": "Search for known vulnerabilities associated with the discovered service and version",
+      "option_d": "Generate the final report without further investigation",
+      "correct_answer": "C",
+      "explanation": "After service identification, vulnerability analysis should map the discovered version to known vulnerabilities. SearchSploit is demonstrated for this purpose."
+    },
+    {
+      "question": "A tester collects publicly available WHOIS records and DNS information without directly contacting the target's infrastructure. How should this activity be classified?",
+      "option_a": "Active exploitation",
+      "option_b": "Post-exploitation",
+      "option_c": "Active reconnaissance",
+      "option_d": "Passive reconnaissance",
+      "correct_answer": "D",
+      "explanation": "WHOIS records and publicly available DNS information are examples of passive reconnaissance because they can be collected without directly interacting with the target."
+    },
+    {
+      "question": "A tester performs Nmap OS detection but obtains an uncertain operating system result. Which explanation is most consistent with the lecture?",
+      "option_a": "Operating system fingerprinting relies on network-stack characteristics that may not uniquely identify an OS",
+      "option_b": "Nmap -O is designed exclusively for password cracking",
+      "option_c": "TTL values always uniquely identify an operating system",
+      "option_d": "OS fingerprinting is performed using CVSS scores",
+      "correct_answer": "A",
+      "explanation": "OS fingerprinting relies on characteristics such as TTL, TCP window size, and TCP options. These are indicators rather than guaranteed unique identifiers."
+    },
+    {
+      "question": "A penetration tester runs `nmap -sn 192.168.56.0/24`. What is the primary objective of this command?",
+      "option_a": "Identify all installed software versions on every host",
+      "option_b": "Discover which hosts are available on the specified network without performing a port scan",
+      "option_c": "Identify the kernel vulnerabilities of every host",
+      "option_d": "Execute an aggressive scan and save normal output",
+      "correct_answer": "B",
+      "explanation": "The -sn option performs host discovery without a port scan, making it suitable for identifying active hosts in the subnet."
+    },
+    {
+      "question": "A tester has discovered an application version using Nmap. An automated scanner also reports a vulnerability for that version. What should the tester do before selecting an exploit?",
+      "option_a": "Assume the scanner is always correct",
+      "option_b": "Immediately execute every exploit associated with the application",
+      "option_c": "Validate the service version and investigate whether the reported vulnerability applies to the target",
+      "option_d": "Skip vulnerability analysis and begin persistence",
+      "correct_answer": "C",
+      "explanation": "Automated scanners may produce false positives and false negatives. The analyst must validate findings and assess applicability before exploitation."
+    },
+    {
+      "question": "A tester discovers a service banner indicating Samba 3.0. Which tool and approach from the lecture are most appropriate for identifying candidate exploits?",
+      "option_a": "John the Ripper with a wordlist",
+      "option_b": "Nmap -sn to discover the target",
+      "option_c": "VirtualBox snapshot management",
+      "option_d": "SearchSploit using the discovered Samba version",
+      "correct_answer": "D",
+      "explanation": "SearchSploit can search the local Exploit-DB database using service and version information obtained during reconnaissance."
+    },
+    {
+      "question": "During a Metasploit exercise, a tester selects an exploit module but does not configure the required target information. What should the tester do next?",
+      "option_a": "Run `show options`, identify required parameters, and configure them before execution",
+      "option_b": "Immediately execute the module repeatedly",
+      "option_c": "Use John the Ripper to identify the target IP",
+      "option_d": "Generate a CVSS report before configuring the module",
+      "correct_answer": "A",
+      "explanation": "The lecture's Metasploit workflow requires checking module options and configuring required values before running the exploit."
+    },
+    {
+      "question": "A reverse-shell payload is configured, but the tester specifies the target's IP address as LHOST. What is the underlying configuration mistake?",
+      "option_a": "LHOST must always contain the target's hostname",
+      "option_b": "LHOST should identify the attacker's local callback address, not the remote target",
+      "option_c": "LHOST represents the CVE identifier",
+      "option_d": "LHOST is used exclusively for OS fingerprinting",
+      "correct_answer": "B",
+      "explanation": "LHOST specifies the attacker's local address for the reverse connection. The remote target is specified through RHOSTS."
+    },
+    {
+      "question": "A tester successfully exploits vsftpd 2.3.4 and executes `whoami`, receiving `root`. What does this result demonstrate?",
+      "option_a": "The vulnerability scanner has produced a false positive",
+      "option_b": "The target has successfully patched the FTP service",
+      "option_c": "The obtained session has root-level identity, demonstrating privileged access",
+      "option_d": "The tester has only obtained an unprivileged shell",
+      "correct_answer": "C",
+      "explanation": "The whoami command identifies the current user. Receiving root demonstrates that the session operates with root-level privileges."
+    },
+    {
+      "question": "A tester obtains a shell as www-data. Enumeration reveals that the `find` executable has its SUID bit set and is owned by root. Why might this be dangerous?",
+      "option_a": "It automatically exposes all network ports",
+      "option_b": "It allows every user to change the kernel version",
+      "option_c": "It disables all password authentication",
+      "option_d": "If the SUID executable permits privileged command execution, it may provide a path to root privileges",
+      "correct_answer": "D",
+      "explanation": "A root-owned SUID executable can execute with the owner's effective privileges. If its functionality permits shell execution, it may enable privilege escalation."
+    },
+    {
+      "question": "A low-privilege user runs `sudo -l` and discovers `(ALL) NOPASSWD: /usr/bin/vim`. What security weakness does this configuration introduce?",
+      "option_a": "The user may be able to execute Vim as root and escape to a privileged shell",
+      "option_b": "The user can automatically modify the network routing table",
+      "option_c": "The user can only read files owned by their account",
+      "option_d": "The system automatically disables SUID permissions",
+      "correct_answer": "A",
+      "explanation": "Allowing Vim to run through sudo without a password can permit command execution through Vim's shell escape functionality, potentially resulting in root access."
+    },
+    {
+      "question": "A scheduled backup script executes as root. A low-privilege user can modify the script. Which condition makes this a serious privilege escalation risk?",
+      "option_a": "The backup runs every hour",
+      "option_b": "The user can modify code that will later execute with root privileges",
+      "option_c": "The script uses a relative file path",
+      "option_d": "The backup creates compressed files",
+      "correct_answer": "B",
+      "explanation": "Writable scripts executed by privileged scheduled jobs can allow a lower-privilege user to introduce commands that execute with the job's elevated privileges."
+    },
+    {
+      "question": "An analyst discovers that a server is vulnerable to a kernel exploit, but the exploit is intended for a different kernel version. What is the most appropriate decision?",
+      "option_a": "Execute it anyway because all Linux kernels are identical",
+      "option_b": "Use it as a guaranteed privilege escalation technique",
+      "option_c": "Validate kernel version compatibility before considering exploitation",
+      "option_d": "Replace the kernel with the attacker's kernel",
+      "correct_answer": "C",
+      "explanation": "Kernel exploits are OS-version-specific. The tester must establish compatibility before attempting exploitation, particularly because kernel exploits may destabilize the system."
+    },
+    {
+      "question": "A tester obtains root access and discovers sensitive password hashes. What is the most appropriate interpretation of the next post-exploitation activity described in the lecture?",
+      "option_a": "The tester should immediately terminate the engagement without documenting anything",
+      "option_b": "The tester should replace all password hashes",
+      "option_c": "The tester should use Nmap to identify the original vulnerability again",
+      "option_d": "The tester may securely collect authorized evidence and assess credential exposure, including offline hash-cracking risk",
+      "correct_answer": "D",
+      "explanation": "Credential harvesting and password hash analysis are post-exploitation objectives. Activities must remain within the agreed authorization and evidence-handling requirements."
+    },
+    {
+      "question": "An attacker establishes persistence using a cron job. Which security trade-off should a defender consider when evaluating this mechanism?",
+      "option_a": "Persistence mechanisms differ in visibility and may leave different traces for defenders",
+      "option_b": "Cron jobs are always invisible to security monitoring",
+      "option_c": "Cron jobs cannot execute with elevated privileges",
+      "option_d": "Persistence always requires an operating system reboot",
+      "correct_answer": "A",
+      "explanation": "The lecture highlights the stealth trade-off between persistence mechanisms. Cron jobs, SSH keys, and systemd services have different visibility characteristics."
+    },
+    {
+      "question": "A penetration tester reports a critical vulnerability but provides no evidence or explanation of its impact. What is the primary weakness in the report?",
+      "option_a": "The report contains too many technical details",
+      "option_b": "The finding lacks sufficient evidence and impact documentation to support its severity and conclusions",
+      "option_c": "The report should contain only the CVE number",
+      "option_d": "The report should exclude remediation advice",
+      "correct_answer": "B",
+      "explanation": "A useful finding must document evidence, impact, severity, description, and remediation. Without supporting evidence, the reader cannot properly assess the finding."
+    },
+    {
+      "question": "A tester discovers several vulnerabilities but has limited testing time. Why is prioritizing reconnaissance and vulnerability analysis particularly valuable?",
+      "option_a": "These activities automatically grant root privileges",
+      "option_b": "They eliminate the need for written authorization",
+      "option_c": "Accurate discovery and analysis reduce wasted exploitation attempts and help select relevant attack paths",
+      "option_d": "They guarantee that every identified vulnerability is exploitable",
+      "correct_answer": "C",
+      "explanation": "The lecture emphasizes that good reconnaissance leads to fewer wasted exploit attempts. Understanding the target and validating weaknesses helps focus testing effort."
+    },
+    {
+      "question": "A tester performs an aggressive Nmap scan using `nmap -A -T4 -oN recon_output.txt 192.168.56.101`. Which interpretation is correct?",
+      "option_a": "The command performs only host discovery and disables output saving",
+      "option_b": "The command performs password cracking and saves recovered passwords",
+      "option_c": "The command executes a Metasploit payload and records the resulting shell",
+      "option_d": "The command enables aggressive scanning, uses a faster timing template, and saves output in normal format",
+      "correct_answer": "D",
+      "explanation": "The -A option enables aggressive detection features, -T4 selects a faster timing template, and -oN saves the output in normal format."
+    },
+    {
+      "question": "A tester identifies an open service, determines its version, finds a matching exploit, and successfully obtains a shell. However, the shell belongs to an unprivileged account. Which phase should be investigated next?",
+      "option_a": "Privilege escalation within the post-exploitation process",
+      "option_b": "Passive reconnaissance from the beginning",
+      "option_c": "CVSS scoring without further investigation",
+      "option_d": "Reporting without assessing the achieved access",
+      "correct_answer": "A",
+      "explanation": "After exploitation, a low-privilege shell may require privilege escalation. The lecture identifies SUID binaries, sudo misconfigurations, writable cron jobs, and kernel exploits as possible vectors."
+    },
+    {
+      "question": "A tester finds that a service banner identifies an outdated application. SearchSploit returns several candidate exploits, but their affected versions differ. What is the best analytical approach?",
+      "option_a": "Select the first result regardless of its affected version",
+      "option_b": "Compare the target's actual version and configuration against each exploit's applicability before selecting a candidate",
+      "option_c": "Execute all candidate exploits simultaneously",
+      "option_d": "Assume every exploit in Exploit-DB works against all versions",
+      "correct_answer": "B",
+      "explanation": "SearchSploit provides candidate exploits, not proof that they apply to a particular target. Version and configuration validation are essential."
+    },
+    {
+      "question": "A tester uses the Metasploit Samba usermap_script module and configures RHOSTS and a reverse payload. The target is reachable, but the callback never reaches the tester. Which configuration should be examined first?",
+      "option_a": "The target's CVSS score",
+      "option_b": "The local SearchSploit database update date",
+      "option_c": "The correctness and reachability of LHOST, including whether it identifies the appropriate attacker-side interface",
+      "option_d": "The target's WHOIS registration",
+      "correct_answer": "C",
+      "explanation": "A reverse connection must reach the attacker's callback address. An incorrect or unreachable LHOST can prevent the reverse shell from connecting."
+    },
+    {
+      "question": "An administrator discovers that a Linux account has unrestricted passwordless sudo access to Vim. Which remediation most directly addresses the demonstrated escalation path?",
+      "option_a": "Increase the frequency of network scans",
+      "option_b": "Hide the Vim executable from the user's PATH",
+      "option_c": "Update the DNS records",
+      "option_d": "Remove the unnecessary privileged sudo permission or replace it with a narrowly restricted authorization",
+      "correct_answer": "D",
+      "explanation": "The underlying weakness is excessive sudo permission. Restricting privileged command execution removes the ability to use Vim as a route to elevated shell access."
+    },
+    {
+      "question": "A penetration tester finds a root-owned script executed by systemd. The script is writable by a normal user. Which conclusion best describes the security risk?",
+      "option_a": "The writable script may allow the user to introduce commands that execute when the privileged service runs",
+      "option_b": "Systemd prevents scripts from executing with root privileges",
+      "option_c": "The user can only change the service description",
+      "option_d": "The vulnerability is limited to confidentiality and cannot affect integrity",
+      "correct_answer": "A",
+      "explanation": "A writable script executed by a privileged systemd service can enable unauthorized code execution with the service's privileges."
+    },
+    {
+      "question": "An organization requests a penetration test to determine whether attackers could obtain sensitive customer data. The tester discovers a vulnerability but does not exploit it because the agreed scope prohibits access to production data. What is the most appropriate response?",
+      "option_a": "Ignore the scope because proving impact is more important",
+      "option_b": "Respect the Rules of Engagement, document the validated vulnerability and its potential impact, and recommend an approved validation method",
+      "option_c": "Copy customer data to a personal machine to prove the finding",
+      "option_d": "Continue testing until root access is obtained",
+      "correct_answer": "B",
+      "explanation": "Penetration testing must remain within written authorization and scope. Demonstrating impact does not justify violating restrictions or accessing prohibited data."
+    },
+    {
+      "question": "A penetration tester discovers a vulnerable service that could allow unauthorized file modification. Which CIA triad property is most directly threatened?",
+      "option_a": "Confidentiality",
+      "option_b": "Availability",
+      "option_c": "Integrity",
+      "option_d": "Authentication",
+      "correct_answer": "C",
+      "explanation": "Integrity concerns unauthorized modification of information or systems. The ability to modify files without permission directly threatens integrity."
+    },
+    {
+      "question": "A company asks a tester to identify whether a server is vulnerable, but the tester is not authorized to execute exploits. Which activity best respects this restriction?",
+      "option_a": "Run the vsftpd backdoor exploit to prove access",
+      "option_b": "Create an SSH persistence mechanism to test future access",
+      "option_c": "Modify a privileged cron job to demonstrate root access",
+      "option_d": "Perform authorized reconnaissance and vulnerability assessment, then report findings without attempting prohibited exploitation",
+      "correct_answer": "D",
+      "explanation": "The tester must follow the authorized scope. If exploitation is prohibited, vulnerability identification and reporting must not cross that boundary."
+    },
+    {
+      "question": "A security analyst observes an attacker using multiple techniques after obtaining root access. The attacker collects password hashes, establishes SSH key-based access, and attempts movement to other systems. Which classification best describes these activities?",
+      "option_a": "Post-exploitation activities involving credential harvesting, persistence, and lateral movement",
+      "option_b": "Passive reconnaissance only",
+      "option_c": "Automated vulnerability scanning",
+      "option_d": "Initial host discovery",
+      "correct_answer": "A",
+      "explanation": "Credential harvesting, persistence, and lateral movement are identified as post-exploitation objectives in the lecture."
+    },
+    {
+      "question": "A tester obtains password hashes from `/etc/shadow`. Why might offline cracking be useful in a security assessment?",
+      "option_a": "It automatically reveals the original operating system",
+      "option_b": "It allows password strength to be assessed by attempting to recover passwords from captured hashes without repeatedly authenticating to the target",
+      "option_c": "It converts hashes directly into CVE identifiers",
+      "option_d": "It establishes a reverse shell without exploitation",
+      "correct_answer": "B",
+      "explanation": "Offline cracking tools such as John the Ripper and Hashcat can test the strength of recovered password hashes without performing repeated login attempts against the target."
+    },
+    {
+      "question": "A tester discovers three persistence opportunities: a scheduled cron task, SSH authorized_keys modification, and a systemd service. What is the most accurate assessment?",
+      "option_a": "All three mechanisms are identical and have the same detection characteristics",
+      "option_b": "Only cron jobs can maintain persistence on Linux",
+      "option_c": "They are different persistence mechanisms with different visibility and detection trade-offs",
+      "option_d": "SSH keys can only be used for initial reconnaissance",
+      "correct_answer": "C",
+      "explanation": "The lecture identifies all three as persistence mechanisms and emphasizes that their visibility to defenders differs."
+    },
+    {
+      "question": "A report contains a vulnerability title, a CVSS score, and a brief description. Which additional elements are needed to make the finding useful to the organization?",
+      "option_a": "Only the attacker's personal details",
+      "option_b": "Only a list of commands executed during the test",
+      "option_c": "Only screenshots of the attacker's desktop",
+      "option_d": "Evidence demonstrating the finding, its business or technical impact, and actionable remediation",
+      "correct_answer": "D",
+      "explanation": "Evidence supports the finding, impact explains its consequences, and remediation tells the organization how to address it."
+    },
+    {
+      "question": "A penetration tester is preparing an engagement involving several production servers. The organization has provided written permission but has not defined emergency contacts or a testing window. What should happen before testing begins?",
+      "option_a": "Complete the Rules of Engagement by establishing the scope, time window, allowed techniques, and emergency contacts",
+      "option_b": "Begin scanning because written permission alone removes all operational restrictions",
+      "option_c": "Start exploitation against the most critical server",
+      "option_d": "Establish persistence to make testing easier",
+      "correct_answer": "A",
+      "explanation": "The Rules of Engagement must establish operational boundaries, including scope, timing, allowed techniques, and emergency contacts before testing begins."
+    },
+    {
+      "question": "A tester discovers that an Nmap service banner is outdated, but the application vendor has backported security fixes without changing the displayed version string. What is the most important lesson?",
+      "option_a": "A service banner is always sufficient proof of exploitability",
+      "option_b": "Version banners are useful indicators but should be validated against actual patch status and configuration before concluding that a vulnerability exists",
+      "option_c": "SearchSploit should never be used",
+      "option_d": "All backported patches introduce new vulnerabilities",
+      "correct_answer": "B",
+      "explanation": "Banner-based matching can be misleading. A version string alone may not establish that the target is vulnerable, so additional validation is necessary."
+    },
+    {
+      "question": "A Linux system has a root-owned SUID executable that permits command execution. A tester demonstrates that it can launch a privileged shell. Which security principle has been violated most directly?",
+      "option_a": "Network segmentation",
+      "option_b": "DNS confidentiality",
+      "option_c": "Least privilege",
+      "option_d": "Availability monitoring",
+      "correct_answer": "C",
+      "explanation": "The principle of least privilege requires granting only the permissions necessary for a task. An unnecessarily powerful SUID executable can grant users more privilege than required."
+    },
+    {
+      "question": "A tester successfully compromises a system but finds no practical way to establish persistence. Which conclusion is most appropriate?",
+      "option_a": "The exploitation was unsuccessful because persistence is mandatory",
+      "option_b": "The tester must create an SSH key regardless of authorization",
+      "option_c": "The system cannot have any security weaknesses",
+      "option_d": "Initial exploitation and persistence are distinct outcomes; successful exploitation does not guarantee a suitable persistence mechanism",
+      "correct_answer": "D",
+      "explanation": "Exploitation establishes an initial foothold, while persistence attempts to maintain access. These are separate objectives and do not necessarily succeed together."
+    },
+    {
+      "question": "A security team receives a penetration testing report describing a vulnerability that could expose customer records and allow unauthorized modification. Which combination of CIA triad properties should be considered?",
+      "option_a": "Confidentiality and integrity",
+      "option_b": "Availability only",
+      "option_c": "Integrity only",
+      "option_d": "Availability and authentication only",
+      "correct_answer": "A",
+      "explanation": "Exposure of customer records threatens confidentiality, while unauthorized modification threatens integrity."
+    },
+    {
+      "question": "A penetration tester discovers an exploit that could crash a production server. The Rules of Engagement permit vulnerability validation but prohibit service disruption. What is the best decision?",
+      "option_a": "Run the exploit during business hours to obtain clear evidence",
+      "option_b": "Avoid the disruptive exploit and use a non-disruptive validation approach permitted by the engagement",
+      "option_c": "Execute it against every production server",
+      "option_d": "Ignore the restriction because the exploit is publicly available",
+      "correct_answer": "B",
+      "explanation": "The tester must respect operational restrictions in the Rules of Engagement. Public exploit availability does not grant permission to cause service disruption."
+    },
+    {
+      "question": "A company uses an automated vulnerability scanner and receives 100 findings. A penetration tester manually validates a smaller number and demonstrates that some are exploitable. Which statement best explains the difference between these results?",
+      "option_a": "Automated scanning is always more accurate than manual testing",
+      "option_b": "Manual testing cannot identify false positives",
+      "option_c": "Automated scanning provides broad potential vulnerability discovery, while manual validation establishes applicability and exploitability",
+      "option_d": "Penetration testing and vulnerability scanning produce identical evidence",
+      "correct_answer": "C",
+      "explanation": "Automated scanning offers breadth and speed, while manual analysis and controlled exploitation help establish whether findings genuinely apply and can be exploited."
+    },
+    {
+      "question": "A tester has identified a vulnerable Samba service and is preparing the Metasploit usermap_script module. Which sequence best follows the lecture's recommended process?",
+      "option_a": "Execute a payload, identify the service, search for the module, and then configure the target",
+      "option_b": "Set LHOST, execute the module, and then select a payload",
+      "option_c": "Perform privilege escalation before establishing an initial session",
+      "option_d": "Select the appropriate module, inspect its options, configure RHOSTS and the required payload settings, then execute within the authorized lab",
+      "correct_answer": "D",
+      "explanation": "The recommended Metasploit process is to select the module, inspect its options, configure the necessary target and payload parameters, and then execute it."
+    },
+    {
+      "question": "A tester identifies a vulnerability with a CVSS score of 9.8. Which conclusion is justified based on the lecture?",
+      "option_a": "The vulnerability has a high severity score, but the score alone does not prove that the target is exploitable",
+      "option_b": "The target is automatically compromised",
+      "option_c": "The vulnerability must affect availability only",
+      "option_d": "The vulnerability is guaranteed to have a working public exploit",
+      "correct_answer": "A",
+      "explanation": "CVSS communicates vulnerability severity on a 0–10 scale. It does not independently establish that a particular target is vulnerable or exploitable."
+    },
+    {
+      "question": "A tester identifies an outdated service, confirms a matching vulnerability, obtains a low-privilege shell, and discovers a writable root-executed scheduled script. Which sequence correctly connects the findings to the methodology?",
+      "option_a": "Reporting, reconnaissance, persistence, vulnerability analysis",
+      "option_b": "Reconnaissance and enumeration, vulnerability analysis, exploitation, privilege escalation",
+      "option_c": "Post-exploitation, host discovery, vulnerability scanning, passive reconnaissance",
+      "option_d": "Privilege escalation, reporting, scanning, exploitation",
+      "correct_answer": "B",
+      "explanation": "The service is first identified through reconnaissance, the weakness is assessed during vulnerability analysis, exploitation establishes a shell, and the writable privileged script provides a potential privilege escalation path."
+    },
+    {
+      "question": "Which statement most accurately explains the relationship between good reconnaissance and exploitation efficiency?",
+      "option_a": "Reconnaissance guarantees successful exploitation",
+      "option_b": "Reconnaissance eliminates the need for vulnerability analysis",
+      "option_c": "Accurate reconnaissance helps identify relevant services and versions, reducing attempts against irrelevant or incompatible exploits",
+      "option_d": "Reconnaissance is only useful after obtaining root access",
+      "correct_answer": "C",
+      "explanation": "Good reconnaissance supplies accurate target information and helps analysts select relevant vulnerabilities and avoid wasted exploitation attempts."
+    },
+    {
+      "question": "A penetration tester completes an engagement and submits only a list of successful exploits. What is the most important missing element from the engagement deliverable?",
+      "option_a": "A list of every available Metasploit module",
+      "option_b": "The attacker's preferred Linux distribution",
+      "option_c": "A copy of the target's entire filesystem",
+      "option_d": "Structured findings documenting severity, evidence, description, impact, and remediation",
+      "correct_answer": "D",
+      "explanation": "The purpose of reporting is to communicate actionable security findings. Exploit lists alone do not provide the evidence, impact assessment, or remediation guidance needed by the organization."
+    },
+    {
+      "question": "A tester discovers that a system can be compromised using a known vulnerability, but the system owner asks whether the issue is related to confidentiality, integrity, or availability. What is the most accurate response?",
+      "option_a": "Assess the actual consequences of exploitation and map each demonstrated or potential consequence to the relevant CIA property",
+      "option_b": "Every vulnerability affects confidentiality only",
+      "option_c": "Every successful exploit necessarily destroys availability",
+      "option_d": "CIA mapping is only relevant to network scanning",
+      "correct_answer": "A",
+      "explanation": "The lecture maps techniques and their consequences to confidentiality, integrity, and availability. The affected property depends on the actual impact of the vulnerability."
+    },
+    {
+      "question": "A tester finds an SSH authorized_keys entry that provides persistent access to an account. Which investigation is most relevant to determining whether the persistence mechanism is authorized?",
+      "option_a": "Check the target's CVSS score",
+      "option_b": "Verify whether the key and account access were approved and whether the entry was introduced during the authorized assessment",
+      "option_c": "Run Nmap -sn against the entire network",
+      "option_d": "Update the SearchSploit database",
+      "correct_answer": "B",
+      "explanation": "Persistence mechanisms must be assessed against the authorized engagement and their origin. An unexplained SSH key may represent unauthorized continued access."
+    },
+    {
+      "question": "A security team wants to reduce privilege escalation risks identified during the assessment. The report highlights SUID binaries, unnecessary sudo permissions, and writable scheduled scripts. Which remediation strategy best addresses the findings?",
+      "option_a": "Disable all network communication permanently",
+      "option_b": "Replace every Linux executable with a new version",
+      "option_c": "Review unnecessary SUID permissions, enforce least privilege in sudo rules, and ensure privileged scheduled scripts cannot be modified by untrusted users",
+      "option_d": "Increase the number of cron jobs to make monitoring easier",
+      "correct_answer": "C",
+      "explanation": "These remediation measures directly address the configuration weaknesses identified in the lecture and reduce opportunities for unauthorized privilege escalation."
+    },
+    {
+      "question": "A tester is working in the lecture's isolated VirtualBox lab using Kali Linux and Metasploitable2. Which description correctly identifies the role of each system?",
+      "option_a": "Kali is the vulnerable target, while Metasploitable2 is the reporting platform",
+      "option_b": "Both machines are automated vulnerability scanners",
+      "option_c": "Metasploitable2 is the attacker's operating system, while Kali stores the target's password hashes",
+      "option_d": "Kali provides the attacker environment and tools, while Metasploitable2 acts as the intentionally vulnerable target",
+      "correct_answer": "D",
+      "explanation": "The lecture identifies Kali Linux as the attacker environment and Metasploitable2 as the intentionally vulnerable target in the isolated lab."
+    },
+    {
+      "question": "[Extension - Outside Lecture Scope] A penetration tester needs to determine whether a Linux server is exposing unnecessary services. Which security principle should guide the recommended remediation?",
+      "option_a": "Attack surface reduction by disabling unnecessary services and restricting network exposure",
+      "option_b": "Granting every service root privileges",
+      "option_c": "Enabling all available network ports for compatibility",
+      "option_d": "Replacing all service banners with random strings",
+      "correct_answer": "A",
+      "explanation": "Attack surface reduction is a broader security principle that complements the lecture's reconnaissance and service enumeration concepts. Unnecessary services should be disabled or restricted."
+    },
+    {
+      "question": "[Extension - Outside Lecture Scope] An organization wants to prevent attackers from reusing stolen passwords across multiple accounts. Which control provides the strongest direct protection against password-only account compromise?",
+      "option_a": "Increasing the number of open network ports",
+      "option_b": "Implementing multi-factor authentication",
+      "option_c": "Disabling vulnerability reporting",
+      "option_d": "Using passive reconnaissance",
+      "correct_answer": "B",
+      "explanation": "Multi-factor authentication requires an additional authentication factor, reducing the effectiveness of stolen passwords alone."
+    },
+    {
+      "question": "[Extension - Outside Lecture Scope] A security team wants to detect unauthorized modifications to sensitive Linux configuration files. Which defensive mechanism is most directly relevant?",
+      "option_a": "Passive DNS enumeration",
+      "option_b": "Exploit database updates",
+      "option_c": "File integrity monitoring",
+      "option_d": "CVSS scoring",
+      "correct_answer": "C",
+      "explanation": "File integrity monitoring detects unexpected changes to monitored files and can help identify unauthorized modifications."
+    },
+    {
+      "question": "[Extension - Outside Lecture Scope] A penetration tester discovers that a web application exposes sensitive information because of an insecure direct object reference. Which security weakness is being demonstrated?",
+      "option_a": "An operating system kernel vulnerability",
+      "option_b": "A SUID configuration error",
+      "option_c": "An incorrect TCP window size",
+      "option_d": "Broken object-level authorization",
+      "correct_answer": "D",
+      "explanation": "Broken object-level authorization occurs when an application fails to verify whether a user is permitted to access a particular object or resource."
+    },
+    {
+      "question": "[Extension - Outside Lecture Scope] A security team wants to prioritize patching vulnerabilities across a large environment. Why should CVSS not be the only prioritization input?",
+      "option_a": "Exploit availability, asset criticality, exposure, and business impact can change the practical risk associated with a vulnerability",
+      "option_b": "CVSS scores cannot be used to describe vulnerability severity",
+      "option_c": "All vulnerabilities with the same CVSS score always have identical business risk",
+      "option_d": "CVSS automatically determines the correct patching order",
+      "correct_answer": "A",
+      "explanation": "CVSS is a severity measure, not a complete organizational risk assessment. Practical prioritization should also consider exploitability, exposure, asset importance, and business consequences."
+    }
+  ]
+}
